@@ -1,4 +1,4 @@
-# MAGE-Doc
+# [MAGE-Doc](http://matt77hias.github.io/MAGE-Doc)
 
 ## About
 The documentation of [MAGE](https://github.com/matt77hias/MAGE).
