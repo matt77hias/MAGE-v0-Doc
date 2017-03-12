@@ -1,0 +1,227 @@
+\hypertarget{classmage_1_1_binary_reader}{}\section{mage\+:\+:Binary\+Reader Class Reference}
+\label{classmage_1_1_binary_reader}\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+
+
+{\ttfamily \#include $<$binary\+\_\+reader.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497}{Binary\+Reader} ()
+\item 
+virtual \hyperlink{classmage_1_1_binary_reader_aa300382cfa1585bb2f76c4e764bb5617}{$\sim$\+Binary\+Reader} ()=default
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_binary_reader_ad1d395eabc03da0a52fc0df59623e0a4}{Read\+From\+File} (const wstring \&fname, bool big\+\_\+endian)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_binary_reader_ac0bf066e76b7ac0f5308109ae431007d}{Read\+From\+Memory} (const uint8\+\_\+t $\ast$input, size\+\_\+t size, bool big\+\_\+endian)
+\item 
+const wstring \& \hyperlink{classmage_1_1_binary_reader_a10a0ec56fe7f8e63964ffca2afe019a3}{Get\+Filename} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_binary_reader_a000cf97b640a5fbd1d5c33ccaae7fb39}{Read} ()=0
+\item 
+bool \hyperlink{classmage_1_1_binary_reader_a35b10713dca7a416b73b28d5f6aaf600}{Has\+Chars\+Left} () const
+\item 
+const char $\ast$ \hyperlink{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f}{Read\+Chars} (size\+\_\+t size)
+\item 
+int8\+\_\+t \hyperlink{classmage_1_1_binary_reader_abfc9296a42190b21ad0ddb6e0ea119af}{Read\+Int8} ()
+\item 
+uint8\+\_\+t \hyperlink{classmage_1_1_binary_reader_af0378b53d82b20ec703e09b325d7a5d2}{Read\+U\+Int8} ()
+\item 
+int16\+\_\+t \hyperlink{classmage_1_1_binary_reader_abb90a96c485b3acb1af3bb3bd88b76c5}{Read\+Int16} ()
+\item 
+uint16\+\_\+t \hyperlink{classmage_1_1_binary_reader_ad93616adef47e0256f117b8a6f8ba8bb}{Read\+U\+Int16} ()
+\item 
+int32\+\_\+t \hyperlink{classmage_1_1_binary_reader_a8a463e4e5469e90246a40f2898abbc67}{Read\+Int32} ()
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_binary_reader_a4decb312a91e30406b82178268053f53}{Read\+U\+Int32} ()
+\item 
+int64\+\_\+t \hyperlink{classmage_1_1_binary_reader_a404b0bdd39f4f1cd52cb8360896ac851}{Read\+Int64} ()
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_binary_reader_a480f2bd7320beed37a71b8122c8550bd}{Read\+U\+Int64} ()
+\item 
+float \hyperlink{classmage_1_1_binary_reader_af18ab2185b7c766c2183ab54f4676d57}{Read\+Float} ()
+\item 
+double \hyperlink{classmage_1_1_binary_reader_aa9d54a457a85d6f488d818c0a3e56560}{Read\+Double} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_binary_reader_a8c1ff948f1d056439f3d8cc37d7f507c}{Binary\+Reader} (const \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&reader)=delete
+\item 
+\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \& \hyperlink{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3}{operator=} (const \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&reader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+wstring \hyperlink{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f}{m\+\_\+fname}
+\item 
+bool \hyperlink{classmage_1_1_binary_reader_a8d23fde958e08efe248edb5d92861113}{m\+\_\+big\+\_\+endian}
+\item 
+const uint8\+\_\+t $\ast$ \hyperlink{classmage_1_1_binary_reader_a086c8b8615dddb15a97acf657bb4d73b}{m\+\_\+pos}
+\item 
+const uint8\+\_\+t $\ast$ \hyperlink{classmage_1_1_binary_reader_a929b6480629014c24263ec3042b1f364}{m\+\_\+end}
+\item 
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ \hyperlink{classmage_1_1_binary_reader_a34820a214a5b98e09beb12e8a465b0e3}{m\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497}{}\label{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Binary\+Reader@{Binary\+Reader}}
+\index{Binary\+Reader@{Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Binary\+Reader()}{BinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Binary\+Reader\+::\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_binary_reader_aa300382cfa1585bb2f76c4e764bb5617}{}\label{classmage_1_1_binary_reader_aa300382cfa1585bb2f76c4e764bb5617} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!````~Binary\+Reader@{$\sim$\+Binary\+Reader}}
+\index{````~Binary\+Reader@{$\sim$\+Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+Binary\+Reader()}{~BinaryReader()}}
+{\footnotesize\ttfamily virtual mage\+::\+Binary\+Reader\+::$\sim$\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_binary_reader_a8c1ff948f1d056439f3d8cc37d7f507c}{}\label{classmage_1_1_binary_reader_a8c1ff948f1d056439f3d8cc37d7f507c} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Binary\+Reader@{Binary\+Reader}}
+\index{Binary\+Reader@{Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Binary\+Reader()}{BinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Binary\+Reader\+::\+Binary\+Reader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_binary_reader_a10a0ec56fe7f8e63964ffca2afe019a3}{}\label{classmage_1_1_binary_reader_a10a0ec56fe7f8e63964ffca2afe019a3} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
+{\footnotesize\ttfamily const wstring\& mage\+::\+Binary\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_binary_reader_a35b10713dca7a416b73b28d5f6aaf600}{}\label{classmage_1_1_binary_reader_a35b10713dca7a416b73b28d5f6aaf600} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Has\+Chars\+Left@{Has\+Chars\+Left}}
+\index{Has\+Chars\+Left@{Has\+Chars\+Left}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Has\+Chars\+Left()}{HasCharsLeft()}}
+{\footnotesize\ttfamily bool mage\+::\+Binary\+Reader\+::\+Has\+Chars\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3}{}\label{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader}\& mage\+::\+Binary\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_binary_reader_a000cf97b640a5fbd1d5c33ccaae7fb39}{}\label{classmage_1_1_binary_reader_a000cf97b640a5fbd1d5c33ccaae7fb39} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read@{Read}}
+\index{Read@{Read}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\hypertarget{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f}{}\label{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Chars@{Read\+Chars}}
+\index{Read\+Chars@{Read\+Chars}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Chars()}{ReadChars()}}
+{\footnotesize\ttfamily const char $\ast$ mage\+::\+Binary\+Reader\+::\+Read\+Chars (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_aa9d54a457a85d6f488d818c0a3e56560}{}\label{classmage_1_1_binary_reader_aa9d54a457a85d6f488d818c0a3e56560} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Double@{Read\+Double}}
+\index{Read\+Double@{Read\+Double}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Double()}{ReadDouble()}}
+{\footnotesize\ttfamily double mage\+::\+Binary\+Reader\+::\+Read\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_af18ab2185b7c766c2183ab54f4676d57}{}\label{classmage_1_1_binary_reader_af18ab2185b7c766c2183ab54f4676d57} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Float@{Read\+Float}}
+\index{Read\+Float@{Read\+Float}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Float()}{ReadFloat()}}
+{\footnotesize\ttfamily float mage\+::\+Binary\+Reader\+::\+Read\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_ad1d395eabc03da0a52fc0df59623e0a4}{}\label{classmage_1_1_binary_reader_ad1d395eabc03da0a52fc0df59623e0a4} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+From\+File@{Read\+From\+File}}
+\index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Binary\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_binary_reader_ac0bf066e76b7ac0f5308109ae431007d}{}\label{classmage_1_1_binary_reader_ac0bf066e76b7ac0f5308109ae431007d} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
+\index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Binary\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{input,  }\item[{size\+\_\+t}]{size,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_binary_reader_abb90a96c485b3acb1af3bb3bd88b76c5}{}\label{classmage_1_1_binary_reader_abb90a96c485b3acb1af3bb3bd88b76c5} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Int16@{Read\+Int16}}
+\index{Read\+Int16@{Read\+Int16}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int16()}{ReadInt16()}}
+{\footnotesize\ttfamily int16\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_a8a463e4e5469e90246a40f2898abbc67}{}\label{classmage_1_1_binary_reader_a8a463e4e5469e90246a40f2898abbc67} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Int32@{Read\+Int32}}
+\index{Read\+Int32@{Read\+Int32}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int32()}{ReadInt32()}}
+{\footnotesize\ttfamily int32\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_a404b0bdd39f4f1cd52cb8360896ac851}{}\label{classmage_1_1_binary_reader_a404b0bdd39f4f1cd52cb8360896ac851} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Int64@{Read\+Int64}}
+\index{Read\+Int64@{Read\+Int64}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int64()}{ReadInt64()}}
+{\footnotesize\ttfamily int64\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_abfc9296a42190b21ad0ddb6e0ea119af}{}\label{classmage_1_1_binary_reader_abfc9296a42190b21ad0ddb6e0ea119af} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Int8@{Read\+Int8}}
+\index{Read\+Int8@{Read\+Int8}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int8()}{ReadInt8()}}
+{\footnotesize\ttfamily int8\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+Int8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_ad93616adef47e0256f117b8a6f8ba8bb}{}\label{classmage_1_1_binary_reader_ad93616adef47e0256f117b8a6f8ba8bb} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U\+Int16@{Read\+U\+Int16}}
+\index{Read\+U\+Int16@{Read\+U\+Int16}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int16()}{ReadUInt16()}}
+{\footnotesize\ttfamily uint16\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+U\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_a4decb312a91e30406b82178268053f53}{}\label{classmage_1_1_binary_reader_a4decb312a91e30406b82178268053f53} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U\+Int32@{Read\+U\+Int32}}
+\index{Read\+U\+Int32@{Read\+U\+Int32}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int32()}{ReadUInt32()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+U\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_a480f2bd7320beed37a71b8122c8550bd}{}\label{classmage_1_1_binary_reader_a480f2bd7320beed37a71b8122c8550bd} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U\+Int64@{Read\+U\+Int64}}
+\index{Read\+U\+Int64@{Read\+U\+Int64}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int64()}{ReadUInt64()}}
+{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+U\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_binary_reader_af0378b53d82b20ec703e09b325d7a5d2}{}\label{classmage_1_1_binary_reader_af0378b53d82b20ec703e09b325d7a5d2} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U\+Int8@{Read\+U\+Int8}}
+\index{Read\+U\+Int8@{Read\+U\+Int8}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int8()}{ReadUInt8()}}
+{\footnotesize\ttfamily uint8\+\_\+t mage\+::\+Binary\+Reader\+::\+Read\+U\+Int8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_binary_reader_a8d23fde958e08efe248edb5d92861113}{}\label{classmage_1_1_binary_reader_a8d23fde958e08efe248edb5d92861113} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+big\+\_\+endian@{m\+\_\+big\+\_\+endian}}
+\index{m\+\_\+big\+\_\+endian@{m\+\_\+big\+\_\+endian}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+big\+\_\+endian}{m\_big\_endian}}
+{\footnotesize\ttfamily bool mage\+::\+Binary\+Reader\+::m\+\_\+big\+\_\+endian\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_binary_reader_a34820a214a5b98e09beb12e8a465b0e3}{}\label{classmage_1_1_binary_reader_a34820a214a5b98e09beb12e8a465b0e3} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+data@{m\+\_\+data}}
+\index{m\+\_\+data@{m\+\_\+data}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+data}{m\_data}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ mage\+::\+Binary\+Reader\+::m\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_binary_reader_a929b6480629014c24263ec3042b1f364}{}\label{classmage_1_1_binary_reader_a929b6480629014c24263ec3042b1f364} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+end@{m\+\_\+end}}
+\index{m\+\_\+end@{m\+\_\+end}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+end}{m\_end}}
+{\footnotesize\ttfamily const uint8\+\_\+t$\ast$ mage\+::\+Binary\+Reader\+::m\+\_\+end\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f}{}\label{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+fname@{m\+\_\+fname}}
+\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
+{\footnotesize\ttfamily wstring mage\+::\+Binary\+Reader\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_binary_reader_a086c8b8615dddb15a97acf657bb4d73b}{}\label{classmage_1_1_binary_reader_a086c8b8615dddb15a97acf657bb4d73b} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+pos@{m\+\_\+pos}}
+\index{m\+\_\+pos@{m\+\_\+pos}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+pos}{m\_pos}}
+{\footnotesize\ttfamily const uint8\+\_\+t$\ast$ mage\+::\+Binary\+Reader\+::m\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
+
