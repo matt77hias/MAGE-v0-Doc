@@ -1,7 +1,7 @@
 var classmage_1_1_line_reader =
 [
-    [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "~LineReader", "classmage_1_1_line_reader.html#aa058c338d8256d7f7b775bf4f7052508", null ],
+    [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ae4f871bebae110704b34c0bd88460639", null ],
     [ "GetCurrentLineNumber", "classmage_1_1_line_reader.html#ae7115d55bbb8a6e9b0764831624df33b", null ],
     [ "GetDelimiters", "classmage_1_1_line_reader.html#a7de405beff27d5cc55bb93e1b1e9727a", null ],

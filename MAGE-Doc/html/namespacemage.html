@@ -132,7 +132,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_font_reader.html">FontReader</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_file_resource.html">FileResource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_glyph.html">Glyph</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +208,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html">Renderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html">Resource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a></td></tr>
@@ -231,6 +229,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_sprite_font_descriptor.html">SpriteFontDescriptor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_sprite_font_output.html">SpriteFontOutput</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_font_reader.html">SpriteFontReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_sprite_transform.html">SpriteTransform</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,6 +342,16 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacemage.html#a06ff9ac76b1e0636cc8949c3f0d4ac46ade02358677bb38062999f4edc9d25055">SpriteEffects_FlipBoth</a> = SpriteEffects_FlipHorizontally | SpriteEffects_FlipVertically
  }</td></tr>
 <tr class="separator:a06ff9ac76b1e0636cc8949c3f0d4ac46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256fa5833eecc408923de7ffadb5e014"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014">SpriteSortMode</a> { <br />
+&#160;&#160;<a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada">SpriteSortMode_Deferred</a>, 
+<a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014a1860f7ba337b06db99a5aa4d1773c47e">SpriteSortMode_Immediate</a>, 
+<a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014acd196441d0dbb56cb50355105549e09d">SpriteSortMode_Texture</a>, 
+<a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014a1ed9f5cf1fd98919f7bf075b3d75baa6">SpriteSortMode_BackToFront</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014a12295f7eac8babb6d7e52b765715382f">SpriteSortMode_FrontToBack</a>
+<br />
+ }</td></tr>
+<tr class="separator:a256fa5833eecc408923de7ffadb5e014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2178ba2411db5912f41b2e7698c2037d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a2178ba2411db5912f41b2e7698c2037d">TokenResult</a> { <a class="el" href="namespacemage.html#a2178ba2411db5912f41b2e7698c2037daadeba2cdda999b6fefb8f7921d465be2">valid_token</a>, 
 <a class="el" href="namespacemage.html#a2178ba2411db5912f41b2e7698c2037da6eb617de598c0ac439b9001a864fe26b">no_token</a>, 
 <a class="el" href="namespacemage.html#a2178ba2411db5912f41b2e7698c2037dab66020fcbf2ef08e505b39104a5d941a">invalid_token</a>
@@ -512,8 +522,8 @@ Functions</h2></td></tr>
 <tr class="memitem:acb4aa2ee8f4bb362e8cce1fe22e0adbf"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
 <tr class="memitem:acb4aa2ee8f4bb362e8cce1fe22e0adbf"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#acb4aa2ee8f4bb362e8cce1fe22e0adbf">ImportOBJMeshFromFile</a> (const wstring &amp;fname, <a class="el" href="structmage_1_1_model_output.html">ModelOutput</a>&lt; VertexT &gt; &amp;model_output, const <a class="el" href="structmage_1_1_mesh_descriptor.html">MeshDescriptor</a>&lt; VertexT &gt; &amp;mesh_desc=<a class="el" href="structmage_1_1_mesh_descriptor.html">MeshDescriptor</a>&lt; VertexT &gt;())</td></tr>
 <tr class="separator:acb4aa2ee8f4bb362e8cce1fe22e0adbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4821032220f01411c7eaeb338977b8be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a4821032220f01411c7eaeb338977b8be">GetModelRenderingDevice</a> ()</td></tr>
-<tr class="separator:a4821032220f01411c7eaeb338977b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12a2f088914281ec43dd91078c98a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#af12a2f088914281ec43dd91078c98a97">GetModelRenderingDevice</a> ()</td></tr>
+<tr class="separator:af12a2f088914281ec43dd91078c98a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3f71027fd2cac8d444bae0335fb8fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#af3f71027fd2cac8d444bae0335fb8fb2">GetModelResourceFactory</a> ()</td></tr>
 <tr class="separator:af3f71027fd2cac8d444bae0335fb8fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc26f80d3cb6f3d457bb06942880d84"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
@@ -541,8 +551,22 @@ Functions</h2></td></tr>
 <tr class="separator:a782fb3970da2fbbc93627f7324c193aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d84163ab692956f5f4537a965238a09"><td class="memItemLeft" align="right" valign="top">DXGI_FORMAT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a9d84163ab692956f5f4537a965238a09">ConvertToSRGB</a> (DXGI_FORMAT format)</td></tr>
 <tr class="separator:a9d84163ab692956f5f4537a965238a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da0af7e115fa08173bf5f3e4039986d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a2da0af7e115fa08173bf5f3e4039986d">GetRenderingDevice</a> ()</td></tr>
-<tr class="separator:a2da0af7e115fa08173bf5f3e4039986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74f1b3d53951f4d3f6323a5490ac953"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aa74f1b3d53951f4d3f6323a5490ac953">CreateLinearSamplerState</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11SamplerState **sampler_state)</td></tr>
+<tr class="separator:aa74f1b3d53951f4d3f6323a5490ac953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8500c749a1f216d07be3e996ca63b17"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
+<tr class="memitem:aa8500c749a1f216d07be3e996ca63b17"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#aa8500c749a1f216d07be3e996ca63b17">CreateStaticVertexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11Buffer **buffer, const VertexT *vertices, size_t nb_vertices)</td></tr>
+<tr class="separator:aa8500c749a1f216d07be3e996ca63b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eece2ea3b3e3962a748105ffe82b29a"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
+<tr class="memitem:a6eece2ea3b3e3962a748105ffe82b29a"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#a6eece2ea3b3e3962a748105ffe82b29a">CreateDynamicVertexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11Buffer **buffer, const VertexT *vertices, size_t nb_vertices)</td></tr>
+<tr class="separator:a6eece2ea3b3e3962a748105ffe82b29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0e92d226276caabacbf11aceab060b"><td class="memTemplParams" colspan="2">template&lt;typename IndexT &gt; </td></tr>
+<tr class="memitem:a4e0e92d226276caabacbf11aceab060b"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#a4e0e92d226276caabacbf11aceab060b">CreateIndexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11Buffer **buffer, const IndexT *indices, size_t nb_indices)</td></tr>
+<tr class="separator:a4e0e92d226276caabacbf11aceab060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcb7f4d72102abcc6ab115aa6ca3695"><td class="memTemplParams" colspan="2">template&lt;typename BufferT &gt; </td></tr>
+<tr class="memitem:a1dcb7f4d72102abcc6ab115aa6ca3695"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#a1dcb7f4d72102abcc6ab115aa6ca3695">CreateConstantBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11Buffer **buffer)</td></tr>
+<tr class="separator:a1dcb7f4d72102abcc6ab115aa6ca3695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1483742feeec0594478127d4550b42f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ac1483742feeec0594478127d4550b42f">GetRenderingDevice</a> ()</td></tr>
+<tr class="separator:ac1483742feeec0594478127d4550b42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad773a6b6442b973421222b664229e86d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ad773a6b6442b973421222b664229e86d">GetResourceFactory</a> ()</td></tr>
 <tr class="separator:ad773a6b6442b973421222b664229e86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee2d46e5220246892bb34b7d1e97fbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a4ee2d46e5220246892bb34b7d1e97fbe">CreateVariableScript</a> (const wstring &amp;fname, bool import)</td></tr>
@@ -559,10 +583,28 @@ Functions</h2></td></tr>
 <tr class="separator:ab0bd21012fa29244f0f9b3201bebc2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63dbc237d243bcad8b6f2c0a9bb9163"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#af63dbc237d243bcad8b6f2c0a9bb9163">CompileShaderFromFile</a> (const wstring &amp;fname, const string &amp;entry_point, const string &amp;shader_target, ID3DBlob **output_blob)</td></tr>
 <tr class="separator:af63dbc237d243bcad8b6f2c0a9bb9163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca43698555e39b30497fd85517f56de"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#adca43698555e39b30497fd85517f56de">ImportFontFromFile</a> (const wstring &amp;fname, const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, <a class="el" href="structmage_1_1_sprite_font_output.html">SpriteFontOutput</a> &amp;output, const <a class="el" href="structmage_1_1_sprite_font_descriptor.html">SpriteFontDescriptor</a> &amp;desc)</td></tr>
-<tr class="separator:adca43698555e39b30497fd85517f56de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd650379bf745bc330ae7729b5e2998"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a9cd650379bf745bc330ae7729b5e2998">ImportSpriteFontFromFile</a> (const wstring &amp;fname, const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, <a class="el" href="structmage_1_1_sprite_font_output.html">SpriteFontOutput</a> &amp;output, const <a class="el" href="structmage_1_1_sprite_font_descriptor.html">SpriteFontDescriptor</a> &amp;desc)</td></tr>
-<tr class="separator:a9cd650379bf745bc330ae7729b5e2998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed1edb5e3a2ab2a2cd13ea06c72afc0"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#afed1edb5e3a2ab2a2cd13ea06c72afc0">MinVerticesPerSprite</a> ()</td></tr>
+<tr class="separator:afed1edb5e3a2ab2a2cd13ea06c72afc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7053197804193820c19712e1f35201f"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ab7053197804193820c19712e1f35201f">MaxVerticesPerSprite</a> ()</td></tr>
+<tr class="separator:ab7053197804193820c19712e1f35201f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf923eb07c1afb9e517fd5955aada32"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7bf923eb07c1afb9e517fd5955aada32">MinIndicesPerSprite</a> ()</td></tr>
+<tr class="separator:a7bf923eb07c1afb9e517fd5955aada32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0aa71a65f120f26014b08cff9ef992b"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aa0aa71a65f120f26014b08cff9ef992b">MaxIndicesPerSprite</a> ()</td></tr>
+<tr class="separator:aa0aa71a65f120f26014b08cff9ef992b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa2cde82bebcbed04b2e5251e463f12"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a3fa2cde82bebcbed04b2e5251e463f12">ImportSpriteFontFromFile</a> (const wstring &amp;fname, <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, <a class="el" href="structmage_1_1_sprite_font_output.html">SpriteFontOutput</a> &amp;output, const <a class="el" href="structmage_1_1_sprite_font_descriptor.html">SpriteFontDescriptor</a> &amp;desc)</td></tr>
+<tr class="separator:a3fa2cde82bebcbed04b2e5251e463f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d37559381f62998ab660694c0e45d68"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a2d37559381f62998ab660694c0e45d68">GetViewportTransform</a> (ID3D11DeviceContext *device_context, DXGI_MODE_ROTATION rotation_mode)</td></tr>
+<tr class="separator:a2d37559381f62998ab660694c0e45d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ec7b3cc09d526542d3c5ea7e17595a"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a07ec7b3cc09d526542d3c5ea7e17595a">GetViewportTransform</a> (ID3D11DeviceContext *device_context, DXGI_MODE_ROTATION rotation_mode, D3D11_VIEWPORT **viewport)</td></tr>
+<tr class="separator:a07ec7b3cc09d526542d3c5ea7e17595a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0191746ac9322d40db5863b59624719a"><td class="memItemLeft" align="right" valign="top">XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0191746ac9322d40db5863b59624719a">GetViewportTransform</a> (const D3D11_VIEWPORT &amp;viewport, DXGI_MODE_ROTATION rotation_mode)</td></tr>
+<tr class="separator:a0191746ac9322d40db5863b59624719a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34342faaa7525d7180807df03687aa86"><td class="memItemLeft" align="right" valign="top">XMVECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a34342faaa7525d7180807df03687aa86">XMVectorLeftTopRightBottom</a> (const RECT &amp;rect)</td></tr>
+<tr class="separator:a34342faaa7525d7180807df03687aa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda051097e5b76fb65983141822cb170"><td class="memItemLeft" align="right" valign="top">XMVECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#abda051097e5b76fb65983141822cb170">XMVectorLeftTopWidthHeight</a> (const RECT &amp;rect)</td></tr>
+<tr class="separator:abda051097e5b76fb65983141822cb170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea37125a432c1c2fb7e87956868329a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a2ea37125a432c1c2fb7e87956868329a">ImportFontFromFile</a> (const wstring &amp;fname, <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, <a class="el" href="structmage_1_1_sprite_font_output.html">SpriteFontOutput</a> &amp;output, const <a class="el" href="structmage_1_1_sprite_font_descriptor.html">SpriteFontDescriptor</a> &amp;desc)</td></tr>
+<tr class="separator:a2ea37125a432c1c2fb7e87956868329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a451f2cac5de5cebbe8bc004b3f29857b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a451f2cac5de5cebbe8bc004b3f29857b">str_escape_first</a> (const char *str, char c)</td></tr>
 <tr class="separator:a451f2cac5de5cebbe8bc004b3f29857b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7fa3e9439ddbe1f31fe888a2a70e3d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7a7fa3e9439ddbe1f31fe888a2a70e3d">str_escape_first</a> (char *str, char c)</td></tr>
@@ -742,48 +784,48 @@ Functions</h2></td></tr>
 <tr class="separator:a35ccdb42bbc027d3678b849fb962f3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20162a68be6828c38072a3afb0711c1"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ac20162a68be6828c38072a3afb0711c1">FillInitData</a> (_In_ size_t width, _In_ size_t height, _In_ size_t depth, _In_ size_t mip_count, _In_ size_t array_size, _In_ DXGI_FORMAT format, _In_ size_t maxsize, _In_ size_t bit_size, _In_reads_bytes_(bit_size) const uint8_t *bit_data, _Out_ size_t &amp;twidth, _Out_ size_t &amp;theight, _Out_ size_t &amp;tdepth, _Out_ size_t &amp;skip_mip, _Out_writes_(mip_count *array_size) D3D11_SUBRESOURCE_DATA *init_data)</td></tr>
 <tr class="separator:ac20162a68be6828c38072a3afb0711c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26750de95b14af512868d2ff37df6238"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a26750de95b14af512868d2ff37df6238">CreateD3DResources</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_ uint32_t res_dim, _In_ size_t width, _In_ size_t height, _In_ size_t depth, _In_ size_t mip_count, _In_ size_t array_size, _In_ DXGI_FORMAT format, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _In_ bool is_cube_map, _In_reads_opt_(mip_count *array_size) D3D11_SUBRESOURCE_DATA *init_data, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view)</td></tr>
-<tr class="separator:a26750de95b14af512868d2ff37df6238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573e584f2ea3d41fc7ff54347efd2ec6"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a573e584f2ea3d41fc7ff54347efd2ec6">CreateTextureFromDDS</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_ const <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r.html">DDS_HEADER</a> *header, _In_reads_bytes_(bit_size) const uint8_t *bit_data, _In_ size_t bit_size, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view)</td></tr>
-<tr class="separator:a573e584f2ea3d41fc7ff54347efd2ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47717f8390dbceacee1fbbd98ccf20ec"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a47717f8390dbceacee1fbbd98ccf20ec">CreateD3DResources</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_ uint32_t res_dim, _In_ size_t width, _In_ size_t height, _In_ size_t depth, _In_ size_t mip_count, _In_ size_t array_size, _In_ DXGI_FORMAT format, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _In_ bool is_cube_map, _In_reads_opt_(mip_count *array_size) D3D11_SUBRESOURCE_DATA *init_data, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view)</td></tr>
+<tr class="separator:a47717f8390dbceacee1fbbd98ccf20ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84aaf5ce730cb63cb50fac23aeb3d4a4"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a84aaf5ce730cb63cb50fac23aeb3d4a4">CreateTextureFromDDS</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_ const <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r.html">DDS_HEADER</a> *header, _In_reads_bytes_(bit_size) const uint8_t *bit_data, _In_ size_t bit_size, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view)</td></tr>
+<tr class="separator:a84aaf5ce730cb63cb50fac23aeb3d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc0891e1660f8457696cb30f4ee518a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#afcc0891e1660f8457696cb30f4ee518a">GetAlphaMode</a> (_In_ const <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r.html">DDS_HEADER</a> *header)</td></tr>
 <tr class="separator:afcc0891e1660f8457696cb30f4ee518a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05ac298d3b81cff5162e2decd98897ac"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a05ac298d3b81cff5162e2decd98897ac">CreateDDSTextureFromMemory</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const uint8_t *dds_data, size_t dds_dataSize, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a05ac298d3b81cff5162e2decd98897ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d1da6bdd65d045b6b1a3dc607266b6"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a25d1da6bdd65d045b6b1a3dc607266b6">CreateDDSTextureFromMemory</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, ID3D11DeviceContext *d3dContext, const uint8_t *dds_data, size_t dds_dataSize, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a25d1da6bdd65d045b6b1a3dc607266b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e6f3894f22685f5ebc77e3a1f43afe"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a04e6f3894f22685f5ebc77e3a1f43afe">CreateDDSTextureFromMemoryEx</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const uint8_t *dds_data, size_t dds_dataSize, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a04e6f3894f22685f5ebc77e3a1f43afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082474494b3893f97eab852756dc1f1d"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a082474494b3893f97eab852756dc1f1d">CreateDDSTextureFromMemoryEx</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, ID3D11DeviceContext *d3dContext, const uint8_t *dds_data, size_t dds_dataSize, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a082474494b3893f97eab852756dc1f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396c6ac4a89b6c4f240fac28069ac261"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a396c6ac4a89b6c4f240fac28069ac261">CreateDDSTextureFromFile</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a396c6ac4a89b6c4f240fac28069ac261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace6a69a8b1dfd38094ba0f15fca0281"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aace6a69a8b1dfd38094ba0f15fca0281">CreateDDSTextureFromFile</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, ID3D11DeviceContext *d3dContext, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:aace6a69a8b1dfd38094ba0f15fca0281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e523f608bf4226d95c723b352da485"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a27e523f608bf4226d95c723b352da485">CreateDDSTextureFromFileEx</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const wchar_t *file_name, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a27e523f608bf4226d95c723b352da485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9beed34edd0e666ded7d40e3edca2b24"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a9beed34edd0e666ded7d40e3edca2b24">CreateDDSTextureFromFileEx</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, ID3D11DeviceContext *d3dContext, const wchar_t *file_name, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
-<tr class="separator:a9beed34edd0e666ded7d40e3edca2b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec642a68043c7086ade34800bf8efb0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a8ec642a68043c7086ade34800bf8efb0">CreateDDSTextureFromMemory</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a8ec642a68043c7086ade34800bf8efb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b48b3ece668e4090a702dbb650f3b5a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a1b48b3ece668e4090a702dbb650f3b5a">CreateDDSTextureFromFile</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a1b48b3ece668e4090a702dbb650f3b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea850bfbc5ec047d7e89579338ff82b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a1ea850bfbc5ec047d7e89579338ff82b">CreateDDSTextureFromMemory</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a1ea850bfbc5ec047d7e89579338ff82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70df6cf5b59e74872a323a4ad5cbe6f0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a70df6cf5b59e74872a323a4ad5cbe6f0">CreateDDSTextureFromFile</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a70df6cf5b59e74872a323a4ad5cbe6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09bcadc2f77ed8a1553f387248a46d28"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a09bcadc2f77ed8a1553f387248a46d28">CreateDDSTextureFromMemoryEx</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a09bcadc2f77ed8a1553f387248a46d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf5155ed755a05d0b538d599fb62879c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aaf5155ed755a05d0b538d599fb62879c">CreateDDSTextureFromFileEx</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_z_ const wchar_t *szFileName, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:aaf5155ed755a05d0b538d599fb62879c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ae78fb9cc4843dd533f5412bae2bce"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a11ae78fb9cc4843dd533f5412bae2bce">CreateDDSTextureFromMemoryEx</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a11ae78fb9cc4843dd533f5412bae2bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fff9338d2b3cdc03e10c46c301197ce"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a6fff9338d2b3cdc03e10c46c301197ce">CreateDDSTextureFromFileEx</a> (_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_z_ const wchar_t *szFileName, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
-<tr class="separator:a6fff9338d2b3cdc03e10c46c301197ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2376afff5e5ebcfae1d9af4132bf343e"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a2376afff5e5ebcfae1d9af4132bf343e">CreateDDSTextureFromMemory</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const uint8_t *dds_data, size_t dds_dataSize, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:a2376afff5e5ebcfae1d9af4132bf343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafc0afa58614314add12184fb81740b"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#adafc0afa58614314add12184fb81740b">CreateDDSTextureFromMemory</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11DeviceContext *d3dContext, const uint8_t *dds_data, size_t dds_dataSize, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:adafc0afa58614314add12184fb81740b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace206f81b719a0a44e69aa712ebce381"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ace206f81b719a0a44e69aa712ebce381">CreateDDSTextureFromMemoryEx</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const uint8_t *dds_data, size_t dds_dataSize, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:ace206f81b719a0a44e69aa712ebce381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8418e49c8d4b5818c1ca7f36bb7a3b"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a4d8418e49c8d4b5818c1ca7f36bb7a3b">CreateDDSTextureFromMemoryEx</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11DeviceContext *d3dContext, const uint8_t *dds_data, size_t dds_dataSize, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:a4d8418e49c8d4b5818c1ca7f36bb7a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453361f8ce0316486ec3907547674224"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a453361f8ce0316486ec3907547674224">CreateDDSTextureFromFile</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:a453361f8ce0316486ec3907547674224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b30fe2a483b0d96578ab720715e80a"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a09b30fe2a483b0d96578ab720715e80a">CreateDDSTextureFromFile</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11DeviceContext *d3dContext, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:a09b30fe2a483b0d96578ab720715e80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754e2e797656f47f2cfc1065fcddb470"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a754e2e797656f47f2cfc1065fcddb470">CreateDDSTextureFromFileEx</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const wchar_t *file_name, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:a754e2e797656f47f2cfc1065fcddb470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5397e65fcbb656f47ac0179ba94db1b"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aa5397e65fcbb656f47ac0179ba94db1b">CreateDDSTextureFromFileEx</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11DeviceContext *d3dContext, const wchar_t *file_name, size_t maxsize, D3D11_USAGE usage, uint32_t bindFlags, uint32_t cpu_access_flags, uint32_t misc_flags, bool forceSRGB, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode)</td></tr>
+<tr class="separator:aa5397e65fcbb656f47ac0179ba94db1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3480e988e224d62f6dbbd180920a1fa6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a3480e988e224d62f6dbbd180920a1fa6">CreateDDSTextureFromMemory</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:a3480e988e224d62f6dbbd180920a1fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf88b358c9d52f8ff31917c5e04cd15"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#acbf88b358c9d52f8ff31917c5e04cd15">CreateDDSTextureFromFile</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:acbf88b358c9d52f8ff31917c5e04cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6946968ad9beaed0ce448d1bfcdf3052"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a6946968ad9beaed0ce448d1bfcdf3052">CreateDDSTextureFromMemory</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:a6946968ad9beaed0ce448d1bfcdf3052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3edb074eca31d4dc7143ec2b28d3a7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7e3edb074eca31d4dc7143ec2b28d3a7">CreateDDSTextureFromFile</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:a7e3edb074eca31d4dc7143ec2b28d3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722f410006184b6dbc8267a309432be4"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a722f410006184b6dbc8267a309432be4">CreateDDSTextureFromMemoryEx</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:a722f410006184b6dbc8267a309432be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af416c510d74455dca0d9608f079685a7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#af416c510d74455dca0d9608f079685a7">CreateDDSTextureFromFileEx</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_z_ const wchar_t *szFileName, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:af416c510d74455dca0d9608f079685a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f3edfa9ac87c7273ba0e5eab893e5a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ad9f3edfa9ac87c7273ba0e5eab893e5a">CreateDDSTextureFromMemoryEx</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_reads_bytes_(dds_dataSize) const uint8_t *dds_data, _In_ size_t dds_dataSize, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:ad9f3edfa9ac87c7273ba0e5eab893e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925c43c7549ca8093611581aeb4e39ae"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a925c43c7549ca8093611581aeb4e39ae">CreateDDSTextureFromFileEx</a> (_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, _In_opt_ ID3D11DeviceContext *d3dContext, _In_z_ const wchar_t *szFileName, _In_ size_t maxsize, _In_ D3D11_USAGE usage, _In_ uint32_t bindFlags, _In_ uint32_t cpu_access_flags, _In_ uint32_t misc_flags, _In_ bool forceSRGB, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _Out_opt_ <a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *alpha_mode=nullptr)</td></tr>
+<tr class="separator:a925c43c7549ca8093611581aeb4e39ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27913e621bde0fd01312183aafaaca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ac27913e621bde0fd01312183aafaaca0">CreateTexture</a> (const wstring &amp;fname)</td></tr>
 <tr class="separator:ac27913e621bde0fd01312183aafaaca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac163decb3b32f9ea26a25853be0f7d8f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ac163decb3b32f9ea26a25853be0f7d8f">ImportTextureFromFile</a> (const wstring &amp;fname, const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, ID3D11ShaderResourceView **texture_resource_view)</td></tr>
-<tr class="separator:ac163decb3b32f9ea26a25853be0f7d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2619bee8420f2aa99af09cb9f7567b8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ac2619bee8420f2aa99af09cb9f7567b8">ImportTextureFromFile</a> (const wstring &amp;fname, <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, ID3D11ShaderResourceView **texture_resource_view)</td></tr>
+<tr class="separator:ac2619bee8420f2aa99af09cb9f7567b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e4a1d3c21d6eb8657bfa0a9631d6ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a78e4a1d3c21d6eb8657bfa0a9631d6ee">ComboBoxAdd</a> (HWND dialog, int id, const void *data, const wchar_t *desc)</td></tr>
 <tr class="separator:a78e4a1d3c21d6eb8657bfa0a9631d6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa510d1e5e45102338fce66ae46b2b267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aa510d1e5e45102338fce66ae46b2b267">ComboBoxSelect</a> (HWND dialog, int id, int index)</td></tr>
@@ -813,6 +855,16 @@ Variables</h2></td></tr>
 <tr class="separator:add3b7e051df553262371e077d9d66fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a4e11b65061c618b85826ab6df480e0"><td class="memItemLeft" align="right" valign="top">const DXGI_FORMAT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a5a4e11b65061c618b85826ab6df480e0">g_pixel_formats</a> []</td></tr>
 <tr class="separator:a5a4e11b65061c618b85826ab6df480e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d189167b7098c519fdcefbe4ac058f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a64d189167b7098c519fdcefbe4ac058f">initial_queue_size</a> = 64</td></tr>
+<tr class="separator:a64d189167b7098c519fdcefbe4ac058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf83c1102c47ecde72f662c43f9722f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#aecf83c1102c47ecde72f662c43f9722f">min_sprites_per_batch</a> = 128</td></tr>
+<tr class="separator:aecf83c1102c47ecde72f662c43f9722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9000a9470d1e75475b182bc5c5cde3"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#adc9000a9470d1e75475b182bc5c5cde3">max_sprites_per_batch</a> = 2048</td></tr>
+<tr class="separator:adc9000a9470d1e75475b182bc5c5cde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48c52817a0e8892e21bd053cce611ed"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ad48c52817a0e8892e21bd053cce611ed">vertices_per_sprite</a> = 4</td></tr>
+<tr class="separator:ad48c52817a0e8892e21bd053cce611ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06594a8c61d05e5884b56efd264cce1e"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a06594a8c61d05e5884b56efd264cce1e">indices_per_sprite</a> = 6</td></tr>
+<tr class="separator:a06594a8c61d05e5884b56efd264cce1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f784e41b51fee843891c6b5e9be479"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a52f784e41b51fee843891c6b5e9be479">DDS_MAGIC</a> = 0x20534444</td></tr>
 <tr class="separator:a52f784e41b51fee843891c6b5e9be479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1051,6 +1103,27 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="a06ff9ac76b1e0636cc8949c3f0d4ac46a246bd11aa15d6ae96a49482a820a4fc7"></a>SpriteEffects_FlipHorizontally&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a06ff9ac76b1e0636cc8949c3f0d4ac46aa6467790cb90100bbe9e5691f11359b3"></a>SpriteEffects_FlipVertically&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a06ff9ac76b1e0636cc8949c3f0d4ac46ade02358677bb38062999f4edc9d25055"></a>SpriteEffects_FlipBoth&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a256fa5833eecc408923de7ffadb5e014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256fa5833eecc408923de7ffadb5e014">&sect;&nbsp;</a></span>SpriteSortMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacemage.html#a256fa5833eecc408923de7ffadb5e014">mage::SpriteSortMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada"></a>SpriteSortMode_Deferred&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a256fa5833eecc408923de7ffadb5e014a1860f7ba337b06db99a5aa4d1773c47e"></a>SpriteSortMode_Immediate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a256fa5833eecc408923de7ffadb5e014acd196441d0dbb56cb50355105549e09d"></a>SpriteSortMode_Texture&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a256fa5833eecc408923de7ffadb5e014a1ed9f5cf1fd98919f7bf075b3d75baa6"></a>SpriteSortMode_BackToFront&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a256fa5833eecc408923de7ffadb5e014a12295f7eac8babb6d7e52b765715382f"></a>SpriteSortMode_FrontToBack&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2353,8 +2426,38 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a26750de95b14af512868d2ff37df6238"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26750de95b14af512868d2ff37df6238">&sect;&nbsp;</a></span>CreateD3DResources()</h2>
+<a id="a1dcb7f4d72102abcc6ab115aa6ca3695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dcb7f4d72102abcc6ab115aa6ca3695">&sect;&nbsp;</a></span>CreateConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BufferT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::CreateConstantBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer **&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47717f8390dbceacee1fbbd98ccf20ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47717f8390dbceacee1fbbd98ccf20ec">&sect;&nbsp;</a></span>CreateD3DResources()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2365,7 +2468,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">static HRESULT mage::CreateD3DResources </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2479,8 +2582,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a1b48b3ece668e4090a702dbb650f3b5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b48b3ece668e4090a702dbb650f3b5a">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[1/4]</span></h2>
+<a id="acbf88b358c9d52f8ff31917c5e04cd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf88b358c9d52f8ff31917c5e04cd15">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2488,7 +2591,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromFile </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2531,8 +2634,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a70df6cf5b59e74872a323a4ad5cbe6f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70df6cf5b59e74872a323a4ad5cbe6f0">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[2/4]</span></h2>
+<a id="a7e3edb074eca31d4dc7143ec2b28d3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3edb074eca31d4dc7143ec2b28d3a7">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2540,7 +2643,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromFile </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2589,8 +2692,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a396c6ac4a89b6c4f240fac28069ac261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a396c6ac4a89b6c4f240fac28069ac261">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[3/4]</span></h2>
+<a id="a453361f8ce0316486ec3907547674224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453361f8ce0316486ec3907547674224">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2598,7 +2701,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2641,8 +2744,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="aace6a69a8b1dfd38094ba0f15fca0281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace6a69a8b1dfd38094ba0f15fca0281">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[4/4]</span></h2>
+<a id="a09b30fe2a483b0d96578ab720715e80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b30fe2a483b0d96578ab720715e80a">&sect;&nbsp;</a></span>CreateDDSTextureFromFile() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2650,7 +2753,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2699,8 +2802,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="aaf5155ed755a05d0b538d599fb62879c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf5155ed755a05d0b538d599fb62879c">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[1/4]</span></h2>
+<a id="af416c510d74455dca0d9608f079685a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af416c510d74455dca0d9608f079685a7">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2708,7 +2811,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromFileEx </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2781,8 +2884,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a6fff9338d2b3cdc03e10c46c301197ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fff9338d2b3cdc03e10c46c301197ce">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[2/4]</span></h2>
+<a id="a925c43c7549ca8093611581aeb4e39ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925c43c7549ca8093611581aeb4e39ae">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2790,7 +2893,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromFileEx </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2869,8 +2972,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a27e523f608bf4226d95c723b352da485"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27e523f608bf4226d95c723b352da485">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[3/4]</span></h2>
+<a id="a754e2e797656f47f2cfc1065fcddb470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754e2e797656f47f2cfc1065fcddb470">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2878,7 +2981,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromFileEx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -2951,8 +3054,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a9beed34edd0e666ded7d40e3edca2b24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9beed34edd0e666ded7d40e3edca2b24">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[4/4]</span></h2>
+<a id="aa5397e65fcbb656f47ac0179ba94db1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5397e65fcbb656f47ac0179ba94db1b">&sect;&nbsp;</a></span>CreateDDSTextureFromFileEx() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2960,7 +3063,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromFileEx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3039,8 +3142,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a8ec642a68043c7086ade34800bf8efb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ec642a68043c7086ade34800bf8efb0">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[1/4]</span></h2>
+<a id="a3480e988e224d62f6dbbd180920a1fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3480e988e224d62f6dbbd180920a1fa6">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3048,7 +3151,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromMemory </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3097,8 +3200,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a1ea850bfbc5ec047d7e89579338ff82b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ea850bfbc5ec047d7e89579338ff82b">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[2/4]</span></h2>
+<a id="a6946968ad9beaed0ce448d1bfcdf3052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6946968ad9beaed0ce448d1bfcdf3052">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3106,7 +3209,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromMemory </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3161,8 +3264,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a05ac298d3b81cff5162e2decd98897ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ac298d3b81cff5162e2decd98897ac">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[3/4]</span></h2>
+<a id="a2376afff5e5ebcfae1d9af4132bf343e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2376afff5e5ebcfae1d9af4132bf343e">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3170,7 +3273,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromMemory </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3219,8 +3322,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a25d1da6bdd65d045b6b1a3dc607266b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25d1da6bdd65d045b6b1a3dc607266b6">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[4/4]</span></h2>
+<a id="adafc0afa58614314add12184fb81740b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafc0afa58614314add12184fb81740b">&sect;&nbsp;</a></span>CreateDDSTextureFromMemory() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3228,7 +3331,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromMemory </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3283,8 +3386,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a09bcadc2f77ed8a1553f387248a46d28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09bcadc2f77ed8a1553f387248a46d28">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[1/4]</span></h2>
+<a id="a722f410006184b6dbc8267a309432be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722f410006184b6dbc8267a309432be4">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3292,7 +3395,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromMemoryEx </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3371,8 +3474,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a11ae78fb9cc4843dd533f5412bae2bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11ae78fb9cc4843dd533f5412bae2bce">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[2/4]</span></h2>
+<a id="ad9f3edfa9ac87c7273ba0e5eab893e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f3edfa9ac87c7273ba0e5eab893e5a">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3380,7 +3483,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">HRESULT mage::CreateDDSTextureFromMemoryEx </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3465,8 +3568,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a04e6f3894f22685f5ebc77e3a1f43afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e6f3894f22685f5ebc77e3a1f43afe">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[3/4]</span></h2>
+<a id="ace206f81b719a0a44e69aa712ebce381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace206f81b719a0a44e69aa712ebce381">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3474,7 +3577,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromMemoryEx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3553,8 +3656,8 @@ A pointer to the data associated with the selected item in the combo box. </dd><
 
 </div>
 </div>
-<a id="a082474494b3893f97eab852756dc1f1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a082474494b3893f97eab852756dc1f1d">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[4/4]</span></h2>
+<a id="a4d8418e49c8d4b5818c1ca7f36bb7a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8418e49c8d4b5818c1ca7f36bb7a3b">&sect;&nbsp;</a></span>CreateDDSTextureFromMemoryEx() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3562,7 +3665,7 @@ A pointer to the data associated with the selected item in the combo box. </dd><
         <tr>
           <td class="memname">_Use_decl_annotations_ HRESULT mage::CreateDDSTextureFromMemoryEx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -3636,6 +3739,90 @@ A pointer to the data associated with the selected item in the combo box. </dd><
           <td></td>
           <td class="paramtype"><a class="el" href="namespacemage.html#a0c586a2bad862f4858900ca121ca80c2">DDS_ALPHA_MODE</a> *&#160;</td>
           <td class="paramname"><em>alpha_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6eece2ea3b3e3962a748105ffe82b29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eece2ea3b3e3962a748105ffe82b29a">&sect;&nbsp;</a></span>CreateDynamicVertexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VertexT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::CreateDynamicVertexBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VertexT *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nb_vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e0e92d226276caabacbf11aceab060b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0e92d226276caabacbf11aceab060b">&sect;&nbsp;</a></span>CreateIndexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IndexT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::CreateIndexBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IndexT *&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nb_indices</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3658,6 +3845,34 @@ A pointer to the data associated with the selected item in the combo box. </dd><
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa74f1b3d53951f4d3f6323a5490ac953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74f1b3d53951f4d3f6323a5490ac953">&sect;&nbsp;</a></span>CreateLinearSamplerState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::CreateLinearSamplerState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11SamplerState **&#160;</td>
+          <td class="paramname"><em>sampler_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3712,6 +3927,48 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
+<a id="aa8500c749a1f216d07be3e996ca63b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8500c749a1f216d07be3e996ca63b17">&sect;&nbsp;</a></span>CreateStaticVertexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VertexT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::CreateStaticVertexBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VertexT *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nb_vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac27913e621bde0fd01312183aafaaca0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac27913e621bde0fd01312183aafaaca0">&sect;&nbsp;</a></span>CreateTexture()</h2>
 
@@ -3730,8 +3987,8 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="a573e584f2ea3d41fc7ff54347efd2ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a573e584f2ea3d41fc7ff54347efd2ec6">&sect;&nbsp;</a></span>CreateTextureFromDDS()</h2>
+<a id="a84aaf5ce730cb63cb50fac23aeb3d4a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84aaf5ce730cb63cb50fac23aeb3d4a4">&sect;&nbsp;</a></span>CreateTextureFromDDS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3742,7 +3999,7 @@ template&lt;typename VertexT &gt; </div>
         <tr>
           <td class="memname">static HRESULT mage::CreateTextureFromDDS </td>
           <td>(</td>
-          <td class="paramtype">_In_ const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype">_In_ <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -4448,14 +4705,14 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="a4821032220f01411c7eaeb338977b8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4821032220f01411c7eaeb338977b8be">&sect;&nbsp;</a></span>GetModelRenderingDevice()</h2>
+<a id="af12a2f088914281ec43dd91078c98a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12a2f088914281ec43dd91078c98a97">&sect;&nbsp;</a></span>GetModelRenderingDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> mage::GetModelRenderingDevice </td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; mage::GetModelRenderingDevice </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -4534,14 +4791,14 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="a2da0af7e115fa08173bf5f3e4039986d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2da0af7e115fa08173bf5f3e4039986d">&sect;&nbsp;</a></span>GetRenderingDevice()</h2>
+<a id="ac1483742feeec0594478127d4550b42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1483742feeec0594478127d4550b42f">&sect;&nbsp;</a></span>GetRenderingDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> mage::GetRenderingDevice </td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; mage::GetRenderingDevice </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -4624,6 +4881,96 @@ template&lt;typename VertexT &gt; </div>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d37559381f62998ab660694c0e45d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d37559381f62998ab660694c0e45d68">&sect;&nbsp;</a></span>GetViewportTransform() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX mage::GetViewportTransform </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext *&#160;</td>
+          <td class="paramname"><em>device_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DXGI_MODE_ROTATION&#160;</td>
+          <td class="paramname"><em>rotation_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07ec7b3cc09d526542d3c5ea7e17595a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ec7b3cc09d526542d3c5ea7e17595a">&sect;&nbsp;</a></span>GetViewportTransform() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX mage::GetViewportTransform </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext *&#160;</td>
+          <td class="paramname"><em>device_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DXGI_MODE_ROTATION&#160;</td>
+          <td class="paramname"><em>rotation_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D3D11_VIEWPORT **&#160;</td>
+          <td class="paramname"><em>viewport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0191746ac9322d40db5863b59624719a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0191746ac9322d40db5863b59624719a">&sect;&nbsp;</a></span>GetViewportTransform() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMMATRIX mage::GetViewportTransform </td>
+          <td>(</td>
+          <td class="paramtype">const D3D11_VIEWPORT &amp;&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DXGI_MODE_ROTATION&#160;</td>
+          <td class="paramname"><em>rotation_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -5094,8 +5441,8 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="adca43698555e39b30497fd85517f56de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca43698555e39b30497fd85517f56de">&sect;&nbsp;</a></span>ImportFontFromFile()</h2>
+<a id="a2ea37125a432c1c2fb7e87956868329a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea37125a432c1c2fb7e87956868329a">&sect;&nbsp;</a></span>ImportFontFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5109,7 +5456,7 @@ template&lt;typename VertexT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -5260,8 +5607,8 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="a9cd650379bf745bc330ae7729b5e2998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cd650379bf745bc330ae7729b5e2998">&sect;&nbsp;</a></span>ImportSpriteFontFromFile()</h2>
+<a id="a3fa2cde82bebcbed04b2e5251e463f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa2cde82bebcbed04b2e5251e463f12">&sect;&nbsp;</a></span>ImportSpriteFontFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5275,7 +5622,7 @@ template&lt;typename VertexT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -5300,8 +5647,8 @@ template&lt;typename VertexT &gt; </div>
 
 </div>
 </div>
-<a id="ac163decb3b32f9ea26a25853be0f7d8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac163decb3b32f9ea26a25853be0f7d8f">&sect;&nbsp;</a></span>ImportTextureFromFile()</h2>
+<a id="ac2619bee8420f2aa99af09cb9f7567b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2619bee8420f2aa99af09cb9f7567b8">&sect;&nbsp;</a></span>ImportTextureFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5315,7 +5662,7 @@ template&lt;typename VertexT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -5335,7 +5682,7 @@ template&lt;typename VertexT &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A reference to the rendering device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the rendering device. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">texture_resource_view</td><td>A pointer to a pointer to a shader resource view. </td></tr>
   </table>
   </dd>
@@ -5716,6 +6063,106 @@ template&lt;typename VertexT &gt; </div>
           <td>(</td>
           <td class="paramtype">_In_ DXGI_FORMAT&#160;</td>
           <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0aa71a65f120f26014b08cff9ef992b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0aa71a65f120f26014b08cff9ef992b">&sect;&nbsp;</a></span>MaxIndicesPerSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t mage::MaxIndicesPerSprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7053197804193820c19712e1f35201f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7053197804193820c19712e1f35201f">&sect;&nbsp;</a></span>MaxVerticesPerSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t mage::MaxVerticesPerSprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bf923eb07c1afb9e517fd5955aada32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf923eb07c1afb9e517fd5955aada32">&sect;&nbsp;</a></span>MinIndicesPerSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t mage::MinIndicesPerSprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afed1edb5e3a2ab2a2cd13ea06c72afc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed1edb5e3a2ab2a2cd13ea06c72afc0">&sect;&nbsp;</a></span>MinVerticesPerSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t mage::MinVerticesPerSprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -8637,6 +9084,42 @@ A pointer to the first occurrence of <em>c</em> in <em>str</em>. </dd></dl>
 
 </div>
 </div>
+<a id="a34342faaa7525d7180807df03687aa86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34342faaa7525d7180807df03687aa86">&sect;&nbsp;</a></span>XMVectorLeftTopRightBottom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMVECTOR mage::XMVectorLeftTopRightBottom </td>
+          <td>(</td>
+          <td class="paramtype">const RECT &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abda051097e5b76fb65983141822cb170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda051097e5b76fb65983141822cb170">&sect;&nbsp;</a></span>XMVectorLeftTopWidthHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XMVECTOR mage::XMVectorLeftTopWidthHeight </td>
+          <td>(</td>
+          <td class="paramtype">const RECT &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a52f784e41b51fee843891c6b5e9be479"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52f784e41b51fee843891c6b5e9be479">&sect;&nbsp;</a></span>DDS_MAGIC</h2>
@@ -8724,6 +9207,116 @@ A pointer to the first occurrence of <em>c</em> in <em>str</em>. </dd></dl>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">        DXGI_FORMAT_B5G5R5A1_UNORM,    </div><div class="line">        DXGI_FORMAT_B5G6R5_UNORM,      </div><div class="line">        DXGI_FORMAT_B8G8R8X8_UNORM,    </div><div class="line">        DXGI_FORMAT_B8G8R8A8_UNORM,    </div><div class="line">        DXGI_FORMAT_R10G10B10A2_UNORM, </div><div class="line">    }</div></div><!-- fragment --><p>The allowed pixel formats. </p>
+
+</div>
+</div>
+<a id="a06594a8c61d05e5884b56efd264cce1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06594a8c61d05e5884b56efd264cce1e">&sect;&nbsp;</a></span>indices_per_sprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t mage::indices_per_sprite = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64d189167b7098c519fdcefbe4ac058f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d189167b7098c519fdcefbe4ac058f">&sect;&nbsp;</a></span>initial_queue_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t mage::initial_queue_size = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc9000a9470d1e75475b182bc5c5cde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9000a9470d1e75475b182bc5c5cde3">&sect;&nbsp;</a></span>max_sprites_per_batch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t mage::max_sprites_per_batch = 2048</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecf83c1102c47ecde72f662c43f9722f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf83c1102c47ecde72f662c43f9722f">&sect;&nbsp;</a></span>min_sprites_per_batch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t mage::min_sprites_per_batch = 128</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad48c52817a0e8892e21bd053cce611ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48c52817a0e8892e21bd053cce611ed">&sect;&nbsp;</a></span>vertices_per_sprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t mage::vertices_per_sprite = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

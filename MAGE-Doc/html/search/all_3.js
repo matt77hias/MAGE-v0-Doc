@@ -23,6 +23,7 @@ var searchData=
   ['direction3',['Direction3',['../structmage_1_1_direction3.html',1,'mage']]],
   ['done',['Done',['../classmage_1_1_progress_reporter.html#a11d758647ac2082bc296ab53a7454eaa',1,'mage::ProgressReporter']]],
   ['downgradetoread',['DowngradeToRead',['../structmage_1_1_read_write_mutex_lock.html#ad3292e579d09107c7361989657b9bade',1,'mage::ReadWriteMutexLock']]],
-  ['drawstring',['DrawString',['../classmage_1_1_sprite_font.html#a9cd904a56fb53ab61a2dfb3e648e2cd3',1,'mage::SpriteFont']]],
+  ['draw',['Draw',['../classmage_1_1_sprite_batch.html#aa877dd94078b932b94c9f27e741dfa41',1,'mage::SpriteBatch']]],
+  ['drawstring',['DrawString',['../classmage_1_1_sprite_font.html#af741f795f812e38ba7968c2492fbc842',1,'mage::SpriteFont']]],
   ['dxgi_5fformat',['dxgi_format',['../structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#a06df28f4738161963f81349e9bc8b09d',1,'mage::DDS_HEADER_DXT10']]]
 ];

@@ -1,6 +1,6 @@
 var classmage_1_1_lambertian_pixel_shader =
 [
-    [ "LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html#ad473bfad8be0f47f6d8a9993ef4754de", null ],
+    [ "LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html#a311a8f1c511a0066a4fe6d9c29b97d1c", null ],
     [ "~LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html#aedea7342ae95c6532a086fb28978b5b0", null ],
     [ "LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html#a0e7a36645bb7e1fa9bd481575886ddad", null ],
     [ "operator=", "classmage_1_1_lambertian_pixel_shader.html#a03ae64ef13e62b33c6b6ac306207a045", null ],

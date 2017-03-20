@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"structmage_1_1_vertex_position_normal_color.html#aff39199b81977d3479976c83f7f51a4f":[1,0,0,83,4],
+"structmage_1_1_vertex_position_normal_color_texture.html":[1,0,0,84],
+"structmage_1_1_vertex_position_normal_color_texture.html#a2053f5942c404f3d42f6e5a129c3e694":[1,0,0,84,4],
+"structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed":[1,0,0,84,10],
+"structmage_1_1_vertex_position_normal_color_texture.html#a3ecf095fd4f4f70aa8f54f1d0b9d72fb":[1,0,0,84,2],
+"structmage_1_1_vertex_position_normal_color_texture.html#a6a4a2cf057a12027ad47df9651021bdb":[1,0,0,84,8],
 "structmage_1_1_vertex_position_normal_color_texture.html#a6b28cefeab374c3f38c44b49eea2ec78":[1,0,0,84,5],
 "structmage_1_1_vertex_position_normal_color_texture.html#a7304bf677ad4f16aea974e63f4324eba":[1,0,0,84,7],
 "structmage_1_1_vertex_position_normal_color_texture.html#ac7808865ca6672b7d0f4f8457077bd16":[1,0,0,84,9],

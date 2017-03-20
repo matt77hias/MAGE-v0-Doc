@@ -7,5 +7,6 @@ var searchData=
   ['direction3',['Direction3',['../structmage_1_1_direction3.html#a29603b6349c5a313d5bd93e0b0235ff1',1,'mage::Direction3::Direction3()'],['../structmage_1_1_direction3.html#a1b2cd4ce14856da23dfa9c5facc90da2',1,'mage::Direction3::Direction3(float x, float y, float z)'],['../structmage_1_1_direction3.html#a8f6264f5a7a7590e67f4efa8f0687cdd',1,'mage::Direction3::Direction3(const Direction3 &amp;direction)'],['../structmage_1_1_direction3.html#ad5680af7ed9856d3c5a2454bfec21b3b',1,'mage::Direction3::Direction3(const Point3 &amp;point)'],['../structmage_1_1_direction3.html#a18282959c79c93d25488d72f944495e3',1,'mage::Direction3::Direction3(const Normal3 &amp;normal)'],['../structmage_1_1_direction3.html#afb66ddfb4489dd7c0bfc25c29b97df9c',1,'mage::Direction3::Direction3(const XMFLOAT3 &amp;vector)']]],
   ['done',['Done',['../classmage_1_1_progress_reporter.html#a11d758647ac2082bc296ab53a7454eaa',1,'mage::ProgressReporter']]],
   ['downgradetoread',['DowngradeToRead',['../structmage_1_1_read_write_mutex_lock.html#ad3292e579d09107c7361989657b9bade',1,'mage::ReadWriteMutexLock']]],
-  ['drawstring',['DrawString',['../classmage_1_1_sprite_font.html#a9cd904a56fb53ab61a2dfb3e648e2cd3',1,'mage::SpriteFont']]]
+  ['draw',['Draw',['../classmage_1_1_sprite_batch.html#aa877dd94078b932b94c9f27e741dfa41',1,'mage::SpriteBatch']]],
+  ['drawstring',['DrawString',['../classmage_1_1_sprite_font.html#af741f795f812e38ba7968c2492fbc842',1,'mage::SpriteFont']]]
 ];

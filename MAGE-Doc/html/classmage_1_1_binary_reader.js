@@ -1,7 +1,7 @@
 var classmage_1_1_binary_reader =
 [
-    [ "BinaryReader", "classmage_1_1_binary_reader.html#aab82579cef4f2f022273cf1adfcc8497", null ],
     [ "~BinaryReader", "classmage_1_1_binary_reader.html#aa300382cfa1585bb2f76c4e764bb5617", null ],
+    [ "BinaryReader", "classmage_1_1_binary_reader.html#aab82579cef4f2f022273cf1adfcc8497", null ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html#a8c1ff948f1d056439f3d8cc37d7f507c", null ],
     [ "GetFilename", "classmage_1_1_binary_reader.html#a10a0ec56fe7f8e63964ffca2afe019a3", null ],
     [ "HasCharsLeft", "classmage_1_1_binary_reader.html#a35b10713dca7a416b73b28d5f6aaf600", null ],

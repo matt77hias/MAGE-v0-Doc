@@ -4,7 +4,7 @@ var classmage_1_1_renderer =
     [ "~Renderer", "classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced", null ],
     [ "Renderer", "classmage_1_1_renderer.html#acd6b509da2bd7e7d764b45b912fe5298", null ],
     [ "EndFrame", "classmage_1_1_renderer.html#a4932c51d0f6e56269712024d2d0322ef", null ],
-    [ "GetDevice", "classmage_1_1_renderer.html#a9465ff1640cb5333ca4e701977ae51ec", null ],
+    [ "GetDevice", "classmage_1_1_renderer.html#a1843c9f9f24174ea48da8ae28537292b", null ],
     [ "GetDeviceContext", "classmage_1_1_renderer.html#a764ee3d8f3dea6aceb05f42bce80b147", null ],
     [ "GetHandle", "classmage_1_1_renderer.html#a11d47495a47c58a0f67aae3110f9f519", null ],
     [ "GetHeight", "classmage_1_1_renderer.html#a40c90d8878416dd03b7fdef0b3de29a8", null ],

@@ -6,7 +6,7 @@ var hierarchy =
     ] ],
     [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", null ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
-      [ "mage::FontReader", "classmage_1_1_font_reader.html", null ]
+      [ "mage::SpriteFontReader", "classmage_1_1_sprite_font_reader.html", null ]
     ] ],
     [ "mage::BinaryReader", "classmage_1_1_binary_reader.html", null ],
     [ "mage::BS", "structmage_1_1_b_s.html", null ],
@@ -50,16 +50,17 @@ var hierarchy =
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ReadWriteMutex", "classmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
-    [ "mage::RenderingDevice", "classmage_1_1_rendering_device.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
-      [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
+      [ "mage::FileResource", "classmage_1_1_file_resource.html", [
+        [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
+        [ "mage::Texture", "classmage_1_1_texture.html", null ],
+        [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
+      ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
         [ "mage::EmptyPixelShader", "classmage_1_1_empty_pixel_shader.html", null ],
         [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ]
       ] ],
       [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ],
-      [ "mage::Texture", "classmage_1_1_texture.html", null ],
-      [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::EmptyVertexShader", "classmage_1_1_empty_vertex_shader.html", null ],
         [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ]

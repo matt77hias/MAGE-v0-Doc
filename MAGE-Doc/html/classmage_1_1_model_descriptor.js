@@ -1,6 +1,6 @@
 var classmage_1_1_model_descriptor =
 [
-    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#afbaa21bc79c40d3448c83a23c134ef2c", null ],
+    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#a954e69b6b83ed0f78f9c819c4604a98a", null ],
     [ "~ModelDescriptor", "classmage_1_1_model_descriptor.html#a3bc8ee3d1cb8d2675374727edce3d593", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af44185efc20e10ede762d29bc454c5f3", null ],
     [ "GetMesh", "classmage_1_1_model_descriptor.html#a325f0e58fda7734ace7a0e296e0d970d", null ],
