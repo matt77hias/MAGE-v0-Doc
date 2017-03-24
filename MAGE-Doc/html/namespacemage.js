@@ -1,6 +1,7 @@
 var namespacemage =
 [
     [ "AABB", "structmage_1_1_a_a_b_b.html", "structmage_1_1_a_a_b_b" ],
+    [ "AlignedData", "structmage_1_1_aligned_data.html", "structmage_1_1_aligned_data" ],
     [ "BehaviorScript", "classmage_1_1_behavior_script.html", "classmage_1_1_behavior_script" ],
     [ "BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", "classmage_1_1_big_endian_binary_reader" ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html", "classmage_1_1_binary_reader" ],
@@ -60,7 +61,7 @@ var namespacemage =
     [ "Renderer", "classmage_1_1_renderer.html", "classmage_1_1_renderer" ],
     [ "Resource", "classmage_1_1_resource.html", "classmage_1_1_resource" ],
     [ "ResourceFactory", "classmage_1_1_resource_factory.html", "classmage_1_1_resource_factory" ],
-    [ "ResourceManager", "classmage_1_1_resource_manager.html", "classmage_1_1_resource_manager" ],
+    [ "ResourcePool", "classmage_1_1_resource_pool.html", "classmage_1_1_resource_pool" ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html", "structmage_1_1_r_g_b_spectrum" ],
     [ "Scene", "classmage_1_1_scene.html", "classmage_1_1_scene" ],
     [ "Semaphore", "classmage_1_1_semaphore.html", "classmage_1_1_semaphore" ],

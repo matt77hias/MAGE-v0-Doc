@@ -1,0 +1,148 @@
+\hypertarget{classmage_1_1_resource_pool}{}\section{mage\+:\+:Resource\+Pool$<$ KeyT, ResourceT $>$ Class Template Reference}
+\label{classmage_1_1_resource_pool}\index{mage\+::\+Resource\+Pool$<$ Key\+T, Resource\+T $>$@{mage\+::\+Resource\+Pool$<$ Key\+T, Resource\+T $>$}}
+
+
+{\ttfamily \#include $<$resource\+\_\+pool.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_resource_pool_a590c1ebb30254714bedd7f821ff98241}{Resource\+Pool} ()
+\item 
+virtual \hyperlink{classmage_1_1_resource_pool_ae4fff3d951818d417f77965c2db265f6}{$\sim$\+Resource\+Pool} ()
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e}{Get\+Number\+Of\+Resources} () const
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_add76506394983fe84bc2cb95cfd5f7e2}{Get\+Resource} (KeyT key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_a2c1116cecf0a88953fa681f254de8680}{Get\+Derived\+Resource} (KeyT key, Constructor\+ArgsT \&\&... args)
+\item 
+void \hyperlink{classmage_1_1_resource_pool_acda87b2a5cc6ea3880f40df0ac6fb4d9}{Remove\+Resource} (KeyT key)
+\item 
+void \hyperlink{classmage_1_1_resource_pool_a83a33e15bd8f326d0ebc11b3f8e52a41}{Remove\+All\+Resources} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_resource_pool_a82253c9c4adfc120a813dfe811dd5e91}{Resource\+Pool} (const \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \&resource\+\_\+pool)=delete
+\item 
+\hyperlink{classmage_1_1_resource_pool_a4ab8e492c60297ca2435aced3b95053a}{Resource\+Pool} (\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \&\&resource\+\_\+pool)=delete
+\item 
+\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \& \hyperlink{classmage_1_1_resource_pool_ae8121e031efe9f98605e478b01b19d33}{operator=} (const \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \&resource\+\_\+pool)=delete
+\item 
+\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \& \hyperlink{classmage_1_1_resource_pool_a1c0c196460508108435c227c11a65b94}{operator=} (\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} \&\&resource\+\_\+pool)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{Resource\+Map}$<$ KeyT, ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_aecc46ecca2a54ef2816137276b1d73cd}{m\+\_\+resource\+\_\+map}
+\item 
+\hyperlink{classmage_1_1_mutex}{Mutex} $\ast$ \hyperlink{classmage_1_1_resource_pool_ad22becffd28fefa3c098c6bb40f52f41}{m\+\_\+resource\+\_\+map\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_resource_pool_a590c1ebb30254714bedd7f821ff98241}{}\label{classmage_1_1_resource_pool_a590c1ebb30254714bedd7f821ff98241} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Resource\+Pool@{Resource\+Pool}}
+\index{Resource\+Pool@{Resource\+Pool}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Resource\+Pool()}{ResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_resource_pool_ae4fff3d951818d417f77965c2db265f6}{}\label{classmage_1_1_resource_pool_ae4fff3d951818d417f77965c2db265f6} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!````~Resource\+Pool@{$\sim$\+Resource\+Pool}}
+\index{````~Resource\+Pool@{$\sim$\+Resource\+Pool}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{$\sim$\+Resource\+Pool()}{~ResourcePool()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+virtual \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::$\sim$\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{classmage_1_1_resource_pool_a82253c9c4adfc120a813dfe811dd5e91}{}\label{classmage_1_1_resource_pool_a82253c9c4adfc120a813dfe811dd5e91} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Resource\+Pool@{Resource\+Pool}}
+\index{Resource\+Pool@{Resource\+Pool}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Resource\+Pool()}{ResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{resource\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_resource_pool_a4ab8e492c60297ca2435aced3b95053a}{}\label{classmage_1_1_resource_pool_a4ab8e492c60297ca2435aced3b95053a} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Resource\+Pool@{Resource\+Pool}}
+\index{Resource\+Pool@{Resource\+Pool}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Resource\+Pool()}{ResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&\&}]{resource\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_resource_pool_a2c1116cecf0a88953fa681f254de8680}{}\label{classmage_1_1_resource_pool_a2c1116cecf0a88953fa681f254de8680} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Derived\+Resource@{Get\+Derived\+Resource}}
+\index{Get\+Derived\+Resource@{Get\+Derived\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Derived\+Resource()}{GetDerivedResource()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Derived\+Resource (\begin{DoxyParamCaption}\item[{KeyT}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e}{}\label{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}}
+\index{Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Resources()}{GetNumberOfResources()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+size\+\_\+t \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Number\+Of\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_resource_pool_add76506394983fe84bc2cb95cfd5f7e2}{}\label{classmage_1_1_resource_pool_add76506394983fe84bc2cb95cfd5f7e2} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Resource@{Get\+Resource}}
+\index{Get\+Resource@{Get\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Resource()}{GetResource()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Resource (\begin{DoxyParamCaption}\item[{KeyT}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_resource_pool_ae8121e031efe9f98605e478b01b19d33}{}\label{classmage_1_1_resource_pool_ae8121e031efe9f98605e478b01b19d33} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}\& \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{resource\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_resource_pool_a1c0c196460508108435c227c11a65b94}{}\label{classmage_1_1_resource_pool_a1c0c196460508108435c227c11a65b94} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}\& \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&\&}]{resource\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_resource_pool_a83a33e15bd8f326d0ebc11b3f8e52a41}{}\label{classmage_1_1_resource_pool_a83a33e15bd8f326d0ebc11b3f8e52a41} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Remove\+All\+Resources@{Remove\+All\+Resources}}
+\index{Remove\+All\+Resources@{Remove\+All\+Resources}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Remove\+All\+Resources()}{RemoveAllResources()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+void \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove\+All\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_resource_pool_acda87b2a5cc6ea3880f40df0ac6fb4d9}{}\label{classmage_1_1_resource_pool_acda87b2a5cc6ea3880f40df0ac6fb4d9} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Remove\+Resource@{Remove\+Resource}}
+\index{Remove\+Resource@{Remove\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Remove\+Resource()}{RemoveResource()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+void \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove\+Resource (\begin{DoxyParamCaption}\item[{KeyT}]{key }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_resource_pool_aecc46ecca2a54ef2816137276b1d73cd}{}\label{classmage_1_1_resource_pool_aecc46ecca2a54ef2816137276b1d73cd} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!m\+\_\+resource\+\_\+map@{m\+\_\+resource\+\_\+map}}
+\index{m\+\_\+resource\+\_\+map@{m\+\_\+resource\+\_\+map}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+map}{m\_resource\_map}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{Resource\+Map}$<$ KeyT, ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::m\+\_\+resource\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_resource_pool_ad22becffd28fefa3c098c6bb40f52f41}{}\label{classmage_1_1_resource_pool_ad22becffd28fefa3c098c6bb40f52f41} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!m\+\_\+resource\+\_\+map\+\_\+mutex@{m\+\_\+resource\+\_\+map\+\_\+mutex}}
+\index{m\+\_\+resource\+\_\+map\+\_\+mutex@{m\+\_\+resource\+\_\+map\+\_\+mutex}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+map\+\_\+mutex}{m\_resource\_map\_mutex}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{classmage_1_1_mutex}{Mutex}$\ast$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::m\+\_\+resource\+\_\+map\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+

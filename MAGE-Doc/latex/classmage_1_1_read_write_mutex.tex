@@ -18,9 +18,13 @@ static void \hyperlink{classmage_1_1_read_write_mutex_a879992fe8bf7fc81df9fa5ffa
 \item 
 \hyperlink{classmage_1_1_read_write_mutex_aacb2f69e7e2b084147e1e45628e9dd67}{Read\+Write\+Mutex} (const \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&mutex)=delete
 \item 
+\hyperlink{classmage_1_1_read_write_mutex_a664e946edfa742dad648fc9fcb29832e}{Read\+Write\+Mutex} (\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&\&mutex)=delete
+\item 
 \hyperlink{classmage_1_1_read_write_mutex_a73676d9414658d63edfe443ee1d55c8b}{$\sim$\+Read\+Write\+Mutex} ()
 \item 
 \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \& \hyperlink{classmage_1_1_read_write_mutex_a408e06f3c8bcc644e43afbf7e9ac772f}{operator=} (const \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&mutex)=delete
+\item 
+\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \& \hyperlink{classmage_1_1_read_write_mutex_a14ea4d1be75046741a7663e0d86a017a}{operator=} (\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&\&mutex)=delete
 \item 
 void \hyperlink{classmage_1_1_read_write_mutex_af78045647078aaf3966c8f1b06e35c92}{Acquire\+Read} ()
 \item 
@@ -59,14 +63,27 @@ A class of read write mutexes.
 \hypertarget{classmage_1_1_read_write_mutex_aae10694de3862f2d1059477169883940}{}\label{classmage_1_1_read_write_mutex_aae10694de3862f2d1059477169883940} 
 \index{mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}!Read\+Write\+Mutex@{Read\+Write\+Mutex}}
 \index{Read\+Write\+Mutex@{Read\+Write\+Mutex}!mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}}
-\subsubsection{\texorpdfstring{Read\+Write\+Mutex()}{ReadWriteMutex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Read\+Write\+Mutex()}{ReadWriteMutex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+::\+Read\+Write\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Constructs a read write mutex. \hypertarget{classmage_1_1_read_write_mutex_aacb2f69e7e2b084147e1e45628e9dd67}{}\label{classmage_1_1_read_write_mutex_aacb2f69e7e2b084147e1e45628e9dd67} 
 \index{mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}!Read\+Write\+Mutex@{Read\+Write\+Mutex}}
 \index{Read\+Write\+Mutex@{Read\+Write\+Mutex}!mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}}
-\subsubsection{\texorpdfstring{Read\+Write\+Mutex()}{ReadWriteMutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Read\+Write\+Mutex()}{ReadWriteMutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+::\+Read\+Write\+Mutex (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a read write mutex from the given read write mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & The read write mutex. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_read_write_mutex_a664e946edfa742dad648fc9fcb29832e}{}\label{classmage_1_1_read_write_mutex_a664e946edfa742dad648fc9fcb29832e} 
+\index{mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}!Read\+Write\+Mutex@{Read\+Write\+Mutex}}
+\index{Read\+Write\+Mutex@{Read\+Write\+Mutex}!mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}}
+\subsubsection{\texorpdfstring{Read\+Write\+Mutex()}{ReadWriteMutex()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+::\+Read\+Write\+Mutex (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&\&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Constructs a read write mutex from the given read write mutex.
 
@@ -118,8 +135,24 @@ Destroys a given read write mutex.
 \hypertarget{classmage_1_1_read_write_mutex_a408e06f3c8bcc644e43afbf7e9ac772f}{}\label{classmage_1_1_read_write_mutex_a408e06f3c8bcc644e43afbf7e9ac772f} 
 \index{mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex}\& mage\+::\+Read\+Write\+Mutex\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given read write mutex to this read write mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & A reference to a read write mutex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of {\itshape mutex}. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_read_write_mutex_a14ea4d1be75046741a7663e0d86a017a}{}\label{classmage_1_1_read_write_mutex_a14ea4d1be75046741a7663e0d86a017a} 
+\index{mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Read\+Write\+Mutex@{mage\+::\+Read\+Write\+Mutex}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex}\& mage\+::\+Read\+Write\+Mutex\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&\&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Copies the given read write mutex to this read write mutex.
 

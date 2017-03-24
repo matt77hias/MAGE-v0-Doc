@@ -2,6 +2,7 @@ var structmage_1_1_sprite_transform =
 [
     [ "SpriteTransform", "structmage_1_1_sprite_transform.html#a60ab10912457ce7939c181fc67633fcf", null ],
     [ "SpriteTransform", "structmage_1_1_sprite_transform.html#a0126a3f6c7f486f10ec5d5ffd1180698", null ],
+    [ "SpriteTransform", "structmage_1_1_sprite_transform.html#a53d7da4498f4f9f67be2994eb4593c3a", null ],
     [ "~SpriteTransform", "structmage_1_1_sprite_transform.html#a14a3614023996cbb071c3de99f9528bc", null ],
     [ "AddDepth", "structmage_1_1_sprite_transform.html#a9865d77d9c2e02758b1466423c12bcc2", null ],
     [ "AddRotation", "structmage_1_1_sprite_transform.html#a0a24823966ff906791ae598ac4248d03", null ],
@@ -29,6 +30,7 @@ var structmage_1_1_sprite_transform =
     [ "GetTranslationX", "structmage_1_1_sprite_transform.html#ab33e1ff3c03940072538fe4a6b746f10", null ],
     [ "GetTranslationY", "structmage_1_1_sprite_transform.html#a7cf25b0261f0fd65339a9c3e119e2573", null ],
     [ "operator=", "structmage_1_1_sprite_transform.html#af0adccff92d48e7b347e66277981ee07", null ],
+    [ "operator=", "structmage_1_1_sprite_transform.html#a9278d3fd0a6d346b188515b67a1adfc2", null ],
     [ "SetComponents", "structmage_1_1_sprite_transform.html#adcdc96cc280d571883e88a4791cca063", null ],
     [ "SetDepth", "structmage_1_1_sprite_transform.html#a25096a75c5b2fbb08b771b14567cc16e", null ],
     [ "SetRotation", "structmage_1_1_sprite_transform.html#a23921afd58b631f297328cf2b34d5c40", null ],

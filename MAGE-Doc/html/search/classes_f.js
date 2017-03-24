@@ -5,6 +5,7 @@ var searchData=
   ['renderer',['Renderer',['../classmage_1_1_renderer.html',1,'mage']]],
   ['resource',['Resource',['../classmage_1_1_resource.html',1,'mage']]],
   ['resourcefactory',['ResourceFactory',['../classmage_1_1_resource_factory.html',1,'mage']]],
-  ['resourcemanager',['ResourceManager',['../classmage_1_1_resource_manager.html',1,'mage']]],
+  ['resourcepool',['ResourcePool',['../classmage_1_1_resource_pool.html',1,'mage']]],
+  ['resourcepoolentry',['ResourcePoolEntry',['../structmage_1_1_resource_pool_1_1_resource_pool_entry.html',1,'mage::ResourcePool']]],
   ['rgbspectrum',['RGBSpectrum',['../structmage_1_1_r_g_b_spectrum.html',1,'mage']]]
 ];

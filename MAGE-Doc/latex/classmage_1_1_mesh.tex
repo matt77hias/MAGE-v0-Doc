@@ -7,9 +7,9 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_a4fd21f743cafaae0493b4e28969694f4}{Mesh} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices, const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
+{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_a3712a661877073699ae264408c549705}{Mesh} (I\+D3\+D11\+Device2 \&device, const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices, const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_a7b9cd1b20ba8aa91a7cd3e323ecf0c4e}{Mesh} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const vector$<$ VertexT $>$ \&vertices, const vector$<$ uint32\+\_\+t $>$ \&indices)
+{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e}{Mesh} (I\+D3\+D11\+Device2 \&device, const vector$<$ VertexT $>$ \&vertices, const vector$<$ uint32\+\_\+t $>$ \&indices)
 \item 
 virtual \hyperlink{classmage_1_1_mesh_a53b4b9054a518c1f7e2078fdc65a95b8}{$\sim$\+Mesh} ()=default
 \item 
@@ -17,16 +17,20 @@ size\+\_\+t \hyperlink{classmage_1_1_mesh_a47732f4ac48000c2a1f5562bdba38a81}{Get
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_mesh_a69991b73609ebf936df5c7d2afd2b767}{Get\+Number\+Of\+Indices} () const
 \item 
-void \hyperlink{classmage_1_1_mesh_abcb9a42e0ab5f4f482e03a6fa7debd6e}{Render} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const
+void \hyperlink{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28}{Render} (I\+D3\+D11\+Device\+Context2 \&device\+\_\+context) const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{Mesh} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
 \item 
+\hyperlink{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e}{Mesh} (\hyperlink{classmage_1_1_mesh}{Mesh} \&\&mesh)=delete
+\item 
 \hyperlink{classmage_1_1_mesh}{Mesh} \& \hyperlink{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{operator=} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a4b5a060ba2ff00c9f9a631046789bd1c}{Initialize\+Mesh} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const VertexT $\ast$vertices, const uint32\+\_\+t $\ast$indices)
+\hyperlink{classmage_1_1_mesh}{Mesh} \& \hyperlink{classmage_1_1_mesh_a28e437196db171b2df1c4bcf3df07a63}{operator=} (\hyperlink{classmage_1_1_mesh}{Mesh} \&\&mesh)=delete
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c}{Initialize\+Mesh} (I\+D3\+D11\+Device2 \&device, const VertexT $\ast$vertices, const uint32\+\_\+t $\ast$indices)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -47,12 +51,12 @@ size\+\_\+t \hyperlink{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{m\+
 A class of indexed meshes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_mesh_a4fd21f743cafaae0493b4e28969694f4}{}\label{classmage_1_1_mesh_a4fd21f743cafaae0493b4e28969694f4} 
+\hypertarget{classmage_1_1_mesh_a3712a661877073699ae264408c549705}{}\label{classmage_1_1_mesh_a3712a661877073699ae264408c549705} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})}
+mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})}
 
 Constructs a mesh.
 
@@ -68,7 +72,7 @@ Constructs a mesh.
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the rendering device. \\
+\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
 \hline
 \mbox{\tt in}  & {\em vertices} & A pointer to an array of vertices. \\
 \hline
@@ -79,12 +83,12 @@ Constructs a mesh.
 \mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_mesh_a7b9cd1b20ba8aa91a7cd3e323ecf0c4e}{}\label{classmage_1_1_mesh_a7b9cd1b20ba8aa91a7cd3e323ecf0c4e} 
+\hypertarget{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e}{}\label{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ uint32\+\_\+t $>$ \&}]{indices }\end{DoxyParamCaption})}
+mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ uint32\+\_\+t $>$ \&}]{indices }\end{DoxyParamCaption})}
 
 Constructs a mesh.
 
@@ -100,7 +104,7 @@ The number of indices must be greater than zero.
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the rendering device. \\
+\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
 \hline
 \mbox{\tt in}  & {\em vertices} & A reference to a vector of vertices. \\
 \hline
@@ -118,8 +122,21 @@ The number of indices must be greater than zero.
 Destructs this mesh. \hypertarget{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{}\label{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a mesh from the given mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e}{}\label{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Constructs a mesh from the given mesh.
 
@@ -153,12 +170,12 @@ Returns the number of vertices of this mesh.
 \begin{DoxyReturn}{Returns}
 The number of vertices of this mesh. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_mesh_a4b5a060ba2ff00c9f9a631046789bd1c}{}\label{classmage_1_1_mesh_a4b5a060ba2ff00c9f9a631046789bd1c} 
+\hypertarget{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c}{}\label{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Initialize\+Mesh@{Initialize\+Mesh}}
 \index{Initialize\+Mesh@{Initialize\+Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Initialize\+Mesh()}{InitializeMesh()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Initialize\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Initialize\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes this mesh.
 
@@ -174,7 +191,7 @@ Initializes this mesh.
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the rendering device. \\
+\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
 \hline
 \mbox{\tt in}  & {\em vertices} & A pointer to an array of vertices. \\
 \hline
@@ -184,7 +201,7 @@ Initializes this mesh.
 \hypertarget{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{}\label{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Copies the given mesh to this mesh.
@@ -197,11 +214,27 @@ Copies the given mesh to this mesh.
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given mesh (i.\+e. this mesh). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_mesh_abcb9a42e0ab5f4f482e03a6fa7debd6e}{}\label{classmage_1_1_mesh_abcb9a42e0ab5f4f482e03a6fa7debd6e} 
+\hypertarget{classmage_1_1_mesh_a28e437196db171b2df1c4bcf3df07a63}{}\label{classmage_1_1_mesh_a28e437196db171b2df1c4bcf3df07a63} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given mesh to this mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given mesh (i.\+e. this mesh). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28}{}\label{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Render (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 \&}]{device\+\_\+context }\end{DoxyParamCaption}) const}
 
 
 

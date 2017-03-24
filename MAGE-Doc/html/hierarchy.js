@@ -4,6 +4,7 @@ var hierarchy =
     [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
       [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
     ] ],
+    [ "mage::AlignedData< DataT >", "structmage_1_1_aligned_data.html", null ],
     [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", null ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
       [ "mage::SpriteFontReader", "classmage_1_1_sprite_font_reader.html", null ]
@@ -17,6 +18,9 @@ var hierarchy =
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
     [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
     [ "mage::DDS_PIXELFORMAT", "structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
+    [ "DerivedResourceT", null, [
+      [ "mage::ResourcePool< KeyT, ResourceT >::ResourcePoolEntry< DerivedResourceT >", "structmage_1_1_resource_pool_1_1_resource_pool_entry.html", null ]
+    ] ],
     [ "mage::DeviceEnumeration", "classmage_1_1_device_enumeration.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
@@ -67,7 +71,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "mage::ResourceFactory", "classmage_1_1_resource_factory.html", null ],
-    [ "mage::ResourceManager< T >", "classmage_1_1_resource_manager.html", null ],
+    [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
     [ "mage::Semaphore", "classmage_1_1_semaphore.html", null ],
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],
