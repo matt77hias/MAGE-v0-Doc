@@ -23,9 +23,9 @@ uint32\+\_\+t \hyperlink{classmage_1_1_renderer_a65e448e5fa4e8b6be0371ff00b97912
 \item 
 uint32\+\_\+t \hyperlink{classmage_1_1_renderer_a40c90d8878416dd03b7fdef0b3de29a8}{Get\+Height} () const
 \item 
-\hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \hyperlink{classmage_1_1_renderer_a9465ff1640cb5333ca4e701977ae51ec}{Get\+Device} () const
+I\+D3\+D11\+Device2 \& \hyperlink{classmage_1_1_renderer_a27491785af356f009e34921f98ada073}{Get\+Device} () const
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ \hyperlink{classmage_1_1_renderer_a764ee3d8f3dea6aceb05f42bce80b147}{Get\+Device\+Context} () const
+I\+D3\+D11\+Device\+Context2 \& \hyperlink{classmage_1_1_renderer_a86811f1a2330e77b1edd14b698c6fcc0}{Get\+Device\+Context} () const
 \item 
 bool \hyperlink{classmage_1_1_renderer_a1de1804c1eedae7dc12435a520a10b9c}{Is\+Windowed} () const
 \item 
@@ -48,7 +48,11 @@ void \hyperlink{classmage_1_1_renderer_a4932c51d0f6e56269712024d2d0322ef}{End\+F
 \item 
 \hyperlink{classmage_1_1_renderer_acd6b509da2bd7e7d764b45b912fe5298}{Renderer} (const \hyperlink{classmage_1_1_renderer}{Renderer} \&renderer)=delete
 \item 
+\hyperlink{classmage_1_1_renderer_aee2c0f704c3546907e3fa4d9a4bd57ee}{Renderer} (\hyperlink{classmage_1_1_renderer}{Renderer} \&\&renderer)=delete
+\item 
 \hyperlink{classmage_1_1_renderer}{Renderer} \& \hyperlink{classmage_1_1_renderer_a2762ead5f771ae95e4293cd7eb1a2834}{operator=} (const \hyperlink{classmage_1_1_renderer}{Renderer} \&renderer)=delete
+\item 
+\hyperlink{classmage_1_1_renderer}{Renderer} \& \hyperlink{classmage_1_1_renderer_aa381bb89bffdc8ea2d8e3625e28cd28a}{operator=} (\hyperlink{classmage_1_1_renderer}{Renderer} \&\&renderer)=delete
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929}{Initialize\+Renderer} ()
 \item 
@@ -103,7 +107,7 @@ A class of renderers.
 \hypertarget{classmage_1_1_renderer_a762dcda433c319af237d1dfd9bc6095f}{}\label{classmage_1_1_renderer_a762dcda433c319af237d1dfd9bc6095f} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Renderer@{Renderer}}
 \index{Renderer@{Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwindow }\end{DoxyParamCaption})}
 
 Constructs a renderer.
@@ -122,8 +126,21 @@ Constructs a renderer.
 Destructs this renderer. \hypertarget{classmage_1_1_renderer_acd6b509da2bd7e7d764b45b912fe5298}{}\label{classmage_1_1_renderer_acd6b509da2bd7e7d764b45b912fe5298} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Renderer@{Renderer}}
 \index{Renderer@{Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_renderer}{Renderer} \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a renderer from the given renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em renderer} & A reference to a renderer. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_renderer_aee2c0f704c3546907e3fa4d9a4bd57ee}{}\label{classmage_1_1_renderer_aee2c0f704c3546907e3fa4d9a4bd57ee} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_renderer}{Renderer} \&\&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Constructs a renderer from the given renderer.
 
@@ -141,27 +158,27 @@ Constructs a renderer from the given renderer.
 \subsubsection{\texorpdfstring{End\+Frame()}{EndFrame()}}
 {\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Ends the rendering of the current frame. \hypertarget{classmage_1_1_renderer_a9465ff1640cb5333ca4e701977ae51ec}{}\label{classmage_1_1_renderer_a9465ff1640cb5333ca4e701977ae51ec} 
+Ends the rendering of the current frame. \hypertarget{classmage_1_1_renderer_a27491785af356f009e34921f98ada073}{}\label{classmage_1_1_renderer_a27491785af356f009e34921f98ada073} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device@{Get\+Device}}
 \index{Get\+Device@{Get\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} mage\+::\+Renderer\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily I\+D3\+D11\+Device2\& mage\+::\+Renderer\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the device of this renderer.
 
 \begin{DoxyReturn}{Returns}
-The device of this renderer. 
+A reference to the device of this renderer. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_renderer_a764ee3d8f3dea6aceb05f42bce80b147}{}\label{classmage_1_1_renderer_a764ee3d8f3dea6aceb05f42bce80b147} 
+\hypertarget{classmage_1_1_renderer_a86811f1a2330e77b1edd14b698c6fcc0}{}\label{classmage_1_1_renderer_a86811f1a2330e77b1edd14b698c6fcc0} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device\+Context@{Get\+Device\+Context}}
 \index{Get\+Device\+Context@{Get\+Device\+Context}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Get\+Device\+Context()}{GetDeviceContext()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ mage\+::\+Renderer\+::\+Get\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2\& mage\+::\+Renderer\+::\+Get\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the device context of this renderer.
 
 \begin{DoxyReturn}{Returns}
-A pointer to the device context of this renderer. 
+A reference to the device context of this renderer. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_renderer_a11d47495a47c58a0f67aae3110f9f519}{}\label{classmage_1_1_renderer_a11d47495a47c58a0f67aae3110f9f519} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Handle@{Get\+Handle}}
@@ -238,8 +255,24 @@ Checks whether this renderer renders in windowed mode.
 Checks whether this renderer lost its mode, i.\+e. the current mode of this renderer differs from the cyrrent mode of its swap chain (due to for example A\+LT + T\+AB). \hypertarget{classmage_1_1_renderer_a2762ead5f771ae95e4293cd7eb1a2834}{}\label{classmage_1_1_renderer_a2762ead5f771ae95e4293cd7eb1a2834} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_renderer}{Renderer}\& mage\+::\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_renderer}{Renderer} \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given renderer to this renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em renderer} & A reference to a renderer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given renderer (i.\+e. this renderer). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_aa381bb89bffdc8ea2d8e3625e28cd28a}{}\label{classmage_1_1_renderer_aa381bb89bffdc8ea2d8e3625e28cd28a} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_renderer}{Renderer}\& mage\+::\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_renderer}{Renderer} \&\&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Copies the given renderer to this renderer.
 

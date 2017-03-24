@@ -4,9 +4,10 @@ var hierarchy =
     [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
       [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
     ] ],
+    [ "mage::AlignedData< DataT >", "structmage_1_1_aligned_data.html", null ],
     [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", null ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
-      [ "mage::FontReader", "classmage_1_1_font_reader.html", null ]
+      [ "mage::SpriteFontReader", "classmage_1_1_sprite_font_reader.html", null ]
     ] ],
     [ "mage::BinaryReader", "classmage_1_1_binary_reader.html", null ],
     [ "mage::BS", "structmage_1_1_b_s.html", null ],
@@ -17,6 +18,9 @@ var hierarchy =
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
     [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
     [ "mage::DDS_PIXELFORMAT", "structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
+    [ "DerivedResourceT", null, [
+      [ "mage::ResourcePool< KeyT, ResourceT >::ResourcePoolEntry< DerivedResourceT >", "structmage_1_1_resource_pool_1_1_resource_pool_entry.html", null ]
+    ] ],
     [ "mage::DeviceEnumeration", "classmage_1_1_device_enumeration.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
@@ -50,23 +54,24 @@ var hierarchy =
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ReadWriteMutex", "classmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
-    [ "mage::RenderingDevice", "classmage_1_1_rendering_device.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
-      [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
+      [ "mage::FileResource", "classmage_1_1_file_resource.html", [
+        [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
+        [ "mage::Texture", "classmage_1_1_texture.html", null ],
+        [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
+      ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
         [ "mage::EmptyPixelShader", "classmage_1_1_empty_pixel_shader.html", null ],
         [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ]
       ] ],
       [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ],
-      [ "mage::Texture", "classmage_1_1_texture.html", null ],
-      [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::EmptyVertexShader", "classmage_1_1_empty_vertex_shader.html", null ],
         [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ]
       ] ]
     ] ],
     [ "mage::ResourceFactory", "classmage_1_1_resource_factory.html", null ],
-    [ "mage::ResourceManager< T >", "classmage_1_1_resource_manager.html", null ],
+    [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
     [ "mage::Semaphore", "classmage_1_1_semaphore.html", null ],
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],

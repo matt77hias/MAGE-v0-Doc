@@ -1,11 +1,13 @@
 var classmage_1_1_binary_reader =
 [
-    [ "BinaryReader", "classmage_1_1_binary_reader.html#aab82579cef4f2f022273cf1adfcc8497", null ],
     [ "~BinaryReader", "classmage_1_1_binary_reader.html#aa300382cfa1585bb2f76c4e764bb5617", null ],
+    [ "BinaryReader", "classmage_1_1_binary_reader.html#aab82579cef4f2f022273cf1adfcc8497", null ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html#a8c1ff948f1d056439f3d8cc37d7f507c", null ],
+    [ "BinaryReader", "classmage_1_1_binary_reader.html#ac8f3141f7ce5da9cd1890b4a61edf0a3", null ],
     [ "GetFilename", "classmage_1_1_binary_reader.html#a10a0ec56fe7f8e63964ffca2afe019a3", null ],
     [ "HasCharsLeft", "classmage_1_1_binary_reader.html#a35b10713dca7a416b73b28d5f6aaf600", null ],
     [ "operator=", "classmage_1_1_binary_reader.html#a0408bb456983b4a03ae42ab69c6f4bc3", null ],
+    [ "operator=", "classmage_1_1_binary_reader.html#abb971fe92727a0e86b3698dba8c586de", null ],
     [ "Read", "classmage_1_1_binary_reader.html#a000cf97b640a5fbd1d5c33ccaae7fb39", null ],
     [ "ReadChars", "classmage_1_1_binary_reader.html#af1e0e4ab815e23c72ab65fd7c0748d3f", null ],
     [ "ReadDouble", "classmage_1_1_binary_reader.html#aa9d54a457a85d6f488d818c0a3e56560", null ],

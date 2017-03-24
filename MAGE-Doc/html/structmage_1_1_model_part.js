@@ -2,8 +2,10 @@ var structmage_1_1_model_part =
 [
     [ "ModelPart", "structmage_1_1_model_part.html#a2c0dcbc96147ae6e059c72ca908aeb75", null ],
     [ "ModelPart", "structmage_1_1_model_part.html#a3c39c2c312f07687f8ad5c2c2580d1e2", null ],
+    [ "ModelPart", "structmage_1_1_model_part.html#af8744793e9e6eccd59211c87ffc8e745", null ],
     [ "~ModelPart", "structmage_1_1_model_part.html#a3322c5c7924ec30be170ae1ed6dca550", null ],
-    [ "operator=", "structmage_1_1_model_part.html#a00cbb00c174bdd27879b67d54185d748", null ],
+    [ "operator=", "structmage_1_1_model_part.html#a37e9d66b701ed84111160bf5a003b658", null ],
+    [ "operator=", "structmage_1_1_model_part.html#a8337b8034d9a43514690a2db3d0f43c7", null ],
     [ "child", "structmage_1_1_model_part.html#a3ab6e2faae44453d60cf0ff4876f49eb", null ],
     [ "material", "structmage_1_1_model_part.html#a4b0bfbb9ac313b6ffe8a8a3ee27469fd", null ],
     [ "nb_indices", "structmage_1_1_model_part.html#a4b7d8beddffa117e1f6829e6c9acfce3", null ],

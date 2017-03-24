@@ -1,0 +1,19 @@
+var NAVTREEINDEX7 =
+{
+"structmage_1_1_vertex_position_texture_texture.html#a96be20a1f6ec9b9b74875099eef80f08":[1,0,0,88,10],
+"structmage_1_1_vertex_position_texture_texture.html#abd23d266932ec6f8c830b804a25a1fe5":[1,0,0,88,3],
+"structmage_1_1_vertex_position_texture_texture.html#ac15391bbc084b6843ba3b9696b7f502a":[1,0,0,88,8],
+"structmage_1_1_vertex_position_texture_texture.html#aed106149eda65a20e60ebc3b93535270":[1,0,0,88,9],
+"structmage_1_1_x_y_z_spectrum.html":[1,0,0,96],
+"structmage_1_1_x_y_z_spectrum.html#a0bfea768139190f70cfef880d239b20c":[1,0,0,96,5],
+"structmage_1_1_x_y_z_spectrum.html#a4775c0f3d8bff524281c186ee5e91e60":[1,0,0,96,6],
+"structmage_1_1_x_y_z_spectrum.html#a48e5a703a757af9a220f3c6d5b3134c9":[1,0,0,96,10],
+"structmage_1_1_x_y_z_spectrum.html#a729b4911b8328806d411e60e1bd2fa6b":[1,0,0,96,7],
+"structmage_1_1_x_y_z_spectrum.html#a91cf5d611fbad0e47b6718a04b9a505d":[1,0,0,96,4],
+"structmage_1_1_x_y_z_spectrum.html#a93dbb49e9cb90dd0aed70e9b6d01fcc8":[1,0,0,96,0],
+"structmage_1_1_x_y_z_spectrum.html#a99b3956d6e9c0255fdef3ad9ea9e4d3a":[1,0,0,96,9],
+"structmage_1_1_x_y_z_spectrum.html#ab768ef493970dd791f8b145eee05f66b":[1,0,0,96,1],
+"structmage_1_1_x_y_z_spectrum.html#ac86feefa604d578f219d17f721508357":[1,0,0,96,2],
+"structmage_1_1_x_y_z_spectrum.html#acd737da8e445f137dae3dd886e4e822b":[1,0,0,96,3],
+"structmage_1_1_x_y_z_spectrum.html#af3a318ebdb1eb1e47cd81707850049a7":[1,0,0,96,8]
+};

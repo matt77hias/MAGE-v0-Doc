@@ -2,8 +2,10 @@ var structmage_1_1_material =
 [
     [ "Material", "structmage_1_1_material.html#ace4a06c8c8c4e75d82e701443f88d1d3", null ],
     [ "Material", "structmage_1_1_material.html#abed630412cdc4a6281389d128ec4b5f3", null ],
+    [ "Material", "structmage_1_1_material.html#a41bfbc2bfa16e3694ac443d390b804c2", null ],
     [ "~Material", "structmage_1_1_material.html#a4ca65b7e24144ee08dd1ce8d0eda9284", null ],
     [ "operator=", "structmage_1_1_material.html#a7ebc9986924ca13ae8468005518dcfc7", null ],
+    [ "operator=", "structmage_1_1_material.html#a500a2ebe99d4d7b3be5bf57b6bff62a1", null ],
     [ "m_ambient_reflectivity", "structmage_1_1_material.html#ad8fb842410fe751ad220185271a00448", null ],
     [ "m_ambient_reflectivity_texture", "structmage_1_1_material.html#a72a90b9d339d705b5fd46098df5892e2", null ],
     [ "m_bump_texture", "structmage_1_1_material.html#aa69355550fbcf2230442e53d71d4ebc6", null ],

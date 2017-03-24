@@ -11,9 +11,13 @@
 \item 
 \hyperlink{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc}{Transform} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform)
 \item 
+\hyperlink{structmage_1_1_transform_a79c128d8c73c8854765e8ea8fa5f42e1}{Transform} (\hyperlink{structmage_1_1_transform}{Transform} \&\&transform)=default
+\item 
 \hyperlink{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5}{$\sim$\+Transform} ()
 \item 
 \hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644}{operator=} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform)
+\item 
+\hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{structmage_1_1_transform_a73f47760665264da8af254fa937b3560}{operator=} (\hyperlink{structmage_1_1_transform}{Transform} \&\&transform)=default
 \item 
 void \hyperlink{structmage_1_1_transform_aba5311db1360a15aea4de33a060ab27e}{Set\+Components} (const X\+M\+F\+L\+O\+A\+T3 \&translation, const X\+M\+F\+L\+O\+A\+T3 \&rotation, const X\+M\+F\+L\+O\+A\+T3 \&scale)
 \item 
@@ -242,7 +246,7 @@ A struct of transforms.
 \hypertarget{structmage_1_1_transform_a3d324dc935e11ee5e82957d58553fd7d}{}\label{structmage_1_1_transform_a3d324dc935e11ee5e82957d58553fd7d} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
 \index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
-\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{translation = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}},  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{rotation = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}},  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{scale = {\ttfamily \{~1.0f,~1.0f,~1.0f~\}} }\end{DoxyParamCaption})}
 
 Constructs a transform from the given translation, rotation and scale component.
@@ -259,14 +263,27 @@ Constructs a transform from the given translation, rotation and scale component.
 \hypertarget{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc}{}\label{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
 \index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
-\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform }\end{DoxyParamCaption})}
 
 Constructs a transform from the components of the given transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The transform. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a79c128d8c73c8854765e8ea8fa5f42e1}{}\label{structmage_1_1_transform_a79c128d8c73c8854765e8ea8fa5f42e1} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_transform}{Transform} \&\&}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5}{}\label{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5} 
@@ -1114,14 +1131,30 @@ The local up direction of this transform expressed in world space coordinates.
 \hypertarget{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644}{}\label{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Transform@{mage\+::\+Transform}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+Transform\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform }\end{DoxyParamCaption})}
 
 Copies the components of the given transform to this transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a73f47760665264da8af254fa937b3560}{}\label{structmage_1_1_transform_a73f47760665264da8af254fa937b3560} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+Transform\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_transform}{Transform} \&\&}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

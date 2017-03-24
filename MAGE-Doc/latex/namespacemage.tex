@@ -5,6 +5,8 @@
 \item 
 struct \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}
 \item 
+struct \hyperlink{structmage_1_1_aligned_data}{Aligned\+Data}
+\item 
 class \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}
 \item 
 class \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader}
@@ -43,7 +45,7 @@ class \hyperlink{classmage_1_1_engine}{Engine}
 \item 
 struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
-class \hyperlink{classmage_1_1_font_reader}{Font\+Reader}
+class \hyperlink{classmage_1_1_file_resource}{File\+Resource}
 \item 
 struct \hyperlink{structmage_1_1_glyph}{Glyph}
 \item 
@@ -119,13 +121,11 @@ struct \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock
 \item 
 class \hyperlink{classmage_1_1_renderer}{Renderer}
 \item 
-class \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device}
-\item 
 class \hyperlink{classmage_1_1_resource}{Resource}
 \item 
 class \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory}
 \item 
-class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}
+class \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}
 \item 
 struct \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum}
 \item 
@@ -142,6 +142,8 @@ class \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}
 struct \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor}
 \item 
 struct \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output}
+\item 
+class \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader}
 \item 
 struct \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform}
 \item 
@@ -202,11 +204,15 @@ struct \hyperlink{structmage_1_1_x_y_z_spectrum}{X\+Y\+Z\+Spectrum}
 \item 
 {\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr} = std\+::shared\+\_\+ptr$<$ T $>$
 \item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr} = std\+::weak\+\_\+ptr$<$ T $>$
+\item 
 {\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr} = Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ T $>$
 \item 
 typedef std\+::unique\+\_\+ptr$<$ void, \hyperlink{structmage_1_1_handle_closer}{Handle\+Closer} $>$ \hyperlink{namespacemage_a284e84e551a05d4fc6c957985b2de3ed}{Unique\+Handle}
 \item 
 typedef \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ void $>$ \hyperlink{namespacemage_ab892828913d6129acf71e0cec60467e5}{Shared\+Handle}
+\item 
+{\footnotesize template$<$typename KeyT , typename ResourceT $>$ }\\using \hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{Resource\+Map} = map$<$ KeyT, \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr}$<$ ResourceT $>$ $>$
 \item 
 typedef X\+M\+I\+N\+T2 \hyperlink{namespacemage_aa22600b49377872988582e782d7b1fcd}{int2}
 \item 
@@ -247,6 +253,15 @@ enum \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46}{Sprite\+Effects
 \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46a246bd11aa15d6ae96a49482a820a4fc7}{Sprite\+Effects\+\_\+\+Flip\+Horizontally} = 1, 
 \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46aa6467790cb90100bbe9e5691f11359b3}{Sprite\+Effects\+\_\+\+Flip\+Vertically} = 2, 
 \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46ade02358677bb38062999f4edc9d25055}{Sprite\+Effects\+\_\+\+Flip\+Both} = Sprite\+Effects\+\_\+\+Flip\+Horizontally $\vert$ Sprite\+Effects\+\_\+\+Flip\+Vertically
+ \}
+\item 
+enum \hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} \{ \newline
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada}{Sprite\+Sort\+Mode\+\_\+\+Deferred}, 
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014a1860f7ba337b06db99a5aa4d1773c47e}{Sprite\+Sort\+Mode\+\_\+\+Immediate}, 
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014acd196441d0dbb56cb50355105549e09d}{Sprite\+Sort\+Mode\+\_\+\+Texture}, 
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014a1ed9f5cf1fd98919f7bf075b3d75baa6}{Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front}, 
+\newline
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014a12295f7eac8babb6d7e52b765715382f}{Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back}
  \}
 \item 
 enum \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{Token\+Result} \{ \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037daadeba2cdda999b6fefb8f7921d465be2}{valid\+\_\+token}, 
@@ -401,7 +416,9 @@ ostream \& \hyperlink{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{operator$
 \item 
 \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_a437458a2e3278f106da66534c5218e4e}{Invert\+Handness} (const \hyperlink{structmage_1_1_normal3}{Normal3} \&normal)
 \item 
-void $\ast$ \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{Alloc\+Aligned} (size\+\_\+t size)
+void $\ast$ \hyperlink{namespacemage_a4770c97ad241a87982062034adb6c0dc}{Alloc\+Aligned} (size\+\_\+t size, size\+\_\+t alignment=M\+A\+G\+E\+\_\+\+L1\+\_\+\+C\+A\+C\+H\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+I\+ZE)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_a43e2cdb4c71637a86b1861a73be44a58}{Alloc\+Aligned} (size\+\_\+t count)
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
 \item 
@@ -413,7 +430,7 @@ H\+A\+N\+D\+LE \hyperlink{namespacemage_a80f95ce7eb0d03d5576351663d626b4d}{Safe\
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_acb4aa2ee8f4bb362e8cce1fe22e0adbf}{Import\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
 \item 
-\hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \hyperlink{namespacemage_a4821032220f01411c7eaeb338977b8be}{Get\+Model\+Rendering\+Device} ()
+I\+D3\+D11\+Device2 \& \hyperlink{namespacemage_a5dede4f8e30ef230b51149978d08ad8f}{Get\+Model\+Rendering\+Device} ()
 \item 
 \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \& \hyperlink{namespacemage_af3f71027fd2cac8d444bae0335fb8fb2}{Get\+Model\+Resource\+Factory} ()
 \item 
@@ -439,7 +456,57 @@ size\+\_\+t \hyperlink{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{Bits\+Pe
 \item 
 D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a9d84163ab692956f5f4537a965238a09}{Convert\+To\+S\+R\+GB} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
 \item 
-\hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \hyperlink{namespacemage_a2da0af7e115fa08173bf5f3e4039986d}{Get\+Rendering\+Device} ()
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afe0afa82cd70f7e6201d1ab7829126cb}{Create\+Blend\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state, D3\+D11\+\_\+\+B\+L\+E\+ND src\+\_\+blend, D3\+D11\+\_\+\+B\+L\+E\+ND dest\+\_\+blend)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4f48b5923062c41d95c470072773faa4}{Create\+Opaque\+Blend\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a96ba3ac7ba360f70a47b4b6a95cd50b0}{Create\+Alpha\+Blend\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a10940a5e855afa46384cd95bea36daa2}{Create\+Additive\+Blend\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a263cdecccc5d7319c61478f86d360628}{Create\+Non\+Premultiplied\+Blend\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a6042a2db86a3ab5db97a57d31e5edde9}{Create\+Depth\+Stencil\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$depth\+\_\+stencil\+\_\+state, bool enable, bool write\+\_\+enable)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad3737d6d31b2417259504bca50d3c9ae}{Create\+Depth\+None\+Depth\+Stencil\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$depth\+\_\+stencil\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ae1cc425d7fef9c71f040623b56b01e91}{Create\+Depth\+Default\+Depth\+Stencil\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$depth\+\_\+stencil\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a60177e194fbb0fa839e2e07fa2b4e3a2}{Create\+Depth\+Read\+Depth\+Stencil\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$depth\+\_\+stencil\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_acd9dab49a7f0b5a70b01d8f6b1e36cea}{Create\+Rasterizer\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$rasterizer\+\_\+state, D3\+D11\+\_\+\+C\+U\+L\+L\+\_\+\+M\+O\+DE cull\+\_\+mode, D3\+D11\+\_\+\+F\+I\+L\+L\+\_\+\+M\+O\+DE fill\+\_\+mode)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9d80684267e1cf818b9ddaf40f7cc41b}{Create\+Cull\+None\+Rasterizer\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$rasterizer\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af0e285fcd817f99a505b24454300d3df}{Create\+Cull\+Clockwise\+Rasterizer\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$rasterizer\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_adb1dc1631cc6433625dbe6c36140ffd6}{Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$rasterizer\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac8117c713e168914be5bb9f4062dae76}{Create\+Wireframe\+Rasterizer\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$rasterizer\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4b5788872b6d54cef0af55477b9179a0}{Create\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state, D3\+D11\+\_\+\+F\+I\+L\+T\+ER filter, D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE address\+\_\+mode)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8a2464bb0e6bc22bee3a8ffa6badc1e8}{Create\+Point\+Wrap\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afda80bd33b457bb54933e515a8dff5e1}{Create\+Point\+Clamp\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af916232b80c6ef46037bbbbc1e4ef752}{Create\+Linear\+Wrap\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a744cae9681443dfe2b9e02abd4b7c2f8}{Create\+Linear\+Clamp\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3a4bc836f24ea04b932e933b7ea4020e}{Create\+Anisotropic\+Wrap\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afca0f51ea574992c78b9733c3b3edd87}{Create\+Anisotropic\+Clamp\+Sampler\+State} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Sampler\+State $\ast$$\ast$sampler\+\_\+state)
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad7faeaa97e7de01bf316d7c92c4e8911}{Create\+Static\+Vertex\+Buffer} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Buffer $\ast$$\ast$buffer, const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9eedd91f228abcb758863d194b90a5d8}{Create\+Dynamic\+Vertex\+Buffer} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Buffer $\ast$$\ast$buffer, const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
+\item 
+{\footnotesize template$<$typename IndexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aed831976b3cec41b91dd31e936d0708b}{Create\+Index\+Buffer} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Buffer $\ast$$\ast$buffer, const IndexT $\ast$indices, size\+\_\+t nb\+\_\+indices)
+\item 
+{\footnotesize template$<$typename BufferT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a86d252f54bda7594e669cc2b36cccd49}{Create\+Constant\+Buffer} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Buffer $\ast$$\ast$buffer)
+\item 
+I\+D3\+D11\+Device2 \& \hyperlink{namespacemage_ac9d3c1e7f63dbdac707efe26bea76619}{Get\+Rendering\+Device} ()
 \item 
 \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \& \hyperlink{namespacemage_ad773a6b6442b973421222b664229e86d}{Get\+Resource\+Factory} ()
 \item 
@@ -457,9 +524,27 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af5780face7eadab7a08f015e3516e137}{Ex
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{Compile\+Shader\+From\+File} (const wstring \&fname, const string \&entry\+\_\+point, const string \&shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_adca43698555e39b30497fd85517f56de}{Import\+Font\+From\+File} (const wstring \&fname, const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+static constexpr size\+\_\+t \hyperlink{namespacemage_afed1edb5e3a2ab2a2cd13ea06c72afc0}{Min\+Vertices\+Per\+Sprite} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9cd650379bf745bc330ae7729b5e2998}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+static constexpr size\+\_\+t \hyperlink{namespacemage_ab7053197804193820c19712e1f35201f}{Max\+Vertices\+Per\+Sprite} ()
+\item 
+static constexpr size\+\_\+t \hyperlink{namespacemage_a7bf923eb07c1afb9e517fd5955aada32}{Min\+Indices\+Per\+Sprite} ()
+\item 
+static constexpr size\+\_\+t \hyperlink{namespacemage_aa0aa71a65f120f26014b08cff9ef992b}{Max\+Indices\+Per\+Sprite} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ab2e31fe4a0e16426cce4d4df6a874550}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 \&device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a2d37559381f62998ab660694c0e45d68}{Get\+Viewport\+Transform} (I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode)
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a07ec7b3cc09d526542d3c5ea7e17595a}{Get\+Viewport\+Transform} (I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode, D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT $\ast$$\ast$viewport)
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a0191746ac9322d40db5863b59624719a}{Get\+Viewport\+Transform} (const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&viewport, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode)
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a34342faaa7525d7180807df03687aa86}{X\+M\+Vector\+Left\+Top\+Right\+Bottom} (const R\+E\+CT \&rect)
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_abda051097e5b76fb65983141822cb170}{X\+M\+Vector\+Left\+Top\+Width\+Height} (const R\+E\+CT \&rect)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af39a48b817852e25e978a438a9173f7f}{Import\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 \&device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
 const char $\ast$ \hyperlink{namespacemage_a451f2cac5de5cebbe8bc004b3f29857b}{str\+\_\+escape\+\_\+first} (const char $\ast$str, char c)
 \item 
@@ -639,47 +724,47 @@ static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a35ccdb42bbc027
 \item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac20162a68be6828c38072a3afb0711c1}{Fill\+Init\+Data} (\+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+Out\+\_\+ size\+\_\+t \&twidth, \+\_\+\+Out\+\_\+ size\+\_\+t \&theight, \+\_\+\+Out\+\_\+ size\+\_\+t \&tdepth, \+\_\+\+Out\+\_\+ size\+\_\+t \&skip\+\_\+mip, \+\_\+\+Out\+\_\+writes\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a26750de95b14af512868d2ff37df6238}{Create\+D3\+D\+Resources} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+ uint32\+\_\+t res\+\_\+dim, \+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+In\+\_\+ bool is\+\_\+cube\+\_\+map, \+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a2f67f5100e90a3a70b09693a3f377abc}{Create\+D3\+D\+Resources} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+ uint32\+\_\+t res\+\_\+dim, \+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+In\+\_\+ bool is\+\_\+cube\+\_\+map, \+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a573e584f2ea3d41fc7ff54347efd2ec6}{Create\+Texture\+From\+D\+DS} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$header, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aec7bb5144fd5668d6631d58cf33ee0cc}{Create\+Texture\+From\+D\+DS} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$header, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
 \item 
 static \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} \hyperlink{namespacemage_afcc0891e1660f8457696cb30f4ee518a}{Get\+Alpha\+Mode} (\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$header)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a05ac298d3b81cff5162e2decd98897ac}{Create\+D\+D\+S\+Texture\+From\+Memory} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a34cd3ba96072898537293d4ef81c3a90}{Create\+D\+D\+S\+Texture\+From\+Memory} (I\+D3\+D11\+Device2 \&device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a25d1da6bdd65d045b6b1a3dc607266b6}{Create\+D\+D\+S\+Texture\+From\+Memory} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ae6a52f75736a16c418f1620237215675}{Create\+D\+D\+S\+Texture\+From\+Memory} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a04e6f3894f22685f5ebc77e3a1f43afe}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a2f474642e9485462a0090886bee8bfbd}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (I\+D3\+D11\+Device2 \&device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a082474494b3893f97eab852756dc1f1d}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a872e868bcbdd865709cb75b83509526c}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a396c6ac4a89b6c4f240fac28069ac261}{Create\+D\+D\+S\+Texture\+From\+File} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a42938f553c57e99ee85bcf91703e1f6d}{Create\+D\+D\+S\+Texture\+From\+File} (I\+D3\+D11\+Device2 \&device, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aace6a69a8b1dfd38094ba0f15fca0281}{Create\+D\+D\+S\+Texture\+From\+File} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a38d7b30fa2439cb36df423b7313e5fbb}{Create\+D\+D\+S\+Texture\+From\+File} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a27e523f608bf4226d95c723b352da485}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ae7c962278e6fe9a39f9cdb19eab5c13d}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (I\+D3\+D11\+Device2 \&device, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9beed34edd0e666ded7d40e3edca2b24}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a833afde4001b5915da0077a8a88e2652}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8ec642a68043c7086ade34800bf8efb0}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8e9b47632f42655b28f6d1fd69d06bb8}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a1b48b3ece668e4090a702dbb650f3b5a}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a6e75880ce85696a939e02b094225c21b}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a1ea850bfbc5ec047d7e89579338ff82b}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a94024c980743ee97c3bd83709915a976}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a70df6cf5b59e74872a323a4ad5cbe6f0}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ab997ee0a7ba7e6732ebdcd1e346017c7}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a09bcadc2f77ed8a1553f387248a46d28}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4bf64feff2169e36481c0e920c124dee}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aaf5155ed755a05d0b538d599fb62879c}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abf303b516ffd7b83cff8cdbb7c59fd18}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a11ae78fb9cc4843dd533f5412bae2bce}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a5a83eab2c4e95b5ea8251f69cf288d8f}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a6fff9338d2b3cdc03e10c46c301197ce}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac0a4463d7ef927c91a534f0edbcfc280}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_ac27913e621bde0fd01312183aafaaca0}{Create\+Texture} (const wstring \&fname)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac163decb3b32f9ea26a25853be0f7d8f}{Import\+Texture\+From\+File} (const wstring \&fname, const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+resource\+\_\+view)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad4d9574c0f702082e383b008ccf1d0b6}{Import\+Texture\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 \&device, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+resource\+\_\+view)
 \item 
 void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
 \item 
@@ -709,6 +794,16 @@ L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a7ab7652c7518922
 const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{namespacemage_add3b7e051df553262371e077d9d66fd9}{g\+\_\+feature\+\_\+levels} \mbox{[}$\,$\mbox{]}
 \item 
 const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a5a4e11b65061c618b85826ab6df480e0}{g\+\_\+pixel\+\_\+formats} \mbox{[}$\,$\mbox{]}
+\item 
+static const size\+\_\+t \hyperlink{namespacemage_a64d189167b7098c519fdcefbe4ac058f}{initial\+\_\+queue\+\_\+size} = 64
+\item 
+static const size\+\_\+t \hyperlink{namespacemage_aecf83c1102c47ecde72f662c43f9722f}{min\+\_\+sprites\+\_\+per\+\_\+batch} = 128
+\item 
+static const size\+\_\+t \hyperlink{namespacemage_adc9000a9470d1e75475b182bc5c5cde3}{max\+\_\+sprites\+\_\+per\+\_\+batch} = 2048
+\item 
+static const size\+\_\+t \hyperlink{namespacemage_ad48c52817a0e8892e21bd053cce611ed}{vertices\+\_\+per\+\_\+sprite} = 4
+\item 
+static const size\+\_\+t \hyperlink{namespacemage_a06594a8c61d05e5884b56efd264cce1e}{indices\+\_\+per\+\_\+sprite} = 6
 \item 
 const uint32\+\_\+t \hyperlink{namespacemage_a52f784e41b51fee843891c6b5e9be479}{D\+D\+S\+\_\+\+M\+A\+G\+IC} = 0x20534444
 \end{DoxyCompactItemize}
@@ -758,6 +853,13 @@ using \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{mage\+::\+Com\
 \subsubsection{\texorpdfstring{int3}{int3}}
 {\footnotesize\ttfamily typedef X\+M\+I\+N\+T3 \hyperlink{namespacemage_a80c7f9de83dfbbd55bbf339dbcbd99cc}{mage\+::int3}}
 
+\hypertarget{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{}\label{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216} 
+\index{mage@{mage}!Resource\+Map@{Resource\+Map}}
+\index{Resource\+Map@{Resource\+Map}!mage@{mage}}
+\subsubsection{\texorpdfstring{Resource\+Map}{ResourceMap}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+using \hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{mage\+::\+Resource\+Map} = typedef map$<$ KeyT, \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr}$<$ ResourceT $>$ $>$}
+
 \hypertarget{namespacemage_ab892828913d6129acf71e0cec60467e5}{}\label{namespacemage_ab892828913d6129acf71e0cec60467e5} 
 \index{mage@{mage}!Shared\+Handle@{Shared\+Handle}}
 \index{Shared\+Handle@{Shared\+Handle}!mage@{mage}}
@@ -783,6 +885,13 @@ using \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{mage\+::\+Shar
 \subsubsection{\texorpdfstring{Unique\+Ptr}{UniquePtr}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 using \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{mage\+::\+Unique\+Ptr} = typedef std\+::unique\+\_\+ptr$<$ T $>$}
+
+\hypertarget{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{}\label{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1} 
+\index{mage@{mage}!Weak\+Ptr@{Weak\+Ptr}}
+\index{Weak\+Ptr@{Weak\+Ptr}!mage@{mage}}
+\subsubsection{\texorpdfstring{Weak\+Ptr}{WeakPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{mage\+::\+Weak\+Ptr} = typedef std\+::weak\+\_\+ptr$<$ T $>$}
 
 
 
@@ -867,6 +976,34 @@ Sprite\+Effects\+\_\+\+Flip\+Both&\\
 \hline
 
 \end{DoxyEnumFields}
+\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014} 
+\index{mage@{mage}!Sprite\+Sort\+Mode@{Sprite\+Sort\+Mode}}
+\index{Sprite\+Sort\+Mode@{Sprite\+Sort\+Mode}!mage@{mage}}
+\subsubsection{\texorpdfstring{Sprite\+Sort\+Mode}{SpriteSortMode}}
+{\footnotesize\ttfamily enum \hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{mage\+::\+Sprite\+Sort\+Mode}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Deferred@{Sprite\+Sort\+Mode\+\_\+\+Deferred}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Deferred@{Sprite\+Sort\+Mode\+\_\+\+Deferred}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada} 
+Sprite\+Sort\+Mode\+\_\+\+Deferred&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Immediate@{Sprite\+Sort\+Mode\+\_\+\+Immediate}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Immediate@{Sprite\+Sort\+Mode\+\_\+\+Immediate}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014a1860f7ba337b06db99a5aa4d1773c47e}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014a1860f7ba337b06db99a5aa4d1773c47e} 
+Sprite\+Sort\+Mode\+\_\+\+Immediate&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Texture@{Sprite\+Sort\+Mode\+\_\+\+Texture}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Texture@{Sprite\+Sort\+Mode\+\_\+\+Texture}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014acd196441d0dbb56cb50355105549e09d}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014acd196441d0dbb56cb50355105549e09d} 
+Sprite\+Sort\+Mode\+\_\+\+Texture&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front@{Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front@{Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014a1ed9f5cf1fd98919f7bf075b3d75baa6}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014a1ed9f5cf1fd98919f7bf075b3d75baa6} 
+Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back@{Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back@{Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014a12295f7eac8babb6d7e52b765715382f}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014a12295f7eac8babb6d7e52b765715382f} 
+Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back&\\
+\hline
+
+\end{DoxyEnumFields}
 \hypertarget{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{}\label{namespacemage_a2178ba2411db5912f41b2e7698c2037d} 
 \index{mage@{mage}!Token\+Result@{Token\+Result}}
 \index{Token\+Result@{Token\+Result}!mage@{mage}}
@@ -942,11 +1079,11 @@ Unknown\+Type&\\
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{}\label{namespacemage_a6c97f75df305a5e0a945e82a26e75c38} 
+\hypertarget{namespacemage_a4770c97ad241a87982062034adb6c0dc}{}\label{namespacemage_a4770c97ad241a87982062034adb6c0dc} 
 \index{mage@{mage}!Alloc\+Aligned@{Alloc\+Aligned}}
 \index{Alloc\+Aligned@{Alloc\+Aligned}!mage@{mage}}
-\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}}
-{\footnotesize\ttfamily T $\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void$\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{alignment = {\ttfamily MAGE\+\_\+L1\+\_\+CACHE\+\_\+LINE\+\_\+SIZE} }\end{DoxyParamCaption})}
 
 Allocates memory on an alignment boundary of 64 bytes of the given size.
 
@@ -954,12 +1091,21 @@ Allocates memory on an alignment boundary of 64 bytes of the given size.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
 \hline
+\mbox{\tt in}  & {\em alignment} & The alignment. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily nullptr} if the allocation failed. 
 
-A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes.
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a43e2cdb4c71637a86b1861a73be44a58}{}\label{namespacemage_a43e2cdb4c71637a86b1861a73be44a58} 
+\index{mage@{mage}!Alloc\+Aligned@{Alloc\+Aligned}}
+\index{Alloc\+Aligned@{Alloc\+Aligned}!mage@{mage}}
+\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
 Allocates memory on an alignment boundary of 64 bytes.
 
 
@@ -1422,113 +1568,218 @@ Converts the given format to an S\+R\+GB format.
 \begin{DoxyReturn}{Returns}
 The converted format. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a26750de95b14af512868d2ff37df6238}{}\label{namespacemage_a26750de95b14af512868d2ff37df6238} 
+\hypertarget{namespacemage_a10940a5e855afa46384cd95bea36daa2}{}\label{namespacemage_a10940a5e855afa46384cd95bea36daa2} 
+\index{mage@{mage}!Create\+Additive\+Blend\+State@{Create\+Additive\+Blend\+State}}
+\index{Create\+Additive\+Blend\+State@{Create\+Additive\+Blend\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Additive\+Blend\+State()}{CreateAdditiveBlendState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Additive\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a96ba3ac7ba360f70a47b4b6a95cd50b0}{}\label{namespacemage_a96ba3ac7ba360f70a47b4b6a95cd50b0} 
+\index{mage@{mage}!Create\+Alpha\+Blend\+State@{Create\+Alpha\+Blend\+State}}
+\index{Create\+Alpha\+Blend\+State@{Create\+Alpha\+Blend\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Alpha\+Blend\+State()}{CreateAlphaBlendState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Alpha\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_afca0f51ea574992c78b9733c3b3edd87}{}\label{namespacemage_afca0f51ea574992c78b9733c3b3edd87} 
+\index{mage@{mage}!Create\+Anisotropic\+Clamp\+Sampler\+State@{Create\+Anisotropic\+Clamp\+Sampler\+State}}
+\index{Create\+Anisotropic\+Clamp\+Sampler\+State@{Create\+Anisotropic\+Clamp\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Anisotropic\+Clamp\+Sampler\+State()}{CreateAnisotropicClampSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Anisotropic\+Clamp\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a3a4bc836f24ea04b932e933b7ea4020e}{}\label{namespacemage_a3a4bc836f24ea04b932e933b7ea4020e} 
+\index{mage@{mage}!Create\+Anisotropic\+Wrap\+Sampler\+State@{Create\+Anisotropic\+Wrap\+Sampler\+State}}
+\index{Create\+Anisotropic\+Wrap\+Sampler\+State@{Create\+Anisotropic\+Wrap\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Anisotropic\+Wrap\+Sampler\+State()}{CreateAnisotropicWrapSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Anisotropic\+Wrap\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_afe0afa82cd70f7e6201d1ab7829126cb}{}\label{namespacemage_afe0afa82cd70f7e6201d1ab7829126cb} 
+\index{mage@{mage}!Create\+Blend\+State@{Create\+Blend\+State}}
+\index{Create\+Blend\+State@{Create\+Blend\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Blend\+State()}{CreateBlendState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state,  }\item[{D3\+D11\+\_\+\+B\+L\+E\+ND}]{src\+\_\+blend,  }\item[{D3\+D11\+\_\+\+B\+L\+E\+ND}]{dest\+\_\+blend }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a86d252f54bda7594e669cc2b36cccd49}{}\label{namespacemage_a86d252f54bda7594e669cc2b36cccd49} 
+\index{mage@{mage}!Create\+Constant\+Buffer@{Create\+Constant\+Buffer}}
+\index{Create\+Constant\+Buffer@{Create\+Constant\+Buffer}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Constant\+Buffer()}{CreateConstantBuffer()}}
+{\footnotesize\ttfamily template$<$typename BufferT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Create\+Constant\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Buffer $\ast$$\ast$}]{buffer }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_af0e285fcd817f99a505b24454300d3df}{}\label{namespacemage_af0e285fcd817f99a505b24454300d3df} 
+\index{mage@{mage}!Create\+Cull\+Clockwise\+Rasterizer\+State@{Create\+Cull\+Clockwise\+Rasterizer\+State}}
+\index{Create\+Cull\+Clockwise\+Rasterizer\+State@{Create\+Cull\+Clockwise\+Rasterizer\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Cull\+Clockwise\+Rasterizer\+State()}{CreateCullClockwiseRasterizerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Cull\+Clockwise\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$}]{rasterizer\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_adb1dc1631cc6433625dbe6c36140ffd6}{}\label{namespacemage_adb1dc1631cc6433625dbe6c36140ffd6} 
+\index{mage@{mage}!Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State@{Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State}}
+\index{Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State@{Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State()}{CreateCullCounterClockwiseRasterizerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Cull\+Counter\+Clockwise\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$}]{rasterizer\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9d80684267e1cf818b9ddaf40f7cc41b}{}\label{namespacemage_a9d80684267e1cf818b9ddaf40f7cc41b} 
+\index{mage@{mage}!Create\+Cull\+None\+Rasterizer\+State@{Create\+Cull\+None\+Rasterizer\+State}}
+\index{Create\+Cull\+None\+Rasterizer\+State@{Create\+Cull\+None\+Rasterizer\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Cull\+None\+Rasterizer\+State()}{CreateCullNoneRasterizerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Cull\+None\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$}]{rasterizer\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a2f67f5100e90a3a70b09693a3f377abc}{}\label{namespacemage_a2f67f5100e90a3a70b09693a3f377abc} 
 \index{mage@{mage}!Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}}
 \index{Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D3\+D\+Resources()}{CreateD3DResources()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+D3\+D\+Resources (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{res\+\_\+dim,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{depth,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{mip\+\_\+count,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{array\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+In\+\_\+ bool}]{is\+\_\+cube\+\_\+map,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$}]{init\+\_\+data,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+D3\+D\+Resources (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{res\+\_\+dim,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{depth,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{mip\+\_\+count,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{array\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+In\+\_\+ bool}]{is\+\_\+cube\+\_\+map,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$}]{init\+\_\+data,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a1b48b3ece668e4090a702dbb650f3b5a}{}\label{namespacemage_a1b48b3ece668e4090a702dbb650f3b5a} 
+\hypertarget{namespacemage_a6e75880ce85696a939e02b094225c21b}{}\label{namespacemage_a6e75880ce85696a939e02b094225c21b} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
 \index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a70df6cf5b59e74872a323a4ad5cbe6f0}{}\label{namespacemage_a70df6cf5b59e74872a323a4ad5cbe6f0} 
+\hypertarget{namespacemage_ab997ee0a7ba7e6732ebdcd1e346017c7}{}\label{namespacemage_ab997ee0a7ba7e6732ebdcd1e346017c7} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
 \index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a396c6ac4a89b6c4f240fac28069ac261}{}\label{namespacemage_a396c6ac4a89b6c4f240fac28069ac261} 
+\hypertarget{namespacemage_a42938f553c57e99ee85bcf91703e1f6d}{}\label{namespacemage_a42938f553c57e99ee85bcf91703e1f6d} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
 \index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_aace6a69a8b1dfd38094ba0f15fca0281}{}\label{namespacemage_aace6a69a8b1dfd38094ba0f15fca0281} 
+\hypertarget{namespacemage_a38d7b30fa2439cb36df423b7313e5fbb}{}\label{namespacemage_a38d7b30fa2439cb36df423b7313e5fbb} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
 \index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_aaf5155ed755a05d0b538d599fb62879c}{}\label{namespacemage_aaf5155ed755a05d0b538d599fb62879c} 
+\hypertarget{namespacemage_abf303b516ffd7b83cff8cdbb7c59fd18}{}\label{namespacemage_abf303b516ffd7b83cff8cdbb7c59fd18} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a6fff9338d2b3cdc03e10c46c301197ce}{}\label{namespacemage_a6fff9338d2b3cdc03e10c46c301197ce} 
+\hypertarget{namespacemage_ac0a4463d7ef927c91a534f0edbcfc280}{}\label{namespacemage_ac0a4463d7ef927c91a534f0edbcfc280} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a27e523f608bf4226d95c723b352da485}{}\label{namespacemage_a27e523f608bf4226d95c723b352da485} 
+\hypertarget{namespacemage_ae7c962278e6fe9a39f9cdb19eab5c13d}{}\label{namespacemage_ae7c962278e6fe9a39f9cdb19eab5c13d} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a9beed34edd0e666ded7d40e3edca2b24}{}\label{namespacemage_a9beed34edd0e666ded7d40e3edca2b24} 
+\hypertarget{namespacemage_a833afde4001b5915da0077a8a88e2652}{}\label{namespacemage_a833afde4001b5915da0077a8a88e2652} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a8ec642a68043c7086ade34800bf8efb0}{}\label{namespacemage_a8ec642a68043c7086ade34800bf8efb0} 
+\hypertarget{namespacemage_a8e9b47632f42655b28f6d1fd69d06bb8}{}\label{namespacemage_a8e9b47632f42655b28f6d1fd69d06bb8} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a1ea850bfbc5ec047d7e89579338ff82b}{}\label{namespacemage_a1ea850bfbc5ec047d7e89579338ff82b} 
+\hypertarget{namespacemage_a94024c980743ee97c3bd83709915a976}{}\label{namespacemage_a94024c980743ee97c3bd83709915a976} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a05ac298d3b81cff5162e2decd98897ac}{}\label{namespacemage_a05ac298d3b81cff5162e2decd98897ac} 
+\hypertarget{namespacemage_a34cd3ba96072898537293d4ef81c3a90}{}\label{namespacemage_a34cd3ba96072898537293d4ef81c3a90} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a25d1da6bdd65d045b6b1a3dc607266b6}{}\label{namespacemage_a25d1da6bdd65d045b6b1a3dc607266b6} 
+\hypertarget{namespacemage_ae6a52f75736a16c418f1620237215675}{}\label{namespacemage_ae6a52f75736a16c418f1620237215675} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a09bcadc2f77ed8a1553f387248a46d28}{}\label{namespacemage_a09bcadc2f77ed8a1553f387248a46d28} 
+\hypertarget{namespacemage_a4bf64feff2169e36481c0e920c124dee}{}\label{namespacemage_a4bf64feff2169e36481c0e920c124dee} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a11ae78fb9cc4843dd533f5412bae2bce}{}\label{namespacemage_a11ae78fb9cc4843dd533f5412bae2bce} 
+\hypertarget{namespacemage_a5a83eab2c4e95b5ea8251f69cf288d8f}{}\label{namespacemage_a5a83eab2c4e95b5ea8251f69cf288d8f} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a04e6f3894f22685f5ebc77e3a1f43afe}{}\label{namespacemage_a04e6f3894f22685f5ebc77e3a1f43afe} 
+\hypertarget{namespacemage_a2f474642e9485462a0090886bee8bfbd}{}\label{namespacemage_a2f474642e9485462a0090886bee8bfbd} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a082474494b3893f97eab852756dc1f1d}{}\label{namespacemage_a082474494b3893f97eab852756dc1f1d} 
+\hypertarget{namespacemage_a872e868bcbdd865709cb75b83509526c}{}\label{namespacemage_a872e868bcbdd865709cb75b83509526c} 
 \index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
 \index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_ae1cc425d7fef9c71f040623b56b01e91}{}\label{namespacemage_ae1cc425d7fef9c71f040623b56b01e91} 
+\index{mage@{mage}!Create\+Depth\+Default\+Depth\+Stencil\+State@{Create\+Depth\+Default\+Depth\+Stencil\+State}}
+\index{Create\+Depth\+Default\+Depth\+Stencil\+State@{Create\+Depth\+Default\+Depth\+Stencil\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Depth\+Default\+Depth\+Stencil\+State()}{CreateDepthDefaultDepthStencilState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Depth\+Default\+Depth\+Stencil\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$}]{depth\+\_\+stencil\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_ad3737d6d31b2417259504bca50d3c9ae}{}\label{namespacemage_ad3737d6d31b2417259504bca50d3c9ae} 
+\index{mage@{mage}!Create\+Depth\+None\+Depth\+Stencil\+State@{Create\+Depth\+None\+Depth\+Stencil\+State}}
+\index{Create\+Depth\+None\+Depth\+Stencil\+State@{Create\+Depth\+None\+Depth\+Stencil\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Depth\+None\+Depth\+Stencil\+State()}{CreateDepthNoneDepthStencilState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Depth\+None\+Depth\+Stencil\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$}]{depth\+\_\+stencil\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a60177e194fbb0fa839e2e07fa2b4e3a2}{}\label{namespacemage_a60177e194fbb0fa839e2e07fa2b4e3a2} 
+\index{mage@{mage}!Create\+Depth\+Read\+Depth\+Stencil\+State@{Create\+Depth\+Read\+Depth\+Stencil\+State}}
+\index{Create\+Depth\+Read\+Depth\+Stencil\+State@{Create\+Depth\+Read\+Depth\+Stencil\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Depth\+Read\+Depth\+Stencil\+State()}{CreateDepthReadDepthStencilState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Depth\+Read\+Depth\+Stencil\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$}]{depth\+\_\+stencil\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a6042a2db86a3ab5db97a57d31e5edde9}{}\label{namespacemage_a6042a2db86a3ab5db97a57d31e5edde9} 
+\index{mage@{mage}!Create\+Depth\+Stencil\+State@{Create\+Depth\+Stencil\+State}}
+\index{Create\+Depth\+Stencil\+State@{Create\+Depth\+Stencil\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Depth\+Stencil\+State()}{CreateDepthStencilState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Depth\+Stencil\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$}]{depth\+\_\+stencil\+\_\+state,  }\item[{bool}]{enable,  }\item[{bool}]{write\+\_\+enable }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9eedd91f228abcb758863d194b90a5d8}{}\label{namespacemage_a9eedd91f228abcb758863d194b90a5d8} 
+\index{mage@{mage}!Create\+Dynamic\+Vertex\+Buffer@{Create\+Dynamic\+Vertex\+Buffer}}
+\index{Create\+Dynamic\+Vertex\+Buffer@{Create\+Dynamic\+Vertex\+Buffer}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Dynamic\+Vertex\+Buffer()}{CreateDynamicVertexBuffer()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Create\+Dynamic\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Buffer $\ast$$\ast$}]{buffer,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_aed831976b3cec41b91dd31e936d0708b}{}\label{namespacemage_aed831976b3cec41b91dd31e936d0708b} 
+\index{mage@{mage}!Create\+Index\+Buffer@{Create\+Index\+Buffer}}
+\index{Create\+Index\+Buffer@{Create\+Index\+Buffer}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Index\+Buffer()}{CreateIndexBuffer()}}
+{\footnotesize\ttfamily template$<$typename IndexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Create\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Buffer $\ast$$\ast$}]{buffer,  }\item[{const IndexT $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_ab0bd21012fa29244f0f9b3201bebc2a5}{}\label{namespacemage_ab0bd21012fa29244f0f9b3201bebc2a5} 
 \index{mage@{mage}!Create\+Lambertian\+Shader@{Create\+Lambertian\+Shader}}
 \index{Create\+Lambertian\+Shader@{Create\+Lambertian\+Shader}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Lambertian\+Shader()}{CreateLambertianShader()}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} mage\+::\+Create\+Lambertian\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a744cae9681443dfe2b9e02abd4b7c2f8}{}\label{namespacemage_a744cae9681443dfe2b9e02abd4b7c2f8} 
+\index{mage@{mage}!Create\+Linear\+Clamp\+Sampler\+State@{Create\+Linear\+Clamp\+Sampler\+State}}
+\index{Create\+Linear\+Clamp\+Sampler\+State@{Create\+Linear\+Clamp\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Linear\+Clamp\+Sampler\+State()}{CreateLinearClampSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Linear\+Clamp\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_af916232b80c6ef46037bbbbc1e4ef752}{}\label{namespacemage_af916232b80c6ef46037bbbbc1e4ef752} 
+\index{mage@{mage}!Create\+Linear\+Wrap\+Sampler\+State@{Create\+Linear\+Wrap\+Sampler\+State}}
+\index{Create\+Linear\+Wrap\+Sampler\+State@{Create\+Linear\+Wrap\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Linear\+Wrap\+Sampler\+State()}{CreateLinearWrapSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Linear\+Wrap\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84}{}\label{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84} 
 \index{mage@{mage}!Create\+Model\+Descriptor@{Create\+Model\+Descriptor}}
@@ -1537,11 +1788,54 @@ The converted format.
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Create\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc }\end{DoxyParamCaption})}
 
+\hypertarget{namespacemage_a263cdecccc5d7319c61478f86d360628}{}\label{namespacemage_a263cdecccc5d7319c61478f86d360628} 
+\index{mage@{mage}!Create\+Non\+Premultiplied\+Blend\+State@{Create\+Non\+Premultiplied\+Blend\+State}}
+\index{Create\+Non\+Premultiplied\+Blend\+State@{Create\+Non\+Premultiplied\+Blend\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Non\+Premultiplied\+Blend\+State()}{CreateNonPremultipliedBlendState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Non\+Premultiplied\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a4f48b5923062c41d95c470072773faa4}{}\label{namespacemage_a4f48b5923062c41d95c470072773faa4} 
+\index{mage@{mage}!Create\+Opaque\+Blend\+State@{Create\+Opaque\+Blend\+State}}
+\index{Create\+Opaque\+Blend\+State@{Create\+Opaque\+Blend\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Opaque\+Blend\+State()}{CreateOpaqueBlendState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Opaque\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_afda80bd33b457bb54933e515a8dff5e1}{}\label{namespacemage_afda80bd33b457bb54933e515a8dff5e1} 
+\index{mage@{mage}!Create\+Point\+Clamp\+Sampler\+State@{Create\+Point\+Clamp\+Sampler\+State}}
+\index{Create\+Point\+Clamp\+Sampler\+State@{Create\+Point\+Clamp\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Point\+Clamp\+Sampler\+State()}{CreatePointClampSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Point\+Clamp\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a8a2464bb0e6bc22bee3a8ffa6badc1e8}{}\label{namespacemage_a8a2464bb0e6bc22bee3a8ffa6badc1e8} 
+\index{mage@{mage}!Create\+Point\+Wrap\+Sampler\+State@{Create\+Point\+Wrap\+Sampler\+State}}
+\index{Create\+Point\+Wrap\+Sampler\+State@{Create\+Point\+Wrap\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Point\+Wrap\+Sampler\+State()}{CreatePointWrapSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Point\+Wrap\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_acd9dab49a7f0b5a70b01d8f6b1e36cea}{}\label{namespacemage_acd9dab49a7f0b5a70b01d8f6b1e36cea} 
+\index{mage@{mage}!Create\+Rasterizer\+State@{Create\+Rasterizer\+State}}
+\index{Create\+Rasterizer\+State@{Create\+Rasterizer\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Rasterizer\+State()}{CreateRasterizerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$}]{rasterizer\+\_\+state,  }\item[{D3\+D11\+\_\+\+C\+U\+L\+L\+\_\+\+M\+O\+DE}]{cull\+\_\+mode,  }\item[{D3\+D11\+\_\+\+F\+I\+L\+L\+\_\+\+M\+O\+DE}]{fill\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a4b5788872b6d54cef0af55477b9179a0}{}\label{namespacemage_a4b5788872b6d54cef0af55477b9179a0} 
+\index{mage@{mage}!Create\+Sampler\+State@{Create\+Sampler\+State}}
+\index{Create\+Sampler\+State@{Create\+Sampler\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Sampler\+State()}{CreateSamplerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Sampler\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$$\ast$}]{sampler\+\_\+state,  }\item[{D3\+D11\+\_\+\+F\+I\+L\+T\+ER}]{filter,  }\item[{D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+M\+O\+DE}]{address\+\_\+mode }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a3119898d7caac71d8ee495c3ae3194b1}{}\label{namespacemage_a3119898d7caac71d8ee495c3ae3194b1} 
 \index{mage@{mage}!Create\+Shared\+Handle@{Create\+Shared\+Handle}}
 \index{Create\+Shared\+Handle@{Create\+Shared\+Handle}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Shared\+Handle()}{CreateSharedHandle()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ab892828913d6129acf71e0cec60467e5}{Shared\+Handle} mage\+::\+Create\+Shared\+Handle (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{handle }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_ad7faeaa97e7de01bf316d7c92c4e8911}{}\label{namespacemage_ad7faeaa97e7de01bf316d7c92c4e8911} 
+\index{mage@{mage}!Create\+Static\+Vertex\+Buffer@{Create\+Static\+Vertex\+Buffer}}
+\index{Create\+Static\+Vertex\+Buffer@{Create\+Static\+Vertex\+Buffer}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Static\+Vertex\+Buffer()}{CreateStaticVertexBuffer()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Create\+Static\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Buffer $\ast$$\ast$}]{buffer,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_ac27913e621bde0fd01312183aafaaca0}{}\label{namespacemage_ac27913e621bde0fd01312183aafaaca0} 
 \index{mage@{mage}!Create\+Texture@{Create\+Texture}}
@@ -1549,11 +1843,11 @@ The converted format.
 \subsubsection{\texorpdfstring{Create\+Texture()}{CreateTexture()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Create\+Texture (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a573e584f2ea3d41fc7ff54347efd2ec6}{}\label{namespacemage_a573e584f2ea3d41fc7ff54347efd2ec6} 
+\hypertarget{namespacemage_aec7bb5144fd5668d6631d58cf33ee0cc}{}\label{namespacemage_aec7bb5144fd5668d6631d58cf33ee0cc} 
 \index{mage@{mage}!Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}}
 \index{Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Texture\+From\+D\+D\+S()}{CreateTextureFromDDS()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+Texture\+From\+D\+DS (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$}]{header,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+Texture\+From\+D\+DS (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 \&}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$}]{header,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \hypertarget{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe}{}\label{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe} 
 \index{mage@{mage}!Create\+Variable\+Script@{Create\+Variable\+Script}}
@@ -1573,6 +1867,12 @@ Creates a variable script.
 \begin{DoxyReturn}{Returns}
 A pointer to the variable script. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_ac8117c713e168914be5bb9f4062dae76}{}\label{namespacemage_ac8117c713e168914be5bb9f4062dae76} 
+\index{mage@{mage}!Create\+Wireframe\+Rasterizer\+State@{Create\+Wireframe\+Rasterizer\+State}}
+\index{Create\+Wireframe\+Rasterizer\+State@{Create\+Wireframe\+Rasterizer\+State}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Wireframe\+Rasterizer\+State()}{CreateWireframeRasterizerState()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Wireframe\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$}]{rasterizer\+\_\+state }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a1bcf1f0301e170105908eee5b5c46830}{}\label{namespacemage_a1bcf1f0301e170105908eee5b5c46830} 
 \index{mage@{mage}!Debug@{Debug}}
 \index{Debug@{Debug}!mage@{mage}}
@@ -1682,7 +1982,7 @@ A pointer to the end of the word. (i.\+e. pointer to a space or null-\/terminati
 \subsubsection{\texorpdfstring{Free\+Aligned()}{FreeAligned()}}
 {\footnotesize\ttfamily void mage\+::\+Free\+Aligned (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
 
-Frees a block of memory that was allocated with \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{mage\+::\+Alloc\+Aligned(size\+\_\+t)} or \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{mage\+::\+Alloc\+Aligned$<$\+T$>$(size\+\_\+t)}.
+Frees a block of memory that was allocated with \hyperlink{namespacemage_a43e2cdb4c71637a86b1861a73be44a58}{mage\+::\+Alloc\+Aligned(size\+\_\+t)} or \hyperlink{namespacemage_a43e2cdb4c71637a86b1861a73be44a58}{mage\+::\+Alloc\+Aligned$<$\+T$>$(size\+\_\+t)}.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -1801,11 +2101,11 @@ Returns the name of the given file.
 \begin{DoxyReturn}{Returns}
 The name of the given file. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a4821032220f01411c7eaeb338977b8be}{}\label{namespacemage_a4821032220f01411c7eaeb338977b8be} 
+\hypertarget{namespacemage_a5dede4f8e30ef230b51149978d08ad8f}{}\label{namespacemage_a5dede4f8e30ef230b51149978d08ad8f} 
 \index{mage@{mage}!Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}}
 \index{Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Model\+Rendering\+Device()}{GetModelRenderingDevice()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} mage\+::\+Get\+Model\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily I\+D3\+D11\+Device2\& mage\+::\+Get\+Model\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_af3f71027fd2cac8d444bae0335fb8fb2}{}\label{namespacemage_af3f71027fd2cac8d444bae0335fb8fb2} 
 \index{mage@{mage}!Get\+Model\+Resource\+Factory@{Get\+Model\+Resource\+Factory}}
@@ -1845,11 +2145,11 @@ Returns the path of the given file.
 \begin{DoxyReturn}{Returns}
 The path of the given file. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a2da0af7e115fa08173bf5f3e4039986d}{}\label{namespacemage_a2da0af7e115fa08173bf5f3e4039986d} 
+\hypertarget{namespacemage_ac9d3c1e7f63dbdac707efe26bea76619}{}\label{namespacemage_ac9d3c1e7f63dbdac707efe26bea76619} 
 \index{mage@{mage}!Get\+Rendering\+Device@{Get\+Rendering\+Device}}
 \index{Get\+Rendering\+Device@{Get\+Rendering\+Device}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Rendering\+Device()}{GetRenderingDevice()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} mage\+::\+Get\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily I\+D3\+D11\+Device2 \& mage\+::\+Get\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_ad773a6b6442b973421222b664229e86d}{}\label{namespacemage_ad773a6b6442b973421222b664229e86d} 
 \index{mage@{mage}!Get\+Resource\+Factory@{Get\+Resource\+Factory}}
@@ -1862,6 +2162,24 @@ The path of the given file.
 \index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Surface\+Info()}{GetSurfaceInfo()}}
 {\footnotesize\ttfamily static void mage\+::\+Get\+Surface\+Info (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{fmt,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+nb\+\_\+bytes,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+row\+\_\+bytes,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+nb\+\_\+rows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a2d37559381f62998ab660694c0e45d68}{}\label{namespacemage_a2d37559381f62998ab660694c0e45d68} 
+\index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
+\index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a07ec7b3cc09d526542d3c5ea7e17595a}{}\label{namespacemage_a07ec7b3cc09d526542d3c5ea7e17595a} 
+\index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
+\index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode,  }\item[{D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT $\ast$$\ast$}]{viewport }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a0191746ac9322d40db5863b59624719a}{}\label{namespacemage_a0191746ac9322d40db5863b59624719a} 
+\index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
+\index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&}]{viewport,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a1f8c73ddfbe8a370be1800627136b2ca}{}\label{namespacemage_a1f8c73ddfbe8a370be1800627136b2ca} 
 \index{mage@{mage}!Goto\+Delimiters@{Goto\+Delimiters}}
@@ -1965,11 +2283,11 @@ The path of the given file.
 \subsubsection{\texorpdfstring{Has\+U\+Int8()}{HasUInt8()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{Token\+Result} mage\+::\+Has\+U\+Int8 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{const char $\ast$}]{delimiters }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_adca43698555e39b30497fd85517f56de}{}\label{namespacemage_adca43698555e39b30497fd85517f56de} 
+\hypertarget{namespacemage_af39a48b817852e25e978a438a9173f7f}{}\label{namespacemage_af39a48b817852e25e978a438a9173f7f} 
 \index{mage@{mage}!Import\+Font\+From\+File@{Import\+Font\+From\+File}}
 \index{Import\+Font\+From\+File@{Import\+Font\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Font\+From\+File()}{ImportFontFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a3dd35a33d61f2891a717b5958f7edf12}{}\label{namespacemage_a3dd35a33d61f2891a717b5958f7edf12} 
 \index{mage@{mage}!Import\+Material\+From\+File@{Import\+Material\+From\+File}}
@@ -2033,17 +2351,17 @@ Imports a mesh from an O\+BJ file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a9cd650379bf745bc330ae7729b5e2998}{}\label{namespacemage_a9cd650379bf745bc330ae7729b5e2998} 
+\hypertarget{namespacemage_ab2e31fe4a0e16426cce4d4df6a874550}{}\label{namespacemage_ab2e31fe4a0e16426cce4d4df6a874550} 
 \index{mage@{mage}!Import\+Sprite\+Font\+From\+File@{Import\+Sprite\+Font\+From\+File}}
 \index{Import\+Sprite\+Font\+From\+File@{Import\+Sprite\+Font\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Sprite\+Font\+From\+File()}{ImportSpriteFontFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Sprite\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Sprite\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_ac163decb3b32f9ea26a25853be0f7d8f}{}\label{namespacemage_ac163decb3b32f9ea26a25853be0f7d8f} 
+\hypertarget{namespacemage_ad4d9574c0f702082e383b008ccf1d0b6}{}\label{namespacemage_ad4d9574c0f702082e383b008ccf1d0b6} 
 \index{mage@{mage}!Import\+Texture\+From\+File@{Import\+Texture\+From\+File}}
 \index{Import\+Texture\+From\+File@{Import\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Texture\+From\+File()}{ImportTextureFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+resource\+\_\+view }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+resource\+\_\+view }\end{DoxyParamCaption})}
 
 Imports the texture from the given file.
 
@@ -2204,6 +2522,30 @@ The return value is the result of the message processing and depends on the mess
 \index{Make\+S\+R\+GB@{Make\+S\+R\+GB}!mage@{mage}}
 \subsubsection{\texorpdfstring{Make\+S\+R\+G\+B()}{MakeSRGB()}}
 {\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Make\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_aa0aa71a65f120f26014b08cff9ef992b}{}\label{namespacemage_aa0aa71a65f120f26014b08cff9ef992b} 
+\index{mage@{mage}!Max\+Indices\+Per\+Sprite@{Max\+Indices\+Per\+Sprite}}
+\index{Max\+Indices\+Per\+Sprite@{Max\+Indices\+Per\+Sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{Max\+Indices\+Per\+Sprite()}{MaxIndicesPerSprite()}}
+{\footnotesize\ttfamily static constexpr size\+\_\+t mage\+::\+Max\+Indices\+Per\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_ab7053197804193820c19712e1f35201f}{}\label{namespacemage_ab7053197804193820c19712e1f35201f} 
+\index{mage@{mage}!Max\+Vertices\+Per\+Sprite@{Max\+Vertices\+Per\+Sprite}}
+\index{Max\+Vertices\+Per\+Sprite@{Max\+Vertices\+Per\+Sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{Max\+Vertices\+Per\+Sprite()}{MaxVerticesPerSprite()}}
+{\footnotesize\ttfamily static constexpr size\+\_\+t mage\+::\+Max\+Vertices\+Per\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a7bf923eb07c1afb9e517fd5955aada32}{}\label{namespacemage_a7bf923eb07c1afb9e517fd5955aada32} 
+\index{mage@{mage}!Min\+Indices\+Per\+Sprite@{Min\+Indices\+Per\+Sprite}}
+\index{Min\+Indices\+Per\+Sprite@{Min\+Indices\+Per\+Sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{Min\+Indices\+Per\+Sprite()}{MinIndicesPerSprite()}}
+{\footnotesize\ttfamily static constexpr size\+\_\+t mage\+::\+Min\+Indices\+Per\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_afed1edb5e3a2ab2a2cd13ea06c72afc0}{}\label{namespacemage_afed1edb5e3a2ab2a2cd13ea06c72afc0} 
+\index{mage@{mage}!Min\+Vertices\+Per\+Sprite@{Min\+Vertices\+Per\+Sprite}}
+\index{Min\+Vertices\+Per\+Sprite@{Min\+Vertices\+Per\+Sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{Min\+Vertices\+Per\+Sprite()}{MinVerticesPerSprite()}}
+{\footnotesize\ttfamily static constexpr size\+\_\+t mage\+::\+Min\+Vertices\+Per\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \hypertarget{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4}{}\label{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
@@ -3074,6 +3416,18 @@ A warning message is associated with anything that can potentially cause applica
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
+\hypertarget{namespacemage_a34342faaa7525d7180807df03687aa86}{}\label{namespacemage_a34342faaa7525d7180807df03687aa86} 
+\index{mage@{mage}!X\+M\+Vector\+Left\+Top\+Right\+Bottom@{X\+M\+Vector\+Left\+Top\+Right\+Bottom}}
+\index{X\+M\+Vector\+Left\+Top\+Right\+Bottom@{X\+M\+Vector\+Left\+Top\+Right\+Bottom}!mage@{mage}}
+\subsubsection{\texorpdfstring{X\+M\+Vector\+Left\+Top\+Right\+Bottom()}{XMVectorLeftTopRightBottom()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+X\+M\+Vector\+Left\+Top\+Right\+Bottom (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{rect }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_abda051097e5b76fb65983141822cb170}{}\label{namespacemage_abda051097e5b76fb65983141822cb170} 
+\index{mage@{mage}!X\+M\+Vector\+Left\+Top\+Width\+Height@{X\+M\+Vector\+Left\+Top\+Width\+Height}}
+\index{X\+M\+Vector\+Left\+Top\+Width\+Height@{X\+M\+Vector\+Left\+Top\+Width\+Height}!mage@{mage}}
+\subsubsection{\texorpdfstring{X\+M\+Vector\+Left\+Top\+Width\+Height()}{XMVectorLeftTopWidthHeight()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+X\+M\+Vector\+Left\+Top\+Width\+Height (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{rect }\end{DoxyParamCaption})}
+
 
 
 \subsection{Variable Documentation}
@@ -3130,4 +3484,33 @@ The logging configuration defined by the user and used by the engine. \hypertarg
         DXGI\_FORMAT\_R10G10B10A2\_UNORM, 
     \}
 \end{DoxyCode}
-The allowed pixel formats. 
+The allowed pixel formats. \hypertarget{namespacemage_a06594a8c61d05e5884b56efd264cce1e}{}\label{namespacemage_a06594a8c61d05e5884b56efd264cce1e} 
+\index{mage@{mage}!indices\+\_\+per\+\_\+sprite@{indices\+\_\+per\+\_\+sprite}}
+\index{indices\+\_\+per\+\_\+sprite@{indices\+\_\+per\+\_\+sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{indices\+\_\+per\+\_\+sprite}{indices\_per\_sprite}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::indices\+\_\+per\+\_\+sprite = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a64d189167b7098c519fdcefbe4ac058f}{}\label{namespacemage_a64d189167b7098c519fdcefbe4ac058f} 
+\index{mage@{mage}!initial\+\_\+queue\+\_\+size@{initial\+\_\+queue\+\_\+size}}
+\index{initial\+\_\+queue\+\_\+size@{initial\+\_\+queue\+\_\+size}!mage@{mage}}
+\subsubsection{\texorpdfstring{initial\+\_\+queue\+\_\+size}{initial\_queue\_size}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::initial\+\_\+queue\+\_\+size = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_adc9000a9470d1e75475b182bc5c5cde3}{}\label{namespacemage_adc9000a9470d1e75475b182bc5c5cde3} 
+\index{mage@{mage}!max\+\_\+sprites\+\_\+per\+\_\+batch@{max\+\_\+sprites\+\_\+per\+\_\+batch}}
+\index{max\+\_\+sprites\+\_\+per\+\_\+batch@{max\+\_\+sprites\+\_\+per\+\_\+batch}!mage@{mage}}
+\subsubsection{\texorpdfstring{max\+\_\+sprites\+\_\+per\+\_\+batch}{max\_sprites\_per\_batch}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::max\+\_\+sprites\+\_\+per\+\_\+batch = 2048\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_aecf83c1102c47ecde72f662c43f9722f}{}\label{namespacemage_aecf83c1102c47ecde72f662c43f9722f} 
+\index{mage@{mage}!min\+\_\+sprites\+\_\+per\+\_\+batch@{min\+\_\+sprites\+\_\+per\+\_\+batch}}
+\index{min\+\_\+sprites\+\_\+per\+\_\+batch@{min\+\_\+sprites\+\_\+per\+\_\+batch}!mage@{mage}}
+\subsubsection{\texorpdfstring{min\+\_\+sprites\+\_\+per\+\_\+batch}{min\_sprites\_per\_batch}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::min\+\_\+sprites\+\_\+per\+\_\+batch = 128\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_ad48c52817a0e8892e21bd053cce611ed}{}\label{namespacemage_ad48c52817a0e8892e21bd053cce611ed} 
+\index{mage@{mage}!vertices\+\_\+per\+\_\+sprite@{vertices\+\_\+per\+\_\+sprite}}
+\index{vertices\+\_\+per\+\_\+sprite@{vertices\+\_\+per\+\_\+sprite}!mage@{mage}}
+\subsubsection{\texorpdfstring{vertices\+\_\+per\+\_\+sprite}{vertices\_per\_sprite}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::vertices\+\_\+per\+\_\+sprite = 4\hspace{0.3cm}{\ttfamily [static]}}
+

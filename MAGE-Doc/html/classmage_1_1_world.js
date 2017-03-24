@@ -3,6 +3,7 @@ var classmage_1_1_world =
     [ "World", "classmage_1_1_world.html#a80582236a880812f9795a28ae5523cf7", null ],
     [ "~World", "classmage_1_1_world.html#aa51807f68564554dcc2e5f4527e0a620", null ],
     [ "World", "classmage_1_1_world.html#a28e20e33499cd57282cefa5ab0fda041", null ],
+    [ "World", "classmage_1_1_world.html#a29c5740a1fc3bfd7f05c6692257d17ff", null ],
     [ "AddLight", "classmage_1_1_world.html#ab0c31d3113ea264fed8b8ef034047c91", null ],
     [ "AddModel", "classmage_1_1_world.html#a4b7287a11ff316b029ec7727ed0d076d", null ],
     [ "GetLight", "classmage_1_1_world.html#ac7c1a382b10e67bd42493af3966c9212", null ],
@@ -22,13 +23,14 @@ var classmage_1_1_world =
     [ "ModelsEnd", "classmage_1_1_world.html#aa52fa727f94a855e55d9fed72be8fd60", null ],
     [ "ModelsEnd", "classmage_1_1_world.html#ad7e9615a659dad4190b16dc28932c007", null ],
     [ "operator=", "classmage_1_1_world.html#aa7074e3847c9fbe1466aa833f194eed0", null ],
+    [ "operator=", "classmage_1_1_world.html#a0440e945dfd0291174ce6dc33e5d8335", null ],
     [ "RemoveAllLights", "classmage_1_1_world.html#a5fafe529414d511e88b98ccd8e2f951f", null ],
     [ "RemoveAllModels", "classmage_1_1_world.html#af3bae7b62192de9edda5e0567b73be93", null ],
     [ "RemoveLight", "classmage_1_1_world.html#a06f60650aa7992f44167043d1aa2e576", null ],
     [ "RemoveLight", "classmage_1_1_world.html#ab2bca0a737500b2d78b39e6cbafd61d0", null ],
     [ "RemoveModel", "classmage_1_1_world.html#aebba267c6c47de1c806ffe49be273dea", null ],
     [ "RemoveModel", "classmage_1_1_world.html#afad0c7024fcd304bb582bdc1d281c590", null ],
-    [ "Render", "classmage_1_1_world.html#a9431fb26a3545cb10c3d380e17c24968", null ],
+    [ "Render", "classmage_1_1_world.html#a622c386b528b34571e3e5e9d207fcada", null ],
     [ "m_lights", "classmage_1_1_world.html#acb9bceb4598a9d572f026cb65d850de5", null ],
     [ "m_models", "classmage_1_1_world.html#ad2c8da43f7cc24ec9f3108d24ff3c144", null ]
 ];

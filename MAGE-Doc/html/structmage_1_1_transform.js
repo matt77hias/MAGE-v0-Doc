@@ -2,6 +2,7 @@ var structmage_1_1_transform =
 [
     [ "Transform", "structmage_1_1_transform.html#a3d324dc935e11ee5e82957d58553fd7d", null ],
     [ "Transform", "structmage_1_1_transform.html#a6cf7a754eff6ffe6f99f8942468d49bc", null ],
+    [ "Transform", "structmage_1_1_transform.html#a79c128d8c73c8854765e8ea8fa5f42e1", null ],
     [ "~Transform", "structmage_1_1_transform.html#a3380713ee853d112c140e8688c0f73b5", null ],
     [ "AddChild", "structmage_1_1_transform.html#ac9fb285f730207740114b61bdb010bf9", null ],
     [ "AddRotation", "structmage_1_1_transform.html#a71126843acf10e00d0381b5463978aba", null ],
@@ -75,6 +76,7 @@ var structmage_1_1_transform =
     [ "GetWorldToViewMatrix", "structmage_1_1_transform.html#a33cc590d779f69044d183bab653bd260", null ],
     [ "GetWorldUp", "structmage_1_1_transform.html#af28786b745a144eef74d69a55055b00a", null ],
     [ "operator=", "structmage_1_1_transform.html#a40bc8c32b09dc419d0573fffcd938644", null ],
+    [ "operator=", "structmage_1_1_transform.html#a73f47760665264da8af254fa937b3560", null ],
     [ "RemoveAllChilds", "structmage_1_1_transform.html#a1f9e00affb4b41338a6a946867a1d5a4", null ],
     [ "RemoveChild", "structmage_1_1_transform.html#a387bb274fec0cc5ea8d6f3504536ad50", null ],
     [ "SetComponents", "structmage_1_1_transform.html#aba5311db1360a15aea4de33a060ab27e", null ],

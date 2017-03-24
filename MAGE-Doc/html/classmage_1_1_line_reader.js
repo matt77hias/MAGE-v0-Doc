@@ -1,8 +1,9 @@
 var classmage_1_1_line_reader =
 [
-    [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "~LineReader", "classmage_1_1_line_reader.html#aa058c338d8256d7f7b775bf4f7052508", null ],
+    [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ae4f871bebae110704b34c0bd88460639", null ],
+    [ "LineReader", "classmage_1_1_line_reader.html#a6447cc854280ade147c6e03e53c15fb1", null ],
     [ "GetCurrentLineNumber", "classmage_1_1_line_reader.html#ae7115d55bbb8a6e9b0764831624df33b", null ],
     [ "GetDelimiters", "classmage_1_1_line_reader.html#a7de405beff27d5cc55bb93e1b1e9727a", null ],
     [ "GetFilename", "classmage_1_1_line_reader.html#a64a800d9fe9c242b9b14d034a7d604eb", null ],
@@ -21,6 +22,7 @@ var classmage_1_1_line_reader =
     [ "HasUInt64", "classmage_1_1_line_reader.html#ad311b6edbfc68c01997f90cd1db5d95e", null ],
     [ "HasUInt8", "classmage_1_1_line_reader.html#a7d9359c8a65005358564728be9091fa8", null ],
     [ "operator=", "classmage_1_1_line_reader.html#a2247078d0b5602f9a9a6b74019832faf", null ],
+    [ "operator=", "classmage_1_1_line_reader.html#a45504c0ba4238eedf851cfb9df081a01", null ],
     [ "Postprocess", "classmage_1_1_line_reader.html#a4c8f2e1a60c6f3c98b4b47f3019c24f3", null ],
     [ "Preprocess", "classmage_1_1_line_reader.html#a9a67c9527f499f19489f0680caa66ac9", null ],
     [ "ReadBool", "classmage_1_1_line_reader.html#a86289c358afe9b3bc5c7789bb8a6af95", null ],
