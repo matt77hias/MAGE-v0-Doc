@@ -6,6 +6,8 @@ var classmage_1_1_scene =
     [ "Scene", "classmage_1_1_scene.html#a084284387b472f4eaf421509ef267b34", null ],
     [ "AddScript", "classmage_1_1_scene.html#aa98dbf063994948dd2e434c7f0f6ee06", null ],
     [ "Close", "classmage_1_1_scene.html#afcdedaac5ecab7dcbbb180426054aaa5", null ],
+    [ "ForEachScript", "classmage_1_1_scene.html#a272a7aa84e116c58c24f01731bbcc640", null ],
+    [ "ForEachScript", "classmage_1_1_scene.html#a4d16d973adce12868b9a0df9d92ef6d6", null ],
     [ "GetCamera", "classmage_1_1_scene.html#a8b2ad419541a51353d6f56ba12f43d79", null ],
     [ "GetName", "classmage_1_1_scene.html#a251ff8f6ce0da5c55ee31e3450b5fb9a", null ],
     [ "GetNumberOfScripts", "classmage_1_1_scene.html#a799ac8ddd90d24f6c3c208942e4f159c", null ],
@@ -19,16 +21,12 @@ var classmage_1_1_scene =
     [ "RemoveAllScripts", "classmage_1_1_scene.html#a283b7623f1f91e5b7ea53c3c938d6026", null ],
     [ "RemoveScript", "classmage_1_1_scene.html#ad240957fb1b30254878cda8e20d7f7f4", null ],
     [ "RemoveScript", "classmage_1_1_scene.html#a90808e9356fae9b156a6e23c03950f77", null ],
-    [ "Render", "classmage_1_1_scene.html#a39bcf9a202d35558f03112aa2c99090d", null ],
-    [ "ScriptsBegin", "classmage_1_1_scene.html#a2f6106acc0e29378736cf8e9bbcd8c20", null ],
-    [ "ScriptsBegin", "classmage_1_1_scene.html#abf8804b118e5ba4736ece404da0fbf90", null ],
-    [ "ScriptsEnd", "classmage_1_1_scene.html#a2b0d4504f5b683767f1cd08ca8ab6f42", null ],
-    [ "ScriptsEnd", "classmage_1_1_scene.html#ab607911e4efd677a08f54101aa8bf2fb", null ],
+    [ "Render", "classmage_1_1_scene.html#a98d8af905b60743d40469f71f3acdbf6", null ],
     [ "SetCamera", "classmage_1_1_scene.html#a57718151e0102306b3abb22da45ae27a", null ],
     [ "SetName", "classmage_1_1_scene.html#a9b7c1c2f84cc3b3c5ff3de4f29d830e9", null ],
     [ "Update", "classmage_1_1_scene.html#a8751628bf9ed4f15993ca4e8e2ffc966", null ],
     [ "m_camera", "classmage_1_1_scene.html#a961c280659f9934441d8e835508e933d", null ],
     [ "m_name", "classmage_1_1_scene.html#a6cc8cb08b1853c4e3063b33a94e8fb47", null ],
     [ "m_scripts", "classmage_1_1_scene.html#a74ad0b8c6b085bd519de33da51ebb8dd", null ],
-    [ "m_world", "classmage_1_1_scene.html#ab03b79c8ae30602fea1fabb84927a829", null ]
+    [ "m_world", "classmage_1_1_scene.html#a0d06149d881166497bf75ae2288bf960", null ]
 ];

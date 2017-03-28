@@ -11,7 +11,7 @@ var classmage_1_1_progress_reporter =
     [ "m_buffer", "classmage_1_1_progress_reporter.html#a3aa49d5b886263402d9a9ecb4851670c", null ],
     [ "m_current_pos", "classmage_1_1_progress_reporter.html#a7adafaaf90edf29c8c27f4008aea41c9", null ],
     [ "m_fout", "classmage_1_1_progress_reporter.html#ad325ee5978fd1d16a97acbe37a977982", null ],
-    [ "m_mutex", "classmage_1_1_progress_reporter.html#abda37942e51b682b2871e49883d58da1", null ],
+    [ "m_mutex", "classmage_1_1_progress_reporter.html#a32a499aa1b8fccbc8393fe32305dfeb1", null ],
     [ "m_nb_plusses_printed", "classmage_1_1_progress_reporter.html#a17d7a4f8b2c8a6de255786f6165726bd", null ],
     [ "m_nb_plusses_total", "classmage_1_1_progress_reporter.html#aeae54fa7c542ccfbdaa44c0942c483fd", null ],
     [ "m_nb_work_done", "classmage_1_1_progress_reporter.html#ad3cb941594f138c208fa522a355a985b", null ],

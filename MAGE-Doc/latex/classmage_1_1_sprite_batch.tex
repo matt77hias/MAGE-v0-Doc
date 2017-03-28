@@ -11,9 +11,9 @@
 \item 
 virtual \hyperlink{classmage_1_1_sprite_batch_ab0e2b5af638de0a6a3bbcf2bba6c730a}{$\sim$\+Sprite\+Batch} ()=default
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_acd323454aa86dfeb598e1c6ab573f68f}{Begin} (\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} sort\+\_\+mode, I\+D3\+D11\+Blend\+State $\ast$blend\+\_\+state, I\+D3\+D11\+Sampler\+State $\ast$sampler\+\_\+state, I\+D3\+D11\+Depth\+Stencil\+State $\ast$depth\+\_\+stencil\+\_\+state, I\+D3\+D11\+Rasterizer\+State $\ast$rasterizer\+\_\+state, std\+::function$<$ void() $>$ Set\+Custom\+Shaders, X\+M\+M\+A\+T\+R\+IX transform\+Matrix=X\+M\+Matrix\+Identity())
+void \hyperlink{classmage_1_1_sprite_batch_ac7b901a07bdf23f624c9cf156a224c21}{Begin} (\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} sort\+\_\+mode, X\+M\+M\+A\+T\+R\+IX transform=X\+M\+Matrix\+Identity())
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_aa877dd94078b932b94c9f27e741dfa41}{Draw} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture, const \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} \&transform, X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{color}, \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46}{Sprite\+Effects} effects, float layer\+\_\+depth)
+void \hyperlink{classmage_1_1_sprite_batch_aa094c159600f6bca01c7f3aec96703ca}{Draw} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture, const \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} \&transform, X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{color}, \hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46}{Sprite\+Effects} effects)
 \item 
 void \hyperlink{classmage_1_1_sprite_batch_a9764372bb18b1c24a4a2f64ab0649569}{End} ()
 \item 
@@ -36,18 +36,26 @@ const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \& \hyperlink{classmage_1_1_sprite_bat
 \item 
 \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \& \hyperlink{classmage_1_1_sprite_batch_ad46c172200bf47c10fa13fb3a70a4104}{operator=} (\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&sprite\+\_\+batch)=delete
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_batch_ae9625c709af19d244d9b7739f64591ed}{Initialize\+Index\+Buffer} (I\+D3\+D11\+Device2 \&device)
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_batch_aeb80ebc6472c1244878d6bb49cdfac22}{Initialize\+Vertex\+Buffer} (I\+D3\+D11\+Device2 \&device)
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_batch_abceb0e16fb2bb82c9266d3f55befc69a}{Initialize\+Shaders} (I\+D3\+D11\+Device2 \&device)
+void \hyperlink{classmage_1_1_sprite_batch_a6c065e5b9520dbc25354ed3a87525956}{Prepare\+For\+Rendering} (I\+D3\+D11\+Device\+Context \&context)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_sprite_batch_a748eb7f2f880e32ff4cfc0b7d6156de7}{m\+\_\+vertex\+\_\+buffer}
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info}\mbox{[}$\,$\mbox{]} $>$ \hyperlink{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f}{m\+\_\+sprite\+\_\+queue}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_sprite_batch_a3e0cfc2be21a137712b3670238aa91fa}{m\+\_\+index\+\_\+buffer}
+size\+\_\+t \hyperlink{classmage_1_1_sprite_batch_a0d7dadf01e3b905072c1aaa6b8e42c0e}{m\+\_\+sprite\+\_\+queue\+\_\+size}
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_sprite_batch_a207760f2e11b1ea199529c65c9b21b3b}{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size}
+\item 
+vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$$>$ \hyperlink{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a}{m\+\_\+sorted\+\_\+sprites}
+\item 
+vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ \hyperlink{classmage_1_1_sprite_batch_ad8a5bb3b418c2cad84fecac0979a600c}{m\+\_\+sprite\+\_\+texture\+\_\+references}
+\item 
+bool \hyperlink{classmage_1_1_sprite_batch_a2f4e56ee07ef37a2906c552b0ea78403}{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair}
+\item 
+\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} \hyperlink{classmage_1_1_sprite_batch_a0b2b16b0d9eb63501b6fc0f9ce85e022}{m\+\_\+sort\+\_\+mode}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_sprite_batch_ad8a12f1f6c8289548346d469c9436c58}{m\+\_\+transform}
 \item 
 D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON \hyperlink{classmage_1_1_sprite_batch_ae062f178efe4a3af9c1573f8f8c4deee}{m\+\_\+rotation\+\_\+mode}
 \item 
@@ -85,17 +93,17 @@ D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_sprite_batch_a3029a
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_sprite_batch_acd323454aa86dfeb598e1c6ab573f68f}{}\label{classmage_1_1_sprite_batch_acd323454aa86dfeb598e1c6ab573f68f} 
+\hypertarget{classmage_1_1_sprite_batch_ac7b901a07bdf23f624c9cf156a224c21}{}\label{classmage_1_1_sprite_batch_ac7b901a07bdf23f624c9cf156a224c21} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Begin@{Begin}}
 \index{Begin@{Begin}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{Begin()}{Begin()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Begin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode}}]{sort\+\_\+mode,  }\item[{I\+D3\+D11\+Blend\+State $\ast$}]{blend\+\_\+state,  }\item[{I\+D3\+D11\+Sampler\+State $\ast$}]{sampler\+\_\+state,  }\item[{I\+D3\+D11\+Depth\+Stencil\+State $\ast$}]{depth\+\_\+stencil\+\_\+state,  }\item[{I\+D3\+D11\+Rasterizer\+State $\ast$}]{rasterizer\+\_\+state,  }\item[{std\+::function$<$ void() $>$}]{Set\+Custom\+Shaders,  }\item[{X\+M\+M\+A\+T\+R\+IX}]{transform\+Matrix = {\ttfamily XMMatrixIdentity()} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Begin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode}}]{sort\+\_\+mode,  }\item[{X\+M\+M\+A\+T\+R\+IX}]{transform = {\ttfamily XMMatrixIdentity()} }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_sprite_batch_aa877dd94078b932b94c9f27e741dfa41}{}\label{classmage_1_1_sprite_batch_aa877dd94078b932b94c9f27e741dfa41} 
+\hypertarget{classmage_1_1_sprite_batch_aa094c159600f6bca01c7f3aec96703ca}{}\label{classmage_1_1_sprite_batch_aa094c159600f6bca01c7f3aec96703ca} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture,  }\item[{const \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} \&}]{transform,  }\item[{X\+M\+V\+E\+C\+T\+OR}]{color,  }\item[{\hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46}{Sprite\+Effects}}]{effects,  }\item[{float}]{layer\+\_\+depth }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture,  }\item[{const \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} \&}]{transform,  }\item[{X\+M\+V\+E\+C\+T\+OR}]{color,  }\item[{\hyperlink{namespacemage_a06ff9ac76b1e0636cc8949c3f0d4ac46}{Sprite\+Effects}}]{effects }\end{DoxyParamCaption})}
 
 \hypertarget{classmage_1_1_sprite_batch_a9764372bb18b1c24a4a2f64ab0649569}{}\label{classmage_1_1_sprite_batch_a9764372bb18b1c24a4a2f64ab0649569} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!End@{End}}
@@ -115,24 +123,6 @@ D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_sprite_batch_a3029a
 \subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}}
 {\footnotesize\ttfamily const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT\& mage\+::\+Sprite\+Batch\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_sprite_batch_ae9625c709af19d244d9b7739f64591ed}{}\label{classmage_1_1_sprite_batch_ae9625c709af19d244d9b7739f64591ed} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Initialize\+Index\+Buffer@{Initialize\+Index\+Buffer}}
-\index{Initialize\+Index\+Buffer@{Initialize\+Index\+Buffer}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{Initialize\+Index\+Buffer()}{InitializeIndexBuffer()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Batch\+::\+Initialize\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_sprite_batch_abceb0e16fb2bb82c9266d3f55befc69a}{}\label{classmage_1_1_sprite_batch_abceb0e16fb2bb82c9266d3f55befc69a} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Initialize\+Shaders@{Initialize\+Shaders}}
-\index{Initialize\+Shaders@{Initialize\+Shaders}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{Initialize\+Shaders()}{InitializeShaders()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Batch\+::\+Initialize\+Shaders (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_sprite_batch_aeb80ebc6472c1244878d6bb49cdfac22}{}\label{classmage_1_1_sprite_batch_aeb80ebc6472c1244878d6bb49cdfac22} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Initialize\+Vertex\+Buffer@{Initialize\+Vertex\+Buffer}}
-\index{Initialize\+Vertex\+Buffer@{Initialize\+Vertex\+Buffer}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{Initialize\+Vertex\+Buffer()}{InitializeVertexBuffer()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Batch\+::\+Initialize\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
 \hypertarget{classmage_1_1_sprite_batch_aa2a5df588d7589a36b38b35dc8a08a48}{}\label{classmage_1_1_sprite_batch_aa2a5df588d7589a36b38b35dc8a08a48} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
@@ -144,6 +134,12 @@ D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_sprite_batch_a3029a
 \index{operator=@{operator=}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch}\& mage\+::\+Sprite\+Batch\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_sprite_batch_a6c065e5b9520dbc25354ed3a87525956}{}\label{classmage_1_1_sprite_batch_a6c065e5b9520dbc25354ed3a87525956} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Prepare\+For\+Rendering@{Prepare\+For\+Rendering}}
+\index{Prepare\+For\+Rendering@{Prepare\+For\+Rendering}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Prepare\+For\+Rendering()}{PrepareForRendering()}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Prepare\+For\+Rendering (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_sprite_batch_a61ab7462374d9190220629be7827ba4b}{}\label{classmage_1_1_sprite_batch_a61ab7462374d9190220629be7827ba4b} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Set\+Rotation\+Mode@{Set\+Rotation\+Mode}}
@@ -160,25 +156,61 @@ D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_sprite_batch_a3029a
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_sprite_batch_a3e0cfc2be21a137712b3670238aa91fa}{}\label{classmage_1_1_sprite_batch_a3e0cfc2be21a137712b3670238aa91fa} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}}
-\index{m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+buffer}{m\_index\_buffer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+index\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_sprite_batch_a2f4e56ee07ef37a2906c552b0ea78403}{}\label{classmage_1_1_sprite_batch_a2f4e56ee07ef37a2906c552b0ea78403} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair@{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair}}
+\index{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair@{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair}{m\_in\_begin\_end\_pair}}
+{\footnotesize\ttfamily bool mage\+::\+Sprite\+Batch\+::m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the index buffer of this sprite batch. \hypertarget{classmage_1_1_sprite_batch_ae062f178efe4a3af9c1573f8f8c4deee}{}\label{classmage_1_1_sprite_batch_ae062f178efe4a3af9c1573f8f8c4deee} 
+\hypertarget{classmage_1_1_sprite_batch_ae062f178efe4a3af9c1573f8f8c4deee}{}\label{classmage_1_1_sprite_batch_ae062f178efe4a3af9c1573f8f8c4deee} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+rotation\+\_\+mode@{m\+\_\+rotation\+\_\+mode}}
 \index{m\+\_\+rotation\+\_\+mode@{m\+\_\+rotation\+\_\+mode}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{m\+\_\+rotation\+\_\+mode}{m\_rotation\_mode}}
 {\footnotesize\ttfamily D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON mage\+::\+Sprite\+Batch\+::m\+\_\+rotation\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
 
-A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor. \hypertarget{classmage_1_1_sprite_batch_a748eb7f2f880e32ff4cfc0b7d6156de7}{}\label{classmage_1_1_sprite_batch_a748eb7f2f880e32ff4cfc0b7d6156de7} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}}
-\index{m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+buffer}{m\_vertex\_buffer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+vertex\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor. \hypertarget{classmage_1_1_sprite_batch_a0b2b16b0d9eb63501b6fc0f9ce85e022}{}\label{classmage_1_1_sprite_batch_a0b2b16b0d9eb63501b6fc0f9ce85e022} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sort\+\_\+mode@{m\+\_\+sort\+\_\+mode}}
+\index{m\+\_\+sort\+\_\+mode@{m\+\_\+sort\+\_\+mode}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sort\+\_\+mode}{m\_sort\_mode}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} mage\+::\+Sprite\+Batch\+::m\+\_\+sort\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the vertex buffer of this sprite batch. \hypertarget{classmage_1_1_sprite_batch_a3029ab1ee01ccfc69fef88eb78d5bfc0}{}\label{classmage_1_1_sprite_batch_a3029ab1ee01ccfc69fef88eb78d5bfc0} 
+\hypertarget{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a}{}\label{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sorted\+\_\+sprites@{m\+\_\+sorted\+\_\+sprites}}
+\index{m\+\_\+sorted\+\_\+sprites@{m\+\_\+sorted\+\_\+sprites}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sorted\+\_\+sprites}{m\_sorted\_sprites}}
+{\footnotesize\ttfamily vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sorted\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f}{}\label{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+queue@{m\+\_\+sprite\+\_\+queue}}
+\index{m\+\_\+sprite\+\_\+queue@{m\+\_\+sprite\+\_\+queue}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+queue}{m\_sprite\_queue}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info}\mbox{[}$\,$\mbox{]} $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+queue\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_a207760f2e11b1ea199529c65c9b21b3b}{}\label{classmage_1_1_sprite_batch_a207760f2e11b1ea199529c65c9b21b3b} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size@{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size}}
+\index{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size@{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size}{m\_sprite\_queue\_array\_size}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_a0d7dadf01e3b905072c1aaa6b8e42c0e}{}\label{classmage_1_1_sprite_batch_a0d7dadf01e3b905072c1aaa6b8e42c0e} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+queue\+\_\+size@{m\+\_\+sprite\+\_\+queue\+\_\+size}}
+\index{m\+\_\+sprite\+\_\+queue\+\_\+size@{m\+\_\+sprite\+\_\+queue\+\_\+size}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+queue\+\_\+size}{m\_sprite\_queue\_size}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+queue\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_ad8a5bb3b418c2cad84fecac0979a600c}{}\label{classmage_1_1_sprite_batch_ad8a5bb3b418c2cad84fecac0979a600c} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+texture\+\_\+references@{m\+\_\+sprite\+\_\+texture\+\_\+references}}
+\index{m\+\_\+sprite\+\_\+texture\+\_\+references@{m\+\_\+sprite\+\_\+texture\+\_\+references}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+texture\+\_\+references}{m\_sprite\_texture\_references}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+texture\+\_\+references\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_ad8a12f1f6c8289548346d469c9436c58}{}\label{classmage_1_1_sprite_batch_ad8a12f1f6c8289548346d469c9436c58} 
+\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+transform@{m\+\_\+transform}}
+\index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Sprite\+Batch\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_sprite_batch_a3029ab1ee01ccfc69fef88eb78d5bfc0}{}\label{classmage_1_1_sprite_batch_a3029ab1ee01ccfc69fef88eb78d5bfc0} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+viewport@{m\+\_\+viewport}}
 \index{m\+\_\+viewport@{m\+\_\+viewport}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{m\+\_\+viewport}{m\_viewport}}

@@ -44,7 +44,10 @@ var hierarchy =
     [ "mage::Material", "structmage_1_1_material.html", null ],
     [ "mage::MaterialBuffer", "structmage_1_1_material_buffer.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
-    [ "mage::Mesh", "classmage_1_1_mesh.html", null ],
+    [ "mage::Mesh", "classmage_1_1_mesh.html", [
+      [ "mage::SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html", null ],
+      [ "mage::StaticMesh", "classmage_1_1_static_mesh.html", null ]
+    ] ],
     [ "mage::MeshDescriptor< VertexT >", "structmage_1_1_mesh_descriptor.html", null ],
     [ "mage::ModelOutput< VertexT >", "structmage_1_1_model_output.html", null ],
     [ "mage::ModelPart", "structmage_1_1_model_part.html", null ],
@@ -54,6 +57,8 @@ var hierarchy =
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ReadWriteMutex", "classmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
+    [ "mage::RenderingState", "structmage_1_1_rendering_state.html", null ],
+    [ "mage::RenderingStateCache", "structmage_1_1_rendering_state_cache.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
       [ "mage::FileResource", "classmage_1_1_file_resource.html", [
         [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
@@ -78,6 +83,7 @@ var hierarchy =
     [ "mage::SpriteBatch", "classmage_1_1_sprite_batch.html", null ],
     [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],
     [ "mage::SpriteFontOutput", "structmage_1_1_sprite_font_output.html", null ],
+    [ "mage::SpriteInfo", "structmage_1_1_sprite_info.html", null ],
     [ "mage::SpriteTransform", "structmage_1_1_sprite_transform.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
     [ "mage::Transform", "structmage_1_1_transform.html", null ],

@@ -1,6 +1,6 @@
 var classmage_1_1_sprite_font =
 [
-    [ "SpriteFont", "classmage_1_1_sprite_font.html#a2fe19009eeed68c10512d5b63afdbb95", null ],
+    [ "SpriteFont", "classmage_1_1_sprite_font.html#a2a8f2755946338082fa87cbdbb947db2", null ],
     [ "~SpriteFont", "classmage_1_1_sprite_font.html#a76c98e19f7fccb59d55e1995cfc2356a", null ],
     [ "SpriteFont", "classmage_1_1_sprite_font.html#a5df751fe06abda25127fdd9222e41948", null ],
     [ "SpriteFont", "classmage_1_1_sprite_font.html#a24b5714f87a0c76bdc677365359b1fa1", null ],

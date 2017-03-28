@@ -1,7 +1,8 @@
 var searchData=
 [
   ['bbitmask',['BBitMask',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#ae21041782f2d3e95c2b77278668e2906',1,'mage::DDS_PIXELFORMAT']]],
-  ['begin',['Begin',['../classmage_1_1_sprite_batch.html#acd323454aa86dfeb598e1c6ab573f68f',1,'mage::SpriteBatch::Begin()'],['../structmage_1_1_transform.html#a1186287515ef9ca67078cbef3003919e',1,'mage::Transform::begin()']]],
+  ['begin',['Begin',['../classmage_1_1_sprite_batch.html#ac7b901a07bdf23f624c9cf156a224c21',1,'mage::SpriteBatch']]],
+  ['beginframe',['BeginFrame',['../classmage_1_1_renderer.html#ac9adf3be8c7201e4df8c5f9e049dc43d',1,'mage::Renderer']]],
   ['behaviorscript',['BehaviorScript',['../classmage_1_1_behavior_script.html',1,'mage']]],
   ['behaviorscript',['BehaviorScript',['../classmage_1_1_behavior_script.html#a90ac6d3397f54ad95a931c9ef2c47549',1,'mage::BehaviorScript::BehaviorScript()=default'],['../classmage_1_1_behavior_script.html#a776701dc960610d3a08679bc01e1def5',1,'mage::BehaviorScript::BehaviorScript(const BehaviorScript &amp;script)=delete'],['../classmage_1_1_behavior_script.html#abec49e419345fbcdeba047d21a390416',1,'mage::BehaviorScript::BehaviorScript(BehaviorScript &amp;&amp;script)=delete']]],
   ['bigendianbinaryreader',['BigEndianBinaryReader',['../classmage_1_1_big_endian_binary_reader.html#a1fd0dbee6950a8cb04aa399f0cdbaf2a',1,'mage::BigEndianBinaryReader::BigEndianBinaryReader()'],['../classmage_1_1_big_endian_binary_reader.html#a9d490263268290217ae4f2f06e0699c4',1,'mage::BigEndianBinaryReader::BigEndianBinaryReader(const BigEndianBinaryReader &amp;reader)=delete'],['../classmage_1_1_big_endian_binary_reader.html#a97b4485f8a867758f8be7cd2d9619aeb',1,'mage::BigEndianBinaryReader::BigEndianBinaryReader(BigEndianBinaryReader &amp;&amp;reader)=delete']]],
