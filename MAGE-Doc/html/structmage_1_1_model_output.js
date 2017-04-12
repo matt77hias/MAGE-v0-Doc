@@ -1,9 +1,9 @@
 var structmage_1_1_model_output =
 [
     [ "ModelOutput", "structmage_1_1_model_output.html#a7d64b57d8207968541eb9c6da6ef0163", null ],
-    [ "~ModelOutput", "structmage_1_1_model_output.html#a69a7f27486ad287943cbf973107ad8e1", null ],
     [ "ModelOutput", "structmage_1_1_model_output.html#aac808e40a66f33da4ea28ebb7443623d", null ],
-    [ "ModelOutput", "structmage_1_1_model_output.html#ab7b642e9234d7dcbd053a2b088874227", null ],
+    [ "ModelOutput", "structmage_1_1_model_output.html#a20faa6e5b76ec7903a09e222e61e5353", null ],
+    [ "~ModelOutput", "structmage_1_1_model_output.html#a69a7f27486ad287943cbf973107ad8e1", null ],
     [ "EndModelPart", "structmage_1_1_model_output.html#a5df0c4240b1fac61ac0cdbf9766bb98d", null ],
     [ "HasModelPart", "structmage_1_1_model_output.html#a23ce6e3b252227781c173149b76e73ee", null ],
     [ "operator=", "structmage_1_1_model_output.html#ada52bf380c0259a0d7ef855457e5a9da", null ],

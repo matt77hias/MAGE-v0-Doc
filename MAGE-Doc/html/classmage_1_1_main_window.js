@@ -1,9 +1,9 @@
 var classmage_1_1_main_window =
 [
     [ "MainWindow", "classmage_1_1_main_window.html#a907a5c337e0e1f14281858b7713235ab", null ],
-    [ "~MainWindow", "classmage_1_1_main_window.html#ada7ecf97d82ce08ba2f31f0afd891031", null ],
     [ "MainWindow", "classmage_1_1_main_window.html#a8dc3c590bb168f8178a7db72ff60fd0c", null ],
-    [ "MainWindow", "classmage_1_1_main_window.html#a241f700a749bb46225ee7c0029fafd2d", null ],
+    [ "MainWindow", "classmage_1_1_main_window.html#aa1a345a4b192ed47c774e6e80a998a47", null ],
+    [ "~MainWindow", "classmage_1_1_main_window.html#ada7ecf97d82ce08ba2f31f0afd891031", null ],
     [ "GetHandle", "classmage_1_1_main_window.html#acfaa88503f2c5e4a05aa9fa9698d2735", null ],
     [ "GetHinstance", "classmage_1_1_main_window.html#ae26a7e1e96bc5522461aed6156138a0c", null ],
     [ "GetName", "classmage_1_1_main_window.html#aa2b99118a5125d4effbd5c5d9352e7e0", null ],

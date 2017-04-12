@@ -9,22 +9,19 @@
 \item 
 \hyperlink{classmage_1_1_progress_reporter_ab105fa7ac8fb1c53c60deab107c26f74}{Progress\+Reporter} (const string \&title, uint32\+\_\+t nb\+\_\+work, char plus\+\_\+char=\textquotesingle{}+\textquotesingle{}, uint32\+\_\+t bar\+\_\+length=0)
 \item 
-virtual \hyperlink{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26}{$\sim$\+Progress\+Reporter} ()
-\item 
-void \hyperlink{classmage_1_1_progress_reporter_a0a5f99f15e4152da9a3d6aadd888244a}{Update} (uint32\+\_\+t nb\+\_\+work=1)
-\item 
-void \hyperlink{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa}{Done} ()
-\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
 \hyperlink{classmage_1_1_progress_reporter_a59c1ca6e4c0d480a1726d79ef6d42e74}{Progress\+Reporter} (const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&progress\+\_\+reporter)=delete
 \item 
-\hyperlink{classmage_1_1_progress_reporter_a51e53891454e814b3c860f8de4506c1b}{Progress\+Reporter} (\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&progress\+\_\+reporter)=delete
+\hyperlink{classmage_1_1_progress_reporter_aaa8fdd4ce4bd7dfa3f663f0d4d615cbc}{Progress\+Reporter} (\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&progress\+\_\+reporter)=default
+\item 
+\hyperlink{classmage_1_1_progress_reporter_a198e1ba987518e4591c156510e2b52d9}{$\sim$\+Progress\+Reporter} ()=default
 \item 
 \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \& \hyperlink{classmage_1_1_progress_reporter_a7bc52147f6d2e30d897f512f910c8917}{operator=} (const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&progress\+\_\+reporter)=delete
 \item 
 \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \& \hyperlink{classmage_1_1_progress_reporter_aba75cd5ea2d9faae4264b844f857e260}{operator=} (\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&progress\+\_\+reporter)=delete
+\item 
+void \hyperlink{classmage_1_1_progress_reporter_a0a5f99f15e4152da9a3d6aadd888244a}{Update} (uint32\+\_\+t nb\+\_\+work=1)
+\item 
+void \hyperlink{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa}{Done} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -37,15 +34,15 @@ uint32\+\_\+t \hyperlink{classmage_1_1_progress_reporter_aeae54fa7c542ccfbdaa44c
 \item 
 uint32\+\_\+t \hyperlink{classmage_1_1_progress_reporter_a17d7a4f8b2c8a6de255786f6165726bd}{m\+\_\+nb\+\_\+plusses\+\_\+printed}
 \item 
-\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_timer}{Timer} $>$ \hyperlink{classmage_1_1_progress_reporter_a4c5c81ce84ceaab7764bd640a18db788}{m\+\_\+timer}
+const char \hyperlink{classmage_1_1_progress_reporter_ab3c8d12e79e63ae2b99fde8d6627c230}{m\+\_\+plus\+\_\+char}
 \item 
 F\+I\+LE $\ast$ \hyperlink{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982}{m\+\_\+fout}
 \item 
-const char \hyperlink{classmage_1_1_progress_reporter_ab3c8d12e79e63ae2b99fde8d6627c230}{m\+\_\+plus\+\_\+char}
-\item 
-char $\ast$ \hyperlink{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c}{m\+\_\+buffer}
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ char \mbox{[}$\,$\mbox{]} $>$ \hyperlink{classmage_1_1_progress_reporter_a725763db34f5bbb7408107d55ee43beb}{m\+\_\+buffer}
 \item 
 char $\ast$ \hyperlink{classmage_1_1_progress_reporter_a7adafaaf90edf29c8c27f4008aea41c9}{m\+\_\+current\+\_\+pos}
+\item 
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_timer}{Timer} $>$ \hyperlink{classmage_1_1_progress_reporter_a4c5c81ce84ceaab7764bd640a18db788}{m\+\_\+timer}
 \item 
 \hyperlink{classmage_1_1_mutex}{Mutex} \hyperlink{classmage_1_1_progress_reporter_a32a499aa1b8fccbc8393fe32305dfeb1}{m\+\_\+mutex}
 \end{DoxyCompactItemize}
@@ -59,7 +56,7 @@ A class of progress reporters.
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Progress\+Reporter@{Progress\+Reporter}}
 \index{Progress\+Reporter@{Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{Progress\+Reporter()}{ProgressReporter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{const string \&}]{title,  }\item[{uint32\+\_\+t}]{nb\+\_\+work,  }\item[{char}]{plus\+\_\+char = {\ttfamily \textquotesingle{}+\textquotesingle{}},  }\item[{uint32\+\_\+t}]{bar\+\_\+length = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{const string \&}]{title,  }\item[{uint32\+\_\+t}]{nb\+\_\+work,  }\item[{char}]{plus\+\_\+char = {\ttfamily \textquotesingle{}+\textquotesingle{}},  }\item[{uint32\+\_\+t}]{bar\+\_\+length = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a progress reporter.
 
@@ -74,17 +71,11 @@ Constructs a progress reporter.
 \mbox{\tt in}  & {\em bar\+\_\+length} & The length of the progress bar. If 0 the default length will be chosen. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26}{}\label{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26} 
-\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}}
-\index{````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
-\subsubsection{\texorpdfstring{$\sim$\+Progress\+Reporter()}{~ProgressReporter()}}
-{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::$\sim$\+Progress\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Destructs this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a59c1ca6e4c0d480a1726d79ef6d42e74}{}\label{classmage_1_1_progress_reporter_a59c1ca6e4c0d480a1726d79ef6d42e74} 
+\hypertarget{classmage_1_1_progress_reporter_a59c1ca6e4c0d480a1726d79ef6d42e74}{}\label{classmage_1_1_progress_reporter_a59c1ca6e4c0d480a1726d79ef6d42e74} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Progress\+Reporter@{Progress\+Reporter}}
 \index{Progress\+Reporter@{Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{Progress\+Reporter()}{ProgressReporter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a progress reporter from the given progress reporter.
 
@@ -93,11 +84,11 @@ Constructs a progress reporter from the given progress reporter.
 \mbox{\tt in}  & {\em progress\+\_\+reporter} & A reference to the progress reporter. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_progress_reporter_a51e53891454e814b3c860f8de4506c1b}{}\label{classmage_1_1_progress_reporter_a51e53891454e814b3c860f8de4506c1b} 
+\hypertarget{classmage_1_1_progress_reporter_aaa8fdd4ce4bd7dfa3f663f0d4d615cbc}{}\label{classmage_1_1_progress_reporter_aaa8fdd4ce4bd7dfa3f663f0d4d615cbc} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Progress\+Reporter@{Progress\+Reporter}}
 \index{Progress\+Reporter@{Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{Progress\+Reporter()}{ProgressReporter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a progress reporter from the given progress reporter.
 
@@ -106,7 +97,13 @@ Constructs a progress reporter from the given progress reporter.
 \mbox{\tt in}  & {\em progress\+\_\+reporter} & A reference to the progress reporter. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_progress_reporter_a198e1ba987518e4591c156510e2b52d9}{}\label{classmage_1_1_progress_reporter_a198e1ba987518e4591c156510e2b52d9} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}}
+\index{````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{$\sim$\+Progress\+Reporter()}{~ProgressReporter()}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::$\sim$\+Progress\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Destructs this progress reporter. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa}{}\label{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa} 
@@ -119,7 +116,7 @@ Finishes this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a7
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}\& mage\+::\+Progress\+Reporter\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}\& mage\+::\+Progress\+Reporter\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given progress reporter to this progress reporter.
 
@@ -135,7 +132,7 @@ A reference to the copy of the given progress reporter (i.\+e. this progress rep
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}\& mage\+::\+Progress\+Reporter\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}\& mage\+::\+Progress\+Reporter\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter} \&\&}]{progress\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given progress reporter to this progress reporter.
 
@@ -163,25 +160,25 @@ Updates this progress reporter.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c}{}\label{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c} 
+\hypertarget{classmage_1_1_progress_reporter_a725763db34f5bbb7408107d55ee43beb}{}\label{classmage_1_1_progress_reporter_a725763db34f5bbb7408107d55ee43beb} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+buffer@{m\+\_\+buffer}}
 \index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
-{\footnotesize\ttfamily char$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ char \mbox{[}$\,$\mbox{]} $>$ mage\+::\+Progress\+Reporter\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-The output buffer of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a7adafaaf90edf29c8c27f4008aea41c9}{}\label{classmage_1_1_progress_reporter_a7adafaaf90edf29c8c27f4008aea41c9} 
+A pointer to the output buffer of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a7adafaaf90edf29c8c27f4008aea41c9}{}\label{classmage_1_1_progress_reporter_a7adafaaf90edf29c8c27f4008aea41c9} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+current\+\_\+pos@{m\+\_\+current\+\_\+pos}}
 \index{m\+\_\+current\+\_\+pos@{m\+\_\+current\+\_\+pos}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+pos}{m\_current\_pos}}
 {\footnotesize\ttfamily char$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+current\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
 
-The current (output) position of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982}{}\label{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982} 
+A pointer to the current (output) character in the output buffer of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982}{}\label{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+fout@{m\+\_\+fout}}
 \index{m\+\_\+fout@{m\+\_\+fout}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{m\+\_\+fout}{m\_fout}}
 {\footnotesize\ttfamily F\+I\+LE$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+fout\hspace{0.3cm}{\ttfamily [private]}}
 
-The output file stream of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a32a499aa1b8fccbc8393fe32305dfeb1}{}\label{classmage_1_1_progress_reporter_a32a499aa1b8fccbc8393fe32305dfeb1} 
+A pointer to the output file stream of this progress reporter. \hypertarget{classmage_1_1_progress_reporter_a32a499aa1b8fccbc8393fe32305dfeb1}{}\label{classmage_1_1_progress_reporter_a32a499aa1b8fccbc8393fe32305dfeb1} 
 \index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+mutex@{m\+\_\+mutex}}
 \index{m\+\_\+mutex@{m\+\_\+mutex}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
 \subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
@@ -223,4 +220,4 @@ The character representing a work unit that is already done. \hypertarget{classm
 \subsubsection{\texorpdfstring{m\+\_\+timer}{m\_timer}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_timer}{Timer} $>$ mage\+::\+Progress\+Reporter\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
 
-The timer of this progress reporter. 
+A pointer to the timer of this progress reporter. 

@@ -1,9 +1,9 @@
 var structmage_1_1_rendering_state_cache =
 [
     [ "RenderingStateCache", "structmage_1_1_rendering_state_cache.html#ad818eaa6c950c5851d6e684b9a4b3a65", null ],
-    [ "~RenderingStateCache", "structmage_1_1_rendering_state_cache.html#a11b1c323310168153a60f5afef7def8d", null ],
     [ "RenderingStateCache", "structmage_1_1_rendering_state_cache.html#a47c0f5527ce10ca9b6a059946efda239", null ],
-    [ "RenderingStateCache", "structmage_1_1_rendering_state_cache.html#a989dc7c2eebd72a1d90b31e648869b66", null ],
+    [ "RenderingStateCache", "structmage_1_1_rendering_state_cache.html#a0dc740c68de89418188392e9425df5e7", null ],
+    [ "~RenderingStateCache", "structmage_1_1_rendering_state_cache.html#a11b1c323310168153a60f5afef7def8d", null ],
     [ "GetAdditiveBlendState", "structmage_1_1_rendering_state_cache.html#afa897dcd0b71e4ff8e6ce6d8e31aaa71", null ],
     [ "GetAlphaBlendState", "structmage_1_1_rendering_state_cache.html#a19ad72ad35096722e3d61e58e0ab9205", null ],
     [ "GetAnisotropicClampSamplerState", "structmage_1_1_rendering_state_cache.html#ad4b0894beba4725e53a5a7ca3b9085cb", null ],

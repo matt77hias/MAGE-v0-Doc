@@ -1,6 +1,6 @@
 var structmage_1_1_logging_configuration =
 [
-    [ "LoggingConfiguration", "structmage_1_1_logging_configuration.html#a3d397c3ce26c1c42c9ae4a391391c6f9", null ],
+    [ "LoggingConfiguration", "structmage_1_1_logging_configuration.html#ab18d18c78e7104f4c677e6d08f31ca01", null ],
     [ "LoggingConfiguration", "structmage_1_1_logging_configuration.html#a8e4ccd4301f5544213edd3b600cccff9", null ],
     [ "LoggingConfiguration", "structmage_1_1_logging_configuration.html#ad5d3dd901720450fcf57d4b1b32fce15", null ],
     [ "~LoggingConfiguration", "structmage_1_1_logging_configuration.html#a842cd1d5cf22c9fb6e2c76e684cd08ee", null ],

@@ -1,9 +1,9 @@
 var classmage_1_1_read_write_mutex =
 [
     [ "ReadWriteMutex", "classmage_1_1_read_write_mutex.html#aae10694de3862f2d1059477169883940", null ],
-    [ "~ReadWriteMutex", "classmage_1_1_read_write_mutex.html#a73676d9414658d63edfe443ee1d55c8b", null ],
     [ "ReadWriteMutex", "classmage_1_1_read_write_mutex.html#aacb2f69e7e2b084147e1e45628e9dd67", null ],
     [ "ReadWriteMutex", "classmage_1_1_read_write_mutex.html#a664e946edfa742dad648fc9fcb29832e", null ],
+    [ "~ReadWriteMutex", "classmage_1_1_read_write_mutex.html#a73676d9414658d63edfe443ee1d55c8b", null ],
     [ "AcquireRead", "classmage_1_1_read_write_mutex.html#af78045647078aaf3966c8f1b06e35c92", null ],
     [ "AcquireWrite", "classmage_1_1_read_write_mutex.html#a76137013107a9c2c1fc05c1e0747965e", null ],
     [ "operator=", "classmage_1_1_read_write_mutex.html#a408e06f3c8bcc644e43afbf7e9ac772f", null ],

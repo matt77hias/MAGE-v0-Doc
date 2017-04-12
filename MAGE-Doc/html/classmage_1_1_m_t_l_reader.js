@@ -1,9 +1,9 @@
 var classmage_1_1_m_t_l_reader =
 [
     [ "MTLReader", "classmage_1_1_m_t_l_reader.html#a924f813cca170e2592a6e7d2a3255be8", null ],
-    [ "~MTLReader", "classmage_1_1_m_t_l_reader.html#af07011b505c88680a8381c00cb512242", null ],
     [ "MTLReader", "classmage_1_1_m_t_l_reader.html#adcc57156298b2198c24c041503df2e6d", null ],
     [ "MTLReader", "classmage_1_1_m_t_l_reader.html#ae78095773cf6c4cb697605b395fdfc60", null ],
+    [ "~MTLReader", "classmage_1_1_m_t_l_reader.html#af07011b505c88680a8381c00cb512242", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#ae239ac085326919918a418edabcafeae", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#aa777389ff4a3cd2f1df2cbf5c6da708e", null ],
     [ "ReadLine", "classmage_1_1_m_t_l_reader.html#a884a333063f7682f4238bdebf340d0a3", null ],
@@ -18,7 +18,7 @@ var classmage_1_1_m_t_l_reader =
     [ "ReadMTLDissolveTexture", "classmage_1_1_m_t_l_reader.html#aae7a327ad0c5223041c9e849ea2a88d7", null ],
     [ "ReadMTLMaterialName", "classmage_1_1_m_t_l_reader.html#a53494ca5e0f905b97227b21711a1686a", null ],
     [ "ReadMTLOpticalDensity", "classmage_1_1_m_t_l_reader.html#a06576927d764c9cd2be41871f137fac4", null ],
-    [ "ReadMTLSpectrum", "classmage_1_1_m_t_l_reader.html#ae61a336a53ca8e3bde2648c23f8e0604", null ],
+    [ "ReadMTLSpectrum", "classmage_1_1_m_t_l_reader.html#a607a55ab2e68d3bc9b879d7e3377f0e3", null ],
     [ "ReadMTLSpecularExponent", "classmage_1_1_m_t_l_reader.html#a0ac9c6202ff7fa921d551e1aaa59b33f", null ],
     [ "ReadMTLSpecularExponentTexture", "classmage_1_1_m_t_l_reader.html#a9b68187f940dc05a5d86527843f09d18", null ],
     [ "ReadMTLSpecularReflectivity", "classmage_1_1_m_t_l_reader.html#aa90f43e397bc5fc277b936bdeff4e672", null ],

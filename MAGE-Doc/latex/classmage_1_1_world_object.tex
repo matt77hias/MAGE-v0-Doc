@@ -21,29 +21,35 @@ Inheritance diagram for mage\+:\+:World\+Object\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_world_object_a6ae28ad98832c1e97b681816755a79f2}{$\sim$\+World\+Object} ()=default
 \item 
-\hyperlink{classmage_1_1_world_object}{World\+Object} \& \hyperlink{classmage_1_1_world_object_aa53dfc0e654aead5898d0cc76cbc9be6}{operator=} (const \hyperlink{classmage_1_1_world_object}{World\+Object} \&world\+\_\+object)
+\hyperlink{classmage_1_1_world_object}{World\+Object} \& \hyperlink{classmage_1_1_world_object_a0676dc2fde5791becae9547077c7db0c}{operator=} (const \hyperlink{classmage_1_1_world_object}{World\+Object} \&world\+\_\+object)
 \item 
 \hyperlink{classmage_1_1_world_object}{World\+Object} \& \hyperlink{classmage_1_1_world_object_a8dbb67991f149a2d4edbcd17ae4ec3ef}{operator=} (\hyperlink{classmage_1_1_world_object}{World\+Object} \&\&world\+\_\+object)=default
 \item 
-\hyperlink{classmage_1_1_world_object}{World\+Object} $\ast$ \hyperlink{classmage_1_1_world_object_a6f464ec7f71740bb89a3ffb0cf6369b2}{Clone} () const
+virtual \hyperlink{classmage_1_1_world_object}{World\+Object} $\ast$ \hyperlink{classmage_1_1_world_object_a8793d22cb63b1bd31b1307e5e7094f61}{Clone} () const
 \item 
 const string \& \hyperlink{classmage_1_1_world_object_a3aab270d50a8d9ab1f9a970d3e04245f}{Get\+Name} () const
 \item 
 void \hyperlink{classmage_1_1_world_object_aee42f65080a69ed5cfc681382328fe31}{Set\+Name} (const string \&name)
 \item 
-\hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{classmage_1_1_world_object_a9f0ff4d1d3b3c2dd63e91e8127023f47}{Get\+Transform} () const
+\hyperlink{structmage_1_1_transform}{Transform} $\ast$ \hyperlink{classmage_1_1_world_object_a4add48c19a884f5feaddc202c8266e9d}{Get\+Transform} ()
+\item 
+const \hyperlink{structmage_1_1_transform}{Transform} $\ast$ \hyperlink{classmage_1_1_world_object_a15517a1962c5eb33de5fd3da4b4afe12}{Get\+Transform} () const
+\item 
+void \hyperlink{classmage_1_1_world_object_a5ab5e580caa80d93a3c8b44d18ee2848}{Update\+Transform} ()
+\item 
+void \hyperlink{classmage_1_1_world_object_a1c4736646ad66488fe2e0706a784924d}{Update\+Transform} (const X\+M\+M\+A\+T\+R\+IX \&world\+\_\+to\+\_\+parent, const X\+M\+M\+A\+T\+R\+IX \&parent\+\_\+to\+\_\+world, bool dirty\+\_\+ancestor)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_world_object_a5c66de01e9b83c4c1fa6cd64e17443ee}{Add\+Child\+Transform} (const \hyperlink{classmage_1_1_world_object}{World\+Object} \&world\+\_\+object) const
+virtual void \hyperlink{classmage_1_1_world_object_ab384751f7c14c931e8606f927825b6c8}{Update\+Child\+Transforms} (bool dirty\+\_\+ancestor)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{m\+\_\+name}
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ \hyperlink{classmage_1_1_world_object_a599102e219249b46e1cf60c98efd559c}{m\+\_\+transform}
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ \hyperlink{classmage_1_1_world_object_aa9b856a22731a70f9200e79d0f9a45ee}{m\+\_\+transform}
 \end{DoxyCompactItemize}
 
 
@@ -52,7 +58,7 @@ string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!World\+Object@{World\+Object}}
 \index{World\+Object@{World\+Object}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
 \subsubsection{\texorpdfstring{World\+Object()}{WorldObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+World\+Object\+::\+World\+Object (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+World\+Object\+::\+World\+Object (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \hypertarget{classmage_1_1_world_object_a4e7ace41518b45c75d975c766de28143}{}\label{classmage_1_1_world_object_a4e7ace41518b45c75d975c766de28143} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!World\+Object@{World\+Object}}
@@ -75,17 +81,15 @@ string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_world_object_a5c66de01e9b83c4c1fa6cd64e17443ee}{}\label{classmage_1_1_world_object_a5c66de01e9b83c4c1fa6cd64e17443ee} 
-\index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Add\+Child\+Transform@{Add\+Child\+Transform}}
-\index{Add\+Child\+Transform@{Add\+Child\+Transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
-\subsubsection{\texorpdfstring{Add\+Child\+Transform()}{AddChildTransform()}}
-{\footnotesize\ttfamily void mage\+::\+World\+Object\+::\+Add\+Child\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_world_object}{World\+Object} \&}]{world\+\_\+object }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
-
-\hypertarget{classmage_1_1_world_object_a6f464ec7f71740bb89a3ffb0cf6369b2}{}\label{classmage_1_1_world_object_a6f464ec7f71740bb89a3ffb0cf6369b2} 
+\hypertarget{classmage_1_1_world_object_a8793d22cb63b1bd31b1307e5e7094f61}{}\label{classmage_1_1_world_object_a8793d22cb63b1bd31b1307e5e7094f61} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_world_object}{World\+Object}$\ast$ mage\+::\+World\+Object\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_world_object}{World\+Object}$\ast$ mage\+::\+World\+Object\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classmage_1_1_sub_model_a368bcc2ee819cc29ec0203e314ae91d3}{mage\+::\+Sub\+Model}, \hyperlink{classmage_1_1_perspective_camera_a08eebf7f3ba10a46b4b23c0ded1192f2}{mage\+::\+Perspective\+Camera}, \hyperlink{classmage_1_1_orthographic_camera_ae075c08e4af88f74212bf5c84d2e5b2a}{mage\+::\+Orthographic\+Camera}, \hyperlink{classmage_1_1_camera_a19301c2256c183db50b5e9406f7b5f3c}{mage\+::\+Camera}, \hyperlink{classmage_1_1_model_ae5e9bee52da0db8c7a29920c13ed40ea}{mage\+::\+Model}, \hyperlink{classmage_1_1_mesh_model_a7130eca9a1dac038c33b838c15138161}{mage\+::\+Mesh\+Model}, and \hyperlink{classmage_1_1_point_light_a5a685d110af3ec491105147a15df7b87}{mage\+::\+Point\+Light}.
 
 \hypertarget{classmage_1_1_world_object_a3aab270d50a8d9ab1f9a970d3e04245f}{}\label{classmage_1_1_world_object_a3aab270d50a8d9ab1f9a970d3e04245f} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Get\+Name@{Get\+Name}}
@@ -93,17 +97,23 @@ string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{
 \subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
 {\footnotesize\ttfamily const string\& mage\+::\+World\+Object\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_world_object_a9f0ff4d1d3b3c2dd63e91e8127023f47}{}\label{classmage_1_1_world_object_a9f0ff4d1d3b3c2dd63e91e8127023f47} 
+\hypertarget{classmage_1_1_world_object_a4add48c19a884f5feaddc202c8266e9d}{}\label{classmage_1_1_world_object_a4add48c19a884f5feaddc202c8266e9d} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Get\+Transform@{Get\+Transform}}
 \index{Get\+Transform@{Get\+Transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
-\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+World\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}$\ast$ mage\+::\+World\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_world_object_aa53dfc0e654aead5898d0cc76cbc9be6}{}\label{classmage_1_1_world_object_aa53dfc0e654aead5898d0cc76cbc9be6} 
+\hypertarget{classmage_1_1_world_object_a15517a1962c5eb33de5fd3da4b4afe12}{}\label{classmage_1_1_world_object_a15517a1962c5eb33de5fd3da4b4afe12} 
+\index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_transform}{Transform}$\ast$ mage\+::\+World\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_world_object_a0676dc2fde5791becae9547077c7db0c}{}\label{classmage_1_1_world_object_a0676dc2fde5791becae9547077c7db0c} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_world_object}{World\+Object}\& mage\+::\+World\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_world_object}{World\+Object} \&}]{world\+\_\+object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_world_object}{World\+Object} \& mage\+::\+World\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_world_object}{World\+Object} \&}]{world\+\_\+object }\end{DoxyParamCaption})}
 
 \hypertarget{classmage_1_1_world_object_a8dbb67991f149a2d4edbcd17ae4ec3ef}{}\label{classmage_1_1_world_object_a8dbb67991f149a2d4edbcd17ae4ec3ef} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!operator=@{operator=}}
@@ -117,6 +127,28 @@ string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{
 \subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
 {\footnotesize\ttfamily void mage\+::\+World\+Object\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
 
+\hypertarget{classmage_1_1_world_object_ab384751f7c14c931e8606f927825b6c8}{}\label{classmage_1_1_world_object_ab384751f7c14c931e8606f927825b6c8} 
+\index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Update\+Child\+Transforms@{Update\+Child\+Transforms}}
+\index{Update\+Child\+Transforms@{Update\+Child\+Transforms}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
+\subsubsection{\texorpdfstring{Update\+Child\+Transforms()}{UpdateChildTransforms()}}
+{\footnotesize\ttfamily void mage\+::\+World\+Object\+::\+Update\+Child\+Transforms (\begin{DoxyParamCaption}\item[{bool}]{dirty\+\_\+ancestor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classmage_1_1_model_a2f3c812220367093bdca125e6b6e898a}{mage\+::\+Model}.
+
+\hypertarget{classmage_1_1_world_object_a5ab5e580caa80d93a3c8b44d18ee2848}{}\label{classmage_1_1_world_object_a5ab5e580caa80d93a3c8b44d18ee2848} 
+\index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Update\+Transform@{Update\+Transform}}
+\index{Update\+Transform@{Update\+Transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
+\subsubsection{\texorpdfstring{Update\+Transform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+World\+Object\+::\+Update\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_world_object_a1c4736646ad66488fe2e0706a784924d}{}\label{classmage_1_1_world_object_a1c4736646ad66488fe2e0706a784924d} 
+\index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!Update\+Transform@{Update\+Transform}}
+\index{Update\+Transform@{Update\+Transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
+\subsubsection{\texorpdfstring{Update\+Transform()}{UpdateTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+World\+Object\+::\+Update\+Transform (\begin{DoxyParamCaption}\item[{const X\+M\+M\+A\+T\+R\+IX \&}]{world\+\_\+to\+\_\+parent,  }\item[{const X\+M\+M\+A\+T\+R\+IX \&}]{parent\+\_\+to\+\_\+world,  }\item[{bool}]{dirty\+\_\+ancestor }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Data Documentation}
@@ -126,9 +158,9 @@ string \hyperlink{classmage_1_1_world_object_a383cc5e1275f389459021a16b958049c}{
 \subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
 {\footnotesize\ttfamily string mage\+::\+World\+Object\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_world_object_a599102e219249b46e1cf60c98efd559c}{}\label{classmage_1_1_world_object_a599102e219249b46e1cf60c98efd559c} 
+\hypertarget{classmage_1_1_world_object_aa9b856a22731a70f9200e79d0f9a45ee}{}\label{classmage_1_1_world_object_aa9b856a22731a70f9200e79d0f9a45ee} 
 \index{mage\+::\+World\+Object@{mage\+::\+World\+Object}!m\+\_\+transform@{m\+\_\+transform}}
 \index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+World\+Object@{mage\+::\+World\+Object}}
 \subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ mage\+::\+World\+Object\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ mage\+::\+World\+Object\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
 

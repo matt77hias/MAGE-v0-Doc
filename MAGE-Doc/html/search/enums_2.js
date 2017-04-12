@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['spriteeffects',['SpriteEffects',['../namespacemage.html#a06ff9ac76b1e0636cc8949c3f0d4ac46',1,'mage']]],
-  ['spritesortmode',['SpriteSortMode',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014',1,'mage']]]
+  ['readwritemutexlocktype',['ReadWriteMutexLockType',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74',1,'mage']]],
+  ['rotationaxes',['RotationAxes',['../namespacemage.html#a548e5c31b08a1078841ed21948f5bf4c',1,'mage']]]
 ];

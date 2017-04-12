@@ -1,14 +1,14 @@
 var classmage_1_1_progress_reporter =
 [
     [ "ProgressReporter", "classmage_1_1_progress_reporter.html#ab105fa7ac8fb1c53c60deab107c26f74", null ],
-    [ "~ProgressReporter", "classmage_1_1_progress_reporter.html#aa543239c6dd4474a77cf4cf6904c1b26", null ],
     [ "ProgressReporter", "classmage_1_1_progress_reporter.html#a59c1ca6e4c0d480a1726d79ef6d42e74", null ],
-    [ "ProgressReporter", "classmage_1_1_progress_reporter.html#a51e53891454e814b3c860f8de4506c1b", null ],
+    [ "ProgressReporter", "classmage_1_1_progress_reporter.html#aaa8fdd4ce4bd7dfa3f663f0d4d615cbc", null ],
+    [ "~ProgressReporter", "classmage_1_1_progress_reporter.html#a198e1ba987518e4591c156510e2b52d9", null ],
     [ "Done", "classmage_1_1_progress_reporter.html#a11d758647ac2082bc296ab53a7454eaa", null ],
     [ "operator=", "classmage_1_1_progress_reporter.html#a7bc52147f6d2e30d897f512f910c8917", null ],
     [ "operator=", "classmage_1_1_progress_reporter.html#aba75cd5ea2d9faae4264b844f857e260", null ],
     [ "Update", "classmage_1_1_progress_reporter.html#a0a5f99f15e4152da9a3d6aadd888244a", null ],
-    [ "m_buffer", "classmage_1_1_progress_reporter.html#a3aa49d5b886263402d9a9ecb4851670c", null ],
+    [ "m_buffer", "classmage_1_1_progress_reporter.html#a725763db34f5bbb7408107d55ee43beb", null ],
     [ "m_current_pos", "classmage_1_1_progress_reporter.html#a7adafaaf90edf29c8c27f4008aea41c9", null ],
     [ "m_fout", "classmage_1_1_progress_reporter.html#ad325ee5978fd1d16a97acbe37a977982", null ],
     [ "m_mutex", "classmage_1_1_progress_reporter.html#a32a499aa1b8fccbc8393fe32305dfeb1", null ],

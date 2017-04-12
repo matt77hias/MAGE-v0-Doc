@@ -1,9 +1,9 @@
 var classmage_1_1_model_descriptor =
 [
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#a1ae1d85907be96350cef77e6a4ba4fb9", null ],
-    [ "~ModelDescriptor", "classmage_1_1_model_descriptor.html#a3bc8ee3d1cb8d2675374727edce3d593", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af44185efc20e10ede762d29bc454c5f3", null ],
-    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#a0b9c94c989ef70b6149a571106a1a73c", null ],
+    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af9be9f46bc8f42fa04f686af6cc296f6", null ],
+    [ "~ModelDescriptor", "classmage_1_1_model_descriptor.html#a3bc8ee3d1cb8d2675374727edce3d593", null ],
     [ "GetMesh", "classmage_1_1_model_descriptor.html#a0781eed81d27ed936503056bbd46ab58", null ],
     [ "MaterialsBegin", "classmage_1_1_model_descriptor.html#a64a2ca531c03cd8d79eda3a728e6efa1", null ],
     [ "MaterialsEnd", "classmage_1_1_model_descriptor.html#a3e1880190d58d4d1bc308766f804047d", null ],

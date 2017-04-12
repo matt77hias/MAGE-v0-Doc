@@ -17,9 +17,21 @@ Inheritance diagram for mage\+:\+:Pixel\+Shader\+:\begin{figure}[H]
 \item 
 \hyperlink{classmage_1_1_pixel_shader_a0278c67883cbf9259ea83e7f6c8162a2}{Pixel\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const wstring \&guid, const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size)
 \item 
+\hyperlink{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{Pixel\+Shader} (const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&pixel\+\_\+shader)=delete
+\item 
+\hyperlink{classmage_1_1_pixel_shader_a5adc11fbc9b644b38cb9f6e5c7974a90}{Pixel\+Shader} (\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&pixel\+\_\+shader)=default
+\item 
 virtual \hyperlink{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2}{$\sim$\+Pixel\+Shader} ()=default
 \item 
-virtual void \hyperlink{classmage_1_1_pixel_shader_ac7662093a83213881698dca25f8215a2}{Draw} (const \hyperlink{structmage_1_1_material}{Material} \&material, const \hyperlink{classmage_1_1_world}{World} \&world) const =0
+\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \& \hyperlink{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3}{operator=} (const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&pixel\+\_\+shader)=delete
+\item 
+\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \& \hyperlink{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9}{operator=} (\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&pixel\+\_\+shader)=delete
+\item 
+void \hyperlink{classmage_1_1_pixel_shader_acff36b2ae6500b720a54a5d41efcc3fe}{Draw} (const \hyperlink{classmage_1_1_texture}{Texture} \&texture) const
+\item 
+virtual void \hyperlink{classmage_1_1_pixel_shader_ac9d71d866f79e155db729d8890b9ca78}{Draw} (I\+D3\+D11\+Shader\+Resource\+View $\ast$const $\ast$texture) const
+\item 
+virtual void \hyperlink{classmage_1_1_pixel_shader_ac0506a453bf814b32aeb00819ec05806}{Draw} (const \hyperlink{structmage_1_1_material}{Material} \&material, const \hyperlink{classmage_1_1_world}{World} \&world) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -33,14 +45,6 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_pixel_shader_a
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{Pixel\+Shader} (const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&pixel\+\_\+shader)=delete
-\item 
-\hyperlink{classmage_1_1_pixel_shader_aea7c5c1888dda0317d6e98d0a57c41b0}{Pixel\+Shader} (\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&pixel\+\_\+shader)=delete
-\item 
-\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \& \hyperlink{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3}{operator=} (const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&pixel\+\_\+shader)=delete
-\item 
-\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \& \hyperlink{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9}{operator=} (\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&pixel\+\_\+shader)=delete
-\item 
 H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57}{Setup\+Shader} ()
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad0406409e6df2a11}{Setup\+Shader} (const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size)
@@ -52,13 +56,25 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad040640
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \hypertarget{classmage_1_1_pixel_shader_a0278c67883cbf9259ea83e7f6c8162a2}{}\label{classmage_1_1_pixel_shader_a0278c67883cbf9259ea83e7f6c8162a2} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid,  }\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid,  }\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\hypertarget{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{}\label{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79} 
+\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
+\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_pixel_shader_a5adc11fbc9b644b38cb9f6e5c7974a90}{}\label{classmage_1_1_pixel_shader_a5adc11fbc9b644b38cb9f6e5c7974a90} 
+\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
+\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \hypertarget{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2}{}\label{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!````~Pixel\+Shader@{$\sim$\+Pixel\+Shader}}
@@ -66,42 +82,46 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad040640
 \subsubsection{\texorpdfstring{$\sim$\+Pixel\+Shader()}{~PixelShader()}}
 {\footnotesize\ttfamily virtual mage\+::\+Pixel\+Shader\+::$\sim$\+Pixel\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{}\label{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79} 
-\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
-\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
-\hypertarget{classmage_1_1_pixel_shader_aea7c5c1888dda0317d6e98d0a57c41b0}{}\label{classmage_1_1_pixel_shader_aea7c5c1888dda0317d6e98d0a57c41b0} 
-\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
-\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_pixel_shader_ac7662093a83213881698dca25f8215a2}{}\label{classmage_1_1_pixel_shader_ac7662093a83213881698dca25f8215a2} 
+\hypertarget{classmage_1_1_pixel_shader_acff36b2ae6500b720a54a5d41efcc3fe}{}\label{classmage_1_1_pixel_shader_acff36b2ae6500b720a54a5d41efcc3fe} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual void mage\+::\+Pixel\+Shader\+::\+Draw (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Draw (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_texture}{Texture} \&}]{texture }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_pixel_shader_ac9d71d866f79e155db729d8890b9ca78}{}\label{classmage_1_1_pixel_shader_ac9d71d866f79e155db729d8890b9ca78} 
+\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$const $\ast$}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_a7394a51578de77cd7e57b9bd63895ffd}{mage\+::\+Lambertian\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_ababff79ea9746a94b838bb2f8dfd1fbf}{mage\+::\+Empty\+Pixel\+Shader}.
+Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a546d7d1b50872450577db0fff8b05151}{mage\+::\+Sprite\+Pixel\+Shader}.
+
+\hypertarget{classmage_1_1_pixel_shader_ac0506a453bf814b32aeb00819ec05806}{}\label{classmage_1_1_pixel_shader_ac0506a453bf814b32aeb00819ec05806} 
+\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Draw (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_a7394a51578de77cd7e57b9bd63895ffd}{mage\+::\+Lambertian\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_ababff79ea9746a94b838bb2f8dfd1fbf}{mage\+::\+Empty\+Pixel\+Shader}.
 
 \hypertarget{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3}{}\label{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 \hypertarget{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9}{}\label{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 \hypertarget{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57}{}\label{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Setup\+Shader@{Setup\+Shader}}

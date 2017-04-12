@@ -5,7 +5,15 @@ var hierarchy =
       [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
     ] ],
     [ "mage::AlignedData< DataT >", "structmage_1_1_aligned_data.html", null ],
-    [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", null ],
+    [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", [
+      [ "mage::CharacterMotorScript", "classmage_1_1_character_motor_script.html", null ],
+      [ "mage::FPSInputControllerScript", "classmage_1_1_f_p_s_input_controller_script.html", null ],
+      [ "mage::FrameRateScript", "classmage_1_1_frame_rate_script.html", null ],
+      [ "mage::MouseLookScript", "classmage_1_1_mouse_look_script.html", null ],
+      [ "mage::StatsScript", "classmage_1_1_stats_script.html", null ],
+      [ "mage::SystemUsageScript", "classmage_1_1_system_usage_script.html", null ],
+      [ "mage::TextConsoleScript", "classmage_1_1_text_console_script.html", null ]
+    ] ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
       [ "mage::SpriteFontReader", "classmage_1_1_sprite_font_reader.html", null ]
     ] ],
@@ -15,6 +23,8 @@ var hierarchy =
     [ "mage::CartesianCoordinateSystem", "structmage_1_1_cartesian_coordinate_system.html", null ],
     [ "mage::CombinedShader", "structmage_1_1_combined_shader.html", null ],
     [ "mage::ConditionVariable", "classmage_1_1_condition_variable.html", null ],
+    [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
+    [ "mage::CPUTimer", "classmage_1_1_c_p_u_timer.html", null ],
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
     [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
     [ "mage::DDS_PIXELFORMAT", "structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
@@ -67,12 +77,14 @@ var hierarchy =
       ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
         [ "mage::EmptyPixelShader", "classmage_1_1_empty_pixel_shader.html", null ],
-        [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ]
+        [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ],
+        [ "mage::SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html", null ]
       ] ],
       [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::EmptyVertexShader", "classmage_1_1_empty_vertex_shader.html", null ],
-        [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ]
+        [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ],
+        [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ]
       ] ]
     ] ],
     [ "mage::ResourceFactory", "classmage_1_1_resource_factory.html", null ],
@@ -83,7 +95,12 @@ var hierarchy =
     [ "mage::SpriteBatch", "classmage_1_1_sprite_batch.html", null ],
     [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],
     [ "mage::SpriteFontOutput", "structmage_1_1_sprite_font_output.html", null ],
-    [ "mage::SpriteInfo", "structmage_1_1_sprite_info.html", null ],
+    [ "mage::SpriteImage", "classmage_1_1_sprite_image.html", null ],
+    [ "mage::SpriteText", "classmage_1_1_sprite_text.html", [
+      [ "mage::DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html", null ],
+      [ "mage::NormalSpriteText", "classmage_1_1_normal_sprite_text.html", null ],
+      [ "mage::OutlineSpriteText", "classmage_1_1_outline_sprite_text.html", null ]
+    ] ],
     [ "mage::SpriteTransform", "structmage_1_1_sprite_transform.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
     [ "mage::Transform", "structmage_1_1_transform.html", null ],

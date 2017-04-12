@@ -1,9 +1,9 @@
 var classmage_1_1_semaphore =
 [
     [ "Semaphore", "classmage_1_1_semaphore.html#a7b4f53c18b9a244ed98ef58fa5cfa2bb", null ],
-    [ "~Semaphore", "classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d", null ],
     [ "Semaphore", "classmage_1_1_semaphore.html#a8873b2ed82ff66d323a8c3cebf0fb5c0", null ],
     [ "Semaphore", "classmage_1_1_semaphore.html#a48c70e46bdfd206556a93ae96ad760a5", null ],
+    [ "~Semaphore", "classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d", null ],
     [ "operator=", "classmage_1_1_semaphore.html#af3308cf7fa1ed33cda0ee53b9565f658", null ],
     [ "operator=", "classmage_1_1_semaphore.html#a7ce33136147e745f75d51abc77cd845c", null ],
     [ "Post", "classmage_1_1_semaphore.html#a354ea9743f9794b14a3f032e0443b214", null ],
