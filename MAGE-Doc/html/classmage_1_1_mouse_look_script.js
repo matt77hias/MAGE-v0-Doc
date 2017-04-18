@@ -1,6 +1,6 @@
 var classmage_1_1_mouse_look_script =
 [
-    [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#a21944edcaaafae45d19e82ecbebbff7c", null ],
+    [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#a577529718cd5d5208976f5485de29ba1", null ],
     [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#a54bd09419068ab61c4dd6fda412771d3", null ],
     [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#ab922490b99932e26d27e256a71db9905", null ],
     [ "~MouseLookScript", "classmage_1_1_mouse_look_script.html#afe4592321c71e9e64a9f355b1f9cd938", null ],
@@ -14,6 +14,8 @@ var classmage_1_1_mouse_look_script =
     [ "GetSensitivity", "classmage_1_1_mouse_look_script.html#a942a751f1b6ed77bf2562b4f17dc108c", null ],
     [ "GetSensitivityX", "classmage_1_1_mouse_look_script.html#a5ba6c96a6d73050bc0c9903f376dbd93", null ],
     [ "GetSensitivityY", "classmage_1_1_mouse_look_script.html#a154e0de56755e927ee0731a6f3159e55", null ],
+    [ "InvertDirectionX", "classmage_1_1_mouse_look_script.html#a3e68c097c150cb2f779a7cca1a3c82d5", null ],
+    [ "InvertDirectionY", "classmage_1_1_mouse_look_script.html#a6f0296eceb11425ca02a9fbc19847904", null ],
     [ "operator=", "classmage_1_1_mouse_look_script.html#a13fba7e90bf10d24814e0a8cec25645e", null ],
     [ "operator=", "classmage_1_1_mouse_look_script.html#a2754174f5595fa424471c631818dc2b6", null ],
     [ "SetMaximumRotation", "classmage_1_1_mouse_look_script.html#a2e9d5982a1d650af143b06ed1d8ccde2", null ],
@@ -34,6 +36,7 @@ var classmage_1_1_mouse_look_script =
     [ "SetSensitivityY", "classmage_1_1_mouse_look_script.html#a8e26c1611c8f88fd848506d215a07533", null ],
     [ "Update", "classmage_1_1_mouse_look_script.html#a7962403a78c02b2fe64e8f06f6319312", null ],
     [ "m_axes", "classmage_1_1_mouse_look_script.html#ab5df1b96d5860a9b8f30256e7c89b26b", null ],
+    [ "m_direction", "classmage_1_1_mouse_look_script.html#a07c9a61869dab687a0426fa0c4b41fa7", null ],
     [ "m_maximum_rotation", "classmage_1_1_mouse_look_script.html#a0d5f2933555b76efd7cf83c7672574dd", null ],
     [ "m_minimum_rotation", "classmage_1_1_mouse_look_script.html#ad09bda241666f60dfc408500cafd073d", null ],
     [ "m_sensitivity", "classmage_1_1_mouse_look_script.html#a4f38b9bd8e7271503a70753ce6a923c7", null ],

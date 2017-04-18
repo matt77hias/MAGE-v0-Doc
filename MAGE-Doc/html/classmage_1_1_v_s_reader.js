@@ -17,6 +17,5 @@ var classmage_1_1_v_s_reader =
     [ "ReadVSInt2", "classmage_1_1_v_s_reader.html#a4a3b90b47cb5e262a72df719674b9d93", null ],
     [ "ReadVSInt3", "classmage_1_1_v_s_reader.html#a6fa8fa2cbb66a9a1872bb84a0612a32d", null ],
     [ "ReadVSString", "classmage_1_1_v_s_reader.html#a8d00057f90b2a2ed2e84e47530f91227", null ],
-    [ "ReadVSUnknown", "classmage_1_1_v_s_reader.html#aaa63e49901b2ef9e5903aff0e13ec4b0", null ],
     [ "m_variable_buffer", "classmage_1_1_v_s_reader.html#a32ffea034d4540dd90156452a9d78e52", null ]
 ];

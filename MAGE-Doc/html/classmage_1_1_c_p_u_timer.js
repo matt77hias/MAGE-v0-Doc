@@ -1,8 +1,8 @@
 var classmage_1_1_c_p_u_timer =
 [
-    [ "KERNEL_MODE", "classmage_1_1_c_p_u_timer.html#a17f6aa71c97aef46fea51190709e4c14ae1a0a7748289875873f8a9948c2234e0", null ],
-    [ "USER_MODE", "classmage_1_1_c_p_u_timer.html#a17f6aa71c97aef46fea51190709e4c14ad5bce4c910796ef2ef4323a0153a2add", null ],
-    [ "NB_MODES", "classmage_1_1_c_p_u_timer.html#a17f6aa71c97aef46fea51190709e4c14ab63e6023ec0bea89568ebb2b98728b77", null ],
+    [ "KERNEL_MODE", "classmage_1_1_c_p_u_timer.html#a5adc0497956723a35534dfeb66fa7789ae1a0a7748289875873f8a9948c2234e0", null ],
+    [ "USER_MODE", "classmage_1_1_c_p_u_timer.html#a5adc0497956723a35534dfeb66fa7789ad5bce4c910796ef2ef4323a0153a2add", null ],
+    [ "NB_MODES", "classmage_1_1_c_p_u_timer.html#a5adc0497956723a35534dfeb66fa7789ab63e6023ec0bea89568ebb2b98728b77", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a398b1d5c99bcb09fbe37b2d74547b3e0", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a35d279dc760a491537099262892c62d5", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a1f416a6188d447fb24396cc4409af7aa", null ],

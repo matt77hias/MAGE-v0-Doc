@@ -9,6 +9,5 @@ var searchData=
   ['variabletype_5fint',['VariableType_Int',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aae0b6cd2e0baf9fe25bdad167df6839fe',1,'mage']]],
   ['variabletype_5fint2',['VariableType_Int2',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aacc3025667a8103a37ec86e3d953f27e9',1,'mage']]],
   ['variabletype_5fint3',['VariableType_Int3',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aaf09835cc5d74cc33e0949bee9899ba3e',1,'mage']]],
-  ['variabletype_5fstring',['VariableType_String',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa926d5ae9336679e71241d388c06112a2',1,'mage']]],
-  ['variabletype_5funknown',['VariableType_Unknown',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa27594fd713c151fb997523c896d0d4f8',1,'mage']]]
+  ['variabletype_5fstring',['VariableType_String',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa926d5ae9336679e71241d388c06112a2',1,'mage']]]
 ];

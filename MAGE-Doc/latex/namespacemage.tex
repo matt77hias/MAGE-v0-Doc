@@ -11,15 +11,13 @@ class \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}
 \item 
 class \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader}
 \item 
+class \hyperlink{classmage_1_1_big_endian_binary_writer}{Big\+Endian\+Binary\+Writer}
+\item 
 class \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader}
 \item 
 struct \hyperlink{structmage_1_1_b_s}{BS}
 \item 
 class \hyperlink{classmage_1_1_camera}{Camera}
-\item 
-struct \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System}
-\item 
-struct \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System}
 \item 
 class \hyperlink{classmage_1_1_character_motor_script}{Character\+Motor\+Script}
 \item 
@@ -79,13 +77,21 @@ class \hyperlink{classmage_1_1_line_reader}{Line\+Reader}
 \item 
 class \hyperlink{classmage_1_1_loadable}{Loadable}
 \item 
+class \hyperlink{classmage_1_1_location_script}{Location\+Script}
+\item 
 struct \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration}
 \item 
 class \hyperlink{classmage_1_1_main_window}{Main\+Window}
 \item 
+class \hyperlink{classmage_1_1_manhattan_input_controller_script}{Manhattan\+Input\+Controller\+Script}
+\item 
+class \hyperlink{classmage_1_1_manhattan_motor_script}{Manhattan\+Motor\+Script}
+\item 
 struct \hyperlink{structmage_1_1_material}{Material}
 \item 
-struct \hyperlink{structmage_1_1_material_buffer}{Material\+Buffer}
+class \hyperlink{classmage_1_1_m_d_l_reader}{M\+D\+L\+Reader}
+\item 
+class \hyperlink{classmage_1_1_m_d_l_writer}{M\+D\+L\+Writer}
 \item 
 class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}
 \item 
@@ -106,6 +112,10 @@ struct \hyperlink{structmage_1_1_model_part}{Model\+Part}
 class \hyperlink{classmage_1_1_mouse}{Mouse}
 \item 
 class \hyperlink{classmage_1_1_mouse_look_script}{Mouse\+Look\+Script}
+\item 
+class \hyperlink{classmage_1_1_m_s_h_reader}{M\+S\+H\+Reader}
+\item 
+class \hyperlink{classmage_1_1_m_s_h_writer}{M\+S\+H\+Writer}
 \item 
 class \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader}
 \item 
@@ -157,8 +167,6 @@ class \hyperlink{classmage_1_1_semaphore}{Semaphore}
 \item 
 struct \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}
 \item 
-class \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch}
-\item 
 class \hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh}
 \item 
 class \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}
@@ -175,7 +183,7 @@ class \hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader}
 \item 
 class \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}
 \item 
-struct \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform}
+struct \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item}
 \item 
 class \hyperlink{classmage_1_1_sprite_vertex_shader}{Sprite\+Vertex\+Shader}
 \item 
@@ -192,10 +200,6 @@ class \hyperlink{classmage_1_1_text_console_script}{Text\+Console\+Script}
 class \hyperlink{classmage_1_1_texture}{Texture}
 \item 
 class \hyperlink{classmage_1_1_timer}{Timer}
-\item 
-struct \hyperlink{structmage_1_1_transform}{Transform}
-\item 
-struct \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer}
 \item 
 struct \hyperlink{structmage_1_1_u_v}{UV}
 \item 
@@ -228,6 +232,8 @@ class \hyperlink{classmage_1_1_view_frustum}{View\+Frustum}
 class \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader}
 \item 
 class \hyperlink{classmage_1_1_v_s_writer}{V\+S\+Writer}
+\item 
+class \hyperlink{classmage_1_1_wireframe_script}{Wireframe\+Script}
 \item 
 class \hyperlink{classmage_1_1_world}{World}
 \item 
@@ -284,17 +290,16 @@ enum \hyperlink{namespacemage_a548e5c31b08a1078841ed21948f5bf4c}{Rotation\+Axes}
  \}
 \item 
 enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} \{ \newline
-\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa27594fd713c151fb997523c896d0d4f8}{Variable\+Type\+\_\+\+Unknown} = 0, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413}{Variable\+Type\+\_\+\+Bool}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aae0b6cd2e0baf9fe25bdad167df6839fe}{Variable\+Type\+\_\+\+Int}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aacc3025667a8103a37ec86e3d953f27e9}{Variable\+Type\+\_\+\+Int2}, 
-\newline
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaf09835cc5d74cc33e0949bee9899ba3e}{Variable\+Type\+\_\+\+Int3}, 
+\newline
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa0aed618ec60afb1acfa4fd4e8ce518d9}{Variable\+Type\+\_\+\+Float}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa60bf307d5b5ddafeae4bcfbeae83e8cd}{Variable\+Type\+\_\+\+Float2}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa4c4b9c61a44924f02e297762944b7675}{Variable\+Type\+\_\+\+Float3}, 
-\newline
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa5039f9440ba0fab413831b1452c9ca7f}{Variable\+Type\+\_\+\+Float4}, 
+\newline
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaacaf6301b7fe6f0c6f606d9432185b48}{Variable\+Type\+\_\+\+Color}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa926d5ae9336679e71241d388c06112a2}{Variable\+Type\+\_\+\+String}
  \}
@@ -426,6 +431,10 @@ const string \hyperlink{namespacemage_ab3642c6ef6cf94a62fb37b40c3c2f57e}{Get\+Pa
 \item 
 const wstring \hyperlink{namespacemage_ad23faa6d1854d389eb37fbdeefe97361}{Get\+Path\+Name} (const wstring \&fname)
 \item 
+const string \hyperlink{namespacemage_ab8841cbab507ef81edb00278110553ad}{Get\+Filename\+Without\+File\+Extension} (const string \&fname)
+\item 
+const wstring \hyperlink{namespacemage_aac01c0fba57d6737fcf32155748e95b0}{Get\+Filename\+Without\+File\+Extension} (const wstring \&fname)
+\item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{namespacemage_ac93dae3a8755fa1e1c9be6c8aa0e07d2}{Create\+Font} (const wstring \&fname, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a08f20ffe7bbb23d861ab2442e2967bcd}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
@@ -462,6 +471,12 @@ const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_ade7
 \item 
 const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a31fba0978e5da37928e5eec83a4f784d}{Overlap\+Strict} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
 \item 
+{\footnotesize template$<$typename VertexT $>$ }\\const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_aa727c025f86c9da2b6704c5f40b3d700}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const VertexT \&vertex)
+\item 
+\hyperlink{namespacemage_a34d95119b99d5281d078459091da1c99}{\+\_\+\+\_\+declspec} (align(16)) struct Cartesian\+Axes\+System final
+\item 
+\hyperlink{namespacemage_ae12ad80c2a6510257f38661c90c19b19}{\+\_\+declspec} (align(16)) struct Cartesian\+Coordinate\+System final
+\item 
 ostream \& \hyperlink{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T2 \&v)
 \item 
 ostream \& \hyperlink{namespacemage_a44b2d3046802608544402245919f219b}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T3 \&v)
@@ -482,6 +497,26 @@ float \hyperlink{namespacemage_a25d1197c5d3c86cc5d15e8225f796ac3}{Clamp\+Angle\+
 \item 
 float \hyperlink{namespacemage_ad538eb214c63b04ec6045e60791b814b}{Clamp\+Angle\+Radians} (float angle, float min, float max)
 \item 
+float \hyperlink{namespacemage_a2dbd3992e0bcb94b465ab4ab6b7d7f83}{Convert\+Normalized\+To\+Absolute\+ScreenX} (float x)
+\item 
+float \hyperlink{namespacemage_abc0e5fd9efdcd160a7c4e9b14c8ec7b6}{Convert\+Normalized\+To\+Absolute\+ScreenY} (float y)
+\item 
+const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a37cd57f31a66aac5355061bc3ad4e5ec}{Convert\+Normalized\+To\+Absolute\+Screen} (const X\+M\+V\+E\+C\+T\+OR \&position)
+\item 
+float \hyperlink{namespacemage_a7ad05dbf5e2b5d625daf57f43b26217f}{Convert\+Absolute\+To\+Normalized\+ScreenX} (float x)
+\item 
+float \hyperlink{namespacemage_a4300e91e448d76e1015cbc806c1d4467}{Convert\+Absolute\+To\+Normalized\+ScreenY} (float y)
+\item 
+const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_add9fc09b8a7166c5e0d0bde63d8f2747}{Convert\+Absolute\+To\+Normalized\+Screen} (const X\+M\+V\+E\+C\+T\+OR \&position)
+\item 
+const X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a34b18c1eb8d1e94675b10c86845e2564}{Convert\+Normalized\+To\+Absolute\+Screen} (float x, float y)
+\item 
+const X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_aec1ce8ea913d981f727765f39f79d5e3}{Convert\+Normalized\+To\+Absolute\+Screen} (const X\+M\+F\+L\+O\+A\+T2 \&position)
+\item 
+const X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a98a82c6ca513d50f16d4ee6256fdac29}{Convert\+Absolute\+To\+Normalized\+Screen} (float x, float y)
+\item 
+const X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a9ef1aad29d7631ee2d88467faca6cc56}{Convert\+Absolute\+To\+Normalized\+Screen} (const X\+M\+F\+L\+O\+A\+T2 \&position)
+\item 
 void $\ast$ \hyperlink{namespacemage_a4770c97ad241a87982062034adb6c0dc}{Alloc\+Aligned} (size\+\_\+t size, size\+\_\+t alignment=M\+A\+G\+E\+\_\+\+L1\+\_\+\+C\+A\+C\+H\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+I\+ZE)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_a43e2cdb4c71637a86b1861a73be44a58}{Alloc\+Aligned} (size\+\_\+t count)
@@ -494,7 +529,15 @@ H\+A\+N\+D\+LE \hyperlink{namespacemage_a80f95ce7eb0d03d5576351663d626b4d}{Safe\
 \item 
 \hyperlink{namespacemage_ab892828913d6129acf71e0cec60467e5}{Shared\+Handle} \hyperlink{namespacemage_a3119898d7caac71d8ee495c3ae3194b1}{Create\+Shared\+Handle} (H\+A\+N\+D\+LE handle)
 \item 
+{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aecd62c2ba58f3dd536459d4b6157f581}{Import\+M\+S\+H\+Mesh\+From\+File} (const wstring \&fname, vector$<$ VertexT $>$ \&vertices, vector$<$ IndexT $>$ \&indices)
+\item 
+{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad7382e78b94a6bf97895c8bfd198976b}{Export\+M\+S\+H\+Mesh\+To\+File} (const wstring \&fname, const vector$<$ VertexT $>$ \&vertices, const vector$<$ IndexT $>$ \&indices)
+\item 
 {\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_acb4aa2ee8f4bb362e8cce1fe22e0adbf}{Import\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d}{Import\+M\+D\+L\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a111dc6972bce8645df185fa5a65f9bff}{Export\+M\+D\+L\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
 I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_aca16dcb4637f074bb6e33d4ba7929686}{Get\+Model\+Rendering\+Device} ()
 \item 
@@ -504,7 +547,9 @@ I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a1d373a08e09ec19944
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84}{Create\+Model\+Descriptor} (const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a23fc9688b56289aa280a6cb7541dfbca}{Load\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27}{Import\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0}{Export\+Model\+To\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$destination, T $\ast$exchange, T $\ast$comparand)
 \item 
@@ -596,9 +641,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{Co
 \item 
 \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_af6f5c6ae46131caa77e5361d23d5d7c8}{Create\+Sprite\+Shader} ()
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} $>$ \hyperlink{namespacemage_a92ceaab9ca632db5c310ca4ab5746685}{Create\+Sprite\+Batch} ()
-\item 
-\hyperlink{namespacemage_ae9ca2610963fb5a1779024f079500559}{\+\_\+\+\_\+declspec} (align(16)) struct Sprite\+Info
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ Sprite\+Batch $>$ \hyperlink{namespacemage_a92ceaab9ca632db5c310ca4ab5746685}{Create\+Sprite\+Batch} ()
 \item 
 const X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a706e1b2866209b405f52e62c521f4884}{Get\+Viewport\+Transform} (I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode)
 \item 
@@ -1141,10 +1184,6 @@ Token\+Result\+\_\+\+Invalid&\\
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{mage\+::\+Variable\+Type}}
 
 Enumeration of variable types. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Variable\+Type\+\_\+\+Unknown@{Variable\+Type\+\_\+\+Unknown}!mage@{mage}}\index{mage@{mage}!Variable\+Type\+\_\+\+Unknown@{Variable\+Type\+\_\+\+Unknown}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa27594fd713c151fb997523c896d0d4f8}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa27594fd713c151fb997523c896d0d4f8} 
-Variable\+Type\+\_\+\+Unknown&\\
-\hline
-
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Variable\+Type\+\_\+\+Bool@{Variable\+Type\+\_\+\+Bool}!mage@{mage}}\index{mage@{mage}!Variable\+Type\+\_\+\+Bool@{Variable\+Type\+\_\+\+Bool}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413} 
 Variable\+Type\+\_\+\+Bool&\\
 \hline
@@ -1189,13 +1228,2725 @@ Variable\+Type\+\_\+\+String&\\
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacemage_ae9ca2610963fb5a1779024f079500559}{}\label{namespacemage_ae9ca2610963fb5a1779024f079500559} 
+\hypertarget{namespacemage_a34d95119b99d5281d078459091da1c99}{}\label{namespacemage_a34d95119b99d5281d078459091da1c99} 
 \index{mage@{mage}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
 \index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!mage@{mage}}
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+declspec()}{\_\_declspec()}}
-{\footnotesize\ttfamily mage\+::\+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
 
-\hypertarget{namespacemage_a4770c97ad241a87982062034adb6c0dc}{}\label{namespacemage_a4770c97ad241a87982062034adb6c0dc} 
+A struct of Cartesian axes systems.
+
+A struct of transforms. Constructs a Cartesian axes system.
+
+Constructs a Cartesian axes system from the given axes.
+
+\begin{DoxyPrecond}{Precondition}
+The given axis is normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/axis.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system from the given axes.
+
+\begin{DoxyPrecond}{Precondition}
+The given axes are orthonormal. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/axis.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system from the given axes.
+
+\begin{DoxyPrecond}{Precondition}
+The given axes are orthonormal. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/axis. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/axis.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system from the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system from the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\hline
+\end{DoxyParams}
+Destructs this Cartesian axes system.
+
+Copies the given Cartesian axes system to this Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
+\end{DoxyReturn}
+Copies the given Cartesian axes system to this Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
+\end{DoxyReturn}
+Returns the x-\/axis of this Cartesian axes system.
+
+\begin{DoxyReturn}{Returns}
+The x-\/axis of this Cartesian axes system.
+\end{DoxyReturn}
+Returns the y-\/axis of this Cartesian axes system.
+
+\begin{DoxyReturn}{Returns}
+The y-\/axis of this Cartesian axes system.
+\end{DoxyReturn}
+Returns the z-\/axis of this Cartesian axes system.
+
+\begin{DoxyReturn}{Returns}
+The z-\/axis of this Cartesian axes system.
+\end{DoxyReturn}
+The x-\/axis of this Cartesian axes system.
+
+The y-\/axis of this Cartesian axes system.
+
+The z-\/axis of this Cartesian axes system.
+
+Constructs a sprite transform from the given translation, depth, rotation, rotation origin and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em depth} & The depth component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & The rotation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given translation, depth, rotation, rotation origin and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em depth} & The depth component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & The rotation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\hline
+\end{DoxyParams}
+Destructs this sprite transform.
+
+Copies the given sprite transform to this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+\end{DoxyReturn}
+Copies the given sprite transform to this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The translation component of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Sets the depth component of this sprite transform to the given depth component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em depth} & The depth component.\\
+\hline
+\end{DoxyParams}
+Adds the given depth component to the depth component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em depth} & The depth component to add.\\
+\hline
+\end{DoxyParams}
+Returns the depth component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The depth component of this sprite transform.
+\end{DoxyReturn}
+Sets the rotation component of this sprite transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the rotation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation component of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation origin of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation origin of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation origin of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation origin of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation origin of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the scale component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the scale component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the scale component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the scale component of this sprite transform.
+\end{DoxyReturn}
+Returns the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The scale component of this sprite transform.
+\end{DoxyReturn}
+The translation component of this sprite transform.
+
+The depth component of this sprite transform.
+
+The rotation component (in radians) of this sprite transform.
+
+The rotation origin of this sprite transform.
+
+The scale component of this sprite transform.
+
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\hline
+\end{DoxyParams}
+Destructs this transform.
+
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform).
+\end{DoxyReturn}
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform).
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The translation component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent translation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent translation matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object translation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object translation matrix of this transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component to a rotation of the given angle around the given normal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em normal} & A reference to the normal. \\
+\hline
+\mbox{\tt in}  & {\em angle} & The angle.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent rotation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent rotation matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object rotation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object rotation matrix of this transform.
+\end{DoxyReturn}
+Sets the x-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent scale matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale object-\/to-\/parent matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object scale matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object scale matrix of this transform.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local eye position of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local eye position of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local left direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local left direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local up direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local up direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local forward direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local forward direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local eye position of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local eye position of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local left direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local left direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local up direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local up direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local forward direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local forward direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object matrix of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/world matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/world matrix of this transform.
+\end{DoxyReturn}
+Returns the world-\/to-\/object matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The world-\/to-\/object matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/view matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/view matrix of this transform. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Transforms for cameras should not contain scaling components.
+\end{DoxyNote}
+Transforms the given vector expressed in object space coordinates to parent space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in parent space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in parent space coordinates to object space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in parent space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in object space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in object space coordinates to world space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in world space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in world space coordinates to object space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in world space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in object space coordinates.
+\end{DoxyReturn}
+Checks whether this transform is dirty.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this transform is dirty. {\ttfamily false} otherwise.
+\end{DoxyReturn}
+Sets this transform to dirty.
+
+Updates the world-\/to-\/object and object-\/to-\/world matrices of this transform.
+
+Updates the world-\/to-\/object and object-\/to-\/world matrices of this transform based on the given world-\/to-\/parent and parent-\/to-\/world matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+parent} & A reference to the world-\/to-\/parent matrix. \\
+\hline
+\mbox{\tt in}  & {\em parent\+\_\+to\+\_\+world} & A reference to the parent-\/to-\/world matrix.\\
+\hline
+\end{DoxyParams}
+Transforms the given direction expressed in object space coordinates to parent space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em direction} & A reference to the direction expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed (normalized) direction expressed in parent space coordinates.
+\end{DoxyReturn}
+Sets this transform to not dirty.
+
+The translation component of this transform.
+
+The rotation component (in radians) of this transform.
+
+The scale component of this transform.
+
+The world-\/to-\/object matrix of this transform.
+
+The object-\/to-\/world matrix of this transform.
+
+A flag indicating whether this transform is dirty.
+
+A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor.
+
+A flag (indicating whether the viewport of this sprite batch has been set.
+
+The viewport of this sprite batch.
+
+Constructs a sprite transform from the given translation, depth, rotation, rotation origin and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em depth} & The depth component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & The rotation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given translation, depth, rotation, rotation origin and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em depth} & The depth component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & The rotation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite transform from the given sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\hline
+\end{DoxyParams}
+Destructs this sprite transform.
+
+Copies the given sprite transform to this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+\end{DoxyReturn}
+Copies the given sprite transform to this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The translation component of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this sprite transform to the given normalized translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the normalized translation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Returns the normalized translation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The normalized translation component of this sprite transform.
+\end{DoxyReturn}
+Sets the depth component of this sprite transform to the given depth component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em depth} & The depth component.\\
+\hline
+\end{DoxyParams}
+Adds the given depth component to the depth component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em depth} & The depth component to add.\\
+\hline
+\end{DoxyParams}
+Returns the depth component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The depth component of this sprite transform.
+\end{DoxyReturn}
+Sets the rotation component of this sprite transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the rotation component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation component of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation origin of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation origin of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation origin to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation origin of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation origin of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation origin of this sprite transform to the given normalized value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given normalized rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation origin to the normalized rotation origin of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Returns the normalized rotation origin of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The normalized rotation origin of this sprite transform.
+\end{DoxyReturn}
+Sets the x-\/value of the scale component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the scale component of this sprite transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this sprite transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this sprite transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the scale component of this sprite transform.
+\end{DoxyReturn}
+Returns the y-\/value of the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the scale component of this sprite transform.
+\end{DoxyReturn}
+Returns the scale component of this sprite transform.
+
+\begin{DoxyReturn}{Returns}
+The scale component of this sprite transform.
+\end{DoxyReturn}
+The translation component of this sprite transform.
+
+The depth component of this sprite transform.
+
+The rotation component (in radians) of this sprite transform.
+
+The rotation origin of this sprite transform.
+
+The scale component of this sprite transform.
+
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\hline
+\end{DoxyParams}
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\hline
+\end{DoxyParams}
+Destructs this transform.
+
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform).
+\end{DoxyReturn}
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform).
+\end{DoxyReturn}
+Sets the x-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the translation component of this transform.
+\end{DoxyReturn}
+Returns the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The translation component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent translation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent translation matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object translation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object translation matrix of this transform.
+\end{DoxyReturn}
+Sets the x-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component to a rotation of the given angle around the given normal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em normal} & A reference to the normal. \\
+\hline
+\mbox{\tt in}  & {\em angle} & The angle.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the rotation component of this transform.
+\end{DoxyReturn}
+Returns the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent rotation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent rotation matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object rotation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object rotation matrix of this transform.
+\end{DoxyReturn}
+Sets the x-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the y-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the z-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & The scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add.\\
+\hline
+\end{DoxyParams}
+Returns the x-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the y-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the z-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the scale component of this transform.
+\end{DoxyReturn}
+Returns the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale component of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent scale matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale object-\/to-\/parent matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object scale matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object scale matrix of this transform.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform expressed in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in parent space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in parent space coordinates.
+\end{DoxyReturn}
+Returns the position of the local origin of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The position of the local origin of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local x-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local x-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local y-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local y-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the direction of the local z-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the local z-\/axis of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian axes system of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian axes system of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local Cartesian coordinate system of this transform in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local Cartesian coordinate system of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local eye position of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local eye position of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local left direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local left direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local up direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local up direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local forward direction of this transform expressed in object space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local forward direction of this transform expressed in object space coordinates.
+\end{DoxyReturn}
+Returns the local eye position of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local eye position of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local left direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local left direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local up direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local up direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the local forward direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The local forward direction of this transform expressed in world space coordinates.
+\end{DoxyReturn}
+Returns the object-\/to-\/parent matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/parent matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/object matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/object matrix of this transform.
+\end{DoxyReturn}
+Returns the object-\/to-\/world matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The object-\/to-\/world matrix of this transform.
+\end{DoxyReturn}
+Returns the world-\/to-\/object matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The world-\/to-\/object matrix of this transform.
+\end{DoxyReturn}
+Returns the parent-\/to-\/view matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The parent-\/to-\/view matrix of this transform. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Transforms for cameras should not contain scaling components.
+\end{DoxyNote}
+Transforms the given vector expressed in object space coordinates to parent space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in parent space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in parent space coordinates to object space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in parent space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in object space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in object space coordinates to world space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in world space coordinates.
+\end{DoxyReturn}
+Transforms the given vector expressed in world space coordinates to object space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & A reference to the vector expressed in world space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed vector expressed in object space coordinates.
+\end{DoxyReturn}
+Checks whether this transform is dirty.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this transform is dirty. {\ttfamily false} otherwise.
+\end{DoxyReturn}
+Sets this transform to dirty.
+
+Updates the world-\/to-\/object and object-\/to-\/world matrices of this transform.
+
+Updates the world-\/to-\/object and object-\/to-\/world matrices of this transform based on the given world-\/to-\/parent and parent-\/to-\/world matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+parent} & A reference to the world-\/to-\/parent matrix. \\
+\hline
+\mbox{\tt in}  & {\em parent\+\_\+to\+\_\+world} & A reference to the parent-\/to-\/world matrix.\\
+\hline
+\end{DoxyParams}
+Transforms the given direction expressed in object space coordinates to parent space coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em direction} & A reference to the direction expressed in object space coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed (normalized) direction expressed in parent space coordinates.
+\end{DoxyReturn}
+Sets this transform to not dirty.
+
+The translation component of this transform.
+
+The rotation component (in radians) of this transform.
+
+The scale component of this transform.
+
+The world-\/to-\/object matrix of this transform.
+
+The object-\/to-\/world matrix of this transform.
+
+A flag indicating whether this transform is dirty.
+
+A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor.
+
+A flag (indicating whether the viewport of this sprite batch has been set.
+
+The viewport of this sprite batch.\hypertarget{namespacemage_ae12ad80c2a6510257f38661c90c19b19}{}\label{namespacemage_ae12ad80c2a6510257f38661c90c19b19} 
+\index{mage@{mage}!\+\_\+declspec@{\+\_\+declspec}}
+\index{\+\_\+declspec@{\+\_\+declspec}!mage@{mage}}
+\subsubsection{\texorpdfstring{\+\_\+declspec()}{\_declspec()}}
+{\footnotesize\ttfamily mage\+::\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+A struct of Cartesian coordinate systems. Constructs a Cartesian coordinate system from the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian coordinate system from the given origin and Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em o} & The origin. \\
+\hline
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\hline
+\end{DoxyParams}
+Destructs this Cartesian coordinate system.
+
+Copies the given Cartesian coordinate system to this Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
+\end{DoxyReturn}
+Copies the given Cartesian coordinate system to this Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
+\end{DoxyReturn}
+Returns the origin of this Cartesian coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The origin of this Cartesian coordinate system.
+\end{DoxyReturn}
+Returns the x-\/axis of this Cartesian coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The x-\/axis of this Cartesian coordinate system.
+\end{DoxyReturn}
+Returns the y-\/axis of this Cartesian coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The y-\/axis of this Cartesian coordinate system.
+\end{DoxyReturn}
+Returns the z-\/axis of this Cartesian coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The z-\/axis of this Cartesian coordinate system.
+\end{DoxyReturn}
+Returns the axes of this Cartesian coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The Cartesian axes system of this Cartesian coordinate system.
+\end{DoxyReturn}
+The origin of this Cartesian coordinate system.
+
+The Cartesian axes system of this Cartesian coordinate system.\hypertarget{namespacemage_a4770c97ad241a87982062034adb6c0dc}{}\label{namespacemage_a4770c97ad241a87982062034adb6c0dc} 
 \index{mage@{mage}!Alloc\+Aligned@{Alloc\+Aligned}}
 \index{Alloc\+Aligned@{Alloc\+Aligned}!mage@{mage}}
 \subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -1692,6 +4443,140 @@ Returns the fixed console width.
 \begin{DoxyReturn}{Returns}
 The fixed console width. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_add9fc09b8a7166c5e0d0bde63d8f2747}{}\label{namespacemage_add9fc09b8a7166c5e0d0bde63d8f2747} 
+\index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}}
+\index{Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Absolute\+To\+Normalized\+Screen()}{ConvertAbsoluteToNormalizedScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Convert\+Absolute\+To\+Normalized\+Screen (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{position }\end{DoxyParamCaption})}
+
+Converts the given absolute screen position to normalized screen position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & The given absolute screen position. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a98a82c6ca513d50f16d4ee6256fdac29}{}\label{namespacemage_a98a82c6ca513d50f16d4ee6256fdac29} 
+\index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}}
+\index{Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Absolute\+To\+Normalized\+Screen()}{ConvertAbsoluteToNormalizedScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T2 mage\+::\+Convert\+Absolute\+To\+Normalized\+Screen (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Converts the given absolute screen values to normalized screen values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The given absolute screen x-\/value. \\
+\hline
+\mbox{\tt in}  & {\em y} & The given absolute screen y-\/value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a9ef1aad29d7631ee2d88467faca6cc56}{}\label{namespacemage_a9ef1aad29d7631ee2d88467faca6cc56} 
+\index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}}
+\index{Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Absolute\+To\+Normalized\+Screen()}{ConvertAbsoluteToNormalizedScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T2 mage\+::\+Convert\+Absolute\+To\+Normalized\+Screen (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T2 \&}]{position }\end{DoxyParamCaption})}
+
+Converts the given absolute screen position to normalized screen position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & The given absolute screen position. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a7ad05dbf5e2b5d625daf57f43b26217f}{}\label{namespacemage_a7ad05dbf5e2b5d625daf57f43b26217f} 
+\index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+ScreenX@{Convert\+Absolute\+To\+Normalized\+ScreenX}}
+\index{Convert\+Absolute\+To\+Normalized\+ScreenX@{Convert\+Absolute\+To\+Normalized\+ScreenX}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Absolute\+To\+Normalized\+Screen\+X()}{ConvertAbsoluteToNormalizedScreenX()}}
+{\footnotesize\ttfamily float mage\+::\+Convert\+Absolute\+To\+Normalized\+ScreenX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+Converts the given absolute screen x-\/value to normalized screen x-\/value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The given absolute screen x-\/value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a4300e91e448d76e1015cbc806c1d4467}{}\label{namespacemage_a4300e91e448d76e1015cbc806c1d4467} 
+\index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+ScreenY@{Convert\+Absolute\+To\+Normalized\+ScreenY}}
+\index{Convert\+Absolute\+To\+Normalized\+ScreenY@{Convert\+Absolute\+To\+Normalized\+ScreenY}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Absolute\+To\+Normalized\+Screen\+Y()}{ConvertAbsoluteToNormalizedScreenY()}}
+{\footnotesize\ttfamily float mage\+::\+Convert\+Absolute\+To\+Normalized\+ScreenY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+Converts the given absolute screen y-\/value to normalized screen y-\/value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The given absolute screen y-\/value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a37cd57f31a66aac5355061bc3ad4e5ec}{}\label{namespacemage_a37cd57f31a66aac5355061bc3ad4e5ec} 
+\index{mage@{mage}!Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}}
+\index{Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Normalized\+To\+Absolute\+Screen()}{ConvertNormalizedToAbsoluteScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Convert\+Normalized\+To\+Absolute\+Screen (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{position }\end{DoxyParamCaption})}
+
+Converts the given normalized screen position to absolute screen position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & The given normalized screen position. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a34b18c1eb8d1e94675b10c86845e2564}{}\label{namespacemage_a34b18c1eb8d1e94675b10c86845e2564} 
+\index{mage@{mage}!Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}}
+\index{Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Normalized\+To\+Absolute\+Screen()}{ConvertNormalizedToAbsoluteScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T2 mage\+::\+Convert\+Normalized\+To\+Absolute\+Screen (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Converts the given normalized screen values to absolute screen values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The given normalized screen x-\/value. \\
+\hline
+\mbox{\tt in}  & {\em y} & The given normalized screen y-\/value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_aec1ce8ea913d981f727765f39f79d5e3}{}\label{namespacemage_aec1ce8ea913d981f727765f39f79d5e3} 
+\index{mage@{mage}!Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}}
+\index{Convert\+Normalized\+To\+Absolute\+Screen@{Convert\+Normalized\+To\+Absolute\+Screen}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Normalized\+To\+Absolute\+Screen()}{ConvertNormalizedToAbsoluteScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T2 mage\+::\+Convert\+Normalized\+To\+Absolute\+Screen (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T2 \&}]{position }\end{DoxyParamCaption})}
+
+Converts the given normalized screen position to absolute screen position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & The given normalized screen position. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a2dbd3992e0bcb94b465ab4ab6b7d7f83}{}\label{namespacemage_a2dbd3992e0bcb94b465ab4ab6b7d7f83} 
+\index{mage@{mage}!Convert\+Normalized\+To\+Absolute\+ScreenX@{Convert\+Normalized\+To\+Absolute\+ScreenX}}
+\index{Convert\+Normalized\+To\+Absolute\+ScreenX@{Convert\+Normalized\+To\+Absolute\+ScreenX}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Normalized\+To\+Absolute\+Screen\+X()}{ConvertNormalizedToAbsoluteScreenX()}}
+{\footnotesize\ttfamily float mage\+::\+Convert\+Normalized\+To\+Absolute\+ScreenX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+Converts the given normalized screen x-\/value to absolute screen x-\/value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The given normalized screen x-\/value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_abc0e5fd9efdcd160a7c4e9b14c8ec7b6}{}\label{namespacemage_abc0e5fd9efdcd160a7c4e9b14c8ec7b6} 
+\index{mage@{mage}!Convert\+Normalized\+To\+Absolute\+ScreenY@{Convert\+Normalized\+To\+Absolute\+ScreenY}}
+\index{Convert\+Normalized\+To\+Absolute\+ScreenY@{Convert\+Normalized\+To\+Absolute\+ScreenY}!mage@{mage}}
+\subsubsection{\texorpdfstring{Convert\+Normalized\+To\+Absolute\+Screen\+Y()}{ConvertNormalizedToAbsoluteScreenY()}}
+{\footnotesize\ttfamily float mage\+::\+Convert\+Normalized\+To\+Absolute\+ScreenY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+Converts the given normalized screen y-\/value to absolute screen y-\/value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The given normalized screen y-\/value. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a75f2f48306b962f530412769c6187aa5}{}\label{namespacemage_a75f2f48306b962f530412769c6187aa5} 
 \index{mage@{mage}!Convert\+Timestamp@{Convert\+Timestamp}}
 \index{Convert\+Timestamp@{Convert\+Timestamp}!mage@{mage}}
@@ -1993,7 +4878,7 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Index\+Buffer (\begin{DoxyParamCaption}\item
 \index{mage@{mage}!Create\+Sprite\+Batch@{Create\+Sprite\+Batch}}
 \index{Create\+Sprite\+Batch@{Create\+Sprite\+Batch}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Sprite\+Batch()}{CreateSpriteBatch()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} $>$ mage\+::\+Create\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ Sprite\+Batch $>$ mage\+::\+Create\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_af6f5c6ae46131caa77e5361d23d5d7c8}{}\label{namespacemage_af6f5c6ae46131caa77e5361d23d5d7c8} 
 \index{mage@{mage}!Create\+Sprite\+Shader@{Create\+Sprite\+Shader}}
@@ -2074,6 +4959,82 @@ An error message is associated with any error which is fatal to the operation, b
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
+\hypertarget{namespacemage_a111dc6972bce8645df185fa5a65f9bff}{}\label{namespacemage_a111dc6972bce8645df185fa5a65f9bff} 
+\index{mage@{mage}!Export\+M\+D\+L\+Model\+To\+File@{Export\+M\+D\+L\+Model\+To\+File}}
+\index{Export\+M\+D\+L\+Model\+To\+File@{Export\+M\+D\+L\+Model\+To\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Export\+M\+D\+L\+Model\+To\+File()}{ExportMDLModelToFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Export\+M\+D\+L\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+
+Exports the given model to the given M\+DL file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the M\+DL filename. \\
+\hline
+\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0}{}\label{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0} 
+\index{mage@{mage}!Export\+Model\+To\+File@{Export\+Model\+To\+File}}
+\index{Export\+Model\+To\+File@{Export\+Model\+To\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Export\+Model\+To\+File()}{ExportModelToFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Export\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+
+Exports a mesh to the given file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+output} & A reference to the model output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ad7382e78b94a6bf97895c8bfd198976b}{}\label{namespacemage_ad7382e78b94a6bf97895c8bfd198976b} 
+\index{mage@{mage}!Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}}
+\index{Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Export\+M\+S\+H\+Mesh\+To\+File()}{ExportMSHMeshToFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Export\+M\+S\+H\+Mesh\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
+
+Exports the given mesh to the given M\+SH file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the M\+SH filename. \\
+\hline
+\mbox{\tt in}  & {\em vertices} & A reference to a vector containing the vertices of the mesh. \\
+\hline
+\mbox{\tt in}  & {\em indices} & A reference to a vector containing the indices of the mesh. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a6bbe2c1ce9b49dea0c61ce4eafea6a3d}{}\label{namespacemage_a6bbe2c1ce9b49dea0c61ce4eafea6a3d} 
 \index{mage@{mage}!Export\+Variable\+Script\+To\+File@{Export\+Variable\+Script\+To\+File}}
 \index{Export\+Variable\+Script\+To\+File@{Export\+Variable\+Script\+To\+File}!mage@{mage}}
@@ -2315,6 +5276,38 @@ Returns the name of the given file.
 \begin{DoxyReturn}{Returns}
 The name of the given file. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_ab8841cbab507ef81edb00278110553ad}{}\label{namespacemage_ab8841cbab507ef81edb00278110553ad} 
+\index{mage@{mage}!Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}}
+\index{Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Filename\+Without\+File\+Extension()}{GetFilenameWithoutFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const string mage\+::\+Get\+Filename\+Without\+File\+Extension (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the filename of the given file without its file extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filename of the given file without its file extension. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aac01c0fba57d6737fcf32155748e95b0}{}\label{namespacemage_aac01c0fba57d6737fcf32155748e95b0} 
+\index{mage@{mage}!Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}}
+\index{Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Filename\+Without\+File\+Extension()}{GetFilenameWithoutFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const wstring mage\+::\+Get\+Filename\+Without\+File\+Extension (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the filename of the given file without its file extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filename of the given file without its file extension. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aca16dcb4637f074bb6e33d4ba7929686}{}\label{namespacemage_aca16dcb4637f074bb6e33d4ba7929686} 
 \index{mage@{mage}!Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}}
 \index{Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}!mage@{mage}}
@@ -2551,6 +5544,84 @@ Imports the materials from the given file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d}{}\label{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d} 
+\index{mage@{mage}!Import\+M\+D\+L\+Model\+From\+File@{Import\+M\+D\+L\+Model\+From\+File}}
+\index{Import\+M\+D\+L\+Model\+From\+File@{Import\+M\+D\+L\+Model\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Import\+M\+D\+L\+Model\+From\+File()}{ImportMDLModelFromFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Import\+M\+D\+L\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+
+Imports the model from the given M\+DL file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the M\+DL filename. \\
+\hline
+\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27}{}\label{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27} 
+\index{mage@{mage}!Import\+Model\+From\+File@{Import\+Model\+From\+File}}
+\index{Import\+Model\+From\+File@{Import\+Model\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Import\+Model\+From\+File()}{ImportModelFromFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Import\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
+
+Imports a mesh from the given file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+desc} & A reference to the mesh descriptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aecd62c2ba58f3dd536459d4b6157f581}{}\label{namespacemage_aecd62c2ba58f3dd536459d4b6157f581} 
+\index{mage@{mage}!Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}}
+\index{Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Import\+M\+S\+H\+Mesh\+From\+File()}{ImportMSHMeshFromFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Import\+M\+S\+H\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ VertexT $>$ \&}]{vertices,  }\item[{vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
+
+Imports the mesh from the given M\+SH file.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the M\+SH filename. \\
+\hline
+\mbox{\tt in,out}  & {\em vertices} & A reference to a vector containing the vertices of the mesh. \\
+\hline
+\mbox{\tt in,out}  & {\em indices} & A reference to a vector containing the indices of the mesh. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef}{}\label{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef} 
 \index{mage@{mage}!Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}}
 \index{Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}!mage@{mage}}
@@ -2707,32 +5778,6 @@ A success/error value.
 \subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_normal3}{Normal3} \&}]{normal }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a23fc9688b56289aa280a6cb7541dfbca}{}\label{namespacemage_a23fc9688b56289aa280a6cb7541dfbca} 
-\index{mage@{mage}!Load\+Model\+From\+File@{Load\+Model\+From\+File}}
-\index{Load\+Model\+From\+File@{Load\+Model\+From\+File}!mage@{mage}}
-\subsubsection{\texorpdfstring{Load\+Model\+From\+File()}{LoadModelFromFile()}}
-{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Load\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
-
-Loads a mesh from file.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em VertexT} & The vertex type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
-\hline
-\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
-\hline
-\mbox{\tt in}  & {\em mesh\+\_\+desc} & A reference to the mesh descriptor. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
 \hypertarget{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{}\label{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db} 
 \index{mage@{mage}!Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}}
 \index{Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}!mage@{mage}}
@@ -3585,10 +6630,34 @@ The {\ttfamily sgets} function is the string variant of {\ttfamily fgets}.
 \subsubsection{\texorpdfstring{String\+To\+U\+Int8()}{StringToUInt8()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{Token\+Result} mage\+::\+String\+To\+U\+Int8 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{begin,  }\item[{const char $\ast$}]{end,  }\item[{uint8\+\_\+t \&}]{result }\end{DoxyParamCaption})}
 
+\hypertarget{namespacemage_aa727c025f86c9da2b6704c5f40b3d700}{}\label{namespacemage_aa727c025f86c9da2b6704c5f40b3d700} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const VertexT \&}]{vertex }\end{DoxyParamCaption})}
+
+Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} and the given vertex.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em vertex} & A reference to the VertexT. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb} and {\itshape vertex}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a4d27bf7b1b0d30b747cdec1326e80907}{}\label{namespacemage_a4d27bf7b1b0d30b747cdec1326e80907} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})}
 
 Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} and the given point.
@@ -3606,7 +6675,7 @@ The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb} and {\
 \hypertarget{namespacemage_a14f2c20e37511b983bcb731afbb6b0b6}{}\label{namespacemage_a14f2c20e37511b983bcb731afbb6b0b6} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb1,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb2 }\end{DoxyParamCaption})}
 
 Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given A\+A\+B\+Bs.

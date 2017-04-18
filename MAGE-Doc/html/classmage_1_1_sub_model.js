@@ -5,6 +5,7 @@ var classmage_1_1_sub_model =
     [ "SubModel", "classmage_1_1_sub_model.html#a6b4b972e0740af607113aae0418e370e", null ],
     [ "~SubModel", "classmage_1_1_sub_model.html#a75853fd4a6435f074f13eab9c73b695b", null ],
     [ "Clone", "classmage_1_1_sub_model.html#a368bcc2ee819cc29ec0203e314ae91d3", null ],
+    [ "Draw", "classmage_1_1_sub_model.html#a2fa14949edacbe995749f4b05bdc3cf5", null ],
     [ "Draw", "classmage_1_1_sub_model.html#a16400e2d0cc14a38fba18971e227d2ee", null ],
     [ "GetMaterial", "classmage_1_1_sub_model.html#a8487b28be21ae182cd97c61325b2b478", null ],
     [ "GetMaterial", "classmage_1_1_sub_model.html#ab9e1c661e94a2ac0d819ad5d36a18a4c", null ],

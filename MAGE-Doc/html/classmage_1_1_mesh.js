@@ -13,7 +13,7 @@ var classmage_1_1_mesh =
     [ "GetVertexSize", "classmage_1_1_mesh.html#a2421eac892ef5fd6db21d8214c02e774", null ],
     [ "operator=", "classmage_1_1_mesh.html#a5baf961af32b379671a59a082492bc5e", null ],
     [ "operator=", "classmage_1_1_mesh.html#a28e437196db171b2df1c4bcf3df07a63", null ],
-    [ "PrepareDrawing", "classmage_1_1_mesh.html#a4e3a8055985afc9fbfa8792d848761d6", null ],
+    [ "PrepareDrawing", "classmage_1_1_mesh.html#a728979ae0be55283813eecf3e7c40e80", null ],
     [ "SetNumberOfIndices", "classmage_1_1_mesh.html#a19336d13ef5219c196678b8fdf4cca2b", null ],
     [ "SetNumberOfVertices", "classmage_1_1_mesh.html#a7d871e56f4489e7aa0557688662589bb", null ],
     [ "m_device", "classmage_1_1_mesh.html#ad1d91b6048d73bb05d0d39028d048f18", null ],

@@ -6,7 +6,7 @@ var classmage_1_1_model =
     [ "Model", "classmage_1_1_model.html#a085272d7cb82587094f18747ecc5aad0", null ],
     [ "AddSubModel", "classmage_1_1_model.html#abf3f207329b5d4482e515e206e856295", null ],
     [ "Clone", "classmage_1_1_model.html#ae5e9bee52da0db8c7a29920c13ed40ea", null ],
-    [ "Draw", "classmage_1_1_model.html#a2af6c0c8c05a675315ec5ad4b3763245", null ],
+    [ "Draw", "classmage_1_1_model.html#a766c89cdac2e3df748cd73f8ed8bbff5", null ],
     [ "ForEachSubModel", "classmage_1_1_model.html#ab50233128bb52002a11f3195b846c830", null ],
     [ "GetNumberOfSubModels", "classmage_1_1_model.html#a29ad2496b11ef5af5f179cfe52943cd3", null ],
     [ "GetSubModel", "classmage_1_1_model.html#a1cae9eb62a353445d14b5331e88bdeac", null ],
