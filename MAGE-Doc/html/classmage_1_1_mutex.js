@@ -4,8 +4,6 @@ var classmage_1_1_mutex =
     [ "Mutex", "classmage_1_1_mutex.html#af1c2c7d0134ba853903522d2f3684f22", null ],
     [ "Mutex", "classmage_1_1_mutex.html#a4ec1fd645bcea634f957552d1dfa3565", null ],
     [ "~Mutex", "classmage_1_1_mutex.html#a143d82ec7bb43f953a1703caa7972e9d", null ],
-    [ "Create", "classmage_1_1_mutex.html#a48d784fa6bffd4088d9f89a2a9cca84e", null ],
-    [ "Destroy", "classmage_1_1_mutex.html#a78cd1aff434b1d7cefce4c8339c25d8f", null ],
     [ "operator=", "classmage_1_1_mutex.html#a56072bdabdeadd5d897de232dbd298a0", null ],
     [ "operator=", "classmage_1_1_mutex.html#aaef0078f5b70afb0e5a290a5b5f33680", null ],
     [ "MutexLock", "classmage_1_1_mutex.html#a058473d070063e5098732f355f432bd9", null ],

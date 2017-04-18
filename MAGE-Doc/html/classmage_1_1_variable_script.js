@@ -1,9 +1,9 @@
 var classmage_1_1_variable_script =
 [
     [ "VariableScript", "classmage_1_1_variable_script.html#a4b4028a9710fcfc5fb26bb63922a90cb", null ],
-    [ "~VariableScript", "classmage_1_1_variable_script.html#ae7026e1283b1a1164f02fdc3e1f2b829", null ],
     [ "VariableScript", "classmage_1_1_variable_script.html#aebd4e6cf2bdae4e57c9da428007fc4d7", null ],
-    [ "VariableScript", "classmage_1_1_variable_script.html#a16ad5c91e6ed96963dfed7de926bb1df", null ],
+    [ "VariableScript", "classmage_1_1_variable_script.html#ac638aa59a2cb235d20a96d5a4dfd619d", null ],
+    [ "~VariableScript", "classmage_1_1_variable_script.html#ae7026e1283b1a1164f02fdc3e1f2b829", null ],
     [ "AddVariable", "classmage_1_1_variable_script.html#aa9a8bb9b6133ce853052820961320ca9", null ],
     [ "ExportScript", "classmage_1_1_variable_script.html#afd735406842c7df4ccb0bc96ae9935da", null ],
     [ "GetNumberOfVariables", "classmage_1_1_variable_script.html#ad0bcb7dbb42f705f475c64feb1063fb4", null ],

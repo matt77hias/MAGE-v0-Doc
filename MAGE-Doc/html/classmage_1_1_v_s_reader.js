@@ -1,9 +1,9 @@
 var classmage_1_1_v_s_reader =
 [
     [ "VSReader", "classmage_1_1_v_s_reader.html#a65aef6605c6104a0305937f231ef2106", null ],
-    [ "~VSReader", "classmage_1_1_v_s_reader.html#adb1dc76d802501476f1af285fe22369d", null ],
     [ "VSReader", "classmage_1_1_v_s_reader.html#aec7ec2ea03d5d77c5e78438a60263a73", null ],
     [ "VSReader", "classmage_1_1_v_s_reader.html#a84ba10ef4d308d94ea947155ab72d82a", null ],
+    [ "~VSReader", "classmage_1_1_v_s_reader.html#adb1dc76d802501476f1af285fe22369d", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#ab7d85956947e6b2a28650498573bc055", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#a2be1e0645e3496f71c2f2b7fcf98ba2a", null ],
     [ "ReadLine", "classmage_1_1_v_s_reader.html#a63c6f6fa8ddb0f6a001e3969c5b19c1f", null ],
@@ -17,6 +17,5 @@ var classmage_1_1_v_s_reader =
     [ "ReadVSInt2", "classmage_1_1_v_s_reader.html#a4a3b90b47cb5e262a72df719674b9d93", null ],
     [ "ReadVSInt3", "classmage_1_1_v_s_reader.html#a6fa8fa2cbb66a9a1872bb84a0612a32d", null ],
     [ "ReadVSString", "classmage_1_1_v_s_reader.html#a8d00057f90b2a2ed2e84e47530f91227", null ],
-    [ "ReadVSUnknown", "classmage_1_1_v_s_reader.html#aaa63e49901b2ef9e5903aff0e13ec4b0", null ],
     [ "m_variable_buffer", "classmage_1_1_v_s_reader.html#a32ffea034d4540dd90156452a9d78e52", null ]
 ];

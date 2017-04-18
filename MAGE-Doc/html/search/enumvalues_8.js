@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unknowntype',['UnknownType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa6e4917f41203f9eb5a3fbab1b4719712',1,'mage']]]
+  ['user_5fmode',['USER_MODE',['../classmage_1_1_c_p_u_timer.html#a5adc0497956723a35534dfeb66fa7789ad5bce4c910796ef2ef4323a0153a2add',1,'mage::CPUTimer']]]
 ];

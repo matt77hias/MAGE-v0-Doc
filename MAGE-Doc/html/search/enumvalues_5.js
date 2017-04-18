@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['no_5ftoken',['no_token',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037da6eb617de598c0ac439b9001a864fe26b',1,'mage']]],
-  ['num_5fevents',['NUM_EVENTS',['../classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac',1,'mage::ConditionVariable']]]
+  ['read',['READ',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74a384918b13691984406aeb754f1c454d0',1,'mage']]],
+  ['rotationaxes_5fmousex',['RotationAxes_MouseX',['../namespacemage.html#a548e5c31b08a1078841ed21948f5bf4ca4b43faee47620c82f4223a55d7de4ddb',1,'mage']]],
+  ['rotationaxes_5fmousexandy',['RotationAxes_MouseXAndY',['../namespacemage.html#a548e5c31b08a1078841ed21948f5bf4ca6b0dd5cb81f83efb4c2b36456d84750d',1,'mage']]],
+  ['rotationaxes_5fmousey',['RotationAxes_MouseY',['../namespacemage.html#a548e5c31b08a1078841ed21948f5bf4ca0c20aa8d3a6ad2edf788cfb45cc950e1',1,'mage']]]
 ];

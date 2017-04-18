@@ -13,11 +13,19 @@ Inheritance diagram for mage\+:\+:Model\+Descriptor\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_model_descriptor_a165ff1d3c0360be3ecb19c21c2b49cea}{Model\+Descriptor} (I\+D3\+D11\+Device2 \&device, const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_model_descriptor_a1ae1d85907be96350cef77e6a4ba4fb9}{Model\+Descriptor} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+\item 
+\hyperlink{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3}{Model\+Descriptor} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc)=delete
+\item 
+\hyperlink{classmage_1_1_model_descriptor_af9be9f46bc8f42fa04f686af6cc296f6}{Model\+Descriptor} (\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&desc)=default
 \item 
 virtual \hyperlink{classmage_1_1_model_descriptor_a3bc8ee3d1cb8d2675374727edce3d593}{$\sim$\+Model\+Descriptor} ()
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_mesh}{Mesh} $>$ \hyperlink{classmage_1_1_model_descriptor_a325f0e58fda7734ace7a0e296e0d970d}{Get\+Mesh} () const
+\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \& \hyperlink{classmage_1_1_model_descriptor_a734b17224719896921e9f6252ee88483}{operator=} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc)=delete
+\item 
+\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \& \hyperlink{classmage_1_1_model_descriptor_ae2ae685569c0ae534d9f0b5622a807d0}{operator=} (\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&desc)=delete
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} $>$ \hyperlink{classmage_1_1_model_descriptor_a0781eed81d27ed936503056bbd46ab58}{Get\+Mesh} () const
 \item 
 vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$\+::const\+\_\+iterator \hyperlink{classmage_1_1_model_descriptor_a64a2ca531c03cd8d79eda3a728e6efa1}{Materials\+Begin} () const
 \item 
@@ -27,21 +35,10 @@ vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$\+::const\+\_\+i
 \item 
 vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$\+::const\+\_\+iterator \hyperlink{classmage_1_1_model_descriptor_a97f78d3e5a157020f62f5e6003deaac6}{Model\+Parts\+End} () const
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3}{Model\+Descriptor} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc)=delete
-\item 
-\hyperlink{classmage_1_1_model_descriptor_a0b9c94c989ef70b6149a571106a1a73c}{Model\+Descriptor} (\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&desc)=delete
-\item 
-\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \& \hyperlink{classmage_1_1_model_descriptor_a734b17224719896921e9f6252ee88483}{operator=} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc)=delete
-\item 
-\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \& \hyperlink{classmage_1_1_model_descriptor_ae2ae685569c0ae534d9f0b5622a807d0}{operator=} (\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&desc)=delete
-\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_mesh}{Mesh} $>$ \hyperlink{classmage_1_1_model_descriptor_a89ac31356e7690007c618be387399151}{m\+\_\+mesh}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} $>$ \hyperlink{classmage_1_1_model_descriptor_ac3935d5b0738860809a770403ed07480}{m\+\_\+mesh}
 \item 
 vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{classmage_1_1_model_descriptor_a672238b257f99836243d84f634ffeea2}{m\+\_\+materials}
 \item 
@@ -50,12 +47,24 @@ vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{clas
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_model_descriptor_a165ff1d3c0360be3ecb19c21c2b49cea}{}\label{classmage_1_1_model_descriptor_a165ff1d3c0360be3ecb19c21c2b49cea} 
+\hypertarget{classmage_1_1_model_descriptor_a1ae1d85907be96350cef77e6a4ba4fb9}{}\label{classmage_1_1_model_descriptor_a1ae1d85907be96350cef77e6a4ba4fb9} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
 \index{Model\+Descriptor@{Model\+Descriptor}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
+mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\hypertarget{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3}{}\label{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3} 
+\index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
+\index{Model\+Descriptor@{Model\+Descriptor}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
+\subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_model_descriptor_af9be9f46bc8f42fa04f686af6cc296f6}{}\label{classmage_1_1_model_descriptor_af9be9f46bc8f42fa04f686af6cc296f6} 
+\index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
+\index{Model\+Descriptor@{Model\+Descriptor}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
+\subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \hypertarget{classmage_1_1_model_descriptor_a3bc8ee3d1cb8d2675374727edce3d593}{}\label{classmage_1_1_model_descriptor_a3bc8ee3d1cb8d2675374727edce3d593} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!````~Model\+Descriptor@{$\sim$\+Model\+Descriptor}}
@@ -63,26 +72,14 @@ mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\ite
 \subsubsection{\texorpdfstring{$\sim$\+Model\+Descriptor()}{~ModelDescriptor()}}
 {\footnotesize\ttfamily virtual mage\+::\+Model\+Descriptor\+::$\sim$\+Model\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\hypertarget{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3}{}\label{classmage_1_1_model_descriptor_af44185efc20e10ede762d29bc454c5f3} 
-\index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
-\index{Model\+Descriptor@{Model\+Descriptor}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
-\subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
-\hypertarget{classmage_1_1_model_descriptor_a0b9c94c989ef70b6149a571106a1a73c}{}\label{classmage_1_1_model_descriptor_a0b9c94c989ef70b6149a571106a1a73c} 
-\index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
-\index{Model\+Descriptor@{Model\+Descriptor}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
-\subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_model_descriptor_a325f0e58fda7734ace7a0e296e0d970d}{}\label{classmage_1_1_model_descriptor_a325f0e58fda7734ace7a0e296e0d970d} 
+\hypertarget{classmage_1_1_model_descriptor_a0781eed81d27ed936503056bbd46ab58}{}\label{classmage_1_1_model_descriptor_a0781eed81d27ed936503056bbd46ab58} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Get\+Mesh@{Get\+Mesh}}
 \index{Get\+Mesh@{Get\+Mesh}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Get\+Mesh()}{GetMesh()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mage\+::\+Model\+Descriptor\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} $>$ mage\+::\+Model\+Descriptor\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \hypertarget{classmage_1_1_model_descriptor_a64a2ca531c03cd8d79eda3a728e6efa1}{}\label{classmage_1_1_model_descriptor_a64a2ca531c03cd8d79eda3a728e6efa1} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!Materials\+Begin@{Materials\+Begin}}
@@ -112,13 +109,13 @@ mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\ite
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}\& mage\+::\+Model\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}\& mage\+::\+Model\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 \hypertarget{classmage_1_1_model_descriptor_ae2ae685569c0ae534d9f0b5622a807d0}{}\label{classmage_1_1_model_descriptor_ae2ae685569c0ae534d9f0b5622a807d0} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}\& mage\+::\+Model\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}\& mage\+::\+Model\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&\&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 
 
@@ -129,11 +126,11 @@ mage\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\ite
 \subsubsection{\texorpdfstring{m\+\_\+materials}{m\_materials}}
 {\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ mage\+::\+Model\+Descriptor\+::m\+\_\+materials\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_model_descriptor_a89ac31356e7690007c618be387399151}{}\label{classmage_1_1_model_descriptor_a89ac31356e7690007c618be387399151} 
+\hypertarget{classmage_1_1_model_descriptor_ac3935d5b0738860809a770403ed07480}{}\label{classmage_1_1_model_descriptor_ac3935d5b0738860809a770403ed07480} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!m\+\_\+mesh@{m\+\_\+mesh}}
 \index{m\+\_\+mesh@{m\+\_\+mesh}!mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{m\+\_\+mesh}{m\_mesh}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mage\+::\+Model\+Descriptor\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} $>$ mage\+::\+Model\+Descriptor\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_model_descriptor_a200c6e44c9b6a5bde5c8490fb93ba00f}{}\label{classmage_1_1_model_descriptor_a200c6e44c9b6a5bde5c8490fb93ba00f} 
 \index{mage\+::\+Model\+Descriptor@{mage\+::\+Model\+Descriptor}!m\+\_\+model\+\_\+parts@{m\+\_\+model\+\_\+parts}}

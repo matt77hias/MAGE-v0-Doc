@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readwritemutexlocktype',['ReadWriteMutexLockType',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74',1,'mage']]]
+  ['errordisposition',['ErrorDisposition',['../namespacemage.html#a7146b3c3db53179eeb32bf4d51934715',1,'mage']]]
 ];

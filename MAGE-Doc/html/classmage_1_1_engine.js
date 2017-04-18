@@ -1,16 +1,14 @@
 var classmage_1_1_engine =
 [
     [ "Engine", "classmage_1_1_engine.html#a99770cbb017b29c284d7f8e4c7e2b84c", null ],
-    [ "~Engine", "classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5", null ],
     [ "Engine", "classmage_1_1_engine.html#afd2f4f32b2e803f59521aafe1924f0ba", null ],
-    [ "Engine", "classmage_1_1_engine.html#a275b668202a24e639ebe3056a1c845a3", null ],
-    [ "GetInputManager", "classmage_1_1_engine.html#a728ad054d36cee8eaf9ee3eb6c1e1201", null ],
-    [ "GetMainWindow", "classmage_1_1_engine.html#a3bfc843926e0870cd5b8d512fb392607", null ],
-    [ "GetRenderer", "classmage_1_1_engine.html#a42a90a61ede031ee768b8aa6d7f808ae", null ],
-    [ "GetResourceFactory", "classmage_1_1_engine.html#a1a18dc9775f6ab4c9cd103b07ad47903", null ],
+    [ "Engine", "classmage_1_1_engine.html#a1374fc1d0d18e23df9150dfcd17955b0", null ],
+    [ "~Engine", "classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5", null ],
+    [ "GetInputManager", "classmage_1_1_engine.html#a627271c15bb1ecb1079f9780d64e0d77", null ],
+    [ "GetMainWindow", "classmage_1_1_engine.html#a28baaa54158acac8ffca3b6f31f63f82", null ],
+    [ "GetRenderer", "classmage_1_1_engine.html#a42ea717aaf468e0cacf8d8745041e09f", null ],
+    [ "GetResourceFactory", "classmage_1_1_engine.html#a1610768d6de0e8548ba18904a692b1a8", null ],
     [ "InitializeSystems", "classmage_1_1_engine.html#a2d0a2669520cce1316a176cc3e891502", null ],
-    [ "IsDeactive", "classmage_1_1_engine.html#a83c3ed26138932f8b17daa20526b100e", null ],
-    [ "ModeSwitch", "classmage_1_1_engine.html#a54cb08ec26da300b0c7ca4e7f9a35e0b", null ],
     [ "operator=", "classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd", null ],
     [ "operator=", "classmage_1_1_engine.html#a22607a263e0be5e179cc0e4bf13b18f7", null ],
     [ "Run", "classmage_1_1_engine.html#a246c82d0e55bc29e73aecbc365464ec8", null ],
@@ -23,5 +21,6 @@ var classmage_1_1_engine =
     [ "m_mode_switch", "classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221", null ],
     [ "m_renderer", "classmage_1_1_engine.html#a1248b7c21bc8256c72d372c12ed1ee68", null ],
     [ "m_resource_factory", "classmage_1_1_engine.html#a0c7c2d4fc75fc3512e02054056cf8a90", null ],
-    [ "m_scene", "classmage_1_1_engine.html#a82158ab9c1b60538ef8c46d5eb263bb8", null ]
+    [ "m_scene", "classmage_1_1_engine.html#a82158ab9c1b60538ef8c46d5eb263bb8", null ],
+    [ "m_timer", "classmage_1_1_engine.html#a4daac998928a6c087b310c52b3f26ae4", null ]
 ];

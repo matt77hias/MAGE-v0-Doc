@@ -1,9 +1,9 @@
 var classmage_1_1_memory_arena =
 [
     [ "MemoryArena", "classmage_1_1_memory_arena.html#ac90beb8cf8dc42944a0fd6a4a9e8355c", null ],
-    [ "~MemoryArena", "classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
-    [ "MemoryArena", "classmage_1_1_memory_arena.html#a729e5745729e3e59f81fd05125d3cf37", null ],
+    [ "MemoryArena", "classmage_1_1_memory_arena.html#a55394fdcf83f260fec0af55e0b3a4a53", null ],
+    [ "~MemoryArena", "classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a2e63b11c535dbfefd69d071466be9ce1", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#ab249fe48cdf7c46f625050fe9583603a", null ],
     [ "GetBlockSize", "classmage_1_1_memory_arena.html#a0db28bd286a517a30acdc061ace0bf56", null ],

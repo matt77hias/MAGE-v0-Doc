@@ -1,9 +1,9 @@
 var classmage_1_1_device_enumeration =
 [
     [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#aa000048648beb6c2aca70e5ef04e0da2", null ],
-    [ "~DeviceEnumeration", "classmage_1_1_device_enumeration.html#ae32bc5dacf47b7deca4729d8b3cb66dc", null ],
     [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#a90f3dc13cfb413aa8a2a49a31bcb6ae3", null ],
-    [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#a2f139e0a31c941d8dd5a0e1ecabe1ab9", null ],
+    [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#a392d44d5caa552437a279538083c6d2e", null ],
+    [ "~DeviceEnumeration", "classmage_1_1_device_enumeration.html#ae32bc5dacf47b7deca4729d8b3cb66dc", null ],
     [ "Enumerate", "classmage_1_1_device_enumeration.html#a4fea0ffef733632456b281f74608a239", null ],
     [ "GetAdapter", "classmage_1_1_device_enumeration.html#ad8a0702abdc70ea8fc1b6e46544839a1", null ],
     [ "GetDisplayMode", "classmage_1_1_device_enumeration.html#a533ac2f6ea91604a3ea3cc8d93c3de87", null ],

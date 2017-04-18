@@ -7,7 +7,7 @@ var structmage_1_1_b_s =
     [ "BS", "structmage_1_1_b_s.html#a01cf5aaeae2a87c56527a338889f5079", null ],
     [ "BS", "structmage_1_1_b_s.html#a8974a41ba4a204e1b7ad5a218f9629e8", null ],
     [ "~BS", "structmage_1_1_b_s.html#a111f60f8ab53c7497ff7aaa743619829", null ],
-    [ "Centroid", "structmage_1_1_b_s.html#a0709a2c2d2a175da0d6e53eda480fce1", null ],
+    [ "Centroid", "structmage_1_1_b_s.html#adc96252cb4341dda8368a1f23bc4f972", null ],
     [ "EnclosedBy", "structmage_1_1_b_s.html#afa01cd31b15b2decdf5a3c5333e4c260", null ],
     [ "EnclosedStrictBy", "structmage_1_1_b_s.html#ae4355ffb0d3f5109ad6ee2bea00a6eb9", null ],
     [ "Encloses", "structmage_1_1_b_s.html#a1298419385ad961cd68deb2ec049879d", null ],

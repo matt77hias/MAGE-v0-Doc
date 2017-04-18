@@ -4,46 +4,73 @@
 
 {\ttfamily \#include $<$mesh.\+hpp$>$}
 
+Inheritance diagram for mage\+:\+:Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_mesh}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_a3712a661877073699ae264408c549705}{Mesh} (I\+D3\+D11\+Device2 \&device, const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices, const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
-\item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e}{Mesh} (I\+D3\+D11\+Device2 \&device, const vector$<$ VertexT $>$ \&vertices, const vector$<$ uint32\+\_\+t $>$ \&indices)
-\item 
 virtual \hyperlink{classmage_1_1_mesh_a53b4b9054a518c1f7e2078fdc65a95b8}{$\sim$\+Mesh} ()=default
-\item 
-size\+\_\+t \hyperlink{classmage_1_1_mesh_a47732f4ac48000c2a1f5562bdba38a81}{Get\+Number\+Of\+Vertices} () const
-\item 
-size\+\_\+t \hyperlink{classmage_1_1_mesh_a69991b73609ebf936df5c7d2afd2b767}{Get\+Number\+Of\+Indices} () const
-\item 
-void \hyperlink{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28}{Render} (I\+D3\+D11\+Device\+Context2 \&device\+\_\+context) const
-\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{Mesh} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
-\item 
-\hyperlink{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e}{Mesh} (\hyperlink{classmage_1_1_mesh}{Mesh} \&\&mesh)=delete
 \item 
 \hyperlink{classmage_1_1_mesh}{Mesh} \& \hyperlink{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{operator=} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
 \item 
 \hyperlink{classmage_1_1_mesh}{Mesh} \& \hyperlink{classmage_1_1_mesh_a28e437196db171b2df1c4bcf3df07a63}{operator=} (\hyperlink{classmage_1_1_mesh}{Mesh} \&\&mesh)=delete
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c}{Initialize\+Mesh} (I\+D3\+D11\+Device2 \&device, const VertexT $\ast$vertices, const uint32\+\_\+t $\ast$indices)
+size\+\_\+t \hyperlink{classmage_1_1_mesh_a2421eac892ef5fd6db21d8214c02e774}{Get\+Vertex\+Size} () const
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_mesh_a47732f4ac48000c2a1f5562bdba38a81}{Get\+Number\+Of\+Vertices} () const
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_mesh_a69991b73609ebf936df5c7d2afd2b767}{Get\+Number\+Of\+Indices} () const
+\item 
+D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{classmage_1_1_mesh_ac76cf9345039a7170597a0e5219a71f9}{Get\+Index\+Format} () const
+\item 
+D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY \hyperlink{classmage_1_1_mesh_a3628c67de9562e31a8266a51776c903a}{Get\+Primitive\+Topology} () const
+\item 
+void \hyperlink{classmage_1_1_mesh_a728979ae0be55283813eecf3e7c40e80}{Prepare\+Drawing} () const
+\item 
+void \hyperlink{classmage_1_1_mesh_a62f7b8176f7747f2b4db7674524a146c}{Draw} () const
+\item 
+void \hyperlink{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d}{Draw} (size\+\_\+t start\+\_\+index, size\+\_\+t nb\+\_\+indices) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12}{Mesh} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, size\+\_\+t vertex\+\_\+size, D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT index\+\_\+format=D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R32\+\_\+\+U\+I\+NT, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology=D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+L\+I\+ST)
+\item 
+\hyperlink{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{Mesh} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
+\item 
+\hyperlink{classmage_1_1_mesh_ab2c1131c72dc9a8c765257f27a304112}{Mesh} (\hyperlink{classmage_1_1_mesh}{Mesh} \&\&mesh)=default
+\item 
+void \hyperlink{classmage_1_1_mesh_a7d871e56f4489e7aa0557688662589bb}{Set\+Number\+Of\+Vertices} (size\+\_\+t nb\+\_\+vertices)
+\item 
+void \hyperlink{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b}{Set\+Number\+Of\+Indices} (size\+\_\+t nb\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device2 $\ast$const \hyperlink{classmage_1_1_mesh_ad1d91b6048d73bb05d0d39028d048f18}{m\+\_\+device}
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_mesh_a1d19b5bceea2256f4d80ebc06fa74f00}{m\+\_\+device\+\_\+context}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{m\+\_\+vertex\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{m\+\_\+index\+\_\+buffer}
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-size\+\_\+t \hyperlink{classmage_1_1_mesh_a94a983af3aad7327aab525d6b40f90a7}{m\+\_\+vertex\+\_\+size}
+const size\+\_\+t \hyperlink{classmage_1_1_mesh_ab3ebdfffca054f32ac69e47c486d57b1}{m\+\_\+vertex\+\_\+size}
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_mesh_a5a04aa73e98c75dd5b8929296c3af9bb}{m\+\_\+nb\+\_\+vertices}
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{m\+\_\+nb\+\_\+indices}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{m\+\_\+vertex\+\_\+buffer}
+const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{classmage_1_1_mesh_a93dbb92d756948df3b08fc29426c6acf}{m\+\_\+index\+\_\+format}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{m\+\_\+index\+\_\+buffer}
+const D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY \hyperlink{classmage_1_1_mesh_a329fab0ad24e11b73a8981c6d09a0c7c}{m\+\_\+primitive\+\_\+topology}
 \end{DoxyCompactItemize}
 
 
@@ -51,79 +78,38 @@ size\+\_\+t \hyperlink{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{m\+
 A class of indexed meshes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_mesh_a3712a661877073699ae264408c549705}{}\label{classmage_1_1_mesh_a3712a661877073699ae264408c549705} 
-\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
-\index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})}
-
-Constructs a mesh.
-
-\begin{DoxyPrecond}{Precondition}
-{\itshape vertices} may not be equal to {\ttfamily nullptr} 
-
-{\itshape indices} may not be equal to {\ttfamily nullptr} 
-\end{DoxyPrecond}
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em VertexT} & The vertex type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
-\hline
-\mbox{\tt in}  & {\em vertices} & A pointer to an array of vertices. \\
-\hline
-\mbox{\tt in}  & {\em nb\+\_\+vertices} & The number of vertices. \\
-\hline
-\mbox{\tt in}  & {\em indices} & A pointer to an array of indices. \\
-\hline
-\mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e}{}\label{classmage_1_1_mesh_ab61411ca1e93779c9bb2d44f7c8e093e} 
-\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
-\index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ uint32\+\_\+t $>$ \&}]{indices }\end{DoxyParamCaption})}
-
-Constructs a mesh.
-
-\begin{DoxyPrecond}{Precondition}
-The number of vertices must be greater than zero. 
-
-The number of indices must be greater than zero. 
-\end{DoxyPrecond}
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em VertexT} & The vertex type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
-\hline
-\mbox{\tt in}  & {\em vertices} & A reference to a vector of vertices. \\
-\hline
-\mbox{\tt in}  & {\em indices} & A reference to a vector of indices. \\
-\hline
-\mbox{\tt in}  & {\em device} & A pointer to an D3\+D11 device. \\
-\hline
-\end{DoxyParams}
 \hypertarget{classmage_1_1_mesh_a53b4b9054a518c1f7e2078fdc65a95b8}{}\label{classmage_1_1_mesh_a53b4b9054a518c1f7e2078fdc65a95b8} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!````~Mesh@{$\sim$\+Mesh}}
 \index{````~Mesh@{$\sim$\+Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{$\sim$\+Mesh()}{~Mesh()}}
 {\footnotesize\ttfamily virtual mage\+::\+Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-Destructs this mesh. \hypertarget{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{}\label{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73} 
+Destructs this mesh. \hypertarget{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12}{}\label{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{size\+\_\+t}]{vertex\+\_\+size,  }\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{index\+\_\+format = {\ttfamily DXGI\+\_\+FORMAT\+\_\+R32\+\_\+UINT},  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology = {\ttfamily D3D11\+\_\+PRIMITIVE\+\_\+TOPOLOGY\+\_\+TRIANGLELIST} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+Constructs a mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em vertex\+\_\+size} & The vertex size. \\
+\hline
+\mbox{\tt in}  & {\em index\+\_\+format} & The index format. \\
+\hline
+\mbox{\tt in}  & {\em primitive\+\_\+topology} & The primitive topology. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{}\label{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
 
 Constructs a mesh from the given mesh.
 
@@ -132,11 +118,11 @@ Constructs a mesh from the given mesh.
 \mbox{\tt in}  & {\em mesh} & A reference to the mesh. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e}{}\label{classmage_1_1_mesh_a62640691203600b5b15094cfdb75d22e} 
+\hypertarget{classmage_1_1_mesh_ab2c1131c72dc9a8c765257f27a304112}{}\label{classmage_1_1_mesh_ab2c1131c72dc9a8c765257f27a304112} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
 Constructs a mesh from the given mesh.
 
@@ -148,6 +134,38 @@ Constructs a mesh from the given mesh.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_mesh_a62f7b8176f7747f2b4db7674524a146c}{}\label{classmage_1_1_mesh_a62f7b8176f7747f2b4db7674524a146c} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Draws this mesh. \hypertarget{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d}{}\label{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption}) const}
+
+Draws this mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em start\+\_\+index} & The start index. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_mesh_ac76cf9345039a7170597a0e5219a71f9}{}\label{classmage_1_1_mesh_ac76cf9345039a7170597a0e5219a71f9} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Get\+Index\+Format@{Get\+Index\+Format}}
+\index{Get\+Index\+Format@{Get\+Index\+Format}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+Index\+Format()}{GetIndexFormat()}}
+{\footnotesize\ttfamily D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Mesh\+::\+Get\+Index\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the index format of this mesh.
+
+\begin{DoxyReturn}{Returns}
+The index format of this mesh. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_mesh_a69991b73609ebf936df5c7d2afd2b767}{}\label{classmage_1_1_mesh_a69991b73609ebf936df5c7d2afd2b767} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}}
 \index{Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
@@ -170,39 +188,33 @@ Returns the number of vertices of this mesh.
 \begin{DoxyReturn}{Returns}
 The number of vertices of this mesh. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c}{}\label{classmage_1_1_mesh_afc9d13efdcb03f766191f8597d64040c} 
-\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Initialize\+Mesh@{Initialize\+Mesh}}
-\index{Initialize\+Mesh@{Initialize\+Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Initialize\+Mesh()}{InitializeMesh()}}
-{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Initialize\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 \&}]{device,  }\item[{const VertexT $\ast$}]{vertices,  }\item[{const uint32\+\_\+t $\ast$}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_mesh_a3628c67de9562e31a8266a51776c903a}{}\label{classmage_1_1_mesh_a3628c67de9562e31a8266a51776c903a} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Get\+Primitive\+Topology@{Get\+Primitive\+Topology}}
+\index{Get\+Primitive\+Topology@{Get\+Primitive\+Topology}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+Primitive\+Topology()}{GetPrimitiveTopology()}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY mage\+::\+Mesh\+::\+Get\+Primitive\+Topology (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Initializes this mesh.
+Returns the primitive topology of this mesh.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape vertices} may not be equal to {\ttfamily nullptr} 
+\begin{DoxyReturn}{Returns}
+The primitive topology of this mesh. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_mesh_a2421eac892ef5fd6db21d8214c02e774}{}\label{classmage_1_1_mesh_a2421eac892ef5fd6db21d8214c02e774} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Get\+Vertex\+Size@{Get\+Vertex\+Size}}
+\index{Get\+Vertex\+Size@{Get\+Vertex\+Size}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Size()}{GetVertexSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Mesh\+::\+Get\+Vertex\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-{\itshape indices} may not be equal to {\ttfamily nullptr} 
-\end{DoxyPrecond}
+Returns the size of the vertices of this mesh.
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em VertexT} & The vertex type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A reference to the rendering device. \\
-\hline
-\mbox{\tt in}  & {\em vertices} & A pointer to an array of vertices. \\
-\hline
-\mbox{\tt in}  & {\em indices} & A pointer to an array of indices. \\
-\hline
-\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vertex size of this static mesh. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{}\label{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given mesh to this mesh.
 
@@ -218,7 +230,7 @@ A reference to the copy of the given mesh (i.\+e. this mesh).
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given mesh to this mesh.
 
@@ -230,22 +242,66 @@ Copies the given mesh to this mesh.
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given mesh (i.\+e. this mesh). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28}{}\label{classmage_1_1_mesh_a8ffdbc73df77c2a8081300054499bc28} 
-\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Render@{Render}}
-\index{Render@{Render}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Render (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 \&}]{device\+\_\+context }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_mesh_a728979ae0be55283813eecf3e7c40e80}{}\label{classmage_1_1_mesh_a728979ae0be55283813eecf3e7c40e80} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Prepare\+Drawing@{Prepare\+Drawing}}
+\index{Prepare\+Drawing@{Prepare\+Drawing}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Prepare\+Drawing()}{PrepareDrawing()}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Prepare\+Drawing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Prepare the drawing of this mesh. \hypertarget{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b}{}\label{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Set\+Number\+Of\+Indices@{Set\+Number\+Of\+Indices}}
+\index{Set\+Number\+Of\+Indices@{Set\+Number\+Of\+Indices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Set\+Number\+Of\+Indices()}{SetNumberOfIndices()}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Set\+Number\+Of\+Indices (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the number of indices of this mesh to the given number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices of this mesh. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_mesh_a7d871e56f4489e7aa0557688662589bb}{}\label{classmage_1_1_mesh_a7d871e56f4489e7aa0557688662589bb} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Set\+Number\+Of\+Vertices@{Set\+Number\+Of\+Vertices}}
+\index{Set\+Number\+Of\+Vertices@{Set\+Number\+Of\+Vertices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Set\+Number\+Of\+Vertices()}{SetNumberOfVertices()}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Set\+Number\+Of\+Vertices (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the number of vertices of this mesh to the given number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nb\+\_\+vertices} & The number of vertices of this mesh. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{}\label{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373} 
+\hypertarget{classmage_1_1_mesh_ad1d91b6048d73bb05d0d39028d048f18}{}\label{classmage_1_1_mesh_ad1d91b6048d73bb05d0d39028d048f18} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+device@{m\+\_\+device}}
+\index{m\+\_\+device@{m\+\_\+device}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ const mage\+::\+Mesh\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [protected]}}
+
+A pointer to the device of this mesh. \hypertarget{classmage_1_1_mesh_a1d19b5bceea2256f4d80ebc06fa74f00}{}\label{classmage_1_1_mesh_a1d19b5bceea2256f4d80ebc06fa74f00} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Mesh\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [protected]}}
+
+A pointer to the device context of this mesh. \hypertarget{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{}\label{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}}
 \index{m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{m\+\_\+index\+\_\+buffer}{m\_index\_buffer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+index\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+index\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
 
-A pointer to the index buffer of this mesh. \hypertarget{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{}\label{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2} 
+A pointer to the index buffer of this mesh. \hypertarget{classmage_1_1_mesh_a93dbb92d756948df3b08fc29426c6acf}{}\label{classmage_1_1_mesh_a93dbb92d756948df3b08fc29426c6acf} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+index\+\_\+format@{m\+\_\+index\+\_\+format}}
+\index{m\+\_\+index\+\_\+format@{m\+\_\+index\+\_\+format}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+format}{m\_index\_format}}
+{\footnotesize\ttfamily const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Mesh\+::m\+\_\+index\+\_\+format\hspace{0.3cm}{\ttfamily [private]}}
+
+The index format of this mesh. \hypertarget{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{}\label{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}}
 \index{m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+indices}{m\_nb\_indices}}
@@ -257,16 +313,22 @@ The number of indices of this mesh. \hypertarget{classmage_1_1_mesh_a5a04aa73e98
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+vertices}{m\_nb\_vertices}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Mesh\+::m\+\_\+nb\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of vertices of this mesh. \hypertarget{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{}\label{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e} 
+The number of vertices of this mesh. \hypertarget{classmage_1_1_mesh_a329fab0ad24e11b73a8981c6d09a0c7c}{}\label{classmage_1_1_mesh_a329fab0ad24e11b73a8981c6d09a0c7c} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+primitive\+\_\+topology@{m\+\_\+primitive\+\_\+topology}}
+\index{m\+\_\+primitive\+\_\+topology@{m\+\_\+primitive\+\_\+topology}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+primitive\+\_\+topology}{m\_primitive\_topology}}
+{\footnotesize\ttfamily const D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY mage\+::\+Mesh\+::m\+\_\+primitive\+\_\+topology\hspace{0.3cm}{\ttfamily [private]}}
+
+The primitive topology of this mesh. \hypertarget{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{}\label{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}}
 \index{m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+buffer}{m\_vertex\_buffer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+vertex\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+vertex\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
 
-A pointer to the vertex buffer of this mesh. \hypertarget{classmage_1_1_mesh_a94a983af3aad7327aab525d6b40f90a7}{}\label{classmage_1_1_mesh_a94a983af3aad7327aab525d6b40f90a7} 
+A pointer to the vertex buffer of this mesh. \hypertarget{classmage_1_1_mesh_ab3ebdfffca054f32ac69e47c486d57b1}{}\label{classmage_1_1_mesh_ab3ebdfffca054f32ac69e47c486d57b1} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+vertex\+\_\+size@{m\+\_\+vertex\+\_\+size}}
 \index{m\+\_\+vertex\+\_\+size@{m\+\_\+vertex\+\_\+size}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+size}{m\_vertex\_size}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+Mesh\+::m\+\_\+vertex\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Mesh\+::m\+\_\+vertex\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
 
-The size of the vertices of this mesh. 
+The vertex size of this static mesh. 

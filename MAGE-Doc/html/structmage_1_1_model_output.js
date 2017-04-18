@@ -1,15 +1,15 @@
 var structmage_1_1_model_output =
 [
     [ "ModelOutput", "structmage_1_1_model_output.html#a7d64b57d8207968541eb9c6da6ef0163", null ],
-    [ "~ModelOutput", "structmage_1_1_model_output.html#a69a7f27486ad287943cbf973107ad8e1", null ],
     [ "ModelOutput", "structmage_1_1_model_output.html#aac808e40a66f33da4ea28ebb7443623d", null ],
-    [ "ModelOutput", "structmage_1_1_model_output.html#ab7b642e9234d7dcbd053a2b088874227", null ],
+    [ "ModelOutput", "structmage_1_1_model_output.html#a20faa6e5b76ec7903a09e222e61e5353", null ],
+    [ "~ModelOutput", "structmage_1_1_model_output.html#a69a7f27486ad287943cbf973107ad8e1", null ],
     [ "EndModelPart", "structmage_1_1_model_output.html#a5df0c4240b1fac61ac0cdbf9766bb98d", null ],
     [ "HasModelPart", "structmage_1_1_model_output.html#a23ce6e3b252227781c173149b76e73ee", null ],
     [ "operator=", "structmage_1_1_model_output.html#ada52bf380c0259a0d7ef855457e5a9da", null ],
     [ "operator=", "structmage_1_1_model_output.html#a5e368e3ae8a52d329f8d9b5f1c4b9d03", null ],
     [ "SetMaterial", "structmage_1_1_model_output.html#abd614f9f2e9f9dbc0b2c354ee37f2998", null ],
-    [ "StartModelPart", "structmage_1_1_model_output.html#a86b2e4d9885193fb796b309e6104abc9", null ],
+    [ "StartModelPart", "structmage_1_1_model_output.html#a9e4d94547fbc318961d8c695149cdf14", null ],
     [ "index_buffer", "structmage_1_1_model_output.html#a0c49359544b7d3c961118caa629f6405", null ],
     [ "material_buffer", "structmage_1_1_model_output.html#a66764a4d8c7e5b099e51013f385f13bf", null ],
     [ "model_parts", "structmage_1_1_model_output.html#ac101de6237d4de379f7f85bbdf71dc46", null ],

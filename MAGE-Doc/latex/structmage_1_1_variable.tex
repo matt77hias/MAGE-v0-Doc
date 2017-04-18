@@ -16,7 +16,15 @@ struct \hyperlink{structmage_1_1_variable_1_1_value}{Value}
 \item 
 {\footnotesize template$<$typename T $>$ }\\\hyperlink{structmage_1_1_variable_aefdee0e7bab3f1a18f0dc1cdc28429b6}{Variable} (\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const string \&name, const T $\ast$value)
 \item 
-\hyperlink{structmage_1_1_variable_a8f4d3e950b25b14e996ad074e42a5e9e}{$\sim$\+Variable} ()
+\hyperlink{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{Variable} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
+\item 
+\hyperlink{structmage_1_1_variable_a49764740130a9b06033869fff0b634a9}{Variable} (\hyperlink{structmage_1_1_variable}{Variable} \&\&variable)=default
+\item 
+\hyperlink{structmage_1_1_variable_a7503f010f296683cecf9be65a3f86589}{$\sim$\+Variable} ()=default
+\item 
+\hyperlink{structmage_1_1_variable}{Variable} \& \hyperlink{structmage_1_1_variable_a99029d04b45f356b9681787fdab8a139}{operator=} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
+\item 
+\hyperlink{structmage_1_1_variable}{Variable} \& \hyperlink{structmage_1_1_variable_a3918cb719332c752205a805d0025a775}{operator=} (\hyperlink{structmage_1_1_variable}{Variable} \&\&variable)=delete
 \item 
 bool \hyperlink{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9}{operator==} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable) const
 \item 
@@ -30,25 +38,14 @@ const void $\ast$ \hyperlink{structmage_1_1_variable_a65ecc95bcdc26733394d3a32d3
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{structmage_1_1_variable_afa9cfd0a42d8a15cccf7f49197648504}{Set\+Value} (const T $\ast$value)
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{Variable} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
-\item 
-\hyperlink{structmage_1_1_variable_afe6a57008273cc663ad62f31df824a97}{Variable} (\hyperlink{structmage_1_1_variable}{Variable} \&\&variable)=delete
-\item 
-\hyperlink{structmage_1_1_variable}{Variable} \& \hyperlink{structmage_1_1_variable_a99029d04b45f356b9681787fdab8a139}{operator=} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
-\item 
-\hyperlink{structmage_1_1_variable}{Variable} \& \hyperlink{structmage_1_1_variable_a3918cb719332c752205a805d0025a775}{operator=} (\hyperlink{structmage_1_1_variable}{Variable} \&\&variable)=delete
-\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const string \hyperlink{structmage_1_1_variable_afac262aa51bb1dfe447d501abcaa08d0}{m\+\_\+name}
-\item 
 const \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} \hyperlink{structmage_1_1_variable_acb45a61a0690e0efac614915595c4449}{m\+\_\+type}
 \item 
-const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} $\ast$ \hyperlink{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27}{m\+\_\+value}
+const string \hyperlink{structmage_1_1_variable_afac262aa51bb1dfe447d501abcaa08d0}{m\+\_\+name}
+\item 
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} $>$ \hyperlink{structmage_1_1_variable_aa5cb27cab73d73715fe29fa6810d88bf}{m\+\_\+value}
 \end{DoxyCompactItemize}
 
 
@@ -79,17 +76,11 @@ Constructs a variable.
 \mbox{\tt in}  & {\em value} & A pointer to the value. \\
 \hline
 \end{DoxyParams}
-\hypertarget{structmage_1_1_variable_a8f4d3e950b25b14e996ad074e42a5e9e}{}\label{structmage_1_1_variable_a8f4d3e950b25b14e996ad074e42a5e9e} 
-\index{mage\+::\+Variable@{mage\+::\+Variable}!````~Variable@{$\sim$\+Variable}}
-\index{````~Variable@{$\sim$\+Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
-\subsubsection{\texorpdfstring{$\sim$\+Variable()}{~Variable()}}
-{\footnotesize\ttfamily mage\+::\+Variable\+::$\sim$\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Destructs this variable. \hypertarget{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{}\label{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e} 
+\hypertarget{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{}\label{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
 \index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a variable from the given variable.
 
@@ -98,11 +89,11 @@ Constructs a variable from the given variable.
 \mbox{\tt in}  & {\em variable} & A reference to the variable. \\
 \hline
 \end{DoxyParams}
-\hypertarget{structmage_1_1_variable_afe6a57008273cc663ad62f31df824a97}{}\label{structmage_1_1_variable_afe6a57008273cc663ad62f31df824a97} 
+\hypertarget{structmage_1_1_variable_a49764740130a9b06033869fff0b634a9}{}\label{structmage_1_1_variable_a49764740130a9b06033869fff0b634a9} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
 \index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_variable}{Variable} \&\&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_variable}{Variable} \&\&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a variable from the given variable.
 
@@ -111,7 +102,13 @@ Constructs a variable from the given variable.
 \mbox{\tt in}  & {\em variable} & A reference to the variable. \\
 \hline
 \end{DoxyParams}
+\hypertarget{structmage_1_1_variable_a7503f010f296683cecf9be65a3f86589}{}\label{structmage_1_1_variable_a7503f010f296683cecf9be65a3f86589} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!````~Variable@{$\sim$\+Variable}}
+\index{````~Variable@{$\sim$\+Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{$\sim$\+Variable()}{~Variable()}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::$\sim$\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Destructs this variable. 
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910eade11d}{}\label{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910eade11d} 
@@ -167,7 +164,7 @@ Checks whether the given variable is not equal to this variable.
 \index{mage\+::\+Variable@{mage\+::\+Variable}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable}{Variable}\& mage\+::\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable}{Variable}\& mage\+::\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given variable to this variable.
 
@@ -183,7 +180,7 @@ A reference to the copy of the given variable (i.\+e. this variable).
 \index{mage\+::\+Variable@{mage\+::\+Variable}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable}{Variable}\& mage\+::\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_variable}{Variable} \&\&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable}{Variable}\& mage\+::\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_variable}{Variable} \&\&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given variable to this variable.
 
@@ -250,10 +247,10 @@ The type of this value.
 \begin{DoxyNote}{Note}
 It is not possible to use typeid(\+T).name() since this assumes a bijection between the scripting types and the storage types, which is not the case. Thus the type needs to be stored explicitly. 
 \end{DoxyNote}
-\hypertarget{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27}{}\label{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27} 
+\hypertarget{structmage_1_1_variable_aa5cb27cab73d73715fe29fa6810d88bf}{}\label{structmage_1_1_variable_aa5cb27cab73d73715fe29fa6810d88bf} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!m\+\_\+value@{m\+\_\+value}}
 \index{m\+\_\+value@{m\+\_\+value}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{m\+\_\+value}{m\_value}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value}$\ast$ mage\+::\+Variable\+::m\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} $>$ mage\+::\+Variable\+::m\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the value of this variable. 
