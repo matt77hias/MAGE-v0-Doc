@@ -100,11 +100,13 @@ var hierarchy =
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],
     [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],
     [ "mage::SpriteFontOutput", "structmage_1_1_sprite_font_output.html", null ],
-    [ "mage::SpriteImage", "classmage_1_1_sprite_image.html", null ],
-    [ "mage::SpriteText", "classmage_1_1_sprite_text.html", [
-      [ "mage::DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html", null ],
-      [ "mage::NormalSpriteText", "classmage_1_1_normal_sprite_text.html", null ],
-      [ "mage::OutlineSpriteText", "classmage_1_1_outline_sprite_text.html", null ]
+    [ "mage::SpriteObject", "classmage_1_1_sprite_object.html", [
+      [ "mage::SpriteImage", "classmage_1_1_sprite_image.html", null ],
+      [ "mage::SpriteText", "classmage_1_1_sprite_text.html", [
+        [ "mage::DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html", null ],
+        [ "mage::NormalSpriteText", "classmage_1_1_normal_sprite_text.html", null ],
+        [ "mage::OutlineSpriteText", "classmage_1_1_outline_sprite_text.html", null ]
+      ] ]
     ] ],
     [ "mage::SpriteTextItem", "structmage_1_1_sprite_text_item.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
@@ -125,11 +127,15 @@ var hierarchy =
         [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
         [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
       ] ],
+      [ "mage::Light", "classmage_1_1_light.html", [
+        [ "mage::DirectionalLight", "classmage_1_1_directional_light.html", null ],
+        [ "mage::OmniLight", "classmage_1_1_omni_light.html", null ],
+        [ "mage::SpotLight", "classmage_1_1_spot_light.html", null ]
+      ] ],
       [ "mage::Model", "classmage_1_1_model.html", [
         [ "mage::MeshModel", "classmage_1_1_mesh_model.html", null ],
         [ "mage::SubModel", "classmage_1_1_sub_model.html", null ]
-      ] ],
-      [ "mage::PointLight", "classmage_1_1_point_light.html", null ]
+      ] ]
     ] ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],

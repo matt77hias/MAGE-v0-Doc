@@ -1,0 +1,26 @@
+var classmage_1_1_spot_light =
+[
+    [ "SpotLight", "classmage_1_1_spot_light.html#a469dcb9cf484d682982c72e28003e6f7", null ],
+    [ "SpotLight", "classmage_1_1_spot_light.html#adac6974e9cbfdae4612e2d88229e654d", null ],
+    [ "SpotLight", "classmage_1_1_spot_light.html#a404e8f8f37100bff11042831ff22fe8f", null ],
+    [ "~SpotLight", "classmage_1_1_spot_light.html#a924dd88ca89b3064d6cfce546eab322a", null ],
+    [ "Clone", "classmage_1_1_spot_light.html#a3ec29a2a0edbd1f8fd7e76ba93d6c972", null ],
+    [ "GetEndAngualCutoff", "classmage_1_1_spot_light.html#ac04202c48cb4c12334f9f55757a3d73a", null ],
+    [ "GetEndDistanceFalloff", "classmage_1_1_spot_light.html#a3e6767992846e17a9bebb66519c30f19", null ],
+    [ "GetStartAngualCutoff", "classmage_1_1_spot_light.html#abe143425da28281b7b72643bd2f1c5c2", null ],
+    [ "GetStartDistanceFalloff", "classmage_1_1_spot_light.html#a78ef6cc0ecd04cff8a4db9270e9ecb99", null ],
+    [ "GetWorldLightDirection", "classmage_1_1_spot_light.html#a6186ef354f57a58fbcd5ea1a7be2ec71", null ],
+    [ "GetWorldLightPosition", "classmage_1_1_spot_light.html#af1dc0d77fed57540e52edb59716c5094", null ],
+    [ "operator=", "classmage_1_1_spot_light.html#a65b316706e023797cfa219add1cf4d40", null ],
+    [ "operator=", "classmage_1_1_spot_light.html#a540360b14d52494a792066254d1cd6db", null ],
+    [ "SetAngualCutoff", "classmage_1_1_spot_light.html#a251358633eff92a9a77f5cc251dc1881", null ],
+    [ "SetDistanceFalloff", "classmage_1_1_spot_light.html#a0846a1af219d18c711d165c8cea57e88", null ],
+    [ "SetEndAngualCutoff", "classmage_1_1_spot_light.html#aac3d213799cf442a993134ca186fcd8a", null ],
+    [ "SetEndDistanceFalloff", "classmage_1_1_spot_light.html#a12ffc1d8365297de853041dd652c7039", null ],
+    [ "SetStartAngualCutoff", "classmage_1_1_spot_light.html#a5059fe33404d452a57584e8473de8be4", null ],
+    [ "SetStartDistanceFalloff", "classmage_1_1_spot_light.html#a2290be4221f8a399139920b70f5403a0", null ],
+    [ "m_cos_penumbra", "classmage_1_1_spot_light.html#ac5d9f3426397abff72c5098b6e7e8472", null ],
+    [ "m_cos_umbra", "classmage_1_1_spot_light.html#a9afab31514f93d702f9e516491f262f2", null ],
+    [ "m_distance_falloff_end", "classmage_1_1_spot_light.html#a8e0616e3a36d1a05d800cc4a43739178", null ],
+    [ "m_distance_falloff_start", "classmage_1_1_spot_light.html#a96c4a4f1b77c9a6aadb82cf48248cc5d", null ]
+];
