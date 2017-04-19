@@ -41,6 +41,8 @@ class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
 \item 
 struct \hyperlink{structmage_1_1_direction3}{Direction3}
 \item 
+class \hyperlink{classmage_1_1_directional_light}{Directional\+Light}
+\item 
 class \hyperlink{classmage_1_1_dropshadow_sprite_text}{Dropshadow\+Sprite\+Text}
 \item 
 class \hyperlink{classmage_1_1_empty_pixel_shader}{Empty\+Pixel\+Shader}
@@ -72,6 +74,8 @@ class \hyperlink{classmage_1_1_keyboard}{Keyboard}
 class \hyperlink{classmage_1_1_lambertian_pixel_shader}{Lambertian\+Pixel\+Shader}
 \item 
 class \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader}
+\item 
+class \hyperlink{classmage_1_1_light}{Light}
 \item 
 class \hyperlink{classmage_1_1_line_reader}{Line\+Reader}
 \item 
@@ -129,6 +133,8 @@ class \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}
 \item 
 class \hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader}
 \item 
+class \hyperlink{classmage_1_1_omni_light}{Omni\+Light}
+\item 
 class \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera}
 \item 
 class \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}
@@ -138,8 +144,6 @@ class \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}
 class \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}
 \item 
 struct \hyperlink{structmage_1_1_point3}{Point3}
-\item 
-class \hyperlink{classmage_1_1_point_light}{Point\+Light}
 \item 
 class \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}
 \item 
@@ -167,6 +171,8 @@ class \hyperlink{classmage_1_1_semaphore}{Semaphore}
 \item 
 struct \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}
 \item 
+class \hyperlink{classmage_1_1_spot_light}{Spot\+Light}
+\item 
 class \hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh}
 \item 
 class \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}
@@ -178,6 +184,8 @@ struct \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output}
 class \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader}
 \item 
 class \hyperlink{classmage_1_1_sprite_image}{Sprite\+Image}
+\item 
+class \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}
 \item 
 class \hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader}
 \item 
@@ -403,7 +411,7 @@ float \hyperlink{namespacemage_a5e41913a3a1613add8511e5834e09277}{Bytes\+To\+Flo
 \item 
 double \hyperlink{namespacemage_af85b8ba1e336f37fc8fe34a53e981a6c}{Bytes\+To\+Double} (const uint8\+\_\+t $\ast$bytes, bool big\+\_\+endian)
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ \hyperlink{namespacemage_a79d9d2e954ba9049fef5847d33e28839}{Create\+Orthographic\+Camera} (const string \&name, float near\+\_\+z, float far\+\_\+z)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ \hyperlink{namespacemage_a16a1ce53c6e6780ead2325cf3741a36f}{Create\+Orthographic\+Camera} (const string \&name, float width, float height, float near\+\_\+z, float far\+\_\+z)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ \hyperlink{namespacemage_a9d39e62839bab5c922dec04c286dc511}{Create\+Perspective\+Camera} (const string \&name, float fov\+\_\+y, float near\+\_\+z, float far\+\_\+z)
 \item 
@@ -4832,11 +4840,11 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Index\+Buffer (\begin{DoxyParamCaption}\item
 \subsubsection{\texorpdfstring{Create\+Opaque\+Blend\+State()}{CreateOpaqueBlendState()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Opaque\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a79d9d2e954ba9049fef5847d33e28839}{}\label{namespacemage_a79d9d2e954ba9049fef5847d33e28839} 
+\hypertarget{namespacemage_a16a1ce53c6e6780ead2325cf3741a36f}{}\label{namespacemage_a16a1ce53c6e6780ead2325cf3741a36f} 
 \index{mage@{mage}!Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}}
 \index{Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Orthographic\+Camera()}{CreateOrthographicCamera()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ mage\+::\+Create\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ mage\+::\+Create\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a9d39e62839bab5c922dec04c286dc511}{}\label{namespacemage_a9d39e62839bab5c922dec04c286dc511} 
 \index{mage@{mage}!Create\+Perspective\+Camera@{Create\+Perspective\+Camera}}
