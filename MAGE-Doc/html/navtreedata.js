@@ -20,6 +20,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
@@ -30,14 +31,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_engine.html#a627271c15bb1ecb1079f9780d64e0d77",
-"classmage_1_1_main_window.html#a0c2414ae4e627fb401c045371c286de0",
-"classmage_1_1_omni_light.html#ab784744d39ad3d4f4a7b2214a55108f7",
-"classmage_1_1_spot_light.html#a8e0616e3a36d1a05d800cc4a43739178",
-"classmage_1_1_timer.html#a5fb4b89725b16e0d4b1fbae2f95f30cb",
-"namespacemembers.html",
-"structmage_1_1_model_output.html#a66764a4d8c7e5b099e51013f385f13bf",
-"structmage_1_1_variable.html#aefdee0e7bab3f1a18f0dc1cdc28429b6"
+"classmage_1_1_engine.html#a1374fc1d0d18e23df9150dfcd17955b0",
+"classmage_1_1_m_t_l_reader.html#a9d4f8dea5a5582c5e7b788149110800c",
+"classmage_1_1_omni_light.html#a090be5e95e1c3d6c43e80ad7fae10794",
+"classmage_1_1_semaphore.html",
+"classmage_1_1_texture.html#ae7a45b80e575237d218dc9c6f059e87c",
+"classmage_1_1_world.html#aafb9aeddf2758f0fe49315a75303a8cf",
+"structmage_1_1_d_d_s___h_e_a_d_e_r.html#a9f36aa53c86e3aa2bd7c667f28460645",
+"structmage_1_1_rendering_state.html#a63b8c00bd0e2e1c56bd2a42f269733a8",
+"structmage_1_1_vertex_position_normal_color.html#a81420d3cad27061049fe23bf4aaba64f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

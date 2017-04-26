@@ -34,20 +34,20 @@ const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} $\ast$ \hyperlink{clas
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const double \hyperlink{classmage_1_1_stats_script_acae1ac4fd880389c88818a8f72cbff2b}{resource\+\_\+fetch\+\_\+period} = 1.\+00
+static const double \hyperlink{classmage_1_1_stats_script_acae1ac4fd880389c88818a8f72cbff2b}{resource\+\_\+fetch\+\_\+period} = 1.\+0
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{classmage_1_1_stats_script_a2ab46c9b9f153822f6a9cfa721cbe0da}{m\+\_\+seconds\+\_\+per\+\_\+frame}
+double \hyperlink{classmage_1_1_stats_script_a55cb25f27b2354983d4e68cb1d4c8fcf}{m\+\_\+accumulated\+\_\+time}
 \item 
-uint32\+\_\+t \hyperlink{classmage_1_1_stats_script_ae0c904d5b3406a20892978a83bf2fa8c}{m\+\_\+nb\+\_\+frames}
+uint32\+\_\+t \hyperlink{classmage_1_1_stats_script_ac12aaf08707f8de8d88391bcc7f81c53}{m\+\_\+accumulated\+\_\+nb\+\_\+frames}
 \item 
-double \hyperlink{classmage_1_1_stats_script_a69972949fb34f0368e9437a254a79643}{m\+\_\+time}
+uint32\+\_\+t \hyperlink{classmage_1_1_stats_script_afcbbf37839891d06b1331af3cc7f6e82}{m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second}
 \item 
-double \hyperlink{classmage_1_1_stats_script_ae10409f1268280ed8b6f78ef23b87c5e}{m\+\_\+cpu\+\_\+usage}
+double \hyperlink{classmage_1_1_stats_script_ae7dd506d04a4512ae103a1a9c2f9f206}{m\+\_\+last\+\_\+cpu\+\_\+usage}
 \item 
-uint32\+\_\+t \hyperlink{classmage_1_1_stats_script_a2874d123662ab2aabe28c1cf70d8f15d}{m\+\_\+ram\+\_\+usage}
+uint32\+\_\+t \hyperlink{classmage_1_1_stats_script_a92335c973382a332cf5ce328454fd07b}{m\+\_\+last\+\_\+ram\+\_\+usage}
 \item 
 \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_c_p_u_monitor}{C\+P\+U\+Monitor} $>$ \hyperlink{classmage_1_1_stats_script_a12e321d8fe1003de3643c4b799dd4c8f}{m\+\_\+monitor}
 \item 
@@ -128,11 +128,35 @@ Implements \hyperlink{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_stats_script_ae10409f1268280ed8b6f78ef23b87c5e}{}\label{classmage_1_1_stats_script_ae10409f1268280ed8b6f78ef23b87c5e} 
-\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+cpu\+\_\+usage@{m\+\_\+cpu\+\_\+usage}}
-\index{m\+\_\+cpu\+\_\+usage@{m\+\_\+cpu\+\_\+usage}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+cpu\+\_\+usage}{m\_cpu\_usage}}
-{\footnotesize\ttfamily double mage\+::\+Stats\+Script\+::m\+\_\+cpu\+\_\+usage\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_stats_script_ac12aaf08707f8de8d88391bcc7f81c53}{}\label{classmage_1_1_stats_script_ac12aaf08707f8de8d88391bcc7f81c53} 
+\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+accumulated\+\_\+nb\+\_\+frames@{m\+\_\+accumulated\+\_\+nb\+\_\+frames}}
+\index{m\+\_\+accumulated\+\_\+nb\+\_\+frames@{m\+\_\+accumulated\+\_\+nb\+\_\+frames}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+accumulated\+\_\+nb\+\_\+frames}{m\_accumulated\_nb\_frames}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Stats\+Script\+::m\+\_\+accumulated\+\_\+nb\+\_\+frames\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_stats_script_a55cb25f27b2354983d4e68cb1d4c8fcf}{}\label{classmage_1_1_stats_script_a55cb25f27b2354983d4e68cb1d4c8fcf} 
+\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+accumulated\+\_\+time@{m\+\_\+accumulated\+\_\+time}}
+\index{m\+\_\+accumulated\+\_\+time@{m\+\_\+accumulated\+\_\+time}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+accumulated\+\_\+time}{m\_accumulated\_time}}
+{\footnotesize\ttfamily double mage\+::\+Stats\+Script\+::m\+\_\+accumulated\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_stats_script_ae7dd506d04a4512ae103a1a9c2f9f206}{}\label{classmage_1_1_stats_script_ae7dd506d04a4512ae103a1a9c2f9f206} 
+\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+last\+\_\+cpu\+\_\+usage@{m\+\_\+last\+\_\+cpu\+\_\+usage}}
+\index{m\+\_\+last\+\_\+cpu\+\_\+usage@{m\+\_\+last\+\_\+cpu\+\_\+usage}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+\_\+cpu\+\_\+usage}{m\_last\_cpu\_usage}}
+{\footnotesize\ttfamily double mage\+::\+Stats\+Script\+::m\+\_\+last\+\_\+cpu\+\_\+usage\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_stats_script_afcbbf37839891d06b1331af3cc7f6e82}{}\label{classmage_1_1_stats_script_afcbbf37839891d06b1331af3cc7f6e82} 
+\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second@{m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second}}
+\index{m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second@{m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second}{m\_last\_frames\_per\_second}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Stats\+Script\+::m\+\_\+last\+\_\+frames\+\_\+per\+\_\+second\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_stats_script_a92335c973382a332cf5ce328454fd07b}{}\label{classmage_1_1_stats_script_a92335c973382a332cf5ce328454fd07b} 
+\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+last\+\_\+ram\+\_\+usage@{m\+\_\+last\+\_\+ram\+\_\+usage}}
+\index{m\+\_\+last\+\_\+ram\+\_\+usage@{m\+\_\+last\+\_\+ram\+\_\+usage}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+\_\+ram\+\_\+usage}{m\_last\_ram\_usage}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Stats\+Script\+::m\+\_\+last\+\_\+ram\+\_\+usage\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_stats_script_a12e321d8fe1003de3643c4b799dd4c8f}{}\label{classmage_1_1_stats_script_a12e321d8fe1003de3643c4b799dd4c8f} 
 \index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+monitor@{m\+\_\+monitor}}
@@ -140,39 +164,15 @@ Implements \hyperlink{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435
 \subsubsection{\texorpdfstring{m\+\_\+monitor}{m\_monitor}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_c_p_u_monitor}{C\+P\+U\+Monitor} $>$ mage\+::\+Stats\+Script\+::m\+\_\+monitor\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_stats_script_ae0c904d5b3406a20892978a83bf2fa8c}{}\label{classmage_1_1_stats_script_ae0c904d5b3406a20892978a83bf2fa8c} 
-\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+nb\+\_\+frames@{m\+\_\+nb\+\_\+frames}}
-\index{m\+\_\+nb\+\_\+frames@{m\+\_\+nb\+\_\+frames}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+frames}{m\_nb\_frames}}
-{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Stats\+Script\+::m\+\_\+nb\+\_\+frames\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_stats_script_a2874d123662ab2aabe28c1cf70d8f15d}{}\label{classmage_1_1_stats_script_a2874d123662ab2aabe28c1cf70d8f15d} 
-\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+ram\+\_\+usage@{m\+\_\+ram\+\_\+usage}}
-\index{m\+\_\+ram\+\_\+usage@{m\+\_\+ram\+\_\+usage}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+ram\+\_\+usage}{m\_ram\_usage}}
-{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Stats\+Script\+::m\+\_\+ram\+\_\+usage\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_stats_script_a2ab46c9b9f153822f6a9cfa721cbe0da}{}\label{classmage_1_1_stats_script_a2ab46c9b9f153822f6a9cfa721cbe0da} 
-\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+seconds\+\_\+per\+\_\+frame@{m\+\_\+seconds\+\_\+per\+\_\+frame}}
-\index{m\+\_\+seconds\+\_\+per\+\_\+frame@{m\+\_\+seconds\+\_\+per\+\_\+frame}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+seconds\+\_\+per\+\_\+frame}{m\_seconds\_per\_frame}}
-{\footnotesize\ttfamily double mage\+::\+Stats\+Script\+::m\+\_\+seconds\+\_\+per\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
-
 \hypertarget{classmage_1_1_stats_script_a35bb45baabf290be684c8b67f30feeb7}{}\label{classmage_1_1_stats_script_a35bb45baabf290be684c8b67f30feeb7} 
 \index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+text@{m\+\_\+text}}
 \index{m\+\_\+text@{m\+\_\+text}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
 \subsubsection{\texorpdfstring{m\+\_\+text}{m\_text}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} $>$ mage\+::\+Stats\+Script\+::m\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_stats_script_a69972949fb34f0368e9437a254a79643}{}\label{classmage_1_1_stats_script_a69972949fb34f0368e9437a254a79643} 
-\index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!m\+\_\+time@{m\+\_\+time}}
-\index{m\+\_\+time@{m\+\_\+time}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+time}{m\_time}}
-{\footnotesize\ttfamily double mage\+::\+Stats\+Script\+::m\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
-
 \hypertarget{classmage_1_1_stats_script_acae1ac4fd880389c88818a8f72cbff2b}{}\label{classmage_1_1_stats_script_acae1ac4fd880389c88818a8f72cbff2b} 
 \index{mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}!resource\+\_\+fetch\+\_\+period@{resource\+\_\+fetch\+\_\+period}}
 \index{resource\+\_\+fetch\+\_\+period@{resource\+\_\+fetch\+\_\+period}!mage\+::\+Stats\+Script@{mage\+::\+Stats\+Script}}
 \subsubsection{\texorpdfstring{resource\+\_\+fetch\+\_\+period}{resource\_fetch\_period}}
-{\footnotesize\ttfamily const double mage\+::\+Stats\+Script\+::resource\+\_\+fetch\+\_\+period = 1.\+00\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily const double mage\+::\+Stats\+Script\+::resource\+\_\+fetch\+\_\+period = 1.\+0\hspace{0.3cm}{\ttfamily [static]}}
 

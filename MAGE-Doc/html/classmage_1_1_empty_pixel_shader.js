@@ -6,5 +6,6 @@ var classmage_1_1_empty_pixel_shader =
     [ "~EmptyPixelShader", "classmage_1_1_empty_pixel_shader.html#ace5053e12d6fa60caa2bcca00d192fab", null ],
     [ "operator=", "classmage_1_1_empty_pixel_shader.html#a7702fdae1d752ed422d1508e6ee08479", null ],
     [ "operator=", "classmage_1_1_empty_pixel_shader.html#a5eee18735b5bc109ca63a913fa8e374d", null ],
-    [ "PrepareShading", "classmage_1_1_empty_pixel_shader.html#af4e5a7b515aebd3476ea6bda7f8c3d10", null ]
+    [ "PrepareShading", "classmage_1_1_empty_pixel_shader.html#aaaf0ea35ab2459d66593212065a86c1b", null ],
+    [ "PrepareShading", "classmage_1_1_empty_pixel_shader.html#a42bdcb8c416ad76bed9437fb2af91252", null ]
 ];

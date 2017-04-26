@@ -27,11 +27,9 @@ virtual \hyperlink{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2}
 \item 
 \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \& \hyperlink{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9}{operator=} (\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&pixel\+\_\+shader)=delete
 \item 
-void \hyperlink{classmage_1_1_pixel_shader_a95d100a32f6c2f165a4bb038586e336b}{Prepare\+Shading} (const \hyperlink{classmage_1_1_texture}{Texture} \&texture) const
+virtual void \hyperlink{classmage_1_1_pixel_shader_ab677013145ca252c57e5a001134c01ff}{Prepare\+Shading} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture) const
 \item 
-virtual void \hyperlink{classmage_1_1_pixel_shader_a12f3bed8c60e4a36e04dc7d271414693}{Prepare\+Shading} (I\+D3\+D11\+Shader\+Resource\+View $\ast$const $\ast$texture) const
-\item 
-virtual void \hyperlink{classmage_1_1_pixel_shader_a3338707ee1f150e6d95e7c0b982d8aca}{Prepare\+Shading} (const \hyperlink{structmage_1_1_material}{Material} \&material, const \hyperlink{classmage_1_1_world}{World} \&world) const
+virtual void \hyperlink{classmage_1_1_pixel_shader_a5a1a58bcb0ed64405e746ec7a5af5269}{Prepare\+Shading} (const \hyperlink{structmage_1_1_material}{Material} \&material, const \hyperlink{structmage_1_1_lighting}{Lighting} \&lighting) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -97,31 +95,25 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad040640
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a95d100a32f6c2f165a4bb038586e336b}{}\label{classmage_1_1_pixel_shader_a95d100a32f6c2f165a4bb038586e336b} 
+\hypertarget{classmage_1_1_pixel_shader_ab677013145ca252c57e5a001134c01ff}{}\label{classmage_1_1_pixel_shader_ab677013145ca252c57e5a001134c01ff} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
 \index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_texture}{Texture} \&}]{texture }\end{DoxyParamCaption}) const}
+\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a12f3bed8c60e4a36e04dc7d271414693}{}\label{classmage_1_1_pixel_shader_a12f3bed8c60e4a36e04dc7d271414693} 
+
+
+Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a8c0c4daf36c74822a772b1a38e8d876a}{mage\+::\+Sprite\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_aaaf0ea35ab2459d66593212065a86c1b}{mage\+::\+Empty\+Pixel\+Shader}.
+
+\hypertarget{classmage_1_1_pixel_shader_a5a1a58bcb0ed64405e746ec7a5af5269}{}\label{classmage_1_1_pixel_shader_a5a1a58bcb0ed64405e746ec7a5af5269} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
 \index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$const $\ast$}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{structmage_1_1_lighting}{Lighting} \&}]{lighting }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a1eb5be7b8bab943aa1ff6f435c8fadfe}{mage\+::\+Sprite\+Pixel\+Shader}.
-
-\hypertarget{classmage_1_1_pixel_shader_a3338707ee1f150e6d95e7c0b982d8aca}{}\label{classmage_1_1_pixel_shader_a3338707ee1f150e6d95e7c0b982d8aca} 
-\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
-\index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_aa7fe16f197ee09c60f6416f1d5178671}{mage\+::\+Lambertian\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_af4e5a7b515aebd3476ea6bda7f8c3d10}{mage\+::\+Empty\+Pixel\+Shader}.
+Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_ab35542bd91168d662b7cc1a981d5bfe6}{mage\+::\+Lambertian\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_a42bdcb8c416ad76bed9437fb2af91252}{mage\+::\+Empty\+Pixel\+Shader}.
 
 \hypertarget{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57}{}\label{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Setup\+Shader@{Setup\+Shader}}

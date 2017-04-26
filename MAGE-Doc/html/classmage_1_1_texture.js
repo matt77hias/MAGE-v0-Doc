@@ -6,6 +6,7 @@ var classmage_1_1_texture =
     [ "~Texture", "classmage_1_1_texture.html#a81664804ac0259e8c67851409ee106fa", null ],
     [ "GetTextureResourceView", "classmage_1_1_texture.html#a8b04efb947c49819642f86c8a16f813b", null ],
     [ "GetTextureResourceViewAddress", "classmage_1_1_texture.html#ae7a45b80e575237d218dc9c6f059e87c", null ],
+    [ "GetTextureResourceViewAddress", "classmage_1_1_texture.html#a322ee2751dbd9ccfb245c6d481dfc803", null ],
     [ "operator=", "classmage_1_1_texture.html#a0b73b4df98d729c8f60e58b0ca065636", null ],
     [ "operator=", "classmage_1_1_texture.html#a765e9cf3bddedbe2795dea0fe57245ff", null ],
     [ "m_device", "classmage_1_1_texture.html#ad5409f37b321649bc1a12bcee8eb661b", null ],

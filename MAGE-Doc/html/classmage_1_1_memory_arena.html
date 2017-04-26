@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_memory_arena.html','');}
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_memory_arena-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,9 +117,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a117b74c7bd5dfb28dfdaae6cab253491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e63b11c535dbfefd69d071466be9ce1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a2e63b11c535dbfefd69d071466be9ce1">Alloc</a> (size_t size)</td></tr>
 <tr class="separator:a2e63b11c535dbfefd69d071466be9ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab249fe48cdf7c46f625050fe9583603a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab249fe48cdf7c46f625050fe9583603a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ab249fe48cdf7c46f625050fe9583603a">Alloc</a> (size_t count=1, bool initialization=true)</td></tr>
-<tr class="separator:ab249fe48cdf7c46f625050fe9583603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6797843db400848170d0b448a8a7e3b5"><td class="memTemplParams" colspan="2">template&lt;typename DataT &gt; </td></tr>
+<tr class="memitem:a6797843db400848170d0b448a8a7e3b5"><td class="memTemplItemLeft" align="right" valign="top">DataT *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a6797843db400848170d0b448a8a7e3b5">Alloc</a> (size_t count=1, bool initialization=true)</td></tr>
+<tr class="separator:a6797843db400848170d0b448a8a7e3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a6026a114bb2ecc405dd5ebf54e4c12d5"><td class="memItemLeft" align="right" valign="top">typedef pair&lt; size_t, char *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a></td></tr>
+<tr class="separator:a6026a114bb2ecc405dd5ebf54e4c12d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -126,16 +132,40 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a18177c245b045c5536330ffed284ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880d07eb372ce1c8b907947fcbdfc59c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a880d07eb372ce1c8b907947fcbdfc59c">m_current_block_pos</a></td></tr>
 <tr class="separator:a880d07eb372ce1c8b907947fcbdfc59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d39233b1e64239baea519a2d073b04"><td class="memItemLeft" align="right" valign="top">pair&lt; size_t, char *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ab2d39233b1e64239baea519a2d073b04">m_current_block</a></td></tr>
-<tr class="separator:ab2d39233b1e64239baea519a2d073b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc33bafde45afe06d05732572f415d1"><td class="memItemLeft" align="right" valign="top">list&lt; pair&lt; size_t, char *&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a9fc33bafde45afe06d05732572f415d1">m_used_blocks</a></td></tr>
-<tr class="separator:a9fc33bafde45afe06d05732572f415d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c4f1d2b4d5e05bb46fa303d70428c4"><td class="memItemLeft" align="right" valign="top">list&lt; pair&lt; size_t, char *&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a89c4f1d2b4d5e05bb46fa303d70428c4">m_available_blocks</a></td></tr>
-<tr class="separator:a89c4f1d2b4d5e05bb46fa303d70428c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2680b25146c174ac7fd639f1bd0acc7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a2680b25146c174ac7fd639f1bd0acc7c">m_current_block</a></td></tr>
+<tr class="separator:a2680b25146c174ac7fd639f1bd0acc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37891872cff5b86bb1f9c40b4450b904"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a37891872cff5b86bb1f9c40b4450b904">m_used_blocks</a></td></tr>
+<tr class="separator:a37891872cff5b86bb1f9c40b4450b904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c0d5d40bb402ec52bb23b7ccb9fec5"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a74c0d5d40bb402ec52bb23b7ccb9fec5">m_available_blocks</a></td></tr>
+<tr class="separator:a74c0d5d40bb402ec52bb23b7ccb9fec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class of memory arena's. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>A class of memory arenas. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6026a114bb2ecc405dd5ebf54e4c12d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6026a114bb2ecc405dd5ebf54e4c12d5">&sect;&nbsp;</a></span>MemoryBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef pair&lt; size_t, char * &gt; <a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">mage::MemoryArena::MemoryBlock</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A type definition for a memory block. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac90beb8cf8dc42944a0fd6a4a9e8355c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac90beb8cf8dc42944a0fd6a4a9e8355c">&sect;&nbsp;</a></span>MemoryArena() <span class="overload">[1/3]</span></h2>
 
@@ -195,7 +225,7 @@ Private Attributes</h2></td></tr>
 <p>Constructs a memory arena from the given memory arena.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>A reference to the memory arena to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -225,10 +255,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a memory arena from the given memory arena.</p>
+<p>Constructs a memory arena by moving the given memory arena.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>A reference to the memory arena to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -249,7 +279,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destructs the given memory arena. </p>
+<p>Destructs this memory arena. </p>
 
 </div>
 </div>
@@ -282,16 +312,16 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="ab249fe48cdf7c46f625050fe9583603a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab249fe48cdf7c46f625050fe9583603a">&sect;&nbsp;</a></span>Alloc() <span class="overload">[2/2]</span></h2>
+<a id="a6797843db400848170d0b448a8a7e3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6797843db400848170d0b448a8a7e3b5">&sect;&nbsp;</a></span>Alloc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename DataT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T* mage::MemoryArena::Alloc </td>
+          <td class="memname">DataT* mage::MemoryArena::Alloc </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>count</em> = <code>1</code>, </td>
@@ -312,13 +342,13 @@ template&lt;typename T &gt; </div>
 <p>Allocates a block of memory.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of objects to allocate in memory. </td></tr>
+    <tr><td class="paramname">DataT</td><td>The type of objects to allocate in memory. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of objects of type <code>T</code> to allocate in memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of objects of type <code>DataT</code> to allocate in memory. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">initialization</td><td>Flag indicating whether the objects need to be initialized (i.e. the constructor needs to be called). </td></tr>
   </table>
   </dd>
@@ -432,10 +462,11 @@ A pointer to the memory block that was allocated. </dd></dl>
 <p>Copies the given memory arena to this memory arena.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>A reference to the memory arena to copy. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given memory arena (i.e. this memory arena). </dd></dl>
 
 </div>
 </div>
@@ -462,13 +493,14 @@ A pointer to the memory block that was allocated. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the given memory arena to this memory arena.</p>
+<p>Moves the given memory arena to this memory arena.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>A reference to the memory arena to move. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved memory arena (i.e. this memory arena). </dd></dl>
 
 </div>
 </div>
@@ -491,8 +523,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a89c4f1d2b4d5e05bb46fa303d70428c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89c4f1d2b4d5e05bb46fa303d70428c4">&sect;&nbsp;</a></span>m_available_blocks</h2>
+<a id="a74c0d5d40bb402ec52bb23b7ccb9fec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c0d5d40bb402ec52bb23b7ccb9fec5">&sect;&nbsp;</a></span>m_available_blocks</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +533,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt; pair&lt; size_t, char * &gt; &gt; mage::MemoryArena::m_available_blocks</td>
+          <td class="memname">list&lt; <a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a> &gt; mage::MemoryArena::m_available_blocks</td>
         </tr>
       </table>
   </td>
@@ -510,7 +542,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pointers to the available blocks of this memory arena. </p>
+<p>A collection containing the available blocks of this memory arena. </p>
 
 </div>
 </div>
@@ -537,8 +569,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="ab2d39233b1e64239baea519a2d073b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2d39233b1e64239baea519a2d073b04">&sect;&nbsp;</a></span>m_current_block</h2>
+<a id="a2680b25146c174ac7fd639f1bd0acc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2680b25146c174ac7fd639f1bd0acc7c">&sect;&nbsp;</a></span>m_current_block</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,7 +579,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt; size_t, char * &gt; mage::MemoryArena::m_current_block</td>
+          <td class="memname"><a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a> mage::MemoryArena::m_current_block</td>
         </tr>
       </table>
   </td>
@@ -583,8 +615,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a9fc33bafde45afe06d05732572f415d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fc33bafde45afe06d05732572f415d1">&sect;&nbsp;</a></span>m_used_blocks</h2>
+<a id="a37891872cff5b86bb1f9c40b4450b904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37891872cff5b86bb1f9c40b4450b904">&sect;&nbsp;</a></span>m_used_blocks</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +625,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt; pair&lt; size_t, char * &gt; &gt; mage::MemoryArena::m_used_blocks</td>
+          <td class="memname">list&lt; <a class="el" href="classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5">MemoryBlock</a> &gt; mage::MemoryArena::m_used_blocks</td>
         </tr>
       </table>
   </td>
@@ -602,7 +634,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pointers to the used blocks of this memory arena. </p>
+<p>A collection containing the used blocks of this memory arena. </p>
 
 </div>
 </div>

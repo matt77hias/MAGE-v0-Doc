@@ -6,7 +6,7 @@ var classmage_1_1_v_s_reader =
     [ "~VSReader", "classmage_1_1_v_s_reader.html#adb1dc76d802501476f1af285fe22369d", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#ab7d85956947e6b2a28650498573bc055", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#a2be1e0645e3496f71c2f2b7fcf98ba2a", null ],
-    [ "ReadLine", "classmage_1_1_v_s_reader.html#a63c6f6fa8ddb0f6a001e3969c5b19c1f", null ],
+    [ "ReadLine", "classmage_1_1_v_s_reader.html#a3a3ba09b410e2144ed082db5f1da3113", null ],
     [ "ReadVSBool", "classmage_1_1_v_s_reader.html#a579233b81762c064739a29ba1c140898", null ],
     [ "ReadVSColor", "classmage_1_1_v_s_reader.html#a42bdfc1fcc6f385e0f88820491d53e04", null ],
     [ "ReadVSFloat", "classmage_1_1_v_s_reader.html#a64c525d3d87ed248424e4eba359d9ecf", null ],

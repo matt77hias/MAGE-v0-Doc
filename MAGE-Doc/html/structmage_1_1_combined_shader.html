@@ -104,12 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a14859fb597c07309fd269b56af373c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad05cf0e2c4f0cd7d37ad5be971aefd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_combined_shader.html">CombinedShader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#ad05cf0e2c4f0cd7d37ad5be971aefd1b">operator=</a> (<a class="el" href="structmage_1_1_combined_shader.html">CombinedShader</a> &amp;&amp;shader)=default</td></tr>
 <tr class="separator:ad05cf0e2c4f0cd7d37ad5be971aefd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bdcd586139988dee2891df899de5ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#a4bdcd586139988dee2891df899de5ff2">PrepareShading</a> (const <a class="el" href="classmage_1_1_texture.html">Texture</a> &amp;texture, const XMMATRIX &amp;matrix) const</td></tr>
-<tr class="separator:a4bdcd586139988dee2891df899de5ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb0b2257e3ffe5fd7aade0851c0fb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#acbb0b2257e3ffe5fd7aade0851c0fb95">PrepareShading</a> (ID3D11ShaderResourceView *const *texture, const XMMATRIX &amp;matrix) const</td></tr>
-<tr class="separator:acbb0b2257e3ffe5fd7aade0851c0fb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896024e565638a4f36d83ad30e540e50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#a896024e565638a4f36d83ad30e540e50">PrepareShading</a> (const <a class="el" href="structmage_1_1_material.html">Material</a> &amp;material, const <a class="el" href="classmage_1_1_world.html">World</a> &amp;world, const TransformBuffer &amp;transform_buffer) const</td></tr>
-<tr class="separator:a896024e565638a4f36d83ad30e540e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb9372fd492ab61b9b536ca47ce5176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#a5eb9372fd492ab61b9b536ca47ce5176">PrepareShading</a> (ID3D11Buffer *transform, ID3D11ShaderResourceView *texture) const</td></tr>
+<tr class="separator:a5eb9372fd492ab61b9b536ca47ce5176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c880670df95efb7f26d963e8fefd37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#a87c880670df95efb7f26d963e8fefd37">PrepareShading</a> (ID3D11Buffer *transform, const <a class="el" href="structmage_1_1_material.html">Material</a> &amp;material, const <a class="el" href="structmage_1_1_lighting.html">Lighting</a> &amp;lighting) const</td></tr>
+<tr class="separator:a87c880670df95efb7f26d963e8fefd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -285,8 +283,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4bdcd586139988dee2891df899de5ff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bdcd586139988dee2891df899de5ff2">&sect;&nbsp;</a></span>PrepareShading() <span class="overload">[1/3]</span></h2>
+<a id="a5eb9372fd492ab61b9b536ca47ce5176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb9372fd492ab61b9b536ca47ce5176">&sect;&nbsp;</a></span>PrepareShading() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,14 +292,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void mage::CombinedShader::PrepareShading </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
+          <td class="paramtype">ID3D11Buffer *&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XMMATRIX &amp;&#160;</td>
-          <td class="paramname"><em>matrix</em>&#160;</td>
+          <td class="paramtype">ID3D11ShaderResourceView *&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,8 +311,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acbb0b2257e3ffe5fd7aade0851c0fb95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb0b2257e3ffe5fd7aade0851c0fb95">&sect;&nbsp;</a></span>PrepareShading() <span class="overload">[2/3]</span></h2>
+<a id="a87c880670df95efb7f26d963e8fefd37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c880670df95efb7f26d963e8fefd37">&sect;&nbsp;</a></span>PrepareShading() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,48 +320,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void mage::CombinedShader::PrepareShading </td>
           <td>(</td>
-          <td class="paramtype">ID3D11ShaderResourceView *const *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
+          <td class="paramtype">ID3D11Buffer *&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XMMATRIX &amp;&#160;</td>
-          <td class="paramname"><em>matrix</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a896024e565638a4f36d83ad30e540e50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a896024e565638a4f36d83ad30e540e50">&sect;&nbsp;</a></span>PrepareShading() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mage::CombinedShader::PrepareShading </td>
-          <td>(</td>
           <td class="paramtype">const <a class="el" href="structmage_1_1_material.html">Material</a> &amp;&#160;</td>
           <td class="paramname"><em>material</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_world.html">World</a> &amp;&#160;</td>
-          <td class="paramname"><em>world</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const TransformBuffer &amp;&#160;</td>
-          <td class="paramname"><em>transform_buffer</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_lighting.html">Lighting</a> &amp;&#160;</td>
+          <td class="paramname"><em>lighting</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

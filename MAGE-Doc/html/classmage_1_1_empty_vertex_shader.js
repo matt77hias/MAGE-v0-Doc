@@ -6,5 +6,5 @@ var classmage_1_1_empty_vertex_shader =
     [ "~EmptyVertexShader", "classmage_1_1_empty_vertex_shader.html#a321ef00a2087030b81713e989ab02306", null ],
     [ "operator=", "classmage_1_1_empty_vertex_shader.html#a2683d29127405d51737008637ebde098", null ],
     [ "operator=", "classmage_1_1_empty_vertex_shader.html#a449401b726fc5cd30012a3d8df2e0832", null ],
-    [ "PrepareShading", "classmage_1_1_empty_vertex_shader.html#a93db8bae83473934fb202aa499af586b", null ]
+    [ "PrepareShading", "classmage_1_1_empty_vertex_shader.html#a6b3619814f0d59bcf4b4edf2dab9a10c", null ]
 ];
