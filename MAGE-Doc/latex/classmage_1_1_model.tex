@@ -4,53 +4,58 @@
 
 {\ttfamily \#include $<$model.\+hpp$>$}
 
-Inheritance diagram for mage\+:\+:Model\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=3.000000cm]{classmage_1_1_model}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classmage_1_1_model_af9f45ed2dcf470f85bbfd144ca9857a7}{$\sim$\+Model} ()
+\hyperlink{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581}{Model} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mesh, size\+\_\+t start\+\_\+index, size\+\_\+t nb\+\_\+indices, const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&material)
+\item 
+\hyperlink{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a}{Model} (const \hyperlink{classmage_1_1_model}{Model} \&model)
+\item 
+\hyperlink{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0}{Model} (\hyperlink{classmage_1_1_model}{Model} \&\&model)=default
+\item 
+virtual \hyperlink{classmage_1_1_model_a802f7bcb3d15d3baab4a8d383d9e9293}{$\sim$\+Model} ()=default
 \item 
 \hyperlink{classmage_1_1_model}{Model} \& \hyperlink{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b}{operator=} (const \hyperlink{classmage_1_1_model}{Model} \&model)=delete
 \item 
 \hyperlink{classmage_1_1_model}{Model} \& \hyperlink{classmage_1_1_model_a084e30d15822bfefa79128f30a57cc02}{operator=} (\hyperlink{classmage_1_1_model}{Model} \&\&model)=delete
 \item 
-virtual \hyperlink{classmage_1_1_model}{Model} $\ast$ \hyperlink{classmage_1_1_model_ae5e9bee52da0db8c7a29920c13ed40ea}{Clone} () const =0
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ \hyperlink{classmage_1_1_model_ac0043eb1766f8a5be05284fbb9c3e912}{Clone} () const
 \item 
-virtual void \hyperlink{classmage_1_1_model_a766c89cdac2e3df748cd73f8ed8bbff5}{Draw} (const \hyperlink{classmage_1_1_world}{World} \&world, const Transform\+Buffer \&transform\+\_\+buffer) const =0
+size\+\_\+t \hyperlink{classmage_1_1_model_af17401dfd3e51f96dc0652a3aa3c4412}{Get\+Start\+Index} () const
 \item 
-size\+\_\+t \hyperlink{classmage_1_1_model_a29ad2496b11ef5af5f179cfe52943cd3}{Get\+Number\+Of\+Sub\+Models} () const
+size\+\_\+t \hyperlink{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956}{Get\+Number\+Of\+Indices} () const
 \item 
-\hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$ \hyperlink{classmage_1_1_model_a1cae9eb62a353445d14b5331e88bdeac}{Get\+Sub\+Model} (const string \&name) const
+const \hyperlink{classmage_1_1_mesh}{Mesh} $\ast$ \hyperlink{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0}{Get\+Mesh} () const
 \item 
-bool \hyperlink{classmage_1_1_model_a319fb9b9d9c673ed9c83325d5bcbdfd7}{Has\+Sub\+Model} (const string \&name) const
+\hyperlink{structmage_1_1_material}{Material} \& \hyperlink{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6}{Get\+Material} ()
 \item 
-void \hyperlink{classmage_1_1_model_abf3f207329b5d4482e515e206e856295}{Add\+Sub\+Model} (\hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$submodel)
+const \hyperlink{structmage_1_1_material}{Material} \& \hyperlink{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756}{Get\+Material} () const
 \item 
-{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_model_ab50233128bb52002a11f3195b846c830}{For\+Each\+Sub\+Model} (ActionT action) const
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
+\hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $\ast$ \hyperlink{classmage_1_1_model_af709f5b1ec136cbab25bda39e20e1662}{Get\+Shaded\+Material} ()
 \item 
-\hyperlink{classmage_1_1_model_adc37cc2030a93cde5da20f9a941c060e}{Model} (const string \&name)
+const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $\ast$ \hyperlink{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0}{Get\+Shaded\+Material} () const
 \item 
-\hyperlink{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a}{Model} (const \hyperlink{classmage_1_1_model}{Model} \&model)
+void \hyperlink{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{Prepare\+Drawing} () const
 \item 
-\hyperlink{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0}{Model} (\hyperlink{classmage_1_1_model}{Model} \&\&model)=default
+void \hyperlink{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9}{Prepare\+Shading} (I\+D3\+D11\+Buffer $\ast$transform, const \hyperlink{structmage_1_1_lighting}{Lighting} \&lighting) const
+\item 
+void \hyperlink{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9}{Draw} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classmage_1_1_model_a2f3c812220367093bdca125e6b6e898a}{Update\+Child\+Transforms} (bool dirty\+\_\+ancestor) override
+virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ \hyperlink{classmage_1_1_model_af90feb622e30e1531983c01372b2df37}{Clone\+Implementation} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ \hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$$>$ \hyperlink{classmage_1_1_model_ab62e74450091e144b7b62d6570ec7af7}{m\+\_\+submodels}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ \hyperlink{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73}{m\+\_\+mesh}
+\item 
+const size\+\_\+t \hyperlink{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{m\+\_\+start\+\_\+index}
+\item 
+const size\+\_\+t \hyperlink{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75}{m\+\_\+nb\+\_\+indices}
+\item 
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $>$ \hyperlink{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122}{m\+\_\+material}
 \end{DoxyCompactItemize}
 
 
@@ -58,87 +63,92 @@ vector$<$ \hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$$>$ \hyperlink{c
 A class of models. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_model_af9f45ed2dcf470f85bbfd144ca9857a7}{}\label{classmage_1_1_model_af9f45ed2dcf470f85bbfd144ca9857a7} 
-\index{mage\+::\+Model@{mage\+::\+Model}!````~Model@{$\sim$\+Model}}
-\index{````~Model@{$\sim$\+Model}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{$\sim$\+Model()}{~Model()}}
-{\footnotesize\ttfamily mage\+::\+Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-\hypertarget{classmage_1_1_model_adc37cc2030a93cde5da20f9a941c060e}{}\label{classmage_1_1_model_adc37cc2030a93cde5da20f9a941c060e} 
+\hypertarget{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581}{}\label{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$}]{mesh,  }\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices,  }\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \hypertarget{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a}{}\label{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model}{Model} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model}{Model} \&}]{model }\end{DoxyParamCaption})}
 
 \hypertarget{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0}{}\label{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model}{Model} \&\&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model}{Model} \&\&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_model_a802f7bcb3d15d3baab4a8d383d9e9293}{}\label{classmage_1_1_model_a802f7bcb3d15d3baab4a8d383d9e9293} 
+\index{mage\+::\+Model@{mage\+::\+Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Model()}{~Model()}}
+{\footnotesize\ttfamily virtual mage\+::\+Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_model_abf3f207329b5d4482e515e206e856295}{}\label{classmage_1_1_model_abf3f207329b5d4482e515e206e856295} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Add\+Sub\+Model@{Add\+Sub\+Model}}
-\index{Add\+Sub\+Model@{Add\+Sub\+Model}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Add\+Sub\+Model()}{AddSubModel()}}
-{\footnotesize\ttfamily void mage\+::\+Model\+::\+Add\+Sub\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$}]{submodel }\end{DoxyParamCaption})}
-
-\hypertarget{classmage_1_1_model_ae5e9bee52da0db8c7a29920c13ed40ea}{}\label{classmage_1_1_model_ae5e9bee52da0db8c7a29920c13ed40ea} 
+\hypertarget{classmage_1_1_model_ac0043eb1766f8a5be05284fbb9c3e912}{}\label{classmage_1_1_model_ac0043eb1766f8a5be05284fbb9c3e912} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_model}{Model}$\ast$ mage\+::\+Model\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ mage\+::\+Model\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\hypertarget{classmage_1_1_model_af90feb622e30e1531983c01372b2df37}{}\label{classmage_1_1_model_af90feb622e30e1531983c01372b2df37} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Clone\+Implementation@{Clone\+Implementation}}
+\index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ mage\+::\+Model\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
 
-
-Reimplemented from \hyperlink{classmage_1_1_world_object_a8793d22cb63b1bd31b1307e5e7094f61}{mage\+::\+World\+Object}.
-
-
-
-Implemented in \hyperlink{classmage_1_1_sub_model_a368bcc2ee819cc29ec0203e314ae91d3}{mage\+::\+Sub\+Model}, and \hyperlink{classmage_1_1_mesh_model_a7130eca9a1dac038c33b838c15138161}{mage\+::\+Mesh\+Model}.
-
-\hypertarget{classmage_1_1_model_a766c89cdac2e3df748cd73f8ed8bbff5}{}\label{classmage_1_1_model_a766c89cdac2e3df748cd73f8ed8bbff5} 
+\hypertarget{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9}{}\label{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual void mage\+::\+Model\+::\+Draw (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world,  }\item[{const Transform\+Buffer \&}]{transform\+\_\+buffer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\hypertarget{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6}{}\label{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Model\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\hypertarget{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756}{}\label{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Model\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Implemented in \hyperlink{classmage_1_1_sub_model_a2fa14949edacbe995749f4b05bdc3cf5}{mage\+::\+Sub\+Model}, and \hyperlink{classmage_1_1_mesh_model_a80ef930e0ce901293106ce4ea1336e26}{mage\+::\+Mesh\+Model}.
+\hypertarget{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0}{}\label{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Mesh@{Get\+Mesh}}
+\index{Get\+Mesh@{Get\+Mesh}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Mesh()}{GetMesh()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_mesh}{Mesh}$\ast$ mage\+::\+Model\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_model_ab50233128bb52002a11f3195b846c830}{}\label{classmage_1_1_model_ab50233128bb52002a11f3195b846c830} 
-\index{mage\+::\+Model@{mage\+::\+Model}!For\+Each\+Sub\+Model@{For\+Each\+Sub\+Model}}
-\index{For\+Each\+Sub\+Model@{For\+Each\+Sub\+Model}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{For\+Each\+Sub\+Model()}{ForEachSubModel()}}
-{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
-void mage\+::\+Model\+::\+For\+Each\+Sub\+Model (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956}{}\label{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}}
+\index{Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Indices()}{GetNumberOfIndices()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Model\+::\+Get\+Number\+Of\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_model_a29ad2496b11ef5af5f179cfe52943cd3}{}\label{classmage_1_1_model_a29ad2496b11ef5af5f179cfe52943cd3} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Number\+Of\+Sub\+Models@{Get\+Number\+Of\+Sub\+Models}}
-\index{Get\+Number\+Of\+Sub\+Models@{Get\+Number\+Of\+Sub\+Models}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Get\+Number\+Of\+Sub\+Models()}{GetNumberOfSubModels()}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+Model\+::\+Get\+Number\+Of\+Sub\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_model_af709f5b1ec136cbab25bda39e20e1662}{}\label{classmage_1_1_model_af709f5b1ec136cbab25bda39e20e1662} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shaded\+Material@{Get\+Shaded\+Material}}
+\index{Get\+Shaded\+Material@{Get\+Shaded\+Material}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Shaded\+Material()}{GetShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}$\ast$ mage\+::\+Model\+::\+Get\+Shaded\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_model_a1cae9eb62a353445d14b5331e88bdeac}{}\label{classmage_1_1_model_a1cae9eb62a353445d14b5331e88bdeac} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Sub\+Model@{Get\+Sub\+Model}}
-\index{Get\+Sub\+Model@{Get\+Sub\+Model}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Get\+Sub\+Model()}{GetSubModel()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$ mage\+::\+Model\+::\+Get\+Sub\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0}{}\label{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shaded\+Material@{Get\+Shaded\+Material}}
+\index{Get\+Shaded\+Material@{Get\+Shaded\+Material}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Shaded\+Material()}{GetShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}$\ast$ mage\+::\+Model\+::\+Get\+Shaded\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_model_a319fb9b9d9c673ed9c83325d5bcbdfd7}{}\label{classmage_1_1_model_a319fb9b9d9c673ed9c83325d5bcbdfd7} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Has\+Sub\+Model@{Has\+Sub\+Model}}
-\index{Has\+Sub\+Model@{Has\+Sub\+Model}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Has\+Sub\+Model()}{HasSubModel()}}
-{\footnotesize\ttfamily bool mage\+::\+Model\+::\+Has\+Sub\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_model_af17401dfd3e51f96dc0652a3aa3c4412}{}\label{classmage_1_1_model_af17401dfd3e51f96dc0652a3aa3c4412} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Start\+Index@{Get\+Start\+Index}}
+\index{Get\+Start\+Index@{Get\+Start\+Index}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Start\+Index()}{GetStartIndex()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Model\+::\+Get\+Start\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \hypertarget{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b}{}\label{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b} 
 \index{mage\+::\+Model@{mage\+::\+Model}!operator=@{operator=}}
@@ -152,22 +162,42 @@ void mage\+::\+Model\+::\+For\+Each\+Sub\+Model (\begin{DoxyParamCaption}\item[{
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_model}{Model}\& mage\+::\+Model\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model}{Model} \&\&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_model_a2f3c812220367093bdca125e6b6e898a}{}\label{classmage_1_1_model_a2f3c812220367093bdca125e6b6e898a} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Update\+Child\+Transforms@{Update\+Child\+Transforms}}
-\index{Update\+Child\+Transforms@{Update\+Child\+Transforms}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Update\+Child\+Transforms()}{UpdateChildTransforms()}}
-{\footnotesize\ttfamily void mage\+::\+Model\+::\+Update\+Child\+Transforms (\begin{DoxyParamCaption}\item[{bool}]{dirty\+\_\+ancestor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+\hypertarget{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{}\label{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Prepare\+Drawing@{Prepare\+Drawing}}
+\index{Prepare\+Drawing@{Prepare\+Drawing}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Prepare\+Drawing()}{PrepareDrawing()}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Prepare\+Drawing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-
-
-Reimplemented from \hyperlink{classmage_1_1_world_object_ab384751f7c14c931e8606f927825b6c8}{mage\+::\+World\+Object}.
+\hypertarget{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9}{}\label{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Prepare\+Shading@{Prepare\+Shading}}
+\index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{transform,  }\item[{const \hyperlink{structmage_1_1_lighting}{Lighting} \&}]{lighting }\end{DoxyParamCaption}) const}
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_model_ab62e74450091e144b7b62d6570ec7af7}{}\label{classmage_1_1_model_ab62e74450091e144b7b62d6570ec7af7} 
-\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+submodels@{m\+\_\+submodels}}
-\index{m\+\_\+submodels@{m\+\_\+submodels}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{m\+\_\+submodels}{m\_submodels}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{classmage_1_1_sub_model}{Sub\+Model} $\ast$ $>$ mage\+::\+Model\+::m\+\_\+submodels\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122}{}\label{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+material@{m\+\_\+material}}
+\index{m\+\_\+material@{m\+\_\+material}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+material}{m\_material}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $>$ mage\+::\+Model\+::m\+\_\+material\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73}{}\label{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+mesh@{m\+\_\+mesh}}
+\index{m\+\_\+mesh@{m\+\_\+mesh}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+mesh}{m\_mesh}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mage\+::\+Model\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75}{}\label{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}}
+\index{m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+indices}{m\_nb\_indices}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Model\+::m\+\_\+nb\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{}\label{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}}
+\index{m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+start\+\_\+index}{m\_start\_index}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Model\+::m\+\_\+start\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
 

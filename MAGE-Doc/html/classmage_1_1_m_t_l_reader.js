@@ -6,7 +6,7 @@ var classmage_1_1_m_t_l_reader =
     [ "~MTLReader", "classmage_1_1_m_t_l_reader.html#af07011b505c88680a8381c00cb512242", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#ae239ac085326919918a418edabcafeae", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#aa777389ff4a3cd2f1df2cbf5c6da708e", null ],
-    [ "ReadLine", "classmage_1_1_m_t_l_reader.html#a884a333063f7682f4238bdebf340d0a3", null ],
+    [ "ReadLine", "classmage_1_1_m_t_l_reader.html#ac3981549364be195f96b32cfafc8b147", null ],
     [ "ReadMTLAmbientReflectivity", "classmage_1_1_m_t_l_reader.html#a7137e998979a79fe258f226bfbda669e", null ],
     [ "ReadMTLAmbientReflectivityTexture", "classmage_1_1_m_t_l_reader.html#ae5fa12979b84a5880bf560b43d495305", null ],
     [ "ReadMTLBumpTexture", "classmage_1_1_m_t_l_reader.html#acf7aacf933f842d3e14af92d161acd5b", null ],

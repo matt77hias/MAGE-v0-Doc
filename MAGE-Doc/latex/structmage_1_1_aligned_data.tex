@@ -17,6 +17,19 @@ static void \hyperlink{structmage_1_1_aligned_data_a3402092ab9bc62fcd9732f797fc4
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataT$>$\newline
+struct mage\+::\+Aligned\+Data$<$ Data\+T $>$}
+
+A struct of aligned data.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em The} & data type. \\
+\hline
+\end{DoxyTemplParams}
+
+
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_aligned_data_a405d74d763ee31a67f9a94a84f722ce7}{}\label{structmage_1_1_aligned_data_a405d74d763ee31a67f9a94a84f722ce7} 
 \index{mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}!operator delete@{operator delete}}
@@ -25,6 +38,13 @@ static void \hyperlink{structmage_1_1_aligned_data_a3402092ab9bc62fcd9732f797fc4
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
 static void \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ DataT $>$\+::operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Deallocates the memory block pointed by {\itshape ptr} (if not nullptr), releasing the storage space previously allocated to it by a call to operator new and rendering that pointer location invalid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A pointer to the memory block that was allocated. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_aligned_data_a3402092ab9bc62fcd9732f797fc44570}{}\label{structmage_1_1_aligned_data_a3402092ab9bc62fcd9732f797fc44570} 
 \index{mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}!operator delete\mbox{[}\mbox{]}@{operator delete[]}}
 \index{operator delete\mbox{[}\mbox{]}@{operator delete[]}!mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}}
@@ -32,6 +52,13 @@ static void \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ 
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
 static void \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ DataT $>$\+::operator delete\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Deallocates the memory block pointed to by {\itshape ptr} (if not nullptr), releasing the storage space previously allocated to it by a call to operator new\mbox{[}\mbox{]} and rendering that pointer location invalid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A pointer to the memory block that was allocated. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_aligned_data_a0ddb884f1857519ceaf10d8980ff896b}{}\label{structmage_1_1_aligned_data_a0ddb884f1857519ceaf10d8980ff896b} 
 \index{mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}!operator new@{operator new}}
 \index{operator new@{operator new}!mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}}
@@ -39,6 +66,21 @@ static void \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ 
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
 static void$\ast$ \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ DataT $>$\+::operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Allocates {\itshape size} bytes of storage, suitably aligned to represent any object of that size, and returns a non-\/null pointer to the first byte of this block.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. The pointer is a multiple of the given alignment. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_aligned_data_a139865ffc435aebff7703d68d8111f24}{}\label{structmage_1_1_aligned_data_a139865ffc435aebff7703d68d8111f24} 
 \index{mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}!operator new\mbox{[}\mbox{]}@{operator new[]}}
 \index{operator new\mbox{[}\mbox{]}@{operator new[]}!mage\+::\+Aligned\+Data@{mage\+::\+Aligned\+Data}}
@@ -46,3 +88,18 @@ static void$\ast$ \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Dat
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
 static void$\ast$ \hyperlink{structmage_1_1_aligned_data}{mage\+::\+Aligned\+Data}$<$ DataT $>$\+::operator new\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Allocates {\itshape size} bytes of storage, suitably aligned to represent any object of that size, and returns a non-\/null pointer to the first byte of this block.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. The pointer is a multiple of the given alignment. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}

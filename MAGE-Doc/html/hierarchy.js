@@ -27,8 +27,16 @@ var hierarchy =
     ] ],
     [ "mage::BinaryReader", "classmage_1_1_binary_reader.html", null ],
     [ "mage::BS", "structmage_1_1_b_s.html", null ],
+    [ "mage::Camera", "classmage_1_1_camera.html", [
+      [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
+      [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
+    ] ],
     [ "mage::CombinedShader", "structmage_1_1_combined_shader.html", null ],
     [ "mage::ConditionVariable", "classmage_1_1_condition_variable.html", null ],
+    [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< LightDataBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< MaterialBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< TransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
     [ "mage::CPUTimer", "classmage_1_1_c_p_u_timer.html", null ],
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
@@ -43,6 +51,15 @@ var hierarchy =
     [ "mage::GlyphLessThan", "structmage_1_1_glyph_less_than.html", null ],
     [ "mage::HandleCloser", "structmage_1_1_handle_closer.html", null ],
     [ "mage::IdGenerator", "structmage_1_1_id_generator.html", null ],
+    [ "mage::InputManager", "classmage_1_1_input_manager.html", null ],
+    [ "mage::Keyboard", "classmage_1_1_keyboard.html", null ],
+    [ "mage::Light", "classmage_1_1_light.html", [
+      [ "mage::AmbientLight", "classmage_1_1_ambient_light.html", null ],
+      [ "mage::DirectionalLight", "classmage_1_1_directional_light.html", null ],
+      [ "mage::OmniLight", "classmage_1_1_omni_light.html", null ],
+      [ "mage::SpotLight", "classmage_1_1_spot_light.html", null ]
+    ] ],
+    [ "mage::Lighting", "structmage_1_1_lighting.html", null ],
     [ "mage::LineReader", "classmage_1_1_line_reader.html", [
       [ "mage::MDLReader< VertexT >", "classmage_1_1_m_d_l_reader.html", null ],
       [ "mage::MTLReader", "classmage_1_1_m_t_l_reader.html", null ],
@@ -51,13 +68,10 @@ var hierarchy =
     ] ],
     [ "mage::Loadable", "classmage_1_1_loadable.html", [
       [ "mage::Engine", "classmage_1_1_engine.html", null ],
-      [ "mage::InputManager", "classmage_1_1_input_manager.html", null ],
-      [ "mage::Keyboard", "classmage_1_1_keyboard.html", null ],
-      [ "mage::MainWindow", "classmage_1_1_main_window.html", null ],
-      [ "mage::Mouse", "classmage_1_1_mouse.html", null ],
       [ "mage::Renderer", "classmage_1_1_renderer.html", null ]
     ] ],
     [ "mage::LoggingConfiguration", "structmage_1_1_logging_configuration.html", null ],
+    [ "mage::MainWindow", "classmage_1_1_main_window.html", null ],
     [ "mage::Material", "structmage_1_1_material.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
     [ "mage::Mesh", "classmage_1_1_mesh.html", [
@@ -65,8 +79,10 @@ var hierarchy =
       [ "mage::StaticMesh", "classmage_1_1_static_mesh.html", null ]
     ] ],
     [ "mage::MeshDescriptor< VertexT >", "structmage_1_1_mesh_descriptor.html", null ],
+    [ "mage::Model", "classmage_1_1_model.html", null ],
     [ "mage::ModelOutput< VertexT >", "structmage_1_1_model_output.html", null ],
     [ "mage::ModelPart", "structmage_1_1_model_part.html", null ],
+    [ "mage::Mouse", "classmage_1_1_mouse.html", null ],
     [ "mage::Mutex", "classmage_1_1_mutex.html", null ],
     [ "mage::MutexLock", "structmage_1_1_mutex_lock.html", null ],
     [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
@@ -109,7 +125,13 @@ var hierarchy =
       ] ]
     ] ],
     [ "mage::SpriteTextItem", "structmage_1_1_sprite_text_item.html", null ],
+    [ "mage::StructuredBuffer< DataT >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
+    [ "mage::TransformNode", "classmage_1_1_transform_node.html", [
+      [ "mage::SceneNode< SceneObjectT >", "classmage_1_1_scene_node.html", null ]
+    ] ],
     [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::VertexPosition", "structmage_1_1_vertex_position.html", null ],
     [ "mage::VertexPositionColor", "structmage_1_1_vertex_position_color.html", null ],
@@ -122,21 +144,6 @@ var hierarchy =
     [ "mage::VertexPositionTextureTexture", "structmage_1_1_vertex_position_texture_texture.html", null ],
     [ "mage::ViewFrustum", "classmage_1_1_view_frustum.html", null ],
     [ "mage::World", "classmage_1_1_world.html", null ],
-    [ "mage::WorldObject", "classmage_1_1_world_object.html", [
-      [ "mage::Camera", "classmage_1_1_camera.html", [
-        [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
-        [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
-      ] ],
-      [ "mage::Light", "classmage_1_1_light.html", [
-        [ "mage::DirectionalLight", "classmage_1_1_directional_light.html", null ],
-        [ "mage::OmniLight", "classmage_1_1_omni_light.html", null ],
-        [ "mage::SpotLight", "classmage_1_1_spot_light.html", null ]
-      ] ],
-      [ "mage::Model", "classmage_1_1_model.html", [
-        [ "mage::MeshModel", "classmage_1_1_mesh_model.html", null ],
-        [ "mage::SubModel", "classmage_1_1_sub_model.html", null ]
-      ] ]
-    ] ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],
       [ "mage::VSWriter", "classmage_1_1_v_s_writer.html", null ]
@@ -153,5 +160,8 @@ var hierarchy =
     ] ],
     [ "XMFLOAT4", null, [
       [ "mage::Color", "structmage_1_1_color.html", null ]
+    ] ],
+    [ "exception", null, [
+      [ "mage::FormattedException", "structmage_1_1_formatted_exception.html", null ]
     ] ]
 ];

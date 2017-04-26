@@ -6,6 +6,5 @@ var classmage_1_1_lambertian_vertex_shader =
     [ "~LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html#a55636fd3817b97b6529690d6e3e5cd46", null ],
     [ "operator=", "classmage_1_1_lambertian_vertex_shader.html#a974b43346ab5d8081d9101f715e7670d", null ],
     [ "operator=", "classmage_1_1_lambertian_vertex_shader.html#ae0a53e712856923403c1f7542941df6e", null ],
-    [ "PrepareShading", "classmage_1_1_lambertian_vertex_shader.html#a62e3902fb931cddefd94e117e20d190b", null ],
-    [ "m_cb_transform", "classmage_1_1_lambertian_vertex_shader.html#aae0f2411821315d89eeb982e6c30c22e", null ]
+    [ "PrepareShading", "classmage_1_1_lambertian_vertex_shader.html#a51c0fcfc36cdf87e4e55c94529c0081a", null ]
 ];
