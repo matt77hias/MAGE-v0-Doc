@@ -28,11 +28,11 @@ virtual \hyperlink{classmage_1_1_sprite_font_reader_a296715f88672f810a6e4b74f748
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_font_reader_a6bc9fa71b4c9d884ba939d99f4c9c0d7}{Read} () override
+virtual void \hyperlink{classmage_1_1_sprite_font_reader_af380ae127285a88ae41e35a9067db412}{Read} () override
 \item 
 bool \hyperlink{classmage_1_1_sprite_font_reader_aa6dd3fc28e531d6db6ecda6ce3535d4c}{Is\+Header\+Valid} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_font_reader_a0ab2521309a82f1160e4839b8ca6e400}{Read\+Texture} ()
+void \hyperlink{classmage_1_1_sprite_font_reader_a12877a168b5dc2a95ec307a37d20ddca}{Read\+Texture} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -41,10 +41,13 @@ I\+D3\+D11\+Device2 $\ast$const \hyperlink{classmage_1_1_sprite_font_reader_aa77
 \item 
 \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \& \hyperlink{classmage_1_1_sprite_font_reader_a3df62ce71f85745c493b142c726261b3}{m\+\_\+output}
 \item 
-const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \& \hyperlink{classmage_1_1_sprite_font_reader_a6951665c0a5fda28ea6784945565cb6e}{m\+\_\+desc}
+const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \hyperlink{classmage_1_1_sprite_font_reader_a577e1a05126b5b8d7bbdaa3e83bf32bf}{m\+\_\+desc}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+A class of readers for reading S\+P\+R\+I\+T\+E\+F\+O\+NT files. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_sprite_font_reader_ab257bc3c1f787182c14da56545ff6d10}{}\label{classmage_1_1_sprite_font_reader_ab257bc3c1f787182c14da56545ff6d10} 
@@ -53,25 +56,53 @@ const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor
 \subsubsection{\texorpdfstring{Sprite\+Font\+Reader()}{SpriteFontReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Font\+Reader\+::\+Sprite\+Font\+Reader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a S\+P\+R\+I\+T\+E\+F\+O\+NT reader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt out}  & {\em output} & A reference to the sprite font output. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the sprite font descriptor. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_font_reader_a81f2b8ceab31ea5006d2bef498a03bbc}{}\label{classmage_1_1_sprite_font_reader_a81f2b8ceab31ea5006d2bef498a03bbc} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!Sprite\+Font\+Reader@{Sprite\+Font\+Reader}}
 \index{Sprite\+Font\+Reader@{Sprite\+Font\+Reader}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{Sprite\+Font\+Reader()}{SpriteFontReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Font\+Reader\+::\+Sprite\+Font\+Reader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a S\+P\+R\+I\+T\+E\+F\+O\+NT reader from the given S\+P\+R\+I\+T\+E\+F\+O\+NT reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the S\+P\+R\+I\+T\+E\+F\+O\+NT reader to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_font_reader_a2130816e03384c99af146a21795ac5e8}{}\label{classmage_1_1_sprite_font_reader_a2130816e03384c99af146a21795ac5e8} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!Sprite\+Font\+Reader@{Sprite\+Font\+Reader}}
 \index{Sprite\+Font\+Reader@{Sprite\+Font\+Reader}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{Sprite\+Font\+Reader()}{SpriteFontReader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Font\+Reader\+::\+Sprite\+Font\+Reader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a S\+P\+R\+I\+T\+E\+F\+O\+NT reader by moving the given S\+P\+R\+I\+T\+E\+F\+O\+NT reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the S\+P\+R\+I\+T\+E\+F\+O\+NT reader to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_font_reader_a296715f88672f810a6e4b74f74840c53}{}\label{classmage_1_1_sprite_font_reader_a296715f88672f810a6e4b74f74840c53} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!````~Sprite\+Font\+Reader@{$\sim$\+Sprite\+Font\+Reader}}
 \index{````~Sprite\+Font\+Reader@{$\sim$\+Sprite\+Font\+Reader}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{$\sim$\+Sprite\+Font\+Reader()}{~SpriteFontReader()}}
 {\footnotesize\ttfamily virtual mage\+::\+Sprite\+Font\+Reader\+::$\sim$\+Sprite\+Font\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this S\+P\+R\+I\+T\+E\+F\+O\+NT reader. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_sprite_font_reader_aa6dd3fc28e531d6db6ecda6ce3535d4c}{}\label{classmage_1_1_sprite_font_reader_aa6dd3fc28e531d6db6ecda6ce3535d4c} 
@@ -80,52 +111,92 @@ const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor
 \subsubsection{\texorpdfstring{Is\+Header\+Valid()}{IsHeaderValid()}}
 {\footnotesize\ttfamily bool mage\+::\+Sprite\+Font\+Reader\+::\+Is\+Header\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Checks whether the header of the file is valid.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the header of the file is valid. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_font_reader_a4de55b4bebfabb5f1c32078864baef11}{}\label{classmage_1_1_sprite_font_reader_a4de55b4bebfabb5f1c32078864baef11} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader}\& mage\+::\+Sprite\+Font\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given S\+P\+R\+I\+T\+E\+F\+O\+NT reader to this S\+P\+R\+I\+T\+E\+F\+O\+NT reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a S\+P\+R\+I\+T\+E\+F\+O\+NT reader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given S\+P\+R\+I\+T\+E\+F\+O\+NT reader (i.\+e. this S\+P\+R\+I\+T\+E\+F\+O\+NT reader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_font_reader_aae3c6305ea97146bd85b2d93a037d47d}{}\label{classmage_1_1_sprite_font_reader_aae3c6305ea97146bd85b2d93a037d47d} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader}\& mage\+::\+Sprite\+Font\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_sprite_font_reader_a6bc9fa71b4c9d884ba939d99f4c9c0d7}{}\label{classmage_1_1_sprite_font_reader_a6bc9fa71b4c9d884ba939d99f4c9c0d7} 
+Moves the given S\+P\+R\+I\+T\+E\+F\+O\+NT reader to this S\+P\+R\+I\+T\+E\+F\+O\+NT reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a S\+P\+R\+I\+T\+E\+F\+O\+NT reader to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved S\+P\+R\+I\+T\+E\+F\+O\+NT reader (i.\+e. this S\+P\+R\+I\+T\+E\+F\+O\+NT reader). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_font_reader_af380ae127285a88ae41e35a9067db412}{}\label{classmage_1_1_sprite_font_reader_af380ae127285a88ae41e35a9067db412} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!Read@{Read}}
 \index{Read@{Read}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Font\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Font\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Starts reading.
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read to the given file. \\
+\hline
+\end{DoxyExceptions}
 
-Implements \hyperlink{classmage_1_1_big_endian_binary_reader_a723f28280c4e1343f42f41eea2b97015}{mage\+::\+Big\+Endian\+Binary\+Reader}.
 
-\hypertarget{classmage_1_1_sprite_font_reader_a0ab2521309a82f1160e4839b8ca6e400}{}\label{classmage_1_1_sprite_font_reader_a0ab2521309a82f1160e4839b8ca6e400} 
+Implements \hyperlink{classmage_1_1_big_endian_binary_reader_af072965dea0319d6366b21cc6562bbf9}{mage\+::\+Big\+Endian\+Binary\+Reader}.
+
+\hypertarget{classmage_1_1_sprite_font_reader_a12877a168b5dc2a95ec307a37d20ddca}{}\label{classmage_1_1_sprite_font_reader_a12877a168b5dc2a95ec307a37d20ddca} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!Read\+Texture@{Read\+Texture}}
 \index{Read\+Texture@{Read\+Texture}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{Read\+Texture()}{ReadTexture()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Font\+Reader\+::\+Read\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Font\+Reader\+::\+Read\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Reads a texture.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a texture. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_sprite_font_reader_a6951665c0a5fda28ea6784945565cb6e}{}\label{classmage_1_1_sprite_font_reader_a6951665c0a5fda28ea6784945565cb6e} 
+\hypertarget{classmage_1_1_sprite_font_reader_a577e1a05126b5b8d7bbdaa3e83bf32bf}{}\label{classmage_1_1_sprite_font_reader_a577e1a05126b5b8d7bbdaa3e83bf32bf} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!m\+\_\+desc@{m\+\_\+desc}}
 \index{m\+\_\+desc@{m\+\_\+desc}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+desc}{m\_desc}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor}\& mage\+::\+Sprite\+Font\+Reader\+::m\+\_\+desc\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} mage\+::\+Sprite\+Font\+Reader\+::m\+\_\+desc\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_sprite_font_reader_aa77ee2a35b9ad15d5c1abfc6ffe5810c}{}\label{classmage_1_1_sprite_font_reader_aa77ee2a35b9ad15d5c1abfc6ffe5810c} 
+The sprite font descriptor of this S\+P\+R\+I\+T\+E\+F\+O\+NT reader. \hypertarget{classmage_1_1_sprite_font_reader_aa77ee2a35b9ad15d5c1abfc6ffe5810c}{}\label{classmage_1_1_sprite_font_reader_aa77ee2a35b9ad15d5c1abfc6ffe5810c} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!m\+\_\+device@{m\+\_\+device}}
 \index{m\+\_\+device@{m\+\_\+device}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ const mage\+::\+Sprite\+Font\+Reader\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_sprite_font_reader_a3df62ce71f85745c493b142c726261b3}{}\label{classmage_1_1_sprite_font_reader_a3df62ce71f85745c493b142c726261b3} 
+A pointer to the rendering device of this S\+P\+R\+I\+T\+E\+F\+O\+NT reader. \hypertarget{classmage_1_1_sprite_font_reader_a3df62ce71f85745c493b142c726261b3}{}\label{classmage_1_1_sprite_font_reader_a3df62ce71f85745c493b142c726261b3} 
 \index{mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}!m\+\_\+output@{m\+\_\+output}}
 \index{m\+\_\+output@{m\+\_\+output}!mage\+::\+Sprite\+Font\+Reader@{mage\+::\+Sprite\+Font\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+output}{m\_output}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output}\& mage\+::\+Sprite\+Font\+Reader\+::m\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
 
+A reference to the sprite font output of this S\+P\+R\+I\+T\+E\+F\+O\+NT reader. 

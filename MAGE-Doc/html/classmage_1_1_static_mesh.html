@@ -143,11 +143,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a09a11f77f7bc04e939fad384d375b35f"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
-<tr class="memitem:a09a11f77f7bc04e939fad384d375b35f"><td class="memTemplItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_static_mesh.html#a09a11f77f7bc04e939fad384d375b35f">SetupVertexBuffer</a> (const VertexT *vertices, size_t nb_vertices)</td></tr>
-<tr class="separator:a09a11f77f7bc04e939fad384d375b35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e05985ef11903a1eb9d8ac802b2ec3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_static_mesh.html#a14e05985ef11903a1eb9d8ac802b2ec3">SetupIndexBuffer</a> (const uint32_t *indices, size_t nb_indices)</td></tr>
-<tr class="separator:a14e05985ef11903a1eb9d8ac802b2ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d1b876d80987abec5f1e4db3edc9a2"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
+<tr class="memitem:a66d1b876d80987abec5f1e4db3edc9a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_static_mesh.html#a66d1b876d80987abec5f1e4db3edc9a2">SetupVertexBuffer</a> (const VertexT *vertices, size_t nb_vertices)</td></tr>
+<tr class="separator:a66d1b876d80987abec5f1e4db3edc9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebe0c6014932681b63109bc75754f87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_static_mesh.html#acebe0c6014932681b63109bc75754f87">SetupIndexBuffer</a> (const uint32_t *indices, size_t nb_indices)</td></tr>
+<tr class="separator:acebe0c6014932681b63109bc75754f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -235,9 +235,17 @@ template&lt;typename VertexT &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Constructs a static mesh.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>vertices</em> may not be equal to <code>nullptr</code> </dd>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
 <dd>
-<em>indices</em> may not be equal to <code>nullptr</code> </dd></dl>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>vertices</em> points to an array of at least <em>nb_vertices</em> vertices. </dd>
+<dd>
+<em>nb_vertices</em> must be greater than zero. </dd>
+<dd>
+<em>indices</em> points to an array of at least <em>nb_indices</em> indices. </dd>
+<dd>
+<em>nb_indices</em> must be greater than zero. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">VertexT</td><td>The vertex type. </td></tr>
@@ -306,7 +314,11 @@ template&lt;typename VertexT &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Constructs a static mesh.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>The number of vertices must be greater than zero. </dd>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The number of vertices must be greater than zero. </dd>
 <dd>
 The number of indices must be greater than zero. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -321,6 +333,13 @@ The number of indices must be greater than zero. </dd></dl>
     <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A reference to a vector of vertices. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">indices</td><td>A reference to a vector of indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the vertex buffer of the static mesh. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the index buffer of the static mesh. </td></tr>
   </table>
   </dd>
 </dl>
@@ -353,7 +372,7 @@ The number of indices must be greater than zero. </dd></dl>
 <p>Constructs a static mesh from the given static mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -383,10 +402,10 @@ The number of indices must be greater than zero. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a static mesh from the given static mesh.</p>
+<p>Constructs a static mesh by moving the given static mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -446,7 +465,7 @@ The number of indices must be greater than zero. </dd></dl>
 <p>Copies the given static mesh to this static mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -477,19 +496,19 @@ The number of indices must be greater than zero. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the given static mesh to this static mesh.</p>
+<p>Moves the given static mesh to this static mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">static_mesh</td><td>A reference to the static mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given static mesh (i.e. this static mesh). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved static mesh (i.e. this static mesh). </dd></dl>
 
 </div>
 </div>
-<a id="a14e05985ef11903a1eb9d8ac802b2ec3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e05985ef11903a1eb9d8ac802b2ec3">&sect;&nbsp;</a></span>SetupIndexBuffer()</h2>
+<a id="acebe0c6014932681b63109bc75754f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebe0c6014932681b63109bc75754f87">&sect;&nbsp;</a></span>SetupIndexBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +517,7 @@ The number of indices must be greater than zero. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::StaticMesh::SetupIndexBuffer </td>
+          <td class="memname">void mage::StaticMesh::SetupIndexBuffer </td>
           <td>(</td>
           <td class="paramtype">const uint32_t *&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
@@ -522,7 +541,9 @@ The number of indices must be greater than zero. </dd></dl>
 </table>
 </div><div class="memdoc">
 <p>Sets up the index buffer of this static mesh.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>indices</em> may not be equal to <code>nullptr</code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><em>indices</em> points to an array of at least <em>nb_indices</em> indices. </dd>
+<dd>
+<em>nb_indices</em> must be greater than zero. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">indices</td><td>A pointer to an array of indices. </td></tr>
@@ -530,11 +551,17 @@ The number of indices must be greater than zero. </dd></dl>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the index buffer of this static mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a09a11f77f7bc04e939fad384d375b35f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a11f77f7bc04e939fad384d375b35f">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
+<a id="a66d1b876d80987abec5f1e4db3edc9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d1b876d80987abec5f1e4db3edc9a2">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -545,7 +572,7 @@ template&lt;typename VertexT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::StaticMesh::SetupVertexBuffer </td>
+          <td class="memname">void mage::StaticMesh::SetupVertexBuffer </td>
           <td>(</td>
           <td class="paramtype">const VertexT *&#160;</td>
           <td class="paramname"><em>vertices</em>, </td>
@@ -569,7 +596,9 @@ template&lt;typename VertexT &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Sets up the vertex buffer of this static mesh.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>vertices</em> may not be equal to <code>nullptr</code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><em>vertices</em> points to an array of at least <em>nb_vertices</em> vertices. </dd>
+<dd>
+<em>nb_vertices</em> must be greater than zero. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">VertexT</td><td>The vertex type. </td></tr>
@@ -580,6 +609,12 @@ template&lt;typename VertexT &gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A pointer to an array of vertices. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_vertices</td><td>The number of vertices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the vertex buffer of this static mesh. </td></tr>
   </table>
   </dd>
 </dl>

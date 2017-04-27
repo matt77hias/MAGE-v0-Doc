@@ -23,9 +23,9 @@ Inheritance diagram for mage\+:\+:Perspective\+Camera\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_perspective_camera_a119a77c3f14072040231845e9a894af2}{$\sim$\+Perspective\+Camera} ()=default
 \item 
-\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \& \hyperlink{classmage_1_1_perspective_camera_a3820eb2e840c9b80662bdeb4bfb9c9fd}{operator=} (const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&camera)=delete
+\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \& \hyperlink{classmage_1_1_perspective_camera_a8c0189ff4f12ebe7108450a9a57ac07c}{operator=} (const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&camera)=default
 \item 
-\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \& \hyperlink{classmage_1_1_perspective_camera_ab485760be9f1aa98350d09578e0fa8c4}{operator=} (\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&\&camera)=delete
+\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \& \hyperlink{classmage_1_1_perspective_camera_af2be66beb3029aa644f3f38461b318af}{operator=} (\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&\&camera)=default
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} $>$ \hyperlink{classmage_1_1_perspective_camera_ab660d9ee76631d7758662aa1a163acfe}{Clone} () const
 \item 
@@ -61,7 +61,7 @@ float \hyperlink{classmage_1_1_perspective_camera_abdcf1a0cdd247e0f7e14e70898678
 
 
 \subsection{Detailed Description}
-A class of perspective camera. 
+A class of perspective cameras. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_perspective_camera_a118a233aa484bbff31032703087a5a8c}{}\label{classmage_1_1_perspective_camera_a118a233aa484bbff31032703087a5a8c} 
@@ -110,11 +110,11 @@ Constructs a perspective camera.
 \subsubsection{\texorpdfstring{Perspective\+Camera()}{PerspectiveCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Perspective\+Camera\+::\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Constructs a perspective camera from the given perpsective camera.
+Constructs a perspective camera from the given perspective camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em camera} & A reference to the perspective camera. \\
+\mbox{\tt in}  & {\em camera} & A reference to the perspective camera to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_perspective_camera_a5fe4660f82f2dcd0179d6a6677be74b0}{}\label{classmage_1_1_perspective_camera_a5fe4660f82f2dcd0179d6a6677be74b0} 
@@ -123,11 +123,11 @@ Constructs a perspective camera from the given perpsective camera.
 \subsubsection{\texorpdfstring{Perspective\+Camera()}{PerspectiveCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Perspective\+Camera\+::\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&\&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Constructs a perspective camera from the given perpsective camera.
+Constructs a perspective camera by moving the given perspective camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em camera} & A reference to the perspective camera. \\
+\mbox{\tt in}  & {\em camera} & A reference to the perspective camera to move. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_perspective_camera_a119a77c3f14072040231845e9a894af2}{}\label{classmage_1_1_perspective_camera_a119a77c3f14072040231845e9a894af2} 
@@ -156,6 +156,11 @@ A pointer to the clone of this perspective camera.
 \subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ mage\+::\+Perspective\+Camera\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
+Clones this perspective camera.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this perspective camera. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classmage_1_1_camera_a96c1bee3dc4085c8c7892427518165fc}{mage\+::\+Camera}.
@@ -197,32 +202,38 @@ The view-\/to-\/projection matrix of this perspective camera.
 
 Implements \hyperlink{classmage_1_1_camera_a1f5206864cf18b5548219492556df5d2}{mage\+::\+Camera}.
 
-\hypertarget{classmage_1_1_perspective_camera_a3820eb2e840c9b80662bdeb4bfb9c9fd}{}\label{classmage_1_1_perspective_camera_a3820eb2e840c9b80662bdeb4bfb9c9fd} 
+\hypertarget{classmage_1_1_perspective_camera_a8c0189ff4f12ebe7108450a9a57ac07c}{}\label{classmage_1_1_perspective_camera_a8c0189ff4f12ebe7108450a9a57ac07c} 
 \index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}\& mage\+::\+Perspective\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}\& mage\+::\+Perspective\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Copies the given perspective camera to this perspective camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em camera} & A reference to the perspective camera. \\
+\mbox{\tt in}  & {\em camera} & A reference to the perspective camera to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_perspective_camera_ab485760be9f1aa98350d09578e0fa8c4}{}\label{classmage_1_1_perspective_camera_ab485760be9f1aa98350d09578e0fa8c4} 
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given perspective camera (i.\+e. this perspective camera). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_perspective_camera_af2be66beb3029aa644f3f38461b318af}{}\label{classmage_1_1_perspective_camera_af2be66beb3029aa644f3f38461b318af} 
 \index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}\& mage\+::\+Perspective\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&\&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}\& mage\+::\+Perspective\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&\&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Copies the given perspective camera to this perspective camera.
+Moves the given perspective camera to this perspective camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em camera} & A reference to the perspective camera. \\
+\mbox{\tt in}  & {\em camera} & A reference to the perspective camera to move. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved perspective camera (i.\+e. this perspective camera). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_perspective_camera_afa5b9b8f6d1945fe63e9121359fb39bb}{}\label{classmage_1_1_perspective_camera_afa5b9b8f6d1945fe63e9121359fb39bb} 
 \index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Set\+Aspect\+Ratio@{Set\+Aspect\+Ratio}}
 \index{Set\+Aspect\+Ratio@{Set\+Aspect\+Ratio}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}

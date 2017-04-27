@@ -18,6 +18,6 @@ var searchData=
   ['mshreader',['MSHReader',['../classmage_1_1_m_s_h_reader.html',1,'mage']]],
   ['mshwriter',['MSHWriter',['../classmage_1_1_m_s_h_writer.html',1,'mage']]],
   ['mtlreader',['MTLReader',['../classmage_1_1_m_t_l_reader.html',1,'mage']]],
-  ['mutex',['Mutex',['../classmage_1_1_mutex.html',1,'mage']]],
+  ['mutex',['Mutex',['../structmage_1_1_mutex.html',1,'mage']]],
   ['mutexlock',['MutexLock',['../structmage_1_1_mutex_lock.html',1,'mage']]]
 ];

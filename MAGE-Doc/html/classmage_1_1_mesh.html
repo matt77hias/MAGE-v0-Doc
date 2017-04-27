@@ -245,6 +245,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Constructs a mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
@@ -284,7 +287,7 @@ Private Attributes</h2></td></tr>
 <p>Constructs a mesh from the given mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -314,10 +317,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a mesh from the given mesh.</p>
+<p>Constructs a mesh by moving the given mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,7 +342,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draws this mesh. </p>
+<p>Draws this complete mesh. </p>
 
 </div>
 </div>
@@ -368,7 +371,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draws this mesh.</p>
+<p>Draws a submesh of this mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">start_index</td><td>The start index. </td></tr>
@@ -469,8 +472,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the size of the vertices of this mesh.</p>
-<dl class="section return"><dt>Returns</dt><dd>The vertex size of this static mesh. </dd></dl>
+<p>Returns the size (in bytes) of the vertices of this mesh.</p>
+<dl class="section return"><dt>Returns</dt><dd>The vertex size (in bytes) of this static mesh. </dd></dl>
 
 </div>
 </div>
@@ -500,7 +503,7 @@ Private Attributes</h2></td></tr>
 <p>Copies the given mesh to this mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,14 +534,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the given mesh to this mesh.</p>
+<p>Moves the given mesh to this mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>A reference to the mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given mesh (i.e. this mesh). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved mesh (i.e. this mesh). </dd></dl>
 
 </div>
 </div>
@@ -556,7 +559,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Prepare the drawing of this mesh. </p>
+<p>Prepares the drawing of this mesh.</p>
+<p>The vertex buffer, index buffer and primitive topology of this mesh will be bound to the input-assembler stage. </p>
 
 </div>
 </div>

@@ -10,7 +10,7 @@ var classmage_1_1_keyboard =
     [ "operator=", "classmage_1_1_keyboard.html#a4f381bc90cc6828b4d0313999b544e6e", null ],
     [ "Update", "classmage_1_1_keyboard.html#abb5fd91a304f8bbf8b15ab1a277dafaf", null ],
     [ "m_di", "classmage_1_1_keyboard.html#a627eeef05bae81a60c2c44fd039ff7f8", null ],
-    [ "m_hwindow", "classmage_1_1_keyboard.html#a9b7582de73d3364c4d1162e4abacf385", null ],
+    [ "m_hwindow", "classmage_1_1_keyboard.html#adad9c02695c121898ac578ca25dd5c9a", null ],
     [ "m_key_press_stamp", "classmage_1_1_keyboard.html#a8eb4ce7e4e2395bb27d2ac9236655335", null ],
     [ "m_key_state", "classmage_1_1_keyboard.html#a7499df459499f5addd50507ea1e2358c", null ],
     [ "m_keyboard", "classmage_1_1_keyboard.html#a992b8b8caf0d858163e5e9af04302324", null ],

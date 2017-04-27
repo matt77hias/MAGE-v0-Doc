@@ -114,15 +114,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36b95a1d6ee656db750f9f7c24a0f69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae35ad9e81efe8ed385792854036b4a14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#ae35ad9e81efe8ed385792854036b4a14">operator=</a> (<a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a> &amp;&amp;formatted_exception)=default</td></tr>
 <tr class="separator:ae35ad9e81efe8ed385792854036b4a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9ca8402604df35b702e8d29672a3df"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#aec9ca8402604df35b702e8d29672a3df">what</a> () const  throw ()</td></tr>
-<tr class="separator:aec9ca8402604df35b702e8d29672a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb8b53ee8d8cb73ac200bca84c067b2"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#a8fb8b53ee8d8cb73ac200bca84c067b2">what</a> () const  throw ()</td></tr>
+<tr class="separator:a8fb8b53ee8d8cb73ac200bca84c067b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aadccdcc1db09285dadc6b5a30681e05b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#aadccdcc1db09285dadc6b5a30681e05b">m_text</a> [2048]</td></tr>
 <tr class="separator:aadccdcc1db09285dadc6b5a30681e05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of formatted exceptions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a77b82a969ec33a3aacec74a5adc4ab8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77b82a969ec33a3aacec74a5adc4ab8b">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[1/4]</span></h2>
 
@@ -137,6 +139,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a formatted exception. </p>
 
 </div>
 </div>
@@ -173,6 +176,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a formatted exception.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>format</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -199,6 +210,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a formatted exception from the given formatted exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">formatted_exception</td><td>A reference to a formatted exception to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -225,6 +243,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a formatted exception by moving the given formatted exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">formatted_exception</td><td>A reference to a formatted exception to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -250,6 +275,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this formatted exception. </p>
 
 </div>
 </div>
@@ -277,6 +303,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given formatted exception to this formatted exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">formatted_exception</td><td>A reference to a formatted exception to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given formatted exception (i.e. this formatted exception). </dd></dl>
 
 </div>
 </div>
@@ -303,17 +337,28 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given formatted exception to this formatted exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">formatted_exception</td><td>A reference to a formatted exception to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved formatted exception (i.e. this formatted exception). </dd></dl>
 
 </div>
 </div>
-<a id="aec9ca8402604df35b702e8d29672a3df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec9ca8402604df35b702e8d29672a3df">&sect;&nbsp;</a></span>what()</h2>
+<a id="a8fb8b53ee8d8cb73ac200bca84c067b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb8b53ee8d8cb73ac200bca84c067b2">&sect;&nbsp;</a></span>what()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* mage::FormattedException::what </td>
+          <td class="memname">virtual const char* mage::FormattedException::what </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -325,7 +370,14 @@ Private Attributes</h2></td></tr>
           <td align="right"></td><td>)</td><td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<p>Returns a null-terminated byte string that may be used to identify the exception.</p>
+<dl class="section return"><dt>Returns</dt><dd>A null-terminated byte string that may be used to identify the exception. </dd></dl>
 
 </div>
 </div>
@@ -349,6 +401,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The text buffer of this formatted exception. </p>
 
 </div>
 </div>

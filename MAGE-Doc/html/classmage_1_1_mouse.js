@@ -15,7 +15,7 @@ var classmage_1_1_mouse =
     [ "operator=", "classmage_1_1_mouse.html#a42d80f535a12356762a506438036dd71", null ],
     [ "Update", "classmage_1_1_mouse.html#a0cddae3f871dd69c1ba6928dc6b1f985", null ],
     [ "m_di", "classmage_1_1_mouse.html#a892a9e1d5ad16ac9b67a5f69fbfedeab", null ],
-    [ "m_hwindow", "classmage_1_1_mouse.html#a6389e45df78cc792f11aa5395507deab", null ],
+    [ "m_hwindow", "classmage_1_1_mouse.html#a51592b367595f8ed772266104fc813c5", null ],
     [ "m_mouse", "classmage_1_1_mouse.html#a3f2803f3c0e008f5d764a11de3dbe098", null ],
     [ "m_mouse_button_press_stamp", "classmage_1_1_mouse.html#a0f5a38e23bdf7eae1b7b1030a53edff0", null ],
     [ "m_mouse_position", "classmage_1_1_mouse.html#a2a8332ef7a4daa0f9ed48a9a1ad80684", null ],

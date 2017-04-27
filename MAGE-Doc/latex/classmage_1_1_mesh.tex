@@ -92,6 +92,11 @@ Destructs this mesh. \hypertarget{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711
 
 Constructs a mesh.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
@@ -115,7 +120,7 @@ Constructs a mesh from the given mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mesh} & A reference to the mesh. \\
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_mesh_ab2c1131c72dc9a8c765257f27a304112}{}\label{classmage_1_1_mesh_ab2c1131c72dc9a8c765257f27a304112} 
@@ -124,11 +129,11 @@ Constructs a mesh from the given mesh.
 \subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
-Constructs a mesh from the given mesh.
+Constructs a mesh by moving the given mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mesh} & A reference to the mesh. \\
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to move. \\
 \hline
 \end{DoxyParams}
 
@@ -140,13 +145,13 @@ Constructs a mesh from the given mesh.
 \subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Draws this mesh. \hypertarget{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d}{}\label{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d} 
+Draws this complete mesh. \hypertarget{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d}{}\label{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption}) const}
 
-Draws this mesh.
+Draws a submesh of this mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -205,10 +210,10 @@ The primitive topology of this mesh.
 \subsubsection{\texorpdfstring{Get\+Vertex\+Size()}{GetVertexSize()}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Mesh\+::\+Get\+Vertex\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the size of the vertices of this mesh.
+Returns the size (in bytes) of the vertices of this mesh.
 
 \begin{DoxyReturn}{Returns}
-The vertex size of this static mesh. 
+The vertex size (in bytes) of this static mesh. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{}\label{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
@@ -220,7 +225,7 @@ Copies the given mesh to this mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy from. \\
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -232,15 +237,15 @@ A reference to the copy of the given mesh (i.\+e. this mesh).
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Copies the given mesh to this mesh.
+Moves the given mesh to this mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy from. \\
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given mesh (i.\+e. this mesh). 
+A reference to the moved mesh (i.\+e. this mesh). 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_mesh_a728979ae0be55283813eecf3e7c40e80}{}\label{classmage_1_1_mesh_a728979ae0be55283813eecf3e7c40e80} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Prepare\+Drawing@{Prepare\+Drawing}}
@@ -248,7 +253,9 @@ A reference to the copy of the given mesh (i.\+e. this mesh).
 \subsubsection{\texorpdfstring{Prepare\+Drawing()}{PrepareDrawing()}}
 {\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Prepare\+Drawing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Prepare the drawing of this mesh. \hypertarget{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b}{}\label{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b} 
+Prepares the drawing of this mesh.
+
+The vertex buffer, index buffer and primitive topology of this mesh will be bound to the input-\/assembler stage. \hypertarget{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b}{}\label{classmage_1_1_mesh_a19336d13ef5219c196678b8fdf4cca2b} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Set\+Number\+Of\+Indices@{Set\+Number\+Of\+Indices}}
 \index{Set\+Number\+Of\+Indices@{Set\+Number\+Of\+Indices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Set\+Number\+Of\+Indices()}{SetNumberOfIndices()}}

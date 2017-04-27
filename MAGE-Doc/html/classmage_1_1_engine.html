@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afd2f4f32b2e803f59521aafe1924f0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1374fc1d0d18e23df9150dfcd17955b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a1374fc1d0d18e23df9150dfcd17955b0">Engine</a> (<a class="el" href="classmage_1_1_engine.html">Engine</a> &amp;&amp;engine)=default</td></tr>
 <tr class="separator:a1374fc1d0d18e23df9150dfcd17955b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34628556f8397d70ed018d71e343c2f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5">~Engine</a> ()</td></tr>
+<tr class="memitem:a34628556f8397d70ed018d71e343c2f5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5">~Engine</a> ()</td></tr>
 <tr class="separator:a34628556f8397d70ed018d71e343c2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eedff82d4c8207c61676230520648fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_engine.html">Engine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd">operator=</a> (const <a class="el" href="classmage_1_1_engine.html">Engine</a> &amp;engine)=delete</td></tr>
 <tr class="separator:a1eedff82d4c8207c61676230520648fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a2d0a2669520cce1316a176cc3e891502"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a2d0a2669520cce1316a176cc3e891502">InitializeSystems</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
-<tr class="separator:a2d0a2669520cce1316a176cc3e891502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a47448fb182b110d46d287a72b8b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a29a47448fb182b110d46d287a72b8b4e">InitializeSystems</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
+<tr class="separator:a29a47448fb182b110d46d287a72b8b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -209,6 +209,12 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize the engine. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -238,7 +244,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructs an engine from the given engine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,10 +274,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs an engine from the given engine.</p>
+<p>Constructs an engine by moving the given engine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,6 +289,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">mage::Engine::~Engine </td>
@@ -291,6 +300,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Destructs this engine. </p>
 
@@ -312,7 +326,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the input manager of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the input manager of this engine. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if this engine is not properly setup. </dd>
+<dd>
+A pointer to the input manager of this engine. </dd></dl>
 
 </div>
 </div>
@@ -331,7 +347,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the main window of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the main window of this engine. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if this engine is not properly setup. </dd>
+<dd>
+A pointer to the main window of this engine. </dd></dl>
 
 </div>
 </div>
@@ -350,7 +368,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the renderer of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the renderer of this engine. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if this engine is not properly setup. </dd>
+<dd>
+A pointer to the renderer of this engine. </dd></dl>
 
 </div>
 </div>
@@ -369,12 +389,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the resource factory of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the resource factory of this engine. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if this engine is not properly setup. </dd>
+<dd>
+A pointer to the resource factory of this engine. </dd></dl>
 
 </div>
 </div>
-<a id="a2d0a2669520cce1316a176cc3e891502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d0a2669520cce1316a176cc3e891502">&sect;&nbsp;</a></span>InitializeSystems()</h2>
+<a id="a29a47448fb182b110d46d287a72b8b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a47448fb182b110d46d287a72b8b4e">&sect;&nbsp;</a></span>InitializeSystems()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::Engine::InitializeSystems </td>
+          <td class="memname">void mage::Engine::InitializeSystems </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td>
           <td class="paramname"><em>setup</em></td><td>)</td>
@@ -403,7 +425,12 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize at least one of the different systems of this engine. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -433,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Copies the given engine to this engine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -467,11 +494,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Copies the given engine to this engine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">engine</td><td>A reference to the engine to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given engine (i.e. this engine). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved engine (i.e. this engine). </dd></dl>
 
 </div>
 </div>
@@ -728,7 +755,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The current scene of this engine. </p>
+<p>A pointer to the current scene of this engine. </p>
 
 </div>
 </div>
@@ -751,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The timer of this engine. </p>
+<p>A pointer to the timer of this engine. </p>
 
 </div>
 </div>

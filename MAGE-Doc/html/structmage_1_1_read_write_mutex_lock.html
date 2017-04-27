@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('structmage_1_1_read_write_mutex_lock.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a323e2f45646caa23c4ee21452c8f8d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#a323e2f45646caa23c4ee21452c8f8d4a">ReadWriteMutexLock</a> (<a class="el" href="classmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;mutex, <a class="el" href="namespacemage.html#afd76fcca37ce5c5b2227671290973c74">ReadWriteMutexLockType</a> lock_type)</td></tr>
+<tr class="memitem:a323e2f45646caa23c4ee21452c8f8d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#a323e2f45646caa23c4ee21452c8f8d4a">ReadWriteMutexLock</a> (<a class="el" href="structmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;mutex, <a class="el" href="namespacemage.html#afd76fcca37ce5c5b2227671290973c74">ReadWriteMutexLockType</a> lock_type)</td></tr>
 <tr class="separator:a323e2f45646caa23c4ee21452c8f8d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c9cd6329bfd18c4752235ebee7edb4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#a2c9cd6329bfd18c4752235ebee7edb4a">ReadWriteMutexLock</a> (const <a class="el" href="structmage_1_1_read_write_mutex_lock.html">ReadWriteMutexLock</a> &amp;mutex_lock)=delete</td></tr>
 <tr class="separator:a2c9cd6329bfd18c4752235ebee7edb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa117ffe94f6850ddc91ad6d1389fb6e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#afd76fcca37ce5c5b2227671290973c74">ReadWriteMutexLockType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#aa117ffe94f6850ddc91ad6d1389fb6e2">m_type</a></td></tr>
 <tr class="separator:aa117ffe94f6850ddc91ad6d1389fb6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee9034fa984e11ec07c20ec77ab1bfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#a6ee9034fa984e11ec07c20ec77ab1bfe">m_mutex</a></td></tr>
+<tr class="memitem:a6ee9034fa984e11ec07c20ec77ab1bfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_read_write_mutex_lock.html#a6ee9034fa984e11ec07c20ec77ab1bfe">m_mutex</a></td></tr>
 <tr class="separator:a6ee9034fa984e11ec07c20ec77ab1bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -131,7 +131,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">mage::ReadWriteMutexLock::ReadWriteMutexLock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structmage_1_1_read_write_mutex.html">ReadWriteMutex</a> &amp;&#160;</td>
           <td class="paramname"><em>mutex</em>, </td>
         </tr>
         <tr>
@@ -189,7 +189,7 @@ Private Attributes</h2></td></tr>
 <p>Constructs a read write mutex lock from the given read write mutex lock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a read write mutex lock. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to the read write mutex lock to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -219,10 +219,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a read write mutex lock from the given read write mutex lock.</p>
+<p>Constructs a read write mutex lock by moving the given read write mutex lock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a read write mutex lock. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to the read write mutex lock to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,11 +292,11 @@ Private Attributes</h2></td></tr>
 <p>Copies the given read write mutex lock to this read write mutex lock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a read write mutex lock. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to the read write mutex lock to copy. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given mutex lock (i.e. this mutex lock). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given read write mutex lock (i.e. this read write mutex lock). </dd></dl>
 
 </div>
 </div>
@@ -323,14 +323,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the given read write mutex lock to this read write mutex lock.</p>
+<p>Moves the given read write mutex lock to this read write mutex lock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a read write mutex lock. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to the read write mutex lock to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given mutex lock (i.e. this mutex lock). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved read write mutex lock (i.e. this read write mutex lock). </dd></dl>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_read_write_mutex.html">ReadWriteMutex</a>&amp; mage::ReadWriteMutexLock::m_mutex</td>
+          <td class="memname"><a class="el" href="structmage_1_1_read_write_mutex.html">ReadWriteMutex</a>&amp; mage::ReadWriteMutexLock::m_mutex</td>
         </tr>
       </table>
   </td>
@@ -372,7 +372,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The read write mutex of this read write mutex lock. </p>
+<p>A reference to the read write mutex of this read write mutex lock. </p>
 
 </div>
 </div>

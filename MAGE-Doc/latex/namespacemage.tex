@@ -27,7 +27,7 @@ struct \hyperlink{structmage_1_1_color}{Color}
 \item 
 struct \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader}
 \item 
-class \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}
+struct \hyperlink{structmage_1_1_condition_variable}{Condition\+Variable}
 \item 
 struct \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}
 \item 
@@ -129,7 +129,7 @@ class \hyperlink{classmage_1_1_m_s_h_writer}{M\+S\+H\+Writer}
 \item 
 class \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader}
 \item 
-class \hyperlink{classmage_1_1_mutex}{Mutex}
+struct \hyperlink{structmage_1_1_mutex}{Mutex}
 \item 
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
 \item 
@@ -153,7 +153,7 @@ struct \hyperlink{structmage_1_1_point3}{Point3}
 \item 
 class \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}
 \item 
-class \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex}
+struct \hyperlink{structmage_1_1_read_write_mutex}{Read\+Write\+Mutex}
 \item 
 struct \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock}
 \item 
@@ -175,7 +175,7 @@ class \hyperlink{classmage_1_1_scene}{Scene}
 \item 
 class \hyperlink{classmage_1_1_scene_node}{Scene\+Node}
 \item 
-class \hyperlink{classmage_1_1_semaphore}{Semaphore}
+struct \hyperlink{structmage_1_1_semaphore}{Semaphore}
 \item 
 struct \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}
 \item 
@@ -314,8 +314,8 @@ enum \hyperlink{namespacemage_a7146b3c3db53179eeb32bf4d51934715}{Error\+Disposit
 \hyperlink{namespacemage_a7146b3c3db53179eeb32bf4d51934715a9b39ef50a35cd069416b347c28825cef}{E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+A\+B\+O\+RT}
  \}
 \item 
-enum \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type} \{ \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74a384918b13691984406aeb754f1c454d0}{R\+E\+AD}, 
-\hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74aff9d196f4bda4079f3f1ce90bd644662}{W\+R\+I\+TE}
+enum \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type} \{ \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74a900403891acbbc9919f9fcec04858549}{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read}, 
+\hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74ae31c6ff6e73cbaa720f5359edee0da04}{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write}
  \}
 \item 
 enum \hyperlink{namespacemage_a548e5c31b08a1078841ed21948f5bf4c}{Rotation\+Axes} \{ \hyperlink{namespacemage_a548e5c31b08a1078841ed21948f5bf4ca4b43faee47620c82f4223a55d7de4ddb}{Rotation\+Axes\+\_\+\+MouseX} = 1, 
@@ -373,9 +373,9 @@ enum \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a30683d9d7214e9b340b5cb225a8b3467}{Read\+Binary\+File} (const wchar\+\_\+t $\ast$fname, \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ \&data, size\+\_\+t $\ast$size)
+void \hyperlink{namespacemage_aef2e639196d406b6cfe71815d46b5cf9}{Read\+Binary\+File} (const wchar\+\_\+t $\ast$fname, \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ \&data, size\+\_\+t $\ast$size)
 \item 
-{\footnotesize template$<$typename ValueT $>$ }\\const ValueT $\ast$ \hyperlink{namespacemage_a5f6d31e3bcd9b047c2dfe8fa90d4092d}{Bytes\+Big\+Endian\+To\+Value} (const uint8\+\_\+t $\ast$bytes)
+{\footnotesize template$<$typename DataT $>$ }\\const DataT $\ast$ \hyperlink{namespacemage_a71ef38ad4287cdd1fdfa843029aef5b7}{Bytes\+Big\+Endian\+To\+Value} (const uint8\+\_\+t $\ast$bytes)
 \item 
 int8\+\_\+t \hyperlink{namespacemage_a7dd5ebfc406cb1d6a8a403a8db29af36}{Bytes\+Big\+Endian\+To\+Int8} (const uint8\+\_\+t $\ast$bytes)
 \item 
@@ -441,7 +441,7 @@ double \hyperlink{namespacemage_af85b8ba1e336f37fc8fe34a53e981a6c}{Bytes\+To\+Do
 \item 
 \hyperlink{namespacemage_a76dac28d69746bdef408a08c36a7c862}{\+\_\+declspec} (align(16)) struct Material\+Buffer final
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ \hyperlink{namespacemage_aec09581a328a83e6f87cbf572a85ba6c}{Create\+Orthographic\+Camera} (float width, float height, float near\+\_\+z, float far\+\_\+z)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ \hyperlink{namespacemage_abceafa3c16065a9d0e9a6b2482316f45}{Create\+Orthographic\+Camera} (float width=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+O\+R\+T\+H\+O\+G\+R\+A\+P\+H\+I\+C\+\_\+\+W\+I\+D\+TH, float height=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+O\+R\+T\+H\+O\+G\+R\+A\+P\+H\+I\+C\+\_\+\+H\+E\+I\+G\+HT, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} $>$ \hyperlink{namespacemage_a4431fdebdb526878bacc4028cb94a63b}{Create\+Perspective\+Camera} (float fov\+\_\+y, float near\+\_\+z, float far\+\_\+z)
 \item 
@@ -475,9 +475,9 @@ const wstring \hyperlink{namespacemage_aac01c0fba57d6737fcf32155748e95b0}{Get\+F
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{namespacemage_ac93dae3a8755fa1e1c9be6c8aa0e07d2}{Create\+Font} (const wstring \&fname, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a08f20ffe7bbb23d861ab2442e2967bcd}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+void \hyperlink{namespacemage_aac88563417bcd178423aec61ca687a74}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afbf05d485686caef85c42be9625540b5}{Import\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+void \hyperlink{namespacemage_a23fecd103cda79e7c9fd5cf372ae5e9f}{Import\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
 static const char $\ast$ \hyperlink{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
@@ -495,7 +495,7 @@ void \hyperlink{namespacemage_aefd40c91591a8e0423e4222b4a5e6249}{Fatal} (const c
 \item 
 uint16\+\_\+t \hyperlink{namespacemage_a2988e0e46e373691a189ea97135f1ed1}{Console\+Width} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{Initialize\+Console} ()
+void \hyperlink{namespacemage_a587146c8cbeed655be16ddff8435c05c}{Initialize\+Console} ()
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3dd35a33d61f2891a717b5958f7edf12}{Import\+Material\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&material\+\_\+buffer)
 \item 
@@ -563,11 +563,11 @@ H\+A\+N\+D\+LE \hyperlink{namespacemage_a80f95ce7eb0d03d5576351663d626b4d}{Safe\
 \item 
 \hyperlink{namespacemage_ab892828913d6129acf71e0cec60467e5}{Shared\+Handle} \hyperlink{namespacemage_a3119898d7caac71d8ee495c3ae3194b1}{Create\+Shared\+Handle} (H\+A\+N\+D\+LE handle)
 \item 
-{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aecd62c2ba58f3dd536459d4b6157f581}{Import\+M\+S\+H\+Mesh\+From\+File} (const wstring \&fname, vector$<$ VertexT $>$ \&vertices, vector$<$ IndexT $>$ \&indices)
+{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\void \hyperlink{namespacemage_ad98d571312abaaa2b0b7dd13958f5100}{Import\+M\+S\+H\+Mesh\+From\+File} (const wstring \&fname, vector$<$ VertexT $>$ \&vertices, vector$<$ IndexT $>$ \&indices)
 \item 
-{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad7382e78b94a6bf97895c8bfd198976b}{Export\+M\+S\+H\+Mesh\+To\+File} (const wstring \&fname, const vector$<$ VertexT $>$ \&vertices, const vector$<$ IndexT $>$ \&indices)
+{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\void \hyperlink{namespacemage_a6558ce42c284f76e6bb08bc0f9cabfc3}{Export\+M\+S\+H\+Mesh\+To\+File} (const wstring \&fname, const vector$<$ VertexT $>$ \&vertices, const vector$<$ IndexT $>$ \&indices)
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_acb4aa2ee8f4bb362e8cce1fe22e0adbf}{Import\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_abeaf36b602f5ed971b1b505e42972e4f}{Import\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d}{Import\+M\+D\+L\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
@@ -663,13 +663,13 @@ I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a55d3eaa7476e19ec89
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \hyperlink{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe}{Create\+Variable\+Script} (const wstring \&fname, bool import)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a6515a0a04b54bd9544eefe5a23ab8c43}{Import\+Variable\+Script\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&variable\+\_\+buffer)
+void \hyperlink{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a}{Import\+Variable\+Script\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a6bbe2c1ce9b49dea0c61ce4eafea6a3d}{Export\+Variable\+Script\+To\+File} (const wstring \&fname, const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&variable\+\_\+buffer)
+void \hyperlink{namespacemage_aa879d3bf0554136881745e716b84e3af}{Export\+Variable\+Script\+To\+File} (const wstring \&fname, const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ab13ac77392ebda63780e73f720237906}{Import\+V\+S\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&variable\+\_\+buffer)
+void \hyperlink{namespacemage_aa9fc2d2f7e0a2b6bebc707d3eaf126ff}{Import\+V\+S\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af5780face7eadab7a08f015e3516e137}{Export\+V\+S\+To\+File} (const wstring \&fname, const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&variable\+\_\+buffer)
+void \hyperlink{namespacemage_a68a23c80e940a32768c153f9f8cd852e}{Export\+V\+S\+To\+File} (const wstring \&fname, const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
 \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_ab0bd21012fa29244f0f9b3201bebc2a5}{Create\+Lambertian\+Shader} ()
 \item 
@@ -705,6 +705,10 @@ const wchar\+\_\+t $\ast$ \hyperlink{namespacemage_aba19c96528a59194ebc100244518
 \item 
 const char $\ast$ \hyperlink{namespacemage_a93f0e3b596ce1156d1fce19967fc316a}{str\+\_\+convert} (const wchar\+\_\+t $\ast$str)
 \item 
+const wstring \hyperlink{namespacemage_a9a7ff7b35c293ad8f09d5603f78e4c52}{str\+\_\+convert} (const string \&str)
+\item 
+const string \hyperlink{namespacemage_a5425aab167b483cdf05a6aaf0d074ed1}{str\+\_\+convert} (const wstring \&str)
+\item 
 bool \hyperlink{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{str\+\_\+equals} (const char $\ast$str1, const char $\ast$str2)
 \item 
 bool \hyperlink{namespacemage_a0013423e891bc8f522248a6a3f826681}{str\+\_\+equals} (const wchar\+\_\+t $\ast$str1, const wchar\+\_\+t $\ast$str2)
@@ -716,10 +720,6 @@ bool \hyperlink{namespacemage_aac9609117e428765417683338ae8fa73}{str\+\_\+contai
 bool \hyperlink{namespacemage_a42025161321117689362691b52994c3f}{str\+\_\+contains} (const char $\ast$str, char c)
 \item 
 bool \hyperlink{namespacemage_a95501f17ace9d4f4ca8ed15e2559ad23}{str\+\_\+contains} (const wchar\+\_\+t $\ast$str, wchar\+\_\+t c)
-\item 
-const wstring \hyperlink{namespacemage_a9a7ff7b35c293ad8f09d5603f78e4c52}{str\+\_\+convert} (const string \&str)
-\item 
-const string \hyperlink{namespacemage_a5425aab167b483cdf05a6aaf0d074ed1}{str\+\_\+convert} (const wstring \&str)
 \item 
 \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{Token\+Result} \hyperlink{namespacemage_a4936774f925ba96c5b8d37c5e54cca02}{String\+To\+Bool} (const char $\ast$str, bool \&result)
 \item 
@@ -1143,7 +1143,9 @@ D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O
 \subsubsection{\texorpdfstring{Error\+Disposition}{ErrorDisposition}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a7146b3c3db53179eeb32bf4d51934715}{mage\+::\+Error\+Disposition}}
 
-An enumeration of error dispositions. \begin{DoxyEnumFields}{Enumerator}
+An enumeration of error dispositions.
+
+This contains\+: {\ttfamily E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE}, {\ttfamily E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+C\+O\+N\+T\+I\+N\+UE} and {\ttfamily E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+A\+B\+O\+RT}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE@{E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE}!mage@{mage}}\index{mage@{mage}!E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE@{E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE}}}\hypertarget{namespacemage_a7146b3c3db53179eeb32bf4d51934715a4e2fb15c20db8e908d57e1aca6f4c04b}{}\label{namespacemage_a7146b3c3db53179eeb32bf4d51934715a4e2fb15c20db8e908d57e1aca6f4c04b} 
 E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+I\+G\+N\+O\+RE&\\
 \hline
@@ -1163,13 +1165,15 @@ E\+R\+R\+O\+R\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+A\+B\+O\+RT&\\
 \subsubsection{\texorpdfstring{Read\+Write\+Mutex\+Lock\+Type}{ReadWriteMutexLockType}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{mage\+::\+Read\+Write\+Mutex\+Lock\+Type}}
 
-Type of read write mutex locks. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+AD@{R\+E\+AD}!mage@{mage}}\index{mage@{mage}!R\+E\+AD@{R\+E\+AD}}}\hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74a384918b13691984406aeb754f1c454d0}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74a384918b13691984406aeb754f1c454d0} 
-R\+E\+AD&\\
+An enumeration of the different read write mutex lock types.
+
+This contains\+: {\ttfamily Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read} and {\ttfamily Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read@{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read}!mage@{mage}}\index{mage@{mage}!Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read@{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read}}}\hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74a900403891acbbc9919f9fcec04858549}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74a900403891acbbc9919f9fcec04858549} 
+Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Read&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+R\+I\+TE@{W\+R\+I\+TE}!mage@{mage}}\index{mage@{mage}!W\+R\+I\+TE@{W\+R\+I\+TE}}}\hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74aff9d196f4bda4079f3f1ce90bd644662}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74aff9d196f4bda4079f3f1ce90bd644662} 
-W\+R\+I\+TE&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write@{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write}!mage@{mage}}\index{mage@{mage}!Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write@{Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write}}}\hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74ae31c6ff6e73cbaa720f5359edee0da04}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74ae31c6ff6e73cbaa720f5359edee0da04} 
+Read\+Write\+Mutex\+Lock\+Type\+\_\+\+Write&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -1251,7 +1255,9 @@ Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back&\\
 \subsubsection{\texorpdfstring{Token\+Result}{TokenResult}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a2178ba2411db5912f41b2e7698c2037d}{mage\+::\+Token\+Result}}
 
-An enumeration of the different token results. This contains\+: {\ttfamily Token\+Result\+\_\+\+Valid}, {\ttfamily Token\+Result\+\_\+\+None} and {\ttfamily Token\+Result\+\_\+\+Invalid}. \begin{DoxyEnumFields}{Enumerator}
+An enumeration of the different token results.
+
+This contains\+: {\ttfamily Token\+Result\+\_\+\+Valid}, {\ttfamily Token\+Result\+\_\+\+None} and {\ttfamily Token\+Result\+\_\+\+Invalid}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Token\+Result\+\_\+\+Valid@{Token\+Result\+\_\+\+Valid}!mage@{mage}}\index{mage@{mage}!Token\+Result\+\_\+\+Valid@{Token\+Result\+\_\+\+Valid}}}\hypertarget{namespacemage_a2178ba2411db5912f41b2e7698c2037daacf2d65dd6647002828e26692ed96c0a}{}\label{namespacemage_a2178ba2411db5912f41b2e7698c2037daacf2d65dd6647002828e26692ed96c0a} 
 Token\+Result\+\_\+\+Valid&\\
 \hline
@@ -1271,7 +1277,9 @@ Token\+Result\+\_\+\+Invalid&\\
 \subsubsection{\texorpdfstring{Variable\+Type}{VariableType}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{mage\+::\+Variable\+Type}}
 
-Enumeration of variable types. \begin{DoxyEnumFields}{Enumerator}
+An enumeration of the different (scripting) variable types.
+
+This contains\+: {\ttfamily Variable\+Type\+\_\+\+Bool}, {\ttfamily Variable\+Type\+\_\+\+Int}, {\ttfamily Variable\+Type\+\_\+\+Int2}, {\ttfamily Variable\+Type\+\_\+\+Int3}, {\ttfamily Variable\+Type\+\_\+\+Float}, {\ttfamily Variable\+Type\+\_\+\+Float2}, {\ttfamily Variable\+Type\+\_\+\+Float3}, {\ttfamily Variable\+Type\+\_\+\+Float4}, {\ttfamily Variable\+Type\+\_\+\+Color} and {\ttfamily Variable\+Type\+\_\+\+String}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Variable\+Type\+\_\+\+Bool@{Variable\+Type\+\_\+\+Bool}!mage@{mage}}\index{mage@{mage}!Variable\+Type\+\_\+\+Bool@{Variable\+Type\+\_\+\+Bool}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413} 
 Variable\+Type\+\_\+\+Bool&\\
 \hline
@@ -4022,6 +4030,9 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
 
 Performs an atomic addition operation on the specified values.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape addend} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in,out}  & {\em addend} & A pointer to the first operand. This value will be replaced with the result of the operation. \\
@@ -4040,6 +4051,9 @@ The function returns the result of the operation.
 
 Performs an atomic addition operation on the specified values.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape addend} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in,out}  & {\em addend} & A pointer to the first operand. This value will be replaced with the result of the operation. \\
@@ -4058,9 +4072,12 @@ The function returns the result of the operation.
 
 Performs an atomic compare-\/and-\/exchange operation on the specified values. The function compares the original value against a given comparand value and exchanges the original value with a given exchange value in case of equality.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape destination} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in,out}  & {\em destination} & \\
+\mbox{\tt in,out}  & {\em destination} & A pointer to a pointer to the destination value. \\
 \hline
 \mbox{\tt in}  & {\em exchange} & The exchange value. \\
 \hline
@@ -4080,8 +4097,18 @@ T$\ast$ mage\+::\+Atomic\+Compare\+And\+Swap\+Pointer (\begin{DoxyParamCaption}\
 Performs an atomic compare-\/and-\/exchange operation on the specified pointers. The function compares the original pointer against a given comparand pointer and exchanges the original pointer with a given exchange pointer in case of equality.
 
 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em The} & type of pointer. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape destination} is not equal to {\ttfamily nullptr}. 
+
+{\itshape exchange} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in,out}  & {\em destination} & \\
+\mbox{\tt in,out}  & {\em destination} & A pointer to a pointer to the destination value. \\
 \hline
 \mbox{\tt in}  & {\em exchange} & The exchange pointer. \\
 \hline
@@ -4108,187 +4135,673 @@ The number of bits per pixel of the given format.
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Double()}{BytesBigEndianToDouble()}}
 {\footnotesize\ttfamily double mage\+::\+Bytes\+Big\+Endian\+To\+Double (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an double from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(double)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily double} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae184a2848f1a490c58f617a9d93b3c88}{}\label{namespacemage_ae184a2848f1a490c58f617a9d93b3c88} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Float@{Bytes\+Big\+Endian\+To\+Float}}
 \index{Bytes\+Big\+Endian\+To\+Float@{Bytes\+Big\+Endian\+To\+Float}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Float()}{BytesBigEndianToFloat()}}
 {\footnotesize\ttfamily float mage\+::\+Bytes\+Big\+Endian\+To\+Float (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an float from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(float)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily float} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a67572c654c8ede11eed23c9c556e439f}{}\label{namespacemage_a67572c654c8ede11eed23c9c556e439f} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Int16@{Bytes\+Big\+Endian\+To\+Int16}}
 \index{Bytes\+Big\+Endian\+To\+Int16@{Bytes\+Big\+Endian\+To\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Int16()}{BytesBigEndianToInt16()}}
 {\footnotesize\ttfamily int16\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int16\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int16\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae98f64655a7d791c6c6efba16ce6b8e8}{}\label{namespacemage_ae98f64655a7d791c6c6efba16ce6b8e8} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Int32@{Bytes\+Big\+Endian\+To\+Int32}}
 \index{Bytes\+Big\+Endian\+To\+Int32@{Bytes\+Big\+Endian\+To\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Int32()}{BytesBigEndianToInt32()}}
 {\footnotesize\ttfamily int32\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int32\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int32\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a52f6dec57a9c644e912a88f8cfabe199}{}\label{namespacemage_a52f6dec57a9c644e912a88f8cfabe199} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Int64@{Bytes\+Big\+Endian\+To\+Int64}}
 \index{Bytes\+Big\+Endian\+To\+Int64@{Bytes\+Big\+Endian\+To\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Int64()}{BytesBigEndianToInt64()}}
 {\footnotesize\ttfamily int64\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int64\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int64\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7dd5ebfc406cb1d6a8a403a8db29af36}{}\label{namespacemage_a7dd5ebfc406cb1d6a8a403a8db29af36} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Int8@{Bytes\+Big\+Endian\+To\+Int8}}
 \index{Bytes\+Big\+Endian\+To\+Int8@{Bytes\+Big\+Endian\+To\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Int8()}{BytesBigEndianToInt8()}}
 {\footnotesize\ttfamily int8\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int8\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int8\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a90b2972b7a2a01d4a911d071303bc400}{}\label{namespacemage_a90b2972b7a2a01d4a911d071303bc400} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+U\+Int16@{Bytes\+Big\+Endian\+To\+U\+Int16}}
 \index{Bytes\+Big\+Endian\+To\+U\+Int16@{Bytes\+Big\+Endian\+To\+U\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+U\+Int16()}{BytesBigEndianToUInt16()}}
 {\footnotesize\ttfamily uint16\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+U\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint16\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint16\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aab7d431dcaf0965028de7c5dee9c3da4}{}\label{namespacemage_aab7d431dcaf0965028de7c5dee9c3da4} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+U\+Int32@{Bytes\+Big\+Endian\+To\+U\+Int32}}
 \index{Bytes\+Big\+Endian\+To\+U\+Int32@{Bytes\+Big\+Endian\+To\+U\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+U\+Int32()}{BytesBigEndianToUInt32()}}
 {\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+U\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint32\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint32\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7509f9c1a6cf98056f2deaa8a2f45c7c}{}\label{namespacemage_a7509f9c1a6cf98056f2deaa8a2f45c7c} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+U\+Int64@{Bytes\+Big\+Endian\+To\+U\+Int64}}
 \index{Bytes\+Big\+Endian\+To\+U\+Int64@{Bytes\+Big\+Endian\+To\+U\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+U\+Int64()}{BytesBigEndianToUInt64()}}
 {\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+U\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint64\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint64\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a89be63c40055cf211d63423bb25be1cc}{}\label{namespacemage_a89be63c40055cf211d63423bb25be1cc} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+U\+Int8@{Bytes\+Big\+Endian\+To\+U\+Int8}}
 \index{Bytes\+Big\+Endian\+To\+U\+Int8@{Bytes\+Big\+Endian\+To\+U\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+U\+Int8()}{BytesBigEndianToUInt8()}}
 {\footnotesize\ttfamily uint8\+\_\+t mage\+::\+Bytes\+Big\+Endian\+To\+U\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a5f6d31e3bcd9b047c2dfe8fa90d4092d}{}\label{namespacemage_a5f6d31e3bcd9b047c2dfe8fa90d4092d} 
+Reads an uint8\+\_\+t from the given big endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint8\+\_\+t} represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a71ef38ad4287cdd1fdfa843029aef5b7}{}\label{namespacemage_a71ef38ad4287cdd1fdfa843029aef5b7} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To\+Value@{Bytes\+Big\+Endian\+To\+Value}}
 \index{Bytes\+Big\+Endian\+To\+Value@{Bytes\+Big\+Endian\+To\+Value}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To\+Value()}{BytesBigEndianToValue()}}
-{\footnotesize\ttfamily template$<$typename ValueT $>$ \\
-const ValueT$\ast$ mage\+::\+Bytes\+Big\+Endian\+To\+Value (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+const DataT$\ast$ mage\+::\+Bytes\+Big\+Endian\+To\+Value (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads a {\ttfamily DataT} element from the given big endian byte array.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a big endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a {\ttfamily DataT} element represented by the big endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a1264a1a92902534e596430b67784869a}{}\label{namespacemage_a1264a1a92902534e596430b67784869a} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Double@{Bytes\+Little\+Endian\+To\+Double}}
 \index{Bytes\+Little\+Endian\+To\+Double@{Bytes\+Little\+Endian\+To\+Double}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Double()}{BytesLittleEndianToDouble()}}
 {\footnotesize\ttfamily double mage\+::\+Bytes\+Little\+Endian\+To\+Double (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an double from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(double)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily double} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae8c9922f140fd0f66a8dc71edca6ae0e}{}\label{namespacemage_ae8c9922f140fd0f66a8dc71edca6ae0e} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Float@{Bytes\+Little\+Endian\+To\+Float}}
 \index{Bytes\+Little\+Endian\+To\+Float@{Bytes\+Little\+Endian\+To\+Float}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Float()}{BytesLittleEndianToFloat()}}
 {\footnotesize\ttfamily float mage\+::\+Bytes\+Little\+Endian\+To\+Float (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an float from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(float)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily float} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ac391c9723ff006ce3e3f824108dbcc61}{}\label{namespacemage_ac391c9723ff006ce3e3f824108dbcc61} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Int16@{Bytes\+Little\+Endian\+To\+Int16}}
 \index{Bytes\+Little\+Endian\+To\+Int16@{Bytes\+Little\+Endian\+To\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Int16()}{BytesLittleEndianToInt16()}}
 {\footnotesize\ttfamily int16\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int16\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int16\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ad3cd4209c8a542d2196091a4753a58b3}{}\label{namespacemage_ad3cd4209c8a542d2196091a4753a58b3} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Int32@{Bytes\+Little\+Endian\+To\+Int32}}
 \index{Bytes\+Little\+Endian\+To\+Int32@{Bytes\+Little\+Endian\+To\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Int32()}{BytesLittleEndianToInt32()}}
 {\footnotesize\ttfamily int32\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int32\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int32\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae242f13f851ffa9c73bdcb17902f6b57}{}\label{namespacemage_ae242f13f851ffa9c73bdcb17902f6b57} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Int64@{Bytes\+Little\+Endian\+To\+Int64}}
 \index{Bytes\+Little\+Endian\+To\+Int64@{Bytes\+Little\+Endian\+To\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Int64()}{BytesLittleEndianToInt64()}}
 {\footnotesize\ttfamily int64\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int64\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int64\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a083a2ea889a770925db23c1f514454d9}{}\label{namespacemage_a083a2ea889a770925db23c1f514454d9} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+Int8@{Bytes\+Little\+Endian\+To\+Int8}}
 \index{Bytes\+Little\+Endian\+To\+Int8@{Bytes\+Little\+Endian\+To\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+Int8()}{BytesLittleEndianToInt8()}}
 {\footnotesize\ttfamily int8\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int8\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int8\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aca75f80f9445dd764414522db4967336}{}\label{namespacemage_aca75f80f9445dd764414522db4967336} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+U\+Int16@{Bytes\+Little\+Endian\+To\+U\+Int16}}
 \index{Bytes\+Little\+Endian\+To\+U\+Int16@{Bytes\+Little\+Endian\+To\+U\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+U\+Int16()}{BytesLittleEndianToUInt16()}}
 {\footnotesize\ttfamily uint16\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+U\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint16\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint16\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a453e851f136573bfc7839157786472a4}{}\label{namespacemage_a453e851f136573bfc7839157786472a4} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+U\+Int32@{Bytes\+Little\+Endian\+To\+U\+Int32}}
 \index{Bytes\+Little\+Endian\+To\+U\+Int32@{Bytes\+Little\+Endian\+To\+U\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+U\+Int32()}{BytesLittleEndianToUInt32()}}
 {\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+U\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint32\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint32\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae6f54de05a834fbb34a75312479009ba}{}\label{namespacemage_ae6f54de05a834fbb34a75312479009ba} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+U\+Int64@{Bytes\+Little\+Endian\+To\+U\+Int64}}
 \index{Bytes\+Little\+Endian\+To\+U\+Int64@{Bytes\+Little\+Endian\+To\+U\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+U\+Int64()}{BytesLittleEndianToUInt64()}}
 {\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+U\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint64\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint64\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ac06182df9bf408e6de663497d9760724}{}\label{namespacemage_ac06182df9bf408e6de663497d9760724} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To\+U\+Int8@{Bytes\+Little\+Endian\+To\+U\+Int8}}
 \index{Bytes\+Little\+Endian\+To\+U\+Int8@{Bytes\+Little\+Endian\+To\+U\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To\+U\+Int8()}{BytesLittleEndianToUInt8()}}
 {\footnotesize\ttfamily uint8\+\_\+t mage\+::\+Bytes\+Little\+Endian\+To\+U\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint8\+\_\+t from the given little endian byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a little endian byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint8\+\_\+t} represented by the little endian byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_af85b8ba1e336f37fc8fe34a53e981a6c}{}\label{namespacemage_af85b8ba1e336f37fc8fe34a53e981a6c} 
 \index{mage@{mage}!Bytes\+To\+Double@{Bytes\+To\+Double}}
 \index{Bytes\+To\+Double@{Bytes\+To\+Double}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Double()}{BytesToDouble()}}
 {\footnotesize\ttfamily double mage\+::\+Bytes\+To\+Double (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an double from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(double)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily double} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a5e41913a3a1613add8511e5834e09277}{}\label{namespacemage_a5e41913a3a1613add8511e5834e09277} 
 \index{mage@{mage}!Bytes\+To\+Float@{Bytes\+To\+Float}}
 \index{Bytes\+To\+Float@{Bytes\+To\+Float}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Float()}{BytesToFloat()}}
 {\footnotesize\ttfamily float mage\+::\+Bytes\+To\+Float (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an float from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least {\ttfamily sizeof(float)} bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily float} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7db26a377fbab44bd501ccdb55a86067}{}\label{namespacemage_a7db26a377fbab44bd501ccdb55a86067} 
 \index{mage@{mage}!Bytes\+To\+Int16@{Bytes\+To\+Int16}}
 \index{Bytes\+To\+Int16@{Bytes\+To\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Int16()}{BytesToInt16()}}
 {\footnotesize\ttfamily int16\+\_\+t mage\+::\+Bytes\+To\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an int16\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int16\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a274862b36cabc10b90dd7148d42a29a6}{}\label{namespacemage_a274862b36cabc10b90dd7148d42a29a6} 
 \index{mage@{mage}!Bytes\+To\+Int32@{Bytes\+To\+Int32}}
 \index{Bytes\+To\+Int32@{Bytes\+To\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Int32()}{BytesToInt32()}}
 {\footnotesize\ttfamily int32\+\_\+t mage\+::\+Bytes\+To\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an int32\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int32\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a09884643d0e3afe8591f9104785ce480}{}\label{namespacemage_a09884643d0e3afe8591f9104785ce480} 
 \index{mage@{mage}!Bytes\+To\+Int64@{Bytes\+To\+Int64}}
 \index{Bytes\+To\+Int64@{Bytes\+To\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Int64()}{BytesToInt64()}}
 {\footnotesize\ttfamily int64\+\_\+t mage\+::\+Bytes\+To\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an int64\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int64\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a1e911bf0ab208ddf9f1ca362db28069d}{}\label{namespacemage_a1e911bf0ab208ddf9f1ca362db28069d} 
 \index{mage@{mage}!Bytes\+To\+Int8@{Bytes\+To\+Int8}}
 \index{Bytes\+To\+Int8@{Bytes\+To\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+Int8()}{BytesToInt8()}}
 {\footnotesize\ttfamily int8\+\_\+t mage\+::\+Bytes\+To\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an int8\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily int8\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ae7ac42dd62471c5badcd2f6c49b30e5b}{}\label{namespacemage_ae7ac42dd62471c5badcd2f6c49b30e5b} 
 \index{mage@{mage}!Bytes\+To\+U\+Int16@{Bytes\+To\+U\+Int16}}
 \index{Bytes\+To\+U\+Int16@{Bytes\+To\+U\+Int16}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+U\+Int16()}{BytesToUInt16()}}
 {\footnotesize\ttfamily uint16\+\_\+t mage\+::\+Bytes\+To\+U\+Int16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an uint16\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 2 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint16\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a46a019c7f927a6f559b36a8b5c01ab9c}{}\label{namespacemage_a46a019c7f927a6f559b36a8b5c01ab9c} 
 \index{mage@{mage}!Bytes\+To\+U\+Int32@{Bytes\+To\+U\+Int32}}
 \index{Bytes\+To\+U\+Int32@{Bytes\+To\+U\+Int32}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+U\+Int32()}{BytesToUInt32()}}
 {\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Bytes\+To\+U\+Int32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an uint32\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 4 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint32\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a93f1f8baabf199005ea96e0a2b6941e3}{}\label{namespacemage_a93f1f8baabf199005ea96e0a2b6941e3} 
 \index{mage@{mage}!Bytes\+To\+U\+Int64@{Bytes\+To\+U\+Int64}}
 \index{Bytes\+To\+U\+Int64@{Bytes\+To\+U\+Int64}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+U\+Int64()}{BytesToUInt64()}}
 {\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Bytes\+To\+U\+Int64 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
+Reads an uint64\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 8 bytes. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint64\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_af1f2745091f9580c028990d0f2848ebe}{}\label{namespacemage_af1f2745091f9580c028990d0f2848ebe} 
 \index{mage@{mage}!Bytes\+To\+U\+Int8@{Bytes\+To\+U\+Int8}}
 \index{Bytes\+To\+U\+Int8@{Bytes\+To\+U\+Int8}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To\+U\+Int8()}{BytesToUInt8()}}
 {\footnotesize\ttfamily uint8\+\_\+t mage\+::\+Bytes\+To\+U\+Int8 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes }\end{DoxyParamCaption})}
 
+Reads an uint8\+\_\+t from the given byte array.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytes} is not equal to {\ttfamily nullptr}. 
+
+The given byte array must contain at least 1 byte. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytes} & A pointer to a byte array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily uint8\+\_\+t} represented by the byte array {\itshape bytes}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aa6dc8bc35accb3ccaac7ee60a5361754}{}\label{namespacemage_aa6dc8bc35accb3ccaac7ee60a5361754} 
 \index{mage@{mage}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!mage@{mage}}
@@ -4316,6 +4829,13 @@ ValueT mage\+::\+Clamp (\begin{DoxyParamCaption}\item[{ValueT}]{x,  }\item[{Valu
 
 Adds an item associated with the given data and described with the given descriptor to a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+
+{\itshape data} is not equal to {\ttfamily nullptr}. 
+
+{\itshape desc} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4335,6 +4855,11 @@ Adds an item associated with the given data and described with the given descrip
 
 Checks whether a combo box contains the given descriptor.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+
+{\itshape desc} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4355,6 +4880,9 @@ Checks whether a combo box contains the given descriptor.
 
 Returns the number of items in a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4373,6 +4901,9 @@ The number of items of a combo box.
 
 Selects the item at the given index in a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4390,6 +4921,11 @@ Selects the item at the given index in a combo box.
 
 Selects the item associated with the given data in a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+
+{\itshape data} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4407,6 +4943,9 @@ Selects the item associated with the given data in a combo box.
 
 Returns the data associated with the selected item in a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4427,6 +4966,9 @@ A pointer to the data associated with the selected item in the combo box.
 
 Checks whether a valid item is selected in a combo box.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape dialog} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
@@ -4467,6 +5009,11 @@ Returns the fixed console width.
 \begin{DoxyReturn}{Returns}
 The fixed console width. 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to retrieve a handle to the standard output device. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_add9fc09b8a7166c5e0d0bde63d8f2747}{}\label{namespacemage_add9fc09b8a7166c5e0d0bde63d8f2747} 
 \index{mage@{mage}!Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}}
 \index{Convert\+Absolute\+To\+Normalized\+Screen@{Convert\+Absolute\+To\+Normalized\+Screen}!mage@{mage}}
@@ -4822,6 +5369,23 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Dynamic\+Vertex\+Buffer (\begin{DoxyParamCap
 \subsubsection{\texorpdfstring{Create\+Font()}{CreateFont()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Create\+Font (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
 
+Create a sprite font.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the sprite font descriptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created sprite font. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite font. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_ab0bd21012fa29244f0f9b3201bebc2a5}{}\label{namespacemage_ab0bd21012fa29244f0f9b3201bebc2a5} 
 \index{mage@{mage}!Create\+Lambertian\+Shader@{Create\+Lambertian\+Shader}}
 \index{Create\+Lambertian\+Shader@{Create\+Lambertian\+Shader}!mage@{mage}}
@@ -4859,18 +5423,47 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Dynamic\+Vertex\+Buffer (\begin{DoxyParamCap
 \subsubsection{\texorpdfstring{Create\+Opaque\+Blend\+State()}{CreateOpaqueBlendState()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Opaque\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_aec09581a328a83e6f87cbf572a85ba6c}{}\label{namespacemage_aec09581a328a83e6f87cbf572a85ba6c} 
+\hypertarget{namespacemage_abceafa3c16065a9d0e9a6b2482316f45}{}\label{namespacemage_abceafa3c16065a9d0e9a6b2482316f45} 
 \index{mage@{mage}!Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}}
 \index{Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Orthographic\+Camera()}{CreateOrthographicCamera()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ mage\+::\+Create\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ mage\+::\+Create\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{float}]{width = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+ORTHOGRAPHIC\+\_\+WIDTH},  }\item[{float}]{height = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+ORTHOGRAPHIC\+\_\+HEIGHT},  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})}
 
+Constructs an orthographic camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em width} & The width of the camera projection plane in camera space. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the camera projection plane in camera space. \\
+\hline
+\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in camera space. \\
+\hline
+\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in camera space. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a4431fdebdb526878bacc4028cb94a63b}{}\label{namespacemage_a4431fdebdb526878bacc4028cb94a63b} 
 \index{mage@{mage}!Create\+Perspective\+Camera@{Create\+Perspective\+Camera}}
 \index{Create\+Perspective\+Camera@{Create\+Perspective\+Camera}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Perspective\+Camera()}{CreatePerspectiveCamera()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} $>$ mage\+::\+Create\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{float}]{fov\+\_\+y,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} $>$ mage\+::\+Create\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{float}]{fov\+\_\+y = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+PERSPECTIVE\+\_\+FOV\+\_\+Y},  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})}
 
+Constructs a perspective camera.
+
+The aspect ratio will be based on the current screen resolution.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine and its renderer must exist. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fov\+\_\+y} & The vertical field-\/of-\/view. \\
+\hline
+\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in camera space. \\
+\hline
+\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in camera space. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a9f3a3ef8e9a08654f98dfaa2e6c77da8}{}\label{namespacemage_a9f3a3ef8e9a08654f98dfaa2e6c77da8} 
 \index{mage@{mage}!Create\+Point\+Clamp\+Sampler\+State@{Create\+Point\+Clamp\+Sampler\+State}}
 \index{Create\+Point\+Clamp\+Sampler\+State@{Create\+Point\+Clamp\+Sampler\+State}!mage@{mage}}
@@ -4984,6 +5577,9 @@ Notifies a debug message.
 
 A debug message is associated with generally useful information to log only in debug builds.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
@@ -5012,6 +5608,9 @@ Notifies an error message.
 
 An error message is associated with any error which is fatal to the operation, but not the service or application.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
@@ -5065,12 +5664,12 @@ Exports a mesh to the given file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_ad7382e78b94a6bf97895c8bfd198976b}{}\label{namespacemage_ad7382e78b94a6bf97895c8bfd198976b} 
+\hypertarget{namespacemage_a6558ce42c284f76e6bb08bc0f9cabfc3}{}\label{namespacemage_a6558ce42c284f76e6bb08bc0f9cabfc3} 
 \index{mage@{mage}!Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}}
 \index{Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Export\+M\+S\+H\+Mesh\+To\+File()}{ExportMSHMeshToFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Export\+M\+S\+H\+Mesh\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
+void mage\+::\+Export\+M\+S\+H\+Mesh\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ VertexT $>$ \&}]{vertices,  }\item[{const vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
 
 Exports the given mesh to the given M\+SH file.
 
@@ -5090,14 +5689,16 @@ Exports the given mesh to the given M\+SH file.
 \mbox{\tt in}  & {\em indices} & A reference to a vector containing the indices of the mesh. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a6bbe2c1ce9b49dea0c61ce4eafea6a3d}{}\label{namespacemage_a6bbe2c1ce9b49dea0c61ce4eafea6a3d} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to export the mesh to file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_aa879d3bf0554136881745e716b84e3af}{}\label{namespacemage_aa879d3bf0554136881745e716b84e3af} 
 \index{mage@{mage}!Export\+Variable\+Script\+To\+File@{Export\+Variable\+Script\+To\+File}}
 \index{Export\+Variable\+Script\+To\+File@{Export\+Variable\+Script\+To\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Export\+Variable\+Script\+To\+File()}{ExportVariableScriptToFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Export\+Variable\+Script\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Export\+Variable\+Script\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
 
 Exports the given variables to the given file.
 
@@ -5108,14 +5709,16 @@ Exports the given variables to the given file.
 \mbox{\tt in}  & {\em variable\+\_\+buffer} & A reference to a vector containing the variables. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_af5780face7eadab7a08f015e3516e137}{}\label{namespacemage_af5780face7eadab7a08f015e3516e137} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to export the variable script to file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a68a23c80e940a32768c153f9f8cd852e}{}\label{namespacemage_a68a23c80e940a32768c153f9f8cd852e} 
 \index{mage@{mage}!Export\+V\+S\+To\+File@{Export\+V\+S\+To\+File}}
 \index{Export\+V\+S\+To\+File@{Export\+V\+S\+To\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Export\+V\+S\+To\+File()}{ExportVSToFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Export\+V\+S\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Export\+V\+S\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
 
 Exports the given variables to the given VS file.
 
@@ -5126,9 +5729,11 @@ Exports the given variables to the given VS file.
 \mbox{\tt in}  & {\em variable\+\_\+buffer} & A reference to a vector containing the variables. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to export the variable script to file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_aefd40c91591a8e0423e4222b4a5e6249}{}\label{namespacemage_aefd40c91591a8e0423e4222b4a5e6249} 
 \index{mage@{mage}!Fatal@{Fatal}}
 \index{Fatal@{Fatal}!mage@{mage}}
@@ -5139,6 +5744,9 @@ Notifies a fatal message.
 
 A fatal message is associated with any error that is forcing a shutdown of the service or application to prevent data loss (or further data loss).
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
@@ -5158,6 +5766,9 @@ A fatal message is associated with any error that is forcing a shutdown of the s
 
 Finds the end of a word.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape buffer} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em buffer} & A pointer to the first character. \\
@@ -5564,6 +6175,11 @@ If the retrieval succeeds, the total virtual memory usage of this process (in by
 
 Advances to the first delimiting character in the given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5584,6 +6200,11 @@ A pointer to the first delimiting character in the given string.
 
 Advances to the first delimiting character in the given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5604,6 +6225,11 @@ A pointer to the first delimiting character in the given string.
 
 Checks whether the next token in the given string represents a {\ttfamily bool}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5622,6 +6248,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents (non-\/delimiting) characters.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5640,6 +6271,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily double}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5658,6 +6294,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily float}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5676,6 +6317,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily int16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5694,6 +6340,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily int32\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5712,6 +6363,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily int64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5730,6 +6386,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily uint8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5749,6 +6410,10 @@ A token result indicating whether the conversion of the next token in the given 
 Checks whether the next token in the given string represents a quoted string.
 
 \begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+
 The quote \textquotesingle{}\char`\"{}\textquotesingle{} may not be delimiter. 
 \end{DoxyPrecond}
 
@@ -5769,6 +6434,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5787,6 +6457,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily uint16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5805,6 +6480,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily uint32\+\_\+t} .
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5823,6 +6503,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily uint64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5841,6 +6526,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Checks whether the next token in the given string represents a {\ttfamily uint8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -5851,12 +6541,33 @@ Checks whether the next token in the given string represents a {\ttfamily uint8\
 \begin{DoxyReturn}{Returns}
 A token result indicating whether the conversion of the next token in the given string to a {\ttfamily uint8\+\_\+t} succeeds or not. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_afbf05d485686caef85c42be9625540b5}{}\label{namespacemage_afbf05d485686caef85c42be9625540b5} 
+\hypertarget{namespacemage_a23fecd103cda79e7c9fd5cf372ae5e9f}{}\label{namespacemage_a23fecd103cda79e7c9fd5cf372ae5e9f} 
 \index{mage@{mage}!Import\+Font\+From\+File@{Import\+Font\+From\+File}}
 \index{Import\+Font\+From\+File@{Import\+Font\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Font\+From\+File()}{ImportFontFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc = {\ttfamily \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor}()} }\end{DoxyParamCaption})}
 
+Imports the S\+P\+R\+I\+T\+E\+F\+O\+NT from the given file.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the S\+P\+R\+I\+T\+E\+F\+O\+NT filename. \\
+\hline
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt out}  & {\em output} & A reference to the sprite font output. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the sprite font descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the sprite font from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a3dd35a33d61f2891a717b5958f7edf12}{}\label{namespacemage_a3dd35a33d61f2891a717b5958f7edf12} 
 \index{mage@{mage}!Import\+Material\+From\+File@{Import\+Material\+From\+File}}
 \index{Import\+Material\+From\+File@{Import\+Material\+From\+File}!mage@{mage}}
@@ -5925,12 +6636,12 @@ Imports a mesh from the given file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_aecd62c2ba58f3dd536459d4b6157f581}{}\label{namespacemage_aecd62c2ba58f3dd536459d4b6157f581} 
+\hypertarget{namespacemage_ad98d571312abaaa2b0b7dd13958f5100}{}\label{namespacemage_ad98d571312abaaa2b0b7dd13958f5100} 
 \index{mage@{mage}!Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}}
 \index{Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+M\+S\+H\+Mesh\+From\+File()}{ImportMSHMeshFromFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Import\+M\+S\+H\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ VertexT $>$ \&}]{vertices,  }\item[{vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
+void mage\+::\+Import\+M\+S\+H\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ VertexT $>$ \&}]{vertices,  }\item[{vector$<$ IndexT $>$ \&}]{indices }\end{DoxyParamCaption})}
 
 Imports the mesh from the given M\+SH file.
 
@@ -5945,14 +6656,16 @@ Imports the mesh from the given M\+SH file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the M\+SH filename. \\
 \hline
-\mbox{\tt in,out}  & {\em vertices} & A reference to a vector containing the vertices of the mesh. \\
+\mbox{\tt out}  & {\em vertices} & A reference to a vector containing the vertices of the mesh. \\
 \hline
-\mbox{\tt in,out}  & {\em indices} & A reference to a vector containing the indices of the mesh. \\
+\mbox{\tt out}  & {\em indices} & A reference to a vector containing the indices of the mesh. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the mesh from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef}{}\label{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef} 
 \index{mage@{mage}!Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}}
 \index{Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}!mage@{mage}}
@@ -5971,12 +6684,12 @@ Imports the materials from the given M\+TL file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_acb4aa2ee8f4bb362e8cce1fe22e0adbf}{}\label{namespacemage_acb4aa2ee8f4bb362e8cce1fe22e0adbf} 
+\hypertarget{namespacemage_abeaf36b602f5ed971b1b505e42972e4f}{}\label{namespacemage_abeaf36b602f5ed971b1b505e42972e4f} 
 \index{mage@{mage}!Import\+O\+B\+J\+Mesh\+From\+File@{Import\+O\+B\+J\+Mesh\+From\+File}}
 \index{Import\+O\+B\+J\+Mesh\+From\+File@{Import\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+O\+B\+J\+Mesh\+From\+File()}{ImportOBJMeshFromFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Import\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
+void mage\+::\+Import\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
 
 Imports a mesh from an O\+BJ file.
 
@@ -5994,15 +6707,38 @@ Imports a mesh from an O\+BJ file.
 \mbox{\tt in}  & {\em mesh\+\_\+desc} & A reference to the mesh descriptor. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a08f20ffe7bbb23d861ab2442e2967bcd}{}\label{namespacemage_a08f20ffe7bbb23d861ab2442e2967bcd} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the mesh from file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_aac88563417bcd178423aec61ca687a74}{}\label{namespacemage_aac88563417bcd178423aec61ca687a74} 
 \index{mage@{mage}!Import\+Sprite\+Font\+From\+File@{Import\+Sprite\+Font\+From\+File}}
 \index{Import\+Sprite\+Font\+From\+File@{Import\+Sprite\+Font\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Sprite\+Font\+From\+File()}{ImportSpriteFontFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Sprite\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+Sprite\+Font\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&}]{output,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc = {\ttfamily \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor}()} }\end{DoxyParamCaption})}
 
+Imports the sprite font from the given file.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt out}  & {\em output} & A reference to the sprite font output. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the sprite font descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the sprite font from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_ad3c9a6b3f339b92985d202e5cd0f4388}{}\label{namespacemage_ad3c9a6b3f339b92985d202e5cd0f4388} 
 \index{mage@{mage}!Import\+Texture\+From\+File@{Import\+Texture\+From\+File}}
 \index{Import\+Texture\+From\+File@{Import\+Texture\+From\+File}!mage@{mage}}
@@ -6023,11 +6759,11 @@ Imports the texture from the given file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a6515a0a04b54bd9544eefe5a23ab8c43}{}\label{namespacemage_a6515a0a04b54bd9544eefe5a23ab8c43} 
+\hypertarget{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a}{}\label{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a} 
 \index{mage@{mage}!Import\+Variable\+Script\+From\+File@{Import\+Variable\+Script\+From\+File}}
 \index{Import\+Variable\+Script\+From\+File@{Import\+Variable\+Script\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Variable\+Script\+From\+File()}{ImportVariableScriptFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Variable\+Script\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+Variable\+Script\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
 
 Imports the variables from the given file.
 
@@ -6038,14 +6774,16 @@ Imports the variables from the given file.
 \mbox{\tt in,out}  & {\em variable\+\_\+buffer} & A reference to a vector containing the variables. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_ab13ac77392ebda63780e73f720237906}{}\label{namespacemage_ab13ac77392ebda63780e73f720237906} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the variable script from file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_aa9fc2d2f7e0a2b6bebc707d3eaf126ff}{}\label{namespacemage_aa9fc2d2f7e0a2b6bebc707d3eaf126ff} 
 \index{mage@{mage}!Import\+V\+S\+From\+File@{Import\+V\+S\+From\+File}}
 \index{Import\+V\+S\+From\+File@{Import\+V\+S\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+V\+S\+From\+File()}{ImportVSFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+V\+S\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+V\+S\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
 
 Imports the variables from the given VS file.
 
@@ -6053,12 +6791,14 @@ Imports the variables from the given VS file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the VS filename. \\
 \hline
-\mbox{\tt in,out}  & {\em variable\+\_\+buffer} & A reference to a vector containing the variables. \\
+\mbox{\tt out}  & {\em variable\+\_\+buffer} & A reference to a vector containing the variables. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the variable script from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_add6aa5f13960ce07b20f48d273956a91}{}\label{namespacemage_add6aa5f13960ce07b20f48d273956a91} 
 \index{mage@{mage}!Info@{Info}}
 \index{Info@{Info}!mage@{mage}}
@@ -6069,22 +6809,27 @@ Notifies an info message.
 
 An info message is associated with generally useful information to log.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{}\label{namespacemage_a14798232aabfdf96d751f4fcca4e6ece} 
+\hypertarget{namespacemage_a587146c8cbeed655be16ddff8435c05c}{}\label{namespacemage_a587146c8cbeed655be16ddff8435c05c} 
 \index{mage@{mage}!Initialize\+Console@{Initialize\+Console}}
 \index{Initialize\+Console@{Initialize\+Console}!mage@{mage}}
 \subsubsection{\texorpdfstring{Initialize\+Console()}{InitializeConsole()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Initialize\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Initialize\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Allocates a console to this engine for basic io and redirects stdin, stdout and stderr to the allocated console.
 
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize the console. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a13b912f3dcd9c202fe3f9edb424e3b78}{}\label{namespacemage_a13b912f3dcd9c202fe3f9edb424e3b78} 
 \index{mage@{mage}!Invert\+Handness@{Invert\+Handness}}
 \index{Invert\+Handness@{Invert\+Handness}!mage@{mage}}
@@ -6226,6 +6971,9 @@ Prints the header of the engine to the console. \hypertarget{namespacemage_ab248
 
 Process the given error.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & The format of the error string. \\
@@ -6237,12 +6985,33 @@ Process the given error.
 \mbox{\tt in}  & {\em disposition} & The disposition of the error. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a30683d9d7214e9b340b5cb225a8b3467}{}\label{namespacemage_a30683d9d7214e9b340b5cb225a8b3467} 
+\hypertarget{namespacemage_aef2e639196d406b6cfe71815d46b5cf9}{}\label{namespacemage_aef2e639196d406b6cfe71815d46b5cf9} 
 \index{mage@{mage}!Read\+Binary\+File@{Read\+Binary\+File}}
 \index{Read\+Binary\+File@{Read\+Binary\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Read\+Binary\+File()}{ReadBinaryFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Read\+Binary\+File (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{fname,  }\item[{\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ \&}]{data,  }\item[{size\+\_\+t $\ast$}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Read\+Binary\+File (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{fname,  }\item[{\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ \&}]{data,  }\item[{size\+\_\+t $\ast$}]{size }\end{DoxyParamCaption})}
 
+Reads the bytes of a binary file.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape fname} is not equal to {\ttfamily nullptr}. 
+
+{\itshape size} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A pointer to a null-\/terminated wide string representing the filename. \\
+\hline
+\mbox{\tt out}  & {\em data} & A reference to a pointer to a buffer for storing the read bytes. \\
+\hline
+\mbox{\tt out}  & {\em size} & A pointer to the size of the read bytes. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read from the given file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_af0a37dab7ba4c58335ff1e84d7279c1c}{}\label{namespacemage_af0a37dab7ba4c58335ff1e84d7279c1c} 
 \index{mage@{mage}!Read\+Bool@{Read\+Bool}}
 \index{Read\+Bool@{Read\+Bool}!mage@{mage}}
@@ -6251,6 +7020,11 @@ Process the given error.
 
 Reads and converts the next token in the given string to a {\ttfamily bool} ({\ttfamily true} or {\ttfamily false}).
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6273,6 +7047,13 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to (non-\/delimiting) characters.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape result} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6295,6 +7076,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily double}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6317,6 +7103,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily float}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6339,6 +7130,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily X\+M\+F\+L\+O\+A\+T2}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6361,6 +7157,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily X\+M\+F\+L\+O\+A\+T3}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6383,6 +7184,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily X\+M\+F\+L\+O\+A\+T4}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6405,6 +7211,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily int16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6427,6 +7238,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily int32\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6449,6 +7265,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily int64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6471,6 +7292,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily int8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6494,6 +7320,10 @@ A token result indicating whether the conversion of the next token in the given 
 Reads and converts the next token in the given string to a quoted string.
 
 \begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+
 The quote \textquotesingle{}\char`\"{}\textquotesingle{} may not be delimiter. 
 \end{DoxyPrecond}
 
@@ -6518,6 +7348,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6540,6 +7375,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily uint16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6562,6 +7402,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily uint32\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6584,6 +7429,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily uint64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6606,6 +7456,11 @@ A token result indicating whether the conversion of the next token in the given 
 
 Reads and converts the next token in the given string to a {\ttfamily uint8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
@@ -6752,6 +7607,11 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 
 Advances to the first non-\/delimiting character in the given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -6772,6 +7632,11 @@ A pointer to the first non-\/delimiting character in the given string.
 
 Advances to the first non-\/delimiting character in the given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape delimiters} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string. \\
@@ -6792,6 +7657,11 @@ A pointer to the first non-\/delimiting character in the given string.
 
 Checks whether the first given string contains the second given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str1} is not equal to {\ttfamily nullptr}. 
+
+{\itshape str2} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str1} & A pointer to the null-\/terminated byte string to be scanned. \\
@@ -6810,6 +7680,11 @@ Checks whether the first given string contains the second given string.
 
 Checks whether the first given string contains the second given string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str1} is not equal to {\ttfamily nullptr}. 
+
+{\itshape str2} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str1} & A pointer to the null-\/terminated wide string to be scanned. \\
@@ -6828,6 +7703,9 @@ Checks whether the first given string contains the second given string.
 
 Checks whether the first given string contains the given character.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string to be scanned. \\
@@ -6846,6 +7724,9 @@ Checks whether the first given string contains the given character.
 
 Checks whether the first given string contains the given character.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated wide string to be scanned. \\
@@ -6864,6 +7745,9 @@ Checks whether the first given string contains the given character.
 
 Converts the given byte string to a wide string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string to copy. \\
@@ -6880,6 +7764,9 @@ A pointer to the to the null-\/terminated wide string copy of the given null-\/t
 
 Converts the given wide string to an byte string.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated wide string to copy. \\
@@ -6928,6 +7815,11 @@ The byte string copy of the given wide string.
 
 Checks whether the given strings are equal.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str1} is not equal to {\ttfamily nullptr}. 
+
+{\itshape str2} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str1} & A pointer to the first null-\/terminated byte string. \\
@@ -6946,6 +7838,11 @@ Checks whether the given strings are equal.
 
 Checks whether the given strings are equal.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str1} is not equal to {\ttfamily nullptr}. 
+
+{\itshape str2} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str1} & A pointer to the first null-\/terminated wide string. \\
@@ -6964,6 +7861,9 @@ Checks whether the given strings are equal.
 
 Finds the first occurrence of the given character in the given string neglecting the usage of the given character in a custom escape sequence.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string to be scanned. \\
@@ -6984,6 +7884,9 @@ A pointer to the first occurrence of {\itshape c} in {\itshape str}.
 
 Finds the first occurrence of the given character in the given string neglecting the usage of the given character in a custom escape sequence.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string to be scanned. \\
@@ -7004,6 +7907,9 @@ A pointer to the first occurrence of {\itshape c} in {\itshape str}.
 
 Finds the first occurrence of the given character in the given string neglecting the usage of the given character in a custom escape sequence.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated wide string to be scanned. \\
@@ -7024,6 +7930,9 @@ A pointer to the first occurrence of {\itshape c} in {\itshape str}.
 
 Finds the first occurrence of the given character in the given string neglecting the usage of the given character in a custom escape sequence.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated wide string to be scanned. \\
@@ -7048,6 +7957,11 @@ A newline character makes {\ttfamily sgets} stop reading, but it is considered a
 
 A terminating null character is automatically appended after the characters copied to {\itshape str}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape input} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated byte string to copy to. \\
@@ -7072,6 +7986,11 @@ A newline character makes {\ttfamily sgets} stop reading, but it is considered a
 
 A terminating null character is automatically appended after the characters copied to {\itshape str}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} is not equal to {\ttfamily nullptr}. 
+
+{\itshape input} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated wide string to copy to. \\
@@ -7290,6 +8209,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily bool} ({\ttfamily true} or {\ttfamily false}).
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7328,6 +8250,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily double}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7366,6 +8291,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily float}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7404,6 +8332,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily int16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7442,6 +8373,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily int32\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7480,6 +8414,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily int64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7518,6 +8455,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily int8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7556,6 +8496,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily uint16\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7594,6 +8537,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily uint32\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7632,6 +8578,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily uint64\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7670,6 +8619,9 @@ A token result indicating whether the conversion of the given string {\itshape s
 
 Converts the given string to a {\ttfamily uint8\+\_\+t}.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape end} is not equal to {\ttfamily nullptr} if {\itshape begin} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em begin} & A pointer to the begin (inclusive) of the string to convert. \\
@@ -7752,6 +8704,9 @@ Notifies a warning message.
 
 A warning message is associated with anything that can potentially cause application oddities.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
@@ -7790,7 +8745,7 @@ A (global) pointer to the device enumeration. \hypertarget{namespacemage_a84bf83
 \subsubsection{\texorpdfstring{g\+\_\+engine}{g\_engine}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_engine}{Engine} $\ast$ mage\+::g\+\_\+engine = nullptr}
 
-The engine used by the user. \hypertarget{namespacemage_add3b7e051df553262371e077d9d66fd9}{}\label{namespacemage_add3b7e051df553262371e077d9d66fd9} 
+A pointer to the engine used by the user. \hypertarget{namespacemage_add3b7e051df553262371e077d9d66fd9}{}\label{namespacemage_add3b7e051df553262371e077d9d66fd9} 
 \index{mage@{mage}!g\+\_\+feature\+\_\+levels@{g\+\_\+feature\+\_\+levels}}
 \index{g\+\_\+feature\+\_\+levels@{g\+\_\+feature\+\_\+levels}!mage@{mage}}
 \subsubsection{\texorpdfstring{g\+\_\+feature\+\_\+levels}{g\_feature\_levels}}

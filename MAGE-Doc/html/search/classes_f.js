@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readwritemutex',['ReadWriteMutex',['../classmage_1_1_read_write_mutex.html',1,'mage']]],
+  ['readwritemutex',['ReadWriteMutex',['../structmage_1_1_read_write_mutex.html',1,'mage']]],
   ['readwritemutexlock',['ReadWriteMutexLock',['../structmage_1_1_read_write_mutex_lock.html',1,'mage']]],
   ['renderer',['Renderer',['../classmage_1_1_renderer.html',1,'mage']]],
   ['renderingstate',['RenderingState',['../structmage_1_1_rendering_state.html',1,'mage']]],
