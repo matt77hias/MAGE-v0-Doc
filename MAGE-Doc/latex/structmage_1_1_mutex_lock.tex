@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_mutex_lock_aa8cd93677eec2656ca217fdf79f911c4}{Mutex\+Lock} (\hyperlink{classmage_1_1_mutex}{Mutex} \&mutex)
+\hyperlink{structmage_1_1_mutex_lock_aa8cd93677eec2656ca217fdf79f911c4}{Mutex\+Lock} (\hyperlink{structmage_1_1_mutex}{Mutex} \&mutex)
 \item 
 \hyperlink{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9}{Mutex\+Lock} (const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&mutex\+\_\+lock)=delete
 \item 
@@ -22,7 +22,7 @@
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_mutex}{Mutex} \& \hyperlink{structmage_1_1_mutex_lock_a1c796e1e66bd49007fe746d1425b82f4}{m\+\_\+mutex}
+\hyperlink{structmage_1_1_mutex}{Mutex} \& \hyperlink{structmage_1_1_mutex_lock_a1c796e1e66bd49007fe746d1425b82f4}{m\+\_\+mutex}
 \end{DoxyCompactItemize}
 
 
@@ -34,13 +34,13 @@ A struct of mutex locks.
 \index{mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}!Mutex\+Lock@{Mutex\+Lock}}
 \index{Mutex\+Lock@{Mutex\+Lock}!mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{Mutex\+Lock()}{MutexLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mutex}{Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_mutex}{Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a mutex lock for the given mutex.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mutex} & A reference to a mutex. \\
+\mbox{\tt in}  & {\em mutex} & A reference to the mutex. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9}{}\label{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9} 
@@ -53,7 +53,7 @@ Constructs a mutex lock from the given mutex lock.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a mutex lock. \\
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to the mutex lock to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_mutex_lock_a5045ffd6d3743b7994ba2ddfaf093a4a}{}\label{structmage_1_1_mutex_lock_a5045ffd6d3743b7994ba2ddfaf093a4a} 
@@ -62,11 +62,11 @@ Constructs a mutex lock from the given mutex lock.
 \subsubsection{\texorpdfstring{Mutex\+Lock()}{MutexLock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&\&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Constructs a mutex lock from the given mutex lock.
+Constructs a mutex lock by moving the given mutex lock.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a mutex lock. \\
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to the mutex lock to move. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_mutex_lock_a2631e8878646b2d25b136b6adb55d553}{}\label{structmage_1_1_mutex_lock_a2631e8878646b2d25b136b6adb55d553} 
@@ -88,7 +88,7 @@ Copies the given mutex lock to this mutex lock.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a mutex lock. \\
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to the mutex lock to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -100,15 +100,15 @@ A reference to the copy of the given mutex lock (i.\+e. this mutex lock)
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}\& mage\+::\+Mutex\+Lock\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&\&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Copies the given mutex lock to this mutex lock.
+Moves the given mutex lock to this mutex lock.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a mutex lock. \\
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to the mutex lock to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given mutex lock (i.\+e. this mutex lock) 
+A reference to the moved mutex lock (i.\+e. this mutex lock) 
 \end{DoxyReturn}
 
 
@@ -117,6 +117,6 @@ A reference to the copy of the given mutex lock (i.\+e. this mutex lock)
 \index{mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}!m\+\_\+mutex@{m\+\_\+mutex}}
 \index{m\+\_\+mutex@{m\+\_\+mutex}!mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_mutex}{Mutex}\& mage\+::\+Mutex\+Lock\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_mutex}{Mutex}\& mage\+::\+Mutex\+Lock\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
 
-The mutex of this mutex lock. 
+A reference to the mutex of this mutex lock. 

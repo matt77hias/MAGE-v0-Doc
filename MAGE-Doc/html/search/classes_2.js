@@ -4,7 +4,7 @@ var searchData=
   ['charactermotorscript',['CharacterMotorScript',['../classmage_1_1_character_motor_script.html',1,'mage']]],
   ['color',['Color',['../structmage_1_1_color.html',1,'mage']]],
   ['combinedshader',['CombinedShader',['../structmage_1_1_combined_shader.html',1,'mage']]],
-  ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html',1,'mage']]],
+  ['conditionvariable',['ConditionVariable',['../structmage_1_1_condition_variable.html',1,'mage']]],
   ['constantbuffer',['ConstantBuffer',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20lightdatabuffer_20_3e',['ConstantBuffer&lt; LightDataBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20materialbuffer_20_3e',['ConstantBuffer&lt; MaterialBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],

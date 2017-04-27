@@ -22,7 +22,7 @@ virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_engine_setup_a5a19cf91bfd8cea940abbbbbdd1828a1}{Engine\+Setup} (H\+I\+N\+S\+T\+A\+N\+CE hinstance=nullptr, const wstring \&name=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME)
+\hyperlink{structmage_1_1_engine_setup_ac09a572abaf5f785004bb46a1d1bf49c}{Engine\+Setup} (H\+I\+N\+S\+T\+A\+N\+CE hinstance, const wstring \&name=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME)
 \item 
 \hyperlink{structmage_1_1_engine_setup_a40980f5fce1554c2a93707efdf4486a9}{Engine\+Setup} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)=default
 \item 
@@ -31,7 +31,7 @@ virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-H\+I\+N\+S\+T\+A\+N\+CE const \hyperlink{structmage_1_1_engine_setup_a8d2dc7d0e8ec66629d8f6238a89bbb48}{m\+\_\+hinstance}
+const H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{structmage_1_1_engine_setup_a678360078479bc3fee6bed4617caebbf}{m\+\_\+hinstance}
 \item 
 const wstring \hyperlink{structmage_1_1_engine_setup_a40fba981d4b1c30eff304b029a013009}{m\+\_\+name}
 \end{DoxyCompactItemize}
@@ -47,14 +47,17 @@ A struct of engine setups.
 \subsubsection{\texorpdfstring{$\sim$\+Engine\+Setup()}{~EngineSetup()}}
 {\footnotesize\ttfamily virtual mage\+::\+Engine\+Setup\+::$\sim$\+Engine\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-Destructs this engine setup. \hypertarget{structmage_1_1_engine_setup_a5a19cf91bfd8cea940abbbbbdd1828a1}{}\label{structmage_1_1_engine_setup_a5a19cf91bfd8cea940abbbbbdd1828a1} 
+Destructs this engine setup. \hypertarget{structmage_1_1_engine_setup_ac09a572abaf5f785004bb46a1d1bf49c}{}\label{structmage_1_1_engine_setup_ac09a572abaf5f785004bb46a1d1bf49c} 
 \index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!Engine\+Setup@{Engine\+Setup}}
 \index{Engine\+Setup@{Engine\+Setup}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
 \subsubsection{\texorpdfstring{Engine\+Setup()}{EngineSetup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{hinstance = {\ttfamily nullptr},  }\item[{const wstring \&}]{name = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+APPLICATION\+\_\+NAME} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{hinstance,  }\item[{const wstring \&}]{name = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+APPLICATION\+\_\+NAME} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
 
 Constructs an engine setup.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape hinstance} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em hinstance} & The application instance handle of the application. \\
@@ -72,7 +75,7 @@ Constructs an engine setup from the given engine setup.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em setup} & A reference to the engine setup. \\
+\mbox{\tt in}  & {\em setup} & A reference to the engine setup to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_engine_setup_a6b150bbb4bff7971939a2f327ba760fe}{}\label{structmage_1_1_engine_setup_a6b150bbb4bff7971939a2f327ba760fe} 
@@ -81,11 +84,11 @@ Constructs an engine setup from the given engine setup.
 \subsubsection{\texorpdfstring{Engine\+Setup()}{EngineSetup()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&\&}]{setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
-Constructs an engine setup from the given engine setup.
+Constructs an engine setup by moving the given engine setup.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em setup} & A reference to the engine setup. \\
+\mbox{\tt in}  & {\em setup} & A reference to the engine setup to move. \\
 \hline
 \end{DoxyParams}
 
@@ -146,7 +149,7 @@ A reference to the copy of the given engine setup (i.\+e. this engine setup).
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}\& mage\+::\+Engine\+Setup\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&\&}]{setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Copies the given engine setup to this engine setup.
+Moves the given engine setup to this engine setup.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -154,16 +157,16 @@ Copies the given engine setup to this engine setup.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given engine setup (i.\+e. this engine setup). 
+A reference to the moved engine setup (i.\+e. this engine setup). 
 \end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{structmage_1_1_engine_setup_a8d2dc7d0e8ec66629d8f6238a89bbb48}{}\label{structmage_1_1_engine_setup_a8d2dc7d0e8ec66629d8f6238a89bbb48} 
+\hypertarget{structmage_1_1_engine_setup_a678360078479bc3fee6bed4617caebbf}{}\label{structmage_1_1_engine_setup_a678360078479bc3fee6bed4617caebbf} 
 \index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!m\+\_\+hinstance@{m\+\_\+hinstance}}
 \index{m\+\_\+hinstance@{m\+\_\+hinstance}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
 \subsubsection{\texorpdfstring{m\+\_\+hinstance}{m\_hinstance}}
-{\footnotesize\ttfamily H\+I\+N\+S\+T\+A\+N\+CE const mage\+::\+Engine\+Setup\+::m\+\_\+hinstance\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const H\+I\+N\+S\+T\+A\+N\+CE mage\+::\+Engine\+Setup\+::m\+\_\+hinstance\hspace{0.3cm}{\ttfamily [private]}}
 
 Application instance handle. \hypertarget{structmage_1_1_engine_setup_a40fba981d4b1c30eff304b029a013009}{}\label{structmage_1_1_engine_setup_a40fba981d4b1c30eff304b029a013009} 
 \index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!m\+\_\+name@{m\+\_\+name}}

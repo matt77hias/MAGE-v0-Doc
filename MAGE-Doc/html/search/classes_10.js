@@ -2,7 +2,7 @@ var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
   ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html',1,'mage']]],
-  ['semaphore',['Semaphore',['../classmage_1_1_semaphore.html',1,'mage']]],
+  ['semaphore',['Semaphore',['../structmage_1_1_semaphore.html',1,'mage']]],
   ['shadedmaterial',['ShadedMaterial',['../structmage_1_1_shaded_material.html',1,'mage']]],
   ['spotlight',['SpotLight',['../classmage_1_1_spot_light.html',1,'mage']]],
   ['spritebatchmesh',['SpriteBatchMesh',['../classmage_1_1_sprite_batch_mesh.html',1,'mage']]],

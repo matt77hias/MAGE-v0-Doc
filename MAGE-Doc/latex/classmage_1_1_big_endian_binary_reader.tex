@@ -19,9 +19,9 @@ virtual \hyperlink{classmage_1_1_big_endian_binary_reader_a870c0f64347c824058d9f
 \item 
 \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \& \hyperlink{classmage_1_1_big_endian_binary_reader_a9e2e0dd62afff04774d0246f7e5e4ce4}{operator=} (\hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \&\&reader)=delete
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_big_endian_binary_reader_a40e695e917fd49a0394d519a651ceee8}{Read\+From\+File} (const wstring \&fname)
+void \hyperlink{classmage_1_1_big_endian_binary_reader_aec453e82d9b318e04894d4168db23715}{Read\+From\+File} (const wstring \&fname)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_big_endian_binary_reader_a77b846759b6ca3312b2e9aeb8a19d1bc}{Read\+From\+Memory} (const uint8\+\_\+t $\ast$input, size\+\_\+t size)
+void \hyperlink{classmage_1_1_big_endian_binary_reader_ac90695d1cc20a897a0f37c7442703e7e}{Read\+From\+Memory} (const uint8\+\_\+t $\ast$input, size\+\_\+t size)
 \item 
 const wstring \& \hyperlink{classmage_1_1_big_endian_binary_reader_a52b2695d83679943be40dc1328f9387f}{Get\+Filename} () const
 \end{DoxyCompactItemize}
@@ -36,14 +36,14 @@ const wstring \& \hyperlink{classmage_1_1_big_endian_binary_reader_a52b2695d8367
 \item 
 bool \hyperlink{classmage_1_1_big_endian_binary_reader_a312a8ec7497a8056695b0345115039bd}{Has\+Chars\+Left} () const
 \item 
-{\footnotesize template$<$typename ValueT $>$ }\\const ValueT \& \hyperlink{classmage_1_1_big_endian_binary_reader_ac9c9d58447e2c08a8d71e593957bc86f}{Read\+Value} ()
+{\footnotesize template$<$typename DataT $>$ }\\const DataT \& \hyperlink{classmage_1_1_big_endian_binary_reader_a036399c5d3099a4e617127acb110ccdf}{Read\+Value} ()
 \item 
-{\footnotesize template$<$typename ValueT $>$ }\\const ValueT $\ast$ \hyperlink{classmage_1_1_big_endian_binary_reader_a9210017e8f807d482f838272c7d46d38}{Read\+Value\+Array} (size\+\_\+t size)
+{\footnotesize template$<$typename DataT $>$ }\\const DataT $\ast$ \hyperlink{classmage_1_1_big_endian_binary_reader_aa79d97deb6060a6c1015c8f2891ac6da}{Read\+Value\+Array} (size\+\_\+t count)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_big_endian_binary_reader_a723f28280c4e1343f42f41eea2b97015}{Read} ()=0
+virtual void \hyperlink{classmage_1_1_big_endian_binary_reader_af072965dea0319d6366b21cc6562bbf9}{Read} ()=0
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -58,6 +58,9 @@ const uint8\+\_\+t $\ast$ \hyperlink{classmage_1_1_big_endian_binary_reader_a87f
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of readers for reading (big endian) binary files. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_big_endian_binary_reader_a870c0f64347c824058d9fe3443c8e368}{}\label{classmage_1_1_big_endian_binary_reader_a870c0f64347c824058d9fe3443c8e368} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!````~Big\+Endian\+Binary\+Reader@{$\sim$\+Big\+Endian\+Binary\+Reader}}
@@ -65,24 +68,38 @@ const uint8\+\_\+t $\ast$ \hyperlink{classmage_1_1_big_endian_binary_reader_a87f
 \subsubsection{\texorpdfstring{$\sim$\+Big\+Endian\+Binary\+Reader()}{~BigEndianBinaryReader()}}
 {\footnotesize\ttfamily virtual mage\+::\+Big\+Endian\+Binary\+Reader\+::$\sim$\+Big\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a1fd0dbee6950a8cb04aa399f0cdbaf2a}{}\label{classmage_1_1_big_endian_binary_reader_a1fd0dbee6950a8cb04aa399f0cdbaf2a} 
+Destructs this big endian binary reader. \hypertarget{classmage_1_1_big_endian_binary_reader_a1fd0dbee6950a8cb04aa399f0cdbaf2a}{}\label{classmage_1_1_big_endian_binary_reader_a1fd0dbee6950a8cb04aa399f0cdbaf2a} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}}
 \index{Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Big\+Endian\+Binary\+Reader()}{BigEndianBinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Big\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a9d490263268290217ae4f2f06e0699c4}{}\label{classmage_1_1_big_endian_binary_reader_a9d490263268290217ae4f2f06e0699c4} 
+Constructs a big endian binary reader. \hypertarget{classmage_1_1_big_endian_binary_reader_a9d490263268290217ae4f2f06e0699c4}{}\label{classmage_1_1_big_endian_binary_reader_a9d490263268290217ae4f2f06e0699c4} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}}
 \index{Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Big\+Endian\+Binary\+Reader()}{BigEndianBinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Big\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
 
+Constructs a big endian binary reader from the given big endian binary reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the big endian binary reader to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_big_endian_binary_reader_a67974befee1ff010ff7681d4f8066784}{}\label{classmage_1_1_big_endian_binary_reader_a67974befee1ff010ff7681d4f8066784} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}}
 \index{Big\+Endian\+Binary\+Reader@{Big\+Endian\+Binary\+Reader}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Big\+Endian\+Binary\+Reader()}{BigEndianBinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Big\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
+Constructs a big endian binary reader by moving the given big endian binary reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the big endian binary reader to move. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -92,60 +109,161 @@ const uint8\+\_\+t $\ast$ \hyperlink{classmage_1_1_big_endian_binary_reader_a87f
 \subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
 {\footnotesize\ttfamily const wstring\& mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the current filename of this big endian binary reader.
+
+\begin{DoxyReturn}{Returns}
+A reference to the current filename of this big endian binary reader. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_big_endian_binary_reader_a312a8ec7497a8056695b0345115039bd}{}\label{classmage_1_1_big_endian_binary_reader_a312a8ec7497a8056695b0345115039bd} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Has\+Chars\+Left@{Has\+Chars\+Left}}
 \index{Has\+Chars\+Left@{Has\+Chars\+Left}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Has\+Chars\+Left()}{HasCharsLeft()}}
 {\footnotesize\ttfamily bool mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Has\+Chars\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
+Checks if there are characters left to read by this binary reader.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if there are characters left to read by this binary reader. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_big_endian_binary_reader_abd4b24df4219469a8c2e9253b1cad405}{}\label{classmage_1_1_big_endian_binary_reader_abd4b24df4219469a8c2e9253b1cad405} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader}\& mage\+::\+Big\+Endian\+Binary\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given big endian binary reader to this big endian binary reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a big endian binary reader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given big endian binary reader (i.\+e. this big endian binary reader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_big_endian_binary_reader_a9e2e0dd62afff04774d0246f7e5e4ce4}{}\label{classmage_1_1_big_endian_binary_reader_a9e2e0dd62afff04774d0246f7e5e4ce4} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader}\& mage\+::\+Big\+Endian\+Binary\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_big_endian_binary_reader}{Big\+Endian\+Binary\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a723f28280c4e1343f42f41eea2b97015}{}\label{classmage_1_1_big_endian_binary_reader_a723f28280c4e1343f42f41eea2b97015} 
+Moves the given big endian binary reader to this big endian binary reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a big endian binary reader to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved big endian binary reader (i.\+e. this big endian binary reader). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_big_endian_binary_reader_af072965dea0319d6366b21cc6562bbf9}{}\label{classmage_1_1_big_endian_binary_reader_af072965dea0319d6366b21cc6562bbf9} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read@{Read}}
 \index{Read@{Read}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+Starts reading.
 
 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read to the given file. \\
+\hline
+\end{DoxyExceptions}
 
-Implemented in \hyperlink{classmage_1_1_m_s_h_reader_abbecacfb2b0d4ec343c79a655c4a7cbe}{mage\+::\+M\+S\+H\+Reader$<$ Vertex\+T, Index\+T $>$}, and \hyperlink{classmage_1_1_sprite_font_reader_a6bc9fa71b4c9d884ba939d99f4c9c0d7}{mage\+::\+Sprite\+Font\+Reader}.
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a40e695e917fd49a0394d519a651ceee8}{}\label{classmage_1_1_big_endian_binary_reader_a40e695e917fd49a0394d519a651ceee8} 
+Implemented in \hyperlink{classmage_1_1_m_s_h_reader_a26b60060bf61183fb5758a4725c6a205}{mage\+::\+M\+S\+H\+Reader$<$ Vertex\+T, Index\+T $>$}, and \hyperlink{classmage_1_1_sprite_font_reader_af380ae127285a88ae41e35a9067db412}{mage\+::\+Sprite\+Font\+Reader}.
+
+\hypertarget{classmage_1_1_big_endian_binary_reader_aec453e82d9b318e04894d4168db23715}{}\label{classmage_1_1_big_endian_binary_reader_aec453e82d9b318e04894d4168db23715} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a77b846759b6ca3312b2e9aeb8a19d1bc}{}\label{classmage_1_1_big_endian_binary_reader_a77b846759b6ca3312b2e9aeb8a19d1bc} 
+Reads from the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read from the given file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_big_endian_binary_reader_ac90695d1cc20a897a0f37c7442703e7e}{}\label{classmage_1_1_big_endian_binary_reader_ac90695d1cc20a897a0f37c7442703e7e} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
 \index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{input,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{input,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_ac9c9d58447e2c08a8d71e593957bc86f}{}\label{classmage_1_1_big_endian_binary_reader_ac9c9d58447e2c08a8d71e593957bc86f} 
+Reads the input string.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape input} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & A pointer to the input byte string. \\
+\hline
+\mbox{\tt in}  & {\em size} & The size of the input string. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read from the given input string. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_big_endian_binary_reader_a036399c5d3099a4e617127acb110ccdf}{}\label{classmage_1_1_big_endian_binary_reader_a036399c5d3099a4e617127acb110ccdf} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+Value@{Read\+Value}}
 \index{Read\+Value@{Read\+Value}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+Value()}{ReadValue()}}
-{\footnotesize\ttfamily template$<$typename ValueT $>$ \\
-const ValueT\& mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+const DataT\& mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a9210017e8f807d482f838272c7d46d38}{}\label{classmage_1_1_big_endian_binary_reader_a9210017e8f807d482f838272c7d46d38} 
+Reads a {\ttfamily DataT} element.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A reference to the {\ttfamily DataT} element read. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily DataT} element. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_big_endian_binary_reader_aa79d97deb6060a6c1015c8f2891ac6da}{}\label{classmage_1_1_big_endian_binary_reader_aa79d97deb6060a6c1015c8f2891ac6da} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+Value\+Array@{Read\+Value\+Array}}
 \index{Read\+Value\+Array@{Read\+Value\+Array}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+Value\+Array()}{ReadValueArray()}}
-{\footnotesize\ttfamily template$<$typename ValueT $>$ \\
-const ValueT$\ast$ mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+Value\+Array (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+const DataT$\ast$ mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+Value\+Array (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
+Reads an array of {\ttfamily DataT} elements.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em count} & The number of {\ttfamily DataT} elements to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the array of {\ttfamily DataT} element read. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read {\ttfamily count} {\ttfamily DataT} elements. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
@@ -155,21 +273,22 @@ const ValueT$\ast$ mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+Value\+Array
 \subsubsection{\texorpdfstring{m\+\_\+data}{m\_data}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]} $>$ mage\+::\+Big\+Endian\+Binary\+Reader\+::m\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a87f169955c550884ced880e646d22494}{}\label{classmage_1_1_big_endian_binary_reader_a87f169955c550884ced880e646d22494} 
+A pointer to the data to read of this binary reader. \hypertarget{classmage_1_1_big_endian_binary_reader_a87f169955c550884ced880e646d22494}{}\label{classmage_1_1_big_endian_binary_reader_a87f169955c550884ced880e646d22494} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!m\+\_\+end@{m\+\_\+end}}
 \index{m\+\_\+end@{m\+\_\+end}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+end}{m\_end}}
 {\footnotesize\ttfamily const uint8\+\_\+t$\ast$ mage\+::\+Big\+Endian\+Binary\+Reader\+::m\+\_\+end\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_a0f836aec582a59f156b64bffb9653e41}{}\label{classmage_1_1_big_endian_binary_reader_a0f836aec582a59f156b64bffb9653e41} 
+A pointer to the end position of this binary reader. \hypertarget{classmage_1_1_big_endian_binary_reader_a0f836aec582a59f156b64bffb9653e41}{}\label{classmage_1_1_big_endian_binary_reader_a0f836aec582a59f156b64bffb9653e41} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!m\+\_\+fname@{m\+\_\+fname}}
 \index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
 {\footnotesize\ttfamily wstring mage\+::\+Big\+Endian\+Binary\+Reader\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_big_endian_binary_reader_ad5f1d1af53b4863cbe1f3677492dd978}{}\label{classmage_1_1_big_endian_binary_reader_ad5f1d1af53b4863cbe1f3677492dd978} 
+The current filename of this line reader. \hypertarget{classmage_1_1_big_endian_binary_reader_ad5f1d1af53b4863cbe1f3677492dd978}{}\label{classmage_1_1_big_endian_binary_reader_ad5f1d1af53b4863cbe1f3677492dd978} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!m\+\_\+pos@{m\+\_\+pos}}
 \index{m\+\_\+pos@{m\+\_\+pos}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+pos}{m\_pos}}
 {\footnotesize\ttfamily const uint8\+\_\+t$\ast$ mage\+::\+Big\+Endian\+Binary\+Reader\+::m\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
 
+A pointer to the current position of this binary reader. 

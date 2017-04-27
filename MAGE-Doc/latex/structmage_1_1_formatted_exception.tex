@@ -27,7 +27,7 @@ virtual \hyperlink{structmage_1_1_formatted_exception_a074a2e845b0fa0d57dfeab63e
 \item 
 \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \& \hyperlink{structmage_1_1_formatted_exception_ae35ad9e81efe8ed385792854036b4a14}{operator=} (\hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \&\&formatted\+\_\+exception)=default
 \item 
-const char $\ast$ \hyperlink{structmage_1_1_formatted_exception_aec9ca8402604df35b702e8d29672a3df}{what} () const  throw ()
+virtual const char $\ast$ \hyperlink{structmage_1_1_formatted_exception_a8fb8b53ee8d8cb73ac200bca84c067b2}{what} () const  throw ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -36,6 +36,9 @@ char \hyperlink{structmage_1_1_formatted_exception_aadccdcc1db09285dadc6b5a30681
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of formatted exceptions. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{structmage_1_1_formatted_exception_a77b82a969ec33a3aacec74a5adc4ab8b}{}\label{structmage_1_1_formatted_exception_a77b82a969ec33a3aacec74a5adc4ab8b} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!Formatted\+Exception@{Formatted\+Exception}}
@@ -43,31 +46,55 @@ char \hyperlink{structmage_1_1_formatted_exception_aadccdcc1db09285dadc6b5a30681
 \subsubsection{\texorpdfstring{Formatted\+Exception()}{FormattedException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily mage\+::\+Formatted\+Exception\+::\+Formatted\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_formatted_exception_a3fe833a49052a2db99c023b1b1d43621}{}\label{structmage_1_1_formatted_exception_a3fe833a49052a2db99c023b1b1d43621} 
+Constructs a formatted exception. \hypertarget{structmage_1_1_formatted_exception_a3fe833a49052a2db99c023b1b1d43621}{}\label{structmage_1_1_formatted_exception_a3fe833a49052a2db99c023b1b1d43621} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!Formatted\+Exception@{Formatted\+Exception}}
 \index{Formatted\+Exception@{Formatted\+Exception}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{Formatted\+Exception()}{FormattedException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily mage\+::\+Formatted\+Exception\+::\+Formatted\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a formatted exception.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_formatted_exception_ac42aa4b8dcd15a4f88fc578fec5b11db}{}\label{structmage_1_1_formatted_exception_ac42aa4b8dcd15a4f88fc578fec5b11db} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!Formatted\+Exception@{Formatted\+Exception}}
 \index{Formatted\+Exception@{Formatted\+Exception}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{Formatted\+Exception()}{FormattedException()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Formatted\+Exception\+::\+Formatted\+Exception (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \&}]{formatted\+\_\+exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a formatted exception from the given formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em formatted\+\_\+exception} & A reference to a formatted exception to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_formatted_exception_ac47ff28101bb2660f40211d47afd6bf9}{}\label{structmage_1_1_formatted_exception_ac47ff28101bb2660f40211d47afd6bf9} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!Formatted\+Exception@{Formatted\+Exception}}
 \index{Formatted\+Exception@{Formatted\+Exception}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{Formatted\+Exception()}{FormattedException()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Formatted\+Exception\+::\+Formatted\+Exception (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \&\&}]{formatted\+\_\+exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a formatted exception by moving the given formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em formatted\+\_\+exception} & A reference to a formatted exception to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_formatted_exception_a074a2e845b0fa0d57dfeab63ee0cb1f5}{}\label{structmage_1_1_formatted_exception_a074a2e845b0fa0d57dfeab63ee0cb1f5} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!````~Formatted\+Exception@{$\sim$\+Formatted\+Exception}}
 \index{````~Formatted\+Exception@{$\sim$\+Formatted\+Exception}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{$\sim$\+Formatted\+Exception()}{~FormattedException()}}
 {\footnotesize\ttfamily virtual mage\+::\+Formatted\+Exception\+::$\sim$\+Formatted\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this formatted exception. 
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_formatted_exception_a36b95a1d6ee656db750f9f7c24a0f69d}{}\label{structmage_1_1_formatted_exception_a36b95a1d6ee656db750f9f7c24a0f69d} 
@@ -76,18 +103,43 @@ char \hyperlink{structmage_1_1_formatted_exception_aadccdcc1db09285dadc6b5a30681
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}\& mage\+::\+Formatted\+Exception\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \&}]{formatted\+\_\+exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Copies the given formatted exception to this formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em formatted\+\_\+exception} & A reference to a formatted exception to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given formatted exception (i.\+e. this formatted exception). 
+\end{DoxyReturn}
 \hypertarget{structmage_1_1_formatted_exception_ae35ad9e81efe8ed385792854036b4a14}{}\label{structmage_1_1_formatted_exception_ae35ad9e81efe8ed385792854036b4a14} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}\& mage\+::\+Formatted\+Exception\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception} \&\&}]{formatted\+\_\+exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-\hypertarget{structmage_1_1_formatted_exception_aec9ca8402604df35b702e8d29672a3df}{}\label{structmage_1_1_formatted_exception_aec9ca8402604df35b702e8d29672a3df} 
+Moves the given formatted exception to this formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em formatted\+\_\+exception} & A reference to a formatted exception to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved formatted exception (i.\+e. this formatted exception). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_formatted_exception_a8fb8b53ee8d8cb73ac200bca84c067b2}{}\label{structmage_1_1_formatted_exception_a8fb8b53ee8d8cb73ac200bca84c067b2} 
 \index{mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}!what@{what}}
 \index{what@{what}!mage\+::\+Formatted\+Exception@{mage\+::\+Formatted\+Exception}}
 \subsubsection{\texorpdfstring{what()}{what()}}
-{\footnotesize\ttfamily const char$\ast$ mage\+::\+Formatted\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const throw  ) }
+{\footnotesize\ttfamily virtual const char$\ast$ mage\+::\+Formatted\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const throw  ) \hspace{0.3cm}{\ttfamily [virtual]}}
 
+Returns a null-\/terminated byte string that may be used to identify the exception.
+
+\begin{DoxyReturn}{Returns}
+A null-\/terminated byte string that may be used to identify the exception. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -97,3 +149,4 @@ char \hyperlink{structmage_1_1_formatted_exception_aadccdcc1db09285dadc6b5a30681
 \subsubsection{\texorpdfstring{m\+\_\+text}{m\_text}}
 {\footnotesize\ttfamily char mage\+::\+Formatted\+Exception\+::m\+\_\+text\mbox{[}2048\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
 
+The text buffer of this formatted exception. 

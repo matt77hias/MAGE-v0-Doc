@@ -35,7 +35,7 @@ var classmage_1_1_renderer =
     [ "m_display_mode", "classmage_1_1_renderer.html#af7ba5455da0dfa1f68ceeb49d43cf6f0", null ],
     [ "m_feature_level", "classmage_1_1_renderer.html#aa97b108ef58f7d41ddb527f6ba2bfdf9", null ],
     [ "m_fullscreen", "classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a", null ],
-    [ "m_hwindow", "classmage_1_1_renderer.html#ac4866ea872da3ae7db8628b4c6403357", null ],
+    [ "m_hwindow", "classmage_1_1_renderer.html#adadc1028e5ad6551abbecfd8529e4aa1", null ],
     [ "m_in_begin_end_pair", "classmage_1_1_renderer.html#a3caa1bad6cbfde8f87f807e5c97924e3", null ],
     [ "m_render_target_view", "classmage_1_1_renderer.html#a36ed728d4d5f55bc6f248066b2dd0a43", null ],
     [ "m_rendering_state_2d", "classmage_1_1_renderer.html#ab55bf9fc3a357358d07419ec25dbe510", null ],

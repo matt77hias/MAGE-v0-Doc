@@ -167,10 +167,10 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a63088254a3c57d61c3992f308c62b138"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_batch_mesh.html#a63088254a3c57d61c3992f308c62b138">SetupVertexBuffer</a> ()</td></tr>
-<tr class="separator:a63088254a3c57d61c3992f308c62b138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11398d9b698b72d56c4c5ea2f81d18ed"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_batch_mesh.html#a11398d9b698b72d56c4c5ea2f81d18ed">SetupIndexBuffer</a> ()</td></tr>
-<tr class="separator:a11398d9b698b72d56c4c5ea2f81d18ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b68ac00e3dfb09ed495ce66f1d6fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_batch_mesh.html#ad3b68ac00e3dfb09ed495ce66f1d6fda">SetupVertexBuffer</a> ()</td></tr>
+<tr class="separator:ad3b68ac00e3dfb09ed495ce66f1d6fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628ab5a3dd2df0c624b7dc99bcff7f98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_batch_mesh.html#a628ab5a3dd2df0c624b7dc99bcff7f98">SetupIndexBuffer</a> ()</td></tr>
+<tr class="separator:a628ab5a3dd2df0c624b7dc99bcff7f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -231,7 +231,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a sprite batch mesh. </p>
+<p>Constructs a sprite batch mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the vertex buffer of the sprite batch mesh. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup the index buffer of the sprite batch mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -261,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructs a sprite batch mesh from the given sprite batch mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,10 +308,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a sprite batch mesh from the given sprite batch mesh.</p>
+<p>Constructs a sprite batch mesh by moving the given sprite batch mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
@@ -353,6 +370,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Maps the vertex buffer of this this sprite batch mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>mapped_buffer</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_type</td><td>The map type specifying the CPU's read and write permissions for the vertex buffer of this this sprite batch mesh. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mapped_buffer</td><td>A pointer to the map the vertex buffer of this this sprite batch mesh to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
 
 </div>
 </div>
@@ -378,6 +405,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the maximum number of indices to draw per batch for sprite batch meshes.</p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of indices to draw per batch for sprite batch meshes. </dd></dl>
 
 </div>
 </div>
@@ -403,6 +432,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the maximum number of vertices to draw per batch for sprite batch meshes.</p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of vertices to draw per batch for sprite batch meshes. </dd></dl>
 
 </div>
 </div>
@@ -428,6 +459,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the minimum number of indices to draw per batch for sprite batch meshes.</p>
+<dl class="section return"><dt>Returns</dt><dd>The minimum number of indices to draw per batch for sprite batch meshes. </dd></dl>
 
 </div>
 </div>
@@ -453,6 +486,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the minimum number of vertices to draw per batch for sprite batch meshes.</p>
+<dl class="section return"><dt>Returns</dt><dd>The minimum number of vertices to draw per batch for sprite batch meshes. </dd></dl>
 
 </div>
 </div>
@@ -482,7 +517,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Copies the given sprite batch mesh to this sprite batch mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to copy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -513,19 +548,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copies the given sprite batch mesh to this sprite batch mesh.</p>
+<p>Moves the given sprite batch mesh to this sprite batch mesh.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to copy from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch_mesh</td><td>A reference to the sprite batch mesh to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given sprite batch mesh (i.e. this sprite batch mesh). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved sprite batch mesh (i.e. this sprite batch mesh). </dd></dl>
 
 </div>
 </div>
-<a id="a11398d9b698b72d56c4c5ea2f81d18ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11398d9b698b72d56c4c5ea2f81d18ed">&sect;&nbsp;</a></span>SetupIndexBuffer()</h2>
+<a id="a628ab5a3dd2df0c624b7dc99bcff7f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628ab5a3dd2df0c624b7dc99bcff7f98">&sect;&nbsp;</a></span>SetupIndexBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::SpriteBatchMesh::SetupIndexBuffer </td>
+          <td class="memname">void mage::SpriteBatchMesh::SetupIndexBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -550,8 +585,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a63088254a3c57d61c3992f308c62b138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63088254a3c57d61c3992f308c62b138">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
+<a id="ad3b68ac00e3dfb09ed495ce66f1d6fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b68ac00e3dfb09ed495ce66f1d6fda">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,7 +595,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::SpriteBatchMesh::SetupVertexBuffer </td>
+          <td class="memname">void mage::SpriteBatchMesh::SetupVertexBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -590,6 +625,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Unmaps the vertex buffer of this this sprite batch mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>The vertex buffer of this this sprite batch mesh must be mapped with <a class="el" href="classmage_1_1_sprite_batch_mesh.html#ab790dbbd3cb685c1f14d7ca1e9ed639b">mage::SpriteBatchMesh::MapVertexBuffer(D3D11_MAP, D3D11_MAPPED_SUBRESOURCE *)</a> before it can be unmapped. </dd></dl>
 
 </div>
 </div>
@@ -613,6 +650,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of indices per sprite. </p>
 
 </div>
 </div>
@@ -635,6 +673,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The maximum number of sprites to draw per batch (i.e. the maximum number of sprites that can be represented by a single sprite batch mesh) for sprite batch meshes. </p>
 
 </div>
 </div>
@@ -657,6 +696,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The minimum number of sprites to draw per batch for sprite batch meshes. </p>
 
 </div>
 </div>
@@ -679,6 +719,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of vertices per sprite. </p>
 
 </div>
 </div>

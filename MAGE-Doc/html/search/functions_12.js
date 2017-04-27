@@ -8,5 +8,5 @@ var searchData=
   ['transformobjecttoworld',['TransformObjectToWorld',['../classmage_1_1_transform_node.html#af147669a4717d79c98c249522f1e9192',1,'mage::TransformNode']]],
   ['transformparenttoobject',['TransformParentToObject',['../classmage_1_1_transform_node.html#adba5732ccaf2edcbd293ba509eb2ec35',1,'mage::TransformNode']]],
   ['transformworldtoobject',['TransformWorldToObject',['../classmage_1_1_transform_node.html#af35f0b8ed64dd065b03356a029497285',1,'mage::TransformNode']]],
-  ['trywait',['TryWait',['../classmage_1_1_semaphore.html#ab34cdf4e9b7388dbdb30aab167c074f6',1,'mage::Semaphore']]]
+  ['trywait',['TryWait',['../structmage_1_1_semaphore.html#ab34cdf4e9b7388dbdb30aab167c074f6',1,'mage::Semaphore']]]
 ];

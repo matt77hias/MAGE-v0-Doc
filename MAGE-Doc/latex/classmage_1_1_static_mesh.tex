@@ -30,9 +30,9 @@ virtual \hyperlink{classmage_1_1_static_mesh_a68bab11bb133738f5ebc7ce5579d98d8}{
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_static_mesh_a09a11f77f7bc04e939fad384d375b35f}{Setup\+Vertex\+Buffer} (const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{classmage_1_1_static_mesh_a66d1b876d80987abec5f1e4db3edc9a2}{Setup\+Vertex\+Buffer} (const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_static_mesh_a14e05985ef11903a1eb9d8ac802b2ec3}{Setup\+Index\+Buffer} (const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
+void \hyperlink{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87}{Setup\+Index\+Buffer} (const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -51,9 +51,17 @@ mage\+::\+Static\+Mesh\+::\+Static\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+
 Constructs a static mesh.
 
 \begin{DoxyPrecond}{Precondition}
-{\itshape vertices} may not be equal to {\ttfamily nullptr} 
+{\itshape device} is not equal to {\ttfamily nullptr}. 
 
-{\itshape indices} may not be equal to {\ttfamily nullptr} 
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape vertices} points to an array of at least {\itshape nb\+\_\+vertices} vertices. 
+
+{\itshape nb\+\_\+vertices} must be greater than zero. 
+
+{\itshape indices} points to an array of at least {\itshape nb\+\_\+indices} indices. 
+
+{\itshape nb\+\_\+indices} must be greater than zero. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -85,6 +93,10 @@ mage\+::\+Static\+Mesh\+::\+Static\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+
 Constructs a static mesh.
 
 \begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
 The number of vertices must be greater than zero. 
 
 The number of indices must be greater than zero. 
@@ -105,6 +117,13 @@ The number of indices must be greater than zero.
 \mbox{\tt in}  & {\em indices} & A reference to a vector of indices. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the vertex buffer of the static mesh. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the index buffer of the static mesh. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_static_mesh_a15be69ad312c252c9816a57ec1555d73}{}\label{classmage_1_1_static_mesh_a15be69ad312c252c9816a57ec1555d73} 
 \index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Static\+Mesh@{Static\+Mesh}}
 \index{Static\+Mesh@{Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
@@ -115,7 +134,7 @@ Constructs a static mesh from the given static mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh. \\
+\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_static_mesh_a3841addfb07533099f38602f8728db7e}{}\label{classmage_1_1_static_mesh_a3841addfb07533099f38602f8728db7e} 
@@ -124,11 +143,11 @@ Constructs a static mesh from the given static mesh.
 \subsubsection{\texorpdfstring{Static\+Mesh()}{StaticMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Static\+Mesh\+::\+Static\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&\&}]{static\+\_\+mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Constructs a static mesh from the given static mesh.
+Constructs a static mesh by moving the given static mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh. \\
+\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to move. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_static_mesh_a68bab11bb133738f5ebc7ce5579d98d8}{}\label{classmage_1_1_static_mesh_a68bab11bb133738f5ebc7ce5579d98d8} 
@@ -150,7 +169,7 @@ Copies the given static mesh to this static mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to copy from. \\
+\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -162,26 +181,28 @@ A reference to the copy of the given static mesh (i.\+e. this static mesh).
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}\& mage\+::\+Static\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&\&}]{static\+\_\+mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Copies the given static mesh to this static mesh.
+Moves the given static mesh to this static mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to copy from. \\
+\mbox{\tt in}  & {\em static\+\_\+mesh} & A reference to the static mesh to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given static mesh (i.\+e. this static mesh). 
+A reference to the moved static mesh (i.\+e. this static mesh). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_static_mesh_a14e05985ef11903a1eb9d8ac802b2ec3}{}\label{classmage_1_1_static_mesh_a14e05985ef11903a1eb9d8ac802b2ec3} 
+\hypertarget{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87}{}\label{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87} 
 \index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
 \index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
 \subsubsection{\texorpdfstring{Setup\+Index\+Buffer()}{SetupIndexBuffer()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Static\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Static\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Sets up the index buffer of this static mesh.
 
 \begin{DoxyPrecond}{Precondition}
-{\itshape indices} may not be equal to {\ttfamily nullptr} 
+{\itshape indices} points to an array of at least {\itshape nb\+\_\+indices} indices. 
+
+{\itshape nb\+\_\+indices} must be greater than zero. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -190,17 +211,24 @@ Sets up the index buffer of this static mesh.
 \mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_static_mesh_a09a11f77f7bc04e939fad384d375b35f}{}\label{classmage_1_1_static_mesh_a09a11f77f7bc04e939fad384d375b35f} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the index buffer of this static mesh. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_static_mesh_a66d1b876d80987abec5f1e4db3edc9a2}{}\label{classmage_1_1_static_mesh_a66d1b876d80987abec5f1e4db3edc9a2} 
 \index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}}
 \index{Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
 \subsubsection{\texorpdfstring{Setup\+Vertex\+Buffer()}{SetupVertexBuffer()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Static\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+void mage\+::\+Static\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Sets up the vertex buffer of this static mesh.
 
 \begin{DoxyPrecond}{Precondition}
-{\itshape vertices} may not be equal to {\ttfamily nullptr} 
+{\itshape vertices} points to an array of at least {\itshape nb\+\_\+vertices} vertices. 
+
+{\itshape nb\+\_\+vertices} must be greater than zero. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -214,3 +242,8 @@ Sets up the vertex buffer of this static mesh.
 \mbox{\tt in}  & {\em nb\+\_\+vertices} & The number of vertices. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the vertex buffer of this static mesh. \\
+\hline
+\end{DoxyExceptions}
