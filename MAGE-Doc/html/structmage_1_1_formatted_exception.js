@@ -7,6 +7,6 @@ var structmage_1_1_formatted_exception =
     [ "~FormattedException", "structmage_1_1_formatted_exception.html#a074a2e845b0fa0d57dfeab63ee0cb1f5", null ],
     [ "operator=", "structmage_1_1_formatted_exception.html#a36b95a1d6ee656db750f9f7c24a0f69d", null ],
     [ "operator=", "structmage_1_1_formatted_exception.html#ae35ad9e81efe8ed385792854036b4a14", null ],
-    [ "what", "structmage_1_1_formatted_exception.html#a8fb8b53ee8d8cb73ac200bca84c067b2", null ],
+    [ "what", "structmage_1_1_formatted_exception.html#af4a63770e4f7091868d9e1e2382c1e70", null ],
     [ "m_text", "structmage_1_1_formatted_exception.html#aadccdcc1db09285dadc6b5a30681e05b", null ]
 ];

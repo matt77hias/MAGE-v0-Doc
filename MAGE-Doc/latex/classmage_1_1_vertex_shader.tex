@@ -7,7 +7,7 @@
 Inheritance diagram for mage\+:\+:Vertex\+Shader\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.857143cm]{classmage_1_1_vertex_shader}
+\includegraphics[height=3.000000cm]{classmage_1_1_vertex_shader}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -43,11 +43,14 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_vertex_shader_
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a8b4115b041227ebe6a4ab8511eb5b8ea}{Setup\+Shader} (const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, uint32\+\_\+t nb\+\_\+input\+\_\+elements)
+void \hyperlink{classmage_1_1_vertex_shader_a3de0e623c3c4d81b580386fc13f85323}{Setup\+Shader} (const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, uint32\+\_\+t nb\+\_\+input\+\_\+elements)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_af096750cfbb86b38f090935bb6e5accd}{Setup\+Shader} (const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size, const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, uint32\+\_\+t nb\+\_\+input\+\_\+elements)
+void \hyperlink{classmage_1_1_vertex_shader_a8c37fb7e3db62d8c028efc1a959905ce}{Setup\+Shader} (const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size, const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, uint32\+\_\+t nb\+\_\+input\+\_\+elements)
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A class of vertex shaders. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_vertex_shader_a0add7dbd710d444fbd5f7c9dc05e2dbb}{}\label{classmage_1_1_vertex_shader_a0add7dbd710d444fbd5f7c9dc05e2dbb} 
@@ -56,31 +59,111 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_af096750cfbb86b38f09093
 \subsubsection{\texorpdfstring{Vertex\+Shader()}{VertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape input\+\_\+element\+\_\+desc} is not equal to {\ttfamily nullptr}. 
+
+The array pointed to by {\itshape input\+\_\+element\+\_\+desc} contains {\itshape nb\+\_\+input\+\_\+elements} elements. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of this vertex shader (i.\+e. filename of the compiled shader output). \\
+\hline
+\mbox{\tt in}  & {\em input\+\_\+element\+\_\+desc} & A pointer the input element descriptors. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+input\+\_\+elements} & The number of elements contained in the given input element descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_vertex_shader_a6084c9d362a18e9676194acb8b454030}{}\label{classmage_1_1_vertex_shader_a6084c9d362a18e9676194acb8b454030} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Vertex\+Shader@{Vertex\+Shader}}
 \index{Vertex\+Shader@{Vertex\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Vertex\+Shader()}{VertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid,  }\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape bytecode} is not equal to {\ttfamily nullptr}. 
+
+The size of the data pointed to by {\itshape bytecode} is equal to {\itshape bytecode\+\_\+size} (bytes). 
+
+{\itshape input\+\_\+element\+\_\+desc} is not equal to {\ttfamily nullptr}. 
+
+The array pointed to by {\itshape input\+\_\+element\+\_\+desc} contains {\itshape nb\+\_\+input\+\_\+elements} elements. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of this vertex shader. \\
+\hline
+\mbox{\tt in}  & {\em bytecode} & A pointer to the shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em bytecode\+\_\+size} & The size of the given shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em input\+\_\+element\+\_\+desc} & A pointer the input element descriptors. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+input\+\_\+elements} & The number of elements contained in the given input element descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_vertex_shader_a713f8581278ea2e5eb3010207b7e42a8}{}\label{classmage_1_1_vertex_shader_a713f8581278ea2e5eb3010207b7e42a8} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Vertex\+Shader@{Vertex\+Shader}}
 \index{Vertex\+Shader@{Vertex\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Vertex\+Shader()}{VertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} \&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a vertex shader from the given vertex shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+shader} & A reference to the vertex shader to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_vertex_shader_a07437a9371fa85f2e24e6713f6192d63}{}\label{classmage_1_1_vertex_shader_a07437a9371fa85f2e24e6713f6192d63} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Vertex\+Shader@{Vertex\+Shader}}
 \index{Vertex\+Shader@{Vertex\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Vertex\+Shader()}{VertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} \&\&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a vertex shader by moving the given vertex shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+shader} & A reference to the vertex shader to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_vertex_shader_a83e5bd464361b7f94f969475f1eeaf2a}{}\label{classmage_1_1_vertex_shader_a83e5bd464361b7f94f969475f1eeaf2a} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!````~Vertex\+Shader@{$\sim$\+Vertex\+Shader}}
 \index{````~Vertex\+Shader@{$\sim$\+Vertex\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{$\sim$\+Vertex\+Shader()}{~VertexShader()}}
 {\footnotesize\ttfamily virtual mage\+::\+Vertex\+Shader\+::$\sim$\+Vertex\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this vertex shader. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_vertex_shader_a0094f5c2adb8377fa5c8d52e7a65136f}{}\label{classmage_1_1_vertex_shader_a0094f5c2adb8377fa5c8d52e7a65136f} 
@@ -89,34 +172,110 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_af096750cfbb86b38f09093
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}\& mage\+::\+Vertex\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} \&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given vertex shader to this vertex shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+shader} & A reference to the vertex shader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given vertex shader (i.\+e. this vertex shader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_vertex_shader_ada6250a89610e5649e0062c9a50fb78a}{}\label{classmage_1_1_vertex_shader_ada6250a89610e5649e0062c9a50fb78a} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}\& mage\+::\+Vertex\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} \&\&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given vertex shader to this vertex shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+shader} & A reference to the vertex shader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved vertex shader (i.\+e. this vertex shader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_vertex_shader_a53f4b25241f6c5739724d421c9f29a36}{}\label{classmage_1_1_vertex_shader_a53f4b25241f6c5739724d421c9f29a36} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
 \index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}}
 {\footnotesize\ttfamily void mage\+::\+Vertex\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{transform }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
+Prepares this vertex shader for shading.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape transform} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A pointer to the transform buffer. \\
+\hline
+\end{DoxyParams}
 
 
-Reimplemented in \hyperlink{classmage_1_1_lambertian_vertex_shader_a51c0fcfc36cdf87e4e55c94529c0081a}{mage\+::\+Lambertian\+Vertex\+Shader}, \hyperlink{classmage_1_1_sprite_vertex_shader_a10be47ca65f4baed735b5ffb52ee92bf}{mage\+::\+Sprite\+Vertex\+Shader}, and \hyperlink{classmage_1_1_empty_vertex_shader_a6b3619814f0d59bcf4b4edf2dab9a10c}{mage\+::\+Empty\+Vertex\+Shader}.
+Reimplemented in \hyperlink{classmage_1_1_lambertian_vertex_shader_a51c0fcfc36cdf87e4e55c94529c0081a}{mage\+::\+Lambertian\+Vertex\+Shader}, and \hyperlink{classmage_1_1_sprite_vertex_shader_a10be47ca65f4baed735b5ffb52ee92bf}{mage\+::\+Sprite\+Vertex\+Shader}.
 
-\hypertarget{classmage_1_1_vertex_shader_a8b4115b041227ebe6a4ab8511eb5b8ea}{}\label{classmage_1_1_vertex_shader_a8b4115b041227ebe6a4ab8511eb5b8ea} 
+\hypertarget{classmage_1_1_vertex_shader_a3de0e623c3c4d81b580386fc13f85323}{}\label{classmage_1_1_vertex_shader_a3de0e623c3c4d81b580386fc13f85323} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Vertex\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Vertex\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_vertex_shader_af096750cfbb86b38f090935bb6e5accd}{}\label{classmage_1_1_vertex_shader_af096750cfbb86b38f090935bb6e5accd} 
+Sets up this vertex shader (from compiled shader output).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape input\+\_\+element\+\_\+desc} is not equal to {\ttfamily nullptr}. 
+
+The array pointed to by {\itshape input\+\_\+element\+\_\+desc} contains {\itshape nb\+\_\+input\+\_\+elements} elements. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+\_\+element\+\_\+desc} & A pointer the input element descriptors. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+input\+\_\+elements} & The number of elements contained in the given input element descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this vertex shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_vertex_shader_a8c37fb7e3db62d8c028efc1a959905ce}{}\label{classmage_1_1_vertex_shader_a8c37fb7e3db62d8c028efc1a959905ce} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Vertex\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Vertex\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{uint32\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Sets up this vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytecode} is not equal to {\ttfamily nullptr}. 
+
+The size of the data pointed to by {\itshape bytecode} is equal to {\itshape bytecode\+\_\+size} (bytes). 
+
+{\itshape input\+\_\+element\+\_\+desc} is not equal to {\ttfamily nullptr}. 
+
+The array pointed to by {\itshape input\+\_\+element\+\_\+desc} contains {\itshape nb\+\_\+input\+\_\+elements} elements. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytecode} & A pointer to the shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em bytecode\+\_\+size} & The size of the given shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em input\+\_\+element\+\_\+desc} & A pointer the input element descriptors. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+input\+\_\+elements} & The number of elements contained in the given input element descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this vertex shader. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
@@ -126,21 +285,22 @@ Reimplemented in \hyperlink{classmage_1_1_lambertian_vertex_shader_a51c0fcfc36cd
 \subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ const mage\+::\+Vertex\+Shader\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_vertex_shader_a1c286b3eafd0a0b45beb2b17065f0f0e}{}\label{classmage_1_1_vertex_shader_a1c286b3eafd0a0b45beb2b17065f0f0e} 
+A pointer to the device of this vertex shader. \hypertarget{classmage_1_1_vertex_shader_a1c286b3eafd0a0b45beb2b17065f0f0e}{}\label{classmage_1_1_vertex_shader_a1c286b3eafd0a0b45beb2b17065f0f0e} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
 \index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Vertex\+Shader\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda}{}\label{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda} 
+A pointer to the device context of this vertex shader. \hypertarget{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda}{}\label{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+vertex\+\_\+layout@{m\+\_\+vertex\+\_\+layout}}
 \index{m\+\_\+vertex\+\_\+layout@{m\+\_\+vertex\+\_\+layout}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+layout}{m\_vertex\_layout}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Input\+Layout $>$ mage\+::\+Vertex\+Shader\+::m\+\_\+vertex\+\_\+layout\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54}{}\label{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54} 
+A pointer to the input layout of this vertex shader. \hypertarget{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54}{}\label{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+vertex\+\_\+shader@{m\+\_\+vertex\+\_\+shader}}
 \index{m\+\_\+vertex\+\_\+shader@{m\+\_\+vertex\+\_\+shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+shader}{m\_vertex\_shader}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Vertex\+Shader $>$ mage\+::\+Vertex\+Shader\+::m\+\_\+vertex\+\_\+shader\hspace{0.3cm}{\ttfamily [protected]}}
 
+A pointer to the vertex shader of this vertex shader. 

@@ -1,6 +1,6 @@
 var structmage_1_1_material =
 [
-    [ "Material", "structmage_1_1_material.html#ace4a06c8c8c4e75d82e701443f88d1d3", null ],
+    [ "Material", "structmage_1_1_material.html#a0307d3bcf53c6ba270c8be4d127298db", null ],
     [ "Material", "structmage_1_1_material.html#abed630412cdc4a6281389d128ec4b5f3", null ],
     [ "Material", "structmage_1_1_material.html#a41bfbc2bfa16e3694ac443d390b804c2", null ],
     [ "~Material", "structmage_1_1_material.html#a4ca65b7e24144ee08dd1ce8d0eda9284", null ],

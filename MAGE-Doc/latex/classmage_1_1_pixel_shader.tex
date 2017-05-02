@@ -43,11 +43,14 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_pixel_shader_a
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57}{Setup\+Shader} ()
+void \hyperlink{classmage_1_1_pixel_shader_a5297d3d12153f9a866751b623203c5aa}{Setup\+Shader} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad0406409e6df2a11}{Setup\+Shader} (const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size)
+void \hyperlink{classmage_1_1_pixel_shader_a18bc61698dbd72684e55d97c0ce8b02d}{Setup\+Shader} (const void $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size)
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A class of pixel shaders. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_pixel_shader_abf1a5e4a5a550553aea1427e80cd9403}{}\label{classmage_1_1_pixel_shader_abf1a5e4a5a550553aea1427e80cd9403} 
@@ -56,31 +59,95 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad040640
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of this pixel shader (i.\+e. filename of the compiled shader output). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_pixel_shader_a0278c67883cbf9259ea83e7f6c8162a2}{}\label{classmage_1_1_pixel_shader_a0278c67883cbf9259ea83e7f6c8162a2} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const wstring \&}]{guid,  }\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape bytecode} is not equal to {\ttfamily nullptr}. 
+
+The size of the data pointed to by {\itshape bytecode} is equal to {\itshape bytecode\+\_\+size} (bytes). 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of this pixel shader. \\
+\hline
+\mbox{\tt in}  & {\em bytecode} & A pointer to the shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em bytecode\+\_\+size} & The size of the given shader bytecode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{}\label{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a pixel shader from the given pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pixel\+\_\+shader} & A reference to the pixel shader to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_pixel_shader_a5adc11fbc9b644b38cb9f6e5c7974a90}{}\label{classmage_1_1_pixel_shader_a5adc11fbc9b644b38cb9f6e5c7974a90} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a pixel shader by moving the given pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pixel\+\_\+shader} & A reference to the pixel shader to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2}{}\label{classmage_1_1_pixel_shader_ac339b9196db24d18143ad36013d598b2} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!````~Pixel\+Shader@{$\sim$\+Pixel\+Shader}}
 \index{````~Pixel\+Shader@{$\sim$\+Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{$\sim$\+Pixel\+Shader()}{~PixelShader()}}
 {\footnotesize\ttfamily virtual mage\+::\+Pixel\+Shader\+::$\sim$\+Pixel\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this pixel shader. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3}{}\label{classmage_1_1_pixel_shader_ac3a3535b2751237f4aad110dca05d0c3} 
@@ -89,21 +156,51 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_pixel_shader_a3df5b0c0eee682dad040640
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given pixel shader to this pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pixel\+\_\+shader} & A reference to the pixel shader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given pixel shader (i.\+e. this pixel shader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9}{}\label{classmage_1_1_pixel_shader_aaeab6f6fda7d6e1f7d333da03d58daf9} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}\& mage\+::\+Pixel\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given pixel shader to this pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pixel\+\_\+shader} & A reference to the pixel shader to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved pixel shader (i.\+e. this pixel shader). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_pixel_shader_ab677013145ca252c57e5a001134c01ff}{}\label{classmage_1_1_pixel_shader_ab677013145ca252c57e5a001134c01ff} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
 \index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
+Prepares this pixel shader for shading.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the texture shader resource view. \\
+\hline
+\end{DoxyParams}
 
 
-Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a8c0c4daf36c74822a772b1a38e8d876a}{mage\+::\+Sprite\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_aaaf0ea35ab2459d66593212065a86c1b}{mage\+::\+Empty\+Pixel\+Shader}.
+Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a8c0c4daf36c74822a772b1a38e8d876a}{mage\+::\+Sprite\+Pixel\+Shader}.
 
 \hypertarget{classmage_1_1_pixel_shader_a5a1a58bcb0ed64405e746ec7a5af5269}{}\label{classmage_1_1_pixel_shader_a5a1a58bcb0ed64405e746ec7a5af5269} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Prepare\+Shading@{Prepare\+Shading}}
@@ -111,22 +208,57 @@ Reimplemented in \hyperlink{classmage_1_1_sprite_pixel_shader_a8c0c4daf36c74822a
 \subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{structmage_1_1_lighting}{Lighting} \&}]{lighting }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
+Prepares this pixel shader for shading.
 
 
-Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_ab35542bd91168d662b7cc1a981d5bfe6}{mage\+::\+Lambertian\+Pixel\+Shader}, and \hyperlink{classmage_1_1_empty_pixel_shader_a42bdcb8c416ad76bed9437fb2af91252}{mage\+::\+Empty\+Pixel\+Shader}.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em material} & A reference to the material. \\
+\hline
+\mbox{\tt in}  & {\em lighting} & A reference to the lighting buffer. \\
+\hline
+\end{DoxyParams}
 
-\hypertarget{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57}{}\label{classmage_1_1_pixel_shader_adb9c1f330ef9958a7fc46c40c98a2b57} 
+
+Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_ab35542bd91168d662b7cc1a981d5bfe6}{mage\+::\+Lambertian\+Pixel\+Shader}.
+
+\hypertarget{classmage_1_1_pixel_shader_a5297d3d12153f9a866751b623203c5aa}{}\label{classmage_1_1_pixel_shader_a5297d3d12153f9a866751b623203c5aa} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a3df5b0c0eee682dad0406409e6df2a11}{}\label{classmage_1_1_pixel_shader_a3df5b0c0eee682dad0406409e6df2a11} 
+Sets up this pixel shader (from compiled shader output).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_pixel_shader_a18bc61698dbd72684e55d97c0ce8b02d}{}\label{classmage_1_1_pixel_shader_a18bc61698dbd72684e55d97c0ce8b02d} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const void $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Sets up this pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape bytecode} is not equal to {\ttfamily nullptr}. 
+
+The size of the data pointed to by {\itshape bytecode} is equal to {\itshape bytecode\+\_\+size} (bytes). 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bytecode} & A pointer to the shader bytecode. \\
+\hline
+\mbox{\tt in}  & {\em bytecode\+\_\+size} & The size of the given shader bytecode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this pixel shader. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
@@ -136,15 +268,16 @@ Reimplemented in \hyperlink{classmage_1_1_lambertian_pixel_shader_ab35542bd91168
 \subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ const mage\+::\+Pixel\+Shader\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a6b9bbf18f255b061fb75453f32a78720}{}\label{classmage_1_1_pixel_shader_a6b9bbf18f255b061fb75453f32a78720} 
+A pointer to the device of this pixel shader. \hypertarget{classmage_1_1_pixel_shader_a6b9bbf18f255b061fb75453f32a78720}{}\label{classmage_1_1_pixel_shader_a6b9bbf18f255b061fb75453f32a78720} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
 \index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Pixel\+Shader\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_pixel_shader_a1dd0f87be1c1f7fe5a1bb2737263222f}{}\label{classmage_1_1_pixel_shader_a1dd0f87be1c1f7fe5a1bb2737263222f} 
+A pointer to the device context of this pixel shader. \hypertarget{classmage_1_1_pixel_shader_a1dd0f87be1c1f7fe5a1bb2737263222f}{}\label{classmage_1_1_pixel_shader_a1dd0f87be1c1f7fe5a1bb2737263222f} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!m\+\_\+pixel\+\_\+shader@{m\+\_\+pixel\+\_\+shader}}
 \index{m\+\_\+pixel\+\_\+shader@{m\+\_\+pixel\+\_\+shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+pixel\+\_\+shader}{m\_pixel\_shader}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Pixel\+Shader $>$ mage\+::\+Pixel\+Shader\+::m\+\_\+pixel\+\_\+shader\hspace{0.3cm}{\ttfamily [protected]}}
 
+A pointer to the pixel shader of this pixel shader. 

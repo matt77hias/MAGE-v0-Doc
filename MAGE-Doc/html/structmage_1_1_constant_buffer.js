@@ -9,7 +9,7 @@ var structmage_1_1_constant_buffer =
     [ "GetAddressOf", "structmage_1_1_constant_buffer.html#a5ec29403969893822f364e26c22efcae", null ],
     [ "operator=", "structmage_1_1_constant_buffer.html#acb1a4f4b656073609075b5e89dea6973", null ],
     [ "operator=", "structmage_1_1_constant_buffer.html#ad050b1f0f03a5fcd2b51977a744781a3", null ],
-    [ "SetupConstantBuffer", "structmage_1_1_constant_buffer.html#a7fc18ea6b686aa7a1bcdb964dfe465dd", null ],
+    [ "SetupConstantBuffer", "structmage_1_1_constant_buffer.html#ab44b95795f110d3097a24edd71aa790e", null ],
     [ "UpdateData", "structmage_1_1_constant_buffer.html#a535429ca9cf81b44907b581324854392", null ],
     [ "m_buffer", "structmage_1_1_constant_buffer.html#a394571e3102fe053f3357e2e218c0eda", null ],
     [ "m_device", "structmage_1_1_constant_buffer.html#a52d9b6722b8f7e20d079d5575169995f", null ],

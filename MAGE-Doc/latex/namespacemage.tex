@@ -49,15 +49,13 @@ class \hyperlink{classmage_1_1_directional_light}{Directional\+Light}
 \item 
 class \hyperlink{classmage_1_1_dropshadow_sprite_text}{Dropshadow\+Sprite\+Text}
 \item 
-class \hyperlink{classmage_1_1_empty_pixel_shader}{Empty\+Pixel\+Shader}
-\item 
-class \hyperlink{classmage_1_1_empty_vertex_shader}{Empty\+Vertex\+Shader}
-\item 
 class \hyperlink{classmage_1_1_engine}{Engine}
 \item 
 struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
 class \hyperlink{classmage_1_1_file_resource}{File\+Resource}
+\item 
+struct \hyperlink{structmage_1_1_file_stream_closer}{File\+Stream\+Closer}
 \item 
 struct \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}
 \item 
@@ -132,6 +130,8 @@ class \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader}
 struct \hyperlink{structmage_1_1_mutex}{Mutex}
 \item 
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
+\item 
+class \hyperlink{classmage_1_1_node}{Node}
 \item 
 struct \hyperlink{structmage_1_1_normal3}{Normal3}
 \item 
@@ -273,6 +273,8 @@ struct \hyperlink{structmage_1_1_x_y_z_spectrum}{X\+Y\+Z\+Spectrum}
 typedef std\+::unique\+\_\+ptr$<$ void, \hyperlink{structmage_1_1_handle_closer}{Handle\+Closer} $>$ \hyperlink{namespacemage_a284e84e551a05d4fc6c957985b2de3ed}{Unique\+Handle}
 \item 
 typedef \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ void $>$ \hyperlink{namespacemage_ab892828913d6129acf71e0cec60467e5}{Shared\+Handle}
+\item 
+typedef std\+::unique\+\_\+ptr$<$ F\+I\+LE, \hyperlink{structmage_1_1_file_stream_closer}{File\+Stream\+Closer} $>$ \hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{Unique\+File\+Stream}
 \item 
 {\footnotesize template$<$typename KeyT , typename ResourceT $>$ }\\using \hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{Resource\+Map} = map$<$ KeyT, \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr}$<$ ResourceT $>$ $>$
 \item 
@@ -441,7 +443,7 @@ double \hyperlink{namespacemage_af85b8ba1e336f37fc8fe34a53e981a6c}{Bytes\+To\+Do
 \item 
 \hyperlink{namespacemage_a76dac28d69746bdef408a08c36a7c862}{\+\_\+declspec} (align(16)) struct Material\+Buffer final
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ \hyperlink{namespacemage_abceafa3c16065a9d0e9a6b2482316f45}{Create\+Orthographic\+Camera} (float width=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+O\+R\+T\+H\+O\+G\+R\+A\+P\+H\+I\+C\+\_\+\+W\+I\+D\+TH, float height=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+O\+R\+T\+H\+O\+G\+R\+A\+P\+H\+I\+C\+\_\+\+H\+E\+I\+G\+HT, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$ \hyperlink{namespacemage_aec09581a328a83e6f87cbf572a85ba6c}{Create\+Orthographic\+Camera} (float width, float height, float near\+\_\+z, float far\+\_\+z)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} $>$ \hyperlink{namespacemage_a4431fdebdb526878bacc4028cb94a63b}{Create\+Perspective\+Camera} (float fov\+\_\+y, float near\+\_\+z, float far\+\_\+z)
 \item 
@@ -497,9 +499,9 @@ uint16\+\_\+t \hyperlink{namespacemage_a2988e0e46e373691a189ea97135f1ed1}{Consol
 \item 
 void \hyperlink{namespacemage_a587146c8cbeed655be16ddff8435c05c}{Initialize\+Console} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3dd35a33d61f2891a717b5958f7edf12}{Import\+Material\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&material\+\_\+buffer)
+void \hyperlink{namespacemage_a1ec5e042dc875b6f9ec5e2f15c7d6320}{Import\+Material\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&materials)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef}{Import\+M\+T\+L\+Material\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&material\+\_\+buffer)
+void \hyperlink{namespacemage_af823dc7245aa79b1e789ac8f58d766d2}{Import\+M\+T\+L\+Material\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&materials)
 \item 
 const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a4d27bf7b1b0d30b747cdec1326e80907}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const \hyperlink{structmage_1_1_point3}{Point3} \&point)
 \item 
@@ -517,19 +519,23 @@ ostream \& \hyperlink{namespacemage_a44b2d3046802608544402245919f219b}{operator$
 \item 
 ostream \& \hyperlink{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T4 \&v)
 \item 
-\hyperlink{structmage_1_1_u_v}{UV} \hyperlink{namespacemage_a13b912f3dcd9c202fe3f9edb424e3b78}{Invert\+Handness} (const \hyperlink{structmage_1_1_u_v}{UV} \&uv)
+const \hyperlink{structmage_1_1_u_v}{UV} \hyperlink{namespacemage_ae12cd160f5bc01e4ef0aa2d45a80e14c}{Invert\+Handness} (const \hyperlink{structmage_1_1_u_v}{UV} \&uv)
 \item 
-\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{namespacemage_a20ded71f51e2014bab8e7d232eaf1c29}{Invert\+Handness} (const \hyperlink{structmage_1_1_point3}{Point3} \&point)
+const \hyperlink{structmage_1_1_point3}{Point3} \hyperlink{namespacemage_a909b2d7d07a296a41c320b8fe8ab1b82}{Invert\+Handness} (const \hyperlink{structmage_1_1_point3}{Point3} \&point)
 \item 
-\hyperlink{structmage_1_1_direction3}{Direction3} \hyperlink{namespacemage_a1d236e395736f7b5e28e52ccd3d643ae}{Invert\+Handness} (const \hyperlink{structmage_1_1_direction3}{Direction3} \&direction)
+const \hyperlink{structmage_1_1_direction3}{Direction3} \hyperlink{namespacemage_a6c9899cce1f1e4d70ad74f291314a90c}{Invert\+Handness} (const \hyperlink{structmage_1_1_direction3}{Direction3} \&direction)
 \item 
-\hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_a437458a2e3278f106da66534c5218e4e}{Invert\+Handness} (const \hyperlink{structmage_1_1_normal3}{Normal3} \&normal)
+const \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_a99775511a838e6d840a83e5ca31e3306}{Invert\+Handness} (const \hyperlink{structmage_1_1_normal3}{Normal3} \&normal)
 \item 
-{\footnotesize template$<$typename ValueT $>$ }\\ValueT \hyperlink{namespacemage_aa6dc8bc35accb3ccaac7ee60a5361754}{Clamp} (ValueT x, ValueT low=0, ValueT high=1)
+{\footnotesize template$<$typename ValueT $>$ }\\ValueT \hyperlink{namespacemage_af377e4f18912fcbff49672a124c344b2}{Clamp} (ValueT value, ValueT low=0, ValueT high=1)
 \item 
-float \hyperlink{namespacemage_a25d1197c5d3c86cc5d15e8225f796ac3}{Clamp\+Angle\+Degrees} (float angle, float min, float max)
+float \hyperlink{namespacemage_a0024d4f40403506605dc7ca57ff83d1f}{Clamp\+Angle\+Degrees} (float angle)
 \item 
-float \hyperlink{namespacemage_ad538eb214c63b04ec6045e60791b814b}{Clamp\+Angle\+Radians} (float angle, float min, float max)
+float \hyperlink{namespacemage_a0361d0febf0543c594a31fede401d157}{Clamp\+Angle\+Radians} (float angle)
+\item 
+float \hyperlink{namespacemage_a1cc8a7302f05f1e890dabc6fe98e1496}{Clamp\+Angle\+Degrees} (float angle, float min\+\_\+angle, float max\+\_\+angle)
+\item 
+float \hyperlink{namespacemage_a85caeb6cab349e4eff83919fbf430700}{Clamp\+Angle\+Radians} (float angle, float min\+\_\+angle, float max\+\_\+angle)
 \item 
 float \hyperlink{namespacemage_a2dbd3992e0bcb94b465ab4ab6b7d7f83}{Convert\+Normalized\+To\+Absolute\+ScreenX} (float x)
 \item 
@@ -569,9 +575,9 @@ H\+A\+N\+D\+LE \hyperlink{namespacemage_a80f95ce7eb0d03d5576351663d626b4d}{Safe\
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_abeaf36b602f5ed971b1b505e42972e4f}{Import\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d}{Import\+M\+D\+L\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a8eae2acc25c819aa8973e206a7b84b9f}{Import\+M\+D\+L\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a111dc6972bce8645df185fa5a65f9bff}{Export\+M\+D\+L\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a1e8cf202593cc54387c6d735220ffc0e}{Export\+M\+D\+L\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
 I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_aca16dcb4637f074bb6e33d4ba7929686}{Get\+Model\+Rendering\+Device} ()
 \item 
@@ -581,9 +587,9 @@ I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a1d373a08e09ec19944
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84}{Create\+Model\+Descriptor} (const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27}{Import\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a3b43f166d61c14d680b28614da17ac2b}{Import\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
 \item 
-{\footnotesize template$<$typename VertexT $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0}{Export\+Model\+To\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a3cb120c707ba8db950082a33d76b3ec8}{Export\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$destination, T $\ast$exchange, T $\ast$comparand)
 \item 
@@ -919,7 +925,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac95c9d854152c94c77105e07ab3890e0}{Cr
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_ac27913e621bde0fd01312183aafaaca0}{Create\+Texture} (const wstring \&fname)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad3c9a6b3f339b92985d202e5cd0f4388}{Import\+Texture\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+resource\+\_\+view)
+void \hyperlink{namespacemage_a00ef840caba08f9c94c1590a98e3546b}{Import\+Texture\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+resource\+\_\+view)
 \item 
 void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
 \item 
@@ -1055,6 +1061,15 @@ using \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{mage\+::\+Com\
 {\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 using \hyperlink{namespacemage_a0b0a087ad59dd4aa0b4b538d8caec216}{mage\+::\+Resource\+Map} = typedef map$<$ KeyT, \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr}$<$ ResourceT $>$ $>$}
 
+A type definition for a resource map used by a resource pool.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em KeyT} & The key type. \\
+\hline
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
 \hypertarget{namespacemage_ab892828913d6129acf71e0cec60467e5}{}\label{namespacemage_ab892828913d6129acf71e0cec60467e5} 
 \index{mage@{mage}!Shared\+Handle@{Shared\+Handle}}
 \index{Shared\+Handle@{Shared\+Handle}!mage@{mage}}
@@ -1073,6 +1088,12 @@ using \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{mage\+::\+Shar
 \index{Spot\+Light\+Node@{Spot\+Light\+Node}!mage@{mage}}
 \subsubsection{\texorpdfstring{Spot\+Light\+Node}{SpotLightNode}}
 {\footnotesize\ttfamily typedef \hyperlink{classmage_1_1_scene_node}{Scene\+Node}$<$ \hyperlink{classmage_1_1_spot_light}{Spot\+Light} $>$ \hyperlink{namespacemage_ab9f49a82dd438032bb38c5436a657335}{mage\+::\+Spot\+Light\+Node}}
+
+\hypertarget{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{}\label{namespacemage_a679c1b707dee02c7eab8d706ef14411a} 
+\index{mage@{mage}!Unique\+File\+Stream@{Unique\+File\+Stream}}
+\index{Unique\+File\+Stream@{Unique\+File\+Stream}!mage@{mage}}
+\subsubsection{\texorpdfstring{Unique\+File\+Stream}{UniqueFileStream}}
+{\footnotesize\ttfamily typedef std\+::unique\+\_\+ptr$<$ F\+I\+LE, \hyperlink{structmage_1_1_file_stream_closer}{File\+Stream\+Closer} $>$ \hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{mage\+::\+Unique\+File\+Stream}}
 
 \hypertarget{namespacemage_a284e84e551a05d4fc6c957985b2de3ed}{}\label{namespacemage_a284e84e551a05d4fc6c957985b2de3ed} 
 \index{mage@{mage}!Unique\+Handle@{Unique\+Handle}}
@@ -1203,7 +1224,9 @@ Rotation\+Axes\+\_\+\+Mouse\+X\+AndY&\\
 \subsubsection{\texorpdfstring{Sprite\+Effect}{SpriteEffect}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{mage\+::\+Sprite\+Effect}}
 
-\begin{DoxyEnumFields}{Enumerator}
+An enumeration of the different sprite effects.
+
+This contains\+: {\ttfamily Sprite\+Effect\+\_\+\+None}, {\ttfamily Sprite\+Effect\+\_\+\+Flip\+Horizontally}, {\ttfamily Sprite\+Effect\+\_\+\+Flip\+Vertically} and {\ttfamily Sprite\+Effect\+\_\+\+Flip\+Both}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Effect\+\_\+\+None@{Sprite\+Effect\+\_\+\+None}!mage@{mage}}\index{mage@{mage}!Sprite\+Effect\+\_\+\+None@{Sprite\+Effect\+\_\+\+None}}}\hypertarget{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{}\label{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515} 
 Sprite\+Effect\+\_\+\+None&\\
 \hline
@@ -1227,7 +1250,9 @@ Sprite\+Effect\+\_\+\+Flip\+Both&\\
 \subsubsection{\texorpdfstring{Sprite\+Sort\+Mode}{SpriteSortMode}}
 {\footnotesize\ttfamily enum \hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{mage\+::\+Sprite\+Sort\+Mode}}
 
-\begin{DoxyEnumFields}{Enumerator}
+An enumeration of the different sprite sorting modes.
+
+This contains\+: {\ttfamily Sprite\+Sort\+Mode\+\_\+\+Deferred}, {\ttfamily Sprite\+Sort\+Mode\+\_\+\+Immediate}, {\ttfamily Sprite\+Sort\+Mode\+\_\+\+Texture}, {\ttfamily Sprite\+Sort\+Mode\+\_\+\+Back\+To\+Front} and {\ttfamily Sprite\+Sort\+Mode\+\_\+\+Front\+To\+Back}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Sprite\+Sort\+Mode\+\_\+\+Deferred@{Sprite\+Sort\+Mode\+\_\+\+Deferred}!mage@{mage}}\index{mage@{mage}!Sprite\+Sort\+Mode\+\_\+\+Deferred@{Sprite\+Sort\+Mode\+\_\+\+Deferred}}}\hypertarget{namespacemage_a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada}{}\label{namespacemage_a256fa5833eecc408923de7ffadb5e014a80d3415039a297067a179e981ef0dada} 
 Sprite\+Sort\+Mode\+\_\+\+Deferred&\\
 \hline
@@ -1330,9 +1355,245 @@ Variable\+Type\+\_\+\+String&\\
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+declspec()}{\_\_declspec()}}
 {\footnotesize\ttfamily mage\+::\+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
 
+A struct of light data buffers used by pixel shaders.
+
+A struct of omni light buffers used by pixel shaders.
+
+A struct of spotlight buffers used by pixel shaders.
+
+A struct of transform buffers used by vertex shaders.
+
 A struct of Cartesian axes systems.
 
-A struct of transforms. Constructs a Cartesian axes system.
+A struct of sprite transforms.
+
+A struct of transforms. Constructs a light data buffer.
+
+Constructs a light data buffer from the given light data buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a light data buffer by moving the given light data buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this light data buffer.
+
+Copies the given light data buffer to this light data buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given light data buffer (i.\+e. this light data buffer).
+\end{DoxyReturn}
+Moves the given light data buffer to this light data buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved light data buffer (i.\+e. this light data buffer).
+\end{DoxyReturn}
+The ambient light intensity of this light data buffer.
+
+The number of omni lights of this light data buffer.
+
+The intensity of the directional light of this light data buffer.
+
+The number of spotlights of this light data buffer.
+
+The (normalized) direction of the directional light in camera-\/space coordinates of this light data buffer.
+
+The padding of this light data buffer.
+
+Constructs an omni light buffer.
+
+Constructs an omni light buffer from the given omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs an omni light buffer by moving the given omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this omni light buffer.
+
+Copies the given omni light buffer to this omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given omni light buffer (i.\+e. this omni light buffer).
+\end{DoxyReturn}
+Moves the given omni light buffer to this omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved omni light buffer (i.\+e. this omni light buffer).
+\end{DoxyReturn}
+The position of the omni light in camera-\/space coordinates of this omni light buffer.
+
+The intensity of the omni light of this omni light buffer.
+
+The start of the distance falloff of the omni light of this omni light buffer.
+
+The end of the distance falloff of the omni light of this omni light buffer.
+
+The padding of this omni light buffer.
+
+Constructs a spotlight buffer.
+
+Constructs a spotlight buffer from the given spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a spotlight buffer by moving the given spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this spotlight buffer.
+
+Copies the given spotlight buffer to this spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given spotlight buffer (i.\+e. this spotlight buffer).
+\end{DoxyReturn}
+Moves the given spotlight buffer to this spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved spotlight buffer (i.\+e. this spotlight buffer).
+\end{DoxyReturn}
+The position of the spotlight in camera-\/space coordinates of this spotlight buffer.
+
+The intensity of the spotlight of this spotlight buffer.
+
+The exponent property of the spotlight of this spotlight buffer.
+
+The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
+
+The start of the distance falloff of the spotlight of this spotlight buffer.
+
+The end of the distance falloff of the spotlight of this spotlight buffer.
+
+The cosine of the penumbra angle of the spotlight of this spotlight buffer.
+
+The cosine of the umbra angle of the spotlight of this spotlight buffer.
+
+The padding of this spotlight buffer.
+
+Constructs a transform buffer from the given camera transformation matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & A reference to the (row-\/major) world-\/to-\/view matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & A reference to the (row-\/major) view-\/to-\/projection matrix.\\
+\hline
+\end{DoxyParams}
+Constructs a transform buffer from the given transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a transform buffer by moving the given transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this transform buffer.
+
+Copies the given transform buffer to this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform buffer (i.\+e. this transform buffer).
+\end{DoxyReturn}
+Moves the given transform buffer to this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved transform buffer (i.\+e. this transform buffer).
+\end{DoxyReturn}
+Returns the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+
+\begin{DoxyReturn}{Returns}
+A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+\end{DoxyReturn}
+Returns the (row-\/major) view-\/to-\/projection matrix of this transform buffer.
+
+\begin{DoxyReturn}{Returns}
+A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+\end{DoxyReturn}
+Sets the object-\/specific matrices of this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & A reference to the (row-\/major) object-\/world matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & A reference to the (row-\/major) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
+\hline
+\end{DoxyParams}
+The (camera independent, object dependent) (column-\/major) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object independent) (column-\/major) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object dependent) (column-\/major) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object independent) (column-\/major) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
+
+Constructs a Cartesian axes system.
 
 Constructs a Cartesian axes system from the given axes.
 
@@ -1341,7 +1602,7 @@ The given axis is normalized.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis.\\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given axes.
@@ -1351,9 +1612,9 @@ The given axes are orthonormal.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em y} & The y-\/axis.\\
+\mbox{\tt in}  & {\em y} & A reference to the y-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given axes.
@@ -1363,25 +1624,25 @@ The given axes are orthonormal.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em y} & The y-\/axis. \\
+\mbox{\tt in}  & {\em y} & A reference to the y-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em z} & The z-\/axis.\\
-\hline
-\end{DoxyParams}
-Constructs a Cartesian axes system from the given Cartesian axes system.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em z} & A reference to the z-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system by moving the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to move.\\
 \hline
 \end{DoxyParams}
 Destructs this Cartesian axes system.
@@ -1390,21 +1651,21 @@ Copies the given Cartesian axes system to this Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
 \end{DoxyReturn}
-Copies the given Cartesian axes system to this Cartesian axes system.
+Moves the given Cartesian axes system to this Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
+A reference to the moved Cartesian axes system (i.\+e. this Cartesian axes system).
 \end{DoxyReturn}
 Returns the x-\/axis of this Cartesian axes system.
 
@@ -1461,14 +1722,14 @@ Constructs a sprite transform from the given sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the sprite transform to copy.\\
 \hline
 \end{DoxyParams}
-Constructs a sprite transform from the given sprite transform.
+Constructs a sprite transform by moving the given sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the sprite transform to move.\\
 \hline
 \end{DoxyParams}
 Destructs this sprite transform.
@@ -1477,21 +1738,21 @@ Copies the given sprite transform to this sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & The sprite transform to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
 \end{DoxyReturn}
-Copies the given sprite transform to this sprite transform.
+Moves the given sprite transform to this sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+A reference to the moved sprite transform (i.\+e. this sprite transform).
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this sprite transform to the given value.
 
@@ -1584,6 +1845,9 @@ The translation component of this sprite transform.
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component.\\
@@ -1591,6 +1855,9 @@ Sets the x-\/value of the translation component of this sprite transform to the 
 \end{DoxyParams}
 Sets the y-\/value of the translation component of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
@@ -1598,6 +1865,9 @@ Sets the y-\/value of the translation component of this sprite transform to the 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component. \\
@@ -1607,6 +1877,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
@@ -1614,6 +1887,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
@@ -1621,6 +1897,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Adds the given x-\/value to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add.\\
@@ -1628,6 +1907,9 @@ Adds the given x-\/value to the normalized translation component of this sprite 
 \end{DoxyParams}
 Adds the given y-\/value to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
@@ -1635,6 +1917,9 @@ Adds the given y-\/value to the normalized translation component of this sprite 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add. \\
@@ -1644,6 +1929,9 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
@@ -1651,6 +1939,9 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
@@ -1658,16 +1949,25 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Returns the x-\/value of the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The x-\/value of the normalized translation component of this sprite transform.
 \end{DoxyReturn}
 Returns the y-\/value of the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The y-\/value of the normalized translation component of this sprite transform.
 \end{DoxyReturn}
 Returns the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The normalized translation component of this sprite transform.
 \end{DoxyReturn}
@@ -1800,6 +2100,9 @@ The rotation origin of this sprite transform.
 \end{DoxyReturn}
 Sets the x-\/value of the rotation origin of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin.\\
@@ -1807,6 +2110,9 @@ Sets the x-\/value of the rotation origin of this sprite transform to the given 
 \end{DoxyParams}
 Sets the y-\/value of the rotation origin of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
@@ -1814,6 +2120,9 @@ Sets the y-\/value of the rotation origin of this sprite transform to the given 
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin. \\
@@ -1823,6 +2132,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
@@ -1830,6 +2142,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
@@ -1837,6 +2152,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Adds the given x-\/value to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add.\\
@@ -1844,6 +2162,9 @@ Adds the given x-\/value to the normalized rotation origin of this sprite transf
 \end{DoxyParams}
 Adds the given y-\/value to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
@@ -1851,6 +2172,9 @@ Adds the given y-\/value to the normalized rotation origin of this sprite transf
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add. \\
@@ -1860,6 +2184,9 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
@@ -1867,6 +2194,9 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
@@ -1874,16 +2204,25 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Returns the x-\/value of the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The x-\/value of the normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
 Returns the y-\/value of the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The y-\/value of the normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
 Returns the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
@@ -2026,14 +2365,14 @@ Constructs a transform from the given transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy.\\
 \hline
 \end{DoxyParams}
-Constructs a transform from the given transform.
+Constructs a transform by moving the given transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to move.\\
 \hline
 \end{DoxyParams}
 Destructs this transform.
@@ -2042,21 +2381,21 @@ Copies the given transform to this transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given transform (i.\+e. this transform).
 \end{DoxyReturn}
-Copies the given transform to this transform.
+Moves the given transform to this transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given transform (i.\+e. this transform).
+A reference to the moved transform (i.\+e. this transform).
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this transform to the given value.
 
@@ -2573,6 +2912,182 @@ A flag (indicating whether the viewport of this sprite batch has been set.
 
 The viewport of this sprite batch.
 
+Constructs an omni light buffer.
+
+Constructs an omni light buffer from the given omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs an omni light buffer by moving the given omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this omni light buffer.
+
+Copies the given omni light buffer to this omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given omni light buffer (i.\+e. this omni light buffer).
+\end{DoxyReturn}
+Moves the given omni light buffer to this omni light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the omni light buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved omni light buffer (i.\+e. this omni light buffer).
+\end{DoxyReturn}
+The position of the omni light in camera-\/space coordinates of this omni light buffer.
+
+The intensity of the omni light of this omni light buffer.
+
+The start of the distance falloff of the omni light of this omni light buffer.
+
+The end of the distance falloff of the omni light of this omni light buffer.
+
+The padding of this omni light buffer.
+
+Constructs a spotlight buffer.
+
+Constructs a spotlight buffer from the given spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a spotlight buffer by moving the given spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this spotlight buffer.
+
+Copies the given spotlight buffer to this spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given spotlight buffer (i.\+e. this spotlight buffer).
+\end{DoxyReturn}
+Moves the given spotlight buffer to this spotlight buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the spotlight buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved spotlight buffer (i.\+e. this spotlight buffer).
+\end{DoxyReturn}
+The position of the spotlight in camera-\/space coordinates of this spotlight buffer.
+
+The intensity of the spotlight of this spotlight buffer.
+
+The exponent property of the spotlight of this spotlight buffer.
+
+The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
+
+The start of the distance falloff of the spotlight of this spotlight buffer.
+
+The end of the distance falloff of the spotlight of this spotlight buffer.
+
+The cosine of the penumbra angle of the spotlight of this spotlight buffer.
+
+The cosine of the umbra angle of the spotlight of this spotlight buffer.
+
+The padding of this spotlight buffer.
+
+Constructs a transform buffer from the given camera transformation matrices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & A reference to the (row-\/major) world-\/to-\/view matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & A reference to the (row-\/major) view-\/to-\/projection matrix.\\
+\hline
+\end{DoxyParams}
+Constructs a transform buffer from the given transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a transform buffer by moving the given transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this transform buffer.
+
+Copies the given transform buffer to this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform buffer (i.\+e. this transform buffer).
+\end{DoxyReturn}
+Moves the given transform buffer to this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the transform buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved transform buffer (i.\+e. this transform buffer).
+\end{DoxyReturn}
+Returns the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+
+\begin{DoxyReturn}{Returns}
+A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+\end{DoxyReturn}
+Returns the (row-\/major) view-\/to-\/projection matrix of this transform buffer.
+
+\begin{DoxyReturn}{Returns}
+A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+\end{DoxyReturn}
+Sets the object-\/specific matrices of this transform buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & A reference to the (row-\/major) object-\/world matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & A reference to the (row-\/major) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
+\hline
+\end{DoxyParams}
+The (camera independent, object dependent) (column-\/major) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object independent) (column-\/major) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object dependent) (column-\/major) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
+
+The (camera dependent, object independent) (column-\/major) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
+
 Constructs a Cartesian axes system.
 
 Constructs a Cartesian axes system from the given axes.
@@ -2582,7 +3097,7 @@ The given axis is normalized.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis.\\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given axes.
@@ -2592,9 +3107,9 @@ The given axes are orthonormal.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em y} & The y-\/axis.\\
+\mbox{\tt in}  & {\em y} & A reference to the y-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given axes.
@@ -2604,25 +3119,25 @@ The given axes are orthonormal.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em x} & The x-\/axis. \\
+\mbox{\tt in}  & {\em x} & A reference to the x-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em y} & The y-\/axis. \\
+\mbox{\tt in}  & {\em y} & A reference to the y-\/axis. \\
 \hline
-\mbox{\tt in}  & {\em z} & The z-\/axis.\\
-\hline
-\end{DoxyParams}
-Constructs a Cartesian axes system from the given Cartesian axes system.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em z} & A reference to the z-\/axis.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian axes system from the given Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian axes system by moving the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to move.\\
 \hline
 \end{DoxyParams}
 Destructs this Cartesian axes system.
@@ -2631,21 +3146,21 @@ Copies the given Cartesian axes system to this Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
 \end{DoxyReturn}
-Copies the given Cartesian axes system to this Cartesian axes system.
+Moves the given Cartesian axes system to this Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system to copy from. \\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given Cartesian axes system (i.\+e. this Cartesian axes system).
+A reference to the moved Cartesian axes system (i.\+e. this Cartesian axes system).
 \end{DoxyReturn}
 Returns the x-\/axis of this Cartesian axes system.
 
@@ -2702,14 +3217,14 @@ Constructs a sprite transform from the given sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the sprite transform to copy.\\
 \hline
 \end{DoxyParams}
-Constructs a sprite transform from the given sprite transform.
+Constructs a sprite transform by moving the given sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the sprite transform to move.\\
 \hline
 \end{DoxyParams}
 Destructs this sprite transform.
@@ -2718,21 +3233,21 @@ Copies the given sprite transform to this sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & The sprite transform to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
 \end{DoxyReturn}
-Copies the given sprite transform to this sprite transform.
+Moves the given sprite transform to this sprite transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & The sprite transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & The sprite transform to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given sprite transform (i.\+e. this sprite transform).
+A reference to the moved sprite transform (i.\+e. this sprite transform).
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this sprite transform to the given value.
 
@@ -2825,6 +3340,9 @@ The translation component of this sprite transform.
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component.\\
@@ -2832,6 +3350,9 @@ Sets the x-\/value of the translation component of this sprite transform to the 
 \end{DoxyParams}
 Sets the y-\/value of the translation component of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component.\\
@@ -2839,6 +3360,9 @@ Sets the y-\/value of the translation component of this sprite transform to the 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component. \\
@@ -2848,6 +3372,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
@@ -2855,6 +3382,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Sets the translation component of this sprite transform to the given normalized translation component.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component.\\
@@ -2862,6 +3392,9 @@ Sets the translation component of this sprite transform to the given normalized 
 \end{DoxyParams}
 Adds the given x-\/value to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add.\\
@@ -2869,6 +3402,9 @@ Adds the given x-\/value to the normalized translation component of this sprite 
 \end{DoxyParams}
 Adds the given y-\/value to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized translation component to add.\\
@@ -2876,6 +3412,9 @@ Adds the given y-\/value to the normalized translation component of this sprite 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized translation component to add. \\
@@ -2885,6 +3424,9 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
@@ -2892,6 +3434,9 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Adds the given translation component to the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em translation} & A reference to the normalized translation component to add.\\
@@ -2899,16 +3444,25 @@ Adds the given translation component to the normalized translation component of 
 \end{DoxyParams}
 Returns the x-\/value of the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The x-\/value of the normalized translation component of this sprite transform.
 \end{DoxyReturn}
 Returns the y-\/value of the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The y-\/value of the normalized translation component of this sprite transform.
 \end{DoxyReturn}
 Returns the normalized translation component of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The normalized translation component of this sprite transform.
 \end{DoxyReturn}
@@ -3041,6 +3595,9 @@ The rotation origin of this sprite transform.
 \end{DoxyReturn}
 Sets the x-\/value of the rotation origin of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin.\\
@@ -3048,6 +3605,9 @@ Sets the x-\/value of the rotation origin of this sprite transform to the given 
 \end{DoxyParams}
 Sets the y-\/value of the rotation origin of this sprite transform to the given normalized value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin.\\
@@ -3055,6 +3615,9 @@ Sets the y-\/value of the rotation origin of this sprite transform to the given 
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin. \\
@@ -3064,6 +3627,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
@@ -3071,6 +3637,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Sets the rotation origin of this sprite transform to the given normalized rotation origin.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin.\\
@@ -3078,6 +3647,9 @@ Sets the rotation origin of this sprite transform to the given normalized rotati
 \end{DoxyParams}
 Adds the given x-\/value to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add.\\
@@ -3085,6 +3657,9 @@ Adds the given x-\/value to the normalized rotation origin of this sprite transf
 \end{DoxyParams}
 Adds the given y-\/value to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The y-\/value of the normalized rotation origin to add.\\
@@ -3092,6 +3667,9 @@ Adds the given y-\/value to the normalized rotation origin of this sprite transf
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The x-\/value of the normalized rotation origin to add. \\
@@ -3101,6 +3679,9 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
@@ -3108,6 +3689,9 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Adds the given rotation origin to the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the normalized rotation origin to add.\\
@@ -3115,16 +3699,25 @@ Adds the given rotation origin to the normalized rotation origin of this sprite 
 \end{DoxyParams}
 Returns the x-\/value of the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The x-\/value of the normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
 Returns the y-\/value of the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The y-\/value of the normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
 Returns the normalized rotation origin of this sprite transform.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The normalized rotation origin of this sprite transform.
 \end{DoxyReturn}
@@ -3267,14 +3860,14 @@ Constructs a transform from the given transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy.\\
 \hline
 \end{DoxyParams}
-Constructs a transform from the given transform.
+Constructs a transform by moving the given transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform.\\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to move.\\
 \hline
 \end{DoxyParams}
 Destructs this transform.
@@ -3283,21 +3876,21 @@ Copies the given transform to this transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given transform (i.\+e. this transform).
 \end{DoxyReturn}
-Copies the given transform to this transform.
+Moves the given transform to this transform.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform} & A reference to the transform to copy from. \\
+\mbox{\tt in}  & {\em transform} & A reference to the transform to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given transform (i.\+e. this transform).
+A reference to the moved transform (i.\+e. this transform).
 \end{DoxyReturn}
 Sets the x-\/value of the translation component of this transform to the given value.
 
@@ -3818,34 +4411,82 @@ The viewport of this sprite batch.\hypertarget{namespacemage_a76dac28d69746bdef4
 \subsubsection{\texorpdfstring{\+\_\+declspec()}{\_declspec()}}
 {\footnotesize\ttfamily mage\+::\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
 
-A struct of Cartesian coordinate systems. Constructs a Cartesian coordinate system from the given Cartesian axes system.
+A struct of material buffers used by pixel shaders.
+
+A struct of Cartesian coordinate systems. Constructs a material buffer.
+
+Constructs a material buffer from the given material buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em buffer} & A reference to the material buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs a material buffer by moving the given material buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the material buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this material buffer.
+
+Copies the given material buffer to this material buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the material buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given material buffer (i.\+e. this material buffer).
+\end{DoxyReturn}
+Moves the given material buffer to this material buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the material buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved material buffer (i.\+e. this material buffer).
+\end{DoxyReturn}
+The diffuse reflectivity of this material buffer.
+
+The dissolve factor (i.\+e. opacity) of this material buffer.
+
+The specular reflectivity of this material buffer.
+
+The specular exponent (surface roughness) of this material buffer.
+
+Constructs a Cartesian coordinate system from the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian coordinate system from the given origin and Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em o} & The origin. \\
+\mbox{\tt in}  & {\em o} & A reference to the origin. \\
 \hline
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
-\hline
-\end{DoxyParams}
-Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian coordinate system by moving the given Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system.\\
 \hline
 \end{DoxyParams}
 Destructs this Cartesian coordinate system.
@@ -3854,21 +4495,21 @@ Copies the given Cartesian coordinate system to this Cartesian coordinate system
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
 \end{DoxyReturn}
-Copies the given Cartesian coordinate system to this Cartesian coordinate system.
+Moves the given Cartesian coordinate system to this Cartesian coordinate system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
+A reference to the moved Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
 \end{DoxyReturn}
 Returns the origin of this Cartesian coordinate system.
 
@@ -3903,30 +4544,30 @@ Constructs a Cartesian coordinate system from the given Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian coordinate system from the given origin and Cartesian axes system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em o} & The origin. \\
+\mbox{\tt in}  & {\em o} & A reference to the origin. \\
 \hline
-\mbox{\tt in}  & {\em axes} & The Cartesian axes system.\\
-\hline
-\end{DoxyParams}
-Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\mbox{\tt in}  & {\em axes} & A reference to the Cartesian axes system.\\
 \hline
 \end{DoxyParams}
 Constructs a Cartesian coordinate system from the given Cartesian coordinate system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system.\\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system.\\
+\hline
+\end{DoxyParams}
+Constructs a Cartesian coordinate system by moving the given Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system.\\
 \hline
 \end{DoxyParams}
 Destructs this Cartesian coordinate system.
@@ -3935,21 +4576,21 @@ Copies the given Cartesian coordinate system to this Cartesian coordinate system
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
 \end{DoxyReturn}
-Copies the given Cartesian coordinate system to this Cartesian coordinate system.
+Moves the given Cartesian coordinate system to this Cartesian coordinate system.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system to copy from. \\
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & A reference to the Cartesian coordinate system to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
+A reference to the moved Cartesian coordinate system (i.\+e. this Cartesian coordinate system).
 \end{DoxyReturn}
 Returns the origin of this Cartesian coordinate system.
 
@@ -3986,6 +4627,9 @@ The Cartesian axes system of this Cartesian coordinate system.\hypertarget{names
 
 Allocates memory on a given alignment boundary of the given size.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape alignment} must be an integer power of 2. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
@@ -4802,25 +5446,121 @@ The given byte array must contain at least 1 byte.
 \begin{DoxyReturn}{Returns}
 The {\ttfamily uint8\+\_\+t} represented by the byte array {\itshape bytes}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_aa6dc8bc35accb3ccaac7ee60a5361754}{}\label{namespacemage_aa6dc8bc35accb3ccaac7ee60a5361754} 
+\hypertarget{namespacemage_af377e4f18912fcbff49672a124c344b2}{}\label{namespacemage_af377e4f18912fcbff49672a124c344b2} 
 \index{mage@{mage}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!mage@{mage}}
 \subsubsection{\texorpdfstring{Clamp()}{Clamp()}}
 {\footnotesize\ttfamily template$<$typename ValueT $>$ \\
-ValueT mage\+::\+Clamp (\begin{DoxyParamCaption}\item[{ValueT}]{x,  }\item[{ValueT}]{low = {\ttfamily 0},  }\item[{ValueT}]{high = {\ttfamily 1} }\end{DoxyParamCaption})}
+ValueT mage\+::\+Clamp (\begin{DoxyParamCaption}\item[{ValueT}]{value,  }\item[{ValueT}]{low = {\ttfamily 0},  }\item[{ValueT}]{high = {\ttfamily 1} }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a25d1197c5d3c86cc5d15e8225f796ac3}{}\label{namespacemage_a25d1197c5d3c86cc5d15e8225f796ac3} 
+Clamps the given value between the given low and hight value.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape low} is not greater than {\itshape high}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ValueT} & The type of value. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & The value. \\
+\hline
+\mbox{\tt in}  & {\em low} & The minimum value. \\
+\hline
+\mbox{\tt in}  & {\em high} & The maximum value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped value between the given minimum and maximum value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a0024d4f40403506605dc7ca57ff83d1f}{}\label{namespacemage_a0024d4f40403506605dc7ca57ff83d1f} 
 \index{mage@{mage}!Clamp\+Angle\+Degrees@{Clamp\+Angle\+Degrees}}
 \index{Clamp\+Angle\+Degrees@{Clamp\+Angle\+Degrees}!mage@{mage}}
-\subsubsection{\texorpdfstring{Clamp\+Angle\+Degrees()}{ClampAngleDegrees()}}
-{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Degrees (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Clamp\+Angle\+Degrees()}{ClampAngleDegrees()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Degrees (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_ad538eb214c63b04ec6045e60791b814b}{}\label{namespacemage_ad538eb214c63b04ec6045e60791b814b} 
+Clamps the given angle (in degrees) to (-\/180, 180\mbox{]}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & The angle (in degrees). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped angle (in degrees). 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a1cc8a7302f05f1e890dabc6fe98e1496}{}\label{namespacemage_a1cc8a7302f05f1e890dabc6fe98e1496} 
+\index{mage@{mage}!Clamp\+Angle\+Degrees@{Clamp\+Angle\+Degrees}}
+\index{Clamp\+Angle\+Degrees@{Clamp\+Angle\+Degrees}!mage@{mage}}
+\subsubsection{\texorpdfstring{Clamp\+Angle\+Degrees()}{ClampAngleDegrees()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Degrees (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min\+\_\+angle,  }\item[{float}]{max\+\_\+angle }\end{DoxyParamCaption})}
+
+Clamps the given angle (in degrees) between the given minimum and maximum angle (in degrees).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/180, 180\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/180, 180\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & The angle (in degrees). \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in degrees). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in degrees). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped angle between the given minimum and maximum angle (in degrees). 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a0361d0febf0543c594a31fede401d157}{}\label{namespacemage_a0361d0febf0543c594a31fede401d157} 
 \index{mage@{mage}!Clamp\+Angle\+Radians@{Clamp\+Angle\+Radians}}
 \index{Clamp\+Angle\+Radians@{Clamp\+Angle\+Radians}!mage@{mage}}
-\subsubsection{\texorpdfstring{Clamp\+Angle\+Radians()}{ClampAngleRadians()}}
-{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Radians (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Clamp\+Angle\+Radians()}{ClampAngleRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Radians (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
 
+Clamps the given angle (in radians) to \mbox{[}-\/pi, pi\mbox{]}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & The angle (in radians). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped angle (in radians). 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a85caeb6cab349e4eff83919fbf430700}{}\label{namespacemage_a85caeb6cab349e4eff83919fbf430700} 
+\index{mage@{mage}!Clamp\+Angle\+Radians@{Clamp\+Angle\+Radians}}
+\index{Clamp\+Angle\+Radians@{Clamp\+Angle\+Radians}!mage@{mage}}
+\subsubsection{\texorpdfstring{Clamp\+Angle\+Radians()}{ClampAngleRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float mage\+::\+Clamp\+Angle\+Radians (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min\+\_\+angle,  }\item[{float}]{max\+\_\+angle }\end{DoxyParamCaption})}
+
+Clamps the given angle (in radians) between the given minimum and maximum angle (in radians).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & The angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clamped angle between the given minimum and maximum angle (in radians). 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{}\label{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee} 
 \index{mage@{mage}!Combo\+Box\+Add@{Combo\+Box\+Add}}
 \index{Combo\+Box\+Add@{Combo\+Box\+Add}!mage@{mage}}
@@ -5022,6 +5762,9 @@ The fixed console width.
 
 Converts the given absolute screen position to normalized screen position.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em position} & The given absolute screen position. \\
@@ -5035,6 +5778,9 @@ Converts the given absolute screen position to normalized screen position.
 
 Converts the given absolute screen values to normalized screen values.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The given absolute screen x-\/value. \\
@@ -5050,6 +5796,9 @@ Converts the given absolute screen values to normalized screen values.
 
 Converts the given absolute screen position to normalized screen position.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em position} & The given absolute screen position. \\
@@ -5063,6 +5812,9 @@ Converts the given absolute screen position to normalized screen position.
 
 Converts the given absolute screen x-\/value to normalized screen x-\/value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The given absolute screen x-\/value. \\
@@ -5076,6 +5828,9 @@ Converts the given absolute screen x-\/value to normalized screen x-\/value.
 
 Converts the given absolute screen y-\/value to normalized screen y-\/value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The given absolute screen y-\/value. \\
@@ -5089,6 +5844,9 @@ Converts the given absolute screen y-\/value to normalized screen y-\/value.
 
 Converts the given normalized screen position to absolute screen position.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em position} & The given normalized screen position. \\
@@ -5102,6 +5860,9 @@ Converts the given normalized screen position to absolute screen position.
 
 Converts the given normalized screen values to absolute screen values.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The given normalized screen x-\/value. \\
@@ -5117,6 +5878,9 @@ Converts the given normalized screen values to absolute screen values.
 
 Converts the given normalized screen position to absolute screen position.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em position} & The given normalized screen position. \\
@@ -5130,6 +5894,9 @@ Converts the given normalized screen position to absolute screen position.
 
 Converts the given normalized screen x-\/value to absolute screen x-\/value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em x} & The given normalized screen x-\/value. \\
@@ -5143,6 +5910,9 @@ Converts the given normalized screen x-\/value to absolute screen x-\/value.
 
 Converts the given normalized screen y-\/value to absolute screen y-\/value.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em y} & The given normalized screen y-\/value. \\
@@ -5369,8 +6139,11 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Dynamic\+Vertex\+Buffer (\begin{DoxyParamCap
 \subsubsection{\texorpdfstring{Create\+Font()}{CreateFont()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Create\+Font (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
 
-Create a sprite font.
+Creates a sprite font.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the filename. \\
@@ -5392,6 +6165,16 @@ A pointer to the created sprite font.
 \subsubsection{\texorpdfstring{Create\+Lambertian\+Shader()}{CreateLambertianShader()}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} mage\+::\+Create\+Lambertian\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Creates a lambertian shader.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the lambertian shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_aa8f37da8dc3c10b5e4e1cd56be94ff95}{}\label{namespacemage_aa8f37da8dc3c10b5e4e1cd56be94ff95} 
 \index{mage@{mage}!Create\+Linear\+Clamp\+Sampler\+State@{Create\+Linear\+Clamp\+Sampler\+State}}
 \index{Create\+Linear\+Clamp\+Sampler\+State@{Create\+Linear\+Clamp\+Sampler\+State}!mage@{mage}}
@@ -5411,6 +6194,28 @@ A pointer to the created sprite font.
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Create\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc }\end{DoxyParamCaption})}
 
+Creates a model descriptor.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the mesh descriptor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize the model descriptor. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a6f4e37e4b8092acec9dad9a8b24ebb07}{}\label{namespacemage_a6f4e37e4b8092acec9dad9a8b24ebb07} 
 \index{mage@{mage}!Create\+Non\+Premultiplied\+Blend\+State@{Create\+Non\+Premultiplied\+Blend\+State}}
 \index{Create\+Non\+Premultiplied\+Blend\+State@{Create\+Non\+Premultiplied\+Blend\+State}!mage@{mage}}
@@ -5423,7 +6228,7 @@ A pointer to the created sprite font.
 \subsubsection{\texorpdfstring{Create\+Opaque\+Blend\+State()}{CreateOpaqueBlendState()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+Opaque\+Blend\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Blend\+State $\ast$$\ast$}]{blend\+\_\+state }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_abceafa3c16065a9d0e9a6b2482316f45}{}\label{namespacemage_abceafa3c16065a9d0e9a6b2482316f45} 
+\hypertarget{namespacemage_aec09581a328a83e6f87cbf572a85ba6c}{}\label{namespacemage_aec09581a328a83e6f87cbf572a85ba6c} 
 \index{mage@{mage}!Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}}
 \index{Create\+Orthographic\+Camera@{Create\+Orthographic\+Camera}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Orthographic\+Camera()}{CreateOrthographicCamera()}}
@@ -5510,6 +6315,16 @@ A shared handle for the given handle {\itshape handle}.
 \subsubsection{\texorpdfstring{Create\+Sprite\+Shader()}{CreateSpriteShader()}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} mage\+::\+Create\+Sprite\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Creates a sprite shader.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a6d7b762686800ea46b6f56dbfa0727a2}{}\label{namespacemage_a6d7b762686800ea46b6f56dbfa0727a2} 
 \index{mage@{mage}!Create\+Static\+Index\+Buffer@{Create\+Static\+Index\+Buffer}}
 \index{Create\+Static\+Index\+Buffer@{Create\+Static\+Index\+Buffer}!mage@{mage}}
@@ -5537,6 +6352,24 @@ H\+R\+E\+S\+U\+LT mage\+::\+Create\+Structured\+Buffer (\begin{DoxyParamCaption}
 \subsubsection{\texorpdfstring{Create\+Texture()}{CreateTexture()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Create\+Texture (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
 
+Creates a texture.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created texture. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the texture. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a53fb464961d52002316f17c59ce58078}{}\label{namespacemage_a53fb464961d52002316f17c59ce58078} 
 \index{mage@{mage}!Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}}
 \index{Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}!mage@{mage}}
@@ -5561,6 +6394,11 @@ Creates a variable script.
 \begin{DoxyReturn}{Returns}
 A pointer to the variable script. 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the variable script from file (only possible if {\itshape import} is equal to {\ttfamily true}). \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a697c6623ef997684945849dc04437a1a}{}\label{namespacemage_a697c6623ef997684945849dc04437a1a} 
 \index{mage@{mage}!Create\+Wireframe\+Rasterizer\+State@{Create\+Wireframe\+Rasterizer\+State}}
 \index{Create\+Wireframe\+Rasterizer\+State@{Create\+Wireframe\+Rasterizer\+State}!mage@{mage}}
@@ -5616,12 +6454,12 @@ An error message is associated with any error which is fatal to the operation, b
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a111dc6972bce8645df185fa5a65f9bff}{}\label{namespacemage_a111dc6972bce8645df185fa5a65f9bff} 
+\hypertarget{namespacemage_a1e8cf202593cc54387c6d735220ffc0e}{}\label{namespacemage_a1e8cf202593cc54387c6d735220ffc0e} 
 \index{mage@{mage}!Export\+M\+D\+L\+Model\+To\+File@{Export\+M\+D\+L\+Model\+To\+File}}
 \index{Export\+M\+D\+L\+Model\+To\+File@{Export\+M\+D\+L\+Model\+To\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Export\+M\+D\+L\+Model\+To\+File()}{ExportMDLModelToFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Export\+M\+D\+L\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+void mage\+::\+Export\+M\+D\+L\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
 
 Exports the given model to the given M\+DL file.
 
@@ -5634,20 +6472,22 @@ Exports the given model to the given M\+DL file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the M\+DL filename. \\
 \hline
-\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
+\mbox{\tt in}  & {\em model\+\_\+output} & A reference to the model output. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0}{}\label{namespacemage_a649e8c5136fa1a868d5b7441e4d041f0} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to export the model to file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a3cb120c707ba8db950082a33d76b3ec8}{}\label{namespacemage_a3cb120c707ba8db950082a33d76b3ec8} 
 \index{mage@{mage}!Export\+Model\+To\+File@{Export\+Model\+To\+File}}
 \index{Export\+Model\+To\+File@{Export\+Model\+To\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Export\+Model\+To\+File()}{ExportModelToFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Export\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+void mage\+::\+Export\+Model\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
 
-Exports a mesh to the given file.
+Exports the model to the given file.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -5661,9 +6501,11 @@ Exports a mesh to the given file.
 \mbox{\tt in}  & {\em model\+\_\+output} & A reference to the model output. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to export the model to file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a6558ce42c284f76e6bb08bc0f9cabfc3}{}\label{namespacemage_a6558ce42c284f76e6bb08bc0f9cabfc3} 
 \index{mage@{mage}!Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}}
 \index{Export\+M\+S\+H\+Mesh\+To\+File@{Export\+M\+S\+H\+Mesh\+To\+File}!mage@{mage}}
@@ -6112,18 +6954,42 @@ If the retrieval succeeds, the total physical memory usage of this process (in b
 \subsubsection{\texorpdfstring{Get\+Rendering\+Device()}{GetRenderingDevice()}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device2 $\ast$ mage\+::\+Get\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the rendering device.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the rendering device. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a55d3eaa7476e19ec8969e27d69249d95}{}\label{namespacemage_a55d3eaa7476e19ec8969e27d69249d95} 
 \index{mage@{mage}!Get\+Rendering\+Device\+Context@{Get\+Rendering\+Device\+Context}}
 \index{Get\+Rendering\+Device\+Context@{Get\+Rendering\+Device\+Context}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Rendering\+Device\+Context()}{GetRenderingDeviceContext()}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2 $\ast$ mage\+::\+Get\+Rendering\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the rendering device context.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the rendering device context. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a36a7338e52586e714ef646dea200a115}{}\label{namespacemage_a36a7338e52586e714ef646dea200a115} 
 \index{mage@{mage}!Get\+Resource\+Factory@{Get\+Resource\+Factory}}
 \index{Get\+Resource\+Factory@{Get\+Resource\+Factory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Resource\+Factory()}{GetResourceFactory()}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $\ast$ mage\+::\+Get\+Resource\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the resource factory.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the resource factory. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{}\label{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2} 
 \index{mage@{mage}!Get\+Surface\+Info@{Get\+Surface\+Info}}
 \index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
@@ -6136,24 +7002,98 @@ If the retrieval succeeds, the total physical memory usage of this process (in b
 \subsubsection{\texorpdfstring{Get\+Texture2\+D\+Size()}{GetTexture2DSize()}}
 {\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Get\+Texture2\+D\+Size (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture }\end{DoxyParamCaption})}
 
+Returns the size of the given 2D texture.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer the (texture) shader resource view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the given 2D texture as a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (width, height, width, height). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & The resource of the given shader resource view must be convertible to a {\ttfamily I\+D3\+D11\+Texture2D}. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a706e1b2866209b405f52e62c521f4884}{}\label{namespacemage_a706e1b2866209b405f52e62c521f4884} 
 \index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
 \index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily const X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode }\end{DoxyParamCaption})}
 
+Returns the viewport transform for the given device context and rotation mode.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+mode} & The rotation mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The viewport transform for the given device context and rotation mode. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & A viewport needs to be set. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a6430737590c5401384e3a65a4f66b240}{}\label{namespacemage_a6430737590c5401384e3a65a4f66b240} 
 \index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
 \index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily const X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode,  }\item[{D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT $\ast$}]{viewport }\end{DoxyParamCaption})}
 
+Returns the viewport transform for the given device context and rotation mode.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape viewport} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+mode} & The rotation mode. \\
+\hline
+\mbox{\tt out}  & {\em viewport} & A pointer to the viewport. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The viewport transform for the given device context and rotation mode. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & A viewport needs to be set. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a18ab56ec4969343a6552a73b561ad4ed}{}\label{namespacemage_a18ab56ec4969343a6552a73b561ad4ed} 
 \index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
 \index{Get\+Viewport\+Transform@{Get\+Viewport\+Transform}!mage@{mage}}
 \subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily const X\+M\+M\+A\+T\+R\+IX mage\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&}]{viewport,  }\item[{D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON}]{rotation\+\_\+mode }\end{DoxyParamCaption})}
 
+Returns the viewport transform for the viewport and rotation mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
+\hline
+\mbox{\tt in}  & {\em rotation\+\_\+mode} & The rotation mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The viewport transform for the given viewport and rotation mode. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_abc4bbe41e0b34bb80ff8994ec09bd2bf}{}\label{namespacemage_abc4bbe41e0b34bb80ff8994ec09bd2bf} 
 \index{mage@{mage}!Get\+Virtual\+Memory\+Usage@{Get\+Virtual\+Memory\+Usage}}
 \index{Get\+Virtual\+Memory\+Usage@{Get\+Virtual\+Memory\+Usage}!mage@{mage}}
@@ -6568,11 +7508,11 @@ Imports the S\+P\+R\+I\+T\+E\+F\+O\+NT from the given file.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the sprite font from file. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_a3dd35a33d61f2891a717b5958f7edf12}{}\label{namespacemage_a3dd35a33d61f2891a717b5958f7edf12} 
+\hypertarget{namespacemage_a1ec5e042dc875b6f9ec5e2f15c7d6320}{}\label{namespacemage_a1ec5e042dc875b6f9ec5e2f15c7d6320} 
 \index{mage@{mage}!Import\+Material\+From\+File@{Import\+Material\+From\+File}}
 \index{Import\+Material\+From\+File@{Import\+Material\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Material\+From\+File()}{ImportMaterialFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Material\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&}]{material\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+Material\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&}]{materials }\end{DoxyParamCaption})}
 
 Imports the materials from the given file.
 
@@ -6580,18 +7520,20 @@ Imports the materials from the given file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the filename. \\
 \hline
-\mbox{\tt out}  & {\em material\+\_\+buffer} & A reference to the empty material buffer. \\
+\mbox{\tt out}  & {\em materials} & A reference to a vector containing the materials. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d}{}\label{namespacemage_a3f0f8c54f76f76ed7081fd3c960e482d} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the materials from file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a8eae2acc25c819aa8973e206a7b84b9f}{}\label{namespacemage_a8eae2acc25c819aa8973e206a7b84b9f} 
 \index{mage@{mage}!Import\+M\+D\+L\+Model\+From\+File@{Import\+M\+D\+L\+Model\+From\+File}}
 \index{Import\+M\+D\+L\+Model\+From\+File@{Import\+M\+D\+L\+Model\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+M\+D\+L\+Model\+From\+File()}{ImportMDLModelFromFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Import\+M\+D\+L\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
+void mage\+::\+Import\+M\+D\+L\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})}
 
 Imports the model from the given M\+DL file.
 
@@ -6604,20 +7546,22 @@ Imports the model from the given M\+DL file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the M\+DL filename. \\
 \hline
-\mbox{\tt in,out}  & {\em model\+\_\+output} & A reference to the model output. \\
+\mbox{\tt out}  & {\em model\+\_\+output} & A reference to the model output. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27}{}\label{namespacemage_abc1dfdc85895f4f5fcb6acf5fafd7e27} 
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the model from file. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a3b43f166d61c14d680b28614da17ac2b}{}\label{namespacemage_a3b43f166d61c14d680b28614da17ac2b} 
 \index{mage@{mage}!Import\+Model\+From\+File@{Import\+Model\+From\+File}}
 \index{Import\+Model\+From\+File@{Import\+Model\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Model\+From\+File()}{ImportModelFromFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-H\+R\+E\+S\+U\+LT mage\+::\+Import\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
+void mage\+::\+Import\+Model\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
 
-Imports a mesh from the given file.
+Imports the model from the given file.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -6633,9 +7577,11 @@ Imports a mesh from the given file.
 \mbox{\tt in}  & {\em mesh\+\_\+desc} & A reference to the mesh descriptor. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the model from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_ad98d571312abaaa2b0b7dd13958f5100}{}\label{namespacemage_ad98d571312abaaa2b0b7dd13958f5100} 
 \index{mage@{mage}!Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}}
 \index{Import\+M\+S\+H\+Mesh\+From\+File@{Import\+M\+S\+H\+Mesh\+From\+File}!mage@{mage}}
@@ -6666,11 +7612,11 @@ Imports the mesh from the given M\+SH file.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the mesh from file. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef}{}\label{namespacemage_a7d8de4109ffc72a7a320e4ec642bddef} 
+\hypertarget{namespacemage_af823dc7245aa79b1e789ac8f58d766d2}{}\label{namespacemage_af823dc7245aa79b1e789ac8f58d766d2} 
 \index{mage@{mage}!Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}}
 \index{Import\+M\+T\+L\+Material\+From\+File@{Import\+M\+T\+L\+Material\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+M\+T\+L\+Material\+From\+File()}{ImportMTLMaterialFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+M\+T\+L\+Material\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&}]{material\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+M\+T\+L\+Material\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&}]{materials }\end{DoxyParamCaption})}
 
 Imports the materials from the given M\+TL file.
 
@@ -6678,12 +7624,14 @@ Imports the materials from the given M\+TL file.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the M\+TL filename. \\
 \hline
-\mbox{\tt out}  & {\em material\+\_\+buffer} & A reference to the empty material buffer. \\
+\mbox{\tt out}  & {\em materials} & A reference to a vector containing the materials. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the mesh from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_abeaf36b602f5ed971b1b505e42972e4f}{}\label{namespacemage_abeaf36b602f5ed971b1b505e42972e4f} 
 \index{mage@{mage}!Import\+O\+B\+J\+Mesh\+From\+File@{Import\+O\+B\+J\+Mesh\+From\+File}}
 \index{Import\+O\+B\+J\+Mesh\+From\+File@{Import\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
@@ -6691,7 +7639,7 @@ A success/error value.
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 void mage\+::\+Import\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc = {\ttfamily \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$~VertexT~$>$()} }\end{DoxyParamCaption})}
 
-Imports a mesh from an O\+BJ file.
+Imports a mesh from the given O\+BJ file.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -6739,14 +7687,19 @@ Imports the sprite font from the given file.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the sprite font from file. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_ad3c9a6b3f339b92985d202e5cd0f4388}{}\label{namespacemage_ad3c9a6b3f339b92985d202e5cd0f4388} 
+\hypertarget{namespacemage_a00ef840caba08f9c94c1590a98e3546b}{}\label{namespacemage_a00ef840caba08f9c94c1590a98e3546b} 
 \index{mage@{mage}!Import\+Texture\+From\+File@{Import\+Texture\+From\+File}}
 \index{Import\+Texture\+From\+File@{Import\+Texture\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Import\+Texture\+From\+File()}{ImportTextureFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Import\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+resource\+\_\+view }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Import\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+resource\+\_\+view }\end{DoxyParamCaption})}
 
 Imports the texture from the given file.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape texture\+\_\+resource\+\_\+view} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the filename. \\
@@ -6756,9 +7709,11 @@ Imports the texture from the given file.
 \mbox{\tt out}  & {\em texture\+\_\+resource\+\_\+view} & A pointer to a pointer to a shader resource view. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the texture from file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a}{}\label{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a} 
 \index{mage@{mage}!Import\+Variable\+Script\+From\+File@{Import\+Variable\+Script\+From\+File}}
 \index{Import\+Variable\+Script\+From\+File@{Import\+Variable\+Script\+From\+File}!mage@{mage}}
@@ -6830,30 +7785,70 @@ Allocates a console to this engine for basic io and redirects stdin, stdout and 
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize the console. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_a13b912f3dcd9c202fe3f9edb424e3b78}{}\label{namespacemage_a13b912f3dcd9c202fe3f9edb424e3b78} 
+\hypertarget{namespacemage_ae12cd160f5bc01e4ef0aa2d45a80e14c}{}\label{namespacemage_ae12cd160f5bc01e4ef0aa2d45a80e14c} 
 \index{mage@{mage}!Invert\+Handness@{Invert\+Handness}}
 \index{Invert\+Handness@{Invert\+Handness}!mage@{mage}}
 \subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_u_v}{UV} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_u_v}{UV} \&}]{uv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_u_v}{UV} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_u_v}{UV} \&}]{uv }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a20ded71f51e2014bab8e7d232eaf1c29}{}\label{namespacemage_a20ded71f51e2014bab8e7d232eaf1c29} 
+Inverts the handness of the given set of \hyperlink{structmage_1_1_u_v}{UV} texture coordinates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em uv} & A reference to the set of \hyperlink{structmage_1_1_u_v}{UV} texture coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set of \hyperlink{structmage_1_1_u_v}{UV} texture coordinates with inverted handness. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a909b2d7d07a296a41c320b8fe8ab1b82}{}\label{namespacemage_a909b2d7d07a296a41c320b8fe8ab1b82} 
 \index{mage@{mage}!Invert\+Handness@{Invert\+Handness}}
 \index{Invert\+Handness@{Invert\+Handness}!mage@{mage}}
 \subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a1d236e395736f7b5e28e52ccd3d643ae}{}\label{namespacemage_a1d236e395736f7b5e28e52ccd3d643ae} 
+Inverts the handness of the given point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point} & A reference to the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point with inverted handness. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a6c9899cce1f1e4d70ad74f291314a90c}{}\label{namespacemage_a6c9899cce1f1e4d70ad74f291314a90c} 
 \index{mage@{mage}!Invert\+Handness@{Invert\+Handness}}
 \index{Invert\+Handness@{Invert\+Handness}!mage@{mage}}
 \subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_direction3}{Direction3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_direction3}{Direction3} \&}]{direction }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_direction3}{Direction3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_direction3}{Direction3} \&}]{direction }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a437458a2e3278f106da66534c5218e4e}{}\label{namespacemage_a437458a2e3278f106da66534c5218e4e} 
+Inverts the handness of the given direction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em direction} & A reference to the direction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The direction with inverted handness. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a99775511a838e6d840a83e5ca31e3306}{}\label{namespacemage_a99775511a838e6d840a83e5ca31e3306} 
 \index{mage@{mage}!Invert\+Handness@{Invert\+Handness}}
 \index{Invert\+Handness@{Invert\+Handness}!mage@{mage}}
 \subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_normal3}{Normal3} \&}]{normal }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Invert\+Handness (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_normal3}{Normal3} \&}]{normal }\end{DoxyParamCaption})}
 
+Inverts the handness of the given normal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em normal} & A reference to the normal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normal with inverted handness. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{}\label{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db} 
 \index{mage@{mage}!Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}}
 \index{Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}!mage@{mage}}
@@ -6905,18 +7900,54 @@ The number of system cores (i.\+e. logical processors).
 \subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T2 \&}]{v }\end{DoxyParamCaption})}
 
+Outputs the given vector to the given output stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & A reference to the output stream. \\
+\hline
+\mbox{\tt in}  & {\em v} & A reference to the vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the given output stream. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a44b2d3046802608544402245919f219b}{}\label{namespacemage_a44b2d3046802608544402245919f219b} 
 \index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
 \subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{v }\end{DoxyParamCaption})}
 
+Outputs the given vector to the given output stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & A reference to the output stream. \\
+\hline
+\mbox{\tt in}  & {\em v} & A reference to the vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the given output stream. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{}\label{namespacemage_af6c1d1c5718d611450932bde30d2bfef} 
 \index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
 \subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T4 \&}]{v }\end{DoxyParamCaption})}
 
+Outputs the given vector to the given output stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & A reference to the output stream. \\
+\hline
+\mbox{\tt in}  & {\em v} & A reference to the vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the given output stream. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ade79a277862009e505ce6c15ecd98cdf}{}\label{namespacemage_ade79a277862009e505ce6c15ecd98cdf} 
 \index{mage@{mage}!Overlap@{Overlap}}
 \index{Overlap@{Overlap}!mage@{mage}}
@@ -8718,12 +9749,32 @@ A warning message is associated with anything that can potentially cause applica
 \subsubsection{\texorpdfstring{X\+M\+Vector\+Left\+Top\+Right\+Bottom()}{XMVectorLeftTopRightBottom()}}
 {\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+X\+M\+Vector\+Left\+Top\+Right\+Bottom (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{rect }\end{DoxyParamCaption})}
 
+Converts the given {\ttfamily R\+E\+CT} (left, top, right, bottom) to a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (left, top, right, bottom).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rect} & A reference to the rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily X\+M\+V\+E\+C\+T\+OR} (left, top, right, bottom) representing the given {\ttfamily R\+E\+CT} (left, top, right, bottom). 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a21b11fa85a84f903e3bd4678bf655270}{}\label{namespacemage_a21b11fa85a84f903e3bd4678bf655270} 
 \index{mage@{mage}!X\+M\+Vector\+Left\+Top\+Width\+Height@{X\+M\+Vector\+Left\+Top\+Width\+Height}}
 \index{X\+M\+Vector\+Left\+Top\+Width\+Height@{X\+M\+Vector\+Left\+Top\+Width\+Height}!mage@{mage}}
 \subsubsection{\texorpdfstring{X\+M\+Vector\+Left\+Top\+Width\+Height()}{XMVectorLeftTopWidthHeight()}}
 {\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+X\+M\+Vector\+Left\+Top\+Width\+Height (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{rect }\end{DoxyParamCaption})}
 
+Converts the given {\ttfamily R\+E\+CT} (left, top, right, bottom) to a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (left, top, width, height).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rect} & A reference to the rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily X\+M\+V\+E\+C\+T\+OR} (left, top, width, height) representing the given {\ttfamily R\+E\+CT} (left, top, right, bottom). 
+\end{DoxyReturn}
 
 
 \subsection{Variable Documentation}

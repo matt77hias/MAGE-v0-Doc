@@ -96,10 +96,9 @@ Inheritance diagram for mage::VertexShader:</div>
  <div class="center">
   <img src="classmage_1_1_vertex_shader.png" usemap="#mage::VertexShader_map" alt=""/>
   <map id="mage::VertexShader_map" name="mage::VertexShader_map">
-<area href="classmage_1_1_resource.html" alt="mage::Resource" shape="rect" coords="198,0,386,24"/>
-<area href="classmage_1_1_empty_vertex_shader.html" alt="mage::EmptyVertexShader" shape="rect" coords="0,112,188,136"/>
-<area href="classmage_1_1_lambertian_vertex_shader.html" alt="mage::LambertianVertexShader" shape="rect" coords="198,112,386,136"/>
-<area href="classmage_1_1_sprite_vertex_shader.html" alt="mage::SpriteVertexShader" shape="rect" coords="396,112,584,136"/>
+<area href="classmage_1_1_resource.html" alt="mage::Resource" shape="rect" coords="99,0,287,24"/>
+<area href="classmage_1_1_lambertian_vertex_shader.html" alt="mage::LambertianVertexShader" shape="rect" coords="0,112,188,136"/>
+<area href="classmage_1_1_sprite_vertex_shader.html" alt="mage::SpriteVertexShader" shape="rect" coords="198,112,386,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -150,12 +149,14 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a8b4115b041227ebe6a4ab8511eb5b8ea"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_vertex_shader.html#a8b4115b041227ebe6a4ab8511eb5b8ea">SetupShader</a> (const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)</td></tr>
-<tr class="separator:a8b4115b041227ebe6a4ab8511eb5b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af096750cfbb86b38f090935bb6e5accd"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_vertex_shader.html#af096750cfbb86b38f090935bb6e5accd">SetupShader</a> (const void *bytecode, SIZE_T bytecode_size, const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)</td></tr>
-<tr class="separator:af096750cfbb86b38f090935bb6e5accd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de0e623c3c4d81b580386fc13f85323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_vertex_shader.html#a3de0e623c3c4d81b580386fc13f85323">SetupShader</a> (const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)</td></tr>
+<tr class="separator:a3de0e623c3c4d81b580386fc13f85323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c37fb7e3db62d8c028efc1a959905ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_vertex_shader.html#a8c37fb7e3db62d8c028efc1a959905ce">SetupShader</a> (const void *bytecode, SIZE_T bytecode_size, const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)</td></tr>
+<tr class="separator:a8c37fb7e3db62d8c028efc1a959905ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of vertex shaders. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0add7dbd710d444fbd5f7c9dc05e2dbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0add7dbd710d444fbd5f7c9dc05e2dbb">&sect;&nbsp;</a></span>VertexShader() <span class="overload">[1/4]</span></h2>
 
@@ -207,6 +208,30 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a vertex shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>input_element_desc</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The array pointed to by <em>input_element_desc</em> contains <em>nb_input_elements</em> elements. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>A reference to the globally unique identifier of this vertex shader (i.e. filename of the compiled shader output). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_element_desc</td><td>A pointer the input element descriptors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_input_elements</td><td>The number of elements contained in the given input element descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize this vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -273,6 +298,36 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a vertex shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>bytecode</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The size of the data pointed to by <em>bytecode</em> is equal to <em>bytecode_size</em> (bytes). </dd>
+<dd>
+<em>input_element_desc</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The array pointed to by <em>input_element_desc</em> contains <em>nb_input_elements</em> elements. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>A reference to the globally unique identifier of this vertex shader. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode</td><td>A pointer to the shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode_size</td><td>The size of the given shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_element_desc</td><td>A pointer the input element descriptors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_input_elements</td><td>The number of elements contained in the given input element descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize this vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -299,6 +354,13 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a vertex shader from the given vertex shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_shader</td><td>A reference to the vertex shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -325,6 +387,13 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a vertex shader by moving the given vertex shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_shader</td><td>A reference to the vertex shader to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -350,6 +419,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this vertex shader. </p>
 
 </div>
 </div>
@@ -377,6 +447,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given vertex shader to this vertex shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_shader</td><td>A reference to the vertex shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given vertex shader (i.e. this vertex shader). </dd></dl>
 
 </div>
 </div>
@@ -403,6 +481,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given vertex shader to this vertex shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_shader</td><td>A reference to the vertex shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved vertex shader (i.e. this vertex shader). </dd></dl>
 
 </div>
 </div>
@@ -429,13 +515,21 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Prepares this vertex shader for shading.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>transform</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A pointer to the transform buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented in <a class="el" href="classmage_1_1_lambertian_vertex_shader.html#a51c0fcfc36cdf87e4e55c94529c0081a">mage::LambertianVertexShader</a>, <a class="el" href="classmage_1_1_sprite_vertex_shader.html#a10be47ca65f4baed735b5ffb52ee92bf">mage::SpriteVertexShader</a>, and <a class="el" href="classmage_1_1_empty_vertex_shader.html#a6b3619814f0d59bcf4b4edf2dab9a10c">mage::EmptyVertexShader</a>.</p>
+<p>Reimplemented in <a class="el" href="classmage_1_1_lambertian_vertex_shader.html#a51c0fcfc36cdf87e4e55c94529c0081a">mage::LambertianVertexShader</a>, and <a class="el" href="classmage_1_1_sprite_vertex_shader.html#a10be47ca65f4baed735b5ffb52ee92bf">mage::SpriteVertexShader</a>.</p>
 
 </div>
 </div>
-<a id="a8b4115b041227ebe6a4ab8511eb5b8ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b4115b041227ebe6a4ab8511eb5b8ea">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[1/2]</span></h2>
+<a id="a3de0e623c3c4d81b580386fc13f85323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de0e623c3c4d81b580386fc13f85323">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +538,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::VertexShader::SetupShader </td>
+          <td class="memname">void mage::VertexShader::SetupShader </td>
           <td>(</td>
           <td class="paramtype">const D3D11_INPUT_ELEMENT_DESC *&#160;</td>
           <td class="paramname"><em>input_element_desc</em>, </td>
@@ -467,11 +561,28 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sets up this vertex shader (from compiled shader output).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>input_element_desc</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The array pointed to by <em>input_element_desc</em> contains <em>nb_input_elements</em> elements. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_element_desc</td><td>A pointer the input element descriptors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_input_elements</td><td>The number of elements contained in the given input element descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="af096750cfbb86b38f090935bb6e5accd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af096750cfbb86b38f090935bb6e5accd">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[2/2]</span></h2>
+<a id="a8c37fb7e3db62d8c028efc1a959905ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c37fb7e3db62d8c028efc1a959905ce">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,7 +591,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::VertexShader::SetupShader </td>
+          <td class="memname">void mage::VertexShader::SetupShader </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>bytecode</em>, </td>
@@ -515,6 +626,29 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sets up this vertex shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>bytecode</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The size of the data pointed to by <em>bytecode</em> is equal to <em>bytecode_size</em> (bytes). </dd>
+<dd>
+<em>input_element_desc</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The array pointed to by <em>input_element_desc</em> contains <em>nb_input_elements</em> elements. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode</td><td>A pointer to the shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode_size</td><td>The size of the given shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_element_desc</td><td>A pointer the input element descriptors. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_input_elements</td><td>The number of elements contained in the given input element descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -538,6 +672,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device of this vertex shader. </p>
 
 </div>
 </div>
@@ -560,6 +695,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device context of this vertex shader. </p>
 
 </div>
 </div>
@@ -582,6 +718,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the input layout of this vertex shader. </p>
 
 </div>
 </div>
@@ -604,6 +741,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the vertex shader of this vertex shader. </p>
 
 </div>
 </div>

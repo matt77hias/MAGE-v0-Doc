@@ -47,6 +47,7 @@ var hierarchy =
     ] ],
     [ "mage::DeviceEnumeration", "classmage_1_1_device_enumeration.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
+    [ "mage::FileStreamCloser", "structmage_1_1_file_stream_closer.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
     [ "mage::GlyphLessThan", "structmage_1_1_glyph_less_than.html", null ],
     [ "mage::HandleCloser", "structmage_1_1_handle_closer.html", null ],
@@ -67,8 +68,7 @@ var hierarchy =
       [ "mage::VSReader", "classmage_1_1_v_s_reader.html", null ]
     ] ],
     [ "mage::Loadable", "classmage_1_1_loadable.html", [
-      [ "mage::Engine", "classmage_1_1_engine.html", null ],
-      [ "mage::Renderer", "classmage_1_1_renderer.html", null ]
+      [ "mage::Engine", "classmage_1_1_engine.html", null ]
     ] ],
     [ "mage::LoggingConfiguration", "structmage_1_1_logging_configuration.html", null ],
     [ "mage::MainWindow", "classmage_1_1_main_window.html", null ],
@@ -85,10 +85,14 @@ var hierarchy =
     [ "mage::Mouse", "classmage_1_1_mouse.html", null ],
     [ "mage::Mutex", "structmage_1_1_mutex.html", null ],
     [ "mage::MutexLock", "structmage_1_1_mutex_lock.html", null ],
+    [ "mage::Node", "classmage_1_1_node.html", [
+      [ "mage::SceneNode< SceneObjectT >", "classmage_1_1_scene_node.html", null ]
+    ] ],
     [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ReadWriteMutex", "structmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
+    [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
     [ "mage::RenderingState", "structmage_1_1_rendering_state.html", null ],
     [ "mage::RenderingStateCache", "structmage_1_1_rendering_state_cache.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
@@ -99,12 +103,10 @@ var hierarchy =
         [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
       ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
-        [ "mage::EmptyPixelShader", "classmage_1_1_empty_pixel_shader.html", null ],
         [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ],
         [ "mage::SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html", null ]
       ] ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
-        [ "mage::EmptyVertexShader", "classmage_1_1_empty_vertex_shader.html", null ],
         [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ],
         [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ]
       ] ]
@@ -129,9 +131,7 @@ var hierarchy =
     [ "mage::StructuredBuffer< OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
-    [ "mage::TransformNode", "classmage_1_1_transform_node.html", [
-      [ "mage::SceneNode< SceneObjectT >", "classmage_1_1_scene_node.html", null ]
-    ] ],
+    [ "mage::TransformNode", "classmage_1_1_transform_node.html", null ],
     [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::VertexPosition", "structmage_1_1_vertex_position.html", null ],
     [ "mage::VertexPositionColor", "structmage_1_1_vertex_position_color.html", null ],

@@ -162,7 +162,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a3de1d2d744e7bb276b0f66d72640e423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11ShaderResourceView &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_texture.html#a3de1d2d744e7bb276b0f66d72640e423">m_texture_resource_view</a></td></tr>
 <tr class="separator:a3de1d2d744e7bb276b0f66d72640e423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of textures. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a680c4df56476b4c66c1e2ffd5bef63c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a680c4df56476b4c66c1e2ffd5bef63c2">&sect;&nbsp;</a></span>Texture() <span class="overload">[1/3]</span></h2>
 
@@ -196,6 +198,21 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a texture.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -222,6 +239,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a texture from the given texture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A reference to the texture to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -248,6 +272,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a texture by moving the given texture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A reference to the texture to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -273,6 +304,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this texture. </p>
 
 </div>
 </div>
@@ -291,6 +323,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the shader resource view of this texture.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the shader resource view of this texture. </dd></dl>
 
 </div>
 </div>
@@ -308,6 +342,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the address of the shader resource view of this texture.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the pointer to the shader resource view of this texture. </dd></dl>
 
 </div>
 </div>
@@ -325,6 +361,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the address of the shader resource view of this texture.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the pointer to the shader resource view of this texture. </dd></dl>
 
 </div>
 </div>
@@ -351,6 +389,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given texture to this texture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A reference to the texture to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given texture (i.e. this texture). </dd></dl>
 
 </div>
 </div>
@@ -377,6 +423,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given texture to this texture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A reference to the texture to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved texture (i.e. this texture). </dd></dl>
 
 </div>
 </div>
@@ -400,6 +454,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device of this texture. </p>
 
 </div>
 </div>
@@ -422,6 +477,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the shader resource view of this texture. </p>
 
 </div>
 </div>

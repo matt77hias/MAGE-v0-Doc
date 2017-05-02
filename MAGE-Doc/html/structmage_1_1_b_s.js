@@ -18,6 +18,6 @@ var structmage_1_1_b_s =
     [ "EnclosesStrict", "structmage_1_1_b_s.html#ad1b81567c640283bd5355073dd0bf226", null ],
     [ "operator=", "structmage_1_1_b_s.html#aef60d898cb44bbf1e3988351b5717faa", null ],
     [ "operator=", "structmage_1_1_b_s.html#a751360f4d52fe40f6f07f29a759c9f0c", null ],
-    [ "p", "structmage_1_1_b_s.html#a9c6ad8f37fa6b98179e8108c8584fdcf", null ],
-    [ "r", "structmage_1_1_b_s.html#ab2e786e8493feb28a3bc0216e8dea5bc", null ]
+    [ "m_p", "structmage_1_1_b_s.html#a6d63fae8fd20d26587ebd11efb1789d2", null ],
+    [ "m_r", "structmage_1_1_b_s.html#a7a783b2ad117fc19a1caf548e3033df6", null ]
 ];

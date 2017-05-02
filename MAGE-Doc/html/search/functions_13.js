@@ -1,7 +1,7 @@
 var searchData=
 [
   ['uninitialize',['Uninitialize',['../classmage_1_1_scene.html#a714dc33c04dc2b8e2cec93564905b174',1,'mage::Scene']]],
-  ['uninitializerenderer',['UninitializeRenderer',['../classmage_1_1_renderer.html#a97f1eef7d887a6d3f3f729424e32c28f',1,'mage::Renderer']]],
+  ['uninitializerenderer',['UninitializeRenderer',['../classmage_1_1_renderer.html#a34f7a22f6422932c4fd2afdfb407c444',1,'mage::Renderer']]],
   ['uninitializewindow',['UninitializeWindow',['../classmage_1_1_main_window.html#af6f063003dc8370a58168c25cd64b2ed',1,'mage::MainWindow']]],
   ['union',['Union',['../namespacemage.html#a4d27bf7b1b0d30b747cdec1326e80907',1,'mage::Union(const AABB &amp;aabb, const Point3 &amp;point)'],['../namespacemage.html#a14f2c20e37511b983bcb731afbb6b0b6',1,'mage::Union(const AABB &amp;aabb1, const AABB &amp;aabb2)'],['../namespacemage.html#aa727c025f86c9da2b6704c5f40b3d700',1,'mage::Union(const AABB &amp;aabb, const VertexT &amp;vertex)']]],
   ['unlock',['Unlock',['../structmage_1_1_condition_variable.html#a3b3fe63417b7d7adedc9fe015fc7feea',1,'mage::ConditionVariable']]],
@@ -13,5 +13,5 @@ var searchData=
   ['updateobjecttoworldmatrix',['UpdateObjectToWorldMatrix',['../classmage_1_1_transform_node.html#ac607aac55f3134bf57299d5874c9e9eb',1,'mage::TransformNode']]],
   ['updateworldtoobjectmatrix',['UpdateWorldToObjectMatrix',['../classmage_1_1_transform_node.html#afe8b6b5e882611e1b95bcc61b0db7b5c',1,'mage::TransformNode']]],
   ['upgradetowrite',['UpgradeToWrite',['../structmage_1_1_read_write_mutex_lock.html#a01843784e8dbf0d3dfd6100562f699be',1,'mage::ReadWriteMutexLock']]],
-  ['uv',['UV',['../structmage_1_1_u_v.html#a777c466d20ed20386326299d373b4cb8',1,'mage::UV::UV()'],['../structmage_1_1_u_v.html#adc915f36ebb2dede57f2ddfd130e9321',1,'mage::UV::UV(float x, float y)'],['../structmage_1_1_u_v.html#a3e31395f3be9fc757040bc242b72fe1f',1,'mage::UV::UV(const UV &amp;uv)'],['../structmage_1_1_u_v.html#ac26053e28b94c8ec7e5bc5df8b52d4eb',1,'mage::UV::UV(UV &amp;&amp;uv)'],['../structmage_1_1_u_v.html#a9aa55008cd8f18f25817209198cf0ec2',1,'mage::UV::UV(const XMFLOAT2 &amp;vector)'],['../structmage_1_1_u_v.html#a0598ac5e5ec1b4bc3c48fe619f63fbef',1,'mage::UV::UV(XMFLOAT2 &amp;&amp;vector)']]]
+  ['uv',['UV',['../structmage_1_1_u_v.html#a777c466d20ed20386326299d373b4cb8',1,'mage::UV::UV()'],['../structmage_1_1_u_v.html#ad006b7cb974ee06bbffc947fa84da918',1,'mage::UV::UV(float u, float v)'],['../structmage_1_1_u_v.html#a3e31395f3be9fc757040bc242b72fe1f',1,'mage::UV::UV(const UV &amp;uv)'],['../structmage_1_1_u_v.html#ac26053e28b94c8ec7e5bc5df8b52d4eb',1,'mage::UV::UV(UV &amp;&amp;uv)'],['../structmage_1_1_u_v.html#af81045f21f3d8c6bc684df7215631762',1,'mage::UV::UV(const XMFLOAT2 &amp;v)'],['../structmage_1_1_u_v.html#ad156d5ee7d6c3a63c9a1dccb81b10ede',1,'mage::UV::UV(XMFLOAT2 &amp;&amp;v)']]]
 ];

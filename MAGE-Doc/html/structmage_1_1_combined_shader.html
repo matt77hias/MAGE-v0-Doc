@@ -116,7 +116,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a562b58278dcb98469c98250a636c640e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_pixel_shader.html">PixelShader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_combined_shader.html#a562b58278dcb98469c98250a636c640e">m_pixel_shader</a></td></tr>
 <tr class="separator:a562b58278dcb98469c98250a636c640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A struct of combined (vertex and pixel) shaders. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9d6ce4dc9ed2602b19729ee8d126f61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9d6ce4dc9ed2602b19729ee8d126f61">&sect;&nbsp;</a></span>CombinedShader() <span class="overload">[1/3]</span></h2>
 
@@ -150,6 +152,17 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a combined shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><code>vertex_shader.get()</code> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<code>pixel_shader.get()</code> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex_shader</td><td>A pointer to the vertex shader. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_shader</td><td>A pointer to the pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -176,6 +189,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a combined shader from the given combined shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the combined shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -202,6 +222,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a combined shader by moving the given combined shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the combined shader to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -227,6 +254,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this combined shader. </p>
 
 </div>
 </div>
@@ -254,6 +282,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given combined shader to this combined shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the combined shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given combined shader (i.e. this combined shader). </dd></dl>
 
 </div>
 </div>
@@ -280,6 +316,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given combined shader to this combined shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the combined shader to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved combined shader (i.e. this combined shader). </dd></dl>
 
 </div>
 </div>
@@ -308,6 +352,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Prepares this combined shader for shading.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>transform</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>texture</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A pointer to the transform buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the texture shader resource view. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -342,6 +397,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Prepares this combined shader for shading.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>transform</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A pointer to the transform buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">material</td><td>A reference to the material. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lighting</td><td>A reference to the lighting buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -365,6 +430,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the pixel shader of this combined shader. </p>
 
 </div>
 </div>
@@ -387,6 +453,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the vertex shader of this combined shader. </p>
 
 </div>
 </div>

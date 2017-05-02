@@ -9,8 +9,8 @@ var classmage_1_1_pixel_shader =
     [ "operator=", "classmage_1_1_pixel_shader.html#aaeab6f6fda7d6e1f7d333da03d58daf9", null ],
     [ "PrepareShading", "classmage_1_1_pixel_shader.html#ab677013145ca252c57e5a001134c01ff", null ],
     [ "PrepareShading", "classmage_1_1_pixel_shader.html#a5a1a58bcb0ed64405e746ec7a5af5269", null ],
-    [ "SetupShader", "classmage_1_1_pixel_shader.html#adb9c1f330ef9958a7fc46c40c98a2b57", null ],
-    [ "SetupShader", "classmage_1_1_pixel_shader.html#a3df5b0c0eee682dad0406409e6df2a11", null ],
+    [ "SetupShader", "classmage_1_1_pixel_shader.html#a5297d3d12153f9a866751b623203c5aa", null ],
+    [ "SetupShader", "classmage_1_1_pixel_shader.html#a18bc61698dbd72684e55d97c0ce8b02d", null ],
     [ "m_device", "classmage_1_1_pixel_shader.html#a7fa34f27d8f39db2403edac28ddecc68", null ],
     [ "m_device_context", "classmage_1_1_pixel_shader.html#a6b9bbf18f255b061fb75453f32a78720", null ],
     [ "m_pixel_shader", "classmage_1_1_pixel_shader.html#a1dd0f87be1c1f7fe5a1bb2737263222f", null ]

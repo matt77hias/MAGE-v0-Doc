@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settingsdialogprocdelegate',['SettingsDialogProcDelegate',['../classmage_1_1_device_enumeration.html#a3dff4eb8907e2e10f26cc616fe1c104d',1,'mage::DeviceEnumeration']]]
+  ['readwritemutexlock',['ReadWriteMutexLock',['../structmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7',1,'mage::ReadWriteMutex']]]
 ];

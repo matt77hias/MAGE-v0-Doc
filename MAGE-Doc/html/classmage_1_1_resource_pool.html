@@ -130,7 +130,19 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5857b70ac755db750dcaff5277201f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_mutex.html">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_pool.html#a5857b70ac755db750dcaff5277201f9f">m_resource_map_mutex</a></td></tr>
 <tr class="separator:a5857b70ac755db750dcaff5277201f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename KeyT, typename ResourceT&gt;<br />
+class mage::ResourcePool&lt; KeyT, ResourceT &gt;</h3>
+
+<p>A class of resource pools.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">KeyT</td><td>The key type. </td></tr>
+    <tr><td class="paramname">ResourceT</td><td>The resource type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94aff142869744ed48fb1b426face48b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94aff142869744ed48fb1b426face48b">&sect;&nbsp;</a></span>ResourcePool() <span class="overload">[1/3]</span></h2>
 
@@ -155,6 +167,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool. </p>
 
 </div>
 </div>
@@ -183,6 +196,13 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool from the given resource pool.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_pool</td><td>A reference to the resource pool to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -211,6 +231,13 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool by moving the given resource pool.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_pool</td><td>A reference to the resource pool to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -238,6 +265,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this resource pool. </p>
 
 </div>
 </div>
@@ -271,6 +299,24 @@ template&lt;typename DerivedResourceT , typename... ConstructorArgsT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the resource corresponding to the given key from this resource pool.</p>
+<p>If no resource is contained in this resource pool corresponding to the given key a new resource is created from the given arguments, added to this resource pool and returned.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><code>DerivedResourceT</code> is a derived class of <code>ResourceT</code>. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DerivedResourceT</td><td>The derived resource type. </td></tr>
+    <tr><td class="paramname">ConstructorArgsT</td><td>The argument types for creating a new resource of type <code>DerivedResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The key of the resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The arguments for creating a new resource of type <code>DerivedResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the resource corresponding to the given key from this resource pool. </dd></dl>
 
 </div>
 </div>
@@ -290,6 +336,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the number of resources contained in this resource pool. </p>
 
 </div>
 </div>
@@ -322,6 +369,22 @@ template&lt;typename... ConstructorArgsT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the resource corresponding to the given key from this resource pool.</p>
+<p>If no resource is contained in this resource pool corresponding to the given key a new resource is created from the given arguments, added to this resource pool and returned.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ConstructorArgsT</td><td>The argument types for creating a new resource of type <code>ResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The key of the resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The arguments for creating a new resource of type <code>ResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the resource corresponding to the given key from this resource pool. </dd></dl>
 
 </div>
 </div>
@@ -350,6 +413,14 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given resource pool to this resource pool.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_pool</td><td>A reference to the resource pool to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given resource pool (i.e. this resource pool). </dd></dl>
 
 </div>
 </div>
@@ -378,6 +449,14 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given resource pool to this resource pool.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_pool</td><td>A reference to the resource pool to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved resource pool (i.e. this resource pool). </dd></dl>
 
 </div>
 </div>
@@ -397,6 +476,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Removes all resources from this resource pool. </p>
 
 </div>
 </div>
@@ -417,6 +497,13 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Removes the resource corresponding to the given key from this resource pool.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The key of the resource to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -442,6 +529,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The resource map of this resource pool. </p>
 
 </div>
 </div>
@@ -466,6 +554,7 @@ template&lt;typename KeyT, typename ResourceT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The mutex for accessing the resource map of this resource pool. </p>
 
 </div>
 </div>

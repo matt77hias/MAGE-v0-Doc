@@ -10,7 +10,7 @@ var structmage_1_1_structured_buffer =
     [ "GetNumberOfDataElements", "structmage_1_1_structured_buffer.html#ac37240379dcec90139ce727a915169fc", null ],
     [ "operator=", "structmage_1_1_structured_buffer.html#ac00255155ab1eb61244392adcf262d40", null ],
     [ "operator=", "structmage_1_1_structured_buffer.html#a2647510e153d15b89f860e2a5c68e231", null ],
-    [ "SetupStructuredBuffer", "structmage_1_1_structured_buffer.html#a087801ae0e825bdc6a87f6c2c0f91a3f", null ],
+    [ "SetupStructuredBuffer", "structmage_1_1_structured_buffer.html#a569008d501e11d208288022372df2f48", null ],
     [ "UpdateData", "structmage_1_1_structured_buffer.html#aac2597ea7ee586207bf4918c3b4f9798", null ],
     [ "m_buffer", "structmage_1_1_structured_buffer.html#adbd113ab2fe539e34587887876fe3825", null ],
     [ "m_device", "structmage_1_1_structured_buffer.html#ab1ad27b8053f9631f0a74b9e90aa7d3d", null ],

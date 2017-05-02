@@ -27,6 +27,10 @@ size\+\_\+t \hyperlink{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956}{Ge
 \item 
 const \hyperlink{classmage_1_1_mesh}{Mesh} $\ast$ \hyperlink{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0}{Get\+Mesh} () const
 \item 
+void \hyperlink{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{Prepare\+Drawing} () const
+\item 
+void \hyperlink{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9}{Draw} () const
+\item 
 \hyperlink{structmage_1_1_material}{Material} \& \hyperlink{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6}{Get\+Material} ()
 \item 
 const \hyperlink{structmage_1_1_material}{Material} \& \hyperlink{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756}{Get\+Material} () const
@@ -35,11 +39,7 @@ const \hyperlink{structmage_1_1_material}{Material} \& \hyperlink{classmage_1_1_
 \item 
 const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $\ast$ \hyperlink{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0}{Get\+Shaded\+Material} () const
 \item 
-void \hyperlink{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{Prepare\+Drawing} () const
-\item 
 void \hyperlink{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9}{Prepare\+Shading} (I\+D3\+D11\+Buffer $\ast$transform, const \hyperlink{structmage_1_1_lighting}{Lighting} \&lighting) const
-\item 
-void \hyperlink{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9}{Draw} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -69,25 +69,52 @@ A class of models.
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$}]{mesh,  }\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices,  }\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A pointer to the mesh. \\
+\hline
+\mbox{\tt in}  & {\em start\+\_\+index} & The start index in the mesh. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices in the mesh. \\
+\hline
+\mbox{\tt in}  & {\em material} & A reference to the shaded material. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a}{}\label{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model}{Model} \&}]{model }\end{DoxyParamCaption})}
 
+Constructs a model from the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model} & A reference to the model to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0}{}\label{classmage_1_1_model_a085272d7cb82587094f18747ecc5aad0} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model}{Model} \&\&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a model by moving the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model} & A reference to the model to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_model_a802f7bcb3d15d3baab4a8d383d9e9293}{}\label{classmage_1_1_model_a802f7bcb3d15d3baab4a8d383d9e9293} 
 \index{mage\+::\+Model@{mage\+::\+Model}!````~Model@{$\sim$\+Model}}
 \index{````~Model@{$\sim$\+Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{$\sim$\+Model()}{~Model()}}
 {\footnotesize\ttfamily virtual mage\+::\+Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this model. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_model_ac0043eb1766f8a5be05284fbb9c3e912}{}\label{classmage_1_1_model_ac0043eb1766f8a5be05284fbb9c3e912} 
@@ -96,84 +123,161 @@ A class of models.
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ mage\+::\+Model\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Clones this model.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_af90feb622e30e1531983c01372b2df37}{}\label{classmage_1_1_model_af90feb622e30e1531983c01372b2df37} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Clone\+Implementation@{Clone\+Implementation}}
 \index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model}{Model} $>$ mage\+::\+Model\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
 
+Clones this model.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9}{}\label{classmage_1_1_model_a13badcd5e7bfaf8fbdc447dc211d5ad9} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily void mage\+::\+Model\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6}{}\label{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6} 
+Drwas this model. \hypertarget{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6}{}\label{classmage_1_1_model_ae2d9b0fee188fe8f0377872bc2f8c2f6} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Model\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the material of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the material of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756}{}\label{classmage_1_1_model_aedb16dfea55edaefc3e5d88e9f9fa756} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Model\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the material of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the material of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0}{}\label{classmage_1_1_model_a085c12b33ebe60e7576c643e2d47baf0} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Mesh@{Get\+Mesh}}
 \index{Get\+Mesh@{Get\+Mesh}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Mesh()}{GetMesh()}}
 {\footnotesize\ttfamily const \hyperlink{classmage_1_1_mesh}{Mesh}$\ast$ mage\+::\+Model\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the mesh of this model.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the mesh of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956}{}\label{classmage_1_1_model_ac118db61c4541d16d9b1b52e55524956} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}}
 \index{Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Number\+Of\+Indices()}{GetNumberOfIndices()}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Model\+::\+Get\+Number\+Of\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the number of indices of this model in the mesh of this model.
+
+\begin{DoxyReturn}{Returns}
+The number of indices of this model in the mesh of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_af709f5b1ec136cbab25bda39e20e1662}{}\label{classmage_1_1_model_af709f5b1ec136cbab25bda39e20e1662} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shaded\+Material@{Get\+Shaded\+Material}}
 \index{Get\+Shaded\+Material@{Get\+Shaded\+Material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Shaded\+Material()}{GetShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}$\ast$ mage\+::\+Model\+::\+Get\+Shaded\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the shaded material of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the shaded material of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0}{}\label{classmage_1_1_model_a84af7ad13b2bc1d8a51828a62fbaa4b0} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shaded\+Material@{Get\+Shaded\+Material}}
 \index{Get\+Shaded\+Material@{Get\+Shaded\+Material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Shaded\+Material()}{GetShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}$\ast$ mage\+::\+Model\+::\+Get\+Shaded\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the shaded material of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the shaded material of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_af17401dfd3e51f96dc0652a3aa3c4412}{}\label{classmage_1_1_model_af17401dfd3e51f96dc0652a3aa3c4412} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Start\+Index@{Get\+Start\+Index}}
 \index{Get\+Start\+Index@{Get\+Start\+Index}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Start\+Index()}{GetStartIndex()}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Model\+::\+Get\+Start\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the start index of this model in the mesh of this model.
+
+\begin{DoxyReturn}{Returns}
+The start index of this model in the mesh of this model. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b}{}\label{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b} 
 \index{mage\+::\+Model@{mage\+::\+Model}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_model}{Model}\& mage\+::\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model}{Model} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given model to this model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model} & A reference to the model to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given model (i.\+e. this model). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a084e30d15822bfefa79128f30a57cc02}{}\label{classmage_1_1_model_a084e30d15822bfefa79128f30a57cc02} 
 \index{mage\+::\+Model@{mage\+::\+Model}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_model}{Model}\& mage\+::\+Model\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_model}{Model} \&\&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given model to this model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model} & A reference to the model to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved model (i.\+e. this model). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{}\label{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Prepare\+Drawing@{Prepare\+Drawing}}
 \index{Prepare\+Drawing@{Prepare\+Drawing}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Prepare\+Drawing()}{PrepareDrawing()}}
 {\footnotesize\ttfamily void mage\+::\+Model\+::\+Prepare\+Drawing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9}{}\label{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9} 
+Prepares this model for drawing. \hypertarget{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9}{}\label{classmage_1_1_model_a14cc836651dc3eeb378d749b24c149d9} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Prepare\+Shading@{Prepare\+Shading}}
 \index{Prepare\+Shading@{Prepare\+Shading}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Prepare\+Shading()}{PrepareShading()}}
 {\footnotesize\ttfamily void mage\+::\+Model\+::\+Prepare\+Shading (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{transform,  }\item[{const \hyperlink{structmage_1_1_lighting}{Lighting} \&}]{lighting }\end{DoxyParamCaption}) const}
 
+Prepares this model for shading.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape transform} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & A pointer to the transform buffer. \\
+\hline
+\mbox{\tt in}  & {\em lighting} & A reference to the lighting buffer. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -183,21 +287,22 @@ A class of models.
 \subsubsection{\texorpdfstring{m\+\_\+material}{m\_material}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $>$ mage\+::\+Model\+::m\+\_\+material\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73}{}\label{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73} 
+A pointer to the shaded material of this model. \hypertarget{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73}{}\label{classmage_1_1_model_aecd2b4031c5df30fb5f7ed6d62810f73} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+mesh@{m\+\_\+mesh}}
 \index{m\+\_\+mesh@{m\+\_\+mesh}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+mesh}{m\_mesh}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mage\+::\+Model\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75}{}\label{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75} 
+A pointer to the mesh of this model. \hypertarget{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75}{}\label{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}}
 \index{m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+indices}{m\_nb\_indices}}
 {\footnotesize\ttfamily const size\+\_\+t mage\+::\+Model\+::m\+\_\+nb\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{}\label{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3} 
+The number of indices of this model in the mesh of this model. \hypertarget{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{}\label{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}}
 \index{m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+start\+\_\+index}{m\_start\_index}}
 {\footnotesize\ttfamily const size\+\_\+t mage\+::\+Model\+::m\+\_\+start\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
 
+The start index of this model in the mesh of this model. 

@@ -211,7 +211,7 @@ A reference to the moved O\+BJ reader (i.\+e. this O\+BJ reader).
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 virtual void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Postprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
-Post-\/process after reading the current file of this O\+BJ reader.
+Post-\/processes after reading the current file of this O\+BJ reader.
 
 
 \begin{DoxyExceptions}{Exceptions}
@@ -249,6 +249,9 @@ virtual void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<
 
 Reads the given line.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape line} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in,out}  & {\em line} & A pointer to the null-\/terminated byte string to read. \\
@@ -312,11 +315,13 @@ Reads a \hyperlink{structmage_1_1_material}{Material} Library Include definition
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Material\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads a \hyperlink{structmage_1_1_material}{Material} Usage definition.
+Reads a \hyperlink{structmage_1_1_material}{Material} Usage definition and imports the materials corresponding to the mesh.
 
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a \hyperlink{structmage_1_1_material}{Material} Usage definition. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to import the materials. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_o_b_j_reader_afc3f17024a006cce3b7869ca8c6a8f07}{}\label{classmage_1_1_o_b_j_reader_afc3f17024a006cce3b7869ca8c6a8f07} 
@@ -342,6 +347,9 @@ void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ Vertex
 
 Reads a Smoothing Group definition.
 
+\begin{DoxyNote}{Note}
+A smoothing group is, if present, silently ignored. 
+\end{DoxyNote}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a Smoothing Group definition. \\
@@ -368,7 +376,7 @@ Reads a Vertex Position Coordinates definition.
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const \hyperlink{structmage_1_1_point3}{Point3} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads the vertex position coordinates.
+Reads a set of vertex position coordinates.
 
 \begin{DoxyReturn}{Returns}
 The {\ttfamily \hyperlink{structmage_1_1_point3}{Point3}} represented by the next token of this O\+BJ reader (modified according to the mesh descriptor of this O\+Bj reader). 
@@ -385,7 +393,7 @@ The {\ttfamily \hyperlink{structmage_1_1_point3}{Point3}} represented by the nex
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const X\+M\+U\+I\+N\+T3 \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads the face indices.
+Reads a set of face indices.
 
 \begin{DoxyReturn}{Returns}
 The face indices represented by the next token of this O\+BJ reader. A zero indicates the absence of a component. 
@@ -419,7 +427,7 @@ All the vertex normals in the O\+BJ file are normalized.
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads the vertex normal coordinates.
+Reads a set of vertex normal coordinates.
 
 \begin{DoxyPrecond}{Precondition}
 All the vertex normals in the O\+BJ file are normalized. 
@@ -456,7 +464,7 @@ Only \hyperlink{structmage_1_1_u_v}{UV} texture coordinates are supported, The W
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const \hyperlink{structmage_1_1_u_v}{UV} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads the vertex texture coordinates.
+Reads a set of vertex texture coordinates.
 
 \begin{DoxyReturn}{Returns}
 The {\ttfamily \hyperlink{structmage_1_1_u_v}{UV}} represented by the next token of this O\+BJ reader (modified according to the mesh descriptor of this O\+Bj reader). 

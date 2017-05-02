@@ -23,11 +23,11 @@ Inheritance diagram for mage\+:\+:Outline\+Sprite\+Text\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_outline_sprite_text_a13ab47f5f6ade5dc5076ebb127a24261}{$\sim$\+Outline\+Sprite\+Text} ()=default
 \item 
-\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \& \hyperlink{classmage_1_1_outline_sprite_text_a2e42fb452336826f9f8bc81177ed9922}{operator=} (const \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \& \hyperlink{classmage_1_1_outline_sprite_text_a324ec8e5c0d319b449895cc45d6b3807}{operator=} (const \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&sprite\+\_\+text)=delete
 \item 
-\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \& \hyperlink{classmage_1_1_outline_sprite_text_a5c81901050a1ce0cc985f286ca28e29b}{operator=} (\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&\&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \& \hyperlink{classmage_1_1_outline_sprite_text_a3549e97af5461728a399f01af9125486}{operator=} (\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&\&sprite\+\_\+text)=delete
 \item 
-virtual \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} $\ast$ \hyperlink{classmage_1_1_outline_sprite_text_a095a8ef1603b9045cecb6fd1263243be}{Clone} () const override
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} $>$ \hyperlink{classmage_1_1_outline_sprite_text_ad3184b798d08e38d10f910a6e9dc1495}{Clone} () const
 \item 
 virtual void \hyperlink{classmage_1_1_outline_sprite_text_a524e9ad1caeeeaa32405e61d1a5e1032}{Draw} (Sprite\+Batch \&sprite\+\_\+batch) const override
 \item 
@@ -40,6 +40,8 @@ void \hyperlink{classmage_1_1_outline_sprite_text_aa2df78f6654a09af1d35f22d9a71e
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ \hyperlink{classmage_1_1_outline_sprite_text_a90ed9cba10e082d6ce07dfa1b6189246}{Clone\+Implementation} () const override
+\item 
 const X\+M\+V\+E\+C\+T\+OR \hyperlink{classmage_1_1_outline_sprite_text_af4c03ed22f2e923af5f68eba5c39d9dc}{Get\+Border\+Color\+Vector} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -50,6 +52,9 @@ const X\+M\+V\+E\+C\+T\+OR \hyperlink{classmage_1_1_outline_sprite_text_af4c03ed
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A class of outline sprite texts. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_outline_sprite_text_ade104685e447589ada4c15a0a0159ced}{}\label{classmage_1_1_outline_sprite_text_ade104685e447589ada4c15a0a0159ced} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Outline\+Sprite\+Text@{Outline\+Sprite\+Text}}
@@ -57,42 +62,104 @@ const X\+M\+V\+E\+C\+T\+OR \hyperlink{classmage_1_1_outline_sprite_text_af4c03ed
 \subsubsection{\texorpdfstring{Outline\+Sprite\+Text()}{OutlineSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily mage\+::\+Outline\+Sprite\+Text\+::\+Outline\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$}]{font,  }\item[{const \hyperlink{structmage_1_1_color}{Color} \&}]{border\+\_\+color,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{Sprite\+Effect\+\_\+\+None}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a outline sprite text.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily font.\+get()} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\mbox{\tt in}  & {\em font} & A pointer to the sprite font. \\
+\hline
+\mbox{\tt in}  & {\em border\+\_\+color} & A reference to the border color. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_outline_sprite_text_a3b121671ad6ddc82082a45fb1fcbb572}{}\label{classmage_1_1_outline_sprite_text_a3b121671ad6ddc82082a45fb1fcbb572} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Outline\+Sprite\+Text@{Outline\+Sprite\+Text}}
 \index{Outline\+Sprite\+Text@{Outline\+Sprite\+Text}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Outline\+Sprite\+Text()}{OutlineSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily mage\+::\+Outline\+Sprite\+Text\+::\+Outline\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$}]{font,  }\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{border\+\_\+color = {\ttfamily Colors\+:\+:Black},  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{Sprite\+Effect\+\_\+\+None}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a outline sprite text.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily font.\+get()} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\mbox{\tt in}  & {\em font} & A pointer to the sprite font. \\
+\hline
+\mbox{\tt in}  & {\em border\+\_\+color} & A reference to the border color. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_outline_sprite_text_afc6f74389320a27993e64c288aa792cc}{}\label{classmage_1_1_outline_sprite_text_afc6f74389320a27993e64c288aa792cc} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Outline\+Sprite\+Text@{Outline\+Sprite\+Text}}
 \index{Outline\+Sprite\+Text@{Outline\+Sprite\+Text}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Outline\+Sprite\+Text()}{OutlineSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Outline\+Sprite\+Text\+::\+Outline\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a outline sprite text from the given outline sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the outline sprite text to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_outline_sprite_text_a91fce8258f2455d93426b91dce87e14f}{}\label{classmage_1_1_outline_sprite_text_a91fce8258f2455d93426b91dce87e14f} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Outline\+Sprite\+Text@{Outline\+Sprite\+Text}}
 \index{Outline\+Sprite\+Text@{Outline\+Sprite\+Text}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Outline\+Sprite\+Text()}{OutlineSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Outline\+Sprite\+Text\+::\+Outline\+Sprite\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a outline sprite text by moving the given outline sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the outline sprite text to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_outline_sprite_text_a13ab47f5f6ade5dc5076ebb127a24261}{}\label{classmage_1_1_outline_sprite_text_a13ab47f5f6ade5dc5076ebb127a24261} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!````~Outline\+Sprite\+Text@{$\sim$\+Outline\+Sprite\+Text}}
 \index{````~Outline\+Sprite\+Text@{$\sim$\+Outline\+Sprite\+Text}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{$\sim$\+Outline\+Sprite\+Text()}{~OutlineSpriteText()}}
 {\footnotesize\ttfamily virtual mage\+::\+Outline\+Sprite\+Text\+::$\sim$\+Outline\+Sprite\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this outline sprite text. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_outline_sprite_text_a095a8ef1603b9045cecb6fd1263243be}{}\label{classmage_1_1_outline_sprite_text_a095a8ef1603b9045cecb6fd1263243be} 
+\hypertarget{classmage_1_1_outline_sprite_text_ad3184b798d08e38d10f910a6e9dc1495}{}\label{classmage_1_1_outline_sprite_text_ad3184b798d08e38d10f910a6e9dc1495} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}$\ast$ mage\+::\+Outline\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} $>$ mage\+::\+Outline\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clones this outline sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this outline sprite text. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_outline_sprite_text_a90ed9cba10e082d6ce07dfa1b6189246}{}\label{classmage_1_1_outline_sprite_text_a90ed9cba10e082d6ce07dfa1b6189246} 
+\index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Clone\+Implementation@{Clone\+Implementation}}
+\index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
+\subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ mage\+::\+Outline\+Sprite\+Text\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Clones this outline sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this outline sprite text. 
+\end{DoxyReturn}
 
 
-
-Implements \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a}{mage\+::\+Sprite\+Text}.
+Implements \hyperlink{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e}{mage\+::\+Sprite\+Text}.
 
 \hypertarget{classmage_1_1_outline_sprite_text_a524e9ad1caeeeaa32405e61d1a5e1032}{}\label{classmage_1_1_outline_sprite_text_a524e9ad1caeeeaa32405e61d1a5e1032} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Draw@{Draw}}
@@ -100,6 +167,13 @@ Implements \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily void mage\+::\+Outline\+Sprite\+Text\+::\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Draws this outline sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch used for rendering this outline sprite text. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e}{mage\+::\+Sprite\+Text}.
@@ -110,36 +184,80 @@ Implements \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9
 \subsubsection{\texorpdfstring{Get\+Border\+Color()}{GetBorderColor()}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_color}{Color} mage\+::\+Outline\+Sprite\+Text\+::\+Get\+Border\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the border color of this outline sprite text.
+
+\begin{DoxyReturn}{Returns}
+The border color of this outline sprite text. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_outline_sprite_text_af4c03ed22f2e923af5f68eba5c39d9dc}{}\label{classmage_1_1_outline_sprite_text_af4c03ed22f2e923af5f68eba5c39d9dc} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Get\+Border\+Color\+Vector@{Get\+Border\+Color\+Vector}}
 \index{Get\+Border\+Color\+Vector@{Get\+Border\+Color\+Vector}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Get\+Border\+Color\+Vector()}{GetBorderColorVector()}}
 {\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Outline\+Sprite\+Text\+::\+Get\+Border\+Color\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_outline_sprite_text_a2e42fb452336826f9f8bc81177ed9922}{}\label{classmage_1_1_outline_sprite_text_a2e42fb452336826f9f8bc81177ed9922} 
+Returns the border color of this outline sprite text as {\ttfamily X\+M\+V\+E\+C\+T\+OR}.
+
+\begin{DoxyReturn}{Returns}
+The border color of this outline sprite text as {\ttfamily X\+M\+V\+E\+C\+T\+OR}. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_outline_sprite_text_a324ec8e5c0d319b449895cc45d6b3807}{}\label{classmage_1_1_outline_sprite_text_a324ec8e5c0d319b449895cc45d6b3807} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}\& mage\+::\+Outline\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}\& mage\+::\+Outline\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_outline_sprite_text_a5c81901050a1ce0cc985f286ca28e29b}{}\label{classmage_1_1_outline_sprite_text_a5c81901050a1ce0cc985f286ca28e29b} 
+Copies the given outline sprite text to this outline sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the outline sprite text to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given outline sprite text (i.\+e. this outline sprite text). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_outline_sprite_text_a3549e97af5461728a399f01af9125486}{}\label{classmage_1_1_outline_sprite_text_a3549e97af5461728a399f01af9125486} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}\& mage\+::\+Outline\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text}\& mage\+::\+Outline\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given outline sprite text to this outline sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the outline sprite text to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved outline sprite text (i.\+e. this outline sprite text). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_outline_sprite_text_a604ddf111590ba7e4f80b2a9d2aa9ff0}{}\label{classmage_1_1_outline_sprite_text_a604ddf111590ba7e4f80b2a9d2aa9ff0} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Set\+Border\+Color@{Set\+Border\+Color}}
 \index{Set\+Border\+Color@{Set\+Border\+Color}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Border\+Color()}{SetBorderColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Outline\+Sprite\+Text\+::\+Set\+Border\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_color}{Color} \&}]{color }\end{DoxyParamCaption})}
 
+Sets the border color of this outline sprite text to the given color.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em color} & A reference to the border color. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_outline_sprite_text_aa2df78f6654a09af1d35f22d9a71e485}{}\label{classmage_1_1_outline_sprite_text_aa2df78f6654a09af1d35f22d9a71e485} 
 \index{mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}!Set\+Border\+Color@{Set\+Border\+Color}}
 \index{Set\+Border\+Color@{Set\+Border\+Color}!mage\+::\+Outline\+Sprite\+Text@{mage\+::\+Outline\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Border\+Color()}{SetBorderColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Outline\+Sprite\+Text\+::\+Set\+Border\+Color (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{color }\end{DoxyParamCaption})}
 
+Sets the border color of this outline sprite text to the given color.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em color} & A reference to the border color. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -149,3 +267,4 @@ Implements \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9
 \subsubsection{\texorpdfstring{m\+\_\+border\+\_\+color}{m\_border\_color}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_color}{Color} mage\+::\+Outline\+Sprite\+Text\+::m\+\_\+border\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
 
+The border color of this outline sprite text. 
