@@ -119,7 +119,20 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2ca0b2ee479f64dbec5288a9a8b2b4c9"><td class="memItemLeft" align="right" valign="top">KeyT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_resource_pool_1_1_resource_pool_entry.html#a2ca0b2ee479f64dbec5288a9a8b2b4c9">m_resource_key</a></td></tr>
 <tr class="separator:a2ca0b2ee479f64dbec5288a9a8b2b4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename KeyT, typename ResourceT&gt;<br />
+template&lt;typename DerivedResourceT&gt;<br />
+struct mage::ResourcePool&lt; KeyT, ResourceT &gt;::ResourcePoolEntry&lt; DerivedResourceT &gt;</h3>
+
+<p>A class of resource pool entries.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><code>DerivedResourceT</code> is a derived class of <code>ResourceT</code>. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DerivedResourceT</td><td>The derived resource type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8e255033a6f139f5f30e17869325eb2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e255033a6f139f5f30e17869325eb2e">&sect;&nbsp;</a></span>ResourcePoolEntry() <span class="overload">[1/3]</span></h2>
 
@@ -157,6 +170,21 @@ template&lt;typename... ConstructorArgsT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool entry.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ConstructorArgsT</td><td>The argument types for creating a new resource of type <code>DerivedResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_pool</td><td>A reference to the resource pool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_key</td><td>The key of the resource in the given resource pool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The arguments for creating a new resource of type <code>DerivedResourceT</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -187,6 +215,13 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool entry from the given resource pool entry.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource pool entry to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -217,6 +252,13 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource pool entry by moving the given resource poolentry .</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource pool entry to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -246,6 +288,7 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this resource pool entry. </p>
 
 </div>
 </div>
@@ -277,6 +320,14 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given resource pool entry to this resource pool entry.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource pool entry to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given resource pool entry (i.e. this resource pool entry). </dd></dl>
 
 </div>
 </div>
@@ -307,6 +358,14 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given resource pool entry to this resource pool entry.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource pool entry to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved resource pool entry (i.e. this resource pool entry). </dd></dl>
 
 </div>
 </div>
@@ -334,6 +393,7 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The key of this resource pool entry in the resource pool map containing this resource pool entry. </p>
 
 </div>
 </div>
@@ -360,6 +420,7 @@ template&lt;typename DerivedResourceT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A reference to the resource pool map containing this resource pool entry. </p>
 
 </div>
 </div>

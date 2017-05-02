@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['r',['r',['../structmage_1_1_b_s.html#ab2e786e8493feb28a3bc0216e8dea5bc',1,'mage::BS']]],
-  ['rbitmask',['RBitMask',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#ad295cbd9c59d8e2bae97f2221bb2726f',1,'mage::DDS_PIXELFORMAT']]],
-  ['reserved1',['reserved1',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a3bc3b3970db4747f8911aeb93fe6e309',1,'mage::DDS_HEADER']]],
-  ['reserved2',['reserved2',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#abb51770a073353c831a802fda3f72d5c',1,'mage::DDS_HEADER']]],
-  ['resource_5fdimension',['resource_dimension',['../structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#aeb430923620730b48962c8267dd296ea',1,'mage::DDS_HEADER_DXT10']]],
-  ['resource_5ffetch_5fperiod',['resource_fetch_period',['../classmage_1_1_frame_rate_script.html#a34e734aedfe92891d87e5419ff60f4f2',1,'mage::FrameRateScript::resource_fetch_period()'],['../classmage_1_1_stats_script.html#acae1ac4fd880389c88818a8f72cbff2b',1,'mage::StatsScript::resource_fetch_period()'],['../classmage_1_1_system_usage_script.html#a98a30b1da6b9b87237e3509aed961162',1,'mage::SystemUsageScript::resource_fetch_period()']]],
-  ['rgbbitcount',['RGBBitCount',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#add3b847f506039ba34a124e7cc9e9cfa',1,'mage::DDS_PIXELFORMAT']]]
+  ['tex',['tex',['../structmage_1_1_vertex_position_texture.html#a9b4efa25d268c812892ecffc2582496e',1,'mage::VertexPositionTexture::tex()'],['../structmage_1_1_vertex_position_normal_texture.html#a0782e41c5e28d421bfb47afad9af9c55',1,'mage::VertexPositionNormalTexture::tex()'],['../structmage_1_1_vertex_position_color_texture.html#adfbaa105e46bb65f502ec33eaa2e8b15',1,'mage::VertexPositionColorTexture::tex()'],['../structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed',1,'mage::VertexPositionNormalColorTexture::tex()']]],
+  ['tex1',['tex1',['../structmage_1_1_vertex_position_texture_texture.html#a96be20a1f6ec9b9b74875099eef80f08',1,'mage::VertexPositionTextureTexture']]],
+  ['tex2',['tex2',['../structmage_1_1_vertex_position_texture_texture.html#a5a41669f18385d932c1490ff20c80bed',1,'mage::VertexPositionTextureTexture']]],
+  ['time_5fperiod',['time_period',['../classmage_1_1_c_p_u_timer.html#a9ff7683150a07f2040b660fc3775337b',1,'mage::CPUTimer']]]
 ];

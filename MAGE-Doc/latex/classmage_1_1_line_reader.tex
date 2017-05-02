@@ -13,7 +13,7 @@ Inheritance diagram for mage\+:\+:Line\+Reader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classmage_1_1_line_reader_ad9753ea392ebe5b3867852d3392fb1e7}{$\sim$\+Line\+Reader} ()
+virtual \hyperlink{classmage_1_1_line_reader_aa058c338d8256d7f7b775bf4f7052508}{$\sim$\+Line\+Reader} ()=default
 \item 
 \hyperlink{classmage_1_1_line_reader}{Line\+Reader} \& \hyperlink{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}{operator=} (const \hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&reader)=delete
 \item 
@@ -115,13 +115,11 @@ virtual void \hyperlink{classmage_1_1_line_reader_a4de135cfb0434be786cfcfd795903
 virtual void \hyperlink{classmage_1_1_line_reader_acfb2f7279ec77d070a86d7db812d4745}{Read\+Line} (char $\ast$line)=0
 \item 
 virtual void \hyperlink{classmage_1_1_line_reader_adfde21013140a1058d3dd567204abfb5}{Postprocess} ()
-\item 
-void \hyperlink{classmage_1_1_line_reader_ab2ee825c79432ac1af53eb899fcaeb98}{Close\+File} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-F\+I\+LE $\ast$ \hyperlink{classmage_1_1_line_reader_a0bc5f3543a85487fc0e52a6015048476}{m\+\_\+file}
+\hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{Unique\+File\+Stream} \hyperlink{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2}{m\+\_\+file\+\_\+stream}
 \item 
 wstring \hyperlink{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{m\+\_\+fname}
 \item 
@@ -135,11 +133,11 @@ uint32\+\_\+t \hyperlink{classmage_1_1_line_reader_ada0b4ec5817b96c6b1bb43bd2573
 A class of line readers for reading (non-\/binary) text files line by line. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_line_reader_ad9753ea392ebe5b3867852d3392fb1e7}{}\label{classmage_1_1_line_reader_ad9753ea392ebe5b3867852d3392fb1e7} 
+\hypertarget{classmage_1_1_line_reader_aa058c338d8256d7f7b775bf4f7052508}{}\label{classmage_1_1_line_reader_aa058c338d8256d7f7b775bf4f7052508} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!````~Line\+Reader@{$\sim$\+Line\+Reader}}
 \index{````~Line\+Reader@{$\sim$\+Line\+Reader}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{$\sim$\+Line\+Reader()}{~LineReader()}}
-{\footnotesize\ttfamily mage\+::\+Line\+Reader\+::$\sim$\+Line\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual mage\+::\+Line\+Reader\+::$\sim$\+Line\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 Destructs this line reader. \hypertarget{classmage_1_1_line_reader_ab4a46321d7ea3ecda2d6390c78a7285b}{}\label{classmage_1_1_line_reader_ab4a46321d7ea3ecda2d6390c78a7285b} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Line\+Reader@{Line\+Reader}}
@@ -176,13 +174,7 @@ Constructs a line reader by moving the given line reader.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_line_reader_ab2ee825c79432ac1af53eb899fcaeb98}{}\label{classmage_1_1_line_reader_ab2ee825c79432ac1af53eb899fcaeb98} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Close\+File@{Close\+File}}
-\index{Close\+File@{Close\+File}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Close\+File()}{CloseFile()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Close\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Closes the current file of this line reader. \hypertarget{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6}{}\label{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6} 
+\hypertarget{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6}{}\label{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}}
 \index{Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Get\+Current\+Line\+Number()}{GetCurrentLineNumber()}}
@@ -407,7 +399,7 @@ A reference to the moved line reader (i.\+e. this line reader).
 \subsubsection{\texorpdfstring{Postprocess()}{Postprocess()}}
 {\footnotesize\ttfamily virtual void mage\+::\+Line\+Reader\+::\+Postprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
 
-Post-\/process after reading the current file of this line reader.
+Post-\/processes after reading the current file of this line reader.
 
 
 \begin{DoxyExceptions}{Exceptions}
@@ -424,7 +416,7 @@ Reimplemented in \hyperlink{classmage_1_1_o_b_j_reader_a248977c8300575ed2bab04df
 \subsubsection{\texorpdfstring{Preprocess()}{Preprocess()}}
 {\footnotesize\ttfamily virtual void mage\+::\+Line\+Reader\+::\+Preprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
 
-Pre-\/process before reading the current file of this line reader.
+Pre-\/processes before reading the current file of this line reader.
 
 
 \begin{DoxyExceptions}{Exceptions}
@@ -662,6 +654,9 @@ The {\ttfamily int8\+\_\+t} represented by the next token of this line reader.
 
 Reads the given line.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape line} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in,out}  & {\em line} & A pointer to the null-\/terminated byte string to read. \\
@@ -674,7 +669,7 @@ Reads the given line.
 \end{DoxyExceptions}
 
 
-Implemented in \hyperlink{classmage_1_1_o_b_j_reader_a8d4bd7be6de3098ba899cc36e3be1283}{mage\+::\+O\+B\+J\+Reader$<$ Vertex\+T $>$}, \hyperlink{classmage_1_1_v_s_reader_a3a3ba09b410e2144ed082db5f1da3113}{mage\+::\+V\+S\+Reader}, \hyperlink{classmage_1_1_m_d_l_reader_ac50f9cce64621b0a218b6778a611a702}{mage\+::\+M\+D\+L\+Reader$<$ Vertex\+T $>$}, and \hyperlink{classmage_1_1_m_t_l_reader_ac3981549364be195f96b32cfafc8b147}{mage\+::\+M\+T\+L\+Reader}.
+Implemented in \hyperlink{classmage_1_1_o_b_j_reader_a8d4bd7be6de3098ba899cc36e3be1283}{mage\+::\+O\+B\+J\+Reader$<$ Vertex\+T $>$}, \hyperlink{classmage_1_1_m_d_l_reader_ac50f9cce64621b0a218b6778a611a702}{mage\+::\+M\+D\+L\+Reader$<$ Vertex\+T $>$}, \hyperlink{classmage_1_1_v_s_reader_a3a3ba09b410e2144ed082db5f1da3113}{mage\+::\+V\+S\+Reader}, and \hyperlink{classmage_1_1_m_t_l_reader_ac3981549364be195f96b32cfafc8b147}{mage\+::\+M\+T\+L\+Reader}.
 
 \hypertarget{classmage_1_1_line_reader_a3a4b99bfef1e8a826d74a01bcc663fcb}{}\label{classmage_1_1_line_reader_a3a4b99bfef1e8a826d74a01bcc663fcb} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+Line\+Remaining@{Read\+Line\+Remaining}}
@@ -793,13 +788,13 @@ The current context of this line reader. \hypertarget{classmage_1_1_line_reader_
 \subsubsection{\texorpdfstring{m\+\_\+delimiters}{m\_delimiters}}
 {\footnotesize\ttfamily string mage\+::\+Line\+Reader\+::m\+\_\+delimiters\hspace{0.3cm}{\ttfamily [private]}}
 
-The current delimiters of this line reader. \hypertarget{classmage_1_1_line_reader_a0bc5f3543a85487fc0e52a6015048476}{}\label{classmage_1_1_line_reader_a0bc5f3543a85487fc0e52a6015048476} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+file@{m\+\_\+file}}
-\index{m\+\_\+file@{m\+\_\+file}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{m\+\_\+file}{m\_file}}
-{\footnotesize\ttfamily F\+I\+LE$\ast$ mage\+::\+Line\+Reader\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+The current delimiters of this line reader. \hypertarget{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2}{}\label{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+file\+\_\+stream@{m\+\_\+file\+\_\+stream}}
+\index{m\+\_\+file\+\_\+stream@{m\+\_\+file\+\_\+stream}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+file\+\_\+stream}{m\_file\_stream}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{Unique\+File\+Stream} mage\+::\+Line\+Reader\+::m\+\_\+file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
 
-The current file of this line reader. \hypertarget{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{}\label{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321} 
+A pointer to the file stream of this line reader. \hypertarget{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{}\label{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+fname@{m\+\_\+fname}}
 \index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}

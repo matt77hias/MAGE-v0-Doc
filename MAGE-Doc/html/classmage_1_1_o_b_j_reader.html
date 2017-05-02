@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac795c3b1d19ecf38735b76bc5b97fa80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_o_b_j_reader.html">OBJReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_o_b_j_reader.html#ac795c3b1d19ecf38735b76bc5b97fa80">operator=</a> (<a class="el" href="classmage_1_1_o_b_j_reader.html">OBJReader</a> &amp;&amp;reader)=delete</td></tr>
 <tr class="separator:ac795c3b1d19ecf38735b76bc5b97fa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmage_1_1_line_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_line_reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmage_1_1_line_reader.html">mage::LineReader</a></td></tr>
-<tr class="memitem:ad9753ea392ebe5b3867852d3392fb1e7 inherit pub_methods_classmage_1_1_line_reader"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_line_reader.html#ad9753ea392ebe5b3867852d3392fb1e7">~LineReader</a> ()</td></tr>
-<tr class="separator:ad9753ea392ebe5b3867852d3392fb1e7 inherit pub_methods_classmage_1_1_line_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa058c338d8256d7f7b775bf4f7052508 inherit pub_methods_classmage_1_1_line_reader"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_line_reader.html#aa058c338d8256d7f7b775bf4f7052508">~LineReader</a> ()=default</td></tr>
+<tr class="separator:aa058c338d8256d7f7b775bf4f7052508 inherit pub_methods_classmage_1_1_line_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2247078d0b5602f9a9a6b74019832faf inherit pub_methods_classmage_1_1_line_reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_line_reader.html">LineReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_line_reader.html#a2247078d0b5602f9a9a6b74019832faf">operator=</a> (const <a class="el" href="classmage_1_1_line_reader.html">LineReader</a> &amp;reader)=delete</td></tr>
 <tr class="separator:a2247078d0b5602f9a9a6b74019832faf inherit pub_methods_classmage_1_1_line_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45504c0ba4238eedf851cfb9df081a01 inherit pub_methods_classmage_1_1_line_reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_line_reader.html">LineReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_line_reader.html#a45504c0ba4238eedf851cfb9df081a01">operator=</a> (<a class="el" href="classmage_1_1_line_reader.html">LineReader</a> &amp;&amp;reader)=delete</td></tr>
@@ -556,7 +556,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Post-process after reading the current file of this OBJ reader.</p>
+<p>Post-processes after reading the current file of this OBJ reader.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to finish post-processing successfully. </td></tr>
@@ -630,6 +630,7 @@ template&lt;typename VertexT &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Reads the given line.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>line</em> is not equal to <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">line</td><td>A pointer to the null-terminated byte string to read. </td></tr>
@@ -773,10 +774,11 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads a <a class="el" href="structmage_1_1_material.html">Material</a> Usage definition.</p>
+<p>Reads a <a class="el" href="structmage_1_1_material.html">Material</a> Usage definition and imports the materials corresponding to the mesh.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to read a <a class="el" href="structmage_1_1_material.html">Material</a> Usage definition. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to import the materials. </td></tr>
   </table>
   </dd>
 </dl>
@@ -842,6 +844,7 @@ template&lt;typename VertexT &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Reads a Smoothing Group definition.</p>
+<dl class="section note"><dt>Note</dt><dd>A smoothing group is, if present, silently ignored. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to read a Smoothing Group definition. </td></tr>
@@ -909,7 +912,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the vertex position coordinates.</p>
+<p>Reads a set of vertex position coordinates.</p>
 <dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="structmage_1_1_point3.html">Point3</a></code> represented by the next token of this OBJ reader (modified according to the mesh descriptor of this OBj reader). </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -944,7 +947,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the face indices.</p>
+<p>Reads a set of face indices.</p>
 <dl class="section return"><dt>Returns</dt><dd>The face indices represented by the next token of this OBJ reader. A zero indicates the absence of a component. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -1014,7 +1017,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the vertex normal coordinates.</p>
+<p>Reads a set of vertex normal coordinates.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>All the vertex normals in the OBJ file are normalized. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="structmage_1_1_normal3.html">Normal3</a></code> represented by the next token of this OBJ reader (modified according to the mesh descriptor of this OBj reader). </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
@@ -1085,7 +1088,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the vertex texture coordinates.</p>
+<p>Reads a set of vertex texture coordinates.</p>
 <dl class="section return"><dt>Returns</dt><dd>The <code><a class="el" href="structmage_1_1_u_v.html">UV</a></code> represented by the next token of this OBJ reader (modified according to the mesh descriptor of this OBj reader). </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">

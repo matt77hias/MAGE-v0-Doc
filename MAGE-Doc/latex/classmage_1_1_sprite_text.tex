@@ -15,11 +15,11 @@ Inheritance diagram for mage\+:\+:Sprite\+Text\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_sprite_text_a0a231f260bb855b7be3280aa74a3e5c6}{$\sim$\+Sprite\+Text} ()=default
 \item 
-\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \& \hyperlink{classmage_1_1_sprite_text_ad9bdf1d36eab783d2f742f32c464aa0b}{operator=} (const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \& \hyperlink{classmage_1_1_sprite_text_af027a281c1fa600dd870ca04d91fcae8}{operator=} (const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&sprite\+\_\+text)=delete
 \item 
-\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \& \hyperlink{classmage_1_1_sprite_text_a48e9d2fdda8bf2f8847a425444df980c}{operator=} (\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&\&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \& \hyperlink{classmage_1_1_sprite_text_a7e2e165d7682d9cc623b7c9725f76920}{operator=} (\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&\&sprite\+\_\+text)=delete
 \item 
-virtual \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} $\ast$ \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a}{Clone} () const =0
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} $>$ \hyperlink{classmage_1_1_sprite_text_a14e711a43a4482aa03f6cd9d59c26c79}{Clone} () const
 \item 
 virtual void \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e}{Draw} (Sprite\+Batch \&sprite\+\_\+batch) const =0
 \item 
@@ -38,12 +38,6 @@ void \hyperlink{classmage_1_1_sprite_text_acf993532a7b2e6ebb761b9b47cbdba98}{App
 void \hyperlink{classmage_1_1_sprite_text_a462809b9138f94720f972505a4f74d81}{Append\+Text} (const wchar\+\_\+t $\ast$text)
 \item 
 void \hyperlink{classmage_1_1_sprite_text_a6f0bb93c634d9b05466d3998bcaf957a}{Append\+Text} (const \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} \&text)
-\item 
-void \hyperlink{classmage_1_1_sprite_text_acaeb6686d0a5d89d799dd3ac4390a242}{Set\+Color} (const \hyperlink{structmage_1_1_color}{Color} \&\hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{color})
-\item 
-void \hyperlink{classmage_1_1_sprite_text_ab3930318d6dca0589de4490ed629a3b8}{Set\+Color} (const X\+M\+V\+E\+C\+T\+OR \&\hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{color})
-\item 
-const X\+M\+V\+E\+C\+T\+OR \hyperlink{classmage_1_1_sprite_text_a72f926162887270cef780251561a2155}{Measure\+String} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -60,6 +54,11 @@ const \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $\ast$ \hyperlink{clas
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_sprite_text_ab8576580e5b3c0bb568c1256a0b989bc}{For\+Each\+Sprite\+Text\+Item} (ActionT action) const
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ \hyperlink{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e}{Clone\+Implementation} () const =0
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,6 +68,9 @@ vector$<$ \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} $>$ \h
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of sprite texts. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_sprite_text_a0a231f260bb855b7be3280aa74a3e5c6}{}\label{classmage_1_1_sprite_text_a0a231f260bb855b7be3280aa74a3e5c6} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!````~Sprite\+Text@{$\sim$\+Sprite\+Text}}
@@ -76,24 +78,52 @@ vector$<$ \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} $>$ \h
 \subsubsection{\texorpdfstring{$\sim$\+Sprite\+Text()}{~SpriteText()}}
 {\footnotesize\ttfamily virtual mage\+::\+Sprite\+Text\+::$\sim$\+Sprite\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-\hypertarget{classmage_1_1_sprite_text_a929b24bba456bfd37a9ebf04db88d4c5}{}\label{classmage_1_1_sprite_text_a929b24bba456bfd37a9ebf04db88d4c5} 
+Destruct this sprite text. \hypertarget{classmage_1_1_sprite_text_a929b24bba456bfd37a9ebf04db88d4c5}{}\label{classmage_1_1_sprite_text_a929b24bba456bfd37a9ebf04db88d4c5} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Sprite\+Text@{Sprite\+Text}}
 \index{Sprite\+Text@{Sprite\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Sprite\+Text()}{SpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Text\+::\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$}]{font,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{Sprite\+Effect\+\_\+\+None}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
 
+Constructs a sprite text.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily font.\+get()} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\mbox{\tt in}  & {\em font} & A pointer to the sprite font. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_a76ee01b719ee90418740a2c10392acae}{}\label{classmage_1_1_sprite_text_a76ee01b719ee90418740a2c10392acae} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Sprite\+Text@{Sprite\+Text}}
 \index{Sprite\+Text@{Sprite\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Sprite\+Text()}{SpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Text\+::\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
+Constructs a sprite text from the given sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the sprite text to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_ab569dfa4ff5a30f0a23005c43635aad7}{}\label{classmage_1_1_sprite_text_ab569dfa4ff5a30f0a23005c43635aad7} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Sprite\+Text@{Sprite\+Text}}
 \index{Sprite\+Text@{Sprite\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Sprite\+Text()}{SpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Text\+::\+Sprite\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
+Constructs a sprite text by moving the given sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the sprite text to move. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -103,31 +133,71 @@ vector$<$ \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} $>$ \h
 \subsubsection{\texorpdfstring{Append\+Text()}{AppendText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Append\+Text (\begin{DoxyParamCaption}\item[{const wstring \&}]{text }\end{DoxyParamCaption})}
 
+Appends the given text to the end of the text of this sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A reference to the text. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_a462809b9138f94720f972505a4f74d81}{}\label{classmage_1_1_sprite_text_a462809b9138f94720f972505a4f74d81} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Append\+Text@{Append\+Text}}
 \index{Append\+Text@{Append\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Append\+Text()}{AppendText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Append\+Text (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text }\end{DoxyParamCaption})}
 
+Appends the given text to the end of the text of this sprite text.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape text} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A pointer to the text. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_a6f0bb93c634d9b05466d3998bcaf957a}{}\label{classmage_1_1_sprite_text_a6f0bb93c634d9b05466d3998bcaf957a} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Append\+Text@{Append\+Text}}
 \index{Append\+Text@{Append\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Append\+Text()}{AppendText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Append\+Text (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} \&}]{text }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a}{}\label{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a} 
+Appends the given text to the end of the text of this sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A reference to the text. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_sprite_text_a14e711a43a4482aa03f6cd9d59c26c79}{}\label{classmage_1_1_sprite_text_a14e711a43a4482aa03f6cd9d59c26c79} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}$\ast$ mage\+::\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} $>$ mage\+::\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clones this sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this sprite text. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e}{}\label{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e} 
+\index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Clone\+Implementation@{Clone\+Implementation}}
+\index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
+\subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ mage\+::\+Sprite\+Text\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+Clones this sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this sprite text. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmage_1_1_sprite_object_a7ae445af224769ee5e69c9468670a03f}{mage\+::\+Sprite\+Object}.
 
 
 
-Implements \hyperlink{classmage_1_1_sprite_object_a556c1ffcf4015ba4f8a803974b53ca88}{mage\+::\+Sprite\+Object}.
-
-
-
-Implemented in \hyperlink{classmage_1_1_dropshadow_sprite_text_a116c49fb9638414c67a09501c4031a01}{mage\+::\+Dropshadow\+Sprite\+Text}, \hyperlink{classmage_1_1_outline_sprite_text_a095a8ef1603b9045cecb6fd1263243be}{mage\+::\+Outline\+Sprite\+Text}, and \hyperlink{classmage_1_1_normal_sprite_text_aef48e90667849cd9ec01510baf1394cb}{mage\+::\+Normal\+Sprite\+Text}.
+Implemented in \hyperlink{classmage_1_1_dropshadow_sprite_text_a300716c6bd3a6087d3c637253cb61cc1}{mage\+::\+Dropshadow\+Sprite\+Text}, \hyperlink{classmage_1_1_outline_sprite_text_a90ed9cba10e082d6ce07dfa1b6189246}{mage\+::\+Outline\+Sprite\+Text}, and \hyperlink{classmage_1_1_normal_sprite_text_ae3e8cf71bdf82a4a9df15c00d5be8799}{mage\+::\+Normal\+Sprite\+Text}.
 
 \hypertarget{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e}{}\label{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Draw@{Draw}}
@@ -135,6 +205,13 @@ Implemented in \hyperlink{classmage_1_1_dropshadow_sprite_text_a116c49fb9638414c
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily virtual void mage\+::\+Sprite\+Text\+::\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Draws this sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch used for rendering this sprite text. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classmage_1_1_sprite_object_a1c1c885fe7846f7ee1cc0b73571c2fa0}{mage\+::\+Sprite\+Object}.
@@ -150,6 +227,13 @@ Implemented in \hyperlink{classmage_1_1_dropshadow_sprite_text_af76422c9812d7dc3
 {\footnotesize\ttfamily template$<$typename ActionT $>$ \\
 void mage\+::\+Sprite\+Text\+::\+For\+Each\+Sprite\+Text\+Item (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
+Traverses all sprite text items of this sprite text.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ActionT} & An action to perform on all sprite text items of this sprite text. The action must accept {\ttfamily \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item}\&} values. \\
+\hline
+\end{DoxyTemplParams}
 \hypertarget{classmage_1_1_sprite_text_ab8576580e5b3c0bb568c1256a0b989bc}{}\label{classmage_1_1_sprite_text_ab8576580e5b3c0bb568c1256a0b989bc} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!For\+Each\+Sprite\+Text\+Item@{For\+Each\+Sprite\+Text\+Item}}
 \index{For\+Each\+Sprite\+Text\+Item@{For\+Each\+Sprite\+Text\+Item}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
@@ -157,72 +241,125 @@ void mage\+::\+Sprite\+Text\+::\+For\+Each\+Sprite\+Text\+Item (\begin{DoxyParam
 {\footnotesize\ttfamily template$<$typename ActionT $>$ \\
 void mage\+::\+Sprite\+Text\+::\+For\+Each\+Sprite\+Text\+Item (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
+Traverses all sprite text items of this sprite text.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ActionT} & An action to perform on all sprite text items of this sprite text. The action must accept {\ttfamily const} {\ttfamily \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item}\&} values. \\
+\hline
+\end{DoxyTemplParams}
 \hypertarget{classmage_1_1_sprite_text_a1c80933525f87fe4dced9479c1b79764}{}\label{classmage_1_1_sprite_text_a1c80933525f87fe4dced9479c1b79764} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Get\+Font@{Get\+Font}}
 \index{Get\+Font@{Get\+Font}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Get\+Font()}{GetFont()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Sprite\+Text\+::\+Get\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the font of this sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the font of this sprite text. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_text_ab67ba17af1b19766343d04f10853c8d6}{}\label{classmage_1_1_sprite_text_ab67ba17af1b19766343d04f10853c8d6} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Get\+Raw\+Font@{Get\+Raw\+Font}}
 \index{Get\+Raw\+Font@{Get\+Raw\+Font}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Get\+Raw\+Font()}{GetRawFont()}}
 {\footnotesize\ttfamily const \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}$\ast$ mage\+::\+Sprite\+Text\+::\+Get\+Raw\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_sprite_text_a72f926162887270cef780251561a2155}{}\label{classmage_1_1_sprite_text_a72f926162887270cef780251561a2155} 
-\index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Measure\+String@{Measure\+String}}
-\index{Measure\+String@{Measure\+String}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
-\subsubsection{\texorpdfstring{Measure\+String()}{MeasureString()}}
-{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Sprite\+Text\+::\+Measure\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+Returns the font of this sprite text.
 
-\hypertarget{classmage_1_1_sprite_text_ad9bdf1d36eab783d2f742f32c464aa0b}{}\label{classmage_1_1_sprite_text_ad9bdf1d36eab783d2f742f32c464aa0b} 
+\begin{DoxyReturn}{Returns}
+A pointer to the font of this sprite text. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_text_af027a281c1fa600dd870ca04d91fcae8}{}\label{classmage_1_1_sprite_text_af027a281c1fa600dd870ca04d91fcae8} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}\& mage\+::\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}\& mage\+::\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_sprite_text_a48e9d2fdda8bf2f8847a425444df980c}{}\label{classmage_1_1_sprite_text_a48e9d2fdda8bf2f8847a425444df980c} 
+Copies the given sprite text to this sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the sprite text to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite text (i.\+e. this sprite text). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_text_a7e2e165d7682d9cc623b7c9725f76920}{}\label{classmage_1_1_sprite_text_a7e2e165d7682d9cc623b7c9725f76920} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}\& mage\+::\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_text}{Sprite\+Text}\& mage\+::\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_text}{Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_sprite_text_acaeb6686d0a5d89d799dd3ac4390a242}{}\label{classmage_1_1_sprite_text_acaeb6686d0a5d89d799dd3ac4390a242} 
-\index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Color@{Set\+Color}}
-\index{Set\+Color@{Set\+Color}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
-\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_color}{Color} \&}]{color }\end{DoxyParamCaption})}
+Moves the given sprite text to this sprite text.
 
-\hypertarget{classmage_1_1_sprite_text_ab3930318d6dca0589de4490ed629a3b8}{}\label{classmage_1_1_sprite_text_ab3930318d6dca0589de4490ed629a3b8} 
-\index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Color@{Set\+Color}}
-\index{Set\+Color@{Set\+Color}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
-\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{color }\end{DoxyParamCaption})}
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the sprite text to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved sprite text (i.\+e. this sprite text). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_text_a8e753dcd210b1fdf9c5399a9f0f3415d}{}\label{classmage_1_1_sprite_text_a8e753dcd210b1fdf9c5399a9f0f3415d} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Font@{Set\+Font}}
 \index{Set\+Font@{Set\+Font}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Font()}{SetFont()}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$}]{font }\end{DoxyParamCaption})}
 
+Sets the font of this sprite text to the given font.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily font.\+get()} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em font} & A pointer to the font of this sprite text. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_ac33e512ab29554a306ada9a378ab00eb}{}\label{classmage_1_1_sprite_text_ac33e512ab29554a306ada9a378ab00eb} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Text@{Set\+Text}}
 \index{Set\+Text@{Set\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Text()}{SetText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{const wstring \&}]{text }\end{DoxyParamCaption})}
 
+Sets the text of this sprite text to the given text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A reference to the text. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_a03d5012e2812d422a1285a4a0abb104f}{}\label{classmage_1_1_sprite_text_a03d5012e2812d422a1285a4a0abb104f} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Text@{Set\+Text}}
 \index{Set\+Text@{Set\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Text()}{SetText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text }\end{DoxyParamCaption})}
 
+Sets the text of this sprite text to the given text.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape text} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A pointer to the text. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_text_ab9f28cf44b29b8489794938a8965f104}{}\label{classmage_1_1_sprite_text_ab9f28cf44b29b8489794938a8965f104} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!Set\+Text@{Set\+Text}}
 \index{Set\+Text@{Set\+Text}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Set\+Text()}{SetText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Text\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} \&}]{text }\end{DoxyParamCaption})}
 
+Sets the text of this sprite text to the given text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em text} & A reference to the text. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -232,9 +369,10 @@ void mage\+::\+Sprite\+Text\+::\+For\+Each\+Sprite\+Text\+Item (\begin{DoxyParam
 \subsubsection{\texorpdfstring{m\+\_\+font}{m\_font}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Sprite\+Text\+::m\+\_\+font\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_sprite_text_a5990cef53a24dcd6d6bf0ff550145ca4}{}\label{classmage_1_1_sprite_text_a5990cef53a24dcd6d6bf0ff550145ca4} 
+A pointer to the sprite font of this sprite text. \hypertarget{classmage_1_1_sprite_text_a5990cef53a24dcd6d6bf0ff550145ca4}{}\label{classmage_1_1_sprite_text_a5990cef53a24dcd6d6bf0ff550145ca4} 
 \index{mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}!m\+\_\+items@{m\+\_\+items}}
 \index{m\+\_\+items@{m\+\_\+items}!mage\+::\+Sprite\+Text@{mage\+::\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{m\+\_\+items}{m\_items}}
 {\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_sprite_text_item}{Sprite\+Text\+Item} $>$ mage\+::\+Sprite\+Text\+::m\+\_\+items\hspace{0.3cm}{\ttfamily [private]}}
 
+A vector with the sprite text items of this sprite text. 

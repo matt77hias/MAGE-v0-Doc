@@ -21,6 +21,6 @@ var structmage_1_1_a_a_b_b =
     [ "operator=", "structmage_1_1_a_a_b_b.html#a5ca72f9aabc219cd598af6eab6b8b99f", null ],
     [ "Overlaps", "structmage_1_1_a_a_b_b.html#a5a959edc3bc5ccdd29025d612c2e66e3", null ],
     [ "OverlapsStrict", "structmage_1_1_a_a_b_b.html#ae8e6eca9c5e30015a91ab2e900594bfc", null ],
-    [ "p_max", "structmage_1_1_a_a_b_b.html#ad0a69206176c61ce9a71f2ddb0e5deb2", null ],
-    [ "p_min", "structmage_1_1_a_a_b_b.html#a600c62081fd3516c0be64bb81495cd1d", null ]
+    [ "m_p_max", "structmage_1_1_a_a_b_b.html#a51643192d891301df8d8d3f24abd2a27", null ],
+    [ "m_p_min", "structmage_1_1_a_a_b_b.html#af5b7608aa0e332d70edfe0cb77bd27c2", null ]
 ];

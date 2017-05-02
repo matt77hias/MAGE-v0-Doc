@@ -11,7 +11,7 @@
 \item 
 \hyperlink{structmage_1_1_a_a_b_b_a03a5ca9571075c5e12c5e7a4a38913bf}{A\+A\+BB} (const \hyperlink{structmage_1_1_point3}{Point3} \&p)
 \item 
-\hyperlink{structmage_1_1_a_a_b_b_aff9e36907c435c74cc948a13cc9f1222}{A\+A\+BB} (const \hyperlink{structmage_1_1_point3}{Point3} \&\hyperlink{structmage_1_1_a_a_b_b_a600c62081fd3516c0be64bb81495cd1d}{p\+\_\+min}, const \hyperlink{structmage_1_1_point3}{Point3} \&\hyperlink{structmage_1_1_a_a_b_b_ad0a69206176c61ce9a71f2ddb0e5deb2}{p\+\_\+max})
+\hyperlink{structmage_1_1_a_a_b_b_aff9e36907c435c74cc948a13cc9f1222}{A\+A\+BB} (const \hyperlink{structmage_1_1_point3}{Point3} \&p\+\_\+min, const \hyperlink{structmage_1_1_point3}{Point3} \&p\+\_\+max)
 \item 
 \hyperlink{structmage_1_1_a_a_b_b_a07266c753cdfda4129ece8d605714e08}{A\+A\+BB} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb)=default
 \item 
@@ -52,9 +52,9 @@ const \hyperlink{structmage_1_1_direction3}{Direction3} \hyperlink{structmage_1_
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{structmage_1_1_a_a_b_b_a600c62081fd3516c0be64bb81495cd1d}{p\+\_\+min}
+\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{structmage_1_1_a_a_b_b_af5b7608aa0e332d70edfe0cb77bd27c2}{m\+\_\+p\+\_\+min}
 \item 
-\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{structmage_1_1_a_a_b_b_ad0a69206176c61ce9a71f2ddb0e5deb2}{p\+\_\+max}
+\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{structmage_1_1_a_a_b_b_a51643192d891301df8d8d3f24abd2a27}{m\+\_\+p\+\_\+max}
 \end{DoxyCompactItemize}
 
 
@@ -109,7 +109,7 @@ Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} from the given \hyper
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to copy. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_a_a_b_b_a4de1911a46f6c2603ddba3c3348233f1}{}\label{structmage_1_1_a_a_b_b_a4de1911a46f6c2603ddba3c3348233f1} 
@@ -118,11 +118,11 @@ Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} from the given \hyper
 \subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
 {\footnotesize\ttfamily mage\+::\+A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&\&}]{aabb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} from the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
+Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} by moving the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to move. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_a_a_b_b_a2be79f65a33fa973ca0b71570d96b7cc}{}\label{structmage_1_1_a_a_b_b_a2be79f65a33fa973ca0b71570d96b7cc} 
@@ -177,6 +177,11 @@ The diagonal of this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely enclosed by the given (closed) volume.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape planes} is not equal to {\ttfamily nullptr}. 
+
+{\itshape planes} must point to an array of at least {\ttfamily nb\+\_\+planes} planes. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em planes} & A pointer to the planes of the volume. (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}) \\
@@ -195,6 +200,11 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely e
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely, strictly enclosed by the given (closed) volume.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape planes} is not equal to {\ttfamily nullptr}. 
+
+{\itshape planes} must point to an array of at least {\ttfamily nb\+\_\+planes} planes. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em planes} & A pointer to the planes of the volume. (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}) \\
@@ -311,7 +321,7 @@ Copies the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to this \hyperlink
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to copy from. \\
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -323,15 +333,15 @@ A reference to the copy of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}\& mage\+::\+A\+A\+B\+B\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&\&}]{aabb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Copies the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
+Moves the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to copy from. \\
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} (i.\+e. this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}). 
+A reference to the moved \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} (i.\+e. this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}). 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_a_a_b_b_a5a959edc3bc5ccdd29025d612c2e66e3}{}\label{structmage_1_1_a_a_b_b_a5a959edc3bc5ccdd29025d612c2e66e3} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Overlaps@{Overlaps}}
@@ -368,16 +378,16 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} strictly overla
 
 
 \subsection{Member Data Documentation}
-\hypertarget{structmage_1_1_a_a_b_b_ad0a69206176c61ce9a71f2ddb0e5deb2}{}\label{structmage_1_1_a_a_b_b_ad0a69206176c61ce9a71f2ddb0e5deb2} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!p\+\_\+max@{p\+\_\+max}}
-\index{p\+\_\+max@{p\+\_\+max}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{p\+\_\+max}{p\_max}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+A\+A\+B\+B\+::p\+\_\+max}
+\hypertarget{structmage_1_1_a_a_b_b_a51643192d891301df8d8d3f24abd2a27}{}\label{structmage_1_1_a_a_b_b_a51643192d891301df8d8d3f24abd2a27} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!m\+\_\+p\+\_\+max@{m\+\_\+p\+\_\+max}}
+\index{m\+\_\+p\+\_\+max@{m\+\_\+p\+\_\+max}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{m\+\_\+p\+\_\+max}{m\_p\_max}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+A\+A\+B\+B\+::m\+\_\+p\+\_\+max}
 
-The maximum extents of this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \hypertarget{structmage_1_1_a_a_b_b_a600c62081fd3516c0be64bb81495cd1d}{}\label{structmage_1_1_a_a_b_b_a600c62081fd3516c0be64bb81495cd1d} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!p\+\_\+min@{p\+\_\+min}}
-\index{p\+\_\+min@{p\+\_\+min}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{p\+\_\+min}{p\_min}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+A\+A\+B\+B\+::p\+\_\+min}
+The maximum extents of this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \hypertarget{structmage_1_1_a_a_b_b_af5b7608aa0e332d70edfe0cb77bd27c2}{}\label{structmage_1_1_a_a_b_b_af5b7608aa0e332d70edfe0cb77bd27c2} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!m\+\_\+p\+\_\+min@{m\+\_\+p\+\_\+min}}
+\index{m\+\_\+p\+\_\+min@{m\+\_\+p\+\_\+min}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{m\+\_\+p\+\_\+min}{m\_p\_min}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+A\+A\+B\+B\+::m\+\_\+p\+\_\+min}
 
 The minimum extents of this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. 

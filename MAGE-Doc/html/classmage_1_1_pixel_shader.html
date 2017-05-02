@@ -96,10 +96,9 @@ Inheritance diagram for mage::PixelShader:</div>
  <div class="center">
   <img src="classmage_1_1_pixel_shader.png" usemap="#mage::PixelShader_map" alt=""/>
   <map id="mage::PixelShader_map" name="mage::PixelShader_map">
-<area href="classmage_1_1_resource.html" alt="mage::Resource" shape="rect" coords="188,0,366,24"/>
-<area href="classmage_1_1_empty_pixel_shader.html" alt="mage::EmptyPixelShader" shape="rect" coords="0,112,178,136"/>
-<area href="classmage_1_1_lambertian_pixel_shader.html" alt="mage::LambertianPixelShader" shape="rect" coords="188,112,366,136"/>
-<area href="classmage_1_1_sprite_pixel_shader.html" alt="mage::SpritePixelShader" shape="rect" coords="376,112,554,136"/>
+<area href="classmage_1_1_resource.html" alt="mage::Resource" shape="rect" coords="94,0,272,24"/>
+<area href="classmage_1_1_lambertian_pixel_shader.html" alt="mage::LambertianPixelShader" shape="rect" coords="0,112,178,136"/>
+<area href="classmage_1_1_sprite_pixel_shader.html" alt="mage::SpritePixelShader" shape="rect" coords="188,112,366,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -150,12 +149,14 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:adb9c1f330ef9958a7fc46c40c98a2b57"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_pixel_shader.html#adb9c1f330ef9958a7fc46c40c98a2b57">SetupShader</a> ()</td></tr>
-<tr class="separator:adb9c1f330ef9958a7fc46c40c98a2b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df5b0c0eee682dad0406409e6df2a11"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_pixel_shader.html#a3df5b0c0eee682dad0406409e6df2a11">SetupShader</a> (const void *bytecode, SIZE_T bytecode_size)</td></tr>
-<tr class="separator:a3df5b0c0eee682dad0406409e6df2a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5297d3d12153f9a866751b623203c5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_pixel_shader.html#a5297d3d12153f9a866751b623203c5aa">SetupShader</a> ()</td></tr>
+<tr class="separator:a5297d3d12153f9a866751b623203c5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bc61698dbd72684e55d97c0ce8b02d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_pixel_shader.html#a18bc61698dbd72684e55d97c0ce8b02d">SetupShader</a> (const void *bytecode, SIZE_T bytecode_size)</td></tr>
+<tr class="separator:a18bc61698dbd72684e55d97c0ce8b02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of pixel shaders. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abf1a5e4a5a550553aea1427e80cd9403"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf1a5e4a5a550553aea1427e80cd9403">&sect;&nbsp;</a></span>PixelShader() <span class="overload">[1/4]</span></h2>
 
@@ -195,6 +196,24 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a pixel shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>A reference to the globally unique identifier of this pixel shader (i.e. filename of the compiled shader output). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize this pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -249,6 +268,30 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a pixel shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>bytecode</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The size of the data pointed to by <em>bytecode</em> is equal to <em>bytecode_size</em> (bytes). </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guid</td><td>A reference to the globally unique identifier of this pixel shader. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode</td><td>A pointer to the shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode_size</td><td>The size of the given shader bytecode. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to initialize this pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -275,6 +318,13 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a pixel shader from the given pixel shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_shader</td><td>A reference to the pixel shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -301,6 +351,13 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a pixel shader by moving the given pixel shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_shader</td><td>A reference to the pixel shader to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -326,6 +383,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this pixel shader. </p>
 
 </div>
 </div>
@@ -353,6 +411,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given pixel shader to this pixel shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_shader</td><td>A reference to the pixel shader to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given pixel shader (i.e. this pixel shader). </dd></dl>
 
 </div>
 </div>
@@ -379,6 +445,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given pixel shader to this pixel shader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_shader</td><td>A reference to the pixel shader to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved pixel shader (i.e. this pixel shader). </dd></dl>
 
 </div>
 </div>
@@ -405,8 +479,16 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Prepares this pixel shader for shading.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>texture</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the texture shader resource view. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented in <a class="el" href="classmage_1_1_sprite_pixel_shader.html#a8c0c4daf36c74822a772b1a38e8d876a">mage::SpritePixelShader</a>, and <a class="el" href="classmage_1_1_empty_pixel_shader.html#aaaf0ea35ab2459d66593212065a86c1b">mage::EmptyPixelShader</a>.</p>
+<p>Reimplemented in <a class="el" href="classmage_1_1_sprite_pixel_shader.html#a8c0c4daf36c74822a772b1a38e8d876a">mage::SpritePixelShader</a>.</p>
 
 </div>
 </div>
@@ -443,13 +525,21 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Prepares this pixel shader for shading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">material</td><td>A reference to the material. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lighting</td><td>A reference to the lighting buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented in <a class="el" href="classmage_1_1_lambertian_pixel_shader.html#ab35542bd91168d662b7cc1a981d5bfe6">mage::LambertianPixelShader</a>, and <a class="el" href="classmage_1_1_empty_pixel_shader.html#a42bdcb8c416ad76bed9437fb2af91252">mage::EmptyPixelShader</a>.</p>
+<p>Reimplemented in <a class="el" href="classmage_1_1_lambertian_pixel_shader.html#ab35542bd91168d662b7cc1a981d5bfe6">mage::LambertianPixelShader</a>.</p>
 
 </div>
 </div>
-<a id="adb9c1f330ef9958a7fc46c40c98a2b57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9c1f330ef9958a7fc46c40c98a2b57">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[1/2]</span></h2>
+<a id="a5297d3d12153f9a866751b623203c5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5297d3d12153f9a866751b623203c5aa">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +548,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::PixelShader::SetupShader </td>
+          <td class="memname">void mage::PixelShader::SetupShader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -470,11 +560,18 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sets up this pixel shader (from compiled shader output).</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3df5b0c0eee682dad0406409e6df2a11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3df5b0c0eee682dad0406409e6df2a11">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[2/2]</span></h2>
+<a id="a18bc61698dbd72684e55d97c0ce8b02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bc61698dbd72684e55d97c0ce8b02d">&sect;&nbsp;</a></span>SetupShader() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +580,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::PixelShader::SetupShader </td>
+          <td class="memname">void mage::PixelShader::SetupShader </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>bytecode</em>, </td>
@@ -506,6 +603,23 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Sets up this pixel shader.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>bytecode</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+The size of the data pointed to by <em>bytecode</em> is equal to <em>bytecode_size</em> (bytes). </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode</td><td>A pointer to the shader bytecode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytecode_size</td><td>The size of the given shader bytecode. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -529,6 +643,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device of this pixel shader. </p>
 
 </div>
 </div>
@@ -551,6 +666,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device context of this pixel shader. </p>
 
 </div>
 </div>
@@ -573,6 +689,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the pixel shader of this pixel shader. </p>
 
 </div>
 </div>

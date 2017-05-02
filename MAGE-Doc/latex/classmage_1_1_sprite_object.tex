@@ -15,11 +15,11 @@ Inheritance diagram for mage\+:\+:Sprite\+Object\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_sprite_object_a88c02e6af2ab79389de368dd9ba32930}{$\sim$\+Sprite\+Object} ()=default
 \item 
-\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \& \hyperlink{classmage_1_1_sprite_object_ac3ff1a1763e7fee3d6461cfd121bd5b2}{operator=} (const \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&sprite\+\_\+object)
+\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \& \hyperlink{classmage_1_1_sprite_object_ab24af642e7c49a13ca5526248f106b4e}{operator=} (const \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&sprite\+\_\+object)=delete
 \item 
-\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \& \hyperlink{classmage_1_1_sprite_object_ab51df65f44159c6d0015894003661452}{operator=} (\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&sprite\+\_\+object)=default
+\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \& \hyperlink{classmage_1_1_sprite_object_a0d098954e6ef5b331b2b7e6f6cb3c21e}{operator=} (\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&sprite\+\_\+object)=delete
 \item 
-virtual \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $\ast$ \hyperlink{classmage_1_1_sprite_object_a556c1ffcf4015ba4f8a803974b53ca88}{Clone} () const =0
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ \hyperlink{classmage_1_1_sprite_object_a309befb66869a363a7243b7fe4d32f49}{Clone} () const
 \item 
 virtual void \hyperlink{classmage_1_1_sprite_object_a1c1c885fe7846f7ee1cc0b73571c2fa0}{Draw} (Sprite\+Batch \&sprite\+\_\+batch) const =0
 \item 
@@ -44,6 +44,11 @@ const Sprite\+Transform $\ast$ \hyperlink{classmage_1_1_sprite_object_a73733c89e
 \item 
 \hyperlink{classmage_1_1_sprite_object_ab4207c10cd0324cec9a278cd1dac5c46}{Sprite\+Object} (\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&sprite\+\_\+object)=default
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ \hyperlink{classmage_1_1_sprite_object_a7ae445af224769ee5e69c9468670a03f}{Clone\+Implementation} () const =0
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,6 +60,9 @@ string \hyperlink{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of sprite objects. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_sprite_object_a88c02e6af2ab79389de368dd9ba32930}{}\label{classmage_1_1_sprite_object_a88c02e6af2ab79389de368dd9ba32930} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!````~Sprite\+Object@{$\sim$\+Sprite\+Object}}
@@ -62,36 +70,75 @@ string \hyperlink{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480}
 \subsubsection{\texorpdfstring{$\sim$\+Sprite\+Object()}{~SpriteObject()}}
 {\footnotesize\ttfamily virtual mage\+::\+Sprite\+Object\+::$\sim$\+Sprite\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-\hypertarget{classmage_1_1_sprite_object_a1d487cfddfd6e3f60047f9316522ba8b}{}\label{classmage_1_1_sprite_object_a1d487cfddfd6e3f60047f9316522ba8b} 
+Destruct this sprite object. \hypertarget{classmage_1_1_sprite_object_a1d487cfddfd6e3f60047f9316522ba8b}{}\label{classmage_1_1_sprite_object_a1d487cfddfd6e3f60047f9316522ba8b} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Sprite\+Object@{Sprite\+Object}}
 \index{Sprite\+Object@{Sprite\+Object}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Sprite\+Object()}{SpriteObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Object\+::\+Sprite\+Object (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{Sprite\+Effect\+\_\+\+None}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
 
+Constructs a sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_object_ac75871029cd740aeb0dd3e23d037b703}{}\label{classmage_1_1_sprite_object_ac75871029cd740aeb0dd3e23d037b703} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Sprite\+Object@{Sprite\+Object}}
 \index{Sprite\+Object@{Sprite\+Object}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Sprite\+Object()}{SpriteObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Object\+::\+Sprite\+Object (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&}]{sprite\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
+Constructs a sprite object from the given sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+object} & A reference to the sprite object to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_object_ab4207c10cd0324cec9a278cd1dac5c46}{}\label{classmage_1_1_sprite_object_ab4207c10cd0324cec9a278cd1dac5c46} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Sprite\+Object@{Sprite\+Object}}
 \index{Sprite\+Object@{Sprite\+Object}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Sprite\+Object()}{SpriteObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Object\+::\+Sprite\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&}]{sprite\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
+Constructs a sprite object by moving the given sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+object} & A reference to the sprite object to move. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_sprite_object_a556c1ffcf4015ba4f8a803974b53ca88}{}\label{classmage_1_1_sprite_object_a556c1ffcf4015ba4f8a803974b53ca88} 
+\hypertarget{classmage_1_1_sprite_object_a309befb66869a363a7243b7fe4d32f49}{}\label{classmage_1_1_sprite_object_a309befb66869a363a7243b7fe4d32f49} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}$\ast$ mage\+::\+Sprite\+Object\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ mage\+::\+Sprite\+Object\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clones this sprite object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this sprite object. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_object_a7ae445af224769ee5e69c9468670a03f}{}\label{classmage_1_1_sprite_object_a7ae445af224769ee5e69c9468670a03f} 
+\index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Clone\+Implementation@{Clone\+Implementation}}
+\index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
+\subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ mage\+::\+Sprite\+Object\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+Clones this sprite object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this sprite object. 
+\end{DoxyReturn}
 
 
-
-Implemented in \hyperlink{classmage_1_1_sprite_image_abcb2aab6730c2bdb28ab1e95ae9e2933}{mage\+::\+Sprite\+Image}, \hyperlink{classmage_1_1_dropshadow_sprite_text_a116c49fb9638414c67a09501c4031a01}{mage\+::\+Dropshadow\+Sprite\+Text}, \hyperlink{classmage_1_1_outline_sprite_text_a095a8ef1603b9045cecb6fd1263243be}{mage\+::\+Outline\+Sprite\+Text}, \hyperlink{classmage_1_1_normal_sprite_text_aef48e90667849cd9ec01510baf1394cb}{mage\+::\+Normal\+Sprite\+Text}, and \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a}{mage\+::\+Sprite\+Text}.
+Implemented in \hyperlink{classmage_1_1_sprite_image_ab1261e3d33ef4de77523bd9c0920dd54}{mage\+::\+Sprite\+Image}, \hyperlink{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e}{mage\+::\+Sprite\+Text}, \hyperlink{classmage_1_1_dropshadow_sprite_text_a300716c6bd3a6087d3c637253cb61cc1}{mage\+::\+Dropshadow\+Sprite\+Text}, \hyperlink{classmage_1_1_outline_sprite_text_a90ed9cba10e082d6ce07dfa1b6189246}{mage\+::\+Outline\+Sprite\+Text}, and \hyperlink{classmage_1_1_normal_sprite_text_ae3e8cf71bdf82a4a9df15c00d5be8799}{mage\+::\+Normal\+Sprite\+Text}.
 
 \hypertarget{classmage_1_1_sprite_object_a1c1c885fe7846f7ee1cc0b73571c2fa0}{}\label{classmage_1_1_sprite_object_a1c1c885fe7846f7ee1cc0b73571c2fa0} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Draw@{Draw}}
@@ -99,6 +146,13 @@ Implemented in \hyperlink{classmage_1_1_sprite_image_abcb2aab6730c2bdb28ab1e95ae
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily virtual void mage\+::\+Sprite\+Object\+::\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Draws this sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch used for rendering this sprite object. \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \hyperlink{classmage_1_1_sprite_image_ae30d3293931f674fea17008063755bb6}{mage\+::\+Sprite\+Image}, \hyperlink{classmage_1_1_dropshadow_sprite_text_af76422c9812d7dc38e9b98e587103c67}{mage\+::\+Dropshadow\+Sprite\+Text}, \hyperlink{classmage_1_1_outline_sprite_text_a524e9ad1caeeeaa32405e61d1a5e1032}{mage\+::\+Outline\+Sprite\+Text}, \hyperlink{classmage_1_1_normal_sprite_text_ad2a1b02bea18afd6bf61b106a727a355}{mage\+::\+Normal\+Sprite\+Text}, and \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e}{mage\+::\+Sprite\+Text}.
@@ -109,48 +163,102 @@ Implemented in \hyperlink{classmage_1_1_sprite_image_ae30d3293931f674fea17008063
 \subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
 {\footnotesize\ttfamily const string\& mage\+::\+Sprite\+Object\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the name of this sprite object.
+
+\begin{DoxyReturn}{Returns}
+A reference to the name of this sprite object. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_object_af759fd1b68e2707b0f084da183e0b5f1}{}\label{classmage_1_1_sprite_object_af759fd1b68e2707b0f084da183e0b5f1} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Get\+Sprite\+Effects@{Get\+Sprite\+Effects}}
 \index{Get\+Sprite\+Effects@{Get\+Sprite\+Effects}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Get\+Sprite\+Effects()}{GetSpriteEffects()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} mage\+::\+Sprite\+Object\+::\+Get\+Sprite\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the sprite effects of this sprite object.
+
+\begin{DoxyReturn}{Returns}
+The sprite effects of this sprite object. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_object_ab48dfd7c6833067d67634bc89d7cb99c}{}\label{classmage_1_1_sprite_object_ab48dfd7c6833067d67634bc89d7cb99c} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Get\+Transform@{Get\+Transform}}
 \index{Get\+Transform@{Get\+Transform}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Sprite\+Transform$\ast$ mage\+::\+Sprite\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the transform of this sprite object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the transform of this sprite object. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_object_a73733c89ee3c47d0e8b8bb81a06bc48c}{}\label{classmage_1_1_sprite_object_a73733c89ee3c47d0e8b8bb81a06bc48c} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Get\+Transform@{Get\+Transform}}
 \index{Get\+Transform@{Get\+Transform}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const Sprite\+Transform$\ast$ mage\+::\+Sprite\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_sprite_object_ac3ff1a1763e7fee3d6461cfd121bd5b2}{}\label{classmage_1_1_sprite_object_ac3ff1a1763e7fee3d6461cfd121bd5b2} 
+Returns the transform of this sprite object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the transform of this sprite object. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_object_ab24af642e7c49a13ca5526248f106b4e}{}\label{classmage_1_1_sprite_object_ab24af642e7c49a13ca5526248f106b4e} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \& mage\+::\+Sprite\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&}]{sprite\+\_\+object }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}\& mage\+::\+Sprite\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&}]{sprite\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_sprite_object_ab51df65f44159c6d0015894003661452}{}\label{classmage_1_1_sprite_object_ab51df65f44159c6d0015894003661452} 
+Copies the given sprite object to this sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+object} & A reference to the sprite text to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite object (i.\+e. this sprite object). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_object_a0d098954e6ef5b331b2b7e6f6cb3c21e}{}\label{classmage_1_1_sprite_object_a0d098954e6ef5b331b2b7e6f6cb3c21e} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}\& mage\+::\+Sprite\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&}]{sprite\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}\& mage\+::\+Sprite\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} \&\&}]{sprite\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given sprite object to this sprite object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+object} & A reference to the sprite object to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved sprite object (i.\+e. this sprite object). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_object_a784cd7d61f3a9f71a521656ae3199366}{}\label{classmage_1_1_sprite_object_a784cd7d61f3a9f71a521656ae3199366} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Set\+Name@{Set\+Name}}
 \index{Set\+Name@{Set\+Name}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Object\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
 
+Sets the name of this sprite object to the given name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & A reference to the name. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_object_ad2eb556b5965d894e81cca96c5c0540b}{}\label{classmage_1_1_sprite_object_ad2eb556b5965d894e81cca96c5c0540b} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!Set\+Sprite\+Effects@{Set\+Sprite\+Effects}}
 \index{Set\+Sprite\+Effects@{Set\+Sprite\+Effects}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{Set\+Sprite\+Effects()}{SetSpriteEffects()}}
 {\footnotesize\ttfamily void mage\+::\+Sprite\+Object\+::\+Set\+Sprite\+Effects (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects }\end{DoxyParamCaption})}
 
+Sets the sprite effects of this sprite object to the given sprite effects.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em effects} & The sprite effects. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -160,15 +268,16 @@ Implemented in \hyperlink{classmage_1_1_sprite_image_ae30d3293931f674fea17008063
 \subsubsection{\texorpdfstring{m\+\_\+effects}{m\_effects}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} mage\+::\+Sprite\+Object\+::m\+\_\+effects\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480}{}\label{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480} 
+The sprite effects of this sprite object. \hypertarget{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480}{}\label{classmage_1_1_sprite_object_a6f2a859e40ed391909bb4c87a8b74480} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!m\+\_\+name@{m\+\_\+name}}
 \index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
 {\footnotesize\ttfamily string mage\+::\+Sprite\+Object\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_sprite_object_a9523ae6f081a8fde3cbb3558f6e327da}{}\label{classmage_1_1_sprite_object_a9523ae6f081a8fde3cbb3558f6e327da} 
+The name of this sprite object. \hypertarget{classmage_1_1_sprite_object_a9523ae6f081a8fde3cbb3558f6e327da}{}\label{classmage_1_1_sprite_object_a9523ae6f081a8fde3cbb3558f6e327da} 
 \index{mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}!m\+\_\+transform@{m\+\_\+transform}}
 \index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Sprite\+Object@{mage\+::\+Sprite\+Object}}
 \subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ Sprite\+Transform $>$ mage\+::\+Sprite\+Object\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
 
+A pointer to the sprite transform of this sprite object. 

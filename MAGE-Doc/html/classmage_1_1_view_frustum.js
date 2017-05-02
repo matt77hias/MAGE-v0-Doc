@@ -7,7 +7,5 @@ var classmage_1_1_view_frustum =
     [ "Encloses", "classmage_1_1_view_frustum.html#a290ee7b311278ed4701203859773aa42", null ],
     [ "operator=", "classmage_1_1_view_frustum.html#add514821f691117c0ab139c13f86ef70", null ],
     [ "operator=", "classmage_1_1_view_frustum.html#a0167f34c3ba505155ed6064c6d98a99c", null ],
-    [ "Overlaps", "classmage_1_1_view_frustum.html#ab45ef542b3bacf16390a8f223472bcd5", null ],
-    [ "Overlaps", "classmage_1_1_view_frustum.html#a302c7b49592bc9e5a297270da0c8b6ec", null ],
     [ "m_planes", "classmage_1_1_view_frustum.html#aa5d8b90bfc005bd19566983401ccd511", null ]
 ];

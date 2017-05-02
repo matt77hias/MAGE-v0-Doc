@@ -137,7 +137,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a78b0848a3aa92c338d2bc209996dd649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_resource_pool.html">ResourcePool</a>&lt; wstring, <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_factory.html#a78b0848a3aa92c338d2bc209996dd649">m_variable_script_resource_pool</a></td></tr>
 <tr class="separator:a78b0848a3aa92c338d2bc209996dd649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of resource factories. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a340bde81096427e319b60063ae771a0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a340bde81096427e319b60063ae771a0d">&sect;&nbsp;</a></span>ResourceFactory() <span class="overload">[1/3]</span></h2>
 
@@ -152,6 +154,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a resource factory. </p>
 
 </div>
 </div>
@@ -178,6 +181,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource factory from the given resource factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_factory</td><td>A reference to the resource factory to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -204,6 +214,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a resource factory by moving the given resource factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_factory</td><td>A reference to the resource factory to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -229,6 +246,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this resource factory. </p>
 
 </div>
 </div>
@@ -264,6 +282,23 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a sprite font (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desc</td><td>A reference to the sprite font descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the created sprite font. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the sprite font. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -292,6 +327,23 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a lambertian pixel shader (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the lambertian pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -320,6 +372,23 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a lambertian vertex shader (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the lambertian vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -362,6 +431,25 @@ template&lt;typename VertexT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a model descriptor (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desc</td><td>A reference to the mesh descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the model descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -390,6 +478,23 @@ template&lt;typename VertexT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a sprite pixel shader (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the sprite pixel shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -418,6 +523,23 @@ template&lt;typename VertexT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a sprite vertex shader (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the sprite vertex shader. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -446,6 +568,22 @@ template&lt;typename VertexT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a texture (if not existing).</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the created texture. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to create the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -474,6 +612,21 @@ template&lt;typename VertexT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates a variable script (if not existing).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename of the variable script. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">import</td><td>Flag indicating whether the variables of the variable script need to be imported. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the variable script. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to import the variable script from file (only possible if <em>import</em> is equal to <code>true</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -500,6 +653,14 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given resource factory to this resource factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_factory</td><td>A reference to the resource factory to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given resource factory (i.e. this resource factory). </dd></dl>
 
 </div>
 </div>
@@ -526,6 +687,14 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given resource factory to this resource factory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_factory</td><td>A reference to the resource factory to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved resource factory (i.e. this resource factory). </dd></dl>
 
 </div>
 </div>
@@ -549,6 +718,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the sprite font resource pool of this resource factory. </p>
 
 </div>
 </div>
@@ -571,6 +741,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the model descriptor resource pool of this resource factory. </p>
 
 </div>
 </div>
@@ -593,6 +764,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the pixel shader resource pool of this resource factory. </p>
 
 </div>
 </div>
@@ -615,6 +787,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the texture resource pool of this resource factory. </p>
 
 </div>
 </div>
@@ -637,6 +810,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the variable script resource pool of this resource factory. </p>
 
 </div>
 </div>
@@ -659,6 +833,7 @@ template&lt;typename VertexT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the vertex shader resource pool of this resource factory. </p>
 
 </div>
 </div>

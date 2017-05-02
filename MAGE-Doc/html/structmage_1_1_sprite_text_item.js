@@ -2,6 +2,8 @@ var structmage_1_1_sprite_text_item =
 [
     [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#a887e1db9520a6d08e77c554a863dfd47", null ],
     [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#a127d499a50f0dd11b3e3b6598f4b2088", null ],
+    [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#a561fe95a1dc7460c541eb456dc5fe599", null ],
+    [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#ac8d85cc26000205cfaf4c830cc02b0b9", null ],
     [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#ae5cbffcab97065bb719aafda3dd4ab5d", null ],
     [ "SpriteTextItem", "structmage_1_1_sprite_text_item.html#a63f6da078daaf11e0412ab242eb233ee", null ],
     [ "~SpriteTextItem", "structmage_1_1_sprite_text_item.html#a7e130ad6ffd67a6bae97cae676c6bbb0", null ],

@@ -6,8 +6,8 @@ var structmage_1_1_r_g_b_spectrum =
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a866ef0a3fe393f853d969e00a4c02086", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a7c87ee10a81c55b1954915c1abea0cb9", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#ad3307598d8156374483f66c0d3492b90", null ],
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#af2837c778d5aa9b065f5b8b0a039fa02", null ],
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#aa97e6d34ba6bd45c071b458ee7f69191", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a384140c69360958401c170d0a3565d97", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a0b4e081df4474826e0b124e74025f715", null ],
     [ "~RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a7c18a007349953b1e4711a4856680b02", null ],
     [ "operator=", "structmage_1_1_r_g_b_spectrum.html#ac4701cc62489d27130853c3ba667a767", null ],
     [ "operator=", "structmage_1_1_r_g_b_spectrum.html#a3a487cd0fcb35395c0979552dc551829", null ]

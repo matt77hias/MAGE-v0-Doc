@@ -21,16 +21,24 @@ Inheritance diagram for mage\+:\+:Normal\+Sprite\+Text\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_normal_sprite_text_a5ead5607cb41849419827ff231b4ea9d}{$\sim$\+Normal\+Sprite\+Text} ()=default
 \item 
-\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \& \hyperlink{classmage_1_1_normal_sprite_text_a1c0f30872c4d3114f1e53183958354e5}{operator=} (const \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \& \hyperlink{classmage_1_1_normal_sprite_text_ab7dbd2e71dcaef5d6b7b767afa8d7094}{operator=} (const \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&sprite\+\_\+text)=delete
 \item 
-\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \& \hyperlink{classmage_1_1_normal_sprite_text_a034dd8c1c084216a247896ffbe50e61d}{operator=} (\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&\&sprite\+\_\+text)=default
+\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \& \hyperlink{classmage_1_1_normal_sprite_text_a54cb023fad3b66dba35854ceaa50bc44}{operator=} (\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&\&sprite\+\_\+text)=delete
 \item 
-virtual \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} $\ast$ \hyperlink{classmage_1_1_normal_sprite_text_aef48e90667849cd9ec01510baf1394cb}{Clone} () const override
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} $>$ \hyperlink{classmage_1_1_normal_sprite_text_a1c50a15680ce4c62b948be4666871b2d}{Clone} () const
 \item 
 virtual void \hyperlink{classmage_1_1_normal_sprite_text_ad2a1b02bea18afd6bf61b106a727a355}{Draw} (Sprite\+Batch \&sprite\+\_\+batch) const override
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ \hyperlink{classmage_1_1_normal_sprite_text_ae3e8cf71bdf82a4a9df15c00d5be8799}{Clone\+Implementation} () const override
+\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+A class of normal sprite texts. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_normal_sprite_text_af91e5d22a02044c4159eefdc161c5dec}{}\label{classmage_1_1_normal_sprite_text_af91e5d22a02044c4159eefdc161c5dec} 
@@ -39,36 +47,80 @@ virtual void \hyperlink{classmage_1_1_normal_sprite_text_ad2a1b02bea18afd6bf61b1
 \subsubsection{\texorpdfstring{Normal\+Sprite\+Text()}{NormalSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Normal\+Sprite\+Text\+::\+Normal\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$}]{font,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881af3c275fbfacfe174da928b2f24dfa515}{Sprite\+Effect\+\_\+\+None}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+Constructs a normal sprite text.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily font.\+get()} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\mbox{\tt in}  & {\em font} & A pointer to the sprite font. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_normal_sprite_text_a3bd8f94a53caeb7ead9312da6b9b849a}{}\label{classmage_1_1_normal_sprite_text_a3bd8f94a53caeb7ead9312da6b9b849a} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!Normal\+Sprite\+Text@{Normal\+Sprite\+Text}}
 \index{Normal\+Sprite\+Text@{Normal\+Sprite\+Text}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Normal\+Sprite\+Text()}{NormalSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Normal\+Sprite\+Text\+::\+Normal\+Sprite\+Text (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a normal sprite text from the given normal sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the normal sprite text to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_normal_sprite_text_ae16d982e1d959b6b80f82610b07ec15b}{}\label{classmage_1_1_normal_sprite_text_ae16d982e1d959b6b80f82610b07ec15b} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!Normal\+Sprite\+Text@{Normal\+Sprite\+Text}}
 \index{Normal\+Sprite\+Text@{Normal\+Sprite\+Text}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Normal\+Sprite\+Text()}{NormalSpriteText()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Normal\+Sprite\+Text\+::\+Normal\+Sprite\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a normal sprite text by moving the given normal sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the normal sprite text to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_normal_sprite_text_a5ead5607cb41849419827ff231b4ea9d}{}\label{classmage_1_1_normal_sprite_text_a5ead5607cb41849419827ff231b4ea9d} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!````~Normal\+Sprite\+Text@{$\sim$\+Normal\+Sprite\+Text}}
 \index{````~Normal\+Sprite\+Text@{$\sim$\+Normal\+Sprite\+Text}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{$\sim$\+Normal\+Sprite\+Text()}{~NormalSpriteText()}}
 {\footnotesize\ttfamily virtual mage\+::\+Normal\+Sprite\+Text\+::$\sim$\+Normal\+Sprite\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Destructs this normal sprite text. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_normal_sprite_text_aef48e90667849cd9ec01510baf1394cb}{}\label{classmage_1_1_normal_sprite_text_aef48e90667849cd9ec01510baf1394cb} 
+\hypertarget{classmage_1_1_normal_sprite_text_a1c50a15680ce4c62b948be4666871b2d}{}\label{classmage_1_1_normal_sprite_text_a1c50a15680ce4c62b948be4666871b2d} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}$\ast$ mage\+::\+Normal\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} $>$ mage\+::\+Normal\+Sprite\+Text\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clones this normal sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this normal sprite text. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_normal_sprite_text_ae3e8cf71bdf82a4a9df15c00d5be8799}{}\label{classmage_1_1_normal_sprite_text_ae3e8cf71bdf82a4a9df15c00d5be8799} 
+\index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!Clone\+Implementation@{Clone\+Implementation}}
+\index{Clone\+Implementation@{Clone\+Implementation}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
+\subsubsection{\texorpdfstring{Clone\+Implementation()}{CloneImplementation()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ mage\+::\+Normal\+Sprite\+Text\+::\+Clone\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Clones this normal sprite text.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this normal sprite text. 
+\end{DoxyReturn}
 
 
-
-Implements \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637a}{mage\+::\+Sprite\+Text}.
+Implements \hyperlink{classmage_1_1_sprite_text_acf74e687f38c6253bf5851bc4548352e}{mage\+::\+Sprite\+Text}.
 
 \hypertarget{classmage_1_1_normal_sprite_text_ad2a1b02bea18afd6bf61b106a727a355}{}\label{classmage_1_1_normal_sprite_text_ad2a1b02bea18afd6bf61b106a727a355} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!Draw@{Draw}}
@@ -76,19 +128,46 @@ Implements \hyperlink{classmage_1_1_sprite_text_ac4edf927911a9fb8e5c3a674b217637
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily void mage\+::\+Normal\+Sprite\+Text\+::\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Draws this normal sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch used for rendering this normal sprite text. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classmage_1_1_sprite_text_a45d5ac8410d5a46b26e8491946a2ad9e}{mage\+::\+Sprite\+Text}.
 
-\hypertarget{classmage_1_1_normal_sprite_text_a1c0f30872c4d3114f1e53183958354e5}{}\label{classmage_1_1_normal_sprite_text_a1c0f30872c4d3114f1e53183958354e5} 
+\hypertarget{classmage_1_1_normal_sprite_text_ab7dbd2e71dcaef5d6b7b767afa8d7094}{}\label{classmage_1_1_normal_sprite_text_ab7dbd2e71dcaef5d6b7b767afa8d7094} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}\& mage\+::\+Normal\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}\& mage\+::\+Normal\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_normal_sprite_text_a034dd8c1c084216a247896ffbe50e61d}{}\label{classmage_1_1_normal_sprite_text_a034dd8c1c084216a247896ffbe50e61d} 
+Copies the given normal sprite text to this normal sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the normal sprite text to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given normal sprite text (i.\+e. this normal sprite text). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_normal_sprite_text_a54cb023fad3b66dba35854ceaa50bc44}{}\label{classmage_1_1_normal_sprite_text_a54cb023fad3b66dba35854ceaa50bc44} 
 \index{mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Normal\+Sprite\+Text@{mage\+::\+Normal\+Sprite\+Text}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}\& mage\+::\+Normal\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text}\& mage\+::\+Normal\+Sprite\+Text\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} \&\&}]{sprite\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given normal sprite text to this normal sprite text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+text} & A reference to the normal sprite text to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved normal sprite text (i.\+e. this normal sprite text). 
+\end{DoxyReturn}

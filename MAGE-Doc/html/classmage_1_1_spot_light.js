@@ -5,7 +5,7 @@ var classmage_1_1_spot_light =
     [ "SpotLight", "classmage_1_1_spot_light.html#a404e8f8f37100bff11042831ff22fe8f", null ],
     [ "~SpotLight", "classmage_1_1_spot_light.html#a924dd88ca89b3064d6cfce546eab322a", null ],
     [ "Clone", "classmage_1_1_spot_light.html#aa2c787093d1fc29d79c11ecab40f33fd", null ],
-    [ "CloneImplementation", "classmage_1_1_spot_light.html#a8329b021aeb7caeaa45f0bf06191ef9a", null ],
+    [ "CloneImplementation", "classmage_1_1_spot_light.html#a28af107205b30f115b5b722ea45bf366", null ],
     [ "GetEndAngualCutoff", "classmage_1_1_spot_light.html#ac04202c48cb4c12334f9f55757a3d73a", null ],
     [ "GetEndDistanceFalloff", "classmage_1_1_spot_light.html#a3e6767992846e17a9bebb66519c30f19", null ],
     [ "GetExponentProperty", "classmage_1_1_spot_light.html#aaff34ca166a8a129f461579869803aaa", null ],
