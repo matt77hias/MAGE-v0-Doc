@@ -2,8 +2,8 @@ var classmage_1_1_mouse_look_script =
 [
     [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#a23956bd4bd9541f6ea06b4dd561efb40", null ],
     [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#a54bd09419068ab61c4dd6fda412771d3", null ],
-    [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#ab922490b99932e26d27e256a71db9905", null ],
-    [ "~MouseLookScript", "classmage_1_1_mouse_look_script.html#afe4592321c71e9e64a9f355b1f9cd938", null ],
+    [ "MouseLookScript", "classmage_1_1_mouse_look_script.html#aaca52076bde601772344c61639345e03", null ],
+    [ "~MouseLookScript", "classmage_1_1_mouse_look_script.html#ac402a33218e69d3594102b606dd051dc", null ],
     [ "GetMaximumRotation", "classmage_1_1_mouse_look_script.html#a644a7b52eccd338aaa141e8a1016c4e2", null ],
     [ "GetMaximumRotationX", "classmage_1_1_mouse_look_script.html#a07b026b6cb84edfacba8c05dc550da80", null ],
     [ "GetMaximumRotationY", "classmage_1_1_mouse_look_script.html#a9d7ac7941846f4c47d65718faabf6dad", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['perspectivecameranode',['PerspectiveCameraNode',['../namespacemage.html#a4542f24699be53c2f30040ce575155a7',1,'mage']]]
+  ['resourcemap',['ResourceMap',['../namespacemage.html#a0b0a087ad59dd4aa0b4b538d8caec216',1,'mage']]]
 ];

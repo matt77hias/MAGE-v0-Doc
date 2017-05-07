@@ -2,8 +2,8 @@ var classmage_1_1_input_manager =
 [
     [ "InputManager", "classmage_1_1_input_manager.html#afc28df27a0251c242113a9761c007534", null ],
     [ "InputManager", "classmage_1_1_input_manager.html#a68503617f418bf270dc39bb18019b46d", null ],
-    [ "InputManager", "classmage_1_1_input_manager.html#a93de208333f18b4c61ec72d0a28d0d51", null ],
-    [ "~InputManager", "classmage_1_1_input_manager.html#afb025b87d9448365593bab11e6e775a2", null ],
+    [ "InputManager", "classmage_1_1_input_manager.html#ae9e37a3157c7880aa09226e56c4e97c4", null ],
+    [ "~InputManager", "classmage_1_1_input_manager.html#a287ca0e91ec079227c102f7eadd5bb46", null ],
     [ "GetKeyboard", "classmage_1_1_input_manager.html#a5b72139e30d1f3da6cda50f2989c1350", null ],
     [ "GetMouse", "classmage_1_1_input_manager.html#ad268916e07f44e40bf267efa0e673186", null ],
     [ "InitializeDI", "classmage_1_1_input_manager.html#aaee6f1acc558620d2cf6313f3eb36a35", null ],

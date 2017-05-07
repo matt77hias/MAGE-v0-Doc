@@ -11,7 +11,7 @@
 \item 
 \hyperlink{classmage_1_1_resource_factory_ac2d236ed7dc16f4ab87d9d8e95d78a94}{Resource\+Factory} (const \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \&resource\+\_\+factory)=delete
 \item 
-\hyperlink{classmage_1_1_resource_factory_a8c361dabc4f9d60ada1e59e6d412da2f}{Resource\+Factory} (\hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \&\&resource\+\_\+factory)=default
+\hyperlink{classmage_1_1_resource_factory_a492a4d018530a7e5dcdb3f7a2800b252}{Resource\+Factory} (\hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \&\&resource\+\_\+factory)
 \item 
 virtual \hyperlink{classmage_1_1_resource_factory_a58764dea5d6cd05405bd62366cc25681}{$\sim$\+Resource\+Factory} ()
 \item 
@@ -21,9 +21,9 @@ virtual \hyperlink{classmage_1_1_resource_factory_a58764dea5d6cd05405bd62366cc25
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{classmage_1_1_resource_factory_ae27d9c780713784afcd02726ce959b8c}{Create\+Model\+Descriptor} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_resource_factory_a2cb9e994452637df64991f48b52e84a6}{Create\+Lambertian\+Vertex\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_resource_factory_af2940e4c5b3d975a9b3a69cebbfaea42}{Create\+Basic\+Vertex\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const \hyperlink{structmage_1_1_compiled_vertex_shader}{Compiled\+Vertex\+Shader} \&compiled\+\_\+vertex\+\_\+shader)
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_resource_factory_a5df89f6980eee2e982e606549daf087f}{Create\+Lambertian\+Pixel\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_resource_factory_a7de0876328fdabd672cd7719f616dd0d}{Create\+Basic\+Pixel\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_resource_factory_a8210187f8255c95d9c3b7b86cefd5035}{Create\+Sprite\+Vertex\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
 \item 
@@ -75,7 +75,7 @@ Constructs a resource factory from the given resource factory.
 \mbox{\tt in}  & {\em resource\+\_\+factory} & A reference to the resource factory to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_resource_factory_a8c361dabc4f9d60ada1e59e6d412da2f}{}\label{classmage_1_1_resource_factory_a8c361dabc4f9d60ada1e59e6d412da2f} 
+\hypertarget{classmage_1_1_resource_factory_a492a4d018530a7e5dcdb3f7a2800b252}{}\label{classmage_1_1_resource_factory_a492a4d018530a7e5dcdb3f7a2800b252} 
 \index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Resource\+Factory@{Resource\+Factory}}
 \index{Resource\+Factory@{Resource\+Factory}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
 \subsubsection{\texorpdfstring{Resource\+Factory()}{ResourceFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
@@ -97,6 +97,66 @@ Constructs a resource factory by moving the given resource factory.
 Destructs this resource factory. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_resource_factory_a7de0876328fdabd672cd7719f616dd0d}{}\label{classmage_1_1_resource_factory_a7de0876328fdabd672cd7719f616dd0d} 
+\index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Create\+Basic\+Pixel\+Shader@{Create\+Basic\+Pixel\+Shader}}
+\index{Create\+Basic\+Pixel\+Shader@{Create\+Basic\+Pixel\+Shader}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Basic\+Pixel\+Shader()}{CreateBasicPixelShader()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ mage\+::\+Resource\+Factory\+::\+Create\+Basic\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})}
+
+Creates a basic pixel shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the basic pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the basic pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_resource_factory_af2940e4c5b3d975a9b3a69cebbfaea42}{}\label{classmage_1_1_resource_factory_af2940e4c5b3d975a9b3a69cebbfaea42} 
+\index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Create\+Basic\+Vertex\+Shader@{Create\+Basic\+Vertex\+Shader}}
+\index{Create\+Basic\+Vertex\+Shader@{Create\+Basic\+Vertex\+Shader}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Basic\+Vertex\+Shader()}{CreateBasicVertexShader()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Resource\+Factory\+::\+Create\+Basic\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_compiled_vertex_shader}{Compiled\+Vertex\+Shader} \&}]{compiled\+\_\+vertex\+\_\+shader }\end{DoxyParamCaption})}
+
+Creates a basic vertex shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+vertex\+\_\+shader} & A reference to the compiled vertex shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the basic vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the basic vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_resource_factory_a4f2e39f6195c13bd885c46b8d130bdfc}{}\label{classmage_1_1_resource_factory_a4f2e39f6195c13bd885c46b8d130bdfc} 
 \index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Create\+Font@{Create\+Font}}
 \index{Create\+Font@{Create\+Font}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
@@ -118,61 +178,11 @@ Creates a sprite font (if not existing).
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to the created sprite font. 
+A pointer to the sprite font. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite font. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_factory_a5df89f6980eee2e982e606549daf087f}{}\label{classmage_1_1_resource_factory_a5df89f6980eee2e982e606549daf087f} 
-\index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Create\+Lambertian\+Pixel\+Shader@{Create\+Lambertian\+Pixel\+Shader}}
-\index{Create\+Lambertian\+Pixel\+Shader@{Create\+Lambertian\+Pixel\+Shader}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
-\subsubsection{\texorpdfstring{Create\+Lambertian\+Pixel\+Shader()}{CreateLambertianPixelShader()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ mage\+::\+Resource\+Factory\+::\+Create\+Lambertian\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})}
-
-Creates a lambertian pixel shader (if not existing).
-
-\begin{DoxyPrecond}{Precondition}
-{\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the lambertian pixel shader. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_factory_a2cb9e994452637df64991f48b52e84a6}{}\label{classmage_1_1_resource_factory_a2cb9e994452637df64991f48b52e84a6} 
-\index{mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}!Create\+Lambertian\+Vertex\+Shader@{Create\+Lambertian\+Vertex\+Shader}}
-\index{Create\+Lambertian\+Vertex\+Shader@{Create\+Lambertian\+Vertex\+Shader}!mage\+::\+Resource\+Factory@{mage\+::\+Resource\+Factory}}
-\subsubsection{\texorpdfstring{Create\+Lambertian\+Vertex\+Shader()}{CreateLambertianVertexShader()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Resource\+Factory\+::\+Create\+Lambertian\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})}
-
-Creates a lambertian vertex shader (if not existing).
-
-\begin{DoxyPrecond}{Precondition}
-{\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the lambertian vertex shader. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_resource_factory_ae27d9c780713784afcd02726ce959b8c}{}\label{classmage_1_1_resource_factory_ae27d9c780713784afcd02726ce959b8c} 
@@ -200,6 +210,9 @@ Creates a model descriptor (if not existing).
 \mbox{\tt in}  & {\em desc} & A reference to the mesh descriptor. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the model descriptor. 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the model descriptor. \\
@@ -225,6 +238,9 @@ Creates a sprite pixel shader (if not existing).
 \mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite pixel shader. 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite pixel shader. \\
@@ -250,6 +266,9 @@ Creates a sprite vertex shader (if not existing).
 \mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite vertex shader. 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite vertex shader. \\
@@ -274,7 +293,7 @@ Creates a texture (if not existing).
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to the created texture. 
+A pointer to the texture. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}

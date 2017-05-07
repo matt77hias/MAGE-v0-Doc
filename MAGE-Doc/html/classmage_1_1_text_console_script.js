@@ -2,8 +2,8 @@ var classmage_1_1_text_console_script =
 [
     [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a5da87d9a6b1a70f31a9b906beb5587bc", null ],
     [ "TextConsoleScript", "classmage_1_1_text_console_script.html#ad31e204ced04dc42fb98397df6015198", null ],
-    [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a943505106aab31bc54a46b309ffd3d14", null ],
-    [ "~TextConsoleScript", "classmage_1_1_text_console_script.html#a298036ec7ac4fcab9a177d6d3911ff81", null ],
+    [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a6d245efb103011f1b2e2c43c590c22bf", null ],
+    [ "~TextConsoleScript", "classmage_1_1_text_console_script.html#a3269d6b792053d4ce13d63103ca5b4e9", null ],
     [ "Clear", "classmage_1_1_text_console_script.html#aff5acec462f505735720a17d541ba912", null ],
     [ "Format", "classmage_1_1_text_console_script.html#a4d9ba97e4ff4ad5390b20e5523a20e92", null ],
     [ "GetTransform", "classmage_1_1_text_console_script.html#a4ca556738d1a1892944c6973442c4d22", null ],

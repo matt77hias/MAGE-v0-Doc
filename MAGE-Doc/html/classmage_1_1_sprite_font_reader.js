@@ -2,8 +2,8 @@ var classmage_1_1_sprite_font_reader =
 [
     [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#ab257bc3c1f787182c14da56545ff6d10", null ],
     [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#a81f2b8ceab31ea5006d2bef498a03bbc", null ],
-    [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#a2130816e03384c99af146a21795ac5e8", null ],
-    [ "~SpriteFontReader", "classmage_1_1_sprite_font_reader.html#a296715f88672f810a6e4b74f74840c53", null ],
+    [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#aa75a98a2573636fa9e1cde4fbe9c1b93", null ],
+    [ "~SpriteFontReader", "classmage_1_1_sprite_font_reader.html#ac2c18498abf115d296c0314845562481", null ],
     [ "IsHeaderValid", "classmage_1_1_sprite_font_reader.html#aa6dd3fc28e531d6db6ecda6ce3535d4c", null ],
     [ "operator=", "classmage_1_1_sprite_font_reader.html#a4de55b4bebfabb5f1c32078864baef11", null ],
     [ "operator=", "classmage_1_1_sprite_font_reader.html#aae3c6305ea97146bd85b2d93a037d47d", null ],

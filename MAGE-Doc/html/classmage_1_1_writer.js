@@ -1,9 +1,9 @@
 var classmage_1_1_writer =
 [
-    [ "~Writer", "classmage_1_1_writer.html#a04fe27246806384099d518231c75c09f", null ],
+    [ "~Writer", "classmage_1_1_writer.html#aeeb30d6afb1a271b4ad294889054caec", null ],
     [ "Writer", "classmage_1_1_writer.html#a40b6cd3005d509e670c5a49272d9ef27", null ],
     [ "Writer", "classmage_1_1_writer.html#a2b257938508732ca0b78241aafa7922c", null ],
-    [ "Writer", "classmage_1_1_writer.html#a3b55e6b0202cdf8fb582c900c493b3fe", null ],
+    [ "Writer", "classmage_1_1_writer.html#a2581e06e581aed84ee2d3c6a82c7cf58", null ],
     [ "GetFilename", "classmage_1_1_writer.html#aa874f2ee6cdd6663078d213f10d984f1", null ],
     [ "operator=", "classmage_1_1_writer.html#a81ea888d1b170515713432ca28629ceb", null ],
     [ "operator=", "classmage_1_1_writer.html#aefbdd9a659983b543358cc8277ab890c", null ],

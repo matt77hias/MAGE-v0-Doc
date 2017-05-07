@@ -3,7 +3,7 @@ var classmage_1_1_memory_arena =
     [ "MemoryBlock", "classmage_1_1_memory_arena.html#a6026a114bb2ecc405dd5ebf54e4c12d5", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#ac90beb8cf8dc42944a0fd6a4a9e8355c", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
-    [ "MemoryArena", "classmage_1_1_memory_arena.html#a55394fdcf83f260fec0af55e0b3a4a53", null ],
+    [ "MemoryArena", "classmage_1_1_memory_arena.html#a98829c5a87ba028c376f100cca09e876", null ],
     [ "~MemoryArena", "classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a2e63b11c535dbfefd69d071466be9ce1", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a6797843db400848170d0b448a8a7e3b5", null ],

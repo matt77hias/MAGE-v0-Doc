@@ -2,8 +2,8 @@ var classmage_1_1_frame_rate_script =
 [
     [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#a8ef13ffd08a684cbc2010b0e4594d4cf", null ],
     [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#a2c76a1ce175c5c5370582d7ccb878132", null ],
-    [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#ae33867928ee55a1b9babc5fbdd2daef9", null ],
-    [ "~FrameRateScript", "classmage_1_1_frame_rate_script.html#af91b69dbb1b583e8e9cca24e7aa72f5d", null ],
+    [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#af2cb69b7338169598b80938e9ad77cdd", null ],
+    [ "~FrameRateScript", "classmage_1_1_frame_rate_script.html#a0863d9339500e10d988dd574448c28f3", null ],
     [ "GetTransform", "classmage_1_1_frame_rate_script.html#a23f833cb5a8b78fb38a47ac0db2305a8", null ],
     [ "GetTransform", "classmage_1_1_frame_rate_script.html#ab257acb42811f46fcb2aa90781dcdc28", null ],
     [ "operator=", "classmage_1_1_frame_rate_script.html#a2077ec2facadcde117a20d18e2f0e9b7", null ],

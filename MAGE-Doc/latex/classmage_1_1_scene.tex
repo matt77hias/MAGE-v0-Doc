@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classmage_1_1_scene_a0db784091e75a472b20088ba7f1c2b26}{$\sim$\+Scene} ()=default
+virtual \hyperlink{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c}{$\sim$\+Scene} ()
 \item 
 \hyperlink{classmage_1_1_scene}{Scene} \& \hyperlink{classmage_1_1_scene_a2c25c0fedc0230771d8c00a8288a69ce}{operator=} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene)=delete
 \item 
@@ -17,9 +17,29 @@ const string \& \hyperlink{classmage_1_1_scene_a251ff8f6ce0da5c55ee31e3450b5fb9a
 \item 
 void \hyperlink{classmage_1_1_scene_a9b7c1c2f84cc3b3c5ff3de4f29d830e9}{Set\+Name} (const string \&name)
 \item 
-\hyperlink{classmage_1_1_world}{World} $\ast$ \hyperlink{classmage_1_1_scene_abade558e953a062b5040f48d8e7371f4}{Get\+World} ()
+void \hyperlink{classmage_1_1_scene_a3cd12ef381ca743bf0b8f8aa2a76eb57}{Initialize} ()
 \item 
-const \hyperlink{classmage_1_1_world}{World} $\ast$ \hyperlink{classmage_1_1_scene_a0438504884c566e0d6264436b78ee764}{Get\+World} () const
+void \hyperlink{classmage_1_1_scene_aa10e6eafc00834f63f146589326cbfe2}{Update} (double delta\+\_\+time)
+\item 
+void \hyperlink{classmage_1_1_scene_a53487349d68f0ffcc91b243d0cfb86a3}{Render2D} () const
+\item 
+void \hyperlink{classmage_1_1_scene_a51d2d441067d30cf3a444d6a80811f93}{Render3D} () const
+\item 
+void \hyperlink{classmage_1_1_scene_a714dc33c04dc2b8e2cec93564905b174}{Uninitialize} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ \hyperlink{classmage_1_1_scene_a4ce734c571a4ac2fc564cf1c641e7820}{Get\+Camera} () const
+\item 
+void \hyperlink{classmage_1_1_scene_a7568ec0884d04812af2f70990c8ec80d}{Set\+Camera} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ camera)
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a2ba71e84d4a4fb1e4a7160800c53f519}{Orthographic\+Camera\+Node} $>$ \hyperlink{classmage_1_1_scene_a9ed9e3a611434f62427c7bd4c16d2456}{Create\+Orthographic\+Camera\+Node} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_af3a338f28772b91cf6d7cb85df6f4bb9}{Perspective\+Camera\+Node} $>$ \hyperlink{classmage_1_1_scene_a3f4141d407133e6419af92376bc3ecc1}{Create\+Perspective\+Camera\+Node} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ \hyperlink{classmage_1_1_scene_a370f5ce63a6277a1369c1545f0acbffa}{Create\+Omni\+Light\+Node} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ \hyperlink{classmage_1_1_scene_a27ffb510eeb8e208ba20ee0d76138a3f}{Create\+Spot\+Light\+Node} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ \hyperlink{classmage_1_1_scene_a8ff21b5512cfbc053d96882a5d30996e}{Create\+Model\+Node} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc, const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \&shader=\hyperlink{namespacemage_a91a20907d6a7a77bdd768dbd0bc420c5}{Create\+Lambertian\+Shader}())
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_scene_a799ac8ddd90d24f6c3c208942e4f159c}{Get\+Number\+Of\+Scripts} () const
 \item 
@@ -33,15 +53,13 @@ void \hyperlink{classmage_1_1_scene_a04b6e0b4d9ca18d15d3da098e581d336}{Remove\+A
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_a4d16d973adce12868b9a0df9d92ef6d6}{For\+Each\+Script} (ActionT action) const
 \item 
-void \hyperlink{classmage_1_1_scene_a3cd12ef381ca743bf0b8f8aa2a76eb57}{Initialize} ()
+void \hyperlink{classmage_1_1_scene_a735a4eba6bf6a072195f1cfc58dfca47}{Add\+Sprite} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ sprite)
 \item 
-void \hyperlink{classmage_1_1_scene_aa10e6eafc00834f63f146589326cbfe2}{Update} (double delta\+\_\+time)
+void \hyperlink{classmage_1_1_scene_a6d886d48157b9988ab61cc9b01ee752e}{Remove\+Sprite} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ sprite)
 \item 
-void \hyperlink{classmage_1_1_scene_a53487349d68f0ffcc91b243d0cfb86a3}{Render2D} () const
+void \hyperlink{classmage_1_1_scene_aad8b532e9c127fd216ca9db9ad9f3420}{Remove\+All\+Sprites} ()
 \item 
-void \hyperlink{classmage_1_1_scene_a51d2d441067d30cf3a444d6a80811f93}{Render3D} () const
-\item 
-void \hyperlink{classmage_1_1_scene_a714dc33c04dc2b8e2cec93564905b174}{Uninitialize} ()
+{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_ae181b160f9a75593db9f551c9c233329}{For\+Each\+Sprite} (ActionT action) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -58,24 +76,68 @@ void \hyperlink{classmage_1_1_scene_a714dc33c04dc2b8e2cec93564905b174}{Uninitial
 virtual void \hyperlink{classmage_1_1_scene_a1fb4a93eaa2f6a9e20594e205abb9a32}{Load} ()
 \item 
 virtual void \hyperlink{classmage_1_1_scene_a16786d7fcf0b813e2e94061b082cfd1d}{Close} ()
+\item 
+void \hyperlink{classmage_1_1_scene_a916cc7a0867bf1c09e5d10de53192140}{Clear} ()
+\item 
+void \hyperlink{classmage_1_1_scene_acfd5cf0484e1814cb265604ed970335f}{Add\+Model} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ model)
+\item 
+void \hyperlink{classmage_1_1_scene_a1b66a3d247eaa143234d15d72aa67a85}{Remove\+Model} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ model)
+\item 
+void \hyperlink{classmage_1_1_scene_a5dffc6ff3e40981087cbfc2462e5b84a}{Remove\+All\+Models} ()
+\item 
+{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_a6327548021f874f22a1adc81cfc8a1ea}{For\+Each\+Model} (ActionT action) const
+\item 
+void \hyperlink{classmage_1_1_scene_a6ce8182afe3c1f39249ec08b62aee317}{Add\+Light} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ light)
+\item 
+void \hyperlink{classmage_1_1_scene_aeeba74ee789d4917ed72b179f16c1222}{Add\+Light} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ light)
+\item 
+void \hyperlink{classmage_1_1_scene_a1da46b19f87d387af18d2f7fc37bb6d7}{Remove\+Light} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ light)
+\item 
+void \hyperlink{classmage_1_1_scene_a371c31d030990b9fa641271c4c733d87}{Remove\+Light} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ light)
+\item 
+void \hyperlink{classmage_1_1_scene_acde7e343459ea1444f2b0f7bbb3e1882}{Remove\+All\+Lights} ()
+\item 
+{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_acd71cef84ec39e63852d5918c7b17863}{For\+Each\+Omni\+Light} (ActionT action) const
+\item 
+{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_a51bb697a9d96891bb7502317efff7ec1}{For\+Each\+Spot\+Light} (ActionT action) const
+\item 
+{\footnotesize template$<$typename ActionT $>$ }\\void \hyperlink{classmage_1_1_scene_a131c27235c6f172a316c56fea7f2e80c}{For\+Each\+Light} (ActionT action) const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 string \hyperlink{classmage_1_1_scene_a6cc8cb08b1853c4e3063b33a94e8fb47}{m\+\_\+name}
 \item 
-\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_world}{World} $>$ \hyperlink{classmage_1_1_scene_a0d06149d881166497bf75ae2288bf960}{m\+\_\+world}
-\item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$ $>$ \hyperlink{classmage_1_1_scene_a84548bf6978f8955ce5892cb23536a4e}{m\+\_\+scripts}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ \hyperlink{classmage_1_1_scene_a39c785951d9fb99477c1894eabba0cc6}{m\+\_\+camera}
+\item 
+vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a01132a667fbc1517f11ae561bc221071}{m\+\_\+models}
+\item 
+vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a881c3dd7e85e5069650f29fd2722bf78}{m\+\_\+omni\+\_\+lights}
+\item 
+vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75}{m\+\_\+spot\+\_\+lights}
+\item 
+vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ $>$ \hyperlink{classmage_1_1_scene_a7379b399f02999f89f6ccda5bfa01b02}{m\+\_\+sprites}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ Sprite\+Batch $>$ \hyperlink{classmage_1_1_scene_a7a334e1b7764532817f10efbc0b91a82}{m\+\_\+sprite\+\_\+batch}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Transform\+Buffer $>$ \hyperlink{classmage_1_1_scene_a2e57c981725d0a64bfc8f82381ac3d6a}{m\+\_\+transform\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Light\+Data\+Buffer $>$ \hyperlink{classmage_1_1_scene_aa74ca1637e0a88546135d64bf3614f29}{m\+\_\+light\+\_\+data\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Omni\+Light\+Buffer $>$ \hyperlink{classmage_1_1_scene_a274ed5e548431ba805513a86a00bbaf1}{m\+\_\+omni\+\_\+lights\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Spot\+Light\+Buffer $>$ \hyperlink{classmage_1_1_scene_a64118c052d728ac988031898fd2d757d}{m\+\_\+spot\+\_\+lights\+\_\+buffer}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_scene_a0db784091e75a472b20088ba7f1c2b26}{}\label{classmage_1_1_scene_a0db784091e75a472b20088ba7f1c2b26} 
+\hypertarget{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c}{}\label{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!````~Scene@{$\sim$\+Scene}}
 \index{````~Scene@{$\sim$\+Scene}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{$\sim$\+Scene()}{~Scene()}}
-{\footnotesize\ttfamily virtual mage\+::\+Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \hypertarget{classmage_1_1_scene_aab61b38547fc53aa9c5b3b559f4d2e26}{}\label{classmage_1_1_scene_aab61b38547fc53aa9c5b3b559f4d2e26} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Scene@{Scene}}
@@ -98,11 +160,41 @@ vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Pt
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_scene_a6ce8182afe3c1f39249ec08b62aee317}{}\label{classmage_1_1_scene_a6ce8182afe3c1f39249ec08b62aee317} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Add\+Light@{Add\+Light}}
+\index{Add\+Light@{Add\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Add\+Light()}{AddLight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Add\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_aeeba74ee789d4917ed72b179f16c1222}{}\label{classmage_1_1_scene_aeeba74ee789d4917ed72b179f16c1222} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Add\+Light@{Add\+Light}}
+\index{Add\+Light@{Add\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Add\+Light()}{AddLight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Add\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_acfd5cf0484e1814cb265604ed970335f}{}\label{classmage_1_1_scene_acfd5cf0484e1814cb265604ed970335f} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Add\+Model@{Add\+Model}}
+\index{Add\+Model@{Add\+Model}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Add\+Model()}{AddModel()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Add\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \hypertarget{classmage_1_1_scene_ab97b66c81c32681699052e154d0e0722}{}\label{classmage_1_1_scene_ab97b66c81c32681699052e154d0e0722} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Add\+Script@{Add\+Script}}
 \index{Add\+Script@{Add\+Script}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{Add\+Script()}{AddScript()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+::\+Add\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$}]{script }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a735a4eba6bf6a072195f1cfc58dfca47}{}\label{classmage_1_1_scene_a735a4eba6bf6a072195f1cfc58dfca47} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Add\+Sprite@{Add\+Sprite}}
+\index{Add\+Sprite@{Add\+Sprite}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Add\+Sprite()}{AddSprite()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Add\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$}]{sprite }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a916cc7a0867bf1c09e5d10de53192140}{}\label{classmage_1_1_scene_a916cc7a0867bf1c09e5d10de53192140} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Clear@{Clear}}
+\index{Clear@{Clear}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_scene_a16786d7fcf0b813e2e94061b082cfd1d}{}\label{classmage_1_1_scene_a16786d7fcf0b813e2e94061b082cfd1d} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Close@{Close}}
@@ -110,12 +202,83 @@ vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Pt
 \subsubsection{\texorpdfstring{Close()}{Close()}}
 {\footnotesize\ttfamily virtual void mage\+::\+Scene\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
 
-Closes this scene. Allows this scene to preform any post-\/processing destruction. \hypertarget{classmage_1_1_scene_a4d16d973adce12868b9a0df9d92ef6d6}{}\label{classmage_1_1_scene_a4d16d973adce12868b9a0df9d92ef6d6} 
+Closes this scene. Allows this scene to preform any post-\/processing destruction. \hypertarget{classmage_1_1_scene_a8ff21b5512cfbc053d96882a5d30996e}{}\label{classmage_1_1_scene_a8ff21b5512cfbc053d96882a5d30996e} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create\+Model\+Node@{Create\+Model\+Node}}
+\index{Create\+Model\+Node@{Create\+Model\+Node}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create\+Model\+Node()}{CreateModelNode()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ mage\+::\+Scene\+::\+Create\+Model\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&}]{desc,  }\item[{const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \&}]{shader = {\ttfamily \hyperlink{namespacemage_a91a20907d6a7a77bdd768dbd0bc420c5}{Create\+Lambertian\+Shader}()} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a370f5ce63a6277a1369c1545f0acbffa}{}\label{classmage_1_1_scene_a370f5ce63a6277a1369c1545f0acbffa} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create\+Omni\+Light\+Node@{Create\+Omni\+Light\+Node}}
+\index{Create\+Omni\+Light\+Node@{Create\+Omni\+Light\+Node}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create\+Omni\+Light\+Node()}{CreateOmniLightNode()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ mage\+::\+Scene\+::\+Create\+Omni\+Light\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a9ed9e3a611434f62427c7bd4c16d2456}{}\label{classmage_1_1_scene_a9ed9e3a611434f62427c7bd4c16d2456} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create\+Orthographic\+Camera\+Node@{Create\+Orthographic\+Camera\+Node}}
+\index{Create\+Orthographic\+Camera\+Node@{Create\+Orthographic\+Camera\+Node}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create\+Orthographic\+Camera\+Node()}{CreateOrthographicCameraNode()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a2ba71e84d4a4fb1e4a7160800c53f519}{Orthographic\+Camera\+Node} $>$ mage\+::\+Scene\+::\+Create\+Orthographic\+Camera\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a3f4141d407133e6419af92376bc3ecc1}{}\label{classmage_1_1_scene_a3f4141d407133e6419af92376bc3ecc1} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create\+Perspective\+Camera\+Node@{Create\+Perspective\+Camera\+Node}}
+\index{Create\+Perspective\+Camera\+Node@{Create\+Perspective\+Camera\+Node}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create\+Perspective\+Camera\+Node()}{CreatePerspectiveCameraNode()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_af3a338f28772b91cf6d7cb85df6f4bb9}{Perspective\+Camera\+Node} $>$ mage\+::\+Scene\+::\+Create\+Perspective\+Camera\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a27ffb510eeb8e208ba20ee0d76138a3f}{}\label{classmage_1_1_scene_a27ffb510eeb8e208ba20ee0d76138a3f} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create\+Spot\+Light\+Node@{Create\+Spot\+Light\+Node}}
+\index{Create\+Spot\+Light\+Node@{Create\+Spot\+Light\+Node}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create\+Spot\+Light\+Node()}{CreateSpotLightNode()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ mage\+::\+Scene\+::\+Create\+Spot\+Light\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a131c27235c6f172a316c56fea7f2e80c}{}\label{classmage_1_1_scene_a131c27235c6f172a316c56fea7f2e80c} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Light@{For\+Each\+Light}}
+\index{For\+Each\+Light@{For\+Each\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each\+Light()}{ForEachLight()}}
+{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each\+Light (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a6327548021f874f22a1adc81cfc8a1ea}{}\label{classmage_1_1_scene_a6327548021f874f22a1adc81cfc8a1ea} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Model@{For\+Each\+Model}}
+\index{For\+Each\+Model@{For\+Each\+Model}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each\+Model()}{ForEachModel()}}
+{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each\+Model (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_acd71cef84ec39e63852d5918c7b17863}{}\label{classmage_1_1_scene_acd71cef84ec39e63852d5918c7b17863} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Omni\+Light@{For\+Each\+Omni\+Light}}
+\index{For\+Each\+Omni\+Light@{For\+Each\+Omni\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each\+Omni\+Light()}{ForEachOmniLight()}}
+{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each\+Omni\+Light (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a4d16d973adce12868b9a0df9d92ef6d6}{}\label{classmage_1_1_scene_a4d16d973adce12868b9a0df9d92ef6d6} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Script@{For\+Each\+Script}}
 \index{For\+Each\+Script@{For\+Each\+Script}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{For\+Each\+Script()}{ForEachScript()}}
 {\footnotesize\ttfamily template$<$typename ActionT $>$ \\
 void mage\+::\+Scene\+::\+For\+Each\+Script (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_scene_a51bb697a9d96891bb7502317efff7ec1}{}\label{classmage_1_1_scene_a51bb697a9d96891bb7502317efff7ec1} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Spot\+Light@{For\+Each\+Spot\+Light}}
+\index{For\+Each\+Spot\+Light@{For\+Each\+Spot\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each\+Spot\+Light()}{ForEachSpotLight()}}
+{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each\+Spot\+Light (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_ae181b160f9a75593db9f551c9c233329}{}\label{classmage_1_1_scene_ae181b160f9a75593db9f551c9c233329} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each\+Sprite@{For\+Each\+Sprite}}
+\index{For\+Each\+Sprite@{For\+Each\+Sprite}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each\+Sprite()}{ForEachSprite()}}
+{\footnotesize\ttfamily template$<$typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each\+Sprite (\begin{DoxyParamCaption}\item[{ActionT}]{action }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_scene_a4ce734c571a4ac2fc564cf1c641e7820}{}\label{classmage_1_1_scene_a4ce734c571a4ac2fc564cf1c641e7820} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ mage\+::\+Scene\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \hypertarget{classmage_1_1_scene_a251ff8f6ce0da5c55ee31e3450b5fb9a}{}\label{classmage_1_1_scene_a251ff8f6ce0da5c55ee31e3450b5fb9a} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+Name@{Get\+Name}}
@@ -128,18 +291,6 @@ void mage\+::\+Scene\+::\+For\+Each\+Script (\begin{DoxyParamCaption}\item[{Acti
 \index{Get\+Number\+Of\+Scripts@{Get\+Number\+Of\+Scripts}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{Get\+Number\+Of\+Scripts()}{GetNumberOfScripts()}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Scene\+::\+Get\+Number\+Of\+Scripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-\hypertarget{classmage_1_1_scene_abade558e953a062b5040f48d8e7371f4}{}\label{classmage_1_1_scene_abade558e953a062b5040f48d8e7371f4} 
-\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+World@{Get\+World}}
-\index{Get\+World@{Get\+World}!mage\+::\+Scene@{mage\+::\+Scene}}
-\subsubsection{\texorpdfstring{Get\+World()}{GetWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_world}{World}$\ast$ mage\+::\+Scene\+::\+Get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\hypertarget{classmage_1_1_scene_a0438504884c566e0d6264436b78ee764}{}\label{classmage_1_1_scene_a0438504884c566e0d6264436b78ee764} 
-\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+World@{Get\+World}}
-\index{Get\+World@{Get\+World}!mage\+::\+Scene@{mage\+::\+Scene}}
-\subsubsection{\texorpdfstring{Get\+World()}{GetWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \hyperlink{classmage_1_1_world}{World}$\ast$ mage\+::\+Scene\+::\+Get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \hypertarget{classmage_1_1_scene_a9dd6c49e9db7590de1de4fbd128c78a9}{}\label{classmage_1_1_scene_a9dd6c49e9db7590de1de4fbd128c78a9} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Has\+Script@{Has\+Script}}
@@ -171,17 +322,59 @@ Loads this scene. Allows this scene to preform any pre-\/processing construction
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_scene}{Scene}\& mage\+::\+Scene\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_scene}{Scene} \&\&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+\hypertarget{classmage_1_1_scene_acde7e343459ea1444f2b0f7bbb3e1882}{}\label{classmage_1_1_scene_acde7e343459ea1444f2b0f7bbb3e1882} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+All\+Lights@{Remove\+All\+Lights}}
+\index{Remove\+All\+Lights@{Remove\+All\+Lights}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+All\+Lights()}{RemoveAllLights()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+All\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a5dffc6ff3e40981087cbfc2462e5b84a}{}\label{classmage_1_1_scene_a5dffc6ff3e40981087cbfc2462e5b84a} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+All\+Models@{Remove\+All\+Models}}
+\index{Remove\+All\+Models@{Remove\+All\+Models}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+All\+Models()}{RemoveAllModels()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+All\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \hypertarget{classmage_1_1_scene_a04b6e0b4d9ca18d15d3da098e581d336}{}\label{classmage_1_1_scene_a04b6e0b4d9ca18d15d3da098e581d336} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+All\+Scripts@{Remove\+All\+Scripts}}
 \index{Remove\+All\+Scripts@{Remove\+All\+Scripts}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{Remove\+All\+Scripts()}{RemoveAllScripts()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+All\+Scripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\hypertarget{classmage_1_1_scene_aad8b532e9c127fd216ca9db9ad9f3420}{}\label{classmage_1_1_scene_aad8b532e9c127fd216ca9db9ad9f3420} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+All\+Sprites@{Remove\+All\+Sprites}}
+\index{Remove\+All\+Sprites@{Remove\+All\+Sprites}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+All\+Sprites()}{RemoveAllSprites()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+All\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a1da46b19f87d387af18d2f7fc37bb6d7}{}\label{classmage_1_1_scene_a1da46b19f87d387af18d2f7fc37bb6d7} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+Light@{Remove\+Light}}
+\index{Remove\+Light@{Remove\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+Light()}{RemoveLight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a371c31d030990b9fa641271c4c733d87}{}\label{classmage_1_1_scene_a371c31d030990b9fa641271c4c733d87} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+Light@{Remove\+Light}}
+\index{Remove\+Light@{Remove\+Light}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+Light()}{RemoveLight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a1b66a3d247eaa143234d15d72aa67a85}{}\label{classmage_1_1_scene_a1b66a3d247eaa143234d15d72aa67a85} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+Model@{Remove\+Model}}
+\index{Remove\+Model@{Remove\+Model}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+Model()}{RemoveModel()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \hypertarget{classmage_1_1_scene_a82705ba56543dea410439760b1667bc5}{}\label{classmage_1_1_scene_a82705ba56543dea410439760b1667bc5} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+Script@{Remove\+Script}}
 \index{Remove\+Script@{Remove\+Script}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{Remove\+Script()}{RemoveScript()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$}]{script }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a6d886d48157b9988ab61cc9b01ee752e}{}\label{classmage_1_1_scene_a6d886d48157b9988ab61cc9b01ee752e} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Remove\+Sprite@{Remove\+Sprite}}
+\index{Remove\+Sprite@{Remove\+Sprite}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Remove\+Sprite()}{RemoveSprite()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Remove\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$}]{sprite }\end{DoxyParamCaption})}
 
 \hypertarget{classmage_1_1_scene_a53487349d68f0ffcc91b243d0cfb86a3}{}\label{classmage_1_1_scene_a53487349d68f0ffcc91b243d0cfb86a3} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Render2D@{Render2D}}
@@ -195,7 +388,13 @@ Renders this scene. \hypertarget{classmage_1_1_scene_a51d2d441067d30cf3a444d6a80
 \subsubsection{\texorpdfstring{Render3\+D()}{Render3D()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+::\+Render3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Renders this scene. \hypertarget{classmage_1_1_scene_a9b7c1c2f84cc3b3c5ff3de4f29d830e9}{}\label{classmage_1_1_scene_a9b7c1c2f84cc3b3c5ff3de4f29d830e9} 
+Renders this scene. \hypertarget{classmage_1_1_scene_a7568ec0884d04812af2f70990c8ec80d}{}\label{classmage_1_1_scene_a7568ec0884d04812af2f70990c8ec80d} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Set\+Camera@{Set\+Camera}}
+\index{Set\+Camera@{Set\+Camera}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Set\+Camera()}{SetCamera()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Set\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$}]{camera }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_a9b7c1c2f84cc3b3c5ff3de4f29d830e9}{}\label{classmage_1_1_scene_a9b7c1c2f84cc3b3c5ff3de4f29d830e9} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Set\+Name@{Set\+Name}}
 \index{Set\+Name@{Set\+Name}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
@@ -223,11 +422,41 @@ Updates this scene.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_scene_a39c785951d9fb99477c1894eabba0cc6}{}\label{classmage_1_1_scene_a39c785951d9fb99477c1894eabba0cc6} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+camera@{m\+\_\+camera}}
+\index{m\+\_\+camera@{m\+\_\+camera}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+camera}{m\_camera}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ mage\+::\+Scene\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_aa74ca1637e0a88546135d64bf3614f29}{}\label{classmage_1_1_scene_aa74ca1637e0a88546135d64bf3614f29} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+light\+\_\+data\+\_\+buffer@{m\+\_\+light\+\_\+data\+\_\+buffer}}
+\index{m\+\_\+light\+\_\+data\+\_\+buffer@{m\+\_\+light\+\_\+data\+\_\+buffer}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+light\+\_\+data\+\_\+buffer}{m\_light\_data\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Light\+Data\+Buffer $>$ mage\+::\+Scene\+::m\+\_\+light\+\_\+data\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a01132a667fbc1517f11ae561bc221071}{}\label{classmage_1_1_scene_a01132a667fbc1517f11ae561bc221071} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+models@{m\+\_\+models}}
+\index{m\+\_\+models@{m\+\_\+models}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+models}{m\_models}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ $>$ mage\+::\+Scene\+::m\+\_\+models\hspace{0.3cm}{\ttfamily [private]}}
+
 \hypertarget{classmage_1_1_scene_a6cc8cb08b1853c4e3063b33a94e8fb47}{}\label{classmage_1_1_scene_a6cc8cb08b1853c4e3063b33a94e8fb47} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+name@{m\+\_\+name}}
 \index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
 {\footnotesize\ttfamily string mage\+::\+Scene\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a881c3dd7e85e5069650f29fd2722bf78}{}\label{classmage_1_1_scene_a881c3dd7e85e5069650f29fd2722bf78} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}}
+\index{m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+lights}{m\_omni\_lights}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a85082c7e15a2bbf19b1753b7de6c45db}{Omni\+Light\+Node} $>$ $>$ mage\+::\+Scene\+::m\+\_\+omni\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a274ed5e548431ba805513a86a00bbaf1}{}\label{classmage_1_1_scene_a274ed5e548431ba805513a86a00bbaf1} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+omni\+\_\+lights\+\_\+buffer@{m\+\_\+omni\+\_\+lights\+\_\+buffer}}
+\index{m\+\_\+omni\+\_\+lights\+\_\+buffer@{m\+\_\+omni\+\_\+lights\+\_\+buffer}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+lights\+\_\+buffer}{m\_omni\_lights\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Omni\+Light\+Buffer $>$ mage\+::\+Scene\+::m\+\_\+omni\+\_\+lights\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_scene_a84548bf6978f8955ce5892cb23536a4e}{}\label{classmage_1_1_scene_a84548bf6978f8955ce5892cb23536a4e} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+scripts@{m\+\_\+scripts}}
@@ -235,9 +464,33 @@ Updates this scene.
 \subsubsection{\texorpdfstring{m\+\_\+scripts}{m\_scripts}}
 {\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$ $>$ mage\+::\+Scene\+::m\+\_\+scripts\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_a0d06149d881166497bf75ae2288bf960}{}\label{classmage_1_1_scene_a0d06149d881166497bf75ae2288bf960} 
-\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+world@{m\+\_\+world}}
-\index{m\+\_\+world@{m\+\_\+world}!mage\+::\+Scene@{mage\+::\+Scene}}
-\subsubsection{\texorpdfstring{m\+\_\+world}{m\_world}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_world}{World} $>$ mage\+::\+Scene\+::m\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75}{}\label{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}}
+\index{m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+spot\+\_\+lights}{m\_spot\_lights}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a46c8f54b869a5dc07f520c600b9046bd}{Spot\+Light\+Node} $>$ $>$ mage\+::\+Scene\+::m\+\_\+spot\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a64118c052d728ac988031898fd2d757d}{}\label{classmage_1_1_scene_a64118c052d728ac988031898fd2d757d} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+spot\+\_\+lights\+\_\+buffer@{m\+\_\+spot\+\_\+lights\+\_\+buffer}}
+\index{m\+\_\+spot\+\_\+lights\+\_\+buffer@{m\+\_\+spot\+\_\+lights\+\_\+buffer}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+spot\+\_\+lights\+\_\+buffer}{m\_spot\_lights\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Spot\+Light\+Buffer $>$ mage\+::\+Scene\+::m\+\_\+spot\+\_\+lights\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a7a334e1b7764532817f10efbc0b91a82}{}\label{classmage_1_1_scene_a7a334e1b7764532817f10efbc0b91a82} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+sprite\+\_\+batch@{m\+\_\+sprite\+\_\+batch}}
+\index{m\+\_\+sprite\+\_\+batch@{m\+\_\+sprite\+\_\+batch}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+batch}{m\_sprite\_batch}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ Sprite\+Batch $>$ mage\+::\+Scene\+::m\+\_\+sprite\+\_\+batch\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a7379b399f02999f89f6ccda5bfa01b02}{}\label{classmage_1_1_scene_a7379b399f02999f89f6ccda5bfa01b02} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+sprites@{m\+\_\+sprites}}
+\index{m\+\_\+sprites@{m\+\_\+sprites}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+sprites}{m\_sprites}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr} $<$ \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object} $>$ $>$ mage\+::\+Scene\+::m\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a2e57c981725d0a64bfc8f82381ac3d6a}{}\label{classmage_1_1_scene_a2e57c981725d0a64bfc8f82381ac3d6a} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}}
+\index{m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+transform\+\_\+buffer}{m\_transform\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Transform\+Buffer $>$ mage\+::\+Scene\+::m\+\_\+transform\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
