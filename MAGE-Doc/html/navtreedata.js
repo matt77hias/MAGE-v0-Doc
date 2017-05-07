@@ -21,6 +21,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
@@ -31,15 +32,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_file_resource.html#a5930e472973b3e0d9b09dc9d031bacf1",
-"classmage_1_1_manhattan_input_controller_script.html#ad16da80362158de342ecf8d669fbbe15",
-"classmage_1_1_orthographic_camera.html#a51b38eab8945fb1a2031a7ba1755d689",
-"classmage_1_1_sprite_batch_mesh.html#abf82001c09270c14695bec433cf9810d",
-"classmage_1_1_transform_node.html#a2e6a7a640f14c504601fe0ed614e8467",
-"functions_func_g.html",
-"structmage_1_1_direction3.html#ad0fc0b33474900b8cb2a803ffad13dbc",
-"structmage_1_1_rendering_state.html#a92318b9b250555ca1d6b516d49371abc",
-"structmage_1_1_vertex_position_normal_color.html#a8c8eff8f2fc3520bec482e89e2b32119"
+"classmage_1_1_directional_light.html#a9563b260b550057e951500c40ecbe2d3",
+"classmage_1_1_m_s_h_writer.html#ad8c9302c6335684ea28d4e47c81a1afb",
+"classmage_1_1_node.html#ae30f2ca6816eeeef28610f385864aec9",
+"classmage_1_1_scene.html#a370f5ce63a6277a1369c1545f0acbffa",
+"classmage_1_1_stats_script.html#a33bbbe0f85058b706848223a6180da3d",
+"classmage_1_1_variable_script.html#ac9575fb5f2ca445d9bcf23b63d00124e",
+"structmage_1_1_color_string.html#a317caadad725b67ede68f1e474e47d3b",
+"structmage_1_1_model_output.html#ada52bf380c0259a0d7ef855457e5a9da",
+"structmage_1_1_structured_buffer.html#ab16999f1d2b6bc9eceb628907ed5a8c0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

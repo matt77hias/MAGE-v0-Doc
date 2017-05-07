@@ -14,7 +14,6 @@ var searchData=
   ['spriteobject',['SpriteObject',['../classmage_1_1_sprite_object.html',1,'mage']]],
   ['spritepixelshader',['SpritePixelShader',['../classmage_1_1_sprite_pixel_shader.html',1,'mage']]],
   ['spritetext',['SpriteText',['../classmage_1_1_sprite_text.html',1,'mage']]],
-  ['spritetextitem',['SpriteTextItem',['../structmage_1_1_sprite_text_item.html',1,'mage']]],
   ['spritevertexshader',['SpriteVertexShader',['../classmage_1_1_sprite_vertex_shader.html',1,'mage']]],
   ['staticmesh',['StaticMesh',['../classmage_1_1_static_mesh.html',1,'mage']]],
   ['statsscript',['StatsScript',['../classmage_1_1_stats_script.html',1,'mage']]],

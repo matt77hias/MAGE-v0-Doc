@@ -2,8 +2,8 @@ var classmage_1_1_v_s_reader =
 [
     [ "VSReader", "classmage_1_1_v_s_reader.html#ab41fb08f6e7a72b0ba7059ecb8c91623", null ],
     [ "VSReader", "classmage_1_1_v_s_reader.html#aec7ec2ea03d5d77c5e78438a60263a73", null ],
-    [ "VSReader", "classmage_1_1_v_s_reader.html#a84ba10ef4d308d94ea947155ab72d82a", null ],
-    [ "~VSReader", "classmage_1_1_v_s_reader.html#adb1dc76d802501476f1af285fe22369d", null ],
+    [ "VSReader", "classmage_1_1_v_s_reader.html#aa7bb7d1792d4eef4734b4d4daa6e2ce7", null ],
+    [ "~VSReader", "classmage_1_1_v_s_reader.html#ae3cb230b06f289adae239b785f1fabc6", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#ab7d85956947e6b2a28650498573bc055", null ],
     [ "operator=", "classmage_1_1_v_s_reader.html#a2be1e0645e3496f71c2f2b7fcf98ba2a", null ],
     [ "ReadLine", "classmage_1_1_v_s_reader.html#a3a3ba09b410e2144ed082db5f1da3113", null ],

@@ -2,8 +2,8 @@ var classmage_1_1_m_d_l_reader =
 [
     [ "MDLReader", "classmage_1_1_m_d_l_reader.html#a068ed8c9101b42033ea166ab7aa03c04", null ],
     [ "MDLReader", "classmage_1_1_m_d_l_reader.html#ae7b3ee7b2b02101da041249e98f31bcc", null ],
-    [ "MDLReader", "classmage_1_1_m_d_l_reader.html#ac2e45fb05db0255d7ebf2da6e54db3f4", null ],
-    [ "~MDLReader", "classmage_1_1_m_d_l_reader.html#a2da322d25dee1198ceb3c9455e5a51bf", null ],
+    [ "MDLReader", "classmage_1_1_m_d_l_reader.html#a6cf614b35564b50efc019289cf29011e", null ],
+    [ "~MDLReader", "classmage_1_1_m_d_l_reader.html#ae1e784f0c7449a2a34ffb90badc3d2da", null ],
     [ "ImportMesh", "classmage_1_1_m_d_l_reader.html#ab688ce530cab867d155b696b2a1133a0", null ],
     [ "operator=", "classmage_1_1_m_d_l_reader.html#a8cc5e9966283f3f9727fa28a75412ddb", null ],
     [ "operator=", "classmage_1_1_m_d_l_reader.html#a993c23d2e7f16f22a28e48ae9b7173b4", null ],

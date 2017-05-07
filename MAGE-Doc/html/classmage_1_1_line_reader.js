@@ -1,9 +1,9 @@
 var classmage_1_1_line_reader =
 [
-    [ "~LineReader", "classmage_1_1_line_reader.html#aa058c338d8256d7f7b775bf4f7052508", null ],
+    [ "~LineReader", "classmage_1_1_line_reader.html#ad9753ea392ebe5b3867852d3392fb1e7", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ae4f871bebae110704b34c0bd88460639", null ],
-    [ "LineReader", "classmage_1_1_line_reader.html#a0a9e80aabd15594f3e20bf7265e16c5e", null ],
+    [ "LineReader", "classmage_1_1_line_reader.html#ad972c7100f726e7b061d864083ba0225", null ],
     [ "GetCurrentLineNumber", "classmage_1_1_line_reader.html#a55f35bf4989ad109524da146639870d6", null ],
     [ "GetDelimiters", "classmage_1_1_line_reader.html#a7de405beff27d5cc55bb93e1b1e9727a", null ],
     [ "GetFilename", "classmage_1_1_line_reader.html#a64a800d9fe9c242b9b14d034a7d604eb", null ],

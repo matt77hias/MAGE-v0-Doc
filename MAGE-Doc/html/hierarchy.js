@@ -31,7 +31,10 @@ var hierarchy =
       [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
       [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
     ] ],
+    [ "mage::ColorString", "structmage_1_1_color_string.html", null ],
     [ "mage::CombinedShader", "structmage_1_1_combined_shader.html", null ],
+    [ "mage::CompiledPixelShader", "structmage_1_1_compiled_pixel_shader.html", null ],
+    [ "mage::CompiledVertexShader", "structmage_1_1_compiled_vertex_shader.html", null ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< LightDataBuffer >", "structmage_1_1_constant_buffer.html", null ],
@@ -86,7 +89,15 @@ var hierarchy =
     [ "mage::Mutex", "structmage_1_1_mutex.html", null ],
     [ "mage::MutexLock", "structmage_1_1_mutex_lock.html", null ],
     [ "mage::Node", "classmage_1_1_node.html", [
-      [ "mage::SceneNode< SceneObjectT >", "classmage_1_1_scene_node.html", null ]
+      [ "mage::SceneNode", "classmage_1_1_scene_node.html", [
+        [ "mage::CameraNode", "classmage_1_1_camera_node.html", [
+          [ "mage::DerivedCameraNode< CameraT >", "classmage_1_1_derived_camera_node.html", null ]
+        ] ],
+        [ "mage::LightNode", "classmage_1_1_light_node.html", [
+          [ "mage::DerivedLightNode< LightT >", "classmage_1_1_derived_light_node.html", null ]
+        ] ],
+        [ "mage::ModelNode", "classmage_1_1_model_node.html", null ]
+      ] ]
     ] ],
     [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
@@ -103,11 +114,11 @@ var hierarchy =
         [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
       ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
-        [ "mage::LambertianPixelShader", "classmage_1_1_lambertian_pixel_shader.html", null ],
+        [ "mage::BasicPixelShader", "classmage_1_1_basic_pixel_shader.html", null ],
         [ "mage::SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html", null ]
       ] ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
-        [ "mage::LambertianVertexShader", "classmage_1_1_lambertian_vertex_shader.html", null ],
+        [ "mage::BasicVertexShader", "classmage_1_1_basic_vertex_shader.html", null ],
         [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ]
       ] ]
     ] ],
@@ -126,7 +137,6 @@ var hierarchy =
         [ "mage::OutlineSpriteText", "classmage_1_1_outline_sprite_text.html", null ]
       ] ]
     ] ],
-    [ "mage::SpriteTextItem", "structmage_1_1_sprite_text_item.html", null ],
     [ "mage::StructuredBuffer< DataT >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
@@ -143,7 +153,6 @@ var hierarchy =
     [ "mage::VertexPositionTexture", "structmage_1_1_vertex_position_texture.html", null ],
     [ "mage::VertexPositionTextureTexture", "structmage_1_1_vertex_position_texture_texture.html", null ],
     [ "mage::ViewFrustum", "classmage_1_1_view_frustum.html", null ],
-    [ "mage::World", "classmage_1_1_world.html", null ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],
       [ "mage::VSWriter", "classmage_1_1_v_s_writer.html", null ]

@@ -9,5 +9,5 @@ var structmage_1_1_sprite_font_output =
     [ "m_default_character", "structmage_1_1_sprite_font_output.html#a137cca7a8a91c623272b345e9931ca80", null ],
     [ "m_glyphs", "structmage_1_1_sprite_font_output.html#aee63c847a919bce662dee371594607dd", null ],
     [ "m_line_spacing", "structmage_1_1_sprite_font_output.html#adc36a5113ca2473efbc3aa7989606f28", null ],
-    [ "m_texture", "structmage_1_1_sprite_font_output.html#a3e2f3b44decf05bc81ce91f4bf9ad092", null ]
+    [ "m_texture_srv", "structmage_1_1_sprite_font_output.html#abece35d0abdacf81538969a3ec8a5617", null ]
 ];

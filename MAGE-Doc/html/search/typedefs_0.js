@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ambientlightnode',['AmbientLightNode',['../namespacemage.html#a282fb14928fdd9bf45e8f3fdd2dc6c5d',1,'mage']]]
+  ['ambientlightnode',['AmbientLightNode',['../namespacemage.html#afdaa06d91a410fa9df6f1822c35d7fa2',1,'mage']]]
 ];

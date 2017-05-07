@@ -2,8 +2,8 @@ var classmage_1_1_system_usage_script =
 [
     [ "SystemUsageScript", "classmage_1_1_system_usage_script.html#a430d87647bdc6e407838863b1fcb750d", null ],
     [ "SystemUsageScript", "classmage_1_1_system_usage_script.html#a3fccc6dda27ede785fb9c45360e53bb0", null ],
-    [ "SystemUsageScript", "classmage_1_1_system_usage_script.html#adbaefc6bb87c29d6bdd52e23181e0735", null ],
-    [ "~SystemUsageScript", "classmage_1_1_system_usage_script.html#adbe04339a1c3dba450634009c30601bb", null ],
+    [ "SystemUsageScript", "classmage_1_1_system_usage_script.html#a013e7c6510442421d74bffa3b2f810fe", null ],
+    [ "~SystemUsageScript", "classmage_1_1_system_usage_script.html#ac4c71b831e5cd5d6a5db8783150b76cc", null ],
     [ "GetTransform", "classmage_1_1_system_usage_script.html#ad8291c309495bd06cd6878814bc422c9", null ],
     [ "GetTransform", "classmage_1_1_system_usage_script.html#ac6f33a63937537375821d7780859a83e", null ],
     [ "operator=", "classmage_1_1_system_usage_script.html#a3ca814599a30991f3e6068cec2b876df", null ],

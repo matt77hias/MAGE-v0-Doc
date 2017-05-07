@@ -1,9 +1,9 @@
 var classmage_1_1_big_endian_binary_reader =
 [
-    [ "~BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#a870c0f64347c824058d9fe3443c8e368", null ],
+    [ "~BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#ae85a40e8ed06e8c887e38d914843b8d3", null ],
     [ "BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#a1fd0dbee6950a8cb04aa399f0cdbaf2a", null ],
     [ "BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#a9d490263268290217ae4f2f06e0699c4", null ],
-    [ "BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#a67974befee1ff010ff7681d4f8066784", null ],
+    [ "BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html#a3cb2fbd205854cf69c36054a2003e80e", null ],
     [ "GetFilename", "classmage_1_1_big_endian_binary_reader.html#a52b2695d83679943be40dc1328f9387f", null ],
     [ "HasCharsLeft", "classmage_1_1_big_endian_binary_reader.html#a312a8ec7497a8056695b0345115039bd", null ],
     [ "operator=", "classmage_1_1_big_endian_binary_reader.html#abd4b24df4219469a8c2e9253b1cad405", null ],

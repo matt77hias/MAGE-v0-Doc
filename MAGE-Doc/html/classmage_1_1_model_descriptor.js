@@ -2,7 +2,7 @@ var classmage_1_1_model_descriptor =
 [
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#a1ae1d85907be96350cef77e6a4ba4fb9", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af44185efc20e10ede762d29bc454c5f3", null ],
-    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af9be9f46bc8f42fa04f686af6cc296f6", null ],
+    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af5ece586e2a8404cc29e703885531e72", null ],
     [ "~ModelDescriptor", "classmage_1_1_model_descriptor.html#aae13cf050ee7f9283d91282c04f62df1", null ],
     [ "ForEachMaterial", "classmage_1_1_model_descriptor.html#ac4723e18238b0d6ac3c54168b8e9a09f", null ],
     [ "ForEachModelPart", "classmage_1_1_model_descriptor.html#a1d61699788385cf29726fac0067bcb5c", null ],

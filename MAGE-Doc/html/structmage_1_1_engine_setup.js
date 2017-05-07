@@ -1,9 +1,9 @@
 var structmage_1_1_engine_setup =
 [
-    [ "~EngineSetup", "structmage_1_1_engine_setup.html#a77de1ad7e922dec4791b558d20616b08", null ],
+    [ "~EngineSetup", "structmage_1_1_engine_setup.html#ac9ec3df257c585930b21b2b69c99c177", null ],
     [ "EngineSetup", "structmage_1_1_engine_setup.html#ac09a572abaf5f785004bb46a1d1bf49c", null ],
-    [ "EngineSetup", "structmage_1_1_engine_setup.html#a40980f5fce1554c2a93707efdf4486a9", null ],
-    [ "EngineSetup", "structmage_1_1_engine_setup.html#a6b150bbb4bff7971939a2f327ba760fe", null ],
+    [ "EngineSetup", "structmage_1_1_engine_setup.html#a2399c7966ed02ce9e9ab951b7483aac1", null ],
+    [ "EngineSetup", "structmage_1_1_engine_setup.html#ac199c03ba1968ca0a98a2de48cfb952d", null ],
     [ "CreateScene", "structmage_1_1_engine_setup.html#a004fce6a741fc68c8f6feed546d9f220", null ],
     [ "GetApplicationHinstance", "structmage_1_1_engine_setup.html#a2d9220896adfe924ac72165b4e2b13cf", null ],
     [ "GetApplicationName", "structmage_1_1_engine_setup.html#a63fed5e978c020ebc9d5080fe6fcefdc", null ],

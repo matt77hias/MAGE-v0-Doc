@@ -3,7 +3,7 @@ var classmage_1_1_resource_pool =
     [ "ResourcePoolEntry", "structmage_1_1_resource_pool_1_1_resource_pool_entry.html", "structmage_1_1_resource_pool_1_1_resource_pool_entry" ],
     [ "ResourcePool", "classmage_1_1_resource_pool.html#a94aff142869744ed48fb1b426face48b", null ],
     [ "ResourcePool", "classmage_1_1_resource_pool.html#a82253c9c4adfc120a813dfe811dd5e91", null ],
-    [ "ResourcePool", "classmage_1_1_resource_pool.html#adea88e0bead1af27e39a3412527122f3", null ],
+    [ "ResourcePool", "classmage_1_1_resource_pool.html#adf8c262e3fb0c01c8efb9650bf05951b", null ],
     [ "~ResourcePool", "classmage_1_1_resource_pool.html#ae4fff3d951818d417f77965c2db265f6", null ],
     [ "GetDerivedResource", "classmage_1_1_resource_pool.html#a2c1116cecf0a88953fa681f254de8680", null ],
     [ "GetNumberOfResources", "classmage_1_1_resource_pool.html#ae2f9964a1821c9b8cb38303a5a88c98e", null ],
