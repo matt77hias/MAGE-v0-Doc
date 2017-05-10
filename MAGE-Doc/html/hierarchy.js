@@ -115,10 +115,12 @@ var hierarchy =
       ] ],
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
         [ "mage::BasicPixelShader", "classmage_1_1_basic_pixel_shader.html", null ],
+        [ "mage::BumpPixelShader", "classmage_1_1_bump_pixel_shader.html", null ],
         [ "mage::SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html", null ]
       ] ],
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::BasicVertexShader", "classmage_1_1_basic_vertex_shader.html", null ],
+        [ "mage::BumpVertexShader", "classmage_1_1_bump_vertex_shader.html", null ],
         [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ]
       ] ]
     ] ],

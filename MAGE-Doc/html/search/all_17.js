@@ -10,6 +10,8 @@ var searchData=
   ['_7ebigendianbinarywriter',['~BigEndianBinaryWriter',['../classmage_1_1_big_endian_binary_writer.html#ab717bcbfc15ba4a1cb25eeb564e120b8',1,'mage::BigEndianBinaryWriter']]],
   ['_7ebinaryreader',['~BinaryReader',['../classmage_1_1_binary_reader.html#a42e6c31bc53f5214675f845756b5a404',1,'mage::BinaryReader']]],
   ['_7ebs',['~BS',['../structmage_1_1_b_s.html#a111f60f8ab53c7497ff7aaa743619829',1,'mage::BS']]],
+  ['_7ebumppixelshader',['~BumpPixelShader',['../classmage_1_1_bump_pixel_shader.html#a73fde1c65d4e8e29795247a43a31926b',1,'mage::BumpPixelShader']]],
+  ['_7ebumpvertexshader',['~BumpVertexShader',['../classmage_1_1_bump_vertex_shader.html#aac66d698654ff58a1440cf3dfdcece40',1,'mage::BumpVertexShader']]],
   ['_7ecamera',['~Camera',['../classmage_1_1_camera.html#aa4718c93578d160299bdc24039cc256f',1,'mage::Camera']]],
   ['_7ecameranode',['~CameraNode',['../classmage_1_1_camera_node.html#ac6612668e7b9f829e371794d422d357f',1,'mage::CameraNode']]],
   ['_7echaractermotorscript',['~CharacterMotorScript',['../classmage_1_1_character_motor_script.html#a97b98828d964a0ce38cc424bbf080303',1,'mage::CharacterMotorScript']]],

@@ -10,6 +10,8 @@ var namespacemage =
     [ "BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html", "classmage_1_1_big_endian_binary_writer" ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html", "classmage_1_1_binary_reader" ],
     [ "BS", "structmage_1_1_b_s.html", "structmage_1_1_b_s" ],
+    [ "BumpPixelShader", "classmage_1_1_bump_pixel_shader.html", "classmage_1_1_bump_pixel_shader" ],
+    [ "BumpVertexShader", "classmage_1_1_bump_vertex_shader.html", "classmage_1_1_bump_vertex_shader" ],
     [ "Camera", "classmage_1_1_camera.html", "classmage_1_1_camera" ],
     [ "CameraNode", "classmage_1_1_camera_node.html", "classmage_1_1_camera_node" ],
     [ "CharacterMotorScript", "classmage_1_1_character_motor_script.html", "classmage_1_1_character_motor_script" ],
