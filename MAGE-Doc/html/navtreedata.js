@@ -32,15 +32,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_directional_light.html#a9563b260b550057e951500c40ecbe2d3",
-"classmage_1_1_m_s_h_writer.html#ad8c9302c6335684ea28d4e47c81a1afb",
-"classmage_1_1_node.html#ae30f2ca6816eeeef28610f385864aec9",
-"classmage_1_1_scene.html#a370f5ce63a6277a1369c1545f0acbffa",
-"classmage_1_1_stats_script.html#a33bbbe0f85058b706848223a6180da3d",
-"classmage_1_1_variable_script.html#ac9575fb5f2ca445d9bcf23b63d00124e",
-"structmage_1_1_color_string.html#a317caadad725b67ede68f1e474e47d3b",
-"structmage_1_1_model_output.html#ada52bf380c0259a0d7ef855457e5a9da",
-"structmage_1_1_structured_buffer.html#ab16999f1d2b6bc9eceb628907ed5a8c0"
+"classmage_1_1_device_enumeration.html#a8957ecacc567708e80694b25aa141c4e",
+"classmage_1_1_m_s_h_reader.html#a0f014d780eaa5477aa7206db51fede2f",
+"classmage_1_1_node.html#a0da235c6459c315ad1c4be5c7aa7c7f0",
+"classmage_1_1_resource_pool.html#a94aff142869744ed48fb1b426face48b",
+"classmage_1_1_sprite_text.html#ada15a0d1986cf1f2c2ac7302be20d6a7",
+"classmage_1_1_v_s_reader.html#ae3cb230b06f289adae239b785f1fabc6",
+"structmage_1_1_b_s.html#ad08a02ebf76d2b3a5903c9c69a0e80e1",
+"structmage_1_1_mesh_descriptor.html#a62de61d0ea1ad1a514246f40e21c9faa",
+"structmage_1_1_sprite_font_output.html#a137cca7a8a91c623272b345e9931ca80"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -6,6 +6,8 @@ var classmage_1_1_resource_factory =
     [ "~ResourceFactory", "classmage_1_1_resource_factory.html#a58764dea5d6cd05405bd62366cc25681", null ],
     [ "CreateBasicPixelShader", "classmage_1_1_resource_factory.html#a7de0876328fdabd672cd7719f616dd0d", null ],
     [ "CreateBasicVertexShader", "classmage_1_1_resource_factory.html#af2940e4c5b3d975a9b3a69cebbfaea42", null ],
+    [ "CreateBumpPixelShader", "classmage_1_1_resource_factory.html#a4e81a4ebd39f16ac6b69e926db66c5ae", null ],
+    [ "CreateBumpVertexShader", "classmage_1_1_resource_factory.html#ab3f6757ed97e85fdbef279b5f2817b77", null ],
     [ "CreateFont", "classmage_1_1_resource_factory.html#a4f2e39f6195c13bd885c46b8d130bdfc", null ],
     [ "CreateModelDescriptor", "classmage_1_1_resource_factory.html#ae27d9c780713784afcd02726ce959b8c", null ],
     [ "CreateSpritePixelShader", "classmage_1_1_resource_factory.html#a75d06c10e6d34263bc0f4e2816003e72", null ],
