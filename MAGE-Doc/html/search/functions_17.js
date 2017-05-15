@@ -112,7 +112,6 @@ var searchData=
   ['_7etextconsolescript',['~TextConsoleScript',['../classmage_1_1_text_console_script.html#a3269d6b792053d4ce13d63103ca5b4e9',1,'mage::TextConsoleScript']]],
   ['_7etexture',['~Texture',['../classmage_1_1_texture.html#a81664804ac0259e8c67851409ee106fa',1,'mage::Texture']]],
   ['_7etimer',['~Timer',['../classmage_1_1_timer.html#a66d6964a6d42eef72f7312f1233e4f74',1,'mage::Timer']]],
-  ['_7etransformnode',['~TransformNode',['../classmage_1_1_transform_node.html#a0c5e84d99c27cda31dae8106611d682f',1,'mage::TransformNode']]],
   ['_7euv',['~UV',['../structmage_1_1_u_v.html#a9389be8cc9bb64861b69f79b44b6dd1b',1,'mage::UV']]],
   ['_7evalue',['~Value',['../structmage_1_1_variable_1_1_value.html#ab77eb80d4786a060778dc41ee73c1371',1,'mage::Variable::Value']]],
   ['_7evariable',['~Variable',['../structmage_1_1_variable.html#a7503f010f296683cecf9be65a3f86589',1,'mage::Variable']]],

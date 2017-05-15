@@ -19,20 +19,20 @@
 \item 
 \hyperlink{structmage_1_1_condition_variable}{Condition\+Variable} \& \hyperlink{structmage_1_1_condition_variable_a3f05c5b53b2530e9fdd1bb890aa375c4}{operator=} (\hyperlink{structmage_1_1_condition_variable}{Condition\+Variable} \&\&condition\+\_\+variable)=delete
 \item 
-void \hyperlink{structmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813}{Lock} ()
+void \hyperlink{structmage_1_1_condition_variable_aab712c41e76c444606d5419a20d87b7a}{Lock} () noexcept
 \item 
-void \hyperlink{structmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea}{Unlock} ()
+void \hyperlink{structmage_1_1_condition_variable_a40e853cf65b0c3cb3788d2b8a45448af}{Unlock} () noexcept
 \item 
-void \hyperlink{structmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{Signal} ()
+void \hyperlink{structmage_1_1_condition_variable_ad48673a4f7ea2a28c7ddc77222e5d8cc}{Signal} () noexcept
 \item 
-void \hyperlink{structmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a}{Wait} ()
+void \hyperlink{structmage_1_1_condition_variable_a15a1d797032d178c787a385d11522efb}{Wait} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \{ \hyperlink{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a83361ddf52d1973875f7a48ac4bccf94}{S\+I\+G\+N\+AL} = 0, 
-\hyperlink{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a5863233d3c1e62ca806753b0d175199f}{B\+R\+O\+A\+D\+C\+A\+ST} = 1, 
-\hyperlink{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000abc7182486d437f413ac9c77ae0bfdac1}{N\+B\+\_\+\+E\+V\+E\+N\+TS} = 2
+enum \hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195}{Event} \{ \hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a83361ddf52d1973875f7a48ac4bccf94}{S\+I\+G\+N\+AL} = 0, 
+\hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f}{B\+R\+O\+A\+D\+C\+A\+ST} = 1, 
+\hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14}{C\+O\+U\+NT} = 2
  \}
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -44,7 +44,7 @@ C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON \hyperlink{structmage_1_1_condit
 \item 
 C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON \hyperlink{structmage_1_1_condition_variable_ab5ff870b2881a1979ccaec986d762441}{m\+\_\+condition\+\_\+mutex}
 \item 
-H\+A\+N\+D\+LE \hyperlink{structmage_1_1_condition_variable_ac61c3440af244ec43d2ad53026ec9de4}{m\+\_\+events} \mbox{[}\hyperlink{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000abc7182486d437f413ac9c77ae0bfdac1}{N\+B\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}
+H\+A\+N\+D\+LE \hyperlink{structmage_1_1_condition_variable_a00691d5e29735da356f577bb5522017d}{m\+\_\+events} \mbox{[}\hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14}{C\+O\+U\+NT}\mbox{]}
 \end{DoxyCompactItemize}
 
 
@@ -52,21 +52,23 @@ H\+A\+N\+D\+LE \hyperlink{structmage_1_1_condition_variable_ac61c3440af244ec43d2
 A struct of condition variables. 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000}{}\label{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000} 
-\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
-{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195}{}\label{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Event@{Event}}
+\index{Event@{Event}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Event}{Event}}
+{\footnotesize\ttfamily enum \hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195}{mage\+::\+Condition\+Variable\+::\+Event}\hspace{0.3cm}{\ttfamily [private]}}
 
 An enumeration of the different types of events of this condition variable. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}}}\hypertarget{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a83361ddf52d1973875f7a48ac4bccf94}{}\label{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a83361ddf52d1973875f7a48ac4bccf94} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}}}\hypertarget{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a83361ddf52d1973875f7a48ac4bccf94}{}\label{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a83361ddf52d1973875f7a48ac4bccf94} 
 S\+I\+G\+N\+AL&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}}}\hypertarget{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a5863233d3c1e62ca806753b0d175199f}{}\label{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000a5863233d3c1e62ca806753b0d175199f} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}}}\hypertarget{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f}{}\label{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f} 
 B\+R\+O\+A\+D\+C\+A\+ST&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+B\+\_\+\+E\+V\+E\+N\+TS@{N\+B\+\_\+\+E\+V\+E\+N\+TS}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!N\+B\+\_\+\+E\+V\+E\+N\+TS@{N\+B\+\_\+\+E\+V\+E\+N\+TS}}}\hypertarget{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000abc7182486d437f413ac9c77ae0bfdac1}{}\label{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000abc7182486d437f413ac9c77ae0bfdac1} 
-N\+B\+\_\+\+E\+V\+E\+N\+TS&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+U\+NT@{C\+O\+U\+NT}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!C\+O\+U\+NT@{C\+O\+U\+NT}}}\hypertarget{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14}{}\label{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14} 
+C\+O\+U\+NT&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -114,11 +116,11 @@ Constructs a condition variable by moving the given condition variable.
 Destructs this condition variable. 
 
 \subsection{Member Function Documentation}
-\hypertarget{structmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813}{}\label{structmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813} 
+\hypertarget{structmage_1_1_condition_variable_aab712c41e76c444606d5419a20d87b7a}{}\label{structmage_1_1_condition_variable_aab712c41e76c444606d5419a20d87b7a} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Lock@{Lock}}
 \index{Lock@{Lock}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{Lock()}{Lock()}}
-{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Locks this condition variable. \hypertarget{structmage_1_1_condition_variable_ac83eae5353cd004ee06fe2376e5bdbf4}{}\label{structmage_1_1_condition_variable_ac83eae5353cd004ee06fe2376e5bdbf4} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!operator=@{operator=}}
@@ -152,23 +154,23 @@ Moves the given condition variable to this condition variable.
 \begin{DoxyReturn}{Returns}
 A reference to the moved condition variable (i.\+e. this condition variable) 
 \end{DoxyReturn}
-\hypertarget{structmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{}\label{structmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9} 
+\hypertarget{structmage_1_1_condition_variable_ad48673a4f7ea2a28c7ddc77222e5d8cc}{}\label{structmage_1_1_condition_variable_ad48673a4f7ea2a28c7ddc77222e5d8cc} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Signal@{Signal}}
 \index{Signal@{Signal}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{Signal()}{Signal()}}
-{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Signals a condition change. \hypertarget{structmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea}{}\label{structmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea} 
+Signals a condition change. \hypertarget{structmage_1_1_condition_variable_a40e853cf65b0c3cb3788d2b8a45448af}{}\label{structmage_1_1_condition_variable_a40e853cf65b0c3cb3788d2b8a45448af} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Unlock@{Unlock}}
 \index{Unlock@{Unlock}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{Unlock()}{Unlock()}}
-{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Unlocks this condition variable. \hypertarget{structmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a}{}\label{structmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a} 
+Unlocks this condition variable. \hypertarget{structmage_1_1_condition_variable_a15a1d797032d178c787a385d11522efb}{}\label{structmage_1_1_condition_variable_a15a1d797032d178c787a385d11522efb} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Wait@{Wait}}
 \index{Wait@{Wait}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{Wait()}{Wait()}}
-{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Waits for a signal indicating a condition change. 
 
@@ -179,11 +181,11 @@ Waits for a signal indicating a condition change.
 \subsubsection{\texorpdfstring{m\+\_\+condition\+\_\+mutex}{m\_condition\_mutex}}
 {\footnotesize\ttfamily C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON mage\+::\+Condition\+Variable\+::m\+\_\+condition\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
 
-The critical section object for the mutex guarding the condition of this condition variable. \hypertarget{structmage_1_1_condition_variable_ac61c3440af244ec43d2ad53026ec9de4}{}\label{structmage_1_1_condition_variable_ac61c3440af244ec43d2ad53026ec9de4} 
+The critical section object for the mutex guarding the condition of this condition variable. \hypertarget{structmage_1_1_condition_variable_a00691d5e29735da356f577bb5522017d}{}\label{structmage_1_1_condition_variable_a00691d5e29735da356f577bb5522017d} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+events@{m\+\_\+events}}
 \index{m\+\_\+events@{m\+\_\+events}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{m\+\_\+events}{m\_events}}
-{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+Condition\+Variable\+::m\+\_\+events\mbox{[}\hyperlink{structmage_1_1_condition_variable_a18acb6d59c39a7bf9ee86939f4635000abc7182486d437f413ac9c77ae0bfdac1}{N\+B\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+Condition\+Variable\+::m\+\_\+events\mbox{[}\hyperlink{structmage_1_1_condition_variable_ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14}{C\+O\+U\+NT}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
 
 The signal and broadcast event handles of this condition variable. \hypertarget{structmage_1_1_condition_variable_ac02cb14000a597ec91b8546bdcbb9dd1}{}\label{structmage_1_1_condition_variable_ac02cb14000a597ec91b8546bdcbb9dd1} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+nb\+\_\+waiters@{m\+\_\+nb\+\_\+waiters}}

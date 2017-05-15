@@ -4,8 +4,6 @@ var classmage_1_1_stats_script =
     [ "StatsScript", "classmage_1_1_stats_script.html#aab237b7c391d7ca7ad96cfa33a3aac81", null ],
     [ "StatsScript", "classmage_1_1_stats_script.html#af511d7e2e6bec30cd05782de94c65abe", null ],
     [ "~StatsScript", "classmage_1_1_stats_script.html#a65ba91e19c78c99831a65ad6dd6bb149", null ],
-    [ "GetTransform", "classmage_1_1_stats_script.html#ac3fdf01da2b0ace8afd2c52284c34eef", null ],
-    [ "GetTransform", "classmage_1_1_stats_script.html#a33bbbe0f85058b706848223a6180da3d", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a7da39f1c0cc417dabdc539f49deec7c3", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a6adacd651debb83254e1121f32c8f21e", null ],
     [ "Update", "classmage_1_1_stats_script.html#abb2f4de15b51b72e54dc893ecd947fad", null ],

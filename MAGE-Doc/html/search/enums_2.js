@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readwritemutexlocktype',['ReadWriteMutexLockType',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74',1,'mage']]],
-  ['rotationaxes',['RotationAxes',['../namespacemage.html#a548e5c31b08a1078841ed21948f5bf4c',1,'mage']]]
+  ['errordisposition',['ErrorDisposition',['../namespacemage.html#a7146b3c3db53179eeb32bf4d51934715',1,'mage']]],
+  ['event',['Event',['../structmage_1_1_condition_variable.html#ae7627253bf4faebc0aae84a77920d195',1,'mage::ConditionVariable']]]
 ];

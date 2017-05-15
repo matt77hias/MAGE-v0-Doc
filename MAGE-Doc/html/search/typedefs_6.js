@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['omnilightnode',['OmniLightNode',['../namespacemage.html#a85082c7e15a2bbf19b1753b7de6c45db',1,'mage']]],
-  ['orthographiccameranode',['OrthographicCameraNode',['../namespacemage.html#a2ba71e84d4a4fb1e4a7160800c53f519',1,'mage']]]
+  ['omnilightnode',['OmniLightNode',['../namespacemage.html#a1724c6e6b6b5ba535cdd967cbbb4a669',1,'mage']]],
+  ['orthographiccameranode',['OrthographicCameraNode',['../namespacemage.html#a7d62ab5877be3e14a9735014b77d3f55',1,'mage']]]
 ];

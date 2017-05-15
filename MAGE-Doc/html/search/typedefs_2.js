@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['directionallightnode',['DirectionalLightNode',['../namespacemage.html#adb6db5310fa7164aed35fc396973c73b',1,'mage']]]
+  ['directionallightnode',['DirectionalLightNode',['../namespacemage.html#a7637b5351fc0f66a10badd80ebb35899',1,'mage']]]
 ];

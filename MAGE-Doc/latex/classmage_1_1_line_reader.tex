@@ -23,9 +23,9 @@ void \hyperlink{classmage_1_1_line_reader_a2df875468f06ec58c7aa1ff96157aeb0}{Rea
 \item 
 void \hyperlink{classmage_1_1_line_reader_a1c21aba81c3873c7ed299ca978c4db74}{Read\+From\+Memory} (const char $\ast$input, const string \&delimiters=\hyperlink{namespacemage_ae247ad66af37a4b0d67ddca9404ca01a}{mage\+\_\+default\+\_\+delimiters})
 \item 
-const wstring \& \hyperlink{classmage_1_1_line_reader_a64a800d9fe9c242b9b14d034a7d604eb}{Get\+Filename} () const
+const wstring \& \hyperlink{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}{Get\+Filename} () const noexcept
 \item 
-const string \& \hyperlink{classmage_1_1_line_reader_a7de405beff27d5cc55bb93e1b1e9727a}{Get\+Delimiters} () const
+const string \& \hyperlink{classmage_1_1_line_reader_aa00e1e27b614e11ec9f70e52d0bac551}{Get\+Delimiters} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -36,7 +36,7 @@ const string \& \hyperlink{classmage_1_1_line_reader_a7de405beff27d5cc55bb93e1b1
 \item 
 \hyperlink{classmage_1_1_line_reader_ad972c7100f726e7b061d864083ba0225}{Line\+Reader} (\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&reader)
 \item 
-uint32\+\_\+t \hyperlink{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6}{Get\+Current\+Line\+Number} () const
+uint32\+\_\+t \hyperlink{classmage_1_1_line_reader_a330af09d4f1b9af3c12f98dc04ac7209}{Get\+Current\+Line\+Number} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_line_reader_a3a4b99bfef1e8a826d74a01bcc663fcb}{Read\+Line\+Remaining} ()
 \item 
@@ -119,7 +119,7 @@ virtual void \hyperlink{classmage_1_1_line_reader_adfde21013140a1058d3dd567204ab
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{Unique\+File\+Stream} \hyperlink{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2}{m\+\_\+file\+\_\+stream}
+\hyperlink{namespacemage_a4250d57cb76846bd81137e496ca41148}{Unique\+File\+Stream} \hyperlink{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2}{m\+\_\+file\+\_\+stream}
 \item 
 wstring \hyperlink{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{m\+\_\+fname}
 \item 
@@ -174,33 +174,33 @@ Constructs a line reader by moving the given line reader.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6}{}\label{classmage_1_1_line_reader_a55f35bf4989ad109524da146639870d6} 
+\hypertarget{classmage_1_1_line_reader_a330af09d4f1b9af3c12f98dc04ac7209}{}\label{classmage_1_1_line_reader_a330af09d4f1b9af3c12f98dc04ac7209} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}}
 \index{Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Get\+Current\+Line\+Number()}{GetCurrentLineNumber()}}
-{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Line\+Reader\+::\+Get\+Current\+Line\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Line\+Reader\+::\+Get\+Current\+Line\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [noexcept]}}
 
 Returns the current line number of this line reader.
 
 \begin{DoxyReturn}{Returns}
 The current line number of this line reader. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_line_reader_a7de405beff27d5cc55bb93e1b1e9727a}{}\label{classmage_1_1_line_reader_a7de405beff27d5cc55bb93e1b1e9727a} 
+\hypertarget{classmage_1_1_line_reader_aa00e1e27b614e11ec9f70e52d0bac551}{}\label{classmage_1_1_line_reader_aa00e1e27b614e11ec9f70e52d0bac551} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Delimiters@{Get\+Delimiters}}
 \index{Get\+Delimiters@{Get\+Delimiters}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Get\+Delimiters()}{GetDelimiters()}}
-{\footnotesize\ttfamily const string\& mage\+::\+Line\+Reader\+::\+Get\+Delimiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const string\& mage\+::\+Line\+Reader\+::\+Get\+Delimiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the current delimiters of this line reader.
 
 \begin{DoxyReturn}{Returns}
 A reference to the current delimiters of this line reader. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_line_reader_a64a800d9fe9c242b9b14d034a7d604eb}{}\label{classmage_1_1_line_reader_a64a800d9fe9c242b9b14d034a7d604eb} 
+\hypertarget{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}{}\label{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Filename@{Get\+Filename}}
 \index{Get\+Filename@{Get\+Filename}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Line\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const wstring\& mage\+::\+Line\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the current filename of this line reader.
 
@@ -792,7 +792,7 @@ The current delimiters of this line reader. \hypertarget{classmage_1_1_line_read
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+file\+\_\+stream@{m\+\_\+file\+\_\+stream}}
 \index{m\+\_\+file\+\_\+stream@{m\+\_\+file\+\_\+stream}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+file\+\_\+stream}{m\_file\_stream}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a679c1b707dee02c7eab8d706ef14411a}{Unique\+File\+Stream} mage\+::\+Line\+Reader\+::m\+\_\+file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a4250d57cb76846bd81137e496ca41148}{Unique\+File\+Stream} mage\+::\+Line\+Reader\+::m\+\_\+file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the file stream of this line reader. \hypertarget{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{}\label{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+fname@{m\+\_\+fname}}

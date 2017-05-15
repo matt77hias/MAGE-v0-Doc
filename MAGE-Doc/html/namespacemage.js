@@ -116,7 +116,6 @@ var namespacemage =
     [ "TextConsoleScript", "classmage_1_1_text_console_script.html", "classmage_1_1_text_console_script" ],
     [ "Texture", "classmage_1_1_texture.html", "classmage_1_1_texture" ],
     [ "Timer", "classmage_1_1_timer.html", "classmage_1_1_timer" ],
-    [ "TransformNode", "classmage_1_1_transform_node.html", "classmage_1_1_transform_node" ],
     [ "UV", "structmage_1_1_u_v.html", "structmage_1_1_u_v" ],
     [ "Variable", "structmage_1_1_variable.html", "structmage_1_1_variable" ],
     [ "VariableScript", "classmage_1_1_variable_script.html", "classmage_1_1_variable_script" ],

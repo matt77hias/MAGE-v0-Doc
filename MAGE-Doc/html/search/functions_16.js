@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['xmvectorlefttoprightbottom',['XMVectorLeftTopRightBottom',['../namespacemage.html#aa049ddf42f2937d6bc7f730f4eabf57a',1,'mage']]],
-  ['xmvectorlefttopwidthheight',['XMVectorLeftTopWidthHeight',['../namespacemage.html#a21b11fa85a84f903e3bd4678bf655270',1,'mage']]],
+  ['xmvectorlefttoprightbottom',['XMVectorLeftTopRightBottom',['../namespacemage.html#a0003ec8e1ff669c9de7bc3894691d596',1,'mage']]],
+  ['xmvectorlefttopwidthheight',['XMVectorLeftTopWidthHeight',['../namespacemage.html#abcbdb1a43e221c003f7b89863f131d11',1,'mage']]],
   ['xyzspectrum',['XYZSpectrum',['../structmage_1_1_x_y_z_spectrum.html#a93dbb49e9cb90dd0aed70e9b6d01fcc8',1,'mage::XYZSpectrum::XYZSpectrum()'],['../structmage_1_1_x_y_z_spectrum.html#ab768ef493970dd791f8b145eee05f66b',1,'mage::XYZSpectrum::XYZSpectrum(float x, float y, float z)'],['../structmage_1_1_x_y_z_spectrum.html#ac86feefa604d578f219d17f721508357',1,'mage::XYZSpectrum::XYZSpectrum(const XYZSpectrum &amp;xyz)'],['../structmage_1_1_x_y_z_spectrum.html#acd737da8e445f137dae3dd886e4e822b',1,'mage::XYZSpectrum::XYZSpectrum(XYZSpectrum &amp;&amp;xyz)'],['../structmage_1_1_x_y_z_spectrum.html#a91cf5d611fbad0e47b6718a04b9a505d',1,'mage::XYZSpectrum::XYZSpectrum(const RGBSpectrum &amp;rgb)'],['../structmage_1_1_x_y_z_spectrum.html#a0bfea768139190f70cfef880d239b20c',1,'mage::XYZSpectrum::XYZSpectrum(RGBSpectrum &amp;&amp;rgb)'],['../structmage_1_1_x_y_z_spectrum.html#a0d6ea701678773c93a78ba5c998ed408',1,'mage::XYZSpectrum::XYZSpectrum(const XMFLOAT3 &amp;v)'],['../structmage_1_1_x_y_z_spectrum.html#a06edd58bd36637d35e2b3a3e37073ffe',1,'mage::XYZSpectrum::XYZSpectrum(XMFLOAT3 &amp;&amp;v)']]]
 ];
