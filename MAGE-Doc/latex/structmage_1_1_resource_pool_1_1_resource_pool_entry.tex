@@ -9,7 +9,7 @@ Inheritance diagram for mage\+:\+:Resource\+Pool$<$ KeyT, ResourceT $>$\+:\+:Res
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a8e255033a6f139f5f30e17869325eb2e}{Resource\+Pool\+Entry} (\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&resource\+\_\+pool, KeyT resource\+\_\+key, Constructor\+ArgsT \&\&... args)
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a90ac92f31efd6b6aebe4bf670b6dcec1}{Resource\+Pool\+Entry} (\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&resource\+\_\+pool, const KeyT \&resource\+\_\+key, Constructor\+ArgsT \&\&... args)
 \item 
 \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a10ba1bc114b97a82fc957b17c3bef56e}{Resource\+Pool\+Entry} (const \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry} \&resource)=delete
 \item 
@@ -26,7 +26,7 @@ virtual \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_ae8d7b54
 \item 
 \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \& \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a657a97767707dbb045f49440dff4c126}{m\+\_\+resource\+\_\+pool}
 \item 
-KeyT \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a2ca0b2ee479f64dbec5288a9a8b2b4c9}{m\+\_\+resource\+\_\+key}
+const KeyT \hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry_a6cfd8e2ed45a7655aff852e494054865}{m\+\_\+resource\+\_\+key}
 \end{DoxyCompactItemize}
 
 
@@ -48,14 +48,14 @@ A class of resource pool entries.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_resource_pool_1_1_resource_pool_entry_a8e255033a6f139f5f30e17869325eb2e}{}\label{structmage_1_1_resource_pool_1_1_resource_pool_entry_a8e255033a6f139f5f30e17869325eb2e} 
+\hypertarget{structmage_1_1_resource_pool_1_1_resource_pool_entry_a90ac92f31efd6b6aebe4bf670b6dcec1}{}\label{structmage_1_1_resource_pool_1_1_resource_pool_entry_a90ac92f31efd6b6aebe4bf670b6dcec1} 
 \index{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry@{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry}!Resource\+Pool\+Entry@{Resource\+Pool\+Entry}}
 \index{Resource\+Pool\+Entry@{Resource\+Pool\+Entry}!mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry@{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry}}
 \subsubsection{\texorpdfstring{Resource\+Pool\+Entry()}{ResourcePoolEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
 template$<$typename Derived\+ResourceT $>$ \\
 template$<$typename... Constructor\+ArgsT$>$ \\
-\hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry}$<$ Derived\+ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{resource\+\_\+pool,  }\item[{KeyT}]{resource\+\_\+key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+\hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry}$<$ Derived\+ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{resource\+\_\+pool,  }\item[{const KeyT \&}]{resource\+\_\+key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
 Constructs a resource pool entry.
 
@@ -68,7 +68,7 @@ Constructs a resource pool entry.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em resource\+\_\+pool} & A reference to the resource pool. \\
 \hline
-\mbox{\tt in}  & {\em resource\+\_\+key} & The key of the resource in the given resource pool. \\
+\mbox{\tt in}  & {\em resource\+\_\+key} & A reference to the key of the resource in the given resource pool. \\
 \hline
 \mbox{\tt in}  & {\em args} & The arguments for creating a new resource of type {\ttfamily Derived\+ResourceT}. \\
 \hline
@@ -153,13 +153,13 @@ A reference to the moved resource pool entry (i.\+e. this resource pool entry).
 
 
 \subsection{Member Data Documentation}
-\hypertarget{structmage_1_1_resource_pool_1_1_resource_pool_entry_a2ca0b2ee479f64dbec5288a9a8b2b4c9}{}\label{structmage_1_1_resource_pool_1_1_resource_pool_entry_a2ca0b2ee479f64dbec5288a9a8b2b4c9} 
+\hypertarget{structmage_1_1_resource_pool_1_1_resource_pool_entry_a6cfd8e2ed45a7655aff852e494054865}{}\label{structmage_1_1_resource_pool_1_1_resource_pool_entry_a6cfd8e2ed45a7655aff852e494054865} 
 \index{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry@{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry}!m\+\_\+resource\+\_\+key@{m\+\_\+resource\+\_\+key}}
 \index{m\+\_\+resource\+\_\+key@{m\+\_\+resource\+\_\+key}!mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry@{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry}}
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+key}{m\_resource\_key}}
 {\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
 template$<$typename Derived\+ResourceT $>$ \\
-KeyT \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry}$<$ Derived\+ResourceT $>$\+::m\+\_\+resource\+\_\+key\hspace{0.3cm}{\ttfamily [private]}}
+const KeyT \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{structmage_1_1_resource_pool_1_1_resource_pool_entry}{Resource\+Pool\+Entry}$<$ Derived\+ResourceT $>$\+::m\+\_\+resource\+\_\+key\hspace{0.3cm}{\ttfamily [private]}}
 
 The key of this resource pool entry in the resource pool map containing this resource pool entry. \hypertarget{structmage_1_1_resource_pool_1_1_resource_pool_entry_a657a97767707dbb045f49440dff4c126}{}\label{structmage_1_1_resource_pool_1_1_resource_pool_entry_a657a97767707dbb045f49440dff4c126} 
 \index{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry@{mage\+::\+Resource\+Pool\+::\+Resource\+Pool\+Entry}!m\+\_\+resource\+\_\+pool@{m\+\_\+resource\+\_\+pool}}

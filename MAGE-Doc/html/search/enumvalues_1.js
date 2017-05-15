@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['dds_5falpha_5fmode_5fcustom',['DDS_ALPHA_MODE_CUSTOM',['../namespacemage.html#a0c586a2bad862f4858900ca121ca80c2a145fc5c46af6e8635680d59f55ce956f',1,'mage']]],
-  ['dds_5falpha_5fmode_5fopaque',['DDS_ALPHA_MODE_OPAQUE',['../namespacemage.html#a0c586a2bad862f4858900ca121ca80c2a0f5075a259bfecc6fb934b92bcc6dd1d',1,'mage']]],
-  ['dds_5falpha_5fmode_5fpremultiplied',['DDS_ALPHA_MODE_PREMULTIPLIED',['../namespacemage.html#a0c586a2bad862f4858900ca121ca80c2a6dfa3f7a9c0031bc87cc35d8365e3b74',1,'mage']]],
-  ['dds_5falpha_5fmode_5fstraight',['DDS_ALPHA_MODE_STRAIGHT',['../namespacemage.html#a0c586a2bad862f4858900ca121ca80c2a2cfa12c9a40e943b5e51043c45db5f95',1,'mage']]],
-  ['dds_5falpha_5fmode_5funknown',['DDS_ALPHA_MODE_UNKNOWN',['../namespacemage.html#a0c586a2bad862f4858900ca121ca80c2ae15c70e072553fb579ef26eedb737768',1,'mage']]],
-  ['dds_5fmisc_5fflags2_5falpha_5fmode_5fmask',['DDS_MISC_FLAGS2_ALPHA_MODE_MASK',['../namespacemage.html#a0943eceedce2e66b3b66d0566b15c712af6954b93e1e18fa5366ebb55d65ecbcf',1,'mage']]]
+  ['backtofront',['BackToFront',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014aa253fb6224f27053016e7db132146e80',1,'mage']]],
+  ['blinnphong',['BlinnPhong',['../namespacemage.html#ae7a7a03a7b34d7e2689689bb8295cd38a7d0a12c861400a7f6a9dd7a9944a2223',1,'mage']]],
+  ['bool',['Bool',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aac26f15e86e3de4c398a8273272aba034',1,'mage']]],
+  ['broadcast',['BROADCAST',['../structmage_1_1_condition_variable.html#ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f',1,'mage::ConditionVariable']]]
 ];

@@ -24,7 +24,7 @@ var classmage_1_1_o_b_j_reader =
     [ "ReadOBJVertexNormalCoordinates", "classmage_1_1_o_b_j_reader.html#a2be022b43cf2ad848c7a2d013b16e5f2", null ],
     [ "ReadOBJVertexTexture", "classmage_1_1_o_b_j_reader.html#ae0dfedd81f23e6e15725e9ef02dd3034", null ],
     [ "ReadOBJVertexTextureCoordinates", "classmage_1_1_o_b_j_reader.html#a9b1a38d60a9d1c5c9095394fa37375e6", null ],
-    [ "m_mapping", "classmage_1_1_o_b_j_reader.html#a3783d5387bcba3d593437f9e2c350387", null ],
+    [ "m_mapping", "classmage_1_1_o_b_j_reader.html#a0e691d93f1243564c055ec6bc3718e62", null ],
     [ "m_mesh_desc", "classmage_1_1_o_b_j_reader.html#a4b5810a694e2223de437e62bba748bc8", null ],
     [ "m_model_output", "classmage_1_1_o_b_j_reader.html#ad4691c59a3e3ecefd201a8f03528bbd8", null ],
     [ "m_vertex_coordinates", "classmage_1_1_o_b_j_reader.html#a1032eb4a6844a99f1d96fc17c3e52aee", null ],

@@ -143,7 +143,6 @@ var hierarchy =
     [ "mage::StructuredBuffer< OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
-    [ "mage::TransformNode", "classmage_1_1_transform_node.html", null ],
     [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::VertexPosition", "structmage_1_1_vertex_position.html", null ],
     [ "mage::VertexPositionColor", "structmage_1_1_vertex_position_color.html", null ],

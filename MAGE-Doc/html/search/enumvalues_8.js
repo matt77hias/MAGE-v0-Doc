@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5fmode',['USER_MODE',['../classmage_1_1_c_p_u_timer.html#a5adc0497956723a35534dfeb66fa7789ad5bce4c910796ef2ef4323a0153a2add',1,'mage::CPUTimer']]]
+  ['lambertian',['Lambertian',['../namespacemage.html#ae7a7a03a7b34d7e2689689bb8295cd38a5bab3b0b38800aae982d01ad209a49f7',1,'mage']]]
 ];

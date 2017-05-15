@@ -6,8 +6,6 @@ var classmage_1_1_text_console_script =
     [ "~TextConsoleScript", "classmage_1_1_text_console_script.html#a3269d6b792053d4ce13d63103ca5b4e9", null ],
     [ "Clear", "classmage_1_1_text_console_script.html#aff5acec462f505735720a17d541ba912", null ],
     [ "Format", "classmage_1_1_text_console_script.html#a4d9ba97e4ff4ad5390b20e5523a20e92", null ],
-    [ "GetTransform", "classmage_1_1_text_console_script.html#a4ca556738d1a1892944c6973442c4d22", null ],
-    [ "GetTransform", "classmage_1_1_text_console_script.html#a8c65fa13d8c56b15c63ce918439c2669", null ],
     [ "IncrementRow", "classmage_1_1_text_console_script.html#a0e82c5d5b84499bf4ed2233cf26145fa", null ],
     [ "operator=", "classmage_1_1_text_console_script.html#af7da3f0735f72fed0d6fc265b6ae07e9", null ],
     [ "operator=", "classmage_1_1_text_console_script.html#a2a14c6a981fe7ded4e7a4fa5480ac6cb", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tokenresult',['TokenResult',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037d',1,'mage']]]
+  ['mode',['Mode',['../classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895',1,'mage::CPUTimer']]]
 ];

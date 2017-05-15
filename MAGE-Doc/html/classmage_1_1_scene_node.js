@@ -6,7 +6,7 @@ var classmage_1_1_scene_node =
     [ "~SceneNode", "classmage_1_1_scene_node.html#a6705beea9c535de3d495762ed06e74dd", null ],
     [ "Clone", "classmage_1_1_scene_node.html#ae92f68ce03011b1c1d71421f077a00f8", null ],
     [ "CloneImplementation", "classmage_1_1_scene_node.html#a42d0d53ab804d38ebd584d2de6490eeb", null ],
-    [ "GetName", "classmage_1_1_scene_node.html#a3cfabb2716d286be7e9a88f6e06fcf19", null ],
+    [ "GetName", "classmage_1_1_scene_node.html#ab4d72e26370747c06ccb1461f3080b31", null ],
     [ "operator=", "classmage_1_1_scene_node.html#af4298cbc808139f9da43055afdfe8f7e", null ],
     [ "operator=", "classmage_1_1_scene_node.html#ae38092ba9ec8449f15b3c1f8285ba500", null ],
     [ "SetName", "classmage_1_1_scene_node.html#a11a6d53a9ba637813b34347b68ad08d6", null ],

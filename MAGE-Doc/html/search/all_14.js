@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['valid',['Valid',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037da3ac705f2acd51a4613f9188c05c91d0d',1,'mage']]],
   ['value',['Value',['../structmage_1_1_variable_1_1_value.html',1,'mage::Variable']]],
   ['value',['Value',['../structmage_1_1_variable_1_1_value.html#a36aa54fe0b4e80228e7dbee545d9cb38',1,'mage::Variable::Value::Value(const T &amp;value)'],['../structmage_1_1_variable_1_1_value.html#a962f7d07d601fd5d1a2c24f892607e16',1,'mage::Variable::Value::Value(const Value &amp;value)=default'],['../structmage_1_1_variable_1_1_value.html#aeadb858e9a40f211c787cacc2fb2843b',1,'mage::Variable::Value::Value(Value &amp;&amp;value)=default']]],
   ['variable',['Variable',['../structmage_1_1_variable.html',1,'mage']]],
@@ -7,16 +8,6 @@ var searchData=
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html#a4b4028a9710fcfc5fb26bb63922a90cb',1,'mage::VariableScript::VariableScript(const wstring &amp;fname, bool import=true)'],['../classmage_1_1_variable_script.html#aebd4e6cf2bdae4e57c9da428007fc4d7',1,'mage::VariableScript::VariableScript(const VariableScript &amp;variable_script)=delete'],['../classmage_1_1_variable_script.html#acb767379c723255dd07ff2a541bc5f90',1,'mage::VariableScript::VariableScript(VariableScript &amp;&amp;variable_script)']]],
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html',1,'mage']]],
   ['variabletype',['VariableType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a',1,'mage']]],
-  ['variabletype_5fbool',['VariableType_Bool',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa3e931f5acb84d36faafd4e2a9a927413',1,'mage']]],
-  ['variabletype_5fcolor',['VariableType_Color',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aaacaf6301b7fe6f0c6f606d9432185b48',1,'mage']]],
-  ['variabletype_5ffloat',['VariableType_Float',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa0aed618ec60afb1acfa4fd4e8ce518d9',1,'mage']]],
-  ['variabletype_5ffloat2',['VariableType_Float2',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa60bf307d5b5ddafeae4bcfbeae83e8cd',1,'mage']]],
-  ['variabletype_5ffloat3',['VariableType_Float3',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa4c4b9c61a44924f02e297762944b7675',1,'mage']]],
-  ['variabletype_5ffloat4',['VariableType_Float4',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa5039f9440ba0fab413831b1452c9ca7f',1,'mage']]],
-  ['variabletype_5fint',['VariableType_Int',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aae0b6cd2e0baf9fe25bdad167df6839fe',1,'mage']]],
-  ['variabletype_5fint2',['VariableType_Int2',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aacc3025667a8103a37ec86e3d953f27e9',1,'mage']]],
-  ['variabletype_5fint3',['VariableType_Int3',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aaf09835cc5d74cc33e0949bee9899ba3e',1,'mage']]],
-  ['variabletype_5fstring',['VariableType_String',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa926d5ae9336679e71241d388c06112a2',1,'mage']]],
   ['vertexposition',['VertexPosition',['../structmage_1_1_vertex_position.html',1,'mage']]],
   ['vertexposition',['VertexPosition',['../structmage_1_1_vertex_position.html#a2e6037836e67cdf5c43fc9abfa0d3753',1,'mage::VertexPosition::VertexPosition()=default'],['../structmage_1_1_vertex_position.html#aca7867e7a2d0cb50f32283dd91bb2aed',1,'mage::VertexPosition::VertexPosition(const Point3 &amp;p)'],['../structmage_1_1_vertex_position.html#aa77211e4b45efed3d57f3170b9df6787',1,'mage::VertexPosition::VertexPosition(const VertexPosition &amp;vertex)=default'],['../structmage_1_1_vertex_position.html#ae00cb7667e411fefa4052b80a47ccfff',1,'mage::VertexPosition::VertexPosition(VertexPosition &amp;&amp;vertex)=default']]],
   ['vertexpositioncolor',['VertexPositionColor',['../structmage_1_1_vertex_position_color.html',1,'mage']]],
@@ -38,10 +29,10 @@ var searchData=
   ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html#ae1cae27fde45f87829330474d13a579f',1,'mage::VertexShader::VertexShader(ID3D11Device2 *device, ID3D11DeviceContext2 *device_context, const wstring &amp;fname, const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)'],['../classmage_1_1_vertex_shader.html#a0d649afa3b4b458b956630f010413536',1,'mage::VertexShader::VertexShader(ID3D11Device2 *device, ID3D11DeviceContext2 *device_context, const CompiledVertexShader &amp;compiled_vertex_shader, const D3D11_INPUT_ELEMENT_DESC *input_element_desc, uint32_t nb_input_elements)'],['../classmage_1_1_vertex_shader.html#a713f8581278ea2e5eb3010207b7e42a8',1,'mage::VertexShader::VertexShader(const VertexShader &amp;vertex_shader)=delete'],['../classmage_1_1_vertex_shader.html#adb9497fa9e712c3b7c94d377408c24f3',1,'mage::VertexShader::VertexShader(VertexShader &amp;&amp;vertex_shader)']]],
   ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html',1,'mage']]],
   ['vertices_5fper_5fsprite',['vertices_per_sprite',['../classmage_1_1_sprite_batch_mesh.html#a450088fe9797bc26008ede487b39f0d7',1,'mage::SpriteBatchMesh']]],
-  ['viewfrustum',['ViewFrustum',['../classmage_1_1_view_frustum.html',1,'mage']]],
   ['viewfrustum',['ViewFrustum',['../classmage_1_1_view_frustum.html#ad1fd4a59f6cd0fd38289e66d4c6b5d51',1,'mage::ViewFrustum::ViewFrustum(const Camera &amp;camera)'],['../classmage_1_1_view_frustum.html#abbd4ec6c2766d3f630bce16cefa8bc4d',1,'mage::ViewFrustum::ViewFrustum(const ViewFrustum &amp;view_frustum)=default'],['../classmage_1_1_view_frustum.html#a3568cfa6a5d440455867eb11b88a5213',1,'mage::ViewFrustum::ViewFrustum(ViewFrustum &amp;&amp;view_frustum)=default']]],
-  ['vsreader',['VSReader',['../classmage_1_1_v_s_reader.html#ab41fb08f6e7a72b0ba7059ecb8c91623',1,'mage::VSReader::VSReader(vector&lt; Variable &gt; &amp;variable_buffer)'],['../classmage_1_1_v_s_reader.html#aec7ec2ea03d5d77c5e78438a60263a73',1,'mage::VSReader::VSReader(const VSReader &amp;reader)=delete'],['../classmage_1_1_v_s_reader.html#aa7bb7d1792d4eef4734b4d4daa6e2ce7',1,'mage::VSReader::VSReader(VSReader &amp;&amp;reader)']]],
+  ['viewfrustum',['ViewFrustum',['../classmage_1_1_view_frustum.html',1,'mage']]],
   ['vsreader',['VSReader',['../classmage_1_1_v_s_reader.html',1,'mage']]],
-  ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html',1,'mage']]],
-  ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html#ac1a9ff905a94e9c89a7ed48dc7c4b629',1,'mage::VSWriter::VSWriter(const vector&lt; Variable &gt; &amp;variable_buffer)'],['../classmage_1_1_v_s_writer.html#a77d146f812d9d37ee99c31133d3597b8',1,'mage::VSWriter::VSWriter(const VSWriter &amp;writer)=delete'],['../classmage_1_1_v_s_writer.html#a744553658a13bbe59349058579fafb56',1,'mage::VSWriter::VSWriter(VSWriter &amp;&amp;writer)']]]
+  ['vsreader',['VSReader',['../classmage_1_1_v_s_reader.html#ab41fb08f6e7a72b0ba7059ecb8c91623',1,'mage::VSReader::VSReader(vector&lt; Variable &gt; &amp;variable_buffer)'],['../classmage_1_1_v_s_reader.html#aec7ec2ea03d5d77c5e78438a60263a73',1,'mage::VSReader::VSReader(const VSReader &amp;reader)=delete'],['../classmage_1_1_v_s_reader.html#aa7bb7d1792d4eef4734b4d4daa6e2ce7',1,'mage::VSReader::VSReader(VSReader &amp;&amp;reader)']]],
+  ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html#ac1a9ff905a94e9c89a7ed48dc7c4b629',1,'mage::VSWriter::VSWriter(const vector&lt; Variable &gt; &amp;variable_buffer)'],['../classmage_1_1_v_s_writer.html#a77d146f812d9d37ee99c31133d3597b8',1,'mage::VSWriter::VSWriter(const VSWriter &amp;writer)=delete'],['../classmage_1_1_v_s_writer.html#a744553658a13bbe59349058579fafb56',1,'mage::VSWriter::VSWriter(VSWriter &amp;&amp;writer)']]],
+  ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html',1,'mage']]]
 ];
