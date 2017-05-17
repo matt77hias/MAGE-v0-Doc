@@ -39,7 +39,7 @@ var NAVTREEINDEX =
 "classmage_1_1_sprite_text.html#acf993532a7b2e6ebb761b9b47cbdba98",
 "functions_i.html",
 "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#a51faaa2b9971004c1c32b5b597ef82ee",
-"structmage_1_1_normal3.html#a3384b2970fd85fe729514ce0686b4446",
+"structmage_1_1_normal3.html#a477777d95f0ad41e6087668c965dd9b2",
 "structmage_1_1_sprite_font_descriptor.html#a2279d65420bd8230a334c4ceb560fcf6"
 ];
 
