@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['int2',['int2',['../namespacemage.html#a261f584ed5eff1d4356724836298769f',1,'mage']]],
-  ['int3',['int3',['../namespacemage.html#a1a5fae0812cbf89be481bfd79309106d',1,'mage']]]
+  ['omnilightnode',['OmniLightNode',['../namespacemage.html#a1724c6e6b6b5ba535cdd967cbbb4a669',1,'mage']]],
+  ['orthographiccameranode',['OrthographicCameraNode',['../namespacemage.html#a7d62ab5877be3e14a9735014b77d3f55',1,'mage']]]
 ];
