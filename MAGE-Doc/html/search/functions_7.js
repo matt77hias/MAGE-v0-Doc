@@ -1,6 +1,7 @@
 var searchData=
 [
   ['get',['Get',['../classmage_1_1_sprite_font.html#a8e43f8d97fb7e5ee03ed49fb45ee1b5f',1,'mage::SpriteFont::Get()'],['../structmage_1_1_constant_buffer.html#a6b8fcbd873ffbda96d7412c581d5a29a',1,'mage::ConstantBuffer::Get()'],['../structmage_1_1_structured_buffer.html#ad933738bc55b10aea665913a8215bab0',1,'mage::StructuredBuffer::Get()'],['../classmage_1_1_texture.html#ac48cd0477d9771666e3929d72ee4e419',1,'mage::Texture::Get()']]],
+  ['getaabb',['GetAABB',['../classmage_1_1_static_mesh.html#aaf793aaeccd66c2b1b172f2847db86ed',1,'mage::StaticMesh::GetAABB()'],['../classmage_1_1_model.html#a07af22d1e72ffde3ad33b709a8d5c7f4',1,'mage::Model::GetAABB()']]],
   ['getadapter',['GetAdapter',['../classmage_1_1_device_enumeration.html#ac7b5e28561c607aa02b521a81164715c',1,'mage::DeviceEnumeration']]],
   ['getadditiveblendstate',['GetAdditiveBlendState',['../structmage_1_1_rendering_state_cache.html#afa897dcd0b71e4ff8e6ce6d8e31aaa71',1,'mage::RenderingStateCache']]],
   ['getaddress',['GetAddress',['../classmage_1_1_sprite_font.html#a7bb83a23e33270c1c47c58eb67f048d1',1,'mage::SpriteFont::GetAddress() const noexcept'],['../classmage_1_1_sprite_font.html#a6adc948fa1132f68b0f835e1453e37f7',1,'mage::SpriteFont::GetAddress() noexcept'],['../classmage_1_1_texture.html#a35bde0f3a226f261d82fb3dd792631ad',1,'mage::Texture::GetAddress() const noexcept'],['../classmage_1_1_texture.html#a4f64ce2ddf3cee7283613e9dbb137e23',1,'mage::Texture::GetAddress() noexcept']]],
@@ -19,6 +20,7 @@ var searchData=
   ['getblendstate',['GetBlendState',['../structmage_1_1_rendering_state.html#ac1a0e8f7ba3865eaf0ec8445664a6a43',1,'mage::RenderingState']]],
   ['getbordercolor',['GetBorderColor',['../classmage_1_1_outline_sprite_text.html#adb4936119bcc0b148c9e11f021e83940',1,'mage::OutlineSpriteText']]],
   ['getbordercolorvector',['GetBorderColorVector',['../classmage_1_1_outline_sprite_text.html#a287bef30662bbd00ca999b3577249226',1,'mage::OutlineSpriteText']]],
+  ['getbs',['GetBS',['../classmage_1_1_static_mesh.html#a007a31e6630f5095af7f1e468f12912f',1,'mage::StaticMesh::GetBS()'],['../classmage_1_1_model.html#a7d99f18fd9cd6902795f77995b87bea2',1,'mage::Model::GetBS()']]],
   ['getcamera',['GetCamera',['../classmage_1_1_camera_node.html#aa9887e3bf192d6c078aae2430732cbf8',1,'mage::CameraNode::GetCamera() noexcept'],['../classmage_1_1_camera_node.html#aa911263cfce8cec2a42c6d03d25af606',1,'mage::CameraNode::GetCamera() const noexcept'],['../classmage_1_1_derived_camera_node.html#a423d9e416aec8ade92d0d2211d40de39',1,'mage::DerivedCameraNode::GetCamera() noexcept'],['../classmage_1_1_derived_camera_node.html#aef2db8d343aeebc95c433150e234481a',1,'mage::DerivedCameraNode::GetCamera() const noexcept'],['../classmage_1_1_scene.html#ad77fe833ca79bf862e1929dfdeb0f1fd',1,'mage::Scene::GetCamera()']]],
   ['getcolor',['GetColor',['../structmage_1_1_color_string.html#afba86162d9c13d76dcdb9cf232e8e89f',1,'mage::ColorString::GetColor()'],['../classmage_1_1_sprite_image.html#aa04711b85cbe98493edd8767ac3348b5',1,'mage::SpriteImage::GetColor()']]],
   ['getcolorvector',['GetColorVector',['../structmage_1_1_color_string.html#a9326950147ecdc3c09909518e0dddb76',1,'mage::ColorString::GetColorVector()'],['../classmage_1_1_sprite_image.html#a65e6a26e2589afa2c6ccc463e7dd4264',1,'mage::SpriteImage::GetColorVector()']]],
@@ -94,7 +96,7 @@ var searchData=
   ['getmaximumrotation',['GetMaximumRotation',['../classmage_1_1_mouse_look_script.html#a43d226ce0c1d8232bfe231cbcb20698e',1,'mage::MouseLookScript']]],
   ['getmaximumrotationx',['GetMaximumRotationX',['../classmage_1_1_mouse_look_script.html#ad9ba164d80ed752e64cd7b0275a21460',1,'mage::MouseLookScript']]],
   ['getmaximumrotationy',['GetMaximumRotationY',['../classmage_1_1_mouse_look_script.html#a9650ed4b2592e89fc8428b3a7dde1029',1,'mage::MouseLookScript']]],
-  ['getmesh',['GetMesh',['../classmage_1_1_model.html#a5aba7071fb98060f9a450abad4d082cc',1,'mage::Model::GetMesh()'],['../classmage_1_1_model_descriptor.html#aad2a0d8ca726eec787834d24e6192f0c',1,'mage::ModelDescriptor::GetMesh()']]],
+  ['getmesh',['GetMesh',['../classmage_1_1_model_descriptor.html#aad2a0d8ca726eec787834d24e6192f0c',1,'mage::ModelDescriptor']]],
   ['getminimumrotation',['GetMinimumRotation',['../classmage_1_1_mouse_look_script.html#a9bfb1bd2c5f4b6b2163a40782b5ac7fd',1,'mage::MouseLookScript']]],
   ['getminimumrotationx',['GetMinimumRotationX',['../classmage_1_1_mouse_look_script.html#a1961b562ee19c7575f3005a0b1c9bc07',1,'mage::MouseLookScript']]],
   ['getminimumrotationy',['GetMinimumRotationY',['../classmage_1_1_mouse_look_script.html#a4c2274d715404591ec3e4ae4ba7fb3e3',1,'mage::MouseLookScript']]],

@@ -44,6 +44,7 @@ var classmage_1_1_scene =
     [ "Render3D", "classmage_1_1_scene.html#a51d2d441067d30cf3a444d6a80811f93", null ],
     [ "SetCamera", "classmage_1_1_scene.html#a7568ec0884d04812af2f70990c8ec80d", null ],
     [ "SetName", "classmage_1_1_scene.html#a9b7c1c2f84cc3b3c5ff3de4f29d830e9", null ],
+    [ "SetName", "classmage_1_1_scene.html#a86b2e6e764ee134af1706f90603a6596", null ],
     [ "Uninitialize", "classmage_1_1_scene.html#a714dc33c04dc2b8e2cec93564905b174", null ],
     [ "Update", "classmage_1_1_scene.html#aa10e6eafc00834f63f146589326cbfe2", null ],
     [ "m_camera", "classmage_1_1_scene.html#a39c785951d9fb99477c1894eabba0cc6", null ],

@@ -26,13 +26,26 @@ virtual \hyperlink{classmage_1_1_static_mesh_a7fbae949f631d29913193a1b2c2ef658}{
 \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \& \hyperlink{classmage_1_1_static_mesh_af73dd102f2de9cf7529e380895cfc8ff}{operator=} (const \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&static\+\_\+mesh)=delete
 \item 
 \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \& \hyperlink{classmage_1_1_static_mesh_a38912f8555053abba649bea160d56e46}{operator=} (\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&\&static\+\_\+mesh)=delete
+\item 
+const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \& \hyperlink{classmage_1_1_static_mesh_aaf793aaeccd66c2b1b172f2847db86ed}{Get\+A\+A\+BB} () const noexcept
+\item 
+const \hyperlink{structmage_1_1_b_s}{BS} \& \hyperlink{classmage_1_1_static_mesh_a007a31e6630f5095af7f1e468f12912f}{Get\+BS} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+{\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{classmage_1_1_static_mesh_a532dcf96ac9b1bf7988a0726d1eb2fe5}{Setup\+Bounding\+Volumes} (const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices) noexcept
+\item 
 {\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{classmage_1_1_static_mesh_a66d1b876d80987abec5f1e4db3edc9a2}{Setup\+Vertex\+Buffer} (const VertexT $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
 \item 
 void \hyperlink{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87}{Setup\+Index\+Buffer} (const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{classmage_1_1_static_mesh_ae295e5ab8242dd6464c71eda10ca2f85}{m\+\_\+aabb}
+\item 
+\hyperlink{structmage_1_1_b_s}{BS} \hyperlink{classmage_1_1_static_mesh_ae5a9d7c89d7253130329d7b482045c8f}{m\+\_\+bs}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -159,6 +172,28 @@ Constructs a static mesh by moving the given static mesh.
 Destructs this static mesh. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_static_mesh_aaf793aaeccd66c2b1b172f2847db86ed}{}\label{classmage_1_1_static_mesh_aaf793aaeccd66c2b1b172f2847db86ed} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Get\+A\+A\+BB@{Get\+A\+A\+BB}}
+\index{Get\+A\+A\+BB@{Get\+A\+A\+BB}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+A\+A\+B\+B()}{GetAABB()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}\& mage\+::\+Static\+Mesh\+::\+Get\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this static mesh.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this static mesh. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_static_mesh_a007a31e6630f5095af7f1e468f12912f}{}\label{classmage_1_1_static_mesh_a007a31e6630f5095af7f1e468f12912f} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Get\+BS@{Get\+BS}}
+\index{Get\+BS@{Get\+BS}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+B\+S()}{GetBS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS}\& mage\+::\+Static\+Mesh\+::\+Get\+BS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the \hyperlink{structmage_1_1_b_s}{BS} of this static mesh.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structmage_1_1_b_s}{BS} of this static mesh. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_static_mesh_af73dd102f2de9cf7529e380895cfc8ff}{}\label{classmage_1_1_static_mesh_af73dd102f2de9cf7529e380895cfc8ff} 
 \index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
@@ -191,6 +226,32 @@ Moves the given static mesh to this static mesh.
 \begin{DoxyReturn}{Returns}
 A reference to the moved static mesh (i.\+e. this static mesh). 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_static_mesh_a532dcf96ac9b1bf7988a0726d1eb2fe5}{}\label{classmage_1_1_static_mesh_a532dcf96ac9b1bf7988a0726d1eb2fe5} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}}
+\index{Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Bounding\+Volumes()}{SetupBoundingVolumes()}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+void mage\+::\+Static\+Mesh\+::\+Setup\+Bounding\+Volumes (\begin{DoxyParamCaption}\item[{const VertexT $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Sets up the bounding volumes of this static mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape vertices} points to an array of at least {\itshape nb\+\_\+vertices} vertices. 
+
+{\itshape nb\+\_\+vertices} must be greater than zero. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertices} & A pointer to an array of vertices. \\
+\hline
+\mbox{\tt in}  & {\em nb\+\_\+vertices} & The number of vertices. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87}{}\label{classmage_1_1_static_mesh_acebe0c6014932681b63109bc75754f87} 
 \index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
 \index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
@@ -247,3 +308,19 @@ Sets up the vertex buffer of this static mesh.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the vertex buffer of this static mesh. \\
 \hline
 \end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_static_mesh_ae295e5ab8242dd6464c71eda10ca2f85}{}\label{classmage_1_1_static_mesh_ae295e5ab8242dd6464c71eda10ca2f85} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!m\+\_\+aabb@{m\+\_\+aabb}}
+\index{m\+\_\+aabb@{m\+\_\+aabb}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+aabb}{m\_aabb}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Static\+Mesh\+::m\+\_\+aabb\hspace{0.3cm}{\ttfamily [private]}}
+
+The \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this static mesh. \hypertarget{classmage_1_1_static_mesh_ae5a9d7c89d7253130329d7b482045c8f}{}\label{classmage_1_1_static_mesh_ae5a9d7c89d7253130329d7b482045c8f} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!m\+\_\+bs@{m\+\_\+bs}}
+\index{m\+\_\+bs@{m\+\_\+bs}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+bs}{m\_bs}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Static\+Mesh\+::m\+\_\+bs\hspace{0.3cm}{\ttfamily [private]}}
+
+The \hyperlink{structmage_1_1_b_s}{BS} of this static mesh. 

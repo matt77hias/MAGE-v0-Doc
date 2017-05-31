@@ -19,6 +19,7 @@ var classmage_1_1_sprite_object =
     [ "operator=", "classmage_1_1_sprite_object.html#a0d098954e6ef5b331b2b7e6f6cb3c21e", null ],
     [ "SetActive", "classmage_1_1_sprite_object.html#a8f27da427493db1567b842b83fa10f65", null ],
     [ "SetName", "classmage_1_1_sprite_object.html#a784cd7d61f3a9f71a521656ae3199366", null ],
+    [ "SetName", "classmage_1_1_sprite_object.html#a62d570d43c7b83042f0709fef6e273f4", null ],
     [ "SetSpriteEffects", "classmage_1_1_sprite_object.html#aef6cf252d79c9fcec978d83642da0e9a", null ],
     [ "m_active", "classmage_1_1_sprite_object.html#a6694bb9cade83917202cf9ca6d359e81", null ],
     [ "m_effects", "classmage_1_1_sprite_object.html#a270f73b8d316f72c4228854d08a6d2ea", null ],

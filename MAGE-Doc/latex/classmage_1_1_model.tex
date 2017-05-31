@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581}{Model} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mesh, size\+\_\+t start\+\_\+index, size\+\_\+t nb\+\_\+indices, const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&material)
+\hyperlink{classmage_1_1_model_add9b05c4ca824c116f4ac0759eb62ef7}{Model} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$ mesh, size\+\_\+t start\+\_\+index, size\+\_\+t nb\+\_\+indices, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const \hyperlink{structmage_1_1_b_s}{BS} \&bs, const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&material)
 \item 
 \hyperlink{classmage_1_1_model_ac5f1d340bbfefd30bec3e6343a86059a}{Model} (const \hyperlink{classmage_1_1_model}{Model} \&model)
 \item 
@@ -25,7 +25,9 @@ size\+\_\+t \hyperlink{classmage_1_1_model_a876fcfe369f12e2d7edb6b533dd06252}{Ge
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_model_a37c9814a445159fd742bcc1b9a5a7b94}{Get\+Number\+Of\+Indices} () const noexcept
 \item 
-const \hyperlink{classmage_1_1_mesh}{Mesh} $\ast$ \hyperlink{classmage_1_1_model_a5aba7071fb98060f9a450abad4d082cc}{Get\+Mesh} () const noexcept
+const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \& \hyperlink{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4}{Get\+A\+A\+BB} () const noexcept
+\item 
+const \hyperlink{structmage_1_1_b_s}{BS} \& \hyperlink{classmage_1_1_model_a7d99f18fd9cd6902795f77995b87bea2}{Get\+BS} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_model_a0083c64e8199db23b78a9281be84685f}{Prepare\+Drawing} () const
 \item 
@@ -51,6 +53,10 @@ const size\+\_\+t \hyperlink{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818
 \item 
 const size\+\_\+t \hyperlink{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae75}{m\+\_\+nb\+\_\+indices}
 \item 
+const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{classmage_1_1_model_ab53a0f253df545fd59723bee107bf523}{m\+\_\+aabb}
+\item 
+const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{classmage_1_1_model_a1d3ea0a9f302f623dcaceb2df4315a0b}{m\+\_\+bs}
+\item 
 \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} $>$ \hyperlink{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122}{m\+\_\+material}
 \end{DoxyCompactItemize}
 
@@ -59,11 +65,11 @@ const size\+\_\+t \hyperlink{classmage_1_1_model_a1fcf80ed9f3002bd2319ef83f073ae
 A class of models. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581}{}\label{classmage_1_1_model_aca2d5faa95a447ff3ecaab685aec8581} 
+\hypertarget{classmage_1_1_model_add9b05c4ca824c116f4ac0759eb62ef7}{}\label{classmage_1_1_model_add9b05c4ca824c116f4ac0759eb62ef7} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Model@{Model}}
 \index{Model@{Model}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$}]{mesh,  }\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices,  }\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_mesh}{Mesh} $>$}]{mesh,  }\item[{size\+\_\+t}]{start\+\_\+index,  }\item[{size\+\_\+t}]{nb\+\_\+indices,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a model.
 
@@ -74,6 +80,10 @@ Constructs a model.
 \mbox{\tt in}  & {\em start\+\_\+index} & The start index in the mesh. \\
 \hline
 \mbox{\tt in}  & {\em nb\+\_\+indices} & The number of indices in the mesh. \\
+\hline
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em bs} & A reference to the \hyperlink{structmage_1_1_b_s}{BS}. \\
 \hline
 \mbox{\tt in}  & {\em material} & A reference to the shaded material. \\
 \hline
@@ -141,7 +151,29 @@ A pointer to the clone of this model.
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily void mage\+::\+Model\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Drwas this model. \hypertarget{classmage_1_1_model_aed33390bd172e034a76fa68093990174}{}\label{classmage_1_1_model_aed33390bd172e034a76fa68093990174} 
+Drwas this model. \hypertarget{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4}{}\label{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+A\+A\+BB@{Get\+A\+A\+BB}}
+\index{Get\+A\+A\+BB@{Get\+A\+A\+BB}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+A\+A\+B\+B()}{GetAABB()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}\& mage\+::\+Model\+::\+Get\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this model. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_model_a7d99f18fd9cd6902795f77995b87bea2}{}\label{classmage_1_1_model_a7d99f18fd9cd6902795f77995b87bea2} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Get\+BS@{Get\+BS}}
+\index{Get\+BS@{Get\+BS}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+B\+S()}{GetBS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS}\& mage\+::\+Model\+::\+Get\+BS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the \hyperlink{structmage_1_1_b_s}{BS} of this model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structmage_1_1_b_s}{BS} of this model. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_model_aed33390bd172e034a76fa68093990174}{}\label{classmage_1_1_model_aed33390bd172e034a76fa68093990174} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -162,17 +194,6 @@ Returns the material of this model.
 
 \begin{DoxyReturn}{Returns}
 A reference to the material of this model. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_model_a5aba7071fb98060f9a450abad4d082cc}{}\label{classmage_1_1_model_a5aba7071fb98060f9a450abad4d082cc} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Mesh@{Get\+Mesh}}
-\index{Get\+Mesh@{Get\+Mesh}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Get\+Mesh()}{GetMesh()}}
-{\footnotesize\ttfamily const \hyperlink{classmage_1_1_mesh}{Mesh}$\ast$ mage\+::\+Model\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the mesh of this model.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the mesh of this model. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a37c9814a445159fd742bcc1b9a5a7b94}{}\label{classmage_1_1_model_a37c9814a445159fd742bcc1b9a5a7b94} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Number\+Of\+Indices@{Get\+Number\+Of\+Indices}}
@@ -255,7 +276,19 @@ Prepares this model for shading.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122}{}\label{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122} 
+\hypertarget{classmage_1_1_model_ab53a0f253df545fd59723bee107bf523}{}\label{classmage_1_1_model_ab53a0f253df545fd59723bee107bf523} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+aabb@{m\+\_\+aabb}}
+\index{m\+\_\+aabb@{m\+\_\+aabb}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+aabb}{m\_aabb}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Model\+::m\+\_\+aabb\hspace{0.3cm}{\ttfamily [private]}}
+
+The \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this model. \hypertarget{classmage_1_1_model_a1d3ea0a9f302f623dcaceb2df4315a0b}{}\label{classmage_1_1_model_a1d3ea0a9f302f623dcaceb2df4315a0b} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+bs@{m\+\_\+bs}}
+\index{m\+\_\+bs@{m\+\_\+bs}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+bs}{m\_bs}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Model\+::m\+\_\+bs\hspace{0.3cm}{\ttfamily [private]}}
+
+The \hyperlink{structmage_1_1_b_s}{BS} of this model. \hypertarget{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122}{}\label{classmage_1_1_model_a93e080e5dc2c7c0672a278de76899122} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+material@{m\+\_\+material}}
 \index{m\+\_\+material@{m\+\_\+material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+material}{m\_material}}

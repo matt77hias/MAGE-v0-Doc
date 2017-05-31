@@ -33,14 +33,14 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classmage_1_1_device_enumeration.html#a7a7d0c5a27309421209b5d89cd9dfd43",
-"classmage_1_1_m_s_h_reader.html#a26b60060bf61183fb5758a4725c6a205",
-"classmage_1_1_node.html",
-"classmage_1_1_resource_pool.html#a5857b70ac755db750dcaff5277201f9f",
-"classmage_1_1_sprite_text.html#acf993532a7b2e6ebb761b9b47cbdba98",
-"functions_i.html",
-"structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#a51faaa2b9971004c1c32b5b597ef82ee",
-"structmage_1_1_normal3.html#a477777d95f0ad41e6087668c965dd9b2",
-"structmage_1_1_sprite_font_descriptor.html#a2279d65420bd8230a334c4ceb560fcf6"
+"classmage_1_1_m_d_l_writer.html#af9416c1b2599ea86f4af8018dc0b9baf",
+"classmage_1_1_mouse_look_script.html#ad09bda241666f60dfc408500cafd073d",
+"classmage_1_1_resource_factory.html#a987af631d0fda02fd336ceb02113a128",
+"classmage_1_1_sprite_text.html#a462809b9138f94720f972505a4f74d81",
+"functions_func_f.html",
+"structmage_1_1_constant_buffer.html#a851570293d8eeb47f83749f8f54864ee",
+"structmage_1_1_model_part.html#a37e9d66b701ed84111160bf5a003b658",
+"structmage_1_1_shaded_material.html#aa114be8c5d55096554cf75fdba75ab2d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
