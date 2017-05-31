@@ -19,13 +19,15 @@
 \item 
 \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \& \hyperlink{structmage_1_1_model_output_a5e368e3ae8a52d329f8d9b5f1c4b9d03}{operator=} (\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&\&output)=delete
 \item 
+void \hyperlink{structmage_1_1_model_output_ad62942de2a55fce53d31aeafa1d0795a}{Add\+Model\+Part} (\hyperlink{structmage_1_1_model_part}{Model\+Part} \&\&model\+\_\+part, bool create\+\_\+bounding\+\_\+volumes=true)
+\item 
 bool \hyperlink{structmage_1_1_model_output_a90c6d42d13813b9c340bd1a250276a8d}{Has\+Model\+Part} (const string \&name) noexcept
 \item 
 void \hyperlink{structmage_1_1_model_output_a9e4d94547fbc318961d8c695149cdf14}{Start\+Model\+Part} (const string \&child, const string \&parent=M\+A\+G\+E\+\_\+\+M\+D\+L\+\_\+\+P\+A\+R\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+R\+E\+NT)
 \item 
 void \hyperlink{structmage_1_1_model_output_abd614f9f2e9f9dbc0b2c354ee37f2998}{Set\+Material} (const string \&material)
 \item 
-void \hyperlink{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d}{End\+Model\+Part} ()
+void \hyperlink{structmage_1_1_model_output_aca4628ef55d8ded956de4c06e1433f45}{End\+Model\+Part} (bool create\+\_\+bounding\+\_\+volumes=true) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -37,6 +39,11 @@ vector$<$ uint32\+\_\+t $>$ \hyperlink{structmage_1_1_model_output_afc6530c5fc47
 vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{structmage_1_1_model_output_a3bfdb493d92a83b40a8b363a96e89a0c}{m\+\_\+material\+\_\+buffer}
 \item 
 vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{structmage_1_1_model_output_a86df369ff4959458ee6991c36e6aa01a}{m\+\_\+model\+\_\+parts}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structmage_1_1_model_output_aec05a0a43d141b8b8260e741314615c1}{Setup\+Bounding\+Volumes} (\hyperlink{structmage_1_1_model_part}{Model\+Part} \&model\+\_\+part) noexcept
 \end{DoxyCompactItemize}
 
 
@@ -99,18 +106,39 @@ Constructs a model output by moving the given model output.
 Destructs this model output. 
 
 \subsection{Member Function Documentation}
-\hypertarget{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d}{}\label{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d} 
+\hypertarget{structmage_1_1_model_output_ad62942de2a55fce53d31aeafa1d0795a}{}\label{structmage_1_1_model_output_ad62942de2a55fce53d31aeafa1d0795a} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Add\+Model\+Part@{Add\+Model\+Part}}
+\index{Add\+Model\+Part@{Add\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Add\+Model\+Part()}{AddModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::Add\+Model\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_part}{Model\+Part} \&\&}]{model\+\_\+part,  }\item[{bool}]{create\+\_\+bounding\+\_\+volumes = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Adds a model part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+part} & A reference to the model part to add. \\
+\hline
+\mbox{\tt in}  & {\em create\+\_\+bounding\+\_\+volumes} & A flag indicating whether bounding volumes must be created for the given model part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_aca4628ef55d8ded956de4c06e1433f45}{}\label{structmage_1_1_model_output_aca4628ef55d8ded956de4c06e1433f45} 
 \index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!End\+Model\+Part@{End\+Model\+Part}}
 \index{End\+Model\+Part@{End\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
 \subsubsection{\texorpdfstring{End\+Model\+Part()}{EndModelPart()}}
 {\footnotesize\ttfamily template$<$typename VertexT$>$ \\
-void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::End\+Model\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::End\+Model\+Part (\begin{DoxyParamCaption}\item[{bool}]{create\+\_\+bounding\+\_\+volumes = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Ends the creation of the last model part.
 
 \begin{DoxyPrecond}{Precondition}
 This model output contains at least one model part. 
 \end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em create\+\_\+bounding\+\_\+volumes} & A flag indicating whether bounding volumes must be created for the given model part. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_model_output_a90c6d42d13813b9c340bd1a250276a8d}{}\label{structmage_1_1_model_output_a90c6d42d13813b9c340bd1a250276a8d} 
 \index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Has\+Model\+Part@{Has\+Model\+Part}}
 \index{Has\+Model\+Part@{Has\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
@@ -174,6 +202,20 @@ This model output contains at least one model part.
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em material} & A reference to the name of the material. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_aec05a0a43d141b8b8260e741314615c1}{}\label{structmage_1_1_model_output_aec05a0a43d141b8b8260e741314615c1} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}}
+\index{Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Setup\+Bounding\+Volumes()}{SetupBoundingVolumes()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::Setup\+Bounding\+Volumes (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_part}{Model\+Part} \&}]{model\+\_\+part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Sets up the bounding volumes of the given model part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+part} & A reference to the model part. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_model_output_a9e4d94547fbc318961d8c695149cdf14}{}\label{structmage_1_1_model_output_a9e4d94547fbc318961d8c695149cdf14} 

@@ -13,6 +13,7 @@ var classmage_1_1_outline_sprite_text =
     [ "operator=", "classmage_1_1_outline_sprite_text.html#a324ec8e5c0d319b449895cc45d6b3807", null ],
     [ "operator=", "classmage_1_1_outline_sprite_text.html#a3549e97af5461728a399f01af9125486", null ],
     [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#a66b448443de5a459bb28f66c682a12bd", null ],
+    [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#a7bd6e4fc0afefb65ca9d543f52941400", null ],
     [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#acb4952d08d69ee8ccd20fb668f3efcd3", null ],
     [ "m_border_color", "classmage_1_1_outline_sprite_text.html#a19301d370498a08759445f415da78822", null ]
 ];

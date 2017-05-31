@@ -7,6 +7,7 @@ var searchData=
   ['addchildnode',['AddChildNode',['../classmage_1_1_node.html#a11a7c052c5e4a6713d60aaad67dfde5d',1,'mage::Node']]],
   ['addlight',['AddLight',['../classmage_1_1_scene.html#a6ce8182afe3c1f39249ec08b62aee317',1,'mage::Scene::AddLight(SharedPtr&lt; OmniLightNode &gt; light)'],['../classmage_1_1_scene.html#aeeba74ee789d4917ed72b179f16c1222',1,'mage::Scene::AddLight(SharedPtr&lt; SpotLightNode &gt; light)']]],
   ['addmodel',['AddModel',['../classmage_1_1_scene.html#acfd5cf0484e1814cb265604ed970335f',1,'mage::Scene']]],
+  ['addmodelpart',['AddModelPart',['../structmage_1_1_model_output.html#ad62942de2a55fce53d31aeafa1d0795a',1,'mage::ModelOutput']]],
   ['addscript',['AddScript',['../classmage_1_1_scene.html#ab97b66c81c32681699052e154d0e0722',1,'mage::Scene']]],
   ['addsprite',['AddSprite',['../classmage_1_1_scene.html#a735a4eba6bf6a072195f1cfc58dfca47',1,'mage::Scene']]],
   ['addvariable',['AddVariable',['../classmage_1_1_variable_script.html#a981ec417c40c5b010fc2199a7aa44f95',1,'mage::VariableScript']]],

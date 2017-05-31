@@ -16,6 +16,7 @@ var classmage_1_1_sprite_image =
     [ "operator=", "classmage_1_1_sprite_image.html#a20d8e8272cf62599f6c0e4b1ff4f3586", null ],
     [ "operator=", "classmage_1_1_sprite_image.html#a9f83e728a93550f6b20bb4d500483171", null ],
     [ "SetColor", "classmage_1_1_sprite_image.html#ac061b1e201e24097d4b667b8fb53c232", null ],
+    [ "SetColor", "classmage_1_1_sprite_image.html#a27b191565b90ee8fe78b7db3be0c9bb2", null ],
     [ "SetColor", "classmage_1_1_sprite_image.html#a4ee2d13c618ef1c16e4cee8433f3d5dd", null ],
     [ "SetTexture", "classmage_1_1_sprite_image.html#a12e0ffecc7995f13ccf0374fa37dc4c6", null ],
     [ "SetTextureRegion", "classmage_1_1_sprite_image.html#a99640fe6fc85d704f6a2831d0f663033", null ],

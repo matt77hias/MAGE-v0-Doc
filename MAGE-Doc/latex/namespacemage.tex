@@ -513,7 +513,11 @@ const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a69f
 \item 
 const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a27f8b423f942bafffcf15c9b2d4daf71}{Overlap\+Strict} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2) noexcept
 \item 
+const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{namespacemage_ac200216939983097f87ec30720644192}{Union} (const \hyperlink{structmage_1_1_b_s}{BS} \&bs, const \hyperlink{structmage_1_1_point3}{Point3} \&point) noexcept
+\item 
 {\footnotesize template$<$typename VertexT $>$ }\\const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a5f8ebbbef7be24b679e6a8f31a9c4ad5}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const VertexT \&vertex) noexcept
+\item 
+{\footnotesize template$<$typename VertexT $>$ }\\const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{namespacemage_a10764ea07ff80df908a5078ed16db07f}{Union} (const \hyperlink{structmage_1_1_b_s}{BS} \&bs, const VertexT \&vertex) noexcept
 \item 
 ostream \& \hyperlink{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T2 \&v)
 \item 
@@ -608,6 +612,8 @@ I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a32622fbfff97a28a65
 \+\_\+\+\_\+forceinline int32\+\_\+t \hyperlink{namespacemage_a787cb57d9fe1b75a485f2d0ab0552396}{Atomic\+Compare\+And\+Swap} (\hyperlink{namespacemage_a37ac3b8da2d89495d105e00f1022cb1e}{Atomic\+Int32} $\ast$destination, int32\+\_\+t exchange, int32\+\_\+t comparand) noexcept
 \item 
 \+\_\+\+\_\+forceinline float \hyperlink{namespacemage_a94c5a276c88460f639235ec6632ba316}{Atomic\+Add} (volatile float $\ast$addend, float value) noexcept
+\item 
+size\+\_\+t \hyperlink{namespacemage_a9d02a8be8876ff4bedafd6439d89164e}{Number\+Of\+Physical\+Cores} () noexcept
 \item 
 size\+\_\+t \hyperlink{namespacemage_aa20c7a962697bcf15aca54355ba80243}{Number\+Of\+System\+Cores} () noexcept
 \item 
@@ -2144,6 +2150,13 @@ Sets the rotation origin of this sprite transform to the given rotation origin.
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
 \hline
 \end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
 Adds the given x-\/value to the rotation origin of this sprite transform.
 
 
@@ -2459,6 +2472,17 @@ Constructs a transform from the given translation, rotation and scale component.
 \mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
 Constructs a transform from the given transform.
 
 
@@ -2525,6 +2549,13 @@ Sets the translation component of this transform to the given translation compon
 \mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
 \hline
 \end{DoxyParams}
 Sets the translation component of this transform to the given translation component.
@@ -2785,6 +2816,13 @@ Sets the scale component of this transform to the given scale component.
 \mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
 Sets the scale component of this transform to the given scale component.
@@ -3072,6 +3110,13 @@ Sets the translation component of this transform node to the given translation c
 \mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
 \hline
 \end{DoxyParams}
+Sets the translation component of this transform node to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
 Adds the given x-\/value to the translation component of this transform node.
 
 
@@ -3178,6 +3223,13 @@ Sets the rotation component of this transform node to the given rotation compone
 \mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform node to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
 \hline
 \end{DoxyParams}
 Sets the rotation component of this transform node to the given rotation component.
@@ -3316,6 +3368,13 @@ Sets the scale component of this transform node to the given scale component.
 \mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform node to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
 Sets the scale component of this transform node to the given scale component.
@@ -4349,6 +4408,13 @@ Sets the rotation origin of this sprite transform to the given rotation origin.
 \mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
 \hline
 \end{DoxyParams}
+Sets the rotation origin of this sprite transform to the given rotation origin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation\+\_\+origin} & A reference to the rotation origin.\\
+\hline
+\end{DoxyParams}
 Adds the given x-\/value to the rotation origin of this sprite transform.
 
 
@@ -4664,6 +4730,17 @@ Constructs a transform from the given translation, rotation and scale component.
 \mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
+\hline
+\end{DoxyParams}
 Constructs a transform from the given transform.
 
 
@@ -4730,6 +4807,13 @@ Sets the translation component of this transform to the given translation compon
 \mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the translation component.\\
+\hline
+\end{DoxyParams}
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
 \hline
 \end{DoxyParams}
 Sets the translation component of this transform to the given translation component.
@@ -4990,6 +5074,13 @@ Sets the scale component of this transform to the given scale component.
 \mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
 Sets the scale component of this transform to the given scale component.
@@ -5277,6 +5368,13 @@ Sets the translation component of this transform node to the given translation c
 \mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
 \hline
 \end{DoxyParams}
+Sets the translation component of this transform node to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component.\\
+\hline
+\end{DoxyParams}
 Adds the given x-\/value to the translation component of this transform node.
 
 
@@ -5383,6 +5481,13 @@ Sets the rotation component of this transform node to the given rotation compone
 \mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the rotation component.\\
+\hline
+\end{DoxyParams}
+Sets the rotation component of this transform node to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component.\\
 \hline
 \end{DoxyParams}
 Sets the rotation component of this transform node to the given rotation component.
@@ -5521,6 +5626,13 @@ Sets the scale component of this transform node to the given scale component.
 \mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
 \hline
 \mbox{\tt in}  & {\em z} & The z-\/value of the scale component.\\
+\hline
+\end{DoxyParams}
+Sets the scale component of this transform node to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component.\\
 \hline
 \end{DoxyParams}
 Sets the scale component of this transform node to the given scale component.
@@ -10224,6 +10336,17 @@ The return value is the result of the message processing and depends on the mess
 \subsubsection{\texorpdfstring{Make\+S\+R\+G\+B()}{MakeSRGB()}}
 {\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Make\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\hypertarget{namespacemage_a9d02a8be8876ff4bedafd6439d89164e}{}\label{namespacemage_a9d02a8be8876ff4bedafd6439d89164e} 
+\index{mage@{mage}!Number\+Of\+Physical\+Cores@{Number\+Of\+Physical\+Cores}}
+\index{Number\+Of\+Physical\+Cores@{Number\+Of\+Physical\+Cores}!mage@{mage}}
+\subsubsection{\texorpdfstring{Number\+Of\+Physical\+Cores()}{NumberOfPhysicalCores()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Number\+Of\+Physical\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the number of physical cores (i.\+e. physical processors).
+
+\begin{DoxyReturn}{Returns}
+The number of physical cores (i.\+e. physical processors). 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aa20c7a962697bcf15aca54355ba80243}{}\label{namespacemage_aa20c7a962697bcf15aca54355ba80243} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
 \index{Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}!mage@{mage}}
@@ -12057,7 +12180,7 @@ A token result indicating whether the conversion of the given string {\itshape s
 \hypertarget{namespacemage_a5f8ebbbef7be24b679e6a8f31a9c4ad5}{}\label{namespacemage_a5f8ebbbef7be24b679e6a8f31a9c4ad5} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const VertexT \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
@@ -12081,7 +12204,7 @@ The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb} and {\
 \hypertarget{namespacemage_a1107fb2b389832ac762ab4905c578e8b}{}\label{namespacemage_a1107fb2b389832ac762ab4905c578e8b} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} and the given point.
@@ -12099,7 +12222,7 @@ The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb} and {\
 \hypertarget{namespacemage_a1ace5b92afcdd7a85b75118a61b8dda1}{}\label{namespacemage_a1ace5b92afcdd7a85b75118a61b8dda1} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb1,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given A\+A\+B\+Bs.
@@ -12113,6 +12236,48 @@ Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given 
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a10764ea07ff80df908a5078ed16db07f}{}\label{namespacemage_a10764ea07ff80df908a5078ed16db07f} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
+const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const VertexT \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the union \hyperlink{structmage_1_1_b_s}{BS} of the given \hyperlink{structmage_1_1_b_s}{BS} and the given vertex.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bs} & A reference to the \hyperlink{structmage_1_1_b_s}{BS}. \\
+\hline
+\mbox{\tt in}  & {\em vertex} & A reference to the VertexT. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_b_s}{BS} of {\itshape bs} and {\itshape vertex}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ac200216939983097f87ec30720644192}{}\label{namespacemage_ac200216939983097f87ec30720644192} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the union \hyperlink{structmage_1_1_b_s}{BS} of the given \hyperlink{structmage_1_1_b_s}{BS} and the given point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bs} & A reference to the \hyperlink{structmage_1_1_b_s}{BS}. \\
+\hline
+\mbox{\tt in}  & {\em point} & A reference to the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_b_s}{BS} of {\itshape bs} and {\itshape point}. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
 \index{mage@{mage}!Warning@{Warning}}
