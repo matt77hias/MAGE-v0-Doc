@@ -39,13 +39,17 @@ bool \hyperlink{classmage_1_1_renderer_afdde83a1e2bc9288f000fb2575c525d0}{Lost\+
 \item 
 void \hyperlink{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{Switch\+Mode} (bool toggle)
 \item 
+void \hyperlink{classmage_1_1_renderer_a716c5ef70f425269de95db07c9ecdbfa}{Prepare\+Rendering2D} ()
+\item 
+void \hyperlink{classmage_1_1_renderer_a9c76ba66a275c0d74f250955e7781f77}{Prepare\+Rendering3D} ()
+\item 
 void \hyperlink{classmage_1_1_renderer_ac9adf3be8c7201e4df8c5f9e049dc43d}{Begin\+Frame} ()
 \item 
 void \hyperlink{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07}{End\+Frame} ()
 \item 
-void \hyperlink{classmage_1_1_renderer_a716c5ef70f425269de95db07c9ecdbfa}{Prepare\+Rendering2D} ()
+void \hyperlink{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc}{Begin\+Textures} (U\+I\+NT nb\+\_\+rtvs, I\+D3\+D11\+Render\+Target\+View $\ast$const $\ast$rtvs, I\+D3\+D11\+Depth\+Stencil\+View $\ast$dsv)
 \item 
-void \hyperlink{classmage_1_1_renderer_a9c76ba66a275c0d74f250955e7781f77}{Prepare\+Rendering3D} ()
+void \hyperlink{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3}{End\+Textures} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -160,6 +164,35 @@ Begins the rendering of the current frame.
 \begin{DoxyPrecond}{Precondition}
 This renderer is not inside a begin/end pair. 
 \end{DoxyPrecond}
+\hypertarget{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc}{}\label{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Begin\+Textures@{Begin\+Textures}}
+\index{Begin\+Textures@{Begin\+Textures}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Begin\+Textures()}{BeginTextures()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Begin\+Textures (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nb\+\_\+rtvs,  }\item[{I\+D3\+D11\+Render\+Target\+View $\ast$const $\ast$}]{rtvs,  }\item[{I\+D3\+D11\+Depth\+Stencil\+View $\ast$}]{dsv }\end{DoxyParamCaption})}
+
+Begins the rendering to the given render target views and depth stencil views.
+
+\begin{DoxyPrecond}{Precondition}
+This renderer is not inside a begin/end pair. 
+
+If {\itshape nb\+\_\+rtvs} is equal to zero, {\itshape rtvs} is equal to {\ttfamily nullptr}. 
+
+If {\itshape nb\+\_\+rtvs} is not equal to zero, 
+
+{\itshape rtvs} points to an array containing at least {\itshape nb\+\_\+rtvs} render target views. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nb\+\_\+rtvs} & The number of render target views. \\
+\hline
+\mbox{\tt in}  & {\em rtvs} & A pointer to an array containing the render target views to render to. \\
+\hline
+\mbox{\tt in}  & {\em dsv} & A pointer to the depth stencil view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The render target views and depth stencil view are not reset. 
+\end{DoxyNote}
 \hypertarget{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07}{}\label{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!End\+Frame@{End\+Frame}}
 \index{End\+Frame@{End\+Frame}!mage\+::\+Renderer@{mage\+::\+Renderer}}
@@ -167,6 +200,17 @@ This renderer is not inside a begin/end pair.
 {\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Ends the rendering of the current frame.
+
+\begin{DoxyPrecond}{Precondition}
+This renderer is inside a begin/end pair. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3}{}\label{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!End\+Textures@{End\+Textures}}
+\index{End\+Textures@{End\+Textures}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Textures()}{EndTextures()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ends the rendering to render target views and depth stencil views.
 
 \begin{DoxyPrecond}{Precondition}
 This renderer is inside a begin/end pair. 
