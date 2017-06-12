@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"structmage_1_1_shaded_material.html#a8be0968eae5daf3d566ee063925671c6":[1,0,0,97,78],
+"structmage_1_1_shaded_material.html#a9af9a519df49114dc516b7f5057b1f4f":[1,0,0,97,33],
+"structmage_1_1_shaded_material.html#aa03eb95e8375fa28c05a837c7e5195b5":[1,0,0,97,69],
 "structmage_1_1_shaded_material.html#aa114be8c5d55096554cf75fdba75ab2d":[1,0,0,97,23],
 "structmage_1_1_shaded_material.html#aa13cf6b1af3568471ebd0f93a0bc08ac":[1,0,0,97,40],
 "structmage_1_1_shaded_material.html#aa2a120f4df21d5fbde733ce12a348571":[1,0,0,97,65],

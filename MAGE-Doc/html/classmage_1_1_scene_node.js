@@ -11,5 +11,6 @@ var classmage_1_1_scene_node =
     [ "operator=", "classmage_1_1_scene_node.html#ae38092ba9ec8449f15b3c1f8285ba500", null ],
     [ "SetName", "classmage_1_1_scene_node.html#a11a6d53a9ba637813b34347b68ad08d6", null ],
     [ "SetName", "classmage_1_1_scene_node.html#a3dc6b033a811a9e1d6da0aa85b4f281b", null ],
+    [ "SetString", "classmage_1_1_scene_node.html#addebab8c69bbd8a767d2f37bb2ef0ed5", null ],
     [ "m_name", "classmage_1_1_scene_node.html#a3ba13ec190df3e020c89d2ace0301dec", null ]
 ];

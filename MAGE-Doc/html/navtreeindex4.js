@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classmage_1_1_resource_factory.html#a7de0876328fdabd672cd7719f616dd0d":[1,0,0,91,4],
+"classmage_1_1_resource_factory.html#a8210187f8255c95d9c3b7b86cefd5035":[1,0,0,91,11],
 "classmage_1_1_resource_factory.html#a987af631d0fda02fd336ceb02113a128":[1,0,0,91,18],
 "classmage_1_1_resource_factory.html#a9f961cc4c47821c9fadbac05b9b88c07":[1,0,0,91,21],
 "classmage_1_1_resource_factory.html#ab3f6757ed97e85fdbef279b5f2817b77":[1,0,0,91,7],
@@ -84,12 +86,13 @@ var NAVTREEINDEX4 =
 "classmage_1_1_scene_node.html":[1,0,0,95],
 "classmage_1_1_scene_node.html#a0259a6b573eb633b589cd986b9ec6734":[1,0,0,95,1],
 "classmage_1_1_scene_node.html#a11a6d53a9ba637813b34347b68ad08d6":[1,0,0,95,9],
-"classmage_1_1_scene_node.html#a3ba13ec190df3e020c89d2ace0301dec":[1,0,0,95,11],
+"classmage_1_1_scene_node.html#a3ba13ec190df3e020c89d2ace0301dec":[1,0,0,95,12],
 "classmage_1_1_scene_node.html#a3dc6b033a811a9e1d6da0aa85b4f281b":[1,0,0,95,10],
 "classmage_1_1_scene_node.html#a42d0d53ab804d38ebd584d2de6490eeb":[1,0,0,95,5],
 "classmage_1_1_scene_node.html#a6705beea9c535de3d495762ed06e74dd":[1,0,0,95,3],
 "classmage_1_1_scene_node.html#ab4d72e26370747c06ccb1461f3080b31":[1,0,0,95,6],
 "classmage_1_1_scene_node.html#acbf94ceadac62f2ccde13d70ce9298d7":[1,0,0,95,2],
+"classmage_1_1_scene_node.html#addebab8c69bbd8a767d2f37bb2ef0ed5":[1,0,0,95,11],
 "classmage_1_1_scene_node.html#ae38092ba9ec8449f15b3c1f8285ba500":[1,0,0,95,8],
 "classmage_1_1_scene_node.html#ae92f68ce03011b1c1d71421f077a00f8":[1,0,0,95,4],
 "classmage_1_1_scene_node.html#af4298cbc808139f9da43055afdfe8f7e":[1,0,0,95,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "classmage_1_1_sprite_text.html#a03d5012e2812d422a1285a4a0abb104f":[1,0,0,107,22],
 "classmage_1_1_sprite_text.html#a236e243b8832cb6e32b1341e798d25bb":[1,0,0,107,7],
 "classmage_1_1_sprite_text.html#a2493ad5e9a8c472dae8beb92f51dc882":[1,0,0,107,17],
-"classmage_1_1_sprite_text.html#a2b9f59a1730f8b9691f173251a2b4944":[1,0,0,107,10],
-"classmage_1_1_sprite_text.html#a3ca23b77ab252f226d6525dfc2cb3d11":[1,0,0,107,23],
-"classmage_1_1_sprite_text.html#a3e56a7882dd714a6d8f2452d4f7071ff":[1,0,0,107,2],
-"classmage_1_1_sprite_text.html#a45d5ac8410d5a46b26e8491946a2ad9e":[1,0,0,107,11]
+"classmage_1_1_sprite_text.html#a2b9f59a1730f8b9691f173251a2b4944":[1,0,0,107,10]
 };
