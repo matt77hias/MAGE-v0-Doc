@@ -1,0 +1,28 @@
+var classmage_1_1_sprite_object =
+[
+    [ "~SpriteObject", "classmage_1_1_sprite_object.html#aad4d1472cb468d8c19b61ab030332ceb", null ],
+    [ "SpriteObject", "classmage_1_1_sprite_object.html#af68fccf1e8a51f5b4a99a48dfb515f65", null ],
+    [ "SpriteObject", "classmage_1_1_sprite_object.html#ac75871029cd740aeb0dd3e23d037b703", null ],
+    [ "SpriteObject", "classmage_1_1_sprite_object.html#a32243a50679f743554850069f27cca9b", null ],
+    [ "Clone", "classmage_1_1_sprite_object.html#a761528ee815cbac83f9a490e07752e5c", null ],
+    [ "CloneImplementation", "classmage_1_1_sprite_object.html#acbbe3d5894e5a43df411b7e5785ae174", null ],
+    [ "Draw", "classmage_1_1_sprite_object.html#a1c1c885fe7846f7ee1cc0b73571c2fa0", null ],
+    [ "GetName", "classmage_1_1_sprite_object.html#a1bfe66d73a37eac4c8e8a7b0e17112aa", null ],
+    [ "GetSpriteEffects", "classmage_1_1_sprite_object.html#a05f4124356abc1eec2158017ef3d947e", null ],
+    [ "GetTransform", "classmage_1_1_sprite_object.html#a709751381e87803088fc7013043bc65e", null ],
+    [ "GetTransform", "classmage_1_1_sprite_object.html#ada7bf149994abd24c652b83e8f9374ec", null ],
+    [ "IsActive", "classmage_1_1_sprite_object.html#a4fbb934427eee923548dd027e19dc9ba", null ],
+    [ "IsPassive", "classmage_1_1_sprite_object.html#a194682f23dbdf7ce5a7345eaba4c2fa1", null ],
+    [ "MakeActive", "classmage_1_1_sprite_object.html#a145bdced3ec8ef41dfaf615f4ad7b1ef", null ],
+    [ "MakePassive", "classmage_1_1_sprite_object.html#a0d778b381ab405ae5fc6a858d6d465e0", null ],
+    [ "operator=", "classmage_1_1_sprite_object.html#ab24af642e7c49a13ca5526248f106b4e", null ],
+    [ "operator=", "classmage_1_1_sprite_object.html#a0d098954e6ef5b331b2b7e6f6cb3c21e", null ],
+    [ "SetActive", "classmage_1_1_sprite_object.html#a8f27da427493db1567b842b83fa10f65", null ],
+    [ "SetName", "classmage_1_1_sprite_object.html#a784cd7d61f3a9f71a521656ae3199366", null ],
+    [ "SetName", "classmage_1_1_sprite_object.html#a62d570d43c7b83042f0709fef6e273f4", null ],
+    [ "SetSpriteEffects", "classmage_1_1_sprite_object.html#aef6cf252d79c9fcec978d83642da0e9a", null ],
+    [ "m_active", "classmage_1_1_sprite_object.html#a6694bb9cade83917202cf9ca6d359e81", null ],
+    [ "m_effects", "classmage_1_1_sprite_object.html#a270f73b8d316f72c4228854d08a6d2ea", null ],
+    [ "m_name", "classmage_1_1_sprite_object.html#a6f2a859e40ed391909bb4c87a8b74480", null ],
+    [ "m_transform", "classmage_1_1_sprite_object.html#a9523ae6f081a8fde3cbb3558f6e327da", null ]
+];
