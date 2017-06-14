@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['xmvectorlefttoprightbottom',['XMVectorLeftTopRightBottom',['../namespacemage.html#a0003ec8e1ff669c9de7bc3894691d596',1,'mage']]],
-  ['xmvectorlefttopwidthheight',['XMVectorLeftTopWidthHeight',['../namespacemage.html#abcbdb1a43e221c003f7b89863f131d11',1,'mage']]],
-  ['xyzspectrum',['XYZSpectrum',['../structmage_1_1_x_y_z_spectrum.html',1,'mage']]],
-  ['xyzspectrum',['XYZSpectrum',['../structmage_1_1_x_y_z_spectrum.html#a8dee627bdc8521d875c9592b51ce7081',1,'mage::XYZSpectrum::XYZSpectrum() noexcept'],['../structmage_1_1_x_y_z_spectrum.html#a7e3d8b599655bf3ef54388a792eb4ace',1,'mage::XYZSpectrum::XYZSpectrum(float x, float y, float z) noexcept'],['../structmage_1_1_x_y_z_spectrum.html#a009f032f53c57219b67f17fec022e2fb',1,'mage::XYZSpectrum::XYZSpectrum(const XYZSpectrum &amp;xyz)=default'],['../structmage_1_1_x_y_z_spectrum.html#a17d10e71ad586928af9005b8b63edafc',1,'mage::XYZSpectrum::XYZSpectrum(XYZSpectrum &amp;&amp;xyz) noexcept=default'],['../structmage_1_1_x_y_z_spectrum.html#a7498fec029d8e76e7b666116ac6f2cc8',1,'mage::XYZSpectrum::XYZSpectrum(const RGBSpectrum &amp;rgb) noexcept'],['../structmage_1_1_x_y_z_spectrum.html#aeea123e6753c755aa594552bad15450b',1,'mage::XYZSpectrum::XYZSpectrum(RGBSpectrum &amp;&amp;rgb) noexcept'],['../structmage_1_1_x_y_z_spectrum.html#a3a89ed028f199098a6b434fbc1daf943',1,'mage::XYZSpectrum::XYZSpectrum(const XMFLOAT3 &amp;v) noexcept'],['../structmage_1_1_x_y_z_spectrum.html#a5e76024eef44618dda395bfc53393728',1,'mage::XYZSpectrum::XYZSpectrum(XMFLOAT3 &amp;&amp;v) noexcept']]]
-];
