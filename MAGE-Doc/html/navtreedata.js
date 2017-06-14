@@ -32,11 +32,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_device_enumeration.html#a7a7d0c5a27309421209b5d89cd9dfd43",
-"classmage_1_1_m_d_l_writer.html#af9416c1b2599ea86f4af8018dc0b9baf",
-"classmage_1_1_mouse_look_script.html#ad09bda241666f60dfc408500cafd073d",
-"classmage_1_1_resource_factory.html#a7de0876328fdabd672cd7719f616dd0d",
-"classmage_1_1_sprite_text.html#a3ca23b77ab252f226d6525dfc2cb3d11",
+"classmage_1_1_directional_light.html#a779c49e066215cff9f80ed40048dfc62",
+"classmage_1_1_m_s_h_writer.html#ab97c9570c45bff97d88700d0dcf3ed75",
+"classmage_1_1_node.html#a58b816eaa1dfd3c4b7f14896f190587f",
+"classmage_1_1_resource_pool.html#ae2f9964a1821c9b8cb38303a5a88c98e",
+"classmage_1_1_sprite_text.html#ad76e6d91e59f5070152104da8af1aa4e",
 "functions_func_c.html",
 "structmage_1_1_constant_buffer.html#a67fe42cb52e63e38474b6c65341fbe82",
 "structmage_1_1_model_output.html#afc6530c5fc47224b45d851e67dd5a306",
