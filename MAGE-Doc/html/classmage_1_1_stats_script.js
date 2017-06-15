@@ -14,5 +14,5 @@ var classmage_1_1_stats_script =
     [ "m_last_ram_usage", "classmage_1_1_stats_script.html#a92335c973382a332cf5ce328454fd07b", null ],
     [ "m_monitor", "classmage_1_1_stats_script.html#a12e321d8fe1003de3643c4b799dd4c8f", null ],
     [ "m_text", "classmage_1_1_stats_script.html#a35bb45baabf290be684c8b67f30feeb7", null ],
-    [ "resource_fetch_period", "classmage_1_1_stats_script.html#acae1ac4fd880389c88818a8f72cbff2b", null ]
+    [ "s_resource_fetch_period", "classmage_1_1_stats_script.html#a3601b2c67bfa911d98187857b05c17ab", null ]
 ];

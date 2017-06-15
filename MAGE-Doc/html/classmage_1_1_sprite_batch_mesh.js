@@ -14,8 +14,8 @@ var classmage_1_1_sprite_batch_mesh =
     [ "SetupIndexBuffer", "classmage_1_1_sprite_batch_mesh.html#a628ab5a3dd2df0c624b7dc99bcff7f98", null ],
     [ "SetupVertexBuffer", "classmage_1_1_sprite_batch_mesh.html#ad3b68ac00e3dfb09ed495ce66f1d6fda", null ],
     [ "UnmapVertexBuffer", "classmage_1_1_sprite_batch_mesh.html#a48ed983397a37a5874101b49c040b78c", null ],
-    [ "indices_per_sprite", "classmage_1_1_sprite_batch_mesh.html#aeac9ce4a3a16f212a5bb29f89038110b", null ],
-    [ "max_sprites_per_batch", "classmage_1_1_sprite_batch_mesh.html#a562657a44b2b155e8d5496bfe8101ba2", null ],
-    [ "min_sprites_per_batch", "classmage_1_1_sprite_batch_mesh.html#abf82001c09270c14695bec433cf9810d", null ],
-    [ "vertices_per_sprite", "classmage_1_1_sprite_batch_mesh.html#a450088fe9797bc26008ede487b39f0d7", null ]
+    [ "s_indices_per_sprite", "classmage_1_1_sprite_batch_mesh.html#a9560987925304ec757cac212d8b921f5", null ],
+    [ "s_max_sprites_per_batch", "classmage_1_1_sprite_batch_mesh.html#aa4c18beb1d7355a184ac3c93c6a254e3", null ],
+    [ "s_min_sprites_per_batch", "classmage_1_1_sprite_batch_mesh.html#accc52fa93a3c7d42e2d4db54c1211d5d", null ],
+    [ "s_vertices_per_sprite", "classmage_1_1_sprite_batch_mesh.html#a089a9cf9b57f43274bb2542b3c30dd55", null ]
 ];
