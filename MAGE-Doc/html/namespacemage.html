@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.35.0</span>
+   &#160;<span id="projectnumber">v0.36.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -1741,7 +1741,9 @@ template&lt;typename T &gt; </div>
 <p>A struct of Cartesian axes systems.</p>
 <p>A struct of sprite transforms.</p>
 <p>A struct of transforms.</p>
-<p>A struct of transform nodes. </p>
+<p>A struct of transform nodes.</p>
+<p>A struct of sprite info for a single sprite.</p>
+<p>A class of sprite batches. </p>
 <p>Constructs a light data buffer.</p>
 <p>Constructs a light data buffer from the given light data buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3492,9 +3494,191 @@ A pointer to the parent node of this transform node.</dd></dl>
 <p>The cached world-to-object matrix of this transform node.</p>
 <p>A flag indicating whether the object-to-world matrix of this transform node are dirty.</p>
 <p>A flag indicating whether the world-to-object matrix of this transform node are dirty.</p>
-<p>A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor.</p>
+<p>Mask indicating whether the source region of sprite info structures is expressed in texels.</p>
+<p>Mask indicating whether the destination of sprite info structures is expressed in pixels.</p>
+<p>Constructs a sprite info.</p>
+<p>Constructs a sprite info from the given sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite info by moving the given sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to move.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Destructs this sprite info.</p>
+<p>Copies the given sprite info to this sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given sprite info (i.e. this sprite info).</dd></dl>
+<p>Moves the given sprite info to this sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved sprite info (i.e. this sprite info).</dd></dl>
+<p>The texture source region (Left Top Width Height) of the sprite associated with this sprite info.</p>
+<p>The translation and scale (Tx Ty Sx Sy) of the sprite associated with this sprite info.</p>
+<p>The color of the sprite associated with this sprite info.</p>
+<p>The origin, rotation and depth (Ox Oy R D) of the sprite associated with this sprite info.</p>
+<p>A pointer to the shader resource view of the texture associated with this sprite info.</p>
+<p>The flags of the sprite associated with this sprite info.</p>
+<p>Constructs a sprite batch.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the shader.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite batch from the given sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite batch by moving the given sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to move.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Destructs this sprite batch.</p>
+<p>Copies the given sprite batch to this sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given sprite batch (i.e. this sprite batch).</dd></dl>
+<p>Moves the given sprite batch to this sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved sprite batch (i.e. this sprite batch).</dd></dl>
+<p>Begins the processing of a batch of sprites.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is not inside a begin/end pair. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sort_mode</td><td>A reference to the sprite sorting mode for the whole batch of sprites. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A reference to the transform for the whole batch of sprites.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Draws a sprite.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is inside a begin/end pair. </dd>
+<dd>
+<em>texture</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the shader resource view of the texture to draw. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>A reference to the color (multiplier). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">effects</td><td>The sprite effects to apply. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A reference to the sprite transform. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>A pointer the rectangular subregion of the texture.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Ends the processing of a batch of sprites.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is inside a begin/end pair.</dd></dl>
+<p>Returns the rotation mode of this sprite batch to fit the physical rotation of a monitor.</p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation mode of this sprite batch .</dd></dl>
+<p>Sets the rotation mode of this sprite batch to fit the physical rotation of a monitor to the given rotation mode.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotation_mode</td><td>The rotation mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Returns the viewport of this sprite batch.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the viewport of this sprite batch.</dd></dl>
+<p>Sets the viewport of this sprite batch to the given viewport.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">viewport</td><td>A reference to the viewport.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Grows the sprite queue of this sprite batch.</p>
+<p>This effectively replaces the current sprite queue with a new sprite queue having a capacity equal to two times the capacity of the current sprite queue of this sprite batch.</p>
+<p>Prepares the drawing of the mesh of this sprite batch.</p>
+<p>Flushes a batch of sprites for rendering if non-immediate rendering is required for the current batch of sprites. Otherwise, the sprites in the current batch are rendered immediately.</p>
+<p>Sprites are sorted based on the sprite sorting mode and adjacent sprites are grouped for rendering if sharing the same texture.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Sorts the sprites of the current batch according to the sprite sorting mode of the current batch of this sprite batch.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Grows the vector of sorted sprites of this sprite batch.</p>
+<p>This effectively replaces the current vector of sorted sprites with a new vector of sorted sprites having a capacity equal to the number of sprites waiting to be drawn in the sprite queue of this sprite batch.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Draws a subbatch of sprites of the current batch of sprites of this sprite batch.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>texture</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>sprites</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>sprites</em> points to an array containing at least <em>nb_sprites</em> sprite info data pointers which are not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the shader resource view of the texture that needs to be rendered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprites</td><td>A pointer to the sprite info data pointers of the sprites which need to be rendered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_sprites</td><td>The number of sprites which need to be rendered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Prepares a single sprite for rendering.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>sprite</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>vertices</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>vertices</em> points to an array containing at least <a class="el" href="classmage_1_1_sprite_batch_mesh.html#a089a9cf9b57f43274bb2542b3c30dd55">mage::SpriteBatchMesh::s_vertices_per_sprite</a>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite</td><td>A pointer to the sprite info data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A pointer to the vertices for the sprite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture_size</td><td>A reference to the size of the texture. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inverse_texture_size</td><td>A reference to the inverse size of the texture.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>A pointer to the device of this sprite batch.</p>
+<p>A pointer to the device context of this sprite batch.</p>
+<p>A pointer to the sprite batch mesh used by this sprite batch for drawing the sprites onto.</p>
+<p>The current position in the vertex buffer of the mesh of this sprite batch for adding sprite vertices.</p>
+<p>A pointer to the shader used by this sprite batch for shading the sprites.</p>
+<p>A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor for this sprite batch.</p>
 <p>A flag (indicating whether the viewport of this sprite batch has been set.</p>
 <p>The viewport of this sprite batch.</p>
+<p>A flag indicating whether this sprite batch is in a begin/end pair for processing sprites.</p>
+<p>The sprite sorting mode used by this sprite batch for deciding on the draw order of sprites in the current btach of sprites.</p>
+<p>The transform of this sprite batch applied to all sprites in the current batch of sprites.</p>
+<p>The transform buffer used by this sprite batch for storing a sprite transformation.</p>
+<p>A pointer to the queue containing the sprites waiting to be drawn by this sprite batch.</p>
+<p>The number of sprites waiting to be drawn by this sprite batch.</p>
+<p>The number of sprites that could potentially be waiting to be drawn by this sprite batch. If the demand exceeds this number, the queue will be enlarged appropriately.</p>
+<p>A vector containing the pointer to the sorted sprites in the queue of this sprite batch.</p>
+<p>A vector containing the smart pointers of the texture shader resource views.</p>
+<p>If each <a class="el" href="">mage::SpriteInfo</a> instance held a refcount on its texture, this could end up with many redundant <code>AddRef</code> and <code>Release</code> calls on the same object, so instead this separate collection is used to hold just a single refcount each time the associated texture is changed.</p>
+<p>The initial size of the queue containing the sprites waiting to be drawn by a sprite batch.</p>
 <p>Constructs an omni light buffer.</p>
 <p>Constructs an omni light buffer from the given omni light buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -5207,9 +5391,191 @@ A pointer to the parent node of this transform node.</dd></dl>
 <p>The cached world-to-object matrix of this transform node.</p>
 <p>A flag indicating whether the object-to-world matrix of this transform node are dirty.</p>
 <p>A flag indicating whether the world-to-object matrix of this transform node are dirty.</p>
-<p>A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor.</p>
+<p>Mask indicating whether the source region of sprite info structures is expressed in texels.</p>
+<p>Mask indicating whether the destination of sprite info structures is expressed in pixels.</p>
+<p>Constructs a sprite info.</p>
+<p>Constructs a sprite info from the given sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite info by moving the given sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to move.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Destructs this sprite info.</p>
+<p>Copies the given sprite info to this sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given sprite info (i.e. this sprite info).</dd></dl>
+<p>Moves the given sprite info to this sprite info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_info</td><td>A reference to the sprite info to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved sprite info (i.e. this sprite info).</dd></dl>
+<p>The texture source region (Left Top Width Height) of the sprite associated with this sprite info.</p>
+<p>The translation and scale (Tx Ty Sx Sy) of the sprite associated with this sprite info.</p>
+<p>The color of the sprite associated with this sprite info.</p>
+<p>The origin, rotation and depth (Ox Oy R D) of the sprite associated with this sprite info.</p>
+<p>A pointer to the shader resource view of the texture associated with this sprite info.</p>
+<p>The flags of the sprite associated with this sprite info.</p>
+<p>Constructs a sprite batch.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A reference to the shader.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite batch from the given sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructs a sprite batch by moving the given sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to move.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Destructs this sprite batch.</p>
+<p>Copies the given sprite batch to this sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given sprite batch (i.e. this sprite batch).</dd></dl>
+<p>Moves the given sprite batch to this sprite batch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite_batch</td><td>A reference to the sprite batch to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved sprite batch (i.e. this sprite batch).</dd></dl>
+<p>Begins the processing of a batch of sprites.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is not inside a begin/end pair. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sort_mode</td><td>A reference to the sprite sorting mode for the whole batch of sprites. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A reference to the transform for the whole batch of sprites.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Draws a sprite.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is inside a begin/end pair. </dd>
+<dd>
+<em>texture</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the shader resource view of the texture to draw. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>A reference to the color (multiplier). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">effects</td><td>The sprite effects to apply. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A reference to the sprite transform. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>A pointer the rectangular subregion of the texture.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Ends the processing of a batch of sprites.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>This sprite batch is inside a begin/end pair.</dd></dl>
+<p>Returns the rotation mode of this sprite batch to fit the physical rotation of a monitor.</p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation mode of this sprite batch .</dd></dl>
+<p>Sets the rotation mode of this sprite batch to fit the physical rotation of a monitor to the given rotation mode.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotation_mode</td><td>The rotation mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Returns the viewport of this sprite batch.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the viewport of this sprite batch.</dd></dl>
+<p>Sets the viewport of this sprite batch to the given viewport.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">viewport</td><td>A reference to the viewport.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Grows the sprite queue of this sprite batch.</p>
+<p>This effectively replaces the current sprite queue with a new sprite queue having a capacity equal to two times the capacity of the current sprite queue of this sprite batch.</p>
+<p>Prepares the drawing of the mesh of this sprite batch.</p>
+<p>Flushes a batch of sprites for rendering if non-immediate rendering is required for the current batch of sprites. Otherwise, the sprites in the current batch are rendered immediately.</p>
+<p>Sprites are sorted based on the sprite sorting mode and adjacent sprites are grouped for rendering if sharing the same texture.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Sorts the sprites of the current batch according to the sprite sorting mode of the current batch of this sprite batch.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Grows the vector of sorted sprites of this sprite batch.</p>
+<p>This effectively replaces the current vector of sorted sprites with a new vector of sorted sprites having a capacity equal to the number of sprites waiting to be drawn in the sprite queue of this sprite batch.</p>
+<dl class="section note"><dt>Note</dt><dd>This functionality is only used if non-immediate rendering is required.</dd></dl>
+<p>Draws a subbatch of sprites of the current batch of sprites of this sprite batch.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>texture</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>sprites</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>sprites</em> points to an array containing at least <em>nb_sprites</em> sprite info data pointers which are not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture</td><td>A pointer to the shader resource view of the texture that needs to be rendered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprites</td><td>A pointer to the sprite info data pointers of the sprites which need to be rendered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_sprites</td><td>The number of sprites which need to be rendered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Prepares a single sprite for rendering.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>sprite</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>vertices</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>vertices</em> points to an array containing at least <a class="el" href="classmage_1_1_sprite_batch_mesh.html#a089a9cf9b57f43274bb2542b3c30dd55">mage::SpriteBatchMesh::s_vertices_per_sprite</a>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sprite</td><td>A pointer to the sprite info data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A pointer to the vertices for the sprite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture_size</td><td>A reference to the size of the texture. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inverse_texture_size</td><td>A reference to the inverse size of the texture.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>A pointer to the device of this sprite batch.</p>
+<p>A pointer to the device context of this sprite batch.</p>
+<p>A pointer to the sprite batch mesh used by this sprite batch for drawing the sprites onto.</p>
+<p>The current position in the vertex buffer of the mesh of this sprite batch for adding sprite vertices.</p>
+<p>A pointer to the shader used by this sprite batch for shading the sprites.</p>
+<p>A flag indicating how the back buffers should be rotated to fit the physical rotation of a monitor for this sprite batch.</p>
 <p>A flag (indicating whether the viewport of this sprite batch has been set.</p>
 <p>The viewport of this sprite batch.</p>
+<p>A flag indicating whether this sprite batch is in a begin/end pair for processing sprites.</p>
+<p>The sprite sorting mode used by this sprite batch for deciding on the draw order of sprites in the current btach of sprites.</p>
+<p>The transform of this sprite batch applied to all sprites in the current batch of sprites.</p>
+<p>The transform buffer used by this sprite batch for storing a sprite transformation.</p>
+<p>A pointer to the queue containing the sprites waiting to be drawn by this sprite batch.</p>
+<p>The number of sprites waiting to be drawn by this sprite batch.</p>
+<p>The number of sprites that could potentially be waiting to be drawn by this sprite batch. If the demand exceeds this number, the queue will be enlarged appropriately.</p>
+<p>A vector containing the pointer to the sorted sprites in the queue of this sprite batch.</p>
+<p>A vector containing the smart pointers of the texture shader resource views.</p>
+<p>If each <a class="el" href="">mage::SpriteInfo</a> instance held a refcount on its texture, this could end up with many redundant <code>AddRef</code> and <code>Release</code> calls on the same object, so instead this separate collection is used to hold just a single refcount each time the associated texture is changed.</p>
+<p>The initial size of the queue containing the sprites waiting to be drawn by a sprite batch.</p>
 
 </div>
 </div>

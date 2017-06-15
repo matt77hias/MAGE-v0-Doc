@@ -12,5 +12,5 @@ var classmage_1_1_system_usage_script =
     [ "m_last_ram_usage", "classmage_1_1_system_usage_script.html#a64538d152d33546516a6acdda939b619", null ],
     [ "m_monitor", "classmage_1_1_system_usage_script.html#a45574bef4a526bdd99108e92bf12dcbd", null ],
     [ "m_text", "classmage_1_1_system_usage_script.html#af6dd5e39889458ffb042f1d13fbcd7ea", null ],
-    [ "resource_fetch_period", "classmage_1_1_system_usage_script.html#a98a30b1da6b9b87237e3509aed961162", null ]
+    [ "s_resource_fetch_period", "classmage_1_1_system_usage_script.html#a1c6b08be09a34ebd4515f6c09622afbd", null ]
 ];

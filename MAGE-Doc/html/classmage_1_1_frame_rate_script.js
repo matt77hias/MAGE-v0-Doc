@@ -11,5 +11,5 @@ var classmage_1_1_frame_rate_script =
     [ "m_accumulated_time", "classmage_1_1_frame_rate_script.html#ad2811547f84f1c62392e36fd8b82042d", null ],
     [ "m_last_frames_per_second", "classmage_1_1_frame_rate_script.html#a6126772a3b500a0c044837f432d10976", null ],
     [ "m_text", "classmage_1_1_frame_rate_script.html#a7d55db21f500e92914293cd6850e3b53", null ],
-    [ "resource_fetch_period", "classmage_1_1_frame_rate_script.html#a34e734aedfe92891d87e5419ff60f4f2", null ]
+    [ "s_resource_fetch_period", "classmage_1_1_frame_rate_script.html#ad28027c538faeab0c74bdb7b49f59469", null ]
 ];

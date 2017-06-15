@@ -73,7 +73,7 @@ var structmage_1_1_material =
     [ "m_displacement_texture", "structmage_1_1_material.html#a04ca0a2efe12529ae0ea91e9cb622ade", null ],
     [ "m_dissolve", "structmage_1_1_material.html#a42b435ea58ce7da4b48febe9bb33aba7", null ],
     [ "m_dissolve_texture", "structmage_1_1_material.html#aa68e02ed3da6000effc3aadcc99fa4b5", null ],
-    [ "m_extra_parameters", "structmage_1_1_material.html#a1918cc7a273b625dadb99c03307459fa", null ],
+    [ "m_extra_parameters", "structmage_1_1_material.html#a8b16f762a4bbfb99b98a884d7b4dcee0", null ],
     [ "m_index_of_refraction", "structmage_1_1_material.html#a8b584541ab8bfc527f856c68bb0152e7", null ],
     [ "m_name", "structmage_1_1_material.html#a2b3e839a8ae093d53b12529d61ec6605", null ],
     [ "m_normal_texture", "structmage_1_1_material.html#a18e56785d5ca3ae5a9b99c64e70622d6", null ],
@@ -82,5 +82,5 @@ var structmage_1_1_material =
     [ "m_specular_reflectivity", "structmage_1_1_material.html#a45587388f4ff57c209de2280b71af9d3", null ],
     [ "m_specular_reflectivity_texture", "structmage_1_1_material.html#ac925df9d71f8668c03e8efada632b300", null ],
     [ "m_transmission_filter", "structmage_1_1_material.html#a9573a0d2a5fb0322f9eb103ace34dd47", null ],
-    [ "nb_extra_parameters", "structmage_1_1_material.html#a91e2bfd0c66c244bbae0faddbee1119f", null ]
+    [ "s_nb_extra_parameters", "structmage_1_1_material.html#ab8d10c2cb8ab77bee18654e63acaa63a", null ]
 ];

@@ -36,5 +36,5 @@ var classmage_1_1_c_p_u_timer =
     [ "m_nb_processor_cores", "classmage_1_1_c_p_u_timer.html#ac5fdb38a70c74815231b5efd8d746be1", null ],
     [ "m_running", "classmage_1_1_c_p_u_timer.html#a7190afa453085b7bbd7cb76ff6bb62f2", null ],
     [ "m_total_delta_time", "classmage_1_1_c_p_u_timer.html#aaf482aacb1af55dd559a1d08de104697", null ],
-    [ "time_period", "classmage_1_1_c_p_u_timer.html#a9ff7683150a07f2040b660fc3775337b", null ]
+    [ "s_time_period", "classmage_1_1_c_p_u_timer.html#a6915d220d803f99b532fe6f3df3e558e", null ]
 ];

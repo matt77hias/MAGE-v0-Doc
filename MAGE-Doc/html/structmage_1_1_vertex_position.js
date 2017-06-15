@@ -7,7 +7,7 @@ var structmage_1_1_vertex_position =
     [ "~VertexPosition", "structmage_1_1_vertex_position.html#ae78ac5fd76f3217ec72435beaa34ed6e", null ],
     [ "operator=", "structmage_1_1_vertex_position.html#a07e7df87f6f70556d98c856a47643b73", null ],
     [ "operator=", "structmage_1_1_vertex_position.html#a37000c522dc4d0078ac879dc46532911", null ],
-    [ "input_element_desc", "structmage_1_1_vertex_position.html#a1128c6529b1c1d7c4482e48deba46548", null ],
-    [ "nb_input_elements", "structmage_1_1_vertex_position.html#a788286b735c09aa85d855c2773d1a504", null ],
-    [ "p", "structmage_1_1_vertex_position.html#ad9c3ea68e2c1745446387d1eca28f25f", null ]
+    [ "p", "structmage_1_1_vertex_position.html#ad9c3ea68e2c1745446387d1eca28f25f", null ],
+    [ "s_input_element_desc", "structmage_1_1_vertex_position.html#a4e43cd06303beccd4791fdec9a13c47f", null ],
+    [ "s_nb_input_elements", "structmage_1_1_vertex_position.html#aa63cdd41e8f23228372efb7631db3636", null ]
 ];
