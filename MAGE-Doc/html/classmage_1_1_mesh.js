@@ -1,7 +1,8 @@
 var classmage_1_1_mesh =
 [
     [ "~Mesh", "classmage_1_1_mesh.html#afa39b90805e434cabb0989878e335b9e", null ],
-    [ "Mesh", "classmage_1_1_mesh.html#a364e6ecdca96e9b4932aea8711f2bb12", null ],
+    [ "Mesh", "classmage_1_1_mesh.html#a1e61f6254fab6af510d40c437bc2922b", null ],
+    [ "Mesh", "classmage_1_1_mesh.html#ac44a91f00e7cd9d4a4566c5d836ab6d7", null ],
     [ "Mesh", "classmage_1_1_mesh.html#a1627e85c72d10bdedbfbf746b108cc73", null ],
     [ "Mesh", "classmage_1_1_mesh.html#a2751abe4790ca150f1fcc285504645ae", null ],
     [ "Draw", "classmage_1_1_mesh.html#a62f7b8176f7747f2b4db7674524a146c", null ],

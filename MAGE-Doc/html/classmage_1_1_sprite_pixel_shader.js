@@ -1,5 +1,6 @@
 var classmage_1_1_sprite_pixel_shader =
 [
+    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a27c14557bf08f15d321c5dd728b3343d", null ],
     [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#abffbb811fa7b34e538748ae5d082aec4", null ],
     [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a5803ea69e04c58528f9c4fbbc0f4efbc", null ],
     [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a1507191b6574cc1fb499b4995f73edfe", null ],

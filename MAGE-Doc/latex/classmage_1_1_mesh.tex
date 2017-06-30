@@ -38,7 +38,9 @@ void \hyperlink{classmage_1_1_mesh_ae1f71bddbb1fa3b45cec55f0fe920c7d}{Draw} (siz
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12}{Mesh} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, size\+\_\+t vertex\+\_\+size, D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT index\+\_\+format=D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+R32\+\_\+\+U\+I\+NT, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology=D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+L\+I\+ST)
+\hyperlink{classmage_1_1_mesh_a1e61f6254fab6af510d40c437bc2922b}{Mesh} (size\+\_\+t vertex\+\_\+size, D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT index\+\_\+format, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology)
+\item 
+\hyperlink{classmage_1_1_mesh_ac44a91f00e7cd9d4a4566c5d836ab6d7}{Mesh} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, size\+\_\+t vertex\+\_\+size, D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT index\+\_\+format, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology)
 \item 
 \hyperlink{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{Mesh} (const \hyperlink{classmage_1_1_mesh}{Mesh} \&mesh)=delete
 \item 
@@ -84,11 +86,31 @@ A class of indexed meshes.
 \subsubsection{\texorpdfstring{$\sim$\+Mesh()}{~Mesh()}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-Destructs this mesh. \hypertarget{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12}{}\label{classmage_1_1_mesh_a364e6ecdca96e9b4932aea8711f2bb12} 
+Destructs this mesh. \hypertarget{classmage_1_1_mesh_a1e61f6254fab6af510d40c437bc2922b}{}\label{classmage_1_1_mesh_a1e61f6254fab6af510d40c437bc2922b} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{size\+\_\+t}]{vertex\+\_\+size,  }\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{index\+\_\+format = {\ttfamily DXGI\+\_\+FORMAT\+\_\+R32\+\_\+UINT},  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology = {\ttfamily D3D11\+\_\+PRIMITIVE\+\_\+TOPOLOGY\+\_\+TRIANGLELIST} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{vertex\+\_\+size,  }\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{index\+\_\+format,  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+Constructs a mesh.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+size} & The vertex size. \\
+\hline
+\mbox{\tt in}  & {\em index\+\_\+format} & The index format. \\
+\hline
+\mbox{\tt in}  & {\em primitive\+\_\+topology} & The primitive topology. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_mesh_ac44a91f00e7cd9d4a4566c5d836ab6d7}{}\label{classmage_1_1_mesh_ac44a91f00e7cd9d4a4566c5d836ab6d7} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{size\+\_\+t}]{vertex\+\_\+size,  }\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{index\+\_\+format,  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
 
 Constructs a mesh.
 
@@ -113,7 +135,7 @@ Constructs a mesh.
 \hypertarget{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73}{}\label{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b108cc73} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
 
 Constructs a mesh from the given mesh.
@@ -126,7 +148,7 @@ Constructs a mesh from the given mesh.
 \hypertarget{classmage_1_1_mesh_a2751abe4790ca150f1fcc285504645ae}{}\label{classmage_1_1_mesh_a2751abe4790ca150f1fcc285504645ae} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mesh}{Mesh} \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
 Constructs a mesh by moving the given mesh.

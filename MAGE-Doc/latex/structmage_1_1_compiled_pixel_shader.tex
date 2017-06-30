@@ -7,6 +7,8 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{structmage_1_1_compiled_pixel_shader_a1c8cc509e405a53456dff36c204ec353}{Compiled\+Pixel\+Shader} (const wstring \&fname)
+\item 
 \hyperlink{structmage_1_1_compiled_pixel_shader_abedab6ae2f5acbb5054e78abe40709e9}{Compiled\+Pixel\+Shader} (const wstring \&name, const B\+Y\+TE $\ast$bytecode, S\+I\+Z\+E\+\_\+T bytecode\+\_\+size)
 \item 
 \hyperlink{structmage_1_1_compiled_pixel_shader_a5d749d97595bc9569dfd73d3411be4b5}{Compiled\+Pixel\+Shader} (const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)=default
@@ -24,9 +26,9 @@
 \item 
 const wstring \hyperlink{structmage_1_1_compiled_pixel_shader_ae87a10c9288429db9a607182a0ef2b39}{m\+\_\+name}
 \item 
-const B\+Y\+TE $\ast$const \hyperlink{structmage_1_1_compiled_pixel_shader_a75f72532dcde21b055bc24989fdb6c51}{m\+\_\+bytecode}
+const B\+Y\+TE $\ast$ \hyperlink{structmage_1_1_compiled_pixel_shader_a2adf1a1c219968ecf2f47b1aa01a67cb}{m\+\_\+bytecode}
 \item 
-const S\+I\+Z\+E\+\_\+T \hyperlink{structmage_1_1_compiled_pixel_shader_ab35073e4116ee4ccb8dd07d1e7d0c14a}{m\+\_\+bytecode\+\_\+size}
+S\+I\+Z\+E\+\_\+T \hyperlink{structmage_1_1_compiled_pixel_shader_ac0b980e08fad328ac4774820b30208aa}{m\+\_\+bytecode\+\_\+size}
 \end{DoxyCompactItemize}
 
 
@@ -34,13 +36,31 @@ const S\+I\+Z\+E\+\_\+T \hyperlink{structmage_1_1_compiled_pixel_shader_ab35073e
 A struct of compiled pixel shaders. 
 
 \subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_compiled_pixel_shader_a1c8cc509e405a53456dff36c204ec353}{}\label{structmage_1_1_compiled_pixel_shader_a1c8cc509e405a53456dff36c204ec353} 
+\index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}}
+\index{Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+Compiled\+Pixel\+Shader\+::\+Compiled\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a compiled pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to load the compiled pixel shader from the given file. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_compiled_pixel_shader_abedab6ae2f5acbb5054e78abe40709e9}{}\label{structmage_1_1_compiled_pixel_shader_abedab6ae2f5acbb5054e78abe40709e9} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}}
 \index{Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily mage\+::\+Compiled\+Pixel\+Shader\+::\+Compiled\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{name,  }\item[{const B\+Y\+TE $\ast$}]{bytecode,  }\item[{S\+I\+Z\+E\+\_\+T}]{bytecode\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
-Constructs a compiled shader.
+Constructs a compiled pixel shader.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape bytecode} is not equal to {\ttfamily nullptr}. 
@@ -49,7 +69,7 @@ The size of the data pointed to by {\itshape bytecode} is equal to {\itshape byt
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & A reference to the name of the shader. \\
+\mbox{\tt in}  & {\em name} & A reference to the name of the pixel shader. \\
 \hline
 \mbox{\tt in}  & {\em bytecode} & A pointer to the shader bytecode. \\
 \hline
@@ -59,7 +79,7 @@ The size of the data pointed to by {\itshape bytecode} is equal to {\itshape byt
 \hypertarget{structmage_1_1_compiled_pixel_shader_a5d749d97595bc9569dfd73d3411be4b5}{}\label{structmage_1_1_compiled_pixel_shader_a5d749d97595bc9569dfd73d3411be4b5} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}}
 \index{Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Compiled\+Pixel\+Shader\+::\+Compiled\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a compiled pixel shader from the given compiled pixel shader.
@@ -72,7 +92,7 @@ Constructs a compiled pixel shader from the given compiled pixel shader.
 \hypertarget{structmage_1_1_compiled_pixel_shader_a472407078fe751a18d8c2ffe6e6bbef5}{}\label{structmage_1_1_compiled_pixel_shader_a472407078fe751a18d8c2ffe6e6bbef5} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}}
 \index{Compiled\+Pixel\+Shader@{Compiled\+Pixel\+Shader}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Compiled\+Pixel\+Shader()}{CompiledPixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Compiled\+Pixel\+Shader\+::\+Compiled\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&\&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a compiled pixel shader by moving the given compiled pixel shader.
@@ -126,17 +146,17 @@ A reference to the moved compiled pixel shader (i.\+e. this compiled pixel shade
 
 
 \subsection{Member Data Documentation}
-\hypertarget{structmage_1_1_compiled_pixel_shader_a75f72532dcde21b055bc24989fdb6c51}{}\label{structmage_1_1_compiled_pixel_shader_a75f72532dcde21b055bc24989fdb6c51} 
+\hypertarget{structmage_1_1_compiled_pixel_shader_a2adf1a1c219968ecf2f47b1aa01a67cb}{}\label{structmage_1_1_compiled_pixel_shader_a2adf1a1c219968ecf2f47b1aa01a67cb} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!m\+\_\+bytecode@{m\+\_\+bytecode}}
 \index{m\+\_\+bytecode@{m\+\_\+bytecode}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+bytecode}{m\_bytecode}}
-{\footnotesize\ttfamily const B\+Y\+TE$\ast$ const mage\+::\+Compiled\+Pixel\+Shader\+::m\+\_\+bytecode}
+{\footnotesize\ttfamily const B\+Y\+TE$\ast$ mage\+::\+Compiled\+Pixel\+Shader\+::m\+\_\+bytecode}
 
-A pointer to the bytecode of this compiled pixel shader. \hypertarget{structmage_1_1_compiled_pixel_shader_ab35073e4116ee4ccb8dd07d1e7d0c14a}{}\label{structmage_1_1_compiled_pixel_shader_ab35073e4116ee4ccb8dd07d1e7d0c14a} 
+A pointer to the bytecode of this compiled pixel shader. \hypertarget{structmage_1_1_compiled_pixel_shader_ac0b980e08fad328ac4774820b30208aa}{}\label{structmage_1_1_compiled_pixel_shader_ac0b980e08fad328ac4774820b30208aa} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!m\+\_\+bytecode\+\_\+size@{m\+\_\+bytecode\+\_\+size}}
 \index{m\+\_\+bytecode\+\_\+size@{m\+\_\+bytecode\+\_\+size}!mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{m\+\_\+bytecode\+\_\+size}{m\_bytecode\_size}}
-{\footnotesize\ttfamily const S\+I\+Z\+E\+\_\+T mage\+::\+Compiled\+Pixel\+Shader\+::m\+\_\+bytecode\+\_\+size}
+{\footnotesize\ttfamily S\+I\+Z\+E\+\_\+T mage\+::\+Compiled\+Pixel\+Shader\+::m\+\_\+bytecode\+\_\+size}
 
 The size of the bytecode of this compiled pixel shader. \hypertarget{structmage_1_1_compiled_pixel_shader_ae87a10c9288429db9a607182a0ef2b39}{}\label{structmage_1_1_compiled_pixel_shader_ae87a10c9288429db9a607182a0ef2b39} 
 \index{mage\+::\+Compiled\+Pixel\+Shader@{mage\+::\+Compiled\+Pixel\+Shader}!m\+\_\+name@{m\+\_\+name}}

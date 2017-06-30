@@ -1,5 +1,6 @@
 var structmage_1_1_constant_buffer =
 [
+    [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a3badd88f8570d6622f6eb33c7420a87d", null ],
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a19be787da1f12521a901821e93cd6d70", null ],
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a67fe42cb52e63e38474b6c65341fbe82", null ],
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a851570293d8eeb47f83749f8f54864ee", null ],

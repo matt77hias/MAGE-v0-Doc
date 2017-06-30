@@ -106,18 +106,27 @@ var hierarchy =
     [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
     [ "mage::RenderingState", "structmage_1_1_rendering_state.html", null ],
     [ "mage::RenderingStateCache", "structmage_1_1_rendering_state_cache.html", null ],
-    [ "mage::Resource", "classmage_1_1_resource.html", [
-      [ "mage::FileResource", "classmage_1_1_file_resource.html", [
-        [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ],
-        [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ],
-        [ "mage::Texture", "classmage_1_1_texture.html", null ],
-        [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
-      ] ],
+    [ "mage::Resource< ResourceT >", "classmage_1_1_resource.html", null ],
+    [ "mage::Resource< ModelDescriptor >", "classmage_1_1_resource.html", [
+      [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ]
+    ] ],
+    [ "mage::Resource< PixelShader >", "classmage_1_1_resource.html", [
       [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", [
         [ "mage::BasicPixelShader", "classmage_1_1_basic_pixel_shader.html", null ],
         [ "mage::SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html", null ],
         [ "mage::TSNMPixelShader", "classmage_1_1_t_s_n_m_pixel_shader.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "mage::Resource< SpriteFont >", "classmage_1_1_resource.html", [
+      [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ]
+    ] ],
+    [ "mage::Resource< Texture >", "classmage_1_1_resource.html", [
+      [ "mage::Texture", "classmage_1_1_texture.html", null ]
+    ] ],
+    [ "mage::Resource< VariableScript >", "classmage_1_1_resource.html", [
+      [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
+    ] ],
+    [ "mage::Resource< VertexShader >", "classmage_1_1_resource.html", [
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::BasicVertexShader", "classmage_1_1_basic_vertex_shader.html", null ],
         [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ],

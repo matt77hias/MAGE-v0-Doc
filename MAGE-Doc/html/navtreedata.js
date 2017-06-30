@@ -32,15 +32,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_directional_light.html#a779c49e066215cff9f80ed40048dfc62",
-"classmage_1_1_m_s_h_writer.html#ab97c9570c45bff97d88700d0dcf3ed75",
-"classmage_1_1_node.html#a58b816eaa1dfd3c4b7f14896f190587f",
-"classmage_1_1_resource_pool.html#ae2f9964a1821c9b8cb38303a5a88c98e",
-"classmage_1_1_sprite_text.html#ad76e6d91e59f5070152104da8af1aa4e",
-"functions_func_c.html",
-"structmage_1_1_constant_buffer.html#a81ad4e60256ba47a3cd8298146c1ed2a",
-"structmage_1_1_model_part.html#ab5b4cb74ac7d725896825b0f7ce8472a",
-"structmage_1_1_shaded_material.html#ac6bd86176058b7fdeb4c9a7823ff8c71"
+"classmage_1_1_directional_light.html#a371d3c13d6e59c8d105da058b460874d",
+"classmage_1_1_m_t_l_reader.html#a415057f591e54e91658c77092b7b2d4e",
+"classmage_1_1_node.html#a7627e4e280fc9dd13d255c0f64eba79e",
+"classmage_1_1_resource_pool.html#a83a33e15bd8f326d0ebc11b3f8e52a41",
+"classmage_1_1_sprite_text.html#aa30d68a79775dce902c190f2cd298bb4",
+"classmage_1_1_writer.html#ad53f69e0f722c4d4b8b320ea39770c1a",
+"structmage_1_1_condition_variable.html#a40e853cf65b0c3cb3788d2b8a45448af",
+"structmage_1_1_model_output.html#a5e368e3ae8a52d329f8d9b5f1c4b9d03",
+"structmage_1_1_shaded_material.html#a681531e5a979ebdc4a0e8933a2439c0f",
+"structmage_1_1_x_y_z_spectrum.html#aeea123e6753c755aa594552bad15450b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
