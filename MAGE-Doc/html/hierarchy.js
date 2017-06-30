@@ -33,8 +33,10 @@ var hierarchy =
     ] ],
     [ "mage::ColorString", "structmage_1_1_color_string.html", null ],
     [ "mage::CombinedShader", "structmage_1_1_combined_shader.html", null ],
-    [ "mage::CompiledPixelShader", "structmage_1_1_compiled_pixel_shader.html", null ],
-    [ "mage::CompiledVertexShader", "structmage_1_1_compiled_vertex_shader.html", null ],
+    [ "mage::CompiledShader", "structmage_1_1_compiled_shader.html", [
+      [ "mage::CompiledPixelShader", "structmage_1_1_compiled_pixel_shader.html", null ],
+      [ "mage::CompiledVertexShader", "structmage_1_1_compiled_vertex_shader.html", null ]
+    ] ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< LightDataBuffer >", "structmage_1_1_constant_buffer.html", null ],
@@ -133,7 +135,7 @@ var hierarchy =
         [ "mage::TSNMVertexShader", "classmage_1_1_t_s_n_m_vertex_shader.html", null ]
       ] ]
     ] ],
-    [ "mage::ResourceFactory", "classmage_1_1_resource_factory.html", null ],
+    [ "mage::ResourceManager", "classmage_1_1_resource_manager.html", null ],
     [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
     [ "mage::Semaphore", "structmage_1_1_semaphore.html", null ],

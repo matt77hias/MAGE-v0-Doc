@@ -7,6 +7,7 @@ var searchData=
   ['colorstring',['ColorString',['../structmage_1_1_color_string.html',1,'mage']]],
   ['combinedshader',['CombinedShader',['../structmage_1_1_combined_shader.html',1,'mage']]],
   ['compiledpixelshader',['CompiledPixelShader',['../structmage_1_1_compiled_pixel_shader.html',1,'mage']]],
+  ['compiledshader',['CompiledShader',['../structmage_1_1_compiled_shader.html',1,'mage']]],
   ['compiledvertexshader',['CompiledVertexShader',['../structmage_1_1_compiled_vertex_shader.html',1,'mage']]],
   ['conditionvariable',['ConditionVariable',['../structmage_1_1_condition_variable.html',1,'mage']]],
   ['constantbuffer',['ConstantBuffer',['../structmage_1_1_constant_buffer.html',1,'mage']]],

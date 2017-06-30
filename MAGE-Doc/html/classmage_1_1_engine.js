@@ -7,7 +7,7 @@ var classmage_1_1_engine =
     [ "GetInputManager", "classmage_1_1_engine.html#a9e8de859024c2b51d9b20ce498d6c07b", null ],
     [ "GetMainWindow", "classmage_1_1_engine.html#ae12773fc604a46a3d94222ebcae2d593", null ],
     [ "GetRenderer", "classmage_1_1_engine.html#a91f77d4f1914e1d63d405444a590615b", null ],
-    [ "GetResourceFactory", "classmage_1_1_engine.html#a891f26e1a3e9a0113b9c4d337c82a04e", null ],
+    [ "GetResourceManager", "classmage_1_1_engine.html#a8b89ee555f5208a99872d724389eba0b", null ],
     [ "InitializeSystems", "classmage_1_1_engine.html#a29a47448fb182b110d46d287a72b8b4e", null ],
     [ "operator=", "classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd", null ],
     [ "operator=", "classmage_1_1_engine.html#a22607a263e0be5e179cc0e4bf13b18f7", null ],
@@ -20,7 +20,7 @@ var classmage_1_1_engine =
     [ "m_main_window", "classmage_1_1_engine.html#a3aea7e8c0c1247cac570334a3d3543d6", null ],
     [ "m_mode_switch", "classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221", null ],
     [ "m_renderer", "classmage_1_1_engine.html#a1248b7c21bc8256c72d372c12ed1ee68", null ],
-    [ "m_resource_factory", "classmage_1_1_engine.html#a0c7c2d4fc75fc3512e02054056cf8a90", null ],
+    [ "m_resource_manager", "classmage_1_1_engine.html#ac8d94579e72983a99a78be6b9b606a28", null ],
     [ "m_scene", "classmage_1_1_engine.html#a82158ab9c1b60538ef8c46d5eb263bb8", null ],
     [ "m_timer", "classmage_1_1_engine.html#a4daac998928a6c087b310c52b3f26ae4", null ]
 ];

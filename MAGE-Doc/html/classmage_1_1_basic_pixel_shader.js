@@ -1,9 +1,9 @@
 var classmage_1_1_basic_pixel_shader =
 [
     [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#ae89993e3ba1ab6461e4e984ee8c7b819", null ],
-    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#ac1864f219b2c0dff76fd12f4607dc634", null ],
-    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a775a07e4b99ee726cff163fd00fb07f5", null ],
-    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a78887590e4ed3b769b68051ad9aa0db5", null ],
+    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a6d4283d378d5655e25f7c20014a9663e", null ],
+    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#ad7be28d3429b13d7adf6c150c173a117", null ],
+    [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a931200fdba2748e374103d85a66690c5", null ],
     [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#ab82055206ff2a05b73f18ce23353a4bb", null ],
     [ "BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a0a5366edb694e78e4c8075fad70b7dff", null ],
     [ "~BasicPixelShader", "classmage_1_1_basic_pixel_shader.html#a7b4ac308850eb9ad55cbbd1e6389271b", null ],
