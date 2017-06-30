@@ -33,7 +33,6 @@ var namespacemage =
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html", "classmage_1_1_dropshadow_sprite_text" ],
     [ "Engine", "classmage_1_1_engine.html", "classmage_1_1_engine" ],
     [ "EngineSetup", "structmage_1_1_engine_setup.html", "structmage_1_1_engine_setup" ],
-    [ "FileResource", "classmage_1_1_file_resource.html", "classmage_1_1_file_resource" ],
     [ "FileStreamCloser", "structmage_1_1_file_stream_closer.html", "structmage_1_1_file_stream_closer" ],
     [ "FormattedException", "structmage_1_1_formatted_exception.html", "structmage_1_1_formatted_exception" ],
     [ "FPSInputControllerScript", "classmage_1_1_f_p_s_input_controller_script.html", "classmage_1_1_f_p_s_input_controller_script" ],

@@ -1,5 +1,6 @@
 var classmage_1_1_sprite_batch_mesh =
 [
+    [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#ae5b2219aa3d5bbfb216036dad9c12e5d", null ],
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#a7664804b05d08b7126c3efedee5c2588", null ],
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#af86adf72834bd4a8b5b55af3e91bd339", null ],
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#ae577b9b1f38ab5748c35675135da1e3e", null ],

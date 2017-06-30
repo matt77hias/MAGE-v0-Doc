@@ -69,8 +69,6 @@ class \hyperlink{classmage_1_1_engine}{Engine}
 \item 
 struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
-class \hyperlink{classmage_1_1_file_resource}{File\+Resource}
-\item 
 struct \hyperlink{structmage_1_1_file_stream_closer}{File\+Stream\+Closer}
 \item 
 struct \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}
@@ -477,11 +475,15 @@ const string \hyperlink{namespacemage_ab8841cbab507ef81edb00278110553ad}{Get\+Fi
 \item 
 const wstring \hyperlink{namespacemage_aac01c0fba57d6737fcf32155748e95b0}{Get\+Filename\+Without\+File\+Extension} (const wstring \&fname)
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{namespacemage_ac93dae3a8755fa1e1c9be6c8aa0e07d2}{Create\+Font} (const wstring \&fname, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
-\item 
 void \hyperlink{namespacemage_aac88563417bcd178423aec61ca687a74}{Import\+Sprite\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
 \item 
 void \hyperlink{namespacemage_a23fecd103cda79e7c9fd5cf372ae5e9f}{Import\+Font\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, \hyperlink{structmage_1_1_sprite_font_output}{Sprite\+Font\+Output} \&output, const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&desc)
+\item 
+const \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $\ast$ \hyperlink{namespacemage_ac40f4a9be583f890af2ce5fac2a6555c}{Get\+Input\+Manager} () noexcept
+\item 
+const \hyperlink{classmage_1_1_keyboard}{Keyboard} $\ast$ \hyperlink{namespacemage_a3575f4e0289fff045650ded444af362a}{Get\+Keyboard} () noexcept
+\item 
+const \hyperlink{classmage_1_1_mouse}{Mouse} $\ast$ \hyperlink{namespacemage_a8408c62614f108f4727dce07ac8f33da}{Get\+Mouse} () noexcept
 \item 
 static const char $\ast$ \hyperlink{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
@@ -593,14 +595,6 @@ H\+A\+N\+D\+LE \hyperlink{namespacemage_a71f22fac369f7eae4304255766252f5e}{Safe\
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a1e8cf202593cc54387c6d735220ffc0e}{Export\+M\+D\+L\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
 \item 
-I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_abe853bf4c3fee4be87be306f04e66ba3}{Get\+Model\+Rendering\+Device} () noexcept
-\item 
-I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a32622fbfff97a28a659f80eb0e1e1d00}{Get\+Model\+Rendering\+Device\+Context} () noexcept
-\item 
-\hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $\ast$ \hyperlink{namespacemage_a9e1af7d81b6fc43a327bbe5df092dc0c}{Get\+Model\+Resource\+Factory} () noexcept
-\item 
-{\footnotesize template$<$typename VertexT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84}{Create\+Model\+Descriptor} (const wstring \&fname, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)
-\item 
 {\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a3b43f166d61c14d680b28614da17ac2b}{Import\+Model\+From\+File} (const wstring \&fname, \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc=\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$())
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\void \hyperlink{namespacemage_a3cb120c707ba8db950082a33d76b3ec8}{Export\+Model\+To\+File} (const wstring \&fname, const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output)
@@ -626,6 +620,12 @@ size\+\_\+t \hyperlink{namespacemage_a9895a1dc89b386771ca8c8be2031495e}{Convert\
 size\+\_\+t \hyperlink{namespacemage_ab456a467a68e7aec9a5d11f4bd559f26}{Convert\+Refresh\+Rate} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \&desc) noexcept
 \item 
 unsigned int \hyperlink{namespacemage_afbe0f2656d60d9909b98985f60022b3a}{Get\+Refresh\+Rate} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \&desc) noexcept
+\item 
+const \hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ \hyperlink{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe}{Get\+Renderer} () noexcept
+\item 
+I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_aa20b591269a1196de06bb1b8a6be5262}{Get\+Rendering\+Device} () noexcept
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a5c2720129d998cd7202aacaa59d5054d}{Get\+Rendering\+Device\+Context} () noexcept
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a20b660d6a4e88d2f7993711e3a352501}{Create\+Blend\+State} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Blend\+State $\ast$$\ast$blend\+\_\+state, D3\+D11\+\_\+\+B\+L\+E\+ND src\+\_\+blend, D3\+D11\+\_\+\+B\+L\+E\+ND dest\+\_\+blend) noexcept
 \item 
@@ -683,13 +683,27 @@ size\+\_\+t \hyperlink{namespacemage_a7790d7143a44b49b6a05b86efaa680de}{Bits\+Pe
 \item 
 D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_aaeeefa254fef15c66cc60bacd5a38c95}{Convert\+To\+S\+R\+GB} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format) noexcept
 \item 
-I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_aa20b591269a1196de06bb1b8a6be5262}{Get\+Rendering\+Device} () noexcept
-\item 
-I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{namespacemage_a5c2720129d998cd7202aacaa59d5054d}{Get\+Rendering\+Device\+Context} () noexcept
-\item 
 \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $\ast$ \hyperlink{namespacemage_ab3a5bd404cc56d4c62c0b995a8daddbd}{Get\+Resource\+Factory} () noexcept
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \hyperlink{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe}{Create\+Variable\+Script} (const wstring \&fname, bool import)
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{namespacemage_ad78ee570a89c32a5f72e8a03d081fb3b}{Create\+Model\+Descriptor} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_a53181b02cdba8ff2b9735473798015fa}{Create\+Basic\+Vertex\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ \hyperlink{namespacemage_a5fdd25580710252a82dd6b5b878f5e52}{Create\+Basic\+Pixel\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_a131b1c1bf21bdae592f28634e1dac970}{Create\+T\+S\+N\+M\+Vertex\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ \hyperlink{namespacemage_a4138b0e92b6a57bc992eb771bbbca2be}{Create\+T\+S\+N\+M\+Pixel\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_ab25b2748d71b5a84059d8e6a22c13fd9}{Create\+Sprite\+Vertex\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ \hyperlink{namespacemage_ae4bc58705f237b263adb8889bd4750df}{Create\+Sprite\+Pixel\+Shader} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{namespacemage_abbe8caa20d3b1ab6ef2fdc4d7d0ad87c}{Create\+Font} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_ae11bcf2ae1aed9e9ab403f27cb786a53}{Create\+Texture} (const wstring \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \hyperlink{namespacemage_a53eac7141b62365b8acd201f815c8270}{Create\+Variable\+Script} (const wstring \&key, Constructor\+ArgsT \&\&... args)
 \item 
 void \hyperlink{namespacemage_a6ab176518e4d778ef8e28f2cfd63672a}{Import\+Variable\+Script\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
@@ -716,22 +730,6 @@ const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{na
 const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_aee250db29cd881c8d9c756a8625bab49}{Create\+Ward\+Duer\+Shader} ()
 \item 
 const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a162bd40744ba3a73b6c80d9afcac3419}{Create\+Cook\+Torrance\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a24fa6a07fc2221b8e06ccc817ad5846c}{Create\+Lambertian\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a6a17e60ce0db14815677f44958d5f3b1}{Create\+Phong\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a521c14f453ea67969007e93900752f8b}{Create\+Modified\+Phong\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a9f5a9a3f094f994636b3435be10d6915}{Create\+Blinn\+Phong\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_ae77b78010fb23bf3840e311258c3d922}{Create\+Modified\+Blinn\+Phong\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_ab6e3ba8b5e69f1ba002026d4949aef42}{Create\+Ward\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_acc436c063d383e54cc8e0a57f542be78}{Create\+Ward\+Duer\+T\+S\+N\+M\+Shader} ()
-\item 
-const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a37cb99e3af8e8adcbbb3e07ed02398f5}{Create\+Cook\+Torrance\+T\+S\+N\+M\+Shader} ()
 \item 
 const \hyperlink{structmage_1_1_compiled_vertex_shader}{Compiled\+Vertex\+Shader} \hyperlink{namespacemage_afaadbb3db4f4673c68b415b4f4ed74b9}{Create\+Compiled\+Transform\+Vertex\+Shader} () noexcept
 \item 
@@ -778,6 +776,22 @@ const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{na
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{Compile\+Shader\+From\+File} (const wstring \&fname, const string \&entry\+\_\+point, const string \&shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
 \item 
 const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a83cda7dcb5f25de3e5564aac5c0efa08}{Create\+Sprite\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a24fa6a07fc2221b8e06ccc817ad5846c}{Create\+Lambertian\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a6a17e60ce0db14815677f44958d5f3b1}{Create\+Phong\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a521c14f453ea67969007e93900752f8b}{Create\+Modified\+Phong\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a9f5a9a3f094f994636b3435be10d6915}{Create\+Blinn\+Phong\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_ae77b78010fb23bf3840e311258c3d922}{Create\+Modified\+Blinn\+Phong\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_ab6e3ba8b5e69f1ba002026d4949aef42}{Create\+Ward\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_acc436c063d383e54cc8e0a57f542be78}{Create\+Ward\+Duer\+T\+S\+N\+M\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{namespacemage_a37cb99e3af8e8adcbbb3e07ed02398f5}{Create\+Cook\+Torrance\+T\+S\+N\+M\+Shader} ()
 \item 
 const X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a706e1b2866209b405f52e62c521f4884}{Get\+Viewport\+Transform} (I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode)
 \item 
@@ -1019,7 +1033,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a1325dd45fa581827025d0207029bb7f0}{Cr
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac95c9d854152c94c77105e07ab3890e0}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 $\ast$device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_ac27913e621bde0fd01312183aafaaca0}{Create\+Texture} (const wstring \&fname)
+D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \hyperlink{namespacemage_abce5ce2136f0690d464889c785f809b9}{Create\+Single\+Color\+Texture2\+D\+Desc} () noexcept
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_a67c2c82133bfbce0b54db0faee82f79f}{Create\+Black\+Texture} ()
 \item 
@@ -3840,6 +3854,16 @@ The flags of the sprite associated with this sprite info.
 Constructs a sprite batch.
 
 \begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite batch.
+
+\begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
 
 {\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
@@ -6360,6 +6384,16 @@ The flags of the sprite associated with this sprite info.
 Constructs a sprite batch.
 
 \begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader.\\
+\hline
+\end{DoxyParams}
+Constructs a sprite batch.
+
+\begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
 
 {\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
@@ -8363,6 +8397,70 @@ Creates an anisotropic sampling state with wrapping.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a5fdd25580710252a82dd6b5b878f5e52}{}\label{namespacemage_a5fdd25580710252a82dd6b5b878f5e52} 
+\index{mage@{mage}!Create\+Basic\+Pixel\+Shader@{Create\+Basic\+Pixel\+Shader}}
+\index{Create\+Basic\+Pixel\+Shader@{Create\+Basic\+Pixel\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Basic\+Pixel\+Shader()}{CreateBasicPixelShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ mage\+::\+Create\+Basic\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a basic pixel shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the basic pixel shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the basic pixel shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the basic pixel shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the basic pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the basic pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a53181b02cdba8ff2b9735473798015fa}{}\label{namespacemage_a53181b02cdba8ff2b9735473798015fa} 
+\index{mage@{mage}!Create\+Basic\+Vertex\+Shader@{Create\+Basic\+Vertex\+Shader}}
+\index{Create\+Basic\+Vertex\+Shader@{Create\+Basic\+Vertex\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Basic\+Vertex\+Shader()}{CreateBasicVertexShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+Basic\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a basic vertex shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the basic vertex shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the basic vertex shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the basic vertex shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the basic vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the basic vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a67c2c82133bfbce0b54db0faee82f79f}{}\label{namespacemage_a67c2c82133bfbce0b54db0faee82f79f} 
 \index{mage@{mage}!Create\+Black\+Texture@{Create\+Black\+Texture}}
 \index{Create\+Black\+Texture@{Create\+Black\+Texture}!mage@{mage}}
@@ -9080,22 +9178,28 @@ The emissive shader.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the shader. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_ac93dae3a8755fa1e1c9be6c8aa0e07d2}{}\label{namespacemage_ac93dae3a8755fa1e1c9be6c8aa0e07d2} 
+\hypertarget{namespacemage_abbe8caa20d3b1ab6ef2fdc4d7d0ad87c}{}\label{namespacemage_abbe8caa20d3b1ab6ef2fdc4d7d0ad87c} 
 \index{mage@{mage}!Create\+Font@{Create\+Font}}
 \index{Create\+Font@{Create\+Font}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Font()}{CreateFont()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Create\+Font (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_sprite_font_descriptor}{Sprite\+Font\+Descriptor} \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Create\+Font (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
-Creates a sprite font.
+Creates a sprite font (if not existing).
 
 \begin{DoxyPrecond}{Precondition}
 The current engine must be loaded. 
 \end{DoxyPrecond}
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the sprite font. \\
 \hline
-\mbox{\tt in}  & {\em desc} & A reference to the sprite font descriptor. \\
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the sprite font. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the sprite font. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -9211,28 +9315,28 @@ Creates a linear sampling state with wrapping.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84}{}\label{namespacemage_a8cc26f80d3cb6f3d457bb06942880d84} 
+\hypertarget{namespacemage_ad78ee570a89c32a5f72e8a03d081fb3b}{}\label{namespacemage_ad78ee570a89c32a5f72e8a03d081fb3b} 
 \index{mage@{mage}!Create\+Model\+Descriptor@{Create\+Model\+Descriptor}}
 \index{Create\+Model\+Descriptor@{Create\+Model\+Descriptor}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Model\+Descriptor()}{CreateModelDescriptor()}}
-{\footnotesize\ttfamily template$<$typename VertexT $>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Create\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Create\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
-Creates a model descriptor.
+Creates a model descriptor (if not existing).
 
 \begin{DoxyPrecond}{Precondition}
 The current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em VertexT} & The vertex type. \\
+{\em Constructor\+ArgsT} & The constructor argument types of the model descriptor. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\mbox{\tt in}  & {\em key} & A reference to the key of the model descriptor. \\
 \hline
-\mbox{\tt in}  & {\em desc} & A reference to the mesh descriptor. \\
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the model descriptor. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -9240,7 +9344,7 @@ A pointer to the model descriptor.
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize the model descriptor. \\
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the model descriptor. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{namespacemage_a76c5e80b2777a1600d7fd6e184be892a}{}\label{namespacemage_a76c5e80b2777a1600d7fd6e184be892a} 
@@ -9544,6 +9648,44 @@ Creates a shared handle for the given handle.
 \begin{DoxyReturn}{Returns}
 A shared handle for the given handle {\itshape handle}. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_abce5ce2136f0690d464889c785f809b9}{}\label{namespacemage_abce5ce2136f0690d464889c785f809b9} 
+\index{mage@{mage}!Create\+Single\+Color\+Texture2\+D\+Desc@{Create\+Single\+Color\+Texture2\+D\+Desc}}
+\index{Create\+Single\+Color\+Texture2\+D\+Desc@{Create\+Single\+Color\+Texture2\+D\+Desc}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Single\+Color\+Texture2\+D\+Desc()}{CreateSingleColorTexture2DDesc()}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC mage\+::\+Create\+Single\+Color\+Texture2\+D\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{namespacemage_ae4bc58705f237b263adb8889bd4750df}{}\label{namespacemage_ae4bc58705f237b263adb8889bd4750df} 
+\index{mage@{mage}!Create\+Sprite\+Pixel\+Shader@{Create\+Sprite\+Pixel\+Shader}}
+\index{Create\+Sprite\+Pixel\+Shader@{Create\+Sprite\+Pixel\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Sprite\+Pixel\+Shader()}{CreateSpritePixelShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ mage\+::\+Create\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a sprite pixel shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the sprite pixel shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the sprite pixel shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the sprite pixel shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite pixel shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a83cda7dcb5f25de3e5564aac5c0efa08}{}\label{namespacemage_a83cda7dcb5f25de3e5564aac5c0efa08} 
 \index{mage@{mage}!Create\+Sprite\+Shader@{Create\+Sprite\+Shader}}
 \index{Create\+Sprite\+Shader@{Create\+Sprite\+Shader}!mage@{mage}}
@@ -9561,6 +9703,38 @@ The sprite shader.
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_ab25b2748d71b5a84059d8e6a22c13fd9}{}\label{namespacemage_ab25b2748d71b5a84059d8e6a22c13fd9} 
+\index{mage@{mage}!Create\+Sprite\+Vertex\+Shader@{Create\+Sprite\+Vertex\+Shader}}
+\index{Create\+Sprite\+Vertex\+Shader@{Create\+Sprite\+Vertex\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Sprite\+Vertex\+Shader()}{CreateSpriteVertexShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+Sprite\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a sprite vertex shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the sprite vertex shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the sprite vertex shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the sprite vertex shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the sprite vertex shader. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{namespacemage_a0f82659832d6478d5dd5363dc46187ba}{}\label{namespacemage_a0f82659832d6478d5dd5363dc46187ba} 
@@ -9668,20 +9842,28 @@ Creates a (dynamic) structured buffer.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_ac27913e621bde0fd01312183aafaaca0}{}\label{namespacemage_ac27913e621bde0fd01312183aafaaca0} 
+\hypertarget{namespacemage_ae11bcf2ae1aed9e9ab403f27cb786a53}{}\label{namespacemage_ae11bcf2ae1aed9e9ab403f27cb786a53} 
 \index{mage@{mage}!Create\+Texture@{Create\+Texture}}
 \index{Create\+Texture@{Create\+Texture}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Texture()}{CreateTexture()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Create\+Texture (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Create\+Texture (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
-Creates a texture.
+Creates a texture (if not existing).
 
 \begin{DoxyPrecond}{Precondition}
 The current engine must be loaded. 
 \end{DoxyPrecond}
 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the texture. \\
+\hline
+\end{DoxyTemplParams}
+
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\mbox{\tt in}  & {\em key} & A reference to the key of the texture. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the texture. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -9698,19 +9880,92 @@ A pointer to the texture.
 \subsubsection{\texorpdfstring{Create\+Texture\+From\+D\+D\+S()}{CreateTextureFromDDS()}}
 {\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+Texture\+From\+D\+DS (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$}]{header,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe}{}\label{namespacemage_a4ee2d46e5220246892bb34b7d1e97fbe} 
+\hypertarget{namespacemage_a4138b0e92b6a57bc992eb771bbbca2be}{}\label{namespacemage_a4138b0e92b6a57bc992eb771bbbca2be} 
+\index{mage@{mage}!Create\+T\+S\+N\+M\+Pixel\+Shader@{Create\+T\+S\+N\+M\+Pixel\+Shader}}
+\index{Create\+T\+S\+N\+M\+Pixel\+Shader@{Create\+T\+S\+N\+M\+Pixel\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+T\+S\+N\+M\+Pixel\+Shader()}{CreateTSNMPixelShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} $>$ mage\+::\+Create\+T\+S\+N\+M\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a tangent-\/space-\/normal-\/map pixel shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the tangent-\/space-\/normal-\/map pixel shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the tangent-\/space-\/normal-\/map pixel shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the tangent-\/space-\/normal-\/map pixel shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the tangent-\/space-\/normal-\/map pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the tangent-\/space-\/normal-\/map pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a131b1c1bf21bdae592f28634e1dac970}{}\label{namespacemage_a131b1c1bf21bdae592f28634e1dac970} 
+\index{mage@{mage}!Create\+T\+S\+N\+M\+Vertex\+Shader@{Create\+T\+S\+N\+M\+Vertex\+Shader}}
+\index{Create\+T\+S\+N\+M\+Vertex\+Shader@{Create\+T\+S\+N\+M\+Vertex\+Shader}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+T\+S\+N\+M\+Vertex\+Shader()}{CreateTSNMVertexShader()}}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+T\+S\+N\+M\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a tangent-\/space-\/normal-\/map vertex shader (if not existing).
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the tangent-\/space-\/normal-\/map vertex shader. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the tangent-\/space-\/normal-\/map vertex shader. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the tangent-\/space-\/normal-\/map vertex shader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the tangent-\/space-\/normal-\/map vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the tangent-\/space-\/normal-\/map vertex shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a53eac7141b62365b8acd201f815c8270}{}\label{namespacemage_a53eac7141b62365b8acd201f815c8270} 
 \index{mage@{mage}!Create\+Variable\+Script@{Create\+Variable\+Script}}
 \index{Create\+Variable\+Script@{Create\+Variable\+Script}!mage@{mage}}
 \subsubsection{\texorpdfstring{Create\+Variable\+Script()}{CreateVariableScript()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ mage\+::\+Create\+Variable\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{bool}]{import = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ mage\+::\+Create\+Variable\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
-Creates a variable script.
+Creates a variable script (if not existing).
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The constructor argument types of the variable script. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the variable script. \\
+\mbox{\tt in}  & {\em key} & A reference to the key of the variable script. \\
 \hline
-\mbox{\tt in}  & {\em import} & Flag indicating whether the variables of the variable script need to be imported. \\
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the variable script. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -10369,24 +10624,48 @@ The filename of the given file without its file extension.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & The filename does not have a file path. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_abe853bf4c3fee4be87be306f04e66ba3}{}\label{namespacemage_abe853bf4c3fee4be87be306f04e66ba3} 
-\index{mage@{mage}!Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}}
-\index{Get\+Model\+Rendering\+Device@{Get\+Model\+Rendering\+Device}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Model\+Rendering\+Device()}{GetModelRenderingDevice()}}
-{\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ mage\+::\+Get\+Model\+Rendering\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{namespacemage_ac40f4a9be583f890af2ce5fac2a6555c}{}\label{namespacemage_ac40f4a9be583f890af2ce5fac2a6555c} 
+\index{mage@{mage}!Get\+Input\+Manager@{Get\+Input\+Manager}}
+\index{Get\+Input\+Manager@{Get\+Input\+Manager}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Input\+Manager()}{GetInputManager()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $\ast$ mage\+::\+Get\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{namespacemage_a32622fbfff97a28a659f80eb0e1e1d00}{}\label{namespacemage_a32622fbfff97a28a659f80eb0e1e1d00} 
-\index{mage@{mage}!Get\+Model\+Rendering\+Device\+Context@{Get\+Model\+Rendering\+Device\+Context}}
-\index{Get\+Model\+Rendering\+Device\+Context@{Get\+Model\+Rendering\+Device\+Context}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Model\+Rendering\+Device\+Context()}{GetModelRenderingDeviceContext()}}
-{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ mage\+::\+Get\+Model\+Rendering\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+Returns the input manager associated with the current engine.
 
-\hypertarget{namespacemage_a9e1af7d81b6fc43a327bbe5df092dc0c}{}\label{namespacemage_a9e1af7d81b6fc43a327bbe5df092dc0c} 
-\index{mage@{mage}!Get\+Model\+Resource\+Factory@{Get\+Model\+Resource\+Factory}}
-\index{Get\+Model\+Resource\+Factory@{Get\+Model\+Resource\+Factory}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Model\+Resource\+Factory()}{GetModelResourceFactory()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory}$\ast$ mage\+::\+Get\+Model\+Resource\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the input manager associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a3575f4e0289fff045650ded444af362a}{}\label{namespacemage_a3575f4e0289fff045650ded444af362a} 
+\index{mage@{mage}!Get\+Keyboard@{Get\+Keyboard}}
+\index{Get\+Keyboard@{Get\+Keyboard}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Keyboard()}{GetKeyboard()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_keyboard}{Keyboard} $\ast$ mage\+::\+Get\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+Returns the keyboard associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the keyboard associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a8408c62614f108f4727dce07ac8f33da}{}\label{namespacemage_a8408c62614f108f4727dce07ac8f33da} 
+\index{mage@{mage}!Get\+Mouse@{Get\+Mouse}}
+\index{Get\+Mouse@{Get\+Mouse}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Mouse()}{GetMouse()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_mouse}{Mouse} $\ast$ mage\+::\+Get\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the mouse associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the mouse associated with the current engine. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_ab3642c6ef6cf94a62fb37b40c3c2f57e}{}\label{namespacemage_ab3642c6ef6cf94a62fb37b40c3c2f57e} 
 \index{mage@{mage}!Get\+Path\+Name@{Get\+Path\+Name}}
 \index{Get\+Path\+Name@{Get\+Path\+Name}!mage@{mage}}
@@ -10457,6 +10736,20 @@ Returns the refresh rate of the given display format descriptor.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The refresh rate of the given display format descriptor. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe}{}\label{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe} 
+\index{mage@{mage}!Get\+Renderer@{Get\+Renderer}}
+\index{Get\+Renderer@{Get\+Renderer}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Renderer()}{GetRenderer()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ mage\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the renderer associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the renderer associated with the current engine. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_aa20b591269a1196de06bb1b8a6be5262}{}\label{namespacemage_aa20b591269a1196de06bb1b8a6be5262} 
 \index{mage@{mage}!Get\+Rendering\+Device@{Get\+Rendering\+Device}}

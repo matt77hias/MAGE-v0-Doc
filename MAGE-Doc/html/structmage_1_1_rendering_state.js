@@ -1,5 +1,6 @@
 var structmage_1_1_rendering_state =
 [
+    [ "RenderingState", "structmage_1_1_rendering_state.html#acd2fe8a62bbd9c40e4b6d7dbee710223", null ],
     [ "RenderingState", "structmage_1_1_rendering_state.html#a6a1914effafb160ff1d05c8a1963278a", null ],
     [ "RenderingState", "structmage_1_1_rendering_state.html#aa56cf6681d7e9e59124534dfea51be15", null ],
     [ "RenderingState", "structmage_1_1_rendering_state.html#a70c843e9c1923d4b0d855fa7a57f38bd", null ],

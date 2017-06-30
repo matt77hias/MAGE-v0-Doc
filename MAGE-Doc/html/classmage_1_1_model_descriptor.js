@@ -1,5 +1,6 @@
 var classmage_1_1_model_descriptor =
 [
+    [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#ab70744d6489fd125a01a305fb96c1223", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#a1ae1d85907be96350cef77e6a4ba4fb9", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af44185efc20e10ede762d29bc454c5f3", null ],
     [ "ModelDescriptor", "classmage_1_1_model_descriptor.html#af5ece586e2a8404cc29e703885531e72", null ],
