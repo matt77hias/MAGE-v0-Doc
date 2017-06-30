@@ -13,9 +13,13 @@ Inheritance diagram for mage\+:\+:Sprite\+Pixel\+Shader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_sprite_pixel_shader_a27c14557bf08f15d321c5dd728b3343d}{Sprite\+Pixel\+Shader} ()
+\hyperlink{classmage_1_1_sprite_pixel_shader_a177d1f15a6230f079862967b9c3bdeaa}{Sprite\+Pixel\+Shader} (const wstring \&fname)
 \item 
-\hyperlink{classmage_1_1_sprite_pixel_shader_abffbb811fa7b34e538748ae5d082aec4}{Sprite\+Pixel\+Shader} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
+\hyperlink{classmage_1_1_sprite_pixel_shader_ad2d798e4235dd51e3536309709b003ff}{Sprite\+Pixel\+Shader} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
+\item 
+\hyperlink{classmage_1_1_sprite_pixel_shader_a1c9e2ba4b4e14c0875ad38f379ce5c89}{Sprite\+Pixel\+Shader} (const wstring \&guid, const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
+\item 
+\hyperlink{classmage_1_1_sprite_pixel_shader_ab73687a6f86ecfd9337a8aa8caf67dfb}{Sprite\+Pixel\+Shader} (const wstring \&guid, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
 \item 
 \hyperlink{classmage_1_1_sprite_pixel_shader_a5803ea69e04c58528f9c4fbbc0f4efbc}{Sprite\+Pixel\+Shader} (const \hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader} \&pixel\+\_\+shader)=delete
 \item 
@@ -36,11 +40,11 @@ virtual void \hyperlink{classmage_1_1_sprite_pixel_shader_a8c0c4daf36c74822a772b
 A class of sprite pixel shaders. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_sprite_pixel_shader_a27c14557bf08f15d321c5dd728b3343d}{}\label{classmage_1_1_sprite_pixel_shader_a27c14557bf08f15d321c5dd728b3343d} 
+\hypertarget{classmage_1_1_sprite_pixel_shader_a177d1f15a6230f079862967b9c3bdeaa}{}\label{classmage_1_1_sprite_pixel_shader_a177d1f15a6230f079862967b9c3bdeaa} 
 \index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
 \index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a sprite pixel shader.
 
@@ -48,15 +52,20 @@ Constructs a sprite pixel shader.
 The current engine must be loaded. 
 \end{DoxyPrecond}
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename (the globally unique identifier). \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this sprite pixel shader. \\
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_sprite_pixel_shader_abffbb811fa7b34e538748ae5d082aec4}{}\label{classmage_1_1_sprite_pixel_shader_abffbb811fa7b34e538748ae5d082aec4} 
+\hypertarget{classmage_1_1_sprite_pixel_shader_ad2d798e4235dd51e3536309709b003ff}{}\label{classmage_1_1_sprite_pixel_shader_ad2d798e4235dd51e3536309709b003ff} 
 \index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
 \index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a sprite pixel shader.
 
@@ -67,6 +76,8 @@ Constructs a sprite pixel shader.
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename (the globally unique identifier). \\
+\hline
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
 \hline
 \mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
@@ -74,13 +85,65 @@ Constructs a sprite pixel shader.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this sprite pixel shader. \\
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_sprite_pixel_shader_a1c9e2ba4b4e14c0875ad38f379ce5c89}{}\label{classmage_1_1_sprite_pixel_shader_a1c9e2ba4b4e14c0875ad38f379ce5c89} 
+\index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
+\index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a sprite pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_sprite_pixel_shader_ab73687a6f86ecfd9337a8aa8caf67dfb}{}\label{classmage_1_1_sprite_pixel_shader_ab73687a6f86ecfd9337a8aa8caf67dfb} 
+\index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
+\index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a sprite pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier. \\
+\hline
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_sprite_pixel_shader_a5803ea69e04c58528f9c4fbbc0f4efbc}{}\label{classmage_1_1_sprite_pixel_shader_a5803ea69e04c58528f9c4fbbc0f4efbc} 
 \index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
 \index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a sprite pixel shader from the given sprite pixel shader.
@@ -93,7 +156,7 @@ Constructs a sprite pixel shader from the given sprite pixel shader.
 \hypertarget{classmage_1_1_sprite_pixel_shader_a1507191b6574cc1fb499b4995f73edfe}{}\label{classmage_1_1_sprite_pixel_shader_a1507191b6574cc1fb499b4995f73edfe} 
 \index{mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}!Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}}
 \index{Sprite\+Pixel\+Shader@{Sprite\+Pixel\+Shader}!mage\+::\+Sprite\+Pixel\+Shader@{mage\+::\+Sprite\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{Sprite\+Pixel\+Shader()}{SpritePixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
 {\footnotesize\ttfamily mage\+::\+Sprite\+Pixel\+Shader\+::\+Sprite\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a sprite pixel shader by moving the given sprite pixel shader.

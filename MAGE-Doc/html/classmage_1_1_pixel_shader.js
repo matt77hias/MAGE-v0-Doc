@@ -1,9 +1,9 @@
 var classmage_1_1_pixel_shader =
 [
     [ "PixelShader", "classmage_1_1_pixel_shader.html#aceac0769412c88171ca85503165a85c0", null ],
-    [ "PixelShader", "classmage_1_1_pixel_shader.html#a0e8952d69f42380d289e7b4bb8035b3e", null ],
-    [ "PixelShader", "classmage_1_1_pixel_shader.html#a1e283883bbdba3dbff22c0acda0b2473", null ],
-    [ "PixelShader", "classmage_1_1_pixel_shader.html#a6d3bef6c6d0e2b20443eed92788646e2", null ],
+    [ "PixelShader", "classmage_1_1_pixel_shader.html#a965f56338d989774814b841074eda637", null ],
+    [ "PixelShader", "classmage_1_1_pixel_shader.html#af4473cf5c1a5b8e5fe4b8b780cddec08", null ],
+    [ "PixelShader", "classmage_1_1_pixel_shader.html#a429db17d6be8d71d11cc306d2fafdc4b", null ],
     [ "PixelShader", "classmage_1_1_pixel_shader.html#a361df943e40e9015ac4b769af130ce79", null ],
     [ "PixelShader", "classmage_1_1_pixel_shader.html#a5b2d7d36082d25c6f860674df745f7cd", null ],
     [ "~PixelShader", "classmage_1_1_pixel_shader.html#aac21a59d5d614f5bf1905f01479de44e", null ],

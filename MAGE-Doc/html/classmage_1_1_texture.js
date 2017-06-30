@@ -1,9 +1,9 @@
 var classmage_1_1_texture =
 [
     [ "Texture", "classmage_1_1_texture.html#a80de233bcc89478bc1ad904430290ad3", null ],
-    [ "Texture", "classmage_1_1_texture.html#a680c4df56476b4c66c1e2ffd5bef63c2", null ],
+    [ "Texture", "classmage_1_1_texture.html#a76d73e57feed31f48c49b6aa41017156", null ],
     [ "Texture", "classmage_1_1_texture.html#a42f351b830cfc01a95849ac67dc86965", null ],
-    [ "Texture", "classmage_1_1_texture.html#a5ac3c710eaeef9a37f5fc53132382068", null ],
+    [ "Texture", "classmage_1_1_texture.html#a3a81edb24e83ec1b99f8864f56d3fff2", null ],
     [ "Texture", "classmage_1_1_texture.html#aed9e8ab5bc3efdeb381672fd4e243ea7", null ],
     [ "Texture", "classmage_1_1_texture.html#a9297257bfe76e744cb02bbbb51f73348", null ],
     [ "~Texture", "classmage_1_1_texture.html#a81664804ac0259e8c67851409ee106fa", null ],

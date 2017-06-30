@@ -37,7 +37,7 @@ void \hyperlink{classmage_1_1_engine_a5609c1700971f83bcf5b3259f7fea604}{Set\+Mod
 \item 
 const \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a9e8de859024c2b51d9b20ce498d6c07b}{Get\+Input\+Manager} () const noexcept
 \item 
-\hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $\ast$ \hyperlink{classmage_1_1_engine_a891f26e1a3e9a0113b9c4d337c82a04e}{Get\+Resource\+Factory} () const noexcept
+\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b}{Get\+Resource\+Manager} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_engine_aec75ed67f8fb68a383fa892e50b21ea7}{Set\+Scene} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ scene)
 \end{DoxyCompactItemize}
@@ -59,7 +59,7 @@ bool \hyperlink{classmage_1_1_engine_aa5cb2e0b7bb2c4a9020e79ab832ee221}{m\+\_\+m
 \item 
 \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $>$ \hyperlink{classmage_1_1_engine_a8e9048208a6a5c5b034aaa1cbdab28bc}{m\+\_\+input\+\_\+manager}
 \item 
-\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $>$ \hyperlink{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90}{m\+\_\+resource\+\_\+factory}
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $>$ \hyperlink{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{m\+\_\+resource\+\_\+manager}
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \hyperlink{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8}{m\+\_\+scene}
 \item 
@@ -164,18 +164,18 @@ Returns the renderer of this engine.
 
 A pointer to the renderer of this engine. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_a891f26e1a3e9a0113b9c4d337c82a04e}{}\label{classmage_1_1_engine_a891f26e1a3e9a0113b9c4d337c82a04e} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Resource\+Factory@{Get\+Resource\+Factory}}
-\index{Get\+Resource\+Factory@{Get\+Resource\+Factory}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{Get\+Resource\+Factory()}{GetResourceFactory()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory}$\ast$ mage\+::\+Engine\+::\+Get\+Resource\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b}{}\label{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Resource\+Manager@{Get\+Resource\+Manager}}
+\index{Get\+Resource\+Manager@{Get\+Resource\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Resource\+Manager()}{GetResourceManager()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$\ast$ mage\+::\+Engine\+::\+Get\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the resource factory of this engine.
+Returns the resource manager of this engine.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily nullptr} if this engine is not properly setup. 
 
-A pointer to the resource factory of this engine. 
+A pointer to the resource manager of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a29a47448fb182b110d46d287a72b8b4e}{}\label{classmage_1_1_engine_a29a47448fb182b110d46d287a72b8b4e} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Systems@{Initialize\+Systems}}
@@ -310,13 +310,13 @@ Flag indicating whether the application should switch between full screen and wi
 \subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_renderer}{Renderer} $>$ mage\+::\+Engine\+::m\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90}{}\label{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+resource\+\_\+factory@{m\+\_\+resource\+\_\+factory}}
-\index{m\+\_\+resource\+\_\+factory@{m\+\_\+resource\+\_\+factory}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+factory}{m\_resource\_factory}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $>$ mage\+::\+Engine\+::m\+\_\+resource\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{}\label{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
+\index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $>$ mage\+::\+Engine\+::m\+\_\+resource\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the resource factory of this engine. \hypertarget{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8}{}\label{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8} 
+A pointer to the resource manager of this engine. \hypertarget{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8}{}\label{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+scene@{m\+\_\+scene}}
 \index{m\+\_\+scene@{m\+\_\+scene}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+scene}{m\_scene}}
