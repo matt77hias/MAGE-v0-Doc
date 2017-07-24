@@ -11,9 +11,9 @@ var classmage_1_1_camera =
     [ "GetViewToProjectionMatrix", "classmage_1_1_camera.html#ad72020c0bd6f8629bf8c8ba8bf583ed4", null ],
     [ "operator=", "classmage_1_1_camera.html#a9ae561f9cc0ed0dd855ee1d824dad090", null ],
     [ "operator=", "classmage_1_1_camera.html#a83e33f57394e85eee58745eb8e05b282", null ],
-    [ "SetFarZ", "classmage_1_1_camera.html#a2643b1e8946767a4b3d139e86b1b913f", null ],
-    [ "SetNearAndFarZ", "classmage_1_1_camera.html#ad31923fb81a727aadd58399e8485fc35", null ],
-    [ "SetNearZ", "classmage_1_1_camera.html#afa88d9ca0e72f661b490b988c12eeb34", null ],
+    [ "SetFarZ", "classmage_1_1_camera.html#ae5b70f109df3649d31e9e364080e9d72", null ],
+    [ "SetNearAndFarZ", "classmage_1_1_camera.html#a1854150387f3bfff7cc526b296859a7e", null ],
+    [ "SetNearZ", "classmage_1_1_camera.html#ace900f00ddce6060a627344257f417db", null ],
     [ "m_far_z", "classmage_1_1_camera.html#abe2eeca725ce3da238256007454b241f", null ],
     [ "m_near_z", "classmage_1_1_camera.html#a685f8700a29d1f1eff2bec353c3ec970", null ]
 ];

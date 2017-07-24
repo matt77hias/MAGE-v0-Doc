@@ -1,7 +1,7 @@
 var classmage_1_1_dropshadow_sprite_text =
 [
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a695f661b84ce4b6264e172d238d36306", null ],
-    [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a008f13cff4da63aaac7522b15c2b7a5d", null ],
+    [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a08c721ef491fb489b034273816a81eb4", null ],
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#af0a9422a32ed8962d6c691fe76f44c30", null ],
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a238b873f7b4d818cc3640e8f363f760e", null ],
     [ "~DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a561b1be59d05bccb680969be792c0e28", null ],
@@ -14,6 +14,6 @@ var classmage_1_1_dropshadow_sprite_text =
     [ "operator=", "classmage_1_1_dropshadow_sprite_text.html#aea70f005fd9eae94aee9da27aa54534b", null ],
     [ "SetShadowColor", "classmage_1_1_dropshadow_sprite_text.html#a2aceed81bffc3b6f51cf40bea0eb8405", null ],
     [ "SetShadowColor", "classmage_1_1_dropshadow_sprite_text.html#aa05c94ba64df31046dbdfa3d4d0fdaeb", null ],
-    [ "SetShadowColor", "classmage_1_1_dropshadow_sprite_text.html#a1cda6ca83aab7beb55b59cc9d52683b3", null ],
+    [ "SetShadowColor", "classmage_1_1_dropshadow_sprite_text.html#a87dd66597ce516d139196d1ce26cb680", null ],
     [ "m_shadow_color", "classmage_1_1_dropshadow_sprite_text.html#a6343fd2b2b2139d8a869c29a2a33531f", null ]
 ];

@@ -10,9 +10,9 @@ var classmage_1_1_omni_light =
     [ "GetStartDistanceFalloff", "classmage_1_1_omni_light.html#adb7811b447e8b4679b21123c01c6d6fb", null ],
     [ "operator=", "classmage_1_1_omni_light.html#a7bdce151d327daef5e1f31daedcc4627", null ],
     [ "operator=", "classmage_1_1_omni_light.html#a287a54dede61e65efe4493ec20531428", null ],
-    [ "SetDistanceFalloff", "classmage_1_1_omni_light.html#a87053ee5d11c3603b88fb448867e500a", null ],
-    [ "SetEndDistanceFalloff", "classmage_1_1_omni_light.html#a2f7d5d0cc3b71f6a8bfec55a40e25c9a", null ],
-    [ "SetStartDistanceFalloff", "classmage_1_1_omni_light.html#a685f2cb117b3906619ab48879aff5691", null ],
+    [ "SetDistanceFalloff", "classmage_1_1_omni_light.html#ad46e519eae108d009c8b77b86d302ed1", null ],
+    [ "SetEndDistanceFalloff", "classmage_1_1_omni_light.html#a976808d30573076afcb847724717a121", null ],
+    [ "SetStartDistanceFalloff", "classmage_1_1_omni_light.html#ac7d7dbdbaf9abdc6ee3c660d2354c39d", null ],
     [ "m_distance_falloff_end", "classmage_1_1_omni_light.html#a4ee5cc4103305dc96b43d6286858ef74", null ],
     [ "m_distance_falloff_start", "classmage_1_1_omni_light.html#ab784744d39ad3d4f4a7b2214a55108f7", null ]
 ];
