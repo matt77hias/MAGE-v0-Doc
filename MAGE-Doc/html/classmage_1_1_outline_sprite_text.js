@@ -1,7 +1,7 @@
 var classmage_1_1_outline_sprite_text =
 [
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a20863727c984b3765c2282d1e50047ea", null ],
-    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a8a6872c31f2538754b65445497fb50f4", null ],
+    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a34b5ed735b82fbc9a68d9b9bfa6ebf41", null ],
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a15be7f23a00e893314b905d5385903c5", null ],
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a86bb6e1637bcc71a4272f193466669e2", null ],
     [ "~OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#ae4d77ebb3f5bac4fd02b148d6173d10f", null ],
@@ -14,6 +14,6 @@ var classmage_1_1_outline_sprite_text =
     [ "operator=", "classmage_1_1_outline_sprite_text.html#a3549e97af5461728a399f01af9125486", null ],
     [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#a66b448443de5a459bb28f66c682a12bd", null ],
     [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#a7bd6e4fc0afefb65ca9d543f52941400", null ],
-    [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#acb4952d08d69ee8ccd20fb668f3efcd3", null ],
+    [ "SetBorderColor", "classmage_1_1_outline_sprite_text.html#a861b01bf303caf0c08a599f3d4a77894", null ],
     [ "m_border_color", "classmage_1_1_outline_sprite_text.html#a19301d370498a08759445f415da78822", null ]
 ];

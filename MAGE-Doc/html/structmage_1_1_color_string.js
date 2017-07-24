@@ -1,11 +1,11 @@
 var structmage_1_1_color_string =
 [
     [ "ColorString", "structmage_1_1_color_string.html#a9737fbe265c4432971e715439827f25a", null ],
-    [ "ColorString", "structmage_1_1_color_string.html#ab1f686b1ae86aedb444d02951658709d", null ],
+    [ "ColorString", "structmage_1_1_color_string.html#a115be37cf649b0e250ca22604df34900", null ],
     [ "ColorString", "structmage_1_1_color_string.html#a42597e6be67ed803a79eff88de769656", null ],
-    [ "ColorString", "structmage_1_1_color_string.html#a0280c2fa63742358c183ee381ebc4581", null ],
+    [ "ColorString", "structmage_1_1_color_string.html#a6a869d9a0325dbe261b8afc60976a7b4", null ],
     [ "ColorString", "structmage_1_1_color_string.html#aef572c89d1ed663837c6e5b1b6816984", null ],
-    [ "ColorString", "structmage_1_1_color_string.html#a1a7826048fbe997d789fbae4ae97d35d", null ],
+    [ "ColorString", "structmage_1_1_color_string.html#ae60cd006f5c8fe178b097c158557b777", null ],
     [ "ColorString", "structmage_1_1_color_string.html#aa878fda012b4149f673e905f6a8ea8b0", null ],
     [ "ColorString", "structmage_1_1_color_string.html#a68d8411da4dd7122975223e25bbcbb9a", null ],
     [ "~ColorString", "structmage_1_1_color_string.html#a95886010269c8c4bc3a27fbfe829f4c2", null ],
@@ -17,7 +17,7 @@ var structmage_1_1_color_string =
     [ "operator=", "structmage_1_1_color_string.html#a2016416ce91bb7e94a8869201db47ef1", null ],
     [ "SetColor", "structmage_1_1_color_string.html#acff8b67574e427674e6abb98da7cca3a", null ],
     [ "SetColor", "structmage_1_1_color_string.html#a45a4a036e48431882c193be5bd718add", null ],
-    [ "SetColor", "structmage_1_1_color_string.html#a298a253ed03e92f4c083b65af9c7dc06", null ],
+    [ "SetColor", "structmage_1_1_color_string.html#ab4de02b485d18384fcca1a0b55600abd", null ],
     [ "SetString", "structmage_1_1_color_string.html#aa5ec8bb8e44683ed8a88534f04639930", null ],
     [ "SetString", "structmage_1_1_color_string.html#a62a374668fafc55281b97e6374027b25", null ],
     [ "SetString", "structmage_1_1_color_string.html#a317caadad725b67ede68f1e474e47d3b", null ],

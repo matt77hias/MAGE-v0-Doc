@@ -26,9 +26,13 @@ virtual \hyperlink{classmage_1_1_resource_pool_ae4fff3d951818d417f77965c2db265f6
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e}{Get\+Number\+Of\+Resources} () const
 \item 
-{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_a66629c973e3a9390b611bf3d0264e9d3}{Get\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
+bool \hyperlink{classmage_1_1_resource_pool_a77d614ec79c615fc365474ef7c8c0e6f}{Has\+Resource} (const KeyT \&key) noexcept
 \item 
-{\footnotesize template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_a620f6e701702ace07578a5facfe86d66}{Get\+Derived\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_ad1d85cf6c36d992d4192118abbead349}{Get\+Resource} (const KeyT \&key) noexcept
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_a5290731a0083d8253330cd40f6304d2c}{Get\+Or\+Create\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool_a63bfe534b77e11798bfd301512c99f05}{Get\+Or\+Create\+Derived\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
 \item 
 void \hyperlink{classmage_1_1_resource_pool_a56680a516f219bcf69bf5c8aaebdfeed}{Remove\+Resource} (const KeyT \&key)
 \item 
@@ -104,17 +108,24 @@ virtual \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ Key
 Destructs this resource pool. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_resource_pool_a620f6e701702ace07578a5facfe86d66}{}\label{classmage_1_1_resource_pool_a620f6e701702ace07578a5facfe86d66} 
-\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Derived\+Resource@{Get\+Derived\+Resource}}
-\index{Get\+Derived\+Resource@{Get\+Derived\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Derived\+Resource()}{GetDerivedResource()}}
+\hypertarget{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e}{}\label{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}}
+\index{Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Resources()}{GetNumberOfResources()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+size\+\_\+t \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Number\+Of\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of resources contained in this resource pool. \hypertarget{classmage_1_1_resource_pool_a63bfe534b77e11798bfd301512c99f05}{}\label{classmage_1_1_resource_pool_a63bfe534b77e11798bfd301512c99f05} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Or\+Create\+Derived\+Resource@{Get\+Or\+Create\+Derived\+Resource}}
+\index{Get\+Or\+Create\+Derived\+Resource@{Get\+Or\+Create\+Derived\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create\+Derived\+Resource()}{GetOrCreateDerivedResource()}}
 {\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
 template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Derived\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create\+Derived\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
 Returns the resource corresponding to the given key from this resource pool.
 
-If no resource is contained in this resource pool corresponding to the given key a new resource is created from the given arguments, added to this resource pool and returned.
+If no resource is contained in this resource pool corresponding to the given key, a new resource is created from the given arguments, added to this resource pool and returned.
 
 \begin{DoxyPrecond}{Precondition}
 {\ttfamily Derived\+ResourceT} is a derived class of {\ttfamily ResourceT}. 
@@ -136,24 +147,17 @@ If no resource is contained in this resource pool corresponding to the given key
 \begin{DoxyReturn}{Returns}
 A pointer to the resource corresponding to the given key from this resource pool. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e}{}\label{classmage_1_1_resource_pool_ae2f9964a1821c9b8cb38303a5a88c98e} 
-\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}}
-\index{Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Number\+Of\+Resources()}{GetNumberOfResources()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-size\+\_\+t \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Number\+Of\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-Returns the number of resources contained in this resource pool. \hypertarget{classmage_1_1_resource_pool_a66629c973e3a9390b611bf3d0264e9d3}{}\label{classmage_1_1_resource_pool_a66629c973e3a9390b611bf3d0264e9d3} 
-\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Resource@{Get\+Resource}}
-\index{Get\+Resource@{Get\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Resource()}{GetResource()}}
+\hypertarget{classmage_1_1_resource_pool_a5290731a0083d8253330cd40f6304d2c}{}\label{classmage_1_1_resource_pool_a5290731a0083d8253330cd40f6304d2c} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Or\+Create\+Resource@{Get\+Or\+Create\+Resource}}
+\index{Get\+Or\+Create\+Resource@{Get\+Or\+Create\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create\+Resource()}{GetOrCreateResource()}}
 {\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
 template$<$typename... Constructor\+ArgsT$>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
 Returns the resource corresponding to the given key from this resource pool.
 
-If no resource is contained in this resource pool corresponding to the given key a new resource is created from the given arguments, added to this resource pool and returned.
+If no resource is contained in this resource pool corresponding to the given key, a new resource is created from the given arguments, added to this resource pool and returned.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -169,6 +173,42 @@ If no resource is contained in this resource pool corresponding to the given key
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A pointer to the resource corresponding to the given key from this resource pool. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_pool_ad1d85cf6c36d992d4192118abbead349}{}\label{classmage_1_1_resource_pool_ad1d85cf6c36d992d4192118abbead349} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Get\+Resource@{Get\+Resource}}
+\index{Get\+Resource@{Get\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Resource()}{GetResource()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the resource corresponding to the given key from this resource pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr}, if no resource is contained in this resource pool corresponding to the given key. 
+
+A pointer to the resource corresponding to the given key from this resource pool. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_pool_a77d614ec79c615fc365474ef7c8c0e6f}{}\label{classmage_1_1_resource_pool_a77d614ec79c615fc365474ef7c8c0e6f} 
+\index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!Has\+Resource@{Has\+Resource}}
+\index{Has\+Resource@{Has\+Resource}!mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Has\+Resource()}{HasResource()}}
+{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+bool \hyperlink{classmage_1_1_resource_pool}{mage\+::\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Has\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this resource pool contains a resource corresponding to the given key from this resource pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if a resource is contained in this resource pool corresponding to the given key. {\ttfamily false}, otherwise. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_resource_pool_ae8121e031efe9f98605e478b01b19d33}{}\label{classmage_1_1_resource_pool_ae8121e031efe9f98605e478b01b19d33} 
 \index{mage\+::\+Resource\+Pool@{mage\+::\+Resource\+Pool}!operator=@{operator=}}

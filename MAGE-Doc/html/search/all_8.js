@@ -1,6 +1,8 @@
 var searchData=
 [
   ['handlecloser',['HandleCloser',['../structmage_1_1_handle_closer.html',1,'mage']]],
+  ['hasbasicpixelshader',['HasBasicPixelShader',['../classmage_1_1_resource_manager.html#a3027058c2b55a131a2070d0f31080c29',1,'mage::ResourceManager::HasBasicPixelShader()'],['../namespacemage.html#a05ae865ea98f6da396994ac011f30ae2',1,'mage::HasBasicPixelShader()']]],
+  ['hasbasicvertexshader',['HasBasicVertexShader',['../classmage_1_1_resource_manager.html#ab2e83271c42c8250bf0ffe8ec59d5ced',1,'mage::ResourceManager::HasBasicVertexShader()'],['../namespacemage.html#a51968825f1fa86a8f36398ec30bb641c',1,'mage::HasBasicVertexShader()']]],
   ['hasbool',['HasBool',['../classmage_1_1_line_reader.html#ac18069cc6bc399ce6ad8ad069a073c6c',1,'mage::LineReader::HasBool()'],['../namespacemage.html#a17705a2e2d8f45a160753bb0fa5b27c1',1,'mage::HasBool()']]],
   ['haschars',['HasChars',['../classmage_1_1_line_reader.html#a7eb54d60902d1fb7846ea5c566312a0f',1,'mage::LineReader::HasChars()'],['../namespacemage.html#ae34e1aa69b0f6b92c5c05da7081b175f',1,'mage::HasChars()']]],
   ['hascharsleft',['HasCharsLeft',['../classmage_1_1_binary_reader.html#aec91fece03b619c158b133beb1bc9381',1,'mage::BinaryReader::HasCharsLeft()'],['../classmage_1_1_big_endian_binary_reader.html#adaa45913c50d4cb54456121ba56c8afb',1,'mage::BigEndianBinaryReader::HasCharsLeft()']]],
@@ -11,14 +13,23 @@ var searchData=
   ['hasint32',['HasInt32',['../classmage_1_1_line_reader.html#af8402b39637e27877eac2909604bbf89',1,'mage::LineReader::HasInt32()'],['../namespacemage.html#ab476d1a2ac6d4f0459ccdc5f84445b68',1,'mage::HasInt32()']]],
   ['hasint64',['HasInt64',['../classmage_1_1_line_reader.html#a3a7883e24fb3108a79ecda4eaac983f2',1,'mage::LineReader::HasInt64()'],['../namespacemage.html#a51c4032544fb55800a905ccd85ca5e99',1,'mage::HasInt64()']]],
   ['hasint8',['HasInt8',['../classmage_1_1_line_reader.html#a1eecd5324b2e212826c49e600cc46e1f',1,'mage::LineReader::HasInt8()'],['../namespacemage.html#acac9aacbe357975a50b0f9c784296a7c',1,'mage::HasInt8()']]],
+  ['hasmodeldescriptor',['HasModelDescriptor',['../classmage_1_1_resource_manager.html#a20913b24e2b86b3c59887f6b071bb020',1,'mage::ResourceManager::HasModelDescriptor()'],['../namespacemage.html#aac287ec9e0de03519407b5457e70f1d2',1,'mage::HasModelDescriptor()']]],
   ['hasmodelpart',['HasModelPart',['../structmage_1_1_model_output.html#a90c6d42d13813b9c340bd1a250276a8d',1,'mage::ModelOutput']]],
   ['hasparentnode',['HasParentNode',['../classmage_1_1_node.html#acc47eb0f2eaa60e71fd945e79b4f622d',1,'mage::Node']]],
   ['hasquotedstring',['HasQuotedString',['../classmage_1_1_line_reader.html#ac92de9a3d986c7031c902c9489cfaa5a',1,'mage::LineReader::HasQuotedString()'],['../namespacemage.html#a5c97e960b9cd087e75a7defd9cf73b54',1,'mage::HasQuotedString()']]],
+  ['hasresource',['HasResource',['../classmage_1_1_resource_pool.html#a77d614ec79c615fc365474ef7c8c0e6f',1,'mage::ResourcePool']]],
   ['hasscript',['HasScript',['../classmage_1_1_scene.html#a9dd6c49e9db7590de1de4fbd128c78a9',1,'mage::Scene']]],
+  ['hasspritefont',['HasSpriteFont',['../classmage_1_1_resource_manager.html#a505a5b25923d88020d85a2f3307e4b7f',1,'mage::ResourceManager::HasSpriteFont()'],['../namespacemage.html#a632b5caf49f09192c079046fbbfebc48',1,'mage::HasSpriteFont()']]],
+  ['hasspritepixelshader',['HasSpritePixelShader',['../classmage_1_1_resource_manager.html#ae1a4a3a8d98ecbf3c585464d0edd0c9f',1,'mage::ResourceManager::HasSpritePixelShader()'],['../namespacemage.html#a28651801c03f9251c6ace574c9a57cc6',1,'mage::HasSpritePixelShader()']]],
+  ['hasspritevertexshader',['HasSpriteVertexShader',['../classmage_1_1_resource_manager.html#a03b2fd29460628ae0be3ec634c9a9683',1,'mage::ResourceManager::HasSpriteVertexShader()'],['../namespacemage.html#a6a8ea9eed032d6aaa5418923cd7cec3f',1,'mage::HasSpriteVertexShader()']]],
   ['hasstring',['HasString',['../classmage_1_1_line_reader.html#a011b5a0d1bd2d157033e3bf7d7323aed',1,'mage::LineReader::HasString()'],['../namespacemage.html#a1160001b541f3aa8818c37a134e4cdd9',1,'mage::HasString()']]],
+  ['hastexture',['HasTexture',['../classmage_1_1_resource_manager.html#a617768fb9ec0c7c8f00b3f34c6386dfa',1,'mage::ResourceManager::HasTexture()'],['../namespacemage.html#a8e244dafcafcf83beba5c858ced99861',1,'mage::HasTexture()']]],
+  ['hastsnmpixelshader',['HasTSNMPixelShader',['../classmage_1_1_resource_manager.html#a3aeb6ce19c392b82fd4268525478fc3d',1,'mage::ResourceManager::HasTSNMPixelShader()'],['../namespacemage.html#aea9c7bbdeb5926e79d96afb292af7dd9',1,'mage::HasTSNMPixelShader()']]],
+  ['hastsnmvertexshader',['HasTSNMVertexShader',['../classmage_1_1_resource_manager.html#aaed0648fcca9ef8c5ea901adf8691eb2',1,'mage::ResourceManager::HasTSNMVertexShader()'],['../namespacemage.html#ad7248302247e7d9a89f814bcad18d5db',1,'mage::HasTSNMVertexShader()']]],
   ['hasuint16',['HasUInt16',['../classmage_1_1_line_reader.html#a15c7c3336330649062556e5b318af510',1,'mage::LineReader::HasUInt16()'],['../namespacemage.html#a52a49efce40c0ad5c50340036e7a74fa',1,'mage::HasUInt16()']]],
   ['hasuint32',['HasUInt32',['../classmage_1_1_line_reader.html#a56f82d5562d0254ec59871a3bb7ad837',1,'mage::LineReader::HasUInt32()'],['../namespacemage.html#a5d4c13b907e688d2a743aabd15e61821',1,'mage::HasUInt32()']]],
   ['hasuint64',['HasUInt64',['../classmage_1_1_line_reader.html#ad311b6edbfc68c01997f90cd1db5d95e',1,'mage::LineReader::HasUInt64()'],['../namespacemage.html#af018725ebdee13dad295cc607db93f38',1,'mage::HasUInt64()']]],
   ['hasuint8',['HasUInt8',['../classmage_1_1_line_reader.html#a7d9359c8a65005358564728be9091fa8',1,'mage::LineReader::HasUInt8()'],['../namespacemage.html#ac2478814d8f43d6217c54f97c4fd3034',1,'mage::HasUInt8()']]],
+  ['hasvariablescript',['HasVariableScript',['../classmage_1_1_resource_manager.html#a34d72d4729102af23d73438eea629e02',1,'mage::ResourceManager::HasVariableScript()'],['../namespacemage.html#aadb4e6038baba1265971f898186668a0',1,'mage::HasVariableScript()']]],
   ['height',['height',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#add2352edab3631c2d78ff1ec5d027fbc',1,'mage::DDS_HEADER']]]
 ];
