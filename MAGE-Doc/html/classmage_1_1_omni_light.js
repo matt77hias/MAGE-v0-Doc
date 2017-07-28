@@ -7,6 +7,7 @@ var classmage_1_1_omni_light =
     [ "Clone", "classmage_1_1_omni_light.html#a82325924de65733314dcf2b87e926d60", null ],
     [ "CloneImplementation", "classmage_1_1_omni_light.html#a1212457828cdd96cc7170767b7bd1223", null ],
     [ "GetEndDistanceFalloff", "classmage_1_1_omni_light.html#a1bd4d9eb6a22ae78e1780f142039611c", null ],
+    [ "GetRangeDistanceFalloff", "classmage_1_1_omni_light.html#a6f70a9cca052fa2228aeab4c44ca8a0b", null ],
     [ "GetStartDistanceFalloff", "classmage_1_1_omni_light.html#adb7811b447e8b4679b21123c01c6d6fb", null ],
     [ "operator=", "classmage_1_1_omni_light.html#a7bdce151d327daef5e1f31daedcc4627", null ],
     [ "operator=", "classmage_1_1_omni_light.html#a287a54dede61e65efe4493ec20531428", null ],

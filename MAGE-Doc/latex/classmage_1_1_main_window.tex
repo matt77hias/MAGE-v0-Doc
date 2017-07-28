@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_main_window_a907a5c337e0e1f14281858b7713235ab}{Main\+Window} (H\+I\+N\+S\+T\+A\+N\+CE hinstance, const wstring \&name, L\+O\+NG width, L\+O\+NG height)
+\hyperlink{classmage_1_1_main_window_a05350ed05ac1af3fb7ed3176e3d249ac}{Main\+Window} (H\+I\+N\+S\+T\+A\+N\+CE hinstance, const wstring \&title\+\_\+text, L\+O\+NG width, L\+O\+NG height)
 \item 
 \hyperlink{classmage_1_1_main_window_a8dc3c590bb168f8178a7db72ff60fd0c}{Main\+Window} (const \hyperlink{classmage_1_1_main_window}{Main\+Window} \&main\+\_\+window)=delete
 \item 
@@ -19,20 +19,24 @@
 \item 
 \hyperlink{classmage_1_1_main_window}{Main\+Window} \& \hyperlink{classmage_1_1_main_window_a684d547966f69ef5df793b5ce516f76a}{operator=} (\hyperlink{classmage_1_1_main_window}{Main\+Window} \&\&main\+\_\+window)=delete
 \item 
-bool \hyperlink{classmage_1_1_main_window_acdb8291584555de1feb6c41bf586185b}{Show} (int n\+Cmd\+Show) noexcept
+void \hyperlink{classmage_1_1_main_window_abbb86e7f4dab1b43ca28f83e265f511e}{Show} (int n\+Cmd\+Show) noexcept
 \item 
 H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{classmage_1_1_main_window_a1b8c851147ea3b51e645c2fce961fe17}{Get\+Hinstance} () noexcept
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_main_window_ab4520f7c5ef0828535a117a8512221b5}{Get\+Handle} () noexcept
 \item 
-const wstring \& \hyperlink{classmage_1_1_main_window_a0f46ddf228456b3835be876f95d8ebdd}{Get\+Name} () const noexcept
+const wstring \hyperlink{classmage_1_1_main_window_a16ea3780659e00c8e4732b518c7c4a1e}{Get\+Title\+Text} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_main_window_aaadd51dc2b902d93ea2f28d685477301}{Set\+Title\+Text} (const wstring \&title\+\_\+text) noexcept
+\item 
+void \hyperlink{classmage_1_1_main_window_a1baa8554782be197fb5932c3af461f0e}{Set\+Title\+Text} (const wchar\+\_\+t $\ast$title\+\_\+text) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_main_window_a31743edf07cbedaf861f6f818eb77ca6}{Initialize\+Window} (L\+O\+NG width, L\+O\+NG height)
+void \hyperlink{classmage_1_1_main_window_abcf8f87d562109236de14db7ee8a3df2}{Initialize\+Window} (const wstring \&title\+\_\+text, L\+O\+NG width, L\+O\+NG height)
 \item 
-void \hyperlink{classmage_1_1_main_window_afbbb6a65c81b751dcfa551cf16def863}{Initialize\+Window} (R\+E\+CT rectangle)
+void \hyperlink{classmage_1_1_main_window_ab87716ce916ba180068a65294fa037e8}{Initialize\+Window} (const wstring \&title\+\_\+text, const R\+E\+CT \&rectangle)
 \item 
 void \hyperlink{classmage_1_1_main_window_a229ff4bcc198ed9caf2ce54966caf746}{Uninitialize\+Window} () noexcept
 \end{DoxyCompactItemize}
@@ -42,8 +46,6 @@ void \hyperlink{classmage_1_1_main_window_a229ff4bcc198ed9caf2ce54966caf746}{Uni
 const H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{classmage_1_1_main_window_a314759bf324579b568528bbf99bc5c7f}{m\+\_\+hinstance}
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_main_window_afc9afabcf8a52d79f02c8352451863cc}{m\+\_\+hwindow}
-\item 
-const wstring \hyperlink{classmage_1_1_main_window_a3d8eba5081df97c68b1f2aa7e5d5cb1c}{m\+\_\+name}
 \end{DoxyCompactItemize}
 
 
@@ -51,11 +53,11 @@ const wstring \hyperlink{classmage_1_1_main_window_a3d8eba5081df97c68b1f2aa7e5d5
 A class of application main windows. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_main_window_a907a5c337e0e1f14281858b7713235ab}{}\label{classmage_1_1_main_window_a907a5c337e0e1f14281858b7713235ab} 
+\hypertarget{classmage_1_1_main_window_a05350ed05ac1af3fb7ed3176e3d249ac}{}\label{classmage_1_1_main_window_a05350ed05ac1af3fb7ed3176e3d249ac} 
 \index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Main\+Window@{Main\+Window}}
 \index{Main\+Window@{Main\+Window}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
 \subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{hinstance,  }\item[{const wstring \&}]{name,  }\item[{L\+O\+NG}]{width,  }\item[{L\+O\+NG}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{hinstance,  }\item[{const wstring \&}]{title\+\_\+text,  }\item[{L\+O\+NG}]{width,  }\item[{L\+O\+NG}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a main window.
 
@@ -66,7 +68,7 @@ Constructs a main window.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em hinstance} & The application instance handle. \\
 \hline
-\mbox{\tt in}  & {\em name} & A reference to the name of the application. \\
+\mbox{\tt in}  & {\em title\+\_\+text} & A reference to the title text. \\
 \hline
 \mbox{\tt in}  & {\em width} & The width of the window. \\
 \hline
@@ -137,27 +139,29 @@ Returns the application instance handle of this main window.
 \begin{DoxyReturn}{Returns}
 The application instance handle of this main window. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_main_window_a0f46ddf228456b3835be876f95d8ebdd}{}\label{classmage_1_1_main_window_a0f46ddf228456b3835be876f95d8ebdd} 
-\index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Get\+Name@{Get\+Name}}
-\index{Get\+Name@{Get\+Name}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
-\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Main\+Window\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1_main_window_a16ea3780659e00c8e4732b518c7c4a1e}{}\label{classmage_1_1_main_window_a16ea3780659e00c8e4732b518c7c4a1e} 
+\index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Get\+Title\+Text@{Get\+Title\+Text}}
+\index{Get\+Title\+Text@{Get\+Title\+Text}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
+\subsubsection{\texorpdfstring{Get\+Title\+Text()}{GetTitleText()}}
+{\footnotesize\ttfamily const wstring mage\+::\+Main\+Window\+::\+Get\+Title\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the name of this main window.
+Returns the title text of this main window.
 
 \begin{DoxyReturn}{Returns}
-The name of this main window. 
+The title text of this main window. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_main_window_a31743edf07cbedaf861f6f818eb77ca6}{}\label{classmage_1_1_main_window_a31743edf07cbedaf861f6f818eb77ca6} 
+\hypertarget{classmage_1_1_main_window_abcf8f87d562109236de14db7ee8a3df2}{}\label{classmage_1_1_main_window_abcf8f87d562109236de14db7ee8a3df2} 
 \index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Initialize\+Window@{Initialize\+Window}}
 \index{Initialize\+Window@{Initialize\+Window}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
 \subsubsection{\texorpdfstring{Initialize\+Window()}{InitializeWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Initialize\+Window (\begin{DoxyParamCaption}\item[{L\+O\+NG}]{width,  }\item[{L\+O\+NG}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Initialize\+Window (\begin{DoxyParamCaption}\item[{const wstring \&}]{title\+\_\+text,  }\item[{L\+O\+NG}]{width,  }\item[{L\+O\+NG}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes the engine window of this main window.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em title\+\_\+text} & A reference to the title text. \\
+\hline
 \mbox{\tt in}  & {\em width} & The width of the client rectangle of the window. \\
 \hline
 \mbox{\tt in}  & {\em height} & The height of the client rectangle of the window. \\
@@ -170,17 +174,19 @@ Initializes the engine window of this main window.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the main window. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_main_window_afbbb6a65c81b751dcfa551cf16def863}{}\label{classmage_1_1_main_window_afbbb6a65c81b751dcfa551cf16def863} 
+\hypertarget{classmage_1_1_main_window_ab87716ce916ba180068a65294fa037e8}{}\label{classmage_1_1_main_window_ab87716ce916ba180068a65294fa037e8} 
 \index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Initialize\+Window@{Initialize\+Window}}
 \index{Initialize\+Window@{Initialize\+Window}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
 \subsubsection{\texorpdfstring{Initialize\+Window()}{InitializeWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Initialize\+Window (\begin{DoxyParamCaption}\item[{R\+E\+CT}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Initialize\+Window (\begin{DoxyParamCaption}\item[{const wstring \&}]{title\+\_\+text,  }\item[{const R\+E\+CT \&}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes the engine window of this main window.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em rectangle} & The client rectangle of the window. \\
+\mbox{\tt in}  & {\em title\+\_\+text} & A reference to the title text. \\
+\hline
+\mbox{\tt in}  & {\em rectangle} & A reference to the client rectangle of the window. \\
 \hline
 \end{DoxyParams}
 
@@ -222,11 +228,40 @@ Moves the given main window to this main window.
 \begin{DoxyReturn}{Returns}
 A reference to the moved main window (i.\+e. this main window). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_main_window_acdb8291584555de1feb6c41bf586185b}{}\label{classmage_1_1_main_window_acdb8291584555de1feb6c41bf586185b} 
+\hypertarget{classmage_1_1_main_window_aaadd51dc2b902d93ea2f28d685477301}{}\label{classmage_1_1_main_window_aaadd51dc2b902d93ea2f28d685477301} 
+\index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Set\+Title\+Text@{Set\+Title\+Text}}
+\index{Set\+Title\+Text@{Set\+Title\+Text}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
+\subsubsection{\texorpdfstring{Set\+Title\+Text()}{SetTitleText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Set\+Title\+Text (\begin{DoxyParamCaption}\item[{const wstring \&}]{title\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the title text of this main window to the given title text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em title\+\_\+text} & A reference to the title text. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_main_window_a1baa8554782be197fb5932c3af461f0e}{}\label{classmage_1_1_main_window_a1baa8554782be197fb5932c3af461f0e} 
+\index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Set\+Title\+Text@{Set\+Title\+Text}}
+\index{Set\+Title\+Text@{Set\+Title\+Text}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
+\subsubsection{\texorpdfstring{Set\+Title\+Text()}{SetTitleText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Set\+Title\+Text (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{title\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the title text of this main window to the given title text.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape title\+\_\+text} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em title\+\_\+text} & A pointer to the title text. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_main_window_abbb86e7f4dab1b43ca28f83e265f511e}{}\label{classmage_1_1_main_window_abbb86e7f4dab1b43ca28f83e265f511e} 
 \index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Show@{Show}}
 \index{Show@{Show}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
 \subsubsection{\texorpdfstring{Show()}{Show()}}
-{\footnotesize\ttfamily bool mage\+::\+Main\+Window\+::\+Show (\begin{DoxyParamCaption}\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void mage\+::\+Main\+Window\+::\+Show (\begin{DoxyParamCaption}\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the specified window\textquotesingle{}s show state of this main window.
 
@@ -235,9 +270,6 @@ Sets the specified window\textquotesingle{}s show state of this main window.
 \mbox{\tt in}  & {\em n\+Cmd\+Show} & Controls how this window is to be shown. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if the window was previously visible. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
 \hypertarget{classmage_1_1_main_window_a229ff4bcc198ed9caf2ce54966caf746}{}\label{classmage_1_1_main_window_a229ff4bcc198ed9caf2ce54966caf746} 
 \index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!Uninitialize\+Window@{Uninitialize\+Window}}
 \index{Uninitialize\+Window@{Uninitialize\+Window}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
@@ -259,10 +291,4 @@ The application instance handle of this main window. \hypertarget{classmage_1_1_
 \subsubsection{\texorpdfstring{m\+\_\+hwindow}{m\_hwindow}}
 {\footnotesize\ttfamily H\+W\+ND mage\+::\+Main\+Window\+::m\+\_\+hwindow\hspace{0.3cm}{\ttfamily [private]}}
 
-The handle of the parent window of this main window. \hypertarget{classmage_1_1_main_window_a3d8eba5081df97c68b1f2aa7e5d5cb1c}{}\label{classmage_1_1_main_window_a3d8eba5081df97c68b1f2aa7e5d5cb1c} 
-\index{mage\+::\+Main\+Window@{mage\+::\+Main\+Window}!m\+\_\+name@{m\+\_\+name}}
-\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Main\+Window@{mage\+::\+Main\+Window}}
-\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
-{\footnotesize\ttfamily const wstring mage\+::\+Main\+Window\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
-
-The name of this main window. 
+The handle of the parent window of this main window. 

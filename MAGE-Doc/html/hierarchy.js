@@ -39,8 +39,8 @@ var hierarchy =
     ] ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< LightDataBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< MaterialBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< SceneBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< TransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
     [ "mage::CPUTimer", "classmage_1_1_c_p_u_timer.html", null ],
@@ -65,7 +65,6 @@ var hierarchy =
       [ "mage::OmniLight", "classmage_1_1_omni_light.html", null ],
       [ "mage::SpotLight", "classmage_1_1_spot_light.html", null ]
     ] ],
-    [ "mage::Lighting", "structmage_1_1_lighting.html", null ],
     [ "mage::LineReader", "classmage_1_1_line_reader.html", [
       [ "mage::MDLReader< VertexT >", "classmage_1_1_m_d_l_reader.html", null ],
       [ "mage::MTLReader", "classmage_1_1_m_t_l_reader.html", null ],
@@ -131,13 +130,13 @@ var hierarchy =
     [ "mage::Resource< VertexShader >", "classmage_1_1_resource.html", [
       [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", [
         [ "mage::BasicVertexShader", "classmage_1_1_basic_vertex_shader.html", null ],
-        [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ],
-        [ "mage::TSNMVertexShader", "classmage_1_1_t_s_n_m_vertex_shader.html", null ]
+        [ "mage::SpriteVertexShader", "classmage_1_1_sprite_vertex_shader.html", null ]
       ] ]
     ] ],
     [ "mage::ResourceManager", "classmage_1_1_resource_manager.html", null ],
     [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
+    [ "mage::SceneInfo", "structmage_1_1_scene_info.html", null ],
     [ "mage::Semaphore", "structmage_1_1_semaphore.html", null ],
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],
     [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],

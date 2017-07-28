@@ -25,7 +25,7 @@ virtual \hyperlink{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5}{$\sim
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} \& \hyperlink{classmage_1_1_engine_a22607a263e0be5e179cc0e4bf13b18f7}{operator=} (\hyperlink{classmage_1_1_engine}{Engine} \&\&engine)=delete
 \item 
-void \hyperlink{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8}{Run} (int n\+Cmd\+Show=S\+W\+\_\+\+N\+O\+R\+M\+AL)
+int \hyperlink{classmage_1_1_engine_acc09edf2a10338566926f6c6129c8746}{Run} (int n\+Cmd\+Show=S\+W\+\_\+\+N\+O\+R\+M\+AL)
 \item 
 const \hyperlink{classmage_1_1_main_window}{Main\+Window} $\ast$ \hyperlink{classmage_1_1_engine_ae12773fc604a46a3d94222ebcae2d593}{Get\+Main\+Window} () const noexcept
 \item 
@@ -227,11 +227,11 @@ Copies the given engine to this engine.
 \begin{DoxyReturn}{Returns}
 A reference to the moved engine (i.\+e. this engine). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8}{}\label{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8} 
+\hypertarget{classmage_1_1_engine_acc09edf2a10338566926f6c6129c8746}{}\label{classmage_1_1_engine_acc09edf2a10338566926f6c6129c8746} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Run@{Run}}
 \index{Run@{Run}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Run()}{Run()}}
-{\footnotesize\ttfamily void mage\+::\+Engine\+::\+Run (\begin{DoxyParamCaption}\item[{int}]{n\+Cmd\+Show = {\ttfamily SW\+\_\+NORMAL} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int mage\+::\+Engine\+::\+Run (\begin{DoxyParamCaption}\item[{int}]{n\+Cmd\+Show = {\ttfamily SW\+\_\+NORMAL} }\end{DoxyParamCaption})}
 
 Runs this engine.
 
@@ -240,6 +240,9 @@ Runs this engine.
 \mbox{\tt in}  & {\em n\+Cmd\+Show} & Controls how the engine window is to be shown. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the function succeeds, terminating when it receives a {\ttfamily W\+M\+\_\+\+Q\+U\+IT} message, it returns the exit value contained in that message\textquotesingle{}s {\ttfamily w\+Param} parameter. If the function terminates before entering the message loop, it returns 0. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{}\label{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Set\+Deactive\+Flag@{Set\+Deactive\+Flag}}
 \index{Set\+Deactive\+Flag@{Set\+Deactive\+Flag}!mage\+::\+Engine@{mage\+::\+Engine}}

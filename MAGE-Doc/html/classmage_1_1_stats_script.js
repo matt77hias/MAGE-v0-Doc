@@ -11,6 +11,7 @@ var classmage_1_1_stats_script =
     [ "m_accumulated_time", "classmage_1_1_stats_script.html#a55cb25f27b2354983d4e68cb1d4c8fcf", null ],
     [ "m_last_cpu_usage", "classmage_1_1_stats_script.html#ae7dd506d04a4512ae103a1a9c2f9f206", null ],
     [ "m_last_frames_per_second", "classmage_1_1_stats_script.html#afcbbf37839891d06b1331af3cc7f6e82", null ],
+    [ "m_last_milliseconds_per_frame", "classmage_1_1_stats_script.html#a0f8b9956d7f366246c925003c0afb278", null ],
     [ "m_last_ram_usage", "classmage_1_1_stats_script.html#a92335c973382a332cf5ce328454fd07b", null ],
     [ "m_monitor", "classmage_1_1_stats_script.html#a12e321d8fe1003de3643c4b799dd4c8f", null ],
     [ "m_text", "classmage_1_1_stats_script.html#a35bb45baabf290be684c8b67f30feeb7", null ],

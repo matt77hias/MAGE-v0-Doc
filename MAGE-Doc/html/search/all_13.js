@@ -14,6 +14,7 @@ var searchData=
   ['updatedata',['UpdateData',['../structmage_1_1_constant_buffer.html#a535429ca9cf81b44907b581324854392',1,'mage::ConstantBuffer::UpdateData()'],['../structmage_1_1_structured_buffer.html#aac2597ea7ee586207bf4918c3b4f9798',1,'mage::StructuredBuffer::UpdateData()']]],
   ['updatedeltatime',['UpdateDeltaTime',['../classmage_1_1_c_p_u_timer.html#a4e82f7003a11e109495b7450e2f82f4f',1,'mage::CPUTimer::UpdateDeltaTime()'],['../classmage_1_1_timer.html#a10f12ad8645e8022a09067f1393c065b',1,'mage::Timer::UpdateDeltaTime()']]],
   ['updatelasttimestamp',['UpdateLastTimestamp',['../classmage_1_1_c_p_u_timer.html#aa956ede1a12c0c383e7fcc53e6f8c405',1,'mage::CPUTimer::UpdateLastTimestamp()'],['../classmage_1_1_timer.html#ad0ff38a28efd65e7c147c8c399245d06',1,'mage::Timer::UpdateLastTimestamp()']]],
+  ['updatetransparency',['UpdateTransparency',['../structmage_1_1_material.html#a32525508f9083fd0336e92146083d822',1,'mage::Material']]],
   ['upgradetowrite',['UpgradeToWrite',['../structmage_1_1_read_write_mutex_lock.html#a25629916d6a73e930763c34aaa13c647',1,'mage::ReadWriteMutexLock']]],
   ['user',['USER',['../classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895a299d45b380f8d5893624832a2ac32157',1,'mage::CPUTimer']]],
   ['uv',['UV',['../structmage_1_1_u_v.html',1,'mage']]],

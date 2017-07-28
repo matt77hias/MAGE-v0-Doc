@@ -7,7 +7,7 @@ var structmage_1_1_combined_shader =
     [ "operator=", "structmage_1_1_combined_shader.html#a14859fb597c07309fd269b56af373c02", null ],
     [ "operator=", "structmage_1_1_combined_shader.html#ad05cf0e2c4f0cd7d37ad5be971aefd1b", null ],
     [ "PrepareShading", "structmage_1_1_combined_shader.html#a5eb9372fd492ab61b9b536ca47ce5176", null ],
-    [ "PrepareShading", "structmage_1_1_combined_shader.html#a87c880670df95efb7f26d963e8fefd37", null ],
+    [ "PrepareShading", "structmage_1_1_combined_shader.html#a5fd0f6c2f262ae53bd019cad02c28de1", null ],
     [ "m_pixel_shader", "structmage_1_1_combined_shader.html#a562b58278dcb98469c98250a636c640e", null ],
     [ "m_vertex_shader", "structmage_1_1_combined_shader.html#ae70a1404acc466fc7fbcb05756140f54", null ]
 ];
