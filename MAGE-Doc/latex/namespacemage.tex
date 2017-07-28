@@ -93,8 +93,6 @@ class \hyperlink{classmage_1_1_keyboard}{Keyboard}
 \item 
 class \hyperlink{classmage_1_1_light}{Light}
 \item 
-struct \hyperlink{structmage_1_1_lighting}{Lighting}
-\item 
 class \hyperlink{classmage_1_1_light_node}{Light\+Node}
 \item 
 class \hyperlink{classmage_1_1_line_reader}{Line\+Reader}
@@ -189,6 +187,8 @@ struct \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum}
 \item 
 class \hyperlink{classmage_1_1_scene}{Scene}
 \item 
+struct \hyperlink{structmage_1_1_scene_info}{Scene\+Info}
+\item 
 class \hyperlink{classmage_1_1_scene_node}{Scene\+Node}
 \item 
 struct \hyperlink{structmage_1_1_semaphore}{Semaphore}
@@ -232,8 +232,6 @@ class \hyperlink{classmage_1_1_texture}{Texture}
 class \hyperlink{classmage_1_1_timer}{Timer}
 \item 
 class \hyperlink{classmage_1_1_t_s_n_m_pixel_shader}{T\+S\+N\+M\+Pixel\+Shader}
-\item 
-class \hyperlink{classmage_1_1_t_s_n_m_vertex_shader}{T\+S\+N\+M\+Vertex\+Shader}
 \item 
 struct \hyperlink{structmage_1_1_u_v}{UV}
 \item 
@@ -443,9 +441,17 @@ float \hyperlink{namespacemage_a0a2e3f535427f52fb248afbbaebdc610}{Bytes\+To\+Flo
 \item 
 double \hyperlink{namespacemage_ae0813ad421fca47762e1c6b5b4f78ae7}{Bytes\+To\+Double} (const uint8\+\_\+t $\ast$bytes, bool big\+\_\+endian) noexcept
 \item 
-\hyperlink{namespacemage_acb52a2b7136d871548446f56ecb1b36c}{\+\_\+\+\_\+declspec} (align(16)) struct Light\+Data\+Buffer final
+\hyperlink{namespacemage_a03b55d3ccd331357278d43f4c1c8bdc8}{\+\_\+\+\_\+declspec} (align(16)) struct Scene\+Buffer final
 \item 
 \hyperlink{namespacemage_a76dac28d69746bdef408a08c36a7c862}{\+\_\+declspec} (align(16)) struct Material\+Buffer final
+\item 
+float \hyperlink{namespacemage_ae8c691a7395afcd8ab40124eb8561a66}{F\+O\+V\+X\+From\+F\+O\+VY} (float aspect\+\_\+ratio, float fov\+\_\+y) noexcept
+\item 
+float \hyperlink{namespacemage_a4328c0620251955eb79cc66823a88a3f}{F\+O\+V\+Y\+From\+F\+O\+VX} (float aspect\+\_\+ratio, float fov\+\_\+x) noexcept
+\item 
+float \hyperlink{namespacemage_abcda18e56e71718979548b1806d9f5ac}{Aspect\+Ratio\+From\+Width\+And\+Height} (float width, float height) noexcept
+\item 
+float \hyperlink{namespacemage_a765bcc018259d1d0e20a33f7910a1435}{Aspect\+Ratio\+From\+F\+O\+Vs} (float fov\+\_\+x, float fov\+\_\+y) noexcept
 \item 
 {\footnotesize template$<$typename ContainerT , typename PredicateT $>$ }\\void \hyperlink{namespacemage_a403ff95eb779de1fbbf139661feb2d1b}{Remove\+If} (ContainerT \&container, const PredicateT \&predicate)
 \item 
@@ -522,6 +528,14 @@ const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{namespacemage_ac200216939983
 {\footnotesize template$<$typename VertexT $>$ }\\const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a5f8ebbbef7be24b679e6a8f31a9c4ad5}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const VertexT \&vertex) noexcept
 \item 
 {\footnotesize template$<$typename VertexT $>$ }\\const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{namespacemage_a10764ea07ff80df908a5078ed16db07f}{Union} (const \hyperlink{structmage_1_1_b_s}{BS} \&bs, const VertexT \&vertex) noexcept
+\item 
+void \hyperlink{namespacemage_a8c4550a993fec58e4dc742368354d18d}{Orthonormal\+Basis\+\_\+\+Hughes\+Moller} (F\+X\+M\+V\+E\+C\+T\+OR n, X\+M\+V\+E\+C\+T\+OR \&b1, X\+M\+V\+E\+C\+T\+OR \&b2) noexcept
+\item 
+void \hyperlink{namespacemage_aac746ef13cda1c6277e979b8fb898f60}{Orthonormal\+Basis\+\_\+\+Frisvad} (F\+X\+M\+V\+E\+C\+T\+OR n, X\+M\+V\+E\+C\+T\+OR \&b1, X\+M\+V\+E\+C\+T\+OR \&b2) noexcept
+\item 
+void \hyperlink{namespacemage_af79d526e3f355af15d46aab0f0346924}{Orthonormal\+Basis\+\_\+\+Duff} (F\+X\+M\+V\+E\+C\+T\+OR n, X\+M\+V\+E\+C\+T\+OR \&b1, X\+M\+V\+E\+C\+T\+OR \&b2) noexcept
+\item 
+void \hyperlink{namespacemage_a6a59f1a9e2a7827747ba6a9bef70610a}{Orthonormal\+Basis} (F\+X\+M\+V\+E\+C\+T\+OR n, X\+M\+V\+E\+C\+T\+OR \&b1, X\+M\+V\+E\+C\+T\+OR \&b2) noexcept
 \item 
 ostream \& \hyperlink{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T2 \&v)
 \item 
@@ -623,8 +637,6 @@ size\+\_\+t \hyperlink{namespacemage_a9895a1dc89b386771ca8c8be2031495e}{Convert\
 \item 
 size\+\_\+t \hyperlink{namespacemage_ab456a467a68e7aec9a5d11f4bd559f26}{Convert\+Refresh\+Rate} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \&desc) noexcept
 \item 
-unsigned int \hyperlink{namespacemage_afbe0f2656d60d9909b98985f60022b3a}{Get\+Refresh\+Rate} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \&desc) noexcept
-\item 
 const \hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ \hyperlink{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe}{Get\+Renderer} () noexcept
 \item 
 I\+D3\+D11\+Device2 $\ast$ \hyperlink{namespacemage_aa20b591269a1196de06bb1b8a6be5262}{Get\+Rendering\+Device} () noexcept
@@ -686,6 +698,8 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8453053e632839dbab0ec212f93a4e58}{Cr
 size\+\_\+t \hyperlink{namespacemage_a7790d7143a44b49b6a05b86efaa680de}{Bits\+Per\+Pixel} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format) noexcept
 \item 
 D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_aaeeefa254fef15c66cc60bacd5a38c95}{Convert\+To\+S\+R\+GB} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format) noexcept
+\item 
+bool \hyperlink{namespacemage_a3f41892611c087f241e0bba39abc23a2}{Has\+Alpha} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format) noexcept
 \item 
 bool \hyperlink{namespacemage_aac287ec9e0de03519407b5457e70f1d2}{Has\+Model\+Descriptor} (const wstring \&guid) noexcept
 \item 
@@ -842,8 +856,6 @@ const X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a706e1b2866209b405f52e62c521
 const X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_a6430737590c5401384e3a65a4f66b240}{Get\+Viewport\+Transform} (I\+D3\+D11\+Device\+Context $\ast$device\+\_\+context, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode, D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT $\ast$viewport)
 \item 
 const X\+M\+M\+A\+T\+R\+IX \hyperlink{namespacemage_ac6eaff98567e504a9bb31a23a150231b}{Get\+Viewport\+Transform} (const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&viewport, D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+R\+O\+T\+A\+T\+I\+ON rotation\+\_\+mode) noexcept
-\item 
-const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a32e962380f439a26629371c492643616}{Get\+Texture2\+D\+Size} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture)
 \item 
 const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_a0003ec8e1ff669c9de7bc3894691d596}{X\+M\+Vector\+Left\+Top\+Right\+Bottom} (const R\+E\+CT \&rect) noexcept
 \item 
@@ -1035,8 +1047,6 @@ static void \hyperlink{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{Get\+Sur
 \item 
 static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a4fecf9823aec7c5ba078acf6bd73f983}{Get\+D\+X\+G\+I\+Format} (const \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT} \&ddpf)
 \item 
-static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3}{Make\+S\+R\+GB} (\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
-\item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac20162a68be6828c38072a3afb0711c1}{Fill\+Init\+Data} (\+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+Out\+\_\+ size\+\_\+t \&twidth, \+\_\+\+Out\+\_\+ size\+\_\+t \&theight, \+\_\+\+Out\+\_\+ size\+\_\+t \&tdepth, \+\_\+\+Out\+\_\+ size\+\_\+t \&skip\+\_\+mip, \+\_\+\+Out\+\_\+writes\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data)
 \item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a45746b9c8018b682c999fe1c5d4158db}{Create\+D3\+D\+Resources} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device2 $\ast$device, \+\_\+\+In\+\_\+ uint32\+\_\+t res\+\_\+dim, \+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+In\+\_\+ bool is\+\_\+cube\+\_\+map, \+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
@@ -1090,6 +1100,18 @@ D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \hyperlink{namespacemage_
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{namespacemage_ae09e6160c64eba1b750bf947338dadf1}{Create\+Blue\+Texture} ()
 \item 
 void \hyperlink{namespacemage_a9bb74ea4a8a931490230fcef651cbd24}{Import\+Texture\+From\+File} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+srv)
+\item 
+const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_ac324398320778df357bf8721335cba20}{Get\+Texture2\+D\+Size} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture\+\_\+srv)
+\item 
+const X\+M\+V\+E\+C\+T\+OR \hyperlink{namespacemage_afdc2f1aa1d524696ce68fd9218b23ed1}{Get\+Texture2\+D\+Size} (I\+D3\+D11\+Texture2D $\ast$texture) noexcept
+\item 
+bool \hyperlink{namespacemage_af9159e1f491f8e284afea306039cb7f3}{Has\+Alpha} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture\+\_\+srv) noexcept
+\item 
+bool \hyperlink{namespacemage_aabfb51911801e74d582d0431db7218fa}{Has\+Alpha} (I\+D3\+D11\+Texture1D $\ast$texture) noexcept
+\item 
+bool \hyperlink{namespacemage_a313d2382dd4fbeb659f875b2476c8510}{Has\+Alpha} (I\+D3\+D11\+Texture2D $\ast$texture) noexcept
+\item 
+bool \hyperlink{namespacemage_a2d14bee224d3719947c8fa104fcd09ad}{Has\+Alpha} (I\+D3\+D11\+Texture3D $\ast$texture) noexcept
 \item 
 void \hyperlink{namespacemage_ad57dc63e7d86e7e1ddad0163e78364b6}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc) noexcept
 \item 
@@ -1515,13 +1537,13 @@ String&\\
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacemage_acb52a2b7136d871548446f56ecb1b36c}{}\label{namespacemage_acb52a2b7136d871548446f56ecb1b36c} 
+\hypertarget{namespacemage_a03b55d3ccd331357278d43f4c1c8bdc8}{}\label{namespacemage_a03b55d3ccd331357278d43f4c1c8bdc8} 
 \index{mage@{mage}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
 \index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!mage@{mage}}
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+declspec()}{\_\_declspec()}}
 {\footnotesize\ttfamily mage\+::\+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{align(16)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
 
-A struct of light data buffers used by pixel shaders.
+A struct of scene buffers used by pixel shaders.
 
 A struct of omni light buffers used by pixel shaders.
 
@@ -1539,55 +1561,59 @@ A struct of transform nodes.
 
 A struct of sprite info for a single sprite.
 
-A class of sprite batches. Constructs a light data buffer.
+A class of sprite batches. Constructs a scene buffer.
 
-Constructs a light data buffer from the given light data buffer.
+Constructs a scene buffer from the given scene buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to copy.\\
+\mbox{\tt in}  & {\em buffer} & A reference to the scene buffer to copy.\\
 \hline
 \end{DoxyParams}
-Constructs a light data buffer by moving the given light data buffer.
+Constructs a scene buffer by moving the given scene buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to move.\\
+\mbox{\tt in}  & {\em buffer} & A reference to the scene buffer to move.\\
 \hline
 \end{DoxyParams}
-Destructs this light data buffer.
+Destructs this scene buffer.
 
-Copies the given light data buffer to this light data buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to copy. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the copy of the given light data buffer (i.\+e. this light data buffer).
-\end{DoxyReturn}
-Moves the given light data buffer to this light data buffer.
+Copies the given scene buffer to this scene buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the light data buffer to move. \\
+\mbox{\tt in}  & {\em buffer} & A reference to the scene buffer to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the moved light data buffer (i.\+e. this light data buffer).
+A reference to the copy of the given scene buffer (i.\+e. this scene buffer).
 \end{DoxyReturn}
-The ambient light intensity of this light data buffer.
+Moves the given scene buffer to this scene buffer.
 
-The number of omni lights of this light data buffer.
 
-The intensity of the directional light of this light data buffer.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the scene buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved scene buffer (i.\+e. this scene buffer).
+\end{DoxyReturn}
+The ambient light intensity of this scene buffer.
 
-The number of spotlights of this light data buffer.
+The number of omni lights of this scene buffer.
 
-The (normalized) direction of the directional light in camera-\/space coordinates of this light data buffer.
+The intensity of the directional light of this scene buffer.
 
-The padding of this light data buffer.
+The number of spotlights of this scene buffer.
+
+The (normalized) direction of the directional light in camera-\/space coordinates of this scene buffer.
+
+The distance at which intensity falloff starts due to fog of this scene buffer.
+
+The color of the fog of this scene buffer.
+
+The distance range where intensity falloff occurs due to fog of this scene buffer.
 
 Constructs an omni light buffer.
 
@@ -1631,9 +1657,11 @@ The position of the omni light in camera-\/space coordinates of this omni light 
 
 The intensity of the omni light of this omni light buffer.
 
-The start of the distance falloff of the omni light of this omni light buffer.
+The padding of this omni light buffer.
 
-The end of the distance falloff of the omni light of this omni light buffer.
+The distance at which intensity falloff ends of the omni light of this omni light buffer.
+
+The distance range where intensity falloff occurs of the omni light of this omni light buffer.
 
 The padding of this omni light buffer.
 
@@ -1683,23 +1711,23 @@ The exponent property of the spotlight of this spotlight buffer.
 
 The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
-The start of the distance falloff of the spotlight of this spotlight buffer.
+The padding of this spotlight buffer.
 
-The end of the distance falloff of the spotlight of this spotlight buffer.
+The distance at which intensity falloff ends of the spotlight of this spotlight buffer.
 
-The cosine of the penumbra angle of the spotlight of this spotlight buffer.
+The distance range where intensity falloff occurs of the spotlight of this spotlight buffer.
 
 The cosine of the umbra angle of the spotlight of this spotlight buffer.
 
-The padding of this spotlight buffer.
+The cosine range where intensity falloff occurs of the spotlight of this spotlight buffer.
 
 Constructs a transform buffer from the given camera transformation matrices.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The (row-\/major) world-\/to-\/view matrix. \\
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix. \\
 \hline
-\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The (row-\/major) view-\/to-\/projection matrix.\\
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The (row-\/major packed, row-\/major matrix) view-\/to-\/projection matrix.\\
 \hline
 \end{DoxyParams}
 Constructs a transform buffer from the given transform buffer.
@@ -1738,32 +1766,32 @@ Moves the given transform buffer to this transform buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved transform buffer (i.\+e. this transform buffer).
 \end{DoxyReturn}
-Returns the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+Returns the world-\/to-\/view matrix of this transform buffer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+A reference to the (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer.
 \end{DoxyReturn}
-Returns the (row-\/major) view-\/to-\/projection matrix of this transform buffer.
+Returns the view-\/to-\/projection matrix of this transform buffer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+A reference to the (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer.
 \end{DoxyReturn}
 Sets the object-\/specific matrices of this transform buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & The (row-\/major) object-\/world matrix. \\
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & The (row-\/major packed, row-\/major matrix) object-\/world matrix. \\
 \hline
-\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The (row-\/major) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The (row-\/major packed, row-\/major matrix) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
 \hline
 \end{DoxyParams}
-The (camera independent, object dependent) (column-\/major) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
+The (camera independent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object independent) (column-\/major) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object dependent) (column-\/major) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object independent) (column-\/major) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
 
 Constructs a Cartesian axes system.
 
@@ -4161,9 +4189,11 @@ The position of the omni light in camera-\/space coordinates of this omni light 
 
 The intensity of the omni light of this omni light buffer.
 
-The start of the distance falloff of the omni light of this omni light buffer.
+The padding of this omni light buffer.
 
-The end of the distance falloff of the omni light of this omni light buffer.
+The distance at which intensity falloff ends of the omni light of this omni light buffer.
+
+The distance range where intensity falloff occurs of the omni light of this omni light buffer.
 
 The padding of this omni light buffer.
 
@@ -4213,23 +4243,23 @@ The exponent property of the spotlight of this spotlight buffer.
 
 The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
-The start of the distance falloff of the spotlight of this spotlight buffer.
+The padding of this spotlight buffer.
 
-The end of the distance falloff of the spotlight of this spotlight buffer.
+The distance at which intensity falloff ends of the spotlight of this spotlight buffer.
 
-The cosine of the penumbra angle of the spotlight of this spotlight buffer.
+The distance range where intensity falloff occurs of the spotlight of this spotlight buffer.
 
 The cosine of the umbra angle of the spotlight of this spotlight buffer.
 
-The padding of this spotlight buffer.
+The cosine range where intensity falloff occurs of the spotlight of this spotlight buffer.
 
 Constructs a transform buffer from the given camera transformation matrices.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The (row-\/major) world-\/to-\/view matrix. \\
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix. \\
 \hline
-\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The (row-\/major) view-\/to-\/projection matrix.\\
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The (row-\/major packed, row-\/major matrix) view-\/to-\/projection matrix.\\
 \hline
 \end{DoxyParams}
 Constructs a transform buffer from the given transform buffer.
@@ -4268,32 +4298,32 @@ Moves the given transform buffer to this transform buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved transform buffer (i.\+e. this transform buffer).
 \end{DoxyReturn}
-Returns the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+Returns the world-\/to-\/view matrix of this transform buffer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+A reference to the (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer.
 \end{DoxyReturn}
-Returns the (row-\/major) view-\/to-\/projection matrix of this transform buffer.
+Returns the view-\/to-\/projection matrix of this transform buffer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the (row-\/major) world-\/to-\/view matrix of this transform buffer.
+A reference to the (row-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer.
 \end{DoxyReturn}
 Sets the object-\/specific matrices of this transform buffer.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & The (row-\/major) object-\/world matrix. \\
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & The (row-\/major packed, row-\/major matrix) object-\/world matrix. \\
 \hline
-\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The (row-\/major) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The (row-\/major packed, row-\/major matrix) view-\/to-\/object matrix (i.\+e. object-\/to-\/view inverse matrix).\\
 \hline
 \end{DoxyParams}
-The (camera independent, object dependent) (column-\/major) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
+The (camera independent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/world matrix of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object independent) (column-\/major) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object dependent) (column-\/major) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this transform buffer for use in H\+L\+SL.
 
-The (camera dependent, object independent) (column-\/major) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
+The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this transform buffer for use in H\+L\+SL.
 
 Constructs a Cartesian axes system.
 
@@ -6909,6 +6939,42 @@ Allocates memory on an alignment boundary of 16 bytes.
 {\ttfamily nullptr} if the allocation failed. 
 
 A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 16 bytes. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a765bcc018259d1d0e20a33f7910a1435}{}\label{namespacemage_a765bcc018259d1d0e20a33f7910a1435} 
+\index{mage@{mage}!Aspect\+Ratio\+From\+F\+O\+Vs@{Aspect\+Ratio\+From\+F\+O\+Vs}}
+\index{Aspect\+Ratio\+From\+F\+O\+Vs@{Aspect\+Ratio\+From\+F\+O\+Vs}!mage@{mage}}
+\subsubsection{\texorpdfstring{Aspect\+Ratio\+From\+F\+O\+Vs()}{AspectRatioFromFOVs()}}
+{\footnotesize\ttfamily float mage\+::\+Aspect\+Ratio\+From\+F\+O\+Vs (\begin{DoxyParamCaption}\item[{float}]{fov\+\_\+x,  }\item[{float}]{fov\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the aspect ratio corresponding to the given horizontal and vertical field-\/of-\/views.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fov\+\_\+x} & The horizontal field-\/of-\/view. \\
+\hline
+\mbox{\tt in}  & {\em fov\+\_\+y} & The vertical field-\/of-\/view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The aspect ratio corresponding to the given horizontal and vertical field-\/of-\/views. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_abcda18e56e71718979548b1806d9f5ac}{}\label{namespacemage_abcda18e56e71718979548b1806d9f5ac} 
+\index{mage@{mage}!Aspect\+Ratio\+From\+Width\+And\+Height@{Aspect\+Ratio\+From\+Width\+And\+Height}}
+\index{Aspect\+Ratio\+From\+Width\+And\+Height@{Aspect\+Ratio\+From\+Width\+And\+Height}!mage@{mage}}
+\subsubsection{\texorpdfstring{Aspect\+Ratio\+From\+Width\+And\+Height()}{AspectRatioFromWidthAndHeight()}}
+{\footnotesize\ttfamily float mage\+::\+Aspect\+Ratio\+From\+Width\+And\+Height (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the aspect ratio corresponding to the given width and height.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em width} & The width. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The aspect ratio corresponding to the given width and height. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a2b21459e56814e37cc43a2f8ff56337a}{}\label{namespacemage_a2b21459e56814e37cc43a2f8ff56337a} 
 \index{mage@{mage}!Atomic\+Add@{Atomic\+Add}}
@@ -10095,6 +10161,42 @@ Finds the end of a word.
 \begin{DoxyReturn}{Returns}
 A pointer to the end of the word. (i.\+e. pointer to a space or null-\/terminating character) 
 \end{DoxyReturn}
+\hypertarget{namespacemage_ae8c691a7395afcd8ab40124eb8561a66}{}\label{namespacemage_ae8c691a7395afcd8ab40124eb8561a66} 
+\index{mage@{mage}!F\+O\+V\+X\+From\+F\+O\+VY@{F\+O\+V\+X\+From\+F\+O\+VY}}
+\index{F\+O\+V\+X\+From\+F\+O\+VY@{F\+O\+V\+X\+From\+F\+O\+VY}!mage@{mage}}
+\subsubsection{\texorpdfstring{F\+O\+V\+X\+From\+F\+O\+V\+Y()}{FOVXFromFOVY()}}
+{\footnotesize\ttfamily float mage\+::\+F\+O\+V\+X\+From\+F\+O\+VY (\begin{DoxyParamCaption}\item[{float}]{aspect\+\_\+ratio,  }\item[{float}]{fov\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the horizontal field-\/of-\/view corresponding to the given aspect ratio and vertical field-\/of-\/view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aspect\+\_\+ratio} & The aspect ratio. \\
+\hline
+\mbox{\tt in}  & {\em fov\+\_\+y} & The vertical field-\/of-\/view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The horizontal field-\/of-\/view corresponding to the given aspect ratio and vertical field-\/of-\/view. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a4328c0620251955eb79cc66823a88a3f}{}\label{namespacemage_a4328c0620251955eb79cc66823a88a3f} 
+\index{mage@{mage}!F\+O\+V\+Y\+From\+F\+O\+VX@{F\+O\+V\+Y\+From\+F\+O\+VX}}
+\index{F\+O\+V\+Y\+From\+F\+O\+VX@{F\+O\+V\+Y\+From\+F\+O\+VX}!mage@{mage}}
+\subsubsection{\texorpdfstring{F\+O\+V\+Y\+From\+F\+O\+V\+X()}{FOVYFromFOVX()}}
+{\footnotesize\ttfamily float mage\+::\+F\+O\+V\+Y\+From\+F\+O\+VX (\begin{DoxyParamCaption}\item[{float}]{aspect\+\_\+ratio,  }\item[{float}]{fov\+\_\+x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the vertical field-\/of-\/view corresponding to the given aspect ratio and horizontal field-\/of-\/view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aspect\+\_\+ratio} & The aspect ratio. \\
+\hline
+\mbox{\tt in}  & {\em fov\+\_\+x} & The horizontal field-\/of-\/view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vertical field-\/of-\/view corresponding to the given aspect ratio and horizontal field-\/of-\/view. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a2ea8b0ebc056a664eadff3512c1cade4}{}\label{namespacemage_a2ea8b0ebc056a664eadff3512c1cade4} 
 \index{mage@{mage}!Free\+Aligned@{Free\+Aligned}}
 \index{Free\+Aligned@{Free\+Aligned}!mage@{mage}}
@@ -10837,22 +10939,6 @@ If the retrieval fails, the return value is zero. To get extended error informat
 
 If the retrieval succeeds, the total physical memory usage of this process (in bytes). 
 \end{DoxyReturn}
-\hypertarget{namespacemage_afbe0f2656d60d9909b98985f60022b3a}{}\label{namespacemage_afbe0f2656d60d9909b98985f60022b3a} 
-\index{mage@{mage}!Get\+Refresh\+Rate@{Get\+Refresh\+Rate}}
-\index{Get\+Refresh\+Rate@{Get\+Refresh\+Rate}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Refresh\+Rate()}{GetRefreshRate()}}
-{\footnotesize\ttfamily unsigned int mage\+::\+Get\+Refresh\+Rate (\begin{DoxyParamCaption}\item[{const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the refresh rate of the given display format descriptor.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em desc} & A reference to the display format descriptor. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The refresh rate of the given display format descriptor. 
-\end{DoxyReturn}
 \hypertarget{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe}{}\label{namespacemage_a5ed7a0eeb488c3938c0d33a8645ee1fe} 
 \index{mage@{mage}!Get\+Renderer@{Get\+Renderer}}
 \index{Get\+Renderer@{Get\+Renderer}!mage@{mage}}
@@ -10999,20 +11085,20 @@ The current engine must be loaded.
 
 A pointer to the texture. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a32e962380f439a26629371c492643616}{}\label{namespacemage_a32e962380f439a26629371c492643616} 
+\hypertarget{namespacemage_ac324398320778df357bf8721335cba20}{}\label{namespacemage_ac324398320778df357bf8721335cba20} 
 \index{mage@{mage}!Get\+Texture2\+D\+Size@{Get\+Texture2\+D\+Size}}
 \index{Get\+Texture2\+D\+Size@{Get\+Texture2\+D\+Size}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Texture2\+D\+Size()}{GetTexture2DSize()}}
-{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Get\+Texture2\+D\+Size (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Get\+Texture2\+D\+Size()}{GetTexture2DSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Get\+Texture2\+D\+Size (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture\+\_\+srv }\end{DoxyParamCaption})}
 
 Returns the size of the given 2D texture.
 
 \begin{DoxyPrecond}{Precondition}
-{\itshape texture} is not equal to {\ttfamily nullptr}. 
+{\itshape texture\+\_\+srv} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em texture} & A pointer the (texture) shader resource view. \\
+\mbox{\tt in}  & {\em texture\+\_\+srv} & A pointer to the (texture) shader resource view. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -11023,6 +11109,25 @@ The size of the given 2D texture as a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (width, h
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & The resource of the given shader resource view must be convertible to a {\ttfamily I\+D3\+D11\+Texture2D}. \\
 \hline
 \end{DoxyExceptions}
+\hypertarget{namespacemage_afdc2f1aa1d524696ce68fd9218b23ed1}{}\label{namespacemage_afdc2f1aa1d524696ce68fd9218b23ed1} 
+\index{mage@{mage}!Get\+Texture2\+D\+Size@{Get\+Texture2\+D\+Size}}
+\index{Get\+Texture2\+D\+Size@{Get\+Texture2\+D\+Size}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Texture2\+D\+Size()}{GetTexture2DSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR mage\+::\+Get\+Texture2\+D\+Size (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Texture2D $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the size of the given 2D texture.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the 2D texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the given 2D texture as a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (width, height, width, height). 
+\end{DoxyReturn}
 \hypertarget{namespacemage_aa6d621b65718589669669eccf70d6df3}{}\label{namespacemage_aa6d621b65718589669669eccf70d6df3} 
 \index{mage@{mage}!Get\+T\+S\+N\+M\+Pixel\+Shader@{Get\+T\+S\+N\+M\+Pixel\+Shader}}
 \index{Get\+T\+S\+N\+M\+Pixel\+Shader@{Get\+T\+S\+N\+M\+Pixel\+Shader}!mage@{mage}}
@@ -11222,6 +11327,98 @@ Advances to the first delimiting character in the given string.
 {\ttfamily nullptr} if the end of string character is reached. 
 
 A pointer to the first delimiting character in the given string. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_af9159e1f491f8e284afea306039cb7f3}{}\label{namespacemage_af9159e1f491f8e284afea306039cb7f3} 
+\index{mage@{mage}!Has\+Alpha@{Has\+Alpha}}
+\index{Has\+Alpha@{Has\+Alpha}!mage@{mage}}
+\subsubsection{\texorpdfstring{Has\+Alpha()}{HasAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily bool mage\+::\+Has\+Alpha (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture\+\_\+srv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given texture contains an alpha component.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture\+\_\+srv} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture\+\_\+srv} & A pointer to the (texture) shader resource view. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if the given texture contains an alpha component. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aabfb51911801e74d582d0431db7218fa}{}\label{namespacemage_aabfb51911801e74d582d0431db7218fa} 
+\index{mage@{mage}!Has\+Alpha@{Has\+Alpha}}
+\index{Has\+Alpha@{Has\+Alpha}!mage@{mage}}
+\subsubsection{\texorpdfstring{Has\+Alpha()}{HasAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily bool mage\+::\+Has\+Alpha (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Texture1D $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given 1D texture contains an alpha component.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the 1D texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if the given 1D texture contains an alpha component. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a313d2382dd4fbeb659f875b2476c8510}{}\label{namespacemage_a313d2382dd4fbeb659f875b2476c8510} 
+\index{mage@{mage}!Has\+Alpha@{Has\+Alpha}}
+\index{Has\+Alpha@{Has\+Alpha}!mage@{mage}}
+\subsubsection{\texorpdfstring{Has\+Alpha()}{HasAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily bool mage\+::\+Has\+Alpha (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Texture2D $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given 2D texture contains an alpha component.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the 2D texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if the given 2D texture contains an alpha component. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a2d14bee224d3719947c8fa104fcd09ad}{}\label{namespacemage_a2d14bee224d3719947c8fa104fcd09ad} 
+\index{mage@{mage}!Has\+Alpha@{Has\+Alpha}}
+\index{Has\+Alpha@{Has\+Alpha}!mage@{mage}}
+\subsubsection{\texorpdfstring{Has\+Alpha()}{HasAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily bool mage\+::\+Has\+Alpha (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Texture3D $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given 3D texture contains an alpha component.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape texture} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the 3D texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if the given 3D texture contains an alpha component. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a3f41892611c087f241e0bba39abc23a2}{}\label{namespacemage_a3f41892611c087f241e0bba39abc23a2} 
+\index{mage@{mage}!Has\+Alpha@{Has\+Alpha}}
+\index{Has\+Alpha@{Has\+Alpha}!mage@{mage}}
+\subsubsection{\texorpdfstring{Has\+Alpha()}{HasAlpha()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily bool mage\+::\+Has\+Alpha (\begin{DoxyParamCaption}\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given D\+X\+GI format contains an alpha component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & The D\+X\+GI format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if the given D\+X\+GI format contains an alpha component. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a05ae865ea98f6da396994ac011f30ae2}{}\label{namespacemage_a05ae865ea98f6da396994ac011f30ae2} 
 \index{mage@{mage}!Has\+Basic\+Pixel\+Shader@{Has\+Basic\+Pixel\+Shader}}
@@ -12133,12 +12330,6 @@ The application-\/defined function that processes messages sent to the engine wi
 \begin{DoxyReturn}{Returns}
 The return value is the result of the message processing and depends on the message sent. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3}{}\label{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3} 
-\index{mage@{mage}!Make\+S\+R\+GB@{Make\+S\+R\+GB}}
-\index{Make\+S\+R\+GB@{Make\+S\+R\+GB}!mage@{mage}}
-\subsubsection{\texorpdfstring{Make\+S\+R\+G\+B()}{MakeSRGB()}}
-{\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Make\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
 \hypertarget{namespacemage_a9d02a8be8876ff4bedafd6439d89164e}{}\label{namespacemage_a9d02a8be8876ff4bedafd6439d89164e} 
 \index{mage@{mage}!Number\+Of\+Physical\+Cores@{Number\+Of\+Physical\+Cores}}
 \index{Number\+Of\+Physical\+Cores@{Number\+Of\+Physical\+Cores}!mage@{mage}}
@@ -12215,6 +12406,86 @@ Outputs the given vector to the given output stream.
 \begin{DoxyReturn}{Returns}
 A reference to the given output stream. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a6a59f1a9e2a7827747ba6a9bef70610a}{}\label{namespacemage_a6a59f1a9e2a7827747ba6a9bef70610a} 
+\index{mage@{mage}!Orthonormal\+Basis@{Orthonormal\+Basis}}
+\index{Orthonormal\+Basis@{Orthonormal\+Basis}!mage@{mage}}
+\subsubsection{\texorpdfstring{Orthonormal\+Basis()}{OrthonormalBasis()}}
+{\footnotesize\ttfamily void mage\+::\+Orthonormal\+Basis (\begin{DoxyParamCaption}\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{n,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b1,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Calculates an orthonormal basis from a given unit vector.
+
+\begin{DoxyPrecond}{Precondition}
+The given vector is normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The first basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b1} & The second basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b2} & The third basis vector of the orthonormal basis. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_af79d526e3f355af15d46aab0f0346924}{}\label{namespacemage_af79d526e3f355af15d46aab0f0346924} 
+\index{mage@{mage}!Orthonormal\+Basis\+\_\+\+Duff@{Orthonormal\+Basis\+\_\+\+Duff}}
+\index{Orthonormal\+Basis\+\_\+\+Duff@{Orthonormal\+Basis\+\_\+\+Duff}!mage@{mage}}
+\subsubsection{\texorpdfstring{Orthonormal\+Basis\+\_\+\+Duff()}{OrthonormalBasis\_Duff()}}
+{\footnotesize\ttfamily void mage\+::\+Orthonormal\+Basis\+\_\+\+Duff (\begin{DoxyParamCaption}\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{n,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b1,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Calculates an orthonormal basis from a given unit vector with the method of Duff, Burgess, Christensen, Hery, Kensler, Liani and Villemin.
+
+\begin{DoxyPrecond}{Precondition}
+The given vector is normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The first basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b1} & The second basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b2} & The third basis vector of the orthonormal basis. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_aac746ef13cda1c6277e979b8fb898f60}{}\label{namespacemage_aac746ef13cda1c6277e979b8fb898f60} 
+\index{mage@{mage}!Orthonormal\+Basis\+\_\+\+Frisvad@{Orthonormal\+Basis\+\_\+\+Frisvad}}
+\index{Orthonormal\+Basis\+\_\+\+Frisvad@{Orthonormal\+Basis\+\_\+\+Frisvad}!mage@{mage}}
+\subsubsection{\texorpdfstring{Orthonormal\+Basis\+\_\+\+Frisvad()}{OrthonormalBasis\_Frisvad()}}
+{\footnotesize\ttfamily void mage\+::\+Orthonormal\+Basis\+\_\+\+Frisvad (\begin{DoxyParamCaption}\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{n,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b1,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Calculates an orthonormal basis from a given unit vector with the method of Frisvad.
+
+\begin{DoxyPrecond}{Precondition}
+The given vector is normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The first basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b1} & The second basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b2} & The third basis vector of the orthonormal basis. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a8c4550a993fec58e4dc742368354d18d}{}\label{namespacemage_a8c4550a993fec58e4dc742368354d18d} 
+\index{mage@{mage}!Orthonormal\+Basis\+\_\+\+Hughes\+Moller@{Orthonormal\+Basis\+\_\+\+Hughes\+Moller}}
+\index{Orthonormal\+Basis\+\_\+\+Hughes\+Moller@{Orthonormal\+Basis\+\_\+\+Hughes\+Moller}!mage@{mage}}
+\subsubsection{\texorpdfstring{Orthonormal\+Basis\+\_\+\+Hughes\+Moller()}{OrthonormalBasis\_HughesMoller()}}
+{\footnotesize\ttfamily void mage\+::\+Orthonormal\+Basis\+\_\+\+Hughes\+Moller (\begin{DoxyParamCaption}\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{n,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b1,  }\item[{X\+M\+V\+E\+C\+T\+OR \&}]{b2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Calculates an orthonormal basis from a given unit vector with the method of Hughes and Möller.
+
+\begin{DoxyPrecond}{Precondition}
+The given vector is normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The first basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b1} & The second basis vector of the orthonormal basis. \\
+\hline
+\mbox{\tt out}  & {\em b2} & The third basis vector of the orthonormal basis. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a69f643f9ee655b4fcd1c9347a3dba2be}{}\label{namespacemage_a69f643f9ee655b4fcd1c9347a3dba2be} 
 \index{mage@{mage}!Overlap@{Overlap}}
 \index{Overlap@{Overlap}!mage@{mage}}
@@ -14040,10 +14311,28 @@ Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given 
 \begin{DoxyReturn}{Returns}
 The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a10764ea07ff80df908a5078ed16db07f}{}\label{namespacemage_a10764ea07ff80df908a5078ed16db07f} 
+\hypertarget{namespacemage_ac200216939983097f87ec30720644192}{}\label{namespacemage_ac200216939983097f87ec30720644192} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
 \subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the union \hyperlink{structmage_1_1_b_s}{BS} of the given \hyperlink{structmage_1_1_b_s}{BS} and the given point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bs} & A reference to the \hyperlink{structmage_1_1_b_s}{BS}. \\
+\hline
+\mbox{\tt in}  & {\em point} & A reference to the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_b_s}{BS} of {\itshape bs} and {\itshape point}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a10764ea07ff80df908a5078ed16db07f}{}\label{namespacemage_a10764ea07ff80df908a5078ed16db07f} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
 {\footnotesize\ttfamily template$<$typename VertexT $>$ \\
 const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const VertexT \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
@@ -14063,24 +14352,6 @@ Returns the union \hyperlink{structmage_1_1_b_s}{BS} of the given \hyperlink{str
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The union \hyperlink{structmage_1_1_b_s}{BS} of {\itshape bs} and {\itshape vertex}. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_ac200216939983097f87ec30720644192}{}\label{namespacemage_ac200216939983097f87ec30720644192} 
-\index{mage@{mage}!Union@{Union}}
-\index{Union@{Union}!mage@{mage}}
-\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the union \hyperlink{structmage_1_1_b_s}{BS} of the given \hyperlink{structmage_1_1_b_s}{BS} and the given point.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em bs} & A reference to the \hyperlink{structmage_1_1_b_s}{BS}. \\
-\hline
-\mbox{\tt in}  & {\em point} & A reference to the point. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The union \hyperlink{structmage_1_1_b_s}{BS} of {\itshape bs} and {\itshape point}. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
 \index{mage@{mage}!Warning@{Warning}}

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.39.0</span>
+   &#160;<span id="projectnumber">v0.40.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0ed513c07128338abd8b23295004456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17cdc7e6950207f9fcb7d93497401d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#aa17cdc7e6950207f9fcb7d93497401d0">SetDistanceFalloff</a> (float distance_falloff_start, float distance_falloff_end) noexcept</td></tr>
 <tr class="separator:aa17cdc7e6950207f9fcb7d93497401d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d49da481b55080fff3e8f6094a6dcd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#aa4d49da481b55080fff3e8f6094a6dcd">GetRangeDistanceFalloff</a> () const noexcept</td></tr>
+<tr class="separator:aa4d49da481b55080fff3e8f6094a6dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae221dd2747e65d01fcbf2a9b08c54abd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#ae221dd2747e65d01fcbf2a9b08c54abd">GetStartAngularCutoff</a> () const noexcept</td></tr>
 <tr class="separator:ae221dd2747e65d01fcbf2a9b08c54abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16587c74a69e3e17ffdebbfb9f45d3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#a16587c74a69e3e17ffdebbfb9f45d3da">SetStartAngularCutoff</a> (float cos_penumbra) noexcept</td></tr>
@@ -138,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaec9faedf28add6d7d86ae89165b4aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bdd2f7294982f9a7e74aef6b19c461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#a51bdd2f7294982f9a7e74aef6b19c461">SetAngularCutoff</a> (float cos_penumbra, float cos_umbra) noexcept</td></tr>
 <tr class="separator:a51bdd2f7294982f9a7e74aef6b19c461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330d2d426b6f29a3c3e30fe0219bb9f2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#a330d2d426b6f29a3c3e30fe0219bb9f2">GetRangeAngularCutoff</a> () const noexcept</td></tr>
+<tr class="separator:a330d2d426b6f29a3c3e30fe0219bb9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041dfc4fd7729d8d954f19af9debb3d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#a041dfc4fd7729d8d954f19af9debb3d1">GetPenumbraAngle</a> () const noexcept</td></tr>
 <tr class="separator:a041dfc4fd7729d8d954f19af9debb3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87723d2dc06e5d66c927516a45141ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_spot_light.html#af87723d2dc06e5d66c927516a45141ab">SetPenumbraAngle</a> (float penumbra) noexcept</td></tr>
@@ -397,7 +401,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns cosine of the umbra angle of this spotlight.</p>
+<p>Returns the cosine of the umbra angle of this spotlight.</p>
 <dl class="section return"><dt>Returns</dt><dd>The cosine of the umbra angle of this spotlight. </dd></dl>
 
 </div>
@@ -424,8 +428,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the end of the distance falloff of this spotlight.</p>
-<dl class="section return"><dt>Returns</dt><dd>The end of the distance falloff of this spotlight. </dd></dl>
+<p>Returns the distance at which intensity falloff ends of this spotlight.</p>
+<dl class="section return"><dt>Returns</dt><dd>The distance at which intensity falloff ends of this spotlight. </dd></dl>
 
 </div>
 </div>
@@ -483,6 +487,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a330d2d426b6f29a3c3e30fe0219bb9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330d2d426b6f29a3c3e30fe0219bb9f2">&sect;&nbsp;</a></span>GetRangeAngularCutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mage::SpotLight::GetRangeAngularCutoff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the cosine range where intensity falloff occurs of this spotlight.</p>
+<dl class="section return"><dt>Returns</dt><dd>The cosine range where intensity falloff occurs of this spotlight. <em><a class="el" href="classmage_1_1_spot_light.html#ae221dd2747e65d01fcbf2a9b08c54abd">GetStartAngularCutoff()</a></em> - <em><a class="el" href="classmage_1_1_spot_light.html#a9e1ec369a3f42a4662c4cde2aa4a9ac4">GetEndAngularCutoff()</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="aa4d49da481b55080fff3e8f6094a6dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d49da481b55080fff3e8f6094a6dcd">&sect;&nbsp;</a></span>GetRangeDistanceFalloff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mage::SpotLight::GetRangeDistanceFalloff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the distance range where intensity falloff occurs of this spotlight.</p>
+<dl class="section return"><dt>Returns</dt><dd>The distance range where intensity falloff occurs of this spotlight. <em><a class="el" href="classmage_1_1_spot_light.html#a4d1d2c3a5f5b2a01e6e625d84eb588d1">GetEndDistanceFalloff()</a></em> - <em><a class="el" href="classmage_1_1_spot_light.html#a98a5da32f0023d8f0d600fe3f362decd">GetStartDistanceFalloff()</a></em> </dd></dl>
+
+</div>
+</div>
 <a id="ae221dd2747e65d01fcbf2a9b08c54abd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae221dd2747e65d01fcbf2a9b08c54abd">&sect;&nbsp;</a></span>GetStartAngularCutoff()</h2>
 
@@ -505,7 +563,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns cosine of the penumbra angle of this spotlight.</p>
+<p>Returns the cosine of the penumbra angle of this spotlight.</p>
 <dl class="section return"><dt>Returns</dt><dd>The cosine of the penumbra angle of this spotlight. </dd></dl>
 
 </div>
@@ -532,8 +590,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the start of the distance falloff of this spotlight.</p>
-<dl class="section return"><dt>Returns</dt><dd>The start of the distance falloff of this spotlight. </dd></dl>
+<p>Returns the distance at which intensity falloff starts of this spotlight.</p>
+<dl class="section return"><dt>Returns</dt><dd>The distance at which intensity falloff starts of this spotlight. </dd></dl>
 
 </div>
 </div>
@@ -709,11 +767,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the start and end of the distance falloff of this spotlight to the given values.</p>
+<p>Sets the distance at which intensity falloff starts and ends of this spotlight to the given values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_start</td><td>The start of the distance falloff. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_end</td><td>The end of the distance falloff. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_start</td><td>The distance at which intensity falloff starts. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_end</td><td>The distance at which intensity falloff ends. </td></tr>
   </table>
   </dd>
 </dl>
@@ -776,10 +834,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the end of the distance falloff of this spotlight to the given value.</p>
+<p>Sets the distance at which intensity falloff ends of this spotlight to the given value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_end</td><td>The end of the distance falloff. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_end</td><td>The distance at which intensity falloff ends. </td></tr>
   </table>
   </dd>
 </dl>
@@ -952,10 +1010,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the start of the distance falloff of this spotlight to the given value.</p>
+<p>Sets the distance at which intensity falloff starts of this spotlight to the given value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_start</td><td>The start of the distance falloff. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance_falloff_start</td><td>The distance at which intensity falloff starts. </td></tr>
   </table>
   </dd>
 </dl>

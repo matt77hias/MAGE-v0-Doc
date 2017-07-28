@@ -37,6 +37,8 @@ void \hyperlink{classmage_1_1_spot_light_ad0ed513c07128338abd8b23295004456}{Set\
 \item 
 void \hyperlink{classmage_1_1_spot_light_aa17cdc7e6950207f9fcb7d93497401d0}{Set\+Distance\+Falloff} (float distance\+\_\+falloff\+\_\+start, float distance\+\_\+falloff\+\_\+end) noexcept
 \item 
+float \hyperlink{classmage_1_1_spot_light_aa4d49da481b55080fff3e8f6094a6dcd}{Get\+Range\+Distance\+Falloff} () const noexcept
+\item 
 float \hyperlink{classmage_1_1_spot_light_ae221dd2747e65d01fcbf2a9b08c54abd}{Get\+Start\+Angular\+Cutoff} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_spot_light_a16587c74a69e3e17ffdebbfb9f45d3da}{Set\+Start\+Angular\+Cutoff} (float cos\+\_\+penumbra) noexcept
@@ -46,6 +48,8 @@ float \hyperlink{classmage_1_1_spot_light_a9e1ec369a3f42a4662c4cde2aa4a9ac4}{Get
 void \hyperlink{classmage_1_1_spot_light_aaec9faedf28add6d7d86ae89165b4aca}{Set\+End\+Angular\+Cutoff} (float cos\+\_\+umbra) noexcept
 \item 
 void \hyperlink{classmage_1_1_spot_light_a51bdd2f7294982f9a7e74aef6b19c461}{Set\+Angular\+Cutoff} (float cos\+\_\+penumbra, float cos\+\_\+umbra) noexcept
+\item 
+float \hyperlink{classmage_1_1_spot_light_a330d2d426b6f29a3c3e30fe0219bb9f2}{Get\+Range\+Angular\+Cutoff} () const noexcept
 \item 
 float \hyperlink{classmage_1_1_spot_light_a041dfc4fd7729d8d954f19af9debb3d1}{Get\+Penumbra\+Angle} () const noexcept
 \item 
@@ -166,7 +170,7 @@ Implements \hyperlink{classmage_1_1_light_aa613d76a1ebda69efde853d15f75490c}{mag
 \subsubsection{\texorpdfstring{Get\+End\+Angular\+Cutoff()}{GetEndAngularCutoff()}}
 {\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+End\+Angular\+Cutoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns cosine of the umbra angle of this spotlight.
+Returns the cosine of the umbra angle of this spotlight.
 
 \begin{DoxyReturn}{Returns}
 The cosine of the umbra angle of this spotlight. 
@@ -177,10 +181,10 @@ The cosine of the umbra angle of this spotlight.
 \subsubsection{\texorpdfstring{Get\+End\+Distance\+Falloff()}{GetEndDistanceFalloff()}}
 {\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+End\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the end of the distance falloff of this spotlight.
+Returns the distance at which intensity falloff ends of this spotlight.
 
 \begin{DoxyReturn}{Returns}
-The end of the distance falloff of this spotlight. 
+The distance at which intensity falloff ends of this spotlight. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_spot_light_a0e92cc6201e2b9c8b2eb06c50a53ae13}{}\label{classmage_1_1_spot_light_a0e92cc6201e2b9c8b2eb06c50a53ae13} 
 \index{mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}!Get\+Exponent\+Property@{Get\+Exponent\+Property}}
@@ -204,13 +208,35 @@ Returns the penumbra angle (in radians) of this spotlight.
 \begin{DoxyReturn}{Returns}
 The penumbra angle (in radians) of this spotlight. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_spot_light_a330d2d426b6f29a3c3e30fe0219bb9f2}{}\label{classmage_1_1_spot_light_a330d2d426b6f29a3c3e30fe0219bb9f2} 
+\index{mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}!Get\+Range\+Angular\+Cutoff@{Get\+Range\+Angular\+Cutoff}}
+\index{Get\+Range\+Angular\+Cutoff@{Get\+Range\+Angular\+Cutoff}!mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}}
+\subsubsection{\texorpdfstring{Get\+Range\+Angular\+Cutoff()}{GetRangeAngularCutoff()}}
+{\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+Range\+Angular\+Cutoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the cosine range where intensity falloff occurs of this spotlight.
+
+\begin{DoxyReturn}{Returns}
+The cosine range where intensity falloff occurs of this spotlight. {\itshape \hyperlink{classmage_1_1_spot_light_ae221dd2747e65d01fcbf2a9b08c54abd}{Get\+Start\+Angular\+Cutoff()}} -\/ {\itshape \hyperlink{classmage_1_1_spot_light_a9e1ec369a3f42a4662c4cde2aa4a9ac4}{Get\+End\+Angular\+Cutoff()}} 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_spot_light_aa4d49da481b55080fff3e8f6094a6dcd}{}\label{classmage_1_1_spot_light_aa4d49da481b55080fff3e8f6094a6dcd} 
+\index{mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}!Get\+Range\+Distance\+Falloff@{Get\+Range\+Distance\+Falloff}}
+\index{Get\+Range\+Distance\+Falloff@{Get\+Range\+Distance\+Falloff}!mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}}
+\subsubsection{\texorpdfstring{Get\+Range\+Distance\+Falloff()}{GetRangeDistanceFalloff()}}
+{\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+Range\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the distance range where intensity falloff occurs of this spotlight.
+
+\begin{DoxyReturn}{Returns}
+The distance range where intensity falloff occurs of this spotlight. {\itshape \hyperlink{classmage_1_1_spot_light_a4d1d2c3a5f5b2a01e6e625d84eb588d1}{Get\+End\+Distance\+Falloff()}} -\/ {\itshape \hyperlink{classmage_1_1_spot_light_a98a5da32f0023d8f0d600fe3f362decd}{Get\+Start\+Distance\+Falloff()}} 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_spot_light_ae221dd2747e65d01fcbf2a9b08c54abd}{}\label{classmage_1_1_spot_light_ae221dd2747e65d01fcbf2a9b08c54abd} 
 \index{mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}!Get\+Start\+Angular\+Cutoff@{Get\+Start\+Angular\+Cutoff}}
 \index{Get\+Start\+Angular\+Cutoff@{Get\+Start\+Angular\+Cutoff}!mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}}
 \subsubsection{\texorpdfstring{Get\+Start\+Angular\+Cutoff()}{GetStartAngularCutoff()}}
 {\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+Start\+Angular\+Cutoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns cosine of the penumbra angle of this spotlight.
+Returns the cosine of the penumbra angle of this spotlight.
 
 \begin{DoxyReturn}{Returns}
 The cosine of the penumbra angle of this spotlight. 
@@ -221,10 +247,10 @@ The cosine of the penumbra angle of this spotlight.
 \subsubsection{\texorpdfstring{Get\+Start\+Distance\+Falloff()}{GetStartDistanceFalloff()}}
 {\footnotesize\ttfamily float mage\+::\+Spot\+Light\+::\+Get\+Start\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the start of the distance falloff of this spotlight.
+Returns the distance at which intensity falloff starts of this spotlight.
 
 \begin{DoxyReturn}{Returns}
-The start of the distance falloff of this spotlight. 
+The distance at which intensity falloff starts of this spotlight. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_spot_light_a61d921afd94fbbf040cdb697d89c1a94}{}\label{classmage_1_1_spot_light_a61d921afd94fbbf040cdb697d89c1a94} 
 \index{mage\+::\+Spot\+Light@{mage\+::\+Spot\+Light}!Get\+Umbra\+Angle@{Get\+Umbra\+Angle}}
@@ -290,13 +316,13 @@ Sets the cosine of the penumbra and umbra angles of this spotlight to the given 
 \subsubsection{\texorpdfstring{Set\+Distance\+Falloff()}{SetDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Spot\+Light\+::\+Set\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+start,  }\item[{float}]{distance\+\_\+falloff\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the start and end of the distance falloff of this spotlight to the given values.
+Sets the distance at which intensity falloff starts and ends of this spotlight to the given values.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The start of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The distance at which intensity falloff starts. \\
 \hline
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The end of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The distance at which intensity falloff ends. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_spot_light_aaec9faedf28add6d7d86ae89165b4aca}{}\label{classmage_1_1_spot_light_aaec9faedf28add6d7d86ae89165b4aca} 
@@ -318,11 +344,11 @@ Sets the cosine of the umbra angle of this spotlight to the given value.
 \subsubsection{\texorpdfstring{Set\+End\+Distance\+Falloff()}{SetEndDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Spot\+Light\+::\+Set\+End\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the end of the distance falloff of this spotlight to the given value.
+Sets the distance at which intensity falloff ends of this spotlight to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The end of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The distance at which intensity falloff ends. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_spot_light_aebe212a24ba81f744c74e9b6747031bd}{}\label{classmage_1_1_spot_light_aebe212a24ba81f744c74e9b6747031bd} 
@@ -385,11 +411,11 @@ Sets the cosine of the penumbra angle of this spotlight to the given value.
 \subsubsection{\texorpdfstring{Set\+Start\+Distance\+Falloff()}{SetStartDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Spot\+Light\+::\+Set\+Start\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the start of the distance falloff of this spotlight to the given value.
+Sets the distance at which intensity falloff starts of this spotlight to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The start of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The distance at which intensity falloff starts. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_spot_light_a2941a409b850fe341c203c0189eae636}{}\label{classmage_1_1_spot_light_a2941a409b850fe341c203c0189eae636} 

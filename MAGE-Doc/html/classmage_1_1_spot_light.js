@@ -10,6 +10,8 @@ var classmage_1_1_spot_light =
     [ "GetEndDistanceFalloff", "classmage_1_1_spot_light.html#a4d1d2c3a5f5b2a01e6e625d84eb588d1", null ],
     [ "GetExponentProperty", "classmage_1_1_spot_light.html#a0e92cc6201e2b9c8b2eb06c50a53ae13", null ],
     [ "GetPenumbraAngle", "classmage_1_1_spot_light.html#a041dfc4fd7729d8d954f19af9debb3d1", null ],
+    [ "GetRangeAngularCutoff", "classmage_1_1_spot_light.html#a330d2d426b6f29a3c3e30fe0219bb9f2", null ],
+    [ "GetRangeDistanceFalloff", "classmage_1_1_spot_light.html#aa4d49da481b55080fff3e8f6094a6dcd", null ],
     [ "GetStartAngularCutoff", "classmage_1_1_spot_light.html#ae221dd2747e65d01fcbf2a9b08c54abd", null ],
     [ "GetStartDistanceFalloff", "classmage_1_1_spot_light.html#a98a5da32f0023d8f0d600fe3f362decd", null ],
     [ "GetUmbraAngle", "classmage_1_1_spot_light.html#a61d921afd94fbbf040cdb697d89c1a94", null ],

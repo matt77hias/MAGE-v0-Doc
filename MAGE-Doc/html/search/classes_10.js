@@ -1,6 +1,7 @@
 var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
+  ['sceneinfo',['SceneInfo',['../structmage_1_1_scene_info.html',1,'mage']]],
   ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html',1,'mage']]],
   ['semaphore',['Semaphore',['../structmage_1_1_semaphore.html',1,'mage']]],
   ['shadedmaterial',['ShadedMaterial',['../structmage_1_1_shaded_material.html',1,'mage']]],

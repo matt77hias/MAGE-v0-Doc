@@ -16,7 +16,7 @@ var classmage_1_1_model =
     [ "operator=", "classmage_1_1_model.html#a563515c64ec39cfcda9f6ca37576391b", null ],
     [ "operator=", "classmage_1_1_model.html#a084e30d15822bfefa79128f30a57cc02", null ],
     [ "PrepareDrawing", "classmage_1_1_model.html#a0083c64e8199db23b78a9281be84685f", null ],
-    [ "PrepareShading", "classmage_1_1_model.html#a14cc836651dc3eeb378d749b24c149d9", null ],
+    [ "PrepareShading", "classmage_1_1_model.html#ad2d7bc17fab05d43cb4e740db2a50857", null ],
     [ "m_aabb", "classmage_1_1_model.html#ab53a0f253df545fd59723bee107bf523", null ],
     [ "m_bs", "classmage_1_1_model.html#a1d3ea0a9f302f623dcaceb2df4315a0b", null ],
     [ "m_material", "classmage_1_1_model.html#a93e080e5dc2c7c0672a278de76899122", null ],

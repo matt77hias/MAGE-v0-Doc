@@ -10,6 +10,7 @@ var classmage_1_1_texture =
     [ "Get", "classmage_1_1_texture.html#ac48cd0477d9771666e3929d72ee4e419", null ],
     [ "GetAddress", "classmage_1_1_texture.html#a35bde0f3a226f261d82fb3dd792631ad", null ],
     [ "GetAddress", "classmage_1_1_texture.html#a4f64ce2ddf3cee7283613e9dbb137e23", null ],
+    [ "HasAlpha", "classmage_1_1_texture.html#aa795442d72c6ea0cb8137e293c95922c", null ],
     [ "operator=", "classmage_1_1_texture.html#a0b73b4df98d729c8f60e58b0ca065636", null ],
     [ "operator=", "classmage_1_1_texture.html#a765e9cf3bddedbe2795dea0fe57245ff", null ],
     [ "m_device", "classmage_1_1_texture.html#ad5409f37b321649bc1a12bcee8eb661b", null ],

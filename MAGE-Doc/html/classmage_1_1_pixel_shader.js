@@ -10,7 +10,7 @@ var classmage_1_1_pixel_shader =
     [ "operator=", "classmage_1_1_pixel_shader.html#ac3a3535b2751237f4aad110dca05d0c3", null ],
     [ "operator=", "classmage_1_1_pixel_shader.html#aaeab6f6fda7d6e1f7d333da03d58daf9", null ],
     [ "PrepareShading", "classmage_1_1_pixel_shader.html#ab677013145ca252c57e5a001134c01ff", null ],
-    [ "PrepareShading", "classmage_1_1_pixel_shader.html#a5a1a58bcb0ed64405e746ec7a5af5269", null ],
+    [ "PrepareShading", "classmage_1_1_pixel_shader.html#a2a7b90185b38fb38759a5fbe4ce0d0fe", null ],
     [ "SetupShader", "classmage_1_1_pixel_shader.html#a3010aefe86be3e1efaf2f1c010c42a48", null ],
     [ "m_device", "classmage_1_1_pixel_shader.html#a7fa34f27d8f39db2403edac28ddecc68", null ],
     [ "m_device_context", "classmage_1_1_pixel_shader.html#a6b9bbf18f255b061fb75453f32a78720", null ],

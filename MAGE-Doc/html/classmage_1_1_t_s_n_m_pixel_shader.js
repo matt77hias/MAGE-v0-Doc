@@ -9,6 +9,6 @@ var classmage_1_1_t_s_n_m_pixel_shader =
     [ "~TSNMPixelShader", "classmage_1_1_t_s_n_m_pixel_shader.html#ae7c20ffb872faffb28714b39916e4250", null ],
     [ "operator=", "classmage_1_1_t_s_n_m_pixel_shader.html#a8c9bc92d544b088e9530f8f47df2b4a6", null ],
     [ "operator=", "classmage_1_1_t_s_n_m_pixel_shader.html#a0d714c73017f9bb9b273b2d2a276ab5f", null ],
-    [ "PrepareShading", "classmage_1_1_t_s_n_m_pixel_shader.html#abe01a4e6007a0a1ca98ed8fe48523138", null ],
+    [ "PrepareShading", "classmage_1_1_t_s_n_m_pixel_shader.html#a9b9f44b0cf757061e1c29388c9b20c38", null ],
     [ "m_material_buffer", "classmage_1_1_t_s_n_m_pixel_shader.html#a44a37625ffb8de2ace98b9457972e030", null ]
 ];

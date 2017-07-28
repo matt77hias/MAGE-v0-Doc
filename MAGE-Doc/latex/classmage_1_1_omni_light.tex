@@ -36,6 +36,8 @@ float \hyperlink{classmage_1_1_omni_light_a1bd4d9eb6a22ae78e1780f142039611c}{Get
 void \hyperlink{classmage_1_1_omni_light_a976808d30573076afcb847724717a121}{Set\+End\+Distance\+Falloff} (float distance\+\_\+falloff\+\_\+end) noexcept
 \item 
 void \hyperlink{classmage_1_1_omni_light_ad46e519eae108d009c8b77b86d302ed1}{Set\+Distance\+Falloff} (float distance\+\_\+falloff\+\_\+start, float distance\+\_\+falloff\+\_\+end) noexcept
+\item 
+float \hyperlink{classmage_1_1_omni_light_a6f70a9cca052fa2228aeab4c44ca8a0b}{Get\+Range\+Distance\+Falloff} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -136,10 +138,21 @@ Implements \hyperlink{classmage_1_1_light_aa613d76a1ebda69efde853d15f75490c}{mag
 \subsubsection{\texorpdfstring{Get\+End\+Distance\+Falloff()}{GetEndDistanceFalloff()}}
 {\footnotesize\ttfamily float mage\+::\+Omni\+Light\+::\+Get\+End\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the end of the distance falloff of this omni light.
+Returns the distance at which intensity falloff ends of this omni light.
 
 \begin{DoxyReturn}{Returns}
-The end of the distance falloff of this omni light. 
+The distance at which intensity falloff ends of this omni light. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_omni_light_a6f70a9cca052fa2228aeab4c44ca8a0b}{}\label{classmage_1_1_omni_light_a6f70a9cca052fa2228aeab4c44ca8a0b} 
+\index{mage\+::\+Omni\+Light@{mage\+::\+Omni\+Light}!Get\+Range\+Distance\+Falloff@{Get\+Range\+Distance\+Falloff}}
+\index{Get\+Range\+Distance\+Falloff@{Get\+Range\+Distance\+Falloff}!mage\+::\+Omni\+Light@{mage\+::\+Omni\+Light}}
+\subsubsection{\texorpdfstring{Get\+Range\+Distance\+Falloff()}{GetRangeDistanceFalloff()}}
+{\footnotesize\ttfamily float mage\+::\+Omni\+Light\+::\+Get\+Range\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the distance range where intensity falloff occurs of this omni light.
+
+\begin{DoxyReturn}{Returns}
+The distance range where intensity falloff occurs of this omni light. {\itshape \hyperlink{classmage_1_1_omni_light_a1bd4d9eb6a22ae78e1780f142039611c}{Get\+End\+Distance\+Falloff()}} -\/ {\itshape \hyperlink{classmage_1_1_omni_light_adb7811b447e8b4679b21123c01c6d6fb}{Get\+Start\+Distance\+Falloff()}} 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_omni_light_adb7811b447e8b4679b21123c01c6d6fb}{}\label{classmage_1_1_omni_light_adb7811b447e8b4679b21123c01c6d6fb} 
 \index{mage\+::\+Omni\+Light@{mage\+::\+Omni\+Light}!Get\+Start\+Distance\+Falloff@{Get\+Start\+Distance\+Falloff}}
@@ -147,10 +160,10 @@ The end of the distance falloff of this omni light.
 \subsubsection{\texorpdfstring{Get\+Start\+Distance\+Falloff()}{GetStartDistanceFalloff()}}
 {\footnotesize\ttfamily float mage\+::\+Omni\+Light\+::\+Get\+Start\+Distance\+Falloff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the start of the distance falloff of this omni light.
+Returns the distance at which intensity falloff starts of this omni light.
 
 \begin{DoxyReturn}{Returns}
-The start of the distance falloff of this omni light. 
+The distance at which intensity falloff starts of this omni light. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_omni_light_a7bdce151d327daef5e1f31daedcc4627}{}\label{classmage_1_1_omni_light_a7bdce151d327daef5e1f31daedcc4627} 
 \index{mage\+::\+Omni\+Light@{mage\+::\+Omni\+Light}!operator=@{operator=}}
@@ -190,13 +203,13 @@ A reference to the moved omni light (i.\+e. this omni light).
 \subsubsection{\texorpdfstring{Set\+Distance\+Falloff()}{SetDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Omni\+Light\+::\+Set\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+start,  }\item[{float}]{distance\+\_\+falloff\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the start and end of the distance falloff of this omni light to the given values.
+Sets the distance at which intensity falloff starts and ends of this omni light to the given values.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The start of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The distance at which intensity falloff starts. \\
 \hline
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The end of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The distance at which intensity falloff ends. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_omni_light_a976808d30573076afcb847724717a121}{}\label{classmage_1_1_omni_light_a976808d30573076afcb847724717a121} 
@@ -205,11 +218,11 @@ Sets the start and end of the distance falloff of this omni light to the given v
 \subsubsection{\texorpdfstring{Set\+End\+Distance\+Falloff()}{SetEndDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Omni\+Light\+::\+Set\+End\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the end of the distance falloff of this omni light to the given value.
+Sets the distance at which intensity falloff ends of this omni light to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The end of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+end} & The distance at which intensity falloff ends. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_omni_light_ac7d7dbdbaf9abdc6ee3c660d2354c39d}{}\label{classmage_1_1_omni_light_ac7d7dbdbaf9abdc6ee3c660d2354c39d} 
@@ -218,11 +231,11 @@ Sets the end of the distance falloff of this omni light to the given value.
 \subsubsection{\texorpdfstring{Set\+Start\+Distance\+Falloff()}{SetStartDistanceFalloff()}}
 {\footnotesize\ttfamily void mage\+::\+Omni\+Light\+::\+Set\+Start\+Distance\+Falloff (\begin{DoxyParamCaption}\item[{float}]{distance\+\_\+falloff\+\_\+start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the start of the distance falloff of this omni light to the given value.
+Sets the distance at which intensity falloff starts of this omni light to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The start of the distance falloff. \\
+\mbox{\tt in}  & {\em distance\+\_\+falloff\+\_\+start} & The distance at which intensity falloff starts. \\
 \hline
 \end{DoxyParams}
 
