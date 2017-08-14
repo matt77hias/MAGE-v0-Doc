@@ -25,5 +25,5 @@ var classmage_1_1_node =
     [ "RemoveChildNode", "classmage_1_1_node.html#a0da235c6459c315ad1c4be5c7aa7c7f0", null ],
     [ "SetActive", "classmage_1_1_node.html#af123050daa89e50f5468b630061aae53", null ],
     [ "m_active", "classmage_1_1_node.html#ac4dd6c399de8b2a92df92365df7ecdac", null ],
-    [ "m_transform", "classmage_1_1_node.html#a24512023f5f6ec7adad9810e55ec2ab5", null ]
+    [ "m_transform", "classmage_1_1_node.html#a0b8161cc8480dcd9340309c3773c49f2", null ]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['load',['Load',['../classmage_1_1_scene.html#a1fb4a93eaa2f6a9e20594e205abb9a32',1,'mage::Scene']]],
   ['loadable',['Loadable',['../classmage_1_1_loadable.html',1,'mage']]],
   ['loadable',['Loadable',['../classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d',1,'mage::Loadable::Loadable(bool loaded=false)'],['../classmage_1_1_loadable.html#aaea04657cc6f150659f0ab387f6a5514',1,'mage::Loadable::Loadable(const Loadable &amp;loadable)'],['../classmage_1_1_loadable.html#aad6ac6495924e0787c377d665a076f2a',1,'mage::Loadable::Loadable(Loadable &amp;&amp;loadable)']]],
-  ['loadtexturedatafromfile',['LoadTextureDataFromFile',['../namespacemage.html#ad1df9b8a27dd30528717777fd0c9c3db',1,'mage']]],
+  ['loadtexturedatafromfile',['LoadTextureDataFromFile',['../namespacemage.html#a89695c64dcc506089e612b3ad58c5787',1,'mage']]],
   ['locationscript',['LocationScript',['../classmage_1_1_location_script.html',1,'mage']]],
   ['locationscript',['LocationScript',['../classmage_1_1_location_script.html#a14bc9a5868daff6401b0c8b4feebbb3e',1,'mage::LocationScript::LocationScript(TransformNode *transform, SharedPtr&lt; SpriteText &gt; text)'],['../classmage_1_1_location_script.html#a53fb0562896eadb4c747d53b53f65b40',1,'mage::LocationScript::LocationScript(const LocationScript &amp;script)=delete'],['../classmage_1_1_location_script.html#a6cddb54a11e5d5d6dee034ef04ffbf2f',1,'mage::LocationScript::LocationScript(LocationScript &amp;&amp;script)']]],
   ['lock',['Lock',['../structmage_1_1_condition_variable.html#aab712c41e76c444606d5419a20d87b7a',1,'mage::ConditionVariable']]],

@@ -1,9 +1,7 @@
 var classmage_1_1_sprite_pixel_shader =
 [
-    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a177d1f15a6230f079862967b9c3bdeaa", null ],
-    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#ad2d798e4235dd51e3536309709b003ff", null ],
-    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a1c9e2ba4b4e14c0875ad38f379ce5c89", null ],
-    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#ab73687a6f86ecfd9337a8aa8caf67dfb", null ],
+    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a84cd75b8b82dfe34507654fb1fb1f8bc", null ],
+    [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#ae66e37faa25748e88d4ce6fc2af09f59", null ],
     [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a5803ea69e04c58528f9c4fbbc0f4efbc", null ],
     [ "SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a1507191b6574cc1fb499b4995f73edfe", null ],
     [ "~SpritePixelShader", "classmage_1_1_sprite_pixel_shader.html#a0e2a3f2b52417ebffc56db3739bdd0c2", null ],

@@ -34,8 +34,8 @@ var hierarchy =
     [ "mage::ColorString", "structmage_1_1_color_string.html", null ],
     [ "mage::CombinedShader", "structmage_1_1_combined_shader.html", null ],
     [ "mage::CompiledShader", "structmage_1_1_compiled_shader.html", [
-      [ "mage::CompiledPixelShader", "structmage_1_1_compiled_pixel_shader.html", null ],
-      [ "mage::CompiledVertexShader", "structmage_1_1_compiled_vertex_shader.html", null ]
+      [ "mage::BlobCompiledShader", "structmage_1_1_blob_compiled_shader.html", null ],
+      [ "mage::BufferCompiledShader", "structmage_1_1_buffer_compiled_shader.html", null ]
     ] ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
@@ -50,8 +50,10 @@ var hierarchy =
     [ "DerivedResourceT", null, [
       [ "mage::ResourcePool< KeyT, ResourceT >::ResourcePoolEntry< DerivedResourceT >", "structmage_1_1_resource_pool_1_1_resource_pool_entry.html", null ]
     ] ],
-    [ "mage::DeviceEnumeration", "classmage_1_1_device_enumeration.html", null ],
+    [ "mage::DisplayConfiguration", "structmage_1_1_display_configuration.html", null ],
+    [ "mage::DisplayConfigurator", "classmage_1_1_display_configurator.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
+    [ "mage::EngineStatistics", "structmage_1_1_engine_statistics.html", null ],
     [ "mage::FileStreamCloser", "structmage_1_1_file_stream_closer.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
     [ "mage::GlyphLessThan", "structmage_1_1_glyph_less_than.html", null ],
@@ -136,6 +138,7 @@ var hierarchy =
     [ "mage::ResourceManager", "classmage_1_1_resource_manager.html", null ],
     [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
+    [ "mage::SceneFog", "structmage_1_1_scene_fog.html", null ],
     [ "mage::SceneInfo", "structmage_1_1_scene_info.html", null ],
     [ "mage::Semaphore", "structmage_1_1_semaphore.html", null ],
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],
@@ -163,7 +166,6 @@ var hierarchy =
     [ "mage::VertexPositionNormalTexture", "structmage_1_1_vertex_position_normal_texture.html", null ],
     [ "mage::VertexPositionTexture", "structmage_1_1_vertex_position_texture.html", null ],
     [ "mage::VertexPositionTextureTexture", "structmage_1_1_vertex_position_texture_texture.html", null ],
-    [ "mage::ViewFrustum", "classmage_1_1_view_frustum.html", null ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],
       [ "mage::VSWriter", "classmage_1_1_v_s_writer.html", null ]

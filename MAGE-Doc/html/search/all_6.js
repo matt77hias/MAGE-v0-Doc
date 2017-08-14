@@ -36,5 +36,6 @@ var searchData=
   ['frameratescript',['FrameRateScript',['../classmage_1_1_frame_rate_script.html',1,'mage']]],
   ['frameratescript',['FrameRateScript',['../classmage_1_1_frame_rate_script.html#a8ef13ffd08a684cbc2010b0e4594d4cf',1,'mage::FrameRateScript::FrameRateScript(SharedPtr&lt; SpriteText &gt; text)'],['../classmage_1_1_frame_rate_script.html#a2c76a1ce175c5c5370582d7ccb878132',1,'mage::FrameRateScript::FrameRateScript(const FrameRateScript &amp;script)=delete'],['../classmage_1_1_frame_rate_script.html#af2cb69b7338169598b80938e9ad77cdd',1,'mage::FrameRateScript::FrameRateScript(FrameRateScript &amp;&amp;script)']]],
   ['freealigned',['FreeAligned',['../namespacemage.html#a2ea8b0ebc056a664eadff3512c1cade4',1,'mage']]],
-  ['fronttoback',['FrontToBack',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014a44a4d81c96c5451956c4412d045e32ae',1,'mage']]]
+  ['fronttoback',['FrontToBack',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014a44a4d81c96c5451956c4412d045e32ae',1,'mage']]],
+  ['fullcoverage',['FullCoverage',['../namespacemage.html#aa9fe157e5a578a103160266df8cccb0aaffa9328d1ba5126d106c910f770301e3',1,'mage']]]
 ];

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.40.0</span>
+   &#160;<span id="projectnumber">v0.49.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -89,6 +89,15 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>Get()
 : <a class="el" href="structmage_1_1_constant_buffer.html#a6b8fcbd873ffbda96d7412c581d5a29a">mage::ConstantBuffer&lt; DataT &gt;</a>
+, <a class="el" href="classmage_1_1_engine.html#a146c8898afd978b4d1f0528128a43bbf">mage::Engine</a>
+, <a class="el" href="structmage_1_1_engine_statistics.html#a7eb0d3a988676f71eea8e9f26ab07f42">mage::EngineStatistics</a>
+, <a class="el" href="classmage_1_1_input_manager.html#a793d1172963fadb3c89f4d291020493d">mage::InputManager</a>
+, <a class="el" href="classmage_1_1_keyboard.html#a696032d3a0d9bcf1a677a35e1e3d9aa8">mage::Keyboard</a>
+, <a class="el" href="structmage_1_1_logging_configuration.html#a9a2b9343e49bd5befe10cf06225e5c83">mage::LoggingConfiguration</a>
+, <a class="el" href="classmage_1_1_main_window.html#ab670605775c88e0121afa7a52ac88ddf">mage::MainWindow</a>
+, <a class="el" href="classmage_1_1_mouse.html#aa62bca1d085e86eeff1bf07e232e2a24">mage::Mouse</a>
+, <a class="el" href="classmage_1_1_renderer.html#a84ad465ae4ecfa2c0e9334cadb82d269">mage::Renderer</a>
+, <a class="el" href="classmage_1_1_resource_manager.html#a1e6ca77d892578fc4df0e62dfbc807f6">mage::ResourceManager</a>
 , <a class="el" href="classmage_1_1_sprite_font.html#a8e43f8d97fb7e5ee03ed49fb45ee1b5f">mage::SpriteFont</a>
 , <a class="el" href="structmage_1_1_structured_buffer.html#ad933738bc55b10aea665913a8215bab0">mage::StructuredBuffer&lt; DataT &gt;</a>
 , <a class="el" href="classmage_1_1_texture.html#ac48cd0477d9771666e3929d72ee4e419">mage::Texture</a>
@@ -98,7 +107,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classmage_1_1_static_mesh.html#aaf793aaeccd66c2b1b172f2847db86ed">mage::StaticMesh</a>
 </li>
 <li>GetAdapter()
-: <a class="el" href="classmage_1_1_device_enumeration.html#ac7b5e28561c607aa02b521a81164715c">mage::DeviceEnumeration</a>
+: <a class="el" href="structmage_1_1_display_configuration.html#a415acc2cba9d5f28dc42073bb69fbac2">mage::DisplayConfiguration</a>
+, <a class="el" href="classmage_1_1_renderer.html#a75fe0cdffda2e282dba1081dfddaa94d">mage::Renderer</a>
 </li>
 <li>GetAdditiveBlendState()
 : <a class="el" href="structmage_1_1_rendering_state_cache.html#afa897dcd0b71e4ff8e6ce6d8e31aaa71">mage::RenderingStateCache</a>
@@ -149,10 +159,14 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classmage_1_1_static_mesh.html#a007a31e6630f5095af7f1e468f12912f">mage::StaticMesh</a>
 </li>
 <li>GetBytecode()
-: <a class="el" href="structmage_1_1_compiled_shader.html#a9de640fa51575dc77183d0864b4e8c42">mage::CompiledShader</a>
+: <a class="el" href="structmage_1_1_blob_compiled_shader.html#a44cc21b9ab038c57155e64e8ced4d504">mage::BlobCompiledShader</a>
+, <a class="el" href="structmage_1_1_buffer_compiled_shader.html#ae6b2b4b5c9b96d7ca680724ccf0affb3">mage::BufferCompiledShader</a>
+, <a class="el" href="structmage_1_1_compiled_shader.html#a3d7a58d568dc30e66ea7488f28911127">mage::CompiledShader</a>
 </li>
 <li>GetBytecodeSize()
-: <a class="el" href="structmage_1_1_compiled_shader.html#a17df0554eb82bdbc24505c4c5d2b14da">mage::CompiledShader</a>
+: <a class="el" href="structmage_1_1_blob_compiled_shader.html#a685f2a4aac87aa785c22940075eb23ec">mage::BlobCompiledShader</a>
+, <a class="el" href="structmage_1_1_buffer_compiled_shader.html#aa9ab3a1df896367280c259734ff29bc0">mage::BufferCompiledShader</a>
+, <a class="el" href="structmage_1_1_compiled_shader.html#ae9dbc3c205d54cc89b9b0746b76b157b">mage::CompiledShader</a>
 </li>
 <li>GetCamera()
 : <a class="el" href="classmage_1_1_camera_node.html#aa9887e3bf192d6c078aae2430732cbf8">mage::CameraNode</a>
@@ -258,8 +272,26 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structmage_1_1_material.html#ab548fbf5844ae7cd2822304ef7fb9602">mage::Material</a>
 , <a class="el" href="structmage_1_1_shaded_material.html#acf3273d75933ca238075150dd7cc7dca">mage::ShadedMaterial</a>
 </li>
+<li>GetDisplayConfiguration()
+: <a class="el" href="classmage_1_1_display_configurator.html#a9371158cf1e2686f43ece9e1a53ee3b6">mage::DisplayConfigurator</a>
+</li>
+<li>GetDisplayFormat()
+: <a class="el" href="structmage_1_1_display_configuration.html#a412215b18edac3ec6bf18cd00d8c689b">mage::DisplayConfiguration</a>
+</li>
+<li>GetDisplayHeight()
+: <a class="el" href="structmage_1_1_display_configuration.html#ad8deade0aec6e88e41fee0ba688cbec9">mage::DisplayConfiguration</a>
+</li>
 <li>GetDisplayMode()
-: <a class="el" href="classmage_1_1_device_enumeration.html#aa7a073568788fa4fb3d90c2869527e78">mage::DeviceEnumeration</a>
+: <a class="el" href="structmage_1_1_display_configuration.html#a20270be6a17deab929fce25596edabd4">mage::DisplayConfiguration</a>
+</li>
+<li>GetDisplayRefreshRate()
+: <a class="el" href="structmage_1_1_display_configuration.html#aa92237613f8077d189f9504fec371cb8">mage::DisplayConfiguration</a>
+</li>
+<li>GetDisplayRoundedRefreshRate()
+: <a class="el" href="structmage_1_1_display_configuration.html#a70ad309284f4741f7ce9aafc38577715">mage::DisplayConfiguration</a>
+</li>
+<li>GetDisplayWidth()
+: <a class="el" href="structmage_1_1_display_configuration.html#abb8e00caf3bf4fbe3948657d760b760f">mage::DisplayConfiguration</a>
 </li>
 <li>GetDissolve()
 : <a class="el" href="structmage_1_1_material.html#aa320c6b371b9f055a76821db71d185bc">mage::Material</a>
@@ -270,7 +302,11 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetEndDistanceFalloff()
 : <a class="el" href="classmage_1_1_omni_light.html#a1bd4d9eb6a22ae78e1780f142039611c">mage::OmniLight</a>
+, <a class="el" href="structmage_1_1_scene_fog.html#a9f2d7ed1c03054ca305b500059c8c1f1">mage::SceneFog</a>
 , <a class="el" href="classmage_1_1_spot_light.html#a4d1d2c3a5f5b2a01e6e625d84eb588d1">mage::SpotLight</a>
+</li>
+<li>GetEngineStatistics()
+: <a class="el" href="classmage_1_1_engine.html#aacbd029d5e8f00e0acdb0f4d7cc04236">mage::Engine</a>
 </li>
 <li>GetExponentProperty()
 : <a class="el" href="classmage_1_1_spot_light.html#a0e92cc6201e2b9c8b2eb06c50a53ae13">mage::SpotLight</a>
@@ -327,6 +363,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetIntensity()
 : <a class="el" href="classmage_1_1_light.html#ad4ffb4c5fa06812e7d523a69b177d55a">mage::Light</a>
+, <a class="el" href="structmage_1_1_scene_fog.html#ac383f82bf8e286ec3478a83fa857f04e">mage::SceneFog</a>
 </li>
 <li>GetKernelModeDeltaTime()
 : <a class="el" href="classmage_1_1_c_p_u_timer.html#af2df68d4661e7275d15b8c548ed62fbb">mage::CPUTimer</a>
@@ -354,7 +391,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_sprite_font.html#a281f33047c7627053a5bf61f8fa704fe">mage::SpriteFont</a>
 </li>
 <li>GetMainWindow()
-: <a class="el" href="classmage_1_1_engine.html#ae12773fc604a46a3d94222ebcae2d593">mage::Engine</a>
+: <a class="el" href="classmage_1_1_engine.html#a56e7cbf3a781bd519ed79f0a75a9ce86">mage::Engine</a>
 </li>
 <li>GetMaterial()
 : <a class="el" href="classmage_1_1_model.html#aed33390bd172e034a76fa68093990174">mage::Model</a>
@@ -400,6 +437,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetMouseButtonPress()
 : <a class="el" href="classmage_1_1_mouse.html#a9c8d4493c86685b259819b5995a17c7a">mage::Mouse</a>
 </li>
+<li>GetMSAASampleDesc()
+: <a class="el" href="structmage_1_1_display_configuration.html#a254a0752dd6d1ec68121cd6495a10a02">mage::DisplayConfiguration</a>
+</li>
 <li>GetName()
 : <a class="el" href="structmage_1_1_material.html#a9edb2f437eca07c6c12c24d10ec30eb3">mage::Material</a>
 , <a class="el" href="classmage_1_1_resource.html#a7e056c97f70a3f7211d9456bbda51010">mage::Resource&lt; ResourceT &gt;</a>
@@ -428,6 +468,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetNumberOfChildNodes()
 : <a class="el" href="classmage_1_1_node.html#ab4fff9779c09d873abcf881b6ff85d9e">mage::Node</a>
+</li>
+<li>GetNumberOfDrawCalls()
+: <a class="el" href="structmage_1_1_engine_statistics.html#ae583e788f11e419e05de47cbb01be279">mage::EngineStatistics</a>
 </li>
 <li>GetNumberOfIndices()
 : <a class="el" href="classmage_1_1_mesh.html#a27a6ec7761ebc90995186fe1da677a70">mage::Mesh</a>
@@ -485,7 +528,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_resource_manager.html#aa3d2659c473c06423447114dcc0a602c">mage::ResourceManager</a>
 </li>
 <li>GetOutput()
-: <a class="el" href="classmage_1_1_device_enumeration.html#a8b3e0b888a0ae7caf1e340d456424416">mage::DeviceEnumeration</a>
+: <a class="el" href="structmage_1_1_display_configuration.html#aa328570fbfc6456c0e5d90e738aec81b">mage::DisplayConfiguration</a>
+, <a class="el" href="classmage_1_1_renderer.html#a6f19510d91cb5dd71c41fde26db9aeaa">mage::Renderer</a>
 </li>
 <li>GetParentNode()
 : <a class="el" href="classmage_1_1_node.html#a21ba704ed3af4c80d096ad5f393da8e0">mage::Node</a>
@@ -516,6 +560,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetRangeDistanceFalloff()
 : <a class="el" href="classmage_1_1_omni_light.html#a6f70a9cca052fa2228aeab4c44ca8a0b">mage::OmniLight</a>
+, <a class="el" href="structmage_1_1_scene_fog.html#a172532694595ff1919a4d062d9ffaccb">mage::SceneFog</a>
 , <a class="el" href="classmage_1_1_spot_light.html#aa4d49da481b55080fff3e8f6094a6dcd">mage::SpotLight</a>
 </li>
 <li>GetRasterizerState()
@@ -544,6 +589,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetSamplerState()
 : <a class="el" href="structmage_1_1_rendering_state.html#a72a0817f0041d49af156f8115347460d">mage::RenderingState</a>
+</li>
+<li>GetSceneFog()
+: <a class="el" href="classmage_1_1_scene.html#a1f21d92feb659477ceb4642322fa2f0c">mage::Scene</a>
 </li>
 <li>GetSensitivity()
 : <a class="el" href="classmage_1_1_mouse_look_script.html#ac4834dacc6d80a83faaa4e3c3c236ae8">mage::MouseLookScript</a>
@@ -576,8 +624,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="structmage_1_1_shaded_material.html#a0d1d76e70949caf33e30aa474882b364">mage::ShadedMaterial</a>
 </li>
 <li>GetSpecularReflectivity()
-: <a class="el" href="structmage_1_1_material.html#ad5fde8d972471fc99b72a4fc969883b1">mage::Material</a>
-, <a class="el" href="structmage_1_1_shaded_material.html#aa13cf6b1af3568471ebd0f93a0bc08ac">mage::ShadedMaterial</a>
+: <a class="el" href="structmage_1_1_material.html#a81005b5094b99b9a8d7f16bedd195718">mage::Material</a>
+, <a class="el" href="structmage_1_1_shaded_material.html#a7655315b6654ee4f6f34ac2489ee6f92">mage::ShadedMaterial</a>
 </li>
 <li>GetSpecularReflectivitySRV()
 : <a class="el" href="structmage_1_1_material.html#a04fad2f985ed5078a8217ebcfd51c3f0">mage::Material</a>
@@ -604,6 +652,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetStartDistanceFalloff()
 : <a class="el" href="classmage_1_1_omni_light.html#adb7811b447e8b4679b21123c01c6d6fb">mage::OmniLight</a>
+, <a class="el" href="structmage_1_1_scene_fog.html#ad3b72493806860f0e829f1ff738f1895">mage::SceneFog</a>
 , <a class="el" href="classmage_1_1_spot_light.html#a98a5da32f0023d8f0d600fe3f362decd">mage::SpotLight</a>
 </li>
 <li>GetStartIndex()
@@ -653,8 +702,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_c_p_u_timer.html#a8bacfdc05ffbdbb1b8277c31db0b5e59">mage::CPUTimer</a>
 </li>
 <li>GetTransform()
-: <a class="el" href="classmage_1_1_node.html#acbffccfec34313d8583546204c3d9fda">mage::Node</a>
-, <a class="el" href="classmage_1_1_sprite_object.html#ada7bf149994abd24c652b83e8f9374ec">mage::SpriteObject</a>
+: <a class="el" href="classmage_1_1_node.html#ab789d7674ed06d3e10114dd6d4b4334c">mage::Node</a>
+, <a class="el" href="classmage_1_1_sprite_object.html#a709751381e87803088fc7013043bc65e">mage::SpriteObject</a>
 </li>
 <li>GetTransmissionFilter()
 : <a class="el" href="structmage_1_1_material.html#aba949cb74176530638c7bcb100882196">mage::Material</a>
@@ -712,10 +761,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structmage_1_1_rendering_state_cache.html#a86d51235df703c952a1e50d95eae4244">mage::RenderingStateCache</a>
 </li>
 <li>Glyph()
-: <a class="el" href="structmage_1_1_glyph.html#a86e6c795e2aaad853f54270c709969a6">mage::Glyph</a>
+: <a class="el" href="structmage_1_1_glyph.html#a0ab4ca5253ac80f8849c7d56c0301d61">mage::Glyph</a>
 </li>
 <li>GlyphLessThan()
-: <a class="el" href="structmage_1_1_glyph_less_than.html#a27fc34d9db41ebba7a7b40864837e7e7">mage::GlyphLessThan</a>
+: <a class="el" href="structmage_1_1_glyph_less_than.html#ae41c3b9b7ecf202b5518f911342e170c">mage::GlyphLessThan</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -13,13 +13,9 @@ Inheritance diagram for mage\+:\+:Pixel\+Shader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_pixel_shader_aceac0769412c88171ca85503165a85c0}{Pixel\+Shader} (const wstring \&fname)
+\hyperlink{classmage_1_1_pixel_shader_a7e98db6eab80f7c4ec9bdb37dda7a61e}{Pixel\+Shader} (const wstring \&guid, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
 \item 
-\hyperlink{classmage_1_1_pixel_shader_a965f56338d989774814b841074eda637}{Pixel\+Shader} (const wstring \&fname, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
-\item 
-\hyperlink{classmage_1_1_pixel_shader_af4473cf5c1a5b8e5fe4b8b780cddec08}{Pixel\+Shader} (const wstring \&guid, const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
-\item 
-\hyperlink{classmage_1_1_pixel_shader_a429db17d6be8d71d11cc306d2fafdc4b}{Pixel\+Shader} (const wstring \&guid, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
+\hyperlink{classmage_1_1_pixel_shader_a9f2b1bbb8a08dbdcaa0e17d12efbc7e5}{Pixel\+Shader} (const wstring \&guid, I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
 \item 
 \hyperlink{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{Pixel\+Shader} (const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&pixel\+\_\+shader)=delete
 \item 
@@ -47,7 +43,7 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_pixel_shader_a
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_pixel_shader_a3010aefe86be3e1efaf2f1c010c42a48}{Setup\+Shader} (const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&compiled\+\_\+pixel\+\_\+shader)
+void \hyperlink{classmage_1_1_pixel_shader_a0b2ed5222901f8eeb37b2bdaead838ae}{Setup\+Shader} (const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
 \end{DoxyCompactItemize}
 
 
@@ -55,70 +51,24 @@ void \hyperlink{classmage_1_1_pixel_shader_a3010aefe86be3e1efaf2f1c010c42a48}{Se
 A class of pixel shaders. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_pixel_shader_aceac0769412c88171ca85503165a85c0}{}\label{classmage_1_1_pixel_shader_aceac0769412c88171ca85503165a85c0} 
+\hypertarget{classmage_1_1_pixel_shader_a7e98db6eab80f7c4ec9bdb37dda7a61e}{}\label{classmage_1_1_pixel_shader_a7e98db6eab80f7c4ec9bdb37dda7a61e} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a pixel shader.
 
 \begin{DoxyPrecond}{Precondition}
 The current engine must be loaded. 
-\end{DoxyPrecond}
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename (the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_pixel_shader_a965f56338d989774814b841074eda637}{}\label{classmage_1_1_pixel_shader_a965f56338d989774814b841074eda637} 
-\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
-\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-Constructs a pixel shader.
-
-\begin{DoxyPrecond}{Precondition}
-{\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename (the globally unique identifier). \\
-\hline
-\mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_pixel_shader_af4473cf5c1a5b8e5fe4b8b780cddec08}{}\label{classmage_1_1_pixel_shader_af4473cf5c1a5b8e5fe4b8b780cddec08} 
-\index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
-\index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-Constructs a pixel shader.
-
-\begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier. \\
 \hline
-\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled pixel shader. \\
 \hline
 \end{DoxyParams}
 
@@ -126,11 +76,11 @@ The current engine must be loaded.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this pixel shader. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_pixel_shader_a429db17d6be8d71d11cc306d2fafdc4b}{}\label{classmage_1_1_pixel_shader_a429db17d6be8d71d11cc306d2fafdc4b} 
+\hypertarget{classmage_1_1_pixel_shader_a9f2b1bbb8a08dbdcaa0e17d12efbc7e5}{}\label{classmage_1_1_pixel_shader_a9f2b1bbb8a08dbdcaa0e17d12efbc7e5} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
-{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a pixel shader.
 
@@ -138,6 +88,8 @@ Constructs a pixel shader.
 {\itshape device} is not equal to {\ttfamily nullptr}. 
 
 {\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -147,7 +99,7 @@ Constructs a pixel shader.
 \hline
 \mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
-\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled pixel shader. \\
 \hline
 \end{DoxyParams}
 
@@ -158,7 +110,7 @@ Constructs a pixel shader.
 \hypertarget{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79}{}\label{classmage_1_1_pixel_shader_a361df943e40e9015ac4b769af130ce79} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a pixel shader from the given pixel shader.
@@ -171,7 +123,7 @@ Constructs a pixel shader from the given pixel shader.
 \hypertarget{classmage_1_1_pixel_shader_a5b2d7d36082d25c6f860674df745f7cd}{}\label{classmage_1_1_pixel_shader_a5b2d7d36082d25c6f860674df745f7cd} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Pixel\+Shader@{Pixel\+Shader}}
 \index{Pixel\+Shader@{Pixel\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
-\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+\subsubsection{\texorpdfstring{Pixel\+Shader()}{PixelShader()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+Pixel\+Shader\+::\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader} \&\&}]{pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a pixel shader by moving the given pixel shader.
@@ -261,17 +213,20 @@ Prepares this pixel shader for shading.
 
 Reimplemented in \hyperlink{classmage_1_1_basic_pixel_shader_a95b6a4ed73ac8c9b31348e93f1fdf99d}{mage\+::\+Basic\+Pixel\+Shader}, and \hyperlink{classmage_1_1_t_s_n_m_pixel_shader_a9b9f44b0cf757061e1c29388c9b20c38}{mage\+::\+T\+S\+N\+M\+Pixel\+Shader}.
 
-\hypertarget{classmage_1_1_pixel_shader_a3010aefe86be3e1efaf2f1c010c42a48}{}\label{classmage_1_1_pixel_shader_a3010aefe86be3e1efaf2f1c010c42a48} 
+\hypertarget{classmage_1_1_pixel_shader_a0b2ed5222901f8eeb37b2bdaead838ae}{}\label{classmage_1_1_pixel_shader_a0b2ed5222901f8eeb37b2bdaead838ae} 
 \index{mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Pixel\+Shader@{mage\+::\+Pixel\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}}
-{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_compiled_pixel_shader}{Compiled\+Pixel\+Shader} \&}]{compiled\+\_\+pixel\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Pixel\+Shader\+::\+Setup\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Sets up this pixel shader.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em compiled\+\_\+pixel\+\_\+shader} & A reference to the compiled pixel shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled pixel shader. \\
 \hline
 \end{DoxyParams}
 
