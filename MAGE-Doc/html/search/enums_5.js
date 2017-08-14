@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rotationaxes',['RotationAxes',['../classmage_1_1_mouse_look_script.html#af63fd955f796c11e0378813e5d1ab5f8',1,'mage::MouseLookScript']]]
+  ['mode',['Mode',['../classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895',1,'mage::CPUTimer']]]
 ];

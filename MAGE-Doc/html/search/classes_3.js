@@ -5,8 +5,9 @@ var searchData=
   ['dds_5fpixelformat',['DDS_PIXELFORMAT',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html',1,'mage']]],
   ['derivedcameranode',['DerivedCameraNode',['../classmage_1_1_derived_camera_node.html',1,'mage']]],
   ['derivedlightnode',['DerivedLightNode',['../classmage_1_1_derived_light_node.html',1,'mage']]],
-  ['deviceenumeration',['DeviceEnumeration',['../classmage_1_1_device_enumeration.html',1,'mage']]],
   ['direction3',['Direction3',['../structmage_1_1_direction3.html',1,'mage']]],
   ['directionallight',['DirectionalLight',['../classmage_1_1_directional_light.html',1,'mage']]],
+  ['displayconfiguration',['DisplayConfiguration',['../structmage_1_1_display_configuration.html',1,'mage']]],
+  ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1_display_configurator.html',1,'mage']]],
   ['dropshadowspritetext',['DropshadowSpriteText',['../classmage_1_1_dropshadow_sprite_text.html',1,'mage']]]
 ];

@@ -4,6 +4,7 @@ var classmage_1_1_resource_manager =
     [ "ResourceManager", "classmage_1_1_resource_manager.html#a7d61b10f18bb0ea34bc2a1e9920eeb3d", null ],
     [ "ResourceManager", "classmage_1_1_resource_manager.html#a7aa3b08f3edd385b48694ae4b301ebba", null ],
     [ "~ResourceManager", "classmage_1_1_resource_manager.html#ad4bed85d3656f90072c5d47f50618add", null ],
+    [ "Get", "classmage_1_1_resource_manager.html#a1e6ca77d892578fc4df0e62dfbc807f6", null ],
     [ "GetBasicPixelShader", "classmage_1_1_resource_manager.html#a68ad57f1d907c348540f94810e7b3fe0", null ],
     [ "GetBasicVertexShader", "classmage_1_1_resource_manager.html#a4a2b80e522616f6c5f23eae197f5c3dd", null ],
     [ "GetModelDescriptor", "classmage_1_1_resource_manager.html#a93d34fd42062d9901435c8c469e7ecdf", null ],

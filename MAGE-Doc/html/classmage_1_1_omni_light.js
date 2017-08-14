@@ -13,6 +13,7 @@ var classmage_1_1_omni_light =
     [ "operator=", "classmage_1_1_omni_light.html#a287a54dede61e65efe4493ec20531428", null ],
     [ "SetDistanceFalloff", "classmage_1_1_omni_light.html#ad46e519eae108d009c8b77b86d302ed1", null ],
     [ "SetEndDistanceFalloff", "classmage_1_1_omni_light.html#a976808d30573076afcb847724717a121", null ],
+    [ "SetRangeDistanceFalloff", "classmage_1_1_omni_light.html#a38d8a72fa7db770547a09f69f5463007", null ],
     [ "SetStartDistanceFalloff", "classmage_1_1_omni_light.html#ac7d7dbdbaf9abdc6ee3c660d2354c39d", null ],
     [ "m_distance_falloff_end", "classmage_1_1_omni_light.html#a4ee5cc4103305dc96b43d6286858ef74", null ],
     [ "m_distance_falloff_start", "classmage_1_1_omni_light.html#ab784744d39ad3d4f4a7b2214a55108f7", null ]
