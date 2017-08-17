@@ -59,6 +59,8 @@ class \hyperlink{classmage_1_1_derived_camera_node}{Derived\+Camera\+Node}
 \item 
 class \hyperlink{classmage_1_1_derived_light_node}{Derived\+Light\+Node}
 \item 
+class \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}
+\item 
 struct \hyperlink{structmage_1_1_direction3}{Direction3}
 \item 
 class \hyperlink{classmage_1_1_directional_light}{Directional\+Light}
@@ -177,8 +179,6 @@ struct \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock
 \item 
 class \hyperlink{classmage_1_1_renderer}{Renderer}
 \item 
-struct \hyperlink{structmage_1_1_rendering_state}{Rendering\+State}
-\item 
 struct \hyperlink{structmage_1_1_rendering_state_cache}{Rendering\+State\+Cache}
 \item 
 class \hyperlink{classmage_1_1_resource}{Resource}
@@ -195,13 +195,21 @@ struct \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog}
 \item 
 struct \hyperlink{structmage_1_1_scene_info}{Scene\+Info}
 \item 
+class \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager}
+\item 
 class \hyperlink{classmage_1_1_scene_node}{Scene\+Node}
+\item 
+class \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer}
 \item 
 struct \hyperlink{structmage_1_1_semaphore}{Semaphore}
 \item 
 struct \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}
 \item 
+struct \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior}
+\item 
 class \hyperlink{classmage_1_1_spot_light}{Spot\+Light}
+\item 
+class \hyperlink{classmage_1_1_sprite}{Sprite}
 \item 
 class \hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh}
 \item 
@@ -215,7 +223,7 @@ class \hyperlink{classmage_1_1_sprite_font_reader}{Sprite\+Font\+Reader}
 \item 
 class \hyperlink{classmage_1_1_sprite_image}{Sprite\+Image}
 \item 
-class \hyperlink{classmage_1_1_sprite_object}{Sprite\+Object}
+class \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node}
 \item 
 class \hyperlink{classmage_1_1_sprite_pixel_shader}{Sprite\+Pixel\+Shader}
 \item 
@@ -307,6 +315,14 @@ using \hyperlink{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{Unique\+File\+
 using \hyperlink{namespacemage_a37ac3b8da2d89495d105e00f1022cb1e}{Atomic\+Int32} = volatile L\+O\+NG
 \item 
 {\footnotesize template$<$typename KeyT , typename ResourceT $>$ }\\using \hyperlink{namespacemage_a3aaea9153b9e896914d7a1155d8c7bbe}{Resource\+Map} = map$<$ const KeyT, \hyperlink{namespacemage_aa159a63c0d58464bdf32dfe419dd5dc1}{Weak\+Ptr}$<$ ResourceT $>$ $>$
+\item 
+using \hyperlink{namespacemage_abf1617b76794c524906f01d7939a15b0}{Sprite\+Image\+Node} = \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_sprite_image}{Sprite\+Image} $>$
+\item 
+using \hyperlink{namespacemage_a4f87e5bb6276a3e44e45c95427906b3d}{Normal\+Sprite\+Text\+Node} = \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} $>$
+\item 
+using \hyperlink{namespacemage_abe23940d2c082bdd9219570ffe7feb08}{Dropshadow\+Sprite\+Text\+Node} = \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_dropshadow_sprite_text}{Dropshadow\+Sprite\+Text} $>$
+\item 
+using \hyperlink{namespacemage_a868d7b38cf18f293a7da85bfb48e3ee9}{Outline\+Sprite\+Text\+Node} = \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} $>$
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -1142,7 +1158,19 @@ A class of smart pointers for managing shared-\/ownership C\+OM resources.
 \subsubsection{\texorpdfstring{Directional\+Light\+Node}{DirectionalLightNode}}
 {\footnotesize\ttfamily using \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{mage\+::\+Directional\+Light\+Node} = typedef \hyperlink{classmage_1_1_derived_light_node}{Derived\+Light\+Node}$<$ \hyperlink{classmage_1_1_directional_light}{Directional\+Light} $>$}
 
-A class of directional light nodes. \hypertarget{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{}\label{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669} 
+A class of directional light nodes. \hypertarget{namespacemage_abe23940d2c082bdd9219570ffe7feb08}{}\label{namespacemage_abe23940d2c082bdd9219570ffe7feb08} 
+\index{mage@{mage}!Dropshadow\+Sprite\+Text\+Node@{Dropshadow\+Sprite\+Text\+Node}}
+\index{Dropshadow\+Sprite\+Text\+Node@{Dropshadow\+Sprite\+Text\+Node}!mage@{mage}}
+\subsubsection{\texorpdfstring{Dropshadow\+Sprite\+Text\+Node}{DropshadowSpriteTextNode}}
+{\footnotesize\ttfamily using \hyperlink{namespacemage_abe23940d2c082bdd9219570ffe7feb08}{mage\+::\+Dropshadow\+Sprite\+Text\+Node} = typedef \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_dropshadow_sprite_text}{Dropshadow\+Sprite\+Text} $>$}
+
+A class of dropshadow sprite text nodes. \hypertarget{namespacemage_a4f87e5bb6276a3e44e45c95427906b3d}{}\label{namespacemage_a4f87e5bb6276a3e44e45c95427906b3d} 
+\index{mage@{mage}!Normal\+Sprite\+Text\+Node@{Normal\+Sprite\+Text\+Node}}
+\index{Normal\+Sprite\+Text\+Node@{Normal\+Sprite\+Text\+Node}!mage@{mage}}
+\subsubsection{\texorpdfstring{Normal\+Sprite\+Text\+Node}{NormalSpriteTextNode}}
+{\footnotesize\ttfamily using \hyperlink{namespacemage_a4f87e5bb6276a3e44e45c95427906b3d}{mage\+::\+Normal\+Sprite\+Text\+Node} = typedef \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_normal_sprite_text}{Normal\+Sprite\+Text} $>$}
+
+A class of normal sprite text nodes. \hypertarget{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{}\label{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669} 
 \index{mage@{mage}!Omni\+Light\+Node@{Omni\+Light\+Node}}
 \index{Omni\+Light\+Node@{Omni\+Light\+Node}!mage@{mage}}
 \subsubsection{\texorpdfstring{Omni\+Light\+Node}{OmniLightNode}}
@@ -1154,7 +1182,13 @@ A class of omni light nodes. \hypertarget{namespacemage_a7d62ab5877be3e14a973501
 \subsubsection{\texorpdfstring{Orthographic\+Camera\+Node}{OrthographicCameraNode}}
 {\footnotesize\ttfamily using \hyperlink{namespacemage_a7d62ab5877be3e14a9735014b77d3f55}{mage\+::\+Orthographic\+Camera\+Node} = typedef \hyperlink{classmage_1_1_derived_camera_node}{Derived\+Camera\+Node}$<$ \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $>$}
 
-A class of orthographic camera nodes. \hypertarget{namespacemage_ad6f2ef4a25873e73e8fa38b06425939f}{}\label{namespacemage_ad6f2ef4a25873e73e8fa38b06425939f} 
+A class of orthographic camera nodes. \hypertarget{namespacemage_a868d7b38cf18f293a7da85bfb48e3ee9}{}\label{namespacemage_a868d7b38cf18f293a7da85bfb48e3ee9} 
+\index{mage@{mage}!Outline\+Sprite\+Text\+Node@{Outline\+Sprite\+Text\+Node}}
+\index{Outline\+Sprite\+Text\+Node@{Outline\+Sprite\+Text\+Node}!mage@{mage}}
+\subsubsection{\texorpdfstring{Outline\+Sprite\+Text\+Node}{OutlineSpriteTextNode}}
+{\footnotesize\ttfamily using \hyperlink{namespacemage_a868d7b38cf18f293a7da85bfb48e3ee9}{mage\+::\+Outline\+Sprite\+Text\+Node} = typedef \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_outline_sprite_text}{Outline\+Sprite\+Text} $>$}
+
+A class of outline sprite text nodes. \hypertarget{namespacemage_ad6f2ef4a25873e73e8fa38b06425939f}{}\label{namespacemage_ad6f2ef4a25873e73e8fa38b06425939f} 
 \index{mage@{mage}!Perspective\+Camera\+Node@{Perspective\+Camera\+Node}}
 \index{Perspective\+Camera\+Node@{Perspective\+Camera\+Node}!mage@{mage}}
 \subsubsection{\texorpdfstring{Perspective\+Camera\+Node}{PerspectiveCameraNode}}
@@ -1202,7 +1236,13 @@ A class of smart pointers for managing shared-\/ownership memory resources.
 \subsubsection{\texorpdfstring{Spot\+Light\+Node}{SpotLightNode}}
 {\footnotesize\ttfamily using \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{mage\+::\+Spot\+Light\+Node} = typedef \hyperlink{classmage_1_1_derived_light_node}{Derived\+Light\+Node}$<$ \hyperlink{classmage_1_1_spot_light}{Spot\+Light} $>$}
 
-A class of spotlight nodes. \hypertarget{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{}\label{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4} 
+A class of spotlight nodes. \hypertarget{namespacemage_abf1617b76794c524906f01d7939a15b0}{}\label{namespacemage_abf1617b76794c524906f01d7939a15b0} 
+\index{mage@{mage}!Sprite\+Image\+Node@{Sprite\+Image\+Node}}
+\index{Sprite\+Image\+Node@{Sprite\+Image\+Node}!mage@{mage}}
+\subsubsection{\texorpdfstring{Sprite\+Image\+Node}{SpriteImageNode}}
+{\footnotesize\ttfamily using \hyperlink{namespacemage_abf1617b76794c524906f01d7939a15b0}{mage\+::\+Sprite\+Image\+Node} = typedef \hyperlink{classmage_1_1_derived_sprite_node}{Derived\+Sprite\+Node}$<$ \hyperlink{classmage_1_1_sprite_image}{Sprite\+Image} $>$}
+
+A class of sprite image nodes. \hypertarget{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{}\label{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4} 
 \index{mage@{mage}!Unique\+File\+Stream@{Unique\+File\+Stream}}
 \index{Unique\+File\+Stream@{Unique\+File\+Stream}!mage@{mage}}
 \subsubsection{\texorpdfstring{Unique\+File\+Stream}{UniqueFileStream}}
@@ -1522,6 +1562,8 @@ String&\\
 
 A struct of scene buffers used by pixel shaders.
 
+A struct of directional light buffers used by pixel shaders.
+
 A struct of omni light buffers used by pixel shaders.
 
 A struct of spotlight buffers used by pixel shaders.
@@ -1580,19 +1622,65 @@ A reference to the moved scene buffer (i.\+e. this scene buffer).
 \end{DoxyReturn}
 The ambient light intensity of this scene buffer.
 
+The flags of this scene buffer.
+
+The number of directional lights of this scene buffer.
+
 The number of omni lights of this scene buffer.
 
-The intensity of the directional light of this scene buffer.
-
 The number of spotlights of this scene buffer.
-
-The (normalized) direction of the directional light in camera-\/space coordinates of this scene buffer.
 
 The distance at which intensity falloff starts due to fog of this scene buffer.
 
 The color of the fog of this scene buffer.
 
 The distance range where intensity falloff occurs due to fog of this scene buffer.
+
+Constructs an directional light buffer.
+
+Constructs an directional light buffer from the given directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs an directional light buffer by moving the given directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this directional light buffer.
+
+Copies the given directional light buffer to this directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given directional light buffer (i.\+e. this directional light buffer).
+\end{DoxyReturn}
+Moves the given directional light buffer to this directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved directional light buffer (i.\+e. this directional light buffer).
+\end{DoxyReturn}
+The intensity of the directional light of this directional light buffer.
+
+The padding of this directional light buffer.
+
+The (normalized) direction of the directional light in camera-\/space coordinates of this directional light buffer.
+
+The padding of this directional light buffer.
 
 Constructs an omni light buffer.
 
@@ -1634,15 +1722,11 @@ A reference to the moved omni light buffer (i.\+e. this omni light buffer).
 \end{DoxyReturn}
 The position of the omni light in camera-\/space coordinates of this omni light buffer.
 
-The intensity of the omni light of this omni light buffer.
-
-The padding of this omni light buffer.
-
 The distance at which intensity falloff ends of the omni light of this omni light buffer.
 
-The distance range where intensity falloff occurs of the omni light of this omni light buffer.
+The intensity of the omni light of this omni light buffer.
 
-The padding of this omni light buffer.
+The distance range where intensity falloff occurs of the omni light of this omni light buffer.
 
 Constructs a spotlight buffer.
 
@@ -1684,13 +1768,15 @@ A reference to the moved spotlight buffer (i.\+e. this spotlight buffer).
 \end{DoxyReturn}
 The position of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
+The padding of this spotlight buffer.
+
 The intensity of the spotlight of this spotlight buffer.
 
-The exponent property of the spotlight of this spotlight buffer.
+The padding of this spotlight buffer.
 
 The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
-The padding of this spotlight buffer.
+The exponent property of the spotlight of this spotlight buffer.
 
 The distance at which intensity falloff ends of the spotlight of this spotlight buffer.
 
@@ -3153,7 +3239,7 @@ Copies the given transform node to this transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to copy. \\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -3163,7 +3249,7 @@ Moves the given transform node to this transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to move. \\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -3871,14 +3957,14 @@ Constructs a transform node from the given transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to copy.\\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to copy.\\
 \hline
 \end{DoxyParams}
 Constructs a transform node by moving the given transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to move.\\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to move.\\
 \hline
 \end{DoxyParams}
 Sets this transform node to dirty.
@@ -3920,28 +4006,28 @@ Traverses all child transform nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all child transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node\&} values.\\
+{\em ActionT} & An action to perform on all child transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all descendant (childs included) transform nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all descendant transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node\&} values.\\
+{\em ActionT} & An action to perform on all descendant transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all child nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all child nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily \hyperlink{classmage_1_1_node}{Node}\&} values.\\
+{\em ActionT} & An action to perform on all child nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all descendant (childs included) nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all descendant nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily \hyperlink{classmage_1_1_node}{Node}\&} values.\\
+{\em ActionT} & An action to perform on all descendant nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 The transform of this transform node.
@@ -4453,6 +4539,13 @@ Sets the viewport of this sprite batch to the given viewport.
 \mbox{\tt in}  & {\em viewport} & A reference to the viewport.\\
 \hline
 \end{DoxyParams}
+Sets the viewport of this sprite batch to the given viewport.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport} & A reference to the viewport.\\
+\hline
+\end{DoxyParams}
 Grows the sprite queue of this sprite batch.
 
 This effectively replaces the current sprite queue with a new sprite queue having a capacity equal to two times the capacity of the current sprite queue of this sprite batch.
@@ -4554,6 +4647,52 @@ If each \hyperlink{}{mage\+::\+Sprite\+Info} instance held a refcount on its tex
 
 The initial size of the queue containing the sprites waiting to be drawn by a sprite batch.
 
+Constructs an directional light buffer.
+
+Constructs an directional light buffer from the given directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to copy.\\
+\hline
+\end{DoxyParams}
+Constructs an directional light buffer by moving the given directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to move.\\
+\hline
+\end{DoxyParams}
+Destructs this directional light buffer.
+
+Copies the given directional light buffer to this directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given directional light buffer (i.\+e. this directional light buffer).
+\end{DoxyReturn}
+Moves the given directional light buffer to this directional light buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A reference to the directional light buffer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved directional light buffer (i.\+e. this directional light buffer).
+\end{DoxyReturn}
+The intensity of the directional light of this directional light buffer.
+
+The padding of this directional light buffer.
+
+The (normalized) direction of the directional light in camera-\/space coordinates of this directional light buffer.
+
+The padding of this directional light buffer.
+
 Constructs an omni light buffer.
 
 Constructs an omni light buffer from the given omni light buffer.
@@ -4594,15 +4733,11 @@ A reference to the moved omni light buffer (i.\+e. this omni light buffer).
 \end{DoxyReturn}
 The position of the omni light in camera-\/space coordinates of this omni light buffer.
 
-The intensity of the omni light of this omni light buffer.
-
-The padding of this omni light buffer.
-
 The distance at which intensity falloff ends of the omni light of this omni light buffer.
 
-The distance range where intensity falloff occurs of the omni light of this omni light buffer.
+The intensity of the omni light of this omni light buffer.
 
-The padding of this omni light buffer.
+The distance range where intensity falloff occurs of the omni light of this omni light buffer.
 
 Constructs a spotlight buffer.
 
@@ -4644,13 +4779,15 @@ A reference to the moved spotlight buffer (i.\+e. this spotlight buffer).
 \end{DoxyReturn}
 The position of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
+The padding of this spotlight buffer.
+
 The intensity of the spotlight of this spotlight buffer.
 
-The exponent property of the spotlight of this spotlight buffer.
+The padding of this spotlight buffer.
 
 The (normalized) direction of the spotlight in camera-\/space coordinates of this spotlight buffer.
 
-The padding of this spotlight buffer.
+The exponent property of the spotlight of this spotlight buffer.
 
 The distance at which intensity falloff ends of the spotlight of this spotlight buffer.
 
@@ -6113,7 +6250,7 @@ Copies the given transform node to this transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to copy. \\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -6123,7 +6260,7 @@ Moves the given transform node to this transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to move. \\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -6831,14 +6968,14 @@ Constructs a transform node from the given transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to copy.\\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to copy.\\
 \hline
 \end{DoxyParams}
 Constructs a transform node by moving the given transform node.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em transform\+\_\+node} & A reference to the transform node to move.\\
+\mbox{\tt in}  & {\em node} & A reference to the transform node to move.\\
 \hline
 \end{DoxyParams}
 Sets this transform node to dirty.
@@ -6880,28 +7017,28 @@ Traverses all child transform nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all child transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node\&} values.\\
+{\em ActionT} & An action to perform on all child transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all descendant (childs included) transform nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all descendant transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node\&} values.\\
+{\em ActionT} & An action to perform on all descendant transform nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Transform\+Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all child nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all child nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily \hyperlink{classmage_1_1_node}{Node}\&} values.\\
+{\em ActionT} & An action to perform on all child nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 Traverses all descendant (childs included) nodes of this transform node.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em ActionT} & An action to perform on all descendant nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily \hyperlink{classmage_1_1_node}{Node}\&} values.\\
+{\em ActionT} & An action to perform on all descendant nodes of this transform node. The action must accept ({\ttfamily const}) {\ttfamily Node$\ast$} values.\\
 \hline
 \end{DoxyTemplParams}
 The transform of this transform node.
@@ -7406,6 +7543,13 @@ Returns the viewport of this sprite batch.
 \begin{DoxyReturn}{Returns}
 A reference to the viewport of this sprite batch.
 \end{DoxyReturn}
+Sets the viewport of this sprite batch to the given viewport.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport} & A reference to the viewport.\\
+\hline
+\end{DoxyParams}
 Sets the viewport of this sprite batch to the given viewport.
 
 
@@ -11469,7 +11613,7 @@ If the retrieval succeeds, the total physical memory usage of this process (in b
 Returns the rendering device.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The rendering device associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the rendering device. 
@@ -11483,7 +11627,7 @@ A pointer to the rendering device.
 Returns the rendering device context.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The rendering device context associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the rendering device context. 

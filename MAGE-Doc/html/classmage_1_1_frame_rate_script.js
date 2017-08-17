@@ -1,6 +1,6 @@
 var classmage_1_1_frame_rate_script =
 [
-    [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#a8ef13ffd08a684cbc2010b0e4594d4cf", null ],
+    [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#a78ffb9aa23f42244ef34bd2dfaa7c537", null ],
     [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#a2c76a1ce175c5c5370582d7ccb878132", null ],
     [ "FrameRateScript", "classmage_1_1_frame_rate_script.html#af2cb69b7338169598b80938e9ad77cdd", null ],
     [ "~FrameRateScript", "classmage_1_1_frame_rate_script.html#a0863d9339500e10d988dd574448c28f3", null ],
@@ -11,6 +11,6 @@ var classmage_1_1_frame_rate_script =
     [ "m_accumulated_time", "classmage_1_1_frame_rate_script.html#ad2811547f84f1c62392e36fd8b82042d", null ],
     [ "m_last_frames_per_second", "classmage_1_1_frame_rate_script.html#a6126772a3b500a0c044837f432d10976", null ],
     [ "m_last_milliseconds_per_frame", "classmage_1_1_frame_rate_script.html#a648f07d3c0c140b311703cdb85c63435", null ],
-    [ "m_text", "classmage_1_1_frame_rate_script.html#a7d55db21f500e92914293cd6850e3b53", null ],
+    [ "m_text", "classmage_1_1_frame_rate_script.html#ae54fff9f8485d86c664057fa8d001bf9", null ],
     [ "s_resource_fetch_period", "classmage_1_1_frame_rate_script.html#ad28027c538faeab0c74bdb7b49f59469", null ]
 ];

@@ -28,6 +28,7 @@ var classmage_1_1_spot_light =
     [ "SetStartAngularCutoff", "classmage_1_1_spot_light.html#a16587c74a69e3e17ffdebbfb9f45d3da", null ],
     [ "SetStartDistanceFalloff", "classmage_1_1_spot_light.html#a68a880f1c8f63e3d6813ca55ac79ffee", null ],
     [ "SetUmbraAngle", "classmage_1_1_spot_light.html#a2941a409b850fe341c203c0189eae636", null ],
+    [ "UpdateBoundingVolumes", "classmage_1_1_spot_light.html#a83035abee0050acdca47b1f95b30a793", null ],
     [ "m_cos_penumbra", "classmage_1_1_spot_light.html#ac5d9f3426397abff72c5098b6e7e8472", null ],
     [ "m_cos_umbra", "classmage_1_1_spot_light.html#a9afab31514f93d702f9e516491f262f2", null ],
     [ "m_distance_falloff_end", "classmage_1_1_spot_light.html#a8e0616e3a36d1a05d800cc4a43739178", null ],

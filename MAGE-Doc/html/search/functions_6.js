@@ -5,9 +5,12 @@ var searchData=
   ['fillinitdata',['FillInitData',['../namespacemage.html#ac20162a68be6828c38072a3afb0711c1',1,'mage']]],
   ['findwordend',['FindWordEnd',['../namespacemage.html#a81ebde51f9da00dd6fad364a2c5017cb',1,'mage']]],
   ['forcesrgb',['ForceSRGB',['../structmage_1_1_sprite_font_descriptor.html#a6124a9d8323768b970033eef43d0be6f',1,'mage::SpriteFontDescriptor']]],
+  ['foreachambientlight',['ForEachAmbientLight',['../classmage_1_1_scene.html#acf4c97b1de3c66afa22236e5da8b221a',1,'mage::Scene']]],
+  ['foreachcamera',['ForEachCamera',['../classmage_1_1_scene.html#ad8bf21d83004da3d0fa3ecee120be13b',1,'mage::Scene']]],
   ['foreachchildnode',['ForEachChildNode',['../classmage_1_1_node.html#afedb523a462952ec29aed7504d0a71d4',1,'mage::Node']]],
   ['foreachcolorstring',['ForEachColorString',['../classmage_1_1_sprite_text.html#ad975957b908ad3926ace75fb60ff4474',1,'mage::SpriteText::ForEachColorString(ActionT action)'],['../classmage_1_1_sprite_text.html#abc70368fd800a82cbd1ec31f51d4db17',1,'mage::SpriteText::ForEachColorString(ActionT action) const']]],
   ['foreachdescendantnode',['ForEachDescendantNode',['../classmage_1_1_node.html#a86668c371e1452204b52f2896cbb16fd',1,'mage::Node']]],
+  ['foreachdirectionallight',['ForEachDirectionalLight',['../classmage_1_1_scene.html#ad9e888d8851594b9565300e09de3ed7a',1,'mage::Scene']]],
   ['foreachlight',['ForEachLight',['../classmage_1_1_scene.html#a131c27235c6f172a316c56fea7f2e80c',1,'mage::Scene']]],
   ['foreachmaterial',['ForEachMaterial',['../classmage_1_1_model_descriptor.html#ac4723e18238b0d6ac3c54168b8e9a09f',1,'mage::ModelDescriptor']]],
   ['foreachmodel',['ForEachModel',['../classmage_1_1_scene.html#a6327548021f874f22a1adc81cfc8a1ea',1,'mage::Scene']]],
@@ -21,6 +24,6 @@ var searchData=
   ['fovxfromfovy',['FOVXFromFOVY',['../namespacemage.html#ae8c691a7395afcd8ab40124eb8561a66',1,'mage']]],
   ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage.html#a4328c0620251955eb79cc66823a88a3f',1,'mage']]],
   ['fpsinputcontrollerscript',['FPSInputControllerScript',['../classmage_1_1_f_p_s_input_controller_script.html#afb654c7011472ef300658503efaf1767',1,'mage::FPSInputControllerScript::FPSInputControllerScript(TransformNode *transform)'],['../classmage_1_1_f_p_s_input_controller_script.html#ad47bd24645ec8a7b08c3048c92ed56fd',1,'mage::FPSInputControllerScript::FPSInputControllerScript(const FPSInputControllerScript &amp;script)=delete'],['../classmage_1_1_f_p_s_input_controller_script.html#ad6919f0f67c16499ac467d400f96a4b5',1,'mage::FPSInputControllerScript::FPSInputControllerScript(FPSInputControllerScript &amp;&amp;script)']]],
-  ['frameratescript',['FrameRateScript',['../classmage_1_1_frame_rate_script.html#a8ef13ffd08a684cbc2010b0e4594d4cf',1,'mage::FrameRateScript::FrameRateScript(SharedPtr&lt; SpriteText &gt; text)'],['../classmage_1_1_frame_rate_script.html#a2c76a1ce175c5c5370582d7ccb878132',1,'mage::FrameRateScript::FrameRateScript(const FrameRateScript &amp;script)=delete'],['../classmage_1_1_frame_rate_script.html#af2cb69b7338169598b80938e9ad77cdd',1,'mage::FrameRateScript::FrameRateScript(FrameRateScript &amp;&amp;script)']]],
+  ['frameratescript',['FrameRateScript',['../classmage_1_1_frame_rate_script.html#a78ffb9aa23f42244ef34bd2dfaa7c537',1,'mage::FrameRateScript::FrameRateScript(SpriteText *text)'],['../classmage_1_1_frame_rate_script.html#a2c76a1ce175c5c5370582d7ccb878132',1,'mage::FrameRateScript::FrameRateScript(const FrameRateScript &amp;script)=delete'],['../classmage_1_1_frame_rate_script.html#af2cb69b7338169598b80938e9ad77cdd',1,'mage::FrameRateScript::FrameRateScript(FrameRateScript &amp;&amp;script)']]],
   ['freealigned',['FreeAligned',['../namespacemage.html#a2ea8b0ebc056a664eadff3512c1cade4',1,'mage']]]
 ];

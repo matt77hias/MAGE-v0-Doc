@@ -1,0 +1,171 @@
+\hypertarget{classmage_1_1_scene_manager}{}\section{mage\+:\+:Scene\+Manager Class Reference}
+\label{classmage_1_1_scene_manager}\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+
+
+{\ttfamily \#include $<$scene\+\_\+manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_scene_manager_a25a1185ca41db52d046a5901b301a0be}{Scene\+Manager} ()
+\item 
+\hyperlink{classmage_1_1_scene_manager_a450ce8e4d52483a2dcc3bb090f565373}{Scene\+Manager} (const \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&scene\+\_\+behavior)=delete
+\item 
+\hyperlink{classmage_1_1_scene_manager_ae8f4c6553e27b0bc00f0ea40f0e3770c}{Scene\+Manager} (\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&\&scene\+\_\+behavior)
+\item 
+\hyperlink{classmage_1_1_scene_manager_a849386b052d6ae8945c9554f888e1707}{$\sim$\+Scene\+Manager} ()
+\item 
+\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \& \hyperlink{classmage_1_1_scene_manager_a90c17a35f737879fa07acb28f6d787af}{operator=} (const \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&scene\+\_\+behavior)=delete
+\item 
+\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \& \hyperlink{classmage_1_1_scene_manager_a5f2e494edeb329e54a928a1bc0f5f7df}{operator=} (\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&\&scene\+\_\+behavior)=delete
+\item 
+bool \hyperlink{classmage_1_1_scene_manager_adeb1fd1d9f40229ccb0ef8adfb55f4cc}{Is\+Finished} () const noexcept
+\item 
+bool \hyperlink{classmage_1_1_scene_manager_ac767593112ea1d8b47cc79283cf7c47e}{Has\+Scene} () const noexcept
+\item 
+\hyperlink{classmage_1_1_scene}{Scene} $\ast$ \hyperlink{classmage_1_1_scene_manager_a55d720c9f90cfc46dbf07d46537072c1}{Get\+Scene} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_scene_manager_abd9572b72caa412eda1f6c4e5d771fc3}{Set\+Scene} (\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&scene)
+\item 
+void \hyperlink{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991}{Update} (double delta\+\_\+time)
+\item 
+void \hyperlink{classmage_1_1_scene_manager_ac9ddb36bbd324bee8c702ea604633775}{Render} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} $>$ \hyperlink{classmage_1_1_scene_manager_ac50da0df383825fa3b4627cb42981498}{m\+\_\+renderer}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \hyperlink{classmage_1_1_scene_manager_a774c610dba3ece25acf97915b6368a1a}{m\+\_\+scene}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of scene managers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_scene_manager_a25a1185ca41db52d046a5901b301a0be}{}\label{classmage_1_1_scene_manager_a25a1185ca41db52d046a5901b301a0be} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\index{Scene\+Manager@{Scene\+Manager}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Scene\+Manager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a scene manager. \hypertarget{classmage_1_1_scene_manager_a450ce8e4d52483a2dcc3bb090f565373}{}\label{classmage_1_1_scene_manager_a450ce8e4d52483a2dcc3bb090f565373} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\index{Scene\+Manager@{Scene\+Manager}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Scene\+Manager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&}]{scene\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a scene manager from the given scene manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+behavior} & A reference to the scene manager to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_scene_manager_ae8f4c6553e27b0bc00f0ea40f0e3770c}{}\label{classmage_1_1_scene_manager_ae8f4c6553e27b0bc00f0ea40f0e3770c} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\index{Scene\+Manager@{Scene\+Manager}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Scene\+Manager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&\&}]{scene\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a scene manager by moving the given scene manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+behavior} & A reference to the scene manager to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_scene_manager_a849386b052d6ae8945c9554f888e1707}{}\label{classmage_1_1_scene_manager_a849386b052d6ae8945c9554f888e1707} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!````~Scene\+Manager@{$\sim$\+Scene\+Manager}}
+\index{````~Scene\+Manager@{$\sim$\+Scene\+Manager}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene\+Manager()}{~SceneManager()}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Manager\+::$\sim$\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this scene manager. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_scene_manager_a55d720c9f90cfc46dbf07d46537072c1}{}\label{classmage_1_1_scene_manager_a55d720c9f90cfc46dbf07d46537072c1} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Get\+Scene@{Get\+Scene}}
+\index{Get\+Scene@{Get\+Scene}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Scene()}{GetScene()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene}{Scene}$\ast$ mage\+::\+Scene\+Manager\+::\+Get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_scene_manager_ac767593112ea1d8b47cc79283cf7c47e}{}\label{classmage_1_1_scene_manager_ac767593112ea1d8b47cc79283cf7c47e} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Has\+Scene@{Has\+Scene}}
+\index{Has\+Scene@{Has\+Scene}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Has\+Scene()}{HasScene()}}
+{\footnotesize\ttfamily bool mage\+::\+Scene\+Manager\+::\+Has\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_scene_manager_adeb1fd1d9f40229ccb0ef8adfb55f4cc}{}\label{classmage_1_1_scene_manager_adeb1fd1d9f40229ccb0ef8adfb55f4cc} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Is\+Finished@{Is\+Finished}}
+\index{Is\+Finished@{Is\+Finished}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Finished()}{IsFinished()}}
+{\footnotesize\ttfamily bool mage\+::\+Scene\+Manager\+::\+Is\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_scene_manager_a90c17a35f737879fa07acb28f6d787af}{}\label{classmage_1_1_scene_manager_a90c17a35f737879fa07acb28f6d787af} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager}\& mage\+::\+Scene\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&}]{scene\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given scene manager to this scene manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+behavior} & A reference to the scene manager to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given scene manager (i.\+e. this scene manager). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_manager_a5f2e494edeb329e54a928a1bc0f5f7df}{}\label{classmage_1_1_scene_manager_a5f2e494edeb329e54a928a1bc0f5f7df} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager}\& mage\+::\+Scene\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} \&\&}]{scene\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given scene manager to this scene manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+behavior} & A reference to the scene manager to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved scene manager (i.\+e. this scene manager). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_manager_ac9ddb36bbd324bee8c702ea604633775}{}\label{classmage_1_1_scene_manager_ac9ddb36bbd324bee8c702ea604633775} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_manager_abd9572b72caa412eda1f6c4e5d771fc3}{}\label{classmage_1_1_scene_manager_abd9572b72caa412eda1f6c4e5d771fc3} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Set\+Scene@{Set\+Scene}}
+\index{Set\+Scene@{Set\+Scene}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Scene()}{SetScene()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Set\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&}]{scene }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991}{}\label{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{delta\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_scene_manager_ac50da0df383825fa3b4627cb42981498}{}\label{classmage_1_1_scene_manager_ac50da0df383825fa3b4627cb42981498} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!m\+\_\+renderer@{m\+\_\+renderer}}
+\index{m\+\_\+renderer@{m\+\_\+renderer}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} $>$ mage\+::\+Scene\+Manager\+::m\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the scene renderer of this scene manager. \hypertarget{classmage_1_1_scene_manager_a774c610dba3ece25acf97915b6368a1a}{}\label{classmage_1_1_scene_manager_a774c610dba3ece25acf97915b6368a1a} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!m\+\_\+scene@{m\+\_\+scene}}
+\index{m\+\_\+scene@{m\+\_\+scene}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+scene}{m\_scene}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ mage\+::\+Scene\+Manager\+::m\+\_\+scene\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the current scene of this scene manager. 

@@ -1,7 +1,7 @@
 var classmage_1_1_sprite_text =
 [
     [ "~SpriteText", "classmage_1_1_sprite_text.html#aa30d68a79775dce902c190f2cd298bb4", null ],
-    [ "SpriteText", "classmage_1_1_sprite_text.html#ad2396075b3c1146a691cb0e8081247e2", null ],
+    [ "SpriteText", "classmage_1_1_sprite_text.html#a8b34b608f6950e467d25260a09a5b849", null ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#a3e56a7882dd714a6d8f2452d4f7071ff", null ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#ab03ba1fb607ce86d28b742fc020c8a62", null ],
     [ "AppendText", "classmage_1_1_sprite_text.html#acf993532a7b2e6ebb761b9b47cbdba98", null ],
@@ -10,7 +10,7 @@ var classmage_1_1_sprite_text =
     [ "c_str", "classmage_1_1_sprite_text.html#a236e243b8832cb6e32b1341e798d25bb", null ],
     [ "ClearText", "classmage_1_1_sprite_text.html#a73c5a10e846e94f2f79a25a78bf2e6d0", null ],
     [ "Clone", "classmage_1_1_sprite_text.html#ad76e6d91e59f5070152104da8af1aa4e", null ],
-    [ "CloneImplementation", "classmage_1_1_sprite_text.html#a2b9f59a1730f8b9691f173251a2b4944", null ],
+    [ "CloneImplementation", "classmage_1_1_sprite_text.html#aa2c63346f5ad7f63f7a6d474df3556ef", null ],
     [ "Draw", "classmage_1_1_sprite_text.html#a45d5ac8410d5a46b26e8491946a2ad9e", null ],
     [ "ForEachColorString", "classmage_1_1_sprite_text.html#ad975957b908ad3926ace75fb60ff4474", null ],
     [ "ForEachColorString", "classmage_1_1_sprite_text.html#abc70368fd800a82cbd1ec31f51d4db17", null ],

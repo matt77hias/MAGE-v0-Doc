@@ -1,12 +1,12 @@
 var classmage_1_1_outline_sprite_text =
 [
-    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a20863727c984b3765c2282d1e50047ea", null ],
-    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a34b5ed735b82fbc9a68d9b9bfa6ebf41", null ],
+    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a005afe0bf463128c91d609afe4e63641", null ],
+    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a75b74158c4484d1ee0a46c653eaef67b", null ],
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a15be7f23a00e893314b905d5385903c5", null ],
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a86bb6e1637bcc71a4272f193466669e2", null ],
     [ "~OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#ae4d77ebb3f5bac4fd02b148d6173d10f", null ],
     [ "Clone", "classmage_1_1_outline_sprite_text.html#aa188cb104f6f00fdc75c532d66869f02", null ],
-    [ "CloneImplementation", "classmage_1_1_outline_sprite_text.html#af8d29408abb61c05a23499bf37c4c7b0", null ],
+    [ "CloneImplementation", "classmage_1_1_outline_sprite_text.html#ac1fcc7e91b972b250e09fbb8d62f908d", null ],
     [ "Draw", "classmage_1_1_outline_sprite_text.html#a524e9ad1caeeeaa32405e61d1a5e1032", null ],
     [ "GetBorderColor", "classmage_1_1_outline_sprite_text.html#adb4936119bcc0b148c9e11f021e83940", null ],
     [ "GetBorderColorVector", "classmage_1_1_outline_sprite_text.html#a287bef30662bbd00ca999b3577249226", null ],

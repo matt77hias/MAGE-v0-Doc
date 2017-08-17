@@ -99,7 +99,10 @@ var hierarchy =
         [ "mage::LightNode", "classmage_1_1_light_node.html", [
           [ "mage::DerivedLightNode< LightT >", "classmage_1_1_derived_light_node.html", null ]
         ] ],
-        [ "mage::ModelNode", "classmage_1_1_model_node.html", null ]
+        [ "mage::ModelNode", "classmage_1_1_model_node.html", null ],
+        [ "mage::SpriteNode", "classmage_1_1_sprite_node.html", [
+          [ "mage::DerivedSpriteNode< SpriteT >", "classmage_1_1_derived_sprite_node.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
@@ -107,7 +110,6 @@ var hierarchy =
     [ "mage::ReadWriteMutex", "structmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
     [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
-    [ "mage::RenderingState", "structmage_1_1_rendering_state.html", null ],
     [ "mage::RenderingStateCache", "structmage_1_1_rendering_state_cache.html", null ],
     [ "mage::Resource< ResourceT >", "classmage_1_1_resource.html", null ],
     [ "mage::Resource< ModelDescriptor >", "classmage_1_1_resource.html", [
@@ -140,11 +142,12 @@ var hierarchy =
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
     [ "mage::SceneFog", "structmage_1_1_scene_fog.html", null ],
     [ "mage::SceneInfo", "structmage_1_1_scene_info.html", null ],
+    [ "mage::SceneManager", "classmage_1_1_scene_manager.html", null ],
+    [ "mage::SceneRenderer", "classmage_1_1_scene_renderer.html", null ],
     [ "mage::Semaphore", "structmage_1_1_semaphore.html", null ],
     [ "mage::ShadedMaterial", "structmage_1_1_shaded_material.html", null ],
-    [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],
-    [ "mage::SpriteFontOutput", "structmage_1_1_sprite_font_output.html", null ],
-    [ "mage::SpriteObject", "classmage_1_1_sprite_object.html", [
+    [ "mage::ShadowBehavior", "structmage_1_1_shadow_behavior.html", null ],
+    [ "mage::Sprite", "classmage_1_1_sprite.html", [
       [ "mage::SpriteImage", "classmage_1_1_sprite_image.html", null ],
       [ "mage::SpriteText", "classmage_1_1_sprite_text.html", [
         [ "mage::DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html", null ],
@@ -152,7 +155,10 @@ var hierarchy =
         [ "mage::OutlineSpriteText", "classmage_1_1_outline_sprite_text.html", null ]
       ] ]
     ] ],
+    [ "mage::SpriteFontDescriptor", "structmage_1_1_sprite_font_descriptor.html", null ],
+    [ "mage::SpriteFontOutput", "structmage_1_1_sprite_font_output.html", null ],
     [ "mage::StructuredBuffer< DataT >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< DirectionalLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],

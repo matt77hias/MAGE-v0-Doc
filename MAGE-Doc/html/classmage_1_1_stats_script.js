@@ -1,6 +1,6 @@
 var classmage_1_1_stats_script =
 [
-    [ "StatsScript", "classmage_1_1_stats_script.html#a5d2042950a17b62004adead100eb07e1", null ],
+    [ "StatsScript", "classmage_1_1_stats_script.html#a1deb5458611675fc99309edd01d285f8", null ],
     [ "StatsScript", "classmage_1_1_stats_script.html#aab237b7c391d7ca7ad96cfa33a3aac81", null ],
     [ "StatsScript", "classmage_1_1_stats_script.html#af511d7e2e6bec30cd05782de94c65abe", null ],
     [ "~StatsScript", "classmage_1_1_stats_script.html#a65ba91e19c78c99831a65ad6dd6bb149", null ],
@@ -14,6 +14,6 @@ var classmage_1_1_stats_script =
     [ "m_last_milliseconds_per_frame", "classmage_1_1_stats_script.html#a0f8b9956d7f366246c925003c0afb278", null ],
     [ "m_last_ram_usage", "classmage_1_1_stats_script.html#a92335c973382a332cf5ce328454fd07b", null ],
     [ "m_monitor", "classmage_1_1_stats_script.html#a12e321d8fe1003de3643c4b799dd4c8f", null ],
-    [ "m_text", "classmage_1_1_stats_script.html#a35bb45baabf290be684c8b67f30feeb7", null ],
+    [ "m_text", "classmage_1_1_stats_script.html#a15f95a755a20b01a80df24a8c073b6c5", null ],
     [ "s_resource_fetch_period", "classmage_1_1_stats_script.html#a3601b2c67bfa911d98187857b05c17ab", null ]
 ];
