@@ -19,6 +19,7 @@ var searchData=
   ['hasparentnode',['HasParentNode',['../classmage_1_1_node.html#acc47eb0f2eaa60e71fd945e79b4f622d',1,'mage::Node']]],
   ['hasquotedstring',['HasQuotedString',['../classmage_1_1_line_reader.html#ac92de9a3d986c7031c902c9489cfaa5a',1,'mage::LineReader::HasQuotedString()'],['../namespacemage.html#a5c97e960b9cd087e75a7defd9cf73b54',1,'mage::HasQuotedString()']]],
   ['hasresource',['HasResource',['../classmage_1_1_resource_pool.html#a77d614ec79c615fc365474ef7c8c0e6f',1,'mage::ResourcePool']]],
+  ['hasscene',['HasScene',['../classmage_1_1_scene_manager.html#ac767593112ea1d8b47cc79283cf7c47e',1,'mage::SceneManager']]],
   ['hasscript',['HasScript',['../classmage_1_1_scene.html#a9dd6c49e9db7590de1de4fbd128c78a9',1,'mage::Scene']]],
   ['hasspritefont',['HasSpriteFont',['../classmage_1_1_resource_manager.html#a505a5b25923d88020d85a2f3307e4b7f',1,'mage::ResourceManager']]],
   ['hasspritepixelshader',['HasSpritePixelShader',['../classmage_1_1_resource_manager.html#ae1a4a3a8d98ecbf3c585464d0edd0c9f',1,'mage::ResourceManager']]],

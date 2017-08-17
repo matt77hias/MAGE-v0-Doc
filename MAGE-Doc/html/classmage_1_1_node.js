@@ -17,13 +17,17 @@ var classmage_1_1_node =
     [ "HasParentNode", "classmage_1_1_node.html#acc47eb0f2eaa60e71fd945e79b4f622d", null ],
     [ "IsActive", "classmage_1_1_node.html#a6fce6afdcfdde0e5dff5b219cee4f372", null ],
     [ "IsPassive", "classmage_1_1_node.html#a5fb6ac39c7e0d630944594cd5426f61a", null ],
+    [ "IsTerminated", "classmage_1_1_node.html#af669e446591ecb2d56b44769ba432172", null ],
     [ "MakeActive", "classmage_1_1_node.html#a3945ebd27cbb587d3fd0140df55eb4fb", null ],
     [ "MakePassive", "classmage_1_1_node.html#aee4af2ccc576c422643d478ffafce5c4", null ],
+    [ "OnActiveChange", "classmage_1_1_node.html#a65c1c55801a8e1d5354ac79d0c2fca6e", null ],
     [ "operator=", "classmage_1_1_node.html#ad10ea13608963acfa06d3c1577314da5", null ],
     [ "operator=", "classmage_1_1_node.html#a007043de35c65edb9a0d790824186151", null ],
     [ "RemoveAllChildNodes", "classmage_1_1_node.html#a7627e4e280fc9dd13d255c0f64eba79e", null ],
     [ "RemoveChildNode", "classmage_1_1_node.html#a0da235c6459c315ad1c4be5c7aa7c7f0", null ],
     [ "SetActive", "classmage_1_1_node.html#af123050daa89e50f5468b630061aae53", null ],
+    [ "Terminate", "classmage_1_1_node.html#aa3dfb60e905aadef7537b1fb5bdc79e6", null ],
     [ "m_active", "classmage_1_1_node.html#ac4dd6c399de8b2a92df92365df7ecdac", null ],
+    [ "m_terminated", "classmage_1_1_node.html#aefb6986428c3dc24540af824a230b61d", null ],
     [ "m_transform", "classmage_1_1_node.html#a0b8161cc8480dcd9340309c3773c49f2", null ]
 ];

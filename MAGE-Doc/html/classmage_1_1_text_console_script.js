@@ -1,6 +1,6 @@
 var classmage_1_1_text_console_script =
 [
-    [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a5da87d9a6b1a70f31a9b906beb5587bc", null ],
+    [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a0a4ee756638b5d1d17ea90b646f056ca", null ],
     [ "TextConsoleScript", "classmage_1_1_text_console_script.html#ad31e204ced04dc42fb98397df6015198", null ],
     [ "TextConsoleScript", "classmage_1_1_text_console_script.html#a6d245efb103011f1b2e2c43c590c22bf", null ],
     [ "~TextConsoleScript", "classmage_1_1_text_console_script.html#a3269d6b792053d4ce13d63103ca5b4e9", null ],
@@ -21,5 +21,5 @@ var classmage_1_1_text_console_script =
     [ "m_nb_columns", "classmage_1_1_text_console_script.html#a6a4f3fdc2fb4be3c01e83363c5d7f631", null ],
     [ "m_nb_rows", "classmage_1_1_text_console_script.html#ac2e2d9630355f22945259d5a0af135ef", null ],
     [ "m_temp_buffer", "classmage_1_1_text_console_script.html#a6500bfd006f5c90d05f3da7f3e8e75a8", null ],
-    [ "m_text", "classmage_1_1_text_console_script.html#a761287353d8f9b031beb890c9f6c7203", null ]
+    [ "m_text", "classmage_1_1_text_console_script.html#a43ef712ae52d2776edba574d32f759bc", null ]
 ];

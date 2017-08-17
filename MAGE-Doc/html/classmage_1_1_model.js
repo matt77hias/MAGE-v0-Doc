@@ -13,6 +13,8 @@ var classmage_1_1_model =
     [ "GetMaterial", "classmage_1_1_model.html#aed33390bd172e034a76fa68093990174", null ],
     [ "GetMaterial", "classmage_1_1_model.html#aa6ba2f2fbcb5aae6c1112f120e5d146c", null ],
     [ "GetNumberOfIndices", "classmage_1_1_model.html#a37c9814a445159fd742bcc1b9a5a7b94", null ],
+    [ "GetShadowBehavior", "classmage_1_1_model.html#a497852d6f60cafcd1efaca7552a7179c", null ],
+    [ "GetShadowBehavior", "classmage_1_1_model.html#ab208a0396b8125d8b09d2a04df754b47", null ],
     [ "GetStartIndex", "classmage_1_1_model.html#a876fcfe369f12e2d7edb6b533dd06252", null ],
     [ "operator=", "classmage_1_1_model.html#a563515c64ec39cfcda9f6ca37576391b", null ],
     [ "operator=", "classmage_1_1_model.html#a084e30d15822bfefa79128f30a57cc02", null ],
@@ -23,5 +25,6 @@ var classmage_1_1_model =
     [ "m_material", "classmage_1_1_model.html#a93e080e5dc2c7c0672a278de76899122", null ],
     [ "m_mesh", "classmage_1_1_model.html#aecd2b4031c5df30fb5f7ed6d62810f73", null ],
     [ "m_nb_indices", "classmage_1_1_model.html#a1fcf80ed9f3002bd2319ef83f073ae75", null ],
+    [ "m_shadow_behavior", "classmage_1_1_model.html#a3f45e66d5ee066f5c6adf6d017660c34", null ],
     [ "m_start_index", "classmage_1_1_model.html#a63a3e697c9eb1606249de15cc7b818c3", null ]
 ];
