@@ -1,5 +1,14 @@
 var NAVTREEINDEX8 =
 {
+"structmage_1_1_compiled_shader.html#a5f825dd407fff77c365efbe9e4d3dee8":[1,0,0,17,1],
+"structmage_1_1_compiled_shader.html#a8960c4c808bd170ca00a50c05148ae8c":[1,0,0,17,3],
+"structmage_1_1_compiled_shader.html#abaacfe0cbd94d14dde20d5ce2209c374":[1,0,0,17,7],
+"structmage_1_1_compiled_shader.html#ae9dbc3c205d54cc89b9b0746b76b157b":[1,0,0,17,5],
+"structmage_1_1_condition_variable.html":[1,0,0,18],
+"structmage_1_1_condition_variable.html#a00691d5e29735da356f577bb5522017d":[1,0,0,18,12],
+"structmage_1_1_condition_variable.html#a0686e682d62d44ff1eb9ac45acbb0eab":[1,0,0,18,14],
+"structmage_1_1_condition_variable.html#a09073f0affc601f052fce541a17ba559":[1,0,0,18,1],
+"structmage_1_1_condition_variable.html#a15a1d797032d178c787a385d11522efb":[1,0,0,18,10],
 "structmage_1_1_condition_variable.html#a16507f71180938eb82af7e35d3ca5df7":[1,0,0,18,3],
 "structmage_1_1_condition_variable.html#a3f05c5b53b2530e9fdd1bb890aa375c4":[1,0,0,18,7],
 "structmage_1_1_condition_variable.html#a40e853cf65b0c3cb3788d2b8a45448af":[1,0,0,18,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX8 =
 "structmage_1_1_logging_configuration.html#a8e4ccd4301f5544213edd3b600cccff9":[1,0,0,57,1],
 "structmage_1_1_logging_configuration.html#a9a2b9343e49bd5befe10cf06225e5c83":[1,0,0,57,4],
 "structmage_1_1_logging_configuration.html#ab18d18c78e7104f4c677e6d08f31ca01":[1,0,0,57,0],
-"structmage_1_1_logging_configuration.html#ad5d3dd901720450fcf57d4b1b32fce15":[1,0,0,57,2],
-"structmage_1_1_logging_configuration.html#af35d0b0a2f5743944d3d9d66580074db":[1,0,0,57,7],
-"structmage_1_1_material.html":[1,0,0,60],
-"structmage_1_1_material.html#a046b0d8eece74bd68538fefd03c1f294":[1,0,0,60,9],
-"structmage_1_1_material.html#a04fad2f985ed5078a8217ebcfd51c3f0":[1,0,0,60,25],
-"structmage_1_1_material.html#a059dccc9de58535541ab4286b0bb73e4":[1,0,0,60,7],
-"structmage_1_1_material.html#a078a2c9388993523e29f287e20385b3f":[1,0,0,60,46],
-"structmage_1_1_material.html#a0a0f5fadd1a5553fba3b7b345ae0cd9a":[1,0,0,60,34],
-"structmage_1_1_material.html#a0be98911c56dedaa4fd2f8714fc8a793":[1,0,0,60,18],
-"structmage_1_1_material.html#a0df1804c29bfd9d2bbc606d6285dccec":[1,0,0,60,30]
+"structmage_1_1_logging_configuration.html#ad5d3dd901720450fcf57d4b1b32fce15":[1,0,0,57,2]
 };

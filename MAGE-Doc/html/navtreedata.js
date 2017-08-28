@@ -32,17 +32,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_constant_shading_pass.html#ada08b06e66c1d1da2f869b96b71f3202",
-"classmage_1_1_loadable.html#aad6ac6495924e0787c377d665a076f2a",
-"classmage_1_1_mouse.html#af99645fb4226077abee4532a5e663066",
-"classmage_1_1_render_mode_script.html#a8ca48ab27bef55314b1a822b827153b2",
-"classmage_1_1_shader.html#a0829beb106fdea24cc35832472951cce",
-"classmage_1_1_stats_script.html#afcbbf37839891d06b1331af3cc7f6e82",
-"functions_p.html",
-"structmage_1_1_condition_variable.html#a16507f71180938eb82af7e35d3ca5df7",
-"structmage_1_1_material.html#a196fd470a8bcedbb5986226b1425bd14",
-"structmage_1_1_read_write_mutex_lock.html#a0c31334330a9259b0b68d71b9ee13704",
-"structmage_1_1_vertex_position.html#ae00cb7667e411fefa4052b80a47ccfff"
+"classmage_1_1_constant_shading_pass.html#a948d1258f9bafad1be72765f8021b4ca",
+"classmage_1_1_loadable.html#a3853fa7d95ef2b5c8d27ff9884b73633",
+"classmage_1_1_mouse.html#aa62bca1d085e86eeff1bf07e232e2a24",
+"classmage_1_1_r_n_g.html#af0f87b95305e05fd560911e0068e6498",
+"classmage_1_1_scene_renderer.html#a9ee6d267f8cfb7826c16acd4fe0b7852",
+"classmage_1_1_stats_script.html#a6adacd651debb83254e1121f32c8f21e",
+"functions_func_x.html",
+"structmage_1_1_compiled_shader.html#a5f825dd407fff77c365efbe9e4d3dee8",
+"structmage_1_1_logging_configuration.html#af35d0b0a2f5743944d3d9d66580074db",
+"structmage_1_1_read_write_mutex.html#a9498ef85b52486342ba657f34369f89e",
+"structmage_1_1_vertex_position.html#a4e43cd06303beccd4791fdec9a13c47f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

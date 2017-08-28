@@ -1,5 +1,14 @@
 var NAVTREEINDEX9 =
 {
+"structmage_1_1_logging_configuration.html#af35d0b0a2f5743944d3d9d66580074db":[1,0,0,57,7],
+"structmage_1_1_material.html":[1,0,0,60],
+"structmage_1_1_material.html#a046b0d8eece74bd68538fefd03c1f294":[1,0,0,60,9],
+"structmage_1_1_material.html#a04fad2f985ed5078a8217ebcfd51c3f0":[1,0,0,60,25],
+"structmage_1_1_material.html#a059dccc9de58535541ab4286b0bb73e4":[1,0,0,60,7],
+"structmage_1_1_material.html#a078a2c9388993523e29f287e20385b3f":[1,0,0,60,46],
+"structmage_1_1_material.html#a0a0f5fadd1a5553fba3b7b345ae0cd9a":[1,0,0,60,34],
+"structmage_1_1_material.html#a0be98911c56dedaa4fd2f8714fc8a793":[1,0,0,60,18],
+"structmage_1_1_material.html#a0df1804c29bfd9d2bbc606d6285dccec":[1,0,0,60,30],
 "structmage_1_1_material.html#a196fd470a8bcedbb5986226b1425bd14":[1,0,0,60,45],
 "structmage_1_1_material.html#a1efbefd3f56a7ea01a2a3bfef261f3c0":[1,0,0,60,15],
 "structmage_1_1_material.html#a20c4db65d5fb89178c0f6b6db2f87cda":[1,0,0,60,10],
@@ -240,14 +249,5 @@ var NAVTREEINDEX9 =
 "structmage_1_1_read_write_mutex.html#a65c0ef8b687d48104b09a9d175e72236":[1,0,0,92,15],
 "structmage_1_1_read_write_mutex.html#a73676d9414658d63edfe443ee1d55c8b":[1,0,0,92,3],
 "structmage_1_1_read_write_mutex.html#a77fe51b87e5205d60ea045fa53bc1fa3":[1,0,0,92,12],
-"structmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7":[1,0,0,92,10],
-"structmage_1_1_read_write_mutex.html#a9498ef85b52486342ba657f34369f89e":[1,0,0,92,16],
-"structmage_1_1_read_write_mutex.html#aacb2f69e7e2b084147e1e45628e9dd67":[1,0,0,92,1],
-"structmage_1_1_read_write_mutex.html#aae10694de3862f2d1059477169883940":[1,0,0,92,0],
-"structmage_1_1_read_write_mutex.html#ab5cc5ca0afcca8a994c6468033a501bf":[1,0,0,92,2],
-"structmage_1_1_read_write_mutex.html#ab99adb4241990fa0dd2d3ba03322d1c3":[1,0,0,92,5],
-"structmage_1_1_read_write_mutex.html#acbe7553fff7cca2656f6f2b8f0471484":[1,0,0,92,13],
-"structmage_1_1_read_write_mutex.html#ad520a65bee5a8ac04671ee93895d9b28":[1,0,0,92,9],
-"structmage_1_1_read_write_mutex.html#add04196fda61967f81901bcba79938bc":[1,0,0,92,4],
-"structmage_1_1_read_write_mutex_lock.html":[1,0,0,93]
+"structmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7":[1,0,0,92,10]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX11 =
 {
+"structmage_1_1_vertex_position.html#a4e43cd06303beccd4791fdec9a13c47f":[1,0,0,139,12],
+"structmage_1_1_vertex_position.html#a593c015184b164cf9bcf82938d4db39f":[1,0,0,139,8],
+"structmage_1_1_vertex_position.html#a93f07ce2967b0ae2d22dede08b4fd3e0":[1,0,0,139,5],
+"structmage_1_1_vertex_position.html#aa63cdd41e8f23228372efb7631db3636":[1,0,0,139,13],
+"structmage_1_1_vertex_position.html#aa77211e4b45efed3d57f3170b9df6787":[1,0,0,139,2],
+"structmage_1_1_vertex_position.html#ab99ff01bb689bf62f693f13212d673ad":[1,0,0,139,7],
+"structmage_1_1_vertex_position.html#ac67b22c20ae993660be823e8e1d9b52d":[1,0,0,139,6],
+"structmage_1_1_vertex_position.html#aca7867e7a2d0cb50f32283dd91bb2aed":[1,0,0,139,1],
+"structmage_1_1_vertex_position.html#ad9c3ea68e2c1745446387d1eca28f25f":[1,0,0,139,11],
 "structmage_1_1_vertex_position.html#ae00cb7667e411fefa4052b80a47ccfff":[1,0,0,139,3],
 "structmage_1_1_vertex_position.html#ae78ac5fd76f3217ec72435beaa34ed6e":[1,0,0,139,4],
 "structmage_1_1_vertex_position_color.html":[1,0,0,140],

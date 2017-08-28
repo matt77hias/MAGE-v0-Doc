@@ -43,7 +43,7 @@ var hierarchy =
     [ "mage::ConstantBuffer< ModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< ModelTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< SceneBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< SceneTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< XMMATRIX >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantComponentPass", "classmage_1_1_constant_component_pass.html", null ],
     [ "mage::ConstantShadingPass", "classmage_1_1_constant_shading_pass.html", null ],
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],

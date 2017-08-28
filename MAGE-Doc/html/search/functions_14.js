@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['bindcomponents',['BindComponents',['../classmage_1_1_variable_shading_pass.html#a93c15987a836e36bde0c468057d15145',1,'mage::VariableShadingPass']]],
   ['value',['Value',['../structmage_1_1_variable_1_1_value.html#a36aa54fe0b4e80228e7dbee545d9cb38',1,'mage::Variable::Value::Value(const T &amp;value)'],['../structmage_1_1_variable_1_1_value.html#a962f7d07d601fd5d1a2c24f892607e16',1,'mage::Variable::Value::Value(const Value &amp;value)=default'],['../structmage_1_1_variable_1_1_value.html#aeadb858e9a40f211c787cacc2fb2843b',1,'mage::Variable::Value::Value(Value &amp;&amp;value)=default']]],
   ['vandercorput',['VanderCorput',['../namespacemage.html#a9285bae59174969f47a8192efa28c452',1,'mage']]],
   ['variable',['Variable',['../structmage_1_1_variable.html#a2891c12cc750548de92380489f3a9f49',1,'mage::Variable::Variable(VariableType type, const string &amp;name, const T &amp;value)'],['../structmage_1_1_variable.html#a778d347a0d63771cbaac45bcba594792',1,'mage::Variable::Variable(const Variable &amp;variable)'],['../structmage_1_1_variable.html#a49764740130a9b06033869fff0b634a9',1,'mage::Variable::Variable(Variable &amp;&amp;variable)=default']]],

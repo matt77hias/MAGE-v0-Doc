@@ -59,7 +59,7 @@ var searchData=
   ['constantbuffer_3c_20modelbuffer_20_3e',['ConstantBuffer&lt; ModelBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20modeltransformbuffer_20_3e',['ConstantBuffer&lt; ModelTransformBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20scenebuffer_20_3e',['ConstantBuffer&lt; SceneBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
-  ['constantbuffer_3c_20scenetransformbuffer_20_3e',['ConstantBuffer&lt; SceneTransformBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
+  ['constantbuffer_3c_20xmmatrix_20_3e',['ConstantBuffer&lt; XMMATRIX &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantcomponentpass',['ConstantComponentPass',['../classmage_1_1_constant_component_pass.html#acd197274863c82c9f1551c7e6171e4c9',1,'mage::ConstantComponentPass::ConstantComponentPass()'],['../classmage_1_1_constant_component_pass.html#ac3112acde3a0504febef699873efe1ff',1,'mage::ConstantComponentPass::ConstantComponentPass(const ConstantComponentPass &amp;render_pass)=delete'],['../classmage_1_1_constant_component_pass.html#a350d68fd2f8f17797361e7567d0337c7',1,'mage::ConstantComponentPass::ConstantComponentPass(ConstantComponentPass &amp;&amp;render_pass)']]],
   ['constantcomponentpass',['ConstantComponentPass',['../classmage_1_1_constant_component_pass.html',1,'mage']]],
   ['constantshadingpass',['ConstantShadingPass',['../classmage_1_1_constant_shading_pass.html',1,'mage']]],

@@ -195,6 +195,7 @@ var searchData=
   ['gettext',['GetText',['../classmage_1_1_sprite_text.html#adf93f6290fb55685aee478255e88792e',1,'mage::SpriteText']]],
   ['gettexture',['GetTexture',['../classmage_1_1_resource_manager.html#a2e2f86c3ab9c91900e8f10b94cafb06a',1,'mage::ResourceManager::GetTexture()'],['../classmage_1_1_sprite_image.html#a3c88344f40a588d9bd2ecfc922ab9ac4',1,'mage::SpriteImage::GetTexture()']]],
   ['gettexture2dsize',['GetTexture2DSize',['../namespacemage.html#ac324398320778df357bf8721335cba20',1,'mage::GetTexture2DSize(ID3D11ShaderResourceView *texture_srv)'],['../namespacemage.html#afdc2f1aa1d524696ce68fd9218b23ed1',1,'mage::GetTexture2DSize(ID3D11Texture2D *texture) noexcept']]],
+  ['gettexturetransform',['GetTextureTransform',['../classmage_1_1_model_node.html#aa5b732d1ad0f3d2ff8549731708fd63c',1,'mage::ModelNode::GetTextureTransform() noexcept'],['../classmage_1_1_model_node.html#a3686306f587abaa353450c45dd508dc4',1,'mage::ModelNode::GetTextureTransform() const noexcept']]],
   ['gettextwithcolors',['GetTextWithColors',['../classmage_1_1_sprite_text.html#a2493ad5e9a8c472dae8beb92f51dc882',1,'mage::SpriteText']]],
   ['gettitletext',['GetTitleText',['../classmage_1_1_main_window.html#a16ea3780659e00c8e4732b518c7c4a1e',1,'mage::MainWindow']]],
   ['gettotalblocksize',['GetTotalBlockSize',['../classmage_1_1_memory_arena.html#ac8e8ac4ba60cd2bb1d8dc8a5d4a9f4ad',1,'mage::MemoryArena']]],
