@@ -15,7 +15,7 @@ Inheritance diagram for mage\+:\+:Sprite\+Batch\+Mesh\+:\begin{figure}[H]
 \item 
 \hyperlink{classmage_1_1_sprite_batch_mesh_ae5b2219aa3d5bbfb216036dad9c12e5d}{Sprite\+Batch\+Mesh} ()
 \item 
-\hyperlink{classmage_1_1_sprite_batch_mesh_a7664804b05d08b7126c3efedee5c2588}{Sprite\+Batch\+Mesh} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
+\hyperlink{classmage_1_1_sprite_batch_mesh_a80fa57673d16ae4df42b1a1e12366b93}{Sprite\+Batch\+Mesh} (I\+D3\+D11\+Device2 $\ast$device)
 \item 
 \hyperlink{classmage_1_1_sprite_batch_mesh_af86adf72834bd4a8b5b55af3e91bd339}{Sprite\+Batch\+Mesh} (const \hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh} \&sprite\+\_\+batch\+\_\+mesh)=delete
 \item 
@@ -27,9 +27,9 @@ virtual \hyperlink{classmage_1_1_sprite_batch_mesh_a4f9ad5d0d58722499b9e7ddfac33
 \item 
 \hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh} \& \hyperlink{classmage_1_1_sprite_batch_mesh_a678700348ef43c46ed90d87d78c498de}{operator=} (\hyperlink{classmage_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh} \&\&sprite\+\_\+batch\+\_\+mesh)=delete
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_batch_mesh_ab790dbbd3cb685c1f14d7ca1e9ed639b}{Map\+Vertex\+Buffer} (D3\+D11\+\_\+\+M\+AP map\+\_\+type, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$mapped\+\_\+buffer)
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_sprite_batch_mesh_a0db94121d29999a3eb54f75140b683cf}{Map\+Vertex\+Buffer} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, D3\+D11\+\_\+\+M\+AP map\+\_\+type, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$mapped\+\_\+buffer)
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_mesh_a48ed983397a37a5874101b49c040b78c}{Unmap\+Vertex\+Buffer} ()
+void \hyperlink{classmage_1_1_sprite_batch_mesh_a6ee7f412e2bf381b51c3b24c6d5a0943}{Unmap\+Vertex\+Buffer} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -56,9 +56,9 @@ static const size\+\_\+t \hyperlink{classmage_1_1_sprite_batch_mesh_a95609879253
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_mesh_ad3b68ac00e3dfb09ed495ce66f1d6fda}{Setup\+Vertex\+Buffer} ()
+void \hyperlink{classmage_1_1_sprite_batch_mesh_a3872e35b71bc0222443b9e9c82052544}{Setup\+Vertex\+Buffer} (I\+D3\+D11\+Device2 $\ast$device)
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_mesh_a628ab5a3dd2df0c624b7dc99bcff7f98}{Setup\+Index\+Buffer} ()
+void \hyperlink{classmage_1_1_sprite_batch_mesh_a187dbda88edb466a0a1aff63b2dd12ff}{Setup\+Index\+Buffer} (I\+D3\+D11\+Device2 $\ast$device)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -76,7 +76,7 @@ A class of indexed sprite batch meshes.
 Constructs a sprite batch mesh.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The device associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyExceptions}{Exceptions}
@@ -85,24 +85,20 @@ The current engine must be loaded.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup the index buffer of the sprite batch mesh. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_sprite_batch_mesh_a7664804b05d08b7126c3efedee5c2588}{}\label{classmage_1_1_sprite_batch_mesh_a7664804b05d08b7126c3efedee5c2588} 
+\hypertarget{classmage_1_1_sprite_batch_mesh_a80fa57673d16ae4df42b1a1e12366b93}{}\label{classmage_1_1_sprite_batch_mesh_a80fa57673d16ae4df42b1a1e12366b93} 
 \index{mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}!Sprite\+Batch\+Mesh@{Sprite\+Batch\+Mesh}}
 \index{Sprite\+Batch\+Mesh@{Sprite\+Batch\+Mesh}!mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}}
 \subsubsection{\texorpdfstring{Sprite\+Batch\+Mesh()}{SpriteBatchMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily mage\+::\+Sprite\+Batch\+Mesh\+::\+Sprite\+Batch\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Batch\+Mesh\+::\+Sprite\+Batch\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a sprite batch mesh.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
 \end{DoxyParams}
 
@@ -147,19 +143,23 @@ Constructs a sprite batch mesh by moving the given sprite batch mesh.
 Destructs this sprite batch mesh. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_sprite_batch_mesh_ab790dbbd3cb685c1f14d7ca1e9ed639b}{}\label{classmage_1_1_sprite_batch_mesh_ab790dbbd3cb685c1f14d7ca1e9ed639b} 
+\hypertarget{classmage_1_1_sprite_batch_mesh_a0db94121d29999a3eb54f75140b683cf}{}\label{classmage_1_1_sprite_batch_mesh_a0db94121d29999a3eb54f75140b683cf} 
 \index{mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}!Map\+Vertex\+Buffer@{Map\+Vertex\+Buffer}}
 \index{Map\+Vertex\+Buffer@{Map\+Vertex\+Buffer}!mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}}
 \subsubsection{\texorpdfstring{Map\+Vertex\+Buffer()}{MapVertexBuffer()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Batch\+Mesh\+::\+Map\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+M\+AP}]{map\+\_\+type,  }\item[{D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$}]{mapped\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Sprite\+Batch\+Mesh\+::\+Map\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{D3\+D11\+\_\+\+M\+AP}]{map\+\_\+type,  }\item[{D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$}]{mapped\+\_\+buffer }\end{DoxyParamCaption})}
 
 Maps the vertex buffer of this this sprite batch mesh.
 
 \begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
 {\itshape mapped\+\_\+buffer} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
 \mbox{\tt in}  & {\em map\+\_\+type} & The map type specifying the C\+PU\textquotesingle{}s read and write permissions for the vertex buffer of this this sprite batch mesh. \\
 \hline
 \mbox{\tt out}  & {\em mapped\+\_\+buffer} & A pointer to the map the vertex buffer of this this sprite batch mesh to. \\
@@ -244,29 +244,56 @@ Moves the given sprite batch mesh to this sprite batch mesh.
 \begin{DoxyReturn}{Returns}
 A reference to the moved sprite batch mesh (i.\+e. this sprite batch mesh). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_sprite_batch_mesh_a628ab5a3dd2df0c624b7dc99bcff7f98}{}\label{classmage_1_1_sprite_batch_mesh_a628ab5a3dd2df0c624b7dc99bcff7f98} 
+\hypertarget{classmage_1_1_sprite_batch_mesh_a187dbda88edb466a0a1aff63b2dd12ff}{}\label{classmage_1_1_sprite_batch_mesh_a187dbda88edb466a0a1aff63b2dd12ff} 
 \index{mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
 \index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}}
 \subsubsection{\texorpdfstring{Setup\+Index\+Buffer()}{SetupIndexBuffer()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Sets up the index buffer of this sprite batch mesh. \hypertarget{classmage_1_1_sprite_batch_mesh_ad3b68ac00e3dfb09ed495ce66f1d6fda}{}\label{classmage_1_1_sprite_batch_mesh_ad3b68ac00e3dfb09ed495ce66f1d6fda} 
+Sets up the index buffer of this sprite batch mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_sprite_batch_mesh_a3872e35b71bc0222443b9e9c82052544}{}\label{classmage_1_1_sprite_batch_mesh_a3872e35b71bc0222443b9e9c82052544} 
 \index{mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}!Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}}
 \index{Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}!mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}}
 \subsubsection{\texorpdfstring{Setup\+Vertex\+Buffer()}{SetupVertexBuffer()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Sets up the vertex buffer of this sprite batch mesh. \hypertarget{classmage_1_1_sprite_batch_mesh_a48ed983397a37a5874101b49c040b78c}{}\label{classmage_1_1_sprite_batch_mesh_a48ed983397a37a5874101b49c040b78c} 
+Sets up the vertex buffer of this sprite batch mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_sprite_batch_mesh_a6ee7f412e2bf381b51c3b24c6d5a0943}{}\label{classmage_1_1_sprite_batch_mesh_a6ee7f412e2bf381b51c3b24c6d5a0943} 
 \index{mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}!Unmap\+Vertex\+Buffer@{Unmap\+Vertex\+Buffer}}
 \index{Unmap\+Vertex\+Buffer@{Unmap\+Vertex\+Buffer}!mage\+::\+Sprite\+Batch\+Mesh@{mage\+::\+Sprite\+Batch\+Mesh}}
 \subsubsection{\texorpdfstring{Unmap\+Vertex\+Buffer()}{UnmapVertexBuffer()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Unmap\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+Mesh\+::\+Unmap\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})}
 
 Unmaps the vertex buffer of this this sprite batch mesh.
 
 \begin{DoxyPrecond}{Precondition}
-The vertex buffer of this this sprite batch mesh must be mapped with \hyperlink{classmage_1_1_sprite_batch_mesh_ab790dbbd3cb685c1f14d7ca1e9ed639b}{mage\+::\+Sprite\+Batch\+Mesh\+::\+Map\+Vertex\+Buffer(\+D3\+D11\+\_\+\+M\+A\+P, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E $\ast$)} before it can be unmapped. 
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+The vertex buffer of this this sprite batch mesh must be mapped with \hyperlink{classmage_1_1_sprite_batch_mesh_a0db94121d29999a3eb54f75140b683cf}{mage\+::\+Sprite\+Batch\+Mesh\+::\+Map\+Vertex\+Buffer(\+I\+D3\+D11\+Device\+Context2 $\ast$, D3\+D11\+\_\+\+M\+A\+P, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E $\ast$)} before it can be unmapped. 
 \end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}

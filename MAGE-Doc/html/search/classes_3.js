@@ -10,5 +10,6 @@ var searchData=
   ['directionallight',['DirectionalLight',['../classmage_1_1_directional_light.html',1,'mage']]],
   ['displayconfiguration',['DisplayConfiguration',['../structmage_1_1_display_configuration.html',1,'mage']]],
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1_display_configurator.html',1,'mage']]],
-  ['dropshadowspritetext',['DropshadowSpriteText',['../classmage_1_1_dropshadow_sprite_text.html',1,'mage']]]
+  ['dropshadowspritetext',['DropshadowSpriteText',['../classmage_1_1_dropshadow_sprite_text.html',1,'mage']]],
+  ['ds',['DS',['../structmage_1_1_d_s.html',1,'mage']]]
 ];

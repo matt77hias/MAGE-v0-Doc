@@ -1,0 +1,35 @@
+var classmage_1_1_variable_shading_pass =
+[
+    [ "PSIndex", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4a", [
+      [ "Emissive", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa3cb4ee67c41d819920d72fcc11b9b566", null ],
+      [ "BRDF", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa4e69f1c58994758054563aa7392ffa4c", null ],
+      [ "BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa12126b75c3073e66dcaed7ac43317a00", null ],
+      [ "Count", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    ] ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a0c3b30167c1dcdf74daae080f2c799bc", null ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a98ce8bacba3894ff29d2a13d3a645d22", null ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#afcb297b4d400a6eb119846d4c04fc3d1", null ],
+    [ "~VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a1af7915285b239e8e6d14eb0f926dc4a", null ],
+    [ "BindPS", "classmage_1_1_variable_shading_pass.html#a9352c4b8b435254768c3407550458fb5", null ],
+    [ "BindPS", "classmage_1_1_variable_shading_pass.html#a0d7edd2336abc2791f93b180317f154f", null ],
+    [ "operator=", "classmage_1_1_variable_shading_pass.html#ad846c4f7ffc5b795ba1c0fa03bd6c2af", null ],
+    [ "operator=", "classmage_1_1_variable_shading_pass.html#a28702f255ccbbabd4b6e3177acd97a8b", null ],
+    [ "ProcessLights", "classmage_1_1_variable_shading_pass.html#ac54524faadca6e1297840164d59e3f65", null ],
+    [ "ProcessLights", "classmage_1_1_variable_shading_pass.html#ad95156e506cfe9d6e89226cc0168163d", null ],
+    [ "ProcessLights", "classmage_1_1_variable_shading_pass.html#acde7d5d255c0acd6982d53074b5c7b03", null ],
+    [ "ProcessModels", "classmage_1_1_variable_shading_pass.html#a2942c3f85f9951310f9e4e4b614b0c3f", null ],
+    [ "ProcessScene", "classmage_1_1_variable_shading_pass.html#ab8cf9a24346b42fa8f47ae726083a4a6", null ],
+    [ "Render", "classmage_1_1_variable_shading_pass.html#a03eb92f61b26692521db92af7f78fdaa", null ],
+    [ "UpdatePSs", "classmage_1_1_variable_shading_pass.html#a4e0a0e7709d99bb94f3263bdf478f484", null ],
+    [ "VariableShadingPass::BindComponents", "classmage_1_1_variable_shading_pass.html#a93c15987a836e36bde0c468057d15145", null ],
+    [ "m_bound_ps", "classmage_1_1_variable_shading_pass.html#acb1d0d78a9de9afc2d668d87134c5ec5", null ],
+    [ "m_brdf", "classmage_1_1_variable_shading_pass.html#ac6147f2068fd7727fe2d78584ff68767", null ],
+    [ "m_device_context", "classmage_1_1_variable_shading_pass.html#afff786ea38b64ba069866fdd6b525ba7", null ],
+    [ "m_directional_lights_buffer", "classmage_1_1_variable_shading_pass.html#ab69a4cb0b85f857a705887299efd17c7", null ],
+    [ "m_model_buffer", "classmage_1_1_variable_shading_pass.html#ab83602f0ffa6c0a3519ffaa467ae113a", null ],
+    [ "m_omni_lights_buffer", "classmage_1_1_variable_shading_pass.html#a143a6926802a7559db9feeb288ea7488", null ],
+    [ "m_ps", "classmage_1_1_variable_shading_pass.html#aacd5b6b967a0fcfe7510e289c3d630a0", null ],
+    [ "m_scene_buffer", "classmage_1_1_variable_shading_pass.html#ae55088f911acc5f2f997a5ff6bcf333c", null ],
+    [ "m_spot_lights_buffer", "classmage_1_1_variable_shading_pass.html#a0ce22880761ceecd13a65450ca280d7c", null ],
+    [ "m_vs", "classmage_1_1_variable_shading_pass.html#af052be9aac0bea955b881eca06e74c24", null ]
+];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['sharedhandle',['SharedHandle',['../namespacemage.html#ae70b3368a2dccc985c4ecbdf15a1a3c9',1,'mage']]],
-  ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]],
-  ['spotlightnode',['SpotLightNode',['../namespacemage.html#aeed5dee4ff6c591eabb0e9114256df4a',1,'mage']]],
-  ['spriteimagenode',['SpriteImageNode',['../namespacemage.html#abf1617b76794c524906f01d7939a15b0',1,'mage']]]
+  ['omnilightnode',['OmniLightNode',['../namespacemage.html#a1724c6e6b6b5ba535cdd967cbbb4a669',1,'mage']]],
+  ['orthographiccameranode',['OrthographicCameraNode',['../namespacemage.html#a7d62ab5877be3e14a9735014b77d3f55',1,'mage']]],
+  ['outlinespritetextnode',['OutlineSpriteTextNode',['../namespacemage.html#a868d7b38cf18f293a7da85bfb48e3ee9',1,'mage']]]
 ];

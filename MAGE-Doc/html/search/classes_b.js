@@ -1,7 +1,6 @@
 var searchData=
 [
   ['mainwindow',['MainWindow',['../classmage_1_1_main_window.html',1,'mage']]],
-  ['manhattaninputcontrollerscript',['ManhattanInputControllerScript',['../classmage_1_1_manhattan_input_controller_script.html',1,'mage']]],
   ['manhattanmotorscript',['ManhattanMotorScript',['../classmage_1_1_manhattan_motor_script.html',1,'mage']]],
   ['material',['Material',['../structmage_1_1_material.html',1,'mage']]],
   ['mdlreader',['MDLReader',['../classmage_1_1_m_d_l_reader.html',1,'mage']]],

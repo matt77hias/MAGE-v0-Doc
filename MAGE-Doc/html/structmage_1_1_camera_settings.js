@@ -1,0 +1,25 @@
+var structmage_1_1_camera_settings =
+[
+    [ "CameraSettings", "structmage_1_1_camera_settings.html#a08e24d87d4441af780a3f34504a41118", null ],
+    [ "CameraSettings", "structmage_1_1_camera_settings.html#a9dc529822866523b62b7d9388e04c5fd", null ],
+    [ "CameraSettings", "structmage_1_1_camera_settings.html#a006a0cb2758137b14c65c4788f25d41e", null ],
+    [ "~CameraSettings", "structmage_1_1_camera_settings.html#a738a93dc2e1aed2cac7a58af658984f3", null ],
+    [ "AddRenderLayer", "structmage_1_1_camera_settings.html#ab1dca8b8f52daf55614592e0bb640ae9", null ],
+    [ "GetBRDF", "structmage_1_1_camera_settings.html#a31504f7e9b23404ee1b200561b8dd789", null ],
+    [ "GetRenderMode", "structmage_1_1_camera_settings.html#a6673291bcfed8fa2c0a0041bf8f97f24", null ],
+    [ "HasRenderLayer", "structmage_1_1_camera_settings.html#a5f5f7e1019db2e65cddc1a62ae30efc7", null ],
+    [ "HasRenderLayers", "structmage_1_1_camera_settings.html#a838dfb8f3d32d3d23a7c72719ce182f3", null ],
+    [ "operator=", "structmage_1_1_camera_settings.html#aaabd402e2e9510d0e44ec31320baff87", null ],
+    [ "operator=", "structmage_1_1_camera_settings.html#a5104072c8c15e8dfc0b9459a537afe5e", null ],
+    [ "RemoveRenderLayer", "structmage_1_1_camera_settings.html#a358ab9da30af67ca8b1ea2a5eb5a2710", null ],
+    [ "Reset", "structmage_1_1_camera_settings.html#a4894cae6954c111339be554e8dd9562c", null ],
+    [ "ResetBRDF", "structmage_1_1_camera_settings.html#a1f8b3952282d153db4fb6416e9d933b7", null ],
+    [ "ResetRenderLayers", "structmage_1_1_camera_settings.html#afc9bcdb1f27adfb1c69a668a24113b46", null ],
+    [ "ResetRenderMode", "structmage_1_1_camera_settings.html#aa8facc0ddcd3e3d9f3c05c9f44c77b5d", null ],
+    [ "SetBRDF", "structmage_1_1_camera_settings.html#a8fbc3d6013d5f711decaf6f7348f2e15", null ],
+    [ "SetRenderMode", "structmage_1_1_camera_settings.html#ab0d6720a08e88e018c2a2e6097933d98", null ],
+    [ "ToggleRenderLayer", "structmage_1_1_camera_settings.html#a47c34af7eddc2a0f6256d137b5813a4c", null ],
+    [ "m_brdf", "structmage_1_1_camera_settings.html#ac6a51ea7c770af79de4f97b53cab83b7", null ],
+    [ "m_render_layer_mask", "structmage_1_1_camera_settings.html#a21fd14ff3b589a79b1c69b05fbee05cf", null ],
+    [ "m_render_mode", "structmage_1_1_camera_settings.html#aa4d5139b4e8668c58507ead30812c84b", null ]
+];

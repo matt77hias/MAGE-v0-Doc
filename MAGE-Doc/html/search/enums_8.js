@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tokenresult',['TokenResult',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037d',1,'mage']]]
+  ['spriteeffect',['SpriteEffect',['../namespacemage.html#a9cfe18123066ba4236f548f9de75d881',1,'mage']]],
+  ['spritesortmode',['SpriteSortMode',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014',1,'mage']]]
 ];

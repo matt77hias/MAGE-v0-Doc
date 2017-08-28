@@ -35,9 +35,9 @@ bool \hyperlink{classmage_1_1_node_a6fce6afdcfdde0e5dff5b219cee4f372}{Is\+Active
 \item 
 bool \hyperlink{classmage_1_1_node_a5fb6ac39c7e0d630944594cd5426f61a}{Is\+Passive} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_node_a3945ebd27cbb587d3fd0140df55eb4fb}{Make\+Active} () noexcept
+void \hyperlink{classmage_1_1_node_aefa62a09afd2b0d314a64e6d45f45a34}{Activate} () noexcept
 \item 
-void \hyperlink{classmage_1_1_node_aee4af2ccc576c422643d478ffafce5c4}{Make\+Passive} () noexcept
+void \hyperlink{classmage_1_1_node_afb4de0bc346a435745facfbdeda4ac6a}{Deactivate} () noexcept
 \item 
 void \hyperlink{classmage_1_1_node_af123050daa89e50f5468b630061aae53}{Set\+Active} (bool active) noexcept
 \item 
@@ -126,7 +126,13 @@ Constructs a node by moving the given node.
 Destructs this node. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_node_a11a7c052c5e4a6713d60aaad67dfde5d}{}\label{classmage_1_1_node_a11a7c052c5e4a6713d60aaad67dfde5d} 
+\hypertarget{classmage_1_1_node_aefa62a09afd2b0d314a64e6d45f45a34}{}\label{classmage_1_1_node_aefa62a09afd2b0d314a64e6d45f45a34} 
+\index{mage\+::\+Node@{mage\+::\+Node}!Activate@{Activate}}
+\index{Activate@{Activate}!mage\+::\+Node@{mage\+::\+Node}}
+\subsubsection{\texorpdfstring{Activate()}{Activate()}}
+{\footnotesize\ttfamily void mage\+::\+Node\+::\+Activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Activates this node (and its descendant nodes). \hypertarget{classmage_1_1_node_a11a7c052c5e4a6713d60aaad67dfde5d}{}\label{classmage_1_1_node_a11a7c052c5e4a6713d60aaad67dfde5d} 
 \index{mage\+::\+Node@{mage\+::\+Node}!Add\+Child\+Node@{Add\+Child\+Node}}
 \index{Add\+Child\+Node@{Add\+Child\+Node}!mage\+::\+Node@{mage\+::\+Node}}
 \subsubsection{\texorpdfstring{Add\+Child\+Node()}{AddChildNode()}}
@@ -165,7 +171,13 @@ A pointer to the clone of this node.
 
 Reimplemented in \hyperlink{classmage_1_1_derived_camera_node_aa965751029ebd6b41d3805b499a8304e}{mage\+::\+Derived\+Camera\+Node$<$ Camera\+T $>$}, \hyperlink{classmage_1_1_derived_sprite_node_ae1aa2b80d4ff8688635df017826c11a5}{mage\+::\+Derived\+Sprite\+Node$<$ Sprite\+T $>$}, \hyperlink{classmage_1_1_derived_light_node_acf8858989780bf45a45c55a7c5564314}{mage\+::\+Derived\+Light\+Node$<$ Light\+T $>$}, \hyperlink{classmage_1_1_camera_node_a002d3a2b41cda270a26ca5d8f3a17f55}{mage\+::\+Camera\+Node}, \hyperlink{classmage_1_1_sprite_node_a83a2a865b38670d64491a1066895e218}{mage\+::\+Sprite\+Node}, \hyperlink{classmage_1_1_scene_node_a42d0d53ab804d38ebd584d2de6490eeb}{mage\+::\+Scene\+Node}, \hyperlink{classmage_1_1_model_node_a34146201083015276b38240af307417f}{mage\+::\+Model\+Node}, and \hyperlink{classmage_1_1_light_node_aea97601d0a4b8073a1c655ca334af242}{mage\+::\+Light\+Node}.
 
-\hypertarget{classmage_1_1_node_afedb523a462952ec29aed7504d0a71d4}{}\label{classmage_1_1_node_afedb523a462952ec29aed7504d0a71d4} 
+\hypertarget{classmage_1_1_node_afb4de0bc346a435745facfbdeda4ac6a}{}\label{classmage_1_1_node_afb4de0bc346a435745facfbdeda4ac6a} 
+\index{mage\+::\+Node@{mage\+::\+Node}!Deactivate@{Deactivate}}
+\index{Deactivate@{Deactivate}!mage\+::\+Node@{mage\+::\+Node}}
+\subsubsection{\texorpdfstring{Deactivate()}{Deactivate()}}
+{\footnotesize\ttfamily void mage\+::\+Node\+::\+Deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Deactives this node (and its descendant nodes). \hypertarget{classmage_1_1_node_afedb523a462952ec29aed7504d0a71d4}{}\label{classmage_1_1_node_afedb523a462952ec29aed7504d0a71d4} 
 \index{mage\+::\+Node@{mage\+::\+Node}!For\+Each\+Child\+Node@{For\+Each\+Child\+Node}}
 \index{For\+Each\+Child\+Node@{For\+Each\+Child\+Node}!mage\+::\+Node@{mage\+::\+Node}}
 \subsubsection{\texorpdfstring{For\+Each\+Child\+Node()}{ForEachChildNode()}}
@@ -299,19 +311,7 @@ Checks whether this node is terminated or not.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this node is terminated. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_node_a3945ebd27cbb587d3fd0140df55eb4fb}{}\label{classmage_1_1_node_a3945ebd27cbb587d3fd0140df55eb4fb} 
-\index{mage\+::\+Node@{mage\+::\+Node}!Make\+Active@{Make\+Active}}
-\index{Make\+Active@{Make\+Active}!mage\+::\+Node@{mage\+::\+Node}}
-\subsubsection{\texorpdfstring{Make\+Active()}{MakeActive()}}
-{\footnotesize\ttfamily void mage\+::\+Node\+::\+Make\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Makes this node (and its descendant nodes) active. \hypertarget{classmage_1_1_node_aee4af2ccc576c422643d478ffafce5c4}{}\label{classmage_1_1_node_aee4af2ccc576c422643d478ffafce5c4} 
-\index{mage\+::\+Node@{mage\+::\+Node}!Make\+Passive@{Make\+Passive}}
-\index{Make\+Passive@{Make\+Passive}!mage\+::\+Node@{mage\+::\+Node}}
-\subsubsection{\texorpdfstring{Make\+Passive()}{MakePassive()}}
-{\footnotesize\ttfamily void mage\+::\+Node\+::\+Make\+Passive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Makes this node (and its descendant nodes) passive. \hypertarget{classmage_1_1_node_a65c1c55801a8e1d5354ac79d0c2fca6e}{}\label{classmage_1_1_node_a65c1c55801a8e1d5354ac79d0c2fca6e} 
+\hypertarget{classmage_1_1_node_a65c1c55801a8e1d5354ac79d0c2fca6e}{}\label{classmage_1_1_node_a65c1c55801a8e1d5354ac79d0c2fca6e} 
 \index{mage\+::\+Node@{mage\+::\+Node}!On\+Active\+Change@{On\+Active\+Change}}
 \index{On\+Active\+Change@{On\+Active\+Change}!mage\+::\+Node@{mage\+::\+Node}}
 \subsubsection{\texorpdfstring{On\+Active\+Change()}{OnActiveChange()}}

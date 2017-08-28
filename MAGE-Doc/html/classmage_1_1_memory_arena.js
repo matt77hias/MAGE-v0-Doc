@@ -1,13 +1,13 @@
 var classmage_1_1_memory_arena =
 [
-    [ "MemoryBlock", "classmage_1_1_memory_arena.html#ab54de06ee2400627e1350794084a84c3", null ],
+    [ "MemoryBlock", "classmage_1_1_memory_arena.html#af41064ba5e850e5541873b3c8acb5067", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a5182142d8ae2c7bc3eb1bae4f1a10d29", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a98829c5a87ba028c376f100cca09e876", null ],
     [ "~MemoryArena", "classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a2e63b11c535dbfefd69d071466be9ce1", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a6797843db400848170d0b448a8a7e3b5", null ],
-    [ "GetCurrentBlockPtr", "classmage_1_1_memory_arena.html#a3e90263ee1b9131e8cc9f438309ebfad", null ],
+    [ "GetCurrentBlockPtr", "classmage_1_1_memory_arena.html#a7bdbc9da32c1f8d49ce5d2f153870284", null ],
     [ "GetCurrentBlockSize", "classmage_1_1_memory_arena.html#a0b41d6901c3519f046cd551931f72c1b", null ],
     [ "GetMaximumBlockSize", "classmage_1_1_memory_arena.html#a6786cf52a03777580b439cafdd8ff8f9", null ],
     [ "GetTotalBlockSize", "classmage_1_1_memory_arena.html#ac8e8ac4ba60cd2bb1d8dc8a5d4a9f4ad", null ],

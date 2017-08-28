@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resourcemap',['ResourceMap',['../namespacemage.html#a3aaea9153b9e896914d7a1155d8c7bbe',1,'mage']]]
+  ['normalspritetextnode',['NormalSpriteTextNode',['../namespacemage.html#a4f87e5bb6276a3e44e45c95427906b3d',1,'mage']]]
 ];

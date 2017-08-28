@@ -1,0 +1,200 @@
+\hypertarget{classmage_1_1_constant_shading_pass}{}\section{mage\+:\+:Constant\+Shading\+Pass Class Reference}
+\label{classmage_1_1_constant_shading_pass}\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+
+
+{\ttfamily \#include $<$constant\+\_\+shading\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass_a21a8614cd67999bec82d260eb9aa78d7}{Constant\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass_a0dd8af518c8f6444368d64f9e24a3a13}{Constant\+Shading\+Pass} (const \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass_afeb558851130d64579930be81198e946}{Constant\+Shading\+Pass} (\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&\&render\+\_\+pass)
+\item 
+virtual \hyperlink{classmage_1_1_constant_shading_pass_a2ef56dc45910519d5e0137b14768738e}{$\sim$\+Constant\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \& \hyperlink{classmage_1_1_constant_shading_pass_ada08b06e66c1d1da2f869b96b71f3202}{operator=} (const \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \& \hyperlink{classmage_1_1_constant_shading_pass_ae5ea38d9739b1a16257ee0a69c95b406}{operator=} (\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&\&render\+\_\+pass)=delete
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_a0900c426f0c4c427d81d8035c2c30f3f}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_abafb0de9102537a8a570ea8ee5de8ec6}{Bind\+Components} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+world, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object)
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_a677c8e08255d981eb2ca1a3ffe8fc938}{Process\+Scene} (F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_aced4c8f1cf32f09f28e77041a4826111}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_aebd6c8f2bd5190d61de7d8d0831dde07}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_a749604273517be2a09994e0950fdb509}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+\item 
+void \hyperlink{classmage_1_1_constant_shading_pass_a2f026acb4e166f30101b4ebb4f3ceac6}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_constant_shading_pass_a743bb9ce4f40514498f36c2d4cf0b32c}{m\+\_\+device\+\_\+context}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_constant_shading_pass_a3dc25d352bc4b9dcf9b06993e2e46c62}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_constant_shading_pass_aa7768c70069825ef231bcaa1cba15263}{m\+\_\+ps}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Model\+Buffer $>$ \hyperlink{classmage_1_1_constant_shading_pass_ae828b9ae1e4cd281f346aca0db34c015}{m\+\_\+model\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Buffer $>$ \hyperlink{classmage_1_1_constant_shading_pass_a90b8b9d41ed31cf1a60d5e8949fee781}{m\+\_\+scene\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Directional\+Light\+Buffer $>$ \hyperlink{classmage_1_1_constant_shading_pass_aa4851a004cdbb4f30bfdb3f48cd62bca}{m\+\_\+directional\+\_\+lights\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Omni\+Light\+Buffer $>$ \hyperlink{classmage_1_1_constant_shading_pass_a6223b4fc31add5a57e9cc7f9d6d4ef60}{m\+\_\+omni\+\_\+lights\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Spot\+Light\+Buffer $>$ \hyperlink{classmage_1_1_constant_shading_pass_ac65e692c0503240ce29aabd0f7a29b9d}{m\+\_\+spot\+\_\+lights\+\_\+buffer}
+\item 
+const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_constant_shading_pass_aa5c9222b0de16e351b90752150d584d1}{m\+\_\+white}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_constant_shading_pass_a21a8614cd67999bec82d260eb9aa78d7}{}\label{classmage_1_1_constant_shading_pass_a21a8614cd67999bec82d260eb9aa78d7} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Constant\+Shading\+Pass@{Constant\+Shading\+Pass}}
+\index{Constant\+Shading\+Pass@{Constant\+Shading\+Pass}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Shading\+Pass()}{ConstantShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Shading\+Pass\+::\+Constant\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a0dd8af518c8f6444368d64f9e24a3a13}{}\label{classmage_1_1_constant_shading_pass_a0dd8af518c8f6444368d64f9e24a3a13} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Constant\+Shading\+Pass@{Constant\+Shading\+Pass}}
+\index{Constant\+Shading\+Pass@{Constant\+Shading\+Pass}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Shading\+Pass()}{ConstantShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Shading\+Pass\+::\+Constant\+Shading\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_afeb558851130d64579930be81198e946}{}\label{classmage_1_1_constant_shading_pass_afeb558851130d64579930be81198e946} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Constant\+Shading\+Pass@{Constant\+Shading\+Pass}}
+\index{Constant\+Shading\+Pass@{Constant\+Shading\+Pass}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Shading\+Pass()}{ConstantShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Shading\+Pass\+::\+Constant\+Shading\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a2ef56dc45910519d5e0137b14768738e}{}\label{classmage_1_1_constant_shading_pass_a2ef56dc45910519d5e0137b14768738e} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!````~Constant\+Shading\+Pass@{$\sim$\+Constant\+Shading\+Pass}}
+\index{````~Constant\+Shading\+Pass@{$\sim$\+Constant\+Shading\+Pass}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Constant\+Shading\+Pass()}{~ConstantShadingPass()}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Shading\+Pass\+::$\sim$\+Constant\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_constant_shading_pass_abafb0de9102537a8a570ea8ee5de8ec6}{}\label{classmage_1_1_constant_shading_pass_abafb0de9102537a8a570ea8ee5de8ec6} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Bind\+Components@{Bind\+Components}}
+\index{Bind\+Components@{Bind\+Components}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Components()}{BindComponents()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Bind\+Components (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_ada08b06e66c1d1da2f869b96b71f3202}{}\label{classmage_1_1_constant_shading_pass_ada08b06e66c1d1da2f869b96b71f3202} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass}\& mage\+::\+Constant\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_ae5ea38d9739b1a16257ee0a69c95b406}{}\label{classmage_1_1_constant_shading_pass_ae5ea38d9739b1a16257ee0a69c95b406} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass}\& mage\+::\+Constant\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_aced4c8f1cf32f09f28e77041a4826111}{}\label{classmage_1_1_constant_shading_pass_aced4c8f1cf32f09f28e77041a4826111} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Process\+Lights@{Process\+Lights}}
+\index{Process\+Lights@{Process\+Lights}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_aebd6c8f2bd5190d61de7d8d0831dde07}{}\label{classmage_1_1_constant_shading_pass_aebd6c8f2bd5190d61de7d8d0831dde07} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Process\+Lights@{Process\+Lights}}
+\index{Process\+Lights@{Process\+Lights}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a749604273517be2a09994e0950fdb509}{}\label{classmage_1_1_constant_shading_pass_a749604273517be2a09994e0950fdb509} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Process\+Lights@{Process\+Lights}}
+\index{Process\+Lights@{Process\+Lights}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a2f026acb4e166f30101b4ebb4f3ceac6}{}\label{classmage_1_1_constant_shading_pass_a2f026acb4e166f30101b4ebb4f3ceac6} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Process\+Models@{Process\+Models}}
+\index{Process\+Models@{Process\+Models}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a677c8e08255d981eb2ca1a3ffe8fc938}{}\label{classmage_1_1_constant_shading_pass_a677c8e08255d981eb2ca1a3ffe8fc938} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Process\+Scene@{Process\+Scene}}
+\index{Process\+Scene@{Process\+Scene}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Scene()}{ProcessScene()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Process\+Scene (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a0900c426f0c4c427d81d8035c2c30f3f}{}\label{classmage_1_1_constant_shading_pass_a0900c426f0c4c427d81d8035c2c30f3f} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Shading\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_constant_shading_pass_a743bb9ce4f40514498f36c2d4cf0b32c}{}\label{classmage_1_1_constant_shading_pass_a743bb9ce4f40514498f36c2d4cf0b32c} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_aa4851a004cdbb4f30bfdb3f48cd62bca}{}\label{classmage_1_1_constant_shading_pass_aa4851a004cdbb4f30bfdb3f48cd62bca} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+directional\+\_\+lights\+\_\+buffer@{m\+\_\+directional\+\_\+lights\+\_\+buffer}}
+\index{m\+\_\+directional\+\_\+lights\+\_\+buffer@{m\+\_\+directional\+\_\+lights\+\_\+buffer}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+directional\+\_\+lights\+\_\+buffer}{m\_directional\_lights\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Directional\+Light\+Buffer $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+directional\+\_\+lights\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_ae828b9ae1e4cd281f346aca0db34c015}{}\label{classmage_1_1_constant_shading_pass_ae828b9ae1e4cd281f346aca0db34c015} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Model\+Buffer $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a6223b4fc31add5a57e9cc7f9d6d4ef60}{}\label{classmage_1_1_constant_shading_pass_a6223b4fc31add5a57e9cc7f9d6d4ef60} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+omni\+\_\+lights\+\_\+buffer@{m\+\_\+omni\+\_\+lights\+\_\+buffer}}
+\index{m\+\_\+omni\+\_\+lights\+\_\+buffer@{m\+\_\+omni\+\_\+lights\+\_\+buffer}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+lights\+\_\+buffer}{m\_omni\_lights\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Omni\+Light\+Buffer $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+omni\+\_\+lights\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_aa7768c70069825ef231bcaa1cba15263}{}\label{classmage_1_1_constant_shading_pass_aa7768c70069825ef231bcaa1cba15263} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a90b8b9d41ed31cf1a60d5e8949fee781}{}\label{classmage_1_1_constant_shading_pass_a90b8b9d41ed31cf1a60d5e8949fee781} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}}
+\index{m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+scene\+\_\+buffer}{m\_scene\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Buffer $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+scene\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_ac65e692c0503240ce29aabd0f7a29b9d}{}\label{classmage_1_1_constant_shading_pass_ac65e692c0503240ce29aabd0f7a29b9d} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+spot\+\_\+lights\+\_\+buffer@{m\+\_\+spot\+\_\+lights\+\_\+buffer}}
+\index{m\+\_\+spot\+\_\+lights\+\_\+buffer@{m\+\_\+spot\+\_\+lights\+\_\+buffer}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+spot\+\_\+lights\+\_\+buffer}{m\_spot\_lights\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ Spot\+Light\+Buffer $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+spot\+\_\+lights\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_a3dc25d352bc4b9dcf9b06993e2e46c62}{}\label{classmage_1_1_constant_shading_pass_a3dc25d352bc4b9dcf9b06993e2e46c62} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_constant_shading_pass_aa5c9222b0de16e351b90752150d584d1}{}\label{classmage_1_1_constant_shading_pass_aa5c9222b0de16e351b90752150d584d1} 
+\index{mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}!m\+\_\+white@{m\+\_\+white}}
+\index{m\+\_\+white@{m\+\_\+white}!mage\+::\+Constant\+Shading\+Pass@{mage\+::\+Constant\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+white}{m\_white}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Constant\+Shading\+Pass\+::m\+\_\+white\hspace{0.3cm}{\ttfamily [private]}}
+

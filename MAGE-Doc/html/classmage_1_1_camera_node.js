@@ -8,11 +8,13 @@ var classmage_1_1_camera_node =
     [ "CloneImplementation", "classmage_1_1_camera_node.html#a002d3a2b41cda270a26ca5d8f3a17f55", null ],
     [ "GetCamera", "classmage_1_1_camera_node.html#aa9887e3bf192d6c078aae2430732cbf8", null ],
     [ "GetCamera", "classmage_1_1_camera_node.html#aa911263cfce8cec2a42c6d03d25af606", null ],
-    [ "GetViewport", "classmage_1_1_camera_node.html#a9035f65bf3828e2dfe655676c29385f4", null ],
+    [ "GetSettings", "classmage_1_1_camera_node.html#a0bd616c44db36301845b02a03f1db5ba", null ],
+    [ "GetSettings", "classmage_1_1_camera_node.html#a1098f7929715018978b1bb8ac00c7148", null ],
+    [ "GetViewport", "classmage_1_1_camera_node.html#ac280168901be6f8bdf03300f0b8c1a69", null ],
+    [ "GetViewport", "classmage_1_1_camera_node.html#a09a761526f36b9547d29917835e907d6", null ],
     [ "operator=", "classmage_1_1_camera_node.html#a03442d51e4279717f6692e0a731967a1", null ],
     [ "operator=", "classmage_1_1_camera_node.html#a8da019549eeac6c4d7d6d7c4017dd498", null ],
-    [ "SetViewport", "classmage_1_1_camera_node.html#a486933320eea7ca6965c7c561305b2ea", null ],
-    [ "SetViewport", "classmage_1_1_camera_node.html#a0041bf1b18a52ed7d229c4bdda0531a8", null ],
     [ "m_camera", "classmage_1_1_camera_node.html#a18f00f7ccd0c677043e11a1b3085dbfb", null ],
-    [ "m_viewport", "classmage_1_1_camera_node.html#af0e00b69461dc77c11af3a0325ba4136", null ]
+    [ "m_settings", "classmage_1_1_camera_node.html#aa8b1f1204534b3ee271e62b7cfe0f833", null ],
+    [ "m_viewport", "classmage_1_1_camera_node.html#a338e6f3112a167a7f81de59c7e33e87b", null ]
 ];

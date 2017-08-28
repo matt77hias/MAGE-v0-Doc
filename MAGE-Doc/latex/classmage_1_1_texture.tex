@@ -33,16 +33,10 @@ virtual \hyperlink{classmage_1_1_texture_a81664804ac0259e8c67851409ee106fa}{$\si
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_texture_ac48cd0477d9771666e3929d72ee4e419}{Get} () const noexcept
 \item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$const  $\ast$ \hyperlink{classmage_1_1_texture_a35bde0f3a226f261d82fb3dd792631ad}{Get\+Address} () const noexcept
-\item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$ \hyperlink{classmage_1_1_texture_a4f64ce2ddf3cee7283613e9dbb137e23}{Get\+Address} () noexcept
-\item 
 bool \hyperlink{classmage_1_1_texture_aa795442d72c6ea0cb8137e293c95922c}{Has\+Alpha} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
-\item 
-I\+D3\+D11\+Device2 $\ast$const \hyperlink{classmage_1_1_texture_ad5409f37b321649bc1a12bcee8eb661b}{m\+\_\+device}
 \item 
 \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{classmage_1_1_texture_a8666bb39618e89e782c7cfeabebcc2b0}{m\+\_\+texture\+\_\+srv}
 \end{DoxyCompactItemize}
@@ -61,7 +55,7 @@ A class of textures.
 Constructs a texture.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The device associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -83,6 +77,8 @@ Constructs a texture.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
+
+The renderer associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -105,7 +101,7 @@ Constructs a texture.
 Constructs a 2D texture.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The device associated with the current engine must be loaded. 
 
 {\itshape desc} is not equal to {\ttfamily nullptr}. 
 
@@ -202,28 +198,6 @@ Returns a pointer to the shader resource view of this texture.
 \begin{DoxyReturn}{Returns}
 A pointer to the shader resource view of this texture. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_texture_a35bde0f3a226f261d82fb3dd792631ad}{}\label{classmage_1_1_texture_a35bde0f3a226f261d82fb3dd792631ad} 
-\index{mage\+::\+Texture@{mage\+::\+Texture}!Get\+Address@{Get\+Address}}
-\index{Get\+Address@{Get\+Address}!mage\+::\+Texture@{mage\+::\+Texture}}
-\subsubsection{\texorpdfstring{Get\+Address()}{GetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$ const$\ast$ mage\+::\+Texture\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of this texture.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the pointer to the shader resource view of this texture. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_texture_a4f64ce2ddf3cee7283613e9dbb137e23}{}\label{classmage_1_1_texture_a4f64ce2ddf3cee7283613e9dbb137e23} 
-\index{mage\+::\+Texture@{mage\+::\+Texture}!Get\+Address@{Get\+Address}}
-\index{Get\+Address@{Get\+Address}!mage\+::\+Texture@{mage\+::\+Texture}}
-\subsubsection{\texorpdfstring{Get\+Address()}{GetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$$\ast$ mage\+::\+Texture\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of this texture.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the pointer to the shader resource view of this texture. 
-\end{DoxyReturn}
 \hypertarget{classmage_1_1_texture_aa795442d72c6ea0cb8137e293c95922c}{}\label{classmage_1_1_texture_aa795442d72c6ea0cb8137e293c95922c} 
 \index{mage\+::\+Texture@{mage\+::\+Texture}!Has\+Alpha@{Has\+Alpha}}
 \index{Has\+Alpha@{Has\+Alpha}!mage\+::\+Texture@{mage\+::\+Texture}}
@@ -270,13 +244,7 @@ A reference to the moved texture (i.\+e. this texture).
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_texture_ad5409f37b321649bc1a12bcee8eb661b}{}\label{classmage_1_1_texture_ad5409f37b321649bc1a12bcee8eb661b} 
-\index{mage\+::\+Texture@{mage\+::\+Texture}!m\+\_\+device@{m\+\_\+device}}
-\index{m\+\_\+device@{m\+\_\+device}!mage\+::\+Texture@{mage\+::\+Texture}}
-\subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
-{\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ const mage\+::\+Texture\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the device of this texture. \hypertarget{classmage_1_1_texture_a8666bb39618e89e782c7cfeabebcc2b0}{}\label{classmage_1_1_texture_a8666bb39618e89e782c7cfeabebcc2b0} 
+\hypertarget{classmage_1_1_texture_a8666bb39618e89e782c7cfeabebcc2b0}{}\label{classmage_1_1_texture_a8666bb39618e89e782c7cfeabebcc2b0} 
 \index{mage\+::\+Texture@{mage\+::\+Texture}!m\+\_\+texture\+\_\+srv@{m\+\_\+texture\+\_\+srv}}
 \index{m\+\_\+texture\+\_\+srv@{m\+\_\+texture\+\_\+srv}!mage\+::\+Texture@{mage\+::\+Texture}}
 \subsubsection{\texorpdfstring{m\+\_\+texture\+\_\+srv}{m\_texture\_srv}}
