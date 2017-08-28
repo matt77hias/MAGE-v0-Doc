@@ -8,6 +8,7 @@ var searchData=
   ['derivedspritenode',['DerivedSpriteNode',['../classmage_1_1_derived_sprite_node.html',1,'mage']]],
   ['direction3',['Direction3',['../structmage_1_1_direction3.html',1,'mage']]],
   ['directionallight',['DirectionalLight',['../classmage_1_1_directional_light.html',1,'mage']]],
+  ['directionallightbuffer',['DirectionalLightBuffer',['../structmage_1_1_directional_light_buffer.html',1,'mage']]],
   ['displayconfiguration',['DisplayConfiguration',['../structmage_1_1_display_configuration.html',1,'mage']]],
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1_display_configurator.html',1,'mage']]],
   ['dropshadowspritetext',['DropshadowSpriteText',['../classmage_1_1_dropshadow_sprite_text.html',1,'mage']]],

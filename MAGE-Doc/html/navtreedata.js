@@ -37,12 +37,15 @@ var NAVTREEINDEX =
 "classmage_1_1_mouse.html#aa62bca1d085e86eeff1bf07e232e2a24",
 "classmage_1_1_r_n_g.html#af0f87b95305e05fd560911e0068e6498",
 "classmage_1_1_scene_renderer.html#a9ee6d267f8cfb7826c16acd4fe0b7852",
-"classmage_1_1_stats_script.html#a6adacd651debb83254e1121f32c8f21e",
-"functions_func_x.html",
-"structmage_1_1_compiled_shader.html#a5f825dd407fff77c365efbe9e4d3dee8",
-"structmage_1_1_logging_configuration.html#af35d0b0a2f5743944d3d9d66580074db",
-"structmage_1_1_read_write_mutex.html#a9498ef85b52486342ba657f34369f89e",
-"structmage_1_1_vertex_position.html#a4e43cd06303beccd4791fdec9a13c47f"
+"classmage_1_1_sprite_text.html#a64d0e77bafcbdf26b6c39423540e4f20",
+"classmage_1_1_writer.html#a81ea888d1b170515713432ca28629ceb",
+"structmage_1_1_camera_settings.html#ab0d6720a08e88e018c2a2e6097933d98",
+"structmage_1_1_g_s.html#a659dc45c958591ec1187e95aec96671d",
+"structmage_1_1_normal3.html#ab8fd629ae1e399b468a229fc4ea58222",
+"structmage_1_1_scene_fog.html#af019127d949d50173c9d4af51a8dcaef",
+"structmage_1_1_texture_transform.html#ad23596d5d9bc99978c3bc0f54c280dec",
+"structmage_1_1_transform_node.html#afb966684b63c5e24845fa93a53802b5f",
+"structmage_1_1_viewport.html#a15ca5c3fcdf874c52ac648f38784c2b3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

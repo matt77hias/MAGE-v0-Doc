@@ -4,8 +4,7 @@ var menudata={children:[
 {text:'Namespace List',url:'namespaces.html'},
 {text:'Namespace Members',url:'namespacemembers.html',children:[
 {text:'All',url:'namespacemembers.html',children:[
-{text:'_',url:'namespacemembers.html#index__'},
-{text:'a',url:'namespacemembers_a.html#index_a'},
+{text:'a',url:'namespacemembers.html#index_a'},
 {text:'b',url:'namespacemembers_b.html#index_b'},
 {text:'c',url:'namespacemembers_c.html#index_c'},
 {text:'d',url:'namespacemembers_d.html#index_d'},
@@ -27,8 +26,7 @@ var menudata={children:[
 {text:'w',url:'namespacemembers_w.html#index_w'},
 {text:'x',url:'namespacemembers_x.html#index_x'}]},
 {text:'Functions',url:'namespacemembers_func.html',children:[
-{text:'_',url:'namespacemembers_func.html#index__'},
-{text:'a',url:'namespacemembers_func_a.html#index_a'},
+{text:'a',url:'namespacemembers_func.html#index_a'},
 {text:'b',url:'namespacemembers_func_b.html#index_b'},
 {text:'c',url:'namespacemembers_func_c.html#index_c'},
 {text:'d',url:'namespacemembers_func_d.html#index_d'},
