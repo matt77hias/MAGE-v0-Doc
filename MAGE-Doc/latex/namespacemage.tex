@@ -1880,8 +1880,6 @@ A struct of spotlight buffers used by shaders.
 
 A struct of scene buffers used by shaders.
 
-A struct of scene transform buffers used by shaders.
-
 A struct of Cartesian axes systems.
 
 A struct of sprite transforms.
@@ -2084,8 +2082,6 @@ Moves the given scene buffer to this scene buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved scene buffer (i.\+e. this scene buffer).
 \end{DoxyReturn}
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this scene buffer for use in H\+L\+SL.
-
 The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this scene buffer for use in H\+L\+SL.
 
 The ambient light intensity of this scene buffer.
@@ -2103,48 +2099,6 @@ The distance at which intensity falloff starts due to fog of this scene buffer.
 The color of the fog of this scene buffer.
 
 The distance range where intensity falloff occurs due to fog of this scene buffer.
-
-Constructs a scene transform buffer.
-
-Constructs a scene transform buffer from the given scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to copy.\\
-\hline
-\end{DoxyParams}
-Constructs a scene transform buffer by moving the given scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to move.\\
-\hline
-\end{DoxyParams}
-Destructs this scene transform buffer.
-
-Copies the given scene transform buffer to this scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to copy. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the copy of the given scene transform buffer (i.\+e. this scene transform buffer).
-\end{DoxyReturn}
-Moves the given scene transform buffer to this scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to move. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the moved scene transform buffer (i.\+e. this scene transform buffer).
-\end{DoxyReturn}
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this scene transform buffer for use in H\+L\+SL.
-
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this scene transform buffer for use in H\+L\+SL.
 
 Constructs a Cartesian axes system.
 
@@ -2557,6 +2511,24 @@ Adds the given rotation component to the rotation component of this sprite trans
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
 \hline
 \end{DoxyParams}
+Adds the given rotation component to the rotation component of this sprite transform and clamps the resulting rotation component of this sprite transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
 Returns the rotation component of this sprite transform.
 
 \begin{DoxyReturn}{Returns}
@@ -2889,11 +2861,15 @@ Returns the scale component of this sprite transform.
 \begin{DoxyReturn}{Returns}
 The scale component of this sprite transform.
 \end{DoxyReturn}
-Returns the matrix of this sprite transform.
+Returns the (object-\/to-\/parent) matrix of this sprite transform.
 
 \begin{DoxyReturn}{Returns}
-The matrix of this sprite transform.
+The (object-\/to-\/parent) matrix of this sprite transform.
 \end{DoxyReturn}
+Sets this sprite transform to dirty.
+
+Updates the (object-\/to-\/parent) transform matrix of this sprite transform if dirty.
+
 The translation component of this sprite transform.
 
 The depth component of this sprite transform.
@@ -2903,6 +2879,10 @@ The rotation component (in radians) of this sprite transform.
 The rotation origin of this sprite transform.
 
 The scale component of this sprite transform.
+
+The cached (object-\/to-\/parent) transform matrix of this sprite transform.
+
+A flag indicating whether the (object-\/to-\/parent) transform matrix of this sprite transform is dirty.
 
 Constructs a texture transform from the given translation, depth, rotation, rotation origin and scale component.
 
@@ -3069,6 +3049,24 @@ Adds the given rotation component to the rotation component of this texture tran
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this texture transform and clamps the resulting rotation component of this texture transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the rotation component of this texture transform.
@@ -3275,18 +3273,26 @@ Returns the scale component of this texture transform.
 \begin{DoxyReturn}{Returns}
 The scale component of this texture transform.
 \end{DoxyReturn}
-Returns the matrix of this texture transform.
+Returns the (object-\/to-\/parent) matrix of this texture transform.
 
 \begin{DoxyReturn}{Returns}
-The matrix of this texture transform.
+The (object-\/to-\/parent) matrix of this texture transform.
 \end{DoxyReturn}
+Sets this texture transform to dirty.
+
+Updates the (object-\/to-\/parent) transform matrix of this texture transform if dirty.
+
 The translation component of this texture transform.
 
 The rotation component (in radians) of this texture transform.
 
+A flag indicating whether the (object-\/to-\/parent) transform matrix of this texture transform is dirty.
+
 The rotation origin of this texture transform.
 
 The scale component of this texture transform.
+
+The cached (object-\/to-\/parent) transform matrix of this texture transform.
 
 Constructs a transform from the given translation, rotation and scale component.
 
@@ -3585,6 +3591,118 @@ Adds the given rotation component to the rotation component of this transform.
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the x-\/value of the rotation component of this transform.
@@ -3906,9 +4024,9 @@ The cached object-\/to-\/parent matrix of this transform.
 
 The cached parent-\/to-\/object matrix of this transform.
 
-A flag indicating whether the object-\/to-\/parent matrix of this transform node are dirty.
+A flag indicating whether the object-\/to-\/parent matrix of this transform is dirty.
 
-A flag indicating whether the parent-\/to-\/object matrix of this transform node are dirty.
+A flag indicating whether the parent-\/to-\/object matrix of this transform is dirty.
 
 Destructs this transform node.
 
@@ -4167,6 +4285,118 @@ Adds the given rotation component to the rotation component of this transform no
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the x-\/value of the rotation component of this transform node.
@@ -5504,8 +5734,6 @@ Moves the given scene buffer to this scene buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved scene buffer (i.\+e. this scene buffer).
 \end{DoxyReturn}
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this scene buffer for use in H\+L\+SL.
-
 The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this scene buffer for use in H\+L\+SL.
 
 The ambient light intensity of this scene buffer.
@@ -5523,48 +5751,6 @@ The distance at which intensity falloff starts due to fog of this scene buffer.
 The color of the fog of this scene buffer.
 
 The distance range where intensity falloff occurs due to fog of this scene buffer.
-
-Constructs a scene transform buffer.
-
-Constructs a scene transform buffer from the given scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to copy.\\
-\hline
-\end{DoxyParams}
-Constructs a scene transform buffer by moving the given scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to move.\\
-\hline
-\end{DoxyParams}
-Destructs this scene transform buffer.
-
-Copies the given scene transform buffer to this scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to copy. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the copy of the given scene transform buffer (i.\+e. this scene transform buffer).
-\end{DoxyReturn}
-Moves the given scene transform buffer to this scene transform buffer.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em buffer} & A reference to the scene transform buffer to move. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A reference to the moved scene transform buffer (i.\+e. this scene transform buffer).
-\end{DoxyReturn}
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) world-\/to-\/view matrix of this scene transform buffer for use in H\+L\+SL.
-
-The (camera dependent, object independent) (column-\/major packed, row-\/major matrix) view-\/to-\/projection matrix of this scene transform buffer for use in H\+L\+SL.
 
 Constructs a Cartesian axes system.
 
@@ -5977,6 +6163,24 @@ Adds the given rotation component to the rotation component of this sprite trans
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
 \hline
 \end{DoxyParams}
+Adds the given rotation component to the rotation component of this sprite transform and clamps the resulting rotation component of this sprite transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
 Returns the rotation component of this sprite transform.
 
 \begin{DoxyReturn}{Returns}
@@ -6309,11 +6513,15 @@ Returns the scale component of this sprite transform.
 \begin{DoxyReturn}{Returns}
 The scale component of this sprite transform.
 \end{DoxyReturn}
-Returns the matrix of this sprite transform.
+Returns the (object-\/to-\/parent) matrix of this sprite transform.
 
 \begin{DoxyReturn}{Returns}
-The matrix of this sprite transform.
+The (object-\/to-\/parent) matrix of this sprite transform.
 \end{DoxyReturn}
+Sets this sprite transform to dirty.
+
+Updates the (object-\/to-\/parent) transform matrix of this sprite transform if dirty.
+
 The translation component of this sprite transform.
 
 The depth component of this sprite transform.
@@ -6323,6 +6531,10 @@ The rotation component (in radians) of this sprite transform.
 The rotation origin of this sprite transform.
 
 The scale component of this sprite transform.
+
+The cached (object-\/to-\/parent) transform matrix of this sprite transform.
+
+A flag indicating whether the (object-\/to-\/parent) transform matrix of this sprite transform is dirty.
 
 Constructs a texture transform from the given translation, depth, rotation, rotation origin and scale component.
 
@@ -6489,6 +6701,24 @@ Adds the given rotation component to the rotation component of this texture tran
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this texture transform and clamps the resulting rotation component of this texture transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the rotation component of this texture transform.
@@ -6695,18 +6925,26 @@ Returns the scale component of this texture transform.
 \begin{DoxyReturn}{Returns}
 The scale component of this texture transform.
 \end{DoxyReturn}
-Returns the matrix of this texture transform.
+Returns the (object-\/to-\/parent) matrix of this texture transform.
 
 \begin{DoxyReturn}{Returns}
-The matrix of this texture transform.
+The (object-\/to-\/parent) matrix of this texture transform.
 \end{DoxyReturn}
+Sets this texture transform to dirty.
+
+Updates the (object-\/to-\/parent) transform matrix of this texture transform if dirty.
+
 The translation component of this texture transform.
 
 The rotation component (in radians) of this texture transform.
 
+A flag indicating whether the (object-\/to-\/parent) transform matrix of this texture transform is dirty.
+
 The rotation origin of this texture transform.
 
 The scale component of this texture transform.
+
+The cached (object-\/to-\/parent) transform matrix of this texture transform.
 
 Constructs a transform from the given translation, rotation and scale component.
 
@@ -7005,6 +7243,118 @@ Adds the given rotation component to the rotation component of this transform.
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the x-\/value of the rotation component of this transform.
@@ -7326,9 +7676,9 @@ The cached object-\/to-\/parent matrix of this transform.
 
 The cached parent-\/to-\/object matrix of this transform.
 
-A flag indicating whether the object-\/to-\/parent matrix of this transform node are dirty.
+A flag indicating whether the object-\/to-\/parent matrix of this transform is dirty.
 
-A flag indicating whether the parent-\/to-\/object matrix of this transform node are dirty.
+A flag indicating whether the parent-\/to-\/object matrix of this transform is dirty.
 
 Destructs this transform node.
 
@@ -7587,6 +7937,118 @@ Adds the given rotation component to the rotation component of this transform no
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em rotation} & The rotation component to add.\\
+\hline
+\end{DoxyParams}
+Adds the given x-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given y-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given z-\/value to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
+\hline
+\end{DoxyParams}
+Adds the given rotation component to the rotation component of this transform and clamps the resulting rotation component of this transform between the given values.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape min\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape max\+\_\+angle} lies in \mbox{[}-\/pi, pi\mbox{]}. 
+
+{\itshape min\+\_\+angle} is not greater than {\itshape max\+\_\+angle}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & The rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+angle} & The minimum angle (in radians). \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+angle} & The maximum angle (in radians).\\
 \hline
 \end{DoxyParams}
 Returns the x-\/value of the rotation component of this transform node.
@@ -8828,9 +9290,11 @@ Moves the given model buffer to this model buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved model buffer (i.\+e. this model buffer).
 \end{DoxyReturn}
-The (camera independent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/world matrix of this model buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view matrix of this model buffer for use in H\+L\+SL.
 
-The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this model buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (normal-\/to-\/view matrix) of this model buffer for use in H\+L\+SL.
+
+The (object dependent) (column-\/major packed, row-\/major matrix) texture transform matrix of this model buffer for use in H\+L\+SL.
 
 The diffuse reflectivity of this model buffer.
 
@@ -8880,9 +9344,11 @@ Moves the given model transform buffer to this model transform buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved model transform buffer (i.\+e. this model transform buffer).
 \end{DoxyReturn}
-The (camera independent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/world matrix of this model transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view matrix of this model buffer for use in H\+L\+SL.
 
-The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this model transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (normal-\/to-\/view matrix) of this model buffer for use in H\+L\+SL.
+
+The (object dependent) (column-\/major packed, row-\/major matrix) texture transform matrix of this model buffer for use in H\+L\+SL.
 
 Constructs a Cartesian coordinate system from the given Cartesian axes system.
 
@@ -9003,9 +9469,11 @@ Moves the given model transform buffer to this model transform buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved model transform buffer (i.\+e. this model transform buffer).
 \end{DoxyReturn}
-The (camera independent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/world matrix of this model transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view matrix of this model buffer for use in H\+L\+SL.
 
-The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (for transforming object space normals) of this model transform buffer for use in H\+L\+SL.
+The (camera dependent, object dependent) (column-\/major packed, row-\/major matrix) object-\/to-\/view inverse tranpose matrix (normal-\/to-\/view matrix) of this model buffer for use in H\+L\+SL.
+
+The (object dependent) (column-\/major packed, row-\/major matrix) texture transform matrix of this model buffer for use in H\+L\+SL.
 
 Constructs a Cartesian coordinate system from the given Cartesian axes system.
 

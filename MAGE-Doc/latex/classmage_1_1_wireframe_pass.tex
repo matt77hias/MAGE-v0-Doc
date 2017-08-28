@@ -13,7 +13,7 @@
 \item 
 \hyperlink{classmage_1_1_wireframe_pass_a08631bc9b341bed85b1b14b99affb1f0}{Wireframe\+Pass} (\hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} \&\&render\+\_\+pass)
 \item 
-virtual \hyperlink{classmage_1_1_wireframe_pass_a186e4dd37ac17382872180385ec4dca1}{$\sim$\+Wireframe\+Pass} ()
+\hyperlink{classmage_1_1_wireframe_pass_a186e4dd37ac17382872180385ec4dca1}{$\sim$\+Wireframe\+Pass} ()
 \item 
 \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} \& \hyperlink{classmage_1_1_wireframe_pass_a57da0b468c68c8653ebc639923b111ba}{operator=} (const \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} \&render\+\_\+pass)=delete
 \item 
@@ -24,9 +24,11 @@ void \hyperlink{classmage_1_1_wireframe_pass_a75135a847466cccd034d9a0c71338cf2}{
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_wireframe_pass_afad33a0184467c38bae616bfc7ff0a09}{Process\+Scene} (F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_a7add5e805d8d8afe450e48a553c76176}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view) noexcept
 \item 
-void \hyperlink{classmage_1_1_wireframe_pass_a9c210478a785a37de284674485e0952c}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_ac77daacc9476b78474eeafc5822976f1}{Bind\+Scene\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_ad32bdc71fa20d4084a01660ae4bc8a7f}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -39,7 +41,7 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_wireframe_pass
 \item 
 \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Model\+Transform\+Buffer $>$ \hyperlink{classmage_1_1_wireframe_pass_a1aa27e1ce7b07c2bf9e4146717d84b42}{m\+\_\+model\+\_\+buffer}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Transform\+Buffer $>$ \hyperlink{classmage_1_1_wireframe_pass_abcac6556fdbc5eb7bd98b69c04d1da7c}{m\+\_\+scene\+\_\+buffer}
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_wireframe_pass_a09db50fcfc6b48247d3075531c5189a6}{m\+\_\+scene\+\_\+buffer}
 \item 
 \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a_spectrum}{R\+G\+B\+A\+Spectrum} $>$ \hyperlink{classmage_1_1_wireframe_pass_ab046a411db5ef3cd9c291ea1bea7cdbc}{m\+\_\+color\+\_\+buffer}
 \end{DoxyCompactItemize}
@@ -68,11 +70,23 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_wireframe_pass
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!````~Wireframe\+Pass@{$\sim$\+Wireframe\+Pass}}
 \index{````~Wireframe\+Pass@{$\sim$\+Wireframe\+Pass}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{$\sim$\+Wireframe\+Pass()}{~WireframePass()}}
-{\footnotesize\ttfamily mage\+::\+Wireframe\+Pass\+::$\sim$\+Wireframe\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Wireframe\+Pass\+::$\sim$\+Wireframe\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_wireframe_pass_a7add5e805d8d8afe450e48a553c76176}{}\label{classmage_1_1_wireframe_pass_a7add5e805d8d8afe450e48a553c76176} 
+\index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_wireframe_pass_ac77daacc9476b78474eeafc5822976f1}{}\label{classmage_1_1_wireframe_pass_ac77daacc9476b78474eeafc5822976f1} 
+\index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Bind\+Scene\+Data@{Bind\+Scene\+Data}}
+\index{Bind\+Scene\+Data@{Bind\+Scene\+Data}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Scene\+Data()}{BindSceneData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Bind\+Scene\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1_wireframe_pass_a57da0b468c68c8653ebc639923b111ba}{}\label{classmage_1_1_wireframe_pass_a57da0b468c68c8653ebc639923b111ba} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
@@ -85,17 +99,11 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_wireframe_pass
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass}\& mage\+::\+Wireframe\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_wireframe_pass_a9c210478a785a37de284674485e0952c}{}\label{classmage_1_1_wireframe_pass_a9c210478a785a37de284674485e0952c} 
+\hypertarget{classmage_1_1_wireframe_pass_ad32bdc71fa20d4084a01660ae4bc8a7f}{}\label{classmage_1_1_wireframe_pass_ad32bdc71fa20d4084a01660ae4bc8a7f} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Process\+Models@{Process\+Models}}
 \index{Process\+Models@{Process\+Models}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
-{\footnotesize\ttfamily void mage\+::\+Wireframe\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_wireframe_pass_afad33a0184467c38bae616bfc7ff0a09}{}\label{classmage_1_1_wireframe_pass_afad33a0184467c38bae616bfc7ff0a09} 
-\index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Process\+Scene@{Process\+Scene}}
-\index{Process\+Scene@{Process\+Scene}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Scene()}{ProcessScene()}}
-{\footnotesize\ttfamily void mage\+::\+Wireframe\+Pass\+::\+Process\+Scene (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1_wireframe_pass_a75135a847466cccd034d9a0c71338cf2}{}\label{classmage_1_1_wireframe_pass_a75135a847466cccd034d9a0c71338cf2} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Render@{Render}}
@@ -130,11 +138,11 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_wireframe_pass
 \subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_wireframe_pass_abcac6556fdbc5eb7bd98b69c04d1da7c}{}\label{classmage_1_1_wireframe_pass_abcac6556fdbc5eb7bd98b69c04d1da7c} 
+\hypertarget{classmage_1_1_wireframe_pass_a09db50fcfc6b48247d3075531c5189a6}{}\label{classmage_1_1_wireframe_pass_a09db50fcfc6b48247d3075531c5189a6} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}}
 \index{m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+scene\+\_\+buffer}{m\_scene\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Transform\+Buffer $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+scene\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+scene\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_wireframe_pass_a05b72753672603e749b7321d01b00b66}{}\label{classmage_1_1_wireframe_pass_a05b72753672603e749b7321d01b00b66} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+vs@{m\+\_\+vs}}

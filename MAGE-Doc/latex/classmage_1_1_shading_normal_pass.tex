@@ -13,7 +13,7 @@
 \item 
 \hyperlink{classmage_1_1_shading_normal_pass_acc466f246daaf57ccace5aa8782f0799}{Shading\+Normal\+Pass} (\hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} \&\&render\+\_\+pass)
 \item 
-virtual \hyperlink{classmage_1_1_shading_normal_pass_aba7194077210d32dbcbc6cfbf4adba8f}{$\sim$\+Shading\+Normal\+Pass} ()
+\hyperlink{classmage_1_1_shading_normal_pass_aba7194077210d32dbcbc6cfbf4adba8f}{$\sim$\+Shading\+Normal\+Pass} ()
 \item 
 \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} \& \hyperlink{classmage_1_1_shading_normal_pass_afef400a6e3b00a43f6b6d3a3f34d43b7}{operator=} (const \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} \&render\+\_\+pass)=delete
 \item 
@@ -36,9 +36,11 @@ void \hyperlink{classmage_1_1_shading_normal_pass_ab691c2125f9e21c7e70f273703750
 \item 
 void \hyperlink{classmage_1_1_shading_normal_pass_af8ef8987bda86646712780b5cfad0b72}{Bind\+PS} (const \hyperlink{structmage_1_1_material}{Material} $\ast$material) noexcept
 \item 
-void \hyperlink{classmage_1_1_shading_normal_pass_a273b6c86581dc6b41ac8576c2851cfd4}{Process\+Scene} (F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_shading_normal_pass_abbcc01b6d2e747ffd35bc5a69483db65}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+object) noexcept
 \item 
-void \hyperlink{classmage_1_1_shading_normal_pass_a6b154f584a38b8e7d708d6a88d9a17a9}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_shading_normal_pass_a738ec6bb32a6ba30265010d971c8c0cf}{Bind\+Scene\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_shading_normal_pass_ab760947cd91e5b05cdf2bacbad0b60e1}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -55,7 +57,7 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_shading_normal
 \item 
 \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Model\+Transform\+Buffer $>$ \hyperlink{classmage_1_1_shading_normal_pass_a7068a84cf75fae7156c4cd6e39f0700f}{m\+\_\+model\+\_\+buffer}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Transform\+Buffer $>$ \hyperlink{classmage_1_1_shading_normal_pass_a97cea446cfdd62bbaadb0a06e4d36670}{m\+\_\+scene\+\_\+buffer}
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_shading_normal_pass_a98f3cd5d6abc9c3b5e904311722349df}{m\+\_\+scene\+\_\+buffer}
 \end{DoxyCompactItemize}
 
 
@@ -105,11 +107,17 @@ Count&\\
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!````~Shading\+Normal\+Pass@{$\sim$\+Shading\+Normal\+Pass}}
 \index{````~Shading\+Normal\+Pass@{$\sim$\+Shading\+Normal\+Pass}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
 \subsubsection{\texorpdfstring{$\sim$\+Shading\+Normal\+Pass()}{~ShadingNormalPass()}}
-{\footnotesize\ttfamily mage\+::\+Shading\+Normal\+Pass\+::$\sim$\+Shading\+Normal\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Shading\+Normal\+Pass\+::$\sim$\+Shading\+Normal\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_shading_normal_pass_abbcc01b6d2e747ffd35bc5a69483db65}{}\label{classmage_1_1_shading_normal_pass_abbcc01b6d2e747ffd35bc5a69483db65} 
+\index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Shading\+Normal\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1_shading_normal_pass_ab691c2125f9e21c7e70f2737037504bc}{}\label{classmage_1_1_shading_normal_pass_ab691c2125f9e21c7e70f2737037504bc} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Bind\+PS@{Bind\+PS}}
 \index{Bind\+PS@{Bind\+PS}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
@@ -121,6 +129,12 @@ Count&\\
 \index{Bind\+PS@{Bind\+PS}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Shading\+Normal\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_shading_normal_pass_a738ec6bb32a6ba30265010d971c8c0cf}{}\label{classmage_1_1_shading_normal_pass_a738ec6bb32a6ba30265010d971c8c0cf} 
+\index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Bind\+Scene\+Data@{Bind\+Scene\+Data}}
+\index{Bind\+Scene\+Data@{Bind\+Scene\+Data}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Scene\+Data()}{BindSceneData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Shading\+Normal\+Pass\+::\+Bind\+Scene\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1_shading_normal_pass_afef400a6e3b00a43f6b6d3a3f34d43b7}{}\label{classmage_1_1_shading_normal_pass_afef400a6e3b00a43f6b6d3a3f34d43b7} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!operator=@{operator=}}
@@ -134,17 +148,11 @@ Count&\\
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass}\& mage\+::\+Shading\+Normal\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_shading_normal_pass_a6b154f584a38b8e7d708d6a88d9a17a9}{}\label{classmage_1_1_shading_normal_pass_a6b154f584a38b8e7d708d6a88d9a17a9} 
+\hypertarget{classmage_1_1_shading_normal_pass_ab760947cd91e5b05cdf2bacbad0b60e1}{}\label{classmage_1_1_shading_normal_pass_ab760947cd91e5b05cdf2bacbad0b60e1} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Process\+Models@{Process\+Models}}
 \index{Process\+Models@{Process\+Models}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
 \subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
-{\footnotesize\ttfamily void mage\+::\+Shading\+Normal\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_shading_normal_pass_a273b6c86581dc6b41ac8576c2851cfd4}{}\label{classmage_1_1_shading_normal_pass_a273b6c86581dc6b41ac8576c2851cfd4} 
-\index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Process\+Scene@{Process\+Scene}}
-\index{Process\+Scene@{Process\+Scene}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Scene()}{ProcessScene()}}
-{\footnotesize\ttfamily void mage\+::\+Shading\+Normal\+Pass\+::\+Process\+Scene (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Shading\+Normal\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1_shading_normal_pass_ac4c404dd4b54fee222f652c1556fb9bf}{}\label{classmage_1_1_shading_normal_pass_ac4c404dd4b54fee222f652c1556fb9bf} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!Render@{Render}}
@@ -185,11 +193,11 @@ Count&\\
 \subsubsection{\texorpdfstring{m\+\_\+render\+\_\+mode}{m\_render\_mode}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fd}{Render\+Mode} mage\+::\+Shading\+Normal\+Pass\+::m\+\_\+render\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_shading_normal_pass_a97cea446cfdd62bbaadb0a06e4d36670}{}\label{classmage_1_1_shading_normal_pass_a97cea446cfdd62bbaadb0a06e4d36670} 
+\hypertarget{classmage_1_1_shading_normal_pass_a98f3cd5d6abc9c3b5e904311722349df}{}\label{classmage_1_1_shading_normal_pass_a98f3cd5d6abc9c3b5e904311722349df} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}}
 \index{m\+\_\+scene\+\_\+buffer@{m\+\_\+scene\+\_\+buffer}!mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+scene\+\_\+buffer}{m\_scene\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ Scene\+Transform\+Buffer $>$ mage\+::\+Shading\+Normal\+Pass\+::m\+\_\+scene\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Shading\+Normal\+Pass\+::m\+\_\+scene\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_shading_normal_pass_a2d227df93562e05bbf9f1f515ee2db62}{}\label{classmage_1_1_shading_normal_pass_a2d227df93562e05bbf9f1f515ee2db62} 
 \index{mage\+::\+Shading\+Normal\+Pass@{mage\+::\+Shading\+Normal\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
