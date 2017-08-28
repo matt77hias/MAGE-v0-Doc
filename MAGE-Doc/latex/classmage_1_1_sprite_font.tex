@@ -27,9 +27,9 @@ virtual \hyperlink{classmage_1_1_sprite_font_acbf50687b4a5dbb2ff1ad73ecc89b7f1}{
 \item 
 \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} \& \hyperlink{classmage_1_1_sprite_font_ab00b7f5c2740faf52ea778d94ae704bd}{operator=} (\hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} \&\&font)=delete
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_sprite_font_a02498ef183874ed31c408fc142a8231e}{Draw\+String} (Sprite\+Batch \&sprite\+\_\+batch, const wchar\+\_\+t $\ast$str, const Sprite\+Transform \&transform, F\+X\+M\+V\+E\+C\+T\+OR color=Colors\+::\+White, \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} effects=\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881a6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}) const
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_sprite_font_a02498ef183874ed31c408fc142a8231e}{Draw\+String} (Sprite\+Batch \&sprite\+\_\+batch, const wchar\+\_\+t $\ast$str, const Sprite\+Transform \&transform, F\+X\+M\+V\+E\+C\+T\+OR color=Colors\+::\+White, \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} effects=\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}) const
 \item 
-void \hyperlink{classmage_1_1_sprite_font_a10fee860b9ccbc3063c1721deb7688e5}{Draw\+String} (Sprite\+Batch \&sprite\+\_\+batch, const vector$<$ \hyperlink{structmage_1_1_color_string}{Color\+String} $>$ \&text, const Sprite\+Transform \&transform, \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} effects=\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881a6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}) const
+void \hyperlink{classmage_1_1_sprite_font_a10fee860b9ccbc3063c1721deb7688e5}{Draw\+String} (Sprite\+Batch \&sprite\+\_\+batch, const vector$<$ \hyperlink{structmage_1_1_color_string}{Color\+String} $>$ \&text, const Sprite\+Transform \&transform, \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} effects=\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}) const
 \item 
 const X\+M\+V\+E\+C\+T\+OR \hyperlink{classmage_1_1_sprite_font_af8d3b1e3f9cbda7d3f1c5ab95100dae7}{Measure\+String} (const wchar\+\_\+t $\ast$str) const
 \item 
@@ -52,10 +52,6 @@ bool \hyperlink{classmage_1_1_sprite_font_a01836c4197661dbdd66c624d8dc6a7c3}{Con
 const \hyperlink{structmage_1_1_glyph}{Glyph} $\ast$ \hyperlink{classmage_1_1_sprite_font_aa13424a1e0153ffb9433bb2cb416360b}{Get\+Glyph} (wchar\+\_\+t character) const
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_sprite_font_a8e43f8d97fb7e5ee03ed49fb45ee1b5f}{Get} () const noexcept
-\item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$const  $\ast$ \hyperlink{classmage_1_1_sprite_font_a7bb83a23e33270c1c47c58eb67f048d1}{Get\+Address} () const noexcept
-\item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$ \hyperlink{classmage_1_1_sprite_font_a6adc948fa1132f68b0f835e1453e37f7}{Get\+Address} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -88,7 +84,7 @@ A class of sprite fonts.
 Constructs a sprite font.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The renderer associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -112,6 +108,8 @@ Constructs a sprite font.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
+
+The renderer associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -182,7 +180,7 @@ Checks whether this sprite font contains a glyp matching the given character.
 \index{mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}!Draw\+String@{Draw\+String}}
 \index{Draw\+String@{Draw\+String}!mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}}
 \subsubsection{\texorpdfstring{Draw\+String()}{DrawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Sprite\+Font\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch,  }\item[{const wchar\+\_\+t $\ast$}]{str,  }\item[{const Sprite\+Transform \&}]{transform,  }\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{color = {\ttfamily Colors\+:\+:White},  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881a6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}} }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Sprite\+Font\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch,  }\item[{const wchar\+\_\+t $\ast$}]{str,  }\item[{const Sprite\+Transform \&}]{transform,  }\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{color = {\ttfamily Colors\+:\+:White},  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}} }\end{DoxyParamCaption}) const}
 
 Draws the given string with this sprite font using the given sprite batch.
 
@@ -206,7 +204,7 @@ Draws the given string with this sprite font using the given sprite batch.
 \index{mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}!Draw\+String@{Draw\+String}}
 \index{Draw\+String@{Draw\+String}!mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}}
 \subsubsection{\texorpdfstring{Draw\+String()}{DrawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Font\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch,  }\item[{const vector$<$ \hyperlink{structmage_1_1_color_string}{Color\+String} $>$ \&}]{text,  }\item[{const Sprite\+Transform \&}]{transform,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881a6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}} }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Font\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{Sprite\+Batch \&}]{sprite\+\_\+batch,  }\item[{const vector$<$ \hyperlink{structmage_1_1_color_string}{Color\+String} $>$ \&}]{text,  }\item[{const Sprite\+Transform \&}]{transform,  }\item[{\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect}}]{effects = {\ttfamily \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None}} }\end{DoxyParamCaption}) const}
 
 Draws the given text with this sprite font using the given sprite batch.
 
@@ -231,28 +229,6 @@ Returns a pointer to the shader resource view of the texture of this sprite font
 
 \begin{DoxyReturn}{Returns}
 A pointer to the shader resource view of the texture of this sprite font. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_sprite_font_a7bb83a23e33270c1c47c58eb67f048d1}{}\label{classmage_1_1_sprite_font_a7bb83a23e33270c1c47c58eb67f048d1} 
-\index{mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}!Get\+Address@{Get\+Address}}
-\index{Get\+Address@{Get\+Address}!mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}}
-\subsubsection{\texorpdfstring{Get\+Address()}{GetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$ const$\ast$ mage\+::\+Sprite\+Font\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of of the texture of this sprite font.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the pointer to the shader resource view of the texture of this sprite font. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_sprite_font_a6adc948fa1132f68b0f835e1453e37f7}{}\label{classmage_1_1_sprite_font_a6adc948fa1132f68b0f835e1453e37f7} 
-\index{mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}!Get\+Address@{Get\+Address}}
-\index{Get\+Address@{Get\+Address}!mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}}
-\subsubsection{\texorpdfstring{Get\+Address()}{GetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$$\ast$ mage\+::\+Sprite\+Font\+::\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of of the texture of this sprite font.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the pointer to the shader resource view of the texture of this sprite font. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_font_a9be513809e714558708cab21a22d7316}{}\label{classmage_1_1_sprite_font_a9be513809e714558708cab21a22d7316} 
 \index{mage\+::\+Sprite\+Font@{mage\+::\+Sprite\+Font}!Get\+Default\+Character@{Get\+Default\+Character}}

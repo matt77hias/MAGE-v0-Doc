@@ -25,7 +25,7 @@ var classmage_1_1_m_t_l_reader =
     [ "ReadMTLSpecularExponentTexture", "classmage_1_1_m_t_l_reader.html#a9b68187f940dc05a5d86527843f09d18", null ],
     [ "ReadMTLSpecularReflectivity", "classmage_1_1_m_t_l_reader.html#aa90f43e397bc5fc277b936bdeff4e672", null ],
     [ "ReadMTLSpecularReflectivityTexture", "classmage_1_1_m_t_l_reader.html#abb56329a3642b377b006bca6cee60440", null ],
-    [ "ReadMTLTexture", "classmage_1_1_m_t_l_reader.html#a7ff401dab1b58709debff6cbe2c02d0c", null ],
+    [ "ReadMTLTexture", "classmage_1_1_m_t_l_reader.html#a36dd3bbfd989698c9caeacc059d03e69", null ],
     [ "ReadMTLTransmissionFilter", "classmage_1_1_m_t_l_reader.html#a4d5819606b5ea81862852587b2e1511b", null ],
     [ "m_material_buffer", "classmage_1_1_m_t_l_reader.html#a6382e0e9fce6581b129d18f5d82994c2", null ]
 ];

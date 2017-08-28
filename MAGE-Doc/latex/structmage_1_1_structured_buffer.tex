@@ -9,7 +9,7 @@
 \item 
 \hyperlink{structmage_1_1_structured_buffer_ad384318eca9a617f61f81472ea68f32e}{Structured\+Buffer} (size\+\_\+t nb\+\_\+initial\+\_\+data\+\_\+elements)
 \item 
-\hyperlink{structmage_1_1_structured_buffer_a9ba747c0666b96c17e3711266ee74aa0}{Structured\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, size\+\_\+t nb\+\_\+initial\+\_\+data\+\_\+elements)
+\hyperlink{structmage_1_1_structured_buffer_a7b3a6a86059881526d4ae49dffefb697}{Structured\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, size\+\_\+t nb\+\_\+initial\+\_\+data\+\_\+elements)
 \item 
 \hyperlink{structmage_1_1_structured_buffer_aa017416099a12305d0177094c768150e}{Structured\+Buffer} (const \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer} \&buffer)=delete
 \item 
@@ -21,31 +21,29 @@
 \item 
 \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer} \& \hyperlink{structmage_1_1_structured_buffer_a2647510e153d15b89f860e2a5c68e231}{operator=} (\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer} \&\&buffer)=delete
 \item 
-void \hyperlink{structmage_1_1_structured_buffer_aac2597ea7ee586207bf4918c3b4f9798}{Update\+Data} (const vector$<$ DataT $>$ \&data) const
+size\+\_\+t \hyperlink{structmage_1_1_structured_buffer_a1e9ccab07c0f78ff1a8e4d8a0590f79e}{size} () const noexcept
+\item 
+void \hyperlink{structmage_1_1_structured_buffer_a91db172da7bb0f47e2ee12132b792436}{Update\+Data} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const vector$<$ DataT $>$ \&data)
+\item 
+void \hyperlink{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9}{Update\+Data} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const vector$<$ DataT $>$ \&data)
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{structmage_1_1_structured_buffer_ad933738bc55b10aea665913a8215bab0}{Get} () const noexcept
-\item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$const  $\ast$ \hyperlink{structmage_1_1_structured_buffer_a116faa593af2b0872cb266eabe6b58a8}{Get\+Address\+Of} () const noexcept
-\item 
-I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$ \hyperlink{structmage_1_1_structured_buffer_a1e05bab8441b847c5b7cd11e2f5003e7}{Get\+Address\+Of} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{structmage_1_1_structured_buffer_a569008d501e11d208288022372df2f48}{Setup\+Structured\+Buffer} (size\+\_\+t nb\+\_\+data\+\_\+elements) const
+void \hyperlink{structmage_1_1_structured_buffer_a1bf9c6db5b4ebb5333f15b5ee478e79d}{Setup\+Structured\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, size\+\_\+t nb\+\_\+data\+\_\+elements)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-I\+D3\+D11\+Device2 $\ast$const \hyperlink{structmage_1_1_structured_buffer_ab1ad27b8053f9631f0a74b9e90aa7d3d}{m\+\_\+device}
-\item 
-I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{structmage_1_1_structured_buffer_a1bdf6ee33d3d53bfd3d5f6191fdbc351}{m\+\_\+device\+\_\+context}
-\item 
 \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{structmage_1_1_structured_buffer_adbd113ab2fe539e34587887876fe3825}{m\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{structmage_1_1_structured_buffer_a94f811f1d36cf63dad600e6f89dcc40b}{m\+\_\+buffer\+\_\+srv}
 \item 
 size\+\_\+t \hyperlink{structmage_1_1_structured_buffer_a92c53203287f6ef5ab8ed88c7b588e72}{m\+\_\+nb\+\_\+data\+\_\+elements}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{structmage_1_1_structured_buffer_a94f811f1d36cf63dad600e6f89dcc40b}{m\+\_\+buffer\+\_\+srv}
+size\+\_\+t \hyperlink{structmage_1_1_structured_buffer_a8c69058d2ce956c7c1690a45e1bffb34}{m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements}
 \end{DoxyCompactItemize}
 
 
@@ -73,32 +71,28 @@ A class of structured buffers (for binding arrays of buffers to the rendering pi
 Constructs a structured buffer.
 
 \begin{DoxyPrecond}{Precondition}
-The current engine must be loaded. 
+The device associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em nb\+\_\+initial\+\_\+data\+\_\+elements} & The initial number of slots for storing data elements to provide. \\
 \hline
 \end{DoxyParams}
-\hypertarget{structmage_1_1_structured_buffer_a9ba747c0666b96c17e3711266ee74aa0}{}\label{structmage_1_1_structured_buffer_a9ba747c0666b96c17e3711266ee74aa0} 
+\hypertarget{structmage_1_1_structured_buffer_a7b3a6a86059881526d4ae49dffefb697}{}\label{structmage_1_1_structured_buffer_a7b3a6a86059881526d4ae49dffefb697} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Structured\+Buffer@{Structured\+Buffer}}
 \index{Structured\+Buffer@{Structured\+Buffer}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
 \subsubsection{\texorpdfstring{Structured\+Buffer()}{StructuredBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-\hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer} (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{size\+\_\+t}]{nb\+\_\+initial\+\_\+data\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer} (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{size\+\_\+t}]{nb\+\_\+initial\+\_\+data\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a structured buffer.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
 \mbox{\tt in}  & {\em nb\+\_\+initial\+\_\+data\+\_\+elements} & The initial number of slots for storing data elements to provide. \\
 \hline
@@ -153,30 +147,6 @@ Returns the shader resource view of this structured buffer.
 \begin{DoxyReturn}{Returns}
 A pointer to the shader resource view of this structured buffer. 
 \end{DoxyReturn}
-\hypertarget{structmage_1_1_structured_buffer_a116faa593af2b0872cb266eabe6b58a8}{}\label{structmage_1_1_structured_buffer_a116faa593af2b0872cb266eabe6b58a8} 
-\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Get\+Address\+Of@{Get\+Address\+Of}}
-\index{Get\+Address\+Of@{Get\+Address\+Of}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
-\subsubsection{\texorpdfstring{Get\+Address\+Of()}{GetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$typename DataT$>$ \\
-I\+D3\+D11\+Shader\+Resource\+View$\ast$ const$\ast$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Get\+Address\+Of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of this structured buffer.
-
-\begin{DoxyReturn}{Returns}
-A pointer to a pointer to the shader resource view of this structured buffer. 
-\end{DoxyReturn}
-\hypertarget{structmage_1_1_structured_buffer_a1e05bab8441b847c5b7cd11e2f5003e7}{}\label{structmage_1_1_structured_buffer_a1e05bab8441b847c5b7cd11e2f5003e7} 
-\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Get\+Address\+Of@{Get\+Address\+Of}}
-\index{Get\+Address\+Of@{Get\+Address\+Of}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
-\subsubsection{\texorpdfstring{Get\+Address\+Of()}{GetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$typename DataT$>$ \\
-I\+D3\+D11\+Shader\+Resource\+View$\ast$$\ast$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Get\+Address\+Of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the address of the shader resource view of this structured buffer.
-
-\begin{DoxyReturn}{Returns}
-A pointer to a pointer to the shader resource view of this structured buffer. 
-\end{DoxyReturn}
 \hypertarget{structmage_1_1_structured_buffer_ac00255155ab1eb61244392adcf262d40}{}\label{structmage_1_1_structured_buffer_ac00255155ab1eb61244392adcf262d40} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
@@ -211,17 +181,22 @@ Moves the given structured buffer to this structured buffer.
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given structured buffer (i.\+e. this structured buffer). 
 \end{DoxyReturn}
-\hypertarget{structmage_1_1_structured_buffer_a569008d501e11d208288022372df2f48}{}\label{structmage_1_1_structured_buffer_a569008d501e11d208288022372df2f48} 
+\hypertarget{structmage_1_1_structured_buffer_a1bf9c6db5b4ebb5333f15b5ee478e79d}{}\label{structmage_1_1_structured_buffer_a1bf9c6db5b4ebb5333f15b5ee478e79d} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Setup\+Structured\+Buffer@{Setup\+Structured\+Buffer}}
 \index{Setup\+Structured\+Buffer@{Setup\+Structured\+Buffer}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
 \subsubsection{\texorpdfstring{Setup\+Structured\+Buffer()}{SetupStructuredBuffer()}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Setup\+Structured\+Buffer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nb\+\_\+data\+\_\+elements }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Setup\+Structured\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{size\+\_\+t}]{nb\+\_\+data\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Sets up the resource buffer and shader resource view of this structured buffer.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
 \mbox{\tt in}  & {\em nb\+\_\+data\+\_\+elements} & The number of slots for storing data elements to provide. \\
 \hline
 \end{DoxyParams}
@@ -230,17 +205,59 @@ Sets up the resource buffer and shader resource view of this structured buffer.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this structured buffer. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{structmage_1_1_structured_buffer_aac2597ea7ee586207bf4918c3b4f9798}{}\label{structmage_1_1_structured_buffer_aac2597ea7ee586207bf4918c3b4f9798} 
+\hypertarget{structmage_1_1_structured_buffer_a1e9ccab07c0f78ff1a8e4d8a0590f79e}{}\label{structmage_1_1_structured_buffer_a1e9ccab07c0f78ff1a8e4d8a0590f79e} 
+\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!size@{size}}
+\index{size@{size}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+size\+\_\+t \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the size of this structured buffer (i.\+e. the used number of data elements).
+
+\begin{DoxyReturn}{Returns}
+The size of this structured buffer. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_structured_buffer_a91db172da7bb0f47e2ee12132b792436}{}\label{structmage_1_1_structured_buffer_a91db172da7bb0f47e2ee12132b792436} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Update\+Data@{Update\+Data}}
 \index{Update\+Data@{Update\+Data}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
-\subsubsection{\texorpdfstring{Update\+Data()}{UpdateData()}}
+\subsubsection{\texorpdfstring{Update\+Data()}{UpdateData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Update\+Data (\begin{DoxyParamCaption}\item[{const vector$<$ DataT $>$ \&}]{data }\end{DoxyParamCaption}) const}
+void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Update\+Data (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const vector$<$ DataT $>$ \&}]{data }\end{DoxyParamCaption})}
 
-Updates the data of structured buffer with the given data.
+Updates the data of this structured buffer with the given data.
 
+\begin{DoxyPrecond}{Precondition}
+The device associated with the current engine must be loaded in case this structured buffer needs to grow. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em data} & A reference to a vector with the data elements. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9}{}\label{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9} 
+\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Update\+Data@{Update\+Data}}
+\index{Update\+Data@{Update\+Data}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
+\subsubsection{\texorpdfstring{Update\+Data()}{UpdateData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Update\+Data (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{const vector$<$ DataT $>$ \&}]{data }\end{DoxyParamCaption})}
+
+Updates the data of this structured buffer with the given data.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
 \mbox{\tt in}  & {\em data} & A reference to a vector with the data elements. \\
 \hline
 \end{DoxyParams}
@@ -252,34 +269,27 @@ Updates the data of structured buffer with the given data.
 \index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the buffer resource of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_a94f811f1d36cf63dad600e6f89dcc40b}{}\label{structmage_1_1_structured_buffer_a94f811f1d36cf63dad600e6f89dcc40b} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!m\+\_\+buffer\+\_\+srv@{m\+\_\+buffer\+\_\+srv}}
 \index{m\+\_\+buffer\+\_\+srv@{m\+\_\+buffer\+\_\+srv}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+buffer\+\_\+srv}{m\_buffer\_srv}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+buffer\+\_\+srv\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+buffer\+\_\+srv\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the shader resource view of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_ab1ad27b8053f9631f0a74b9e90aa7d3d}{}\label{structmage_1_1_structured_buffer_ab1ad27b8053f9631f0a74b9e90aa7d3d} 
-\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!m\+\_\+device@{m\+\_\+device}}
-\index{m\+\_\+device@{m\+\_\+device}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
-\subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
-{\footnotesize\ttfamily template$<$typename DataT$>$ \\
-I\+D3\+D11\+Device2$\ast$ const \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the device of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_a1bdf6ee33d3d53bfd3d5f6191fdbc351}{}\label{structmage_1_1_structured_buffer_a1bdf6ee33d3d53bfd3d5f6191fdbc351} 
-\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
-\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
-\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
-{\footnotesize\ttfamily template$<$typename DataT$>$ \\
-I\+D3\+D11\+Device\+Context2$\ast$ const \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the device context of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_a92c53203287f6ef5ab8ed88c7b588e72}{}\label{structmage_1_1_structured_buffer_a92c53203287f6ef5ab8ed88c7b588e72} 
+A pointer to the shader resource view of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_a92c53203287f6ef5ab8ed88c7b588e72}{}\label{structmage_1_1_structured_buffer_a92c53203287f6ef5ab8ed88c7b588e72} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!m\+\_\+nb\+\_\+data\+\_\+elements@{m\+\_\+nb\+\_\+data\+\_\+elements}}
 \index{m\+\_\+nb\+\_\+data\+\_\+elements@{m\+\_\+nb\+\_\+data\+\_\+elements}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+data\+\_\+elements}{m\_nb\_data\_elements}}
 {\footnotesize\ttfamily template$<$typename DataT$>$ \\
-size\+\_\+t \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+nb\+\_\+data\+\_\+elements\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+size\+\_\+t \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+nb\+\_\+data\+\_\+elements\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of slots available for storing data elements in the current buffer resource of this structured buffer. 
+The number of slots available for storing data elements in the current buffer resource of this structured buffer. \hypertarget{structmage_1_1_structured_buffer_a8c69058d2ce956c7c1690a45e1bffb34}{}\label{structmage_1_1_structured_buffer_a8c69058d2ce956c7c1690a45e1bffb34} 
+\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements@{m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements}}
+\index{m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements@{m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements}{m\_nb\_used\_data\_elements}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+size\+\_\+t \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::m\+\_\+nb\+\_\+used\+\_\+data\+\_\+elements\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of used slots in the current buffer resource of this structured buffer. 

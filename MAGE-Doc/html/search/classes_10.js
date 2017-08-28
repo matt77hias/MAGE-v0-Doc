@@ -2,13 +2,14 @@ var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
   ['scenefog',['SceneFog',['../structmage_1_1_scene_fog.html',1,'mage']]],
-  ['sceneinfo',['SceneInfo',['../structmage_1_1_scene_info.html',1,'mage']]],
   ['scenemanager',['SceneManager',['../classmage_1_1_scene_manager.html',1,'mage']]],
   ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html',1,'mage']]],
   ['scenerenderer',['SceneRenderer',['../classmage_1_1_scene_renderer.html',1,'mage']]],
   ['semaphore',['Semaphore',['../structmage_1_1_semaphore.html',1,'mage']]],
-  ['shadedmaterial',['ShadedMaterial',['../structmage_1_1_shaded_material.html',1,'mage']]],
+  ['shader',['Shader',['../classmage_1_1_shader.html',1,'mage']]],
+  ['shadingnormalpass',['ShadingNormalPass',['../classmage_1_1_shading_normal_pass.html',1,'mage']]],
   ['shadowbehavior',['ShadowBehavior',['../structmage_1_1_shadow_behavior.html',1,'mage']]],
+  ['so',['SO',['../structmage_1_1_s_o.html',1,'mage']]],
   ['spotlight',['SpotLight',['../classmage_1_1_spot_light.html',1,'mage']]],
   ['sprite',['Sprite',['../classmage_1_1_sprite.html',1,'mage']]],
   ['spritebatchmesh',['SpriteBatchMesh',['../classmage_1_1_sprite_batch_mesh.html',1,'mage']]],
@@ -18,14 +19,13 @@ var searchData=
   ['spritefontreader',['SpriteFontReader',['../classmage_1_1_sprite_font_reader.html',1,'mage']]],
   ['spriteimage',['SpriteImage',['../classmage_1_1_sprite_image.html',1,'mage']]],
   ['spritenode',['SpriteNode',['../classmage_1_1_sprite_node.html',1,'mage']]],
-  ['spritepixelshader',['SpritePixelShader',['../classmage_1_1_sprite_pixel_shader.html',1,'mage']]],
+  ['spritepass',['SpritePass',['../classmage_1_1_sprite_pass.html',1,'mage']]],
   ['spritetext',['SpriteText',['../classmage_1_1_sprite_text.html',1,'mage']]],
-  ['spritevertexshader',['SpriteVertexShader',['../classmage_1_1_sprite_vertex_shader.html',1,'mage']]],
   ['staticmesh',['StaticMesh',['../classmage_1_1_static_mesh.html',1,'mage']]],
   ['statsscript',['StatsScript',['../classmage_1_1_stats_script.html',1,'mage']]],
   ['structuredbuffer',['StructuredBuffer',['../structmage_1_1_structured_buffer.html',1,'mage']]],
   ['structuredbuffer_3c_20directionallightbuffer_20_3e',['StructuredBuffer&lt; DirectionalLightBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
   ['structuredbuffer_3c_20omnilightbuffer_20_3e',['StructuredBuffer&lt; OmniLightBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
   ['structuredbuffer_3c_20spotlightbuffer_20_3e',['StructuredBuffer&lt; SpotLightBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
-  ['systemusagescript',['SystemUsageScript',['../classmage_1_1_system_usage_script.html',1,'mage']]]
+  ['switchscenescript',['SwitchSceneScript',['../classmage_1_1_switch_scene_script.html',1,'mage']]]
 ];

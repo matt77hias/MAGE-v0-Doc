@@ -7,7 +7,7 @@
 Inheritance diagram for mage\+:\+:Behavior\+Script\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=12.000000cm]{classmage_1_1_behavior_script}
+\includegraphics[height=7.604939cm]{classmage_1_1_behavior_script}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -20,6 +20,20 @@ virtual \hyperlink{classmage_1_1_behavior_script_a61e4825ba0fc7746d49faa44ed7bc4
 \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_a528c2bd218f2e6bb7d0a8ee50a05bf01}{operator=} (\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&\&script)=delete
 \item 
 virtual void \hyperlink{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb}{Update} (double delta\+\_\+time)=0
+\item 
+bool \hyperlink{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c}{Is\+Active} () const noexcept
+\item 
+bool \hyperlink{classmage_1_1_behavior_script_a40e33539ca7013a13ef127af11bff3e1}{Is\+Passive} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_behavior_script_a84a5bf0fc7ec3ecd36dddaf001143b54}{Activate} () noexcept
+\item 
+void \hyperlink{classmage_1_1_behavior_script_ab45260db9c30d596b1d688a01458f63e}{Deactivate} () noexcept
+\item 
+void \hyperlink{classmage_1_1_behavior_script_ab0dc76b101fd514c6e9f8799de382e8a}{Set\+Active} (bool active) noexcept
+\item 
+bool \hyperlink{classmage_1_1_behavior_script_abb1625dbaa3b1145009ea474b082938f}{Is\+Terminated} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_behavior_script_a2beae460bb84a135aa7e29c7baf6b25b}{Terminate} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -29,6 +43,18 @@ virtual void \hyperlink{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab34
 \hyperlink{classmage_1_1_behavior_script_ab95b988867dfb8592ab7678bff608116}{Behavior\+Script} (const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&script)
 \item 
 \hyperlink{classmage_1_1_behavior_script_aa8f509053f6bb9dbfd3baa75bdd8b91e}{Behavior\+Script} (\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&\&script)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmage_1_1_behavior_script_a17703fd980599ccf7265b5ffc6148fe8}{On\+Active\+Change} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmage_1_1_behavior_script_a18f81792aed31a2d61a8a75784e2ceef}{m\+\_\+active}
+\item 
+bool \hyperlink{classmage_1_1_behavior_script_abc4a0e6728787347012404a597ab8e07}{m\+\_\+terminated}
 \end{DoxyCompactItemize}
 
 
@@ -46,7 +72,7 @@ Destructs this behavior script. \hypertarget{classmage_1_1_behavior_script_ad064
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Behavior\+Script@{Behavior\+Script}}
 \index{Behavior\+Script@{Behavior\+Script}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Behavior\+Script()}{BehaviorScript()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Behavior\+Script\+::\+Behavior\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Behavior\+Script\+::\+Behavior\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a behavior script. \hypertarget{classmage_1_1_behavior_script_ab95b988867dfb8592ab7678bff608116}{}\label{classmage_1_1_behavior_script_ab95b988867dfb8592ab7678bff608116} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Behavior\+Script@{Behavior\+Script}}
@@ -77,7 +103,58 @@ Constructs a behavior script by moving the given behavior script.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{}\label{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51} 
+\hypertarget{classmage_1_1_behavior_script_a84a5bf0fc7ec3ecd36dddaf001143b54}{}\label{classmage_1_1_behavior_script_a84a5bf0fc7ec3ecd36dddaf001143b54} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Activate@{Activate}}
+\index{Activate@{Activate}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Activate()}{Activate()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Activates this behavior script (and its descendant behavior scripts). \hypertarget{classmage_1_1_behavior_script_ab45260db9c30d596b1d688a01458f63e}{}\label{classmage_1_1_behavior_script_ab45260db9c30d596b1d688a01458f63e} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Deactivate@{Deactivate}}
+\index{Deactivate@{Deactivate}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Deactivate()}{Deactivate()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Deactives this behavior script (and its descendant behavior scripts). \hypertarget{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c}{}\label{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Is\+Active()}{IsActive()}}
+{\footnotesize\ttfamily bool mage\+::\+Behavior\+Script\+::\+Is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this behavior script is active.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this behavior script is active. {\ttfamily false} otherwise (i.\+e. passive). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_behavior_script_a40e33539ca7013a13ef127af11bff3e1}{}\label{classmage_1_1_behavior_script_a40e33539ca7013a13ef127af11bff3e1} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Is\+Passive@{Is\+Passive}}
+\index{Is\+Passive@{Is\+Passive}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Is\+Passive()}{IsPassive()}}
+{\footnotesize\ttfamily bool mage\+::\+Behavior\+Script\+::\+Is\+Passive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this behavior script is passive.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this behavior script is passive. {\ttfamily false} otherwise (i.\+e. active). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_behavior_script_abb1625dbaa3b1145009ea474b082938f}{}\label{classmage_1_1_behavior_script_abb1625dbaa3b1145009ea474b082938f} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Is\+Terminated@{Is\+Terminated}}
+\index{Is\+Terminated@{Is\+Terminated}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Is\+Terminated()}{IsTerminated()}}
+{\footnotesize\ttfamily bool mage\+::\+Behavior\+Script\+::\+Is\+Terminated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this behavior script is terminated or not.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this behavior script is terminated. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_behavior_script_a17703fd980599ccf7265b5ffc6148fe8}{}\label{classmage_1_1_behavior_script_a17703fd980599ccf7265b5ffc6148fe8} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!On\+Active\+Change@{On\+Active\+Change}}
+\index{On\+Active\+Change@{On\+Active\+Change}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{On\+Active\+Change()}{OnActiveChange()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+On\+Active\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Notifies this transform behavior script of a change in activeness. \hypertarget{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{}\label{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -109,7 +186,26 @@ Moves the given behavior script to this behavior script.
 \begin{DoxyReturn}{Returns}
 A reference to the moved behavior script (i.\+e. this behavior script). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb}{}\label{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb} 
+\hypertarget{classmage_1_1_behavior_script_ab0dc76b101fd514c6e9f8799de382e8a}{}\label{classmage_1_1_behavior_script_ab0dc76b101fd514c6e9f8799de382e8a} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Set\+Active@{Set\+Active}}
+\index{Set\+Active@{Set\+Active}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Set\+Active()}{SetActive()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets this behavior script active flag to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em active} & The active flag. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_behavior_script_a2beae460bb84a135aa7e29c7baf6b25b}{}\label{classmage_1_1_behavior_script_a2beae460bb84a135aa7e29c7baf6b25b} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Terminates this behavior script. \hypertarget{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb}{}\label{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Update@{Update}}
 \index{Update@{Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
@@ -124,5 +220,21 @@ Updates this behavior script.
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classmage_1_1_wireframe_script_af077736607ad22f66d8553066af51760}{mage\+::\+Wireframe\+Script}, \hyperlink{classmage_1_1_mouse_look_script_a7962403a78c02b2fe64e8f06f6319312}{mage\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1_text_console_script_a7b1acbf48376b650c08fa941a63ffa98}{mage\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1_stats_script_abb2f4de15b51b72e54dc893ecd947fad}{mage\+::\+Stats\+Script}, \hyperlink{classmage_1_1_system_usage_script_af7189c6e81dabfe077710ed9f3c7cd09}{mage\+::\+System\+Usage\+Script}, \hyperlink{classmage_1_1_frame_rate_script_a9bab0b26279823f1387428268b30e034}{mage\+::\+Frame\+Rate\+Script}, \hyperlink{classmage_1_1_f_p_s_input_controller_script_ab78955a67341970a41b21ae943b81585}{mage\+::\+F\+P\+S\+Input\+Controller\+Script}, \hyperlink{classmage_1_1_location_script_a3ffe0474c573e2cf858aee62056324a3}{mage\+::\+Location\+Script}, \hyperlink{classmage_1_1_manhattan_input_controller_script_adfd98377642722fae5db6e005b2c6c3e}{mage\+::\+Manhattan\+Input\+Controller\+Script}, \hyperlink{classmage_1_1_character_motor_script_af09581e810c02ca4a19ecbaf0d7580bb}{mage\+::\+Character\+Motor\+Script}, and \hyperlink{classmage_1_1_manhattan_motor_script_aa2aee651ef777e71ac8da8345f86b212}{mage\+::\+Manhattan\+Motor\+Script}.
+Implemented in \hyperlink{classmage_1_1_input_controller_script_a2b91f7c131dee5d09ac38e2878a715e3}{mage\+::\+Input\+Controller\+Script$<$ Orientation\+Script\+T, Movement\+Script\+T $>$}, \hyperlink{classmage_1_1_mouse_look_script_a7962403a78c02b2fe64e8f06f6319312}{mage\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1_text_console_script_a7b1acbf48376b650c08fa941a63ffa98}{mage\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1_rotation_script_a96936107b1b955cce5e84b8081f930bb}{mage\+::\+Rotation\+Script}, \hyperlink{classmage_1_1_stats_script_abb2f4de15b51b72e54dc893ecd947fad}{mage\+::\+Stats\+Script}, \hyperlink{classmage_1_1_switch_scene_script_a8faac4e2f6f571f13aecf488057f7dfb}{mage\+::\+Switch\+Scene\+Script$<$ Scene\+T $>$}, \hyperlink{classmage_1_1_location_script_a3ffe0474c573e2cf858aee62056324a3}{mage\+::\+Location\+Script}, \hyperlink{classmage_1_1_render_mode_script_a13d76eb4e8362cb519cc3cf98102094f}{mage\+::\+Render\+Mode\+Script}, \hyperlink{classmage_1_1_character_motor_script_af09581e810c02ca4a19ecbaf0d7580bb}{mage\+::\+Character\+Motor\+Script}, and \hyperlink{classmage_1_1_manhattan_motor_script_aa2aee651ef777e71ac8da8345f86b212}{mage\+::\+Manhattan\+Motor\+Script}.
 
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_behavior_script_a18f81792aed31a2d61a8a75784e2ceef}{}\label{classmage_1_1_behavior_script_a18f81792aed31a2d61a8a75784e2ceef} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!m\+\_\+active@{m\+\_\+active}}
+\index{m\+\_\+active@{m\+\_\+active}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+active}{m\_active}}
+{\footnotesize\ttfamily bool mage\+::\+Behavior\+Script\+::m\+\_\+active\hspace{0.3cm}{\ttfamily [private]}}
+
+A flag indicating whether this behavior script is active or not (i.\+e. passive). \hypertarget{classmage_1_1_behavior_script_abc4a0e6728787347012404a597ab8e07}{}\label{classmage_1_1_behavior_script_abc4a0e6728787347012404a597ab8e07} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!m\+\_\+terminated@{m\+\_\+terminated}}
+\index{m\+\_\+terminated@{m\+\_\+terminated}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+terminated}{m\_terminated}}
+{\footnotesize\ttfamily bool mage\+::\+Behavior\+Script\+::m\+\_\+terminated\hspace{0.3cm}{\ttfamily [private]}}
+
+A flag indicating whether this behavior script is terminated or not. 

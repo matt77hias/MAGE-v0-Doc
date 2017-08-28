@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weakptr',['WeakPtr',['../namespacemage.html#aa159a63c0d58464bdf32dfe419dd5dc1',1,'mage']]]
+  ['resourcemap',['ResourceMap',['../namespacemage.html#a0b0a087ad59dd4aa0b4b538d8caec216',1,'mage']]]
 ];

@@ -32,16 +32,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_display_configurator.html#a3a15e6afa93904c2aaab6c4f5c501fb4",
-"classmage_1_1_m_s_h_reader.html#a2bc2f2a6410de600c39336f4516a5231",
-"classmage_1_1_mouse_look_script.html#ac0fbe4b4661fd7f3c78207a336624670",
-"classmage_1_1_resource.html#adaa2464cb1fdb51a3f6028c0f316d083",
-"classmage_1_1_sprite_font.html#a0b0feb25673d6f9d9e3215167800d817",
-"classmage_1_1_v_s_reader.html#a6fa8fa2cbb66a9a1872bb84a0612a32d",
-"structmage_1_1_b_s.html#a4f312c5d09aaa97dd85702713ad26d07",
-"structmage_1_1_glyph_less_than.html#a0ae04e2104bafaa37e951409a126a44f",
-"structmage_1_1_rendering_state_cache.html#aaa928ab554db5e83354bca7f7d82308d",
-"structmage_1_1_vertex_position_color.html#a480c2767efdb73c09ebf55313e4b29c9"
+"classmage_1_1_constant_shading_pass.html#ada08b06e66c1d1da2f869b96b71f3202",
+"classmage_1_1_loadable.html#aad6ac6495924e0787c377d665a076f2a",
+"classmage_1_1_mouse.html#af99645fb4226077abee4532a5e663066",
+"classmage_1_1_render_mode_script.html#a8ca48ab27bef55314b1a822b827153b2",
+"classmage_1_1_shader.html#a0829beb106fdea24cc35832472951cce",
+"classmage_1_1_stats_script.html#afcbbf37839891d06b1331af3cc7f6e82",
+"functions_p.html",
+"structmage_1_1_condition_variable.html#a16507f71180938eb82af7e35d3ca5df7",
+"structmage_1_1_material.html#a196fd470a8bcedbb5986226b1425bd14",
+"structmage_1_1_read_write_mutex_lock.html#a0c31334330a9259b0b68d71b9ee13704",
+"structmage_1_1_vertex_position.html#ae00cb7667e411fefa4052b80a47ccfff"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

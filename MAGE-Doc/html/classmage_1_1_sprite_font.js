@@ -9,8 +9,6 @@ var classmage_1_1_sprite_font =
     [ "DrawString", "classmage_1_1_sprite_font.html#a02498ef183874ed31c408fc142a8231e", null ],
     [ "DrawString", "classmage_1_1_sprite_font.html#a10fee860b9ccbc3063c1721deb7688e5", null ],
     [ "Get", "classmage_1_1_sprite_font.html#a8e43f8d97fb7e5ee03ed49fb45ee1b5f", null ],
-    [ "GetAddress", "classmage_1_1_sprite_font.html#a7bb83a23e33270c1c47c58eb67f048d1", null ],
-    [ "GetAddress", "classmage_1_1_sprite_font.html#a6adc948fa1132f68b0f835e1453e37f7", null ],
     [ "GetDefaultCharacter", "classmage_1_1_sprite_font.html#a9be513809e714558708cab21a22d7316", null ],
     [ "GetGlyph", "classmage_1_1_sprite_font.html#aa13424a1e0153ffb9433bb2cb416360b", null ],
     [ "GetLineSpacing", "classmage_1_1_sprite_font.html#a281f33047c7627053a5bf61f8fa704fe", null ],

@@ -33,7 +33,7 @@ uint32\+\_\+t \hyperlink{classmage_1_1_renderer_a140938e7d5f576163d39ce249ebda99
 \item 
 uint32\+\_\+t \hyperlink{classmage_1_1_renderer_adc6940516d809d1916c627d6ce3837fe}{Get\+Height} () const noexcept
 \item 
-D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_renderer_a6f3b70a1f38526f3e391df43ead18f84}{Get\+Max\+Viewport} () const noexcept
+bool \hyperlink{classmage_1_1_renderer_a2ed9e9e39f01fa58769edd82ee1adcf8}{Has\+M\+S\+AA} () const noexcept
 \item 
 bool \hyperlink{classmage_1_1_renderer_a1de1804c1eedae7dc12435a520a10b9c}{Is\+Windowed} () const
 \item 
@@ -270,9 +270,6 @@ This renderer is inside a begin/end pair.
 
 Returns the renderer associated with the current engine.
 
-\begin{DoxyPrecond}{Precondition}
-The renderer associated with the current engine must be loaded. 
-\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the renderer associated with the current engine. 
 \end{DoxyReturn}
@@ -320,13 +317,7 @@ Returns the height in pixels of the display of this renderer.
 \begin{DoxyReturn}{Returns}
 The height in pixels of the display of this renderer. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_renderer_a6f3b70a1f38526f3e391df43ead18f84}{}\label{classmage_1_1_renderer_a6f3b70a1f38526f3e391df43ead18f84} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Max\+Viewport@{Get\+Max\+Viewport}}
-\index{Get\+Max\+Viewport@{Get\+Max\+Viewport}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Get\+Max\+Viewport()}{GetMaxViewport()}}
-{\footnotesize\ttfamily D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::\+Renderer\+::\+Get\+Max\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the maximum viewport of this renderer. \hypertarget{classmage_1_1_renderer_a6f19510d91cb5dd71c41fde26db9aeaa}{}\label{classmage_1_1_renderer_a6f19510d91cb5dd71c41fde26db9aeaa} 
+\hypertarget{classmage_1_1_renderer_a6f19510d91cb5dd71c41fde26db9aeaa}{}\label{classmage_1_1_renderer_a6f19510d91cb5dd71c41fde26db9aeaa} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Output@{Get\+Output}}
 \index{Get\+Output@{Get\+Output}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Get\+Output()}{GetOutput()}}
@@ -358,6 +349,17 @@ Returns the width in pixels of the display of this renderer.
 
 \begin{DoxyReturn}{Returns}
 The width in pixels of the display of this renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a2ed9e9e39f01fa58769edd82ee1adcf8}{}\label{classmage_1_1_renderer_a2ed9e9e39f01fa58769edd82ee1adcf8} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Has\+M\+S\+AA@{Has\+M\+S\+AA}}
+\index{Has\+M\+S\+AA@{Has\+M\+S\+AA}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Has\+M\+S\+A\+A()}{HasMSAA()}}
+{\footnotesize\ttfamily bool mage\+::\+Renderer\+::\+Has\+M\+S\+AA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether M\+S\+AA is used by this renderer.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if M\+S\+AA is used by this renderer. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_renderer_a2bb7f4e41ef6db047ce3023ed4e5d0c1}{}\label{classmage_1_1_renderer_a2bb7f4e41ef6db047ce3023ed4e5d0c1} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Initialize\+Renderer@{Initialize\+Renderer}}

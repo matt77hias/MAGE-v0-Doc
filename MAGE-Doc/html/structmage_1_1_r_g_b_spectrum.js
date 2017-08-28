@@ -1,6 +1,6 @@
 var structmage_1_1_r_g_b_spectrum =
 [
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a2b189c79b90940c04a29f17695a78923", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#abdac70c4f7c67877b7843e76822efe50", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a340a61648762b0fa7367568320940e2a", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a16199f1c50fe4bf5da4a891e400f0005", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a9035556eb53f16ce23ba458cb3e0928f", null ],

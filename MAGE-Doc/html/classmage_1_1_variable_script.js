@@ -15,5 +15,5 @@ var classmage_1_1_variable_script =
     [ "RemoveAllVariables", "classmage_1_1_variable_script.html#af83059a4ce77ebd1ae042707d0acf750", null ],
     [ "RemoveVariable", "classmage_1_1_variable_script.html#a4970ef4faafb1a6a43c4648ec9f36cce", null ],
     [ "SetValueOfVariable", "classmage_1_1_variable_script.html#a309360848e9261773b1c6e9f8dcee7a1", null ],
-    [ "m_variables", "classmage_1_1_variable_script.html#aec3791e021e66904862f91e65f0389c4", null ]
+    [ "m_variables", "classmage_1_1_variable_script.html#a18e5571793e4399e989c533409dd5ac3", null ]
 ];

@@ -25,11 +25,13 @@ virtual \hyperlink{classmage_1_1_camera_node_ac6612668e7b9f829e371794d422d357f}{
 \item 
 const \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_camera_node_aa911263cfce8cec2a42c6d03d25af606}{Get\+Camera} () const noexcept
 \item 
-const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \& \hyperlink{classmage_1_1_camera_node_a9035f65bf3828e2dfe655676c29385f4}{Get\+Viewport} () const noexcept
+\hyperlink{structmage_1_1_camera_settings}{Camera\+Settings} $\ast$ \hyperlink{classmage_1_1_camera_node_a0bd616c44db36301845b02a03f1db5ba}{Get\+Settings} () noexcept
 \item 
-void \hyperlink{classmage_1_1_camera_node_a486933320eea7ca6965c7c561305b2ea}{Set\+Viewport} (const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&viewport) noexcept
+const \hyperlink{structmage_1_1_camera_settings}{Camera\+Settings} $\ast$ \hyperlink{classmage_1_1_camera_node_a1098f7929715018978b1bb8ac00c7148}{Get\+Settings} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_camera_node_a0041bf1b18a52ed7d229c4bdda0531a8}{Set\+Viewport} (D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&\&viewport) noexcept
+\hyperlink{structmage_1_1_viewport}{Viewport} \& \hyperlink{classmage_1_1_camera_node_ac280168901be6f8bdf03300f0b8c1a69}{Get\+Viewport} () noexcept
+\item 
+const \hyperlink{structmage_1_1_viewport}{Viewport} \& \hyperlink{classmage_1_1_camera_node_a09a761526f36b9547d29917835e907d6}{Get\+Viewport} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -50,7 +52,9 @@ virtual \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ \hyperlink{classmage_1_1_camera_node_a18f00f7ccd0c677043e11a1b3085dbfb}{m\+\_\+camera}
 \item 
-D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1_camera_node_af0e00b69461dc77c11af3a0325ba4136}{m\+\_\+viewport}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_camera_settings}{Camera\+Settings} $>$ \hyperlink{classmage_1_1_camera_node_aa8b1f1204534b3ee271e62b7cfe0f833}{m\+\_\+settings}
+\item 
+\hyperlink{structmage_1_1_viewport}{Viewport} \hyperlink{classmage_1_1_camera_node_a338e6f3112a167a7f81de59c7e33e87b}{m\+\_\+viewport}
 \end{DoxyCompactItemize}
 
 
@@ -163,11 +167,44 @@ Returns the camera of this camera node.
 \begin{DoxyReturn}{Returns}
 A pointer to the camera of this camera node. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_camera_node_a9035f65bf3828e2dfe655676c29385f4}{}\label{classmage_1_1_camera_node_a9035f65bf3828e2dfe655676c29385f4} 
+\hypertarget{classmage_1_1_camera_node_a0bd616c44db36301845b02a03f1db5ba}{}\label{classmage_1_1_camera_node_a0bd616c44db36301845b02a03f1db5ba} 
+\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Get\+Settings@{Get\+Settings}}
+\index{Get\+Settings@{Get\+Settings}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
+\subsubsection{\texorpdfstring{Get\+Settings()}{GetSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_camera_settings}{Camera\+Settings}$\ast$ mage\+::\+Camera\+Node\+::\+Get\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the camera settings of this camera node.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the camera settings of this camera node. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_node_a1098f7929715018978b1bb8ac00c7148}{}\label{classmage_1_1_camera_node_a1098f7929715018978b1bb8ac00c7148} 
+\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Get\+Settings@{Get\+Settings}}
+\index{Get\+Settings@{Get\+Settings}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
+\subsubsection{\texorpdfstring{Get\+Settings()}{GetSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_camera_settings}{Camera\+Settings}$\ast$ mage\+::\+Camera\+Node\+::\+Get\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the camera settings of this camera node.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the camera settings of this camera node. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_node_ac280168901be6f8bdf03300f0b8c1a69}{}\label{classmage_1_1_camera_node_ac280168901be6f8bdf03300f0b8c1a69} 
 \index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Get\+Viewport@{Get\+Viewport}}
 \index{Get\+Viewport@{Get\+Viewport}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
-\subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}}
-{\footnotesize\ttfamily const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT\& mage\+::\+Camera\+Node\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_viewport}{Viewport}\& mage\+::\+Camera\+Node\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the viewport of this camera node.
+
+\begin{DoxyReturn}{Returns}
+A reference to the viewport of this camera node. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_node_a09a761526f36b9547d29917835e907d6}{}\label{classmage_1_1_camera_node_a09a761526f36b9547d29917835e907d6} 
+\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Get\+Viewport@{Get\+Viewport}}
+\index{Get\+Viewport@{Get\+Viewport}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
+\subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_viewport}{Viewport}\& mage\+::\+Camera\+Node\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the viewport of this camera node.
 
@@ -206,32 +243,6 @@ Moves the given camera node to this camera node.
 \begin{DoxyReturn}{Returns}
 A reference to the moved camera node (i.\+e. this camera node). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_camera_node_a486933320eea7ca6965c7c561305b2ea}{}\label{classmage_1_1_camera_node_a486933320eea7ca6965c7c561305b2ea} 
-\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Set\+Viewport@{Set\+Viewport}}
-\index{Set\+Viewport@{Set\+Viewport}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
-\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Camera\+Node\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Sets the viewport of this camera node to the given viewport.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_camera_node_a0041bf1b18a52ed7d229c4bdda0531a8}{}\label{classmage_1_1_camera_node_a0041bf1b18a52ed7d229c4bdda0531a8} 
-\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Set\+Viewport@{Set\+Viewport}}
-\index{Set\+Viewport@{Set\+Viewport}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
-\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Camera\+Node\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&\&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Sets the viewport of this camera node to the given viewport.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
-\hline
-\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -241,10 +252,16 @@ Sets the viewport of this camera node to the given viewport.
 \subsubsection{\texorpdfstring{m\+\_\+camera}{m\_camera}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ mage\+::\+Camera\+Node\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the camera of this camera node. \hypertarget{classmage_1_1_camera_node_af0e00b69461dc77c11af3a0325ba4136}{}\label{classmage_1_1_camera_node_af0e00b69461dc77c11af3a0325ba4136} 
+A pointer to the camera of this camera node. \hypertarget{classmage_1_1_camera_node_aa8b1f1204534b3ee271e62b7cfe0f833}{}\label{classmage_1_1_camera_node_aa8b1f1204534b3ee271e62b7cfe0f833} 
+\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!m\+\_\+settings@{m\+\_\+settings}}
+\index{m\+\_\+settings@{m\+\_\+settings}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
+\subsubsection{\texorpdfstring{m\+\_\+settings}{m\_settings}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_camera_settings}{Camera\+Settings} $>$ mage\+::\+Camera\+Node\+::m\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the camera settings of this camera node. \hypertarget{classmage_1_1_camera_node_a338e6f3112a167a7f81de59c7e33e87b}{}\label{classmage_1_1_camera_node_a338e6f3112a167a7f81de59c7e33e87b} 
 \index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!m\+\_\+viewport@{m\+\_\+viewport}}
 \index{m\+\_\+viewport@{m\+\_\+viewport}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
 \subsubsection{\texorpdfstring{m\+\_\+viewport}{m\_viewport}}
-{\footnotesize\ttfamily D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::\+Camera\+Node\+::m\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_viewport}{Viewport} mage\+::\+Camera\+Node\+::m\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
 
 The viewport of this camera node. 
