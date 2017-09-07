@@ -53,11 +53,11 @@ var searchData=
   ['isfullscreen',['IsFullScreen',['../structmage_1_1_display_configuration.html#ab984b32ff2b6ce6a376aa09399b9b45e',1,'mage::DisplayConfiguration::IsFullScreen()'],['../classmage_1_1_renderer.html#a5ae3220e19c68f47a8e4d55e3ced4694',1,'mage::Renderer::IsFullScreen()']]],
   ['isheadervalid',['IsHeaderValid',['../classmage_1_1_sprite_font_reader.html#aa6dd3fc28e531d6db6ecda6ce3535d4c',1,'mage::SpriteFontReader::IsHeaderValid()'],['../classmage_1_1_m_s_h_reader.html#a2bc2f2a6410de600c39336f4516a5231',1,'mage::MSHReader::IsHeaderValid()']]],
   ['isloaded',['IsLoaded',['../classmage_1_1_loadable.html#ae5489e70602ed829212b420b2e354108',1,'mage::Loadable']]],
-  ['isopaque',['IsOpaque',['../structmage_1_1_material.html#a0df1804c29bfd9d2bbc606d6285dccec',1,'mage::Material']]],
+  ['isopaque',['IsOpaque',['../structmage_1_1_material.html#a0df1804c29bfd9d2bbc606d6285dccec',1,'mage::Material::IsOpaque()'],['../classmage_1_1_sprite.html#a8da2f573b61fc381e279931747e7d44e',1,'mage::Sprite::IsOpaque()']]],
   ['ispassive',['IsPassive',['../classmage_1_1_node.html#a5fb6ac39c7e0d630944594cd5426f61a',1,'mage::Node::IsPassive()'],['../classmage_1_1_behavior_script.html#a40e33539ca7013a13ef127af11bff3e1',1,'mage::BehaviorScript::IsPassive()']]],
   ['isquiet',['IsQuiet',['../structmage_1_1_logging_configuration.html#a64f7a7b45bc0e896b9d493ddaf13ca82',1,'mage::LoggingConfiguration']]],
   ['isterminated',['IsTerminated',['../classmage_1_1_node.html#af669e446591ecb2d56b44769ba432172',1,'mage::Node::IsTerminated()'],['../classmage_1_1_behavior_script.html#abb1625dbaa3b1145009ea474b082938f',1,'mage::BehaviorScript::IsTerminated()']]],
-  ['istransparant',['IsTransparant',['../structmage_1_1_material.html#a6a62e3889887e77259070e1f9cd9150f',1,'mage::Material']]],
+  ['istransparant',['IsTransparant',['../structmage_1_1_material.html#a6a62e3889887e77259070e1f9cd9150f',1,'mage::Material::IsTransparant()'],['../classmage_1_1_sprite.html#a0ab488942bb2572a4b62065f0197c618',1,'mage::Sprite::IsTransparant()']]],
   ['isverbose',['IsVerbose',['../structmage_1_1_logging_configuration.html#a4ad7dc55f8d105c1125adcea4796bb3b',1,'mage::LoggingConfiguration']]],
   ['isvsynced',['IsVSynced',['../structmage_1_1_display_configuration.html#ab237c9b7953853eb83a51d542dfffb5e',1,'mage::DisplayConfiguration']]],
   ['iswindowed',['IsWindowed',['../structmage_1_1_display_configuration.html#ae35fedcd9989950c5f15785632dd7a86',1,'mage::DisplayConfiguration::IsWindowed()'],['../classmage_1_1_renderer.html#a1de1804c1eedae7dc12435a520a10b9c',1,'mage::Renderer::IsWindowed()']]]

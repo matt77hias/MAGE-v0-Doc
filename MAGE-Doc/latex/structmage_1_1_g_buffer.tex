@@ -1,0 +1,191 @@
+\hypertarget{structmage_1_1_g_buffer}{}\section{mage\+:\+:G\+Buffer Struct Reference}
+\label{structmage_1_1_g_buffer}\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+
+
+{\ttfamily \#include $<$gbuffer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_g_buffer_a9111bf3ce5bf0a0648b3958b516386ae}{G\+Buffer} ()
+\item 
+\hyperlink{structmage_1_1_g_buffer_a7cb5a37658f5bc124a8c71d6a227d858}{G\+Buffer} (I\+D3\+D11\+Device2 $\ast$device)
+\item 
+\hyperlink{structmage_1_1_g_buffer_a3d437fcd8cb2b2ceb2f7c8f06a6d2690}{G\+Buffer} (const \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&buffer)=delete
+\item 
+\hyperlink{structmage_1_1_g_buffer_aa020a8c3b269d88d814c3664d03d03c6}{G\+Buffer} (\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&\&buffer)=default
+\item 
+\hyperlink{structmage_1_1_g_buffer_ace75566b38462d7edd1299379e418318}{$\sim$\+G\+Buffer} ()=default
+\item 
+\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \& \hyperlink{structmage_1_1_g_buffer_ac4b12cce6a06866958f3a674d7a7dcae}{operator=} (const \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&buffer)=delete
+\item 
+\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \& \hyperlink{structmage_1_1_g_buffer_ab1d4ae70de89c0549f54ee76b0b078c3}{operator=} (\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&\&buffer)=delete
+\item 
+void \hyperlink{structmage_1_1_g_buffer_a90645118643a60f597741ebb319eb077}{Bind\+Packing} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) noexcept
+\item 
+void \hyperlink{structmage_1_1_g_buffer_ae8495251fe7fc2402f8f8bae30c57b94}{Bind\+Unpacking} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) noexcept
+\item 
+void \hyperlink{structmage_1_1_g_buffer_a9d5be00779acac0212fe731cfd4e4fe4}{Bind\+Restore} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607}{G\+Buffer\+Index} \{ \hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a41178642cae095a6bdb909119b4d16e8}{G\+Buffer\+Index\+::\+Diffuse} = 0, 
+\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a39b0044dd8789d333e7794f359406740}{G\+Buffer\+Index\+::\+Specular} = 1, 
+\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a960b44c579bc2f6818d2daaf9e4c16f0}{G\+Buffer\+Index\+::\+Normal} = 2, 
+\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{G\+Buffer\+Index\+::\+Count} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structmage_1_1_g_buffer_a5b0d4c4b0e29afad8524d11f66a5ff3d}{Setup\+Buffers} (I\+D3\+D11\+Device2 $\ast$device)
+\item 
+void \hyperlink{structmage_1_1_g_buffer_a598e55e0b309fd9b8ec8605d5f91cf32}{Setup\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, U\+I\+NT index, U\+I\+NT width, U\+I\+NT height, D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr U\+I\+NT \hyperlink{structmage_1_1_g_buffer_a6fc048cc3d9e012f56494a3592a84f3d}{Get\+Number\+Of\+R\+T\+Vs} () noexcept
+\item 
+static constexpr U\+I\+NT \hyperlink{structmage_1_1_g_buffer_a07d656b95c8586187ce48e67a8c89dfc}{Get\+Number\+Of\+S\+R\+Vs} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ \hyperlink{structmage_1_1_g_buffer_aae23d7eabe9c4dec3f0c9a7e40965935}{m\+\_\+rtvs} \mbox{[}static\+\_\+cast$<$ U\+I\+NT $>$(\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{G\+Buffer\+Index\+::\+Count})\mbox{]}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{structmage_1_1_g_buffer_a5a73e6c70c86cfb818e99c98e1bd11e4}{m\+\_\+srvs} \mbox{[}static\+\_\+cast$<$ U\+I\+NT $>$(\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{G\+Buffer\+Index\+::\+Count})\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607}{}\label{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!G\+Buffer\+Index@{G\+Buffer\+Index}}
+\index{G\+Buffer\+Index@{G\+Buffer\+Index}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Index}{GBufferIndex}}
+{\footnotesize\ttfamily enum \hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607}{mage\+::\+G\+Buffer\+::\+G\+Buffer\+Index}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Diffuse@{Diffuse}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Diffuse@{Diffuse}}}\hypertarget{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a41178642cae095a6bdb909119b4d16e8}{}\label{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a41178642cae095a6bdb909119b4d16e8} 
+Diffuse&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Specular@{Specular}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Specular@{Specular}}}\hypertarget{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a39b0044dd8789d333e7794f359406740}{}\label{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a39b0044dd8789d333e7794f359406740} 
+Specular&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Normal@{Normal}}}\hypertarget{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a960b44c579bc2f6818d2daaf9e4c16f0}{}\label{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607a960b44c579bc2f6818d2daaf9e4c16f0} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Count@{Count}}}\hypertarget{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9} 
+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_g_buffer_a9111bf3ce5bf0a0648b3958b516386ae}{}\label{structmage_1_1_g_buffer_a9111bf3ce5bf0a0648b3958b516386ae} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!G\+Buffer@{G\+Buffer}}
+\index{G\+Buffer@{G\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{G\+Buffer()}{GBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+::\+G\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_g_buffer_a7cb5a37658f5bc124a8c71d6a227d858}{}\label{structmage_1_1_g_buffer_a7cb5a37658f5bc124a8c71d6a227d858} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!G\+Buffer@{G\+Buffer}}
+\index{G\+Buffer@{G\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{G\+Buffer()}{GBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+::\+G\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\hypertarget{structmage_1_1_g_buffer_a3d437fcd8cb2b2ceb2f7c8f06a6d2690}{}\label{structmage_1_1_g_buffer_a3d437fcd8cb2b2ceb2f7c8f06a6d2690} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!G\+Buffer@{G\+Buffer}}
+\index{G\+Buffer@{G\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{G\+Buffer()}{GBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+::\+G\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{structmage_1_1_g_buffer_aa020a8c3b269d88d814c3664d03d03c6}{}\label{structmage_1_1_g_buffer_aa020a8c3b269d88d814c3664d03d03c6} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!G\+Buffer@{G\+Buffer}}
+\index{G\+Buffer@{G\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{G\+Buffer()}{GBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+::\+G\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&\&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_g_buffer_ace75566b38462d7edd1299379e418318}{}\label{structmage_1_1_g_buffer_ace75566b38462d7edd1299379e418318} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!````~G\+Buffer@{$\sim$\+G\+Buffer}}
+\index{````~G\+Buffer@{$\sim$\+G\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{$\sim$\+G\+Buffer()}{~GBuffer()}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+::$\sim$\+G\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_g_buffer_a90645118643a60f597741ebb319eb077}{}\label{structmage_1_1_g_buffer_a90645118643a60f597741ebb319eb077} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Bind\+Packing@{Bind\+Packing}}
+\index{Bind\+Packing@{Bind\+Packing}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Bind\+Packing()}{BindPacking()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+::\+Bind\+Packing (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{structmage_1_1_g_buffer_a9d5be00779acac0212fe731cfd4e4fe4}{}\label{structmage_1_1_g_buffer_a9d5be00779acac0212fe731cfd4e4fe4} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Bind\+Restore@{Bind\+Restore}}
+\index{Bind\+Restore@{Bind\+Restore}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Bind\+Restore()}{BindRestore()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+::\+Bind\+Restore (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{structmage_1_1_g_buffer_ae8495251fe7fc2402f8f8bae30c57b94}{}\label{structmage_1_1_g_buffer_ae8495251fe7fc2402f8f8bae30c57b94} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Bind\+Unpacking@{Bind\+Unpacking}}
+\index{Bind\+Unpacking@{Bind\+Unpacking}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Bind\+Unpacking()}{BindUnpacking()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+::\+Bind\+Unpacking (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{structmage_1_1_g_buffer_a6fc048cc3d9e012f56494a3592a84f3d}{}\label{structmage_1_1_g_buffer_a6fc048cc3d9e012f56494a3592a84f3d} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Get\+Number\+Of\+R\+T\+Vs@{Get\+Number\+Of\+R\+T\+Vs}}
+\index{Get\+Number\+Of\+R\+T\+Vs@{Get\+Number\+Of\+R\+T\+Vs}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+R\+T\+Vs()}{GetNumberOfRTVs()}}
+{\footnotesize\ttfamily static constexpr U\+I\+NT mage\+::\+G\+Buffer\+::\+Get\+Number\+Of\+R\+T\+Vs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{structmage_1_1_g_buffer_a07d656b95c8586187ce48e67a8c89dfc}{}\label{structmage_1_1_g_buffer_a07d656b95c8586187ce48e67a8c89dfc} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Get\+Number\+Of\+S\+R\+Vs@{Get\+Number\+Of\+S\+R\+Vs}}
+\index{Get\+Number\+Of\+S\+R\+Vs@{Get\+Number\+Of\+S\+R\+Vs}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+S\+R\+Vs()}{GetNumberOfSRVs()}}
+{\footnotesize\ttfamily static constexpr U\+I\+NT mage\+::\+G\+Buffer\+::\+Get\+Number\+Of\+S\+R\+Vs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{structmage_1_1_g_buffer_ac4b12cce6a06866958f3a674d7a7dcae}{}\label{structmage_1_1_g_buffer_ac4b12cce6a06866958f3a674d7a7dcae} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_g_buffer}{G\+Buffer}\& mage\+::\+G\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{structmage_1_1_g_buffer_ab1d4ae70de89c0549f54ee76b0b078c3}{}\label{structmage_1_1_g_buffer_ab1d4ae70de89c0549f54ee76b0b078c3} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_g_buffer}{G\+Buffer}\& mage\+::\+G\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_g_buffer}{G\+Buffer} \&\&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{structmage_1_1_g_buffer_a598e55e0b309fd9b8ec8605d5f91cf32}{}\label{structmage_1_1_g_buffer_a598e55e0b309fd9b8ec8605d5f91cf32} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Setup\+Buffer@{Setup\+Buffer}}
+\index{Setup\+Buffer@{Setup\+Buffer}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Setup\+Buffer()}{SetupBuffer()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+::\+Setup\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{U\+I\+NT}]{index,  }\item[{U\+I\+NT}]{width,  }\item[{U\+I\+NT}]{height,  }\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_g_buffer_a5b0d4c4b0e29afad8524d11f66a5ff3d}{}\label{structmage_1_1_g_buffer_a5b0d4c4b0e29afad8524d11f66a5ff3d} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!Setup\+Buffers@{Setup\+Buffers}}
+\index{Setup\+Buffers@{Setup\+Buffers}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{Setup\+Buffers()}{SetupBuffers()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+::\+Setup\+Buffers (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_g_buffer_aae23d7eabe9c4dec3f0c9a7e40965935}{}\label{structmage_1_1_g_buffer_aae23d7eabe9c4dec3f0c9a7e40965935} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!m\+\_\+rtvs@{m\+\_\+rtvs}}
+\index{m\+\_\+rtvs@{m\+\_\+rtvs}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+rtvs}{m\_rtvs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ mage\+::\+G\+Buffer\+::m\+\_\+rtvs\mbox{[}static\+\_\+cast$<$ U\+I\+NT $>$(\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{G\+Buffer\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_g_buffer_a5a73e6c70c86cfb818e99c98e1bd11e4}{}\label{structmage_1_1_g_buffer_a5a73e6c70c86cfb818e99c98e1bd11e4} 
+\index{mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}!m\+\_\+srvs@{m\+\_\+srvs}}
+\index{m\+\_\+srvs@{m\+\_\+srvs}!mage\+::\+G\+Buffer@{mage\+::\+G\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+srvs}{m\_srvs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ mage\+::\+G\+Buffer\+::m\+\_\+srvs\mbox{[}static\+\_\+cast$<$ U\+I\+NT $>$(\hyperlink{structmage_1_1_g_buffer_a72f0fc0f46052fdc9872c48c57894607ae93f994f01c537c4e2f7d8528c3eb5e9}{G\+Buffer\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

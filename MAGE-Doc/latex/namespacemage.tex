@@ -63,6 +63,16 @@ struct \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10}{D\+D\+S\+\_\+\+H
 \item 
 struct \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT}
 \item 
+struct \hyperlink{structmage_1_1_deferred_buffer}{Deferred\+Buffer}
+\item 
+struct \hyperlink{structmage_1_1_deferred_compute_buffer}{Deferred\+Compute\+Buffer}
+\item 
+struct \hyperlink{structmage_1_1_deferred_model_buffer}{Deferred\+Model\+Buffer}
+\item 
+class \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass}
+\item 
+class \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass}
+\item 
 class \hyperlink{classmage_1_1_derived_camera_node}{Derived\+Camera\+Node}
 \item 
 class \hyperlink{classmage_1_1_derived_light_node}{Derived\+Light\+Node}
@@ -93,6 +103,10 @@ struct \hyperlink{structmage_1_1_file_stream_closer}{File\+Stream\+Closer}
 \item 
 struct \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}
 \item 
+struct \hyperlink{structmage_1_1_g_buffer}{G\+Buffer}
+\item 
+class \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}
+\item 
 struct \hyperlink{structmage_1_1_glyph}{Glyph}
 \item 
 struct \hyperlink{structmage_1_1_glyph_less_than}{Glyph\+Less\+Than}
@@ -113,7 +127,11 @@ class \hyperlink{classmage_1_1_input_manager}{Input\+Manager}
 \item 
 class \hyperlink{classmage_1_1_keyboard}{Keyboard}
 \item 
+struct \hyperlink{structmage_1_1_l_buffer}{L\+Buffer}
+\item 
 class \hyperlink{classmage_1_1_light}{Light}
+\item 
+struct \hyperlink{structmage_1_1_light_buffer}{Light\+Buffer}
 \item 
 class \hyperlink{classmage_1_1_light_node}{Light\+Node}
 \item 
@@ -226,8 +244,6 @@ class \hyperlink{classmage_1_1_rotation_script}{Rotation\+Script}
 struct \hyperlink{structmage_1_1_r_s}{RS}
 \item 
 class \hyperlink{classmage_1_1_scene}{Scene}
-\item 
-struct \hyperlink{structmage_1_1_scene_buffer}{Scene\+Buffer}
 \item 
 struct \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog}
 \item 
@@ -433,21 +449,25 @@ enum \hyperlink{namespacemage_aa9fe157e5a578a103160266df8cccb0a}{Coverage} \{ \h
 \item 
 enum \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fd}{Render\+Mode} \{ \newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{Render\+Mode\+::\+None} = 0, 
-\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a1920d61156abc05a60135aefe8bc67}{Render\+Mode\+::\+Default}, 
-\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdae41480b6bbfbf7407974a88d3d34f4fa}{Render\+Mode\+::\+Solid}, 
-\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda9e76e844ad503eb6a512433f484b5d56}{Render\+Mode\+::\+Diffuse\+Color}, 
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda67d2f6740a8eaebf4d5c6f79be8da481}{Render\+Mode\+::\+Forward}, 
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a19c0c4186d8f49cf70940ffa3765c9}{Render\+Mode\+::\+Depth\+And\+Forward}, 
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda4ed71db54748b36eeb398876b0c747ac}{Render\+Mode\+::\+Deferred}, 
 \newline
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdae41480b6bbfbf7407974a88d3d34f4fa}{Render\+Mode\+::\+Solid}, 
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda112854cc77b4a03af6e60ec3e8839725}{Render\+Mode\+::\+Depth\+And\+Solid}, 
+\hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda9e76e844ad503eb6a512433f484b5d56}{Render\+Mode\+::\+Diffuse\+Color}, 
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdab50132d8ee77360c05181ebefe00c9bc}{Render\+Mode\+::\+Diffuse\+Reflectivity}, 
+\newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda79348032e435128897b57313d7ec6e31}{Render\+Mode\+::\+Diffuse\+Reflectivity\+Texture}, 
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdaa4d284168909ad6e45502cede580934d}{Render\+Mode\+::\+Specular\+Color}, 
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda316addce329799e61c97cc4fa0604d21}{Render\+Mode\+::\+Specular\+Reflectivity}, 
-\newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda0742f8d41b8caaf4fcb98be7fccb069d}{Render\+Mode\+::\+Specular\+Reflectivity\+Texture}, 
+\newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdab59103e987d5c0e6e17c6c184edf90b2}{Render\+Mode\+::\+Normal\+Texture}, 
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda73dca3b76eca77b89c050588adba1c2b}{Render\+Mode\+::\+U\+V\+Texture}, 
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda0aa6f4210bf373c95eda00232e93cd98}{Render\+Mode\+::\+Distance}, 
-\newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda3e798a25c7282d23599b6b994f8b4bfd}{Render\+Mode\+::\+Shading\+Normal}, 
+\newline
 \hyperlink{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda145dd25767d970e1e07b749c9e21af9b}{Render\+Mode\+::\+T\+S\+N\+M\+Shading\+Normal}
  \}
 \item 
@@ -584,7 +604,13 @@ float \hyperlink{namespacemage_a765bcc018259d1d0e20a33f7910a1435}{Aspect\+Ratio\
 \item 
 {\footnotesize template$<$typename ContainerT $>$ }\\void \hyperlink{namespacemage_aa3db059e4b0563e46cdf3a3a369c3288}{Remove\+And\+Destruct\+All\+Second\+Elements} (ContainerT \&container)
 \item 
-void \hyperlink{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{Print\+Console\+Header} ()
+void \hyperlink{namespacemage_a4f7ed3d30cdecaeb3f63e197b0242288}{Print\+Console\+Header} () noexcept
+\item 
+constexpr uint32\+\_\+t \hyperlink{namespacemage_a478a1621255951eb0377a965d2b848d5}{Get\+Version\+Major} () noexcept
+\item 
+constexpr uint32\+\_\+t \hyperlink{namespacemage_a44b8b88fcf4f0bdd7df6ad194a14c478}{Get\+Version\+Minor} () noexcept
+\item 
+constexpr uint32\+\_\+t \hyperlink{namespacemage_aff62d814e8d33cb7a399783da90ae97e}{Get\+Version\+Patch} () noexcept
 \item 
 bool \hyperlink{namespacemage_a3e9bead16bf9814e6ecd6aca57ccc3e3}{File\+Exists} (const wstring \&fname) noexcept
 \item 
@@ -681,6 +707,8 @@ float \hyperlink{namespacemage_a24f9402a4169f749b0a6a81565e3912b}{Clamp\+Angle\+
 float \hyperlink{namespacemage_a1e025136183f15dfee13b125bdbc0655}{Clamp\+Angle\+Degrees} (float angle, float min\+\_\+angle, float max\+\_\+angle) noexcept
 \item 
 float \hyperlink{namespacemage_a9a1a0e1446f6c81d71fdb9480fdac38d}{Clamp\+Angle\+Radians} (float angle, float min\+\_\+angle, float max\+\_\+angle) noexcept
+\item 
+const X\+M\+V\+E\+C\+T\+OR X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespacemage_ac2f543d67f17103d59ab598b3a065dc1}{Get\+Projection\+Values} (F\+X\+M\+M\+A\+T\+R\+IX projection\+\_\+matrix) noexcept
 \item 
 float \hyperlink{namespacemage_a2dbd3992e0bcb94b465ab4ab6b7d7f83}{Convert\+Normalized\+To\+Absolute\+ScreenX} (float x)
 \item 
@@ -900,6 +928,8 @@ void \hyperlink{namespacemage_aa9fc2d2f7e0a2b6bebc707d3eaf126ff}{Import\+V\+S\+F
 \item 
 void \hyperlink{namespacemage_a68a23c80e940a32768c153f9f8cd852e}{Export\+V\+S\+To\+File} (const wstring \&fname, const vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $>$ \&variable\+\_\+buffer)
 \item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_ac4ab3e1f18778045aa2c6537efb49706}{Create\+Compiled\+Depth\+VS} () noexcept
+\item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a18e9c1d65bb6488a1f2d0314af3fca57}{Create\+Compiled\+Transform\+VS} () noexcept
 \item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a3b702ddc2b3edd87d499a8d03092b07a}{Create\+Compiled\+Emissive\+PS} () noexcept
@@ -936,6 +966,30 @@ const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader
 \item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_ab88bd46030bfac64b601a172196a05fc}{Create\+Compiled\+Cook\+Torrance\+T\+S\+N\+M\+PS} () noexcept
 \item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a2baa075f40f2589f1524672de2ab6fb4}{Create\+Compiled\+G\+Buffer\+PS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_aa5c2073c790ce603278a626ef1a04d58}{Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a14b3d0320641b1587c0960037b2f8227}{Create\+Compiled\+Deferred\+Emissive\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a30ba5ca90fc92803576b7bc8e0e95813}{Create\+Compiled\+Deferred\+Lambertian\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_ac84d69c41a75b0c338fe89d681c2599f}{Create\+Compiled\+Deferred\+Phong\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a987962a996711a8cf534e7af6f85d677}{Create\+Compiled\+Deferred\+Modified\+Phong\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a8f0181cd36576cd985728f525c54d50d}{Create\+Compiled\+Deferred\+Blinn\+Phong\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a551f3e183f6a3d8ec9a18a6229baee93}{Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a31cd483fe11662e081cd515c3e58e20d}{Create\+Compiled\+Deferred\+Ward\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a12abbbb3d57a40ad5c962ffbb7900967}{Create\+Compiled\+Deferred\+Ward\+Duer\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a482bb6dcd4a96805565693b38e5bee12}{Create\+Compiled\+Deferred\+Cook\+Torrance\+CS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a9c4eb8baba5796fb4d045396f5384524}{Create\+Compiled\+Fullscreen\+Triangle\+VS} () noexcept
+\item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_ad74abdf0fcefbcec86f5a2c3b07c3bf4}{Create\+Compiled\+Sprite\+VS} () noexcept
 \item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_af99ffef2bb5f185cf5099f8782fb04e4}{Create\+Compiled\+Sprite\+PS} () noexcept
@@ -953,6 +1007,12 @@ const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a74e6f42ac22256d3394f3cf81447ccc2}{Create\+Compiled\+Shading\+Normal\+PS} () noexcept
 \item 
 const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_adc01eb54d9c7366669b30ef81b7dfe82}{Create\+Compiled\+Shading\+Normal\+T\+S\+N\+M\+PS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_a3b3a147788f10e0844693f77a07dde1e}{Create\+Compiled\+Bounding\+Volume\+VS} () noexcept
+\item 
+const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} \hyperlink{namespacemage_ae51dc4dba4663c6414f0509f757c4fa7}{Create\+Compiled\+Bounding\+Volume\+PS} () noexcept
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_adb6201abb587d1608d6829a4b91f8ad9}{Create\+Depth\+VS} ()
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_a34f0db7651e0e01edca99c9457b736f7}{Create\+Transform\+VS} ()
 \item 
@@ -994,6 +1054,32 @@ const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_a131e5195d4c79d861381d7be1836a210}{Create\+T\+S\+N\+M\+PS} (\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} brdf)
 \item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_ad619b82f00251af8bf47b93b2eb166f1}{Create\+G\+Buffer\+PS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_a6157568f66dec038527047ee10b56ee2}{Create\+G\+Buffer\+T\+S\+N\+M\+PS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a1812165b56f659d50e05103b7adebf3a}{Create\+Deferred\+Emissive\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_aed441c7b76bdf5dcd7c252517cc67544}{Create\+Deferred\+Lambertian\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a121459cf23f140141e42a34b4b0405aa}{Create\+Deferred\+Phong\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a290e33ed7ea2f7b7a93d1b43464baf77}{Create\+Deferred\+Modified\+Phong\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_ae7a96f4db2be2b3369adc707d4a574d8}{Create\+Deferred\+Blinn\+Phong\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_aa81e7293a0b57d11e5c76ff90b5bf8b5}{Create\+Deferred\+Modified\+Blinn\+Phong\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_ac3e77a0b965fbb8571aa12b589bbdccb}{Create\+Deferred\+Ward\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a3cf1a74332d353e22493b429bca09827}{Create\+Deferred\+Ward\+Duer\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a1545593054c2e300282218c2857d9593}{Create\+Deferred\+Cook\+Torrance\+CS} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ \hyperlink{namespacemage_a40ec3d25d2e77447e6b38ce40f8a9582}{Create\+Deferred\+CS} (\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} brdf)
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_a97fceb44a13536a238d0d0ddac856b57}{Create\+Fullscreen\+Triangle\+VS} ()
+\item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_ab9ab12e1c1b17f5d218eb7396e6fda40}{Create\+Sprite\+VS} ()
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_acf33218f09d9c43ecdb0d029ddf6f7d7}{Create\+Sprite\+PS} ()
@@ -1011,6 +1097,10 @@ const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_ab9e9db47ee3b686b5f1a3889d80698c1}{Create\+Shading\+Normal\+PS} () noexcept
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_acaa767e6b9c2337bd86ed498fa1f014d}{Create\+Shading\+Normal\+T\+S\+N\+M\+PS} () noexcept
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{namespacemage_a45266e2d5dcb7f3b8fbf711aedb43357}{Create\+Bounding\+Volume\+VS} () noexcept
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{namespacemage_a35bbb8da4fbba9b5fe9ad0ace74e5496}{Create\+Bounding\+Volume\+PS} () noexcept
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{Compile\+Shader\+From\+File} (const wstring \&fname, const string \&entry\+\_\+point, const string \&shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
 \item 
@@ -1703,17 +1793,29 @@ A\+A\+BB&\\
 
 An enumeration of the different render modes.
 
-This contains\+: {\ttfamily None}, {\ttfamily Default}, {\ttfamily Solid}, {\ttfamily Diffuse\+Color}, {\ttfamily Diffuse\+Reflectivity}, {\ttfamily Diffuse\+Reflectivity\+Texture}, {\ttfamily Specular\+Color}, {\ttfamily Specular\+Reflectivity}, {\ttfamily Specular\+Reflectivity\+Texture}, {\ttfamily Normal\+Texture}, {\ttfamily U\+V\+Texture}, {\ttfamily Distance}, {\ttfamily Shading\+Normal}, and {\ttfamily T\+S\+N\+M\+Shading\+Normal}. \begin{DoxyEnumFields}{Enumerator}
+This contains\+: {\ttfamily None}, {\ttfamily Forward}, {\ttfamily Depth\+And\+Forward}, {\ttfamily Deferred}, {\ttfamily Solid}, {\ttfamily Depth\+And\+Solid}, {\ttfamily Diffuse\+Color}, {\ttfamily Diffuse\+Reflectivity}, {\ttfamily Diffuse\+Reflectivity\+Texture}, {\ttfamily Specular\+Color}, {\ttfamily Specular\+Reflectivity}, {\ttfamily Specular\+Reflectivity\+Texture}, {\ttfamily Normal\+Texture}, {\ttfamily U\+V\+Texture}, {\ttfamily Distance}, {\ttfamily Shading\+Normal}, and {\ttfamily T\+S\+N\+M\+Shading\+Normal}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!mage@{mage}}\index{mage@{mage}!None@{None}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda6adf97f83acf6453d4a6a4b1070f3754} 
 None&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!mage@{mage}}\index{mage@{mage}!Default@{Default}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a1920d61156abc05a60135aefe8bc67}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a1920d61156abc05a60135aefe8bc67} 
-Default&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Forward@{Forward}!mage@{mage}}\index{mage@{mage}!Forward@{Forward}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda67d2f6740a8eaebf4d5c6f79be8da481}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda67d2f6740a8eaebf4d5c6f79be8da481} 
+Forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Depth\+And\+Forward@{Depth\+And\+Forward}!mage@{mage}}\index{mage@{mage}!Depth\+And\+Forward@{Depth\+And\+Forward}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a19c0c4186d8f49cf70940ffa3765c9}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda7a19c0c4186d8f49cf70940ffa3765c9} 
+Depth\+And\+Forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Deferred@{Deferred}!mage@{mage}}\index{mage@{mage}!Deferred@{Deferred}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda4ed71db54748b36eeb398876b0c747ac}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda4ed71db54748b36eeb398876b0c747ac} 
+Deferred&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Solid@{Solid}!mage@{mage}}\index{mage@{mage}!Solid@{Solid}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdae41480b6bbfbf7407974a88d3d34f4fa}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fdae41480b6bbfbf7407974a88d3d34f4fa} 
 Solid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Depth\+And\+Solid@{Depth\+And\+Solid}!mage@{mage}}\index{mage@{mage}!Depth\+And\+Solid@{Depth\+And\+Solid}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda112854cc77b4a03af6e60ec3e8839725}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda112854cc77b4a03af6e60ec3e8839725} 
+Depth\+And\+Solid&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Diffuse\+Color@{Diffuse\+Color}!mage@{mage}}\index{mage@{mage}!Diffuse\+Color@{Diffuse\+Color}}}\hypertarget{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda9e76e844ad503eb6a512433f484b5d56}{}\label{namespacemage_a5e7e18b0154373ce8fc942fe3f6b27fda9e76e844ad503eb6a512433f484b5d56} 
@@ -3718,6 +3820,44 @@ A pointer to the texture.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the texture. \\
 \hline
 \end{DoxyExceptions}
+\hypertarget{namespacemage_a35bbb8da4fbba9b5fe9ad0ace74e5496}{}\label{namespacemage_a35bbb8da4fbba9b5fe9ad0ace74e5496} 
+\index{mage@{mage}!Create\+Bounding\+Volume\+PS@{Create\+Bounding\+Volume\+PS}}
+\index{Create\+Bounding\+Volume\+PS@{Create\+Bounding\+Volume\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Bounding\+Volume\+P\+S()}{CreateBoundingVolumePS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Create\+Bounding\+Volume\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a bounding volume pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the bounding volume pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a45266e2d5dcb7f3b8fbf711aedb43357}{}\label{namespacemage_a45266e2d5dcb7f3b8fbf711aedb43357} 
+\index{mage@{mage}!Create\+Bounding\+Volume\+VS@{Create\+Bounding\+Volume\+VS}}
+\index{Create\+Bounding\+Volume\+VS@{Create\+Bounding\+Volume\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Bounding\+Volume\+V\+S()}{CreateBoundingVolumeVS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+Bounding\+Volume\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a bounding volume vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the bounding volume vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a1e2853216acf07f04394a43f6b376dc6}{}\label{namespacemage_a1e2853216acf07f04394a43f6b376dc6} 
 \index{mage@{mage}!Create\+Compiled\+Blinn\+Phong\+PS@{Create\+Compiled\+Blinn\+Phong\+PS}}
 \index{Create\+Compiled\+Blinn\+Phong\+PS@{Create\+Compiled\+Blinn\+Phong\+PS}!mage@{mage}}
@@ -3739,6 +3879,28 @@ Returns the compiled Blinn-\/\+Phong tsnm pixel shader.
 
 \begin{DoxyReturn}{Returns}
 A buffer compiled Blinn-\/\+Phong tsnm pixel shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ae51dc4dba4663c6414f0509f757c4fa7}{}\label{namespacemage_ae51dc4dba4663c6414f0509f757c4fa7} 
+\index{mage@{mage}!Create\+Compiled\+Bounding\+Volume\+PS@{Create\+Compiled\+Bounding\+Volume\+PS}}
+\index{Create\+Compiled\+Bounding\+Volume\+PS@{Create\+Compiled\+Bounding\+Volume\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Bounding\+Volume\+P\+S()}{CreateCompiledBoundingVolumePS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Bounding\+Volume\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled bounding volume pixel shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled bounding volume pixel shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a3b3a147788f10e0844693f77a07dde1e}{}\label{namespacemage_a3b3a147788f10e0844693f77a07dde1e} 
+\index{mage@{mage}!Create\+Compiled\+Bounding\+Volume\+VS@{Create\+Compiled\+Bounding\+Volume\+VS}}
+\index{Create\+Compiled\+Bounding\+Volume\+VS@{Create\+Compiled\+Bounding\+Volume\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Bounding\+Volume\+V\+S()}{CreateCompiledBoundingVolumeVS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Bounding\+Volume\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled bounding volume vertex shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled bounding volume vertex shader. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a964d1888b0dcbff2a915b97287e3c41d}{}\label{namespacemage_a964d1888b0dcbff2a915b97287e3c41d} 
 \index{mage@{mage}!Create\+Compiled\+Constant\+Color\+PS@{Create\+Compiled\+Constant\+Color\+PS}}
@@ -3784,6 +3946,116 @@ Returns the compiled Cook-\/\+Torrance tsnm pixel shader.
 \begin{DoxyReturn}{Returns}
 A buffer compiled Cook-\/\+Torrance tsnm pixel shader. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a8f0181cd36576cd985728f525c54d50d}{}\label{namespacemage_a8f0181cd36576cd985728f525c54d50d} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Blinn\+Phong\+CS@{Create\+Compiled\+Deferred\+Blinn\+Phong\+CS}}
+\index{Create\+Compiled\+Deferred\+Blinn\+Phong\+CS@{Create\+Compiled\+Deferred\+Blinn\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Blinn\+Phong\+C\+S()}{CreateCompiledDeferredBlinnPhongCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Blinn\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Blinn-\/\+Phong compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Blinn-\/\+Phong compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a482bb6dcd4a96805565693b38e5bee12}{}\label{namespacemage_a482bb6dcd4a96805565693b38e5bee12} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Cook\+Torrance\+CS@{Create\+Compiled\+Deferred\+Cook\+Torrance\+CS}}
+\index{Create\+Compiled\+Deferred\+Cook\+Torrance\+CS@{Create\+Compiled\+Deferred\+Cook\+Torrance\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Cook\+Torrance\+C\+S()}{CreateCompiledDeferredCookTorranceCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Cook\+Torrance\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Cook-\/\+Torrance compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Cook-\/\+Torrance compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a14b3d0320641b1587c0960037b2f8227}{}\label{namespacemage_a14b3d0320641b1587c0960037b2f8227} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Emissive\+CS@{Create\+Compiled\+Deferred\+Emissive\+CS}}
+\index{Create\+Compiled\+Deferred\+Emissive\+CS@{Create\+Compiled\+Deferred\+Emissive\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Emissive\+C\+S()}{CreateCompiledDeferredEmissiveCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Emissive\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred emissive compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred emissive compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a30ba5ca90fc92803576b7bc8e0e95813}{}\label{namespacemage_a30ba5ca90fc92803576b7bc8e0e95813} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Lambertian\+CS@{Create\+Compiled\+Deferred\+Lambertian\+CS}}
+\index{Create\+Compiled\+Deferred\+Lambertian\+CS@{Create\+Compiled\+Deferred\+Lambertian\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Lambertian\+C\+S()}{CreateCompiledDeferredLambertianCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Lambertian\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Lambertian compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Lambertian compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a551f3e183f6a3d8ec9a18a6229baee93}{}\label{namespacemage_a551f3e183f6a3d8ec9a18a6229baee93} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS@{Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS}}
+\index{Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS@{Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+C\+S()}{CreateCompiledDeferredModifiedBlinnPhongCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Modified\+Blinn\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Modified Blinn-\/\+Phong compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Modified Blinn-\/\+Phong compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a987962a996711a8cf534e7af6f85d677}{}\label{namespacemage_a987962a996711a8cf534e7af6f85d677} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Modified\+Phong\+CS@{Create\+Compiled\+Deferred\+Modified\+Phong\+CS}}
+\index{Create\+Compiled\+Deferred\+Modified\+Phong\+CS@{Create\+Compiled\+Deferred\+Modified\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Modified\+Phong\+C\+S()}{CreateCompiledDeferredModifiedPhongCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Modified\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Modified Phong compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Modified Phong compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ac84d69c41a75b0c338fe89d681c2599f}{}\label{namespacemage_ac84d69c41a75b0c338fe89d681c2599f} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Phong\+CS@{Create\+Compiled\+Deferred\+Phong\+CS}}
+\index{Create\+Compiled\+Deferred\+Phong\+CS@{Create\+Compiled\+Deferred\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Phong\+C\+S()}{CreateCompiledDeferredPhongCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Phong compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Phong compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a31cd483fe11662e081cd515c3e58e20d}{}\label{namespacemage_a31cd483fe11662e081cd515c3e58e20d} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Ward\+CS@{Create\+Compiled\+Deferred\+Ward\+CS}}
+\index{Create\+Compiled\+Deferred\+Ward\+CS@{Create\+Compiled\+Deferred\+Ward\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Ward\+C\+S()}{CreateCompiledDeferredWardCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Ward\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Ward compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Ward compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a12abbbb3d57a40ad5c962ffbb7900967}{}\label{namespacemage_a12abbbb3d57a40ad5c962ffbb7900967} 
+\index{mage@{mage}!Create\+Compiled\+Deferred\+Ward\+Duer\+CS@{Create\+Compiled\+Deferred\+Ward\+Duer\+CS}}
+\index{Create\+Compiled\+Deferred\+Ward\+Duer\+CS@{Create\+Compiled\+Deferred\+Ward\+Duer\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Deferred\+Ward\+Duer\+C\+S()}{CreateCompiledDeferredWardDuerCS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Deferred\+Ward\+Duer\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled deferred Ward-\/\+Duer compute shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled deferred Ward-\/\+Duer compute shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ac4ab3e1f18778045aa2c6537efb49706}{}\label{namespacemage_ac4ab3e1f18778045aa2c6537efb49706} 
+\index{mage@{mage}!Create\+Compiled\+Depth\+VS@{Create\+Compiled\+Depth\+VS}}
+\index{Create\+Compiled\+Depth\+VS@{Create\+Compiled\+Depth\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Depth\+V\+S()}{CreateCompiledDepthVS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Depth\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled depth vertex shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled depth vertex shader. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a285205d80f7254fb2916f38adaac331f}{}\label{namespacemage_a285205d80f7254fb2916f38adaac331f} 
 \index{mage@{mage}!Create\+Compiled\+Distance\+PS@{Create\+Compiled\+Distance\+PS}}
 \index{Create\+Compiled\+Distance\+PS@{Create\+Compiled\+Distance\+PS}!mage@{mage}}
@@ -3805,6 +4077,39 @@ Returns the compiled emissive pixel shader.
 
 \begin{DoxyReturn}{Returns}
 A buffer compiled emissive pixel shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a9c4eb8baba5796fb4d045396f5384524}{}\label{namespacemage_a9c4eb8baba5796fb4d045396f5384524} 
+\index{mage@{mage}!Create\+Compiled\+Fullscreen\+Triangle\+VS@{Create\+Compiled\+Fullscreen\+Triangle\+VS}}
+\index{Create\+Compiled\+Fullscreen\+Triangle\+VS@{Create\+Compiled\+Fullscreen\+Triangle\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+Fullscreen\+Triangle\+V\+S()}{CreateCompiledFullscreenTriangleVS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+Fullscreen\+Triangle\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled fullscreen triangle vertex shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled fullscreen triangle vertex shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a2baa075f40f2589f1524672de2ab6fb4}{}\label{namespacemage_a2baa075f40f2589f1524672de2ab6fb4} 
+\index{mage@{mage}!Create\+Compiled\+G\+Buffer\+PS@{Create\+Compiled\+G\+Buffer\+PS}}
+\index{Create\+Compiled\+G\+Buffer\+PS@{Create\+Compiled\+G\+Buffer\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+G\+Buffer\+P\+S()}{CreateCompiledGBufferPS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+G\+Buffer\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pixel shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pixel shader. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aa5c2073c790ce603278a626ef1a04d58}{}\label{namespacemage_aa5c2073c790ce603278a626ef1a04d58} 
+\index{mage@{mage}!Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS@{Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS}}
+\index{Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS@{Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+P\+S()}{CreateCompiledGBufferTSNMPS()}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_buffer_compiled_shader}{Buffer\+Compiled\+Shader} mage\+::\+Create\+Compiled\+G\+Buffer\+T\+S\+N\+M\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the compiled \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} tsnm pixel shader.
+
+\begin{DoxyReturn}{Returns}
+A buffer compiled \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} tsnm pixel shader. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a9d14167e0a21b00a47b97df38e2d8a36}{}\label{namespacemage_a9d14167e0a21b00a47b97df38e2d8a36} 
 \index{mage@{mage}!Create\+Compiled\+Lambertian\+PS@{Create\+Compiled\+Lambertian\+PS}}
@@ -4262,6 +4567,201 @@ A success/error value.
 \subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{device\+\_\+context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
 
+\hypertarget{namespacemage_ae7a96f4db2be2b3369adc707d4a574d8}{}\label{namespacemage_ae7a96f4db2be2b3369adc707d4a574d8} 
+\index{mage@{mage}!Create\+Deferred\+Blinn\+Phong\+CS@{Create\+Deferred\+Blinn\+Phong\+CS}}
+\index{Create\+Deferred\+Blinn\+Phong\+CS@{Create\+Deferred\+Blinn\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Blinn\+Phong\+C\+S()}{CreateDeferredBlinnPhongCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Blinn\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Blinn-\/\+Phong compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Blinn-\/\+Phong compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a1545593054c2e300282218c2857d9593}{}\label{namespacemage_a1545593054c2e300282218c2857d9593} 
+\index{mage@{mage}!Create\+Deferred\+Cook\+Torrance\+CS@{Create\+Deferred\+Cook\+Torrance\+CS}}
+\index{Create\+Deferred\+Cook\+Torrance\+CS@{Create\+Deferred\+Cook\+Torrance\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Cook\+Torrance\+C\+S()}{CreateDeferredCookTorranceCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Cook\+Torrance\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Cook-\/\+Torrance compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Cook-\/\+Torrance compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a40ec3d25d2e77447e6b38ce40f8a9582}{}\label{namespacemage_a40ec3d25d2e77447e6b38ce40f8a9582} 
+\index{mage@{mage}!Create\+Deferred\+CS@{Create\+Deferred\+CS}}
+\index{Create\+Deferred\+CS@{Create\+Deferred\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+C\+S()}{CreateDeferredCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+CS (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})}
+
+Creates a deferred compute shader matching the given B\+R\+DF.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred compute shader matching the given B\+R\+DF. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a1812165b56f659d50e05103b7adebf3a}{}\label{namespacemage_a1812165b56f659d50e05103b7adebf3a} 
+\index{mage@{mage}!Create\+Deferred\+Emissive\+CS@{Create\+Deferred\+Emissive\+CS}}
+\index{Create\+Deferred\+Emissive\+CS@{Create\+Deferred\+Emissive\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Emissive\+C\+S()}{CreateDeferredEmissiveCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Emissive\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred emissive compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred emissive compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_aed441c7b76bdf5dcd7c252517cc67544}{}\label{namespacemage_aed441c7b76bdf5dcd7c252517cc67544} 
+\index{mage@{mage}!Create\+Deferred\+Lambertian\+CS@{Create\+Deferred\+Lambertian\+CS}}
+\index{Create\+Deferred\+Lambertian\+CS@{Create\+Deferred\+Lambertian\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Lambertian\+C\+S()}{CreateDeferredLambertianCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Lambertian\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Lambertian compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Lambertian compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_aa81e7293a0b57d11e5c76ff90b5bf8b5}{}\label{namespacemage_aa81e7293a0b57d11e5c76ff90b5bf8b5} 
+\index{mage@{mage}!Create\+Deferred\+Modified\+Blinn\+Phong\+CS@{Create\+Deferred\+Modified\+Blinn\+Phong\+CS}}
+\index{Create\+Deferred\+Modified\+Blinn\+Phong\+CS@{Create\+Deferred\+Modified\+Blinn\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Modified\+Blinn\+Phong\+C\+S()}{CreateDeferredModifiedBlinnPhongCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Modified\+Blinn\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Modified Blinn-\/\+Phong compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Modified Blinn-\/\+Phong compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a290e33ed7ea2f7b7a93d1b43464baf77}{}\label{namespacemage_a290e33ed7ea2f7b7a93d1b43464baf77} 
+\index{mage@{mage}!Create\+Deferred\+Modified\+Phong\+CS@{Create\+Deferred\+Modified\+Phong\+CS}}
+\index{Create\+Deferred\+Modified\+Phong\+CS@{Create\+Deferred\+Modified\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Modified\+Phong\+C\+S()}{CreateDeferredModifiedPhongCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Modified\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Modified Phong compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Modified Phong compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a121459cf23f140141e42a34b4b0405aa}{}\label{namespacemage_a121459cf23f140141e42a34b4b0405aa} 
+\index{mage@{mage}!Create\+Deferred\+Phong\+CS@{Create\+Deferred\+Phong\+CS}}
+\index{Create\+Deferred\+Phong\+CS@{Create\+Deferred\+Phong\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Phong\+C\+S()}{CreateDeferredPhongCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Phong\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Phong compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Phong compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_ac3e77a0b965fbb8571aa12b589bbdccb}{}\label{namespacemage_ac3e77a0b965fbb8571aa12b589bbdccb} 
+\index{mage@{mage}!Create\+Deferred\+Ward\+CS@{Create\+Deferred\+Ward\+CS}}
+\index{Create\+Deferred\+Ward\+CS@{Create\+Deferred\+Ward\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Ward\+C\+S()}{CreateDeferredWardCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Ward\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Ward compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Ward compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a3cf1a74332d353e22493b429bca09827}{}\label{namespacemage_a3cf1a74332d353e22493b429bca09827} 
+\index{mage@{mage}!Create\+Deferred\+Ward\+Duer\+CS@{Create\+Deferred\+Ward\+Duer\+CS}}
+\index{Create\+Deferred\+Ward\+Duer\+CS@{Create\+Deferred\+Ward\+Duer\+CS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Deferred\+Ward\+Duer\+C\+S()}{CreateDeferredWardDuerCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_af219172e81f21ea8002b17b1efbb25e0}{Compute\+Shader} $>$ mage\+::\+Create\+Deferred\+Ward\+Duer\+CS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a deferred Ward-\/\+Duer compute shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred Ward-\/\+Duer compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a2dbfa67451cd6132ec805c63f4fc774f}{}\label{namespacemage_a2dbfa67451cd6132ec805c63f4fc774f} 
 \index{mage@{mage}!Create\+Depth\+Default\+Depth\+Stencil\+State@{Create\+Depth\+Default\+Depth\+Stencil\+State}}
 \index{Create\+Depth\+Default\+Depth\+Stencil\+State@{Create\+Depth\+Default\+Depth\+Stencil\+State}!mage@{mage}}
@@ -4358,6 +4858,25 @@ Creates a depth depth stencil state.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_adb6201abb587d1608d6829a4b91f8ad9}{}\label{namespacemage_adb6201abb587d1608d6829a4b91f8ad9} 
+\index{mage@{mage}!Create\+Depth\+VS@{Create\+Depth\+VS}}
+\index{Create\+Depth\+VS@{Create\+Depth\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Depth\+V\+S()}{CreateDepthVS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+Depth\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a depth vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the depth vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the vertex shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_a398bc7b2da69502534c658bdfc1fad24}{}\label{namespacemage_a398bc7b2da69502534c658bdfc1fad24} 
 \index{mage@{mage}!Create\+Distance\+PS@{Create\+Distance\+PS}}
 \index{Create\+Distance\+PS@{Create\+Distance\+PS}!mage@{mage}}
@@ -4495,6 +5014,63 @@ The resource manager associated with the current engine must be loaded.
 \end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the emissive pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a97fceb44a13536a238d0d0ddac856b57}{}\label{namespacemage_a97fceb44a13536a238d0d0ddac856b57} 
+\index{mage@{mage}!Create\+Fullscreen\+Triangle\+VS@{Create\+Fullscreen\+Triangle\+VS}}
+\index{Create\+Fullscreen\+Triangle\+VS@{Create\+Fullscreen\+Triangle\+VS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Fullscreen\+Triangle\+V\+S()}{CreateFullscreenTriangleVS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Create\+Fullscreen\+Triangle\+VS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a fullscreen triangle vertex shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the fullscreen triangle vertex shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the vertex shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_ad619b82f00251af8bf47b93b2eb166f1}{}\label{namespacemage_ad619b82f00251af8bf47b93b2eb166f1} 
+\index{mage@{mage}!Create\+G\+Buffer\+PS@{Create\+G\+Buffer\+PS}}
+\index{Create\+G\+Buffer\+PS@{Create\+G\+Buffer\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+G\+Buffer\+P\+S()}{CreateGBufferPS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Create\+G\+Buffer\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the pixel shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_a6157568f66dec038527047ee10b56ee2}{}\label{namespacemage_a6157568f66dec038527047ee10b56ee2} 
+\index{mage@{mage}!Create\+G\+Buffer\+T\+S\+N\+M\+PS@{Create\+G\+Buffer\+T\+S\+N\+M\+PS}}
+\index{Create\+G\+Buffer\+T\+S\+N\+M\+PS@{Create\+G\+Buffer\+T\+S\+N\+M\+PS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+G\+Buffer\+T\+S\+N\+M\+P\+S()}{CreateGBufferTSNMPS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Create\+G\+Buffer\+T\+S\+N\+M\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} tsnm pixel shader.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} tsnm pixel shader. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
@@ -6086,6 +6662,17 @@ If the retrieval fails, the return value is zero. To get extended error informat
 
 If the retrieval succeeds, the total physical memory usage of this process (in bytes). 
 \end{DoxyReturn}
+\hypertarget{namespacemage_ac2f543d67f17103d59ab598b3a065dc1}{}\label{namespacemage_ac2f543d67f17103d59ab598b3a065dc1} 
+\index{mage@{mage}!Get\+Projection\+Values@{Get\+Projection\+Values}}
+\index{Get\+Projection\+Values@{Get\+Projection\+Values}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Projection\+Values()}{GetProjectionValues()}}
+{\footnotesize\ttfamily const X\+M\+V\+E\+C\+T\+OR X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Get\+Projection\+Values (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{projection\+\_\+matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the projection values from the given projection matrix to reconstruct the view position coordinates from the N\+DC position coordinates.
+
+\begin{DoxyReturn}{Returns}
+The projection values from the given projection matrix to reconstruct the view position coordinates from the N\+DC position coordinates. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{}\label{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2} 
 \index{mage@{mage}!Get\+Surface\+Info@{Get\+Surface\+Info}}
 \index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
@@ -6134,6 +6721,39 @@ Returns the size of the given 2D texture.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The size of the given 2D texture as a {\ttfamily X\+M\+V\+E\+C\+T\+OR} (width, height, width, height). 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a478a1621255951eb0377a965d2b848d5}{}\label{namespacemage_a478a1621255951eb0377a965d2b848d5} 
+\index{mage@{mage}!Get\+Version\+Major@{Get\+Version\+Major}}
+\index{Get\+Version\+Major@{Get\+Version\+Major}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Version\+Major()}{GetVersionMajor()}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t mage\+::\+Get\+Version\+Major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the version major number.
+
+\begin{DoxyReturn}{Returns}
+The version major number. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a44b8b88fcf4f0bdd7df6ad194a14c478}{}\label{namespacemage_a44b8b88fcf4f0bdd7df6ad194a14c478} 
+\index{mage@{mage}!Get\+Version\+Minor@{Get\+Version\+Minor}}
+\index{Get\+Version\+Minor@{Get\+Version\+Minor}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Version\+Minor()}{GetVersionMinor()}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t mage\+::\+Get\+Version\+Minor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the version minor number.
+
+\begin{DoxyReturn}{Returns}
+The version minor number. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aff62d814e8d33cb7a399783da90ae97e}{}\label{namespacemage_aff62d814e8d33cb7a399783da90ae97e} 
+\index{mage@{mage}!Get\+Version\+Patch@{Get\+Version\+Patch}}
+\index{Get\+Version\+Patch@{Get\+Version\+Patch}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Version\+Patch()}{GetVersionPatch()}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t mage\+::\+Get\+Version\+Patch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the version patch number.
+
+\begin{DoxyReturn}{Returns}
+The version patch number. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a676d66b39e598d1c01d7e7444e3a6065}{}\label{namespacemage_a676d66b39e598d1c01d7e7444e3a6065} 
 \index{mage@{mage}!Get\+Viewport\+Transform@{Get\+Viewport\+Transform}}
@@ -7493,11 +8113,11 @@ The identity \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} in case of no strict o
 
 The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{}\label{namespacemage_a064756443bd8a1af6974f22c81d29ed0} 
+\hypertarget{namespacemage_a4f7ed3d30cdecaeb3f63e197b0242288}{}\label{namespacemage_a4f7ed3d30cdecaeb3f63e197b0242288} 
 \index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
 \index{Print\+Console\+Header@{Print\+Console\+Header}!mage@{mage}}
 \subsubsection{\texorpdfstring{Print\+Console\+Header()}{PrintConsoleHeader()}}
-{\footnotesize\ttfamily void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Prints the header of the engine to the console. \hypertarget{namespacemage_ab248f74af47acacc1306e875fb19a9ce}{}\label{namespacemage_ab248f74af47acacc1306e875fb19a9ce} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}

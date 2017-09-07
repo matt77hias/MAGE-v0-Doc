@@ -27,6 +27,16 @@ I\+D3\+D11\+Device2 $\ast$ \hyperlink{classmage_1_1_renderer_a9510b8784447ed0fa9
 \item 
 I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{classmage_1_1_renderer_a13df5f31b3d18d2f4428743ebd7ffbe5}{Get\+Device\+Context} () const noexcept
 \item 
+I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{classmage_1_1_renderer_a19fed9809f31ff427440bbf6a167805e}{Get\+Back\+Buffer\+R\+TV} () const noexcept
+\item 
+I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_renderer_af0f19d31c5f01b79c2268128fde95206}{Get\+Back\+Buffer\+S\+RV} () const noexcept
+\item 
+I\+D3\+D11\+Unordered\+Access\+View $\ast$ \hyperlink{classmage_1_1_renderer_aa7e0a472b588985e3df51f1a528d08a7}{Get\+Back\+Buffer\+U\+AV} () const noexcept
+\item 
+I\+D3\+D11\+Depth\+Stencil\+View $\ast$ \hyperlink{classmage_1_1_renderer_a0e292945b845c16cc4fa113ecb6d14c5}{Get\+Depth\+Buffer\+D\+SV} () const noexcept
+\item 
+I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_renderer_a1e76970e43b0a4b734043f179d5f146d}{Get\+Depth\+Buffer\+S\+RV} () const noexcept
+\item 
 \hyperlink{structmage_1_1_rendering_state_cache}{Rendering\+State\+Cache} $\ast$ \hyperlink{classmage_1_1_renderer_a5e48da6152df0ddfa52c079f77ee6873}{Get\+Rendering\+State\+Cache} () const noexcept
 \item 
 uint32\+\_\+t \hyperlink{classmage_1_1_renderer_a140938e7d5f576163d39ce249ebda99f}{Get\+Width} () const noexcept
@@ -45,13 +55,11 @@ void \hyperlink{classmage_1_1_renderer_aff4e08af2ab697c53f1ede6546a86d19}{Set\+I
 \item 
 void \hyperlink{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{Switch\+Mode} (bool toggle)
 \item 
-void \hyperlink{classmage_1_1_renderer_ac9adf3be8c7201e4df8c5f9e049dc43d}{Begin\+Frame} ()
+void \hyperlink{classmage_1_1_renderer_a97b7b1563939688072fa94341d29cc2c}{Bind\+R\+T\+V\+And\+D\+SV} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07}{End\+Frame} ()
+void \hyperlink{classmage_1_1_renderer_a3eadaa4b37cd9ad9a3da9f72879b0722}{Begin\+Frame} () noexcept
 \item 
-void \hyperlink{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc}{Begin\+Textures} (U\+I\+NT nb\+\_\+rtvs, I\+D3\+D11\+Render\+Target\+View $\ast$const $\ast$rtvs, I\+D3\+D11\+Depth\+Stencil\+View $\ast$dsv)
-\item 
-void \hyperlink{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3}{End\+Textures} ()
+void \hyperlink{classmage_1_1_renderer_ac4b5290432db9c566c1accd98c311e0e}{End\+Frame} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -73,9 +81,9 @@ void \hyperlink{classmage_1_1_renderer_a1c4615559503b339a9cdc6ac17e1e858}{Reset\
 \item 
 void \hyperlink{classmage_1_1_renderer_a1bd77bf54ea3a7867691785efd183013}{Create\+Swap\+Chain} ()
 \item 
-void \hyperlink{classmage_1_1_renderer_a140f8bfcf5c30343791f0187f5caef14}{Create\+R\+TV} ()
+void \hyperlink{classmage_1_1_renderer_a4d89de59be7674cbdb11c37c7b04d94a}{Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV} ()
 \item 
-void \hyperlink{classmage_1_1_renderer_a0616cdfae1dda026b29785b422e220a3}{Create\+D\+SV} ()
+void \hyperlink{classmage_1_1_renderer_afe5bf4339a31eda5a14d1da48fcfe0e9}{Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -96,9 +104,15 @@ D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{classmage_1_1_ren
 \item 
 \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D\+X\+G\+I\+Swap\+Chain2 $>$ \hyperlink{classmage_1_1_renderer_a5419a7a11e8f0f69e92dd6a5cb9bd217}{m\+\_\+swap\+\_\+chain}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ \hyperlink{classmage_1_1_renderer_a86ed436120830cef3e0173f85550aa50}{m\+\_\+rtv}
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ \hyperlink{classmage_1_1_renderer_a8569a868dc96be6d831dcbe1d775f4d1}{m\+\_\+back\+\_\+buffer\+\_\+rtv}
 \item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+View $>$ \hyperlink{classmage_1_1_renderer_a27a62437e26957890563a68ebcde1909}{m\+\_\+dsv}
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{classmage_1_1_renderer_adddf1283111a3c43a7957411688136b8}{m\+\_\+back\+\_\+buffer\+\_\+srv}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Unordered\+Access\+View $>$ \hyperlink{classmage_1_1_renderer_a1f62a5eb350d14f7c66022dd45f553e0}{m\+\_\+back\+\_\+buffer\+\_\+uav}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+View $>$ \hyperlink{classmage_1_1_renderer_a8f5a70294790d4fbbb8237c587f88bb5}{m\+\_\+depth\+\_\+buffer\+\_\+dsv}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{classmage_1_1_renderer_ac5b85fc464bceb434748d8a44243788c}{m\+\_\+depth\+\_\+buffer\+\_\+srv}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_rendering_state_cache}{Rendering\+State\+Cache} $>$ \hyperlink{classmage_1_1_renderer_a3d9f823ecef314a974c4cdb3a71a1853}{m\+\_\+rendering\+\_\+state\+\_\+cache}
 \end{DoxyCompactItemize}
@@ -161,70 +175,57 @@ Constructs a renderer by moving the given renderer.
 Destructs this renderer. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_renderer_ac9adf3be8c7201e4df8c5f9e049dc43d}{}\label{classmage_1_1_renderer_ac9adf3be8c7201e4df8c5f9e049dc43d} 
+\hypertarget{classmage_1_1_renderer_a3eadaa4b37cd9ad9a3da9f72879b0722}{}\label{classmage_1_1_renderer_a3eadaa4b37cd9ad9a3da9f72879b0722} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Begin\+Frame@{Begin\+Frame}}
 \index{Begin\+Frame@{Begin\+Frame}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Begin\+Frame()}{BeginFrame()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Begin\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Begin\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Begins the rendering of the current frame.
 
 \begin{DoxyPrecond}{Precondition}
 This renderer is not inside a begin/end pair. 
 \end{DoxyPrecond}
-\hypertarget{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc}{}\label{classmage_1_1_renderer_a2ffbc529a9f57ebd724273bbf17413fc} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Begin\+Textures@{Begin\+Textures}}
-\index{Begin\+Textures@{Begin\+Textures}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Begin\+Textures()}{BeginTextures()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Begin\+Textures (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{nb\+\_\+rtvs,  }\item[{I\+D3\+D11\+Render\+Target\+View $\ast$const $\ast$}]{rtvs,  }\item[{I\+D3\+D11\+Depth\+Stencil\+View $\ast$}]{dsv }\end{DoxyParamCaption})}
+\hypertarget{classmage_1_1_renderer_a97b7b1563939688072fa94341d29cc2c}{}\label{classmage_1_1_renderer_a97b7b1563939688072fa94341d29cc2c} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Bind\+R\+T\+V\+And\+D\+SV@{Bind\+R\+T\+V\+And\+D\+SV}}
+\index{Bind\+R\+T\+V\+And\+D\+SV@{Bind\+R\+T\+V\+And\+D\+SV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Bind\+R\+T\+V\+And\+D\+S\+V()}{BindRTVAndDSV()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Bind\+R\+T\+V\+And\+D\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Begins the rendering to the given render target views and depth stencil views.
+Binds the R\+TV and D\+SV of this renderer. \hypertarget{classmage_1_1_renderer_a4d89de59be7674cbdb11c37c7b04d94a}{}\label{classmage_1_1_renderer_a4d89de59be7674cbdb11c37c7b04d94a} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV@{Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV}}
+\index{Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV@{Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+A\+V()}{CreateBackBufferRTVandSRVandUAV()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Create\+Back\+Buffer\+R\+T\+Vand\+S\+R\+Vand\+U\+AV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\begin{DoxyPrecond}{Precondition}
-This renderer is not inside a begin/end pair. 
-
-If {\itshape nb\+\_\+rtvs} is equal to zero, {\itshape rtvs} is equal to {\ttfamily nullptr}. 
-
-If {\itshape nb\+\_\+rtvs} is not equal to zero, 
-
-{\itshape rtvs} points to an array containing at least {\itshape nb\+\_\+rtvs} render target views. 
-\end{DoxyPrecond}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em nb\+\_\+rtvs} & The number of render target views. \\
-\hline
-\mbox{\tt in}  & {\em rtvs} & A pointer to an array containing the render target views to render to. \\
-\hline
-\mbox{\tt in}  & {\em dsv} & A pointer to the depth stencil view. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyNote}{Note}
-The render target views and depth stencil view are not reset. 
-\end{DoxyNote}
-\hypertarget{classmage_1_1_renderer_a0616cdfae1dda026b29785b422e220a3}{}\label{classmage_1_1_renderer_a0616cdfae1dda026b29785b422e220a3} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Create\+D\+SV@{Create\+D\+SV}}
-\index{Create\+D\+SV@{Create\+D\+SV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Create\+D\+S\+V()}{CreateDSV()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Create\+D\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Creates the depth stencil view of this renderer.
+Creates the render target view, shader resource view and unordered access view of the back buffer of this renderer.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the depth stencil view of this renderer. \\
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to obtain the back buffer resource of this renderer. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the render target view of the back buffer of this renderer. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the shader resource view of the back buffer of this renderer. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the unordered access view of the back buffer of this renderer. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_renderer_a140f8bfcf5c30343791f0187f5caef14}{}\label{classmage_1_1_renderer_a140f8bfcf5c30343791f0187f5caef14} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Create\+R\+TV@{Create\+R\+TV}}
-\index{Create\+R\+TV@{Create\+R\+TV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Create\+R\+T\+V()}{CreateRTV()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Create\+R\+TV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_renderer_afe5bf4339a31eda5a14d1da48fcfe0e9}{}\label{classmage_1_1_renderer_afe5bf4339a31eda5a14d1da48fcfe0e9} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV@{Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV}}
+\index{Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV@{Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Depth\+Buffer\+D\+S\+Vand\+S\+R\+V()}{CreateDepthBufferDSVandSRV()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Create\+Depth\+Buffer\+D\+S\+Vand\+S\+RV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Creates the render target view of this renderer.
+Creates the depth stencil view and shader resource view of the depth buffer of this renderer.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the render target view of this renderer. \\
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the depth buffer resource of this renderer. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the depth stencil view of the depth buffer of this renderer. \\
+\hline
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the shader resource view of the depth buffer of this renderer. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_renderer_a1bd77bf54ea3a7867691785efd183013}{}\label{classmage_1_1_renderer_a1bd77bf54ea3a7867691785efd183013} 
@@ -240,24 +241,13 @@ Creates the swap chain of this renderer.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to create the swap chain of this renderer. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07}{}\label{classmage_1_1_renderer_a38be3325e99a447340a048db19e6cf07} 
+\hypertarget{classmage_1_1_renderer_ac4b5290432db9c566c1accd98c311e0e}{}\label{classmage_1_1_renderer_ac4b5290432db9c566c1accd98c311e0e} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!End\+Frame@{End\+Frame}}
 \index{End\+Frame@{End\+Frame}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{End\+Frame()}{EndFrame()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Ends the rendering of the current frame.
-
-\begin{DoxyPrecond}{Precondition}
-This renderer is inside a begin/end pair. 
-\end{DoxyPrecond}
-\hypertarget{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3}{}\label{classmage_1_1_renderer_a80cfd903143b94348bc2c0c841831ff3} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!End\+Textures@{End\+Textures}}
-\index{End\+Textures@{End\+Textures}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{End\+Textures()}{EndTextures()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Ends the rendering to render target views and depth stencil views.
 
 \begin{DoxyPrecond}{Precondition}
 This renderer is inside a begin/end pair. 
@@ -284,6 +274,76 @@ Returns the adapter of this renderer.
 \begin{DoxyReturn}{Returns}
 A pointer to the adapter of this renderer. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a19fed9809f31ff427440bbf6a167805e}{}\label{classmage_1_1_renderer_a19fed9809f31ff427440bbf6a167805e} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Back\+Buffer\+R\+TV@{Get\+Back\+Buffer\+R\+TV}}
+\index{Get\+Back\+Buffer\+R\+TV@{Get\+Back\+Buffer\+R\+TV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Back\+Buffer\+R\+T\+V()}{GetBackBufferRTV()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Render\+Target\+View$\ast$ mage\+::\+Renderer\+::\+Get\+Back\+Buffer\+R\+TV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the back buffer R\+TV of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the back buffer R\+TV of this renderer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The back buffer R\+TV, S\+RV and U\+AV cannot both be bound at the same time. 
+\end{DoxyNote}
+\hypertarget{classmage_1_1_renderer_af0f19d31c5f01b79c2268128fde95206}{}\label{classmage_1_1_renderer_af0f19d31c5f01b79c2268128fde95206} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Back\+Buffer\+S\+RV@{Get\+Back\+Buffer\+S\+RV}}
+\index{Get\+Back\+Buffer\+S\+RV@{Get\+Back\+Buffer\+S\+RV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Back\+Buffer\+S\+R\+V()}{GetBackBufferSRV()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$ mage\+::\+Renderer\+::\+Get\+Back\+Buffer\+S\+RV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the back buffer S\+RV of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the back buffer S\+RV of this renderer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The back buffer R\+TV, S\+RV and U\+AV cannot both be bound at the same time. 
+\end{DoxyNote}
+\hypertarget{classmage_1_1_renderer_aa7e0a472b588985e3df51f1a528d08a7}{}\label{classmage_1_1_renderer_aa7e0a472b588985e3df51f1a528d08a7} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Back\+Buffer\+U\+AV@{Get\+Back\+Buffer\+U\+AV}}
+\index{Get\+Back\+Buffer\+U\+AV@{Get\+Back\+Buffer\+U\+AV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Back\+Buffer\+U\+A\+V()}{GetBackBufferUAV()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Unordered\+Access\+View$\ast$ mage\+::\+Renderer\+::\+Get\+Back\+Buffer\+U\+AV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the back buffer U\+AV of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the back buffer U\+AV of this renderer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The back buffer R\+TV, S\+RV and U\+AV cannot both be bound at the same time. 
+\end{DoxyNote}
+\hypertarget{classmage_1_1_renderer_a0e292945b845c16cc4fa113ecb6d14c5}{}\label{classmage_1_1_renderer_a0e292945b845c16cc4fa113ecb6d14c5} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Depth\+Buffer\+D\+SV@{Get\+Depth\+Buffer\+D\+SV}}
+\index{Get\+Depth\+Buffer\+D\+SV@{Get\+Depth\+Buffer\+D\+SV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Depth\+Buffer\+D\+S\+V()}{GetDepthBufferDSV()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Depth\+Stencil\+View$\ast$ mage\+::\+Renderer\+::\+Get\+Depth\+Buffer\+D\+SV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the depth buffer D\+SV of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the depth buffer D\+SV of this renderer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The depth buffer D\+SV and S\+RV cannot both be bound at the same time. 
+\end{DoxyNote}
+\hypertarget{classmage_1_1_renderer_a1e76970e43b0a4b734043f179d5f146d}{}\label{classmage_1_1_renderer_a1e76970e43b0a4b734043f179d5f146d} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Depth\+Buffer\+S\+RV@{Get\+Depth\+Buffer\+S\+RV}}
+\index{Get\+Depth\+Buffer\+S\+RV@{Get\+Depth\+Buffer\+S\+RV}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Depth\+Buffer\+S\+R\+V()}{GetDepthBufferSRV()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$ mage\+::\+Renderer\+::\+Get\+Depth\+Buffer\+S\+RV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the depth buffer S\+RV of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the depth buffer S\+RV of this renderer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The depth buffer D\+SV and S\+RV cannot both be bound at the same time. 
+\end{DoxyNote}
 \hypertarget{classmage_1_1_renderer_a9510b8784447ed0fa9b43e7a4bf1fc80}{}\label{classmage_1_1_renderer_a9510b8784447ed0fa9b43e7a4bf1fc80} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device@{Get\+Device}}
 \index{Get\+Device@{Get\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
@@ -506,7 +566,37 @@ Recreates the swap chain buffers and switches the mode of this renderer. Windowe
 Uninitializes this renderer. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_renderer_aecf4bcb70dc186b4f2083df38d1e4bc3}{}\label{classmage_1_1_renderer_aecf4bcb70dc186b4f2083df38d1e4bc3} 
+\hypertarget{classmage_1_1_renderer_a8569a868dc96be6d831dcbe1d775f4d1}{}\label{classmage_1_1_renderer_a8569a868dc96be6d831dcbe1d775f4d1} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+back\+\_\+buffer\+\_\+rtv@{m\+\_\+back\+\_\+buffer\+\_\+rtv}}
+\index{m\+\_\+back\+\_\+buffer\+\_\+rtv@{m\+\_\+back\+\_\+buffer\+\_\+rtv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+back\+\_\+buffer\+\_\+rtv}{m\_back\_buffer\_rtv}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ mage\+::\+Renderer\+::m\+\_\+back\+\_\+buffer\+\_\+rtv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the render target view of the back buffer of this renderer. \hypertarget{classmage_1_1_renderer_adddf1283111a3c43a7957411688136b8}{}\label{classmage_1_1_renderer_adddf1283111a3c43a7957411688136b8} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+back\+\_\+buffer\+\_\+srv@{m\+\_\+back\+\_\+buffer\+\_\+srv}}
+\index{m\+\_\+back\+\_\+buffer\+\_\+srv@{m\+\_\+back\+\_\+buffer\+\_\+srv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+back\+\_\+buffer\+\_\+srv}{m\_back\_buffer\_srv}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ mage\+::\+Renderer\+::m\+\_\+back\+\_\+buffer\+\_\+srv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the shader resource view of the back buffer of this renderer. \hypertarget{classmage_1_1_renderer_a1f62a5eb350d14f7c66022dd45f553e0}{}\label{classmage_1_1_renderer_a1f62a5eb350d14f7c66022dd45f553e0} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+back\+\_\+buffer\+\_\+uav@{m\+\_\+back\+\_\+buffer\+\_\+uav}}
+\index{m\+\_\+back\+\_\+buffer\+\_\+uav@{m\+\_\+back\+\_\+buffer\+\_\+uav}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+back\+\_\+buffer\+\_\+uav}{m\_back\_buffer\_uav}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Unordered\+Access\+View $>$ mage\+::\+Renderer\+::m\+\_\+back\+\_\+buffer\+\_\+uav\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the unordered access view of the back buffer of this renderer. \hypertarget{classmage_1_1_renderer_a8f5a70294790d4fbbb8237c587f88bb5}{}\label{classmage_1_1_renderer_a8f5a70294790d4fbbb8237c587f88bb5} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+depth\+\_\+buffer\+\_\+dsv@{m\+\_\+depth\+\_\+buffer\+\_\+dsv}}
+\index{m\+\_\+depth\+\_\+buffer\+\_\+dsv@{m\+\_\+depth\+\_\+buffer\+\_\+dsv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+depth\+\_\+buffer\+\_\+dsv}{m\_depth\_buffer\_dsv}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+View $>$ mage\+::\+Renderer\+::m\+\_\+depth\+\_\+buffer\+\_\+dsv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the depth stencil view of the depth buffer of this renderer. \hypertarget{classmage_1_1_renderer_ac5b85fc464bceb434748d8a44243788c}{}\label{classmage_1_1_renderer_ac5b85fc464bceb434748d8a44243788c} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+depth\+\_\+buffer\+\_\+srv@{m\+\_\+depth\+\_\+buffer\+\_\+srv}}
+\index{m\+\_\+depth\+\_\+buffer\+\_\+srv@{m\+\_\+depth\+\_\+buffer\+\_\+srv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+depth\+\_\+buffer\+\_\+srv}{m\_depth\_buffer\_srv}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ mage\+::\+Renderer\+::m\+\_\+depth\+\_\+buffer\+\_\+srv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the shader resource view of the depth buffer of this renderer. \hypertarget{classmage_1_1_renderer_aecf4bcb70dc186b4f2083df38d1e4bc3}{}\label{classmage_1_1_renderer_aecf4bcb70dc186b4f2083df38d1e4bc3} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+device@{m\+\_\+device}}
 \index{m\+\_\+device@{m\+\_\+device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
@@ -524,13 +614,7 @@ A pointer to the device context of this renderer. \hypertarget{classmage_1_1_ren
 \subsubsection{\texorpdfstring{m\+\_\+display\+\_\+configuration}{m\_display\_configuration}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_display_configuration}{Display\+Configuration} $>$ mage\+::\+Renderer\+::m\+\_\+display\+\_\+configuration\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the display configuration of this renderer. \hypertarget{classmage_1_1_renderer_a27a62437e26957890563a68ebcde1909}{}\label{classmage_1_1_renderer_a27a62437e26957890563a68ebcde1909} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+dsv@{m\+\_\+dsv}}
-\index{m\+\_\+dsv@{m\+\_\+dsv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+dsv}{m\_dsv}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+View $>$ mage\+::\+Renderer\+::m\+\_\+dsv\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the depth stencil view of this renderer. \hypertarget{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9}{}\label{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9} 
+A pointer to the display configuration of this renderer. \hypertarget{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9}{}\label{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+feature\+\_\+level@{m\+\_\+feature\+\_\+level}}
 \index{m\+\_\+feature\+\_\+level@{m\+\_\+feature\+\_\+level}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+feature\+\_\+level}{m\_feature\_level}}
@@ -560,13 +644,7 @@ A flag indicating whether this renderer is inside a begin/end pair. \hypertarget
 \subsubsection{\texorpdfstring{m\+\_\+rendering\+\_\+state\+\_\+cache}{m\_rendering\_state\_cache}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_rendering_state_cache}{Rendering\+State\+Cache} $>$ mage\+::\+Renderer\+::m\+\_\+rendering\+\_\+state\+\_\+cache\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the rendering state cache of this renderer. \hypertarget{classmage_1_1_renderer_a86ed436120830cef3e0173f85550aa50}{}\label{classmage_1_1_renderer_a86ed436120830cef3e0173f85550aa50} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+rtv@{m\+\_\+rtv}}
-\index{m\+\_\+rtv@{m\+\_\+rtv}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+rtv}{m\_rtv}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Render\+Target\+View $>$ mage\+::\+Renderer\+::m\+\_\+rtv\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the render target view of this renderer. \hypertarget{classmage_1_1_renderer_a5419a7a11e8f0f69e92dd6a5cb9bd217}{}\label{classmage_1_1_renderer_a5419a7a11e8f0f69e92dd6a5cb9bd217} 
+A pointer to the rendering state cache of this renderer. \hypertarget{classmage_1_1_renderer_a5419a7a11e8f0f69e92dd6a5cb9bd217}{}\label{classmage_1_1_renderer_a5419a7a11e8f0f69e92dd6a5cb9bd217} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+swap\+\_\+chain@{m\+\_\+swap\+\_\+chain}}
 \index{m\+\_\+swap\+\_\+chain@{m\+\_\+swap\+\_\+chain}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+swap\+\_\+chain}{m\_swap\_chain}}

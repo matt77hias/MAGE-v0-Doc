@@ -1,9 +1,9 @@
 var classmage_1_1_c_p_u_timer =
 [
-    [ "Mode", "classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895", [
-      [ "KERNEL", "classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895ace8cda0f285b09fb6a66754abf634bd5", null ],
-      [ "USER", "classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895a299d45b380f8d5893624832a2ac32157", null ],
-      [ "COUNT", "classmage_1_1_c_p_u_timer.html#a95a81bb0f32d2cc9881f311a0f6fa895a780a9a1245e4e551833ba02eb606bdf8", null ]
+    [ "ModeIndex", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625e", [
+      [ "Kernel", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625ea6ff9f4444ac481652f4412b5e1623846", null ],
+      [ "User", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075", null ],
+      [ "Count", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a398b1d5c99bcb09fbe37b2d74547b3e0", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a35d279dc760a491537099262892c62d5", null ],
@@ -13,6 +13,7 @@ var classmage_1_1_c_p_u_timer =
     [ "GetCoreDeltaTimePerCore", "classmage_1_1_c_p_u_timer.html#a34a75e0198d62dc54fa3a8b179e7dd58", null ],
     [ "GetKernelModeDeltaTime", "classmage_1_1_c_p_u_timer.html#af2df68d4661e7275d15b8c548ed62fbb", null ],
     [ "GetKernelModeDeltaTimePerCore", "classmage_1_1_c_p_u_timer.html#afe75c00692363c1a942c50d84a348b56", null ],
+    [ "GetKernelModeIndex", "classmage_1_1_c_p_u_timer.html#ae13da8e25167ec92802d272901e2598c", null ],
     [ "GetTotalCoreDeltaTime", "classmage_1_1_c_p_u_timer.html#a16e1bccdbc31f9345b52ffd9931fdcbd", null ],
     [ "GetTotalCoreDeltaTimePerCore", "classmage_1_1_c_p_u_timer.html#a283ab5a88d415390cc8c4e9139492a20", null ],
     [ "GetTotalKernelModeDeltaTime", "classmage_1_1_c_p_u_timer.html#a0642a593102eaf9aebdca5ef311f6476", null ],
@@ -21,6 +22,7 @@ var classmage_1_1_c_p_u_timer =
     [ "GetTotalUserModeDeltaTimePerCore", "classmage_1_1_c_p_u_timer.html#a8bacfdc05ffbdbb1b8277c31db0b5e59", null ],
     [ "GetUserModeDeltaTime", "classmage_1_1_c_p_u_timer.html#a3f48c03a091bacb29fd635a6b27f5dec", null ],
     [ "GetUserModeDeltaTimePerCore", "classmage_1_1_c_p_u_timer.html#a3ce491aca668067476465b4ab56f4809", null ],
+    [ "GetUserModeIndex", "classmage_1_1_c_p_u_timer.html#a457d65db3cb67775971e2750755ad403", null ],
     [ "operator=", "classmage_1_1_c_p_u_timer.html#aa453ec0f437762bff5c33ea344329d10", null ],
     [ "operator=", "classmage_1_1_c_p_u_timer.html#aee546b06c3b665bc1868abc3d7e3a06d", null ],
     [ "ResetDeltaTime", "classmage_1_1_c_p_u_timer.html#acb1a264ae09cea3d96794e3c0af246e7", null ],
@@ -30,11 +32,11 @@ var classmage_1_1_c_p_u_timer =
     [ "Stop", "classmage_1_1_c_p_u_timer.html#ae2fa5b36f436fd160d7f5b91783c0f11", null ],
     [ "UpdateDeltaTime", "classmage_1_1_c_p_u_timer.html#a4e82f7003a11e109495b7450e2f82f4f", null ],
     [ "UpdateLastTimestamp", "classmage_1_1_c_p_u_timer.html#aa956ede1a12c0c383e7fcc53e6f8c405", null ],
-    [ "m_delta_time", "classmage_1_1_c_p_u_timer.html#a764d94b0a2392cbb98bd675f547f671d", null ],
+    [ "m_delta_time", "classmage_1_1_c_p_u_timer.html#ac386789af792e229f5a5636703a5f2ec", null ],
     [ "m_handle", "classmage_1_1_c_p_u_timer.html#a95b8ac18c050ed25293c8a923087369a", null ],
-    [ "m_last_timestamp", "classmage_1_1_c_p_u_timer.html#a1334979cc0c39a8aa667f289f90fb78d", null ],
+    [ "m_last_timestamp", "classmage_1_1_c_p_u_timer.html#aaac2704709cddf3cce45376acbce5d83", null ],
     [ "m_nb_processor_cores", "classmage_1_1_c_p_u_timer.html#ac5fdb38a70c74815231b5efd8d746be1", null ],
     [ "m_running", "classmage_1_1_c_p_u_timer.html#a7190afa453085b7bbd7cb76ff6bb62f2", null ],
-    [ "m_total_delta_time", "classmage_1_1_c_p_u_timer.html#aaf482aacb1af55dd559a1d08de104697", null ],
+    [ "m_total_delta_time", "classmage_1_1_c_p_u_timer.html#a0e06e9fe15c9f6349b0e530298cd3eda", null ],
     [ "s_time_period", "classmage_1_1_c_p_u_timer.html#a6915d220d803f99b532fe6f3df3e558e", null ]
 ];
