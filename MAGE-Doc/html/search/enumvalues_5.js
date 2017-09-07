@@ -7,6 +7,7 @@ var searchData=
   ['float2',['Float2',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa6694430a2b471b5d2de071f2ef1fdc57',1,'mage']]],
   ['float3',['Float3',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa8a8a1d211464d4bdee46db3c75bfa121',1,'mage']]],
   ['float4',['Float4',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa33116adc6690289da9b82ea736864eeb',1,'mage']]],
+  ['forward',['Forward',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fda67d2f6740a8eaebf4d5c6f79be8da481',1,'mage']]],
   ['fronttoback',['FrontToBack',['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014a44a4d81c96c5451956c4412d045e32ae',1,'mage']]],
   ['fullcoverage',['FullCoverage',['../namespacemage.html#aa9fe157e5a578a103160266df8cccb0aaffa9328d1ba5126d106c910f770301e3',1,'mage']]]
 ];

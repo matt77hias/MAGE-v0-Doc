@@ -38,6 +38,7 @@ var searchData=
   ['format',['Format',['../classmage_1_1_text_console_script.html#a4d9ba97e4ff4ad5390b20e5523a20e92',1,'mage::TextConsoleScript']]],
   ['formattedexception',['FormattedException',['../structmage_1_1_formatted_exception.html',1,'mage']]],
   ['formattedexception',['FormattedException',['../structmage_1_1_formatted_exception.html#a77b82a969ec33a3aacec74a5adc4ab8b',1,'mage::FormattedException::FormattedException()'],['../structmage_1_1_formatted_exception.html#a3fe833a49052a2db99c023b1b1d43621',1,'mage::FormattedException::FormattedException(const char *format,...)'],['../structmage_1_1_formatted_exception.html#afd5d6b7a9db65b127badbf498186ebe8',1,'mage::FormattedException::FormattedException(const FormattedException &amp;formatted_exception)'],['../structmage_1_1_formatted_exception.html#ab1371b0a079fc50fcae39722e5e29cb2',1,'mage::FormattedException::FormattedException(FormattedException &amp;&amp;formatted_exception)']]],
+  ['forward',['Forward',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fda67d2f6740a8eaebf4d5c6f79be8da481',1,'mage']]],
   ['fourcc',['fourCC',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a106701459fcf09942d189bf9dcbee255',1,'mage::DDS_PIXELFORMAT']]],
   ['fovxfromfovy',['FOVXFromFOVY',['../namespacemage.html#ae8c691a7395afcd8ab40124eb8561a66',1,'mage']]],
   ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage.html#a4328c0620251955eb79cc66823a88a3f',1,'mage']]],

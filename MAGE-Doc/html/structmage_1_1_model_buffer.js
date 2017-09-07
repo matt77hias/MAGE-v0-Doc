@@ -7,11 +7,10 @@ var structmage_1_1_model_buffer =
     [ "operator=", "structmage_1_1_model_buffer.html#a003f2105c63f3d7e735c1c00bab5fdee", null ],
     [ "operator=", "structmage_1_1_model_buffer.html#a2f2c8c5ec6a43c239f349e3c015320e0", null ],
     [ "m_dissolve", "structmage_1_1_model_buffer.html#a02ca2c0745b7687734c3c613a3d845cc", null ],
-    [ "m_extra_parameters", "structmage_1_1_model_buffer.html#a0daee7daeca6c86f029b8fa41c6d7866", null ],
     [ "m_Kd", "structmage_1_1_model_buffer.html#a3a0212d49721bc44c28f9ba1fbe38e1e", null ],
     [ "m_Ks", "structmage_1_1_model_buffer.html#a0f1c0dc40a4252b4a79bd2d9c30b3fca", null ],
+    [ "m_material_coefficients", "structmage_1_1_model_buffer.html#a2e3348c4bfd065cd692f2086c62297bf", null ],
     [ "m_normal_to_view", "structmage_1_1_model_buffer.html#ae9cfca57417c88d28362d979d6d37fa8", null ],
-    [ "m_Ns", "structmage_1_1_model_buffer.html#aae6440e415cbda57a8cc2f16e928934b", null ],
     [ "m_object_to_view", "structmage_1_1_model_buffer.html#a2b4b94cd38c5d276aea4a7d6cc9edbba", null ],
     [ "m_texture_transform", "structmage_1_1_model_buffer.html#a22d0996efc06c121ce2e0b88235d5650", null ]
 ];

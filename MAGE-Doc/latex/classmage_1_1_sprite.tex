@@ -27,6 +27,10 @@ virtual void \hyperlink{classmage_1_1_sprite_a954a9f2046edcd6b1658a236ae23ec5a}{
 \item 
 const \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} $\ast$ \hyperlink{classmage_1_1_sprite_a8e2c0ae634492efacc92aab2e18e701c}{Get\+Transform} () const noexcept
 \item 
+bool \hyperlink{classmage_1_1_sprite_a8da2f573b61fc381e279931747e7d44e}{Is\+Opaque} () const noexcept
+\item 
+bool \hyperlink{classmage_1_1_sprite_a0ab488942bb2572a4b62065f0197c618}{Is\+Transparant} () const noexcept
+\item 
 \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} \hyperlink{classmage_1_1_sprite_a1a969b7cf3f1892894710a80582b4cd2}{Get\+Sprite\+Effects} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_sprite_abeefc8ed41e55924be83ba7b480aa40e}{Set\+Sprite\+Effects} (\hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} effects) noexcept
@@ -39,6 +43,8 @@ void \hyperlink{classmage_1_1_sprite_abeefc8ed41e55924be83ba7b480aa40e}{Set\+Spr
 \hyperlink{classmage_1_1_sprite_a9c1eb4f5a85e1fa17479012dd22114a9}{Sprite} (const \hyperlink{classmage_1_1_sprite}{Sprite} \&sprite)
 \item 
 \hyperlink{classmage_1_1_sprite_a84d01e440d0a8105d45a3e18a0698d07}{Sprite} (\hyperlink{classmage_1_1_sprite}{Sprite} \&\&sprite)
+\item 
+void \hyperlink{classmage_1_1_sprite_a7e227faa0f2b058d4cbcbb252a49e728}{Set\+Transparency} (bool transparent) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -49,6 +55,8 @@ virtual \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} $>$ \hyperlink{classmage_1_1_sprite_ae9907dd9d43fe2ce025bbc86b06dc7a3}{m\+\_\+transform}
+\item 
+bool \hyperlink{classmage_1_1_sprite_a893427eff3913e5d37e75f4ee176ec46}{m\+\_\+transparent}
 \item 
 \hyperlink{namespacemage_a9cfe18123066ba4236f548f9de75d881}{Sprite\+Effect} \hyperlink{classmage_1_1_sprite_a87a51b2b131c28bad75768d14defa3c1}{m\+\_\+effects}
 \end{DoxyCompactItemize}
@@ -182,6 +190,28 @@ Returns the transform of this sprite.
 \begin{DoxyReturn}{Returns}
 A pointer to the transform of this sprite. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_a8da2f573b61fc381e279931747e7d44e}{}\label{classmage_1_1_sprite_a8da2f573b61fc381e279931747e7d44e} 
+\index{mage\+::\+Sprite@{mage\+::\+Sprite}!Is\+Opaque@{Is\+Opaque}}
+\index{Is\+Opaque@{Is\+Opaque}!mage\+::\+Sprite@{mage\+::\+Sprite}}
+\subsubsection{\texorpdfstring{Is\+Opaque()}{IsOpaque()}}
+{\footnotesize\ttfamily bool mage\+::\+Sprite\+::\+Is\+Opaque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this sprite is opaque (i.\+e. contains alpha channel equal to 1.\+0).
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if this sprite is opaque. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_sprite_a0ab488942bb2572a4b62065f0197c618}{}\label{classmage_1_1_sprite_a0ab488942bb2572a4b62065f0197c618} 
+\index{mage\+::\+Sprite@{mage\+::\+Sprite}!Is\+Transparant@{Is\+Transparant}}
+\index{Is\+Transparant@{Is\+Transparant}!mage\+::\+Sprite@{mage\+::\+Sprite}}
+\subsubsection{\texorpdfstring{Is\+Transparant()}{IsTransparant()}}
+{\footnotesize\ttfamily bool mage\+::\+Sprite\+::\+Is\+Transparant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this sprite is transparent (i.\+e. contains alpha channel not equal to 1.\+0).
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if this sprite is transparent. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_sprite_aa24dfc716d8b79cc16b4c27409f8cc6b}{}\label{classmage_1_1_sprite_aa24dfc716d8b79cc16b4c27409f8cc6b} 
 \index{mage\+::\+Sprite@{mage\+::\+Sprite}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Sprite@{mage\+::\+Sprite}}
@@ -227,6 +257,19 @@ Sets the sprite effects of this sprite to the given sprite effects.
 \mbox{\tt in}  & {\em effects} & The sprite effects. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_sprite_a7e227faa0f2b058d4cbcbb252a49e728}{}\label{classmage_1_1_sprite_a7e227faa0f2b058d4cbcbb252a49e728} 
+\index{mage\+::\+Sprite@{mage\+::\+Sprite}!Set\+Transparency@{Set\+Transparency}}
+\index{Set\+Transparency@{Set\+Transparency}!mage\+::\+Sprite@{mage\+::\+Sprite}}
+\subsubsection{\texorpdfstring{Set\+Transparency()}{SetTransparency()}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+::\+Set\+Transparency (\begin{DoxyParamCaption}\item[{bool}]{transparent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [noexcept]}}
+
+Sets the transparency of this sprite to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transparent} & {\ttfamily true} if this sprite is transparent. {\ttfamily false} otherwise. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -242,4 +285,10 @@ The sprite effects of this sprite. \hypertarget{classmage_1_1_sprite_ae9907dd9d4
 \subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sprite_transform}{Sprite\+Transform} $>$ mage\+::\+Sprite\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the sprite transform of this sprite. 
+A pointer to the sprite transform of this sprite. \hypertarget{classmage_1_1_sprite_a893427eff3913e5d37e75f4ee176ec46}{}\label{classmage_1_1_sprite_a893427eff3913e5d37e75f4ee176ec46} 
+\index{mage\+::\+Sprite@{mage\+::\+Sprite}!m\+\_\+transparent@{m\+\_\+transparent}}
+\index{m\+\_\+transparent@{m\+\_\+transparent}!mage\+::\+Sprite@{mage\+::\+Sprite}}
+\subsubsection{\texorpdfstring{m\+\_\+transparent}{m\_transparent}}
+{\footnotesize\ttfamily bool mage\+::\+Sprite\+::m\+\_\+transparent\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag indicating whether this sprite is transparent. This flag is {\ttfamily true} if this sprite could contain transparent parts. {\ttfamily false} otherwise. 

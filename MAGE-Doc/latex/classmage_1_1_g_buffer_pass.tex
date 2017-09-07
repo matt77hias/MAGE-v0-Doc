@@ -1,0 +1,231 @@
+\hypertarget{classmage_1_1_g_buffer_pass}{}\section{mage\+:\+:G\+Buffer\+Pass Class Reference}
+\label{classmage_1_1_g_buffer_pass}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+
+
+{\ttfamily \#include $<$gbuffer\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f}{G\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a3b9f59097aef9175f942c9c9424d0dab}{G\+Buffer\+Pass} (const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a61a520a53c7a8029280eb1fc62d71ce6}{G\+Buffer\+Pass} (\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&render\+\_\+pass)
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c}{$\sim$\+G\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \& \hyperlink{classmage_1_1_g_buffer_pass_a79468fb8b4547197315c0aabbabffa71}{operator=} (const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \& \hyperlink{classmage_1_1_g_buffer_pass_ace14aafdd028f12296b3fabf1e36ca02}{operator=} (\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&render\+\_\+pass)=delete
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_ad5600a6de3f1b077f3036f2fe0805f16}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{P\+S\+Index} \{ \hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67}{P\+S\+Index\+::\+Default} = 0, 
+\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a6e02c9f63944ea221e7d55c11ecae07b}{P\+S\+Index\+::\+T\+S\+NM} = 1, 
+\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_a4b7e21f33c9d7cb8b9d3850b3977e11a}{Update\+Material\+Coefficient\+Data} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene) noexcept
+\item 
+float \hyperlink{classmage_1_1_g_buffer_pass_aae6b4b09b988fc82f1094d575f8a80e6}{Normalize\+Material\+Coefficient} (uint8\+\_\+t index, const \hyperlink{structmage_1_1_material}{Material} $\ast$material) const noexcept
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d}{Bind\+PS} (\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{P\+S\+Index} index) noexcept
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_acf03db3d75a3dbacb5c002f6bc72e5ee}{Bind\+PS} (const \hyperlink{structmage_1_1_material}{Material} $\ast$material) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_g_buffer_pass_a7d94fc666f7f0ce4aca9e91817f28718}{Bind\+Projection\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_g_buffer_pass_a28dba065f1c491f1e68b262dabcf6f0a}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, F\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform, const \hyperlink{structmage_1_1_material}{Material} $\ast$material) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_g_buffer_pass_a5545e8b559adb76fe71056c250eddf39}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_g_buffer_pass_a009ffc6f7d459b4bda115cfb470e1fd0}{m\+\_\+device\+\_\+context}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_g_buffer_pass_afcabb8f426222cf23279b24930ba785b}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_g_buffer_pass_a9d3beee11d362b32983c757798efd3fa}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{P\+S\+Index} \hyperlink{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342}{m\+\_\+bound\+\_\+ps}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_deferred_model_buffer}{Deferred\+Model\+Buffer} $>$ \hyperlink{classmage_1_1_g_buffer_pass_a62c6dc82f6571657d2907ab83819b6dd}{m\+\_\+model\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_g_buffer_pass_a1c51afa751e58dedaad5effabc26f85d}{m\+\_\+projection\+\_\+buffer}
+\item 
+float \hyperlink{classmage_1_1_g_buffer_pass_a2de8d7f8e4e0a829e6722174d9e204b5}{m\+\_\+material\+\_\+coefficient\+\_\+min} \mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{Pass\+Buffer\+::s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}
+\item 
+float \hyperlink{classmage_1_1_g_buffer_pass_a821a5fe71d3f135170c0ce87cbcaf17a}{m\+\_\+material\+\_\+coefficient\+\_\+range} \mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{Pass\+Buffer\+::s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{}\label{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!P\+S\+Index@{P\+S\+Index}}
+\index{P\+S\+Index@{P\+S\+Index}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{P\+S\+Index}{PSIndex}}
+{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{mage\+::\+G\+Buffer\+Pass\+::\+P\+S\+Index}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Default@{Default}}}\hypertarget{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67}{}\label{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+S\+NM@{T\+S\+NM}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!T\+S\+NM@{T\+S\+NM}}}\hypertarget{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a6e02c9f63944ea221e7d55c11ecae07b}{}\label{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379a6e02c9f63944ea221e7d55c11ecae07b} 
+T\+S\+NM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Count@{Count}}}\hypertarget{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9} 
+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f}{}\label{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a3b9f59097aef9175f942c9c9424d0dab}{}\label{classmage_1_1_g_buffer_pass_a3b9f59097aef9175f942c9c9424d0dab} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a61a520a53c7a8029280eb1fc62d71ce6}{}\label{classmage_1_1_g_buffer_pass_a61a520a53c7a8029280eb1fc62d71ce6} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c}{}\label{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!````~G\+Buffer\+Pass@{$\sim$\+G\+Buffer\+Pass}}
+\index{````~G\+Buffer\+Pass@{$\sim$\+G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+G\+Buffer\+Pass()}{~GBufferPass()}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::$\sim$\+G\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_a28dba065f1c491f1e68b262dabcf6f0a}{}\label{classmage_1_1_g_buffer_pass_a28dba065f1c491f1e68b262dabcf6f0a} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+G\+Buffer\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform,  }\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a7d94fc666f7f0ce4aca9e91817f28718}{}\label{classmage_1_1_g_buffer_pass_a7d94fc666f7f0ce4aca9e91817f28718} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+Projection\+Data@{Bind\+Projection\+Data}}
+\index{Bind\+Projection\+Data@{Bind\+Projection\+Data}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Projection\+Data()}{BindProjectionData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+G\+Buffer\+Pass\+::\+Bind\+Projection\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d}{}\label{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{P\+S\+Index}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_acf03db3d75a3dbacb5c002f6bc72e5ee}{}\label{classmage_1_1_g_buffer_pass_acf03db3d75a3dbacb5c002f6bc72e5ee} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_aae6b4b09b988fc82f1094d575f8a80e6}{}\label{classmage_1_1_g_buffer_pass_aae6b4b09b988fc82f1094d575f8a80e6} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Normalize\+Material\+Coefficient@{Normalize\+Material\+Coefficient}}
+\index{Normalize\+Material\+Coefficient@{Normalize\+Material\+Coefficient}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Normalize\+Material\+Coefficient()}{NormalizeMaterialCoefficient()}}
+{\footnotesize\ttfamily float mage\+::\+G\+Buffer\+Pass\+::\+Normalize\+Material\+Coefficient (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{index,  }\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a79468fb8b4547197315c0aabbabffa71}{}\label{classmage_1_1_g_buffer_pass_a79468fb8b4547197315c0aabbabffa71} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}\& mage\+::\+G\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_ace14aafdd028f12296b3fabf1e36ca02}{}\label{classmage_1_1_g_buffer_pass_ace14aafdd028f12296b3fabf1e36ca02} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}\& mage\+::\+G\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a5545e8b559adb76fe71056c250eddf39}{}\label{classmage_1_1_g_buffer_pass_a5545e8b559adb76fe71056c250eddf39} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Process\+Models@{Process\+Models}}
+\index{Process\+Models@{Process\+Models}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+G\+Buffer\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_ad5600a6de3f1b077f3036f2fe0805f16}{}\label{classmage_1_1_g_buffer_pass_ad5600a6de3f1b077f3036f2fe0805f16} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a4b7e21f33c9d7cb8b9d3850b3977e11a}{}\label{classmage_1_1_g_buffer_pass_a4b7e21f33c9d7cb8b9d3850b3977e11a} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Update\+Material\+Coefficient\+Data@{Update\+Material\+Coefficient\+Data}}
+\index{Update\+Material\+Coefficient\+Data@{Update\+Material\+Coefficient\+Data}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Update\+Material\+Coefficient\+Data()}{UpdateMaterialCoefficientData()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Update\+Material\+Coefficient\+Data (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342}{}\label{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}}
+\index{m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+bound\+\_\+ps}{m\_bound\_ps}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379}{P\+S\+Index} mage\+::\+G\+Buffer\+Pass\+::m\+\_\+bound\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a009ffc6f7d459b4bda115cfb470e1fd0}{}\label{classmage_1_1_g_buffer_pass_a009ffc6f7d459b4bda115cfb470e1fd0} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+G\+Buffer\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a2de8d7f8e4e0a829e6722174d9e204b5}{}\label{classmage_1_1_g_buffer_pass_a2de8d7f8e4e0a829e6722174d9e204b5} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+material\+\_\+coefficient\+\_\+min@{m\+\_\+material\+\_\+coefficient\+\_\+min}}
+\index{m\+\_\+material\+\_\+coefficient\+\_\+min@{m\+\_\+material\+\_\+coefficient\+\_\+min}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+coefficient\+\_\+min}{m\_material\_coefficient\_min}}
+{\footnotesize\ttfamily float mage\+::\+G\+Buffer\+Pass\+::m\+\_\+material\+\_\+coefficient\+\_\+min\mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{Pass\+Buffer\+::s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a821a5fe71d3f135170c0ce87cbcaf17a}{}\label{classmage_1_1_g_buffer_pass_a821a5fe71d3f135170c0ce87cbcaf17a} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+material\+\_\+coefficient\+\_\+range@{m\+\_\+material\+\_\+coefficient\+\_\+range}}
+\index{m\+\_\+material\+\_\+coefficient\+\_\+range@{m\+\_\+material\+\_\+coefficient\+\_\+range}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+coefficient\+\_\+range}{m\_material\_coefficient\_range}}
+{\footnotesize\ttfamily float mage\+::\+G\+Buffer\+Pass\+::m\+\_\+material\+\_\+coefficient\+\_\+range\mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{Pass\+Buffer\+::s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a62c6dc82f6571657d2907ab83819b6dd}{}\label{classmage_1_1_g_buffer_pass_a62c6dc82f6571657d2907ab83819b6dd} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_deferred_model_buffer}{Deferred\+Model\+Buffer} $>$ mage\+::\+G\+Buffer\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a1c51afa751e58dedaad5effabc26f85d}{}\label{classmage_1_1_g_buffer_pass_a1c51afa751e58dedaad5effabc26f85d} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}}
+\index{m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+projection\+\_\+buffer}{m\_projection\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+G\+Buffer\+Pass\+::m\+\_\+projection\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_a9d3beee11d362b32983c757798efd3fa}{}\label{classmage_1_1_g_buffer_pass_a9d3beee11d362b32983c757798efd3fa} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+G\+Buffer\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_g_buffer_pass_a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_g_buffer_pass_afcabb8f426222cf23279b24930ba785b}{}\label{classmage_1_1_g_buffer_pass_afcabb8f426222cf23279b24930ba785b} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+G\+Buffer\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+

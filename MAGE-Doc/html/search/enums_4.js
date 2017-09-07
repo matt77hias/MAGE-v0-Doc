@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['locktype',['LockType',['../structmage_1_1_read_write_mutex_lock.html#a5fee0529edf58803ee1f5d4afa084a3b',1,'mage::ReadWriteMutexLock']]]
+  ['gbufferindex',['GBufferIndex',['../structmage_1_1_g_buffer.html#a72f0fc0f46052fdc9872c48c57894607',1,'mage::GBuffer']]]
 ];

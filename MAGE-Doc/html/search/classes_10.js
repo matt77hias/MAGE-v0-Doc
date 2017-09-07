@@ -1,7 +1,6 @@
 var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
-  ['scenebuffer',['SceneBuffer',['../structmage_1_1_scene_buffer.html',1,'mage']]],
   ['scenefog',['SceneFog',['../structmage_1_1_scene_fog.html',1,'mage']]],
   ['scenemanager',['SceneManager',['../classmage_1_1_scene_manager.html',1,'mage']]],
   ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html',1,'mage']]],

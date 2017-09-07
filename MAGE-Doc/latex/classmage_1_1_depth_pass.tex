@@ -1,0 +1,136 @@
+\hypertarget{classmage_1_1_depth_pass}{}\section{mage\+:\+:Depth\+Pass Class Reference}
+\label{classmage_1_1_depth_pass}\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+
+
+{\ttfamily \#include $<$depth\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_depth_pass_a16a23f6820a11faf9195b307474e355b}{Depth\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_depth_pass_a9f0376b1423404dcced29535d59dd18c}{Depth\+Pass} (const \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_depth_pass_af5755a8ee09bc528c0644f657558d71f}{Depth\+Pass} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&\&render\+\_\+pass)
+\item 
+\hyperlink{classmage_1_1_depth_pass_adc89d5da94b42294316d4ad1dfa09eb4}{$\sim$\+Depth\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \& \hyperlink{classmage_1_1_depth_pass_ac84074238d8ce69251fc2e6f294c5898}{operator=} (const \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&render\+\_\+pass)=delete
+\item 
+\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \& \hyperlink{classmage_1_1_depth_pass_ab6a7d2abf0876f84591328d448ac1203}{operator=} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&\&render\+\_\+pass)=delete
+\item 
+void \hyperlink{classmage_1_1_depth_pass_af4776381c4271e464b0fd72c7437922d}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_depth_pass_ae6662a200915bd6e6842d76f47abd6c4}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_depth_pass_a38ff8d33518769575a945f4908993eb0}{Bind\+Projection\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_depth_pass_a00a2eaabd0d0363cf58998a46688c490}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_depth_pass_ab7e627aaf0356349e750e89c6b97c7a0}{m\+\_\+device\+\_\+context}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_depth_pass_a0db20d0e34ecd2cef5a70a46543be83f}{m\+\_\+vs}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_depth_pass_a4c9833ceaf223b73404edab4cf81b7c1}{m\+\_\+projection\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_depth_pass_ad296948a2f4c2b08f18b897ff2d8b03c}{m\+\_\+model\+\_\+buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_depth_pass_a16a23f6820a11faf9195b307474e355b}{}\label{classmage_1_1_depth_pass_a16a23f6820a11faf9195b307474e355b} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Depth\+Pass@{Depth\+Pass}}
+\index{Depth\+Pass@{Depth\+Pass}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Depth\+Pass()}{DepthPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Depth\+Pass\+::\+Depth\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_depth_pass_a9f0376b1423404dcced29535d59dd18c}{}\label{classmage_1_1_depth_pass_a9f0376b1423404dcced29535d59dd18c} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Depth\+Pass@{Depth\+Pass}}
+\index{Depth\+Pass@{Depth\+Pass}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Depth\+Pass()}{DepthPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Depth\+Pass\+::\+Depth\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_depth_pass_af5755a8ee09bc528c0644f657558d71f}{}\label{classmage_1_1_depth_pass_af5755a8ee09bc528c0644f657558d71f} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Depth\+Pass@{Depth\+Pass}}
+\index{Depth\+Pass@{Depth\+Pass}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Depth\+Pass()}{DepthPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Depth\+Pass\+::\+Depth\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_depth_pass_adc89d5da94b42294316d4ad1dfa09eb4}{}\label{classmage_1_1_depth_pass_adc89d5da94b42294316d4ad1dfa09eb4} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!````~Depth\+Pass@{$\sim$\+Depth\+Pass}}
+\index{````~Depth\+Pass@{$\sim$\+Depth\+Pass}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Depth\+Pass()}{~DepthPass()}}
+{\footnotesize\ttfamily mage\+::\+Depth\+Pass\+::$\sim$\+Depth\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_depth_pass_ae6662a200915bd6e6842d76f47abd6c4}{}\label{classmage_1_1_depth_pass_ae6662a200915bd6e6842d76f47abd6c4} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Depth\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_depth_pass_a38ff8d33518769575a945f4908993eb0}{}\label{classmage_1_1_depth_pass_a38ff8d33518769575a945f4908993eb0} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Bind\+Projection\+Data@{Bind\+Projection\+Data}}
+\index{Bind\+Projection\+Data@{Bind\+Projection\+Data}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Projection\+Data()}{BindProjectionData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Depth\+Pass\+::\+Bind\+Projection\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_depth_pass_ac84074238d8ce69251fc2e6f294c5898}{}\label{classmage_1_1_depth_pass_ac84074238d8ce69251fc2e6f294c5898} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass}\& mage\+::\+Depth\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_depth_pass_ab6a7d2abf0876f84591328d448ac1203}{}\label{classmage_1_1_depth_pass_ab6a7d2abf0876f84591328d448ac1203} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass}\& mage\+::\+Depth\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_depth_pass_a00a2eaabd0d0363cf58998a46688c490}{}\label{classmage_1_1_depth_pass_a00a2eaabd0d0363cf58998a46688c490} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Process\+Models@{Process\+Models}}
+\index{Process\+Models@{Process\+Models}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Depth\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1_depth_pass_af4776381c4271e464b0fd72c7437922d}{}\label{classmage_1_1_depth_pass_af4776381c4271e464b0fd72c7437922d} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Depth\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_depth_pass_ab7e627aaf0356349e750e89c6b97c7a0}{}\label{classmage_1_1_depth_pass_ab7e627aaf0356349e750e89c6b97c7a0} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Depth\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_depth_pass_ad296948a2f4c2b08f18b897ff2d8b03c}{}\label{classmage_1_1_depth_pass_ad296948a2f4c2b08f18b897ff2d8b03c} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Depth\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_depth_pass_a4c9833ceaf223b73404edab4cf81b7c1}{}\label{classmage_1_1_depth_pass_a4c9833ceaf223b73404edab4cf81b7c1} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}}
+\index{m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+projection\+\_\+buffer}{m\_projection\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Depth\+Pass\+::m\+\_\+projection\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_depth_pass_a0db20d0e34ecd2cef5a70a46543be83f}{}\label{classmage_1_1_depth_pass_a0db20d0e34ecd2cef5a70a46543be83f} 
+\index{mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Depth\+Pass@{mage\+::\+Depth\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Depth\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.60.0</span>
+   &#160;<span id="projectnumber">v0.65.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -372,6 +372,9 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classmage_1_1_bounding_volume_pass.html#a080c5ff2f2f8038e48e6338d9c8f3ebe">mage::BoundingVolumePass</a>
 , <a class="el" href="classmage_1_1_constant_component_pass.html#a28834b441a1a06da954d98abb85c62c4">mage::ConstantComponentPass</a>
 , <a class="el" href="classmage_1_1_constant_shading_pass.html#a0900c426f0c4c427d81d8035c2c30f3f">mage::ConstantShadingPass</a>
+, <a class="el" href="classmage_1_1_deferred_shading_pass.html#a57ed0cf91a02a8e8013d11d1b2b85a65">mage::DeferredShadingPass</a>
+, <a class="el" href="classmage_1_1_depth_pass.html#af4776381c4271e464b0fd72c7437922d">mage::DepthPass</a>
+, <a class="el" href="classmage_1_1_g_buffer_pass.html#ad5600a6de3f1b077f3036f2fe0805f16">mage::GBufferPass</a>
 , <a class="el" href="classmage_1_1_scene_manager.html#ac9ddb36bbd324bee8c702ea604633775">mage::SceneManager</a>
 , <a class="el" href="classmage_1_1_scene_renderer.html#aa7825b36b1c9e0d22cbd49a9df5e73e4">mage::SceneRenderer</a>
 , <a class="el" href="classmage_1_1_shading_normal_pass.html#ac4c404dd4b54fee222f652c1556fb9bf">mage::ShadingNormalPass</a>
@@ -387,10 +390,13 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classmage_1_1_renderer.html#a63948f43587e63f5caafa2260e9dfc52">mage::Renderer</a>
 </li>
 <li>RenderingStateCache()
-: <a class="el" href="structmage_1_1_rendering_state_cache.html#a47c0f5527ce10ca9b6a059946efda239">mage::RenderingStateCache</a>
+: <a class="el" href="structmage_1_1_rendering_state_cache.html#ad818eaa6c950c5851d6e684b9a4b3a65">mage::RenderingStateCache</a>
 </li>
 <li>RenderModeScript()
 : <a class="el" href="classmage_1_1_render_mode_script.html#a313a1819a7d769199fe19a0573761e31">mage::RenderModeScript</a>
+</li>
+<li>RenderPostDeferred()
+: <a class="el" href="classmage_1_1_variable_shading_pass.html#a648b62ec55d064ef1f38ceb5e7a8cc09">mage::VariableShadingPass</a>
 </li>
 <li>reserved1
 : <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r.html#a3bc3b3970db4747f8911aeb93fe6e309">mage::DDS_HEADER</a>
@@ -420,7 +426,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>Resource()
 : <a class="el" href="classmage_1_1_resource.html#a53da586d9bae285ab50c4cca2421a9ce">mage::Resource&lt; ResourceT &gt;</a>
-, <a class="el" href="structmage_1_1_resource_pool_1_1_resource.html#aac2dcc5cb5b92a9126b270e62a7585cb">mage::ResourcePool&lt; KeyT, ResourceT &gt;::Resource&lt; DerivedResourceT &gt;</a>
+, <a class="el" href="structmage_1_1_resource_pool_1_1_resource.html#a77ee754c3f9ce59cfd378b72b8b1bd52">mage::ResourcePool&lt; KeyT, ResourceT &gt;::Resource&lt; DerivedResourceT &gt;</a>
 </li>
 <li>resource_dimension
 : <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#aeb430923620730b48962c8267dd296ea">mage::DDS_HEADER_DXT10</a>
@@ -429,7 +435,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classmage_1_1_resource_manager.html#a7aa3b08f3edd385b48694ae4b301ebba">mage::ResourceManager</a>
 </li>
 <li>ResourcePool()
-: <a class="el" href="classmage_1_1_resource_pool.html#a94aff142869744ed48fb1b426face48b">mage::ResourcePool&lt; KeyT, ResourceT &gt;</a>
+: <a class="el" href="classmage_1_1_resource_pool.html#ab1e97a7ab806d351c7db4985323fceb0">mage::ResourcePool&lt; KeyT, ResourceT &gt;</a>
 </li>
 <li>Restart()
 : <a class="el" href="classmage_1_1_c_p_u_monitor.html#ab8b04a64545df631be0f40a54cc49e03">mage::CPUMonitor</a>
@@ -442,13 +448,13 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="classmage_1_1_timer.html#ab3cfad4fd61d52852181f7a060069892">mage::Timer</a>
 </li>
 <li>RGBASpectrum()
-: <a class="el" href="structmage_1_1_r_g_b_a_spectrum.html#a839b51be19e75f98ab068d6e16673860">mage::RGBASpectrum</a>
+: <a class="el" href="structmage_1_1_r_g_b_a_spectrum.html#ac53917f6129baafb04d812fcef6e4f56">mage::RGBASpectrum</a>
 </li>
 <li>RGBBitCount
 : <a class="el" href="structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#add3b847f506039ba34a124e7cc9e9cfa">mage::DDS_PIXELFORMAT</a>
 </li>
 <li>RGBSpectrum()
-: <a class="el" href="structmage_1_1_r_g_b_spectrum.html#a16199f1c50fe4bf5da4a891e400f0005">mage::RGBSpectrum</a>
+: <a class="el" href="structmage_1_1_r_g_b_spectrum.html#a8a30b69cbeefd7f59e51886ce17d48cc">mage::RGBSpectrum</a>
 </li>
 <li>RNG()
 : <a class="el" href="classmage_1_1_r_n_g.html#a32f44a150b86ec27be5b4f6f39e9eb1c">mage::RNG</a>
@@ -460,7 +466,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classmage_1_1_rotation_script.html#ad06cf896ce6dfe4f6676b263d15b4ee9">mage::RotationScript</a>
 </li>
 <li>RotationScript()
-: <a class="el" href="classmage_1_1_rotation_script.html#a5c6464f8e38fde0442c3b6f49a9cbed1">mage::RotationScript</a>
+: <a class="el" href="classmage_1_1_rotation_script.html#a52ee0473609565766fc1153678ee8b60">mage::RotationScript</a>
 </li>
 <li>RS()
 : <a class="el" href="structmage_1_1_r_s.html#aa11ce64e931ecc362e16e11d9ba73033">mage::RS</a>

@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_pass_buffer_af3625cd3aad45b4001744c7134c3db26}{Pass\+Buffer} (const \hyperlink{classmage_1_1_scene}{Scene} $\ast$scene)
+\hyperlink{structmage_1_1_pass_buffer_a02e07a26327f6e57b193521636bb8e10}{Pass\+Buffer} ()
 \item 
 \hyperlink{structmage_1_1_pass_buffer_a1c6e779725227ebbb8e3d15a4515edbc}{Pass\+Buffer} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \&pass\+\_\+buffer)=default
 \item 
@@ -18,15 +18,21 @@
 \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \& \hyperlink{structmage_1_1_pass_buffer_a8d0cc48dea7dfb6b710b6162b3a82b7e}{operator=} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \&pass\+\_\+buffer)=delete
 \item 
 \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \& \hyperlink{structmage_1_1_pass_buffer_a8a5832066c415bea077107c7a9d18df5}{operator=} (\hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \&\&pass\+\_\+buffer)=delete
+\item 
+void \hyperlink{structmage_1_1_pass_buffer_a6b73eb28fac15b121ff013b03ab643f8}{Update} (const \hyperlink{classmage_1_1_scene}{Scene} $\ast$scene)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 vector$<$ const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a4885440342be6a2cd11002781704a63f}{m\+\_\+cameras}
 \item 
-vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a9084c0099c1327ba104081305e40fdbe}{m\+\_\+opaque\+\_\+models}
+vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a6a2c8f757aca5b28eda0bec25f412e05}{m\+\_\+opaque\+\_\+emissive\+\_\+models}
 \item 
-vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a6af414efd72ef39b1af84951e56b7860}{m\+\_\+transparent\+\_\+models}
+vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a7b866f3637755bfb2d951fe8a3495bea}{m\+\_\+opaque\+\_\+brdf\+\_\+models}
+\item 
+vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a6eeb7390dcdc25022e887ce110ff1fff}{m\+\_\+transparent\+\_\+emissive\+\_\+models}
+\item 
+vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a2697c5e89c8e654ada78cbf15f5e8067}{m\+\_\+transparent\+\_\+brdf\+\_\+models}
 \item 
 vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$$>$ \hyperlink{structmage_1_1_pass_buffer_a20f2a4518ea6121e6c9ae0ed9d263435}{m\+\_\+directional\+\_\+lights}
 \item 
@@ -39,15 +45,24 @@ vector$<$ const \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node} $\ast$$>$ \h
 \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_pass_buffer_a311ad723470aff0ad80c325d9ead07b9}{m\+\_\+ambient\+\_\+light}
 \item 
 const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a3691cc52fe3bc5f1c86bf0dad36061d8}{m\+\_\+fog}
+\item 
+float \hyperlink{structmage_1_1_pass_buffer_a29b82f045d8559deeb1473b2c37d7449}{m\+\_\+material\+\_\+coefficient\+\_\+min} \mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}
+\item 
+float \hyperlink{structmage_1_1_pass_buffer_a09d2320b5536a9431d0c12be342d7695}{m\+\_\+material\+\_\+coefficient\+\_\+max} \mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint8\+\_\+t \hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{s\+\_\+nb\+\_\+material\+\_\+coefficients} = 2
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_pass_buffer_af3625cd3aad45b4001744c7134c3db26}{}\label{structmage_1_1_pass_buffer_af3625cd3aad45b4001744c7134c3db26} 
+\hypertarget{structmage_1_1_pass_buffer_a02e07a26327f6e57b193521636bb8e10}{}\label{structmage_1_1_pass_buffer_a02e07a26327f6e57b193521636bb8e10} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!Pass\+Buffer@{Pass\+Buffer}}
 \index{Pass\+Buffer@{Pass\+Buffer}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
 \subsubsection{\texorpdfstring{Pass\+Buffer()}{PassBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Pass\+Buffer\+::\+Pass\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Pass\+Buffer\+::\+Pass\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \hypertarget{structmage_1_1_pass_buffer_a1c6e779725227ebbb8e3d15a4515edbc}{}\label{structmage_1_1_pass_buffer_a1c6e779725227ebbb8e3d15a4515edbc} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!Pass\+Buffer@{Pass\+Buffer}}
@@ -82,6 +97,12 @@ const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structm
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer}\& mage\+::\+Pass\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} \&\&}]{pass\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+\hypertarget{structmage_1_1_pass_buffer_a6b73eb28fac15b121ff013b03ab643f8}{}\label{structmage_1_1_pass_buffer_a6b73eb28fac15b121ff013b03ab643f8} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Pass\+Buffer\+::\+Update (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Data Documentation}
@@ -109,17 +130,35 @@ const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structm
 \subsubsection{\texorpdfstring{m\+\_\+fog}{m\_fog}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog}$\ast$ mage\+::\+Pass\+Buffer\+::m\+\_\+fog}
 
+\hypertarget{structmage_1_1_pass_buffer_a09d2320b5536a9431d0c12be342d7695}{}\label{structmage_1_1_pass_buffer_a09d2320b5536a9431d0c12be342d7695} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+material\+\_\+coefficient\+\_\+max@{m\+\_\+material\+\_\+coefficient\+\_\+max}}
+\index{m\+\_\+material\+\_\+coefficient\+\_\+max@{m\+\_\+material\+\_\+coefficient\+\_\+max}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+coefficient\+\_\+max}{m\_material\_coefficient\_max}}
+{\footnotesize\ttfamily float mage\+::\+Pass\+Buffer\+::m\+\_\+material\+\_\+coefficient\+\_\+max\mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}}
+
+\hypertarget{structmage_1_1_pass_buffer_a29b82f045d8559deeb1473b2c37d7449}{}\label{structmage_1_1_pass_buffer_a29b82f045d8559deeb1473b2c37d7449} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+material\+\_\+coefficient\+\_\+min@{m\+\_\+material\+\_\+coefficient\+\_\+min}}
+\index{m\+\_\+material\+\_\+coefficient\+\_\+min@{m\+\_\+material\+\_\+coefficient\+\_\+min}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+coefficient\+\_\+min}{m\_material\_coefficient\_min}}
+{\footnotesize\ttfamily float mage\+::\+Pass\+Buffer\+::m\+\_\+material\+\_\+coefficient\+\_\+min\mbox{[}\hyperlink{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{s\+\_\+nb\+\_\+material\+\_\+coefficients}\mbox{]}}
+
 \hypertarget{structmage_1_1_pass_buffer_ab4553bc8afe80eff1f52d511cd23e90b}{}\label{structmage_1_1_pass_buffer_ab4553bc8afe80eff1f52d511cd23e90b} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}}
 \index{m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+lights}{m\_omni\_lights}}
 {\footnotesize\ttfamily vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+omni\+\_\+lights}
 
-\hypertarget{structmage_1_1_pass_buffer_a9084c0099c1327ba104081305e40fdbe}{}\label{structmage_1_1_pass_buffer_a9084c0099c1327ba104081305e40fdbe} 
-\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+opaque\+\_\+models@{m\+\_\+opaque\+\_\+models}}
-\index{m\+\_\+opaque\+\_\+models@{m\+\_\+opaque\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
-\subsubsection{\texorpdfstring{m\+\_\+opaque\+\_\+models}{m\_opaque\_models}}
-{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+opaque\+\_\+models}
+\hypertarget{structmage_1_1_pass_buffer_a7b866f3637755bfb2d951fe8a3495bea}{}\label{structmage_1_1_pass_buffer_a7b866f3637755bfb2d951fe8a3495bea} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+opaque\+\_\+brdf\+\_\+models@{m\+\_\+opaque\+\_\+brdf\+\_\+models}}
+\index{m\+\_\+opaque\+\_\+brdf\+\_\+models@{m\+\_\+opaque\+\_\+brdf\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+opaque\+\_\+brdf\+\_\+models}{m\_opaque\_brdf\_models}}
+{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+opaque\+\_\+brdf\+\_\+models}
+
+\hypertarget{structmage_1_1_pass_buffer_a6a2c8f757aca5b28eda0bec25f412e05}{}\label{structmage_1_1_pass_buffer_a6a2c8f757aca5b28eda0bec25f412e05} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+opaque\+\_\+emissive\+\_\+models@{m\+\_\+opaque\+\_\+emissive\+\_\+models}}
+\index{m\+\_\+opaque\+\_\+emissive\+\_\+models@{m\+\_\+opaque\+\_\+emissive\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+opaque\+\_\+emissive\+\_\+models}{m\_opaque\_emissive\_models}}
+{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+opaque\+\_\+emissive\+\_\+models}
 
 \hypertarget{structmage_1_1_pass_buffer_a45b9dd8e0ecb9c0110b53a5a744519bb}{}\label{structmage_1_1_pass_buffer_a45b9dd8e0ecb9c0110b53a5a744519bb} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}}
@@ -133,9 +172,21 @@ const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structm
 \subsubsection{\texorpdfstring{m\+\_\+sprites}{m\_sprites}}
 {\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+sprites}
 
-\hypertarget{structmage_1_1_pass_buffer_a6af414efd72ef39b1af84951e56b7860}{}\label{structmage_1_1_pass_buffer_a6af414efd72ef39b1af84951e56b7860} 
-\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+transparent\+\_\+models@{m\+\_\+transparent\+\_\+models}}
-\index{m\+\_\+transparent\+\_\+models@{m\+\_\+transparent\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
-\subsubsection{\texorpdfstring{m\+\_\+transparent\+\_\+models}{m\_transparent\_models}}
-{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+transparent\+\_\+models}
+\hypertarget{structmage_1_1_pass_buffer_a2697c5e89c8e654ada78cbf15f5e8067}{}\label{structmage_1_1_pass_buffer_a2697c5e89c8e654ada78cbf15f5e8067} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+transparent\+\_\+brdf\+\_\+models@{m\+\_\+transparent\+\_\+brdf\+\_\+models}}
+\index{m\+\_\+transparent\+\_\+brdf\+\_\+models@{m\+\_\+transparent\+\_\+brdf\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+transparent\+\_\+brdf\+\_\+models}{m\_transparent\_brdf\_models}}
+{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+transparent\+\_\+brdf\+\_\+models}
+
+\hypertarget{structmage_1_1_pass_buffer_a6eeb7390dcdc25022e887ce110ff1fff}{}\label{structmage_1_1_pass_buffer_a6eeb7390dcdc25022e887ce110ff1fff} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+transparent\+\_\+emissive\+\_\+models@{m\+\_\+transparent\+\_\+emissive\+\_\+models}}
+\index{m\+\_\+transparent\+\_\+emissive\+\_\+models@{m\+\_\+transparent\+\_\+emissive\+\_\+models}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+transparent\+\_\+emissive\+\_\+models}{m\_transparent\_emissive\_models}}
+{\footnotesize\ttfamily vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ mage\+::\+Pass\+Buffer\+::m\+\_\+transparent\+\_\+emissive\+\_\+models}
+
+\hypertarget{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324}{}\label{structmage_1_1_pass_buffer_a51bba369e8114e3e60651e65579f8324} 
+\index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!s\+\_\+nb\+\_\+material\+\_\+coefficients@{s\+\_\+nb\+\_\+material\+\_\+coefficients}}
+\index{s\+\_\+nb\+\_\+material\+\_\+coefficients@{s\+\_\+nb\+\_\+material\+\_\+coefficients}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
+\subsubsection{\texorpdfstring{s\+\_\+nb\+\_\+material\+\_\+coefficients}{s\_nb\_material\_coefficients}}
+{\footnotesize\ttfamily const uint8\+\_\+t mage\+::\+Pass\+Buffer\+::s\+\_\+nb\+\_\+material\+\_\+coefficients = 2\hspace{0.3cm}{\ttfamily [static]}}
 
