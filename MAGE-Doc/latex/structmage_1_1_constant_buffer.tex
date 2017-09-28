@@ -24,6 +24,8 @@
 void \hyperlink{structmage_1_1_constant_buffer_a7c9a4a2134ebebacfad63b28263f716e}{Update\+Data} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const DataT \&data)
 \item 
 I\+D3\+D11\+Buffer $\ast$ \hyperlink{structmage_1_1_constant_buffer_a6b8fcbd873ffbda96d7412c581d5a29a}{Get} () const noexcept
+\item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{structmage_1_1_constant_buffer_aebfd8ce48270f4d8f7b47eca13510308}{Bind} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, \hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32} slot) const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -63,6 +65,11 @@ Constructs a constant buffer.
 \begin{DoxyPrecond}{Precondition}
 The device associated with the current engine must be loaded. 
 \end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this constant buffer. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_constant_buffer_ad2b449d2b39c7973a102e718282796dd}{}\label{structmage_1_1_constant_buffer_ad2b449d2b39c7973a102e718282796dd} 
 \index{mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}!Constant\+Buffer@{Constant\+Buffer}}
 \index{Constant\+Buffer@{Constant\+Buffer}!mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}}
@@ -80,6 +87,11 @@ Constructs a constant buffer.
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this constant buffer. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_constant_buffer_a67fe42cb52e63e38474b6c65341fbe82}{}\label{structmage_1_1_constant_buffer_a67fe42cb52e63e38474b6c65341fbe82} 
 \index{mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}!Constant\+Buffer@{Constant\+Buffer}}
 \index{Constant\+Buffer@{Constant\+Buffer}!mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}}
@@ -118,6 +130,36 @@ Constructs a constant buffer by moving the given constant buffer.
 Destructs this constant buffer. 
 
 \subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_constant_buffer_aebfd8ce48270f4d8f7b47eca13510308}{}\label{structmage_1_1_constant_buffer_aebfd8ce48270f4d8f7b47eca13510308} 
+\index{mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename Pipeline\+StageT $>$ \\
+void \hyperlink{structmage_1_1_constant_buffer}{mage\+::\+Constant\+Buffer}$<$ DataT $>$\+::Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32}}]{slot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds this constant buffer.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape slot} $<$ {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+P\+I\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the constant buffer to (ranges from 0 to {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+P\+I\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT} 
+\begin{DoxyItemize}
+\item 1). 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_constant_buffer_a6b8fcbd873ffbda96d7412c581d5a29a}{}\label{structmage_1_1_constant_buffer_a6b8fcbd873ffbda96d7412c581d5a29a} 
 \index{mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}!Get@{Get}}
 \index{Get@{Get}!mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}}
@@ -162,7 +204,7 @@ Moves the given constant buffer to this constant buffer.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given constant buffer (i.\+e. this constant buffer). 
+A reference to the moved constant buffer (i.\+e. this constant buffer). 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_constant_buffer_af4a528d143bb7856a1a484cfee65fec7}{}\label{structmage_1_1_constant_buffer_af4a528d143bb7856a1a484cfee65fec7} 
 \index{mage\+::\+Constant\+Buffer@{mage\+::\+Constant\+Buffer}!Setup\+Constant\+Buffer@{Setup\+Constant\+Buffer}}
@@ -205,6 +247,11 @@ Updates the data of this constant buffer with the given data.
 \mbox{\tt in}  & {\em data} & A reference to the data. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to update the data. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}

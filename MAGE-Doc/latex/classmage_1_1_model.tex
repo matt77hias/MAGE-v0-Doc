@@ -37,6 +37,16 @@ void \hyperlink{classmage_1_1_model_a7f839b9db4cbb14981c72fff2be31870}{Bind\+Mes
 \item 
 void \hyperlink{classmage_1_1_model_a9dc3e7bf443c901adbf382592e657fbb}{Draw} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) const noexcept
 \item 
+bool \hyperlink{classmage_1_1_model_a2ab5542819b80d58f349128a6c0194b5}{Occludes\+Light} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_model_a5fd5e62a3365810d84af4cf9c202a9fa}{Enable\+Light\+Occlusion} () noexcept
+\item 
+void \hyperlink{classmage_1_1_model_a7e21b77f1f0afa83fef7a0398d6a9411}{Dissable\+Light\+Occlusion} () noexcept
+\item 
+bool \hyperlink{classmage_1_1_model_a68168e66cb04c08f27616e9d7768a99e}{Toggle\+Light\+Occlusion} () noexcept
+\item 
+void \hyperlink{classmage_1_1_model_aabcd12eeab9d6b81e27c727cb94cf57a}{Set\+Light\+Occlusion} (bool light\+\_\+occlusion) noexcept
+\item 
 \hyperlink{structmage_1_1_material}{Material} $\ast$ \hyperlink{classmage_1_1_model_a46728db5ca9052c62e9403ec7d6a6c21}{Get\+Material} () noexcept
 \item 
 const \hyperlink{structmage_1_1_material}{Material} $\ast$ \hyperlink{classmage_1_1_model_a10a9de6608365356b5b6ad2669ab39f8}{Get\+Material} () const noexcept
@@ -44,14 +54,6 @@ const \hyperlink{structmage_1_1_material}{Material} $\ast$ \hyperlink{classmage_
 void \hyperlink{classmage_1_1_model_a684886e1f43cdc6ebd5c52f9437f9869}{Set\+Material} (const \hyperlink{structmage_1_1_material}{Material} \&material) noexcept
 \item 
 void \hyperlink{classmage_1_1_model_a19f6c35097f95d8d41497cc596e18bc5}{Set\+Material} (\hyperlink{structmage_1_1_material}{Material} \&\&material) noexcept
-\item 
-\hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \& \hyperlink{classmage_1_1_model_a497852d6f60cafcd1efaca7552a7179c}{Get\+Shadow\+Behavior} () noexcept
-\item 
-const \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \& \hyperlink{classmage_1_1_model_ab208a0396b8125d8b09d2a04df754b47}{Get\+Shadow\+Behavior} () const noexcept
-\item 
-void \hyperlink{classmage_1_1_model_aba6df49b87ffe2877d8480ee8681c43c}{Set\+Shadow\+Behavior} (const \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \&shadow\+\_\+behavior) noexcept
-\item 
-void \hyperlink{classmage_1_1_model_a7f7f5bb778c97a2c57b8610bea7a7212}{Set\+Shadow\+Behavior} (\hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \&\&shadow\+\_\+behavior) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -71,9 +73,9 @@ const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{classmage_1_1_mode
 \item 
 const \hyperlink{structmage_1_1_b_s}{BS} \hyperlink{classmage_1_1_model_a1d3ea0a9f302f623dcaceb2df4315a0b}{m\+\_\+bs}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a}{m\+\_\+material}
+bool \hyperlink{classmage_1_1_model_af6e1183a2f2147b7848aa10010bdfcd3}{m\+\_\+light\+\_\+occlusion}
 \item 
-\hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \hyperlink{classmage_1_1_model_a3f45e66d5ee066f5c6adf6d017660c34}{m\+\_\+shadow\+\_\+behavior}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a}{m\+\_\+material}
 \end{DoxyCompactItemize}
 
 
@@ -212,7 +214,13 @@ Clones this model.
 \begin{DoxyReturn}{Returns}
 A pointer to the clone of this model. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_model_a9dc3e7bf443c901adbf382592e657fbb}{}\label{classmage_1_1_model_a9dc3e7bf443c901adbf382592e657fbb} 
+\hypertarget{classmage_1_1_model_a7e21b77f1f0afa83fef7a0398d6a9411}{}\label{classmage_1_1_model_a7e21b77f1f0afa83fef7a0398d6a9411} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Dissable\+Light\+Occlusion@{Dissable\+Light\+Occlusion}}
+\index{Dissable\+Light\+Occlusion@{Dissable\+Light\+Occlusion}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Dissable\+Light\+Occlusion()}{DissableLightOcclusion()}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Dissable\+Light\+Occlusion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Dissables the occlusion of light by this model. \hypertarget{classmage_1_1_model_a9dc3e7bf443c901adbf382592e657fbb}{}\label{classmage_1_1_model_a9dc3e7bf443c901adbf382592e657fbb} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
@@ -228,7 +236,13 @@ Draws this model.
 \mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4}{}\label{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4} 
+\hypertarget{classmage_1_1_model_a5fd5e62a3365810d84af4cf9c202a9fa}{}\label{classmage_1_1_model_a5fd5e62a3365810d84af4cf9c202a9fa} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Enable\+Light\+Occlusion@{Enable\+Light\+Occlusion}}
+\index{Enable\+Light\+Occlusion@{Enable\+Light\+Occlusion}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Enable\+Light\+Occlusion()}{EnableLightOcclusion()}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Enable\+Light\+Occlusion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Enbales the occlusion of light by this model. \hypertarget{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4}{}\label{classmage_1_1_model_a07af22d1e72ffde3ad33b709a8d5c7f4} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+A\+A\+BB@{Get\+A\+A\+BB}}
 \index{Get\+A\+A\+BB@{Get\+A\+A\+BB}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{Get\+A\+A\+B\+B()}{GetAABB()}}
@@ -283,28 +297,6 @@ Returns the number of indices of this model in the mesh of this model.
 \begin{DoxyReturn}{Returns}
 The number of indices of this model in the mesh of this model. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_model_a497852d6f60cafcd1efaca7552a7179c}{}\label{classmage_1_1_model_a497852d6f60cafcd1efaca7552a7179c} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shadow\+Behavior@{Get\+Shadow\+Behavior}}
-\index{Get\+Shadow\+Behavior@{Get\+Shadow\+Behavior}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Get\+Shadow\+Behavior()}{GetShadowBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior}\& mage\+::\+Model\+::\+Get\+Shadow\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the shadow behavior of this model.
-
-\begin{DoxyReturn}{Returns}
-A reference to the shadow behavior of this model. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_model_ab208a0396b8125d8b09d2a04df754b47}{}\label{classmage_1_1_model_ab208a0396b8125d8b09d2a04df754b47} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Get\+Shadow\+Behavior@{Get\+Shadow\+Behavior}}
-\index{Get\+Shadow\+Behavior@{Get\+Shadow\+Behavior}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Get\+Shadow\+Behavior()}{GetShadowBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior}\& mage\+::\+Model\+::\+Get\+Shadow\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the shadow behavior of this model.
-
-\begin{DoxyReturn}{Returns}
-A reference to the shadow behavior of this model. 
-\end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a876fcfe369f12e2d7edb6b533dd06252}{}\label{classmage_1_1_model_a876fcfe369f12e2d7edb6b533dd06252} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Get\+Start\+Index@{Get\+Start\+Index}}
 \index{Get\+Start\+Index@{Get\+Start\+Index}!mage\+::\+Model@{mage\+::\+Model}}
@@ -315,6 +307,17 @@ Returns the start index of this model in the mesh of this model.
 
 \begin{DoxyReturn}{Returns}
 The start index of this model in the mesh of this model. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_model_a2ab5542819b80d58f349128a6c0194b5}{}\label{classmage_1_1_model_a2ab5542819b80d58f349128a6c0194b5} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Occludes\+Light@{Occludes\+Light}}
+\index{Occludes\+Light@{Occludes\+Light}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Occludes\+Light()}{OccludesLight()}}
+{\footnotesize\ttfamily bool mage\+::\+Model\+::\+Occludes\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this model occludes light.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this model occludes light. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b}{}\label{classmage_1_1_model_a563515c64ec39cfcda9f6ca37576391b} 
 \index{mage\+::\+Model@{mage\+::\+Model}!operator=@{operator=}}
@@ -348,6 +351,19 @@ Moves the given model to this model.
 \begin{DoxyReturn}{Returns}
 A reference to the moved model (i.\+e. this model). 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_model_aabcd12eeab9d6b81e27c727cb94cf57a}{}\label{classmage_1_1_model_aabcd12eeab9d6b81e27c727cb94cf57a} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Set\+Light\+Occlusion@{Set\+Light\+Occlusion}}
+\index{Set\+Light\+Occlusion@{Set\+Light\+Occlusion}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Set\+Light\+Occlusion()}{SetLightOcclusion()}}
+{\footnotesize\ttfamily void mage\+::\+Model\+::\+Set\+Light\+Occlusion (\begin{DoxyParamCaption}\item[{bool}]{light\+\_\+occlusion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the occlusion of light by this model to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em light\+\_\+occlusion} & {\ttfamily true} if this model needs to occlude light. {\ttfamily false} otherwise. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_model_a684886e1f43cdc6ebd5c52f9437f9869}{}\label{classmage_1_1_model_a684886e1f43cdc6ebd5c52f9437f9869} 
 \index{mage\+::\+Model@{mage\+::\+Model}!Set\+Material@{Set\+Material}}
 \index{Set\+Material@{Set\+Material}!mage\+::\+Model@{mage\+::\+Model}}
@@ -374,33 +390,13 @@ Sets the material of this model to the given material.
 \mbox{\tt in}  & {\em material} & A reference to the material. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_model_aba6df49b87ffe2877d8480ee8681c43c}{}\label{classmage_1_1_model_aba6df49b87ffe2877d8480ee8681c43c} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Set\+Shadow\+Behavior@{Set\+Shadow\+Behavior}}
-\index{Set\+Shadow\+Behavior@{Set\+Shadow\+Behavior}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Set\+Shadow\+Behavior()}{SetShadowBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Model\+::\+Set\+Shadow\+Behavior (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \&}]{shadow\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1_model_a68168e66cb04c08f27616e9d7768a99e}{}\label{classmage_1_1_model_a68168e66cb04c08f27616e9d7768a99e} 
+\index{mage\+::\+Model@{mage\+::\+Model}!Toggle\+Light\+Occlusion@{Toggle\+Light\+Occlusion}}
+\index{Toggle\+Light\+Occlusion@{Toggle\+Light\+Occlusion}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{Toggle\+Light\+Occlusion()}{ToggleLightOcclusion()}}
+{\footnotesize\ttfamily bool mage\+::\+Model\+::\+Toggle\+Light\+Occlusion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the shadow behavior of this model to the given shadow behavior.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em shadow\+\_\+behavior} & A reference to the shadow behavior. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_model_a7f7f5bb778c97a2c57b8610bea7a7212}{}\label{classmage_1_1_model_a7f7f5bb778c97a2c57b8610bea7a7212} 
-\index{mage\+::\+Model@{mage\+::\+Model}!Set\+Shadow\+Behavior@{Set\+Shadow\+Behavior}}
-\index{Set\+Shadow\+Behavior@{Set\+Shadow\+Behavior}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{Set\+Shadow\+Behavior()}{SetShadowBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Model\+::\+Set\+Shadow\+Behavior (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} \&\&}]{shadow\+\_\+behavior }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Sets the shadow behavior of this model to the given shadow behavior.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em shadow\+\_\+behavior} & A reference to the shadow behavior. \\
-\hline
-\end{DoxyParams}
-
+Toggles the occlusion of light by this model. 
 
 \subsection{Member Data Documentation}
 \hypertarget{classmage_1_1_model_ab53a0f253df545fd59723bee107bf523}{}\label{classmage_1_1_model_ab53a0f253df545fd59723bee107bf523} 
@@ -415,7 +411,13 @@ The \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of this model. \hypertarget{cla
 \subsubsection{\texorpdfstring{m\+\_\+bs}{m\_bs}}
 {\footnotesize\ttfamily const \hyperlink{structmage_1_1_b_s}{BS} mage\+::\+Model\+::m\+\_\+bs\hspace{0.3cm}{\ttfamily [private]}}
 
-The \hyperlink{structmage_1_1_b_s}{BS} of this model. \hypertarget{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a}{}\label{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a} 
+The \hyperlink{structmage_1_1_b_s}{BS} of this model. \hypertarget{classmage_1_1_model_af6e1183a2f2147b7848aa10010bdfcd3}{}\label{classmage_1_1_model_af6e1183a2f2147b7848aa10010bdfcd3} 
+\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+light\+\_\+occlusion@{m\+\_\+light\+\_\+occlusion}}
+\index{m\+\_\+light\+\_\+occlusion@{m\+\_\+light\+\_\+occlusion}!mage\+::\+Model@{mage\+::\+Model}}
+\subsubsection{\texorpdfstring{m\+\_\+light\+\_\+occlusion}{m\_light\_occlusion}}
+{\footnotesize\ttfamily bool mage\+::\+Model\+::m\+\_\+light\+\_\+occlusion\hspace{0.3cm}{\ttfamily [private]}}
+
+A flag indicating whether this model occludes light. \hypertarget{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a}{}\label{classmage_1_1_model_a88d97cd87b7ef37130f7a4007477698a} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+material@{m\+\_\+material}}
 \index{m\+\_\+material@{m\+\_\+material}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+material}{m\_material}}
@@ -433,13 +435,7 @@ A pointer to the mesh of this model. \hypertarget{classmage_1_1_model_a1fcf80ed9
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+indices}{m\_nb\_indices}}
 {\footnotesize\ttfamily const size\+\_\+t mage\+::\+Model\+::m\+\_\+nb\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of indices of this model in the mesh of this model. \hypertarget{classmage_1_1_model_a3f45e66d5ee066f5c6adf6d017660c34}{}\label{classmage_1_1_model_a3f45e66d5ee066f5c6adf6d017660c34} 
-\index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+shadow\+\_\+behavior@{m\+\_\+shadow\+\_\+behavior}}
-\index{m\+\_\+shadow\+\_\+behavior@{m\+\_\+shadow\+\_\+behavior}!mage\+::\+Model@{mage\+::\+Model}}
-\subsubsection{\texorpdfstring{m\+\_\+shadow\+\_\+behavior}{m\_shadow\_behavior}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_shadow_behavior}{Shadow\+Behavior} mage\+::\+Model\+::m\+\_\+shadow\+\_\+behavior\hspace{0.3cm}{\ttfamily [private]}}
-
-The shadow behavior of this model. \hypertarget{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{}\label{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3} 
+The number of indices of this model in the mesh of this model. \hypertarget{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3}{}\label{classmage_1_1_model_a63a3e697c9eb1606249de15cc7b818c3} 
 \index{mage\+::\+Model@{mage\+::\+Model}!m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}}
 \index{m\+\_\+start\+\_\+index@{m\+\_\+start\+\_\+index}!mage\+::\+Model@{mage\+::\+Model}}
 \subsubsection{\texorpdfstring{m\+\_\+start\+\_\+index}{m\_start\_index}}

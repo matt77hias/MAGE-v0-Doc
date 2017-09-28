@@ -14,29 +14,50 @@ var hierarchy =
     [ "mage::AlignedData< DeferredBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::DeferredBuffer", "structmage_1_1_deferred_buffer.html", null ]
     ] ],
-    [ "mage::AlignedData< DeferredComputeBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::DeferredComputeBuffer", "structmage_1_1_deferred_compute_buffer.html", null ]
-    ] ],
     [ "mage::AlignedData< DeferredModelBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::DeferredModelBuffer", "structmage_1_1_deferred_model_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< DirectionalLightBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html", null ]
     ] ],
+    [ "mage::AlignedData< DirectionalLightWithShadowMappingBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::DirectionalLightWithShadowMappingBuffer", "structmage_1_1_directional_light_with_shadow_mapping_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< ForwardModelBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::ForwardModelBuffer", "structmage_1_1_forward_model_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< GameBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::GameBuffer", "structmage_1_1_game_buffer.html", null ]
+    ] ],
     [ "mage::AlignedData< LightBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::LightBuffer", "structmage_1_1_light_buffer.html", null ]
     ] ],
-    [ "mage::AlignedData< ModelBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::ModelBuffer", "structmage_1_1_model_buffer.html", null ]
+    [ "mage::AlignedData< LightCameraInfo >", "structmage_1_1_aligned_data.html", [
+      [ "mage::LightCameraInfo", "structmage_1_1_light_camera_info.html", null ]
     ] ],
-    [ "mage::AlignedData< ModelTransformBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::ModelTransformBuffer", "structmage_1_1_model_transform_buffer.html", null ]
+    [ "mage::AlignedData< ModelNormalTextureTransformBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::ModelNormalTextureTransformBuffer", "structmage_1_1_model_normal_texture_transform_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< ModelNormalTransformBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< ModelTextureTransformBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< OmniLightBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::OmniLightBuffer", "structmage_1_1_omni_light_buffer.html", null ]
     ] ],
+    [ "mage::AlignedData< OmniLightWithShadowMappingBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::OmniLightWithShadowMappingBuffer", "structmage_1_1_omni_light_with_shadow_mapping_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< SkyBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::SkyBuffer", "structmage_1_1_sky_buffer.html", null ]
+    ] ],
     [ "mage::AlignedData< SpotLightBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::SpotLightBuffer", "structmage_1_1_spot_light_buffer.html", null ]
+    ] ],
+    [ "mage::AlignedData< SpotLightWithShadowMappingBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::SpotLightWithShadowMappingBuffer", "structmage_1_1_spot_light_with_shadow_mapping_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< SpriteBatch >", "structmage_1_1_aligned_data.html", [
       [ "mage::SpriteBatch", "classmage_1_1_sprite_batch.html", null ]
@@ -93,18 +114,23 @@ var hierarchy =
     ] ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::DeferredComputeBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::DeferredBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::DeferredModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::ForwardModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::GameBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::LightBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::ModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::ModelTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::ModelNormalTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::ModelNormalTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::ModelTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::RGBASpectrum >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::SkyBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< XMMATRIX >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< XMVECTOR >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantComponentPass", "classmage_1_1_constant_component_pass.html", null ],
     [ "mage::ConstantShadingPass", "classmage_1_1_constant_shading_pass.html", null ],
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
     [ "mage::CPUTimer", "classmage_1_1_c_p_u_timer.html", null ],
-    [ "mage::CS", "structmage_1_1_c_s.html", null ],
+    [ "mage::Pipeline::CS", "structmage_1_1_pipeline_1_1_c_s.html", null ],
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
     [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
     [ "mage::DDS_PIXELFORMAT", "structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
@@ -115,7 +141,7 @@ var hierarchy =
     ] ],
     [ "mage::DisplayConfiguration", "structmage_1_1_display_configuration.html", null ],
     [ "mage::DisplayConfigurator", "classmage_1_1_display_configurator.html", null ],
-    [ "mage::DS", "structmage_1_1_d_s.html", null ],
+    [ "mage::Pipeline::DS", "structmage_1_1_pipeline_1_1_d_s.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::EngineStatistics", "structmage_1_1_engine_statistics.html", null ],
     [ "mage::FileStreamCloser", "structmage_1_1_file_stream_closer.html", null ],
@@ -123,14 +149,16 @@ var hierarchy =
     [ "mage::GBufferPass", "classmage_1_1_g_buffer_pass.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
     [ "mage::GlyphLessThan", "structmage_1_1_glyph_less_than.html", null ],
-    [ "mage::GS", "structmage_1_1_g_s.html", null ],
+    [ "mage::Pipeline::GS", "structmage_1_1_pipeline_1_1_g_s.html", null ],
     [ "mage::HandleCloser", "structmage_1_1_handle_closer.html", null ],
-    [ "mage::HS", "structmage_1_1_h_s.html", null ],
-    [ "mage::IA", "structmage_1_1_i_a.html", null ],
+    [ "mage::Pipeline::HS", "structmage_1_1_pipeline_1_1_h_s.html", null ],
+    [ "mage::Pipeline::IA", "structmage_1_1_pipeline_1_1_i_a.html", null ],
     [ "mage::IdGenerator", "structmage_1_1_id_generator.html", null ],
+    [ "mage::ImageBuffer", "structmage_1_1_image_buffer.html", null ],
+    [ "mage::ImagePass", "classmage_1_1_image_pass.html", null ],
     [ "mage::InputManager", "classmage_1_1_input_manager.html", null ],
     [ "mage::Keyboard", "classmage_1_1_keyboard.html", null ],
-    [ "mage::LBuffer", "structmage_1_1_l_buffer.html", null ],
+    [ "mage::LBufferPass", "structmage_1_1_l_buffer_pass.html", null ],
     [ "mage::Light", "classmage_1_1_light.html", [
       [ "mage::AmbientLight", "classmage_1_1_ambient_light.html", null ],
       [ "mage::DirectionalLight", "classmage_1_1_directional_light.html", null ],
@@ -176,11 +204,12 @@ var hierarchy =
       ] ]
     ] ],
     [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
-    [ "mage::OM", "structmage_1_1_o_m.html", null ],
+    [ "mage::Pipeline::OM", "structmage_1_1_pipeline_1_1_o_m.html", null ],
     [ "mage::PassBuffer", "structmage_1_1_pass_buffer.html", null ],
     [ "mage::PersistentResourcePool< KeyT, ResourceT >", "classmage_1_1_persistent_resource_pool.html", null ],
+    [ "mage::Pipeline", "structmage_1_1_pipeline.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
-    [ "mage::PS", "structmage_1_1_p_s.html", null ],
+    [ "mage::Pipeline::PS", "structmage_1_1_pipeline_1_1_p_s.html", null ],
     [ "mage::ReadWriteMutex", "structmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
     [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
@@ -192,8 +221,8 @@ var hierarchy =
     [ "mage::Resource< ModelDescriptor >", "classmage_1_1_resource.html", [
       [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ]
     ] ],
-    [ "mage::Resource< Shader< ShaderT > >", "classmage_1_1_resource.html", [
-      [ "mage::Shader< ShaderT >", "classmage_1_1_shader.html", null ]
+    [ "mage::Resource< Shader< ShaderT, PipelineStageT > >", "classmage_1_1_resource.html", [
+      [ "mage::Shader< ShaderT, PipelineStageT >", "classmage_1_1_shader.html", null ]
     ] ],
     [ "mage::Resource< SpriteFont >", "classmage_1_1_resource.html", [
       [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ]
@@ -207,15 +236,18 @@ var hierarchy =
     [ "mage::ResourceManager", "classmage_1_1_resource_manager.html", null ],
     [ "mage::ResourcePool< KeyT, ResourceT >", "classmage_1_1_resource_pool.html", null ],
     [ "mage::RNG", "classmage_1_1_r_n_g.html", null ],
-    [ "mage::RS", "structmage_1_1_r_s.html", null ],
+    [ "mage::Pipeline::RS", "structmage_1_1_pipeline_1_1_r_s.html", null ],
     [ "mage::Scene", "classmage_1_1_scene.html", null ],
     [ "mage::SceneFog", "structmage_1_1_scene_fog.html", null ],
     [ "mage::SceneManager", "classmage_1_1_scene_manager.html", null ],
     [ "mage::SceneRenderer", "classmage_1_1_scene_renderer.html", null ],
     [ "mage::Semaphore", "structmage_1_1_semaphore.html", null ],
     [ "mage::ShadingNormalPass", "classmage_1_1_shading_normal_pass.html", null ],
-    [ "mage::ShadowBehavior", "structmage_1_1_shadow_behavior.html", null ],
-    [ "mage::SO", "structmage_1_1_s_o.html", null ],
+    [ "mage::ShadowCubeMapBuffer", "structmage_1_1_shadow_cube_map_buffer.html", null ],
+    [ "mage::ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html", null ],
+    [ "mage::Sky", "structmage_1_1_sky.html", null ],
+    [ "mage::SkyPass", "classmage_1_1_sky_pass.html", null ],
+    [ "mage::Pipeline::SO", "structmage_1_1_pipeline_1_1_s_o.html", null ],
     [ "mage::Sprite", "classmage_1_1_sprite.html", [
       [ "mage::SpriteImage", "classmage_1_1_sprite_image.html", null ],
       [ "mage::SpriteText", "classmage_1_1_sprite_text.html", [
@@ -229,10 +261,13 @@ var hierarchy =
     [ "mage::SpritePass", "classmage_1_1_sprite_pass.html", null ],
     [ "mage::StructuredBuffer< DataT >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< mage::DirectionalLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< mage::DirectionalLightWithShadowMappingBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< mage::OmniLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< mage::OmniLightWithShadowMappingBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::StructuredBuffer< mage::SpotLightBuffer >", "structmage_1_1_structured_buffer.html", null ],
+    [ "mage::StructuredBuffer< mage::SpotLightWithShadowMappingBuffer >", "structmage_1_1_structured_buffer.html", null ],
     [ "mage::Timer", "classmage_1_1_timer.html", null ],
-    [ "mage::TS", "structmage_1_1_t_s.html", null ],
+    [ "mage::Pipeline::TS", "structmage_1_1_pipeline_1_1_t_s.html", null ],
     [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::VariableComponentPass", "classmage_1_1_variable_component_pass.html", null ],
     [ "mage::VariableShadingPass", "classmage_1_1_variable_shading_pass.html", null ],
@@ -246,7 +281,7 @@ var hierarchy =
     [ "mage::VertexPositionTexture", "structmage_1_1_vertex_position_texture.html", null ],
     [ "mage::VertexPositionTextureTexture", "structmage_1_1_vertex_position_texture_texture.html", null ],
     [ "mage::Viewport", "structmage_1_1_viewport.html", null ],
-    [ "mage::VS", "structmage_1_1_v_s.html", null ],
+    [ "mage::Pipeline::VS", "structmage_1_1_pipeline_1_1_v_s.html", null ],
     [ "mage::WireframePass", "classmage_1_1_wireframe_pass.html", null ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.65.0</span>
+   &#160;<span id="projectnumber">v0.72.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_g_buffer_pass.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -108,8 +109,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79468fb8b4547197315c0aabbabffa71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace14aafdd028f12296b3fabf1e36ca02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_g_buffer_pass.html">GBufferPass</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#ace14aafdd028f12296b3fabf1e36ca02">operator=</a> (<a class="el" href="classmage_1_1_g_buffer_pass.html">GBufferPass</a> &amp;&amp;render_pass)=delete</td></tr>
 <tr class="separator:ace14aafdd028f12296b3fabf1e36ca02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5600a6de3f1b077f3036f2fe0805f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#ad5600a6de3f1b077f3036f2fe0805f16">Render</a> (const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *scene, const <a class="el" href="classmage_1_1_camera_node.html">CameraNode</a> *node)</td></tr>
-<tr class="separator:ad5600a6de3f1b077f3036f2fe0805f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a13364cc0318417f31df50d7081b0b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a4a13364cc0318417f31df50d7081b0b0">BindFixedState</a> ()</td></tr>
+<tr class="separator:a4a13364cc0318417f31df50d7081b0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16b072db0c6511871e8342adc5c8bf0"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#af16b072db0c6511871e8342adc5c8bf0">Render</a> (const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *scene, FXMMATRIX world_to_projection, CXMMATRIX world_to_view, CXMMATRIX view_to_world, CXMMATRIX view_to_projection)</td></tr>
+<tr class="separator:af16b072db0c6511871e8342adc5c8bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab2a50a7bde900978153badaa49cf047c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmage_1_1_g_buffer_pass.html">GBufferPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#ab2a50a7bde900978153badaa49cf047c">Get</a> ()</td></tr>
+<tr class="separator:ab2a50a7bde900978153badaa49cf047c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -123,39 +131,41 @@ Private Types</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a4b7e21f33c9d7cb8b9d3850b3977e11a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a4b7e21f33c9d7cb8b9d3850b3977e11a">UpdateMaterialCoefficientData</a> (const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *scene) noexcept</td></tr>
 <tr class="separator:a4b7e21f33c9d7cb8b9d3850b3977e11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6b4b09b988fc82f1094d575f8a80e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#aae6b4b09b988fc82f1094d575f8a80e6">NormalizeMaterialCoefficient</a> (uint8_t index, const <a class="el" href="structmage_1_1_material.html">Material</a> *material) const noexcept</td></tr>
-<tr class="separator:aae6b4b09b988fc82f1094d575f8a80e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810afcec108273c1ad893b129ffc46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a5810afcec108273c1ad893b129ffc46c">NormalizeMaterialCoefficient</a> (<a class="el" href="namespacemage.html#a5a362e2d56fc439362a80516ecae7828">u8</a> index, const <a class="el" href="structmage_1_1_material.html">Material</a> *material) const noexcept</td></tr>
+<tr class="separator:a5810afcec108273c1ad893b129ffc46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750c27aa6f562b53d62f845ce50e731d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a750c27aa6f562b53d62f845ce50e731d">BindPS</a> (<a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379">PSIndex</a> index) noexcept</td></tr>
 <tr class="separator:a750c27aa6f562b53d62f845ce50e731d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf03db3d75a3dbacb5c002f6bc72e5ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#acf03db3d75a3dbacb5c002f6bc72e5ee">BindPS</a> (const <a class="el" href="structmage_1_1_material.html">Material</a> *material) noexcept</td></tr>
 <tr class="separator:acf03db3d75a3dbacb5c002f6bc72e5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d94fc666f7f0ce4aca9e91817f28718"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a7d94fc666f7f0ce4aca9e91817f28718">BindProjectionData</a> (FXMMATRIX view_to_projection) noexcept</td></tr>
-<tr class="separator:a7d94fc666f7f0ce4aca9e91817f28718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28dba065f1c491f1e68b262dabcf6f0a"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a28dba065f1c491f1e68b262dabcf6f0a">BindModelData</a> (FXMMATRIX object_to_view, FXMMATRIX view_to_object, FXMMATRIX texture_transform, const <a class="el" href="structmage_1_1_material.html">Material</a> *material) noexcept</td></tr>
-<tr class="separator:a28dba065f1c491f1e68b262dabcf6f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5545e8b559adb76fe71056c250eddf39"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a5545e8b559adb76fe71056c250eddf39">ProcessModels</a> (const vector&lt; const <a class="el" href="classmage_1_1_model_node.html">ModelNode</a> * &gt; &amp;models, FXMMATRIX world_to_projection, FXMMATRIX world_to_view, FXMMATRIX view_to_world) noexcept</td></tr>
-<tr class="separator:a5545e8b559adb76fe71056c250eddf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d3723ec2cf336b62e46d551211e70d"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a72d3723ec2cf336b62e46d551211e70d">BindProjectionData</a> (FXMMATRIX view_to_projection)</td></tr>
+<tr class="separator:a72d3723ec2cf336b62e46d551211e70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5296050798e8430601e0f42d1f8327db"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a5296050798e8430601e0f42d1f8327db">BindModelData</a> (FXMMATRIX object_to_view, CXMMATRIX view_to_object, CXMMATRIX texture_transform, const <a class="el" href="structmage_1_1_material.html">Material</a> *material)</td></tr>
+<tr class="separator:a5296050798e8430601e0f42d1f8327db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4c5154aefd3d8e9befdb572b37f40d"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#abd4c5154aefd3d8e9befdb572b37f40d">ProcessModels</a> (const vector&lt; const <a class="el" href="classmage_1_1_model_node.html">ModelNode</a> * &gt; &amp;models, FXMMATRIX world_to_projection, CXMMATRIX world_to_view, CXMMATRIX view_to_world)</td></tr>
+<tr class="separator:abd4c5154aefd3d8e9befdb572b37f40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a009ffc6f7d459b4bda115cfb470e1fd0"><td class="memItemLeft" align="right" valign="top">ID3D11DeviceContext2 *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a009ffc6f7d459b4bda115cfb470e1fd0">m_device_context</a></td></tr>
 <tr class="separator:a009ffc6f7d459b4bda115cfb470e1fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcabb8f426222cf23279b24930ba785b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="classmage_1_1_vertex_shader.html">VertexShader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#afcabb8f426222cf23279b24930ba785b">m_vs</a></td></tr>
-<tr class="separator:afcabb8f426222cf23279b24930ba785b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3beee11d362b32983c757798efd3fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="namespacemage.html#ac98506b7edd999ea43ec46fbd0330238">PixelShader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a9d3beee11d362b32983c757798efd3fa">m_ps</a> [static_cast&lt; size_t &gt;(<a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9">PSIndex::Count</a>)]</td></tr>
-<tr class="separator:a9d3beee11d362b32983c757798efd3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5baced2ca3d5018e35d25d6c1b5d8f20"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="classmage_1_1_vertex_shader.html">VertexShader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a5baced2ca3d5018e35d25d6c1b5d8f20">m_vs</a></td></tr>
+<tr class="separator:a5baced2ca3d5018e35d25d6c1b5d8f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae607b9a6dab89d45865dc0ede3212fcd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="namespacemage.html#a27ecaf266420ee7a494d64edc0757129">PixelShader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#ae607b9a6dab89d45865dc0ede3212fcd">m_ps</a> [static_cast&lt; size_t &gt;(<a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9">PSIndex::Count</a>)]</td></tr>
+<tr class="separator:ae607b9a6dab89d45865dc0ede3212fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8452f64c9815d002e552957ed9e342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379">PSIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#aef8452f64c9815d002e552957ed9e342">m_bound_ps</a></td></tr>
 <tr class="separator:aef8452f64c9815d002e552957ed9e342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62c6dc82f6571657d2907ab83819b6dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_constant_buffer.html">ConstantBuffer</a>&lt; <a class="el" href="structmage_1_1_deferred_model_buffer.html">DeferredModelBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a62c6dc82f6571657d2907ab83819b6dd">m_model_buffer</a></td></tr>
-<tr class="separator:a62c6dc82f6571657d2907ab83819b6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c51afa751e58dedaad5effabc26f85d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_constant_buffer.html">ConstantBuffer</a>&lt; XMMATRIX &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a1c51afa751e58dedaad5effabc26f85d">m_projection_buffer</a></td></tr>
 <tr class="separator:a1c51afa751e58dedaad5effabc26f85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de8d7f8e4e0a829e6722174d9e204b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a2de8d7f8e4e0a829e6722174d9e204b5">m_material_coefficient_min</a> [<a class="el" href="structmage_1_1_pass_buffer.html#a51bba369e8114e3e60651e65579f8324">PassBuffer::s_nb_material_coefficients</a>]</td></tr>
-<tr class="separator:a2de8d7f8e4e0a829e6722174d9e204b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821a5fe71d3f135170c0ce87cbcaf17a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a821a5fe71d3f135170c0ce87cbcaf17a">m_material_coefficient_range</a> [<a class="el" href="structmage_1_1_pass_buffer.html#a51bba369e8114e3e60651e65579f8324">PassBuffer::s_nb_material_coefficients</a>]</td></tr>
-<tr class="separator:a821a5fe71d3f135170c0ce87cbcaf17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c6dc82f6571657d2907ab83819b6dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_constant_buffer.html">ConstantBuffer</a>&lt; <a class="el" href="structmage_1_1_deferred_model_buffer.html">DeferredModelBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a62c6dc82f6571657d2907ab83819b6dd">m_model_buffer</a></td></tr>
+<tr class="separator:a62c6dc82f6571657d2907ab83819b6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdb9c485431181134e6a535dfa47551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a2fdb9c485431181134e6a535dfa47551">m_material_coefficient_min</a> [<a class="el" href="structmage_1_1_pass_buffer.html#a453e18abdf29c4ebb08d9e002a952bf2">PassBuffer::s_nb_material_coefficients</a>]</td></tr>
+<tr class="separator:a2fdb9c485431181134e6a535dfa47551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfe0a54abbb477a3ade9c0b0073d2c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_g_buffer_pass.html#a6bfe0a54abbb477a3ade9c0b0073d2c2">m_material_coefficient_range</a> [<a class="el" href="structmage_1_1_pass_buffer.html#a453e18abdf29c4ebb08d9e002a952bf2">PassBuffer::s_nb_material_coefficients</a>]</td></tr>
+<tr class="separator:a6bfe0a54abbb477a3ade9c0b0073d2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> passes for packing GBuffers. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a1dbae3cb33d9c90ce7eb8c119d576379"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dbae3cb33d9c90ce7eb8c119d576379">&sect;&nbsp;</a></span>PSIndex</h2>
 
@@ -175,6 +185,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>An enumeration of the different pixel shader indices for <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> passes.</p>
+<p>This contains: <code>Default</code> and <code>TSNM</code>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1dbae3cb33d9c90ce7eb8c119d576379a6e02c9f63944ea221e7d55c11ecae07b"></a>TSNM&#160;</td><td class="fielddoc"></td></tr>
@@ -198,6 +210,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>The renderer associated with the current engine must be loaded. </dd>
+<dd>
+The resource manager associated with the current engine must be loaded. </dd></dl>
 
 </div>
 </div>
@@ -224,6 +240,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass from the given <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">render_pass</td><td>A reference to the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -250,6 +273,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass by moving the given <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">render_pass</td><td>A reference to the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -275,12 +305,37 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a28dba065f1c491f1e68b262dabcf6f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28dba065f1c491f1e68b262dabcf6f0a">&sect;&nbsp;</a></span>BindModelData()</h2>
+<a id="a4a13364cc0318417f31df50d7081b0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a13364cc0318417f31df50d7081b0b0">&sect;&nbsp;</a></span>BindFixedState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::GBufferPass::BindFixedState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Binds the fixed state of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to bind the fixed state of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5296050798e8430601e0f42d1f8327db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5296050798e8430601e0f42d1f8327db">&sect;&nbsp;</a></span>BindModelData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,13 +352,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FXMMATRIX&#160;</td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
           <td class="paramname"><em>view_to_object</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FXMMATRIX&#160;</td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
           <td class="paramname"><em>texture_transform</em>, </td>
         </tr>
         <tr>
@@ -320,15 +375,32 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Binds the model data of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>material</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">object_to_view</td><td>The object-to-view transformation matrix used for transforming vertices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_to_object</td><td>The view-to-object transformation matrix used for transforming normals. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">texture_transform</td><td>The texture transformation matrix used for transforming texture coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">material</td><td>A pointer to the material. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to bind the model data of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a7d94fc666f7f0ce4aca9e91817f28718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d94fc666f7f0ce4aca9e91817f28718">&sect;&nbsp;</a></span>BindProjectionData()</h2>
+<a id="a72d3723ec2cf336b62e46d551211e70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d3723ec2cf336b62e46d551211e70d">&sect;&nbsp;</a></span>BindProjectionData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,10 +418,23 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Binds the projection data of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_to_projection</td><td>The view-to-projection transformation matrix used for transforming vertices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to bind the projection data of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -376,6 +461,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Binds the pixel shader of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass associated with the given pixel shader index.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The pixel shader index. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -402,11 +494,19 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Binds the pixel shader of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass associated with the given material.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>material</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">material</td><td>A pointer to the material. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aae6b4b09b988fc82f1094d575f8a80e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae6b4b09b988fc82f1094d575f8a80e6">&sect;&nbsp;</a></span>NormalizeMaterialCoefficient()</h2>
+<a id="ab2a50a7bde900978153badaa49cf047c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a50a7bde900978153badaa49cf047c">&sect;&nbsp;</a></span>Get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,9 +515,37 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float mage::GBufferPass::NormalizeMaterialCoefficient </td>
+          <td class="memname"><a class="el" href="classmage_1_1_g_buffer_pass.html">GBufferPass</a> * mage::GBufferPass::Get </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass associated with the current engine.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>The scene renderer associated with the current engine must be loaded. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass associated with the current engine. </dd></dl>
+
+</div>
+</div>
+<a id="a5810afcec108273c1ad893b129ffc46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810afcec108273c1ad893b129ffc46c">&sect;&nbsp;</a></span>NormalizeMaterialCoefficient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a> mage::GBufferPass::NormalizeMaterialCoefficient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#a5a362e2d56fc439362a80516ecae7828">u8</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -438,6 +566,17 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Normalizes the material coefficient of the given material at the given material coefficient index.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>index</em> &lt; <a class="el" href="structmage_1_1_pass_buffer.html#a453e18abdf29c4ebb08d9e002a952bf2">mage::PassBuffer::s_nb_material_coefficients</a>. </dd>
+<dd>
+<em>material</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The material coefficient index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">material</td><td>A pointer to the material. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -464,6 +603,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">render_pass</td><td>A reference to the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass (i.e. this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass). </dd></dl>
 
 </div>
 </div>
@@ -490,11 +637,19 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Moves the given <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">render_pass</td><td>A reference to the <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass to move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass (i.e. this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass). </dd></dl>
 
 </div>
 </div>
-<a id="a5545e8b559adb76fe71056c250eddf39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5545e8b559adb76fe71056c250eddf39">&sect;&nbsp;</a></span>ProcessModels()</h2>
+<a id="abd4c5154aefd3d8e9befdb572b37f40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c5154aefd3d8e9befdb572b37f40d">&sect;&nbsp;</a></span>ProcessModels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,13 +672,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FXMMATRIX&#160;</td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
           <td class="paramname"><em>world_to_view</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FXMMATRIX&#160;</td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
           <td class="paramname"><em>view_to_world</em>&#160;</td>
         </tr>
         <tr>
@@ -534,21 +689,37 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Process the given models.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">models</td><td>A reference to a vector containing the model pointers to process. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">world_to_projection</td><td>The world-to-projection transformation matrix. This transformation matrix will be used for culling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">world_to_view</td><td>The world-to-view transformation matrix. This transformation matrix will be chained with the object-to-view transformation matrix for transforming vertices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_to_world</td><td>The view-to-world transformation matrix. This transformation matrix will be chained with the world-to-object transformation matrix for transforming normals. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to process the models. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ad5600a6de3f1b077f3036f2fe0805f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5600a6de3f1b077f3036f2fe0805f16">&sect;&nbsp;</a></span>Render()</h2>
+<a id="af16b072db0c6511871e8342adc5c8bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16b072db0c6511871e8342adc5c8bf0">&sect;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::GBufferPass::Render </td>
+          <td class="memname">void XM_CALLCONV mage::GBufferPass::Render </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *&#160;</td>
           <td class="paramname"><em>scene</em>, </td>
@@ -556,8 +727,26 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_camera_node.html">CameraNode</a> *&#160;</td>
-          <td class="paramname"><em>node</em>&#160;</td>
+          <td class="paramtype">FXMMATRIX&#160;</td>
+          <td class="paramname"><em>world_to_projection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
+          <td class="paramname"><em>world_to_view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
+          <td class="paramname"><em>view_to_world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CXMMATRIX&#160;</td>
+          <td class="paramname"><em>view_to_projection</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -566,6 +755,24 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Renders the scene.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>scene</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>A pointer to the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">world_to_projection</td><td>The world-to-projection transformation matrix. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">world_to_view</td><td>The world-to-view transformation matrix. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_to_world</td><td>The view-to-world transformation matrix. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">view_to_projection</td><td>The view-to-projection transformation matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to render the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -592,6 +799,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Updates the material coefficient data of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass from the given scene.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>scene</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>A pointer to the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -615,6 +830,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The pixel shader index of the bound pixel shader of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
@@ -637,33 +853,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the device context of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
-<a id="a2de8d7f8e4e0a829e6722174d9e204b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2de8d7f8e4e0a829e6722174d9e204b5">&sect;&nbsp;</a></span>m_material_coefficient_min</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mage::GBufferPass::m_material_coefficient_min[<a class="el" href="structmage_1_1_pass_buffer.html#a51bba369e8114e3e60651e65579f8324">PassBuffer::s_nb_material_coefficients</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a821a5fe71d3f135170c0ce87cbcaf17a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821a5fe71d3f135170c0ce87cbcaf17a">&sect;&nbsp;</a></span>m_material_coefficient_range</h2>
+<a id="a2fdb9c485431181134e6a535dfa47551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fdb9c485431181134e6a535dfa47551">&sect;&nbsp;</a></span>m_material_coefficient_min</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,7 +867,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float mage::GBufferPass::m_material_coefficient_range[<a class="el" href="structmage_1_1_pass_buffer.html#a51bba369e8114e3e60651e65579f8324">PassBuffer::s_nb_material_coefficients</a>]</td>
+          <td class="memname"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a> mage::GBufferPass::m_material_coefficient_min[<a class="el" href="structmage_1_1_pass_buffer.html#a453e18abdf29c4ebb08d9e002a952bf2">PassBuffer::s_nb_material_coefficients</a>]</td>
         </tr>
       </table>
   </td>
@@ -681,6 +876,30 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The current minima of the material coefficients of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
+
+</div>
+</div>
+<a id="a6bfe0a54abbb477a3ade9c0b0073d2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bfe0a54abbb477a3ade9c0b0073d2c2">&sect;&nbsp;</a></span>m_material_coefficient_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#a6a44ad388483959dc4dff9f2aef91431">f32</a> mage::GBufferPass::m_material_coefficient_range[<a class="el" href="structmage_1_1_pass_buffer.html#a453e18abdf29c4ebb08d9e002a952bf2">PassBuffer::s_nb_material_coefficients</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The current ranges of the material coefficients of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
@@ -703,6 +922,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The model buffer of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
@@ -725,33 +945,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The projection buffer of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>
-<a id="a9d3beee11d362b32983c757798efd3fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d3beee11d362b32983c757798efd3fa">&sect;&nbsp;</a></span>m_ps</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="namespacemage.html#ac98506b7edd999ea43ec46fbd0330238">PixelShader</a> &gt; mage::GBufferPass::m_ps[static_cast&lt; size_t &gt;(<a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9">PSIndex::Count</a>)]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afcabb8f426222cf23279b24930ba785b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcabb8f426222cf23279b24930ba785b">&sect;&nbsp;</a></span>m_vs</h2>
+<a id="ae607b9a6dab89d45865dc0ede3212fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae607b9a6dab89d45865dc0ede3212fcd">&sect;&nbsp;</a></span>m_ps</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,7 +959,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="classmage_1_1_vertex_shader.html">VertexShader</a> &gt; mage::GBufferPass::m_vs</td>
+          <td class="memname">const <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="namespacemage.html#a27ecaf266420ee7a494d64edc0757129">PixelShader</a> &gt; mage::GBufferPass::m_ps[static_cast&lt; size_t &gt;(<a class="el" href="classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9">PSIndex::Count</a>)]</td>
         </tr>
       </table>
   </td>
@@ -769,6 +968,30 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>An array containing pointers to the pixel shaders of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
+
+</div>
+</div>
+<a id="a5baced2ca3d5018e35d25d6c1b5d8f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5baced2ca3d5018e35d25d6c1b5d8f20">&sect;&nbsp;</a></span>m_vs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; const <a class="el" href="classmage_1_1_vertex_shader.html">VertexShader</a> &gt; mage::GBufferPass::m_vs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A pointer to the vertex shader of this <a class="el" href="structmage_1_1_g_buffer.html">GBuffer</a> pass. </p>
 
 </div>
 </div>

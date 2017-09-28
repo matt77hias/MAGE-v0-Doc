@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.65.0</span>
+   &#160;<span id="projectnumber">v0.72.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_behavior_script.html',''
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_behavior_script-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mage::BehaviorScript Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">mage::BehaviorScript Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -120,8 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b3327ebf7009e668a7022d254cb1d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528c2bd218f2e6bb7d0a8ee50a05bf01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_behavior_script.html">BehaviorScript</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#a528c2bd218f2e6bb7d0a8ee50a05bf01">operator=</a> (<a class="el" href="classmage_1_1_behavior_script.html">BehaviorScript</a> &amp;&amp;script)=delete</td></tr>
 <tr class="separator:a528c2bd218f2e6bb7d0a8ee50a05bf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905b6c83640cb91d19fecab3435f6feb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#a905b6c83640cb91d19fecab3435f6feb">Update</a> (double delta_time)=0</td></tr>
-<tr class="separator:a905b6c83640cb91d19fecab3435f6feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8318f79ab78798ec37b39bc844f7138c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#a8318f79ab78798ec37b39bc844f7138c">FixedUpdate</a> ()</td></tr>
+<tr class="separator:a8318f79ab78798ec37b39bc844f7138c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42e869ca8d4e4b3ad2af589b0ca9924"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#ae42e869ca8d4e4b3ad2af589b0ca9924">Update</a> (<a class="el" href="namespacemage.html#ab935747c6941320bd6214b5a5f265b09">f64</a> delta_time)</td></tr>
+<tr class="separator:ae42e869ca8d4e4b3ad2af589b0ca9924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a856e1b420ea0ead36adafa750237325c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#a856e1b420ea0ead36adafa750237325c">IsActive</a> () const noexcept</td></tr>
 <tr class="separator:a856e1b420ea0ead36adafa750237325c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40e33539ca7013a13ef127af11bff3e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_behavior_script.html#a40e33539ca7013a13ef127af11bff3e1">IsPassive</a> () const noexcept</td></tr>
@@ -329,6 +331,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Deactives this behavior script (and its descendant behavior scripts). </p>
+
+</div>
+</div>
+<a id="a8318f79ab78798ec37b39bc844f7138c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8318f79ab78798ec37b39bc844f7138c">&sect;&nbsp;</a></span>FixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::BehaviorScript::FixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates this behavior script.</p>
+<p>This method can be called zero, one or multiple times per frame depending on the fixed delta time used by the engine. </p>
 
 </div>
 </div>
@@ -566,8 +595,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a905b6c83640cb91d19fecab3435f6feb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a905b6c83640cb91d19fecab3435f6feb">&sect;&nbsp;</a></span>Update()</h2>
+<a id="ae42e869ca8d4e4b3ad2af589b0ca9924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42e869ca8d4e4b3ad2af589b0ca9924">&sect;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -576,20 +605,21 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void mage::BehaviorScript::Update </td>
+          <td class="memname">void mage::BehaviorScript::Update </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ab935747c6941320bd6214b5a5f265b09">f64</a>&#160;</td>
           <td class="paramname"><em>delta_time</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Updates this behavior script.</p>
+<p>This method is called once per frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">delta_time</td><td>The elapsed time since the previous update. </td></tr>
@@ -597,7 +627,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classmage_1_1_mouse_look_script.html#a7962403a78c02b2fe64e8f06f6319312">mage::MouseLookScript</a>, <a class="el" href="classmage_1_1_input_controller_script.html#a2b91f7c131dee5d09ac38e2878a715e3">mage::InputControllerScript&lt; OrientationScriptT, MovementScriptT &gt;</a>, <a class="el" href="classmage_1_1_rotation_script.html#a96936107b1b955cce5e84b8081f930bb">mage::RotationScript</a>, <a class="el" href="classmage_1_1_stats_script.html#abb2f4de15b51b72e54dc893ecd947fad">mage::StatsScript</a>, <a class="el" href="classmage_1_1_switch_scene_script.html#a8faac4e2f6f571f13aecf488057f7dfb">mage::SwitchSceneScript&lt; SceneT &gt;</a>, <a class="el" href="classmage_1_1_text_console_script.html#a7b1acbf48376b650c08fa941a63ffa98">mage::TextConsoleScript</a>, <a class="el" href="classmage_1_1_location_script.html#a3ffe0474c573e2cf858aee62056324a3">mage::LocationScript</a>, <a class="el" href="classmage_1_1_render_mode_script.html#a13d76eb4e8362cb519cc3cf98102094f">mage::RenderModeScript</a>, <a class="el" href="classmage_1_1_character_motor_script.html#af09581e810c02ca4a19ecbaf0d7580bb">mage::CharacterMotorScript</a>, and <a class="el" href="classmage_1_1_manhattan_motor_script.html#aa2aee651ef777e71ac8da8345f86b212">mage::ManhattanMotorScript</a>.</p>
+<p>Reimplemented in <a class="el" href="classmage_1_1_mouse_look_script.html#a5ba7f21c594e9f89f9daafe1239de62c">mage::MouseLookScript</a>, <a class="el" href="classmage_1_1_input_controller_script.html#ac522d6cffc26418c514de396f80fa56c">mage::InputControllerScript&lt; OrientationScriptT, MovementScriptT &gt;</a>, <a class="el" href="classmage_1_1_rotation_script.html#a0d9c25142e10519b787b201b2b581433">mage::RotationScript</a>, <a class="el" href="classmage_1_1_stats_script.html#a9e97150da3c2c88ae1cef9e22c191235">mage::StatsScript</a>, <a class="el" href="classmage_1_1_character_motor_script.html#ac0ac58ac7a878c5dad5222e5af673179">mage::CharacterMotorScript</a>, <a class="el" href="classmage_1_1_manhattan_motor_script.html#a7d342e8c4a83aaebe3c8eaaacb65d167">mage::ManhattanMotorScript</a>, <a class="el" href="classmage_1_1_switch_scene_script.html#a33b526d1543916b586268656c2c06022">mage::SwitchSceneScript&lt; SceneT &gt;</a>, <a class="el" href="classmage_1_1_text_console_script.html#ae26b3b5bd9ca755295d50d594d549abb">mage::TextConsoleScript</a>, <a class="el" href="classmage_1_1_location_script.html#a02bfce8bca2a56f74e492a56d838ce54">mage::LocationScript</a>, and <a class="el" href="classmage_1_1_render_mode_script.html#a20a1b6ce8df88d7fc0d604cc75c435ac">mage::RenderModeScript</a>.</p>
 
 </div>
 </div>

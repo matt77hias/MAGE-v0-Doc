@@ -1,11 +1,10 @@
 var structmage_1_1_r_g_b_spectrum =
 [
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#abdac70c4f7c67877b7843e76822efe50", null ],
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a340a61648762b0fa7367568320940e2a", null ],
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a16199f1c50fe4bf5da4a891e400f0005", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a7aace65634e3c3cadcc2f0bbece707ad", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a0080ae94b64febe632775eb830fd3e90", null ],
+    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a6afbac378b74b1129a964a73ba0b516b", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a9035556eb53f16ce23ba458cb3e0928f", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a56dd0c233d2523b1198cd2419f73a9dd", null ],
-    [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#aead65b6e4acd8776fb9c76445b126d46", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a9475eed54838d0f8c7aba49bd8df0e6c", null ],
     [ "RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a8a30b69cbeefd7f59e51886ce17d48cc", null ],
     [ "~RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html#a7c18a007349953b1e4711a4856680b02", null ],

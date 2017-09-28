@@ -11,7 +11,7 @@ var classmage_1_1_sprite_font =
     [ "Get", "classmage_1_1_sprite_font.html#a8e43f8d97fb7e5ee03ed49fb45ee1b5f", null ],
     [ "GetDefaultCharacter", "classmage_1_1_sprite_font.html#a9be513809e714558708cab21a22d7316", null ],
     [ "GetGlyph", "classmage_1_1_sprite_font.html#aa13424a1e0153ffb9433bb2cb416360b", null ],
-    [ "GetLineSpacing", "classmage_1_1_sprite_font.html#a281f33047c7627053a5bf61f8fa704fe", null ],
+    [ "GetLineSpacing", "classmage_1_1_sprite_font.html#acf54d905fd0161a93e94733d450ac73a", null ],
     [ "HasAlpha", "classmage_1_1_sprite_font.html#acfaa4c68f758ea5298f8957ef60c8471", null ],
     [ "InitializeSpriteFont", "classmage_1_1_sprite_font.html#ae0edccbf98f4bd3b3195fa602baee121", null ],
     [ "MeasureDrawBounds", "classmage_1_1_sprite_font.html#a80e5f0cdbb424754a0fb8239103d0f26", null ],
@@ -21,9 +21,9 @@ var classmage_1_1_sprite_font =
     [ "operator=", "classmage_1_1_sprite_font.html#a3f95359a336adc87088eefe3103a770b", null ],
     [ "operator=", "classmage_1_1_sprite_font.html#ab00b7f5c2740faf52ea778d94ae704bd", null ],
     [ "SetDefaultCharacter", "classmage_1_1_sprite_font.html#a0b0feb25673d6f9d9e3215167800d817", null ],
-    [ "SetLineSpacing", "classmage_1_1_sprite_font.html#adeaa2852ec0c8ce3817f0f69663f0a35", null ],
+    [ "SetLineSpacing", "classmage_1_1_sprite_font.html#a8ebc770aeb999c568949fcb71c3202c0", null ],
     [ "m_default_glyph", "classmage_1_1_sprite_font.html#ad25667d3bfb539b71b39124fdc8ed6d6", null ],
     [ "m_glyphs", "classmage_1_1_sprite_font.html#acf4efc927a2ca3fc0eb297ed080ddfbb", null ],
-    [ "m_line_spacing", "classmage_1_1_sprite_font.html#a2b6de0c210a7cf5c72dd1bb69bff7a3b", null ],
+    [ "m_line_spacing", "classmage_1_1_sprite_font.html#a7063afb5338cfd0f79d2a0fc735a3696", null ],
     [ "m_texture_srv", "classmage_1_1_sprite_font.html#a0f52f8845cb204d4ca3b3f3020df0029", null ]
 ];

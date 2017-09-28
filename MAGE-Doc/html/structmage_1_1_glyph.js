@@ -8,10 +8,10 @@ var structmage_1_1_glyph =
     [ "operator<", "structmage_1_1_glyph.html#ad8e9835022217afef429f38891bba80e", null ],
     [ "operator=", "structmage_1_1_glyph.html#ae9ea2dff58ce0765d7746af93d97c338", null ],
     [ "operator=", "structmage_1_1_glyph.html#a28a3279f2e142e4b771295d64d7cb414", null ],
-    [ "m_advance_x", "structmage_1_1_glyph.html#ab15dfce26541919696c1e6232d6c0cb6", null ],
-    [ "m_character", "structmage_1_1_glyph.html#a1942f2164a6829dfbafe8fe09297b387", null ],
-    [ "m_offset_x", "structmage_1_1_glyph.html#a13b8a2a17b96e317b5ae563668df7540", null ],
-    [ "m_offset_y", "structmage_1_1_glyph.html#ab3123f06cb1a27aaafa4fd6171a66a04", null ],
-    [ "m_offsets", "structmage_1_1_glyph.html#a0bd12df61a764922f6c9700f4b4a6a54", null ],
+    [ "m_advance_x", "structmage_1_1_glyph.html#a226a77fa6bfc70b230cf0d5cc377195a", null ],
+    [ "m_character", "structmage_1_1_glyph.html#a69ce57c13d8a73174a0d88fd03b35fda", null ],
+    [ "m_offset_x", "structmage_1_1_glyph.html#ae983fa77eaf0947aaffac8aa11b74518", null ],
+    [ "m_offset_y", "structmage_1_1_glyph.html#a86456531180ba716cd806e3f601e7aee", null ],
+    [ "m_offsets", "structmage_1_1_glyph.html#a378fa43d46f11b5963cad0500288494a", null ],
     [ "m_sub_rectangle", "structmage_1_1_glyph.html#ac990dc92b5eebcc99da599f1a8d15bb4", null ]
 ];

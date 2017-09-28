@@ -19,7 +19,9 @@ virtual \hyperlink{classmage_1_1_behavior_script_a61e4825ba0fc7746d49faa44ed7bc4
 \item 
 \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_a528c2bd218f2e6bb7d0a8ee50a05bf01}{operator=} (\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&\&script)=delete
 \item 
-virtual void \hyperlink{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb}{Update} (double delta\+\_\+time)=0
+virtual void \hyperlink{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c}{Fixed\+Update} ()
+\item 
+virtual void \hyperlink{classmage_1_1_behavior_script_ae42e869ca8d4e4b3ad2af589b0ca9924}{Update} (\hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64} delta\+\_\+time)
 \item 
 bool \hyperlink{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c}{Is\+Active} () const noexcept
 \item 
@@ -115,7 +117,15 @@ Activates this behavior script (and its descendant behavior scripts). \hypertarg
 \subsubsection{\texorpdfstring{Deactivate()}{Deactivate()}}
 {\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Deactives this behavior script (and its descendant behavior scripts). \hypertarget{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c}{}\label{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c} 
+Deactives this behavior script (and its descendant behavior scripts). \hypertarget{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c}{}\label{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates this behavior script.
+
+This method can be called zero, one or multiple times per frame depending on the fixed delta time used by the engine. \hypertarget{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c}{}\label{classmage_1_1_behavior_script_a856e1b420ea0ead36adafa750237325c} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Is\+Active@{Is\+Active}}
 \index{Is\+Active@{Is\+Active}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Is\+Active()}{IsActive()}}
@@ -205,13 +215,15 @@ Sets this behavior script active flag to the given value.
 \subsubsection{\texorpdfstring{Terminate()}{Terminate()}}
 {\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Terminates this behavior script. \hypertarget{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb}{}\label{classmage_1_1_behavior_script_a905b6c83640cb91d19fecab3435f6feb} 
+Terminates this behavior script. \hypertarget{classmage_1_1_behavior_script_ae42e869ca8d4e4b3ad2af589b0ca9924}{}\label{classmage_1_1_behavior_script_ae42e869ca8d4e4b3ad2af589b0ca9924} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Update@{Update}}
 \index{Update@{Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily virtual void mage\+::\+Behavior\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Updates this behavior script.
+
+This method is called once per frame.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -220,7 +232,7 @@ Updates this behavior script.
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classmage_1_1_mouse_look_script_a7962403a78c02b2fe64e8f06f6319312}{mage\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1_input_controller_script_a2b91f7c131dee5d09ac38e2878a715e3}{mage\+::\+Input\+Controller\+Script$<$ Orientation\+Script\+T, Movement\+Script\+T $>$}, \hyperlink{classmage_1_1_rotation_script_a96936107b1b955cce5e84b8081f930bb}{mage\+::\+Rotation\+Script}, \hyperlink{classmage_1_1_stats_script_abb2f4de15b51b72e54dc893ecd947fad}{mage\+::\+Stats\+Script}, \hyperlink{classmage_1_1_switch_scene_script_a8faac4e2f6f571f13aecf488057f7dfb}{mage\+::\+Switch\+Scene\+Script$<$ Scene\+T $>$}, \hyperlink{classmage_1_1_text_console_script_a7b1acbf48376b650c08fa941a63ffa98}{mage\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1_location_script_a3ffe0474c573e2cf858aee62056324a3}{mage\+::\+Location\+Script}, \hyperlink{classmage_1_1_render_mode_script_a13d76eb4e8362cb519cc3cf98102094f}{mage\+::\+Render\+Mode\+Script}, \hyperlink{classmage_1_1_character_motor_script_af09581e810c02ca4a19ecbaf0d7580bb}{mage\+::\+Character\+Motor\+Script}, and \hyperlink{classmage_1_1_manhattan_motor_script_aa2aee651ef777e71ac8da8345f86b212}{mage\+::\+Manhattan\+Motor\+Script}.
+Reimplemented in \hyperlink{classmage_1_1_mouse_look_script_a5ba7f21c594e9f89f9daafe1239de62c}{mage\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1_input_controller_script_ac522d6cffc26418c514de396f80fa56c}{mage\+::\+Input\+Controller\+Script$<$ Orientation\+Script\+T, Movement\+Script\+T $>$}, \hyperlink{classmage_1_1_rotation_script_a0d9c25142e10519b787b201b2b581433}{mage\+::\+Rotation\+Script}, \hyperlink{classmage_1_1_stats_script_a9e97150da3c2c88ae1cef9e22c191235}{mage\+::\+Stats\+Script}, \hyperlink{classmage_1_1_character_motor_script_ac0ac58ac7a878c5dad5222e5af673179}{mage\+::\+Character\+Motor\+Script}, \hyperlink{classmage_1_1_manhattan_motor_script_a7d342e8c4a83aaebe3c8eaaacb65d167}{mage\+::\+Manhattan\+Motor\+Script}, \hyperlink{classmage_1_1_switch_scene_script_a33b526d1543916b586268656c2c06022}{mage\+::\+Switch\+Scene\+Script$<$ Scene\+T $>$}, \hyperlink{classmage_1_1_text_console_script_ae26b3b5bd9ca755295d50d594d549abb}{mage\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1_location_script_a02bfce8bca2a56f74e492a56d838ce54}{mage\+::\+Location\+Script}, and \hyperlink{classmage_1_1_render_mode_script_a20a1b6ce8df88d7fc0d604cc75c435ac}{mage\+::\+Render\+Mode\+Script}.
 
 
 

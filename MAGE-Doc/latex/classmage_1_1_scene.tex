@@ -25,6 +25,8 @@ void \hyperlink{classmage_1_1_scene_a714dc33c04dc2b8e2cec93564905b174}{Uninitial
 \item 
 \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{classmage_1_1_scene_a1f21d92feb659477ceb4642322fa2f0c}{Get\+Scene\+Fog} () const noexcept
 \item 
+\hyperlink{structmage_1_1_sky}{Sky} $\ast$ \hyperlink{classmage_1_1_scene_afecf68ec8c48d4c28082f99d8042e700}{Get\+Sky} () const noexcept
+\item 
 {\footnotesize template$<$typename Scene\+NodeT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ Scene\+NodeT $>$ \hyperlink{classmage_1_1_scene_abfce90d15a9aa5b5e05709b35286de88}{Create} (const string \&name, Constructor\+ArgsT \&\&... args)
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ \hyperlink{classmage_1_1_scene_a9d6c27c761cd4535549c8af2e3804b7d}{Create\+Model} (const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} \&desc)
@@ -108,13 +110,9 @@ string \hyperlink{classmage_1_1_scene_a6cc8cb08b1853c4e3063b33a94e8fb47}{m\+\_\+
 \item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$ $>$ \hyperlink{classmage_1_1_scene_a84548bf6978f8955ce5892cb23536a4e}{m\+\_\+scripts}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $>$ \hyperlink{classmage_1_1_scene_a58f8d29322664c4c5895703a6cbc9000}{m\+\_\+scene\+\_\+fog}
-\item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a76fc089ae3185c82702d2ca42fd820e7}{m\+\_\+cameras}
 \item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_model_node}{Model\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a01132a667fbc1517f11ae561bc221071}{m\+\_\+models}
-\item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_ab0783a7428706251f8561dc30a4d228d}{Ambient\+Light\+Node} $>$ \hyperlink{classmage_1_1_scene_a0ce9718f4b0137a52b858a29d3504328}{m\+\_\+ambient\+\_\+light}
 \item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a895f2ae809c17be09072f6bb89fd4e9c}{m\+\_\+directional\+\_\+lights}
 \item 
@@ -123,6 +121,12 @@ vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Pt
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75}{m\+\_\+spot\+\_\+lights}
 \item 
 vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node} $>$ $>$ \hyperlink{classmage_1_1_scene_a2d68edf08b57dde36ec7cf1f5a91d281}{m\+\_\+sprites}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_ab0783a7428706251f8561dc30a4d228d}{Ambient\+Light\+Node} $>$ \hyperlink{classmage_1_1_scene_a0ce9718f4b0137a52b858a29d3504328}{m\+\_\+ambient\+\_\+light}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $>$ \hyperlink{classmage_1_1_scene_a58f8d29322664c4c5895703a6cbc9000}{m\+\_\+scene\+\_\+fog}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sky}{Sky} $>$ \hyperlink{classmage_1_1_scene_a90163a34ed39216b14175c4b799abd46}{m\+\_\+sky}
 \end{DoxyCompactItemize}
 
 
@@ -352,6 +356,17 @@ Returns the scene fog of this scene.
 \begin{DoxyReturn}{Returns}
 A pointer to the scene fog of this scene. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_afecf68ec8c48d4c28082f99d8042e700}{}\label{classmage_1_1_scene_afecf68ec8c48d4c28082f99d8042e700} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+Sky@{Get\+Sky}}
+\index{Get\+Sky@{Get\+Sky}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Get\+Sky()}{GetSky()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_sky}{Sky}$\ast$ mage\+::\+Scene\+::\+Get\+Sky (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the sky of this scene.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the sky of this scene. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_scene_a9dd6c49e9db7590de1de4fbd128c78a9}{}\label{classmage_1_1_scene_a9dd6c49e9db7590de1de4fbd128c78a9} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!Has\+Script@{Has\+Script}}
 \index{Has\+Script@{Has\+Script}!mage\+::\+Scene@{mage\+::\+Scene}}
@@ -419,7 +434,7 @@ Uninitializes this scene.
 \index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+ambient\+\_\+light@{m\+\_\+ambient\+\_\+light}}
 \index{m\+\_\+ambient\+\_\+light@{m\+\_\+ambient\+\_\+light}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{m\+\_\+ambient\+\_\+light}{m\_ambient\_light}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_ab0783a7428706251f8561dc30a4d228d}{Ambient\+Light\+Node} $>$ mage\+::\+Scene\+::m\+\_\+ambient\+\_\+light\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{namespacemage_ab0783a7428706251f8561dc30a4d228d}{Ambient\+Light\+Node} $>$ mage\+::\+Scene\+::m\+\_\+ambient\+\_\+light\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_scene_a76fc089ae3185c82702d2ca42fd820e7}{}\label{classmage_1_1_scene_a76fc089ae3185c82702d2ca42fd820e7} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+cameras@{m\+\_\+cameras}}
@@ -462,6 +477,12 @@ Uninitializes this scene.
 \index{m\+\_\+scripts@{m\+\_\+scripts}!mage\+::\+Scene@{mage\+::\+Scene}}
 \subsubsection{\texorpdfstring{m\+\_\+scripts}{m\_scripts}}
 {\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} $>$ $>$ mage\+::\+Scene\+::m\+\_\+scripts\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_a90163a34ed39216b14175c4b799abd46}{}\label{classmage_1_1_scene_a90163a34ed39216b14175c4b799abd46} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+sky@{m\+\_\+sky}}
+\index{m\+\_\+sky@{m\+\_\+sky}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+sky}{m\_sky}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sky}{Sky} $>$ mage\+::\+Scene\+::m\+\_\+sky\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75}{}\label{classmage_1_1_scene_a4e1954bc0b812d6a71123ca3ac9eeb75} 
 \index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}}

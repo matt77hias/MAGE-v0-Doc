@@ -32,20 +32,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_constant_shading_pass.html#ae5ea38d9739b1a16257ee0a69c95b406",
-"classmage_1_1_line_reader.html#a17f11afdea4692395115c6bdfde03660",
-"classmage_1_1_model.html#aea937d2e26dc5549e1e93d1664b6f3b0",
-"classmage_1_1_perspective_camera.html#a0fe5ef8bd4d28efa8e4851a8055b6fa5",
-"classmage_1_1_scene.html#abfce90d15a9aa5b5e05709b35286de88",
-"classmage_1_1_sprite_font_reader.html",
-"classmage_1_1_variable_script.html#aebd4e6cf2bdae4e57c9da428007fc4d7",
-"structmage_1_1_b_s.html#abe3c13f8a9aa74199b38eff5bb3fd141",
-"structmage_1_1_deferred_model_buffer.html#aa5bc6dff6a80b1f1ea8b5d8d5db1ef75",
-"structmage_1_1_material.html#a04fad2f985ed5078a8217ebcfd51c3f0",
-"structmage_1_1_r_g_b_a_spectrum.html#a839b51be19e75f98ab068d6e16673860",
-"structmage_1_1_sprite_transform.html#a2a89a583752a20fc61e8e13461781b44",
-"structmage_1_1_transform.html#acca85ed0fe455461a08807c9f81be2ed",
-"structmage_1_1_vertex_position_color_texture.html#a19df72ffa15fae0b389b9f66d7b8f3bd"
+"classmage_1_1_constant_shading_pass.html#a512f1c4284e475e94502530bd37367b4",
+"classmage_1_1_keyboard.html#a94d35ad5ad27e3fc9496f3ab1fa28e4d",
+"classmage_1_1_mesh.html#a5a04aa73e98c75dd5b8929296c3af9bb",
+"classmage_1_1_omni_light.html#af6f4921499b430041966f38aac920b69",
+"classmage_1_1_rotation_script.html#a6fbbbec1bd610da2c917d1ef2d05f556",
+"classmage_1_1_sprite.html#a4e7926b7fd1455afcb95e45f25b83246",
+"classmage_1_1_text_console_script.html#a6d245efb103011f1b2e2c43c590c22bf",
+"functions_vars_p.html",
+"structmage_1_1_condition_variable.html#ab5ff870b2881a1979ccaec986d762441",
+"structmage_1_1_glyph_less_than.html#a24f8a3b7cf190212a226fcf4900f558a",
+"structmage_1_1_model_texture_transform_buffer.html#a855c8ccaefe9bac3fd10cdc143616cd9",
+"structmage_1_1_pipeline_1_1_r_s.html#a314c42f225cbf4c6e72f22917165aef7",
+"structmage_1_1_shadow_map_buffer.html#a276a32f787cda940ac36df461d0ce3ea",
+"structmage_1_1_texture_transform.html#a82e94cf27ae9739bac742f794910e199",
+"structmage_1_1_transform_node.html#ae4bac5f8b18c06fcee3b81874b438798",
+"structmage_1_1_viewport.html#a1c420f09a0a0df0addaee81ca3a62089"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

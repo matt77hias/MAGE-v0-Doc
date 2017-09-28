@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.65.0</span>
+   &#160;<span id="projectnumber">v0.72.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -106,6 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a77b82a969ec33a3aacec74a5adc4ab8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fe833a49052a2db99c023b1b1d43621"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#a3fe833a49052a2db99c023b1b1d43621">FormattedException</a> (const char *format,...)</td></tr>
 <tr class="separator:a3fe833a49052a2db99c023b1b1d43621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf97b252c3eb38acc1554ab6bb7e300"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#a5cf97b252c3eb38acc1554ab6bb7e300">FormattedException</a> (const char *format, va_list args)</td></tr>
+<tr class="separator:a5cf97b252c3eb38acc1554ab6bb7e300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5d6b7a9db65b127badbf498186ebe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#afd5d6b7a9db65b127badbf498186ebe8">FormattedException</a> (const <a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a> &amp;formatted_exception)</td></tr>
 <tr class="separator:afd5d6b7a9db65b127badbf498186ebe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1371b0a079fc50fcae39722e5e29cb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_formatted_exception.html#ab1371b0a079fc50fcae39722e5e29cb2">FormattedException</a> (<a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a> &amp;&amp;formatted_exception)</td></tr>
@@ -128,7 +130,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>A class of formatted exceptions. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a77b82a969ec33a3aacec74a5adc4ab8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b82a969ec33a3aacec74a5adc4ab8b">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b82a969ec33a3aacec74a5adc4ab8b">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +148,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a3fe833a49052a2db99c023b1b1d43621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe833a49052a2db99c023b1b1d43621">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe833a49052a2db99c023b1b1d43621">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,8 +191,53 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5cf97b252c3eb38acc1554ab6bb7e300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf97b252c3eb38acc1554ab6bb7e300">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::FormattedException::FormattedException </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a formatted exception.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>format</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The variable argument list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afd5d6b7a9db65b127badbf498186ebe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd5d6b7a9db65b127badbf498186ebe8">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5d6b7a9db65b127badbf498186ebe8">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +270,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ab1371b0a079fc50fcae39722e5e29cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1371b0a079fc50fcae39722e5e29cb2">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1371b0a079fc50fcae39722e5e29cb2">&sect;&nbsp;</a></span>FormattedException() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

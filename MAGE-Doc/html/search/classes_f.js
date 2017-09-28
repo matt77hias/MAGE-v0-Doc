@@ -9,7 +9,7 @@ var searchData=
   ['resource',['Resource',['../structmage_1_1_resource_pool_1_1_resource.html',1,'mage::ResourcePool']]],
   ['resource_3c_20const_20texture_20_3e',['Resource&lt; const Texture &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20modeldescriptor_20_3e',['Resource&lt; ModelDescriptor &gt;',['../classmage_1_1_resource.html',1,'mage']]],
-  ['resource_3c_20shader_3c_20shadert_20_3e_20_3e',['Resource&lt; Shader&lt; ShaderT &gt; &gt;',['../classmage_1_1_resource.html',1,'mage']]],
+  ['resource_3c_20shader_3c_20shadert_2c_20pipelinestaget_20_3e_20_3e',['Resource&lt; Shader&lt; ShaderT, PipelineStageT &gt; &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20spritefont_20_3e',['Resource&lt; SpriteFont &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20variablescript_20_3e',['Resource&lt; VariableScript &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20vertexshader_20_3e',['Resource&lt; VertexShader &gt;',['../classmage_1_1_resource.html',1,'mage']]],
@@ -19,5 +19,5 @@ var searchData=
   ['rgbspectrum',['RGBSpectrum',['../structmage_1_1_r_g_b_spectrum.html',1,'mage']]],
   ['rng',['RNG',['../classmage_1_1_r_n_g.html',1,'mage']]],
   ['rotationscript',['RotationScript',['../classmage_1_1_rotation_script.html',1,'mage']]],
-  ['rs',['RS',['../structmage_1_1_r_s.html',1,'mage']]]
+  ['rs',['RS',['../structmage_1_1_pipeline_1_1_r_s.html',1,'mage::Pipeline']]]
 ];

@@ -28,6 +28,8 @@ void \hyperlink{structmage_1_1_structured_buffer_a91db172da7bb0f47e2ee12132b7924
 void \hyperlink{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9}{Update\+Data} (I\+D3\+D11\+Device2 $\ast$device, I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, const vector$<$ DataT $>$ \&data)
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{structmage_1_1_structured_buffer_ad933738bc55b10aea665913a8215bab0}{Get} () const noexcept
+\item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{structmage_1_1_structured_buffer_ac879337b3b200e76654afc1de2f4082b}{Bind} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, \hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32} slot) const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -78,6 +80,11 @@ The device associated with the current engine must be loaded.
 \mbox{\tt in}  & {\em nb\+\_\+initial\+\_\+data\+\_\+elements} & The initial number of slots for storing data elements to provide. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this structured buffer. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_structured_buffer_a7b3a6a86059881526d4ae49dffefb697}{}\label{structmage_1_1_structured_buffer_a7b3a6a86059881526d4ae49dffefb697} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Structured\+Buffer@{Structured\+Buffer}}
 \index{Structured\+Buffer@{Structured\+Buffer}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
@@ -97,6 +104,11 @@ Constructs a structured buffer.
 \mbox{\tt in}  & {\em nb\+\_\+initial\+\_\+data\+\_\+elements} & The initial number of slots for storing data elements to provide. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to setup this structured buffer. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_structured_buffer_aa017416099a12305d0177094c768150e}{}\label{structmage_1_1_structured_buffer_aa017416099a12305d0177094c768150e} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Structured\+Buffer@{Structured\+Buffer}}
 \index{Structured\+Buffer@{Structured\+Buffer}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
@@ -135,6 +147,33 @@ Constructs a structured buffer by moving the given structured buffer.
 Destructs this structured buffer. 
 
 \subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_structured_buffer_ac879337b3b200e76654afc1de2f4082b}{}\label{structmage_1_1_structured_buffer_ac879337b3b200e76654afc1de2f4082b} 
+\index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename Pipeline\+StageT $>$ \\
+void \hyperlink{structmage_1_1_structured_buffer}{mage\+::\+Structured\+Buffer}$<$ DataT $>$\+::Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32}}]{slot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds this structured buffer.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape slot} $<$ {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the shader resource view to (ranges from 0 to {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT} -\/ 1). \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_structured_buffer_ad933738bc55b10aea665913a8215bab0}{}\label{structmage_1_1_structured_buffer_ad933738bc55b10aea665913a8215bab0} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Get@{Get}}
 \index{Get@{Get}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
@@ -179,7 +218,7 @@ Moves the given structured buffer to this structured buffer.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of the given structured buffer (i.\+e. this structured buffer). 
+A reference to the moved structured buffer (i.\+e. this structured buffer). 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_structured_buffer_a1bf9c6db5b4ebb5333f15b5ee478e79d}{}\label{structmage_1_1_structured_buffer_a1bf9c6db5b4ebb5333f15b5ee478e79d} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Setup\+Structured\+Buffer@{Setup\+Structured\+Buffer}}
@@ -238,6 +277,11 @@ The device associated with the current engine must be loaded in case this struct
 \mbox{\tt in}  & {\em data} & A reference to a vector with the data elements. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to update the data. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9}{}\label{structmage_1_1_structured_buffer_ae650f2828bff9fe51eff48c03fbf68b9} 
 \index{mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}!Update\+Data@{Update\+Data}}
 \index{Update\+Data@{Update\+Data}!mage\+::\+Structured\+Buffer@{mage\+::\+Structured\+Buffer}}
@@ -261,6 +305,11 @@ Updates the data of this structured buffer with the given data.
 \mbox{\tt in}  & {\em data} & A reference to a vector with the data elements. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to update the data. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}

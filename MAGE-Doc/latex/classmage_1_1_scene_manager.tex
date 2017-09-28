@@ -27,7 +27,11 @@ bool \hyperlink{classmage_1_1_scene_manager_ac767593112ea1d8b47cc79283cf7c47e}{H
 \item 
 void \hyperlink{classmage_1_1_scene_manager_abd9572b72caa412eda1f6c4e5d771fc3}{Set\+Scene} (\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&scene)
 \item 
-void \hyperlink{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991}{Update} (double delta\+\_\+time)
+\hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} $\ast$ \hyperlink{classmage_1_1_scene_manager_a44a10fe134b9c0215d9b4628b7c63994}{Get\+Renderer} () const
+\item 
+void \hyperlink{classmage_1_1_scene_manager_a6d97c0fb7945aeb53ec950e62567c1f4}{Fixed\+Update} ()
+\item 
+void \hyperlink{classmage_1_1_scene_manager_a6aafbd84ec59645341adeeb8902f1a0b}{Update} (\hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64} delta\+\_\+time)
 \item 
 void \hyperlink{classmage_1_1_scene_manager_ac9ddb36bbd324bee8c702ea604633775}{Render} ()
 \end{DoxyCompactItemize}
@@ -105,6 +109,12 @@ Destructs this scene manager.
 \subsubsection{\texorpdfstring{Apply\+Requested\+Scene()}{ApplyRequestedScene()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Apply\+Requested\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+\hypertarget{classmage_1_1_scene_manager_a6d97c0fb7945aeb53ec950e62567c1f4}{}\label{classmage_1_1_scene_manager_a6d97c0fb7945aeb53ec950e62567c1f4} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \hypertarget{classmage_1_1_scene_manager_a282dbbea100d7de48c0b0876619db5e7}{}\label{classmage_1_1_scene_manager_a282dbbea100d7de48c0b0876619db5e7} 
 \index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Get@{Get}}
 \index{Get@{Get}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
@@ -113,9 +123,18 @@ Destructs this scene manager.
 
 Returns the scene manager associated with the current engine.
 
+\begin{DoxyPrecond}{Precondition}
+The current engine must exist. 
+\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the scene manager associated with the current engine. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_manager_a44a10fe134b9c0215d9b4628b7c63994}{}\label{classmage_1_1_scene_manager_a44a10fe134b9c0215d9b4628b7c63994} 
+\index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Get\+Renderer@{Get\+Renderer}}
+\index{Get\+Renderer@{Get\+Renderer}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Renderer()}{GetRenderer()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer}$\ast$ mage\+::\+Scene\+Manager\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 \hypertarget{classmage_1_1_scene_manager_a55d720c9f90cfc46dbf07d46537072c1}{}\label{classmage_1_1_scene_manager_a55d720c9f90cfc46dbf07d46537072c1} 
 \index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Get\+Scene@{Get\+Scene}}
 \index{Get\+Scene@{Get\+Scene}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
@@ -178,11 +197,11 @@ A reference to the moved scene manager (i.\+e. this scene manager).
 \subsubsection{\texorpdfstring{Set\+Scene()}{SetScene()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Set\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&}]{scene }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991}{}\label{classmage_1_1_scene_manager_a7f8838492e183442e03b80e2e9f59991} 
+\hypertarget{classmage_1_1_scene_manager_a6aafbd84ec59645341adeeb8902f1a0b}{}\label{classmage_1_1_scene_manager_a6aafbd84ec59645341adeeb8902f1a0b} 
 \index{mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}!Update@{Update}}
 \index{Update@{Update}!mage\+::\+Scene\+Manager@{mage\+::\+Scene\+Manager}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{delta\+\_\+time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64}}]{delta\+\_\+time }\end{DoxyParamCaption})}
 
 
 

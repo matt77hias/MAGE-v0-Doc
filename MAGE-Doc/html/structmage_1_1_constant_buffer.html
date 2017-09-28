@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.65.0</span>
+   &#160;<span id="projectnumber">v0.72.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -113,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c9a4a2134ebebacfad63b28263f716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b8fcbd873ffbda96d7412c581d5a29a"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_constant_buffer.html#a6b8fcbd873ffbda96d7412c581d5a29a">Get</a> () const noexcept</td></tr>
 <tr class="separator:a6b8fcbd873ffbda96d7412c581d5a29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfd8ce48270f4d8f7b47eca13510308"><td class="memTemplParams" colspan="2">template&lt;typename PipelineStageT &gt; </td></tr>
+<tr class="memitem:aebfd8ce48270f4d8f7b47eca13510308"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_constant_buffer.html#aebfd8ce48270f4d8f7b47eca13510308">Bind</a> (ID3D11DeviceContext2 *device_context, <a class="el" href="namespacemage.html#af2b398bf98eb10351f49cad73fe2cc73">u32</a> slot) const noexcept</td></tr>
+<tr class="separator:aebfd8ce48270f4d8f7b47eca13510308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -154,6 +157,12 @@ template&lt;typename DataT&gt; </div>
 </div><div class="memdoc">
 <p>Constructs a constant buffer.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>The device associated with the current engine must be loaded. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this constant buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -187,6 +196,12 @@ template&lt;typename DataT&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this constant buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,6 +307,66 @@ template&lt;typename DataT&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aebfd8ce48270f4d8f7b47eca13510308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebfd8ce48270f4d8f7b47eca13510308">&sect;&nbsp;</a></span>Bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataT&gt; </div>
+<div class="memtemplate">
+template&lt;typename PipelineStageT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structmage_1_1_constant_buffer.html">mage::ConstantBuffer</a>&lt; DataT &gt;::Bind </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext2 *&#160;</td>
+          <td class="paramname"><em>device_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#af2b398bf98eb10351f49cad73fe2cc73">u32</a>&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binds this constant buffer.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>slot</em> &lt; <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code>. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PipelineStageT</td><td>The pipeline stage type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to set the constant buffer to (ranges from 0 to <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code> <ul>
+<li>1). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6b8fcbd873ffbda96d7412c581d5a29a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b8fcbd873ffbda96d7412c581d5a29a">&sect;&nbsp;</a></span>Get()</h2>
 
@@ -389,7 +464,7 @@ template&lt;typename DataT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given constant buffer (i.e. this constant buffer). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved constant buffer (i.e. this constant buffer). </dd></dl>
 
 </div>
 </div>
@@ -468,6 +543,12 @@ template&lt;typename DataT&gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A reference to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to update the data. </td></tr>
   </table>
   </dd>
 </dl>
