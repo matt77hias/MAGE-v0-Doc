@@ -17,6 +17,6 @@ var structmage_1_1_condition_variable =
     [ "Wait", "structmage_1_1_condition_variable.html#a15a1d797032d178c787a385d11522efb", null ],
     [ "m_condition_mutex", "structmage_1_1_condition_variable.html#ab5ff870b2881a1979ccaec986d762441", null ],
     [ "m_events", "structmage_1_1_condition_variable.html#a00691d5e29735da356f577bb5522017d", null ],
-    [ "m_nb_waiters", "structmage_1_1_condition_variable.html#ac02cb14000a597ec91b8546bdcbb9dd1", null ],
+    [ "m_nb_waiters", "structmage_1_1_condition_variable.html#a3e707192c1372a21659df405867048eb", null ],
     [ "m_nb_waiters_mutex", "structmage_1_1_condition_variable.html#a0686e682d62d44ff1eb9ac45acbb0eab", null ]
 ];

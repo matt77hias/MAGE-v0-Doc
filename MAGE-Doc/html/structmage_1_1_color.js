@@ -1,8 +1,8 @@
 var structmage_1_1_color =
 [
     [ "Color", "structmage_1_1_color.html#a542f26c61d9c67098302b0262c518758", null ],
-    [ "Color", "structmage_1_1_color.html#aa8376e2ad8a303751939eb447f6fa51b", null ],
-    [ "Color", "structmage_1_1_color.html#a725cc051131ad2796383e714fb0038d9", null ],
+    [ "Color", "structmage_1_1_color.html#ad3cd2f679a74481281f8284169aa376e", null ],
+    [ "Color", "structmage_1_1_color.html#a89c7093e06f3554839a4016f287ef3d8", null ],
     [ "Color", "structmage_1_1_color.html#ada141b94913980bf54a3ac4fb3d45f35", null ],
     [ "Color", "structmage_1_1_color.html#afb821e8ce617a6475538fa7179a16c6b", null ],
     [ "Color", "structmage_1_1_color.html#a6e01540c01b2923974ca31e1621f1f7e", null ],

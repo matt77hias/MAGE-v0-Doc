@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['persistentresourcemap',['PersistentResourceMap',['../namespacemage.html#a1eb49644c6b3b6a72fa342a7c1f54aed',1,'mage']]],
-  ['perspectivecameranode',['PerspectiveCameraNode',['../namespacemage.html#ad6f2ef4a25873e73e8fa38b06425939f',1,'mage']]],
-  ['pixelshader',['PixelShader',['../namespacemage.html#ac98506b7edd999ea43ec46fbd0330238',1,'mage']]]
+  ['omnilightnode',['OmniLightNode',['../namespacemage.html#a1724c6e6b6b5ba535cdd967cbbb4a669',1,'mage']]],
+  ['orthographiccameranode',['OrthographicCameraNode',['../namespacemage.html#a7d62ab5877be3e14a9735014b77d3f55',1,'mage']]],
+  ['outlinespritetextnode',['OutlineSpriteTextNode',['../namespacemage.html#a868d7b38cf18f293a7da85bfb48e3ee9',1,'mage']]]
 ];

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.65.0</span>
+   &#160;<span id="projectnumber">v0.72.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae650f2828bff9fe51eff48c03fbf68b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad933738bc55b10aea665913a8215bab0"><td class="memItemLeft" align="right" valign="top">ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_structured_buffer.html#ad933738bc55b10aea665913a8215bab0">Get</a> () const noexcept</td></tr>
 <tr class="separator:ad933738bc55b10aea665913a8215bab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac879337b3b200e76654afc1de2f4082b"><td class="memTemplParams" colspan="2">template&lt;typename PipelineStageT &gt; </td></tr>
+<tr class="memitem:ac879337b3b200e76654afc1de2f4082b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_structured_buffer.html#ac879337b3b200e76654afc1de2f4082b">Bind</a> (ID3D11DeviceContext2 *device_context, <a class="el" href="namespacemage.html#af2b398bf98eb10351f49cad73fe2cc73">u32</a> slot) const noexcept</td></tr>
+<tr class="separator:ac879337b3b200e76654afc1de2f4082b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -179,6 +182,12 @@ template&lt;typename DataT&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this structured buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -223,6 +232,12 @@ template&lt;typename DataT&gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_initial_data_elements</td><td>The initial number of slots for storing data elements to provide. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to setup this structured buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,6 +343,63 @@ template&lt;typename DataT&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac879337b3b200e76654afc1de2f4082b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac879337b3b200e76654afc1de2f4082b">&sect;&nbsp;</a></span>Bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DataT&gt; </div>
+<div class="memtemplate">
+template&lt;typename PipelineStageT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structmage_1_1_structured_buffer.html">mage::StructuredBuffer</a>&lt; DataT &gt;::Bind </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext2 *&#160;</td>
+          <td class="paramname"><em>device_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#af2b398bf98eb10351f49cad73fe2cc73">u32</a>&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binds this structured buffer.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device_context</em> is not equal to <code>nullptr</code>. </dd>
+<dd>
+<em>slot</em> &lt; <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code>. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PipelineStageT</td><td>The pipeline stage type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to set the shader resource view to (ranges from 0 to <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code> - 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad933738bc55b10aea665913a8215bab0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad933738bc55b10aea665913a8215bab0">&sect;&nbsp;</a></span>Get()</h2>
 
@@ -425,7 +497,7 @@ template&lt;typename DataT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given structured buffer (i.e. this structured buffer). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the moved structured buffer (i.e. this structured buffer). </dd></dl>
 
 </div>
 </div>
@@ -549,6 +621,12 @@ template&lt;typename DataT&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to update the data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -594,6 +672,12 @@ template&lt;typename DataT&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A reference to a vector with the data elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to update the data. </td></tr>
   </table>
   </dd>
 </dl>

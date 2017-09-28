@@ -20,6 +20,7 @@ var classmage_1_1_engine =
     [ "Run", "classmage_1_1_engine.html#a4ad554bca1ac892e1274f2e707c2a017", null ],
     [ "m_deactive", "classmage_1_1_engine.html#ab8a4b0157403708ae7d1d018a95b4c63", null ],
     [ "m_engine_stats", "classmage_1_1_engine.html#aa0c82f248a2fbec3fbf778665a440edc", null ],
+    [ "m_fixed_delta_time", "classmage_1_1_engine.html#a3d8524eaf71ac4fc0a63a06c04a5a917", null ],
     [ "m_input_manager", "classmage_1_1_engine.html#a8e9048208a6a5c5b034aaa1cbdab28bc", null ],
     [ "m_main_window", "classmage_1_1_engine.html#a3aea7e8c0c1247cac570334a3d3543d6", null ],
     [ "m_mode_switch", "classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221", null ],

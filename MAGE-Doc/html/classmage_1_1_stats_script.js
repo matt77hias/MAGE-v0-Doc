@@ -6,14 +6,14 @@ var classmage_1_1_stats_script =
     [ "~StatsScript", "classmage_1_1_stats_script.html#a65ba91e19c78c99831a65ad6dd6bb149", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a7da39f1c0cc417dabdc539f49deec7c3", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a6adacd651debb83254e1121f32c8f21e", null ],
-    [ "Update", "classmage_1_1_stats_script.html#abb2f4de15b51b72e54dc893ecd947fad", null ],
-    [ "m_accumulated_nb_frames", "classmage_1_1_stats_script.html#ac12aaf08707f8de8d88391bcc7f81c53", null ],
-    [ "m_accumulated_time", "classmage_1_1_stats_script.html#a55cb25f27b2354983d4e68cb1d4c8fcf", null ],
-    [ "m_last_cpu_usage", "classmage_1_1_stats_script.html#ae7dd506d04a4512ae103a1a9c2f9f206", null ],
-    [ "m_last_frames_per_second", "classmage_1_1_stats_script.html#afcbbf37839891d06b1331af3cc7f6e82", null ],
-    [ "m_last_milliseconds_per_frame", "classmage_1_1_stats_script.html#a0f8b9956d7f366246c925003c0afb278", null ],
-    [ "m_last_ram_usage", "classmage_1_1_stats_script.html#a92335c973382a332cf5ce328454fd07b", null ],
+    [ "Update", "classmage_1_1_stats_script.html#a9e97150da3c2c88ae1cef9e22c191235", null ],
+    [ "m_accumulated_nb_frames", "classmage_1_1_stats_script.html#ab6b95146456616157183550428818427", null ],
+    [ "m_accumulated_time", "classmage_1_1_stats_script.html#a01b747da488fb1f574ca6ccf1608d706", null ],
+    [ "m_last_cpu_usage", "classmage_1_1_stats_script.html#a01cf9681c11ee035b70b85b2976a82c6", null ],
+    [ "m_last_frames_per_second", "classmage_1_1_stats_script.html#aa569c7189cb063b814bcd88b56755b6c", null ],
+    [ "m_last_milliseconds_per_frame", "classmage_1_1_stats_script.html#adceb6cdfd28d564d3354d1f42265dea6", null ],
+    [ "m_last_ram_usage", "classmage_1_1_stats_script.html#a9e4957d023570b929922659be559e554", null ],
     [ "m_monitor", "classmage_1_1_stats_script.html#a12e321d8fe1003de3643c4b799dd4c8f", null ],
     [ "m_text", "classmage_1_1_stats_script.html#a15f95a755a20b01a80df24a8c073b6c5", null ],
-    [ "s_resource_fetch_period", "classmage_1_1_stats_script.html#a3601b2c67bfa911d98187857b05c17ab", null ]
+    [ "s_resource_fetch_period", "classmage_1_1_stats_script.html#aa8bf779ba6533bf97c5b72f1ff3b8da0", null ]
 ];

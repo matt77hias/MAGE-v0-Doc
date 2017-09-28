@@ -13,6 +13,6 @@ var structmage_1_1_vertex_position_texture =
     [ "operator=", "structmage_1_1_vertex_position_texture.html#abced707921e05755382566dcfa876a7a", null ],
     [ "p", "structmage_1_1_vertex_position_texture.html#a49253c4db52d1a4905838ba6ed6c52c6", null ],
     [ "s_input_element_desc", "structmage_1_1_vertex_position_texture.html#a80b0fac785de688b33c155ea212c2cf3", null ],
-    [ "s_nb_input_elements", "structmage_1_1_vertex_position_texture.html#a1ecab1b1ccba0229dc54c74ff298a535", null ],
+    [ "s_nb_input_elements", "structmage_1_1_vertex_position_texture.html#a59bcde456e768910c7f39c7b740b4961", null ],
     [ "tex", "structmage_1_1_vertex_position_texture.html#a9b4efa25d268c812892ecffc2582496e", null ]
 ];

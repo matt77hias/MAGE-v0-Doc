@@ -26,11 +26,26 @@ virtual \hyperlink{classmage_1_1_directional_light_a967d33c11a1477c01ce4c9720337
 \hyperlink{classmage_1_1_directional_light}{Directional\+Light} \& \hyperlink{classmage_1_1_directional_light_a508b595bf6aa5fc9db53e0a854fda41d}{operator=} (\hyperlink{classmage_1_1_directional_light}{Directional\+Light} \&\&light)
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_directional_light}{Directional\+Light} $>$ \hyperlink{classmage_1_1_directional_light_a779c49e066215cff9f80ed40048dfc62}{Clone} () const
+\item 
+bool \hyperlink{classmage_1_1_directional_light_a645e7f3d3e4dc4ebf11d7a6aa6950a18}{Use\+Shadows} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_directional_light_a36436d5d99ccf6a0e49e81f26c3f9bc7}{Enable\+Shadows} () noexcept
+\item 
+void \hyperlink{classmage_1_1_directional_light_addd4803dee85892dfd57f51e155c6572}{Dissable\+Shadows} () noexcept
+\item 
+void \hyperlink{classmage_1_1_directional_light_a1c15d8e42526ed5ae7568cff5c7b25e0}{Toggle\+Shadows} () noexcept
+\item 
+void \hyperlink{classmage_1_1_directional_light_ab70b4298dc6616dbe22446e8e3298424}{Set\+Shadows} (bool shadows) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_light}{Light} $>$ \hyperlink{classmage_1_1_directional_light_a122d3dcd7633a85ef8a85e7d768da36d}{Clone\+Implementation} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmage_1_1_directional_light_a607a3dc01ee180f2044fe154c2b73903}{m\+\_\+shadows}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -113,7 +128,19 @@ A pointer to the clone of this directional light.
 
 Implements \hyperlink{classmage_1_1_light_aa613d76a1ebda69efde853d15f75490c}{mage\+::\+Light}.
 
-\hypertarget{classmage_1_1_directional_light_a371d3c13d6e59c8d105da058b460874d}{}\label{classmage_1_1_directional_light_a371d3c13d6e59c8d105da058b460874d} 
+\hypertarget{classmage_1_1_directional_light_addd4803dee85892dfd57f51e155c6572}{}\label{classmage_1_1_directional_light_addd4803dee85892dfd57f51e155c6572} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!Dissable\+Shadows@{Dissable\+Shadows}}
+\index{Dissable\+Shadows@{Dissable\+Shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{Dissable\+Shadows()}{DissableShadows()}}
+{\footnotesize\ttfamily void mage\+::\+Directional\+Light\+::\+Dissable\+Shadows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Dissables shadows for this directional light. \hypertarget{classmage_1_1_directional_light_a36436d5d99ccf6a0e49e81f26c3f9bc7}{}\label{classmage_1_1_directional_light_a36436d5d99ccf6a0e49e81f26c3f9bc7} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!Enable\+Shadows@{Enable\+Shadows}}
+\index{Enable\+Shadows@{Enable\+Shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{Enable\+Shadows()}{EnableShadows()}}
+{\footnotesize\ttfamily void mage\+::\+Directional\+Light\+::\+Enable\+Shadows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Enables shadows for this directional light. \hypertarget{classmage_1_1_directional_light_a371d3c13d6e59c8d105da058b460874d}{}\label{classmage_1_1_directional_light_a371d3c13d6e59c8d105da058b460874d} 
 \index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -145,3 +172,43 @@ Moves the given directional light to this directional light.
 \begin{DoxyReturn}{Returns}
 A reference to the moved directional light (i.\+e. this directional light). 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_directional_light_ab70b4298dc6616dbe22446e8e3298424}{}\label{classmage_1_1_directional_light_ab70b4298dc6616dbe22446e8e3298424} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!Set\+Shadows@{Set\+Shadows}}
+\index{Set\+Shadows@{Set\+Shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{Set\+Shadows()}{SetShadows()}}
+{\footnotesize\ttfamily void mage\+::\+Directional\+Light\+::\+Set\+Shadows (\begin{DoxyParamCaption}\item[{bool}]{shadows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets shadows for this directional light to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shadows} & {\ttfamily true} if shadows should be used for this directional light. {\ttfamily false} otherwise. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_directional_light_a1c15d8e42526ed5ae7568cff5c7b25e0}{}\label{classmage_1_1_directional_light_a1c15d8e42526ed5ae7568cff5c7b25e0} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!Toggle\+Shadows@{Toggle\+Shadows}}
+\index{Toggle\+Shadows@{Toggle\+Shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{Toggle\+Shadows()}{ToggleShadows()}}
+{\footnotesize\ttfamily void mage\+::\+Directional\+Light\+::\+Toggle\+Shadows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Toggles shadows for this directional light. \hypertarget{classmage_1_1_directional_light_a645e7f3d3e4dc4ebf11d7a6aa6950a18}{}\label{classmage_1_1_directional_light_a645e7f3d3e4dc4ebf11d7a6aa6950a18} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!Use\+Shadows@{Use\+Shadows}}
+\index{Use\+Shadows@{Use\+Shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{Use\+Shadows()}{UseShadows()}}
+{\footnotesize\ttfamily bool mage\+::\+Directional\+Light\+::\+Use\+Shadows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether shadows should be used for this directional light.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if shadows should be used for this directional light. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_directional_light_a607a3dc01ee180f2044fe154c2b73903}{}\label{classmage_1_1_directional_light_a607a3dc01ee180f2044fe154c2b73903} 
+\index{mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}!m\+\_\+shadows@{m\+\_\+shadows}}
+\index{m\+\_\+shadows@{m\+\_\+shadows}!mage\+::\+Directional\+Light@{mage\+::\+Directional\+Light}}
+\subsubsection{\texorpdfstring{m\+\_\+shadows}{m\_shadows}}
+{\footnotesize\ttfamily bool mage\+::\+Directional\+Light\+::m\+\_\+shadows\hspace{0.3cm}{\ttfamily [private]}}
+
+A flag indicating whether shadows should be calculated or not not for this directional light. 

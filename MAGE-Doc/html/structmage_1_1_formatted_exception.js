@@ -2,6 +2,7 @@ var structmage_1_1_formatted_exception =
 [
     [ "FormattedException", "structmage_1_1_formatted_exception.html#a77b82a969ec33a3aacec74a5adc4ab8b", null ],
     [ "FormattedException", "structmage_1_1_formatted_exception.html#a3fe833a49052a2db99c023b1b1d43621", null ],
+    [ "FormattedException", "structmage_1_1_formatted_exception.html#a5cf97b252c3eb38acc1554ab6bb7e300", null ],
     [ "FormattedException", "structmage_1_1_formatted_exception.html#afd5d6b7a9db65b127badbf498186ebe8", null ],
     [ "FormattedException", "structmage_1_1_formatted_exception.html#ab1371b0a079fc50fcae39722e5e29cb2", null ],
     [ "~FormattedException", "structmage_1_1_formatted_exception.html#a7bd56fe92b62d08b5ca4fb86592f1302", null ],

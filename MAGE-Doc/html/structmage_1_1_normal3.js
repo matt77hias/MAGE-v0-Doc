@@ -1,8 +1,8 @@
 var structmage_1_1_normal3 =
 [
     [ "Normal3", "structmage_1_1_normal3.html#a64a99fa013aff357da71a39f1957e7c6", null ],
-    [ "Normal3", "structmage_1_1_normal3.html#a3af172346d687b0a7e5444698e10a299", null ],
-    [ "Normal3", "structmage_1_1_normal3.html#a666eb2b91f6c00123bba1b751fd71708", null ],
+    [ "Normal3", "structmage_1_1_normal3.html#af4d0bf7f7f4fd523952e4221d96606f5", null ],
+    [ "Normal3", "structmage_1_1_normal3.html#af39f2985925addc37f1a9e3d00785b57", null ],
     [ "Normal3", "structmage_1_1_normal3.html#ab29b3dcf7fc05c459f2e9b91b6832115", null ],
     [ "Normal3", "structmage_1_1_normal3.html#a477777d95f0ad41e6087668c965dd9b2", null ],
     [ "Normal3", "structmage_1_1_normal3.html#a55d265ba8454dd5d4573ad9d09844cee", null ],

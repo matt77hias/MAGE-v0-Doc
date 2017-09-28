@@ -34,6 +34,7 @@ var classmage_1_1_scene =
     [ "GetNumberOfSpotLights", "classmage_1_1_scene.html#af7bdbd447a50beb83ae5573f7e5505db", null ],
     [ "GetNumberOfSprites", "classmage_1_1_scene.html#a124042421abfee563342e50032d4051f", null ],
     [ "GetSceneFog", "classmage_1_1_scene.html#a1f21d92feb659477ceb4642322fa2f0c", null ],
+    [ "GetSky", "classmage_1_1_scene.html#afecf68ec8c48d4c28082f99d8042e700", null ],
     [ "HasScript", "classmage_1_1_scene.html#a9dd6c49e9db7590de1de4fbd128c78a9", null ],
     [ "Initialize", "classmage_1_1_scene.html#a3cd12ef381ca743bf0b8f8aa2a76eb57", null ],
     [ "Load", "classmage_1_1_scene.html#a1fb4a93eaa2f6a9e20594e205abb9a32", null ],
@@ -52,6 +53,7 @@ var classmage_1_1_scene =
     [ "m_omni_lights", "classmage_1_1_scene.html#a881c3dd7e85e5069650f29fd2722bf78", null ],
     [ "m_scene_fog", "classmage_1_1_scene.html#a58f8d29322664c4c5895703a6cbc9000", null ],
     [ "m_scripts", "classmage_1_1_scene.html#a84548bf6978f8955ce5892cb23536a4e", null ],
+    [ "m_sky", "classmage_1_1_scene.html#a90163a34ed39216b14175c4b799abd46", null ],
     [ "m_spot_lights", "classmage_1_1_scene.html#a4e1954bc0b812d6a71123ca3ac9eeb75", null ],
     [ "m_sprites", "classmage_1_1_scene.html#a2d68edf08b57dde36ec7cf1f5a91d281", null ]
 ];

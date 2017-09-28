@@ -20,43 +20,100 @@
 \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \& \hyperlink{classmage_1_1_scene_renderer_af64b01e57b0367a285f48e1f34f291e3}{operator=} (\hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \&\&scene\+\_\+renderer)=delete
 \item 
 void \hyperlink{classmage_1_1_scene_renderer_aa7825b36b1c9e0d22cbd49a9df5e73e4}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} $\ast$scene)
+\item 
+\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_ab244160e40057cfbd5a05234621466bd}{Get\+Depth\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a5a862266e0e39235d60c905259eccb51}{Get\+G\+Buffer\+Pass} ()
+\item 
+\hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a19c08ea8c46fac8ca0fcef156f4a0488}{Get\+L\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_aa0a9b451bdb7b96672bece024f733178}{Get\+Deferred\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a1eb6332a375e6f8273c26223c832d22c}{Get\+Variable\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a5a7c407e308d6f449b8cbee08794d8bd}{Get\+Sprite\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_image_pass}{Image\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a9bd8910a13b4711e90bdd689df8b4854}{Get\+Image\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_sky_pass}{Sky\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a4084ba56458ae0678b0d970ceb87cbd0}{Get\+Sky\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a26f35273609c8850b37f2e78a7c4af32}{Get\+Constant\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_abc8019f567221458382aedabc4c1d651}{Get\+Constant\+Component\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a9537cbf602aa7bfa5f197812683bfb37}{Get\+Variable\+Component\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a5982de896a340dd69c26496f186a0094}{Get\+Shading\+Normal\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_acaeae241945b630dab465533195faac9}{Get\+Wireframe\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a97f5c38b070497bd3737fc6ace775ef1}{Get\+Bounding\+Volume\+Pass} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} $\ast$ \hyperlink{classmage_1_1_scene_renderer_a3b0e9204ffaef1cf4022c3e129eb37b7}{Get} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_scene_renderer_a889e34c56566bdd270111b1ac2b0b810}{Bind\+Persistent\+State} ()
+\item 
+void \hyperlink{classmage_1_1_scene_renderer_a860ba5904dcd5e7a71d0b66783728c4a}{Execute\+Depth\+Pass} (F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\item 
+void \hyperlink{classmage_1_1_scene_renderer_a8571e22282629b8e53395b4d6aa25b95}{Execute\+Solid\+Forward\+Pipeline} (const \hyperlink{structmage_1_1_viewport}{Viewport} \&viewport, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\item 
+void \hyperlink{classmage_1_1_scene_renderer_a54ce5ee2e29c806d8aaf449fb0ca560e}{Execute\+Forward\+Pipeline} (const \hyperlink{structmage_1_1_viewport}{Viewport} \&viewport, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection, \hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} brdf)
+\item 
+void \hyperlink{classmage_1_1_scene_renderer_a5a8b5e738debc0d429fd7f09f1061ec1}{Execute\+Deferred\+Pipeline} (const \hyperlink{structmage_1_1_viewport}{Viewport} \&viewport, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection, \hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} brdf)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_scene_renderer_a163ff32807bea62e11fa06c5adf2a291}{m\+\_\+device\+\_\+context}
 \item 
+\hyperlink{structmage_1_1_viewport}{Viewport} \hyperlink{classmage_1_1_scene_renderer_aee59ce6095e555d2692dfbb6dbeec206}{m\+\_\+maximum\+\_\+viewport}
+\item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $>$ \hyperlink{classmage_1_1_scene_renderer_a9801d415ee0113f9d2a53802df0cb7ba}{m\+\_\+pass\+\_\+buffer}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} $>$ \hyperlink{classmage_1_1_scene_renderer_ad4a2b9abc762584bd9aceccb5f47b9c4}{m\+\_\+gbuffer}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer}{L\+Buffer} $>$ \hyperlink{classmage_1_1_scene_renderer_a161937c096a625d701498202d82e8ed7}{m\+\_\+lbuffer}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_image_buffer}{Image\+Buffer} $>$ \hyperlink{classmage_1_1_scene_renderer_aa5a3894d626aa7fec7aa83033b0d01db}{m\+\_\+image\+\_\+buffer}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a9d10194ae2ab807b241b078f8bb6430a}{m\+\_\+bounding\+\_\+volume\+\_\+pass}
-\item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f}{m\+\_\+constant\+\_\+component\+\_\+pass}
-\item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953}{m\+\_\+constant\+\_\+shading\+\_\+pass}
-\item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5}{m\+\_\+deferred\+\_\+shading\+\_\+pass}
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_game_buffer}{Game\+Buffer} $>$ \hyperlink{classmage_1_1_scene_renderer_ad684a7211da48953a653fbb95f984fdd}{m\+\_\+game\+\_\+buffer}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_abdb26cf0c454d1e5a7fed949191c1044}{m\+\_\+depth\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a7892cf0b6e53a8d1a5cef1b81353d77a}{m\+\_\+gbuffer\+\_\+pass}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b}{m\+\_\+sprite\+\_\+pass}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_ad4e0f4d858ad1b56a2c948d74ae391eb}{m\+\_\+lbuffer\+\_\+pass}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46}{m\+\_\+variable\+\_\+component\+\_\+pass}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5}{m\+\_\+deferred\+\_\+shading\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a9ee6d267f8cfb7826c16acd4fe0b7852}{m\+\_\+variable\+\_\+shading\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b}{m\+\_\+sprite\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_image_pass}{Image\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_aa2f25907375465f0b4693363bc5b7ab5}{m\+\_\+image\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_sky_pass}{Sky\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_ab41b737ea054ad6a3c3f29e61d8a2ae7}{m\+\_\+sky\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953}{m\+\_\+constant\+\_\+shading\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f}{m\+\_\+constant\+\_\+component\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46}{m\+\_\+variable\+\_\+component\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a183c95ded274991bc80dccd8a373cce5}{m\+\_\+shading\+\_\+normal\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a3f84786f9ed001345c746292cb08ad2f}{m\+\_\+wireframe\+\_\+pass}
 \item 
-\hyperlink{structmage_1_1_viewport}{Viewport} \hyperlink{classmage_1_1_scene_renderer_a10ea57172c4a79a3b4d4a8161e705437}{m\+\_\+viewport}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} $>$ \hyperlink{classmage_1_1_scene_renderer_a9d10194ae2ab807b241b078f8bb6430a}{m\+\_\+bounding\+\_\+volume\+\_\+pass}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A class of scene renderers. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_scene_renderer_a5d91f3c9b4e6e7c16d77a6791fadbd64}{}\label{classmage_1_1_scene_renderer_a5d91f3c9b4e6e7c16d77a6791fadbd64} 
@@ -65,45 +122,362 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_scene_renderer
 \subsubsection{\texorpdfstring{Scene\+Renderer()}{SceneRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Scene\+Renderer\+::\+Scene\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_scene_renderer_a9ea97945a7675ef805f00fb437a3d1aa}{}\label{classmage_1_1_scene_renderer_a9ea97945a7675ef805f00fb437a3d1aa} 
+Constructs a scene renderer. \hypertarget{classmage_1_1_scene_renderer_a9ea97945a7675ef805f00fb437a3d1aa}{}\label{classmage_1_1_scene_renderer_a9ea97945a7675ef805f00fb437a3d1aa} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Scene\+Renderer@{Scene\+Renderer}}
 \index{Scene\+Renderer@{Scene\+Renderer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{Scene\+Renderer()}{SceneRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Scene\+Renderer\+::\+Scene\+Renderer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \&}]{scene\+\_\+renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a scene renderer from the given scene renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+renderer} & A reference to the scene renderer to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_scene_renderer_ab9846f0a77e2bc5e9eeb00aed67424eb}{}\label{classmage_1_1_scene_renderer_ab9846f0a77e2bc5e9eeb00aed67424eb} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Scene\+Renderer@{Scene\+Renderer}}
 \index{Scene\+Renderer@{Scene\+Renderer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{Scene\+Renderer()}{SceneRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Scene\+Renderer\+::\+Scene\+Renderer (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \&\&}]{scene\+\_\+renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a scene renderer by moving the given scene renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+renderer} & A reference to the scene renderer to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_scene_renderer_a546f45fc7542fa1677d3e9c2014f108e}{}\label{classmage_1_1_scene_renderer_a546f45fc7542fa1677d3e9c2014f108e} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!````~Scene\+Renderer@{$\sim$\+Scene\+Renderer}}
 \index{````~Scene\+Renderer@{$\sim$\+Scene\+Renderer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{$\sim$\+Scene\+Renderer()}{~SceneRenderer()}}
 {\footnotesize\ttfamily mage\+::\+Scene\+Renderer\+::$\sim$\+Scene\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-
+Destructs this scene renderer. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_scene_renderer_a889e34c56566bdd270111b1ac2b0b810}{}\label{classmage_1_1_scene_renderer_a889e34c56566bdd270111b1ac2b0b810} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Bind\+Persistent\+State@{Bind\+Persistent\+State}}
+\index{Bind\+Persistent\+State@{Bind\+Persistent\+State}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Bind\+Persistent\+State()}{BindPersistentState()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Bind\+Persistent\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_renderer_a5a8b5e738debc0d429fd7f09f1061ec1}{}\label{classmage_1_1_scene_renderer_a5a8b5e738debc0d429fd7f09f1061ec1} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Execute\+Deferred\+Pipeline@{Execute\+Deferred\+Pipeline}}
+\index{Execute\+Deferred\+Pipeline@{Execute\+Deferred\+Pipeline}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Execute\+Deferred\+Pipeline()}{ExecuteDeferredPipeline()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Execute\+Deferred\+Pipeline (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_viewport}{Viewport} \&}]{viewport,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_renderer_a860ba5904dcd5e7a71d0b66783728c4a}{}\label{classmage_1_1_scene_renderer_a860ba5904dcd5e7a71d0b66783728c4a} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Execute\+Depth\+Pass@{Execute\+Depth\+Pass}}
+\index{Execute\+Depth\+Pass@{Execute\+Depth\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Execute\+Depth\+Pass()}{ExecuteDepthPass()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Execute\+Depth\+Pass (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_renderer_a54ce5ee2e29c806d8aaf449fb0ca560e}{}\label{classmage_1_1_scene_renderer_a54ce5ee2e29c806d8aaf449fb0ca560e} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Execute\+Forward\+Pipeline@{Execute\+Forward\+Pipeline}}
+\index{Execute\+Forward\+Pipeline@{Execute\+Forward\+Pipeline}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Execute\+Forward\+Pipeline()}{ExecuteForwardPipeline()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Execute\+Forward\+Pipeline (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_viewport}{Viewport} \&}]{viewport,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_renderer_a8571e22282629b8e53395b4d6aa25b95}{}\label{classmage_1_1_scene_renderer_a8571e22282629b8e53395b4d6aa25b95} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Execute\+Solid\+Forward\+Pipeline@{Execute\+Solid\+Forward\+Pipeline}}
+\index{Execute\+Solid\+Forward\+Pipeline@{Execute\+Solid\+Forward\+Pipeline}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Execute\+Solid\+Forward\+Pipeline()}{ExecuteSolidForwardPipeline()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Execute\+Solid\+Forward\+Pipeline (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_viewport}{Viewport} \&}]{viewport,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_scene_renderer_a3b0e9204ffaef1cf4022c3e129eb37b7}{}\label{classmage_1_1_scene_renderer_a3b0e9204ffaef1cf4022c3e129eb37b7} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} $\ast$ mage\+::\+Scene\+Renderer\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+Returns the scene renderer associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the scene renderer associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a97f5c38b070497bd3737fc6ace775ef1}{}\label{classmage_1_1_scene_renderer_a97f5c38b070497bd3737fc6ace775ef1} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Bounding\+Volume\+Pass@{Get\+Bounding\+Volume\+Pass}}
+\index{Get\+Bounding\+Volume\+Pass@{Get\+Bounding\+Volume\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Bounding\+Volume\+Pass()}{GetBoundingVolumePass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Bounding\+Volume\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the bounding volume pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the bounding volume pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_abc8019f567221458382aedabc4c1d651}{}\label{classmage_1_1_scene_renderer_abc8019f567221458382aedabc4c1d651} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Constant\+Component\+Pass@{Get\+Constant\+Component\+Pass}}
+\index{Get\+Constant\+Component\+Pass@{Get\+Constant\+Component\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Constant\+Component\+Pass()}{GetConstantComponentPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Constant\+Component\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the constant component pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the constant component pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a26f35273609c8850b37f2e78a7c4af32}{}\label{classmage_1_1_scene_renderer_a26f35273609c8850b37f2e78a7c4af32} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Constant\+Shading\+Pass@{Get\+Constant\+Shading\+Pass}}
+\index{Get\+Constant\+Shading\+Pass@{Get\+Constant\+Shading\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Constant\+Shading\+Pass()}{GetConstantShadingPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Constant\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the constant shading pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the constant shading pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_aa0a9b451bdb7b96672bece024f733178}{}\label{classmage_1_1_scene_renderer_aa0a9b451bdb7b96672bece024f733178} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Deferred\+Shading\+Pass@{Get\+Deferred\+Shading\+Pass}}
+\index{Get\+Deferred\+Shading\+Pass@{Get\+Deferred\+Shading\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Deferred\+Shading\+Pass()}{GetDeferredShadingPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Deferred\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the deferred shading pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred shading pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_ab244160e40057cfbd5a05234621466bd}{}\label{classmage_1_1_scene_renderer_ab244160e40057cfbd5a05234621466bd} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Depth\+Pass@{Get\+Depth\+Pass}}
+\index{Get\+Depth\+Pass@{Get\+Depth\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Depth\+Pass()}{GetDepthPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Depth\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the depth pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the depth pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a5a862266e0e39235d60c905259eccb51}{}\label{classmage_1_1_scene_renderer_a5a862266e0e39235d60c905259eccb51} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+G\+Buffer\+Pass@{Get\+G\+Buffer\+Pass}}
+\index{Get\+G\+Buffer\+Pass@{Get\+G\+Buffer\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+G\+Buffer\+Pass()}{GetGBufferPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+G\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a9bd8910a13b4711e90bdd689df8b4854}{}\label{classmage_1_1_scene_renderer_a9bd8910a13b4711e90bdd689df8b4854} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Image\+Pass@{Get\+Image\+Pass}}
+\index{Get\+Image\+Pass@{Get\+Image\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Image\+Pass()}{GetImagePass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_image_pass}{Image\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Image\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the image pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the image pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a19c08ea8c46fac8ca0fcef156f4a0488}{}\label{classmage_1_1_scene_renderer_a19c08ea8c46fac8ca0fcef156f4a0488} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+L\+Buffer\+Pass@{Get\+L\+Buffer\+Pass}}
+\index{Get\+L\+Buffer\+Pass@{Get\+L\+Buffer\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+L\+Buffer\+Pass()}{GetLBufferPass()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+L\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the L\+Buffer pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the L\+Buffer pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a5982de896a340dd69c26496f186a0094}{}\label{classmage_1_1_scene_renderer_a5982de896a340dd69c26496f186a0094} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Shading\+Normal\+Pass@{Get\+Shading\+Normal\+Pass}}
+\index{Get\+Shading\+Normal\+Pass@{Get\+Shading\+Normal\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Shading\+Normal\+Pass()}{GetShadingNormalPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Shading\+Normal\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the shading normal pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the shading normal pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a4084ba56458ae0678b0d970ceb87cbd0}{}\label{classmage_1_1_scene_renderer_a4084ba56458ae0678b0d970ceb87cbd0} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Sky\+Pass@{Get\+Sky\+Pass}}
+\index{Get\+Sky\+Pass@{Get\+Sky\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Sky\+Pass()}{GetSkyPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sky_pass}{Sky\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Sky\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the sky pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the sky pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a5a7c407e308d6f449b8cbee08794d8bd}{}\label{classmage_1_1_scene_renderer_a5a7c407e308d6f449b8cbee08794d8bd} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Sprite\+Pass@{Get\+Sprite\+Pass}}
+\index{Get\+Sprite\+Pass@{Get\+Sprite\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Pass()}{GetSpritePass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Sprite\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the sprite pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the sprite pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a9537cbf602aa7bfa5f197812683bfb37}{}\label{classmage_1_1_scene_renderer_a9537cbf602aa7bfa5f197812683bfb37} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Variable\+Component\+Pass@{Get\+Variable\+Component\+Pass}}
+\index{Get\+Variable\+Component\+Pass@{Get\+Variable\+Component\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Variable\+Component\+Pass()}{GetVariableComponentPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Variable\+Component\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the variable component pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the variable component pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_a1eb6332a375e6f8273c26223c832d22c}{}\label{classmage_1_1_scene_renderer_a1eb6332a375e6f8273c26223c832d22c} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Variable\+Shading\+Pass@{Get\+Variable\+Shading\+Pass}}
+\index{Get\+Variable\+Shading\+Pass@{Get\+Variable\+Shading\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Variable\+Shading\+Pass()}{GetVariableShadingPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Variable\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the variable shading pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the variable shading pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_renderer_acaeae241945b630dab465533195faac9}{}\label{classmage_1_1_scene_renderer_acaeae241945b630dab465533195faac9} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Get\+Wireframe\+Pass@{Get\+Wireframe\+Pass}}
+\index{Get\+Wireframe\+Pass@{Get\+Wireframe\+Pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Wireframe\+Pass()}{GetWireframePass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass}$\ast$ mage\+::\+Scene\+Renderer\+::\+Get\+Wireframe\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the wireframe pass of this scene renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the wireframe pass of this scene renderer. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_scene_renderer_a5b63908f5bdfe6128b43847db01db983}{}\label{classmage_1_1_scene_renderer_a5b63908f5bdfe6128b43847db01db983} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer}\& mage\+::\+Scene\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \&}]{scene\+\_\+renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given scene renderer to this scene renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+renderer} & A reference to the scene renderer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given scene renderer (i.\+e. this scene renderer). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_scene_renderer_af64b01e57b0367a285f48e1f34f291e3}{}\label{classmage_1_1_scene_renderer_af64b01e57b0367a285f48e1f34f291e3} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer}\& mage\+::\+Scene\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_scene_renderer}{Scene\+Renderer} \&\&}]{scene\+\_\+renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given scene renderer to this scene renderer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene\+\_\+renderer} & A reference to the scene renderer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved scene renderer (i.\+e. this scene renderer). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_scene_renderer_aa7825b36b1c9e0d22cbd49a9df5e73e4}{}\label{classmage_1_1_scene_renderer_aa7825b36b1c9e0d22cbd49a9df5e73e4} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
 {\footnotesize\ttfamily void mage\+::\+Scene\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
 
+Renders the given scene.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape scene} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
@@ -113,93 +487,118 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_scene_renderer
 \subsubsection{\texorpdfstring{m\+\_\+bounding\+\_\+volume\+\_\+pass}{m\_bounding\_volume\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+bounding\+\_\+volume\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f}{}\label{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f} 
+A pointer to the bounding volume pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f}{}\label{classmage_1_1_scene_renderer_a34006a25d67bbe2aa4f25a61dee8cd2f} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+constant\+\_\+component\+\_\+pass@{m\+\_\+constant\+\_\+component\+\_\+pass}}
 \index{m\+\_\+constant\+\_\+component\+\_\+pass@{m\+\_\+constant\+\_\+component\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+constant\+\_\+component\+\_\+pass}{m\_constant\_component\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+constant\+\_\+component\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953}{}\label{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953} 
+A pointer to the constant component pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953}{}\label{classmage_1_1_scene_renderer_a2e98538d6add0603a2da5b949aa26953} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+constant\+\_\+shading\+\_\+pass@{m\+\_\+constant\+\_\+shading\+\_\+pass}}
 \index{m\+\_\+constant\+\_\+shading\+\_\+pass@{m\+\_\+constant\+\_\+shading\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+constant\+\_\+shading\+\_\+pass}{m\_constant\_shading\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_constant_shading_pass}{Constant\+Shading\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+constant\+\_\+shading\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5}{}\label{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5} 
+A pointer to the constant shading pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5}{}\label{classmage_1_1_scene_renderer_a05aa800b776f98b8b11e2d38a25c07e5} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+deferred\+\_\+shading\+\_\+pass@{m\+\_\+deferred\+\_\+shading\+\_\+pass}}
 \index{m\+\_\+deferred\+\_\+shading\+\_\+pass@{m\+\_\+deferred\+\_\+shading\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+deferred\+\_\+shading\+\_\+pass}{m\_deferred\_shading\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+deferred\+\_\+shading\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_abdb26cf0c454d1e5a7fed949191c1044}{}\label{classmage_1_1_scene_renderer_abdb26cf0c454d1e5a7fed949191c1044} 
+A pointer to the deferred shading pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_abdb26cf0c454d1e5a7fed949191c1044}{}\label{classmage_1_1_scene_renderer_abdb26cf0c454d1e5a7fed949191c1044} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+depth\+\_\+pass@{m\+\_\+depth\+\_\+pass}}
 \index{m\+\_\+depth\+\_\+pass@{m\+\_\+depth\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+depth\+\_\+pass}{m\_depth\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+depth\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a163ff32807bea62e11fa06c5adf2a291}{}\label{classmage_1_1_scene_renderer_a163ff32807bea62e11fa06c5adf2a291} 
+A pointer to the depth pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a163ff32807bea62e11fa06c5adf2a291}{}\label{classmage_1_1_scene_renderer_a163ff32807bea62e11fa06c5adf2a291} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
 \index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Scene\+Renderer\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_ad4a2b9abc762584bd9aceccb5f47b9c4}{}\label{classmage_1_1_scene_renderer_ad4a2b9abc762584bd9aceccb5f47b9c4} 
+A pointer to the device context of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_ad684a7211da48953a653fbb95f984fdd}{}\label{classmage_1_1_scene_renderer_ad684a7211da48953a653fbb95f984fdd} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+game\+\_\+buffer@{m\+\_\+game\+\_\+buffer}}
+\index{m\+\_\+game\+\_\+buffer@{m\+\_\+game\+\_\+buffer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+game\+\_\+buffer}{m\_game\_buffer}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_game_buffer}{Game\+Buffer} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+game\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the image buffer of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_ad4a2b9abc762584bd9aceccb5f47b9c4}{}\label{classmage_1_1_scene_renderer_ad4a2b9abc762584bd9aceccb5f47b9c4} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+gbuffer@{m\+\_\+gbuffer}}
 \index{m\+\_\+gbuffer@{m\+\_\+gbuffer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+gbuffer}{m\_gbuffer}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+gbuffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a7892cf0b6e53a8d1a5cef1b81353d77a}{}\label{classmage_1_1_scene_renderer_a7892cf0b6e53a8d1a5cef1b81353d77a} 
+A pointer to the Gbuffer of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a7892cf0b6e53a8d1a5cef1b81353d77a}{}\label{classmage_1_1_scene_renderer_a7892cf0b6e53a8d1a5cef1b81353d77a} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+gbuffer\+\_\+pass@{m\+\_\+gbuffer\+\_\+pass}}
 \index{m\+\_\+gbuffer\+\_\+pass@{m\+\_\+gbuffer\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+gbuffer\+\_\+pass}{m\_gbuffer\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+gbuffer\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a161937c096a625d701498202d82e8ed7}{}\label{classmage_1_1_scene_renderer_a161937c096a625d701498202d82e8ed7} 
-\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+lbuffer@{m\+\_\+lbuffer}}
-\index{m\+\_\+lbuffer@{m\+\_\+lbuffer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+lbuffer}{m\_lbuffer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer}{L\+Buffer} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+lbuffer\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the \hyperlink{structmage_1_1_g_buffer}{G\+Buffer} pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_aa5a3894d626aa7fec7aa83033b0d01db}{}\label{classmage_1_1_scene_renderer_aa5a3894d626aa7fec7aa83033b0d01db} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+image\+\_\+buffer@{m\+\_\+image\+\_\+buffer}}
+\index{m\+\_\+image\+\_\+buffer@{m\+\_\+image\+\_\+buffer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+image\+\_\+buffer}{m\_image\_buffer}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_image_buffer}{Image\+Buffer} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+image\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a9801d415ee0113f9d2a53802df0cb7ba}{}\label{classmage_1_1_scene_renderer_a9801d415ee0113f9d2a53802df0cb7ba} 
+A pointer to the image buffer of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_aa2f25907375465f0b4693363bc5b7ab5}{}\label{classmage_1_1_scene_renderer_aa2f25907375465f0b4693363bc5b7ab5} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+image\+\_\+pass@{m\+\_\+image\+\_\+pass}}
+\index{m\+\_\+image\+\_\+pass@{m\+\_\+image\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+image\+\_\+pass}{m\_image\_pass}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_image_pass}{Image\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+image\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the image pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_ad4e0f4d858ad1b56a2c948d74ae391eb}{}\label{classmage_1_1_scene_renderer_ad4e0f4d858ad1b56a2c948d74ae391eb} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}}
+\index{m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+lbuffer\+\_\+pass}{m\_lbuffer\_pass}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+lbuffer\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the L\+Buffer pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_aee59ce6095e555d2692dfbb6dbeec206}{}\label{classmage_1_1_scene_renderer_aee59ce6095e555d2692dfbb6dbeec206} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+maximum\+\_\+viewport@{m\+\_\+maximum\+\_\+viewport}}
+\index{m\+\_\+maximum\+\_\+viewport@{m\+\_\+maximum\+\_\+viewport}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+maximum\+\_\+viewport}{m\_maximum\_viewport}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_viewport}{Viewport} mage\+::\+Scene\+Renderer\+::m\+\_\+maximum\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
+
+The maximum viewport of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a9801d415ee0113f9d2a53802df0cb7ba}{}\label{classmage_1_1_scene_renderer_a9801d415ee0113f9d2a53802df0cb7ba} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+pass\+\_\+buffer@{m\+\_\+pass\+\_\+buffer}}
 \index{m\+\_\+pass\+\_\+buffer@{m\+\_\+pass\+\_\+buffer}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+pass\+\_\+buffer}{m\_pass\_buffer}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+pass\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a183c95ded274991bc80dccd8a373cce5}{}\label{classmage_1_1_scene_renderer_a183c95ded274991bc80dccd8a373cce5} 
+A pointer to the pass buffer of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a183c95ded274991bc80dccd8a373cce5}{}\label{classmage_1_1_scene_renderer_a183c95ded274991bc80dccd8a373cce5} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+shading\+\_\+normal\+\_\+pass@{m\+\_\+shading\+\_\+normal\+\_\+pass}}
 \index{m\+\_\+shading\+\_\+normal\+\_\+pass@{m\+\_\+shading\+\_\+normal\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+shading\+\_\+normal\+\_\+pass}{m\_shading\_normal\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+shading\+\_\+normal\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b}{}\label{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b} 
+A pointer to the shading normal pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_ab41b737ea054ad6a3c3f29e61d8a2ae7}{}\label{classmage_1_1_scene_renderer_ab41b737ea054ad6a3c3f29e61d8a2ae7} 
+\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+sky\+\_\+pass@{m\+\_\+sky\+\_\+pass}}
+\index{m\+\_\+sky\+\_\+pass@{m\+\_\+sky\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+sky\+\_\+pass}{m\_sky\_pass}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_sky_pass}{Sky\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+sky\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the sky pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b}{}\label{classmage_1_1_scene_renderer_a39d0db7aa9275362cd460339143a089b} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+sprite\+\_\+pass@{m\+\_\+sprite\+\_\+pass}}
 \index{m\+\_\+sprite\+\_\+pass@{m\+\_\+sprite\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+pass}{m\_sprite\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+sprite\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46}{}\label{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46} 
+A pointer to the sprite pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46}{}\label{classmage_1_1_scene_renderer_af3544515e1792eb3b1c1e511b1bccf46} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+variable\+\_\+component\+\_\+pass@{m\+\_\+variable\+\_\+component\+\_\+pass}}
 \index{m\+\_\+variable\+\_\+component\+\_\+pass@{m\+\_\+variable\+\_\+component\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+component\+\_\+pass}{m\_variable\_component\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+variable\+\_\+component\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a9ee6d267f8cfb7826c16acd4fe0b7852}{}\label{classmage_1_1_scene_renderer_a9ee6d267f8cfb7826c16acd4fe0b7852} 
+A pointer to the variable component pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a9ee6d267f8cfb7826c16acd4fe0b7852}{}\label{classmage_1_1_scene_renderer_a9ee6d267f8cfb7826c16acd4fe0b7852} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+variable\+\_\+shading\+\_\+pass@{m\+\_\+variable\+\_\+shading\+\_\+pass}}
 \index{m\+\_\+variable\+\_\+shading\+\_\+pass@{m\+\_\+variable\+\_\+shading\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+shading\+\_\+pass}{m\_variable\_shading\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+variable\+\_\+shading\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_scene_renderer_a10ea57172c4a79a3b4d4a8161e705437}{}\label{classmage_1_1_scene_renderer_a10ea57172c4a79a3b4d4a8161e705437} 
-\index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+viewport@{m\+\_\+viewport}}
-\index{m\+\_\+viewport@{m\+\_\+viewport}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+viewport}{m\_viewport}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_viewport}{Viewport} mage\+::\+Scene\+Renderer\+::m\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1_scene_renderer_a3f84786f9ed001345c746292cb08ad2f}{}\label{classmage_1_1_scene_renderer_a3f84786f9ed001345c746292cb08ad2f} 
+A pointer to the variable shading pass of this scene renderer. \hypertarget{classmage_1_1_scene_renderer_a3f84786f9ed001345c746292cb08ad2f}{}\label{classmage_1_1_scene_renderer_a3f84786f9ed001345c746292cb08ad2f} 
 \index{mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}!m\+\_\+wireframe\+\_\+pass@{m\+\_\+wireframe\+\_\+pass}}
 \index{m\+\_\+wireframe\+\_\+pass@{m\+\_\+wireframe\+\_\+pass}!mage\+::\+Scene\+Renderer@{mage\+::\+Scene\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+wireframe\+\_\+pass}{m\_wireframe\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $>$ mage\+::\+Scene\+Renderer\+::m\+\_\+wireframe\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
+A pointer to the wireframe pass of this scene renderer. 

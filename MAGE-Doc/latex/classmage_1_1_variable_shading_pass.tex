@@ -19,9 +19,18 @@
 \item 
 \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \& \hyperlink{classmage_1_1_variable_shading_pass_a28702f255ccbbabd4b6e3177acd97a8b}{operator=} (\hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \&\&render\+\_\+pass)=delete
 \item 
-void \hyperlink{classmage_1_1_variable_shading_pass_a03eb92f61b26692521db92af7f78fdaa}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$node)
+void \hyperlink{classmage_1_1_variable_shading_pass_a3a5bf4764bdafd393c73b75939f68aa0}{Bind\+Fixed\+State} (\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} brdf)
 \item 
-void \hyperlink{classmage_1_1_variable_shading_pass_a648b62ec55d064ef1f38ceb5e7a8cc09}{Render\+Post\+Deferred} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$node)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a8878bbb68f94d75a8581fcc636fcf07c}{Render\+Opaque} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a5834dfcef783c743ceadd3b79b0609fb}{Render\+Opaque\+Emissive} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a49b738788dafc364dea02cded68c6a00}{Render\+Transparent} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_variable_shading_pass_a4c5572071474485e60af17b34539a603}{Get} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -41,30 +50,33 @@ void \hyperlink{classmage_1_1_variable_shading_pass_a9352c4b8b435254768c34075504
 \item 
 void \hyperlink{classmage_1_1_variable_shading_pass_a0d7edd2336abc2791f93b180317f154f}{Bind\+PS} (const \hyperlink{structmage_1_1_material}{Material} $\ast$material) noexcept
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_ab77671ce21f2e56467f256f89028b652}{Bind\+Projection\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection) noexcept
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_af3c6340c01dabc300d5139b490198f07}{Bind\+Projection\+Data} (F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+projection)
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a4b86358d453ff6cf1c89b1b3894ab30f}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, F\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform, const \hyperlink{structmage_1_1_material}{Material} $\ast$material) noexcept
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a9041b2b7695ede893ea5bc6b5b43e98d}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, C\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform, const \hyperlink{structmage_1_1_material}{Material} $\ast$material)
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_ac9cbbb4817fed29751b2b1a4549bebda}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, F\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world) noexcept
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_variable_shading_pass_a559c5c05f9e2a9e79f86a8e80e30606d}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_variable_shading_pass_afff786ea38b64ba069866fdd6b525ba7}{m\+\_\+device\+\_\+context}
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_variable_shading_pass_af052be9aac0bea955b881eca06e74c24}{m\+\_\+vs}
+const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_variable_shading_pass_aa91a1e8628c2f671adadd919376aa67e}{m\+\_\+vs}
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
 \item 
 \hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a}{P\+S\+Index} \hyperlink{classmage_1_1_variable_shading_pass_acb1d0d78a9de9afc2d668d87134c5ec5}{m\+\_\+bound\+\_\+ps}
 \item 
 \hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} \hyperlink{classmage_1_1_variable_shading_pass_ac6147f2068fd7727fe2d78584ff68767}{m\+\_\+brdf}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ \hyperlink{classmage_1_1_variable_shading_pass_ab83602f0ffa6c0a3519ffaa467ae113a}{m\+\_\+model\+\_\+buffer}
-\item 
 \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_variable_shading_pass_afb777eb7b7303dd50337f361f82a919a}{m\+\_\+projection\+\_\+buffer}
+\item 
+\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_forward_model_buffer}{Forward\+Model\+Buffer} $>$ \hyperlink{classmage_1_1_variable_shading_pass_a563f4a9d0b9c4512f63daaec19ee4750}{m\+\_\+model\+\_\+buffer}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A class of variable shading passes for rendering models using a variable (material dependent) shading. 
 
 \subsection{Member Enumeration Documentation}
 \hypertarget{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a}{}\label{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a} 
@@ -73,7 +85,9 @@ I\+D3\+D11\+Device\+Context2 $\ast$const \hyperlink{classmage_1_1_variable_shadi
 \subsubsection{\texorpdfstring{P\+S\+Index}{PSIndex}}
 {\footnotesize\ttfamily enum \hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a}{mage\+::\+Variable\+Shading\+Pass\+::\+P\+S\+Index}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
 
-\begin{DoxyEnumFields}{Enumerator}
+An enumeration of the different pixel shader indices for variable shading passes.
+
+This contains\+: {\ttfamily Emissive}, {\ttfamily B\+R\+DF} and {\ttfamily B\+R\+D\+F\+\_\+\+T\+S\+NM}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Emissive@{Emissive}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Emissive@{Emissive}}}\hypertarget{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aa3cb4ee67c41d819920d72fcc11b9b566}{}\label{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aa3cb4ee67c41d819920d72fcc11b9b566} 
 Emissive&\\
 \hline
@@ -100,87 +114,318 @@ Count&\\
 \subsubsection{\texorpdfstring{Variable\+Shading\+Pass()}{VariableShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily mage\+::\+Variable\+Shading\+Pass\+::\+Variable\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Constructs a variable shading pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
 \hypertarget{classmage_1_1_variable_shading_pass_a98ce8bacba3894ff29d2a13d3a645d22}{}\label{classmage_1_1_variable_shading_pass_a98ce8bacba3894ff29d2a13d3a645d22} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Variable\+Shading\+Pass@{Variable\+Shading\+Pass}}
 \index{Variable\+Shading\+Pass@{Variable\+Shading\+Pass}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Variable\+Shading\+Pass()}{VariableShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily mage\+::\+Variable\+Shading\+Pass\+::\+Variable\+Shading\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Constructs a variable shading pass from the given variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em render\+\_\+pass} & A reference to the variable shading pass to copy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_variable_shading_pass_afcb297b4d400a6eb119846d4c04fc3d1}{}\label{classmage_1_1_variable_shading_pass_afcb297b4d400a6eb119846d4c04fc3d1} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Variable\+Shading\+Pass@{Variable\+Shading\+Pass}}
 \index{Variable\+Shading\+Pass@{Variable\+Shading\+Pass}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Variable\+Shading\+Pass()}{VariableShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily mage\+::\+Variable\+Shading\+Pass\+::\+Variable\+Shading\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Constructs a variable shading pass by moving the given variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em render\+\_\+pass} & A reference to the variable shading pass to move. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_variable_shading_pass_a1af7915285b239e8e6d14eb0f926dc4a}{}\label{classmage_1_1_variable_shading_pass_a1af7915285b239e8e6d14eb0f926dc4a} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!````~Variable\+Shading\+Pass@{$\sim$\+Variable\+Shading\+Pass}}
 \index{````~Variable\+Shading\+Pass@{$\sim$\+Variable\+Shading\+Pass}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{$\sim$\+Variable\+Shading\+Pass()}{~VariableShadingPass()}}
 {\footnotesize\ttfamily mage\+::\+Variable\+Shading\+Pass\+::$\sim$\+Variable\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-
+Destructs this variable shading pass. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_variable_shading_pass_a4b86358d453ff6cf1c89b1b3894ab30f}{}\label{classmage_1_1_variable_shading_pass_a4b86358d453ff6cf1c89b1b3894ab30f} 
+\hypertarget{classmage_1_1_variable_shading_pass_a3a5bf4764bdafd393c73b75939f68aa0}{}\label{classmage_1_1_variable_shading_pass_a3a5bf4764bdafd393c73b75939f68aa0} 
+\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})}
+
+Binds the fixed state of this variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the fixed state of this variable shading pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_variable_shading_pass_a9041b2b7695ede893ea5bc6b5b43e98d}{}\label{classmage_1_1_variable_shading_pass_a9041b2b7695ede893ea5bc6b5b43e98d} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
 \index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform,  }\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform,  }\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_ab77671ce21f2e56467f256f89028b652}{}\label{classmage_1_1_variable_shading_pass_ab77671ce21f2e56467f256f89028b652} 
+Binds the model data of this variable shading pass.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape material} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+view} & The object-\/to-\/view transformation matrix used for transforming vertices. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The view-\/to-\/object transformation matrix used for transforming normals. \\
+\hline
+\mbox{\tt in}  & {\em texture\+\_\+transform} & The texture transformation matrix used for transforming texture coordinates. \\
+\hline
+\mbox{\tt in}  & {\em material} & A pointer to the material. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the model data of this variable shading pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_variable_shading_pass_af3c6340c01dabc300d5139b490198f07}{}\label{classmage_1_1_variable_shading_pass_af3c6340c01dabc300d5139b490198f07} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Bind\+Projection\+Data@{Bind\+Projection\+Data}}
 \index{Bind\+Projection\+Data@{Bind\+Projection\+Data}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+Projection\+Data()}{BindProjectionData()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+Projection\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+Projection\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Binds the projection data of this variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The view-\/to-\/projection transformation matrix used for transforming vertices. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the projection data of this variable shading pass. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_variable_shading_pass_a9352c4b8b435254768c3407550458fb5}{}\label{classmage_1_1_variable_shading_pass_a9352c4b8b435254768c3407550458fb5} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Bind\+PS@{Bind\+PS}}
 \index{Bind\+PS@{Bind\+PS}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a}{P\+S\+Index}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
+Binds the pixel shader of this variable shading pass associated with the given pixel shader index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & The pixel shader index. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_variable_shading_pass_a0d7edd2336abc2791f93b180317f154f}{}\label{classmage_1_1_variable_shading_pass_a0d7edd2336abc2791f93b180317f154f} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Bind\+PS@{Bind\+PS}}
 \index{Bind\+PS@{Bind\+PS}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} $\ast$}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
+Binds the pixel shader of this variable shading pass associated with the given material.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape material} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em material} & A pointer to the material. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_variable_shading_pass_a4c5572071474485e60af17b34539a603}{}\label{classmage_1_1_variable_shading_pass_a4c5572071474485e60af17b34539a603} 
+\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $\ast$ mage\+::\+Variable\+Shading\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the variable shading pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the variable shading pass associated with the current engine. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_variable_shading_pass_ad846c4f7ffc5b795ba1c0fa03bd6c2af}{}\label{classmage_1_1_variable_shading_pass_ad846c4f7ffc5b795ba1c0fa03bd6c2af} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass}\& mage\+::\+Variable\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given variable shading pass to this variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em render\+\_\+pass} & A reference to the variable shading pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given variable shading pass (i.\+e. this variable shading pass). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_variable_shading_pass_a28702f255ccbbabd4b6e3177acd97a8b}{}\label{classmage_1_1_variable_shading_pass_a28702f255ccbbabd4b6e3177acd97a8b} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass}\& mage\+::\+Variable\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} \&\&}]{render\+\_\+pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_ac9cbbb4817fed29751b2b1a4549bebda}{}\label{classmage_1_1_variable_shading_pass_ac9cbbb4817fed29751b2b1a4549bebda} 
+Moves the given variable shading pass to this variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em render\+\_\+pass} & A reference to the variable shading pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved variable shading pass (i.\+e. this variable shading pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_variable_shading_pass_a559c5c05f9e2a9e79f86a8e80e30606d}{}\label{classmage_1_1_variable_shading_pass_a559c5c05f9e2a9e79f86a8e80e30606d} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Process\+Models@{Process\+Models}}
 \index{Process\+Models@{Process\+Models}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_a03eb92f61b26692521db92af7f78fdaa}{}\label{classmage_1_1_variable_shading_pass_a03eb92f61b26692521db92af7f78fdaa} 
-\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Render@{Render}}
-\index{Render@{Render}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
-\subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$}]{node }\end{DoxyParamCaption})}
+Process the given models.
 
-\hypertarget{classmage_1_1_variable_shading_pass_a648b62ec55d064ef1f38ceb5e7a8cc09}{}\label{classmage_1_1_variable_shading_pass_a648b62ec55d064ef1f38ceb5e7a8cc09} 
-\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Render\+Post\+Deferred@{Render\+Post\+Deferred}}
-\index{Render\+Post\+Deferred@{Render\+Post\+Deferred}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
-\subsubsection{\texorpdfstring{Render\+Post\+Deferred()}{RenderPostDeferred()}}
-{\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Render\+Post\+Deferred (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} $\ast$}]{node }\end{DoxyParamCaption})}
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em models} & A reference to a vector containing the model pointers to process. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. This transformation matrix will be used for culling. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. This transformation matrix will be chained with the object-\/to-\/view transformation matrix for transforming vertices. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. This transformation matrix will be chained with the world-\/to-\/object transformation matrix for transforming normals. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to process the models. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_variable_shading_pass_a8878bbb68f94d75a8581fcc636fcf07c}{}\label{classmage_1_1_variable_shading_pass_a8878bbb68f94d75a8581fcc636fcf07c} 
+\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Render\+Opaque@{Render\+Opaque}}
+\index{Render\+Opaque@{Render\+Opaque}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Render\+Opaque()}{RenderOpaque()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Render\+Opaque (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})}
+
+Renders the scene (only the opaque models).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape scene} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The view-\/to-\/projection transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_variable_shading_pass_a5834dfcef783c743ceadd3b79b0609fb}{}\label{classmage_1_1_variable_shading_pass_a5834dfcef783c743ceadd3b79b0609fb} 
+\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Render\+Opaque\+Emissive@{Render\+Opaque\+Emissive}}
+\index{Render\+Opaque\+Emissive@{Render\+Opaque\+Emissive}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Render\+Opaque\+Emissive()}{RenderOpaqueEmissive()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Render\+Opaque\+Emissive (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})}
+
+Renders the scene (only the opaque emissive models).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape scene} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The view-\/to-\/projection transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_variable_shading_pass_a49b738788dafc364dea02cded68c6a00}{}\label{classmage_1_1_variable_shading_pass_a49b738788dafc364dea02cded68c6a00} 
+\index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Render\+Transparent@{Render\+Transparent}}
+\index{Render\+Transparent@{Render\+Transparent}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Render\+Transparent()}{RenderTransparent()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Variable\+Shading\+Pass\+::\+Render\+Transparent (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+projection }\end{DoxyParamCaption})}
+
+Renders the scene (only the transparent models).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape scene} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+projection} & The view-\/to-\/projection transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_variable_shading_pass_a4e0a0e7709d99bb94f3263bdf478f484}{}\label{classmage_1_1_variable_shading_pass_a4e0a0e7709d99bb94f3263bdf478f484} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!Update\+P\+Ss@{Update\+P\+Ss}}
 \index{Update\+P\+Ss@{Update\+P\+Ss}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{Update\+P\+Ss()}{UpdatePSs()}}
 {\footnotesize\ttfamily void mage\+::\+Variable\+Shading\+Pass\+::\+Update\+P\+Ss (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Updates the pixel shaders of this variable shading pass for the given B\+R\+DF.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to update the pixel shaders of this variable shading pass. \\
+\hline
+\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}
@@ -190,39 +435,40 @@ Count&\\
 \subsubsection{\texorpdfstring{m\+\_\+bound\+\_\+ps}{m\_bound\_ps}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4a}{P\+S\+Index} mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+bound\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_ac6147f2068fd7727fe2d78584ff68767}{}\label{classmage_1_1_variable_shading_pass_ac6147f2068fd7727fe2d78584ff68767} 
+The pixel shader index of the bound pixel shader of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_ac6147f2068fd7727fe2d78584ff68767}{}\label{classmage_1_1_variable_shading_pass_ac6147f2068fd7727fe2d78584ff68767} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+brdf@{m\+\_\+brdf}}
 \index{m\+\_\+brdf@{m\+\_\+brdf}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+brdf}{m\_brdf}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ae7a7a03a7b34d7e2689689bb8295cd38}{B\+R\+D\+F\+Type} mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+brdf\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_afff786ea38b64ba069866fdd6b525ba7}{}\label{classmage_1_1_variable_shading_pass_afff786ea38b64ba069866fdd6b525ba7} 
+The current B\+R\+DF of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_afff786ea38b64ba069866fdd6b525ba7}{}\label{classmage_1_1_variable_shading_pass_afff786ea38b64ba069866fdd6b525ba7} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
 \index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ const mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_ab83602f0ffa6c0a3519ffaa467ae113a}{}\label{classmage_1_1_variable_shading_pass_ab83602f0ffa6c0a3519ffaa467ae113a} 
+A pointer to the device context of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_a563f4a9d0b9c4512f63daaec19ee4750}{}\label{classmage_1_1_variable_shading_pass_a563f4a9d0b9c4512f63daaec19ee4750} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
 \index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_forward_model_buffer}{Forward\+Model\+Buffer} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_afb777eb7b7303dd50337f361f82a919a}{}\label{classmage_1_1_variable_shading_pass_afb777eb7b7303dd50337f361f82a919a} 
+The model buffer of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_afb777eb7b7303dd50337f361f82a919a}{}\label{classmage_1_1_variable_shading_pass_afb777eb7b7303dd50337f361f82a919a} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}}
 \index{m\+\_\+projection\+\_\+buffer@{m\+\_\+projection\+\_\+buffer}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+projection\+\_\+buffer}{m\_projection\_buffer}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+projection\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0}{}\label{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0} 
+The projection buffer of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0}{}\label{classmage_1_1_variable_shading_pass_aacd5b6b967a0fcfe7510e289c3d630a0} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
 \index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_ac98506b7edd999ea43ec46fbd0330238}{Pixel\+Shader} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_variable_shading_pass_a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_variable_shading_pass_af052be9aac0bea955b881eca06e74c24}{}\label{classmage_1_1_variable_shading_pass_af052be9aac0bea955b881eca06e74c24} 
+An array containing pointers to the pixel shaders of this variable shading pass. \hypertarget{classmage_1_1_variable_shading_pass_aa91a1e8628c2f671adadd919376aa67e}{}\label{classmage_1_1_variable_shading_pass_aa91a1e8628c2f671adadd919376aa67e} 
 \index{mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
 \index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Variable\+Shading\+Pass@{mage\+::\+Variable\+Shading\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Variable\+Shading\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
 
+A pointer to the vertex shader of this variable shading pass. 

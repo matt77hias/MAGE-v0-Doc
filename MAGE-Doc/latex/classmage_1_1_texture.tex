@@ -33,6 +33,8 @@ virtual \hyperlink{classmage_1_1_texture_a81664804ac0259e8c67851409ee106fa}{$\si
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_texture_ac48cd0477d9771666e3929d72ee4e419}{Get} () const noexcept
 \item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{classmage_1_1_texture_aee77169c3cdfbfbbc9ac7b06ed8a5bdd}{Bind} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context, \hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32} slot) const noexcept
+\item 
 bool \hyperlink{classmage_1_1_texture_aa795442d72c6ea0cb8137e293c95922c}{Has\+Alpha} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -187,6 +189,32 @@ Constructs a texture by moving the given texture.
 Destructs this texture. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_texture_aee77169c3cdfbfbbc9ac7b06ed8a5bdd}{}\label{classmage_1_1_texture_aee77169c3cdfbfbbc9ac7b06ed8a5bdd} 
+\index{mage\+::\+Texture@{mage\+::\+Texture}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::\+Texture@{mage\+::\+Texture}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily template$<$typename Pipeline\+StageT $>$ \\
+void mage\+::\+Texture\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_af2b398bf98eb10351f49cad73fe2cc73}{u32}}]{slot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds this texture.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape slot} $<$ {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the shader resource view to (ranges from 0 to {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT} -\/ 1). \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_texture_ac48cd0477d9771666e3929d72ee4e419}{}\label{classmage_1_1_texture_ac48cd0477d9771666e3929d72ee4e419} 
 \index{mage\+::\+Texture@{mage\+::\+Texture}!Get@{Get}}
 \index{Get@{Get}!mage\+::\+Texture@{mage\+::\+Texture}}
