@@ -15,6 +15,6 @@ var structmage_1_1_vertex_position_normal_color_texture =
     [ "n", "structmage_1_1_vertex_position_normal_color_texture.html#a7304bf677ad4f16aea974e63f4324eba", null ],
     [ "p", "structmage_1_1_vertex_position_normal_color_texture.html#ac7808865ca6672b7d0f4f8457077bd16", null ],
     [ "s_input_element_desc", "structmage_1_1_vertex_position_normal_color_texture.html#a95286a5de390f414f036371f4ad08de1", null ],
-    [ "s_nb_input_elements", "structmage_1_1_vertex_position_normal_color_texture.html#a362ceff43c0ad77f0b7ea23771e4e1b4", null ],
+    [ "s_nb_input_elements", "structmage_1_1_vertex_position_normal_color_texture.html#acd54df21f1baf73279d24dbc7037eeff", null ],
     [ "tex", "structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mage',['mage',['../namespacemage.html',1,'']]]
+  ['directx',['DirectX',['../namespace_direct_x.html',1,'']]]
 ];

@@ -1,0 +1,467 @@
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator}{}\section{mage\+:\+:Single\+Ended\+Memory\+Stack\+:\+:Allocator$<$ DataT $>$ Struct Template Reference}
+\label{structmage_1_1_single_ended_memory_stack_1_1_allocator}\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$ Data\+T $>$@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$ Data\+T $>$}}
+
+
+{\ttfamily \#include $<$memory\+\_\+stack.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a4d5b98a534ad4e6d6f2d8eb1280398ab}{value\+\_\+type} = DataT
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a2bc2a84329210a698f0e0bf76da88af3}{pointer} = DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a85ce7171363682bb03ec7b8ad5980b24}{reference} = DataT \&
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aaa595b8cfde6f045e5f87e5662b549f6}{const\+\_\+pointer} = const DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_afe1303b90c8f68366f5c88e9a77d12c0}{const\+\_\+reference} = const DataT \&
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_af04b72c8781cfb7148d8f0d4b0da41c3}{size\+\_\+type} = size\+\_\+t
+\item 
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aebd7e5c612fbd49aea979bb115911359}{difference\+\_\+type} = ptrdiff\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aee59bcea14f37d52f7f716a02da9dc41}{Allocator} (const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&allocator) noexcept=default
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a365434b6505598a7de9aae4b323f1c16}{Allocator} (\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&allocator) noexcept=default
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_ac0dc5bf3c1c3293cf081e45ed28101dc}{Allocator} (const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataU $>$ \&allocator) noexcept
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5b9721b0fb81964988f9f121d6372970}{$\sim$\+Allocator} ()=default
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \& \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5ceb3432ccb26bdf88b0e39775394cbf}{operator=} (const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&allocator) noexcept=delete
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \& \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a0e903bdc1db47ed80daa907eccfd2b74}{operator=} (\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&allocator) noexcept=delete
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5bb7b9d5ba3907afb70306f7606ab6cd}{address} (DataT \&data) const noexcept
+\item 
+const DataT $\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_abe5c2b2a569ff0c61f7c4c7ee4625b05}{address} (const DataT \&data) const noexcept
+\item 
+size\+\_\+t \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a9b000beaef4ac49b2019e6aac93d91f0}{max\+\_\+size} () const noexcept
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a076727a4db2bd233d80ccbc5f01b84e5}{allocate} (size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\DataT $\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_acb4668453cf1850d3986d6a0f1b2dfec}{allocate} (size\+\_\+t count, const DataU $\ast$hint) const
+\item 
+void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a29b4540dd5e0740e6ab99e26e162dafd}{deallocate} (DataT $\ast$data, size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU , typename... Constructor\+ArgsT$>$ }\\void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a87ef0a827c34c92f7df79daddc1a30ff}{construct} (DataU $\ast$data, Constructor\+ArgsT \&\&... args) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_ab2fe59e83fe573f39aa73389a08de2f9}{destroy} (DataU $\ast$data) const
+\item 
+bool \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aec97233e7d20f8edc93b4cedb8fac71c}{operator==} (const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&rhs) const noexcept
+\item 
+bool \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a47f35477a04192175bc0f4ce737595fb}{operator!=} (const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&rhs) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a991173b1fccf74994dc9298b3cffb795}{Allocator} (\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack} $\ast$memory\+\_\+stack) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack} $\ast$const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a15ef2935cbc1a207892f25148c05c45d}{m\+\_\+memory\+\_\+stack}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a3f3449e5c2caa1666a293b36db6f5a54}{Single\+Ended\+Memory\+Stack}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataT$>$\newline
+struct mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$ Data\+T $>$}
+
+A struct of allocators for single-\/ended memory stacks.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_aaa595b8cfde6f045e5f87e5662b549f6}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_aaa595b8cfde6f045e5f87e5662b549f6} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aaa595b8cfde6f045e5f87e5662b549f6}{const\+\_\+pointer} =  const DataT $\ast$}
+
+The pointer to constant element of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_afe1303b90c8f68366f5c88e9a77d12c0}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_afe1303b90c8f68366f5c88e9a77d12c0} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_afe1303b90c8f68366f5c88e9a77d12c0}{const\+\_\+reference} =  const DataT \&}
+
+The reference to constant element of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_aebd7e5c612fbd49aea979bb115911359}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_aebd7e5c612fbd49aea979bb115911359} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_aebd7e5c612fbd49aea979bb115911359}{difference\+\_\+type} =  ptrdiff\+\_\+t}
+
+The difference between two pointers to elements of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a2bc2a84329210a698f0e0bf76da88af3}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a2bc2a84329210a698f0e0bf76da88af3} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!pointer@{pointer}}
+\index{pointer@{pointer}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a2bc2a84329210a698f0e0bf76da88af3}{pointer} =  DataT $\ast$}
+
+The pointer to element of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a85ce7171363682bb03ec7b8ad5980b24}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a85ce7171363682bb03ec7b8ad5980b24} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!reference@{reference}}
+\index{reference@{reference}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a85ce7171363682bb03ec7b8ad5980b24}{reference} =  DataT \&}
+
+The reference to element of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_af04b72c8781cfb7148d8f0d4b0da41c3}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_af04b72c8781cfb7148d8f0d4b0da41c3} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_af04b72c8781cfb7148d8f0d4b0da41c3}{size\+\_\+type} =  size\+\_\+t}
+
+The size type of elements of allocators. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a4d5b98a534ad4e6d6f2d8eb1280398ab}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a4d5b98a534ad4e6d6f2d8eb1280398ab} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator_a4d5b98a534ad4e6d6f2d8eb1280398ab}{value\+\_\+type} =  DataT}
+
+The element type of allocators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_aee59bcea14f37d52f7f716a02da9dc41}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_aee59bcea14f37d52f7f716a02da9dc41} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator from the given allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a365434b6505598a7de9aae4b323f1c16}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a365434b6505598a7de9aae4b323f1c16} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator by moving the given allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_ac0dc5bf3c1c3293cf081e45ed28101dc}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_ac0dc5bf3c1c3293cf081e45ed28101dc} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataU $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs an allocator from the given allocator.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5b9721b0fb81964988f9f121d6372970}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5b9721b0fb81964988f9f121d6372970} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!````~Allocator@{$\sim$\+Allocator}}
+\index{````~Allocator@{$\sim$\+Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{$\sim$\+Allocator()}{~Allocator()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::$\sim$\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this allocator. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a991173b1fccf74994dc9298b3cffb795}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a991173b1fccf74994dc9298b3cffb795} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack} $\ast$}]{memory\+\_\+stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape memory\+\_\+stack} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em memory\+\_\+stack} & A pointer to the memory stack. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5bb7b9d5ba3907afb70306f7606ab6cd}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5bb7b9d5ba3907afb70306f7606ab6cd} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::address (\begin{DoxyParamCaption}\item[{DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_abe5c2b2a569ff0c61f7c4c7ee4625b05}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_abe5c2b2a569ff0c61f7c4c7ee4625b05} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+const DataT$\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::address (\begin{DoxyParamCaption}\item[{const DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a076727a4db2bd233d80ccbc5f01b84e5}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a076727a4db2bd233d80ccbc5f01b84e5} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_acb4668453cf1850d3986d6a0f1b2dfec}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_acb4668453cf1850d3986d6a0f1b2dfec} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{const DataU $\ast$}]{hint }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em hint} & Either {\ttfamily nullptr} or a value previously obtained by another call to \hyperlink{}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$\+Data\+T$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$\+Data\+T$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet freed with \hyperlink{}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$\+Data\+T$>$\+::deallocate(\+Data\+T$\ast$, size\+\_\+t)}. When not equal to {\ttfamily nullptr}, this value may be used as a hint to improve performance by allocating the new block near the one specified. The address of an adjacent element is often a good choice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a87ef0a827c34c92f7df79daddc1a30ff}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a87ef0a827c34c92f7df79daddc1a30ff} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!construct@{construct}}
+\index{construct@{construct}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU , typename... Constructor\+ArgsT$>$ \\
+void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::construct (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption}) const}
+
+Constructs an element object of type {\ttfamily DataU} on the location pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+{\em Constructor\+ArgsT} & The constructor argument types of the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the location. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the constructing the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not allocate storage space for the element. It should already be available at {\itshape ptr}. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a29b4540dd5e0740e6ab99e26e162dafd}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a29b4540dd5e0740e6ab99e26e162dafd} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::deallocate (\begin{DoxyParamCaption}\item[{DataT $\ast$}]{data,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Releases a block of storage previously allocated with \hyperlink{}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$\+Data\+T$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator$<$\+Data\+T$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet released.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A pointer to the memory block that needs to be released. \\
+\hline
+\mbox{\tt in}  & {\em count} & The number of element objects allocated on the call to allocate for this block of storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The elements in the array are not destroyed. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_ab2fe59e83fe573f39aa73389a08de2f9}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_ab2fe59e83fe573f39aa73389a08de2f9} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!destroy@{destroy}}
+\index{destroy@{destroy}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+void \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::destroy (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+Destroys in-\/place the element pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not deallocate the storage for the element. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a9b000beaef4ac49b2019e6aac93d91f0}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a9b000beaef4ac49b2019e6aac93d91f0} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+size\+\_\+t \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the maximum number of elements, each of member type {\ttfamily DataT} that could potentially be allocated by a call to member allocate. \hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a47f35477a04192175bc0f4ce737595fb}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a47f35477a04192175bc0f4ce737595fb} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+bool \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this allocator to the given allocator for non-\/equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this allocator cannot be deallocated from the given allocator, and vice versa. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5ceb3432ccb26bdf88b0e39775394cbf}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a5ceb3432ccb26bdf88b0e39775394cbf} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$\& \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Copies the given allocator to this allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given allocator (i.\+e. this allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a0e903bdc1db47ed80daa907eccfd2b74}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a0e903bdc1db47ed80daa907eccfd2b74} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$\& \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Moves the given allocator to this allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved allocator (i.\+e. this allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_aec97233e7d20f8edc93b4cedb8fac71c}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_aec97233e7d20f8edc93b4cedb8fac71c} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+bool \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this allocator to the given allocator for equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this allocator can be deallocated from the given allocator, and vice versa. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a3f3449e5c2caa1666a293b36db6f5a54}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a3f3449e5c2caa1666a293b36db6f5a54} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}}
+\index{Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Single\+Ended\+Memory\+Stack}{SingleEndedMemoryStack}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+friend class \hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_single_ended_memory_stack_1_1_allocator_a15ef2935cbc1a207892f25148c05c45d}{}\label{structmage_1_1_single_ended_memory_stack_1_1_allocator_a15ef2935cbc1a207892f25148c05c45d} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}!m\+\_\+memory\+\_\+stack@{m\+\_\+memory\+\_\+stack}}
+\index{m\+\_\+memory\+\_\+stack@{m\+\_\+memory\+\_\+stack}!mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator@{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+memory\+\_\+stack}{m\_memory\_stack}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}$\ast$ const \hyperlink{structmage_1_1_single_ended_memory_stack_1_1_allocator}{mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Allocator}$<$ DataT $>$\+::m\+\_\+memory\+\_\+stack\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the memory stack of this allocator. 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height',['height',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a8b8493634b29fca5ed026f4dac7cce77',1,'mage::DDS_HEADER']]]
+  ['height',['height',['../struct_d_d_s___h_e_a_d_e_r.html#a550dc15efb086708b8eac1bfebd2e617',1,'DDS_HEADER']]]
 ];

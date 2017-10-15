@@ -10,6 +10,7 @@ var searchData=
   ['shadingnormalpass',['ShadingNormalPass',['../classmage_1_1_shading_normal_pass.html',1,'mage']]],
   ['shadowcubemapbuffer',['ShadowCubeMapBuffer',['../structmage_1_1_shadow_cube_map_buffer.html',1,'mage']]],
   ['shadowmapbuffer',['ShadowMapBuffer',['../structmage_1_1_shadow_map_buffer.html',1,'mage']]],
+  ['singleendedmemorystack',['SingleEndedMemoryStack',['../classmage_1_1_single_ended_memory_stack.html',1,'mage']]],
   ['sky',['Sky',['../structmage_1_1_sky.html',1,'mage']]],
   ['skybuffer',['SkyBuffer',['../structmage_1_1_sky_buffer.html',1,'mage']]],
   ['skypass',['SkyPass',['../classmage_1_1_sky_pass.html',1,'mage']]],

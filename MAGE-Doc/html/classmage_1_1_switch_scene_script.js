@@ -6,5 +6,5 @@ var classmage_1_1_switch_scene_script =
     [ "~SwitchSceneScript", "classmage_1_1_switch_scene_script.html#a9c5907dfea7512a934e37136a9e3970b", null ],
     [ "operator=", "classmage_1_1_switch_scene_script.html#afa17a58d641d05ac406fecb43c84ec2b", null ],
     [ "operator=", "classmage_1_1_switch_scene_script.html#a9f78862b9432a35e9bd606e0be43966a", null ],
-    [ "Update", "classmage_1_1_switch_scene_script.html#a33b526d1543916b586268656c2c06022", null ]
+    [ "Update", "classmage_1_1_switch_scene_script.html#a30c81a893629c753f19408b552199a07", null ]
 ];

@@ -2,7 +2,7 @@ var structmage_1_1_b_s =
 [
     [ "BS", "structmage_1_1_b_s.html#aa34921d9ea23b9a724ddf739b3adabfa", null ],
     [ "BS", "structmage_1_1_b_s.html#ae64c575576180fb6409125c8792c2d29", null ],
-    [ "BS", "structmage_1_1_b_s.html#a07d1e878d111eb99404d7dc062d01dd9", null ],
+    [ "BS", "structmage_1_1_b_s.html#a9f4494c1a9f590b19ef7720aba3cb749", null ],
     [ "BS", "structmage_1_1_b_s.html#adb709aad7bd4b6816ae59ec87221bd6a", null ],
     [ "BS", "structmage_1_1_b_s.html#a01cf5aaeae2a87c56527a338889f5079", null ],
     [ "BS", "structmage_1_1_b_s.html#a8974a41ba4a204e1b7ad5a218f9629e8", null ],
@@ -19,5 +19,5 @@ var structmage_1_1_b_s =
     [ "operator=", "structmage_1_1_b_s.html#aef60d898cb44bbf1e3988351b5717faa", null ],
     [ "operator=", "structmage_1_1_b_s.html#a751360f4d52fe40f6f07f29a759c9f0c", null ],
     [ "m_p", "structmage_1_1_b_s.html#a6d63fae8fd20d26587ebd11efb1789d2", null ],
-    [ "m_r", "structmage_1_1_b_s.html#a63a16fbfb4ff89697db2c0a8f976a3ce", null ]
+    [ "m_r", "structmage_1_1_b_s.html#a3f7ed277a5ed1b7a301916aa1bdc01a7", null ]
 ];

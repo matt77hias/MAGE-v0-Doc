@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['dds_5fmagic',['DDS_MAGIC',['../namespacemage.html#a14e13ab3ba78d5442a54c6b534426578',1,'mage']]],
-  ['ddspf',['ddspf',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#af7a75b761a23052acab158294208b5d8',1,'mage::DDS_HEADER']]],
-  ['depth',['depth',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a1a13eaedda1d4489e1d7d4aced09dcaf',1,'mage::DDS_HEADER']]],
-  ['destination_5fsize_5fin_5fpixels',['destination_size_in_pixels',['../structmage_1_1_sprite_info.html#a68b91ee8a489cd605aa208b6a1e54d62',1,'mage::SpriteInfo']]],
-  ['dxgi_5fformat',['dxgi_format',['../structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#a06df28f4738161963f81349e9bc8b09d',1,'mage::DDS_HEADER_DXT10']]]
+  ['ddspf',['ddspf',['../struct_d_d_s___h_e_a_d_e_r.html#a27445ea81444c05a620469f266bff154',1,'DDS_HEADER']]],
+  ['depth',['depth',['../struct_d_d_s___h_e_a_d_e_r.html#aa5b6801b932296cdfdc1651310c00c9b',1,'DDS_HEADER']]],
+  ['destination_5fsize_5fin_5fpixels',['destination_size_in_pixels',['../structmage_1_1_sprite_info.html#a84baaa1612a26bcc076965c0997641c3',1,'mage::SpriteInfo']]],
+  ['dxgiformat',['dxgiFormat',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#a7208befc03e44222386ee54ee4fa9ec6',1,'DDS_HEADER_DXT10']]]
 ];

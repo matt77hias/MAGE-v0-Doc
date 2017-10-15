@@ -9,7 +9,7 @@ var structmage_1_1_image_buffer =
     [ "BindUnpacking", "structmage_1_1_image_buffer.html#a868356b0b6cbaad167bb63e8188e89d4", null ],
     [ "operator=", "structmage_1_1_image_buffer.html#a4d89827bca3d3f2e748536b6b6a40470", null ],
     [ "operator=", "structmage_1_1_image_buffer.html#aa82afa518fa42edea4ada42b9adb92df", null ],
-    [ "SetupBuffer", "structmage_1_1_image_buffer.html#a9f9da805ed9a5d304b5885ed8f1c862c", null ],
+    [ "SetupBuffer", "structmage_1_1_image_buffer.html#aff1f615f00acd22d67ed2d10c33feb82", null ],
     [ "m_srv", "structmage_1_1_image_buffer.html#a3909901d1e896e85664b68b59c7c166c", null ],
     [ "m_uav", "structmage_1_1_image_buffer.html#abd30a4842e00bb7729b3c92029e34ee0", null ]
 ];

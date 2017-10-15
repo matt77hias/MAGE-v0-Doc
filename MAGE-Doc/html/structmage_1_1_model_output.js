@@ -12,7 +12,7 @@ var structmage_1_1_model_output =
     [ "SetMaterial", "structmage_1_1_model_output.html#abd614f9f2e9f9dbc0b2c354ee37f2998", null ],
     [ "SetupBoundingVolumes", "structmage_1_1_model_output.html#aec05a0a43d141b8b8260e741314615c1", null ],
     [ "StartModelPart", "structmage_1_1_model_output.html#a9e4d94547fbc318961d8c695149cdf14", null ],
-    [ "m_index_buffer", "structmage_1_1_model_output.html#a5941bf02406e7782f5b5dec6799f4c67", null ],
+    [ "m_index_buffer", "structmage_1_1_model_output.html#a0d38026bd5211748810a27b54375689d", null ],
     [ "m_material_buffer", "structmage_1_1_model_output.html#a3bfdb493d92a83b40a8b363a96e89a0c", null ],
     [ "m_model_parts", "structmage_1_1_model_output.html#a86df369ff4959458ee6991c36e6aa01a", null ],
     [ "m_vertex_buffer", "structmage_1_1_model_output.html#a4d669b5fee2d6a1bc993a94b0a2d5580", null ]

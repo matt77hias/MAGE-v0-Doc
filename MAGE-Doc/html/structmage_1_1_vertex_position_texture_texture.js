@@ -13,7 +13,7 @@ var structmage_1_1_vertex_position_texture_texture =
     [ "operator=", "structmage_1_1_vertex_position_texture_texture.html#a4e6539fcab28def222ec66a3162b8cd9", null ],
     [ "p", "structmage_1_1_vertex_position_texture_texture.html#aed106149eda65a20e60ebc3b93535270", null ],
     [ "s_input_element_desc", "structmage_1_1_vertex_position_texture_texture.html#aa3d92b247687789245ed11e719ba2421", null ],
-    [ "s_nb_input_elements", "structmage_1_1_vertex_position_texture_texture.html#a587a9f30fb21d84ff8c3291c4d2ea9ac", null ],
+    [ "s_nb_input_elements", "structmage_1_1_vertex_position_texture_texture.html#ab045a99425860b68ac9fc27e44edf4cf", null ],
     [ "tex", "structmage_1_1_vertex_position_texture_texture.html#ae47656414d503a2c96c88fa6d485cccf", null ],
     [ "tex2", "structmage_1_1_vertex_position_texture_texture.html#a5a41669f18385d932c1490ff20c80bed", null ]
 ];

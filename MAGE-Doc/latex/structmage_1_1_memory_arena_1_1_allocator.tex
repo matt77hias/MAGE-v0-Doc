@@ -1,0 +1,467 @@
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator}{}\section{mage\+:\+:Memory\+Arena\+:\+:Allocator$<$ DataT $>$ Struct Template Reference}
+\label{structmage_1_1_memory_arena_1_1_allocator}\index{mage\+::\+Memory\+Arena\+::\+Allocator$<$ Data\+T $>$@{mage\+::\+Memory\+Arena\+::\+Allocator$<$ Data\+T $>$}}
+
+
+{\ttfamily \#include $<$memory\+\_\+arena.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_memory_arena_1_1_allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a6ae3ef840bd738889b2c4136294a4f6d}{value\+\_\+type} = DataT
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a06c19054bb02d7e7c982434c47f19adf}{pointer} = DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_afeac56ef7ef38b63f56161988f59ef32}{reference} = DataT \&
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a3b15a7f2d3fd22fb2626b335f15d5e17}{const\+\_\+pointer} = const DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a22e7c887e2578fb0cd253a6d7404ac1b}{const\+\_\+reference} = const DataT \&
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_ae9b21f77ba4d93a7c8f5ed3097bd6f8e}{size\+\_\+type} = size\+\_\+t
+\item 
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator_ab9c65276a085579673b0e77efe64fdee}{difference\+\_\+type} = ptrdiff\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a1cdd684969c4fdca577f86e1411db76d}{Allocator} (const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&allocator) noexcept=default
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a5a8abb2140b88e2ed4deb1281b4c66d6}{Allocator} (\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&allocator) noexcept=default
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a9485ec7437c3c798a37c67631aa7e8ab}{Allocator} (const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataU $>$ \&allocator) noexcept
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a3324ead39d8cdfb8a119425879101e0a}{$\sim$\+Allocator} ()=default
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \& \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a4d05273b71981e73fc561c54d6006a1d}{operator=} (const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&allocator) noexcept=delete
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \& \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a3211375e2861e7268cc84b3bf3421665}{operator=} (\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&allocator) noexcept=delete
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a0c93aee3ba1247b1ad34b304f00418fd}{address} (DataT \&data) const noexcept
+\item 
+const DataT $\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a823bf66f6693fc85b2ccb146e1c0ba58}{address} (const DataT \&data) const noexcept
+\item 
+size\+\_\+t \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a6a68403f6f6a3c381b1ddff02cb8a733}{max\+\_\+size} () const noexcept
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a46d428590d87f47742abc173858ccc95}{allocate} (size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\DataT $\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a41289f8e34edc9f79e427b819af6b8eb}{allocate} (size\+\_\+t count, const DataU $\ast$hint) const
+\item 
+void \hyperlink{structmage_1_1_memory_arena_1_1_allocator_ad46daec4462fc4b37f5422f4ad263894}{deallocate} (DataT $\ast$data, size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU , typename... Constructor\+ArgsT$>$ }\\void \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a129048e929be140b41279ea1593a2333}{construct} (DataU $\ast$data, Constructor\+ArgsT \&\&... args) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\void \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a17aa35d167f5c5d7fa8b65c889df9484}{destroy} (DataU $\ast$data) const
+\item 
+bool \hyperlink{structmage_1_1_memory_arena_1_1_allocator_ad76b72baf40d1bfcd233f5cac1f6b4a7}{operator==} (const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&rhs) const noexcept
+\item 
+bool \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a2fa34993d2d65722e5bc2db1ed4c3536}{operator!=} (const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&rhs) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a10a6ea82aab121d4e04efa004a49910b}{Allocator} (\hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} $\ast$memory\+\_\+arena) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} $\ast$const \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a821cb29f5f5c5d1581f87e9dac143d53}{m\+\_\+memory\+\_\+arena}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{structmage_1_1_memory_arena_1_1_allocator_a934e79307a45b6e72da26d1f10079550}{Memory\+Arena}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataT$>$\newline
+struct mage\+::\+Memory\+Arena\+::\+Allocator$<$ Data\+T $>$}
+
+A struct of allocators for memory arenas.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a3b15a7f2d3fd22fb2626b335f15d5e17}{}\label{structmage_1_1_memory_arena_1_1_allocator_a3b15a7f2d3fd22fb2626b335f15d5e17} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a3b15a7f2d3fd22fb2626b335f15d5e17}{const\+\_\+pointer} =  const DataT $\ast$}
+
+The pointer to constant element of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_a22e7c887e2578fb0cd253a6d7404ac1b}{}\label{structmage_1_1_memory_arena_1_1_allocator_a22e7c887e2578fb0cd253a6d7404ac1b} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a22e7c887e2578fb0cd253a6d7404ac1b}{const\+\_\+reference} =  const DataT \&}
+
+The reference to constant element of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_ab9c65276a085579673b0e77efe64fdee}{}\label{structmage_1_1_memory_arena_1_1_allocator_ab9c65276a085579673b0e77efe64fdee} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_ab9c65276a085579673b0e77efe64fdee}{difference\+\_\+type} =  ptrdiff\+\_\+t}
+
+The difference between two pointers to elements of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_a06c19054bb02d7e7c982434c47f19adf}{}\label{structmage_1_1_memory_arena_1_1_allocator_a06c19054bb02d7e7c982434c47f19adf} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!pointer@{pointer}}
+\index{pointer@{pointer}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a06c19054bb02d7e7c982434c47f19adf}{pointer} =  DataT $\ast$}
+
+The pointer to element of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_afeac56ef7ef38b63f56161988f59ef32}{}\label{structmage_1_1_memory_arena_1_1_allocator_afeac56ef7ef38b63f56161988f59ef32} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!reference@{reference}}
+\index{reference@{reference}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_afeac56ef7ef38b63f56161988f59ef32}{reference} =  DataT \&}
+
+The reference to element of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_ae9b21f77ba4d93a7c8f5ed3097bd6f8e}{}\label{structmage_1_1_memory_arena_1_1_allocator_ae9b21f77ba4d93a7c8f5ed3097bd6f8e} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_ae9b21f77ba4d93a7c8f5ed3097bd6f8e}{size\+\_\+type} =  size\+\_\+t}
+
+The size type of elements of allocators. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_a6ae3ef840bd738889b2c4136294a4f6d}{}\label{structmage_1_1_memory_arena_1_1_allocator_a6ae3ef840bd738889b2c4136294a4f6d} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+using \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator_a6ae3ef840bd738889b2c4136294a4f6d}{value\+\_\+type} =  DataT}
+
+The element type of allocators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a1cdd684969c4fdca577f86e1411db76d}{}\label{structmage_1_1_memory_arena_1_1_allocator_a1cdd684969c4fdca577f86e1411db76d} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator from the given allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a5a8abb2140b88e2ed4deb1281b4c66d6}{}\label{structmage_1_1_memory_arena_1_1_allocator_a5a8abb2140b88e2ed4deb1281b4c66d6} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator by moving the given allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a9485ec7437c3c798a37c67631aa7e8ab}{}\label{structmage_1_1_memory_arena_1_1_allocator_a9485ec7437c3c798a37c67631aa7e8ab} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataU $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs an allocator from the given allocator.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a3324ead39d8cdfb8a119425879101e0a}{}\label{structmage_1_1_memory_arena_1_1_allocator_a3324ead39d8cdfb8a119425879101e0a} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!````~Allocator@{$\sim$\+Allocator}}
+\index{````~Allocator@{$\sim$\+Allocator}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{$\sim$\+Allocator()}{~Allocator()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::$\sim$\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this allocator. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_a10a6ea82aab121d4e04efa004a49910b}{}\label{structmage_1_1_memory_arena_1_1_allocator_a10a6ea82aab121d4e04efa004a49910b} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} $\ast$}]{memory\+\_\+arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Constructs an allocator.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape memory\+\_\+arena} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em memory\+\_\+arena} & A pointer to the memory arena. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a0c93aee3ba1247b1ad34b304f00418fd}{}\label{structmage_1_1_memory_arena_1_1_allocator_a0c93aee3ba1247b1ad34b304f00418fd} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::address (\begin{DoxyParamCaption}\item[{DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a823bf66f6693fc85b2ccb146e1c0ba58}{}\label{structmage_1_1_memory_arena_1_1_allocator_a823bf66f6693fc85b2ccb146e1c0ba58} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+const DataT$\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::address (\begin{DoxyParamCaption}\item[{const DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a46d428590d87f47742abc173858ccc95}{}\label{structmage_1_1_memory_arena_1_1_allocator_a46d428590d87f47742abc173858ccc95} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a41289f8e34edc9f79e427b819af6b8eb}{}\label{structmage_1_1_memory_arena_1_1_allocator_a41289f8e34edc9f79e427b819af6b8eb} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{const DataU $\ast$}]{hint }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em hint} & Either {\ttfamily nullptr} or a value previously obtained by another call to \hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+Data\+T$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+Data\+T$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet freed with \hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+Data\+T$>$\+::deallocate(\+Data\+T$\ast$, size\+\_\+t)}. When not equal to {\ttfamily nullptr}, this value may be used as a hint to improve performance by allocating the new block near the one specified. The address of an adjacent element is often a good choice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a129048e929be140b41279ea1593a2333}{}\label{structmage_1_1_memory_arena_1_1_allocator_a129048e929be140b41279ea1593a2333} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!construct@{construct}}
+\index{construct@{construct}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU , typename... Constructor\+ArgsT$>$ \\
+void \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::construct (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption}) const}
+
+Constructs an element object of type {\ttfamily DataU} on the location pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+{\em Constructor\+ArgsT} & The constructor argument types of the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the location. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the constructing the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not allocate storage space for the element. It should already be available at {\itshape ptr}. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_ad46daec4462fc4b37f5422f4ad263894}{}\label{structmage_1_1_memory_arena_1_1_allocator_ad46daec4462fc4b37f5422f4ad263894} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+void \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::deallocate (\begin{DoxyParamCaption}\item[{DataT $\ast$}]{data,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Releases a block of storage previously allocated with \hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+Data\+T$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+Data\+T$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet released.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A pointer to the memory block that needs to be released. \\
+\hline
+\mbox{\tt in}  & {\em count} & The number of element objects allocated on the call to allocate for this block of storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The elements in the array are not destroyed. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a17aa35d167f5c5d7fa8b65c889df9484}{}\label{structmage_1_1_memory_arena_1_1_allocator_a17aa35d167f5c5d7fa8b65c889df9484} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!destroy@{destroy}}
+\index{destroy@{destroy}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+template$<$typename DataU $>$ \\
+void \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::destroy (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+Destroys in-\/place the element pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not deallocate the storage for the element. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a6a68403f6f6a3c381b1ddff02cb8a733}{}\label{structmage_1_1_memory_arena_1_1_allocator_a6a68403f6f6a3c381b1ddff02cb8a733} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+size\+\_\+t \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the maximum number of elements, each of member type {\ttfamily DataT} that could potentially be allocated by a call to member allocate. \hypertarget{structmage_1_1_memory_arena_1_1_allocator_a2fa34993d2d65722e5bc2db1ed4c3536}{}\label{structmage_1_1_memory_arena_1_1_allocator_a2fa34993d2d65722e5bc2db1ed4c3536} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+bool \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this allocator to the given allocator for non-\/equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this allocator cannot be deallocated from the given allocator, and vice versa. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a4d05273b71981e73fc561c54d6006a1d}{}\label{structmage_1_1_memory_arena_1_1_allocator_a4d05273b71981e73fc561c54d6006a1d} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$\& \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Copies the given allocator to this allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given allocator (i.\+e. this allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a3211375e2861e7268cc84b3bf3421665}{}\label{structmage_1_1_memory_arena_1_1_allocator_a3211375e2861e7268cc84b3bf3421665} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$\& \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Moves the given allocator to this allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the allocator to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved allocator (i.\+e. this allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_ad76b72baf40d1bfcd233f5cac1f6b4a7}{}\label{structmage_1_1_memory_arena_1_1_allocator_ad76b72baf40d1bfcd233f5cac1f6b4a7} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+bool \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this allocator to the given allocator for equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this allocator can be deallocated from the given allocator, and vice versa. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a934e79307a45b6e72da26d1f10079550}{}\label{structmage_1_1_memory_arena_1_1_allocator_a934e79307a45b6e72da26d1f10079550} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!Memory\+Arena@{Memory\+Arena}}
+\index{Memory\+Arena@{Memory\+Arena}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{Memory\+Arena}{MemoryArena}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+friend class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_memory_arena_1_1_allocator_a821cb29f5f5c5d1581f87e9dac143d53}{}\label{structmage_1_1_memory_arena_1_1_allocator_a821cb29f5f5c5d1581f87e9dac143d53} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!m\+\_\+memory\+\_\+arena@{m\+\_\+memory\+\_\+arena}}
+\index{m\+\_\+memory\+\_\+arena@{m\+\_\+memory\+\_\+arena}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+memory\+\_\+arena}{m\_memory\_arena}}
+{\footnotesize\ttfamily template$<$typename DataT$>$ \\
+\hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}$\ast$ const \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}$<$ DataT $>$\+::m\+\_\+memory\+\_\+arena\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the memory arena of this allocator. 

@@ -1,7 +1,7 @@
 var structmage_1_1_x_y_z_spectrum =
 [
-    [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#aada5f54df6899b1589237fed025e305e", null ],
-    [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#a2bc776f3ee380d040f66ca3b8619d724", null ],
+    [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#ab7813f6c4e294b69ee5854276af2e498", null ],
+    [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#a2cc876e738dd2658b747fccd2f243ad2", null ],
     [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#a5ae7302e6a0a9ffb362f40c462c87fba", null ],
     [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#a17d10e71ad586928af9005b8b63edafc", null ],
     [ "XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html#a7498fec029d8e76e7b666116ac6f2cc8", null ],

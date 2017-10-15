@@ -4,10 +4,15 @@
 
 {\ttfamily \#include $<$memory\+\_\+arena.\+hpp$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_memory_arena_a5182142d8ae2c7bc3eb1bae4f1a10d29}{Memory\+Arena} (size\+\_\+t maximum\+\_\+block\+\_\+size=32768)
+\hyperlink{classmage_1_1_memory_arena_a139f7781be209bb29e7ad0ed04cb32a5}{Memory\+Arena} (size\+\_\+t maximum\+\_\+block\+\_\+size, size\+\_\+t alignment)
 \item 
 \hyperlink{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b}{Memory\+Arena} (const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&arena)=delete
 \item 
@@ -18,6 +23,8 @@
 \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \& \hyperlink{classmage_1_1_memory_arena_a7e7799f859c55435714933972ecb8b95}{operator=} (const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&arena)=delete
 \item 
 \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \& \hyperlink{classmage_1_1_memory_arena_aa4b80a917a838a1ca3788f906723d273}{operator=} (\hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&\&arena)=delete
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a79931a18af492ad8ef7e99b09ec36f2a}{Get\+Alignment} () const noexcept
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a6786cf52a03777580b439cafdd8ff8f9}{Get\+Maximum\+Block\+Size} () const noexcept
 \item 
@@ -31,25 +38,29 @@ void \hyperlink{classmage_1_1_memory_arena_a117b74c7bd5dfb28dfdaae6cab253491}{Re
 \item 
 void $\ast$ \hyperlink{classmage_1_1_memory_arena_a2e63b11c535dbfefd69d071466be9ce1}{Alloc} (size\+\_\+t size)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \hyperlink{classmage_1_1_memory_arena_a6797843db400848170d0b448a8a7e3b5}{Alloc} (size\+\_\+t count=1, bool initialization=true)
+{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \hyperlink{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0}{Alloc\+Data} (size\+\_\+t count=1, bool initialization=false)
+\item 
+{\footnotesize template$<$typename DataT $>$ }\\\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ \hyperlink{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24}{Get\+Allocator} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-using \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} = pair$<$ size\+\_\+t, \hyperlink{namespacemage_a5a362e2d56fc439362a80516ecae7828}{u8} $\ast$$>$
+using \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} = pair$<$ size\+\_\+t, \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $\ast$$>$
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
+const size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a424c3ff6f1d96545dd08f94c1c79c963}{m\+\_\+alignment}
+\item 
 const size\+\_\+t \hyperlink{classmage_1_1_memory_arena_aeef4c56cf50fd3cbbba2879fcd028b86}{m\+\_\+maximum\+\_\+block\+\_\+size}
 \item 
-\hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} \hyperlink{classmage_1_1_memory_arena_a2680b25146c174ac7fd639f1bd0acc7c}{m\+\_\+current\+\_\+block}
+\hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} \hyperlink{classmage_1_1_memory_arena_a2680b25146c174ac7fd639f1bd0acc7c}{m\+\_\+current\+\_\+block}
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a880d07eb372ce1c8b907947fcbdfc59c}{m\+\_\+current\+\_\+block\+\_\+pos}
 \item 
-list$<$ \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} $>$ \hyperlink{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904}{m\+\_\+used\+\_\+blocks}
+list$<$ \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} $>$ \hyperlink{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904}{m\+\_\+used\+\_\+blocks}
 \item 
-list$<$ \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} $>$ \hyperlink{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5}{m\+\_\+available\+\_\+blocks}
+list$<$ \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} $>$ \hyperlink{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5}{m\+\_\+available\+\_\+blocks}
 \end{DoxyCompactItemize}
 
 
@@ -57,26 +68,28 @@ list$<$ \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}
 A class of memory arenas. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{}\label{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f} 
+\hypertarget{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{}\label{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Memory\+Block@{Memory\+Block}}
 \index{Memory\+Block@{Memory\+Block}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Memory\+Block}{MemoryBlock}}
-{\footnotesize\ttfamily using \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{mage\+::\+Memory\+Arena\+::\+Memory\+Block} =  pair$<$ size\+\_\+t, \hyperlink{namespacemage_a5a362e2d56fc439362a80516ecae7828}{u8} $\ast$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily using \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{mage\+::\+Memory\+Arena\+::\+Memory\+Block} =  pair$<$ size\+\_\+t, \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $\ast$ $>$\hspace{0.3cm}{\ttfamily [private]}}
 
 A type definition for a memory block. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_memory_arena_a5182142d8ae2c7bc3eb1bae4f1a10d29}{}\label{classmage_1_1_memory_arena_a5182142d8ae2c7bc3eb1bae4f1a10d29} 
+\hypertarget{classmage_1_1_memory_arena_a139f7781be209bb29e7ad0ed04cb32a5}{}\label{classmage_1_1_memory_arena_a139f7781be209bb29e7ad0ed04cb32a5} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Memory\+Arena@{Memory\+Arena}}
 \index{Memory\+Arena@{Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Memory\+Arena()}{MemoryArena()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{maximum\+\_\+block\+\_\+size = {\ttfamily 32768} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{maximum\+\_\+block\+\_\+size,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a memory arena with given block size.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em maximum\+\_\+block\+\_\+size} & The maximum block size in bytes. \\
+\hline
+\mbox{\tt in}  & {\em alignment} & The alignment in bytes. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b}{}\label{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b} 
@@ -117,10 +130,10 @@ Destructs this memory arena.
 \hypertarget{classmage_1_1_memory_arena_a2e63b11c535dbfefd69d071466be9ce1}{}\label{classmage_1_1_memory_arena_a2e63b11c535dbfefd69d071466be9ce1} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc@{Alloc}}
 \index{Alloc@{Alloc}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
-\subsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Alloc()}{Alloc()}}
 {\footnotesize\ttfamily void $\ast$ mage\+::\+Memory\+Arena\+::\+Alloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
 
-Allocates a block of memory of the given size.
+Allocates a block of memory of the given size on this memory arena.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -132,14 +145,14 @@ Allocates a block of memory of the given size.
 
 A pointer to the memory block that was allocated. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_memory_arena_a6797843db400848170d0b448a8a7e3b5}{}\label{classmage_1_1_memory_arena_a6797843db400848170d0b448a8a7e3b5} 
-\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc@{Alloc}}
-\index{Alloc@{Alloc}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
-\subsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\hypertarget{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0}{}\label{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc\+Data@{Alloc\+Data}}
+\index{Alloc\+Data@{Alloc\+Data}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Alloc\+Data()}{AllocData()}}
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily true} }\end{DoxyParamCaption})}
+DataT$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
 
-Allocates a block of memory.
+Allocates a block of memory on this memory arena.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -161,6 +174,34 @@ A pointer to the memory block that was allocated.
 \begin{DoxyNote}{Note}
 The objects will be constructed with their default empty constructor. 
 \end{DoxyNote}
+\hypertarget{classmage_1_1_memory_arena_a79931a18af492ad8ef7e99b09ec36f2a}{}\label{classmage_1_1_memory_arena_a79931a18af492ad8ef7e99b09ec36f2a} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Get\+Alignment@{Get\+Alignment}}
+\index{Get\+Alignment@{Get\+Alignment}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Get\+Alignment()}{GetAlignment()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Memory\+Arena\+::\+Get\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the alignment of this memory arena.
+
+\begin{DoxyReturn}{Returns}
+The alignment in bytes of this memory arena. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24}{}\label{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Get\+Allocator@{Get\+Allocator}}
+\index{Get\+Allocator@{Get\+Allocator}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Get\+Allocator()}{GetAllocator()}}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+\hyperlink{structmage_1_1_memory_arena_1_1_allocator}{Allocator}$<$ DataT $>$ mage\+::\+Memory\+Arena\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns an allocator for this memory arena.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type of the allocator. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+An allocator for this memory arena. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_memory_arena_a7bdbc9da32c1f8d49ce5d2f153870284}{}\label{classmage_1_1_memory_arena_a7bdbc9da32c1f8d49ce5d2f153870284} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Get\+Current\+Block\+Ptr@{Get\+Current\+Block\+Ptr}}
 \index{Get\+Current\+Block\+Ptr@{Get\+Current\+Block\+Ptr}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
@@ -192,7 +233,7 @@ The block size (in bytes) of the current block of this memory arena.
 Returns the maximum block size of this memory arena.
 
 \begin{DoxyReturn}{Returns}
-The maximum block size of this memory arena. 
+The maximum block size in bytes of this memory arena. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_memory_arena_ac8e8ac4ba60cd2bb1d8dc8a5d4a9f4ad}{}\label{classmage_1_1_memory_arena_ac8e8ac4ba60cd2bb1d8dc8a5d4a9f4ad} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Get\+Total\+Block\+Size@{Get\+Total\+Block\+Size}}
@@ -246,17 +287,23 @@ A reference to the moved memory arena (i.\+e. this memory arena).
 Resets this memory arena. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5}{}\label{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5} 
+\hypertarget{classmage_1_1_memory_arena_a424c3ff6f1d96545dd08f94c1c79c963}{}\label{classmage_1_1_memory_arena_a424c3ff6f1d96545dd08f94c1c79c963} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+alignment@{m\+\_\+alignment}}
+\index{m\+\_\+alignment@{m\+\_\+alignment}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+alignment}{m\_alignment}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+alignment\hspace{0.3cm}{\ttfamily [private]}}
+
+The alignment in bytes of this memory arena. \hypertarget{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5}{}\label{classmage_1_1_memory_arena_a74c0d5d40bb402ec52bb23b7ccb9fec5} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}}
 \index{m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+available\+\_\+blocks}{m\_available\_blocks}}
-{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} $>$ mage\+::\+Memory\+Arena\+::m\+\_\+available\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} $>$ mage\+::\+Memory\+Arena\+::m\+\_\+available\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
 
 A collection containing the available blocks of this memory arena. \hypertarget{classmage_1_1_memory_arena_a2680b25146c174ac7fd639f1bd0acc7c}{}\label{classmage_1_1_memory_arena_a2680b25146c174ac7fd639f1bd0acc7c} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}}
 \index{m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+block}{m\_current\_block}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
 
 The current block of this memory arena. \hypertarget{classmage_1_1_memory_arena_a880d07eb372ce1c8b907947fcbdfc59c}{}\label{classmage_1_1_memory_arena_a880d07eb372ce1c8b907947fcbdfc59c} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block\+\_\+pos@{m\+\_\+current\+\_\+block\+\_\+pos}}
@@ -270,10 +317,10 @@ The current block position of this memory arena. \hypertarget{classmage_1_1_memo
 \subsubsection{\texorpdfstring{m\+\_\+maximum\+\_\+block\+\_\+size}{m\_maximum\_block\_size}}
 {\footnotesize\ttfamily const size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+maximum\+\_\+block\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
 
-The maximum block size of this memory arena. \hypertarget{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904}{}\label{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904} 
+The maximum block size in bytes of this memory arena. \hypertarget{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904}{}\label{classmage_1_1_memory_arena_a37891872cff5b86bb1f9c40b4450b904} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}}
 \index{m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+used\+\_\+blocks}{m\_used\_blocks}}
-{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_memory_arena_ac8483e32c7365b68de8267d65ef4413f}{Memory\+Block} $>$ mage\+::\+Memory\+Arena\+::m\+\_\+used\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_memory_arena_a3c40b9cfaf2cc58b713e2f5b1a99189d}{Memory\+Block} $>$ mage\+::\+Memory\+Arena\+::m\+\_\+used\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
 
 A collection containing the used blocks of this memory arena. 

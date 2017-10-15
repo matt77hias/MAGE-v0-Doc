@@ -6,7 +6,7 @@ var classmage_1_1_input_controller_script =
     [ "~InputControllerScript", "classmage_1_1_input_controller_script.html#ac5699d9a4d9a3f9c456885a92dede979", null ],
     [ "operator=", "classmage_1_1_input_controller_script.html#a747a0a1cb4064a5b8580195c0a53b887", null ],
     [ "operator=", "classmage_1_1_input_controller_script.html#a2e2231433ec17577ce019348285eaba3", null ],
-    [ "Update", "classmage_1_1_input_controller_script.html#ac522d6cffc26418c514de396f80fa56c", null ],
+    [ "Update", "classmage_1_1_input_controller_script.html#a066cd5ed9ef4d05e4442f42e372c9f2d", null ],
     [ "m_movement_script", "classmage_1_1_input_controller_script.html#aea0478602dbabf616dd3ef8b4408a42a", null ],
     [ "m_orientation_script", "classmage_1_1_input_controller_script.html#ab5af05a3bf7cdd672382dd5bcb1d6d02", null ]
 ];

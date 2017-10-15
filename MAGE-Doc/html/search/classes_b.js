@@ -9,6 +9,7 @@ var searchData=
   ['mesh',['Mesh',['../classmage_1_1_mesh.html',1,'mage']]],
   ['meshdescriptor',['MeshDescriptor',['../structmage_1_1_mesh_descriptor.html',1,'mage']]],
   ['model',['Model',['../classmage_1_1_model.html',1,'mage']]],
+  ['modelbuffer',['ModelBuffer',['../structmage_1_1_model_buffer.html',1,'mage']]],
   ['modeldescriptor',['ModelDescriptor',['../classmage_1_1_model_descriptor.html',1,'mage']]],
   ['modelnode',['ModelNode',['../classmage_1_1_model_node.html',1,'mage']]],
   ['modelnormaltexturetransformbuffer',['ModelNormalTextureTransformBuffer',['../structmage_1_1_model_normal_texture_transform_buffer.html',1,'mage']]],
