@@ -8,6 +8,6 @@ var structmage_1_1_directional_light_buffer =
     [ "operator=", "structmage_1_1_directional_light_buffer.html#a9af62b47c7ba1b1f6833e8da79b8c054", null ],
     [ "m_I", "structmage_1_1_directional_light_buffer.html#a357b86deb8ed2926cb77ed8191e967e6", null ],
     [ "m_neg_d", "structmage_1_1_directional_light_buffer.html#af3a1952cf82b66730868573a4b581ab4", null ],
-    [ "m_padding0", "structmage_1_1_directional_light_buffer.html#a96568b34d11e59d28c5222606d0663ca", null ],
-    [ "m_padding1", "structmage_1_1_directional_light_buffer.html#a59d2a44a4846c1055b197d3f5ec8f4b2", null ]
+    [ "m_padding0", "structmage_1_1_directional_light_buffer.html#aac8d40f7af8eac8b2fb79085843be4fd", null ],
+    [ "m_padding1", "structmage_1_1_directional_light_buffer.html#ab94c0c42a54c9751dde8a4a2a84da861", null ]
 ];

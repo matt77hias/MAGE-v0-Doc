@@ -2,17 +2,16 @@ var searchData=
 [
   ['aabb',['AABB',['../structmage_1_1_a_a_b_b.html',1,'mage']]],
   ['abstractvalue',['AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html',1,'mage::Variable']]],
+  ['alignedallocator',['AlignedAllocator',['../structmage_1_1_aligned_allocator.html',1,'mage']]],
   ['aligneddata',['AlignedData',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20cartesianaxessystem_20_3e',['AlignedData&lt; CartesianAxesSystem &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20cartesiancoordinatesystem_20_3e',['AlignedData&lt; CartesianCoordinateSystem &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
-  ['aligneddata_3c_20deferredbuffer_20_3e',['AlignedData&lt; DeferredBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
-  ['aligneddata_3c_20deferredmodelbuffer_20_3e',['AlignedData&lt; DeferredModelBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20directionallightbuffer_20_3e',['AlignedData&lt; DirectionalLightBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20directionallightwithshadowmappingbuffer_20_3e',['AlignedData&lt; DirectionalLightWithShadowMappingBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
-  ['aligneddata_3c_20forwardmodelbuffer_20_3e',['AlignedData&lt; ForwardModelBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20gamebuffer_20_3e',['AlignedData&lt; GameBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20lightbuffer_20_3e',['AlignedData&lt; LightBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20lightcamerainfo_20_3e',['AlignedData&lt; LightCameraInfo &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
+  ['aligneddata_3c_20modelbuffer_20_3e',['AlignedData&lt; ModelBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20modelnormaltexturetransformbuffer_20_3e',['AlignedData&lt; ModelNormalTextureTransformBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20modelnormaltransformbuffer_20_3e',['AlignedData&lt; ModelNormalTransformBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20modeltexturetransformbuffer_20_3e',['AlignedData&lt; ModelTextureTransformBuffer &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
@@ -28,5 +27,7 @@ var searchData=
   ['aligneddata_3c_20transform_20_3e',['AlignedData&lt; Transform &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20transformnode_20_3e',['AlignedData&lt; TransformNode &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
   ['aligneddata_3c_20viewfrustum_20_3e',['AlignedData&lt; ViewFrustum &gt;',['../structmage_1_1_aligned_data.html',1,'mage']]],
+  ['allocator',['Allocator',['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html',1,'mage::SingleEndedMemoryStack']]],
+  ['allocator',['Allocator',['../structmage_1_1_memory_arena_1_1_allocator.html',1,'mage::MemoryArena']]],
   ['ambientlight',['AmbientLight',['../classmage_1_1_ambient_light.html',1,'mage']]]
 ];

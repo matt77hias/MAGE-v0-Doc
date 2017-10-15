@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rasterizerstateindex',['RasterizerStateIndex',['../structmage_1_1_rendering_state_cache.html#ab3cd83fde15cb9f0858e9617e32cd044',1,'mage::RenderingStateCache']]],
+  ['rasterizerstateindex',['RasterizerStateIndex',['../structmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640a',1,'mage::RenderingStateManager']]],
   ['renderlayer',['RenderLayer',['../namespacemage.html#a8b4a82582105b0299e2c2be5af7255d6',1,'mage']]],
   ['rendermode',['RenderMode',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fd',1,'mage']]],
   ['rotationaxes',['RotationAxes',['../classmage_1_1_mouse_look_script.html#af63fd955f796c11e0378813e5d1ab5f8',1,'mage::MouseLookScript']]],

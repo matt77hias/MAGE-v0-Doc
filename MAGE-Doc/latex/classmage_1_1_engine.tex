@@ -31,7 +31,7 @@ int \hyperlink{classmage_1_1_engine_a4ad554bca1ac892e1274f2e707c2a017}{Run} (\hy
 \item 
 void \hyperlink{classmage_1_1_engine_afd52a8088d6d37605cb352028098c508}{On\+Active\+Change} (bool deactive) noexcept
 \item 
-const \hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ \hyperlink{classmage_1_1_engine_a91f77d4f1914e1d63d405444a590615b}{Get\+Renderer} () const noexcept
+const \hyperlink{classmage_1_1_rendering_manager}{Rendering\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_ae3d894eacf94cdf416d95c57e45b4836}{Get\+Rendering\+Manager} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_engine_a6ac289fd093967c370955810e26d251f}{On\+Mode\+Switch} () noexcept
 \item 
@@ -62,7 +62,7 @@ void \hyperlink{classmage_1_1_engine_a29a47448fb182b110d46d287a72b8b4e}{Initiali
 \item 
 bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+deactive}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_renderer}{Renderer} $>$ \hyperlink{classmage_1_1_engine_a1248b7c21bc8256c72d372c12ed1ee68}{m\+\_\+renderer}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_rendering_manager}{Rendering\+Manager} $>$ \hyperlink{classmage_1_1_engine_a81c7475c3501f84f9bd9c7bbeaebfcb6}{m\+\_\+rendering\+\_\+manager}
 \item 
 bool \hyperlink{classmage_1_1_engine_aa5cb2e0b7bb2c4a9020e79ab832ee221}{m\+\_\+mode\+\_\+switch}
 \item 
@@ -74,7 +74,7 @@ bool \hyperlink{classmage_1_1_engine_aa5cb2e0b7bb2c4a9020e79ab832ee221}{m\+\_\+m
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_timer}{Timer} $>$ \hyperlink{classmage_1_1_engine_a4daac998928a6c087b310c52b3f26ae4}{m\+\_\+timer}
 \item 
-\hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64} \hyperlink{classmage_1_1_engine_a3d8524eaf71ac4fc0a63a06c04a5a917}{m\+\_\+fixed\+\_\+delta\+\_\+time}
+\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_engine_a95557e1b6cba52b393c94d80d80bea4c}{m\+\_\+fixed\+\_\+delta\+\_\+time}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_engine_statistics}{Engine\+Statistics} $>$ \hyperlink{classmage_1_1_engine_aa0c82f248a2fbec3fbf778665a440edc}{m\+\_\+engine\+\_\+stats}
 \end{DoxyCompactItemize}
@@ -191,18 +191,18 @@ Returns the main window of this engine.
 
 A pointer to the main window of this engine. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_a91f77d4f1914e1d63d405444a590615b}{}\label{classmage_1_1_engine_a91f77d4f1914e1d63d405444a590615b} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Renderer@{Get\+Renderer}}
-\index{Get\+Renderer@{Get\+Renderer}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{Get\+Renderer()}{GetRenderer()}}
-{\footnotesize\ttfamily const \hyperlink{classmage_1_1_renderer}{Renderer}$\ast$ mage\+::\+Engine\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1_engine_ae3d894eacf94cdf416d95c57e45b4836}{}\label{classmage_1_1_engine_ae3d894eacf94cdf416d95c57e45b4836} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Rendering\+Manager@{Get\+Rendering\+Manager}}
+\index{Get\+Rendering\+Manager@{Get\+Rendering\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Rendering\+Manager()}{GetRenderingManager()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_rendering_manager}{Rendering\+Manager}$\ast$ mage\+::\+Engine\+::\+Get\+Rendering\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the renderer of this engine.
+Returns the rendering manager of this engine.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily nullptr} if this engine is not properly setup. 
 
-A pointer to the renderer of this engine. 
+A pointer to the rendering manager of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b}{}\label{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Resource\+Manager@{Get\+Resource\+Manager}}
@@ -342,11 +342,11 @@ Flag indicating whether the application is active or not. \hypertarget{classmage
 \subsubsection{\texorpdfstring{m\+\_\+engine\+\_\+stats}{m\_engine\_stats}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_engine_statistics}{Engine\+Statistics} $>$ mage\+::\+Engine\+::m\+\_\+engine\+\_\+stats\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_engine_a3d8524eaf71ac4fc0a63a06c04a5a917}{}\label{classmage_1_1_engine_a3d8524eaf71ac4fc0a63a06c04a5a917} 
+\hypertarget{classmage_1_1_engine_a95557e1b6cba52b393c94d80d80bea4c}{}\label{classmage_1_1_engine_a95557e1b6cba52b393c94d80d80bea4c} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+fixed\+\_\+delta\+\_\+time@{m\+\_\+fixed\+\_\+delta\+\_\+time}}
 \index{m\+\_\+fixed\+\_\+delta\+\_\+time@{m\+\_\+fixed\+\_\+delta\+\_\+time}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+fixed\+\_\+delta\+\_\+time}{m\_fixed\_delta\_time}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ab935747c6941320bd6214b5a5f265b09}{f64} mage\+::\+Engine\+::m\+\_\+fixed\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} mage\+::\+Engine\+::m\+\_\+fixed\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
 
 The fixed delta time of this engine.
 
@@ -368,13 +368,13 @@ A pointer to the main window of this engine. \hypertarget{classmage_1_1_engine_a
 \subsubsection{\texorpdfstring{m\+\_\+mode\+\_\+switch}{m\_mode\_switch}}
 {\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+mode\+\_\+switch\hspace{0.3cm}{\ttfamily [private]}}
 
-Flag indicating whether the application should switch between full screen and windowed mode. \hypertarget{classmage_1_1_engine_a1248b7c21bc8256c72d372c12ed1ee68}{}\label{classmage_1_1_engine_a1248b7c21bc8256c72d372c12ed1ee68} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+renderer@{m\+\_\+renderer}}
-\index{m\+\_\+renderer@{m\+\_\+renderer}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_renderer}{Renderer} $>$ mage\+::\+Engine\+::m\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
+Flag indicating whether the application should switch between full screen and windowed mode. \hypertarget{classmage_1_1_engine_a81c7475c3501f84f9bd9c7bbeaebfcb6}{}\label{classmage_1_1_engine_a81c7475c3501f84f9bd9c7bbeaebfcb6} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+rendering\+\_\+manager@{m\+\_\+rendering\+\_\+manager}}
+\index{m\+\_\+rendering\+\_\+manager@{m\+\_\+rendering\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+rendering\+\_\+manager}{m\_rendering\_manager}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_rendering_manager}{Rendering\+Manager} $>$ mage\+::\+Engine\+::m\+\_\+rendering\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{}\label{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28} 
+A pointer to the rendering manager of this engine. \hypertarget{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{}\label{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
 \index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}

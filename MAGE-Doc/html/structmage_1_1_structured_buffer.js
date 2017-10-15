@@ -5,7 +5,7 @@ var structmage_1_1_structured_buffer =
     [ "StructuredBuffer", "structmage_1_1_structured_buffer.html#aa017416099a12305d0177094c768150e", null ],
     [ "StructuredBuffer", "structmage_1_1_structured_buffer.html#a455bd930f39f5fdf6af4f453694997da", null ],
     [ "~StructuredBuffer", "structmage_1_1_structured_buffer.html#a02ab1d322e1aef0c608b85224b80dbcf", null ],
-    [ "Bind", "structmage_1_1_structured_buffer.html#ac879337b3b200e76654afc1de2f4082b", null ],
+    [ "Bind", "structmage_1_1_structured_buffer.html#abc7a70df492db6151bb32d73bce2ad93", null ],
     [ "Get", "structmage_1_1_structured_buffer.html#ad933738bc55b10aea665913a8215bab0", null ],
     [ "operator=", "structmage_1_1_structured_buffer.html#ac00255155ab1eb61244392adcf262d40", null ],
     [ "operator=", "structmage_1_1_structured_buffer.html#a2647510e153d15b89f860e2a5c68e231", null ],

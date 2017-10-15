@@ -1,14 +1,12 @@
 var searchData=
 [
   ['fatal',['Fatal',['../namespacemage.html#aefd40c91591a8e0423e4222b4a5e6249',1,'mage']]],
-  ['fibonaccispiralcosineweightedsamplesonunithemisphere',['FibonacciSpiralCosineWeightedSamplesOnUnitHemisphere',['../namespacemage.html#a7f0e7a4c037e84593e2cd40987c06072',1,'mage']]],
-  ['fibonaccispiralsamplesinunitcircle',['FibonacciSpiralSamplesInUnitCircle',['../namespacemage.html#ab2ca746952a5c9ffed79d24822debb69',1,'mage']]],
-  ['fibonaccispiralsamplesonunithemisphere',['FibonacciSpiralSamplesOnUnitHemisphere',['../namespacemage.html#ae4c3a93ee759b1469efee003215f71f3',1,'mage']]],
-  ['fibonaccispiralsamplesonunitsphere',['FibonacciSpiralSamplesOnUnitSphere',['../namespacemage.html#ac7696127cd4da99222fb998b15f691c5',1,'mage']]],
+  ['fibonaccispiralcosineweightedsamplesonunithemisphere',['FibonacciSpiralCosineWeightedSamplesOnUnitHemisphere',['../namespacemage.html#aedddb395f21b85cde50c501e1dba7605',1,'mage']]],
+  ['fibonaccispiralsamplesinunitcircle',['FibonacciSpiralSamplesInUnitCircle',['../namespacemage.html#a090414091e77e152d6efb1ba34cdb8e5',1,'mage']]],
+  ['fibonaccispiralsamplesonunithemisphere',['FibonacciSpiralSamplesOnUnitHemisphere',['../namespacemage.html#ab4ab99710556b0c7bba334f892900923',1,'mage']]],
+  ['fibonaccispiralsamplesonunitsphere',['FibonacciSpiralSamplesOnUnitSphere',['../namespacemage.html#adcc94f8bfce993fcee9d22728879ac97',1,'mage']]],
   ['fileexists',['FileExists',['../namespacemage.html#a3e9bead16bf9814e6ecd6aca57ccc3e3',1,'mage']]],
-  ['fillinitdata',['FillInitData',['../namespacemage.html#a70eb18c8d41b8ecef264ec23c7b71f2e',1,'mage']]],
   ['findwordend',['FindWordEnd',['../namespacemage.html#a81ebde51f9da00dd6fad364a2c5017cb',1,'mage']]],
-  ['finishmaterialcoefficients',['FinishMaterialCoefficients',['../structmage_1_1_pass_buffer.html#ac9b83cdfcfcf963dd230099c39a45a8f',1,'mage::PassBuffer']]],
   ['fixedupdate',['FixedUpdate',['../classmage_1_1_scene_manager.html#a6d97c0fb7945aeb53ec950e62567c1f4',1,'mage::SceneManager::FixedUpdate()'],['../classmage_1_1_behavior_script.html#a8318f79ab78798ec37b39bc844f7138c',1,'mage::BehaviorScript::FixedUpdate()']]],
   ['flushbatch',['FlushBatch',['../classmage_1_1_sprite_batch.html#a352714b5d02590245ab8ffe8489305f7',1,'mage::SpriteBatch']]],
   ['forcesrgb',['ForceSRGB',['../structmage_1_1_sprite_font_descriptor.html#a6124a9d8323768b970033eef43d0be6f',1,'mage::SpriteFontDescriptor']]],
@@ -30,8 +28,7 @@ var searchData=
   ['foreachsprite',['ForEachSprite',['../classmage_1_1_scene.html#af33b14f081e0b3ae5dafc807bb6bf5b4',1,'mage::Scene']]],
   ['format',['Format',['../classmage_1_1_text_console_script.html#a4d9ba97e4ff4ad5390b20e5523a20e92',1,'mage::TextConsoleScript']]],
   ['formattedexception',['FormattedException',['../structmage_1_1_formatted_exception.html#a77b82a969ec33a3aacec74a5adc4ab8b',1,'mage::FormattedException::FormattedException()'],['../structmage_1_1_formatted_exception.html#a3fe833a49052a2db99c023b1b1d43621',1,'mage::FormattedException::FormattedException(const char *format,...)'],['../structmage_1_1_formatted_exception.html#a5cf97b252c3eb38acc1554ab6bb7e300',1,'mage::FormattedException::FormattedException(const char *format, va_list args)'],['../structmage_1_1_formatted_exception.html#afd5d6b7a9db65b127badbf498186ebe8',1,'mage::FormattedException::FormattedException(const FormattedException &amp;formatted_exception)'],['../structmage_1_1_formatted_exception.html#ab1371b0a079fc50fcae39722e5e29cb2',1,'mage::FormattedException::FormattedException(FormattedException &amp;&amp;formatted_exception)']]],
-  ['forwardmodelbuffer',['ForwardModelBuffer',['../structmage_1_1_forward_model_buffer.html#ae9a1629205067c541dcc2d3f1964d8e2',1,'mage::ForwardModelBuffer::ForwardModelBuffer()'],['../structmage_1_1_forward_model_buffer.html#a12c7548e793781896b51359801e7a274',1,'mage::ForwardModelBuffer::ForwardModelBuffer(const ForwardModelBuffer &amp;buffer)=default'],['../structmage_1_1_forward_model_buffer.html#a5a78b1a5191445413692592e807514af',1,'mage::ForwardModelBuffer::ForwardModelBuffer(ForwardModelBuffer &amp;&amp;buffer)=default']]],
-  ['fovxfromfovy',['FOVXFromFOVY',['../namespacemage.html#a7d2e84586fb6d03c961c10119bb583ce',1,'mage']]],
-  ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage.html#a41ff95b4cf671eb73c224b82599ffbb5',1,'mage']]],
+  ['fovxfromfovy',['FOVXFromFOVY',['../namespacemage.html#a2445eca441a363f9310e54a50cecefaa',1,'mage']]],
+  ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage.html#a01fe0ff5d9da54cfc40b76cbeae67765',1,'mage']]],
   ['freealigned',['FreeAligned',['../namespacemage.html#a2ea8b0ebc056a664eadff3512c1cade4',1,'mage']]]
 ];

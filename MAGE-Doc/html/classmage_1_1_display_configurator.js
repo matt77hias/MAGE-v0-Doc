@@ -19,5 +19,5 @@ var classmage_1_1_display_configurator =
     [ "m_display_modes", "classmage_1_1_display_configurator.html#af790f370efc520b3229b3327abd4236b", null ],
     [ "m_output", "classmage_1_1_display_configurator.html#a181e657b9ce888d3580c9fdbb50898e2", null ],
     [ "m_pixel_format", "classmage_1_1_display_configurator.html#a22998ef4e54c3da0118a734164792b8f", null ],
-    [ "s_nb_MSAA_samples", "classmage_1_1_display_configurator.html#a771f4899655925cb969ff876b2141e6c", null ]
+    [ "s_nb_MSAA_samples", "classmage_1_1_display_configurator.html#ae4030ce3b63836e4e5c374285cf1f3bc", null ]
 ];

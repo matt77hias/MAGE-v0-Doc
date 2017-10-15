@@ -1,7 +1,7 @@
 var structmage_1_1_point3 =
 [
     [ "Point3", "structmage_1_1_point3.html#aab371cb187cadc61b81e5d09c8eed1e5", null ],
-    [ "Point3", "structmage_1_1_point3.html#a554f2608040c6a715f36cb0fe862de1c", null ],
+    [ "Point3", "structmage_1_1_point3.html#af7e50841e6bec16661a2de6c74dc9498", null ],
     [ "Point3", "structmage_1_1_point3.html#a06dfbaee1e7bc857d95c60ce970eb9bd", null ],
     [ "Point3", "structmage_1_1_point3.html#a42d100496c00031d597f00da9057b221", null ],
     [ "Point3", "structmage_1_1_point3.html#a301b7497bfdc583b0157d4dcb10e0984", null ],

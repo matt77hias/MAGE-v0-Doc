@@ -26,7 +26,7 @@ var classmage_1_1_variable_shading_pass =
     [ "m_bound_ps", "classmage_1_1_variable_shading_pass.html#acb1d0d78a9de9afc2d668d87134c5ec5", null ],
     [ "m_brdf", "classmage_1_1_variable_shading_pass.html#ac6147f2068fd7727fe2d78584ff68767", null ],
     [ "m_device_context", "classmage_1_1_variable_shading_pass.html#afff786ea38b64ba069866fdd6b525ba7", null ],
-    [ "m_model_buffer", "classmage_1_1_variable_shading_pass.html#a563f4a9d0b9c4512f63daaec19ee4750", null ],
+    [ "m_model_buffer", "classmage_1_1_variable_shading_pass.html#ab83602f0ffa6c0a3519ffaa467ae113a", null ],
     [ "m_projection_buffer", "classmage_1_1_variable_shading_pass.html#afb777eb7b7303dd50337f361f82a919a", null ],
     [ "m_ps", "classmage_1_1_variable_shading_pass.html#aacd5b6b967a0fcfe7510e289c3d630a0", null ],
     [ "m_vs", "classmage_1_1_variable_shading_pass.html#aa91a1e8628c2f671adadd919376aa67e", null ]

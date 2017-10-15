@@ -15,7 +15,7 @@ var classmage_1_1_behavior_script =
     [ "operator=", "classmage_1_1_behavior_script.html#a528c2bd218f2e6bb7d0a8ee50a05bf01", null ],
     [ "SetActive", "classmage_1_1_behavior_script.html#ab0dc76b101fd514c6e9f8799de382e8a", null ],
     [ "Terminate", "classmage_1_1_behavior_script.html#a2beae460bb84a135aa7e29c7baf6b25b", null ],
-    [ "Update", "classmage_1_1_behavior_script.html#ae42e869ca8d4e4b3ad2af589b0ca9924", null ],
+    [ "Update", "classmage_1_1_behavior_script.html#a58c0fb3e1f2f3fb3a41e658a99b84a21", null ],
     [ "m_active", "classmage_1_1_behavior_script.html#a18f81792aed31a2d61a8a75784e2ceef", null ],
     [ "m_terminated", "classmage_1_1_behavior_script.html#abc4a0e6728787347012404a597ab8e07", null ]
 ];

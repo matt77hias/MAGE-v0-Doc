@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['dds_5fheader',['DDS_HEADER',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html',1,'mage']]],
-  ['dds_5fheader_5fdxt10',['DDS_HEADER_DXT10',['../structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html',1,'mage']]],
-  ['dds_5fpixelformat',['DDS_PIXELFORMAT',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html',1,'mage']]],
-  ['deferredbuffer',['DeferredBuffer',['../structmage_1_1_deferred_buffer.html',1,'mage']]],
-  ['deferredmodelbuffer',['DeferredModelBuffer',['../structmage_1_1_deferred_model_buffer.html',1,'mage']]],
+  ['dds_5fheader',['DDS_HEADER',['../struct_d_d_s___h_e_a_d_e_r.html',1,'']]],
+  ['dds_5fheader_5fdxt10',['DDS_HEADER_DXT10',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html',1,'']]],
+  ['dds_5fpixelformat',['DDS_PIXELFORMAT',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html',1,'']]],
   ['deferredshadingpass',['DeferredShadingPass',['../classmage_1_1_deferred_shading_pass.html',1,'mage']]],
   ['depthpass',['DepthPass',['../classmage_1_1_depth_pass.html',1,'mage']]],
   ['derivedcameranode',['DerivedCameraNode',['../classmage_1_1_derived_camera_node.html',1,'mage']]],
@@ -16,6 +14,7 @@ var searchData=
   ['directionallightwithshadowmappingbuffer',['DirectionalLightWithShadowMappingBuffer',['../structmage_1_1_directional_light_with_shadow_mapping_buffer.html',1,'mage']]],
   ['displayconfiguration',['DisplayConfiguration',['../structmage_1_1_display_configuration.html',1,'mage']]],
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1_display_configurator.html',1,'mage']]],
+  ['doubleendedmemorystack',['DoubleEndedMemoryStack',['../classmage_1_1_double_ended_memory_stack.html',1,'mage']]],
   ['dropshadowspritetext',['DropshadowSpriteText',['../classmage_1_1_dropshadow_sprite_text.html',1,'mage']]],
   ['ds',['DS',['../structmage_1_1_pipeline_1_1_d_s.html',1,'mage::Pipeline']]]
 ];

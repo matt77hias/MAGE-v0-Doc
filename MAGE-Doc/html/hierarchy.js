@@ -4,6 +4,7 @@ var hierarchy =
     [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
       [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
     ] ],
+    [ "mage::AlignedAllocator< DataT, AlignmentS >", "structmage_1_1_aligned_allocator.html", null ],
     [ "mage::AlignedData< DataT >", "structmage_1_1_aligned_data.html", null ],
     [ "mage::AlignedData< CartesianAxesSystem >", "structmage_1_1_aligned_data.html", [
       [ "mage::CartesianAxesSystem", "structmage_1_1_cartesian_axes_system.html", null ]
@@ -11,20 +12,11 @@ var hierarchy =
     [ "mage::AlignedData< CartesianCoordinateSystem >", "structmage_1_1_aligned_data.html", [
       [ "mage::CartesianCoordinateSystem", "structmage_1_1_cartesian_coordinate_system.html", null ]
     ] ],
-    [ "mage::AlignedData< DeferredBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::DeferredBuffer", "structmage_1_1_deferred_buffer.html", null ]
-    ] ],
-    [ "mage::AlignedData< DeferredModelBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::DeferredModelBuffer", "structmage_1_1_deferred_model_buffer.html", null ]
-    ] ],
     [ "mage::AlignedData< DirectionalLightBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< DirectionalLightWithShadowMappingBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::DirectionalLightWithShadowMappingBuffer", "structmage_1_1_directional_light_with_shadow_mapping_buffer.html", null ]
-    ] ],
-    [ "mage::AlignedData< ForwardModelBuffer >", "structmage_1_1_aligned_data.html", [
-      [ "mage::ForwardModelBuffer", "structmage_1_1_forward_model_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< GameBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::GameBuffer", "structmage_1_1_game_buffer.html", null ]
@@ -34,6 +26,9 @@ var hierarchy =
     ] ],
     [ "mage::AlignedData< LightCameraInfo >", "structmage_1_1_aligned_data.html", [
       [ "mage::LightCameraInfo", "structmage_1_1_light_camera_info.html", null ]
+    ] ],
+    [ "mage::AlignedData< ModelBuffer >", "structmage_1_1_aligned_data.html", [
+      [ "mage::ModelBuffer", "structmage_1_1_model_buffer.html", null ]
     ] ],
     [ "mage::AlignedData< ModelNormalTextureTransformBuffer >", "structmage_1_1_aligned_data.html", [
       [ "mage::ModelNormalTextureTransformBuffer", "structmage_1_1_model_normal_texture_transform_buffer.html", null ]
@@ -80,6 +75,8 @@ var hierarchy =
     [ "mage::AlignedData< ViewFrustum >", "structmage_1_1_aligned_data.html", [
       [ "mage::ViewFrustum", "structmage_1_1_view_frustum.html", null ]
     ] ],
+    [ "mage::MemoryArena::Allocator< DataT >", "structmage_1_1_memory_arena_1_1_allocator.html", null ],
+    [ "mage::SingleEndedMemoryStack::Allocator< DataT >", "structmage_1_1_single_ended_memory_stack_1_1_allocator.html", null ],
     [ "mage::BehaviorScript", "classmage_1_1_behavior_script.html", [
       [ "mage::CharacterMotorScript", "classmage_1_1_character_motor_script.html", null ],
       [ "mage::InputControllerScript< OrientationScriptT, MovementScriptT >", "classmage_1_1_input_controller_script.html", null ],
@@ -114,11 +111,9 @@ var hierarchy =
     ] ],
     [ "mage::ConditionVariable", "structmage_1_1_condition_variable.html", null ],
     [ "mage::ConstantBuffer< DataT >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::DeferredBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::DeferredModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::ForwardModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::GameBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::LightBuffer >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::ModelBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::ModelNormalTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::ModelNormalTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::ModelTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
@@ -131,9 +126,9 @@ var hierarchy =
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
     [ "mage::CPUTimer", "classmage_1_1_c_p_u_timer.html", null ],
     [ "mage::Pipeline::CS", "structmage_1_1_pipeline_1_1_c_s.html", null ],
-    [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
-    [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
-    [ "mage::DDS_PIXELFORMAT", "structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
+    [ "DDS_HEADER", "struct_d_d_s___h_e_a_d_e_r.html", null ],
+    [ "DDS_HEADER_DXT10", "struct_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
+    [ "DDS_PIXELFORMAT", "struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
     [ "mage::DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html", null ],
     [ "mage::DepthPass", "classmage_1_1_depth_pass.html", null ],
     [ "DerivedResourceT", null, [
@@ -141,6 +136,7 @@ var hierarchy =
     ] ],
     [ "mage::DisplayConfiguration", "structmage_1_1_display_configuration.html", null ],
     [ "mage::DisplayConfigurator", "classmage_1_1_display_configurator.html", null ],
+    [ "mage::DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html", null ],
     [ "mage::Pipeline::DS", "structmage_1_1_pipeline_1_1_d_s.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::EngineStatistics", "structmage_1_1_engine_statistics.html", null ],
@@ -151,6 +147,7 @@ var hierarchy =
     [ "mage::GlyphLessThan", "structmage_1_1_glyph_less_than.html", null ],
     [ "mage::Pipeline::GS", "structmage_1_1_pipeline_1_1_g_s.html", null ],
     [ "mage::HandleCloser", "structmage_1_1_handle_closer.html", null ],
+    [ "mage::DoubleEndedMemoryStack::HighAllocator< DataT >", "structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html", null ],
     [ "mage::Pipeline::HS", "structmage_1_1_pipeline_1_1_h_s.html", null ],
     [ "mage::Pipeline::IA", "structmage_1_1_pipeline_1_1_i_a.html", null ],
     [ "mage::IdGenerator", "structmage_1_1_id_generator.html", null ],
@@ -175,6 +172,7 @@ var hierarchy =
       [ "mage::Engine", "classmage_1_1_engine.html", null ]
     ] ],
     [ "mage::LoggingConfiguration", "structmage_1_1_logging_configuration.html", null ],
+    [ "mage::DoubleEndedMemoryStack::LowAllocator< DataT >", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html", null ],
     [ "mage::MainWindow", "classmage_1_1_main_window.html", null ],
     [ "mage::Material", "structmage_1_1_material.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
@@ -212,8 +210,13 @@ var hierarchy =
     [ "mage::Pipeline::PS", "structmage_1_1_pipeline_1_1_p_s.html", null ],
     [ "mage::ReadWriteMutex", "structmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
-    [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
-    [ "mage::RenderingStateCache", "structmage_1_1_rendering_state_cache.html", null ],
+    [ "mage::AlignedAllocator< DataT, AlignmentS >::rebind< DataU >", "structmage_1_1_aligned_allocator_1_1rebind.html", null ],
+    [ "mage::MemoryArena::Allocator< DataT >::rebind< DataU >", "structmage_1_1_memory_arena_1_1_allocator_1_1rebind.html", null ],
+    [ "mage::SingleEndedMemoryStack::Allocator< DataT >::rebind< DataU >", "structmage_1_1_single_ended_memory_stack_1_1_allocator_1_1rebind.html", null ],
+    [ "mage::DoubleEndedMemoryStack::LowAllocator< DataT >::rebind< DataU >", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator_1_1rebind.html", null ],
+    [ "mage::DoubleEndedMemoryStack::HighAllocator< DataT >::rebind< DataU >", "structmage_1_1_double_ended_memory_stack_1_1_high_allocator_1_1rebind.html", null ],
+    [ "mage::RenderingManager", "classmage_1_1_rendering_manager.html", null ],
+    [ "mage::RenderingStateManager", "structmage_1_1_rendering_state_manager.html", null ],
     [ "mage::Resource< ResourceT >", "classmage_1_1_resource.html", null ],
     [ "mage::Resource< const Texture >", "classmage_1_1_resource.html", [
       [ "mage::Texture", "classmage_1_1_texture.html", null ]
@@ -245,6 +248,7 @@ var hierarchy =
     [ "mage::ShadingNormalPass", "classmage_1_1_shading_normal_pass.html", null ],
     [ "mage::ShadowCubeMapBuffer", "structmage_1_1_shadow_cube_map_buffer.html", null ],
     [ "mage::ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html", null ],
+    [ "mage::SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html", null ],
     [ "mage::Sky", "structmage_1_1_sky.html", null ],
     [ "mage::SkyPass", "classmage_1_1_sky_pass.html", null ],
     [ "mage::Pipeline::SO", "structmage_1_1_pipeline_1_1_s_o.html", null ],

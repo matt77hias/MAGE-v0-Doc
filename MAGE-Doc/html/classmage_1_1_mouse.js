@@ -5,12 +5,12 @@ var classmage_1_1_mouse =
     [ "Mouse", "classmage_1_1_mouse.html#ad91b06f0a0df67eefc972997169d12c2", null ],
     [ "~Mouse", "classmage_1_1_mouse.html#a855f1075ae774c8417d3da7a1e02d580", null ],
     [ "Get", "classmage_1_1_mouse.html#aa62bca1d085e86eeff1bf07e232e2a24", null ],
-    [ "GetDeltaWheel", "classmage_1_1_mouse.html#a836c9136878a5635cde3ee163de9c284", null ],
-    [ "GetDeltaX", "classmage_1_1_mouse.html#a049d574ae33751659ded5e4d156279aa", null ],
-    [ "GetDeltaY", "classmage_1_1_mouse.html#a3f82897668fffe89e514fd76b7414c9d", null ],
+    [ "GetDeltaWheel", "classmage_1_1_mouse.html#ad683097cc0cec09eb5c2ad1b17bd729f", null ],
+    [ "GetDeltaX", "classmage_1_1_mouse.html#a1f6c7164c1705d834c2f603f22398077", null ],
+    [ "GetDeltaY", "classmage_1_1_mouse.html#a95da9aa89fc63d4d96666da52e63d558", null ],
     [ "GetMouseButtonPress", "classmage_1_1_mouse.html#a9c8d4493c86685b259819b5995a17c7a", null ],
-    [ "GetPositionX", "classmage_1_1_mouse.html#a884d4a28a561c50abb713b81ccc9fa10", null ],
-    [ "GetPositionY", "classmage_1_1_mouse.html#a1deb99f8c45dcd18a5723505c2674035", null ],
+    [ "GetPositionX", "classmage_1_1_mouse.html#a0b7b47556aaa6e620d852349e21ba4af", null ],
+    [ "GetPositionY", "classmage_1_1_mouse.html#a4df9cf5c235c44a5988cd451b8ca3ddb", null ],
     [ "InitializeMouse", "classmage_1_1_mouse.html#ac158b6d6fff5b05dea5ebefa86c0d56a", null ],
     [ "operator=", "classmage_1_1_mouse.html#a585119f1b0db3fbc7436c86676518c8c", null ],
     [ "operator=", "classmage_1_1_mouse.html#a42d80f535a12356762a506438036dd71", null ],
@@ -18,8 +18,8 @@ var classmage_1_1_mouse =
     [ "m_di", "classmage_1_1_mouse.html#a892a9e1d5ad16ac9b67a5f69fbfedeab", null ],
     [ "m_hwindow", "classmage_1_1_mouse.html#a51592b367595f8ed772266104fc813c5", null ],
     [ "m_mouse", "classmage_1_1_mouse.html#a3f2803f3c0e008f5d764a11de3dbe098", null ],
-    [ "m_mouse_button_press_stamp", "classmage_1_1_mouse.html#a272ad3be6d26efa9b33684b25a5d0926", null ],
+    [ "m_mouse_button_press_stamp", "classmage_1_1_mouse.html#ac10dd127b4289731e0058f9588259c28", null ],
     [ "m_mouse_position", "classmage_1_1_mouse.html#a2a8332ef7a4daa0f9ed48a9a1ad80684", null ],
     [ "m_mouse_state", "classmage_1_1_mouse.html#af99645fb4226077abee4532a5e663066", null ],
-    [ "m_press_stamp", "classmage_1_1_mouse.html#aa407ef9198d1a3c11f0021c6e25710c8", null ]
+    [ "m_press_stamp", "classmage_1_1_mouse.html#a7633df92a818760b3efe694d4688961c", null ]
 ];

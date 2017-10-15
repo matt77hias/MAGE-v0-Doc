@@ -13,7 +13,7 @@ var classmage_1_1_rotation_script =
     [ "operator=", "classmage_1_1_rotation_script.html#a738c666a1aa42412da82d24368b20dfe", null ],
     [ "operator=", "classmage_1_1_rotation_script.html#a093aa3f50dcbbe68847bb0b5f6363e7a", null ],
     [ "SetRotationAxis", "classmage_1_1_rotation_script.html#a32c12db9206002a1aa2dd0e2e3b4ecd7", null ],
-    [ "Update", "classmage_1_1_rotation_script.html#a0d9c25142e10519b787b201b2b581433", null ],
+    [ "Update", "classmage_1_1_rotation_script.html#a767affada9bd2fcd2187365dbfd79b5b", null ],
     [ "m_axis", "classmage_1_1_rotation_script.html#a8fb1d0fb6e3dac1dd91f2d16e1954f21", null ],
     [ "m_transform", "classmage_1_1_rotation_script.html#a9dd84c2b928dece60bc1d72a16b20030", null ]
 ];

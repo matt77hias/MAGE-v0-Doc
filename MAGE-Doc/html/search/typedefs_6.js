@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['i16',['i16',['../namespacemage.html#a80228058266cc2ec5868d65b2a4c2f3c',1,'mage']]],
-  ['i32',['i32',['../namespacemage.html#ad59a7dbc22c51c308b6df9e9c3cafd62',1,'mage']]],
-  ['i64',['i64',['../namespacemage.html#a3d629c1ab28148a782661e5b14b6fe5e',1,'mage']]],
-  ['i8',['i8',['../namespacemage.html#ae590501eabc5b30d993320c2159423ee',1,'mage']]]
+  ['manhattaninputcontrollerscript',['ManhattanInputControllerScript',['../namespacemage.html#acbbf8d6f5eaedbb8fa90d8759eab2ff7',1,'mage']]],
+  ['memoryblock',['MemoryBlock',['../classmage_1_1_memory_arena.html#a3c40b9cfaf2cc58b713e2f5b1a99189d',1,'mage::MemoryArena']]],
+  ['memorystack',['MemoryStack',['../namespacemage.html#a62d21df474979ae55932482b43224a28',1,'mage']]]
 ];

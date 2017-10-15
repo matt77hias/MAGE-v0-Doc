@@ -20,6 +20,6 @@ var structmage_1_1_camera_settings =
     [ "SetRenderMode", "structmage_1_1_camera_settings.html#ab0d6720a08e88e018c2a2e6097933d98", null ],
     [ "ToggleRenderLayer", "structmage_1_1_camera_settings.html#a47c34af7eddc2a0f6256d137b5813a4c", null ],
     [ "m_brdf", "structmage_1_1_camera_settings.html#ac6a51ea7c770af79de4f97b53cab83b7", null ],
-    [ "m_render_layer_mask", "structmage_1_1_camera_settings.html#ae5551fd81b3b9e0c61a3ba8b3fb40896", null ],
+    [ "m_render_layer_mask", "structmage_1_1_camera_settings.html#ad27594c8dc755e0dd8ca55564a4dff8b", null ],
     [ "m_render_mode", "structmage_1_1_camera_settings.html#aa4d5139b4e8668c58507ead30812c84b", null ]
 ];

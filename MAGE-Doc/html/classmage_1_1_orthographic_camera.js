@@ -1,20 +1,20 @@
 var classmage_1_1_orthographic_camera =
 [
-    [ "OrthographicCamera", "classmage_1_1_orthographic_camera.html#a36c301d886a0e823f6f6a846c0c419d8", null ],
+    [ "OrthographicCamera", "classmage_1_1_orthographic_camera.html#a88efd2ecec0d6f330c4a890c2326529a", null ],
     [ "OrthographicCamera", "classmage_1_1_orthographic_camera.html#aad12a2901577a187bb53e4c2e2f5a658", null ],
     [ "OrthographicCamera", "classmage_1_1_orthographic_camera.html#ac7b6bd4cb086403e130e5deaaa16046d", null ],
     [ "~OrthographicCamera", "classmage_1_1_orthographic_camera.html#ac7d1f4ce12a5d0a2539b610f14f59304", null ],
     [ "Clone", "classmage_1_1_orthographic_camera.html#a873f0a715743a7dc104935995696dd33", null ],
     [ "CloneImplementation", "classmage_1_1_orthographic_camera.html#aeef89cff8f4272b1412fa3ce366e656d", null ],
-    [ "GetHeight", "classmage_1_1_orthographic_camera.html#af80f9a4a2340cd474180c1b6c43788eb", null ],
+    [ "GetHeight", "classmage_1_1_orthographic_camera.html#a3845253608fb385ca6e48c619c5b39c1", null ],
     [ "GetViewToProjectionMatrix", "classmage_1_1_orthographic_camera.html#a1e8ea42a5df6dab1163b2c3938480f7c", null ],
-    [ "GetWidth", "classmage_1_1_orthographic_camera.html#a62a3d61d2a28b2e90a83a0739d11129d", null ],
+    [ "GetWidth", "classmage_1_1_orthographic_camera.html#adbafcc6cf5175f10e75599b0bbe95740", null ],
     [ "operator=", "classmage_1_1_orthographic_camera.html#ac4a319517ed3b9708028e555660b23aa", null ],
     [ "operator=", "classmage_1_1_orthographic_camera.html#a7fc303921e07ae18dd6fb7e9b7812847", null ],
-    [ "SetHeight", "classmage_1_1_orthographic_camera.html#ac27c98097ed9d53d91729033de629f7e", null ],
-    [ "SetViewToProjectionMatrix", "classmage_1_1_orthographic_camera.html#a172b31e05b7f1aebaba1c833e82fc119", null ],
-    [ "SetWidth", "classmage_1_1_orthographic_camera.html#a192634a09a3ca3235fc63118e1aa30ef", null ],
-    [ "SetWidthAndHeight", "classmage_1_1_orthographic_camera.html#a2dd0dfc4ec5258a3b1bace03a71a68c9", null ],
-    [ "m_height", "classmage_1_1_orthographic_camera.html#a93edbe29954eef431d847183af4648cd", null ],
-    [ "m_width", "classmage_1_1_orthographic_camera.html#a8ef5fb497ae0ae764f3d3cd55b8cc81c", null ]
+    [ "SetHeight", "classmage_1_1_orthographic_camera.html#a29e910ff54a53ee149798cbf062e9416", null ],
+    [ "SetViewToProjectionMatrix", "classmage_1_1_orthographic_camera.html#a8b86c23bb9da55d9e55a4da4a82b9d72", null ],
+    [ "SetWidth", "classmage_1_1_orthographic_camera.html#a43af64f189a3159f50809ca499624ed6", null ],
+    [ "SetWidthAndHeight", "classmage_1_1_orthographic_camera.html#a1a2c9e7e74b7ab25070ffd6ec43faa4d", null ],
+    [ "m_height", "classmage_1_1_orthographic_camera.html#a2bd741a8d76cdb47636792858955fe62", null ],
+    [ "m_width", "classmage_1_1_orthographic_camera.html#a78586ef1dfd4e1ffa5d9b32378a1e7f8", null ]
 ];

@@ -1,0 +1,425 @@
+\hypertarget{structmage_1_1_aligned_allocator}{}\section{mage\+:\+:Aligned\+Allocator$<$ DataT, AlignmentS $>$ Struct Template Reference}
+\label{structmage_1_1_aligned_allocator}\index{mage\+::\+Aligned\+Allocator$<$ Data\+T, Alignment\+S $>$@{mage\+::\+Aligned\+Allocator$<$ Data\+T, Alignment\+S $>$}}
+
+
+{\ttfamily \#include $<$allocation.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_aligned_allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a04614928948b5589c241726e3441e058}{value\+\_\+type} = DataT
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a4f6b515d4d9d27a8b9e27376302034c4}{pointer} = DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a95fd7625632a0143d72ad02ca520be4d}{reference} = DataT \&
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a959cb724f93b205c290ff2ecbd146254}{const\+\_\+pointer} = const DataT $\ast$
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a97c3aca3eba1b0a5a6c68d5c444b36e9}{const\+\_\+reference} = const DataT \&
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_a7184b9ffd131938071f9734e9291976e}{size\+\_\+type} = size\+\_\+t
+\item 
+using \hyperlink{structmage_1_1_aligned_allocator_aa66abd74c38e5e565fca600a066a5915}{difference\+\_\+type} = ptrdiff\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_aligned_allocator_a95363950f216346db818997988be73bf}{Aligned\+Allocator} () noexcept=default
+\item 
+\hyperlink{structmage_1_1_aligned_allocator_a57a8626271cc5bb8798201afb499dce7}{Aligned\+Allocator} (const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&allocator) noexcept=default
+\item 
+\hyperlink{structmage_1_1_aligned_allocator_aa83ac0904d3354ed96a92f7ad713e1a7}{Aligned\+Allocator} (\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&\&allocator) noexcept=default
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\\hyperlink{structmage_1_1_aligned_allocator_a728d237ac0ae50bcc593a94f6e4cd4fc}{Aligned\+Allocator} (const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataU, AlignmentS $>$ \&allocator) noexcept
+\item 
+\hyperlink{structmage_1_1_aligned_allocator_a98bda5c375a177eaa71cd622622451eb}{$\sim$\+Aligned\+Allocator} ()=default
+\item 
+\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \& \hyperlink{structmage_1_1_aligned_allocator_ae30b9ecaee6492dc7828e693953d6080}{operator=} (const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&allocator) noexcept=delete
+\item 
+\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \& \hyperlink{structmage_1_1_aligned_allocator_a968996d679acfd7ce9d113bf33d31c91}{operator=} (\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&\&allocator) noexcept=delete
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_aligned_allocator_a8c7fc099279194e37afa8e4dae1a64fa}{address} (DataT \&data) const noexcept
+\item 
+const DataT $\ast$ \hyperlink{structmage_1_1_aligned_allocator_afd76c25aa8f6918172c8e0ac8146963a}{address} (const DataT \&data) const noexcept
+\item 
+size\+\_\+t \hyperlink{structmage_1_1_aligned_allocator_a81ac9662f40f1708d6f8d4e93fa8ee08}{max\+\_\+size} () const noexcept
+\item 
+DataT $\ast$ \hyperlink{structmage_1_1_aligned_allocator_aa40b7eb431ac79e6b09bbd9e55906e78}{allocate} (size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\DataT $\ast$ \hyperlink{structmage_1_1_aligned_allocator_ae7369bc87b8720a0433f8ceda2a52218}{allocate} (size\+\_\+t count, const DataU $\ast$hint) const
+\item 
+void \hyperlink{structmage_1_1_aligned_allocator_a7893ac09903ab7c8601e9db45715c5d7}{deallocate} (DataT $\ast$data, size\+\_\+t count) const
+\item 
+{\footnotesize template$<$typename DataU , typename... Constructor\+ArgsT$>$ }\\void \hyperlink{structmage_1_1_aligned_allocator_a1dab96378ee44579508c6722b9f6164c}{construct} (DataU $\ast$data, Constructor\+ArgsT \&\&... args) const
+\item 
+{\footnotesize template$<$typename DataU $>$ }\\void \hyperlink{structmage_1_1_aligned_allocator_a5334e1389c6018a91fdfe2db592d2b74}{destroy} (DataU $\ast$data) const
+\item 
+bool \hyperlink{structmage_1_1_aligned_allocator_a3577dfd220aaf85e07ecd1770101a087}{operator==} (const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&rhs) const noexcept
+\item 
+bool \hyperlink{structmage_1_1_aligned_allocator_a878ebf0d8ad7e6e91bc9d788c8bdbbc7}{operator!=} (const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&rhs) const noexcept
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$\newline
+struct mage\+::\+Aligned\+Allocator$<$ Data\+T, Alignment\+S $>$}
+
+A struct of aligned allocators.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+{\em AlignmentS} & The alignment size in bytes. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structmage_1_1_aligned_allocator_a959cb724f93b205c290ff2ecbd146254}{}\label{structmage_1_1_aligned_allocator_a959cb724f93b205c290ff2ecbd146254} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a959cb724f93b205c290ff2ecbd146254}{const\+\_\+pointer} =  const DataT $\ast$}
+
+The pointer to constant element of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_a97c3aca3eba1b0a5a6c68d5c444b36e9}{}\label{structmage_1_1_aligned_allocator_a97c3aca3eba1b0a5a6c68d5c444b36e9} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a97c3aca3eba1b0a5a6c68d5c444b36e9}{const\+\_\+reference} =  const DataT \&}
+
+The reference to constant element of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_aa66abd74c38e5e565fca600a066a5915}{}\label{structmage_1_1_aligned_allocator_aa66abd74c38e5e565fca600a066a5915} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_aa66abd74c38e5e565fca600a066a5915}{difference\+\_\+type} =  ptrdiff\+\_\+t}
+
+The difference between two pointers to elements of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_a4f6b515d4d9d27a8b9e27376302034c4}{}\label{structmage_1_1_aligned_allocator_a4f6b515d4d9d27a8b9e27376302034c4} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!pointer@{pointer}}
+\index{pointer@{pointer}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a4f6b515d4d9d27a8b9e27376302034c4}{pointer} =  DataT $\ast$}
+
+The pointer to element of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_a95fd7625632a0143d72ad02ca520be4d}{}\label{structmage_1_1_aligned_allocator_a95fd7625632a0143d72ad02ca520be4d} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!reference@{reference}}
+\index{reference@{reference}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a95fd7625632a0143d72ad02ca520be4d}{reference} =  DataT \&}
+
+The reference to element of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_a7184b9ffd131938071f9734e9291976e}{}\label{structmage_1_1_aligned_allocator_a7184b9ffd131938071f9734e9291976e} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a7184b9ffd131938071f9734e9291976e}{size\+\_\+type} =  size\+\_\+t}
+
+The size type of elements of aligned allocators. \hypertarget{structmage_1_1_aligned_allocator_a04614928948b5589c241726e3441e058}{}\label{structmage_1_1_aligned_allocator_a04614928948b5589c241726e3441e058} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+using \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator_a04614928948b5589c241726e3441e058}{value\+\_\+type} =  DataT}
+
+The element type of aligned allocators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_aligned_allocator_a95363950f216346db818997988be73bf}{}\label{structmage_1_1_aligned_allocator_a95363950f216346db818997988be73bf} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!Aligned\+Allocator@{Aligned\+Allocator}}
+\index{Aligned\+Allocator@{Aligned\+Allocator}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{Aligned\+Allocator()}{AlignedAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an aligned allocator. \hypertarget{structmage_1_1_aligned_allocator_a57a8626271cc5bb8798201afb499dce7}{}\label{structmage_1_1_aligned_allocator_a57a8626271cc5bb8798201afb499dce7} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!Aligned\+Allocator@{Aligned\+Allocator}}
+\index{Aligned\+Allocator@{Aligned\+Allocator}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{Aligned\+Allocator()}{AlignedAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an aligned allocator from the given aligned allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the aligned allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_aligned_allocator_aa83ac0904d3354ed96a92f7ad713e1a7}{}\label{structmage_1_1_aligned_allocator_aa83ac0904d3354ed96a92f7ad713e1a7} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!Aligned\+Allocator@{Aligned\+Allocator}}
+\index{Aligned\+Allocator@{Aligned\+Allocator}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{Aligned\+Allocator()}{AlignedAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an aligned allocator by moving the given aligned allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the aligned allocator to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_aligned_allocator_a728d237ac0ae50bcc593a94f6e4cd4fc}{}\label{structmage_1_1_aligned_allocator_a728d237ac0ae50bcc593a94f6e4cd4fc} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!Aligned\+Allocator@{Aligned\+Allocator}}
+\index{Aligned\+Allocator@{Aligned\+Allocator}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{Aligned\+Allocator()}{AlignedAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+template$<$typename DataU $>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataU, AlignmentS $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs an aligned allocator from the given aligned allocator.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the aligned allocator to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_aligned_allocator_a98bda5c375a177eaa71cd622622451eb}{}\label{structmage_1_1_aligned_allocator_a98bda5c375a177eaa71cd622622451eb} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!````~Aligned\+Allocator@{$\sim$\+Aligned\+Allocator}}
+\index{````~Aligned\+Allocator@{$\sim$\+Aligned\+Allocator}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{$\sim$\+Aligned\+Allocator()}{~AlignedAllocator()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::$\sim$\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this aligned allocator. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_aligned_allocator_a8c7fc099279194e37afa8e4dae1a64fa}{}\label{structmage_1_1_aligned_allocator_a8c7fc099279194e37afa8e4dae1a64fa} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::address (\begin{DoxyParamCaption}\item[{DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_aligned_allocator_afd76c25aa8f6918172c8e0ac8146963a}{}\label{structmage_1_1_aligned_allocator_afd76c25aa8f6918172c8e0ac8146963a} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!address@{address}}
+\index{address@{address}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+const DataT$\ast$ \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::address (\begin{DoxyParamCaption}\item[{const DataT \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the address of the given data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A reference to the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the given data. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_aligned_allocator_aa40b7eb431ac79e6b09bbd9e55906e78}{}\label{structmage_1_1_aligned_allocator_aa40b7eb431ac79e6b09bbd9e55906e78} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment {\ttfamily AlignmentS}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_aligned_allocator_ae7369bc87b8720a0433f8ceda2a52218}{}\label{structmage_1_1_aligned_allocator_ae7369bc87b8720a0433f8ceda2a52218} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+template$<$typename DataU $>$ \\
+DataT$\ast$ \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{const DataU $\ast$}]{hint }\end{DoxyParamCaption}) const}
+
+Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily DataT}, and returns a pointer to the first element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily DataT} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em hint} & Either {\ttfamily nullptr} or a value previously obtained by another call to \hyperlink{}{mage\+::\+Aligned\+Allocator$<$\+Data\+T,size\+\_\+t$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Aligned\+Allocator$<$\+Data\+T,size\+\_\+t$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet freed with \hyperlink{}{mage\+::\+Aligned\+Allocator$<$\+Data\+T,size\+\_\+t$>$\+::deallocate(\+Data\+T$\ast$, size\+\_\+t)}. When not equal to {\ttfamily nullptr}, this value may be used as a hint to improve performance by allocating the new block near the one specified. The address of an adjacent element is often a good choice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment {\ttfamily AlignmentS}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{structmage_1_1_aligned_allocator_a1dab96378ee44579508c6722b9f6164c}{}\label{structmage_1_1_aligned_allocator_a1dab96378ee44579508c6722b9f6164c} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!construct@{construct}}
+\index{construct@{construct}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+template$<$typename DataU , typename... Constructor\+ArgsT$>$ \\
+void \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::construct (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption}) const}
+
+Constructs an element object of type {\ttfamily DataU} on the location pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+{\em Constructor\+ArgsT} & The constructor argument types of the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the location. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the constructing the element object of type {\ttfamily DataU}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not allocate storage space for the element. It should already be available at {\itshape ptr}. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_aligned_allocator_a7893ac09903ab7c8601e9db45715c5d7}{}\label{structmage_1_1_aligned_allocator_a7893ac09903ab7c8601e9db45715c5d7} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+void \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::deallocate (\begin{DoxyParamCaption}\item[{DataT $\ast$}]{data,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+
+Releases a block of storage previously allocated with \hyperlink{}{mage\+::\+Aligned\+Allocator$<$\+Data\+T,size\+\_\+t$>$\+::allocate(size\+\_\+t)} or \hyperlink{}{mage\+::\+Aligned\+Allocator$<$\+Data\+T,size\+\_\+t$>$\+::allocate$<$\+Data\+U$>$(size\+\_\+t, const Data\+U$\ast$)} and not yet released.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & A pointer to the memory block that needs to be released. \\
+\hline
+\mbox{\tt in}  & {\em count} & The number of element objects allocated on the call to allocate for this block of storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The elements in the array are not destroyed. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_aligned_allocator_a5334e1389c6018a91fdfe2db592d2b74}{}\label{structmage_1_1_aligned_allocator_a5334e1389c6018a91fdfe2db592d2b74} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!destroy@{destroy}}
+\index{destroy@{destroy}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+template$<$typename DataU $>$ \\
+void \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::destroy (\begin{DoxyParamCaption}\item[{DataU $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+Destroys in-\/place the element pointed by the given pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataU} & The element type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The pointer to the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This does not deallocate the storage for the element. 
+\end{DoxyNote}
+\hypertarget{structmage_1_1_aligned_allocator_a81ac9662f40f1708d6f8d4e93fa8ee08}{}\label{structmage_1_1_aligned_allocator_a81ac9662f40f1708d6f8d4e93fa8ee08} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+size\+\_\+t \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the maximum number of elements, each of member type {\ttfamily DataT} that could potentially be allocated by a call to member allocate. \hypertarget{structmage_1_1_aligned_allocator_a878ebf0d8ad7e6e91bc9d788c8bdbbc7}{}\label{structmage_1_1_aligned_allocator_a878ebf0d8ad7e6e91bc9d788c8bdbbc7} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+bool \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this aligned allocator to the given aligned allocator for non-\/equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the aligned allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this aligned allocator cannot be deallocated from the given aligned allocator, and vice versa. This is never the case for stateless allocators. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_aligned_allocator_ae30b9ecaee6492dc7828e693953d6080}{}\label{structmage_1_1_aligned_allocator_ae30b9ecaee6492dc7828e693953d6080} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$\& \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Copies the given aligned allocator to this aligned allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the aligned allocator to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given aligned allocator (i.\+e. this aligned allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_aligned_allocator_a968996d679acfd7ce9d113bf33d31c91}{}\label{structmage_1_1_aligned_allocator_a968996d679acfd7ce9d113bf33d31c91} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$\& \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&\&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+Moves the given aligned allocator to this aligned allocator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em allocator} & A reference to the aligned allocator to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved aligned allocator (i.\+e. this aligned allocator). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_aligned_allocator_a3577dfd220aaf85e07ecd1770101a087}{}\label{structmage_1_1_aligned_allocator_a3577dfd220aaf85e07ecd1770101a087} 
+\index{mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!mage\+::\+Aligned\+Allocator@{mage\+::\+Aligned\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename DataT, size\+\_\+t AlignmentS = \+\_\+\+\_\+alignof(\+Data\+T)$>$ \\
+bool \hyperlink{structmage_1_1_aligned_allocator}{mage\+::\+Aligned\+Allocator}$<$ DataT, AlignmentS $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_aligned_allocator}{Aligned\+Allocator}$<$ DataT, AlignmentS $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Compares this aligned allocator to the given aligned allocator for equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the aligned allocator to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if storage allocated from this aligned allocator can be deallocated from the given aligned allocator, and vice versa. This is always the case for stateless allocators. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
