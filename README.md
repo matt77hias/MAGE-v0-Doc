@@ -16,6 +16,8 @@
 # [MAGE-Doc](http://matt77hias.github.io/MAGE-Doc)
 
 ## About
+<p align="center"><img src="https://github.com/matt77hias/MAGE/blob/master/res/Example.png"></p>
+
 The documentation of [MAGE](https://github.com/matt77hias/MAGE).
 
 ## Development
