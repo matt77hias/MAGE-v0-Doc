@@ -1,4 +1,4 @@
-<img align="left" src="res/MAGE.png" width="120px"/>
+<img align="left" src="https://github.com/matt77hias/MAGE/blob/master/res/MAGE.png" width="120px"/>
 
 [![Build status][s1]][av] [![License][s2]][do] [![License][s3]][li] [![Join the chat at https://gitter.im/WickedEngine/Lobby][s4]][gi]
 <a href="https://twitter.com/intent/follow?screen_name=matt77hias"><img src="https://img.shields.io/twitter/follow/matt77hias.svg?style=social" alt="follow on Twitter"></a>
