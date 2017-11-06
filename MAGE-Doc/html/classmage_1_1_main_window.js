@@ -1,5 +1,10 @@
 var classmage_1_1_main_window =
 [
+    [ "HotKey", "classmage_1_1_main_window.html#a313cce567381c233d893d982e2e0fd74", [
+      [ "Unused", "classmage_1_1_main_window.html#a313cce567381c233d893d982e2e0fd74a92e592d90b9548016776a6fb68dccded", null ],
+      [ "PrintScreen", "classmage_1_1_main_window.html#a313cce567381c233d893d982e2e0fd74abf54024481cd2ad6bbb9ae44b7312472", null ],
+      [ "AltPrintScreen", "classmage_1_1_main_window.html#a313cce567381c233d893d982e2e0fd74addd60da1bf3c7e63c80cef2dcecd4643", null ]
+    ] ],
     [ "MainWindow", "classmage_1_1_main_window.html#a007e36554196bc6aa38e9191cdedf587", null ],
     [ "MainWindow", "classmage_1_1_main_window.html#a8dc3c590bb168f8178a7db72ff60fd0c", null ],
     [ "MainWindow", "classmage_1_1_main_window.html#ab5c9cc962420580c62dd2b44c142cf4b", null ],

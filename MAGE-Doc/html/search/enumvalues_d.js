@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['read',['Read',['../structmage_1_1_read_write_mutex_lock.html#a5fee0529edf58803ee1f5d4afa084a3ba7a1a5f3e79fdc91edf2f5ead9d66abb4',1,'mage::ReadWriteMutexLock']]]
+  ['opaque',['Opaque',['../classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984afaa90538de35640e4b1e31ccf35b6eb5',1,'mage::RenderingStateManager']]]
 ];

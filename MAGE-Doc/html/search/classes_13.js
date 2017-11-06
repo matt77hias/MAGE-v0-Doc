@@ -16,7 +16,7 @@ var searchData=
   ['vertexpositiontexturetexture',['VertexPositionTextureTexture',['../structmage_1_1_vertex_position_texture_texture.html',1,'mage']]],
   ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html',1,'mage']]],
   ['viewfrustum',['ViewFrustum',['../structmage_1_1_view_frustum.html',1,'mage']]],
-  ['viewport',['Viewport',['../structmage_1_1_viewport.html',1,'mage']]],
+  ['viewport',['Viewport',['../classmage_1_1_viewport.html',1,'mage']]],
   ['vs',['VS',['../structmage_1_1_pipeline_1_1_v_s.html',1,'mage::Pipeline']]],
   ['vsreader',['VSReader',['../classmage_1_1_v_s_reader.html',1,'mage']]],
   ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html',1,'mage']]]

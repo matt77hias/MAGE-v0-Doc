@@ -27,6 +27,8 @@ virtual \hyperlink{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5}{$\sim
 \item 
 int \hyperlink{classmage_1_1_engine_a4ad554bca1ac892e1274f2e707c2a017}{Run} (\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&scene, int n\+Cmd\+Show=S\+W\+\_\+\+N\+O\+R\+M\+AL)
 \item 
+\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b}{Get\+Resource\+Manager} () const noexcept
+\item 
 \hyperlink{classmage_1_1_main_window}{Main\+Window} $\ast$ \hyperlink{classmage_1_1_engine_a56e7cbf3a781bd519ed79f0a75a9ce86}{Get\+Main\+Window} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_engine_afd52a8088d6d37605cb352028098c508}{On\+Active\+Change} (bool deactive) noexcept
@@ -36,8 +38,6 @@ const \hyperlink{classmage_1_1_rendering_manager}{Rendering\+Manager} $\ast$ \hy
 void \hyperlink{classmage_1_1_engine_a6ac289fd093967c370955810e26d251f}{On\+Mode\+Switch} () noexcept
 \item 
 const \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a9e8de859024c2b51d9b20ce498d6c07b}{Get\+Input\+Manager} () const noexcept
-\item 
-\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a8b89ee555f5208a99872d724389eba0b}{Get\+Resource\+Manager} () const noexcept
 \item 
 \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_adaec74f633fe6ed3a3e2ec745cd57343}{Get\+Scene\+Manager} () const noexcept
 \item 
@@ -54,9 +54,13 @@ static \hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{classmage_1_1_
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classmage_1_1_engine_a29a47448fb182b110d46d287a72b8b4e}{Initialize\+Systems} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
+\item 
+void \hyperlink{classmage_1_1_engine_ac0632bce91156f13d4bc76f5b25fc94b}{Uninitialize\+Systems} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $>$ \hyperlink{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{m\+\_\+resource\+\_\+manager}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_main_window}{Main\+Window} $>$ \hyperlink{classmage_1_1_engine_a3aea7e8c0c1247cac570334a3d3543d6}{m\+\_\+main\+\_\+window}
 \item 
@@ -67,8 +71,6 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 bool \hyperlink{classmage_1_1_engine_aa5cb2e0b7bb2c4a9020e79ab832ee221}{m\+\_\+mode\+\_\+switch}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $>$ \hyperlink{classmage_1_1_engine_a8e9048208a6a5c5b034aaa1cbdab28bc}{m\+\_\+input\+\_\+manager}
-\item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $>$ \hyperlink{classmage_1_1_engine_ac8d94579e72983a99a78be6b9b606a28}{m\+\_\+resource\+\_\+manager}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene_manager}{Scene\+Manager} $>$ \hyperlink{classmage_1_1_engine_afac8085ae572d623e77b1e0847440ab4}{m\+\_\+scene\+\_\+manager}
 \item 
@@ -327,7 +329,13 @@ Runs this engine.
 \begin{DoxyReturn}{Returns}
 If the function succeeds, terminating when it receives a {\ttfamily W\+M\+\_\+\+Q\+U\+IT} message, it returns the exit value contained in that message\textquotesingle{}s {\ttfamily w\+Param} parameter. If the function terminates before entering the message loop, it returns 0. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_ac0632bce91156f13d4bc76f5b25fc94b}{}\label{classmage_1_1_engine_ac0632bce91156f13d4bc76f5b25fc94b} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Uninitialize\+Systems@{Uninitialize\+Systems}}
+\index{Uninitialize\+Systems@{Uninitialize\+Systems}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Uninitialize\+Systems()}{UninitializeSystems()}}
+{\footnotesize\ttfamily void mage\+::\+Engine\+::\+Uninitialize\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
+Uninitializes the different systems of this engine. 
 
 \subsection{Member Data Documentation}
 \hypertarget{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{}\label{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63} 

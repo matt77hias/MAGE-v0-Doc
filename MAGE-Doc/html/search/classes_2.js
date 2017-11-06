@@ -1,6 +1,7 @@
 var searchData=
 [
   ['camera',['Camera',['../classmage_1_1_camera.html',1,'mage']]],
+  ['camerabuffer',['CameraBuffer',['../structmage_1_1_camera_buffer.html',1,'mage']]],
   ['cameranode',['CameraNode',['../classmage_1_1_camera_node.html',1,'mage']]],
   ['camerasettings',['CameraSettings',['../structmage_1_1_camera_settings.html',1,'mage']]],
   ['cartesianaxessystem',['CartesianAxesSystem',['../structmage_1_1_cartesian_axes_system.html',1,'mage']]],
@@ -11,6 +12,7 @@ var searchData=
   ['compiledshader',['CompiledShader',['../structmage_1_1_compiled_shader.html',1,'mage']]],
   ['conditionvariable',['ConditionVariable',['../structmage_1_1_condition_variable.html',1,'mage']]],
   ['constantbuffer',['ConstantBuffer',['../structmage_1_1_constant_buffer.html',1,'mage']]],
+  ['constantbuffer_3c_20mage_3a_3acamerabuffer_20_3e',['ConstantBuffer&lt; mage::CameraBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20mage_3a_3agamebuffer_20_3e',['ConstantBuffer&lt; mage::GameBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20mage_3a_3alightbuffer_20_3e',['ConstantBuffer&lt; mage::LightBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20mage_3a_3amodelbuffer_20_3e',['ConstantBuffer&lt; mage::ModelBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
@@ -18,7 +20,6 @@ var searchData=
   ['constantbuffer_3c_20mage_3a_3amodelnormaltransformbuffer_20_3e',['ConstantBuffer&lt; mage::ModelNormalTransformBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20mage_3a_3amodeltexturetransformbuffer_20_3e',['ConstantBuffer&lt; mage::ModelTextureTransformBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20mage_3a_3argbaspectrum_20_3e',['ConstantBuffer&lt; mage::RGBASpectrum &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
-  ['constantbuffer_3c_20mage_3a_3askybuffer_20_3e',['ConstantBuffer&lt; mage::SkyBuffer &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20xmmatrix_20_3e',['ConstantBuffer&lt; XMMATRIX &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantbuffer_3c_20xmvector_20_3e',['ConstantBuffer&lt; XMVECTOR &gt;',['../structmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantcomponentpass',['ConstantComponentPass',['../classmage_1_1_constant_component_pass.html',1,'mage']]],

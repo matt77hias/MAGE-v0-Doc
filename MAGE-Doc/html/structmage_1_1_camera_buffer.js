@@ -1,0 +1,25 @@
+var structmage_1_1_camera_buffer =
+[
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#aca0a689a43c84fdc02e72d792b1a0ab3", null ],
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a4677e0eeb321f52a6f0160c7265186a3", null ],
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a9ed685bdafbdc4b87546c082588f07c3", null ],
+    [ "~CameraBuffer", "structmage_1_1_camera_buffer.html#a893ff21cfa017537ccd91dd816715701", null ],
+    [ "operator=", "structmage_1_1_camera_buffer.html#a4c2f048e1c441ae147455722d9cd4af7", null ],
+    [ "operator=", "structmage_1_1_camera_buffer.html#a901081932ab76c9bdfacb0814e821190", null ],
+    [ "m_projection_to_view", "structmage_1_1_camera_buffer.html#ad64e571c4fd9595c2fcd40bfd602e024", null ],
+    [ "m_ss_viewport_height", "structmage_1_1_camera_buffer.html#a6bbc5a57e9f456518afacf0a0e5633ed", null ],
+    [ "m_ss_viewport_inv_height_minus1", "structmage_1_1_camera_buffer.html#a6aa695ae5bfa64139e104df95a6f844e", null ],
+    [ "m_ss_viewport_inv_width_minus1", "structmage_1_1_camera_buffer.html#a4e400cc708de607778c71aec784b30ce", null ],
+    [ "m_ss_viewport_top_left_x", "structmage_1_1_camera_buffer.html#a0584c712968ff83e6b22fa0ad83e0da5", null ],
+    [ "m_ss_viewport_top_left_y", "structmage_1_1_camera_buffer.html#ac6c5a7af84cef485dd9ddacd018e4a82", null ],
+    [ "m_ss_viewport_width", "structmage_1_1_camera_buffer.html#af7a4718829dc96716c4861bbe00bb7e0", null ],
+    [ "m_view_to_projection", "structmage_1_1_camera_buffer.html#aa23d2ecaed10960832215c2397884421", null ],
+    [ "m_view_to_world", "structmage_1_1_camera_buffer.html#a2c06f8a346844fb99fadb43d128f9d72", null ],
+    [ "m_viewport_height", "structmage_1_1_camera_buffer.html#a125fd91de1c41cc5bd1a741295bf0536", null ],
+    [ "m_viewport_inv_height_minus1", "structmage_1_1_camera_buffer.html#ad347cafbbd512bda9324033d08315846", null ],
+    [ "m_viewport_inv_width_minus1", "structmage_1_1_camera_buffer.html#a732177939aabe34b07d2120275fb246a", null ],
+    [ "m_viewport_top_left_x", "structmage_1_1_camera_buffer.html#aa1a4a218d604beb0777e9286daad8c8b", null ],
+    [ "m_viewport_top_left_y", "structmage_1_1_camera_buffer.html#af3200b46348fecc86ecca3717767ae6b", null ],
+    [ "m_viewport_width", "structmage_1_1_camera_buffer.html#a9aec8f6ee54281ae7ec410be846c3658", null ],
+    [ "m_world_to_view", "structmage_1_1_camera_buffer.html#a28db697d7da502479b3e29752122c9f4", null ]
+];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['rasterizerstateindex',['RasterizerStateIndex',['../structmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640a',1,'mage::RenderingStateManager']]],
-  ['renderlayer',['RenderLayer',['../namespacemage.html#a8b4a82582105b0299e2c2be5af7255d6',1,'mage']]],
-  ['rendermode',['RenderMode',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fd',1,'mage']]],
-  ['rotationaxes',['RotationAxes',['../classmage_1_1_mouse_look_script.html#af63fd955f796c11e0378813e5d1ab5f8',1,'mage::MouseLookScript']]],
-  ['rotationaxis',['RotationAxis',['../classmage_1_1_rotation_script.html#ad06cf896ce6dfe4f6676b263d15b4ee9',1,'mage::RotationScript']]]
+  ['psindex',['PSIndex',['../classmage_1_1_constant_component_pass.html#a5700234587f2aa0ebdb4f7790704f00b',1,'mage::ConstantComponentPass::PSIndex()'],['../classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379',1,'mage::GBufferPass::PSIndex()'],['../classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19',1,'mage::ShadingNormalPass::PSIndex()'],['../classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4a',1,'mage::VariableShadingPass::PSIndex()']]]
 ];

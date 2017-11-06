@@ -47,7 +47,7 @@ const vector$<$ const \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node} $\ast$
 \item 
 const \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \& \hyperlink{structmage_1_1_pass_buffer_a91cbe609833b84c12113c9676b9de903}{Get\+Ambient\+Light} () const noexcept
 \item 
-const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a406b7dcb655d3689f0a4400edc2e9bf8}{Get\+Fog} () const noexcept
+const \hyperlink{classmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a406b7dcb655d3689f0a4400edc2e9bf8}{Get\+Fog} () const noexcept
 \item 
 const \hyperlink{structmage_1_1_sky}{Sky} $\ast$ \hyperlink{structmage_1_1_pass_buffer_af6355cb9bd927f53bb93347348f21a11}{Get\+Sky} () const noexcept
 \end{DoxyCompactItemize}
@@ -91,7 +91,7 @@ vector$<$ const \hyperlink{classmage_1_1_sprite_node}{Sprite\+Node} $\ast$$>$ \h
 \item 
 \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_pass_buffer_a311ad723470aff0ad80c325d9ead07b9}{m\+\_\+ambient\+\_\+light}
 \item 
-const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a3691cc52fe3bc5f1c86bf0dad36061d8}{m\+\_\+fog}
+const \hyperlink{classmage_1_1_scene_fog}{Scene\+Fog} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a3691cc52fe3bc5f1c86bf0dad36061d8}{m\+\_\+fog}
 \item 
 const \hyperlink{structmage_1_1_sky}{Sky} $\ast$ \hyperlink{structmage_1_1_pass_buffer_a19d0163dbfe7e60c664fdf433d47146b}{m\+\_\+sky}
 \end{DoxyCompactItemize}
@@ -151,7 +151,7 @@ Destructs this pass buffer.
 Returns the ambient light of this pass buffer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the R\+GB spectrum of the ambient light of this pass buffer. 
+A reference to the radiance spectrum of the ambient light of this pass buffer. 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_pass_buffer_a1b3745dab0028b470c76c695e55f6466}{}\label{structmage_1_1_pass_buffer_a1b3745dab0028b470c76c695e55f6466} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!Get\+Cameras@{Get\+Cameras}}
@@ -190,7 +190,7 @@ A reference to a vector containing the directional light with shadow mapping nod
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!Get\+Fog@{Get\+Fog}}
 \index{Get\+Fog@{Get\+Fog}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
 \subsubsection{\texorpdfstring{Get\+Fog()}{GetFog()}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog}$\ast$ mage\+::\+Pass\+Buffer\+::\+Get\+Fog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_scene_fog}{Scene\+Fog}$\ast$ mage\+::\+Pass\+Buffer\+::\+Get\+Fog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the fog of this pass buffer.
 
@@ -428,7 +428,7 @@ Updates the sprites of this pass buffer for the given scene.
 \subsubsection{\texorpdfstring{m\+\_\+ambient\+\_\+light}{m\_ambient\_light}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Pass\+Buffer\+::m\+\_\+ambient\+\_\+light\hspace{0.3cm}{\ttfamily [private]}}
 
-The R\+GB spectrum of the ambient light of this pass buffer. \hypertarget{structmage_1_1_pass_buffer_a4885440342be6a2cd11002781704a63f}{}\label{structmage_1_1_pass_buffer_a4885440342be6a2cd11002781704a63f} 
+The radiance spectrum of the ambient light of this pass buffer. \hypertarget{structmage_1_1_pass_buffer_a4885440342be6a2cd11002781704a63f}{}\label{structmage_1_1_pass_buffer_a4885440342be6a2cd11002781704a63f} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+cameras@{m\+\_\+cameras}}
 \index{m\+\_\+cameras@{m\+\_\+cameras}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+cameras}{m\_cameras}}
@@ -444,7 +444,7 @@ A vector containing pointers to the directional nodes of this pass buffer. \hype
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+fog@{m\+\_\+fog}}
 \index{m\+\_\+fog@{m\+\_\+fog}!mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}}
 \subsubsection{\texorpdfstring{m\+\_\+fog}{m\_fog}}
-{\footnotesize\ttfamily const \hyperlink{structmage_1_1_scene_fog}{Scene\+Fog}$\ast$ mage\+::\+Pass\+Buffer\+::m\+\_\+fog\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_scene_fog}{Scene\+Fog}$\ast$ mage\+::\+Pass\+Buffer\+::m\+\_\+fog\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the scene fog of this pass buffer. \hypertarget{structmage_1_1_pass_buffer_ab4553bc8afe80eff1f52d511cd23e90b}{}\label{structmage_1_1_pass_buffer_ab4553bc8afe80eff1f52d511cd23e90b} 
 \index{mage\+::\+Pass\+Buffer@{mage\+::\+Pass\+Buffer}!m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}}
