@@ -18,6 +18,7 @@ var classmage_1_1_engine =
     [ "operator=", "classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd", null ],
     [ "operator=", "classmage_1_1_engine.html#a22607a263e0be5e179cc0e4bf13b18f7", null ],
     [ "Run", "classmage_1_1_engine.html#a4ad554bca1ac892e1274f2e707c2a017", null ],
+    [ "UninitializeSystems", "classmage_1_1_engine.html#ac0632bce91156f13d4bc76f5b25fc94b", null ],
     [ "m_deactive", "classmage_1_1_engine.html#ab8a4b0157403708ae7d1d018a95b4c63", null ],
     [ "m_engine_stats", "classmage_1_1_engine.html#aa0c82f248a2fbec3fbf778665a440edc", null ],
     [ "m_fixed_delta_time", "classmage_1_1_engine.html#a95557e1b6cba52b393c94d80d80bea4c", null ],

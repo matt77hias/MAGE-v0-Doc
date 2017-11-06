@@ -10,6 +10,7 @@ var classmage_1_1_camera_node =
     [ "GetCamera", "classmage_1_1_camera_node.html#aa911263cfce8cec2a42c6d03d25af606", null ],
     [ "GetSettings", "classmage_1_1_camera_node.html#a0bd616c44db36301845b02a03f1db5ba", null ],
     [ "GetSettings", "classmage_1_1_camera_node.html#a1098f7929715018978b1bb8ac00c7148", null ],
+    [ "GetSSViewport", "classmage_1_1_camera_node.html#a1280c0c2735869d8703b67322f13b3cc", null ],
     [ "GetViewport", "classmage_1_1_camera_node.html#ac280168901be6f8bdf03300f0b8c1a69", null ],
     [ "GetViewport", "classmage_1_1_camera_node.html#a09a761526f36b9547d29917835e907d6", null ],
     [ "operator=", "classmage_1_1_camera_node.html#a03442d51e4279717f6692e0a731967a1", null ],

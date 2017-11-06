@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.80.0</span>
+   &#160;<span id="projectnumber">v0.104.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -414,8 +414,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the alpha channel of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The alpha channel of the base color of this material. </dd></dl>
+<p>Returns the alpha channel of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The alpha channel of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -441,8 +441,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the blue channel of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The blue channel of the base color of this material. </dd></dl>
+<p>Returns the blue (sRGB) channel of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The blue (sRGB) channel of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -468,8 +468,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the green channel of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The green channel of the base color of this material. </dd></dl>
+<p>Returns the green (sRGB) channel of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The green (sRGB) channel of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -495,8 +495,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the red channel of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The red channel of the base color of this material. </dd></dl>
+<p>Returns the red (sRGB) channel of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The red (sRGB) channel of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -522,8 +522,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the RGB channels of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The RGB channels of the base color of this material. </dd></dl>
+<p>Returns the RGB (sRGB) channels of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The RGB (sRGB) channels of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -549,8 +549,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the RGBA channels of the base color of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>The RGBA channels of the base color of this material. </dd></dl>
+<p>Returns the RGBA (sRGB) channels of the (sRGB) base color of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>The RGBA (sRGB) channels of the (sRGB) base color of this material. </dd></dl>
 
 </div>
 </div>
@@ -576,10 +576,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the shader resource view of the base color texture of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code>, if this material has no base color texture. </dd>
+<p>Returns the shader resource view of the (sRGB) base color texture of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code>, if this material has no (sRGB) base color texture. </dd>
 <dd>
-A pointer to the shader resource view of the base color texture of this material. </dd></dl>
+A pointer to the shader resource view of the (sRGB) base color texture of this material. </dd></dl>
 
 </div>
 </div>
@@ -605,8 +605,8 @@ A pointer to the shader resource view of the base color texture of this material
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the base color texture of this material.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the base color texture of this material. </dd></dl>
+<p>Returns the (sRGB) base color texture of this material.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the (sRGB) base color texture of this material. </dd></dl>
 
 </div>
 </div>
@@ -1002,10 +1002,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the alpha channel of the base color of this material to the given value.</p>
+<p>Sets the alpha channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>alpha</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>The alpha channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>The alpha channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1035,10 +1036,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the blue channel of the base color of this material to the given value.</p>
+<p>Sets the blue (sRGB) channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>blue</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue (sRGB) channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1068,10 +1070,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the green channel of the base color of this material to the given value.</p>
+<p>Sets the green (sRGB) channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>green</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green (sRGB) channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1101,10 +1104,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the red channel of the base color of this material to the given value.</p>
+<p>Sets the red (sRGB) channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>red</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red (sRGB) channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1150,12 +1154,17 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the RGB channels of the base color of this material to the given values.</p>
+<p>Sets the red (sRGB), green (sRGB) and blue (sRGB) channel of the (sRGB) base color of this material to the given values.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>red</em> is an element of [0,1]. </dd>
+<dd>
+<em>green</em> is an element of [0,1]. </dd>
+<dd>
+<em>blue</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red channel of the base color. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green channel of the base color. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red (sRGB) channel of the (sRGB) base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green (sRGB) channel of the (sRGB) base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue (sRGB) channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1185,10 +1194,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the RGB channels of the base color of this material to the given value.</p>
+<p>Sets the red (sRGB), green (sRGB) and blue (sRGB) channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>rgb</em> is an element of [0,1]^3. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rgb</td><td>A reference to the RGB channels of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rgb</td><td>A reference to red (sRGB), green (sRGB) and blue (sRGB) channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1240,13 +1250,20 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the RGB channels of the base color of this material to the given values.</p>
+<p>Sets the red (sRGB), green (sRGB), blue (sRGB) and alpha channel of the (sRGB) base color of this material to the given values.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>red</em> is an element of [0,1]. </dd>
+<dd>
+<em>green</em> is an element of [0,1]. </dd>
+<dd>
+<em>blue</em> is an element of [0,1]. </dd>
+<dd>
+<em>alpha</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red channel of the base color. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green channel of the base color. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue channel of the base color. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>The alpha channel of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">red</td><td>The red (sRGB) channel of the (sRGB) base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">green</td><td>The green (sRGB) channel of the (sRGB) base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blue</td><td>The blue (sRGB) channel of the (sRGB) base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>The alpha channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1276,10 +1293,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the RGBA channels of the base color of this material to the given value.</p>
+<p>Sets the red (sRGB), green (sRGB), blue (sRGB) and alpha channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>rgba</em> is an element of [0,1]^4. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rgba</td><td>A reference to the RGBA channels of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rgba</td><td>A reference to red (sRGB), green (sRGB), blue (sRGB) and alpha channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1309,10 +1327,11 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the RGBA channels of the base color of this material to the given value.</p>
+<p>Sets the red (sRGB), green (sRGB), blue (sRGB) and alpha channel of the (sRGB) base color of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>rgba</em> is an element of [0,1]^4. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rgba</td><td>A reference to the RGBA channels of the base color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rgba</td><td>A reference to red (sRGB), green (sRGB), blue (sRGB) and alpha channel of the (sRGB) base color. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1334,10 +1353,10 @@ A pointer to the shader resource view of the normal texture of this material. </
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the base color texture of this material to the given base color texture.</p>
+<p>Sets the (sRGB) base color texture of this material to the given base color texture.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">base_color_texture</td><td>A reference to the base color texture. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">base_color_texture</td><td>A reference to the (sRGB) base color texture. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1426,6 +1445,7 @@ A pointer to the shader resource view of the normal texture of this material. </
 </table>
 </div><div class="memdoc">
 <p>Sets the metalness of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>metalness</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">metalness</td><td>The metalness. </td></tr>
@@ -1560,6 +1580,7 @@ A pointer to the shader resource view of the normal texture of this material. </
 </table>
 </div><div class="memdoc">
 <p>Sets the roughness of this material to the given value.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>roughness</em> is an element of [0,1]. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">roughness</td><td>The roughness. </td></tr>
@@ -1648,7 +1669,7 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The base color of this material. </p>
+<p>The (sRGB) base color of this material. </p>
 
 </div>
 </div>
@@ -1671,7 +1692,7 @@ A pointer to the shader resource view of the normal texture of this material. </
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A pointer to the base color texture of this material. </p>
+<p>A pointer to the (sRGB) base color texture of this material. </p>
 
 </div>
 </div>

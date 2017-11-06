@@ -1,10 +1,9 @@
 var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
-  ['scenefog',['SceneFog',['../structmage_1_1_scene_fog.html',1,'mage']]],
+  ['scenefog',['SceneFog',['../classmage_1_1_scene_fog.html',1,'mage']]],
   ['scenemanager',['SceneManager',['../classmage_1_1_scene_manager.html',1,'mage']]],
   ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html',1,'mage']]],
-  ['scenerenderer',['SceneRenderer',['../classmage_1_1_scene_renderer.html',1,'mage']]],
   ['semaphore',['Semaphore',['../structmage_1_1_semaphore.html',1,'mage']]],
   ['shader',['Shader',['../classmage_1_1_shader.html',1,'mage']]],
   ['shadingnormalpass',['ShadingNormalPass',['../classmage_1_1_shading_normal_pass.html',1,'mage']]],
@@ -12,7 +11,6 @@ var searchData=
   ['shadowmapbuffer',['ShadowMapBuffer',['../structmage_1_1_shadow_map_buffer.html',1,'mage']]],
   ['singleendedmemorystack',['SingleEndedMemoryStack',['../classmage_1_1_single_ended_memory_stack.html',1,'mage']]],
   ['sky',['Sky',['../structmage_1_1_sky.html',1,'mage']]],
-  ['skybuffer',['SkyBuffer',['../structmage_1_1_sky_buffer.html',1,'mage']]],
   ['skypass',['SkyPass',['../classmage_1_1_sky_pass.html',1,'mage']]],
   ['so',['SO',['../structmage_1_1_pipeline_1_1_s_o.html',1,'mage::Pipeline']]],
   ['spotlight',['SpotLight',['../classmage_1_1_spot_light.html',1,'mage']]],
@@ -40,5 +38,6 @@ var searchData=
   ['structuredbuffer_3c_20mage_3a_3aomnilightwithshadowmappingbuffer_20_3e',['StructuredBuffer&lt; mage::OmniLightWithShadowMappingBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
   ['structuredbuffer_3c_20mage_3a_3aspotlightbuffer_20_3e',['StructuredBuffer&lt; mage::SpotLightBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
   ['structuredbuffer_3c_20mage_3a_3aspotlightwithshadowmappingbuffer_20_3e',['StructuredBuffer&lt; mage::SpotLightWithShadowMappingBuffer &gt;',['../structmage_1_1_structured_buffer.html',1,'mage']]],
+  ['swapchain',['SwapChain',['../classmage_1_1_swap_chain.html',1,'mage']]],
   ['switchscenescript',['SwitchSceneScript',['../classmage_1_1_switch_scene_script.html',1,'mage']]]
 ];

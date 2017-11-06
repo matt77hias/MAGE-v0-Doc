@@ -8,6 +8,7 @@ var classmage_1_1_camera =
     [ "CloneImplementation", "classmage_1_1_camera.html#aedf6e7d6ee6c6e9e82da814ef8e705ab", null ],
     [ "GetFarZ", "classmage_1_1_camera.html#a47e6801d228891453540b0c1e787724a", null ],
     [ "GetNearZ", "classmage_1_1_camera.html#add4054d66911dd183cdec85eda77b4a1", null ],
+    [ "GetProjectionToViewMatrix", "classmage_1_1_camera.html#a7a919b85084c79786a65c6df8872f6f1", null ],
     [ "GetViewToProjectionMatrix", "classmage_1_1_camera.html#ad3e8380ba9718a983f72d753d08f556e", null ],
     [ "operator=", "classmage_1_1_camera.html#a9ae561f9cc0ed0dd855ee1d824dad090", null ],
     [ "operator=", "classmage_1_1_camera.html#a83e33f57394e85eee58745eb8e05b282", null ],

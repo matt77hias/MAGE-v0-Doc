@@ -7,6 +7,7 @@ var classmage_1_1_orthographic_camera =
     [ "Clone", "classmage_1_1_orthographic_camera.html#a873f0a715743a7dc104935995696dd33", null ],
     [ "CloneImplementation", "classmage_1_1_orthographic_camera.html#aeef89cff8f4272b1412fa3ce366e656d", null ],
     [ "GetHeight", "classmage_1_1_orthographic_camera.html#a3845253608fb385ca6e48c619c5b39c1", null ],
+    [ "GetProjectionToViewMatrix", "classmage_1_1_orthographic_camera.html#a9917199e789a06624219166f72b940f2", null ],
     [ "GetViewToProjectionMatrix", "classmage_1_1_orthographic_camera.html#a1e8ea42a5df6dab1163b2c3938480f7c", null ],
     [ "GetWidth", "classmage_1_1_orthographic_camera.html#adbafcc6cf5175f10e75599b0bbe95740", null ],
     [ "operator=", "classmage_1_1_orthographic_camera.html#ac4a319517ed3b9708028e555660b23aa", null ],

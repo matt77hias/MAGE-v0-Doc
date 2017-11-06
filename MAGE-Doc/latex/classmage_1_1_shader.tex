@@ -13,9 +13,9 @@ Inheritance diagram for mage\+:\+:Shader$<$ ShaderT, Pipeline\+StageT $>$\+:\beg
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_shader_a4f02b0d895bd5aafbc72835f0f005c67}{Shader} (const wstring \&guid, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
+\hyperlink{classmage_1_1_shader_ab5b6db34961dd3d65bfe4ec1452966e6}{Shader} (const wstring \&guid, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} \&compiled\+\_\+shader)
 \item 
-\hyperlink{classmage_1_1_shader_a5fe620f476f956d5d56e9567493d398a}{Shader} (const wstring \&guid, I\+D3\+D11\+Device2 $\ast$device, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
+\hyperlink{classmage_1_1_shader_a871672eab60ad6994132bddc7802b817}{Shader} (const wstring \&guid, I\+D3\+D11\+Device2 $\ast$device, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} \&compiled\+\_\+shader)
 \item 
 \hyperlink{classmage_1_1_shader_a512a10b41172e984d8f6983497bcc9e5}{Shader} (const \hyperlink{classmage_1_1_shader}{Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&shader)=delete
 \item 
@@ -32,7 +32,7 @@ void \hyperlink{classmage_1_1_shader_a64ad7404bd0fccc96debd67a4ba4beed}{Bind\+Sh
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_shader_ac905389877d7722cc47b5f5177cf678f}{Setup\+Shader} (I\+D3\+D11\+Device2 $\ast$device, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} $\ast$compiled\+\_\+shader)
+void \hyperlink{classmage_1_1_shader_ab98f1387553fbe7b62ec2722be5a421a}{Setup\+Shader} (I\+D3\+D11\+Device2 $\ast$device, const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader} \&compiled\+\_\+shader)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -57,25 +57,23 @@ A class of shaders.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_shader_a4f02b0d895bd5aafbc72835f0f005c67}{}\label{classmage_1_1_shader_a4f02b0d895bd5aafbc72835f0f005c67} 
+\hypertarget{classmage_1_1_shader_ab5b6db34961dd3d65bfe4ec1452966e6}{}\label{classmage_1_1_shader_ab5b6db34961dd3d65bfe4ec1452966e6} 
 \index{mage\+::\+Shader@{mage\+::\+Shader}!Shader@{Shader}}
 \index{Shader@{Shader}!mage\+::\+Shader@{mage\+::\+Shader}}
 \subsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily template$<$typename ShaderT, typename Pipeline\+StageT$>$ \\
-\hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a shader.
 
 \begin{DoxyPrecond}{Precondition}
-The rendering device associated with the current engine must be loaded. 
-
-{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
+The device associated of the rendering manager associated with the current engine must be loaded. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier. \\
 \hline
-\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A reference to the compiled shader. \\
 \hline
 \end{DoxyParams}
 
@@ -83,19 +81,17 @@ The rendering device associated with the current engine must be loaded.
 {\em \hyperlink{structmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to initialize this shader. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_shader_a5fe620f476f956d5d56e9567493d398a}{}\label{classmage_1_1_shader_a5fe620f476f956d5d56e9567493d398a} 
+\hypertarget{classmage_1_1_shader_a871672eab60ad6994132bddc7802b817}{}\label{classmage_1_1_shader_a871672eab60ad6994132bddc7802b817} 
 \index{mage\+::\+Shader@{mage\+::\+Shader}!Shader@{Shader}}
 \index{Shader@{Shader}!mage\+::\+Shader@{mage\+::\+Shader}}
 \subsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$typename ShaderT, typename Pipeline\+StageT$>$ \\
-\hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a shader.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -103,7 +99,7 @@ Constructs a shader.
 \hline
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
 \hline
-\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A reference to the compiled shader. \\
 \hline
 \end{DoxyParams}
 
@@ -200,25 +196,23 @@ Moves the given shader to this shader.
 \begin{DoxyReturn}{Returns}
 A reference to the moved shader (i.\+e. this shader). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_shader_ac905389877d7722cc47b5f5177cf678f}{}\label{classmage_1_1_shader_ac905389877d7722cc47b5f5177cf678f} 
+\hypertarget{classmage_1_1_shader_ab98f1387553fbe7b62ec2722be5a421a}{}\label{classmage_1_1_shader_ab98f1387553fbe7b62ec2722be5a421a} 
 \index{mage\+::\+Shader@{mage\+::\+Shader}!Setup\+Shader@{Setup\+Shader}}
 \index{Setup\+Shader@{Setup\+Shader}!mage\+::\+Shader@{mage\+::\+Shader}}
 \subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}}
 {\footnotesize\ttfamily template$<$typename ShaderT, typename Pipeline\+StageT$>$ \\
-void \hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::Setup\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ $\ast$}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+void \hyperlink{classmage_1_1_shader}{mage\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::Setup\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const \hyperlink{structmage_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Sets up this shader.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape device} is not equal to {\ttfamily nullptr}. 
-
-{\itshape compiled\+\_\+shader} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em device} & A pointer to the device. \\
 \hline
-\mbox{\tt in}  & {\em compiled\+\_\+shader} & A pointer to the compiled shader. \\
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A reference to the compiled shader. \\
 \hline
 \end{DoxyParams}
 

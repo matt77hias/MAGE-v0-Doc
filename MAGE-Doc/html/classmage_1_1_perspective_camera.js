@@ -12,6 +12,7 @@ var classmage_1_1_perspective_camera =
     [ "GetAspectRatio", "classmage_1_1_perspective_camera.html#a1d0b6de98514c1fdaf3e1aac4971987b", null ],
     [ "GetFOVX", "classmage_1_1_perspective_camera.html#a743acc9d0f30986788a548b78ff6d0d0", null ],
     [ "GetFOVY", "classmage_1_1_perspective_camera.html#a753f4479a5a13000864c297bc34c051f", null ],
+    [ "GetProjectionToViewMatrix", "classmage_1_1_perspective_camera.html#a18a73ab773e3cc50194f700a2f4e288e", null ],
     [ "GetViewToProjectionMatrix", "classmage_1_1_perspective_camera.html#a5b733ac978a22dc58b04cf301899d575", null ],
     [ "operator=", "classmage_1_1_perspective_camera.html#a0fe5ef8bd4d28efa8e4851a8055b6fa5", null ],
     [ "operator=", "classmage_1_1_perspective_camera.html#a338c75900237f3623b31b0231a5f5782", null ],

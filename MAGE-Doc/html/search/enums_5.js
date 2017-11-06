@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['locktype',['LockType',['../structmage_1_1_read_write_mutex_lock.html#a5fee0529edf58803ee1f5d4afa084a3b',1,'mage::ReadWriteMutexLock']]]
+  ['hotkey',['HotKey',['../classmage_1_1_main_window.html#a313cce567381c233d893d982e2e0fd74',1,'mage::MainWindow']]]
 ];
