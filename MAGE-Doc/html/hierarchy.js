@@ -62,16 +62,16 @@ var hierarchy =
       [ "mage::SpriteInfo", "structmage_1_1_sprite_info.html", null ]
     ] ],
     [ "mage::AlignedData< SpriteTransform >", "structmage_1_1_aligned_data.html", [
-      [ "mage::SpriteTransform", "structmage_1_1_sprite_transform.html", null ]
+      [ "mage::SpriteTransform", "classmage_1_1_sprite_transform.html", null ]
     ] ],
     [ "mage::AlignedData< TextureTransform >", "structmage_1_1_aligned_data.html", [
-      [ "mage::TextureTransform", "structmage_1_1_texture_transform.html", null ]
+      [ "mage::TextureTransform", "classmage_1_1_texture_transform.html", null ]
     ] ],
     [ "mage::AlignedData< Transform >", "structmage_1_1_aligned_data.html", [
-      [ "mage::Transform", "structmage_1_1_transform.html", null ]
+      [ "mage::Transform", "classmage_1_1_transform.html", null ]
     ] ],
     [ "mage::AlignedData< TransformNode >", "structmage_1_1_aligned_data.html", [
-      [ "mage::TransformNode", "structmage_1_1_transform_node.html", null ]
+      [ "mage::TransformNode", "classmage_1_1_transform_node.html", null ]
     ] ],
     [ "mage::AlignedData< ViewFrustum >", "structmage_1_1_aligned_data.html", [
       [ "mage::ViewFrustum", "structmage_1_1_view_frustum.html", null ]
@@ -105,8 +105,8 @@ var hierarchy =
       [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
       [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
     ] ],
-    [ "mage::CameraSettings", "structmage_1_1_camera_settings.html", null ],
-    [ "mage::ColorString", "structmage_1_1_color_string.html", null ],
+    [ "mage::CameraSettings", "classmage_1_1_camera_settings.html", null ],
+    [ "mage::ColorString", "classmage_1_1_color_string.html", null ],
     [ "mage::CompiledShader", "structmage_1_1_compiled_shader.html", [
       [ "mage::BlobCompiledShader", "structmage_1_1_blob_compiled_shader.html", null ],
       [ "mage::BufferCompiledShader", "structmage_1_1_buffer_compiled_shader.html", null ]
@@ -120,7 +120,7 @@ var hierarchy =
     [ "mage::ConstantBuffer< mage::ModelNormalTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::ModelNormalTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< mage::ModelTextureTransformBuffer >", "structmage_1_1_constant_buffer.html", null ],
-    [ "mage::ConstantBuffer< mage::RGBASpectrum >", "structmage_1_1_constant_buffer.html", null ],
+    [ "mage::ConstantBuffer< mage::RGBA >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< XMMATRIX >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantBuffer< XMVECTOR >", "structmage_1_1_constant_buffer.html", null ],
     [ "mage::ConstantComponentPass", "classmage_1_1_constant_component_pass.html", null ],
@@ -138,10 +138,11 @@ var hierarchy =
     ] ],
     [ "mage::DisplayConfiguration", "structmage_1_1_display_configuration.html", null ],
     [ "mage::DisplayConfigurator", "classmage_1_1_display_configurator.html", null ],
+    [ "mage::DOFPass", "classmage_1_1_d_o_f_pass.html", null ],
     [ "mage::DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html", null ],
     [ "mage::Pipeline::DS", "structmage_1_1_pipeline_1_1_d_s.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
-    [ "mage::EngineStatistics", "structmage_1_1_engine_statistics.html", null ],
+    [ "mage::EngineStatistics", "classmage_1_1_engine_statistics.html", null ],
     [ "mage::FileStreamCloser", "structmage_1_1_file_stream_closer.html", null ],
     [ "mage::GBufferPass", "classmage_1_1_g_buffer_pass.html", null ],
     [ "mage::Glyph", "structmage_1_1_glyph.html", null ],
@@ -151,7 +152,7 @@ var hierarchy =
     [ "mage::DoubleEndedMemoryStack::HighAllocator< DataT >", "structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html", null ],
     [ "mage::Pipeline::HS", "structmage_1_1_pipeline_1_1_h_s.html", null ],
     [ "mage::Pipeline::IA", "structmage_1_1_pipeline_1_1_i_a.html", null ],
-    [ "mage::IdGenerator", "structmage_1_1_id_generator.html", null ],
+    [ "mage::IdGenerator", "classmage_1_1_id_generator.html", null ],
     [ "mage::InputManager", "classmage_1_1_input_manager.html", null ],
     [ "mage::Keyboard", "classmage_1_1_keyboard.html", null ],
     [ "mage::LBufferPass", "structmage_1_1_l_buffer_pass.html", null ],
@@ -170,10 +171,10 @@ var hierarchy =
     [ "mage::Loadable", "classmage_1_1_loadable.html", [
       [ "mage::Engine", "classmage_1_1_engine.html", null ]
     ] ],
-    [ "mage::LoggingConfiguration", "structmage_1_1_logging_configuration.html", null ],
+    [ "mage::LoggingConfiguration", "classmage_1_1_logging_configuration.html", null ],
     [ "mage::DoubleEndedMemoryStack::LowAllocator< DataT >", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html", null ],
     [ "mage::MainWindow", "classmage_1_1_main_window.html", null ],
-    [ "mage::Material", "structmage_1_1_material.html", null ],
+    [ "mage::Material", "classmage_1_1_material.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
     [ "mage::Mesh", "classmage_1_1_mesh.html", [
       [ "mage::SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html", null ],
@@ -219,9 +220,6 @@ var hierarchy =
     [ "mage::RenderingOutputManager", "classmage_1_1_rendering_output_manager.html", null ],
     [ "mage::RenderingStateManager", "classmage_1_1_rendering_state_manager.html", null ],
     [ "mage::Resource< ResourceT >", "classmage_1_1_resource.html", null ],
-    [ "mage::Resource< const Texture >", "classmage_1_1_resource.html", [
-      [ "mage::Texture", "classmage_1_1_texture.html", null ]
-    ] ],
     [ "mage::Resource< ModelDescriptor >", "classmage_1_1_resource.html", [
       [ "mage::ModelDescriptor", "classmage_1_1_model_descriptor.html", null ]
     ] ],
@@ -230,6 +228,9 @@ var hierarchy =
     ] ],
     [ "mage::Resource< SpriteFont >", "classmage_1_1_resource.html", [
       [ "mage::SpriteFont", "classmage_1_1_sprite_font.html", null ]
+    ] ],
+    [ "mage::Resource< Texture >", "classmage_1_1_resource.html", [
+      [ "mage::Texture", "classmage_1_1_texture.html", null ]
     ] ],
     [ "mage::Resource< VariableScript >", "classmage_1_1_resource.html", [
       [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
@@ -249,7 +250,7 @@ var hierarchy =
     [ "mage::ShadowCubeMapBuffer", "structmage_1_1_shadow_cube_map_buffer.html", null ],
     [ "mage::ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html", null ],
     [ "mage::SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html", null ],
-    [ "mage::Sky", "structmage_1_1_sky.html", null ],
+    [ "mage::Sky", "classmage_1_1_sky.html", null ],
     [ "mage::SkyPass", "classmage_1_1_sky_pass.html", null ],
     [ "mage::Pipeline::SO", "structmage_1_1_pipeline_1_1_s_o.html", null ],
     [ "mage::Sprite", "classmage_1_1_sprite.html", [
@@ -299,15 +300,16 @@ var hierarchy =
       [ "mage::Direction3", "structmage_1_1_direction3.html", null ],
       [ "mage::Normal3", "structmage_1_1_normal3.html", null ],
       [ "mage::Point3", "structmage_1_1_point3.html", null ],
-      [ "mage::RGBSpectrum", "structmage_1_1_r_g_b_spectrum.html", null ],
-      [ "mage::XYZSpectrum", "structmage_1_1_x_y_z_spectrum.html", null ]
+      [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
+      [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
+      [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
     ] ],
     [ "XMFLOAT4", null, [
-      [ "mage::Color", "structmage_1_1_color.html", null ],
-      [ "mage::RGBASpectrum", "structmage_1_1_r_g_b_a_spectrum.html", null ],
-      [ "mage::XYZASpectrum", "structmage_1_1_x_y_z_a_spectrum.html", null ]
+      [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
+      [ "mage::SRGBA", "structmage_1_1_s_r_g_b_a.html", null ],
+      [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
     ] ],
     [ "exception", null, [
-      [ "mage::FormattedException", "structmage_1_1_formatted_exception.html", null ]
+      [ "mage::FormattedException", "classmage_1_1_formatted_exception.html", null ]
     ] ]
 ];

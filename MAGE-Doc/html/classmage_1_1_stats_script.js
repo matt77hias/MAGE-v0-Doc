@@ -6,7 +6,7 @@ var classmage_1_1_stats_script =
     [ "~StatsScript", "classmage_1_1_stats_script.html#a65ba91e19c78c99831a65ad6dd6bb149", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a7da39f1c0cc417dabdc539f49deec7c3", null ],
     [ "operator=", "classmage_1_1_stats_script.html#a6adacd651debb83254e1121f32c8f21e", null ],
-    [ "Update", "classmage_1_1_stats_script.html#ab25f82f68cfb2db9e13f210dcc0d5780", null ],
+    [ "Update", "classmage_1_1_stats_script.html#a61ada9e05bce5699cdf5912cce90337b", null ],
     [ "m_accumulated_nb_frames", "classmage_1_1_stats_script.html#a0a5a7a81f47e6929c3a49355e494df2e", null ],
     [ "m_accumulated_time", "classmage_1_1_stats_script.html#a4b7d6ce800fbec0851f4e89f9291c351", null ],
     [ "m_last_cpu_usage", "classmage_1_1_stats_script.html#a18ef542485b22d2f1834832cd498e7df", null ],

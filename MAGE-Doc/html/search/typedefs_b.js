@@ -8,5 +8,6 @@ var searchData=
   ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]],
   ['size_5ftype',['size_type',['../structmage_1_1_aligned_allocator.html#a7184b9ffd131938071f9734e9291976e',1,'mage::AlignedAllocator::size_type()'],['../structmage_1_1_memory_arena_1_1_allocator.html#ae9b21f77ba4d93a7c8f5ed3097bd6f8e',1,'mage::MemoryArena::Allocator::size_type()'],['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html#af04b72c8781cfb7148d8f0d4b0da41c3',1,'mage::SingleEndedMemoryStack::Allocator::size_type()'],['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#ad59f0cf4da8f47289493179d9236e342',1,'mage::DoubleEndedMemoryStack::LowAllocator::size_type()'],['../structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a0d2e29171c7898850631b1a57a29fe0d',1,'mage::DoubleEndedMemoryStack::HighAllocator::size_type()']]],
   ['spotlightnode',['SpotLightNode',['../namespacemage.html#aeed5dee4ff6c591eabb0e9114256df4a',1,'mage']]],
-  ['spriteimagenode',['SpriteImageNode',['../namespacemage.html#abf1617b76794c524906f01d7939a15b0',1,'mage']]]
+  ['spriteimagenode',['SpriteImageNode',['../namespacemage.html#abf1617b76794c524906f01d7939a15b0',1,'mage']]],
+  ['string_5fview',['string_view',['../namespacemage.html#ae9ee6d93d439fdb8348909ad64925589',1,'mage']]]
 ];

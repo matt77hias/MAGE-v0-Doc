@@ -1,7 +1,7 @@
 var classmage_1_1_camera_node =
 [
     [ "~CameraNode", "classmage_1_1_camera_node.html#ac6612668e7b9f829e371794d422d357f", null ],
-    [ "CameraNode", "classmage_1_1_camera_node.html#a943cecfc5f96ad22f0f64d0f7b3f3640", null ],
+    [ "CameraNode", "classmage_1_1_camera_node.html#a4d513533dbb062bc3ebe87054eba632d", null ],
     [ "CameraNode", "classmage_1_1_camera_node.html#aa0becc29c416c313ebda763edb1b2181", null ],
     [ "CameraNode", "classmage_1_1_camera_node.html#af46b911ecf12ed7c3cb31fb98a590fc1", null ],
     [ "Clone", "classmage_1_1_camera_node.html#a6c636830efadf9753f2f0d012153d61f", null ],

@@ -13,9 +13,9 @@ var classmage_1_1_m_t_l_reader =
     [ "ReadMTLMaterialTexture", "classmage_1_1_m_t_l_reader.html#ade472b4a528a69ef05f10e83772a9a89", null ],
     [ "ReadMTLMetalness", "classmage_1_1_m_t_l_reader.html#a3c263193e37360194a33404fce986736", null ],
     [ "ReadMTLNormalTexture", "classmage_1_1_m_t_l_reader.html#ae44a5704a09edb722f99a480a58c807a", null ],
-    [ "ReadMTLRGBASpectrum", "classmage_1_1_m_t_l_reader.html#a3ffb761c9e57fecb870de61a536fdcfc", null ],
-    [ "ReadMTLRGBSpectrum", "classmage_1_1_m_t_l_reader.html#ac7887eeff166de7370d5c8f96943e99b", null ],
     [ "ReadMTLRoughness", "classmage_1_1_m_t_l_reader.html#ad32f39a82a13727d30a76d9bbfacabf3", null ],
+    [ "ReadMTLSRGB", "classmage_1_1_m_t_l_reader.html#ac8834c8e38397152d1be0a92874ca767", null ],
+    [ "ReadMTLSRGBA", "classmage_1_1_m_t_l_reader.html#a815e10592e7d24876b370b8b95d385e5", null ],
     [ "ReadMTLTexture", "classmage_1_1_m_t_l_reader.html#a36dd3bbfd989698c9caeacc059d03e69", null ],
     [ "m_material_buffer", "classmage_1_1_m_t_l_reader.html#a6382e0e9fce6581b129d18f5d82994c2", null ]
 ];

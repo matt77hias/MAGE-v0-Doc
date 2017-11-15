@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['tex',['tex',['../structmage_1_1_vertex_position_texture.html#a9b4efa25d268c812892ecffc2582496e',1,'mage::VertexPositionTexture::tex()'],['../structmage_1_1_vertex_position_normal_texture.html#a0782e41c5e28d421bfb47afad9af9c55',1,'mage::VertexPositionNormalTexture::tex()'],['../structmage_1_1_vertex_position_color_texture.html#adfbaa105e46bb65f502ec33eaa2e8b15',1,'mage::VertexPositionColorTexture::tex()'],['../structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed',1,'mage::VertexPositionNormalColorTexture::tex()'],['../structmage_1_1_vertex_position_texture_texture.html#ae47656414d503a2c96c88fa6d485cccf',1,'mage::VertexPositionTextureTexture::tex()']]],
-  ['tex2',['tex2',['../structmage_1_1_vertex_position_texture_texture.html#a5a41669f18385d932c1490ff20c80bed',1,'mage::VertexPositionTextureTexture']]]
+  ['oldlace',['OldLace',['../namespacemage_1_1color.html#a4585d8de34bbb038d7f5508fa7116713',1,'mage::color']]],
+  ['olive',['Olive',['../namespacemage_1_1color.html#ac172a37ab875981c5187f951b30ef49c',1,'mage::color']]],
+  ['olivedrab',['OliveDrab',['../namespacemage_1_1color.html#a0ab436320d35ca9a76712cfba4680dfc',1,'mage::color']]],
+  ['orange',['Orange',['../namespacemage_1_1color.html#af8de9ab27c7f398abf1e4bbe62e67a1c',1,'mage::color']]],
+  ['orangered',['OrangeRed',['../namespacemage_1_1color.html#af12d9b64fbe74be8503aea6dbd47ad2f',1,'mage::color']]],
+  ['orchid',['Orchid',['../namespacemage_1_1color.html#a5e7b07d4125c3c1fce9b8f0f9b0b9f4d',1,'mage::color']]]
 ];

@@ -30,7 +30,7 @@ var structmage_1_1_l_buffer_pass =
     [ "SetupShadowMaps", "structmage_1_1_l_buffer_pass.html#ac646805ddf0eb4d81be3e29fec539fc5", null ],
     [ "SetupSpotShadowMaps", "structmage_1_1_l_buffer_pass.html#a1ed3d550173e0145e363132656b8dfdb", null ],
     [ "UnbindShadowMaps", "structmage_1_1_l_buffer_pass.html#af7abbf24eb7d20d9604beca5baa71f20", null ],
-    [ "m_device_context", "structmage_1_1_l_buffer_pass.html#a1dc7614ed09b8b7d2096bcb70a69e83e", null ],
+    [ "m_device_context", "structmage_1_1_l_buffer_pass.html#aa3f3eb2e2e4303398553eb9f07344845", null ],
     [ "m_directional_light_cameras", "structmage_1_1_l_buffer_pass.html#a42f79f890d6c6ec342f365bf974ab3a6", null ],
     [ "m_directional_lights", "structmage_1_1_l_buffer_pass.html#a90327556a34fe3a56e6980accead0c44", null ],
     [ "m_directional_sms", "structmage_1_1_l_buffer_pass.html#ab1372d2fc5e0e716565f8d3d8eb6db97", null ],

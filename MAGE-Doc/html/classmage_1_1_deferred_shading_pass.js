@@ -13,7 +13,7 @@ var classmage_1_1_deferred_shading_pass =
     [ "UpdateShaders", "classmage_1_1_deferred_shading_pass.html#a1be48c61dfb255a1641bae23d5277e4f", null ],
     [ "m_brdf", "classmage_1_1_deferred_shading_pass.html#a5a466f5c2ee71563f4f8ed6d042ee4b3", null ],
     [ "m_cs", "classmage_1_1_deferred_shading_pass.html#a8d3bebdc41d116eb05d9f5a3c923f349", null ],
-    [ "m_device_context", "classmage_1_1_deferred_shading_pass.html#aebba2ee59d127f2c186186c667c6016a", null ],
+    [ "m_device_context", "classmage_1_1_deferred_shading_pass.html#a05b1c649f39f267ce5a5cecdd02b8ffb", null ],
     [ "m_msaa_ps", "classmage_1_1_deferred_shading_pass.html#a2da9b0462428d209f3b546a934962a77", null ],
     [ "m_vs", "classmage_1_1_deferred_shading_pass.html#a0bf671a656df1931dc99abc636abecd1", null ]
 ];

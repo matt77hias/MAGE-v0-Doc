@@ -1,7 +1,28 @@
 var searchData=
 [
+  ['darkblue',['DarkBlue',['../namespacemage_1_1color.html#a54cb89c27cd5fe8934aa1b49ee79ea3b',1,'mage::color']]],
+  ['darkcyan',['DarkCyan',['../namespacemage_1_1color.html#ac0be520fcdc0da71755c6f202d763b4f',1,'mage::color']]],
+  ['darkgoldenrod',['DarkGoldenrod',['../namespacemage_1_1color.html#a2823510fdf69efc81864c1b42c875c93',1,'mage::color']]],
+  ['darkgray',['DarkGray',['../namespacemage_1_1color.html#a49c50e740fe28a79fd2235907247d452',1,'mage::color']]],
+  ['darkgreen',['DarkGreen',['../namespacemage_1_1color.html#a07927c32593810cc4c48334cbd3fde8a',1,'mage::color']]],
+  ['darkkhaki',['DarkKhaki',['../namespacemage_1_1color.html#af67bbefc1beb8e24c062e492d78b2cc0',1,'mage::color']]],
+  ['darkmagenta',['DarkMagenta',['../namespacemage_1_1color.html#aa62226b72ae58ea0ff91983dab110de9',1,'mage::color']]],
+  ['darkolivegreen',['DarkOliveGreen',['../namespacemage_1_1color.html#a6776b45c4cae8936bb265170076396fa',1,'mage::color']]],
+  ['darkorange',['DarkOrange',['../namespacemage_1_1color.html#ada422983b2e1f8c60e4c32ca95f6f985',1,'mage::color']]],
+  ['darkorchid',['DarkOrchid',['../namespacemage_1_1color.html#abeffe327a3acdb1e4e1d1105ac4c19bf',1,'mage::color']]],
+  ['darkred',['DarkRed',['../namespacemage_1_1color.html#a0b39625542054fdccde9987b40d9de76',1,'mage::color']]],
+  ['darksalmon',['DarkSalmon',['../namespacemage_1_1color.html#a152f961783386c7d35cb945ac89026bd',1,'mage::color']]],
+  ['darkseagreen',['DarkSeaGreen',['../namespacemage_1_1color.html#a86d3cd5e64a2e34ba14b9ca697e12b5a',1,'mage::color']]],
+  ['darkslateblue',['DarkSlateBlue',['../namespacemage_1_1color.html#adb9fec6b7ccf429dedf44e35a47a82da',1,'mage::color']]],
+  ['darkslategray',['DarkSlateGray',['../namespacemage_1_1color.html#a9063445567fdec3ac2f7916b4f1989ef',1,'mage::color']]],
+  ['darkturquoise',['DarkTurquoise',['../namespacemage_1_1color.html#a20b64f764acf8eaa468226d2b6d28fbc',1,'mage::color']]],
+  ['darkviolet',['DarkViolet',['../namespacemage_1_1color.html#a667ce7c4545617295769b7f87570a307',1,'mage::color']]],
   ['ddspf',['ddspf',['../struct_d_d_s___h_e_a_d_e_r.html#a27445ea81444c05a620469f266bff154',1,'DDS_HEADER']]],
+  ['deeppink',['DeepPink',['../namespacemage_1_1color.html#a7d979d0bc941056d06217ad624b7c7f3',1,'mage::color']]],
+  ['deepskyblue',['DeepSkyBlue',['../namespacemage_1_1color.html#a0f5aa2a109509a69b498e00328605c3f',1,'mage::color']]],
   ['depth',['depth',['../struct_d_d_s___h_e_a_d_e_r.html#aa5b6801b932296cdfdc1651310c00c9b',1,'DDS_HEADER']]],
   ['destination_5fsize_5fin_5fpixels',['destination_size_in_pixels',['../structmage_1_1_sprite_info.html#a84baaa1612a26bcc076965c0997641c3',1,'mage::SpriteInfo']]],
+  ['dimgray',['DimGray',['../namespacemage_1_1color.html#ace5b9fdda0cd1693bee0e7c392c3f052',1,'mage::color']]],
+  ['dodgerblue',['DodgerBlue',['../namespacemage_1_1color.html#af164a12f2c4f24bfa492f5ad2acbcd27',1,'mage::color']]],
   ['dxgiformat',['dxgiFormat',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#a7208befc03e44222386ee54ee4fa9ec6',1,'DDS_HEADER_DXT10']]]
 ];

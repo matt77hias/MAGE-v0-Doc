@@ -9,7 +9,7 @@ var classmage_1_1_directional_light =
     [ "DissableShadows", "classmage_1_1_directional_light.html#addd4803dee85892dfd57f51e155c6572", null ],
     [ "EnableShadows", "classmage_1_1_directional_light.html#a36436d5d99ccf6a0e49e81f26c3f9bc7", null ],
     [ "GetRadiance", "classmage_1_1_directional_light.html#a73fe73ce8184bf32379ead1e00b34c9f", null ],
-    [ "GetRadianceSpectrum", "classmage_1_1_directional_light.html#ac2f562fc0c5f3ff75001dfac3ff06f1c", null ],
+    [ "GetRadianceSpectrum", "classmage_1_1_directional_light.html#a137cef14d20df2c907884a04ae2019ff", null ],
     [ "operator=", "classmage_1_1_directional_light.html#a371d3c13d6e59c8d105da058b460874d", null ],
     [ "operator=", "classmage_1_1_directional_light.html#a508b595bf6aa5fc9db53e0a854fda41d", null ],
     [ "SetRadiance", "classmage_1_1_directional_light.html#ac8b63948d393696ca8745c799328be84", null ],

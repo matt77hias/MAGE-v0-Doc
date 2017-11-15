@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uavindex',['UAVIndex',['../classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89',1,'mage::RenderingOutputManager']]]
+  ['variabletype',['VariableType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a',1,'mage']]]
 ];

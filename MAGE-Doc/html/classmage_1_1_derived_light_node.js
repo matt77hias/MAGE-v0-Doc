@@ -1,7 +1,7 @@
 var classmage_1_1_derived_light_node =
 [
-    [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#a64003a60d92c245c8ad247bb16724852", null ],
-    [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#ab3e68ce3299581459843e8ad12f18464", null ],
+    [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#a6de065efac41dc01253a5ccb78accefd", null ],
+    [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#a6ba9c259d7e1c1c4cba0faa55ea4daa9", null ],
     [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#a719b8fe088b93a7ecfb6d21b99cc170b", null ],
     [ "DerivedLightNode", "classmage_1_1_derived_light_node.html#af99017273f3f8bedcbd3842c31e4ecc4", null ],
     [ "~DerivedLightNode", "classmage_1_1_derived_light_node.html#ad4b2371e323d30eda05744237d4dc4eb", null ],
