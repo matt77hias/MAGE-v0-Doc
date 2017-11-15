@@ -19,7 +19,7 @@ var classmage_1_1_shading_normal_pass =
     [ "ProcessModels", "classmage_1_1_shading_normal_pass.html#a383e9cab46d4d9bdfcf320c68a210d0d", null ],
     [ "Render", "classmage_1_1_shading_normal_pass.html#ad9fbc17ade1de5150d5b184aa780fb01", null ],
     [ "m_bound_ps", "classmage_1_1_shading_normal_pass.html#aad8c7d37622cbd1dafd3dd49b590fd54", null ],
-    [ "m_device_context", "classmage_1_1_shading_normal_pass.html#aa4172e272ab2da77b91cd01db60a10e3", null ],
+    [ "m_device_context", "classmage_1_1_shading_normal_pass.html#a48b0f07fd3f47f40e53e36354879979b", null ],
     [ "m_model_buffer", "classmage_1_1_shading_normal_pass.html#a948daea5dea9b2cd2b2eaf30a1341231", null ],
     [ "m_ps", "classmage_1_1_shading_normal_pass.html#a3dbbd1bd2612ccaec66c551f251a47e9", null ],
     [ "m_render_mode", "classmage_1_1_shading_normal_pass.html#a0048886bc80b9b39c1dc5d17e5b68584", null ],

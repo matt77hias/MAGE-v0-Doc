@@ -4,7 +4,10 @@ var searchData=
   ['wardduer',['WardDuer',['../namespacemage.html#ae7a7a03a7b34d7e2689689bb8295cd38ab4ff6577cc6f35dfaa90a48d2be06615',1,'mage']]],
   ['warning',['Warning',['../namespacemage.html#a0eccd8065c75d5f2bf86b48a5be3bfe5',1,'mage']]],
   ['weakptr',['WeakPtr',['../namespacemage.html#aa159a63c0d58464bdf32dfe419dd5dc1',1,'mage']]],
-  ['what',['what',['../structmage_1_1_formatted_exception.html#af24583c71b3cb760039f35d534b95ead',1,'mage::FormattedException']]],
+  ['what',['what',['../classmage_1_1_formatted_exception.html#af24583c71b3cb760039f35d534b95ead',1,'mage::FormattedException']]],
+  ['wheat',['Wheat',['../namespacemage_1_1color.html#aaf821b2e2abf8783372e656a91517117',1,'mage::color']]],
+  ['white',['White',['../namespacemage_1_1color.html#a799c518dd6b5f05e1a75ee06e7ed9651',1,'mage::color']]],
+  ['whitesmoke',['WhiteSmoke',['../namespacemage_1_1color.html#af06dc9acfb11fea4058a93f0b79bc217',1,'mage::color']]],
   ['wic_5floader_5fdefault',['WIC_LOADER_DEFAULT',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa31db232209a0c414f3c5dd3f36fad240',1,'DirectX']]],
   ['wic_5floader_5fflags',['WIC_LOADER_FLAGS',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2a',1,'DirectX']]],
   ['wic_5floader_5fforce_5fsrgb',['WIC_LOADER_FORCE_SRGB',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa19253126a33109ad1e9ca15710a48a71',1,'DirectX']]],
@@ -24,5 +27,6 @@ var searchData=
   ['writestringline',['WriteStringLine',['../classmage_1_1_writer.html#ad53f69e0f722c4d4b8b320ea39770c1a',1,'mage::Writer::WriteStringLine(const char *str)'],['../classmage_1_1_writer.html#a542963963dc22cdecbdb3a29a3843ee9',1,'mage::Writer::WriteStringLine(const string &amp;str)']]],
   ['writetofile',['WriteToFile',['../classmage_1_1_big_endian_binary_writer.html#a02fb2c39f5a52dc25c8d08516e1af621',1,'mage::BigEndianBinaryWriter::WriteToFile()'],['../classmage_1_1_writer.html#aa65ca7f473b3c95e94c72e25efc4c4c8',1,'mage::Writer::WriteToFile()']]],
   ['writevalue',['WriteValue',['../classmage_1_1_big_endian_binary_writer.html#a30edcc0ad823fc8b4f8c51107f11405a',1,'mage::BigEndianBinaryWriter']]],
-  ['writevaluearray',['WriteValueArray',['../classmage_1_1_big_endian_binary_writer.html#a70459f96b5389052d6e090e124c5468b',1,'mage::BigEndianBinaryWriter']]]
+  ['writevaluearray',['WriteValueArray',['../classmage_1_1_big_endian_binary_writer.html#a70459f96b5389052d6e090e124c5468b',1,'mage::BigEndianBinaryWriter']]],
+  ['wstring_5fview',['wstring_view',['../namespacemage.html#ac4cd35b08f9669221abbfd841a4208d7',1,'mage']]]
 ];

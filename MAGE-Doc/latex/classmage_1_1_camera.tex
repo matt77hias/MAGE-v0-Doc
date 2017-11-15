@@ -34,6 +34,20 @@ void \hyperlink{classmage_1_1_camera_aa075b0f6f30376217c0058a70df9d845}{Set\+Nea
 virtual const X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_ad3e8380ba9718a983f72d753d08f556e}{Get\+View\+To\+Projection\+Matrix} () const noexcept=0
 \item 
 virtual const X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_a7a919b85084c79786a65c6df8872f6f1}{Get\+Projection\+To\+View\+Matrix} () const noexcept=0
+\item 
+bool \hyperlink{classmage_1_1_camera_a414cfe9e97f0e42364056e78412fef1a}{Has\+Finite\+Aperture} () const noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a7c3890887fc155ab275321b962744e80}{Get\+Lens\+Radius} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_camera_af507ae56708b3591c174af01295e4071}{Set\+Lens\+Radius} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} lens\+\_\+radius) noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a473908b18eb0d9d011eb789c9138fffb}{Get\+Focal\+Length} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_camera_a3c4e2c6a00c11ae0f0fd404d3d4f511b}{Set\+Focal\+Length} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} focal\+\_\+length) noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a92714d8092aa5230771b8f3452f6f969}{Get\+Maximum\+Co\+C\+Radius} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_camera_a586912018439ff0cbd6ed2d6d9554db4}{Set\+Maximum\+Co\+C\+Radius} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} max\+\_\+coc\+\_\+radius) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -55,6 +69,12 @@ virtual \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a8ae2c8fbe94cb6f8c4cd4a2811900b83}{m\+\_\+near\+\_\+z}
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a1073445c77b3224cd62613ae83853fe3}{m\+\_\+far\+\_\+z}
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a289dcf02aaa00853aba15189b47cd6d9}{m\+\_\+lens\+\_\+radius}
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_a53b5a143e193bb11bf02e29543016cc3}{m\+\_\+focal\+\_\+length}
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_camera_af22ec34b0391c1c9a146cdae6e98dd15}{m\+\_\+max\+\_\+coc\+\_\+radius}
 \end{DoxyCompactItemize}
 
 
@@ -144,10 +164,43 @@ Implemented in \hyperlink{classmage_1_1_perspective_camera_aa597ab884256b7e6fad6
 \subsubsection{\texorpdfstring{Get\+Far\+Z()}{GetFarZ()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::\+Get\+FarZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the position of the far z-\/plane of this camera in camera space.
+Returns the position of the far z-\/plane of this camera in camera view space.
 
 \begin{DoxyReturn}{Returns}
-The position of the far z-\/plane of this camera. 
+The position of the far z-\/plane of this camera in camera view space. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_a473908b18eb0d9d011eb789c9138fffb}{}\label{classmage_1_1_camera_a473908b18eb0d9d011eb789c9138fffb} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Focal\+Length@{Get\+Focal\+Length}}
+\index{Get\+Focal\+Length@{Get\+Focal\+Length}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Focal\+Length()}{GetFocalLength()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::\+Get\+Focal\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the focal length of this camera in camera.
+
+\begin{DoxyReturn}{Returns}
+The focal length of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_a7c3890887fc155ab275321b962744e80}{}\label{classmage_1_1_camera_a7c3890887fc155ab275321b962744e80} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Lens\+Radius@{Get\+Lens\+Radius}}
+\index{Get\+Lens\+Radius@{Get\+Lens\+Radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Lens\+Radius()}{GetLensRadius()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::\+Get\+Lens\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the lens radius of this camera in camera.
+
+\begin{DoxyReturn}{Returns}
+The lens radius of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_a92714d8092aa5230771b8f3452f6f969}{}\label{classmage_1_1_camera_a92714d8092aa5230771b8f3452f6f969} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Maximum\+Co\+C\+Radius@{Get\+Maximum\+Co\+C\+Radius}}
+\index{Get\+Maximum\+Co\+C\+Radius@{Get\+Maximum\+Co\+C\+Radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Maximum\+Co\+C\+Radius()}{GetMaximumCoCRadius()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::\+Get\+Maximum\+Co\+C\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the maximum radius of the circle of confusion of this camera in camera.
+
+\begin{DoxyReturn}{Returns}
+The maximum radius of the circle of confusion of this camera. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_camera_add4054d66911dd183cdec85eda77b4a1}{}\label{classmage_1_1_camera_add4054d66911dd183cdec85eda77b4a1} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+NearZ@{Get\+NearZ}}
@@ -155,10 +208,10 @@ The position of the far z-\/plane of this camera.
 \subsubsection{\texorpdfstring{Get\+Near\+Z()}{GetNearZ()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::\+Get\+NearZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the position of the near z-\/plane of this camera in camera space.
+Returns the position of the near z-\/plane of this camera in camera view space.
 
 \begin{DoxyReturn}{Returns}
-The position of the near z-\/plane of this camera. 
+The position of the near z-\/plane of this camera in camera view space. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_camera_a7a919b85084c79786a65c6df8872f6f1}{}\label{classmage_1_1_camera_a7a919b85084c79786a65c6df8872f6f1} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Projection\+To\+View\+Matrix@{Get\+Projection\+To\+View\+Matrix}}
@@ -190,6 +243,17 @@ The view-\/to-\/projection matrix of this camera.
 
 Implemented in \hyperlink{classmage_1_1_perspective_camera_a5b733ac978a22dc58b04cf301899d575}{mage\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1_orthographic_camera_a1e8ea42a5df6dab1163b2c3938480f7c}{mage\+::\+Orthographic\+Camera}.
 
+\hypertarget{classmage_1_1_camera_a414cfe9e97f0e42364056e78412fef1a}{}\label{classmage_1_1_camera_a414cfe9e97f0e42364056e78412fef1a} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Has\+Finite\+Aperture@{Has\+Finite\+Aperture}}
+\index{Has\+Finite\+Aperture@{Has\+Finite\+Aperture}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Has\+Finite\+Aperture()}{HasFiniteAperture()}}
+{\footnotesize\ttfamily bool mage\+::\+Camera\+::\+Has\+Finite\+Aperture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this camera has a finite aperture.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this camera has a finite aperture. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_camera_a9ae561f9cc0ed0dd855ee1d824dad090}{}\label{classmage_1_1_camera_a9ae561f9cc0ed0dd855ee1d824dad090} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Camera@{mage\+::\+Camera}}
@@ -232,7 +296,46 @@ Sets the position of the far z-\/plane of this camera to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in view space. \\
+\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in camera view space. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_camera_a3c4e2c6a00c11ae0f0fd404d3d4f511b}{}\label{classmage_1_1_camera_a3c4e2c6a00c11ae0f0fd404d3d4f511b} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Focal\+Length@{Set\+Focal\+Length}}
+\index{Set\+Focal\+Length@{Set\+Focal\+Length}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Focal\+Length()}{SetFocalLength()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Focal\+Length (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{focal\+\_\+length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the focal length of this camera to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em focal\+\_\+length} & The focal length. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_camera_af507ae56708b3591c174af01295e4071}{}\label{classmage_1_1_camera_af507ae56708b3591c174af01295e4071} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Lens\+Radius@{Set\+Lens\+Radius}}
+\index{Set\+Lens\+Radius@{Set\+Lens\+Radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Lens\+Radius()}{SetLensRadius()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Lens\+Radius (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{lens\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the lens radius of this camera to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lens\+\_\+radius} & The lens radius. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_camera_a586912018439ff0cbd6ed2d6d9554db4}{}\label{classmage_1_1_camera_a586912018439ff0cbd6ed2d6d9554db4} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Maximum\+Co\+C\+Radius@{Set\+Maximum\+Co\+C\+Radius}}
+\index{Set\+Maximum\+Co\+C\+Radius@{Set\+Maximum\+Co\+C\+Radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Maximum\+Co\+C\+Radius()}{SetMaximumCoCRadius()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Maximum\+Co\+C\+Radius (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{max\+\_\+coc\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the maximum radius of the circle of confusion of this camera to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em max\+\_\+coc\+\_\+radius} & The maximum radius of the circle of confusion. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_camera_aa075b0f6f30376217c0058a70df9d845}{}\label{classmage_1_1_camera_aa075b0f6f30376217c0058a70df9d845} 
@@ -260,7 +363,7 @@ Sets the position of the near z-\/plane of this camera to the given value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in view space. \\
+\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in camera view space. \\
 \hline
 \end{DoxyParams}
 
@@ -272,7 +375,25 @@ Sets the position of the near z-\/plane of this camera to the given value.
 \subsubsection{\texorpdfstring{m\+\_\+far\+\_\+z}{m\_far\_z}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::m\+\_\+far\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
 
-The position of the far z-\/plane of this camera in view space. \hypertarget{classmage_1_1_camera_a8ae2c8fbe94cb6f8c4cd4a2811900b83}{}\label{classmage_1_1_camera_a8ae2c8fbe94cb6f8c4cd4a2811900b83} 
+The position of the far z-\/plane of this camera in view space. \hypertarget{classmage_1_1_camera_a53b5a143e193bb11bf02e29543016cc3}{}\label{classmage_1_1_camera_a53b5a143e193bb11bf02e29543016cc3} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+focal\+\_\+length@{m\+\_\+focal\+\_\+length}}
+\index{m\+\_\+focal\+\_\+length@{m\+\_\+focal\+\_\+length}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+focal\+\_\+length}{m\_focal\_length}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::m\+\_\+focal\+\_\+length\hspace{0.3cm}{\ttfamily [private]}}
+
+The focal length of this camera (for depth-\/of-\/field effects). \hypertarget{classmage_1_1_camera_a289dcf02aaa00853aba15189b47cd6d9}{}\label{classmage_1_1_camera_a289dcf02aaa00853aba15189b47cd6d9} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+lens\+\_\+radius@{m\+\_\+lens\+\_\+radius}}
+\index{m\+\_\+lens\+\_\+radius@{m\+\_\+lens\+\_\+radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+lens\+\_\+radius}{m\_lens\_radius}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::m\+\_\+lens\+\_\+radius\hspace{0.3cm}{\ttfamily [private]}}
+
+The lens radius of this camera (for depth-\/of-\/field effects). \hypertarget{classmage_1_1_camera_af22ec34b0391c1c9a146cdae6e98dd15}{}\label{classmage_1_1_camera_af22ec34b0391c1c9a146cdae6e98dd15} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+max\+\_\+coc\+\_\+radius@{m\+\_\+max\+\_\+coc\+\_\+radius}}
+\index{m\+\_\+max\+\_\+coc\+\_\+radius@{m\+\_\+max\+\_\+coc\+\_\+radius}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+max\+\_\+coc\+\_\+radius}{m\_max\_coc\_radius}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Camera\+::m\+\_\+max\+\_\+coc\+\_\+radius\hspace{0.3cm}{\ttfamily [private]}}
+
+The maximum radius of the circle-\/of-\/confusion of this camera (for depth-\/of-\/field effects). \hypertarget{classmage_1_1_camera_a8ae2c8fbe94cb6f8c4cd4a2811900b83}{}\label{classmage_1_1_camera_a8ae2c8fbe94cb6f8c4cd4a2811900b83} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}}
 \index{m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{m\+\_\+near\+\_\+z}{m\_near\_z}}

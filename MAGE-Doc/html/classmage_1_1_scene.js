@@ -1,7 +1,7 @@
 var classmage_1_1_scene =
 [
     [ "~Scene", "classmage_1_1_scene.html#adc40910fdca62586659c2961fe7e7f3c", null ],
-    [ "Scene", "classmage_1_1_scene.html#aab61b38547fc53aa9c5b3b559f4d2e26", null ],
+    [ "Scene", "classmage_1_1_scene.html#aaed505892f2a639db47e5d5767f41337", null ],
     [ "Scene", "classmage_1_1_scene.html#a88d83ccb2e10549d5370f850b2b4c228", null ],
     [ "Scene", "classmage_1_1_scene.html#a35b8fc4242c2348e53014b96416fc3d3", null ],
     [ "AddSceneNode", "classmage_1_1_scene.html#a4d7e96e51563f021894800faf6136a24", null ],
@@ -14,7 +14,7 @@ var classmage_1_1_scene =
     [ "AddScript", "classmage_1_1_scene.html#ab97b66c81c32681699052e154d0e0722", null ],
     [ "Clear", "classmage_1_1_scene.html#adf4a5b3885e34336caa5f145f55e01e1", null ],
     [ "Close", "classmage_1_1_scene.html#a16786d7fcf0b813e2e94061b082cfd1d", null ],
-    [ "Create", "classmage_1_1_scene.html#abfce90d15a9aa5b5e05709b35286de88", null ],
+    [ "Create", "classmage_1_1_scene.html#a9a46c7e0624aec7b5aa2f0ba77b55386", null ],
     [ "CreateModel", "classmage_1_1_scene.html#a9d6c27c761cd4535549c8af2e3804b7d", null ],
     [ "ForEachAmbientLight", "classmage_1_1_scene.html#a0b05bd65003dfb02124dd00762950a16", null ],
     [ "ForEachCamera", "classmage_1_1_scene.html#a196159c991332f06faaee3c6ce0ff780", null ],
@@ -42,8 +42,7 @@ var classmage_1_1_scene =
     [ "operator=", "classmage_1_1_scene.html#a400926762670c9cd9b6d456291600f53", null ],
     [ "RemoveAllScripts", "classmage_1_1_scene.html#af610ef656fa46cb88638f1356ecee6a8", null ],
     [ "RemoveScript", "classmage_1_1_scene.html#a82705ba56543dea410439760b1667bc5", null ],
-    [ "SetName", "classmage_1_1_scene.html#a9b7c1c2f84cc3b3c5ff3de4f29d830e9", null ],
-    [ "SetName", "classmage_1_1_scene.html#a86b2e6e764ee134af1706f90603a6596", null ],
+    [ "SetName", "classmage_1_1_scene.html#ae5e0a4daa62322ff18d673944ad4e0e8", null ],
     [ "Uninitialize", "classmage_1_1_scene.html#a714dc33c04dc2b8e2cec93564905b174", null ],
     [ "m_ambient_light", "classmage_1_1_scene.html#a0ce9718f4b0137a52b858a29d3504328", null ],
     [ "m_cameras", "classmage_1_1_scene.html#a76fc089ae3185c82702d2ca42fd820e7", null ],

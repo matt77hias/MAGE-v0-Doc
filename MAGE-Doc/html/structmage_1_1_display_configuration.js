@@ -1,12 +1,12 @@
 var structmage_1_1_display_configuration =
 [
-    [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#ac06f2f97d28e2bc6b44ccfbfc5b56731", null ],
+    [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a2ca58b8cc3b408c50fccb9cf94eb5dc6", null ],
     [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a1b99f5eb69a7ec1e525d551a8004f508", null ],
     [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a5adbfbaf7de92292af56b2b56f76d548", null ],
     [ "~DisplayConfiguration", "structmage_1_1_display_configuration.html#a91cdf4f2015177e41290238d96a55328", null ],
     [ "Get", "structmage_1_1_display_configuration.html#a186aca1e5dabb6d819ff16c9aca6edfc", null ],
     [ "GetAADescriptor", "structmage_1_1_display_configuration.html#a8022cbb0f6df7250aae675cab32d68af", null ],
-    [ "GetAdapter", "structmage_1_1_display_configuration.html#a415acc2cba9d5f28dc42073bb69fbac2", null ],
+    [ "GetAdapter", "structmage_1_1_display_configuration.html#a49389d3025f99de828dd3d4d785c6f30", null ],
     [ "GetDisplayFormat", "structmage_1_1_display_configuration.html#a412215b18edac3ec6bf18cd00d8c689b", null ],
     [ "GetDisplayHeight", "structmage_1_1_display_configuration.html#a20ad8e0f250a4e6d144f06b6042a7dee", null ],
     [ "GetDisplayMode", "structmage_1_1_display_configuration.html#a20270be6a17deab929fce25596edabd4", null ],
@@ -14,7 +14,7 @@ var structmage_1_1_display_configuration =
     [ "GetDisplayRoundedRefreshRate", "structmage_1_1_display_configuration.html#aada8415f1dbebb7f24decc2d5bf030ab", null ],
     [ "GetDisplayWidth", "structmage_1_1_display_configuration.html#a702c5b21341cd347d94b576a4cf3740a", null ],
     [ "GetGamma", "structmage_1_1_display_configuration.html#a7b86a9b87951e560bc910d6537dc2f2f", null ],
-    [ "GetOutput", "structmage_1_1_display_configuration.html#aa328570fbfc6456c0e5d90e738aec81b", null ],
+    [ "GetOutput", "structmage_1_1_display_configuration.html#a63cb03e85bb8c4b2a77106a6c208de3b", null ],
     [ "GetSSDisplayHeight", "structmage_1_1_display_configuration.html#a9f3bec318a03e7f6d2cc8586e5770f43", null ],
     [ "GetSSDisplayWidth", "structmage_1_1_display_configuration.html#a68418c385c806d3b344c8818f34f9ba2", null ],
     [ "IsFullScreen", "structmage_1_1_display_configuration.html#ab984b32ff2b6ce6a376aa09399b9b45e", null ],
@@ -31,10 +31,10 @@ var structmage_1_1_display_configuration =
     [ "UsesMSAA", "structmage_1_1_display_configuration.html#a86de1a4b64811fce0d5b365924cd2558", null ],
     [ "UsesSSAA", "structmage_1_1_display_configuration.html#a61dcb66358a3fd9e4df2230946ce1a36", null ],
     [ "m_aa_desc", "structmage_1_1_display_configuration.html#a253dc142f092f327649aed3c8ca6c95f", null ],
-    [ "m_adapter", "structmage_1_1_display_configuration.html#a3a731fa68cb3924f0528115930073d77", null ],
+    [ "m_adapter", "structmage_1_1_display_configuration.html#a30ccc2ff8cb8e041e0afc6dabdb0d967", null ],
     [ "m_display_mode", "structmage_1_1_display_configuration.html#ac59d5e7c5553ef4842090bf1a83bd7ca", null ],
     [ "m_gamma", "structmage_1_1_display_configuration.html#a6056d18cba04331488bb27eb033c783e", null ],
-    [ "m_output", "structmage_1_1_display_configuration.html#a483b3b999f4736084daa819a15adfb80", null ],
+    [ "m_output", "structmage_1_1_display_configuration.html#a57cc88b552858c6a9ac74577140beb14", null ],
     [ "m_vsync", "structmage_1_1_display_configuration.html#a22dd3b35e58260c9555a37aef0e85a4d", null ],
     [ "m_windowed", "structmage_1_1_display_configuration.html#a0c447e4bd7ea72313315c657e9cd0d95", null ]
 ];

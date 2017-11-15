@@ -2,7 +2,7 @@ var structmage_1_1_variable =
 [
     [ "AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", "structmage_1_1_variable_1_1_abstract_value" ],
     [ "Value", "structmage_1_1_variable_1_1_value.html", "structmage_1_1_variable_1_1_value" ],
-    [ "Variable", "structmage_1_1_variable.html#a2891c12cc750548de92380489f3a9f49", null ],
+    [ "Variable", "structmage_1_1_variable.html#a31348c3a159ff671ab2d36fc089c3b3d", null ],
     [ "Variable", "structmage_1_1_variable.html#a778d347a0d63771cbaac45bcba594792", null ],
     [ "Variable", "structmage_1_1_variable.html#a49764740130a9b06033869fff0b634a9", null ],
     [ "~Variable", "structmage_1_1_variable.html#a7503f010f296683cecf9be65a3f86589", null ],

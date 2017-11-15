@@ -2,7 +2,7 @@ var searchData=
 [
   ['mainwindow',['MainWindow',['../classmage_1_1_main_window.html',1,'mage']]],
   ['manhattanmotorscript',['ManhattanMotorScript',['../classmage_1_1_manhattan_motor_script.html',1,'mage']]],
-  ['material',['Material',['../structmage_1_1_material.html',1,'mage']]],
+  ['material',['Material',['../classmage_1_1_material.html',1,'mage']]],
   ['mdlreader',['MDLReader',['../classmage_1_1_m_d_l_reader.html',1,'mage']]],
   ['mdlwriter',['MDLWriter',['../classmage_1_1_m_d_l_writer.html',1,'mage']]],
   ['memoryarena',['MemoryArena',['../classmage_1_1_memory_arena.html',1,'mage']]],

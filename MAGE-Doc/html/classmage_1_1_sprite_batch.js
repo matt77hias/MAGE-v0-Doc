@@ -1,7 +1,7 @@
 var classmage_1_1_sprite_batch =
 [
     [ "SpriteBatch", "classmage_1_1_sprite_batch.html#a75924326627c792ff454d9d2a2ba1fda", null ],
-    [ "SpriteBatch", "classmage_1_1_sprite_batch.html#abcca486a836cc2996d3d1a1169df83ad", null ],
+    [ "SpriteBatch", "classmage_1_1_sprite_batch.html#a3ab8db2b1f022518a1e29b8e048a09da", null ],
     [ "SpriteBatch", "classmage_1_1_sprite_batch.html#a10fe1d6cf1d2de9e087b370e7d696be8", null ],
     [ "SpriteBatch", "classmage_1_1_sprite_batch.html#a16f89aba054d8a08e5257c46813f4713", null ],
     [ "~SpriteBatch", "classmage_1_1_sprite_batch.html#a1c284e2c0ed96081f9f2fb1f84e5817f", null ],
@@ -22,7 +22,7 @@ var classmage_1_1_sprite_batch =
     [ "SetViewport", "classmage_1_1_sprite_batch.html#a5b02194c2bdbbe5b04e95ab401e6de4e", null ],
     [ "SetViewport", "classmage_1_1_sprite_batch.html#aef86940ffc869785fb8ff8eb85ab7b46", null ],
     [ "SortSprites", "classmage_1_1_sprite_batch.html#af7a5d406b02cd477c9b80eae9984aa86", null ],
-    [ "m_device_context", "classmage_1_1_sprite_batch.html#a95d4de79a01ffe5603a2cfa2eddd53b7", null ],
+    [ "m_device_context", "classmage_1_1_sprite_batch.html#aa54946d3b052d1434c41c6f45ab627c6", null ],
     [ "m_in_begin_end_pair", "classmage_1_1_sprite_batch.html#a2f4e56ee07ef37a2906c552b0ea78403", null ],
     [ "m_mesh", "classmage_1_1_sprite_batch.html#a8e333637fa0af0858fd3a3efa1e59c3a", null ],
     [ "m_rotation_mode", "classmage_1_1_sprite_batch.html#ae062f178efe4a3af9c1573f8f8c4deee", null ],

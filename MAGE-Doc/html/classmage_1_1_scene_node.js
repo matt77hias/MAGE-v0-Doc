@@ -1,6 +1,6 @@
 var classmage_1_1_scene_node =
 [
-    [ "SceneNode", "classmage_1_1_scene_node.html#afc138707692a66952484ae2b3c6e15d5", null ],
+    [ "SceneNode", "classmage_1_1_scene_node.html#a258a46879300034e2327ddb25247642b", null ],
     [ "SceneNode", "classmage_1_1_scene_node.html#a0259a6b573eb633b589cd986b9ec6734", null ],
     [ "SceneNode", "classmage_1_1_scene_node.html#acbf94ceadac62f2ccde13d70ce9298d7", null ],
     [ "~SceneNode", "classmage_1_1_scene_node.html#a6705beea9c535de3d495762ed06e74dd", null ],
@@ -9,8 +9,6 @@ var classmage_1_1_scene_node =
     [ "GetName", "classmage_1_1_scene_node.html#ab4d72e26370747c06ccb1461f3080b31", null ],
     [ "operator=", "classmage_1_1_scene_node.html#af4298cbc808139f9da43055afdfe8f7e", null ],
     [ "operator=", "classmage_1_1_scene_node.html#ae38092ba9ec8449f15b3c1f8285ba500", null ],
-    [ "SetName", "classmage_1_1_scene_node.html#a11a6d53a9ba637813b34347b68ad08d6", null ],
-    [ "SetName", "classmage_1_1_scene_node.html#a3dc6b033a811a9e1d6da0aa85b4f281b", null ],
-    [ "SetString", "classmage_1_1_scene_node.html#addebab8c69bbd8a767d2f37bb2ef0ed5", null ],
+    [ "SetName", "classmage_1_1_scene_node.html#ad557b3593b5828cdd6870951dcea1aaf", null ],
     [ "m_name", "classmage_1_1_scene_node.html#a3ba13ec190df3e020c89d2ace0301dec", null ]
 ];

@@ -18,7 +18,7 @@ var classmage_1_1_depth_pass =
     [ "ProcessTransparentOccluderModels", "classmage_1_1_depth_pass.html#a885b8d686f5f2e50ea8020073d551e82", null ],
     [ "Render", "classmage_1_1_depth_pass.html#a266e186a56e4a81b9a0e535dca143947", null ],
     [ "RenderOccluders", "classmage_1_1_depth_pass.html#a51609c054c2d036777a032018bd0cc70", null ],
-    [ "m_device_context", "classmage_1_1_depth_pass.html#ab7e627aaf0356349e750e89c6b97c7a0", null ],
+    [ "m_device_context", "classmage_1_1_depth_pass.html#a900800a2d00c1855523a77ec488221fe", null ],
     [ "m_dissolve_buffer", "classmage_1_1_depth_pass.html#ab8ef293d922a965a92825b8226b9d87c", null ],
     [ "m_opaque_model_buffer", "classmage_1_1_depth_pass.html#a4e466580656eb0602d2e00c29b2435a0", null ],
     [ "m_opaque_vs", "classmage_1_1_depth_pass.html#aa410d0303d18d621a7894695b87ccfc2", null ],

@@ -19,7 +19,7 @@ var classmage_1_1_g_buffer_pass =
     [ "ProcessModels", "classmage_1_1_g_buffer_pass.html#abd4c5154aefd3d8e9befdb572b37f40d", null ],
     [ "Render", "classmage_1_1_g_buffer_pass.html#a67b030c2efe8daa5aad105307fa09887", null ],
     [ "m_bound_ps", "classmage_1_1_g_buffer_pass.html#aef8452f64c9815d002e552957ed9e342", null ],
-    [ "m_device_context", "classmage_1_1_g_buffer_pass.html#a009ffc6f7d459b4bda115cfb470e1fd0", null ],
+    [ "m_device_context", "classmage_1_1_g_buffer_pass.html#a56bcb08adf8a9b04a15efe24ef703c32", null ],
     [ "m_model_buffer", "classmage_1_1_g_buffer_pass.html#a0538769957df6740993dbb479b7e05a2", null ],
     [ "m_ps", "classmage_1_1_g_buffer_pass.html#ae607b9a6dab89d45865dc0ede3212fcd", null ],
     [ "m_vs", "classmage_1_1_g_buffer_pass.html#a5baced2ca3d5018e35d25d6c1b5d8f20", null ]

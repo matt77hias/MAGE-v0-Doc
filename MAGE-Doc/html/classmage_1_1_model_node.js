@@ -1,7 +1,7 @@
 var classmage_1_1_model_node =
 [
-    [ "ModelNode", "classmage_1_1_model_node.html#ab8d77a4792224d8909fb399393b8294f", null ],
-    [ "ModelNode", "classmage_1_1_model_node.html#a15d6a41cc5cdc90310313147100c1d6f", null ],
+    [ "ModelNode", "classmage_1_1_model_node.html#a588aa714637e3e17e764e08c9035bf60", null ],
+    [ "ModelNode", "classmage_1_1_model_node.html#a46f63c13878130126a4b25fdb568ac37", null ],
     [ "ModelNode", "classmage_1_1_model_node.html#a409c098ddecf20d1b393d43c15d16482", null ],
     [ "ModelNode", "classmage_1_1_model_node.html#a19ba577112ea488f227ea31642fb2cb2", null ],
     [ "~ModelNode", "classmage_1_1_model_node.html#a131c0062a1bed3d29fade27e602bec44", null ],

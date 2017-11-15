@@ -1,6 +1,6 @@
 var classmage_1_1_sprite_font_reader =
 [
-    [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#ab257bc3c1f787182c14da56545ff6d10", null ],
+    [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#ad4b9a669ed9b452f3433416c663f77bf", null ],
     [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#a81f2b8ceab31ea5006d2bef498a03bbc", null ],
     [ "SpriteFontReader", "classmage_1_1_sprite_font_reader.html#aa75a98a2573636fa9e1cde4fbe9c1b93", null ],
     [ "~SpriteFontReader", "classmage_1_1_sprite_font_reader.html#ac2c18498abf115d296c0314845562481", null ],
@@ -10,6 +10,6 @@ var classmage_1_1_sprite_font_reader =
     [ "Read", "classmage_1_1_sprite_font_reader.html#af380ae127285a88ae41e35a9067db412", null ],
     [ "ReadTexture", "classmage_1_1_sprite_font_reader.html#a12877a168b5dc2a95ec307a37d20ddca", null ],
     [ "m_desc", "classmage_1_1_sprite_font_reader.html#a577e1a05126b5b8d7bbdaa3e83bf32bf", null ],
-    [ "m_device", "classmage_1_1_sprite_font_reader.html#aa77ee2a35b9ad15d5c1abfc6ffe5810c", null ],
+    [ "m_device", "classmage_1_1_sprite_font_reader.html#af03825850b0d22f896f1a68b3e31878e", null ],
     [ "m_output", "classmage_1_1_sprite_font_reader.html#a3df62ce71f85745c493b142c726261b3", null ]
 ];

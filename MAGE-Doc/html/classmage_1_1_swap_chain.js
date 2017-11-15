@@ -1,10 +1,10 @@
 var classmage_1_1_swap_chain =
 [
-    [ "SwapChain", "classmage_1_1_swap_chain.html#a039bcb99605d47802d0efc24292f2cfa", null ],
+    [ "SwapChain", "classmage_1_1_swap_chain.html#a2ba9364220d9f8fa03b5bd99318d32dc", null ],
     [ "SwapChain", "classmage_1_1_swap_chain.html#a85d5da233182a273705b4fa1c419a0aa", null ],
     [ "SwapChain", "classmage_1_1_swap_chain.html#add0b68e7ce2f6eb857a4ad9c7e01eb83", null ],
     [ "~SwapChain", "classmage_1_1_swap_chain.html#a853168cba69cadc3d8c10ad2f4939e72", null ],
-    [ "ClearRTV", "classmage_1_1_swap_chain.html#a3e78e19609d97b9e599f49d7e79e24af", null ],
+    [ "Clear", "classmage_1_1_swap_chain.html#a94b28938ba9e402665197a71409ae43a", null ],
     [ "CreateRTV", "classmage_1_1_swap_chain.html#a9cdb798d8911e2f1239ad7eb79cc6b87", null ],
     [ "CreateSwapChain", "classmage_1_1_swap_chain.html#a9474cae31868f020c76439febc6e1afd", null ],
     [ "Get", "classmage_1_1_swap_chain.html#a9ed25cd34dedc97e25e26e58456ac2fe", null ],
@@ -23,9 +23,9 @@ var classmage_1_1_swap_chain =
     [ "SetupSwapChain", "classmage_1_1_swap_chain.html#aec2b14bc569046174f6a416a7f20c8d5", null ],
     [ "SwitchMode", "classmage_1_1_swap_chain.html#ada1b8857eeac3d00287fb624645e365e", null ],
     [ "TakeScreenShot", "classmage_1_1_swap_chain.html#a23a4618b5104203c5a5c962696ae3b53", null ],
-    [ "m_device", "classmage_1_1_swap_chain.html#aa9b2db7026b84c37e94dad44566a0208", null ],
+    [ "m_device", "classmage_1_1_swap_chain.html#a169f9613c42c3cad0ea83e9535676cd0", null ],
     [ "m_display_configuration", "classmage_1_1_swap_chain.html#ac1aa833943aa6bfe464da32316f7096f", null ],
     [ "m_hwindow", "classmage_1_1_swap_chain.html#aea5964cd3bd2bfef89ae428cceef82fd", null ],
     [ "m_rtv", "classmage_1_1_swap_chain.html#a87610dab11ac73b2e5c2510e013640ac", null ],
-    [ "m_swap_chain", "classmage_1_1_swap_chain.html#ac7ac016259f4496b56c20f7a0499968b", null ]
+    [ "m_swap_chain", "classmage_1_1_swap_chain.html#a826bde72349ca10f7c60ca39d68dc2b2", null ]
 ];

@@ -1,6 +1,6 @@
 var structmage_1_1_engine_setup =
 [
-    [ "EngineSetup", "structmage_1_1_engine_setup.html#ac09a572abaf5f785004bb46a1d1bf49c", null ],
+    [ "EngineSetup", "structmage_1_1_engine_setup.html#ac3ed7aa532ce0547a1a351c2d5399866", null ],
     [ "EngineSetup", "structmage_1_1_engine_setup.html#a2399c7966ed02ce9e9ab951b7483aac1", null ],
     [ "EngineSetup", "structmage_1_1_engine_setup.html#ac199c03ba1968ca0a98a2de48cfb952d", null ],
     [ "~EngineSetup", "structmage_1_1_engine_setup.html#ac9ec3df257c585930b21b2b69c99c177", null ],

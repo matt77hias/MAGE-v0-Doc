@@ -9,7 +9,7 @@ var classmage_1_1_back_buffer_pass =
     [ "operator=", "classmage_1_1_back_buffer_pass.html#a6d1fb713b11b30a08f6d811b5e1fe29b", null ],
     [ "operator=", "classmage_1_1_back_buffer_pass.html#a63adba9a29335c03c30842de8836302a", null ],
     [ "Render", "classmage_1_1_back_buffer_pass.html#a6f0265c182a4b1ac2badd5df3fb11545", null ],
-    [ "m_device_context", "classmage_1_1_back_buffer_pass.html#a8cf9c4489733b17402dc33ed2dbe2bcc", null ],
+    [ "m_device_context", "classmage_1_1_back_buffer_pass.html#a08d816be20d35edae0b8fc7975bde76d", null ],
     [ "m_ps", "classmage_1_1_back_buffer_pass.html#a3890afe2710539dfe25ce95be802c2fc", null ],
     [ "m_vs", "classmage_1_1_back_buffer_pass.html#ac2117930285072c5063881124ba38a5f", null ]
 ];

@@ -12,8 +12,8 @@ var classmage_1_1_wireframe_pass =
     [ "operator=", "classmage_1_1_wireframe_pass.html#abd90640d63b9ce0c44b87de87d06910c", null ],
     [ "ProcessModels", "classmage_1_1_wireframe_pass.html#a190f6a6a916949b6b37d5b70c9451008", null ],
     [ "Render", "classmage_1_1_wireframe_pass.html#ac0810f125c8539cb6b27bdbfc6535d2e", null ],
-    [ "m_color_buffer", "classmage_1_1_wireframe_pass.html#ab046a411db5ef3cd9c291ea1bea7cdbc", null ],
-    [ "m_device_context", "classmage_1_1_wireframe_pass.html#aa3e85e2688c424fc369da6c00691d466", null ],
+    [ "m_color_buffer", "classmage_1_1_wireframe_pass.html#acb2aaf33841a4f08edb50f9b72637d93", null ],
+    [ "m_device_context", "classmage_1_1_wireframe_pass.html#ac0f6bc1488ab515fe00d6e7abf230636", null ],
     [ "m_model_buffer", "classmage_1_1_wireframe_pass.html#aa7fb7cbba08fe8b4d7defab36d2e82a7", null ],
     [ "m_ps", "classmage_1_1_wireframe_pass.html#a39577f12ad9b3f72e703c290cbf46002", null ],
     [ "m_vs", "classmage_1_1_wireframe_pass.html#aa55de3b804055362812bcf775e0dffb4", null ]

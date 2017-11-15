@@ -1,12 +1,12 @@
 var classmage_1_1_sprite_font =
 [
-    [ "SpriteFont", "classmage_1_1_sprite_font.html#a081eb41de898a96ecd8f0b5bde3987d9", null ],
-    [ "SpriteFont", "classmage_1_1_sprite_font.html#aad86ca75acba684a4cbc10c84f64ca9f", null ],
+    [ "SpriteFont", "classmage_1_1_sprite_font.html#a14069bfb14980107c74407182e591927", null ],
+    [ "SpriteFont", "classmage_1_1_sprite_font.html#ae710e178a60b9b681f0471179bbb2581", null ],
     [ "SpriteFont", "classmage_1_1_sprite_font.html#a5df751fe06abda25127fdd9222e41948", null ],
     [ "SpriteFont", "classmage_1_1_sprite_font.html#ad1ba3d6947515b36b40b037a2760df29", null ],
     [ "~SpriteFont", "classmage_1_1_sprite_font.html#acbf50687b4a5dbb2ff1ad73ecc89b7f1", null ],
     [ "ContainsCharacter", "classmage_1_1_sprite_font.html#a01836c4197661dbdd66c624d8dc6a7c3", null ],
-    [ "DrawString", "classmage_1_1_sprite_font.html#a02498ef183874ed31c408fc142a8231e", null ],
+    [ "DrawString", "classmage_1_1_sprite_font.html#a221745b1d4786935759a75b57853b59f", null ],
     [ "DrawString", "classmage_1_1_sprite_font.html#a10fee860b9ccbc3063c1721deb7688e5", null ],
     [ "Get", "classmage_1_1_sprite_font.html#a8e43f8d97fb7e5ee03ed49fb45ee1b5f", null ],
     [ "GetDefaultCharacter", "classmage_1_1_sprite_font.html#a9be513809e714558708cab21a22d7316", null ],
