@@ -37,11 +37,13 @@ const \hyperlink{structmage_1_1_s_r_g_b_a}{S\+R\+G\+BA} \& \hyperlink{classmage_
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_sprite_image_a955225e8274ae5f39f6eb6f6fbb75638}{Get\+Base\+Color\+S\+RV} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_sprite_image_a468fb3e862e4dd0ba46f49c4cffc8659}{Set\+Base\+Color\+Texture} (const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&base\+\_\+color\+\_\+texture)
+void \hyperlink{classmage_1_1_sprite_image_a9fb3a39de1350e58b4019b541337ca13}{Set\+Base\+Color\+Texture} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ base\+\_\+color\+\_\+texture) noexcept
 \item 
 const R\+E\+CT $\ast$ \hyperlink{classmage_1_1_sprite_image_afd401746e4466bf7849acb373675527c}{Get\+Base\+Color\+Texture\+Region} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_sprite_image_a5e98bd9b7fc39384625400187a90f82e}{Set\+Base\+Color\+Texture\+Region} (const R\+E\+CT \&texture\+\_\+region)
+void \hyperlink{classmage_1_1_sprite_image_aa08a58d1e94f8e26031b97b56b0c8c6a}{Set\+Maximum\+Base\+Color\+Texture\+Region} () noexcept
+\item 
+void \hyperlink{classmage_1_1_sprite_image_aa68e416669d05cf777c564b118b50fe5}{Set\+Base\+Color\+Texture\+Region} (R\+E\+CT texture\+\_\+region) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -237,33 +239,39 @@ Moves the given sprite image to this sprite image.
 \begin{DoxyReturn}{Returns}
 A reference to the moved sprite image (i.\+e. this sprite image). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_sprite_image_a468fb3e862e4dd0ba46f49c4cffc8659}{}\label{classmage_1_1_sprite_image_a468fb3e862e4dd0ba46f49c4cffc8659} 
+\hypertarget{classmage_1_1_sprite_image_a9fb3a39de1350e58b4019b541337ca13}{}\label{classmage_1_1_sprite_image_a9fb3a39de1350e58b4019b541337ca13} 
 \index{mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}!Set\+Base\+Color\+Texture@{Set\+Base\+Color\+Texture}}
 \index{Set\+Base\+Color\+Texture@{Set\+Base\+Color\+Texture}!mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}}
 \subsubsection{\texorpdfstring{Set\+Base\+Color\+Texture()}{SetBaseColorTexture()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Image\+::\+Set\+Base\+Color\+Texture (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&}]{base\+\_\+color\+\_\+texture }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Image\+::\+Set\+Base\+Color\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$}]{base\+\_\+color\+\_\+texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the s\+R\+GB base color texture of this sprite image to the given base color texture.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em base\+\_\+color\+\_\+texture} & A reference to the s\+R\+GB base color texture. \\
+\mbox{\tt in}  & {\em base\+\_\+color\+\_\+texture} & A pointer to the s\+R\+GB base color texture. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_sprite_image_a5e98bd9b7fc39384625400187a90f82e}{}\label{classmage_1_1_sprite_image_a5e98bd9b7fc39384625400187a90f82e} 
+\hypertarget{classmage_1_1_sprite_image_aa68e416669d05cf777c564b118b50fe5}{}\label{classmage_1_1_sprite_image_aa68e416669d05cf777c564b118b50fe5} 
 \index{mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}!Set\+Base\+Color\+Texture\+Region@{Set\+Base\+Color\+Texture\+Region}}
 \index{Set\+Base\+Color\+Texture\+Region@{Set\+Base\+Color\+Texture\+Region}!mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}}
 \subsubsection{\texorpdfstring{Set\+Base\+Color\+Texture\+Region()}{SetBaseColorTextureRegion()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Image\+::\+Set\+Base\+Color\+Texture\+Region (\begin{DoxyParamCaption}\item[{const R\+E\+CT \&}]{texture\+\_\+region }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Image\+::\+Set\+Base\+Color\+Texture\+Region (\begin{DoxyParamCaption}\item[{R\+E\+CT}]{texture\+\_\+region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the base color texture region of this sprite image to the given texture region.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em texture\+\_\+region} & A reference to the texture region. \\
+\mbox{\tt in}  & {\em texture\+\_\+region} & The texture region. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_sprite_image_aa08a58d1e94f8e26031b97b56b0c8c6a}{}\label{classmage_1_1_sprite_image_aa08a58d1e94f8e26031b97b56b0c8c6a} 
+\index{mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}!Set\+Maximum\+Base\+Color\+Texture\+Region@{Set\+Maximum\+Base\+Color\+Texture\+Region}}
+\index{Set\+Maximum\+Base\+Color\+Texture\+Region@{Set\+Maximum\+Base\+Color\+Texture\+Region}!mage\+::\+Sprite\+Image@{mage\+::\+Sprite\+Image}}
+\subsubsection{\texorpdfstring{Set\+Maximum\+Base\+Color\+Texture\+Region()}{SetMaximumBaseColorTextureRegion()}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Image\+::\+Set\+Maximum\+Base\+Color\+Texture\+Region (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+Sets the base color texture region of this sprite image to the maximum texture region. 
 
 \subsection{Member Data Documentation}
 \hypertarget{classmage_1_1_sprite_image_aa83cc38aa8a84e8fc434232b4223c236}{}\label{classmage_1_1_sprite_image_aa83cc38aa8a84e8fc434232b4223c236} 

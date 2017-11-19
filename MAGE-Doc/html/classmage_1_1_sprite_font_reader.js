@@ -9,7 +9,7 @@ var classmage_1_1_sprite_font_reader =
     [ "operator=", "classmage_1_1_sprite_font_reader.html#aae3c6305ea97146bd85b2d93a037d47d", null ],
     [ "Read", "classmage_1_1_sprite_font_reader.html#af380ae127285a88ae41e35a9067db412", null ],
     [ "ReadTexture", "classmage_1_1_sprite_font_reader.html#a12877a168b5dc2a95ec307a37d20ddca", null ],
-    [ "m_desc", "classmage_1_1_sprite_font_reader.html#a577e1a05126b5b8d7bbdaa3e83bf32bf", null ],
+    [ "m_desc", "classmage_1_1_sprite_font_reader.html#a6951665c0a5fda28ea6784945565cb6e", null ],
     [ "m_device", "classmage_1_1_sprite_font_reader.html#af03825850b0d22f896f1a68b3e31878e", null ],
     [ "m_output", "classmage_1_1_sprite_font_reader.html#a3df62ce71f85745c493b142c726261b3", null ]
 ];

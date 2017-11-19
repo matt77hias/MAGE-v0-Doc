@@ -11,7 +11,7 @@ var classmage_1_1_big_endian_binary_writer =
     [ "WriteCharacter", "classmage_1_1_big_endian_binary_writer.html#a869eff3f6e0666406bd5470af3e02096", null ],
     [ "WriteString", "classmage_1_1_big_endian_binary_writer.html#a1a62be10de26eb77e1812e6807eb4c02", null ],
     [ "WriteString", "classmage_1_1_big_endian_binary_writer.html#a0cbee156086deb8999e609a2b355ff0e", null ],
-    [ "WriteToFile", "classmage_1_1_big_endian_binary_writer.html#a02fb2c39f5a52dc25c8d08516e1af621", null ],
+    [ "WriteToFile", "classmage_1_1_big_endian_binary_writer.html#a3a49f78f308a0827f4a99150ad49d7c1", null ],
     [ "WriteValue", "classmage_1_1_big_endian_binary_writer.html#a30edcc0ad823fc8b4f8c51107f11405a", null ],
     [ "WriteValueArray", "classmage_1_1_big_endian_binary_writer.html#a70459f96b5389052d6e090e124c5468b", null ],
     [ "m_file_stream", "classmage_1_1_big_endian_binary_writer.html#ad2cdbdca429d6c351a57b51d175ffb55", null ],

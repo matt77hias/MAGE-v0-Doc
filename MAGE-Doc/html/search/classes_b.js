@@ -1,7 +1,7 @@
 var searchData=
 [
   ['mainwindow',['MainWindow',['../classmage_1_1_main_window.html',1,'mage']]],
-  ['manhattanmotorscript',['ManhattanMotorScript',['../classmage_1_1_manhattan_motor_script.html',1,'mage']]],
+  ['manhattanmotorscript',['ManhattanMotorScript',['../classmage_1_1script_1_1_manhattan_motor_script.html',1,'mage::script']]],
   ['material',['Material',['../classmage_1_1_material.html',1,'mage']]],
   ['mdlreader',['MDLReader',['../classmage_1_1_m_d_l_reader.html',1,'mage']]],
   ['mdlwriter',['MDLWriter',['../classmage_1_1_m_d_l_writer.html',1,'mage']]],
@@ -18,7 +18,7 @@ var searchData=
   ['modelpart',['ModelPart',['../structmage_1_1_model_part.html',1,'mage']]],
   ['modeltexturetransformbuffer',['ModelTextureTransformBuffer',['../structmage_1_1_model_texture_transform_buffer.html',1,'mage']]],
   ['mouse',['Mouse',['../classmage_1_1_mouse.html',1,'mage']]],
-  ['mouselookscript',['MouseLookScript',['../classmage_1_1_mouse_look_script.html',1,'mage']]],
+  ['mouselookscript',['MouseLookScript',['../classmage_1_1script_1_1_mouse_look_script.html',1,'mage::script']]],
   ['mshreader',['MSHReader',['../classmage_1_1_m_s_h_reader.html',1,'mage']]],
   ['mshwriter',['MSHWriter',['../classmage_1_1_m_s_h_writer.html',1,'mage']]],
   ['mtlreader',['MTLReader',['../classmage_1_1_m_t_l_reader.html',1,'mage']]],

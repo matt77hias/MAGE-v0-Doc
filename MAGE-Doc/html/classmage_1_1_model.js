@@ -1,7 +1,7 @@
 var classmage_1_1_model =
 [
     [ "Model", "classmage_1_1_model.html#a6f67b215aa2db0a593ef7a8ee77fb4d3", null ],
-    [ "Model", "classmage_1_1_model.html#aea937d2e26dc5549e1e93d1664b6f3b0", null ],
+    [ "Model", "classmage_1_1_model.html#a6f8f226a76be925e0fa2e9ed045fded2", null ],
     [ "Model", "classmage_1_1_model.html#ac5f1d340bbfefd30bec3e6343a86059a", null ],
     [ "Model", "classmage_1_1_model.html#a71abc57cde3bd6270de88bfa3aa47601", null ],
     [ "~Model", "classmage_1_1_model.html#af9f45ed2dcf470f85bbfd144ca9857a7", null ],
@@ -22,8 +22,6 @@ var classmage_1_1_model =
     [ "operator=", "classmage_1_1_model.html#a563515c64ec39cfcda9f6ca37576391b", null ],
     [ "operator=", "classmage_1_1_model.html#a084e30d15822bfefa79128f30a57cc02", null ],
     [ "SetLightOcclusion", "classmage_1_1_model.html#aabcd12eeab9d6b81e27c727cb94cf57a", null ],
-    [ "SetMaterial", "classmage_1_1_model.html#a684886e1f43cdc6ebd5c52f9437f9869", null ],
-    [ "SetMaterial", "classmage_1_1_model.html#a19f6c35097f95d8d41497cc596e18bc5", null ],
     [ "ToggleLightOcclusion", "classmage_1_1_model.html#a68168e66cb04c08f27616e9d7768a99e", null ],
     [ "m_aabb", "classmage_1_1_model.html#ab53a0f253df545fd59723bee107bf523", null ],
     [ "m_bs", "classmage_1_1_model.html#a1d3ea0a9f302f623dcaceb2df4315a0b", null ],

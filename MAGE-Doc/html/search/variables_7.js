@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['indianred',['IndianRed',['../namespacemage_1_1color.html#ae55d6dafecdd3658cc65030c36378ce6',1,'mage::color']]],
-  ['indigo',['Indigo',['../namespacemage_1_1color.html#a9d61e8b1a66949fcc413c1234094ac66',1,'mage::color']]],
-  ['ivory',['Ivory',['../namespacemage_1_1color.html#a98e545acecca320d52ee5d84aa915945',1,'mage::color']]]
+  ['g_5fdefault_5fdelimiters',['g_default_delimiters',['../namespacemage.html#a10fe126e627cc2ce8af2cc39cc5db81e',1,'mage']]],
+  ['g_5fprimes',['g_primes',['../namespacemage.html#a0d50361be09a92c7c0ff7dc3ff7f616d',1,'mage']]],
+  ['gainsboro',['Gainsboro',['../namespacemage_1_1color.html#a8c04c8f95fa039376ed9427ed66a44bc',1,'mage::color']]],
+  ['gbitmask',['GBitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a13f1281d9cb4a6e001541c78d58ead8b',1,'DDS_PIXELFORMAT']]],
+  ['getclipboardtextfn',['GetClipboardTextFn',['../struct_im_gui_i_o.html#ab7face2b2efef720a22a7fb2143d415c',1,'ImGuiIO']]],
+  ['ghostwhite',['GhostWhite',['../namespacemage_1_1color.html#a8bfaff6141aba03ebc2e66108b268b7a',1,'mage::color']]],
+  ['glyf',['glyf',['../structstbtt__fontinfo.html#a5de2129e0a415748920f6aa10ceee6e5',1,'stbtt_fontinfo']]],
+  ['glyphadvancex',['GlyphAdvanceX',['../struct_im_font_atlas_1_1_custom_rect.html#afb55b310d9816386f2eb2f11df9f11e2',1,'ImFontAtlas::CustomRect']]],
+  ['glyphextraspacing',['GlyphExtraSpacing',['../struct_im_font_config.html#a82db103689b1c434ec92875721967c07',1,'ImFontConfig']]],
+  ['glyphoffset',['GlyphOffset',['../struct_im_font_config.html#a290a81956fdcb7ad3b5e3152594db121',1,'ImFontConfig::GlyphOffset()'],['../struct_im_font_atlas_1_1_custom_rect.html#a18a84c649c382fafe75eba628b5d599e',1,'ImFontAtlas::CustomRect::GlyphOffset()']]],
+  ['glyphranges',['GlyphRanges',['../struct_im_font_config.html#aa174ceff80323012cd1b717d864258dd',1,'ImFontConfig']]],
+  ['glyphs',['Glyphs',['../struct_im_font.html#a1a0901fc1a8cbd41d582d6cef4946bc9',1,'ImFont']]],
+  ['gold',['Gold',['../namespacemage_1_1color.html#a6eafe437aa82470f52c8e8827c9df7ce',1,'mage::color']]],
+  ['goldenrod',['Goldenrod',['../namespacemage_1_1color.html#a833b431e0f7d36811a237fc3c9b681a7',1,'mage::color']]],
+  ['grabminsize',['GrabMinSize',['../struct_im_gui_style.html#a04db033d001b343815cdcd2491576ef7',1,'ImGuiStyle']]],
+  ['grabrounding',['GrabRounding',['../struct_im_gui_style.html#a42369d83032545066803a7db62936e8f',1,'ImGuiStyle']]],
+  ['gray',['Gray',['../namespacemage_1_1color.html#a8f0f4dd06fc37474e20a347af3523dcf',1,'mage::color']]],
+  ['green',['Green',['../namespacemage_1_1color.html#a70a471f8796824272417d82a0c78b63b',1,'mage::color']]],
+  ['greenyellow',['GreenYellow',['../namespacemage_1_1color.html#a19b0da7d9b4d5ddb2eceec40df11ba57',1,'mage::color']]],
+  ['groupoffsetx',['GroupOffsetX',['../struct_im_gui_draw_context.html#a30473e3e4b3eeba6c8d1acdaaedecba9',1,'ImGuiDrawContext']]],
+  ['groupstack',['GroupStack',['../struct_im_gui_draw_context.html#aa775f16a46bdfe8e131e25cab733afe0',1,'ImGuiDrawContext']]],
+  ['gsubrs',['gsubrs',['../structstbtt__fontinfo.html#afc5bfc4a52ad0e3879f0f81a372da7fb',1,'stbtt_fontinfo']]]
 ];
