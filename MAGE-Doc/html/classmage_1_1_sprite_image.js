@@ -14,8 +14,9 @@ var classmage_1_1_sprite_image =
     [ "GetBaseColorTextureRegion", "classmage_1_1_sprite_image.html#afd401746e4466bf7849acb373675527c", null ],
     [ "operator=", "classmage_1_1_sprite_image.html#a20d8e8272cf62599f6c0e4b1ff4f3586", null ],
     [ "operator=", "classmage_1_1_sprite_image.html#a9f83e728a93550f6b20bb4d500483171", null ],
-    [ "SetBaseColorTexture", "classmage_1_1_sprite_image.html#a468fb3e862e4dd0ba46f49c4cffc8659", null ],
-    [ "SetBaseColorTextureRegion", "classmage_1_1_sprite_image.html#a5e98bd9b7fc39384625400187a90f82e", null ],
+    [ "SetBaseColorTexture", "classmage_1_1_sprite_image.html#a9fb3a39de1350e58b4019b541337ca13", null ],
+    [ "SetBaseColorTextureRegion", "classmage_1_1_sprite_image.html#aa68e416669d05cf777c564b118b50fe5", null ],
+    [ "SetMaximumBaseColorTextureRegion", "classmage_1_1_sprite_image.html#aa08a58d1e94f8e26031b97b56b0c8c6a", null ],
     [ "m_base_color", "classmage_1_1_sprite_image.html#aa83cc38aa8a84e8fc434232b4223c236", null ],
     [ "m_base_color_texture", "classmage_1_1_sprite_image.html#a92f5b052561ca7d8fb317b8479d820a2", null ],
     [ "m_base_color_texture_region", "classmage_1_1_sprite_image.html#ab921e099c41323969c86f7bac9c81f4f", null ]

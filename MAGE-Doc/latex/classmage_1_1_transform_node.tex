@@ -4,14 +4,14 @@
 
 {\ttfamily \#include $<$transform\+\_\+node.\+hpp$>$}
 
-Inheritance diagram for mage\+:\+:Transform\+Node\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classmage_1_1_transform_node}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a}{Transform\+Node} ()
+\item 
+\hyperlink{classmage_1_1_transform_node_a33ae343355c328a543b8665f7f1e9c3f}{Transform\+Node} (const \hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&node)
+\item 
+\hyperlink{classmage_1_1_transform_node_aff227d1925614bc5afc03c981bc2a717}{Transform\+Node} (\hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&\&node) noexcept
 \item 
 \hyperlink{classmage_1_1_transform_node_a0c5e84d99c27cda31dae8106611d682f}{$\sim$\+Transform\+Node} ()
 \item 
@@ -242,12 +242,6 @@ const X\+M\+V\+E\+C\+T\+OR X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a}{Transform\+Node} ()
-\item 
-\hyperlink{classmage_1_1_transform_node_a33ae343355c328a543b8665f7f1e9c3f}{Transform\+Node} (const \hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&node)
-\item 
-\hyperlink{classmage_1_1_transform_node_aff227d1925614bc5afc03c981bc2a717}{Transform\+Node} (\hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&\&node) noexcept
-\item 
 void \hyperlink{classmage_1_1_transform_node_aef6e402c69bb125b09925b7a5ca79b33}{Set\+Dirty} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_transform_node_a2102425a193884bea453c783388f6a38}{Update\+Object\+To\+World\+Matrix} () const noexcept
@@ -260,7 +254,7 @@ bool \hyperlink{classmage_1_1_transform_node_ad225b5c9f2236f8c6c91dd7a6a9c4ffd}{
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_transform_node_a3efc0401cee8fc6215148963ce3e8227}{Get\+Number\+Of\+Child\+Nodes} () const noexcept
 \item 
-bool \hyperlink{classmage_1_1_transform_node_ac83d9d2013494588fb45a469057b18f6}{Has\+Child\+Node} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_node}{Node} $>$ node) const
+bool \hyperlink{classmage_1_1_transform_node_ab56e299f356ba599d468600ad2948120}{Has\+Child\+Node} (const \hyperlink{classmage_1_1_node}{Node} $\ast$node) const
 \item 
 void \hyperlink{classmage_1_1_transform_node_aae7e3f918bcf38bd16db8475c7797c0b}{Remove\+All\+Child\+Nodes} () noexcept
 \item 
@@ -275,11 +269,11 @@ void \hyperlink{classmage_1_1_transform_node_aae7e3f918bcf38bd16db8475c7797c0b}{
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_transform}{Transform} $>$ \hyperlink{classmage_1_1_transform_node_a648c4757ba4d10e7749217077d11475d}{m\+\_\+transform}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_transform}{Transform} $>$ \hyperlink{classmage_1_1_transform_node_ac601e39377f706442da334e040adaab3}{m\+\_\+transform}
 \item 
 \hyperlink{classmage_1_1_node}{Node} $\ast$ \hyperlink{classmage_1_1_transform_node_afad4b8198a5e4b1a3c46fb8e51fd17c2}{m\+\_\+parent}
 \item 
-vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_node}{Node} $>$ $>$ \hyperlink{classmage_1_1_transform_node_ae26b5d4c920a3743354b6f28c8b41651}{m\+\_\+childs}
+vector$<$ \hyperlink{classmage_1_1_node}{Node} $\ast$$>$ \hyperlink{classmage_1_1_transform_node_a0f6be1bd433b1c7226dac7f865dca3a3}{m\+\_\+childs}
 \item 
 X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_transform_node_a79de447d6d40226d7ceb276007f5fbeb}{m\+\_\+object\+\_\+to\+\_\+world}
 \item 
@@ -294,30 +288,23 @@ bool \hyperlink{classmage_1_1_transform_node_acb9046e0096ada337e1978f016daa144}{
 \item 
 class \hyperlink{classmage_1_1_transform_node_a6db9d28bd448a131448276ee03de1e6d}{Node}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 A class of transform nodes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_transform_node_a0c5e84d99c27cda31dae8106611d682f}{}\label{classmage_1_1_transform_node_a0c5e84d99c27cda31dae8106611d682f} 
-\index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!````~Transform\+Node@{$\sim$\+Transform\+Node}}
-\index{````~Transform\+Node@{$\sim$\+Transform\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
-\subsubsection{\texorpdfstring{$\sim$\+Transform\+Node()}{~TransformNode()}}
-{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::$\sim$\+Transform\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Destructs this transform node. \hypertarget{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a}{}\label{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a} 
+\hypertarget{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a}{}\label{classmage_1_1_transform_node_aec41a87ef5f7bca905e1de4b8959350a} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!Transform\+Node@{Transform\+Node}}
 \index{Transform\+Node@{Transform\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{Transform\+Node()}{TransformNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Constructs a transform node. \hypertarget{classmage_1_1_transform_node_a33ae343355c328a543b8665f7f1e9c3f}{}\label{classmage_1_1_transform_node_a33ae343355c328a543b8665f7f1e9c3f} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!Transform\+Node@{Transform\+Node}}
 \index{Transform\+Node@{Transform\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{Transform\+Node()}{TransformNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&}]{node }\end{DoxyParamCaption})}
 
 Constructs a transform node from the given transform node.
 
@@ -330,7 +317,7 @@ Constructs a transform node from the given transform node.
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!Transform\+Node@{Transform\+Node}}
 \index{Transform\+Node@{Transform\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{Transform\+Node()}{TransformNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&\&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::\+Transform\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_transform_node}{Transform\+Node} \&\&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Constructs a transform node by moving the given transform node.
 
@@ -339,7 +326,13 @@ Constructs a transform node by moving the given transform node.
 \mbox{\tt in}  & {\em node} & A reference to the transform node to move. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_transform_node_a0c5e84d99c27cda31dae8106611d682f}{}\label{classmage_1_1_transform_node_a0c5e84d99c27cda31dae8106611d682f} 
+\index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!````~Transform\+Node@{$\sim$\+Transform\+Node}}
+\index{````~Transform\+Node@{$\sim$\+Transform\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+Transform\+Node()}{~TransformNode()}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Node\+::$\sim$\+Transform\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+Destructs this transform node. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_transform_node_ab12f50db5ea7b78b17c5fb580b6bbdcd}{}\label{classmage_1_1_transform_node_ab12f50db5ea7b78b17c5fb580b6bbdcd} 
@@ -1385,11 +1378,11 @@ Returns the local up direction of this transform node expressed in world space c
 \begin{DoxyReturn}{Returns}
 The local up direction of this transform node expressed in world space coordinates. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_transform_node_ac83d9d2013494588fb45a469057b18f6}{}\label{classmage_1_1_transform_node_ac83d9d2013494588fb45a469057b18f6} 
+\hypertarget{classmage_1_1_transform_node_ab56e299f356ba599d468600ad2948120}{}\label{classmage_1_1_transform_node_ab56e299f356ba599d468600ad2948120} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!Has\+Child\+Node@{Has\+Child\+Node}}
 \index{Has\+Child\+Node@{Has\+Child\+Node}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{Has\+Child\+Node()}{HasChildNode()}}
-{\footnotesize\ttfamily bool mage\+::\+Transform\+Node\+::\+Has\+Child\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_node}{Node} $>$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool mage\+::\+Transform\+Node\+::\+Has\+Child\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_node}{Node} $\ast$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 Checks whether this transform node contains the given node as a child node.
 
@@ -1985,11 +1978,11 @@ Updates the world-\/to-\/object matrix of this transform node if dirty.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_transform_node_ae26b5d4c920a3743354b6f28c8b41651}{}\label{classmage_1_1_transform_node_ae26b5d4c920a3743354b6f28c8b41651} 
+\hypertarget{classmage_1_1_transform_node_a0f6be1bd433b1c7226dac7f865dca3a3}{}\label{classmage_1_1_transform_node_a0f6be1bd433b1c7226dac7f865dca3a3} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!m\+\_\+childs@{m\+\_\+childs}}
 \index{m\+\_\+childs@{m\+\_\+childs}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{m\+\_\+childs}{m\_childs}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_node}{Node} $>$ $>$ mage\+::\+Transform\+Node\+::m\+\_\+childs\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classmage_1_1_node}{Node} $\ast$ $>$ mage\+::\+Transform\+Node\+::m\+\_\+childs\hspace{0.3cm}{\ttfamily [private]}}
 
 The child transform nodes of this transform node. \hypertarget{classmage_1_1_transform_node_a389151fddc72499d0be4e725622d99b9}{}\label{classmage_1_1_transform_node_a389151fddc72499d0be4e725622d99b9} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!m\+\_\+dirty\+\_\+object\+\_\+to\+\_\+world@{m\+\_\+dirty\+\_\+object\+\_\+to\+\_\+world}}
@@ -2015,11 +2008,11 @@ The cached object-\/to-\/world matrix of this transform node. \hypertarget{class
 \subsubsection{\texorpdfstring{m\+\_\+parent}{m\_parent}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_node}{Node}$\ast$ mage\+::\+Transform\+Node\+::m\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
 
-The parent transform node of this transform node. \hypertarget{classmage_1_1_transform_node_a648c4757ba4d10e7749217077d11475d}{}\label{classmage_1_1_transform_node_a648c4757ba4d10e7749217077d11475d} 
+The parent transform node of this transform node. \hypertarget{classmage_1_1_transform_node_ac601e39377f706442da334e040adaab3}{}\label{classmage_1_1_transform_node_ac601e39377f706442da334e040adaab3} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!m\+\_\+transform@{m\+\_\+transform}}
 \index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}}
 \subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_transform}{Transform} $>$ mage\+::\+Transform\+Node\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_transform}{Transform} $>$ mage\+::\+Transform\+Node\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
 
 The transform of this transform node. \hypertarget{classmage_1_1_transform_node_ade413fc9a980ce8e1191c17f94f25e3f}{}\label{classmage_1_1_transform_node_ade413fc9a980ce8e1191c17f94f25e3f} 
 \index{mage\+::\+Transform\+Node@{mage\+::\+Transform\+Node}!m\+\_\+world\+\_\+to\+\_\+object@{m\+\_\+world\+\_\+to\+\_\+object}}

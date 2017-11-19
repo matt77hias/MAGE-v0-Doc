@@ -20,7 +20,7 @@ var classmage_1_1_sprite_text =
     [ "GetTextWithColors", "classmage_1_1_sprite_text.html#a2493ad5e9a8c472dae8beb92f51dc882", null ],
     [ "operator=", "classmage_1_1_sprite_text.html#af027a281c1fa600dd870ca04d91fcae8", null ],
     [ "operator=", "classmage_1_1_sprite_text.html#a7e2e165d7682d9cc623b7c9725f76920", null ],
-    [ "SetFont", "classmage_1_1_sprite_text.html#a99402a3ca60e50f606e6cce7bc8b2828", null ],
+    [ "SetFont", "classmage_1_1_sprite_text.html#a46235c90d3fc9872c2342cd17eaa9e89", null ],
     [ "SetText", "classmage_1_1_sprite_text.html#ac33e512ab29554a306ada9a378ab00eb", null ],
     [ "SetText", "classmage_1_1_sprite_text.html#a03d5012e2812d422a1285a4a0abb104f", null ],
     [ "SetText", "classmage_1_1_sprite_text.html#a3ca23b77ab252f226d6525dfc2cb3d11", null ],

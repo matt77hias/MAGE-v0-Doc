@@ -5,6 +5,9 @@ var searchData=
   ['variablecomponentpass',['VariableComponentPass',['../classmage_1_1_variable_component_pass.html',1,'mage']]],
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html',1,'mage']]],
   ['variableshadingpass',['VariableShadingPass',['../classmage_1_1_variable_shading_pass.html',1,'mage']]],
+  ['varreader',['VARReader',['../classmage_1_1_v_a_r_reader.html',1,'mage']]],
+  ['varwriter',['VARWriter',['../classmage_1_1_v_a_r_writer.html',1,'mage']]],
+  ['vertex_5fconstant_5fbuffer',['VERTEX_CONSTANT_BUFFER',['../struct_v_e_r_t_e_x___c_o_n_s_t_a_n_t___b_u_f_f_e_r.html',1,'']]],
   ['vertexposition',['VertexPosition',['../structmage_1_1_vertex_position.html',1,'mage']]],
   ['vertexpositioncolor',['VertexPositionColor',['../structmage_1_1_vertex_position_color.html',1,'mage']]],
   ['vertexpositioncolortexture',['VertexPositionColorTexture',['../structmage_1_1_vertex_position_color_texture.html',1,'mage']]],
@@ -17,7 +20,5 @@ var searchData=
   ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html',1,'mage']]],
   ['viewfrustum',['ViewFrustum',['../structmage_1_1_view_frustum.html',1,'mage']]],
   ['viewport',['Viewport',['../classmage_1_1_viewport.html',1,'mage']]],
-  ['vs',['VS',['../structmage_1_1_pipeline_1_1_v_s.html',1,'mage::Pipeline']]],
-  ['vsreader',['VSReader',['../classmage_1_1_v_s_reader.html',1,'mage']]],
-  ['vswriter',['VSWriter',['../classmage_1_1_v_s_writer.html',1,'mage']]]
+  ['vs',['VS',['../structmage_1_1_pipeline_1_1_v_s.html',1,'mage::Pipeline']]]
 ];

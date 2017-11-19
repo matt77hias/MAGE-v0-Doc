@@ -7,7 +7,7 @@ var searchData=
   ['lightnode',['LightNode',['../classmage_1_1_light_node.html',1,'mage']]],
   ['linereader',['LineReader',['../classmage_1_1_line_reader.html',1,'mage']]],
   ['loadable',['Loadable',['../classmage_1_1_loadable.html',1,'mage']]],
-  ['locationscript',['LocationScript',['../classmage_1_1_location_script.html',1,'mage']]],
+  ['locationscript',['LocationScript',['../classmage_1_1script_1_1_location_script.html',1,'mage::script']]],
   ['loggingconfiguration',['LoggingConfiguration',['../classmage_1_1_logging_configuration.html',1,'mage']]],
   ['lowallocator',['LowAllocator',['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html',1,'mage::DoubleEndedMemoryStack']]]
 ];

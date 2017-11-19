@@ -1,9 +1,9 @@
 var classmage_1_1_transform_node =
 [
-    [ "~TransformNode", "classmage_1_1_transform_node.html#a0c5e84d99c27cda31dae8106611d682f", null ],
     [ "TransformNode", "classmage_1_1_transform_node.html#aec41a87ef5f7bca905e1de4b8959350a", null ],
     [ "TransformNode", "classmage_1_1_transform_node.html#a33ae343355c328a543b8665f7f1e9c3f", null ],
     [ "TransformNode", "classmage_1_1_transform_node.html#aff227d1925614bc5afc03c981bc2a717", null ],
+    [ "~TransformNode", "classmage_1_1_transform_node.html#a0c5e84d99c27cda31dae8106611d682f", null ],
     [ "AddAndClampRotation", "classmage_1_1_transform_node.html#ab12f50db5ea7b78b17c5fb580b6bbdcd", null ],
     [ "AddAndClampRotation", "classmage_1_1_transform_node.html#a7555718be074fe48c3a2f0f262833bc6", null ],
     [ "AddAndClampRotation", "classmage_1_1_transform_node.html#a9d29e51f8cc61aef4ebbe311d27981b2", null ],
@@ -85,7 +85,7 @@ var classmage_1_1_transform_node =
     [ "GetWorldToObjectMatrix", "classmage_1_1_transform_node.html#abdad2523f50f398977abf8dd6c166d89", null ],
     [ "GetWorldToViewMatrix", "classmage_1_1_transform_node.html#add9f28faa15d91a451880de4743dd439", null ],
     [ "GetWorldUp", "classmage_1_1_transform_node.html#a9d545f02c9d8062a29b236a94c8c2136", null ],
-    [ "HasChildNode", "classmage_1_1_transform_node.html#ac83d9d2013494588fb45a469057b18f6", null ],
+    [ "HasChildNode", "classmage_1_1_transform_node.html#ab56e299f356ba599d468600ad2948120", null ],
     [ "HasParentNode", "classmage_1_1_transform_node.html#ad225b5c9f2236f8c6c91dd7a6a9c4ffd", null ],
     [ "operator=", "classmage_1_1_transform_node.html#afd5f7d7b377b1a85cbe1d64f8f0df49a", null ],
     [ "operator=", "classmage_1_1_transform_node.html#a8dcd5a36ad95917216df628d309b294d", null ],
@@ -129,11 +129,11 @@ var classmage_1_1_transform_node =
     [ "UpdateObjectToWorldMatrix", "classmage_1_1_transform_node.html#a2102425a193884bea453c783388f6a38", null ],
     [ "UpdateWorldToObjectMatrix", "classmage_1_1_transform_node.html#aec6309962398c128fdf3f50cbff13e89", null ],
     [ "Node", "classmage_1_1_transform_node.html#a6db9d28bd448a131448276ee03de1e6d", null ],
-    [ "m_childs", "classmage_1_1_transform_node.html#ae26b5d4c920a3743354b6f28c8b41651", null ],
+    [ "m_childs", "classmage_1_1_transform_node.html#a0f6be1bd433b1c7226dac7f865dca3a3", null ],
     [ "m_dirty_object_to_world", "classmage_1_1_transform_node.html#a389151fddc72499d0be4e725622d99b9", null ],
     [ "m_dirty_world_to_object", "classmage_1_1_transform_node.html#acb9046e0096ada337e1978f016daa144", null ],
     [ "m_object_to_world", "classmage_1_1_transform_node.html#a79de447d6d40226d7ceb276007f5fbeb", null ],
     [ "m_parent", "classmage_1_1_transform_node.html#afad4b8198a5e4b1a3c46fb8e51fd17c2", null ],
-    [ "m_transform", "classmage_1_1_transform_node.html#a648c4757ba4d10e7749217077d11475d", null ],
+    [ "m_transform", "classmage_1_1_transform_node.html#ac601e39377f706442da334e040adaab3", null ],
     [ "m_world_to_object", "classmage_1_1_transform_node.html#ade413fc9a980ce8e1191c17f94f25e3f", null ]
 ];

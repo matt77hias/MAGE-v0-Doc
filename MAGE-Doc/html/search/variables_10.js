@@ -1,11 +1,22 @@
 var searchData=
 [
-  ['tan',['Tan',['../namespacemage_1_1color.html#ad1e6957f59027fe43fb973ded05cde79',1,'mage::color']]],
-  ['teal',['Teal',['../namespacemage_1_1color.html#a5a7a616ec00a38afb3b2c97e22ef555d',1,'mage::color']]],
-  ['tex',['tex',['../structmage_1_1_vertex_position_texture.html#a9b4efa25d268c812892ecffc2582496e',1,'mage::VertexPositionTexture::tex()'],['../structmage_1_1_vertex_position_normal_texture.html#a0782e41c5e28d421bfb47afad9af9c55',1,'mage::VertexPositionNormalTexture::tex()'],['../structmage_1_1_vertex_position_color_texture.html#adfbaa105e46bb65f502ec33eaa2e8b15',1,'mage::VertexPositionColorTexture::tex()'],['../structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed',1,'mage::VertexPositionNormalColorTexture::tex()'],['../structmage_1_1_vertex_position_texture_texture.html#ae47656414d503a2c96c88fa6d485cccf',1,'mage::VertexPositionTextureTexture::tex()']]],
-  ['tex2',['tex2',['../structmage_1_1_vertex_position_texture_texture.html#a5a41669f18385d932c1490ff20c80bed',1,'mage::VertexPositionTextureTexture']]],
-  ['thistle',['Thistle',['../namespacemage_1_1color.html#af0130361545ad1169a81e820fee4c8bf',1,'mage::color']]],
-  ['tomato',['Tomato',['../namespacemage_1_1color.html#a1f9596eae4cf47ef70b15c5a0cae26e5',1,'mage::color']]],
-  ['transparent',['Transparent',['../namespacemage_1_1color.html#a8f082eed46cfcf7c8c1c8bc206b6e501',1,'mage::color']]],
-  ['turquoise',['Turquoise',['../namespacemage_1_1color.html#afb41a2ea6e693f2db82002ca69ca99a8',1,'mage::color']]]
+  ['rasterizerflags',['RasterizerFlags',['../struct_im_font_config.html#a80d05eea7733731a3e9ac1d9e905e5b3',1,'ImFontConfig']]],
+  ['rasterizermultiply',['RasterizerMultiply',['../struct_im_font_config.html#a9365265cc52098a8ecf89ff47f6106f2',1,'ImFontConfig']]],
+  ['rbitmask',['RBitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a2d2f8c19c50ceb8677b0be2d1090c234',1,'DDS_PIXELFORMAT']]],
+  ['readonly',['ReadOnly',['../struct_im_gui_text_edit_callback_data.html#a37cec257a392910f386188978027541c',1,'ImGuiTextEditCallbackData']]],
+  ['red',['Red',['../namespacemage_1_1color.html#a6d620e83b3d57b75b633845e75c11fb3',1,'mage::color']]],
+  ['redo_5fchar_5fpoint',['redo_char_point',['../struct_stb_undo_state.html#a928f655e4af8945a14d99e944441704a',1,'StbUndoState']]],
+  ['redo_5fpoint',['redo_point',['../struct_stb_undo_state.html#a719ba014b2db8a8ea55739664b445af0',1,'StbUndoState']]],
+  ['refframe',['RefFrame',['../struct_im_gui_once_upon_a_frame.html#a2d44776b8e7bdeec217f88be9f832e08',1,'ImGuiOnceUponAFrame']]],
+  ['renderdrawdata',['RenderDrawData',['../struct_im_gui_context.html#a81cacf53454e6dc932a7e3181179a3af',1,'ImGuiContext']]],
+  ['renderdrawlists',['RenderDrawLists',['../struct_im_gui_context.html#a65c7d5bafc5cb52d77d181925ff777da',1,'ImGuiContext']]],
+  ['renderdrawlistsfn',['RenderDrawListsFn',['../struct_im_gui_i_o.html#ae16a9f25f36fe9706d8a33fb128e538a',1,'ImGuiIO']]],
+  ['reserved1',['reserved1',['../struct_d_d_s___h_e_a_d_e_r.html#a589e935e11a1d8193101741109710319',1,'DDS_HEADER']]],
+  ['reserved2',['reserved2',['../struct_d_d_s___h_e_a_d_e_r.html#a2b94becd3bfcb64930551d3bb4387198',1,'DDS_HEADER']]],
+  ['resourcedimension',['resourceDimension',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#a9e52c1afbd5b8205619d1b89a367b438',1,'DDS_HEADER_DXT10']]],
+  ['rgbbitcount',['RGBBitCount',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#af53071b3c2912f56e4b54533d8101951',1,'DDS_PIXELFORMAT']]],
+  ['rootnonpopupwindow',['RootNonPopupWindow',['../struct_im_gui_window.html#a43b1e2ffa15d572f4d0ce4fbbeb5595f',1,'ImGuiWindow']]],
+  ['rootwindow',['RootWindow',['../struct_im_gui_window.html#aef9281297b0993c8f1b7c1ff7987cb61',1,'ImGuiWindow']]],
+  ['rosybrown',['RosyBrown',['../namespacemage_1_1color.html#a9cf3275aa615478cbfb64eff8f7e8031',1,'mage::color']]],
+  ['royalblue',['RoyalBlue',['../namespacemage_1_1color.html#a39f986452e5943dc0b5f2f10ba19fefd',1,'mage::color']]]
 ];

@@ -13,7 +13,7 @@ var classmage_1_1_writer =
     [ "WriteString", "classmage_1_1_writer.html#aaa0e62c04e6ff6c90fa73c64fc48635d", null ],
     [ "WriteStringLine", "classmage_1_1_writer.html#ad53f69e0f722c4d4b8b320ea39770c1a", null ],
     [ "WriteStringLine", "classmage_1_1_writer.html#a542963963dc22cdecbdb3a29a3843ee9", null ],
-    [ "WriteToFile", "classmage_1_1_writer.html#aa65ca7f473b3c95e94c72e25efc4c4c8", null ],
+    [ "WriteToFile", "classmage_1_1_writer.html#a9af5416468b0a51983d07aec8061eb27", null ],
     [ "m_file_stream", "classmage_1_1_writer.html#ac4884215d1b547e990633474bf61c470", null ],
     [ "m_fname", "classmage_1_1_writer.html#afa271ee47897d4961e9d62132d8faeb5", null ]
 ];

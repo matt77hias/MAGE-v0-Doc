@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['rbitmask',['RBitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a2d2f8c19c50ceb8677b0be2d1090c234',1,'DDS_PIXELFORMAT']]],
-  ['red',['Red',['../namespacemage_1_1color.html#a8832bac671d8a6ebbce6edc3c0289ada',1,'mage::color']]],
-  ['reserved1',['reserved1',['../struct_d_d_s___h_e_a_d_e_r.html#a589e935e11a1d8193101741109710319',1,'DDS_HEADER']]],
-  ['reserved2',['reserved2',['../struct_d_d_s___h_e_a_d_e_r.html#a2b94becd3bfcb64930551d3bb4387198',1,'DDS_HEADER']]],
-  ['resourcedimension',['resourceDimension',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#a9e52c1afbd5b8205619d1b89a367b438',1,'DDS_HEADER_DXT10']]],
-  ['rgbbitcount',['RGBBitCount',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#af53071b3c2912f56e4b54533d8101951',1,'DDS_PIXELFORMAT']]],
-  ['rosybrown',['RosyBrown',['../namespacemage_1_1color.html#a4d29d760cc914eb93aef64c4d7bdc530',1,'mage::color']]],
-  ['royalblue',['RoyalBlue',['../namespacemage_1_1color.html#a89c20a091fb4e7ae8ab9a4e57eec461c',1,'mage::color']]]
+  ['offset',['Offset',['../struct_im_gui_style_var_info.html#ae900d6a02166d3d0433c18b95aec10e8',1,'ImGuiStyleVarInfo']]],
+  ['offsetnorm',['OffsetNorm',['../struct_im_gui_column_data.html#a9678a00f55c9fa44ed35ec14ea9b697b',1,'ImGuiColumnData']]],
+  ['oldlace',['OldLace',['../namespacemage_1_1color.html#afb6a94c9a691ac340ecf5ed94af052c5',1,'mage::color']]],
+  ['olive',['Olive',['../namespacemage_1_1color.html#a9dde379c69800de744e90a45b4bbbe0f',1,'mage::color']]],
+  ['olivedrab',['OliveDrab',['../namespacemage_1_1color.html#a77c1bc650b6099a4f9a83e295c8275fe',1,'mage::color']]],
+  ['openpopupstack',['OpenPopupStack',['../struct_im_gui_context.html#af6c0e07cff9641d31bdf22b7e7df2842',1,'ImGuiContext']]],
+  ['optcursorblink',['OptCursorBlink',['../struct_im_gui_i_o.html#a676ccbf84e205effc5a023e8d5adc6eb',1,'ImGuiIO']]],
+  ['optmacosxbehaviors',['OptMacOSXBehaviors',['../struct_im_gui_i_o.html#a99ffac55fc01f11166e8e92ca9ebda98',1,'ImGuiIO']]],
+  ['orange',['Orange',['../namespacemage_1_1color.html#afa85dcd9e84a70ecb064915fd5a8d79a',1,'mage::color']]],
+  ['orangered',['OrangeRed',['../namespacemage_1_1color.html#a16c7871268b776271de85e64d16b176b',1,'mage::color']]],
+  ['orchid',['Orchid',['../namespacemage_1_1color.html#a47cd4ebcaa73248f12a128697acdbad1',1,'mage::color']]],
+  ['orderwithinparent',['OrderWithinParent',['../struct_im_gui_window.html#a81cb24c35445e1259367284701253c79',1,'ImGuiWindow']]],
+  ['osimeposrequest',['OsImePosRequest',['../struct_im_gui_context.html#af98a8f8b9c96bf8b692449daedf45602',1,'ImGuiContext']]],
+  ['osimeposset',['OsImePosSet',['../struct_im_gui_context.html#a466a0975ad72e7e3deaea6bcfb6b446d',1,'ImGuiContext']]],
+  ['overlaydrawlist',['OverlayDrawList',['../struct_im_gui_context.html#abc8e0592d9beea307d78661df0a38b1a',1,'ImGuiContext']]],
+  ['oversampleh',['OversampleH',['../struct_im_font_config.html#ab460df0d8019ffa8d124e8988c710910',1,'ImFontConfig']]],
+  ['oversamplev',['OversampleV',['../struct_im_font_config.html#a8018f84c60bfafb2b4629aeb77a047cb',1,'ImFontConfig']]]
 ];

@@ -12,8 +12,7 @@ var classmage_1_1_light =
     [ "GetBS", "classmage_1_1_light.html#ab2365a76f8f3a2ae2c97263ea556a993", null ],
     [ "operator=", "classmage_1_1_light.html#ad1267c8d162e2cdead5e3a7d83cef3c1", null ],
     [ "operator=", "classmage_1_1_light.html#a5fd2edc3fcbcc1dbe7a2620b76cedd25", null ],
-    [ "SetBoundingVolumes", "classmage_1_1_light.html#aa4ec2f7e3e42804aad415a03075c4b39", null ],
-    [ "SetBoundingVolumes", "classmage_1_1_light.html#a8ca9ffda51c5f32eb940680ceb795f0f", null ],
+    [ "SetBoundingVolumes", "classmage_1_1_light.html#a4d2c35b96e8aaa718821c79e0e123025", null ],
     [ "m_aabb", "classmage_1_1_light.html#a2c9190a763a1f37f7639a02bef01279d", null ],
     [ "m_base_color", "classmage_1_1_light.html#a31c237ed5716313d0c8916186bef4dab", null ],
     [ "m_bs", "classmage_1_1_light.html#a926df9e12442c630d252fae852b8fc57", null ]

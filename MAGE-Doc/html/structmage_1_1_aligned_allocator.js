@@ -9,8 +9,8 @@ var structmage_1_1_aligned_allocator =
     [ "size_type", "structmage_1_1_aligned_allocator.html#a7184b9ffd131938071f9734e9291976e", null ],
     [ "value_type", "structmage_1_1_aligned_allocator.html#a04614928948b5589c241726e3441e058", null ],
     [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#a95363950f216346db818997988be73bf", null ],
-    [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#a57a8626271cc5bb8798201afb499dce7", null ],
-    [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#aa83ac0904d3354ed96a92f7ad713e1a7", null ],
+    [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#a05c42833aa1391f95c3cd51be7c19273", null ],
+    [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#aefc95d55846c11bac240452247fab11e", null ],
     [ "AlignedAllocator", "structmage_1_1_aligned_allocator.html#a728d237ac0ae50bcc593a94f6e4cd4fc", null ],
     [ "~AlignedAllocator", "structmage_1_1_aligned_allocator.html#a98bda5c375a177eaa71cd622622451eb", null ],
     [ "address", "structmage_1_1_aligned_allocator.html#a8c7fc099279194e37afa8e4dae1a64fa", null ],
@@ -21,8 +21,8 @@ var structmage_1_1_aligned_allocator =
     [ "deallocate", "structmage_1_1_aligned_allocator.html#a7893ac09903ab7c8601e9db45715c5d7", null ],
     [ "destroy", "structmage_1_1_aligned_allocator.html#a5334e1389c6018a91fdfe2db592d2b74", null ],
     [ "max_size", "structmage_1_1_aligned_allocator.html#a81ac9662f40f1708d6f8d4e93fa8ee08", null ],
-    [ "operator!=", "structmage_1_1_aligned_allocator.html#a878ebf0d8ad7e6e91bc9d788c8bdbbc7", null ],
-    [ "operator=", "structmage_1_1_aligned_allocator.html#ae30b9ecaee6492dc7828e693953d6080", null ],
-    [ "operator=", "structmage_1_1_aligned_allocator.html#a968996d679acfd7ce9d113bf33d31c91", null ],
-    [ "operator==", "structmage_1_1_aligned_allocator.html#a3577dfd220aaf85e07ecd1770101a087", null ]
+    [ "operator!=", "structmage_1_1_aligned_allocator.html#aefd13c00b97c39f360051998f3005a49", null ],
+    [ "operator=", "structmage_1_1_aligned_allocator.html#a4620c8e53ecc7294ff90d07e956810ed", null ],
+    [ "operator=", "structmage_1_1_aligned_allocator.html#a0fec7e9e30d91e215d33416dde9ef527", null ],
+    [ "operator==", "structmage_1_1_aligned_allocator.html#a5abdcdde596e62320252b40bf93412d2", null ]
 ];

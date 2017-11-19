@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['color',['color',['../namespacemage_1_1color.html',1,'mage']]],
-  ['mage',['mage',['../namespacemage.html',1,'']]]
+  ['imgui',['ImGui',['../namespace_im_gui.html',1,'']]],
+  ['imguistb',['ImGuiStb',['../namespace_im_gui_stb.html',1,'']]]
 ];

@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['p',['p',['../structmage_1_1_vertex_position.html#ad9c3ea68e2c1745446387d1eca28f25f',1,'mage::VertexPosition::p()'],['../structmage_1_1_vertex_position_normal.html#ac95e9941363ec5687f0bf21e59b83940',1,'mage::VertexPositionNormal::p()'],['../structmage_1_1_vertex_position_color.html#afe40a78afb8e13e742d93d5092b1a614',1,'mage::VertexPositionColor::p()'],['../structmage_1_1_vertex_position_texture.html#a49253c4db52d1a4905838ba6ed6c52c6',1,'mage::VertexPositionTexture::p()'],['../structmage_1_1_vertex_position_normal_color.html#a6847c367ca68fb8d8e349c8441ae63dd',1,'mage::VertexPositionNormalColor::p()'],['../structmage_1_1_vertex_position_normal_texture.html#a9000b80274027dd7b7d258f45523ca65',1,'mage::VertexPositionNormalTexture::p()'],['../structmage_1_1_vertex_position_color_texture.html#a145c2e2fce90b07252b778b46e31ea24',1,'mage::VertexPositionColorTexture::p()'],['../structmage_1_1_vertex_position_normal_color_texture.html#ac7808865ca6672b7d0f4f8457077bd16',1,'mage::VertexPositionNormalColorTexture::p()'],['../structmage_1_1_vertex_position_texture_texture.html#aed106149eda65a20e60ebc3b93535270',1,'mage::VertexPositionTextureTexture::p()']]],
-  ['palegoldenrod',['PaleGoldenrod',['../namespacemage_1_1color.html#a6c9f5530f16dfa219b0a881326058c9c',1,'mage::color']]],
-  ['palegreen',['PaleGreen',['../namespacemage_1_1color.html#a3d95dc90a4afec7d0092f734396a6c27',1,'mage::color']]],
-  ['paleturquoise',['PaleTurquoise',['../namespacemage_1_1color.html#a1aa94704fb56a939398357b938f476c9',1,'mage::color']]],
-  ['palevioletred',['PaleVioletRed',['../namespacemage_1_1color.html#a97a3a91746e2efcb1eb2a7f335eed330',1,'mage::color']]],
-  ['papayawhip',['PapayaWhip',['../namespacemage_1_1color.html#ae5a2ee6874c7974e6299b964f50c8d69',1,'mage::color']]],
-  ['peachpuff',['PeachPuff',['../namespacemage_1_1color.html#a2c787fca871e90644915ac6b141aa367',1,'mage::color']]],
-  ['peru',['Peru',['../namespacemage_1_1color.html#a31189488f43ecef8ed0e26625be2c73d',1,'mage::color']]],
-  ['pink',['Pink',['../namespacemage_1_1color.html#a96295d8cfec2a09119d549e085399ef2',1,'mage::color']]],
-  ['pitchorlinearsize',['pitchOrLinearSize',['../struct_d_d_s___h_e_a_d_e_r.html#a77410ea1d2209672fc6651b5322a9306',1,'DDS_HEADER']]],
-  ['plum',['Plum',['../namespacemage_1_1color.html#ac5193659ac991faa8044fb2b9ea21f9c',1,'mage::color']]],
-  ['powderblue',['PowderBlue',['../namespacemage_1_1color.html#ac75f12ee461424dff5a031dfee8fe73b',1,'mage::color']]],
-  ['purple',['Purple',['../namespacemage_1_1color.html#a6466ea355a9d92403093523e4f9c7e6f',1,'mage::color']]]
+  ['n',['n',['../structmage_1_1_vertex_position_normal.html#a09baa618081e66e21cdfe5752dbf8df6',1,'mage::VertexPositionNormal::n()'],['../structmage_1_1_vertex_position_normal_color.html#a771c7e71e8b6441b73f513f511507650',1,'mage::VertexPositionNormalColor::n()'],['../structmage_1_1_vertex_position_normal_texture.html#a442eb1609ab596e3e33c26f7be32695a',1,'mage::VertexPositionNormalTexture::n()'],['../structmage_1_1_vertex_position_normal_color_texture.html#a7304bf677ad4f16aea974e63f4324eba',1,'mage::VertexPositionNormalColorTexture::n()']]],
+  ['name',['Name',['../struct_im_font_config.html#abcd5db10139b42fbac90e31512c64f08',1,'ImFontConfig::Name()'],['../struct_im_gui_ini_data.html#aef4db96cc7332d492bba873028a00f66',1,'ImGuiIniData::Name()'],['../struct_im_gui_window.html#ab44252eb7d02d3f38249f5bac605037c',1,'ImGuiWindow::Name()']]],
+  ['navajowhite',['NavajoWhite',['../namespacemage_1_1color.html#a456a2a2bd5e2ddd926237e13027d4123',1,'mage::color']]],
+  ['navwindow',['NavWindow',['../struct_im_gui_context.html#ae06077e45c894488b28baaf2d7ff8e41',1,'ImGuiContext']]],
+  ['navy',['Navy',['../namespacemage_1_1color.html#a309c380f757119928cd357c51d789708',1,'mage::color']]],
+  ['next',['next',['../structstbrp__node.html#a933cb2dd6cddc4fcaf10e3b40634bed4',1,'stbrp_node']]],
+  ['nextwidth',['NextWidth',['../struct_im_gui_simple_columns.html#afa5623a5d27aadeb8c08d925b189397e',1,'ImGuiSimpleColumns']]],
+  ['nextwidths',['NextWidths',['../struct_im_gui_simple_columns.html#a5d2739196dc2df8626e32a0e373cdffe',1,'ImGuiSimpleColumns']]],
+  ['nodes',['nodes',['../structstbtt__pack__context.html#a11a73fa6860e6be1ac039fcca9db2c7c',1,'stbtt_pack_context']]],
+  ['num_5fchars',['num_chars',['../struct_stb_textedit_row.html#a1a19bebadb3f82b4f86ea29698d77084',1,'StbTexteditRow::num_chars()'],['../structstbtt__pack__range.html#a046d65b6ffb65fb998d471ba098e2e23',1,'stbtt_pack_range::num_chars()']]],
+  ['num_5fnodes',['num_nodes',['../structstbrp__context.html#afa8105d4ef6d3e0ae5aaf8e1ed4b2c58',1,'stbrp_context']]],
+  ['numglyphs',['numGlyphs',['../structstbtt__fontinfo.html#a60ad8301a98eb7cd91472ce846d9080d',1,'stbtt_fontinfo']]]
 ];

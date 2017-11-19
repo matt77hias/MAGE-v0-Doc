@@ -49,7 +49,7 @@ const \hyperlink{structmage_1_1_s_r_g_b_a}{S\+R\+G\+BA} \& \hyperlink{classmage_
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_material_aef6ae5f87347d9e4bf798079aa906dd3}{Get\+Base\+Color\+S\+RV} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_material_add87c1ebf7783980ac21e986c080505b}{Set\+Base\+Color\+Texture} (const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&base\+\_\+color\+\_\+texture)
+void \hyperlink{classmage_1_1_material_a85f9544a9d26f252a27a3bc6c271456a}{Set\+Base\+Color\+Texture} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ base\+\_\+color\+\_\+texture) noexcept
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_material_a5b1a4e965f812e18594cf7455d49139c}{Get\+Roughness} () const noexcept
 \item 
@@ -65,7 +65,7 @@ const \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} \hyperlink{classmage_1_1_mate
 \item 
 I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1_material_a0675c4bbbdb48c0db9bf82fffb073094}{Get\+Material\+S\+RV} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_material_a8f88eda4c45268bf6a30878948055ff5}{Set\+Material\+Texture} (const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&material\+\_\+texture)
+void \hyperlink{classmage_1_1_material_a48f5f4576a998f8015b96f41e6c6c870}{Set\+Material\+Texture} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ material\+\_\+texture) noexcept
 \item 
 \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_material_a41a286cf05a2627ee0baef602b01a1fb}{Get\+Normal\+Texture} () const noexcept
 \item 
@@ -366,17 +366,17 @@ Moves the given material to this material.
 \begin{DoxyReturn}{Returns}
 A reference to the moved material (i.\+e. this material). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_material_add87c1ebf7783980ac21e986c080505b}{}\label{classmage_1_1_material_add87c1ebf7783980ac21e986c080505b} 
+\hypertarget{classmage_1_1_material_a85f9544a9d26f252a27a3bc6c271456a}{}\label{classmage_1_1_material_a85f9544a9d26f252a27a3bc6c271456a} 
 \index{mage\+::\+Material@{mage\+::\+Material}!Set\+Base\+Color\+Texture@{Set\+Base\+Color\+Texture}}
 \index{Set\+Base\+Color\+Texture@{Set\+Base\+Color\+Texture}!mage\+::\+Material@{mage\+::\+Material}}
 \subsubsection{\texorpdfstring{Set\+Base\+Color\+Texture()}{SetBaseColorTexture()}}
-{\footnotesize\ttfamily void mage\+::\+Material\+::\+Set\+Base\+Color\+Texture (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&}]{base\+\_\+color\+\_\+texture }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Material\+::\+Set\+Base\+Color\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$}]{base\+\_\+color\+\_\+texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the s\+R\+GB base color texture of this material to the given base color texture.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em base\+\_\+color\+\_\+texture} & A reference to the s\+R\+GB base color texture. \\
+\mbox{\tt in}  & {\em base\+\_\+color\+\_\+texture} & A pointer to the s\+R\+GB base color texture. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_material_a9b0bcb448cf9c96bcb63dcbc0f110bd1}{}\label{classmage_1_1_material_a9b0bcb448cf9c96bcb63dcbc0f110bd1} 
@@ -392,17 +392,17 @@ Sets the light interaction of this material to the given value.
 \mbox{\tt in}  & {\em light\+\_\+interaction} & {\ttfamily true} if this material needs to interact with light and light sources. {\ttfamily false} otherwise. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_material_a8f88eda4c45268bf6a30878948055ff5}{}\label{classmage_1_1_material_a8f88eda4c45268bf6a30878948055ff5} 
+\hypertarget{classmage_1_1_material_a48f5f4576a998f8015b96f41e6c6c870}{}\label{classmage_1_1_material_a48f5f4576a998f8015b96f41e6c6c870} 
 \index{mage\+::\+Material@{mage\+::\+Material}!Set\+Material\+Texture@{Set\+Material\+Texture}}
 \index{Set\+Material\+Texture@{Set\+Material\+Texture}!mage\+::\+Material@{mage\+::\+Material}}
 \subsubsection{\texorpdfstring{Set\+Material\+Texture()}{SetMaterialTexture()}}
-{\footnotesize\ttfamily void mage\+::\+Material\+::\+Set\+Material\+Texture (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \&}]{material\+\_\+texture }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Material\+::\+Set\+Material\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$}]{material\+\_\+texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the material texture of this material to the given material texture.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em material\+\_\+texture} & A reference to the material texture. \\
+\mbox{\tt in}  & {\em material\+\_\+texture} & A pointer to the material texture. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_material_a70dde310b2108e9ad3041df13db0bdc0}{}\label{classmage_1_1_material_a70dde310b2108e9ad3041df13db0bdc0} 
