@@ -3,7 +3,7 @@ var classmage_1_1_single_ended_memory_stack =
     [ "Allocator", "structmage_1_1_single_ended_memory_stack_1_1_allocator.html", "structmage_1_1_single_ended_memory_stack_1_1_allocator" ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#ab9555d63b35070aee321cc3839fec3c4", null ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#ae854c4558f0215bf38cb713cbca7fa31", null ],
-    [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#a4b62040c62ede5225373c3552857e3e8", null ],
+    [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#afd6632eac3ada6ea88a69b586f27a4e4", null ],
     [ "~SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#adaa82d19a1ef60ca42396bdaaea0c8e6", null ],
     [ "Alloc", "classmage_1_1_single_ended_memory_stack.html#acda0b7f2e61bf8ba8bbb9ba633237866", null ],
     [ "AllocData", "classmage_1_1_single_ended_memory_stack.html#ae957490450194631b81b9f6ba84f5f5a", null ],

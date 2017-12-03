@@ -2,7 +2,7 @@ var structmage_1_1_sprite_font_output =
 [
     [ "SpriteFontOutput", "structmage_1_1_sprite_font_output.html#a91ed0cd4cb7f9bfab57ff0e3fa4436bc", null ],
     [ "SpriteFontOutput", "structmage_1_1_sprite_font_output.html#a02ea4f9574bce22b4f0f32b78b6b3b79", null ],
-    [ "SpriteFontOutput", "structmage_1_1_sprite_font_output.html#ac7dbae468f4e14c2a41860c1ca4a05f6", null ],
+    [ "SpriteFontOutput", "structmage_1_1_sprite_font_output.html#aed4a4a96c9c767060710cb259d7fa2e9", null ],
     [ "~SpriteFontOutput", "structmage_1_1_sprite_font_output.html#ab0793582b679667ff018eda962b77f6a", null ],
     [ "operator=", "structmage_1_1_sprite_font_output.html#a1eeb719ec5e2e8f84f51fc9c5db228f7", null ],
     [ "operator=", "structmage_1_1_sprite_font_output.html#a5433b918576d7e6724ed46046724a753", null ],

@@ -11,7 +11,7 @@ var classmage_1_1_variable_shading_pass =
     ] ],
     [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a0c3b30167c1dcdf74daae080f2c799bc", null ],
     [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a98ce8bacba3894ff29d2a13d3a645d22", null ],
-    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#afcb297b4d400a6eb119846d4c04fc3d1", null ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a214cdbab6685f4fc63130979cc247765", null ],
     [ "~VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a1af7915285b239e8e6d14eb0f926dc4a", null ],
     [ "BindFixedState", "classmage_1_1_variable_shading_pass.html#a3a5bf4764bdafd393c73b75939f68aa0", null ],
     [ "BindModelData", "classmage_1_1_variable_shading_pass.html#a9041b2b7695ede893ea5bc6b5b43e98d", null ],

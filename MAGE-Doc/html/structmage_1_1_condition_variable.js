@@ -5,9 +5,9 @@ var structmage_1_1_condition_variable =
       [ "BROADCAST", "structmage_1_1_condition_variable.html#ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f", null ],
       [ "COUNT", "structmage_1_1_condition_variable.html#ae7627253bf4faebc0aae84a77920d195a553680ab09f088489b7d9f3cef9a5e14", null ]
     ] ],
-    [ "ConditionVariable", "structmage_1_1_condition_variable.html#a09073f0affc601f052fce541a17ba559", null ],
+    [ "ConditionVariable", "structmage_1_1_condition_variable.html#ad4090aa7c9fa24483da84ee87f8196fa", null ],
     [ "ConditionVariable", "structmage_1_1_condition_variable.html#add5ccf5807a94588c28621141df334d3", null ],
-    [ "ConditionVariable", "structmage_1_1_condition_variable.html#a16507f71180938eb82af7e35d3ca5df7", null ],
+    [ "ConditionVariable", "structmage_1_1_condition_variable.html#af9e62cadb0e6bc1c6473ffb1552bd6b2", null ],
     [ "~ConditionVariable", "structmage_1_1_condition_variable.html#accd5253beb65b2904428afdb889cf00b", null ],
     [ "Lock", "structmage_1_1_condition_variable.html#aab712c41e76c444606d5419a20d87b7a", null ],
     [ "operator=", "structmage_1_1_condition_variable.html#ac83eae5353cd004ee06fe2376e5bdbf4", null ],

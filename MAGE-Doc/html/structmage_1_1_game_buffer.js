@@ -1,11 +1,11 @@
 var structmage_1_1_game_buffer =
 [
-    [ "GameBuffer", "structmage_1_1_game_buffer.html#ade6ea6f9d04f829d990b848f9e210349", null ],
-    [ "GameBuffer", "structmage_1_1_game_buffer.html#a654d6f8d44dcc00b6693840125fb81ff", null ],
-    [ "GameBuffer", "structmage_1_1_game_buffer.html#a012cbf18353f056094ebc27d19f93ad1", null ],
+    [ "GameBuffer", "structmage_1_1_game_buffer.html#a71c6416a3173fb5016290a622b14bd96", null ],
+    [ "GameBuffer", "structmage_1_1_game_buffer.html#ae8f7b5eff3fbabdb1cc44f04cfa69272", null ],
+    [ "GameBuffer", "structmage_1_1_game_buffer.html#a8662856a966635e06583bf3a6420b7c1", null ],
     [ "~GameBuffer", "structmage_1_1_game_buffer.html#ac1ae097a91a446184b71bb4dd9acf8b4", null ],
-    [ "operator=", "structmage_1_1_game_buffer.html#aa21f68c930b1c180aaaeeee95854b021", null ],
-    [ "operator=", "structmage_1_1_game_buffer.html#af699a10b932a9f766acb990edefa03a5", null ],
+    [ "operator=", "structmage_1_1_game_buffer.html#add9fec0aa33f3d3563acd1cb5f9fe9d6", null ],
+    [ "operator=", "structmage_1_1_game_buffer.html#a46f857f035922fe1beeb5a8f6b59e097", null ],
     [ "m_display_height", "structmage_1_1_game_buffer.html#ad4543663789eebde08b8775759e40dec", null ],
     [ "m_display_inv_height_minus1", "structmage_1_1_game_buffer.html#a1958156c6deefba5161e7aab7204a5ea", null ],
     [ "m_display_inv_width_minus1", "structmage_1_1_game_buffer.html#a7db70b391fbf5ba58018d4f77ff06bba", null ],

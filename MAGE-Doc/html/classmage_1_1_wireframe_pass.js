@@ -2,7 +2,7 @@ var classmage_1_1_wireframe_pass =
 [
     [ "WireframePass", "classmage_1_1_wireframe_pass.html#a7323b3caca5d06a068a89c0333651f04", null ],
     [ "WireframePass", "classmage_1_1_wireframe_pass.html#a3e070108925c2ef3b4feaa29dbf605f2", null ],
-    [ "WireframePass", "classmage_1_1_wireframe_pass.html#a08631bc9b341bed85b1b14b99affb1f0", null ],
+    [ "WireframePass", "classmage_1_1_wireframe_pass.html#ad6740862dc463125ba93317d0e640848", null ],
     [ "~WireframePass", "classmage_1_1_wireframe_pass.html#a186e4dd37ac17382872180385ec4dca1", null ],
     [ "BindColorData", "classmage_1_1_wireframe_pass.html#a574897c1274585057e8d44070409b7e3", null ],
     [ "BindFixedState", "classmage_1_1_wireframe_pass.html#abf99690ae099ed0ba0ca35c5d87ac0ef", null ],

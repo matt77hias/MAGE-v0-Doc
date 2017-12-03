@@ -1,9 +1,9 @@
 var classmage_1_1_light_node =
 [
     [ "~LightNode", "classmage_1_1_light_node.html#ad0c650ac0059589c28a3d1cfec95c07d", null ],
-    [ "LightNode", "classmage_1_1_light_node.html#a765346a944f01d451db00b5aac545ea0", null ],
+    [ "LightNode", "classmage_1_1_light_node.html#af3d7e96b05de9b5adaddc496413c7b42", null ],
     [ "LightNode", "classmage_1_1_light_node.html#afc1174329e2dbf2d349303fc396c3760", null ],
-    [ "LightNode", "classmage_1_1_light_node.html#a0a2d5ee9e6417d73905d6f35116eccb3", null ],
+    [ "LightNode", "classmage_1_1_light_node.html#aa0e8d288aaa000139d3a4322234bf1de", null ],
     [ "Clone", "classmage_1_1_light_node.html#a4d0c10f03de71cd497635feb431d02d5", null ],
     [ "CloneImplementation", "classmage_1_1_light_node.html#aea97601d0a4b8073a1c655ca334af242", null ],
     [ "GetLight", "classmage_1_1_light_node.html#a2b971e64ec2267d49c2ba96a00662d3b", null ],

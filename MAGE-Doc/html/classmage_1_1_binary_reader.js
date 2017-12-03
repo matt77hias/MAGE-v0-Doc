@@ -3,7 +3,7 @@ var classmage_1_1_binary_reader =
     [ "~BinaryReader", "classmage_1_1_binary_reader.html#a42e6c31bc53f5214675f845756b5a404", null ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html#aab82579cef4f2f022273cf1adfcc8497", null ],
     [ "BinaryReader", "classmage_1_1_binary_reader.html#a8c1ff948f1d056439f3d8cc37d7f507c", null ],
-    [ "BinaryReader", "classmage_1_1_binary_reader.html#a3a24db5c872cca270596d53989ac8c91", null ],
+    [ "BinaryReader", "classmage_1_1_binary_reader.html#a520841747b74b4b0e95f8d9b595492fa", null ],
     [ "GetFilename", "classmage_1_1_binary_reader.html#ad9d4a4a3e2f0afc666d15badff08fe4a", null ],
     [ "HasCharsLeft", "classmage_1_1_binary_reader.html#aec91fece03b619c158b133beb1bc9381", null ],
     [ "operator=", "classmage_1_1_binary_reader.html#a0408bb456983b4a03ae42ab69c6f4bc3", null ],

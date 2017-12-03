@@ -2,7 +2,7 @@ var classmage_1_1_m_t_l_reader =
 [
     [ "MTLReader", "classmage_1_1_m_t_l_reader.html#a924f813cca170e2592a6e7d2a3255be8", null ],
     [ "MTLReader", "classmage_1_1_m_t_l_reader.html#adcc57156298b2198c24c041503df2e6d", null ],
-    [ "MTLReader", "classmage_1_1_m_t_l_reader.html#a415057f591e54e91658c77092b7b2d4e", null ],
+    [ "MTLReader", "classmage_1_1_m_t_l_reader.html#a436d06f44afe2d6a275119223ebf5f1f", null ],
     [ "~MTLReader", "classmage_1_1_m_t_l_reader.html#a9d3216b2637bc9402d37c7438860f542", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#ae239ac085326919918a418edabcafeae", null ],
     [ "operator=", "classmage_1_1_m_t_l_reader.html#aa777389ff4a3cd2f1df2cbf5c6da708e", null ],

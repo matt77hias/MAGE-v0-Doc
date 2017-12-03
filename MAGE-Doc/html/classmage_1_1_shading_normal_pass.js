@@ -7,7 +7,7 @@ var classmage_1_1_shading_normal_pass =
     ] ],
     [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#a8d85834472875ce27cf3966b7c561d1f", null ],
     [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#ab13b45f9a3118f8494150d64ff06f94f", null ],
-    [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#acc466f246daaf57ccace5aa8782f0799", null ],
+    [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#ab5d2c287dd28b0161a0b267373e264ff", null ],
     [ "~ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#aba7194077210d32dbcbc6cfbf4adba8f", null ],
     [ "BindFixedState", "classmage_1_1_shading_normal_pass.html#a49c57b6c8a6aee0678556f25f9c97d11", null ],
     [ "BindModelData", "classmage_1_1_shading_normal_pass.html#adbaa57a7ff6bc885bf2ab890b0f933d4", null ],

@@ -2,7 +2,7 @@ var classmage_1_1_swap_chain =
 [
     [ "SwapChain", "classmage_1_1_swap_chain.html#a2ba9364220d9f8fa03b5bd99318d32dc", null ],
     [ "SwapChain", "classmage_1_1_swap_chain.html#a85d5da233182a273705b4fa1c419a0aa", null ],
-    [ "SwapChain", "classmage_1_1_swap_chain.html#add0b68e7ce2f6eb857a4ad9c7e01eb83", null ],
+    [ "SwapChain", "classmage_1_1_swap_chain.html#ae1ca2e30957b83e89be5793ea6da76dd", null ],
     [ "~SwapChain", "classmage_1_1_swap_chain.html#a853168cba69cadc3d8c10ad2f4939e72", null ],
     [ "Clear", "classmage_1_1_swap_chain.html#a94b28938ba9e402665197a71409ae43a", null ],
     [ "CreateRTV", "classmage_1_1_swap_chain.html#a9cdb798d8911e2f1239ad7eb79cc6b87", null ],

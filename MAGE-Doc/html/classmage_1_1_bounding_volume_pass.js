@@ -2,7 +2,7 @@ var classmage_1_1_bounding_volume_pass =
 [
     [ "BoundingVolumePass", "classmage_1_1_bounding_volume_pass.html#ab32eb9086e463f5260f8999b78b55b26", null ],
     [ "BoundingVolumePass", "classmage_1_1_bounding_volume_pass.html#a21408cc53051c9c6d94efe41b3bea404", null ],
-    [ "BoundingVolumePass", "classmage_1_1_bounding_volume_pass.html#a4c40fde630e6ff9bf466293c7bc94157", null ],
+    [ "BoundingVolumePass", "classmage_1_1_bounding_volume_pass.html#a569c5b210bb1135771970ef7ac70c210", null ],
     [ "~BoundingVolumePass", "classmage_1_1_bounding_volume_pass.html#a41dc433aed26f05e8b60462a6e337509", null ],
     [ "BindColorData", "classmage_1_1_bounding_volume_pass.html#a29a98f857f8ae45a0230b96f78f2dcb9", null ],
     [ "BindFixedState", "classmage_1_1_bounding_volume_pass.html#a67c802211155c0eae3e15343244ba2c4", null ],

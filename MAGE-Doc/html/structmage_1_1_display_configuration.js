@@ -2,7 +2,7 @@ var structmage_1_1_display_configuration =
 [
     [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a2ca58b8cc3b408c50fccb9cf94eb5dc6", null ],
     [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a1b99f5eb69a7ec1e525d551a8004f508", null ],
-    [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a5adbfbaf7de92292af56b2b56f76d548", null ],
+    [ "DisplayConfiguration", "structmage_1_1_display_configuration.html#a3b84ef28c7dc538a4b55c3b86bbcfb1b", null ],
     [ "~DisplayConfiguration", "structmage_1_1_display_configuration.html#a91cdf4f2015177e41290238d96a55328", null ],
     [ "Get", "structmage_1_1_display_configuration.html#a186aca1e5dabb6d819ff16c9aca6edfc", null ],
     [ "GetAADescriptor", "structmage_1_1_display_configuration.html#a8022cbb0f6df7250aae675cab32d68af", null ],
@@ -21,7 +21,7 @@ var structmage_1_1_display_configuration =
     [ "IsVSynced", "structmage_1_1_display_configuration.html#ab237c9b7953853eb83a51d542dfffb5e", null ],
     [ "IsWindowed", "structmage_1_1_display_configuration.html#ae35fedcd9989950c5f15785632dd7a86", null ],
     [ "operator=", "structmage_1_1_display_configuration.html#a43d4997e418b27add46442e88ba3672b", null ],
-    [ "operator=", "structmage_1_1_display_configuration.html#a56c175220b8f597afd7d5d6275b5d0de", null ],
+    [ "operator=", "structmage_1_1_display_configuration.html#ab3815acd7ca14ea9d6c7631bbf66469a", null ],
     [ "SetAADescriptor", "structmage_1_1_display_configuration.html#a2fec79b21c772a3d73e44cca7d8bd9d7", null ],
     [ "SetDisplayMode", "structmage_1_1_display_configuration.html#a23401fc0c20d52d44480c32fc6020e85", null ],
     [ "SetFullScreen", "structmage_1_1_display_configuration.html#a570746cd01c6a95c217aa03a954b5fd1", null ],

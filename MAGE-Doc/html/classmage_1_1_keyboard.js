@@ -2,7 +2,7 @@ var classmage_1_1_keyboard =
 [
     [ "Keyboard", "classmage_1_1_keyboard.html#ac89c8f4132508901ff2ca57c68709928", null ],
     [ "Keyboard", "classmage_1_1_keyboard.html#a39d07f8a5e37648ca9eba30aa55146bf", null ],
-    [ "Keyboard", "classmage_1_1_keyboard.html#aaa8f4c85cdc09b4f86169aad23d2c619", null ],
+    [ "Keyboard", "classmage_1_1_keyboard.html#a011a8cf9a3a3f50800879f5bdfdead3f", null ],
     [ "~Keyboard", "classmage_1_1_keyboard.html#a80a84ec68749fac71690fb45287d446a", null ],
     [ "Get", "classmage_1_1_keyboard.html#a696032d3a0d9bcf1a677a35e1e3d9aa8", null ],
     [ "GetKeyPress", "classmage_1_1_keyboard.html#a94d35ad5ad27e3fc9496f3ab1fa28e4d", null ],

@@ -3,7 +3,7 @@ var classmage_1_1_sprite_text =
     [ "~SpriteText", "classmage_1_1_sprite_text.html#aa30d68a79775dce902c190f2cd298bb4", null ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#ae55645d53a2f774703603139a80dd84b", null ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#a3e56a7882dd714a6d8f2452d4f7071ff", null ],
-    [ "SpriteText", "classmage_1_1_sprite_text.html#ab03ba1fb607ce86d28b742fc020c8a62", null ],
+    [ "SpriteText", "classmage_1_1_sprite_text.html#a6010ac467a2571b6abee6a7419689f11", null ],
     [ "AppendText", "classmage_1_1_sprite_text.html#acf993532a7b2e6ebb761b9b47cbdba98", null ],
     [ "AppendText", "classmage_1_1_sprite_text.html#a462809b9138f94720f972505a4f74d81", null ],
     [ "AppendText", "classmage_1_1_sprite_text.html#a914e7f755cf8b6ddd22dd66c9108029b", null ],

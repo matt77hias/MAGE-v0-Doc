@@ -31,7 +31,7 @@ var classmage_1_1_rendering_output_manager =
     ] ],
     [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#acbf3f32fdfaeb97e100c07b2197fe0b7", null ],
     [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#aba36b667b7f34cc23858050a7713f4fa", null ],
-    [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#a2ffb191fb849e740921c42638e3ea507", null ],
+    [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#a526ebcc48f73cc5d296ce01323024829", null ],
     [ "~RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#ac6c1b4ce353870ea603982623962b2f4", null ],
     [ "BindBegin", "classmage_1_1_rendering_output_manager.html#aca82046ea30351c98e652571fef0ebf3", null ],
     [ "BindBeginDeferred", "classmage_1_1_rendering_output_manager.html#ae9fa2b0bfe9e8d935d5dc99288acaf78", null ],

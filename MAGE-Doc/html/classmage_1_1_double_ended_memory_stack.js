@@ -4,7 +4,7 @@ var classmage_1_1_double_ended_memory_stack =
     [ "LowAllocator", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator" ],
     [ "DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html#a6480666c03ac703fc4fd5a62a766438d", null ],
     [ "DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html#a8a903d4a209929854a6f50cf98e3e2da", null ],
-    [ "DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html#a7abcd518d3a809f0689a36e57047dd2c", null ],
+    [ "DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html#a89d83095cc04686b9775fc4a55a5ff30", null ],
     [ "~DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html#afaac4a28ea1e386bc83d3e07fd5531a0", null ],
     [ "AllocDataHigh", "classmage_1_1_double_ended_memory_stack.html#a214b9ca245038c0441d15a5062d6c5f5", null ],
     [ "AllocDataLow", "classmage_1_1_double_ended_memory_stack.html#a5dee875f5ba9b279ed4f0b1e3faf1ede", null ],

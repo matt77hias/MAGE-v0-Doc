@@ -31,5 +31,5 @@ var searchData=
   ['touchextrapadding',['TouchExtraPadding',['../struct_im_gui_style.html#ab518a0a67df8f14765acc491d7b460f4',1,'ImGuiStyle']]],
   ['treedepth',['TreeDepth',['../struct_im_gui_draw_context.html#a08d8578fe382425a67b4f5e5257b5436',1,'ImGuiDrawContext']]],
   ['turquoise',['Turquoise',['../namespacemage_1_1color.html#a075d778d7eabdd7d54b623e6a7254fc8',1,'mage::color']]],
-  ['type',['type',['../structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395',1,'stbtt_vertex::type()'],['../struct_im_gui_style_var_info.html#a62f42d2bb7b71b7530493e16e622cb81',1,'ImGuiStyleVarInfo::Type()'],['../struct_im_gui_mouse_cursor_data.html#ab58df812a8caf8741415053515b8f347',1,'ImGuiMouseCursorData::Type()']]]
+  ['type',['Type',['../struct_im_gui_style_var_info.html#a62f42d2bb7b71b7530493e16e622cb81',1,'ImGuiStyleVarInfo::Type()'],['../struct_im_gui_mouse_cursor_data.html#ab58df812a8caf8741415053515b8f347',1,'ImGuiMouseCursorData::Type()'],['../structstbtt__vertex.html#aa325b3707b88e7e104c0de46bb2bf395',1,'stbtt_vertex::type()']]]
 ];

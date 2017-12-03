@@ -2,7 +2,7 @@ var classmage_1_1_dropshadow_sprite_text =
 [
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a74003c0961117f9c04e2f4b70e71a74c", null ],
     [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#af0a9422a32ed8962d6c691fe76f44c30", null ],
-    [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a238b873f7b4d818cc3640e8f363f760e", null ],
+    [ "DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a79367c23991f486a8548aac6fce36691", null ],
     [ "~DropshadowSpriteText", "classmage_1_1_dropshadow_sprite_text.html#a561b1be59d05bccb680969be792c0e28", null ],
     [ "Clone", "classmage_1_1_dropshadow_sprite_text.html#a0dcce82b4a83fbd469d68adba21af220", null ],
     [ "CloneImplementation", "classmage_1_1_dropshadow_sprite_text.html#af997217dd243061e0490bbcd4bfde7ed", null ],

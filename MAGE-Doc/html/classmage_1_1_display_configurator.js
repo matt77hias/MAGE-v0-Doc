@@ -3,7 +3,7 @@ var classmage_1_1_display_configurator =
     [ "DisplayConfigurator", "classmage_1_1_display_configurator.html#a88fe13ec0a6902fdc1666a2710a16647", null ],
     [ "DisplayConfigurator", "classmage_1_1_display_configurator.html#a2080c8163974aaa9a16f84e65126b355", null ],
     [ "DisplayConfigurator", "classmage_1_1_display_configurator.html#a20d8fa60a9d511a114e603dddf1a3716", null ],
-    [ "DisplayConfigurator", "classmage_1_1_display_configurator.html#aacf6436e2b16f883684826fe0ad0abdd", null ],
+    [ "DisplayConfigurator", "classmage_1_1_display_configurator.html#ae1b3c24b5a268bcf2f38ddc15721afa8", null ],
     [ "~DisplayConfigurator", "classmage_1_1_display_configurator.html#af6546383269503e3cab077e4bf54556e", null ],
     [ "Configure", "classmage_1_1_display_configurator.html#aa84373fba5d7806f065f7633a03f7d64", null ],
     [ "DisplayDialogProc", "classmage_1_1_display_configurator.html#a1d84e574699095a994411bbeb058154c", null ],

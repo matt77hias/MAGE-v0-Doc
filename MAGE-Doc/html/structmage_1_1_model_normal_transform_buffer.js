@@ -1,8 +1,8 @@
 var structmage_1_1_model_normal_transform_buffer =
 [
-    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a0ab367c167f3056d32ad06299d9953d0", null ],
-    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a2718abe76ffc0d6cd278aad9d4020429", null ],
-    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a415530ed6d4a2bd31424b11af6b1ebee", null ],
+    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a04ff9f7d8da77cc7089fa1cd1ae2e2ff", null ],
+    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a3e8cbbf4816f6b60f7ed346e7bbed752", null ],
+    [ "ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a8af074b84d44bc22d047420f241dc85e", null ],
     [ "~ModelNormalTransformBuffer", "structmage_1_1_model_normal_transform_buffer.html#a157d1f7cc47463f6b589d25c039ec418", null ],
     [ "operator=", "structmage_1_1_model_normal_transform_buffer.html#ae0b033dc93145a55e5e00024f8f95330", null ],
     [ "operator=", "structmage_1_1_model_normal_transform_buffer.html#acc27af2e1e65994a43e1d804aa25bb5a", null ],

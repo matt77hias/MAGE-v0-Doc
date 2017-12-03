@@ -1,14 +1,12 @@
 var structmage_1_1_direction3 =
 [
-    [ "Direction3", "structmage_1_1_direction3.html#a1c3d06aa13b207f86df36f5f3cfe486a", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#a1dbabfdd974f0c2e492ae3c291bdc479", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#acc17dc74c832499081124b706058d813", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#a3852489e86ad55937e50aa17b15ccd05", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#a3f4daf4fbf2e873bcf9133eca22fad34", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#ae9b26ed667537e7751b495058bb71de0", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#a1230915b5196dfb1f453a612837f2cce", null ],
-    [ "Direction3", "structmage_1_1_direction3.html#a93492f00127daa470f69afaa08603759", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#a64dd4745147f5fd39f710e8b9591074a", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#a880d7413dc6f3742b53a089b870018c7", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#ad4d5801c6ad4949e0c7b0f4e2fec0ed9", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#aff1506b32f2b6dd49c2747eca90c76ce", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#a180b7a9f58b37403d0be5b70519eafec", null ],
+    [ "Direction3", "structmage_1_1_direction3.html#a9ef3fe2fd9fd55fade378d42eda597c3", null ],
     [ "~Direction3", "structmage_1_1_direction3.html#a583c087dc366d206aaf54a33bc90c50b", null ],
-    [ "operator=", "structmage_1_1_direction3.html#a474a3c1ecf07954ff598933cef4f85f4", null ],
-    [ "operator=", "structmage_1_1_direction3.html#aac5690f3f40ba12f4e9eb09f5d2fb7f7", null ]
+    [ "operator=", "structmage_1_1_direction3.html#a500a363a93cded3e36a0704d288d34f3", null ],
+    [ "operator=", "structmage_1_1_direction3.html#a111a8f8d7286bfba0d7586925666315b", null ]
 ];

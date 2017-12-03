@@ -1,8 +1,8 @@
 var structmage_1_1_model_buffer =
 [
-    [ "ModelBuffer", "structmage_1_1_model_buffer.html#a9069cfb6d75067b7f1509332fbec9be0", null ],
-    [ "ModelBuffer", "structmage_1_1_model_buffer.html#a593635ac135a8390b606e5e47174d2e5", null ],
-    [ "ModelBuffer", "structmage_1_1_model_buffer.html#a56ec1df93cbf6505c513cf5f440fdc4f", null ],
+    [ "ModelBuffer", "structmage_1_1_model_buffer.html#a70d4043128afebd2aaff7c57246f98a2", null ],
+    [ "ModelBuffer", "structmage_1_1_model_buffer.html#afd3db5ed055cfa00f7f68d63898fb6c7", null ],
+    [ "ModelBuffer", "structmage_1_1_model_buffer.html#a4ff1edb2bd6e40ec73bf722c8a394ac0", null ],
     [ "~ModelBuffer", "structmage_1_1_model_buffer.html#a9536832e39a72cc597c41ca245eb52ba", null ],
     [ "operator=", "structmage_1_1_model_buffer.html#a003f2105c63f3d7e735c1c00bab5fdee", null ],
     [ "operator=", "structmage_1_1_model_buffer.html#a2f2c8c5ec6a43c239f349e3c015320e0", null ],

@@ -3,7 +3,7 @@ var classmage_1_1_sprite_batch_mesh =
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#ae5b2219aa3d5bbfb216036dad9c12e5d", null ],
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#a3df41f79eb6080be26acceb4d283a913", null ],
     [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#af86adf72834bd4a8b5b55af3e91bd339", null ],
-    [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#ae577b9b1f38ab5748c35675135da1e3e", null ],
+    [ "SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#aaeec56215da80e9f0fdcb0323acd5f90", null ],
     [ "~SpriteBatchMesh", "classmage_1_1_sprite_batch_mesh.html#a4f9ad5d0d58722499b9e7ddfac3312c9", null ],
     [ "MapVertexBuffer", "classmage_1_1_sprite_batch_mesh.html#a9fcba5d0aaea05a12e30844824b0a484", null ],
     [ "MaxIndicesPerBatch", "classmage_1_1_sprite_batch_mesh.html#a3c4aa8a1c0d5055e3e9b2290b2957bba", null ],

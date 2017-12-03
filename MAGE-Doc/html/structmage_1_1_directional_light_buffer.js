@@ -1,11 +1,11 @@
 var structmage_1_1_directional_light_buffer =
 [
-    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#a73a87ba7b016b6c62375da62b4fdf7b6", null ],
-    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#a2b61889818f441416421511aa1dcd294", null ],
-    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#aed86ef6ac6e2dfd9cda2c2be844ceca5", null ],
+    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#a05efc80b9ce0ac27cdef9f1cd3241d70", null ],
+    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#a9344489e735a789027ff62f962e875f7", null ],
+    [ "DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#af8ba47c18ce44fa9638bb7f9654188b7", null ],
     [ "~DirectionalLightBuffer", "structmage_1_1_directional_light_buffer.html#a6d9c1eb4b4b15c586524e5436d9d6162", null ],
-    [ "operator=", "structmage_1_1_directional_light_buffer.html#ae076cdb33035cf8c7ce14750eaf3601a", null ],
-    [ "operator=", "structmage_1_1_directional_light_buffer.html#a9af62b47c7ba1b1f6833e8da79b8c054", null ],
+    [ "operator=", "structmage_1_1_directional_light_buffer.html#acb72dcc486af689b5f189bfc68e350cb", null ],
+    [ "operator=", "structmage_1_1_directional_light_buffer.html#a2985b19fcdaa4ed6d0e0b07a563bee21", null ],
     [ "m_L", "structmage_1_1_directional_light_buffer.html#a9f7b75a474c2f28176aeb5207ff653dd", null ],
     [ "m_neg_d", "structmage_1_1_directional_light_buffer.html#af3a1952cf82b66730868573a4b581ab4", null ],
     [ "m_padding0", "structmage_1_1_directional_light_buffer.html#aac8d40f7af8eac8b2fb79085843be4fd", null ],

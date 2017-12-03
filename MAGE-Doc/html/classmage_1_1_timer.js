@@ -1,13 +1,13 @@
 var classmage_1_1_timer =
 [
     [ "Timer", "classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055", null ],
-    [ "Timer", "classmage_1_1_timer.html#a5a1e05fde40a44cd9434572712142c23", null ],
-    [ "Timer", "classmage_1_1_timer.html#a5fb4b89725b16e0d4b1fbae2f95f30cb", null ],
+    [ "Timer", "classmage_1_1_timer.html#ae792c5a546deb35e5e65ed7fe6a8d281", null ],
+    [ "Timer", "classmage_1_1_timer.html#a9fde919b6040a044748e98f59e18bece", null ],
     [ "~Timer", "classmage_1_1_timer.html#a66d6964a6d42eef72f7312f1233e4f74", null ],
     [ "GetDeltaTime", "classmage_1_1_timer.html#a49d36d6d60530a55af210abd01577365", null ],
     [ "GetTotalDeltaTime", "classmage_1_1_timer.html#a21ee76bc048a3c80f1bfbbbd807e97a7", null ],
-    [ "operator=", "classmage_1_1_timer.html#ae83df63d5ff9eec370eddf208ac2077e", null ],
-    [ "operator=", "classmage_1_1_timer.html#a93f3a9d730bebd189af904568e5b7ecd", null ],
+    [ "operator=", "classmage_1_1_timer.html#a607d4bce80a92977bc8394c8774a6434", null ],
+    [ "operator=", "classmage_1_1_timer.html#a38d7c1fe4c4061c56286183032dc67d8", null ],
     [ "ResetDeltaTime", "classmage_1_1_timer.html#a5b66b3bfbed7cd4a3ad565abec5c3b02", null ],
     [ "Restart", "classmage_1_1_timer.html#a47e6893e733911624ebf54d5f88cd3fd", null ],
     [ "Resume", "classmage_1_1_timer.html#ab3cfad4fd61d52852181f7a060069892", null ],

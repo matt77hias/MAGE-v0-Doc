@@ -1,8 +1,8 @@
 var structmage_1_1_read_write_mutex =
 [
-    [ "ReadWriteMutex", "structmage_1_1_read_write_mutex.html#aae10694de3862f2d1059477169883940", null ],
+    [ "ReadWriteMutex", "structmage_1_1_read_write_mutex.html#aa206018373d39aef48b6e465909a75a5", null ],
     [ "ReadWriteMutex", "structmage_1_1_read_write_mutex.html#aacb2f69e7e2b084147e1e45628e9dd67", null ],
-    [ "ReadWriteMutex", "structmage_1_1_read_write_mutex.html#ab5cc5ca0afcca8a994c6468033a501bf", null ],
+    [ "ReadWriteMutex", "structmage_1_1_read_write_mutex.html#a35e15c17527ef771920129c4e381eb17", null ],
     [ "~ReadWriteMutex", "structmage_1_1_read_write_mutex.html#a73676d9414658d63edfe443ee1d55c8b", null ],
     [ "AcquireRead", "structmage_1_1_read_write_mutex.html#add04196fda61967f81901bcba79938bc", null ],
     [ "AcquireWrite", "structmage_1_1_read_write_mutex.html#ab99adb4241990fa0dd2d3ba03322d1c3", null ],

@@ -2,7 +2,7 @@ var classmage_1_1_outline_sprite_text =
 [
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#ae66515452e655852cc801254e5b82115", null ],
     [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a15be7f23a00e893314b905d5385903c5", null ],
-    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a86bb6e1637bcc71a4272f193466669e2", null ],
+    [ "OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#a769e67b1a0d177f2e3d9acf00b260395", null ],
     [ "~OutlineSpriteText", "classmage_1_1_outline_sprite_text.html#ae4d77ebb3f5bac4fd02b148d6173d10f", null ],
     [ "Clone", "classmage_1_1_outline_sprite_text.html#aa188cb104f6f00fdc75c532d66869f02", null ],
     [ "CloneImplementation", "classmage_1_1_outline_sprite_text.html#ac1fcc7e91b972b250e09fbb8d62f908d", null ],

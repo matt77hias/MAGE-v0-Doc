@@ -6,7 +6,7 @@ var searchData=
   ['key',['key',['../struct_im_gui_storage_1_1_pair.html#a5b37b692d2eacc7f4f5b6f233359e6ce',1,'ImGuiStorage::Pair']]],
   ['keyalt',['KeyAlt',['../struct_im_gui_i_o.html#a1e64ef08a4448a2cac874496130992cb',1,'ImGuiIO']]],
   ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html',1,'mage']]],
-  ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html#ac89c8f4132508901ff2ca57c68709928',1,'mage::Keyboard::Keyboard(HWND hwindow, IDirectInput8 *di)'],['../classmage_1_1_keyboard.html#a39d07f8a5e37648ca9eba30aa55146bf',1,'mage::Keyboard::Keyboard(const Keyboard &amp;keyboard)=delete'],['../classmage_1_1_keyboard.html#aaa8f4c85cdc09b4f86169aad23d2c619',1,'mage::Keyboard::Keyboard(Keyboard &amp;&amp;keyboard)']]],
+  ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html#ac89c8f4132508901ff2ca57c68709928',1,'mage::Keyboard::Keyboard(HWND hwindow, IDirectInput8 *di)'],['../classmage_1_1_keyboard.html#a39d07f8a5e37648ca9eba30aa55146bf',1,'mage::Keyboard::Keyboard(const Keyboard &amp;keyboard)=delete'],['../classmage_1_1_keyboard.html#a011a8cf9a3a3f50800879f5bdfdead3f',1,'mage::Keyboard::Keyboard(Keyboard &amp;&amp;keyboard) noexcept']]],
   ['keyctrl',['KeyCtrl',['../struct_im_gui_i_o.html#a51de8f65dcabb80ef4e0d3c759ffcd7f',1,'ImGuiIO']]],
   ['keymap',['KeyMap',['../struct_im_gui_i_o.html#aa1cd0083960f8e5361eb6d49973c8823',1,'ImGuiIO']]],
   ['keyrepeatdelay',['KeyRepeatDelay',['../struct_im_gui_i_o.html#a390537e7cba21b98a8f89df857ea59fb',1,'ImGuiIO']]],

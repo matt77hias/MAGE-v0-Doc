@@ -2,7 +2,7 @@ var classmage_1_1_back_buffer_pass =
 [
     [ "BackBufferPass", "classmage_1_1_back_buffer_pass.html#a46ce63d05208fc3dea43244713a6a280", null ],
     [ "BackBufferPass", "classmage_1_1_back_buffer_pass.html#af69d8bb752a4e35d57ebd5afedaa097d", null ],
-    [ "BackBufferPass", "classmage_1_1_back_buffer_pass.html#ad34af02ed3afeee917c3dd60f45d5493", null ],
+    [ "BackBufferPass", "classmage_1_1_back_buffer_pass.html#aaccba5ea4ae969dff8ee4f9c8f5ae1e2", null ],
     [ "~BackBufferPass", "classmage_1_1_back_buffer_pass.html#a10ccd92ff4480261e9ecfc435f5d9ed3", null ],
     [ "BindFixedState", "classmage_1_1_back_buffer_pass.html#a86dd8df1ac3fac070d1373dad045c975", null ],
     [ "Get", "classmage_1_1_back_buffer_pass.html#ae925b441c80f2aa711fbba6d782e5f81", null ],

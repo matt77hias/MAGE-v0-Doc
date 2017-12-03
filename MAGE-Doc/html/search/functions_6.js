@@ -1,10 +1,10 @@
 var searchData=
 [
   ['fatal',['Fatal',['../namespacemage.html#aefd40c91591a8e0423e4222b4a5e6249',1,'mage']]],
-  ['fibonaccispiralcosineweightedsamplesonunithemisphere',['FibonacciSpiralCosineWeightedSamplesOnUnitHemisphere',['../namespacemage.html#aedddb395f21b85cde50c501e1dba7605',1,'mage']]],
-  ['fibonaccispiralsamplesinunitcircle',['FibonacciSpiralSamplesInUnitCircle',['../namespacemage.html#a090414091e77e152d6efb1ba34cdb8e5',1,'mage']]],
-  ['fibonaccispiralsamplesonunithemisphere',['FibonacciSpiralSamplesOnUnitHemisphere',['../namespacemage.html#ab4ab99710556b0c7bba334f892900923',1,'mage']]],
-  ['fibonaccispiralsamplesonunitsphere',['FibonacciSpiralSamplesOnUnitSphere',['../namespacemage.html#adcc94f8bfce993fcee9d22728879ac97',1,'mage']]],
+  ['fibonaccispiralcosineweightedsamplesonunithemisphere',['FibonacciSpiralCosineWeightedSamplesOnUnitHemisphere',['../namespacemage.html#af0308246c5d06eefcb6d4c3d664a6f8b',1,'mage']]],
+  ['fibonaccispiralsamplesinunitcircle',['FibonacciSpiralSamplesInUnitCircle',['../namespacemage.html#a354b378956b5f7b172d2bbb1bf4ebc5f',1,'mage']]],
+  ['fibonaccispiralsamplesonunithemisphere',['FibonacciSpiralSamplesOnUnitHemisphere',['../namespacemage.html#ad71ac8f906a74244904a5b1009550ac4',1,'mage']]],
+  ['fibonaccispiralsamplesonunitsphere',['FibonacciSpiralSamplesOnUnitSphere',['../namespacemage.html#a82ea32ee0d1fe2830f2ddfe02e53b745',1,'mage']]],
   ['fileexists',['FileExists',['../namespacemage.html#a3e9bead16bf9814e6ecd6aca57ccc3e3',1,'mage']]],
   ['findglyph',['FindGlyph',['../struct_im_font.html#ac6a773b73c6406fd8f08c4c93213a501',1,'ImFont']]],
   ['findrenderedtextend',['FindRenderedTextEnd',['../namespace_im_gui.html#a7671e1dbc803a31b06081b52a771d83f',1,'ImGui']]],
