@@ -3,7 +3,7 @@ var classmage_1_1_sprite =
     [ "~Sprite", "classmage_1_1_sprite.html#a0f184574f9c035d6fbb239c1868aa670", null ],
     [ "Sprite", "classmage_1_1_sprite.html#af04ff53dcfcc4aa5001368882c911cf7", null ],
     [ "Sprite", "classmage_1_1_sprite.html#a9c1eb4f5a85e1fa17479012dd22114a9", null ],
-    [ "Sprite", "classmage_1_1_sprite.html#a84d01e440d0a8105d45a3e18a0698d07", null ],
+    [ "Sprite", "classmage_1_1_sprite.html#a99bc5627bf389bb43e4b84375bc22fdc", null ],
     [ "Clone", "classmage_1_1_sprite.html#a66e27a8a98ac5a4289e8440ef8193718", null ],
     [ "CloneImplementation", "classmage_1_1_sprite.html#a214890d7da493bccadb2327b8c7ffb09", null ],
     [ "Draw", "classmage_1_1_sprite.html#a954a9f2046edcd6b1658a236ae23ec5a", null ],

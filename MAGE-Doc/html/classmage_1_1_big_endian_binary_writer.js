@@ -3,7 +3,7 @@ var classmage_1_1_big_endian_binary_writer =
     [ "~BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html#ab717bcbfc15ba4a1cb25eeb564e120b8", null ],
     [ "BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html#ac0917b684913834577d4850269a6c09a", null ],
     [ "BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html#aafe65752342b2740e7293878ae469d9f", null ],
-    [ "BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html#a9b20aeebc41030d173cb44067665adb0", null ],
+    [ "BigEndianBinaryWriter", "classmage_1_1_big_endian_binary_writer.html#aaf2dcf536afefc7b0ca8b0752024311d", null ],
     [ "GetFilename", "classmage_1_1_big_endian_binary_writer.html#a61a80be19c7b59ff5803e51401e8f646", null ],
     [ "operator=", "classmage_1_1_big_endian_binary_writer.html#ae574f7d0b630890256996c52818ba633", null ],
     [ "operator=", "classmage_1_1_big_endian_binary_writer.html#a92b57976cca0ff1859a487a1fe238211", null ],

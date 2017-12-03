@@ -34,7 +34,7 @@ const string \& \hyperlink{classmage_1_1_line_reader_aa00e1e27b614e11ec9f70e52d0
 \item 
 \hyperlink{classmage_1_1_line_reader_ae4f871bebae110704b34c0bd88460639}{Line\+Reader} (const \hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&reader)=delete
 \item 
-\hyperlink{classmage_1_1_line_reader_ad972c7100f726e7b061d864083ba0225}{Line\+Reader} (\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&reader)
+\hyperlink{classmage_1_1_line_reader_ae90c546a98e113a48ca1c94b854a4866}{Line\+Reader} (\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&reader) noexcept
 \item 
 \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1_line_reader_aa0ed768e2799b74f2341c56fc6ac4969}{Get\+Current\+Line\+Number} () const noexcept
 \item 
@@ -68,11 +68,11 @@ bool \hyperlink{classmage_1_1_line_reader_a86289c358afe9b3bc5c7789bb8a6af95}{Rea
 \item 
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_line_reader_a8f1ae6467f871394fb62f2e5da3df3b9}{Read\+F64} ()
 \item 
-const X\+M\+F\+L\+O\+A\+T2 \hyperlink{classmage_1_1_line_reader_ae33effd33fad465616e3acf8acdc408f}{Read\+Float2} ()
+const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} \hyperlink{classmage_1_1_line_reader_a2918aa1df20e29edff7743750ba0905a}{Read\+F32x2} ()
 \item 
-const X\+M\+F\+L\+O\+A\+T3 \hyperlink{classmage_1_1_line_reader_a7a605a7c2402051f1ca4fda1e543fc28}{Read\+Float3} ()
+const \hyperlink{namespacemage_a73fbe0da4b8d5bc156bb8453e5b63a17}{F32x3} \hyperlink{classmage_1_1_line_reader_a71a34d44de469a9c646c52050492ac01}{Read\+F32x3} ()
 \item 
-const X\+M\+F\+L\+O\+A\+T4 \hyperlink{classmage_1_1_line_reader_aaa21896aa756c3402cfeb207ef5f2029}{Read\+Float4} ()
+const \hyperlink{namespacemage_a9b8168505574a087f7391e56522fa584}{F32x4} \hyperlink{classmage_1_1_line_reader_a67cef487732b6c107dab669f3b661fd4}{Read\+F32x4} ()
 \item 
 bool \hyperlink{classmage_1_1_line_reader_a7eb54d60902d1fb7846ea5c566312a0f}{Has\+Chars} () const
 \item 
@@ -158,11 +158,11 @@ Constructs a line reader from the given line reader.
 \mbox{\tt in}  & {\em reader} & A reference to the line reader to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_line_reader_ad972c7100f726e7b061d864083ba0225}{}\label{classmage_1_1_line_reader_ad972c7100f726e7b061d864083ba0225} 
+\hypertarget{classmage_1_1_line_reader_ae90c546a98e113a48ca1c94b854a4866}{}\label{classmage_1_1_line_reader_ae90c546a98e113a48ca1c94b854a4866} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Line\+Reader@{Line\+Reader}}
 \index{Line\+Reader@{Line\+Reader}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Line\+Reader()}{LineReader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Line\+Reader\+::\+Line\+Reader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Line\+Reader\+::\+Line\+Reader (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Constructs a line reader by moving the given line reader.
 
@@ -475,6 +475,54 @@ The {\ttfamily F32} represented by the next token of this line reader.
 {\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent an {\ttfamily F32}. \\
 \hline
 \end{DoxyExceptions}
+\hypertarget{classmage_1_1_line_reader_a2918aa1df20e29edff7743750ba0905a}{}\label{classmage_1_1_line_reader_a2918aa1df20e29edff7743750ba0905a} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+F32x2@{Read\+F32x2}}
+\index{Read\+F32x2@{Read\+F32x2}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Read\+F32x2()}{ReadF32x2()}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} mage\+::\+Line\+Reader\+::\+Read\+F32x2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads and converts the next token of this line reader to a {\ttfamily F32x2}.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily F32x2} represented by the next token of this line reader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily F32x2}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_line_reader_a71a34d44de469a9c646c52050492ac01}{}\label{classmage_1_1_line_reader_a71a34d44de469a9c646c52050492ac01} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+F32x3@{Read\+F32x3}}
+\index{Read\+F32x3@{Read\+F32x3}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Read\+F32x3()}{ReadF32x3()}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a73fbe0da4b8d5bc156bb8453e5b63a17}{F32x3} mage\+::\+Line\+Reader\+::\+Read\+F32x3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads and converts the next token of this line reader to a {\ttfamily F32x3}.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily F32x3} represented by the next token of this line reader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily F32x3}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_line_reader_a67cef487732b6c107dab669f3b661fd4}{}\label{classmage_1_1_line_reader_a67cef487732b6c107dab669f3b661fd4} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+F32x4@{Read\+F32x4}}
+\index{Read\+F32x4@{Read\+F32x4}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Read\+F32x4()}{ReadF32x4()}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a9b8168505574a087f7391e56522fa584}{F32x4} mage\+::\+Line\+Reader\+::\+Read\+F32x4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads and converts the next token of this line reader to a {\ttfamily F32x4}.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily F32x4} represented by the next token of this line reader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily F32x4}. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{classmage_1_1_line_reader_a8f1ae6467f871394fb62f2e5da3df3b9}{}\label{classmage_1_1_line_reader_a8f1ae6467f871394fb62f2e5da3df3b9} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+F64@{Read\+F64}}
 \index{Read\+F64@{Read\+F64}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
@@ -489,54 +537,6 @@ The {\ttfamily F64} represented by the next token of this line reader.
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent an {\ttfamily F64}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_line_reader_ae33effd33fad465616e3acf8acdc408f}{}\label{classmage_1_1_line_reader_ae33effd33fad465616e3acf8acdc408f} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+Float2@{Read\+Float2}}
-\index{Read\+Float2@{Read\+Float2}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Read\+Float2()}{ReadFloat2()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T2 mage\+::\+Line\+Reader\+::\+Read\+Float2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads and converts the next token of this line reader to a {\ttfamily X\+M\+F\+L\+O\+A\+T2}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily X\+M\+F\+L\+O\+A\+T2} represented by the next token of this line reader. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily X\+M\+F\+L\+O\+A\+T2}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_line_reader_a7a605a7c2402051f1ca4fda1e543fc28}{}\label{classmage_1_1_line_reader_a7a605a7c2402051f1ca4fda1e543fc28} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+Float3@{Read\+Float3}}
-\index{Read\+Float3@{Read\+Float3}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Read\+Float3()}{ReadFloat3()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T3 mage\+::\+Line\+Reader\+::\+Read\+Float3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads and converts the next token of this line reader to a {\ttfamily X\+M\+F\+L\+O\+A\+T3}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily X\+M\+F\+L\+O\+A\+T3} represented by the next token of this line reader. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily X\+M\+F\+L\+O\+A\+T3}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_line_reader_aaa21896aa756c3402cfeb207ef5f2029}{}\label{classmage_1_1_line_reader_aaa21896aa756c3402cfeb207ef5f2029} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+Float4@{Read\+Float4}}
-\index{Read\+Float4@{Read\+Float4}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Read\+Float4()}{ReadFloat4()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T4 mage\+::\+Line\+Reader\+::\+Read\+Float4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads and converts the next token of this line reader to a {\ttfamily X\+M\+F\+L\+O\+A\+T4}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily X\+M\+F\+L\+O\+A\+T4} represented by the next token of this line reader. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & There is no next token or the next token does not represent a {\ttfamily X\+M\+F\+L\+O\+A\+T4}. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}{}\label{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff} 

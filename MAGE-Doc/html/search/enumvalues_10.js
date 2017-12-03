@@ -5,6 +5,5 @@ var searchData=
   ['solid',['Solid',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fdae41480b6bbfbf7407974a88d3d34f4fa',1,'mage']]],
   ['ssaa_5f2x',['SSAA_2x',['../namespacemage.html#a86cd40b8f2f42ca4d616cc6ec665a7f2a59a1c61ffb7fb862d196a3c9819ffbd7',1,'mage']]],
   ['ssaa_5f3x',['SSAA_3x',['../namespacemage.html#a86cd40b8f2f42ca4d616cc6ec665a7f2aa85e651974f4d2911e8ca0589f13ecb1',1,'mage']]],
-  ['ssaa_5f4x',['SSAA_4x',['../namespacemage.html#a86cd40b8f2f42ca4d616cc6ec665a7f2a967210e2f9475d7959d944a10b31954d',1,'mage']]],
-  ['string',['String',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa27118326006d3829667a400ad23d5d98',1,'mage']]]
+  ['ssaa_5f4x',['SSAA_4x',['../namespacemage.html#a86cd40b8f2f42ca4d616cc6ec665a7f2a967210e2f9475d7959d944a10b31954d',1,'mage']]]
 ];

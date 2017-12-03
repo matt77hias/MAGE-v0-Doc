@@ -40,7 +40,7 @@ var classmage_1_1_rendering_state_manager =
     ] ],
     [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#a7e2ae8265b322b0700fd5ade4b791aea", null ],
     [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#af73792aa9689050ee050b641ffbefe39", null ],
-    [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#a7103afcf92884f7916b7039946c1a605", null ],
+    [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#af02da2f330781b44349684ddb06fde0b", null ],
     [ "~RenderingStateManager", "classmage_1_1_rendering_state_manager.html#ad4865219aaaac55dd53c4ab51af8d63f", null ],
     [ "BindAdditiveBlendState", "classmage_1_1_rendering_state_manager.html#a0ae04882682ccccd4e75830bd2b4159b", null ],
     [ "BindAlphaBlendState", "classmage_1_1_rendering_state_manager.html#aa8515490c3aa764cfb8bb9a1121ced03", null ],

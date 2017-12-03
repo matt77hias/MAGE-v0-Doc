@@ -1,8 +1,8 @@
 var structmage_1_1_camera_buffer =
 [
-    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#aca0a689a43c84fdc02e72d792b1a0ab3", null ],
-    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a4677e0eeb321f52a6f0160c7265186a3", null ],
-    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a9ed685bdafbdc4b87546c082588f07c3", null ],
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a4f90a7a3c4064fe60f6af1142795afd2", null ],
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#a83b3397d4a064cd6982da5caea2c05e5", null ],
+    [ "CameraBuffer", "structmage_1_1_camera_buffer.html#ade4f3fe1bd833a3f6ed43eadd0ffc241", null ],
     [ "~CameraBuffer", "structmage_1_1_camera_buffer.html#a893ff21cfa017537ccd91dd816715701", null ],
     [ "operator=", "structmage_1_1_camera_buffer.html#a4c2f048e1c441ae147455722d9cd4af7", null ],
     [ "operator=", "structmage_1_1_camera_buffer.html#a901081932ab76c9bdfacb0814e821190", null ],

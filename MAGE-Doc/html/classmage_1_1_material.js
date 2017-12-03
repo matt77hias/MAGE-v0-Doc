@@ -2,7 +2,7 @@ var classmage_1_1_material =
 [
     [ "Material", "classmage_1_1_material.html#a6f3ba50e9dfd73ce41473563d0ab3c20", null ],
     [ "Material", "classmage_1_1_material.html#abed630412cdc4a6281389d128ec4b5f3", null ],
-    [ "Material", "classmage_1_1_material.html#a41bfbc2bfa16e3694ac443d390b804c2", null ],
+    [ "Material", "classmage_1_1_material.html#a378f529bd1954b81cb2431f40e772adb", null ],
     [ "~Material", "classmage_1_1_material.html#a4ca65b7e24144ee08dd1ce8d0eda9284", null ],
     [ "DissableLightInteraction", "classmage_1_1_material.html#ab4b92a53ee74e401c518eea299fb4e0b", null ],
     [ "EnableLightInteraction", "classmage_1_1_material.html#abbcdcc3a9cb44c854212508c8419aa7f", null ],

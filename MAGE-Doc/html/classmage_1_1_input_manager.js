@@ -2,7 +2,7 @@ var classmage_1_1_input_manager =
 [
     [ "InputManager", "classmage_1_1_input_manager.html#afc28df27a0251c242113a9761c007534", null ],
     [ "InputManager", "classmage_1_1_input_manager.html#a68503617f418bf270dc39bb18019b46d", null ],
-    [ "InputManager", "classmage_1_1_input_manager.html#ae9e37a3157c7880aa09226e56c4e97c4", null ],
+    [ "InputManager", "classmage_1_1_input_manager.html#a008e9870ffe2715b95bedb267c02b0c6", null ],
     [ "~InputManager", "classmage_1_1_input_manager.html#a287ca0e91ec079227c102f7eadd5bb46", null ],
     [ "Get", "classmage_1_1_input_manager.html#a793d1172963fadb3c89f4d291020493d", null ],
     [ "GetKeyboard", "classmage_1_1_input_manager.html#a2ceb6e20c122f7029cb75b970a11d58d", null ],

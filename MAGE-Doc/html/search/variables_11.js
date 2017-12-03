@@ -85,7 +85,7 @@ var searchData=
   ['stbstate',['StbState',['../struct_im_gui_text_edit_state.html#a0fb9de6739de31f44ecffce8ad239a5e',1,'ImGuiTextEditState']]],
   ['steelblue',['SteelBlue',['../namespacemage_1_1color.html#a09d674790af6985e060392d528e3771d',1,'mage::color']]],
   ['stepno',['StepNo',['../struct_im_gui_list_clipper.html#a8fe78f0368e16425c33fd35ca45d1912',1,'ImGuiListClipper']]],
-  ['stride',['stride',['../structstbtt____bitmap.html#a48ee6b550ee4f1d85bfc32c62c0e9a98',1,'stbtt__bitmap::stride()'],['../struct_im_gui_plot_array_getter_data.html#aecb2cce4ea91d95ec81937de656cfcd6',1,'ImGuiPlotArrayGetterData::Stride()']]],
+  ['stride',['Stride',['../struct_im_gui_plot_array_getter_data.html#aecb2cce4ea91d95ec81937de656cfcd6',1,'ImGuiPlotArrayGetterData::Stride()'],['../structstbtt____bitmap.html#a48ee6b550ee4f1d85bfc32c62c0e9a98',1,'stbtt__bitmap::stride()']]],
   ['stride_5fin_5fbytes',['stride_in_bytes',['../structstbtt__pack__context.html#abbe9a25aae0e26b81a5f7339fac23801',1,'stbtt_pack_context']]],
   ['style',['Style',['../struct_im_gui_context.html#a2e682502e1a3d2c399171dd3c4fc969d',1,'ImGuiContext']]],
   ['stylemodifiers',['StyleModifiers',['../struct_im_gui_context.html#ac0feba14c36c7dff87211c3650815be7',1,'ImGuiContext']]],

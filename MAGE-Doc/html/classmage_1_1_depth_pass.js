@@ -2,7 +2,7 @@ var classmage_1_1_depth_pass =
 [
     [ "DepthPass", "classmage_1_1_depth_pass.html#a16a23f6820a11faf9195b307474e355b", null ],
     [ "DepthPass", "classmage_1_1_depth_pass.html#a9f0376b1423404dcced29535d59dd18c", null ],
-    [ "DepthPass", "classmage_1_1_depth_pass.html#af5755a8ee09bc528c0644f657558d71f", null ],
+    [ "DepthPass", "classmage_1_1_depth_pass.html#a7f6f3a471223f224492b286d74a59325", null ],
     [ "~DepthPass", "classmage_1_1_depth_pass.html#adc89d5da94b42294316d4ad1dfa09eb4", null ],
     [ "BindFixedState", "classmage_1_1_depth_pass.html#ae456ab7e6818e86ab2c09338652c9be0", null ],
     [ "BindOpaqueModelData", "classmage_1_1_depth_pass.html#a674fc5fe2e8cae4c704a554dc8bc1fdd", null ],

@@ -3,7 +3,7 @@ var structmage_1_1_constant_buffer =
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a3badd88f8570d6622f6eb33c7420a87d", null ],
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#aaf32ac894aa2fe73bcbd9033e6e7efb0", null ],
     [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a67fe42cb52e63e38474b6c65341fbe82", null ],
-    [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#a851570293d8eeb47f83749f8f54864ee", null ],
+    [ "ConstantBuffer", "structmage_1_1_constant_buffer.html#aeb0642e0e405eeb18658c0962a52f406", null ],
     [ "~ConstantBuffer", "structmage_1_1_constant_buffer.html#a874e9507ea3b6d2f630f061c2fc6d2d0", null ],
     [ "Bind", "structmage_1_1_constant_buffer.html#a7592eed823334cdc3da614121f2b25ca", null ],
     [ "Get", "structmage_1_1_constant_buffer.html#a6b8fcbd873ffbda96d7412c581d5a29a", null ],

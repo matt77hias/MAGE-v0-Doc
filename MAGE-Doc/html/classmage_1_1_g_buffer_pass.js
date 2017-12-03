@@ -7,7 +7,7 @@ var classmage_1_1_g_buffer_pass =
     ] ],
     [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#afe455d4051cddf84b7752b4bf4aa282f", null ],
     [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#a3b9f59097aef9175f942c9c9424d0dab", null ],
-    [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#a61a520a53c7a8029280eb1fc62d71ce6", null ],
+    [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#a86b04cb5e55d63a2fabc041ef0c7dcf9", null ],
     [ "~GBufferPass", "classmage_1_1_g_buffer_pass.html#a34b2735cfb9b3546c903760f42ff770c", null ],
     [ "BindFixedState", "classmage_1_1_g_buffer_pass.html#a4a13364cc0318417f31df50d7081b0b0", null ],
     [ "BindModelData", "classmage_1_1_g_buffer_pass.html#a5296050798e8430601e0f42d1f8327db", null ],

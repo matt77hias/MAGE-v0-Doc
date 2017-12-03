@@ -2,7 +2,7 @@ var classmage_1_1_renderer =
 [
     [ "Renderer", "classmage_1_1_renderer.html#a4efd88a30f3ad43cf5d490d62259f921", null ],
     [ "Renderer", "classmage_1_1_renderer.html#acd6b509da2bd7e7d764b45b912fe5298", null ],
-    [ "Renderer", "classmage_1_1_renderer.html#a24a9346ca7aed427b49d0e4ed4984da3", null ],
+    [ "Renderer", "classmage_1_1_renderer.html#a50dcb6da913089a97475b2d1c0d0062e", null ],
     [ "~Renderer", "classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced", null ],
     [ "BindCameraBuffer", "classmage_1_1_renderer.html#a7e303935e21196e28305cf4676128703", null ],
     [ "BindPersistentState", "classmage_1_1_renderer.html#a0de9d7d913e5f92a75ff2cc075601b9d", null ],

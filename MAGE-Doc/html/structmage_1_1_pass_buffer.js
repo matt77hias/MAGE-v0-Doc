@@ -2,7 +2,7 @@ var structmage_1_1_pass_buffer =
 [
     [ "PassBuffer", "structmage_1_1_pass_buffer.html#a02e07a26327f6e57b193521636bb8e10", null ],
     [ "PassBuffer", "structmage_1_1_pass_buffer.html#a1c6e779725227ebbb8e3d15a4515edbc", null ],
-    [ "PassBuffer", "structmage_1_1_pass_buffer.html#a8f6baa279c6dc8c5b6869240d0169677", null ],
+    [ "PassBuffer", "structmage_1_1_pass_buffer.html#a2aee0227f8dab61b98f84d5024d2a06a", null ],
     [ "~PassBuffer", "structmage_1_1_pass_buffer.html#a650dec579522b7d5c5810a535b10773a", null ],
     [ "GetAmbientLight", "structmage_1_1_pass_buffer.html#a378e1794878a8461eabee26d065583b9", null ],
     [ "GetCameras", "structmage_1_1_pass_buffer.html#a1b3745dab0028b470c76c695e55f6466", null ],

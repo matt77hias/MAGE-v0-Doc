@@ -2,7 +2,7 @@ var classmage_1_1_deferred_shading_pass =
 [
     [ "DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html#a348c86ce12342110299739d8d63c6aaf", null ],
     [ "DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html#a4820a800b8ffc4cf0a7d155b09b71210", null ],
-    [ "DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html#a1aff32dc53f6e377728898ba362d0116", null ],
+    [ "DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html#acb75d55c9072dd92c61f04a7573e0283", null ],
     [ "~DeferredShadingPass", "classmage_1_1_deferred_shading_pass.html#a0feba3a73c56e1c07abe19fddd890f76", null ],
     [ "BindFixedState", "classmage_1_1_deferred_shading_pass.html#a5e8abef0fb3e57f13d51f192dff74770", null ],
     [ "Dispatch", "classmage_1_1_deferred_shading_pass.html#a37f010236b8c071f67fa33ec0daa75f7", null ],

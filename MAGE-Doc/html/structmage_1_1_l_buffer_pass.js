@@ -2,8 +2,8 @@ var structmage_1_1_l_buffer_pass =
 [
     [ "LBufferPass", "structmage_1_1_l_buffer_pass.html#acde2812780af700501ca945d62ed3dcc", null ],
     [ "LBufferPass", "structmage_1_1_l_buffer_pass.html#a0cd35fd1ded3c17d04c1689d1e30e476", null ],
-    [ "LBufferPass", "structmage_1_1_l_buffer_pass.html#ae87591e020b5c87ba219aad132669276", null ],
-    [ "~LBufferPass", "structmage_1_1_l_buffer_pass.html#abb6727e9cacfb21ac140aeac68f18171", null ],
+    [ "LBufferPass", "structmage_1_1_l_buffer_pass.html#ae68baaaa3fee2a76d64037f58d3e389b", null ],
+    [ "~LBufferPass", "structmage_1_1_l_buffer_pass.html#ae9bad6fa2eb3827f9e28a3f21a974496", null ],
     [ "BindLBuffer", "structmage_1_1_l_buffer_pass.html#a1ed227fef9a19d8274519c8ff6277e35", null ],
     [ "GetNumberOfDirectionalLights", "structmage_1_1_l_buffer_pass.html#a8a8c7af3c9c780f378411b928bb15a67", null ],
     [ "GetNumberOfDirectionalLightsWithShadowMapping", "structmage_1_1_l_buffer_pass.html#a14764bc764ed13614595262ddc42ca9e", null ],

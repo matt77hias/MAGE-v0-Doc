@@ -2,7 +2,7 @@ var classmage_1_1_node =
 [
     [ "Node", "classmage_1_1_node.html#a6638b75608b2b340743a0a639230492d", null ],
     [ "Node", "classmage_1_1_node.html#af9da591163469f210895f3a5b389d7cc", null ],
-    [ "Node", "classmage_1_1_node.html#adbc40b6c4100f74faa2b59a7a0b79388", null ],
+    [ "Node", "classmage_1_1_node.html#a848ecb05c6b085cb4f27e38add85e64c", null ],
     [ "~Node", "classmage_1_1_node.html#a1369fc11b331abacbaf11aeb5729e871", null ],
     [ "Activate", "classmage_1_1_node.html#aefa62a09afd2b0d314a64e6d45f45a34", null ],
     [ "AddChildNode", "classmage_1_1_node.html#a465b80fbebf01543c645603cfe3e1b7e", null ],

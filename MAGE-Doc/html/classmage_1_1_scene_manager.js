@@ -1,8 +1,8 @@
 var classmage_1_1_scene_manager =
 [
-    [ "SceneManager", "classmage_1_1_scene_manager.html#a25a1185ca41db52d046a5901b301a0be", null ],
+    [ "SceneManager", "classmage_1_1_scene_manager.html#aa505da85a4d49ea4b2fcda16559f5700", null ],
     [ "SceneManager", "classmage_1_1_scene_manager.html#a450ce8e4d52483a2dcc3bb090f565373", null ],
-    [ "SceneManager", "classmage_1_1_scene_manager.html#ae8f4c6553e27b0bc00f0ea40f0e3770c", null ],
+    [ "SceneManager", "classmage_1_1_scene_manager.html#a651c58791268cf29d33c18031e4c1f41", null ],
     [ "~SceneManager", "classmage_1_1_scene_manager.html#a849386b052d6ae8945c9554f888e1707", null ],
     [ "ApplyRequestedScene", "classmage_1_1_scene_manager.html#adadc65dc4bd9643c1befd261903309f7", null ],
     [ "FixedUpdate", "classmage_1_1_scene_manager.html#a6d97c0fb7945aeb53ec950e62567c1f4", null ],

@@ -2,7 +2,7 @@ var classmage_1_1_sky_pass =
 [
     [ "SkyPass", "classmage_1_1_sky_pass.html#a41bb9d2d37f2c3a7bc5b12cffad9dafa", null ],
     [ "SkyPass", "classmage_1_1_sky_pass.html#a78be688fecb0a4f55df78d4af01c4590", null ],
-    [ "SkyPass", "classmage_1_1_sky_pass.html#a6bd646c3f01beb171a19efe72b6cdbab", null ],
+    [ "SkyPass", "classmage_1_1_sky_pass.html#a86acd9fdb50c3c92a6c15632362aea47", null ],
     [ "~SkyPass", "classmage_1_1_sky_pass.html#ab3e581e2eedfc62e13c71d91359f71ce", null ],
     [ "BindFixedState", "classmage_1_1_sky_pass.html#aa74c5e32a917aac610b2c7e4750c4639", null ],
     [ "Get", "classmage_1_1_sky_pass.html#af608935f6cb4b631512ee9c9eb6dec9d", null ],

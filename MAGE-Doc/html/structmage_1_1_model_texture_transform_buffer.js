@@ -1,8 +1,8 @@
 var structmage_1_1_model_texture_transform_buffer =
 [
-    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a500d8232f1350b0beccc2181951309d6", null ],
-    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a5b0c7030b2e48302e6c071935a4bc7d5", null ],
-    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a35516b344752486fa40cd14b59e17ec9", null ],
+    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a8db3a9beb1605af8eaf86e76ae909b6b", null ],
+    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a8343debdebb3d3c3df8c82ee5c3d88ab", null ],
+    [ "ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a90eaca1a29930ec51a3cd50bee212f57", null ],
     [ "~ModelTextureTransformBuffer", "structmage_1_1_model_texture_transform_buffer.html#a855c8ccaefe9bac3fd10cdc143616cd9", null ],
     [ "operator=", "structmage_1_1_model_texture_transform_buffer.html#a4fd72713afb7e68208c0356a2b55f3d9", null ],
     [ "operator=", "structmage_1_1_model_texture_transform_buffer.html#a025ad62973c7ae20b8e977f94c509a54", null ],

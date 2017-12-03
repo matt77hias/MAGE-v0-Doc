@@ -2,9 +2,6 @@ var hierarchy =
 [
     [ "mage::AABB", "structmage_1_1_a_a_b_b.html", null ],
     [ "mage::AAPass", "classmage_1_1_a_a_pass.html", null ],
-    [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
-      [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
-    ] ],
     [ "mage::AlignedAllocator< DataT, AlignmentS >", "structmage_1_1_aligned_allocator.html", null ],
     [ "mage::MemoryArena::Allocator< DataT >", "structmage_1_1_memory_arena_1_1_allocator.html", null ],
     [ "mage::SingleEndedMemoryStack::Allocator< DataT >", "structmage_1_1_single_ended_memory_stack_1_1_allocator.html", null ],
@@ -215,7 +212,7 @@ var hierarchy =
         [ "mage::DerivedSpriteNode< SpriteT >", "classmage_1_1_derived_sprite_node.html", null ]
       ] ]
     ] ],
-    [ "mage::OBJReader< VertexT >::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
+    [ "mage::OBJReader< VertexT >::OBJComparatorU32x3", "structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_u32x3.html", null ],
     [ "mage::Pipeline::OM", "structmage_1_1_pipeline_1_1_o_m.html", null ],
     [ "mage::OmniLightBuffer", "structmage_1_1_omni_light_buffer.html", null ],
     [ "mage::OmniLightWithShadowMappingBuffer", "structmage_1_1_omni_light_with_shadow_mapping_buffer.html", null ],
@@ -228,10 +225,10 @@ var hierarchy =
     [ "mage::ReadWriteMutex", "structmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
     [ "mage::AlignedAllocator< DataT, AlignmentS >::rebind< DataU >", "structmage_1_1_aligned_allocator_1_1rebind.html", null ],
-    [ "mage::SingleEndedMemoryStack::Allocator< DataT >::rebind< DataU >", "structmage_1_1_single_ended_memory_stack_1_1_allocator_1_1rebind.html", null ],
+    [ "mage::MemoryArena::Allocator< DataT >::rebind< DataU >", "structmage_1_1_memory_arena_1_1_allocator_1_1rebind.html", null ],
     [ "mage::DoubleEndedMemoryStack::LowAllocator< DataT >::rebind< DataU >", "structmage_1_1_double_ended_memory_stack_1_1_low_allocator_1_1rebind.html", null ],
     [ "mage::DoubleEndedMemoryStack::HighAllocator< DataT >::rebind< DataU >", "structmage_1_1_double_ended_memory_stack_1_1_high_allocator_1_1rebind.html", null ],
-    [ "mage::MemoryArena::Allocator< DataT >::rebind< DataU >", "structmage_1_1_memory_arena_1_1_allocator_1_1rebind.html", null ],
+    [ "mage::SingleEndedMemoryStack::Allocator< DataT >::rebind< DataU >", "structmage_1_1_single_ended_memory_stack_1_1_allocator_1_1rebind.html", null ],
     [ "mage::Renderer", "classmage_1_1_renderer.html", null ],
     [ "mage::RenderingManager", "classmage_1_1_rendering_manager.html", null ],
     [ "mage::RenderingOutputManager", "classmage_1_1_rendering_output_manager.html", null ],
@@ -316,9 +313,37 @@ var hierarchy =
     [ "mage::Transform", "classmage_1_1_transform.html", null ],
     [ "mage::TransformNode", "classmage_1_1_transform_node.html", null ],
     [ "mage::Pipeline::TS", "structmage_1_1_pipeline_1_1_t_s.html", null ],
-    [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::VariableComponentPass", "classmage_1_1_variable_component_pass.html", null ],
     [ "mage::VariableShadingPass", "classmage_1_1_variable_shading_pass.html", null ],
+    [ "mage::Vector2< T, Enable >", "structmage_1_1_vector2.html", null ],
+    [ "mage::Vector2< F32 >", "structmage_1_1_vector2.html", [
+      [ "mage::UV", "structmage_1_1_u_v.html", null ]
+    ] ],
+    [ "mage::Vector2< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html", null ],
+    [ "mage::Vector2A< T, Enable >", "structmage_1_1_vector2_a.html", null ],
+    [ "mage::Vector2A< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__b421e7a25afc1ac5972d3b452777021a.html", null ],
+    [ "mage::Vector3< T, Enable >", "structmage_1_1_vector3.html", [
+      [ "mage::Direction3", "structmage_1_1_direction3.html", null ],
+      [ "mage::Normal3", "structmage_1_1_normal3.html", null ],
+      [ "mage::Point3", "structmage_1_1_point3.html", null ]
+    ] ],
+    [ "mage::Vector3< F32 >", "structmage_1_1_vector3.html", [
+      [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
+      [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
+      [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
+    ] ],
+    [ "mage::Vector3< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html", null ],
+    [ "mage::Vector3A< T, Enable >", "structmage_1_1_vector3_a.html", null ],
+    [ "mage::Vector3A< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector3_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__7070ab83646a86866d1e3c9d7eeea37a.html", null ],
+    [ "mage::Vector4< T, Enable >", "structmage_1_1_vector4.html", [
+      [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
+      [ "mage::SRGBA", "structmage_1_1_s_r_g_b_a.html", null ],
+      [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
+    ] ],
+    [ "mage::Vector4< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html", null ],
+    [ "mage::Vector4A< T, Enable >", "structmage_1_1_vector4_a.html", null ],
+    [ "mage::Vector4A< F32 >", "structmage_1_1_vector4_a.html", null ],
+    [ "mage::Vector4A< T, typename std::enable_if_t< std::is_arithmetic_v< T >, void > >", "structmage_1_1_vector4_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__d13db15ba42d9bdb5e20df00543b38a7.html", null ],
     [ "VERTEX_CONSTANT_BUFFER", "struct_v_e_r_t_e_x___c_o_n_s_t_a_n_t___b_u_f_f_e_r.html", null ],
     [ "mage::VertexPosition", "structmage_1_1_vertex_position.html", null ],
     [ "mage::VertexPositionColor", "structmage_1_1_vertex_position_color.html", null ],
@@ -336,22 +361,6 @@ var hierarchy =
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::MDLWriter< VertexT >", "classmage_1_1_m_d_l_writer.html", null ],
       [ "mage::VARWriter", "classmage_1_1_v_a_r_writer.html", null ]
-    ] ],
-    [ "XMFLOAT2", null, [
-      [ "mage::UV", "structmage_1_1_u_v.html", null ]
-    ] ],
-    [ "XMFLOAT3", null, [
-      [ "mage::Direction3", "structmage_1_1_direction3.html", null ],
-      [ "mage::Normal3", "structmage_1_1_normal3.html", null ],
-      [ "mage::Point3", "structmage_1_1_point3.html", null ],
-      [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
-      [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
-      [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
-    ] ],
-    [ "XMFLOAT4", null, [
-      [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
-      [ "mage::SRGBA", "structmage_1_1_s_r_g_b_a.html", null ],
-      [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
     ] ],
     [ "exception", null, [
       [ "mage::FormattedException", "classmage_1_1_formatted_exception.html", null ]

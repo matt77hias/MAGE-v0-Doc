@@ -2,7 +2,7 @@ var classmage_1_1_sprite_image =
 [
     [ "SpriteImage", "classmage_1_1_sprite_image.html#ac5de26e66bf1d1fdd255c2044f097ecf", null ],
     [ "SpriteImage", "classmage_1_1_sprite_image.html#a7ce3b568dc3ff96e7467a8d00bba997d", null ],
-    [ "SpriteImage", "classmage_1_1_sprite_image.html#ae1ea5c900498c8ecdf5dd3131d056dd5", null ],
+    [ "SpriteImage", "classmage_1_1_sprite_image.html#a4490dea28c647b80324ea26cc93b2f82", null ],
     [ "~SpriteImage", "classmage_1_1_sprite_image.html#a9121ee110f7e64ee6e936e0d3350ab44", null ],
     [ "Clone", "classmage_1_1_sprite_image.html#a19db9a2a418dd04db0b38d1f8aa7e035", null ],
     [ "CloneImplementation", "classmage_1_1_sprite_image.html#ad6460971fc4ffb425b7a43d27c9b05b2", null ],

@@ -13,7 +13,7 @@
 \item 
 \hyperlink{classmage_1_1_sprite_batch_a10fe1d6cf1d2de9e087b370e7d696be8}{Sprite\+Batch} (const \hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&sprite\+\_\+batch)=delete
 \item 
-\hyperlink{classmage_1_1_sprite_batch_a16f89aba054d8a08e5257c46813f4713}{Sprite\+Batch} (\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&sprite\+\_\+batch)
+\hyperlink{classmage_1_1_sprite_batch_a9829fa235d66a66d7cca6a64625998e4}{Sprite\+Batch} (\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&sprite\+\_\+batch) noexcept
 \item 
 \hyperlink{classmage_1_1_sprite_batch_a1c284e2c0ed96081f9f2fb1f84e5817f}{$\sim$\+Sprite\+Batch} ()
 \item 
@@ -33,9 +33,7 @@ void \hyperlink{classmage_1_1_sprite_batch_a59ec5e96a62bcd674cbf0d22f152b17f}{Se
 \item 
 const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \& \hyperlink{classmage_1_1_sprite_batch_ab4f95db776d7c20896f9420bc60d90c8}{Get\+Viewport} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_sprite_batch_a5b02194c2bdbbe5b04e95ab401e6de4e}{Set\+Viewport} (const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&viewport) noexcept
-\item 
-void \hyperlink{classmage_1_1_sprite_batch_aef86940ffc869785fb8ff8eb85ab7b46}{Set\+Viewport} (D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&\&viewport) noexcept
+void \hyperlink{classmage_1_1_sprite_batch_ad473bf97226d5c9bb1f5d599adbcf470}{Set\+Viewport} (D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT viewport) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -148,11 +146,11 @@ Constructs a sprite batch from the given sprite batch.
 \mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_sprite_batch_a16f89aba054d8a08e5257c46813f4713}{}\label{classmage_1_1_sprite_batch_a16f89aba054d8a08e5257c46813f4713} 
+\hypertarget{classmage_1_1_sprite_batch_a9829fa235d66a66d7cca6a64625998e4}{}\label{classmage_1_1_sprite_batch_a9829fa235d66a66d7cca6a64625998e4} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Sprite\+Batch@{Sprite\+Batch}}
 \index{Sprite\+Batch@{Sprite\+Batch}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{Sprite\+Batch()}{SpriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily mage\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_sprite_batch}{Sprite\+Batch} \&\&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Constructs a sprite batch by moving the given sprite batch.
 
@@ -382,30 +380,17 @@ Sets the rotation mode of this sprite batch to fit the physical rotation of a mo
 \mbox{\tt in}  & {\em rotation\+\_\+mode} & The rotation mode. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_sprite_batch_a5b02194c2bdbbe5b04e95ab401e6de4e}{}\label{classmage_1_1_sprite_batch_a5b02194c2bdbbe5b04e95ab401e6de4e} 
+\hypertarget{classmage_1_1_sprite_batch_ad473bf97226d5c9bb1f5d599adbcf470}{}\label{classmage_1_1_sprite_batch_ad473bf97226d5c9bb1f5d599adbcf470} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Set\+Viewport@{Set\+Viewport}}
 \index{Set\+Viewport@{Set\+Viewport}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Sets the viewport of this sprite batch to the given viewport.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_sprite_batch_aef86940ffc869785fb8ff8eb85ab7b46}{}\label{classmage_1_1_sprite_batch_aef86940ffc869785fb8ff8eb85ab7b46} 
-\index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!Set\+Viewport@{Set\+Viewport}}
-\index{Set\+Viewport@{Set\+Viewport}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
-\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Batch\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \&\&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Sets the viewport of this sprite batch to the given viewport.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
+\mbox{\tt in}  & {\em viewport} & The viewport. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_sprite_batch_af7a5d406b02cd477c9b80eae9984aa86}{}\label{classmage_1_1_sprite_batch_af7a5d406b02cd477c9b80eae9984aa86} 

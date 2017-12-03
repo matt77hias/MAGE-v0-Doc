@@ -1,14 +1,14 @@
 var classmage_1_1_engine_statistics =
 [
-    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#acbaa39e0e0ee0d6cb5c8d174bb80a3fd", null ],
-    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#a8361fa991298c7669b4e3c8262acff60", null ],
-    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#acb3eb7a8f16733d29b4a0e4490723cd5", null ],
+    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#a0f0d19fdbdf37d28feb2885c0cc2b6a0", null ],
+    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#a6191d7a64cf2bb46a404a12e7cfafbb5", null ],
+    [ "EngineStatistics", "classmage_1_1_engine_statistics.html#ab68e329a6f614be99d773e026b2233de", null ],
     [ "~EngineStatistics", "classmage_1_1_engine_statistics.html#a471f643061b881ae69cc807b34c48127", null ],
     [ "Get", "classmage_1_1_engine_statistics.html#a7eb0d3a988676f71eea8e9f26ab07f42", null ],
-    [ "GetNumberOfDrawCalls", "classmage_1_1_engine_statistics.html#a2bfcab5d823c018174e205741cbed4d4", null ],
-    [ "IncrementNumberOfDrawCalls", "classmage_1_1_engine_statistics.html#af26859407a4780e9471131fcfbe3a125", null ],
-    [ "operator=", "classmage_1_1_engine_statistics.html#a6c5e8b9a5806e67f6f93a3c558293249", null ],
-    [ "operator=", "classmage_1_1_engine_statistics.html#a4674d3856fee372e05f1bed017e46d5b", null ],
-    [ "PrepareRendering", "classmage_1_1_engine_statistics.html#a722912aa5e93caff589a52bb10be930d", null ],
+    [ "GetNumberOfDrawCalls", "classmage_1_1_engine_statistics.html#a8c9a6691cec0c6544c4fb2e426ab4379", null ],
+    [ "IncrementNumberOfDrawCalls", "classmage_1_1_engine_statistics.html#abd7d06c31fb163cec7938342e75ebc9d", null ],
+    [ "operator=", "classmage_1_1_engine_statistics.html#aad037dd90928e14e810b53de66e7cd80", null ],
+    [ "operator=", "classmage_1_1_engine_statistics.html#a01cddf6fa3409e1dbd07b6d0055d1fcc", null ],
+    [ "PrepareRendering", "classmage_1_1_engine_statistics.html#a15eaca9bc77798a83e9c1a51fe6c7933", null ],
     [ "m_nb_draw_calls", "classmage_1_1_engine_statistics.html#a26eeba872cebff2657b8b023751b1894", null ]
 ];

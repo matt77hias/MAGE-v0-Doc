@@ -2,7 +2,7 @@ var classmage_1_1_rendering_manager =
 [
     [ "RenderingManager", "classmage_1_1_rendering_manager.html#aaff7375b93bf6019ff7aafb845b1a7a0", null ],
     [ "RenderingManager", "classmage_1_1_rendering_manager.html#a662f30a01e5e0f1b95f2877981a2f1df", null ],
-    [ "RenderingManager", "classmage_1_1_rendering_manager.html#af3645720626dc0151fdec80097e0364b", null ],
+    [ "RenderingManager", "classmage_1_1_rendering_manager.html#a06c7ad1cb8164b4e33ba52f7d297aa4a", null ],
     [ "~RenderingManager", "classmage_1_1_rendering_manager.html#a4164e70f014de8d0348c35d5142cedab", null ],
     [ "BeginFrame", "classmage_1_1_rendering_manager.html#ab1fe907a08658a8cf57217eb5a48728f", null ],
     [ "BindPersistentState", "classmage_1_1_rendering_manager.html#adadab213b9aabdc6167a012d340084a6", null ],
