@@ -24,4 +24,4 @@ The documentation of [MAGE](https://github.com/matt77hias/MAGE).
 * **Documentation style**: [JavaDoc style](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html) extended with [Doxygen keywords](https://www.stack.nl/~dimitri/doxygen/manual/commands.html)
 * **Documentation generation**: [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) to [HTML](http://matt77hias.github.io/MAGE-Doc) and LaTeX ([PDF](https://matt77hias.github.io/MAGE-Doc/MAGE-Doc/latex/refman.pdf)).
 
-<p align="center">Copyright © 2016-2017 Matthias Moulin. All Rights Reserved.</p>
+<p align="center">Copyright © 2016-2018 Matthias Moulin. All Rights Reserved.</p>
