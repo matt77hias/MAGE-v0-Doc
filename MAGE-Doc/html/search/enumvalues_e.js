@@ -1,6 +1,7 @@
 var searchData=
 [
   ['partialcoverage',['PartialCoverage',['../namespacemage.html#aa9fe157e5a578a103160266df8cccb0aaf0107a9713b60c49ef89e731b386061f',1,'mage']]],
+  ['passive',['Passive',['../namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969af80bc338b6146b566004a046f8137c85',1,'mage']]],
   ['pcf',['PCF',['../classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a0a4faf97013814ceb7f7afe1205a516b',1,'mage::RenderingStateManager']]],
   ['pointclamp',['PointClamp',['../classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a055739d3d609c52b857c7c0be46e748c',1,'mage::RenderingStateManager']]],
   ['pointmirror',['PointMirror',['../classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a8404a618d62db33e6b47ac4ba5cb464b',1,'mage::RenderingStateManager']]],

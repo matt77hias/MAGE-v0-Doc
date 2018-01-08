@@ -1,8 +1,8 @@
 var classmage_1_1_rendering_manager =
 [
     [ "RenderingManager", "classmage_1_1_rendering_manager.html#aaff7375b93bf6019ff7aafb845b1a7a0", null ],
-    [ "RenderingManager", "classmage_1_1_rendering_manager.html#a662f30a01e5e0f1b95f2877981a2f1df", null ],
-    [ "RenderingManager", "classmage_1_1_rendering_manager.html#a06c7ad1cb8164b4e33ba52f7d297aa4a", null ],
+    [ "RenderingManager", "classmage_1_1_rendering_manager.html#a897b5c41babd3ce622ea36d46191aca9", null ],
+    [ "RenderingManager", "classmage_1_1_rendering_manager.html#a4e11d205eb43c4315c506c22b4e70254", null ],
     [ "~RenderingManager", "classmage_1_1_rendering_manager.html#a4164e70f014de8d0348c35d5142cedab", null ],
     [ "BeginFrame", "classmage_1_1_rendering_manager.html#ab1fe907a08658a8cf57217eb5a48728f", null ],
     [ "BindPersistentState", "classmage_1_1_rendering_manager.html#adadab213b9aabdc6167a012d340084a6", null ],
@@ -16,8 +16,8 @@ var classmage_1_1_rendering_manager =
     [ "GetRenderingStateManager", "classmage_1_1_rendering_manager.html#a762283c6474287a874f8e8667f69a165", null ],
     [ "GetSwapChain", "classmage_1_1_rendering_manager.html#a867d9d3986a38c98562cf0cfe9797fe0", null ],
     [ "InitializeSystems", "classmage_1_1_rendering_manager.html#a80812ecd5c9757b961e46e6bb7533566", null ],
-    [ "operator=", "classmage_1_1_rendering_manager.html#af34a5ba3b8b585124f84f4c70866546b", null ],
-    [ "operator=", "classmage_1_1_rendering_manager.html#a6f71bc364063de61d07490ef9896158c", null ],
+    [ "operator=", "classmage_1_1_rendering_manager.html#a4c0455f5e40f1b1e16e10a133dffc87f", null ],
+    [ "operator=", "classmage_1_1_rendering_manager.html#a765f323c63ac7cd53c71b362eaccc61b", null ],
     [ "SetupDevice", "classmage_1_1_rendering_manager.html#a45d4cadcd572290f352027b5fa86b4f6", null ],
     [ "UninitializeSystems", "classmage_1_1_rendering_manager.html#a3665d58d2a9e8995a348b5f2bd723d8b", null ],
     [ "m_device", "classmage_1_1_rendering_manager.html#adeb8bcb91a132686d683b33af46979f8", null ],

@@ -11,8 +11,8 @@ var structmage_1_1_vertex_position_normal =
     [ "HasTexture", "structmage_1_1_vertex_position_normal.html#a049430623134ff702e768bda3bc96860", null ],
     [ "operator=", "structmage_1_1_vertex_position_normal.html#a61c158d1c031a965b3512e217ac1dcff", null ],
     [ "operator=", "structmage_1_1_vertex_position_normal.html#aac2b96802bda78c0f312985d9602b103", null ],
-    [ "n", "structmage_1_1_vertex_position_normal.html#a09baa618081e66e21cdfe5752dbf8df6", null ],
-    [ "p", "structmage_1_1_vertex_position_normal.html#ac95e9941363ec5687f0bf21e59b83940", null ],
+    [ "m_n", "structmage_1_1_vertex_position_normal.html#a5b687f150537e625dcca810d3fded3e6", null ],
+    [ "m_p", "structmage_1_1_vertex_position_normal.html#abe9d881b1ebe279ccfb70c94a441e162", null ],
     [ "s_input_element_desc", "structmage_1_1_vertex_position_normal.html#aa597c602ce172e523bece0e75d157081", null ],
-    [ "s_nb_input_elements", "structmage_1_1_vertex_position_normal.html#a6201d147655b9fb0cf6117ba724b07ef", null ]
+    [ "s_nb_input_elements", "structmage_1_1_vertex_position_normal.html#a0c92f3814b7ce5f1f861498a42926374", null ]
 ];

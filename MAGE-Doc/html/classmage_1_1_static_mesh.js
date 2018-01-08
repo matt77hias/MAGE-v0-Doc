@@ -1,14 +1,14 @@
 var classmage_1_1_static_mesh =
 [
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#ad1fb729eb4549c46f357d639127f9724", null ],
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#ac9f230b6a55835ce058129b1762edff6", null ],
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#afb1c3ff87eae3811b33a5ff236e2ba76", null ],
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#af90d313544c6e0167c9ae1919a9b0314", null ],
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#a15be69ad312c252c9816a57ec1555d73", null ],
-    [ "StaticMesh", "classmage_1_1_static_mesh.html#a8d2238338c9bc450e2aaaf79ada0634e", null ],
-    [ "~StaticMesh", "classmage_1_1_static_mesh.html#a7fbae949f631d29913193a1b2c2ef658", null ],
-    [ "operator=", "classmage_1_1_static_mesh.html#af73dd102f2de9cf7529e380895cfc8ff", null ],
-    [ "operator=", "classmage_1_1_static_mesh.html#a38912f8555053abba649bea160d56e46", null ],
-    [ "SetupIndexBuffer", "classmage_1_1_static_mesh.html#ad9dbf64b48543424f008e664b7467360", null ],
-    [ "SetupVertexBuffer", "classmage_1_1_static_mesh.html#a51e5fd6cc526b8ecdfd7b06a33f50807", null ]
+    [ "StaticMesh", "classmage_1_1_static_mesh.html#a12e95f33bd56ad37e931fcf4e1679a12", null ],
+    [ "StaticMesh", "classmage_1_1_static_mesh.html#a0178889509a63152cfa756ea2d2c419d", null ],
+    [ "StaticMesh", "classmage_1_1_static_mesh.html#a67f17b0c2e82e3ea33db92ded91a746f", null ],
+    [ "StaticMesh", "classmage_1_1_static_mesh.html#ae8d097727f50c05d0397828540b1af0c", null ],
+    [ "~StaticMesh", "classmage_1_1_static_mesh.html#ae14c69f2c93f534a4f48f66c8f2deb79", null ],
+    [ "operator=", "classmage_1_1_static_mesh.html#a00919cc54283e85b94e3f3d97ebe2340", null ],
+    [ "operator=", "classmage_1_1_static_mesh.html#a12b9f307dc7e7f7567d37fe94a288f85", null ],
+    [ "SetupIndexBuffer", "classmage_1_1_static_mesh.html#af60eb028ed40e4bd6595edbee110bc7d", null ],
+    [ "SetupVertexBuffer", "classmage_1_1_static_mesh.html#a5e9c8e2a9441ccb41b52938cf05c4034", null ],
+    [ "m_indices", "classmage_1_1_static_mesh.html#abc6b5fb8eaaf9e597ba6efe48f9e779e", null ],
+    [ "m_vertices", "classmage_1_1_static_mesh.html#a2e4bad427bfd2ff874dcff776cc4dc51", null ]
 ];

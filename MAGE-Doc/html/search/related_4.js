@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['singleendedmemorystack',['SingleEndedMemoryStack',['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html#a3f3449e5c2caa1666a293b36db6f5a54',1,'mage::SingleEndedMemoryStack::Allocator']]]
+  ['readwritemutexlock',['ReadWriteMutexLock',['../classmage_1_1_read_write_mutex.html#a9efae7e36aecae5af2a7f3cd6c4e0dbb',1,'mage::ReadWriteMutex']]]
 ];

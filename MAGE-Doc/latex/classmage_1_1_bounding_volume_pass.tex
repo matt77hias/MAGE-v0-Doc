@@ -19,9 +19,9 @@
 \item 
 \hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \& \hyperlink{classmage_1_1_bounding_volume_pass_a3887d5ffbb5e175187004f0b057ddcaa}{operator=} (\hyperlink{classmage_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&\&render\+\_\+pass)=delete
 \item 
-void \hyperlink{classmage_1_1_bounding_volume_pass_a67c802211155c0eae3e15343244ba2c4}{Bind\+Fixed\+State} ()
+void \hyperlink{classmage_1_1_bounding_volume_pass_ab38a107beb5481e923526d51e9fdfbe2}{Bind\+Fixed\+State} () const noexcept
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_ae352f2fd1c7db9309ba873ad84d9933f}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_ad17f8f6c68d19ffa39e5a3dbe5737c86}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -38,12 +38,6 @@ void \hyperlink{classmage_1_1_bounding_volume_pass_a9dcca637d98ea8335777094d3d99
 void \hyperlink{classmage_1_1_bounding_volume_pass_af4591758a8dfa7cd19a0f87a0273e470}{Bind\+Model\+Color\+Data} ()
 \item 
 void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_ae84dd1e056235a5fdbc7c496b6b99d1d}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX box\+\_\+to\+\_\+view)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_a07613a3b98f9e6cc0cde4affab9051cc}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_ad3f72aff024498f0fe6fde0d42236efb}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_bounding_volume_pass_a634e553ec3c223bc25eba1369d6c6360}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -54,9 +48,9 @@ const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<
 \item 
 const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_bounding_volume_pass_a30c85c0e4766e4e330d906af2ecc7463}{m\+\_\+ps}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1_bounding_volume_pass_aeb60ac6a87ba6fdd6a87fb750e2f3d10}{m\+\_\+color\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1_bounding_volume_pass_aeb60ac6a87ba6fdd6a87fb750e2f3d10}{m\+\_\+color\+\_\+buffer}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_bounding_volume_pass_a07df0f32726f390dd0f060bc6d61b40e}{m\+\_\+model\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_bounding_volume_pass_a07df0f32726f390dd0f060bc6d61b40e}{m\+\_\+model\+\_\+buffer}
 \end{DoxyCompactItemize}
 
 
@@ -127,23 +121,16 @@ Binds the color data of this bounding volume pass.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the light color data of this bounding volume pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the light color data of this bounding volume pass. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_bounding_volume_pass_a67c802211155c0eae3e15343244ba2c4}{}\label{classmage_1_1_bounding_volume_pass_a67c802211155c0eae3e15343244ba2c4} 
+\hypertarget{classmage_1_1_bounding_volume_pass_ab38a107beb5481e923526d51e9fdfbe2}{}\label{classmage_1_1_bounding_volume_pass_ab38a107beb5481e923526d51e9fdfbe2} 
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
 \index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
-{\footnotesize\ttfamily void mage\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Binds the fixed state of this bounding volume pass.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the fixed state of this bounding volume pass. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_bounding_volume_pass_a9dcca637d98ea8335777094d3d994f5c}{}\label{classmage_1_1_bounding_volume_pass_a9dcca637d98ea8335777094d3d994f5c} 
+Binds the fixed state of this bounding volume pass. \hypertarget{classmage_1_1_bounding_volume_pass_a9dcca637d98ea8335777094d3d994f5c}{}\label{classmage_1_1_bounding_volume_pass_a9dcca637d98ea8335777094d3d994f5c} 
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Bind\+Light\+Color\+Data@{Bind\+Light\+Color\+Data}}
 \index{Bind\+Light\+Color\+Data@{Bind\+Light\+Color\+Data}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+Light\+Color\+Data()}{BindLightColorData()}}
@@ -153,7 +140,7 @@ Binds the light color data of this bounding volume pass.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the light color data of this bounding volume pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the light color data of this bounding volume pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_bounding_volume_pass_af4591758a8dfa7cd19a0f87a0273e470}{}\label{classmage_1_1_bounding_volume_pass_af4591758a8dfa7cd19a0f87a0273e470} 
@@ -166,7 +153,7 @@ Binds the model color data of this bounding volume pass.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the model color data of this bounding volume pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model color data of this bounding volume pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_bounding_volume_pass_ae84dd1e056235a5fdbc7c496b6b99d1d}{}\label{classmage_1_1_bounding_volume_pass_ae84dd1e056235a5fdbc7c496b6b99d1d} 
@@ -184,7 +171,7 @@ Binds the model data of this bounding volume pass.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the model data of this bounding volume pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model data of this bounding volume pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_bounding_volume_pass_a254c44c1c9f18967c9d6cdb6e53d3bcd}{}\label{classmage_1_1_bounding_volume_pass_a254c44c1c9f18967c9d6cdb6e53d3bcd} 
@@ -233,86 +220,17 @@ Moves the given bounding volume pass to this bounding volume pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved bounding volume pass (i.\+e. this bounding volume pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_bounding_volume_pass_a07613a3b98f9e6cc0cde4affab9051cc}{}\label{classmage_1_1_bounding_volume_pass_a07613a3b98f9e6cc0cde4affab9051cc} 
-\index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Process\+Lights@{Process\+Lights}}
-\index{Process\+Lights@{Process\+Lights}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Bounding\+Volume\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Process the given omni lights.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em lights} & A reference to a vector containing the light pointers to process. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. This transformation matrix will be used for culling and transforming box vertices. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. This transformation matrix will be chained with the object-\/to-\/view transformation matrix for transforming vertices. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to process the lights. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_bounding_volume_pass_ad3f72aff024498f0fe6fde0d42236efb}{}\label{classmage_1_1_bounding_volume_pass_ad3f72aff024498f0fe6fde0d42236efb} 
-\index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Process\+Lights@{Process\+Lights}}
-\index{Process\+Lights@{Process\+Lights}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Bounding\+Volume\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Process the given spotlights.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em lights} & A reference to a vector containing the light pointers to process. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. This transformation matrix will be used for culling and transforming box vertices. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. This transformation matrix will be chained with the object-\/to-\/view transformation matrix for transforming vertices. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to process the lights. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_bounding_volume_pass_a634e553ec3c223bc25eba1369d6c6360}{}\label{classmage_1_1_bounding_volume_pass_a634e553ec3c223bc25eba1369d6c6360} 
-\index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Process\+Models@{Process\+Models}}
-\index{Process\+Models@{Process\+Models}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Bounding\+Volume\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Process the given models.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em models} & A reference to a vector containing the model pointers to process. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. This transformation matrix will be used for culling and transforming box vertices. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. This transformation matrix will be chained with the object-\/to-\/view transformation matrix for transforming vertices. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to process the models. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_bounding_volume_pass_ae352f2fd1c7db9309ba873ad84d9933f}{}\label{classmage_1_1_bounding_volume_pass_ae352f2fd1c7db9309ba873ad84d9933f} 
+\hypertarget{classmage_1_1_bounding_volume_pass_ad17f8f6c68d19ffa39e5a3dbe5737c86}{}\label{classmage_1_1_bounding_volume_pass_ad17f8f6c68d19ffa39e5a3dbe5737c86} 
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Bounding\+Volume\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Bounding\+Volume\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})}
 
 Renders the scene.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape scene} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
 \hline
 \mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
 \hline
@@ -321,7 +239,7 @@ Renders the scene.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
 \hline
 \end{DoxyExceptions}
 
@@ -331,7 +249,7 @@ Renders the scene.
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}}
 \index{m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+color\+\_\+buffer}{m\_color\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::\+Bounding\+Volume\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::\+Bounding\+Volume\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 The color buffer of this bounding volume pass. \hypertarget{classmage_1_1_bounding_volume_pass_a4ee95284ca70becba75d4be1a19268d7}{}\label{classmage_1_1_bounding_volume_pass_a4ee95284ca70becba75d4be1a19268d7} 
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
@@ -343,7 +261,7 @@ A pointer to the device context of this bounding volume pass. \hypertarget{class
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
 \index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Bounding\+Volume\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Bounding\+Volume\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 The model buffer of this bounding volume pass. \hypertarget{classmage_1_1_bounding_volume_pass_a30c85c0e4766e4e330d906af2ecc7463}{}\label{classmage_1_1_bounding_volume_pass_a30c85c0e4766e4e330d906af2ecc7463} 
 \index{mage\+::\+Bounding\+Volume\+Pass@{mage\+::\+Bounding\+Volume\+Pass}!m\+\_\+ps@{m\+\_\+ps}}

@@ -15,9 +15,9 @@ var classmage_1_1_variable_script =
     [ "ImportScript", "classmage_1_1_variable_script.html#ae8bbfb30b5d47b5c66cd1b45bdd2cec5", null ],
     [ "IsEmpty", "classmage_1_1_variable_script.html#a01386b6b5f5440c617909c452d9df308", null ],
     [ "operator=", "classmage_1_1_variable_script.html#ae090b066ea939fc6611e77a47df6a97f", null ],
-    [ "operator=", "classmage_1_1_variable_script.html#a4602887cc8b6c45a169af7822cf744a1", null ],
+    [ "operator=", "classmage_1_1_variable_script.html#a7cb6a585a701268aaac38d8f039fc403", null ],
     [ "RemoveAllVariables", "classmage_1_1_variable_script.html#af83059a4ce77ebd1ae042707d0acf750", null ],
     [ "RemoveVariable", "classmage_1_1_variable_script.html#a4970ef4faafb1a6a43c4648ec9f36cce", null ],
     [ "SetValueOfVariable", "classmage_1_1_variable_script.html#a3a006a5e30f0aae36503d560479511b5", null ],
-    [ "m_variables", "classmage_1_1_variable_script.html#aabab088b19b70f7f0f23f8427bdba51c", null ]
+    [ "m_variables", "classmage_1_1_variable_script.html#aed925cedf17c486fad876764e53d9e04", null ]
 ];

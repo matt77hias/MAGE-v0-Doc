@@ -21,7 +21,7 @@
 \item 
 void \hyperlink{classmage_1_1_sky_pass_aa74c5e32a917aac610b2c7e4750c4639}{Bind\+Fixed\+State} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_sky_pass_a5f7cd1d2e66bd5fbe9893bd42d3d6547}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene)
+void \hyperlink{classmage_1_1_sky_pass_a832e22543e9de25e316dd03d96ccf34b}{Render} (const \hyperlink{classmage_1_1_sky}{Sky} \&sky) const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -143,27 +143,19 @@ Moves the given sky pass to this sky pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved sky pass (i.\+e. this sky pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_sky_pass_a5f7cd1d2e66bd5fbe9893bd42d3d6547}{}\label{classmage_1_1_sky_pass_a5f7cd1d2e66bd5fbe9893bd42d3d6547} 
+\hypertarget{classmage_1_1_sky_pass_a832e22543e9de25e316dd03d96ccf34b}{}\label{classmage_1_1_sky_pass_a832e22543e9de25e316dd03d96ccf34b} 
 \index{mage\+::\+Sky\+Pass@{mage\+::\+Sky\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Sky\+Pass@{mage\+::\+Sky\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Sky\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sky\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_sky}{Sky} \&}]{sky }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Renders the given scene.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape scene} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\mbox{\tt in}  & {\em sky} & A reference to the sky. \\
 \hline
 \end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
-\hline
-\end{DoxyExceptions}
 
 
 \subsection{Member Data Documentation}

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reference',['reference',['../structmage_1_1_aligned_allocator.html#a95fd7625632a0143d72ad02ca520be4d',1,'mage::AlignedAllocator::reference()'],['../structmage_1_1_memory_arena_1_1_allocator.html#afeac56ef7ef38b63f56161988f59ef32',1,'mage::MemoryArena::Allocator::reference()'],['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html#a85ce7171363682bb03ec7b8ad5980b24',1,'mage::SingleEndedMemoryStack::Allocator::reference()'],['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#a0d6e290bc4fa4cc0d8595a8eadf21508',1,'mage::DoubleEndedMemoryStack::LowAllocator::reference()'],['../structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#ad037b00a52ebac3f03afd81bc16db9df',1,'mage::DoubleEndedMemoryStack::HighAllocator::reference()']]],
-  ['resourcemap',['ResourceMap',['../classmage_1_1_resource_pool.html#aad6897735ad6b8015b19d46d44d16584',1,'mage::ResourcePool::ResourceMap()'],['../classmage_1_1_persistent_resource_pool.html#a484a9df446865f7916d8fd2e560a3e18',1,'mage::PersistentResourcePool::ResourceMap()']]]
+  ['resourcemap',['ResourceMap',['../classmage_1_1_resource_pool.html#a7ae3cfa639bbc3696fa359673fed6153',1,'mage::ResourcePool::ResourceMap()'],['../classmage_1_1_persistent_resource_pool.html#a9215c5816fc45ab5f772625df2a8a60c',1,'mage::PersistentResourcePool::ResourceMap()']]]
 ];

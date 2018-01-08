@@ -8,7 +8,7 @@ var classmage_1_1_sky_pass =
     [ "Get", "classmage_1_1_sky_pass.html#af608935f6cb4b631512ee9c9eb6dec9d", null ],
     [ "operator=", "classmage_1_1_sky_pass.html#acfb9531772b437603825e43d17f4d983", null ],
     [ "operator=", "classmage_1_1_sky_pass.html#ae15ed24b3bbf4008b90e4cfcb4117a84", null ],
-    [ "Render", "classmage_1_1_sky_pass.html#a5f7cd1d2e66bd5fbe9893bd42d3d6547", null ],
+    [ "Render", "classmage_1_1_sky_pass.html#a832e22543e9de25e316dd03d96ccf34b", null ],
     [ "m_device_context", "classmage_1_1_sky_pass.html#aaa4d6a7c12dbad7938433f2d32107f27", null ],
     [ "m_sky_ps", "classmage_1_1_sky_pass.html#abe9548ff1e4b3c15ac9004e4ba4ca052", null ],
     [ "m_sky_vs", "classmage_1_1_sky_pass.html#a406ffced453d34b583a7bf975cf7f70f", null ]

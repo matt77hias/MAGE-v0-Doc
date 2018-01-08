@@ -19,9 +19,9 @@
 \item 
 \hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} \& \hyperlink{classmage_1_1_sprite_pass_aed8cc2bcb9ded1cb96c9d65bb7034c0a}{operator=} (\hyperlink{classmage_1_1_sprite_pass}{Sprite\+Pass} \&\&render\+\_\+pass)=delete
 \item 
-void \hyperlink{classmage_1_1_sprite_pass_a796f9aad70558e3ae0b792b9c674208d}{Bind\+Fixed\+State} ()
+void \hyperlink{classmage_1_1_sprite_pass_accdad82309711cb5248d61de1a85c8d1}{Bind\+Fixed\+State} () const noexcept
 \item 
-void \hyperlink{classmage_1_1_sprite_pass_ad617d46a3edbf5ee533f4d20e3d69ae2}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene)
+void \hyperlink{classmage_1_1_sprite_pass_a993aafa48dd06ae16fac9521eb036fd3}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene) const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -93,17 +93,17 @@ Constructs a sprite pass by moving the given sprite pass.
 Destructs this sprite pass. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_sprite_pass_a796f9aad70558e3ae0b792b9c674208d}{}\label{classmage_1_1_sprite_pass_a796f9aad70558e3ae0b792b9c674208d} 
+\hypertarget{classmage_1_1_sprite_pass_accdad82309711cb5248d61de1a85c8d1}{}\label{classmage_1_1_sprite_pass_accdad82309711cb5248d61de1a85c8d1} 
 \index{mage\+::\+Sprite\+Pass@{mage\+::\+Sprite\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
 \index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Sprite\+Pass@{mage\+::\+Sprite\+Pass}}
 \subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Binds the fixed state of this sprite pass.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the fixed state of this sprite pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the fixed state of this sprite pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_sprite_pass_a0044e0756f5f96f24c188424f9769a02}{}\label{classmage_1_1_sprite_pass_a0044e0756f5f96f24c188424f9769a02} 
@@ -152,25 +152,22 @@ Moves the given sprite pass to this sprite pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved sprite pass (i.\+e. this sprite pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_sprite_pass_ad617d46a3edbf5ee533f4d20e3d69ae2}{}\label{classmage_1_1_sprite_pass_ad617d46a3edbf5ee533f4d20e3d69ae2} 
+\hypertarget{classmage_1_1_sprite_pass_a993aafa48dd06ae16fac9521eb036fd3}{}\label{classmage_1_1_sprite_pass_a993aafa48dd06ae16fac9521eb036fd3} 
 \index{mage\+::\+Sprite\+Pass@{mage\+::\+Sprite\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Sprite\+Pass@{mage\+::\+Sprite\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Sprite\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Sprite\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene }\end{DoxyParamCaption}) const}
 
 Renders the scene.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape scene} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
 \hline
 \end{DoxyExceptions}
 

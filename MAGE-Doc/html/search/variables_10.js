@@ -3,8 +3,10 @@ var searchData=
   ['rasterizerflags',['RasterizerFlags',['../struct_im_font_config.html#a80d05eea7733731a3e9ac1d9e905e5b3',1,'ImFontConfig']]],
   ['rasterizermultiply',['RasterizerMultiply',['../struct_im_font_config.html#a9365265cc52098a8ecf89ff47f6106f2',1,'ImFontConfig']]],
   ['rbitmask',['RBitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a2d2f8c19c50ceb8677b0be2d1090c234',1,'DDS_PIXELFORMAT']]],
+  ['readlinefn',['ReadLineFn',['../struct_im_gui_settings_handler.html#aa384db3c69dc9f291e8e50903408e381',1,'ImGuiSettingsHandler']]],
   ['readonly',['ReadOnly',['../struct_im_gui_text_edit_callback_data.html#a37cec257a392910f386188978027541c',1,'ImGuiTextEditCallbackData']]],
-  ['red',['Red',['../namespacemage_1_1color.html#a6d620e83b3d57b75b633845e75c11fb3',1,'mage::color']]],
+  ['readopenfn',['ReadOpenFn',['../struct_im_gui_settings_handler.html#a695060dab855d36def9e46ec78432429',1,'ImGuiSettingsHandler']]],
+  ['red',['Red',['../namespacemage_1_1color.html#acd7c4f3812280375313aae5e97a7d21d',1,'mage::color']]],
   ['redo_5fchar_5fpoint',['redo_char_point',['../struct_stb_undo_state.html#a928f655e4af8945a14d99e944441704a',1,'StbUndoState']]],
   ['redo_5fpoint',['redo_point',['../struct_stb_undo_state.html#a719ba014b2db8a8ea55739664b445af0',1,'StbUndoState']]],
   ['refframe',['RefFrame',['../struct_im_gui_once_upon_a_frame.html#a2d44776b8e7bdeec217f88be9f832e08',1,'ImGuiOnceUponAFrame']]],
@@ -17,6 +19,6 @@ var searchData=
   ['rgbbitcount',['RGBBitCount',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#af53071b3c2912f56e4b54533d8101951',1,'DDS_PIXELFORMAT']]],
   ['rootnonpopupwindow',['RootNonPopupWindow',['../struct_im_gui_window.html#a43b1e2ffa15d572f4d0ce4fbbeb5595f',1,'ImGuiWindow']]],
   ['rootwindow',['RootWindow',['../struct_im_gui_window.html#aef9281297b0993c8f1b7c1ff7987cb61',1,'ImGuiWindow']]],
-  ['rosybrown',['RosyBrown',['../namespacemage_1_1color.html#a9cf3275aa615478cbfb64eff8f7e8031',1,'mage::color']]],
-  ['royalblue',['RoyalBlue',['../namespacemage_1_1color.html#a39f986452e5943dc0b5f2f10ba19fefd',1,'mage::color']]]
+  ['rosybrown',['RosyBrown',['../namespacemage_1_1color.html#a65da8e36be323fb9eb38de492925352b',1,'mage::color']]],
+  ['royalblue',['RoyalBlue',['../namespacemage_1_1color.html#a01213c51a9d103e84356bb05902863a4',1,'mage::color']]]
 ];

@@ -1,7 +1,7 @@
 var classmage_1_1_memory_arena =
 [
     [ "Allocator", "structmage_1_1_memory_arena_1_1_allocator.html", "structmage_1_1_memory_arena_1_1_allocator" ],
-    [ "MemoryBlock", "classmage_1_1_memory_arena.html#a3c40b9cfaf2cc58b713e2f5b1a99189d", null ],
+    [ "MemoryBlock", "classmage_1_1_memory_arena.html#a51f08f86660f163e2eef7c312e01700c", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a139f7781be209bb29e7ad0ed04cb32a5", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a98829c5a87ba028c376f100cca09e876", null ],
@@ -18,9 +18,9 @@ var classmage_1_1_memory_arena =
     [ "operator=", "classmage_1_1_memory_arena.html#aa4b80a917a838a1ca3788f906723d273", null ],
     [ "Reset", "classmage_1_1_memory_arena.html#a117b74c7bd5dfb28dfdaae6cab253491", null ],
     [ "m_alignment", "classmage_1_1_memory_arena.html#a424c3ff6f1d96545dd08f94c1c79c963", null ],
-    [ "m_available_blocks", "classmage_1_1_memory_arena.html#a74c0d5d40bb402ec52bb23b7ccb9fec5", null ],
+    [ "m_available_blocks", "classmage_1_1_memory_arena.html#a02f251a5aafa61d239b4daed3458a654", null ],
     [ "m_current_block", "classmage_1_1_memory_arena.html#a2680b25146c174ac7fd639f1bd0acc7c", null ],
     [ "m_current_block_pos", "classmage_1_1_memory_arena.html#a880d07eb372ce1c8b907947fcbdfc59c", null ],
     [ "m_maximum_block_size", "classmage_1_1_memory_arena.html#aeef4c56cf50fd3cbbba2879fcd028b86", null ],
-    [ "m_used_blocks", "classmage_1_1_memory_arena.html#a37891872cff5b86bb1f9c40b4450b904", null ]
+    [ "m_used_blocks", "classmage_1_1_memory_arena.html#a49a6d7fb9396f57210897abfb4e30903", null ]
 ];

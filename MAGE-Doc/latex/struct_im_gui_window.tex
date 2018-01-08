@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{struct_im_gui_window_abbc943558e96c8895237f0b55a66751b}{Im\+Gui\+Window} (const char $\ast$name)
+\hyperlink{struct_im_gui_window_acd2909ae3b7079de81d528327cc11dfd}{Im\+Gui\+Window} (\hyperlink{struct_im_gui_context}{Im\+Gui\+Context} $\ast$context, const char $\ast$name)
 \item 
 \hyperlink{struct_im_gui_window_a8e81d730c3a39a71e6b6ca4654451c53}{$\sim$\+Im\+Gui\+Window} ()
 \item 
@@ -16,6 +16,8 @@ Im\+Gui\+ID \hyperlink{struct_im_gui_window_a66400a63bc0b54d7d29e08d1b1b1a42b}{G
 Im\+Gui\+ID \hyperlink{struct_im_gui_window_aae21dffb343cabca9414499b827912a8}{Get\+ID} (const void $\ast$ptr)
 \item 
 Im\+Gui\+ID \hyperlink{struct_im_gui_window_adc0a43f74a0b53a15a4bc4fea05524fe}{Get\+I\+D\+No\+Keep\+Alive} (const char $\ast$str, const char $\ast$str\+\_\+end=N\+U\+LL)
+\item 
+Im\+Gui\+ID \hyperlink{struct_im_gui_window_a44931b6e73248930490d2c89377a8233}{Get\+I\+D\+From\+Rectangle} (const \hyperlink{struct_im_rect}{Im\+Rect} \&r\+\_\+abs)
 \item 
 \hyperlink{struct_im_rect}{Im\+Rect} \hyperlink{struct_im_gui_window_a147da28bf5d167cbe0a363c4a578dea1}{Rect} () const
 \item 
@@ -38,8 +40,6 @@ Im\+Gui\+ID \hyperlink{struct_im_gui_window_a5976b8d78bcc543ad7f23561f5cf0b8f}{I
 \item 
 Im\+Gui\+Window\+Flags \hyperlink{struct_im_gui_window_a7c29e810a533b9a647cce5d93d45057f}{Flags}
 \item 
-int \hyperlink{struct_im_gui_window_a81cb24c35445e1259367284701253c79}{Order\+Within\+Parent}
-\item 
 \hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_a84170962470c8078195dad980cdfc1c0}{Pos\+Float}
 \item 
 \hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_a1453f685401a44f76256fb54a4aac451}{Pos}
@@ -47,6 +47,8 @@ int \hyperlink{struct_im_gui_window_a81cb24c35445e1259367284701253c79}{Order\+Wi
 \hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_a876e7aaf4cd824c8956238fba61387d5}{Size}
 \item 
 \hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_ac3c7eb6b9cd556d56210cbb37caf0c74}{Size\+Full}
+\item 
+\hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_a284ebffabfd60b81f363173be770cff0}{Size\+Full\+At\+Last\+Begin}
 \item 
 \hyperlink{struct_im_vec2}{Im\+Vec2} \hyperlink{struct_im_gui_window_a71097695729bf257ccaea824caf306a0}{Size\+Contents}
 \item 
@@ -88,6 +90,10 @@ bool \hyperlink{struct_im_gui_window_a158ebb04d20cac09504fdbc4994eb017}{Appearin
 \item 
 bool \hyperlink{struct_im_gui_window_afef9f9e2a79626e28acd459e4cfe83e7}{Close\+Button}
 \item 
+int \hyperlink{struct_im_gui_window_a9299370fd06dff8c36988743db5b90fd}{Begin\+Order\+Within\+Parent}
+\item 
+int \hyperlink{struct_im_gui_window_ae0cb2f2346c1a9264210626a99997506}{Begin\+Order\+Within\+Context}
+\item 
 int \hyperlink{struct_im_gui_window_aa27229a425dc17303be1cd8f4a61c17f}{Begin\+Count}
 \item 
 Im\+Gui\+ID \hyperlink{struct_im_gui_window_a319c5f43fa4ee9c76b8a6e551e0c0869}{Popup\+Id}
@@ -100,7 +106,7 @@ bool \hyperlink{struct_im_gui_window_a3583d20a57fea8c8491f14f2dcda483c}{Auto\+Fi
 \item 
 int \hyperlink{struct_im_gui_window_ad323df685c026a4557912a5090414abe}{Auto\+Fit\+Child\+Axises}
 \item 
-int \hyperlink{struct_im_gui_window_ab057309fa22a6973a081448403a5baf4}{Auto\+Pos\+Last\+Direction}
+Im\+Gui\+Dir \hyperlink{struct_im_gui_window_aa8219e984ed273d6cfd19fb4b93eff5e}{Auto\+Pos\+Last\+Direction}
 \item 
 int \hyperlink{struct_im_gui_window_a91f60ca5e2e9ff4c34957e7cc239193e}{Hidden\+Frames}
 \item 
@@ -132,6 +138,8 @@ float \hyperlink{struct_im_gui_window_a5e6be361ee0c71a22a1ff68f6dbf09ff}{Item\+W
 \item 
 \hyperlink{struct_im_gui_storage}{Im\+Gui\+Storage} \hyperlink{struct_im_gui_window_a2151ab67f2624bd606883ad346179486}{State\+Storage}
 \item 
+\hyperlink{class_im_vector}{Im\+Vector}$<$ \hyperlink{struct_im_gui_columns_set}{Im\+Gui\+Columns\+Set} $>$ \hyperlink{struct_im_gui_window_ac2ad7437b8960be8182ffde0788e1ec6}{Columns\+Storage}
+\item 
 float \hyperlink{struct_im_gui_window_a566ce9268a466afbbec78532d5cfa3c9}{Font\+Window\+Scale}
 \item 
 \hyperlink{struct_im_draw_list}{Im\+Draw\+List} $\ast$ \hyperlink{struct_im_gui_window_a39de4668b09754136c6fd7ab89ab674a}{Draw\+List}
@@ -157,11 +165,11 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{struct_im_gui_window_abbc943558e96c8895237f0b55a66751b}{}\label{struct_im_gui_window_abbc943558e96c8895237f0b55a66751b} 
+\hypertarget{struct_im_gui_window_acd2909ae3b7079de81d528327cc11dfd}{}\label{struct_im_gui_window_acd2909ae3b7079de81d528327cc11dfd} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Im\+Gui\+Window()}{ImGuiWindow()}}
-{\footnotesize\ttfamily Im\+Gui\+Window\+::\+Im\+Gui\+Window (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Im\+Gui\+Window\+::\+Im\+Gui\+Window (\begin{DoxyParamCaption}\item[{\hyperlink{struct_im_gui_context}{Im\+Gui\+Context} $\ast$}]{context,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
 
 \hypertarget{struct_im_gui_window_a8e81d730c3a39a71e6b6ca4654451c53}{}\label{struct_im_gui_window_a8e81d730c3a39a71e6b6ca4654451c53} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!````~Im\+Gui\+Window@{$\sim$\+Im\+Gui\+Window}}
@@ -189,6 +197,12 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 \index{Get\+ID@{Get\+ID}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Get\+I\+D()}{GetID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Im\+Gui\+ID Im\+Gui\+Window\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{const void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\hypertarget{struct_im_gui_window_a44931b6e73248930490d2c89377a8233}{}\label{struct_im_gui_window_a44931b6e73248930490d2c89377a8233} 
+\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Get\+I\+D\+From\+Rectangle@{Get\+I\+D\+From\+Rectangle}}
+\index{Get\+I\+D\+From\+Rectangle@{Get\+I\+D\+From\+Rectangle}!Im\+Gui\+Window@{Im\+Gui\+Window}}
+\subsubsection{\texorpdfstring{Get\+I\+D\+From\+Rectangle()}{GetIDFromRectangle()}}
+{\footnotesize\ttfamily Im\+Gui\+ID Im\+Gui\+Window\+::\+Get\+I\+D\+From\+Rectangle (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_im_rect}{Im\+Rect} \&}]{r\+\_\+abs }\end{DoxyParamCaption})}
 
 \hypertarget{struct_im_gui_window_adc0a43f74a0b53a15a4bc4fea05524fe}{}\label{struct_im_gui_window_adc0a43f74a0b53a15a4bc4fea05524fe} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Get\+I\+D\+No\+Keep\+Alive@{Get\+I\+D\+No\+Keep\+Alive}}
@@ -265,17 +279,29 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 \subsubsection{\texorpdfstring{Auto\+Fit\+Only\+Grows}{AutoFitOnlyGrows}}
 {\footnotesize\ttfamily bool Im\+Gui\+Window\+::\+Auto\+Fit\+Only\+Grows}
 
-\hypertarget{struct_im_gui_window_ab057309fa22a6973a081448403a5baf4}{}\label{struct_im_gui_window_ab057309fa22a6973a081448403a5baf4} 
+\hypertarget{struct_im_gui_window_aa8219e984ed273d6cfd19fb4b93eff5e}{}\label{struct_im_gui_window_aa8219e984ed273d6cfd19fb4b93eff5e} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Auto\+Pos\+Last\+Direction@{Auto\+Pos\+Last\+Direction}}
 \index{Auto\+Pos\+Last\+Direction@{Auto\+Pos\+Last\+Direction}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Auto\+Pos\+Last\+Direction}{AutoPosLastDirection}}
-{\footnotesize\ttfamily int Im\+Gui\+Window\+::\+Auto\+Pos\+Last\+Direction}
+{\footnotesize\ttfamily Im\+Gui\+Dir Im\+Gui\+Window\+::\+Auto\+Pos\+Last\+Direction}
 
 \hypertarget{struct_im_gui_window_aa27229a425dc17303be1cd8f4a61c17f}{}\label{struct_im_gui_window_aa27229a425dc17303be1cd8f4a61c17f} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Begin\+Count@{Begin\+Count}}
 \index{Begin\+Count@{Begin\+Count}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Begin\+Count}{BeginCount}}
 {\footnotesize\ttfamily int Im\+Gui\+Window\+::\+Begin\+Count}
+
+\hypertarget{struct_im_gui_window_ae0cb2f2346c1a9264210626a99997506}{}\label{struct_im_gui_window_ae0cb2f2346c1a9264210626a99997506} 
+\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Begin\+Order\+Within\+Context@{Begin\+Order\+Within\+Context}}
+\index{Begin\+Order\+Within\+Context@{Begin\+Order\+Within\+Context}!Im\+Gui\+Window@{Im\+Gui\+Window}}
+\subsubsection{\texorpdfstring{Begin\+Order\+Within\+Context}{BeginOrderWithinContext}}
+{\footnotesize\ttfamily int Im\+Gui\+Window\+::\+Begin\+Order\+Within\+Context}
+
+\hypertarget{struct_im_gui_window_a9299370fd06dff8c36988743db5b90fd}{}\label{struct_im_gui_window_a9299370fd06dff8c36988743db5b90fd} 
+\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Begin\+Order\+Within\+Parent@{Begin\+Order\+Within\+Parent}}
+\index{Begin\+Order\+Within\+Parent@{Begin\+Order\+Within\+Parent}!Im\+Gui\+Window@{Im\+Gui\+Window}}
+\subsubsection{\texorpdfstring{Begin\+Order\+Within\+Parent}{BeginOrderWithinParent}}
+{\footnotesize\ttfamily int Im\+Gui\+Window\+::\+Begin\+Order\+Within\+Parent}
 
 \hypertarget{struct_im_gui_window_a9950a40b18de2579c4d3deb0ab33f455}{}\label{struct_im_gui_window_a9950a40b18de2579c4d3deb0ab33f455} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Clip\+Rect@{Clip\+Rect}}
@@ -294,6 +320,12 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 \index{Collapsed@{Collapsed}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Collapsed}{Collapsed}}
 {\footnotesize\ttfamily bool Im\+Gui\+Window\+::\+Collapsed}
+
+\hypertarget{struct_im_gui_window_ac2ad7437b8960be8182ffde0788e1ec6}{}\label{struct_im_gui_window_ac2ad7437b8960be8182ffde0788e1ec6} 
+\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Columns\+Storage@{Columns\+Storage}}
+\index{Columns\+Storage@{Columns\+Storage}!Im\+Gui\+Window@{Im\+Gui\+Window}}
+\subsubsection{\texorpdfstring{Columns\+Storage}{ColumnsStorage}}
+{\footnotesize\ttfamily \hyperlink{class_im_vector}{Im\+Vector}$<$\hyperlink{struct_im_gui_columns_set}{Im\+Gui\+Columns\+Set}$>$ Im\+Gui\+Window\+::\+Columns\+Storage}
 
 \hypertarget{struct_im_gui_window_ac0d04b743eab132900c1ededc8eab9f6}{}\label{struct_im_gui_window_ac0d04b743eab132900c1ededc8eab9f6} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Contents\+Region\+Rect@{Contents\+Region\+Rect}}
@@ -414,12 +446,6 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 \index{Name@{Name}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Name}{Name}}
 {\footnotesize\ttfamily char$\ast$ Im\+Gui\+Window\+::\+Name}
-
-\hypertarget{struct_im_gui_window_a81cb24c35445e1259367284701253c79}{}\label{struct_im_gui_window_a81cb24c35445e1259367284701253c79} 
-\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Order\+Within\+Parent@{Order\+Within\+Parent}}
-\index{Order\+Within\+Parent@{Order\+Within\+Parent}!Im\+Gui\+Window@{Im\+Gui\+Window}}
-\subsubsection{\texorpdfstring{Order\+Within\+Parent}{OrderWithinParent}}
-{\footnotesize\ttfamily int Im\+Gui\+Window\+::\+Order\+Within\+Parent}
 
 \hypertarget{struct_im_gui_window_a5f0b37cb12fbeb3efe00d0cd826d5d65}{}\label{struct_im_gui_window_a5f0b37cb12fbeb3efe00d0cd826d5d65} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Parent\+Window@{Parent\+Window}}
@@ -546,6 +572,12 @@ int \hyperlink{struct_im_gui_window_af7e93a1027da314fe73b64d97bfa73be}{Focus\+Id
 \index{Size\+Full@{Size\+Full}!Im\+Gui\+Window@{Im\+Gui\+Window}}
 \subsubsection{\texorpdfstring{Size\+Full}{SizeFull}}
 {\footnotesize\ttfamily \hyperlink{struct_im_vec2}{Im\+Vec2} Im\+Gui\+Window\+::\+Size\+Full}
+
+\hypertarget{struct_im_gui_window_a284ebffabfd60b81f363173be770cff0}{}\label{struct_im_gui_window_a284ebffabfd60b81f363173be770cff0} 
+\index{Im\+Gui\+Window@{Im\+Gui\+Window}!Size\+Full\+At\+Last\+Begin@{Size\+Full\+At\+Last\+Begin}}
+\index{Size\+Full\+At\+Last\+Begin@{Size\+Full\+At\+Last\+Begin}!Im\+Gui\+Window@{Im\+Gui\+Window}}
+\subsubsection{\texorpdfstring{Size\+Full\+At\+Last\+Begin}{SizeFullAtLastBegin}}
+{\footnotesize\ttfamily \hyperlink{struct_im_vec2}{Im\+Vec2} Im\+Gui\+Window\+::\+Size\+Full\+At\+Last\+Begin}
 
 \hypertarget{struct_im_gui_window_ac620c64ec2897561f719db266f5e9b05}{}\label{struct_im_gui_window_ac620c64ec2897561f719db266f5e9b05} 
 \index{Im\+Gui\+Window@{Im\+Gui\+Window}!Skip\+Items@{Skip\+Items}}

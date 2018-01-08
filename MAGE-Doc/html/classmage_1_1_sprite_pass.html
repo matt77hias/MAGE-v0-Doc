@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.116.0</span>
+   &#160;<span id="projectnumber">v0.123.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -108,10 +108,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa43bb0a8588e9196180aa686d81cacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8cc2bcb9ded1cb96c9d65bb7034c0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_sprite_pass.html">SpritePass</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_pass.html#aed8cc2bcb9ded1cb96c9d65bb7034c0a">operator=</a> (<a class="el" href="classmage_1_1_sprite_pass.html">SpritePass</a> &amp;&amp;render_pass)=delete</td></tr>
 <tr class="separator:aed8cc2bcb9ded1cb96c9d65bb7034c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796f9aad70558e3ae0b792b9c674208d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_pass.html#a796f9aad70558e3ae0b792b9c674208d">BindFixedState</a> ()</td></tr>
-<tr class="separator:a796f9aad70558e3ae0b792b9c674208d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad617d46a3edbf5ee533f4d20e3d69ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_pass.html#ad617d46a3edbf5ee533f4d20e3d69ae2">Render</a> (const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *scene)</td></tr>
-<tr class="separator:ad617d46a3edbf5ee533f4d20e3d69ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdad82309711cb5248d61de1a85c8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_pass.html#accdad82309711cb5248d61de1a85c8d1">BindFixedState</a> () const noexcept</td></tr>
+<tr class="separator:accdad82309711cb5248d61de1a85c8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993aafa48dd06ae16fac9521eb036fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_sprite_pass.html#a993aafa48dd06ae16fac9521eb036fd3">Render</a> (const <a class="el" href="classmage_1_1_scene.html">Scene</a> &amp;scene) const</td></tr>
+<tr class="separator:a993aafa48dd06ae16fac9521eb036fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -246,24 +246,32 @@ The resource manager associated with the current engine must be loaded. </dd></d
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a796f9aad70558e3ae0b792b9c674208d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a796f9aad70558e3ae0b792b9c674208d">&sect;&nbsp;</a></span>BindFixedState()</h2>
+<a id="accdad82309711cb5248d61de1a85c8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accdad82309711cb5248d61de1a85c8d1">&sect;&nbsp;</a></span>BindFixedState()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void mage::SpritePass::BindFixedState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binds the fixed state of this sprite pass.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to bind the fixed state of this sprite pass. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmage_1_1_exception.html">Exception</a></td><td>Failed to bind the fixed state of this sprite pass. </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,8 +374,8 @@ The resource manager associated with the current engine must be loaded. </dd></d
 
 </div>
 </div>
-<a id="ad617d46a3edbf5ee533f4d20e3d69ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad617d46a3edbf5ee533f4d20e3d69ae2">&sect;&nbsp;</a></span>Render()</h2>
+<a id="a993aafa48dd06ae16fac9521eb036fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993aafa48dd06ae16fac9521eb036fd3">&sect;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,23 +383,22 @@ The resource manager associated with the current engine must be loaded. </dd></d
         <tr>
           <td class="memname">void mage::SpritePass::Render </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_pass_buffer.html">PassBuffer</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_scene.html">Scene</a> &amp;&#160;</td>
           <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Renders the scene.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>scene</em> is not equal to <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>A pointer to the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene</td><td>A reference to the scene. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classmage_1_1_formatted_exception.html">FormattedException</a></td><td>Failed to render the scene. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmage_1_1_exception.html">Exception</a></td><td>Failed to render the scene. </td></tr>
   </table>
   </dd>
 </dl>

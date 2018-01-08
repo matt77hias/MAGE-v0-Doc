@@ -7,7 +7,7 @@
 Inheritance diagram for mage\+:\+:script\+:\+:Mouse\+Look\+Script\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classmage_1_1script_1_1_mouse_look_script}
+\includegraphics[height=3.000000cm]{classmage_1_1script_1_1_mouse_look_script}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -21,17 +21,19 @@ enum \hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8dd
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1script_1_1_mouse_look_script_a87f5e8d14d0eeccdc0afdea7dd6a1ea6}{Mouse\+Look\+Script} (\hyperlink{classmage_1_1_transform_node}{Transform\+Node} $\ast$transform, \hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8ddd31be209c23}{Rotation\+Axes} axes=\hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8ddd31be209c23a109431b32c091e8a7ad541546c66c522}{Rotation\+Axes\+::\+Mouse\+X\+AndY}, \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} sensitivity=\{ 1.\+8f, 1.\+8f \}, F32x2 minimum\+\_\+rotation=\{ -\/\+X\+M\+\_\+\+P\+I/3.\+0f, -\/\+X\+M\+\_\+\+P\+I \}, F32x2 maximum\+\_\+rotation=\{ X\+M\+\_\+\+P\+I/3.\+0f, X\+M\+\_\+\+P\+I \}, F32x2 direction=\{ 1.\+0f, 1.\+0f \})
+\hyperlink{classmage_1_1script_1_1_mouse_look_script_a9055e93385160f4074cd2bc7fda3869e}{Mouse\+Look\+Script} ()
 \item 
-\hyperlink{classmage_1_1script_1_1_mouse_look_script_acd2b333978c5310a82ee9b22b7873ad6}{Mouse\+Look\+Script} (const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&script)=delete
+\hyperlink{classmage_1_1script_1_1_mouse_look_script_aa5237c229f27fa29f820bf6517209444}{Mouse\+Look\+Script} (const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&script) noexcept
 \item 
-\hyperlink{classmage_1_1script_1_1_mouse_look_script_a73a93dbad87071681ecd896c7429fefa}{Mouse\+Look\+Script} (\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&script)
+\hyperlink{classmage_1_1script_1_1_mouse_look_script_ac21a383d6718ccc0d6c9faa5c5c1fe50}{Mouse\+Look\+Script} (\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&script) noexcept
 \item 
 virtual \hyperlink{classmage_1_1script_1_1_mouse_look_script_a29a6d2cb4742fbf745822d015e72484f}{$\sim$\+Mouse\+Look\+Script} ()
 \item 
 \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a}{operator=} (const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&script)=delete
 \item 
 \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_a019b949f86d066507ea74a9db126137e}{operator=} (\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&script)=delete
+\item 
+virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9}{Load} () override
 \item 
 virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a6d38748c21a6bc475e8ac31e24459053}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time) override
 \item 
@@ -94,8 +96,6 @@ void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a189145ae96f56b805fe20
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_transform_node}{Transform\+Node} $\ast$const \hyperlink{classmage_1_1script_1_1_mouse_look_script_a45183059f39d6ab4a45e7b0485c9b987}{m\+\_\+transform}
-\item 
 \hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8ddd31be209c23}{Rotation\+Axes} \hyperlink{classmage_1_1script_1_1_mouse_look_script_ae41f05d545c70cd621a405f6ef0cd4d5}{m\+\_\+axes}
 \item 
 \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} \hyperlink{classmage_1_1script_1_1_mouse_look_script_afe7a443c1fa56fc6143555f992458934}{m\+\_\+sensitivity}
@@ -133,23 +133,23 @@ Mouse\+X\+AndY&\\
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a87f5e8d14d0eeccdc0afdea7dd6a1ea6}{}\label{classmage_1_1script_1_1_mouse_look_script_a87f5e8d14d0eeccdc0afdea7dd6a1ea6} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_a9055e93385160f4074cd2bc7fda3869e}{}\label{classmage_1_1script_1_1_mouse_look_script_a9055e93385160f4074cd2bc7fda3869e} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Mouse\+Look\+Script@{Mouse\+Look\+Script}}
 \index{Mouse\+Look\+Script@{Mouse\+Look\+Script}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Mouse\+Look\+Script()}{MouseLookScript()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_transform_node}{Transform\+Node} $\ast$}]{transform,  }\item[{\hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8ddd31be209c23}{Rotation\+Axes}}]{axes = {\ttfamily \hyperlink{classmage_1_1script_1_1_mouse_look_script_aa8c8ce1a3e6ccefa7b8ddd31be209c23a109431b32c091e8a7ad541546c66c522}{Rotation\+Axes\+::\+Mouse\+X\+AndY}},  }\item[{\hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2}}]{sensitivity = {\ttfamily \{~1.8f,~1.8f~\}},  }\item[{\hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2}}]{minimum\+\_\+rotation = {\ttfamily \{~-\/XM\+\_\+PI~/~3.0f,~-\/XM\+\_\+PI~\}},  }\item[{\hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2}}]{maximum\+\_\+rotation = {\ttfamily \{~XM\+\_\+PI~/~3.0f,~XM\+\_\+PI~\}},  }\item[{\hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2}}]{direction = {\ttfamily \{~1.0f,~1.0f~\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_acd2b333978c5310a82ee9b22b7873ad6}{}\label{classmage_1_1script_1_1_mouse_look_script_acd2b333978c5310a82ee9b22b7873ad6} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_aa5237c229f27fa29f820bf6517209444}{}\label{classmage_1_1script_1_1_mouse_look_script_aa5237c229f27fa29f820bf6517209444} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Mouse\+Look\+Script@{Mouse\+Look\+Script}}
 \index{Mouse\+Look\+Script@{Mouse\+Look\+Script}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Mouse\+Look\+Script()}{MouseLookScript()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a73a93dbad87071681ecd896c7429fefa}{}\label{classmage_1_1script_1_1_mouse_look_script_a73a93dbad87071681ecd896c7429fefa} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_ac21a383d6718ccc0d6c9faa5c5c1fe50}{}\label{classmage_1_1script_1_1_mouse_look_script_ac21a383d6718ccc0d6c9faa5c5c1fe50} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Mouse\+Look\+Script@{Mouse\+Look\+Script}}
 \index{Mouse\+Look\+Script@{Mouse\+Look\+Script}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Mouse\+Look\+Script()}{MouseLookScript()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::script\+::\+Mouse\+Look\+Script\+::\+Mouse\+Look\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1script_1_1_mouse_look_script_a29a6d2cb4742fbf745822d015e72484f}{}\label{classmage_1_1script_1_1_mouse_look_script_a29a6d2cb4742fbf745822d015e72484f} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!````~Mouse\+Look\+Script@{$\sim$\+Mouse\+Look\+Script}}
@@ -231,6 +231,23 @@ Mouse\+X\+AndY&\\
 \index{Invert\+DirectionY@{Invert\+DirectionY}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Invert\+Direction\+Y()}{InvertDirectionY()}}
 {\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Invert\+DirectionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9}{}\label{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9} 
+\index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Load@{Load}}
+\index{Load@{Load}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Loads this behavior script. Allows this behavior script to preform any pre-\/processing.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to load this behavior script. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8}{mage\+::\+Behavior\+Script}.
 
 \hypertarget{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a}{}\label{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!operator=@{operator=}}
@@ -356,6 +373,11 @@ This method is called once per frame.
 \hline
 \end{DoxyParams}
 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to update this behavior script. \\
+\hline
+\end{DoxyExceptions}
+
 
 Reimplemented from \hyperlink{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6}{mage\+::\+Behavior\+Script}.
 
@@ -391,10 +413,4 @@ Reimplemented from \hyperlink{classmage_1_1_behavior_script_afb9cf3759edf8876416
 \index{m\+\_\+sensitivity@{m\+\_\+sensitivity}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{m\+\_\+sensitivity}{m\_sensitivity}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} mage\+::script\+::\+Mouse\+Look\+Script\+::m\+\_\+sensitivity\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a45183059f39d6ab4a45e7b0485c9b987}{}\label{classmage_1_1script_1_1_mouse_look_script_a45183059f39d6ab4a45e7b0485c9b987} 
-\index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!m\+\_\+transform@{m\+\_\+transform}}
-\index{m\+\_\+transform@{m\+\_\+transform}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
-\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_transform_node}{Transform\+Node}$\ast$ const mage\+::script\+::\+Mouse\+Look\+Script\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
 

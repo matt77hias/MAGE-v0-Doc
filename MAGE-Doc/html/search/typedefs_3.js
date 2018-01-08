@@ -7,6 +7,5 @@ var searchData=
   ['f32x3a',['F32x3A',['../namespacemage.html#a1317ffce1864e9d94e01c88180da2049',1,'mage']]],
   ['f32x4',['F32x4',['../namespacemage.html#a9b8168505574a087f7391e56522fa584',1,'mage']]],
   ['f32x4a',['F32x4A',['../namespacemage.html#a0b6ac82244eb3edc5eb66c88a3ddef13',1,'mage']]],
-  ['f64',['F64',['../namespacemage.html#ad26233bbec640deda836e572c1a23708',1,'mage']]],
-  ['fpsinputcontrollerscript',['FPSInputControllerScript',['../namespacemage_1_1script.html#a851bfe5cd371dbeec9d1b629ed52ab61',1,'mage::script']]]
+  ['f64',['F64',['../namespacemage.html#ad26233bbec640deda836e572c1a23708',1,'mage']]]
 ];

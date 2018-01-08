@@ -4,6 +4,7 @@ var searchData=
   ['_5fchannelscount',['_ChannelsCount',['../struct_im_draw_list.html#ae3854c12dbac41400f4acb65192f5015',1,'ImDrawList']]],
   ['_5fchannelscurrent',['_ChannelsCurrent',['../struct_im_draw_list.html#a143ff30108f3dca8c28c7925e23d358b',1,'ImDrawList']]],
   ['_5fcliprectstack',['_ClipRectStack',['../struct_im_draw_list.html#ae950024f053f3c94dc2c763d20be609d',1,'ImDrawList']]],
+  ['_5fdata',['_Data',['../struct_im_draw_list.html#a606bbd354211fe6f84cc11ebe53e7903',1,'ImDrawList']]],
   ['_5fidxwriteptr',['_IdxWritePtr',['../struct_im_draw_list.html#a771f4c7f71873852fe030c3e498e5843',1,'ImDrawList']]],
   ['_5fownername',['_OwnerName',['../struct_im_draw_list.html#a643f385fb9d5fc35a431e72a10a212f5',1,'ImDrawList']]],
   ['_5fpath',['_Path',['../struct_im_draw_list.html#a5bdc39abf351360500048628b8dc1b07',1,'ImDrawList']]],

@@ -2,7 +2,6 @@ var struct_im_gui_text_filter =
 [
     [ "TextRange", "struct_im_gui_text_filter_1_1_text_range.html", "struct_im_gui_text_filter_1_1_text_range" ],
     [ "ImGuiTextFilter", "struct_im_gui_text_filter.html#a0a61ee76f0b4f3c354791734b06e3140", null ],
-    [ "~ImGuiTextFilter", "struct_im_gui_text_filter.html#acaf7fdcdc879c7938d195714609aac87", null ],
     [ "Build", "struct_im_gui_text_filter.html#aef362baafaa9dfa62d11bc6101c0f4c1", null ],
     [ "Clear", "struct_im_gui_text_filter.html#a9043c1f0c33d29e6fc9b75ae81f9705a", null ],
     [ "Draw", "struct_im_gui_text_filter.html#ab93ad5985019ff9d3781606551fc26cc", null ],

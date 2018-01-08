@@ -1,12 +1,13 @@
 var classmage_1_1script_1_1_text_console_script =
 [
-    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#afb33cbb74669491151989d957674bca8", null ],
-    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#a6b1085406955c58bac96f798408fb558", null ],
-    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#ac54103d71cc752e149ecaa98021d2692", null ],
+    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#a5b26c235c08fb2e443ce3f728985a41e", null ],
+    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#a82c8a2c15aa51befbfe6341e463057db", null ],
+    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#a46052af67069fef12a8ff9de75cce382", null ],
     [ "~TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#af0959c8a4f21bb4f9b5553dffc5710b9", null ],
     [ "Clear", "classmage_1_1script_1_1_text_console_script.html#a274764deea9f02ec77515680456548d6", null ],
     [ "Format", "classmage_1_1script_1_1_text_console_script.html#a4c956a26976c553a20b4c3b1ec5e9e6b", null ],
     [ "IncrementRow", "classmage_1_1script_1_1_text_console_script.html#a3d4cba4fd8a2733933a7a444c6beaf1a", null ],
+    [ "Load", "classmage_1_1script_1_1_text_console_script.html#aaa7ab7c1859adc6532b6191c205d44ef", null ],
     [ "operator=", "classmage_1_1script_1_1_text_console_script.html#a68af2a144f641c9813b333544fe3562a", null ],
     [ "operator=", "classmage_1_1script_1_1_text_console_script.html#ae8560dece8d507ee338dda68e3176fed", null ],
     [ "ProcessString", "classmage_1_1script_1_1_text_console_script.html#a29334fd8aa8de09b2f28c24096347498", null ],
@@ -20,6 +21,6 @@ var classmage_1_1script_1_1_text_console_script =
     [ "m_mutex", "classmage_1_1script_1_1_text_console_script.html#af9962aa57cbbe3b8bbc2217d2f28112b", null ],
     [ "m_nb_columns", "classmage_1_1script_1_1_text_console_script.html#a480c394aece0f517b9d10c4e912aadc9", null ],
     [ "m_nb_rows", "classmage_1_1script_1_1_text_console_script.html#a9d00451cf1cf319512e0c88352d22911", null ],
-    [ "m_temp_buffer", "classmage_1_1script_1_1_text_console_script.html#a3e38273632b6d528ca7707a46bc33063", null ],
-    [ "m_text", "classmage_1_1script_1_1_text_console_script.html#a60b0a4e3de62e240df32fa2576c67b73", null ]
+    [ "m_temp_buffer", "classmage_1_1script_1_1_text_console_script.html#ae62bf3d6f88f297eb37892d507d8a032", null ],
+    [ "m_text", "classmage_1_1script_1_1_text_console_script.html#a227a1a94f00552c267b7d3f3516676d6", null ]
 ];

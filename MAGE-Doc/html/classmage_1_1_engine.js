@@ -12,6 +12,7 @@ var classmage_1_1_engine =
     [ "GetResourceManager", "classmage_1_1_engine.html#a8b89ee555f5208a99872d724389eba0b", null ],
     [ "GetSceneManager", "classmage_1_1_engine.html#adaec74f633fe6ed3a3e2ec745cd57343", null ],
     [ "InitializeSystems", "classmage_1_1_engine.html#a29a47448fb182b110d46d287a72b8b4e", null ],
+    [ "IsLoaded", "classmage_1_1_engine.html#a55281f34ad0fd2c77f1d11c54ec66c19", null ],
     [ "OnActiveChange", "classmage_1_1_engine.html#afd52a8088d6d37605cb352028098c508", null ],
     [ "OnModeSwitch", "classmage_1_1_engine.html#a6ac289fd093967c370955810e26d251f", null ],
     [ "OnSceneChange", "classmage_1_1_engine.html#a4bcc8811433865c349c8cc862d4f457d", null ],
@@ -23,11 +24,12 @@ var classmage_1_1_engine =
     [ "m_engine_stats", "classmage_1_1_engine.html#aa0c82f248a2fbec3fbf778665a440edc", null ],
     [ "m_fixed_delta_time", "classmage_1_1_engine.html#a95557e1b6cba52b393c94d80d80bea4c", null ],
     [ "m_input_manager", "classmage_1_1_engine.html#a8e9048208a6a5c5b034aaa1cbdab28bc", null ],
+    [ "m_loaded", "classmage_1_1_engine.html#a2f8783761b9629dd507d0a6bc456125b", null ],
     [ "m_main_window", "classmage_1_1_engine.html#a3aea7e8c0c1247cac570334a3d3543d6", null ],
     [ "m_mode_switch", "classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221", null ],
     [ "m_rendering_manager", "classmage_1_1_engine.html#a81c7475c3501f84f9bd9c7bbeaebfcb6", null ],
     [ "m_resource_manager", "classmage_1_1_engine.html#ac8d94579e72983a99a78be6b9b606a28", null ],
     [ "m_scene_manager", "classmage_1_1_engine.html#afac8085ae572d623e77b1e0847440ab4", null ],
-    [ "m_timer", "classmage_1_1_engine.html#a4daac998928a6c087b310c52b3f26ae4", null ],
+    [ "m_timer", "classmage_1_1_engine.html#a8d1395822cfabf3f7acc97f28d53f231", null ],
     [ "s_engine", "classmage_1_1_engine.html#a95fd10c9b9dfe0fc9cbbcb441c910240", null ]
 ];

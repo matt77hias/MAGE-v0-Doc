@@ -31,7 +31,7 @@ size\+\_\+t \hyperlink{structmage_1_1_l_buffer_pass_a1efc71062a28fb33474e4ea9a05
 \item 
 size\+\_\+t \hyperlink{structmage_1_1_l_buffer_pass_a30a1b4e2147eae73633fc33bd10d5f2f}{Get\+Number\+Of\+Spot\+Lights\+With\+Shadow\+Mapping} () const noexcept
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_aceac1e190b0236625b8cc9be5365b043}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_afae386240845baad1f35dc5358dcb096}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, const \hyperlink{classmage_1_1_fog}{Fog} \&fog, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -40,21 +40,13 @@ void \hyperlink{structmage_1_1_l_buffer_pass_af7abbf24eb7d20d9604beca5baa71f20}{
 \item 
 void \hyperlink{structmage_1_1_l_buffer_pass_a1ed227fef9a19d8274519c8ff6277e35}{Bind\+L\+Buffer} () const noexcept
 \item 
-void \hyperlink{structmage_1_1_l_buffer_pass_a4c83abfabfa8a144cab5d238045635f8}{Process\+Lights\+Data} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene)
+void \hyperlink{structmage_1_1_l_buffer_pass_a5da38ff4cf2d1de37fb40f8923b1d9bf}{Process\+Lights\+Data} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, const \hyperlink{classmage_1_1_fog}{Fog} \&fog)
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a03341222533877f82ac48b80628c609b}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a731613105a25fbae8560954e1b3b78fe}{Process\+Directional\+Lights} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a6d7549bcd083afa625bd257975e041ad}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a6c33b00709c8440dbe3e1d37f6e0269a}{Process\+Omni\+Lights} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_ab3b4271e8a852f79fd6ff089463acf44}{Process\+Lights} (const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a4dc1726c775bb3f512e9ac32c7c0ef2c}{Process\+Lights\+With\+Shadow\+Mapping} (const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a6623fb2306e894bef9e427b3794ab37d}{Process\+Lights\+With\+Shadow\+Mapping} (const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a569c16fc47d2f5d8d47af85cce2822e0}{Process\+Lights\+With\+Shadow\+Mapping} (const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&lights, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
-\item 
-void \hyperlink{structmage_1_1_l_buffer_pass_ac646805ddf0eb4d81be3e29fec539fc5}{Setup\+Shadow\+Maps} ()
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a6886e49e2611592a73fc76cd4e4af307}{Process\+Spot\+Lights} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
 \item 
 void \hyperlink{structmage_1_1_l_buffer_pass_aa6a3dd241588a460e2ea51f6cec14aeb}{Setup\+Directional\+Shadow\+Maps} ()
 \item 
@@ -62,13 +54,11 @@ void \hyperlink{structmage_1_1_l_buffer_pass_a530276d14da57710e5182abda48982d4}{
 \item 
 void \hyperlink{structmage_1_1_l_buffer_pass_a1ed3d550173e0145e363132656b8dfdb}{Setup\+Spot\+Shadow\+Maps} ()
 \item 
-void \hyperlink{structmage_1_1_l_buffer_pass_ad4c272e242ea28ca4a5c8c43d4c44112}{Render\+Shadow\+Maps} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a8fc35d37df15125c8f50df9de7bf885d}{Render\+Directional\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
 \item 
-void \hyperlink{structmage_1_1_l_buffer_pass_ac6468c170742b5bee823235700ff640d}{Render\+Directional\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_ae852ab53bcf57c9469fa6cf530c3009d}{Render\+Omni\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
 \item 
-void \hyperlink{structmage_1_1_l_buffer_pass_a621137906e2c04ddb029d2421c74d14f}{Render\+Omni\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
-\item 
-void \hyperlink{structmage_1_1_l_buffer_pass_a3dfd7e644661eda87c627d4795fd2ac9}{Render\+Spot\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_l_buffer_pass_a9db1903df31224e36ebff1271aceca41}{Render\+Spot\+Shadow\+Maps} (\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$pass, const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+cview)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -77,19 +67,19 @@ I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{structmage_1_1_l_buffer_pass
 \item 
 \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Sampler\+State $>$ \hyperlink{structmage_1_1_l_buffer_pass_aaf8dacd30171f31fe2a898fbdd91a990}{m\+\_\+pcf\+\_\+sampler}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_light_buffer}{Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a5946e3e691734567824644f8d1ec77b9}{m\+\_\+light\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_light_buffer}{Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a5946e3e691734567824644f8d1ec77b9}{m\+\_\+light\+\_\+buffer}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_buffer}{Directional\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a90327556a34fe3a56e6980accead0c44}{m\+\_\+directional\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_buffer}{Directional\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a90327556a34fe3a56e6980accead0c44}{m\+\_\+directional\+\_\+lights}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_buffer}{Omni\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_afc2754b9d3a3b1c2171cd1a6e5b2349d}{m\+\_\+omni\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_buffer}{Omni\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_afc2754b9d3a3b1c2171cd1a6e5b2349d}{m\+\_\+omni\+\_\+lights}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_buffer}{Spot\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_af1612aa2a8d24303ebcf9e72125698f3}{m\+\_\+spot\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_buffer}{Spot\+Light\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_af1612aa2a8d24303ebcf9e72125698f3}{m\+\_\+spot\+\_\+lights}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_with_shadow_mapping_buffer}{Directional\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ad9a714aed008db64b5a7d9be1a5f741c}{m\+\_\+sm\+\_\+directional\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_with_shadow_mapping_buffer}{Directional\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ad9a714aed008db64b5a7d9be1a5f741c}{m\+\_\+sm\+\_\+directional\+\_\+lights}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_with_shadow_mapping_buffer}{Omni\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_aa5fa46c76d4d7d58141eeb021bb9f20c}{m\+\_\+sm\+\_\+omni\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_with_shadow_mapping_buffer}{Omni\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_aa5fa46c76d4d7d58141eeb021bb9f20c}{m\+\_\+sm\+\_\+omni\+\_\+lights}
 \item 
-\hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_with_shadow_mapping_buffer}{Spot\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a5630c1edc1d0833d08e0350bef5ec8a5}{m\+\_\+sm\+\_\+spot\+\_\+lights}
+\hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_with_shadow_mapping_buffer}{Spot\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a5630c1edc1d0833d08e0350bef5ec8a5}{m\+\_\+sm\+\_\+spot\+\_\+lights}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shadow_map_buffer}{Shadow\+Map\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ab1372d2fc5e0e716565f8d3d8eb6db97}{m\+\_\+directional\+\_\+sms}
 \item 
@@ -97,11 +87,11 @@ I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{structmage_1_1_l_buffer_pass
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_shadow_map_buffer}{Shadow\+Map\+Buffer} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a348d64fd92b6198663494d521edcdf6b}{m\+\_\+spot\+\_\+sms}
 \item 
-vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_a42f79f890d6c6ec342f365bf974ab3a6}{m\+\_\+directional\+\_\+light\+\_\+cameras}
+\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ab6eead232cc2886b1d29e9f6cc45b16d}{m\+\_\+directional\+\_\+light\+\_\+cameras}
 \item 
-vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ab5c839ec3dca33bde5c94d195892120e}{m\+\_\+omni\+\_\+light\+\_\+cameras}
+\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ae8474ced9c3b762ffba3f1d859b9396a}{m\+\_\+omni\+\_\+light\+\_\+cameras}
 \item 
-vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ae5332132d7ff616d42448c33837ba814}{m\+\_\+spot\+\_\+light\+\_\+cameras}
+\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ \hyperlink{structmage_1_1_l_buffer_pass_ae09a921906a3b53074b9d08c1594928f}{m\+\_\+spot\+\_\+light\+\_\+cameras}
 \end{DoxyCompactItemize}
 
 
@@ -187,77 +177,53 @@ vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ 
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass}\& mage\+::\+L\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} \&\&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a03341222533877f82ac48b80628c609b}{}\label{structmage_1_1_l_buffer_pass_a03341222533877f82ac48b80628c609b} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights@{Process\+Lights}}
-\index{Process\+Lights@{Process\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{structmage_1_1_l_buffer_pass_a731613105a25fbae8560954e1b3b78fe}{}\label{structmage_1_1_l_buffer_pass_a731613105a25fbae8560954e1b3b78fe} 
+\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Directional\+Lights@{Process\+Directional\+Lights}}
+\index{Process\+Directional\+Lights@{Process\+Directional\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Directional\+Lights()}{ProcessDirectionalLights()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Directional\+Lights (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a6d7549bcd083afa625bd257975e041ad}{}\label{structmage_1_1_l_buffer_pass_a6d7549bcd083afa625bd257975e041ad} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights@{Process\+Lights}}
-\index{Process\+Lights@{Process\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{structmage_1_1_l_buffer_pass_ab3b4271e8a852f79fd6ff089463acf44}{}\label{structmage_1_1_l_buffer_pass_ab3b4271e8a852f79fd6ff089463acf44} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights@{Process\+Lights}}
-\index{Process\+Lights@{Process\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights()}{ProcessLights()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{structmage_1_1_l_buffer_pass_a4c83abfabfa8a144cab5d238045635f8}{}\label{structmage_1_1_l_buffer_pass_a4c83abfabfa8a144cab5d238045635f8} 
+\hypertarget{structmage_1_1_l_buffer_pass_a5da38ff4cf2d1de37fb40f8923b1d9bf}{}\label{structmage_1_1_l_buffer_pass_a5da38ff4cf2d1de37fb40f8923b1d9bf} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights\+Data@{Process\+Lights\+Data}}
 \index{Process\+Lights\+Data@{Process\+Lights\+Data}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Process\+Lights\+Data()}{ProcessLightsData()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights\+Data (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights\+Data (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{const \hyperlink{classmage_1_1_fog}{Fog} \&}]{fog }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a4dc1726c775bb3f512e9ac32c7c0ef2c}{}\label{structmage_1_1_l_buffer_pass_a4dc1726c775bb3f512e9ac32c7c0ef2c} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}}
-\index{Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights\+With\+Shadow\+Mapping()}{ProcessLightsWithShadowMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights\+With\+Shadow\+Mapping (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a7637b5351fc0f66a10badd80ebb35899}{Directional\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{structmage_1_1_l_buffer_pass_a6c33b00709c8440dbe3e1d37f6e0269a}{}\label{structmage_1_1_l_buffer_pass_a6c33b00709c8440dbe3e1d37f6e0269a} 
+\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Omni\+Lights@{Process\+Omni\+Lights}}
+\index{Process\+Omni\+Lights@{Process\+Omni\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Omni\+Lights()}{ProcessOmniLights()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Omni\+Lights (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a6623fb2306e894bef9e427b3794ab37d}{}\label{structmage_1_1_l_buffer_pass_a6623fb2306e894bef9e427b3794ab37d} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}}
-\index{Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights\+With\+Shadow\+Mapping()}{ProcessLightsWithShadowMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights\+With\+Shadow\+Mapping (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_a1724c6e6b6b5ba535cdd967cbbb4a669}{Omni\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{structmage_1_1_l_buffer_pass_a6886e49e2611592a73fc76cd4e4af307}{}\label{structmage_1_1_l_buffer_pass_a6886e49e2611592a73fc76cd4e4af307} 
+\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Spot\+Lights@{Process\+Spot\+Lights}}
+\index{Process\+Spot\+Lights@{Process\+Spot\+Lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Process\+Spot\+Lights()}{ProcessSpotLights()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Spot\+Lights (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a569c16fc47d2f5d8d47af85cce2822e0}{}\label{structmage_1_1_l_buffer_pass_a569c16fc47d2f5d8d47af85cce2822e0} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}}
-\index{Process\+Lights\+With\+Shadow\+Mapping@{Process\+Lights\+With\+Shadow\+Mapping}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Lights\+With\+Shadow\+Mapping()}{ProcessLightsWithShadowMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Process\+Lights\+With\+Shadow\+Mapping (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{namespacemage_aeed5dee4ff6c591eabb0e9114256df4a}{Spot\+Light\+Node} $\ast$ $>$ \&}]{lights,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{structmage_1_1_l_buffer_pass_aceac1e190b0236625b8cc9be5365b043}{}\label{structmage_1_1_l_buffer_pass_aceac1e190b0236625b8cc9be5365b043} 
+\hypertarget{structmage_1_1_l_buffer_pass_afae386240845baad1f35dc5358dcb096}{}\label{structmage_1_1_l_buffer_pass_afae386240845baad1f35dc5358dcb096} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{const \hyperlink{classmage_1_1_fog}{Fog} \&}]{fog,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_l_buffer_pass_ac6468c170742b5bee823235700ff640d}{}\label{structmage_1_1_l_buffer_pass_ac6468c170742b5bee823235700ff640d} 
+\hypertarget{structmage_1_1_l_buffer_pass_a8fc35d37df15125c8f50df9de7bf885d}{}\label{structmage_1_1_l_buffer_pass_a8fc35d37df15125c8f50df9de7bf885d} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Render\+Directional\+Shadow\+Maps@{Render\+Directional\+Shadow\+Maps}}
 \index{Render\+Directional\+Shadow\+Maps@{Render\+Directional\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Render\+Directional\+Shadow\+Maps()}{RenderDirectionalShadowMaps()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Render\+Directional\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Render\+Directional\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a621137906e2c04ddb029d2421c74d14f}{}\label{structmage_1_1_l_buffer_pass_a621137906e2c04ddb029d2421c74d14f} 
+\hypertarget{structmage_1_1_l_buffer_pass_ae852ab53bcf57c9469fa6cf530c3009d}{}\label{structmage_1_1_l_buffer_pass_ae852ab53bcf57c9469fa6cf530c3009d} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Render\+Omni\+Shadow\+Maps@{Render\+Omni\+Shadow\+Maps}}
 \index{Render\+Omni\+Shadow\+Maps@{Render\+Omni\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Render\+Omni\+Shadow\+Maps()}{RenderOmniShadowMaps()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Render\+Omni\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Render\+Omni\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_ad4c272e242ea28ca4a5c8c43d4c44112}{}\label{structmage_1_1_l_buffer_pass_ad4c272e242ea28ca4a5c8c43d4c44112} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Render\+Shadow\+Maps@{Render\+Shadow\+Maps}}
-\index{Render\+Shadow\+Maps@{Render\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Render\+Shadow\+Maps()}{RenderShadowMaps()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Render\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{structmage_1_1_l_buffer_pass_a3dfd7e644661eda87c627d4795fd2ac9}{}\label{structmage_1_1_l_buffer_pass_a3dfd7e644661eda87c627d4795fd2ac9} 
+\hypertarget{structmage_1_1_l_buffer_pass_a9db1903df31224e36ebff1271aceca41}{}\label{structmage_1_1_l_buffer_pass_a9db1903df31224e36ebff1271aceca41} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Render\+Spot\+Shadow\+Maps@{Render\+Spot\+Shadow\+Maps}}
 \index{Render\+Spot\+Shadow\+Maps@{Render\+Spot\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Render\+Spot\+Shadow\+Maps()}{RenderSpotShadowMaps()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Render\+Spot\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+L\+Buffer\+Pass\+::\+Render\+Spot\+Shadow\+Maps (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_depth_pass}{Depth\+Pass} $\ast$}]{pass,  }\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+cview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_aa6a3dd241588a460e2ea51f6cec14aeb}{}\label{structmage_1_1_l_buffer_pass_aa6a3dd241588a460e2ea51f6cec14aeb} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Setup\+Directional\+Shadow\+Maps@{Setup\+Directional\+Shadow\+Maps}}
@@ -270,12 +236,6 @@ vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ 
 \index{Setup\+Omni\+Shadow\+Maps@{Setup\+Omni\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{Setup\+Omni\+Shadow\+Maps()}{SetupOmniShadowMaps()}}
 {\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Setup\+Omni\+Shadow\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-\hypertarget{structmage_1_1_l_buffer_pass_ac646805ddf0eb4d81be3e29fec539fc5}{}\label{structmage_1_1_l_buffer_pass_ac646805ddf0eb4d81be3e29fec539fc5} 
-\index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Setup\+Shadow\+Maps@{Setup\+Shadow\+Maps}}
-\index{Setup\+Shadow\+Maps@{Setup\+Shadow\+Maps}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
-\subsubsection{\texorpdfstring{Setup\+Shadow\+Maps()}{SetupShadowMaps()}}
-{\footnotesize\ttfamily void mage\+::\+L\+Buffer\+Pass\+::\+Setup\+Shadow\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_a1ed3d550173e0145e363132656b8dfdb}{}\label{structmage_1_1_l_buffer_pass_a1ed3d550173e0145e363132656b8dfdb} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!Setup\+Spot\+Shadow\+Maps@{Setup\+Spot\+Shadow\+Maps}}
@@ -298,17 +258,17 @@ vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ 
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+L\+Buffer\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_a42f79f890d6c6ec342f365bf974ab3a6}{}\label{structmage_1_1_l_buffer_pass_a42f79f890d6c6ec342f365bf974ab3a6} 
+\hypertarget{structmage_1_1_l_buffer_pass_ab6eead232cc2886b1d29e9f6cc45b16d}{}\label{structmage_1_1_l_buffer_pass_ab6eead232cc2886b1d29e9f6cc45b16d} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+directional\+\_\+light\+\_\+cameras@{m\+\_\+directional\+\_\+light\+\_\+cameras}}
 \index{m\+\_\+directional\+\_\+light\+\_\+cameras@{m\+\_\+directional\+\_\+light\+\_\+cameras}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+directional\+\_\+light\+\_\+cameras}{m\_directional\_light\_cameras}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+directional\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+directional\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_a90327556a34fe3a56e6980accead0c44}{}\label{structmage_1_1_l_buffer_pass_a90327556a34fe3a56e6980accead0c44} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+directional\+\_\+lights@{m\+\_\+directional\+\_\+lights}}
 \index{m\+\_\+directional\+\_\+lights@{m\+\_\+directional\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+directional\+\_\+lights}{m\_directional\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_buffer}{Directional\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+directional\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_buffer}{Directional\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+directional\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_ab1372d2fc5e0e716565f8d3d8eb6db97}{}\label{structmage_1_1_l_buffer_pass_ab1372d2fc5e0e716565f8d3d8eb6db97} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+directional\+\_\+sms@{m\+\_\+directional\+\_\+sms}}
@@ -320,19 +280,19 @@ vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+light\+\_\+buffer@{m\+\_\+light\+\_\+buffer}}
 \index{m\+\_\+light\+\_\+buffer@{m\+\_\+light\+\_\+buffer}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+light\+\_\+buffer}{m\_light\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_light_buffer}{Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+light\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_light_buffer}{Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+light\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_ab5c839ec3dca33bde5c94d195892120e}{}\label{structmage_1_1_l_buffer_pass_ab5c839ec3dca33bde5c94d195892120e} 
+\hypertarget{structmage_1_1_l_buffer_pass_ae8474ced9c3b762ffba3f1d859b9396a}{}\label{structmage_1_1_l_buffer_pass_ae8474ced9c3b762ffba3f1d859b9396a} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+omni\+\_\+light\+\_\+cameras@{m\+\_\+omni\+\_\+light\+\_\+cameras}}
 \index{m\+\_\+omni\+\_\+light\+\_\+cameras@{m\+\_\+omni\+\_\+light\+\_\+cameras}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+light\+\_\+cameras}{m\_omni\_light\_cameras}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+omni\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+omni\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_afc2754b9d3a3b1c2171cd1a6e5b2349d}{}\label{structmage_1_1_l_buffer_pass_afc2754b9d3a3b1c2171cd1a6e5b2349d} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}}
 \index{m\+\_\+omni\+\_\+lights@{m\+\_\+omni\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+omni\+\_\+lights}{m\_omni\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_buffer}{Omni\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+omni\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_buffer}{Omni\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+omni\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_a083245bbfa560e2e16fd829a30ad857d}{}\label{structmage_1_1_l_buffer_pass_a083245bbfa560e2e16fd829a30ad857d} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+omni\+\_\+sms@{m\+\_\+omni\+\_\+sms}}
@@ -350,31 +310,31 @@ vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+sm\+\_\+directional\+\_\+lights@{m\+\_\+sm\+\_\+directional\+\_\+lights}}
 \index{m\+\_\+sm\+\_\+directional\+\_\+lights@{m\+\_\+sm\+\_\+directional\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+sm\+\_\+directional\+\_\+lights}{m\_sm\_directional\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_with_shadow_mapping_buffer}{Directional\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+directional\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_directional_light_with_shadow_mapping_buffer}{Directional\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+directional\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_aa5fa46c76d4d7d58141eeb021bb9f20c}{}\label{structmage_1_1_l_buffer_pass_aa5fa46c76d4d7d58141eeb021bb9f20c} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+sm\+\_\+omni\+\_\+lights@{m\+\_\+sm\+\_\+omni\+\_\+lights}}
 \index{m\+\_\+sm\+\_\+omni\+\_\+lights@{m\+\_\+sm\+\_\+omni\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+sm\+\_\+omni\+\_\+lights}{m\_sm\_omni\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_with_shadow_mapping_buffer}{Omni\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+omni\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_omni_light_with_shadow_mapping_buffer}{Omni\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+omni\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_a5630c1edc1d0833d08e0350bef5ec8a5}{}\label{structmage_1_1_l_buffer_pass_a5630c1edc1d0833d08e0350bef5ec8a5} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+sm\+\_\+spot\+\_\+lights@{m\+\_\+sm\+\_\+spot\+\_\+lights}}
 \index{m\+\_\+sm\+\_\+spot\+\_\+lights@{m\+\_\+sm\+\_\+spot\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+sm\+\_\+spot\+\_\+lights}{m\_sm\_spot\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_with_shadow_mapping_buffer}{Spot\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+spot\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_with_shadow_mapping_buffer}{Spot\+Light\+With\+Shadow\+Mapping\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+sm\+\_\+spot\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_l_buffer_pass_ae5332132d7ff616d42448c33837ba814}{}\label{structmage_1_1_l_buffer_pass_ae5332132d7ff616d42448c33837ba814} 
+\hypertarget{structmage_1_1_l_buffer_pass_ae09a921906a3b53074b9d08c1594928f}{}\label{structmage_1_1_l_buffer_pass_ae09a921906a3b53074b9d08c1594928f} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+spot\+\_\+light\+\_\+cameras@{m\+\_\+spot\+\_\+light\+\_\+cameras}}
 \index{m\+\_\+spot\+\_\+light\+\_\+cameras@{m\+\_\+spot\+\_\+light\+\_\+cameras}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+spot\+\_\+light\+\_\+cameras}{m\_spot\_light\_cameras}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+spot\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_light_camera_info}{Light\+Camera\+Info} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+spot\+\_\+light\+\_\+cameras\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_af1612aa2a8d24303ebcf9e72125698f3}{}\label{structmage_1_1_l_buffer_pass_af1612aa2a8d24303ebcf9e72125698f3} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}}
 \index{m\+\_\+spot\+\_\+lights@{m\+\_\+spot\+\_\+lights}!mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+spot\+\_\+lights}{m\_spot\_lights}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_buffer}{Spot\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+spot\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_structured_buffer}{Structured\+Buffer}$<$ \hyperlink{structmage_1_1_spot_light_buffer}{Spot\+Light\+Buffer} $>$ mage\+::\+L\+Buffer\+Pass\+::m\+\_\+spot\+\_\+lights\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{structmage_1_1_l_buffer_pass_a348d64fd92b6198663494d521edcdf6b}{}\label{structmage_1_1_l_buffer_pass_a348d64fd92b6198663494d521edcdf6b} 
 \index{mage\+::\+L\+Buffer\+Pass@{mage\+::\+L\+Buffer\+Pass}!m\+\_\+spot\+\_\+sms@{m\+\_\+spot\+\_\+sms}}

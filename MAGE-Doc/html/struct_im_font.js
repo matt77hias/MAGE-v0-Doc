@@ -11,6 +11,7 @@ var struct_im_font =
     [ "ClearOutputData", "struct_im_font.html#aecf7773b1c40b433f91ee245f463de12", null ],
     [ "FindGlyph", "struct_im_font.html#ac6a773b73c6406fd8f08c4c93213a501", null ],
     [ "GetCharAdvance", "struct_im_font.html#adffcff4e4e2d17455410bd4ba76b42e4", null ],
+    [ "GetDebugName", "struct_im_font.html#a11843ed46aaa122264d0da87ffafd627", null ],
     [ "GrowIndex", "struct_im_font.html#ab7865a365d9653b4636b198d2f222fd6", null ],
     [ "IsLoaded", "struct_im_font.html#a97dafa61cc94e84be396d69b0d42b1ce", null ],
     [ "RenderChar", "struct_im_font.html#af602fe8f445ae4142436ee3e6baa3ede", null ],

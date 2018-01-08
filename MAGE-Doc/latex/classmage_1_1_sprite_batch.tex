@@ -73,7 +73,7 @@ bool \hyperlink{classmage_1_1_sprite_batch_a2f4e56ee07ef37a2906c552b0ea78403}{m\
 \item 
 X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_sprite_batch_ad8a12f1f6c8289548346d469c9436c58}{m\+\_\+transform}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_sprite_batch_ac8ff5a2d9956b4a33cb1f41310abf129}{m\+\_\+transform\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1_sprite_batch_ac8ff5a2d9956b4a33cb1f41310abf129}{m\+\_\+transform\+\_\+buffer}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info}\mbox{[}$\,$\mbox{]} $>$ \hyperlink{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f}{m\+\_\+sprite\+\_\+queue}
 \item 
@@ -81,9 +81,9 @@ size\+\_\+t \hyperlink{classmage_1_1_sprite_batch_a0d7dadf01e3b905072c1aaa6b8e42
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_sprite_batch_a207760f2e11b1ea199529c65c9b21b3b}{m\+\_\+sprite\+\_\+queue\+\_\+array\+\_\+size}
 \item 
-vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$$>$ \hyperlink{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a}{m\+\_\+sorted\+\_\+sprites}
+std\+::vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$$>$ \hyperlink{classmage_1_1_sprite_batch_a285fa1f628e7981c5019bb449c5852ad}{m\+\_\+sorted\+\_\+sprites}
 \item 
-vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ \hyperlink{classmage_1_1_sprite_batch_adaad3bca737877db16bfa781563d8a93}{m\+\_\+sprite\+\_\+srvs}
+std\+::vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ \hyperlink{classmage_1_1_sprite_batch_a5b0af25ed0b2cd9436611e155f158e23}{m\+\_\+sprite\+\_\+srvs}
 \end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
@@ -330,7 +330,7 @@ Prepares a single sprite for rendering.
 
 {\itshape vertices} is not equal to {\ttfamily nullptr}. 
 
-{\itshape vertices} points to an array containing at least \hyperlink{classmage_1_1_sprite_batch_mesh_a089a9cf9b57f43274bb2542b3c30dd55}{mage\+::\+Sprite\+Batch\+Mesh\+::s\+\_\+vertices\+\_\+per\+\_\+sprite}. 
+{\itshape vertices} points to an array containing at least \hyperlink{classmage_1_1_sprite_batch_mesh_ac873479f07c19891f7847bed6fc9b862}{mage\+::\+Sprite\+Batch\+Mesh\+::s\+\_\+vertices\+\_\+per\+\_\+sprite}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -437,11 +437,11 @@ A flag indicating how the back buffers should be rotated to fit the physical rot
 \subsubsection{\texorpdfstring{m\+\_\+sort\+\_\+mode}{m\_sort\_mode}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a256fa5833eecc408923de7ffadb5e014}{Sprite\+Sort\+Mode} mage\+::\+Sprite\+Batch\+::m\+\_\+sort\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
 
-The sprite sorting mode used by this sprite batch for deciding on the draw order of sprites in the current btach of sprites. \hypertarget{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a}{}\label{classmage_1_1_sprite_batch_a65ad09d31c928ab1522d8b2c0c509b9a} 
+The sprite sorting mode used by this sprite batch for deciding on the draw order of sprites in the current btach of sprites. \hypertarget{classmage_1_1_sprite_batch_a285fa1f628e7981c5019bb449c5852ad}{}\label{classmage_1_1_sprite_batch_a285fa1f628e7981c5019bb449c5852ad} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sorted\+\_\+sprites@{m\+\_\+sorted\+\_\+sprites}}
 \index{m\+\_\+sorted\+\_\+sprites@{m\+\_\+sorted\+\_\+sprites}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{m\+\_\+sorted\+\_\+sprites}{m\_sorted\_sprites}}
-{\footnotesize\ttfamily vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sorted\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::vector$<$ const \hyperlink{structmage_1_1_sprite_info}{Sprite\+Info} $\ast$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sorted\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
 
 A vector containing the pointer to the sorted sprites in the queue of this sprite batch. \hypertarget{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f}{}\label{classmage_1_1_sprite_batch_a67ab116e403b626771f03f527efa6f2f} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+queue@{m\+\_\+sprite\+\_\+queue}}
@@ -461,11 +461,11 @@ The number of sprites that could potentially be waiting to be drawn by this spri
 \subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+queue\+\_\+size}{m\_sprite\_queue\_size}}
 {\footnotesize\ttfamily size\+\_\+t mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+queue\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of sprites waiting to be drawn by this sprite batch. \hypertarget{classmage_1_1_sprite_batch_adaad3bca737877db16bfa781563d8a93}{}\label{classmage_1_1_sprite_batch_adaad3bca737877db16bfa781563d8a93} 
+The number of sprites waiting to be drawn by this sprite batch. \hypertarget{classmage_1_1_sprite_batch_a5b0af25ed0b2cd9436611e155f158e23}{}\label{classmage_1_1_sprite_batch_a5b0af25ed0b2cd9436611e155f158e23} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+sprite\+\_\+srvs@{m\+\_\+sprite\+\_\+srvs}}
 \index{m\+\_\+sprite\+\_\+srvs@{m\+\_\+sprite\+\_\+srvs}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+srvs}{m\_sprite\_srvs}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+srvs\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+sprite\+\_\+srvs\hspace{0.3cm}{\ttfamily [private]}}
 
 A vector containing the smart pointers of the texture shader resource views.
 
@@ -479,7 +479,7 @@ The transform of this sprite batch applied to all sprites in the current batch o
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}}
 \index{m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}!mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}}
 \subsubsection{\texorpdfstring{m\+\_\+transform\+\_\+buffer}{m\_transform\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+transform\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::\+Sprite\+Batch\+::m\+\_\+transform\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 The transform buffer used by this sprite batch for storing a sprite transformation. \hypertarget{classmage_1_1_sprite_batch_afd6af84ab6728bfa907e6b8153357585}{}\label{classmage_1_1_sprite_batch_afd6af84ab6728bfa907e6b8153357585} 
 \index{mage\+::\+Sprite\+Batch@{mage\+::\+Sprite\+Batch}!m\+\_\+vertex\+\_\+buffer\+\_\+position@{m\+\_\+vertex\+\_\+buffer\+\_\+position}}

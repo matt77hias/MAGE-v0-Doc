@@ -15,8 +15,6 @@ var structmage_1_1_model_part =
     [ "m_material", "structmage_1_1_model_part.html#a606603dd01b895cb1aa91b51089bf27f", null ],
     [ "m_nb_indices", "structmage_1_1_model_part.html#ad4be9d829693ccb96bb45fc18aa0ede8", null ],
     [ "m_parent", "structmage_1_1_model_part.html#ad4754bbb69d28885c09cef591d4d96c5", null ],
-    [ "m_rotation", "structmage_1_1_model_part.html#a6d87b11e95535b8b99b6bfca468f3651", null ],
-    [ "m_scale", "structmage_1_1_model_part.html#a1519beaed190c0bd6d131785e2575c28", null ],
     [ "m_start_index", "structmage_1_1_model_part.html#a3151ca6c89bad26bc454aca693be97c4", null ],
-    [ "m_translation", "structmage_1_1_model_part.html#aa2bff327f45a021442ec7f0a6909f929", null ]
+    [ "m_transform", "structmage_1_1_model_part.html#a557a14038880ca6ba6d4ce7a8d81b774", null ]
 ];
