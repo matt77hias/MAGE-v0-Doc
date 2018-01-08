@@ -6,6 +6,6 @@ var searchData=
   ['texturetransform',['TextureTransform',['../classmage_1_1_texture_transform.html',1,'mage']]],
   ['timer',['Timer',['../classmage_1_1_timer.html',1,'mage']]],
   ['transform',['Transform',['../classmage_1_1_transform.html',1,'mage']]],
-  ['transformnode',['TransformNode',['../classmage_1_1_transform_node.html',1,'mage']]],
+  ['transformclient',['TransformClient',['../classmage_1_1_transform_client.html',1,'mage']]],
   ['ts',['TS',['../structmage_1_1_pipeline_1_1_t_s.html',1,'mage::Pipeline']]]
 ];

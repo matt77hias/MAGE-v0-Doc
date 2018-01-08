@@ -1,12 +1,12 @@
 var classmage_1_1_writer =
 [
-    [ "~Writer", "classmage_1_1_writer.html#aeeb30d6afb1a271b4ad294889054caec", null ],
     [ "Writer", "classmage_1_1_writer.html#a40b6cd3005d509e670c5a49272d9ef27", null ],
     [ "Writer", "classmage_1_1_writer.html#a2b257938508732ca0b78241aafa7922c", null ],
     [ "Writer", "classmage_1_1_writer.html#abda6f6db577201580c0e97c0816e0d3f", null ],
+    [ "~Writer", "classmage_1_1_writer.html#aeeb30d6afb1a271b4ad294889054caec", null ],
     [ "GetFilename", "classmage_1_1_writer.html#aedbc8d5fa02444ecba2e040ca8e98281", null ],
     [ "operator=", "classmage_1_1_writer.html#a81ea888d1b170515713432ca28629ceb", null ],
-    [ "operator=", "classmage_1_1_writer.html#aefbdd9a659983b543358cc8277ab890c", null ],
+    [ "operator=", "classmage_1_1_writer.html#a03a93796179f22be90471bea0f7a7cf0", null ],
     [ "Write", "classmage_1_1_writer.html#a9baf695ef7f6180bef883f60bcb3ac07", null ],
     [ "WriteCharacter", "classmage_1_1_writer.html#aa1ef04f5e69c44afda56704c2823316c", null ],
     [ "WriteString", "classmage_1_1_writer.html#abffb25b71fc692db26abfa9dd147874e", null ],

@@ -1,6 +1,6 @@
 var classmage_1_1_timer =
 [
-    [ "Timer", "classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055", null ],
+    [ "Timer", "classmage_1_1_timer.html#ad529d2329ae911c8b4c64efd05a71dd0", null ],
     [ "Timer", "classmage_1_1_timer.html#ae792c5a546deb35e5e65ed7fe6a8d281", null ],
     [ "Timer", "classmage_1_1_timer.html#a9fde919b6040a044748e98f59e18bece", null ],
     [ "~Timer", "classmage_1_1_timer.html#a66d6964a6d42eef72f7312f1233e4f74", null ],

@@ -3,8 +3,8 @@ var searchData=
   ['variablecomponentpass',['VariableComponentPass',['../classmage_1_1_variable_component_pass.html',1,'mage']]],
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html',1,'mage']]],
   ['variableshadingpass',['VariableShadingPass',['../classmage_1_1_variable_shading_pass.html',1,'mage']]],
-  ['varreader',['VARReader',['../classmage_1_1_v_a_r_reader.html',1,'mage']]],
-  ['varwriter',['VARWriter',['../classmage_1_1_v_a_r_writer.html',1,'mage']]],
+  ['varreader',['VARReader',['../classmage_1_1loader_1_1_v_a_r_reader.html',1,'mage::loader']]],
+  ['varwriter',['VARWriter',['../classmage_1_1loader_1_1_v_a_r_writer.html',1,'mage::loader']]],
   ['vector2',['Vector2',['../structmage_1_1_vector2.html',1,'mage']]],
   ['vector2_3c_20f32_20_3e',['Vector2&lt; F32 &gt;',['../structmage_1_1_vector2.html',1,'mage']]],
   ['vector2_3c_20t_2c_20typename_20std_3a_3aenable_5fif_5ft_3c_20std_3a_3ais_5farithmetic_5fv_3c_20t_20_3e_2c_20void_20_3e_20_3e',['Vector2&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt;, void &gt; &gt;',['../structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html',1,'mage']]],
@@ -29,9 +29,8 @@ var searchData=
   ['vertexpositionnormalcolortexture',['VertexPositionNormalColorTexture',['../structmage_1_1_vertex_position_normal_color_texture.html',1,'mage']]],
   ['vertexpositionnormaltexture',['VertexPositionNormalTexture',['../structmage_1_1_vertex_position_normal_texture.html',1,'mage']]],
   ['vertexpositiontexture',['VertexPositionTexture',['../structmage_1_1_vertex_position_texture.html',1,'mage']]],
-  ['vertexpositiontexturetexture',['VertexPositionTextureTexture',['../structmage_1_1_vertex_position_texture_texture.html',1,'mage']]],
   ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html',1,'mage']]],
-  ['viewfrustum',['ViewFrustum',['../structmage_1_1_view_frustum.html',1,'mage']]],
+  ['viewfrustum',['ViewFrustum',['../classmage_1_1_view_frustum.html',1,'mage']]],
   ['viewport',['Viewport',['../classmage_1_1_viewport.html',1,'mage']]],
   ['vs',['VS',['../structmage_1_1_pipeline_1_1_v_s.html',1,'mage::Pipeline']]]
 ];

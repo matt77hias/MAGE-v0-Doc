@@ -1,6 +1,7 @@
 var struct_im_gui_storage =
 [
     [ "Pair", "struct_im_gui_storage_1_1_pair.html", "struct_im_gui_storage_1_1_pair" ],
+    [ "BuildSortByKey", "struct_im_gui_storage.html#a5eae75e98a65c146e99898e359225f99", null ],
     [ "Clear", "struct_im_gui_storage.html#a72ceecfbca3d08df8c2a232b77890c20", null ],
     [ "GetBool", "struct_im_gui_storage.html#a22d34ae6278f86468a3e7df8fbd1b632", null ],
     [ "GetBoolRef", "struct_im_gui_storage.html#aeb0d62100453d710bac5f6ad0a6e6a2e", null ],

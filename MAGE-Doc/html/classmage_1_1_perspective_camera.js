@@ -1,14 +1,9 @@
 var classmage_1_1_perspective_camera =
 [
-    [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a64b7794febfaaf250117279095c709a2", null ],
-    [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a2be0521c2d0da56c10442928be5fc1c3", null ],
-    [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a9e59b05f13dba33c00b251ae952943d6", null ],
-    [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a3f6796f0482652bd9768af34853cae65", null ],
+    [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#aa8f55b11272cd68ed534d581b9e168ba", null ],
     [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a2a3a1696451f48aa4170669091652860", null ],
     [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a7ca5bbd2637f6d27a0be68635acd4788", null ],
     [ "~PerspectiveCamera", "classmage_1_1_perspective_camera.html#a47ba88d7458528795dd832474cdb3eb9", null ],
-    [ "Clone", "classmage_1_1_perspective_camera.html#a21545965da7ef1b6f99887bb6d2bb095", null ],
-    [ "CloneImplementation", "classmage_1_1_perspective_camera.html#aa597ab884256b7e6fad63653af3ac789", null ],
     [ "GetAspectRatio", "classmage_1_1_perspective_camera.html#a1d0b6de98514c1fdaf3e1aac4971987b", null ],
     [ "GetFOVX", "classmage_1_1_perspective_camera.html#a743acc9d0f30986788a548b78ff6d0d0", null ],
     [ "GetFOVY", "classmage_1_1_perspective_camera.html#a753f4479a5a13000864c297bc34c051f", null ],

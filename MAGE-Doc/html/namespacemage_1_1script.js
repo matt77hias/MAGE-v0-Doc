@@ -1,8 +1,6 @@
 var namespacemage_1_1script =
 [
     [ "CharacterMotorScript", "classmage_1_1script_1_1_character_motor_script.html", "classmage_1_1script_1_1_character_motor_script" ],
-    [ "InputControllerScript", "classmage_1_1script_1_1_input_controller_script.html", "classmage_1_1script_1_1_input_controller_script" ],
-    [ "LocationScript", "classmage_1_1script_1_1_location_script.html", "classmage_1_1script_1_1_location_script" ],
     [ "ManhattanMotorScript", "classmage_1_1script_1_1_manhattan_motor_script.html", "classmage_1_1script_1_1_manhattan_motor_script" ],
     [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html", "classmage_1_1script_1_1_mouse_look_script" ],
     [ "RenderModeScript", "classmage_1_1script_1_1_render_mode_script.html", "classmage_1_1script_1_1_render_mode_script" ],

@@ -5,7 +5,7 @@ var classmage_1_1_c_p_u_timer =
       [ "User", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075", null ],
       [ "Count", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a398b1d5c99bcb09fbe37b2d74547b3e0", null ],
+    [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a52f2c0bdd6377df54363ff775a6ec430", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a23afe7d7b5d85ecf1275f750a935e7c3", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a7915bc9952e7607ffbe93f18dd1cb0b4", null ],
     [ "~CPUTimer", "classmage_1_1_c_p_u_timer.html#a32583449026cf0589104767339486d4b", null ],
@@ -38,5 +38,5 @@ var classmage_1_1_c_p_u_timer =
     [ "m_nb_processor_cores", "classmage_1_1_c_p_u_timer.html#ac5fdb38a70c74815231b5efd8d746be1", null ],
     [ "m_running", "classmage_1_1_c_p_u_timer.html#a7190afa453085b7bbd7cb76ff6bb62f2", null ],
     [ "m_total_delta_time", "classmage_1_1_c_p_u_timer.html#a1c6d043eb08b1689d0f52dbd886fa9d4", null ],
-    [ "s_time_period", "classmage_1_1_c_p_u_timer.html#acc0608b5b5d211b09486244e43fcfb87", null ]
+    [ "s_time_period", "classmage_1_1_c_p_u_timer.html#af7371eff8de8b5f667769ec71a69e9cf", null ]
 ];

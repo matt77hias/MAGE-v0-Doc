@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doubleendedmemorystack',['DoubleEndedMemoryStack',['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#a10ae729d55b8c0017057250445835680',1,'mage::DoubleEndedMemoryStack::LowAllocator::DoubleEndedMemoryStack()'],['../structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a10ae729d55b8c0017057250445835680',1,'mage::DoubleEndedMemoryStack::HighAllocator::DoubleEndedMemoryStack()']]]
+  ['componentclient',['ComponentClient',['../classmage_1_1_component.html#a12f171c7a6bd27671b33ad16b0e42a6a',1,'mage::Component']]]
 ];

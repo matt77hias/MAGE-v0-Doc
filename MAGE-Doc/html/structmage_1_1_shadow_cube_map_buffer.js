@@ -19,7 +19,7 @@ var structmage_1_1_shadow_cube_map_buffer =
     [ "SetupShadowCubeMapArray", "structmage_1_1_shadow_cube_map_buffer.html#af2fcb67943e27ee60c71524993493109", null ],
     [ "SetupShadowCubeMapBuffer", "structmage_1_1_shadow_cube_map_buffer.html#a0ac976b6d2a8730bce826fa7ffa502db", null ],
     [ "SetupViewport", "structmage_1_1_shadow_cube_map_buffer.html#a612f25e151e575a7266b41ddb6a072cf", null ],
-    [ "m_dsvs", "structmage_1_1_shadow_cube_map_buffer.html#aa0db6bec24d63c39c85400c4328190fc", null ],
+    [ "m_dsvs", "structmage_1_1_shadow_cube_map_buffer.html#ad8a493d831b8ecd08d18fa1a3312143b", null ],
     [ "m_format", "structmage_1_1_shadow_cube_map_buffer.html#ada9a7c895a74303904f9884b986c935f", null ],
     [ "m_height", "structmage_1_1_shadow_cube_map_buffer.html#ac20a53ecc1ec9a00a2241f8c8a3405e6", null ],
     [ "m_rasterizer_state", "structmage_1_1_shadow_cube_map_buffer.html#a72ffa7fc89386a954b33fac38a894f2c", null ],

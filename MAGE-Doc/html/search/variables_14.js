@@ -10,6 +10,6 @@ var searchData=
   ['value',['Value',['../struct_im_color.html#a4cf43bd58e30decaa0248f839fc85e95',1,'ImColor']]],
   ['values',['Values',['../struct_im_gui_plot_array_getter_data.html#aa40ff2e945549744fc622891089ae0fd',1,'ImGuiPlotArrayGetterData']]],
   ['varidx',['VarIdx',['../struct_im_gui_style_mod.html#ab23c55941dbd0e156ce640a8fecb2feb',1,'ImGuiStyleMod']]],
-  ['violet',['Violet',['../namespacemage_1_1color.html#a74cf2fb38b14a5967a005a96bc7235aa',1,'mage::color']]],
+  ['violet',['Violet',['../namespacemage_1_1color.html#a10b518f831070a50ba51e663fbde1223',1,'mage::color']]],
   ['vtxbuffer',['VtxBuffer',['../struct_im_draw_list.html#aa8ff4aee39cf3c3791b7e29a7b4264be',1,'ImDrawList']]]
 ];

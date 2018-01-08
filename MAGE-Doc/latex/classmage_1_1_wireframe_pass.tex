@@ -21,7 +21,7 @@
 \item 
 void \hyperlink{classmage_1_1_wireframe_pass_abf99690ae099ed0ba0ca35c5d87ac0ef}{Bind\+Fixed\+State} ()
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_ac0810f125c8539cb6b27bdbfc6535d2e}{Render} (const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_abeae5404241fd4bb29d971a97cbcc44b}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -34,8 +34,6 @@ static \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $\ast$ \hyperli
 void \hyperlink{classmage_1_1_wireframe_pass_a574897c1274585057e8d44070409b7e3}{Bind\+Color\+Data} ()
 \item 
 void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_a6e316eaabf3afb71162490c1f3c244f3}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view)
-\item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_wireframe_pass_a190f6a6a916949b6b37d5b70c9451008}{Process\+Models} (const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&models, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -46,9 +44,9 @@ const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<
 \item 
 const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_wireframe_pass_a39577f12ad9b3f72e703c290cbf46002}{m\+\_\+ps}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1_wireframe_pass_acb2aaf33841a4f08edb50f9b72637d93}{m\+\_\+color\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1_wireframe_pass_acb2aaf33841a4f08edb50f9b72637d93}{m\+\_\+color\+\_\+buffer}
 \item 
-\hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ \hyperlink{classmage_1_1_wireframe_pass_aa7fb7cbba08fe8b4d7defab36d2e82a7}{m\+\_\+model\+\_\+buffer}
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ \hyperlink{classmage_1_1_wireframe_pass_aa7fb7cbba08fe8b4d7defab36d2e82a7}{m\+\_\+model\+\_\+buffer}
 \end{DoxyCompactItemize}
 
 
@@ -114,7 +112,7 @@ Binds the color data of this wireframe pass.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the color data of this wireframe pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the color data of this wireframe pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_wireframe_pass_abf99690ae099ed0ba0ca35c5d87ac0ef}{}\label{classmage_1_1_wireframe_pass_abf99690ae099ed0ba0ca35c5d87ac0ef} 
@@ -127,7 +125,7 @@ Binds the fixed state of this wireframe pass.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the fixed state of this wireframe pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the fixed state of this wireframe pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_wireframe_pass_a6e316eaabf3afb71162490c1f3c244f3}{}\label{classmage_1_1_wireframe_pass_a6e316eaabf3afb71162490c1f3c244f3} 
@@ -145,7 +143,7 @@ Binds the model data of this wireframe pass.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to bind the model data of this wireframe pass. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model data of this wireframe pass. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_wireframe_pass_ace5168eac9d32c1bfa71df3411960f48}{}\label{classmage_1_1_wireframe_pass_ace5168eac9d32c1bfa71df3411960f48} 
@@ -194,42 +192,17 @@ Moves the given wireframe pass to this wireframe pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved wireframe pass (i.\+e. this wireframe pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_wireframe_pass_a190f6a6a916949b6b37d5b70c9451008}{}\label{classmage_1_1_wireframe_pass_a190f6a6a916949b6b37d5b70c9451008} 
-\index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Process\+Models@{Process\+Models}}
-\index{Process\+Models@{Process\+Models}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
-\subsubsection{\texorpdfstring{Process\+Models()}{ProcessModels()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Process\+Models (\begin{DoxyParamCaption}\item[{const vector$<$ const \hyperlink{classmage_1_1_model_node}{Model\+Node} $\ast$ $>$ \&}]{models,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Process the given models.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em models} & A reference to a vector containing the model pointers to process. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. This transformation matrix will be used for culling. \\
-\hline
-\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix.\+This transformation matrix will be chained with the object-\/to-\/view transformation matrix for transforming vertices. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to process the models. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_wireframe_pass_ac0810f125c8539cb6b27bdbfc6535d2e}{}\label{classmage_1_1_wireframe_pass_ac0810f125c8539cb6b27bdbfc6535d2e} 
+\hypertarget{classmage_1_1_wireframe_pass_abeae5404241fd4bb29d971a97cbcc44b}{}\label{classmage_1_1_wireframe_pass_abeae5404241fd4bb29d971a97cbcc44b} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_pass_buffer}{Pass\+Buffer} $\ast$}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Wireframe\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view }\end{DoxyParamCaption})}
 
 Renders the scene.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape scene} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em scene} & A pointer to the scene. \\
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
 \hline
 \mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
 \hline
@@ -238,7 +211,7 @@ Renders the scene.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to render the scene. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
 \hline
 \end{DoxyExceptions}
 
@@ -248,7 +221,7 @@ Renders the scene.
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}}
 \index{m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+color\+\_\+buffer}{m\_color\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 The color buffer of this wireframe pass. \hypertarget{classmage_1_1_wireframe_pass_ac0f6bc1488ab515fe00d6e7abf230636}{}\label{classmage_1_1_wireframe_pass_ac0f6bc1488ab515fe00d6e7abf230636} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
@@ -260,7 +233,7 @@ A pointer to the device context of this wireframe pass. \hypertarget{classmage_1
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
 \index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ mage\+::\+Wireframe\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 The model buffer of this wireframe pass. \hypertarget{classmage_1_1_wireframe_pass_a39577f12ad9b3f72e703c290cbf46002}{}\label{classmage_1_1_wireframe_pass_a39577f12ad9b3f72e703c290cbf46002} 
 \index{mage\+::\+Wireframe\+Pass@{mage\+::\+Wireframe\+Pass}!m\+\_\+ps@{m\+\_\+ps}}

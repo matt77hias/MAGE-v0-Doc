@@ -38,5 +38,5 @@ var structmage_1_1_pipeline =
     [ "operator=", "structmage_1_1_pipeline.html#ad2ef272f32b0a792910ff04460753c5d", null ],
     [ "Unmap", "structmage_1_1_pipeline.html#a12430259f4e0c73fe770a87e17a4eb5b", null ],
     [ "UpdateSubresource", "structmage_1_1_pipeline.html#a8d0b596b3a5e3729618053f45e9467d5", null ],
-    [ "s_feature_levels", "structmage_1_1_pipeline.html#a2b8c39e47ee583beb55fa1a8741deb4a", null ]
+    [ "s_feature_levels", "structmage_1_1_pipeline.html#aa451423df031e728f3a3a35bfc942a9b", null ]
 ];

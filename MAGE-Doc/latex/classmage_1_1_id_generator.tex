@@ -9,22 +9,32 @@
 \item 
 constexpr \hyperlink{classmage_1_1_id_generator_a62eacd065b27320c207d72acf94df7a3}{Id\+Generator} (\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} first\+\_\+id=0) noexcept
 \item 
-constexpr \hyperlink{classmage_1_1_id_generator_ae7dbf4b3f0e959a923a098172731e562}{Id\+Generator} (const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&id\+\_\+generator) noexcept=delete
+constexpr \hyperlink{classmage_1_1_id_generator_ac7c7bc2371a537ca742cf87288d75817}{Id\+Generator} (const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&generator) noexcept=delete
 \item 
-constexpr \hyperlink{classmage_1_1_id_generator_a41ff4257bf42f434235f2d092c3b197d}{Id\+Generator} (\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&id\+\_\+generator) noexcept=default
+constexpr \hyperlink{classmage_1_1_id_generator_a5d6eb6a2ef08cd4ed765a61f9c330868}{Id\+Generator} (\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&generator) noexcept=default
 \item 
 \hyperlink{classmage_1_1_id_generator_a70161ab5b10294ebba1ace7a3b0f8d31}{$\sim$\+Id\+Generator} ()=default
 \item 
-\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \& \hyperlink{classmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026}{operator=} (const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&id\+\_\+generator)=delete
+\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \& \hyperlink{classmage_1_1_id_generator_ac731a36eb2824cb8f6633d0df543847c}{operator=} (const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&generator) noexcept=default
 \item 
-\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \& \hyperlink{classmage_1_1_id_generator_aace8082947445d26d2421ba8b361f1bc}{operator=} (\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&id\+\_\+generator)=delete
+\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \& \hyperlink{classmage_1_1_id_generator_abf29fa46e1bb19dd878462fc2610e3a8}{operator=} (\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&generator) noexcept=default
 \item 
 \hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} \hyperlink{classmage_1_1_id_generator_a9e0e86e5feab919f5ac5ab4ad8f51b09}{Get\+Next\+Id} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} \hyperlink{classmage_1_1_id_generator_a61c706df62168d306c47b79aed4b2e07}{Get\+Next\+Guid} () noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{namespacemage_a34972c09c02b691cd7cc5ea34db1e778}{Atomic\+S32} \hyperlink{classmage_1_1_id_generator_af834ccd6b694775f434949a1c1382965}{m\+\_\+current\+\_\+id}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \hyperlink{classmage_1_1_id_generator_aae064239698f2a64515bc0e91ff9a303}{s\+\_\+guid\+\_\+generator}
 \end{DoxyCompactItemize}
 
 
@@ -45,30 +55,30 @@ Constructs an id generator.
 \mbox{\tt in}  & {\em first\+\_\+id} & The first id of this id\+\_\+generator \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_id_generator_ae7dbf4b3f0e959a923a098172731e562}{}\label{classmage_1_1_id_generator_ae7dbf4b3f0e959a923a098172731e562} 
+\hypertarget{classmage_1_1_id_generator_ac7c7bc2371a537ca742cf87288d75817}{}\label{classmage_1_1_id_generator_ac7c7bc2371a537ca742cf87288d75817} 
 \index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Id\+Generator@{Id\+Generator}}
 \index{Id\+Generator@{Id\+Generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
 \subsubsection{\texorpdfstring{Id\+Generator()}{IdGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily constexpr mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily constexpr mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&}]{generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
 
 Constructs an id generator from the given id generator.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em id\+\_\+generator} & A reference to the id generator to copy. \\
+\mbox{\tt in}  & {\em generator} & A reference to the id generator to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_id_generator_a41ff4257bf42f434235f2d092c3b197d}{}\label{classmage_1_1_id_generator_a41ff4257bf42f434235f2d092c3b197d} 
+\hypertarget{classmage_1_1_id_generator_a5d6eb6a2ef08cd4ed765a61f9c330868}{}\label{classmage_1_1_id_generator_a5d6eb6a2ef08cd4ed765a61f9c330868} 
 \index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Id\+Generator@{Id\+Generator}}
 \index{Id\+Generator@{Id\+Generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
 \subsubsection{\texorpdfstring{Id\+Generator()}{IdGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily constexpr mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily constexpr mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&}]{generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Constructs an id generator by moving the given id generator.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em id\+\_\+generator} & A reference to the id generator to move. \\
+\mbox{\tt in}  & {\em generator} & A reference to the id generator to move. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_id_generator_a70161ab5b10294ebba1ace7a3b0f8d31}{}\label{classmage_1_1_id_generator_a70161ab5b10294ebba1ace7a3b0f8d31} 
@@ -80,6 +90,17 @@ Constructs an id generator by moving the given id generator.
 Destructs this id generator. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_id_generator_a61c706df62168d306c47b79aed4b2e07}{}\label{classmage_1_1_id_generator_a61c706df62168d306c47b79aed4b2e07} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Get\+Next\+Guid@{Get\+Next\+Guid}}
+\index{Get\+Next\+Guid@{Get\+Next\+Guid}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Next\+Guid()}{GetNextGuid()}}
+{\footnotesize\ttfamily static \hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} mage\+::\+Id\+Generator\+::\+Get\+Next\+Guid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+Returns the next guid.
+
+\begin{DoxyReturn}{Returns}
+The next guid. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_id_generator_a9e0e86e5feab919f5ac5ab4ad8f51b09}{}\label{classmage_1_1_id_generator_a9e0e86e5feab919f5ac5ab4ad8f51b09} 
 \index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Get\+Next\+Id@{Get\+Next\+Id}}
 \index{Get\+Next\+Id@{Get\+Next\+Id}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
@@ -91,33 +112,33 @@ Returns the next id of this id generator.
 \begin{DoxyReturn}{Returns}
 The next id of this id generator. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026}{}\label{classmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026} 
+\hypertarget{classmage_1_1_id_generator_ac731a36eb2824cb8f6633d0df543847c}{}\label{classmage_1_1_id_generator_ac731a36eb2824cb8f6633d0df543847c} 
 \index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_id_generator}{Id\+Generator}\& mage\+::\+Id\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_id_generator}{Id\+Generator}\& mage\+::\+Id\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&}]{generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Copies the given id generator to this id generator.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em id\+\_\+generator} & The id generator to copy. \\
+\mbox{\tt in}  & {\em generator} & The id generator to copy. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given id generator (i.\+e. this id generator). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_id_generator_aace8082947445d26d2421ba8b361f1bc}{}\label{classmage_1_1_id_generator_aace8082947445d26d2421ba8b361f1bc} 
+\hypertarget{classmage_1_1_id_generator_abf29fa46e1bb19dd878462fc2610e3a8}{}\label{classmage_1_1_id_generator_abf29fa46e1bb19dd878462fc2610e3a8} 
 \index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_id_generator}{Id\+Generator}\& mage\+::\+Id\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_id_generator}{Id\+Generator}\& mage\+::\+Id\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_id_generator}{Id\+Generator} \&\&}]{generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Copies the given id generator to this id generator.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em id\+\_\+generator} & The id generator to move. \\
+\mbox{\tt in}  & {\em generator} & The id generator to move. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -132,4 +153,10 @@ A reference to the moved id generator (i.\+e. this id generator).
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+id}{m\_current\_id}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a34972c09c02b691cd7cc5ea34db1e778}{Atomic\+S32} mage\+::\+Id\+Generator\+::m\+\_\+current\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
 
-The current id of this id generator. 
+The current id of this id generator. \hypertarget{classmage_1_1_id_generator_aae064239698f2a64515bc0e91ff9a303}{}\label{classmage_1_1_id_generator_aae064239698f2a64515bc0e91ff9a303} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!s\+\_\+guid\+\_\+generator@{s\+\_\+guid\+\_\+generator}}
+\index{s\+\_\+guid\+\_\+generator@{s\+\_\+guid\+\_\+generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{s\+\_\+guid\+\_\+generator}{s\_guid\_generator}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_id_generator}{Id\+Generator} mage\+::\+Id\+Generator\+::s\+\_\+guid\+\_\+generator\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The guid generator. 

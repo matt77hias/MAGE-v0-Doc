@@ -22,7 +22,7 @@ var classmage_1_1_material =
     [ "IsOpaque", "classmage_1_1_material.html#a0df1804c29bfd9d2bbc606d6285dccec", null ],
     [ "IsTransparant", "classmage_1_1_material.html#a6a62e3889887e77259070e1f9cd9150f", null ],
     [ "operator=", "classmage_1_1_material.html#a7ebc9986924ca13ae8468005518dcfc7", null ],
-    [ "operator=", "classmage_1_1_material.html#a500a2ebe99d4d7b3be5bf57b6bff62a1", null ],
+    [ "operator=", "classmage_1_1_material.html#a06bd167b9a8f329a18c2f55f830194ed", null ],
     [ "SetBaseColorTexture", "classmage_1_1_material.html#a85f9544a9d26f252a27a3bc6c271456a", null ],
     [ "SetLightInteraction", "classmage_1_1_material.html#a9b0bcb448cf9c96bcb63dcbc0f110bd1", null ],
     [ "SetMaterialTexture", "classmage_1_1_material.html#a48f5f4576a998f8015b96f41e6c6c870", null ],

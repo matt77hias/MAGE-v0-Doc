@@ -5,9 +5,9 @@ var classmage_1_1script_1_1_mouse_look_script =
       [ "MouseY", "classmage_1_1script_1_1_mouse_look_script.html#aa8c8ce1a3e6ccefa7b8ddd31be209c23a73843207a289db41b16a5bb8254ca425", null ],
       [ "MouseXAndY", "classmage_1_1script_1_1_mouse_look_script.html#aa8c8ce1a3e6ccefa7b8ddd31be209c23a109431b32c091e8a7ad541546c66c522", null ]
     ] ],
-    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#a87f5e8d14d0eeccdc0afdea7dd6a1ea6", null ],
-    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#acd2b333978c5310a82ee9b22b7873ad6", null ],
-    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#a73a93dbad87071681ecd896c7429fefa", null ],
+    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#a9055e93385160f4074cd2bc7fda3869e", null ],
+    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#aa5237c229f27fa29f820bf6517209444", null ],
+    [ "MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#ac21a383d6718ccc0d6c9faa5c5c1fe50", null ],
     [ "~MouseLookScript", "classmage_1_1script_1_1_mouse_look_script.html#a29a6d2cb4742fbf745822d015e72484f", null ],
     [ "GetMaximumRotation", "classmage_1_1script_1_1_mouse_look_script.html#a2ceb928a903baf5b30ea99e321af671c", null ],
     [ "GetMaximumRotationX", "classmage_1_1script_1_1_mouse_look_script.html#a5d0e63ee050bf07f5c8ad75ca9ced307", null ],
@@ -21,6 +21,7 @@ var classmage_1_1script_1_1_mouse_look_script =
     [ "GetSensitivityY", "classmage_1_1script_1_1_mouse_look_script.html#a39303e2d535ecc610ac4ea2f23825452", null ],
     [ "InvertDirectionX", "classmage_1_1script_1_1_mouse_look_script.html#aa527806c78873eab652dd6337a75b89f", null ],
     [ "InvertDirectionY", "classmage_1_1script_1_1_mouse_look_script.html#a189145ae96f56b805fe2020ed75db0bc", null ],
+    [ "Load", "classmage_1_1script_1_1_mouse_look_script.html#a4b26f1ac71e89eaac7903101b95745e9", null ],
     [ "operator=", "classmage_1_1script_1_1_mouse_look_script.html#af7da565d15422579ab5ff34f8f6bbc6a", null ],
     [ "operator=", "classmage_1_1script_1_1_mouse_look_script.html#a019b949f86d066507ea74a9db126137e", null ],
     [ "SetMaximumRotation", "classmage_1_1script_1_1_mouse_look_script.html#a50c3ddaad18713509394d168cddc8aa8", null ],
@@ -44,6 +45,5 @@ var classmage_1_1script_1_1_mouse_look_script =
     [ "m_direction", "classmage_1_1script_1_1_mouse_look_script.html#a5f65024afe8940ca2709d5ee13dc033c", null ],
     [ "m_maximum_rotation", "classmage_1_1script_1_1_mouse_look_script.html#ac3c7af839d88b3d9ec65250c41099c34", null ],
     [ "m_minimum_rotation", "classmage_1_1script_1_1_mouse_look_script.html#a4379e58bd89eab39d3e281133968a959", null ],
-    [ "m_sensitivity", "classmage_1_1script_1_1_mouse_look_script.html#afe7a443c1fa56fc6143555f992458934", null ],
-    [ "m_transform", "classmage_1_1script_1_1_mouse_look_script.html#a45183059f39d6ab4a45e7b0485c9b987", null ]
+    [ "m_sensitivity", "classmage_1_1script_1_1_mouse_look_script.html#afe7a443c1fa56fc6143555f992458934", null ]
 ];

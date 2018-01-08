@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id',['Id',['../struct_im_gui_text_edit_state.html#a72607b084143b202b03fd495b0eded2c',1,'ImGuiTextEditState::Id()'],['../struct_im_gui_ini_data.html#a8c3cd42549a5f432199d1a66e0133d80',1,'ImGuiIniData::Id()'],['../struct_im_font_atlas_1_1_custom_rect.html#a1afc9c6d72105e6695fbefa08e086387',1,'ImFontAtlas::CustomRect::ID()'],['../struct_im_gui_window.html#a5976b8d78bcc543ad7f23561f5cf0b8f',1,'ImGuiWindow::ID()'],['../structstbrp__rect.html#a92da8626bc99df041c0c3bfd01c25f7a',1,'stbrp_rect::id()']]],
+  ['id',['id',['../structstbrp__rect.html#a92da8626bc99df041c0c3bfd01c25f7a',1,'stbrp_rect::id()'],['../struct_im_font_atlas_1_1_custom_rect.html#a1afc9c6d72105e6695fbefa08e086387',1,'ImFontAtlas::CustomRect::ID()'],['../struct_im_gui_columns_set.html#af0d52f764471e070d0beca0526090e10',1,'ImGuiColumnsSet::ID()'],['../struct_im_gui_window.html#a5976b8d78bcc543ad7f23561f5cf0b8f',1,'ImGuiWindow::ID()'],['../struct_im_gui_text_edit_state.html#a72607b084143b202b03fd495b0eded2c',1,'ImGuiTextEditState::Id()'],['../struct_im_gui_window_settings.html#a82d2bf00ccbd8ac796c20bb1daa9ab9a',1,'ImGuiWindowSettings::Id()']]],
   ['idstack',['IDStack',['../struct_im_gui_window.html#a1a71724c43e37830ed9b38bd34f26917',1,'ImGuiWindow']]],
   ['idxbuffer',['IdxBuffer',['../struct_im_draw_channel.html#a7fbed7d3523124fadd94859d5ac0fd67',1,'ImDrawChannel::IdxBuffer()'],['../struct_im_draw_list.html#adf292ff70a954d82daf061c609e75dfc',1,'ImDrawList::IdxBuffer()']]],
   ['imesetinputscreenposfn',['ImeSetInputScreenPosFn',['../struct_im_gui_i_o.html#ac59559342608fbdeb14778a4fd57c301',1,'ImGuiIO']]],
@@ -11,13 +11,14 @@ var searchData=
   ['indexadvancex',['IndexAdvanceX',['../struct_im_font.html#af906476eda06d8a842d0a843a247f530',1,'ImFont']]],
   ['indexlookup',['IndexLookup',['../struct_im_font.html#aaab48cbf05ca962d71ab3e7b597b992f',1,'ImFont']]],
   ['indextolocformat',['indexToLocFormat',['../structstbtt__fontinfo.html#a5fa117a7ef058111a70a5b0b87d220f4',1,'stbtt_fontinfo']]],
-  ['indianred',['IndianRed',['../namespacemage_1_1color.html#a2ecd17afc164bd43c8e9235fc1603742',1,'mage::color']]],
-  ['indigo',['Indigo',['../namespacemage_1_1color.html#a7397ee3a10a75c693c81b667e55f207a',1,'mage::color']]],
+  ['indianred',['IndianRed',['../namespacemage_1_1color.html#a45104ede72483cb45b94b9a39f3b47cd',1,'mage::color']]],
+  ['indigo',['Indigo',['../namespacemage_1_1color.html#ab31bd205544fcfb991bb62fb776bf7a6',1,'mage::color']]],
   ['inifilename',['IniFilename',['../struct_im_gui_i_o.html#a89e8efe8f82b539c961dc22cc2499402',1,'ImGuiIO']]],
   ['inisavingrate',['IniSavingRate',['../struct_im_gui_i_o.html#a9b37eea17baa240a93b1288673a6eeb9',1,'ImGuiIO']]],
   ['init_5fmode',['init_mode',['../structstbrp__context.html#a007509feee322404083034e4c2d3dc5d',1,'stbrp_context']]],
   ['initialized',['initialized',['../struct_s_t_b___textedit_state.html#a11a63150e95225aacd204d6ef160c0c0',1,'STB_TexteditState::initialized()'],['../struct_im_gui_context.html#a71b32432f5c4658b4772b293640a66c0',1,'ImGuiContext::Initialized()']]],
   ['initialtext',['InitialText',['../struct_im_gui_text_edit_state.html#aba698d67719db7a6954475292cf50d28',1,'ImGuiTextEditState']]],
+  ['innerdir',['InnerDir',['../struct_im_gui_resize_grip_def.html#a82a1367d835f206fc24b3f114c60f897',1,'ImGuiResizeGripDef']]],
   ['innerrect',['InnerRect',['../struct_im_gui_window.html#a0fd27908ebffb5d9509dc9e7f199d67d',1,'ImGuiWindow']]],
   ['inputbuf',['InputBuf',['../struct_im_gui_text_filter.html#ad070acb1038199dd4e8f5d010c5cb5ba',1,'ImGuiTextFilter::InputBuf()'],['../struct_example_app_console.html#ab30accde81ae6833bd2ecf35f43f01ab',1,'ExampleAppConsole::InputBuf()']]],
   ['inputcharacters',['InputCharacters',['../struct_im_gui_i_o.html#af6283418a2bff9db1522a6245476c7ed',1,'ImGuiIO']]],
@@ -26,6 +27,8 @@ var searchData=
   ['insert_5flength',['insert_length',['../struct_stb_undo_record.html#ae2a3af79db791549db0c42263407cab5',1,'StbUndoRecord']]],
   ['insert_5fmode',['insert_mode',['../struct_s_t_b___textedit_state.html#af26029a4f1f76d043afd35072fabcb4b',1,'STB_TexteditState']]],
   ['io',['IO',['../struct_im_gui_context.html#add4fdcc8c6a437d8f8e7c837418be83c',1,'ImGuiContext']]],
+  ['isbeingresized',['IsBeingResized',['../struct_im_gui_columns_set.html#af9ef4186dd06147173a0e1dc12085399',1,'ImGuiColumnsSet']]],
+  ['isfirstframe',['IsFirstFrame',['../struct_im_gui_columns_set.html#a814bdfd8c72548d2c93675c8d6e974e9',1,'ImGuiColumnsSet']]],
   ['itemflags',['ItemFlags',['../struct_im_gui_draw_context.html#a8581650b6011e19f09b12b8bc50a51f5',1,'ImGuiDrawContext']]],
   ['itemflagsstack',['ItemFlagsStack',['../struct_im_gui_draw_context.html#a895d75185a81dc21bb6153090ab5b018',1,'ImGuiDrawContext']]],
   ['iteminnerspacing',['ItemInnerSpacing',['../struct_im_gui_style.html#a1a12021be99583fb491cff2df75d1ae1',1,'ImGuiStyle']]],
@@ -36,5 +39,5 @@ var searchData=
   ['itemwidth',['ItemWidth',['../struct_im_gui_draw_context.html#a6327a65273ded49b6aa309167fca4b9e',1,'ImGuiDrawContext']]],
   ['itemwidthdefault',['ItemWidthDefault',['../struct_im_gui_window.html#a5e6be361ee0c71a22a1ff68f6dbf09ff',1,'ImGuiWindow']]],
   ['itemwidthstack',['ItemWidthStack',['../struct_im_gui_draw_context.html#af6420717337b44394ad7ccbe55446db2',1,'ImGuiDrawContext']]],
-  ['ivory',['Ivory',['../namespacemage_1_1color.html#a96cd8c7b824259d3270613b6d6cebcd2',1,'mage::color']]]
+  ['ivory',['Ivory',['../namespacemage_1_1color.html#ae72c29cc5e109df4819ae907117f0452',1,'mage::color']]]
 ];

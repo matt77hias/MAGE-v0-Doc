@@ -12,5 +12,5 @@ var searchData=
   ['keysdowndurationprev',['KeysDownDurationPrev',['../struct_im_gui_i_o.html#ac079dcd415784a08fec74388e18abb97',1,'ImGuiIO']]],
   ['keyshift',['KeyShift',['../struct_im_gui_i_o.html#a3c7642214f88862af5b8467f98ac35c9',1,'ImGuiIO']]],
   ['keysuper',['KeySuper',['../struct_im_gui_i_o.html#afda9e11e21b7ba21573671c38d9f4a81',1,'ImGuiIO']]],
-  ['khaki',['Khaki',['../namespacemage_1_1color.html#ad82c80c9e33e2cea3ec76197619fec93',1,'mage::color']]]
+  ['khaki',['Khaki',['../namespacemage_1_1color.html#a8fd56f3645199058ed807390858c1fb4',1,'mage::color']]]
 ];

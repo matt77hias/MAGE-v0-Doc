@@ -16,7 +16,7 @@ var classmage_1_1_display_configurator =
     [ "m_adapter", "classmage_1_1_display_configurator.html#a2839c57559a284d6cfbedaaa1a8bcd9f", null ],
     [ "m_display_configuration", "classmage_1_1_display_configurator.html#a5bccdf0eb57db38cf4e933ecf127488d", null ],
     [ "m_display_configuration_script", "classmage_1_1_display_configurator.html#ab4030a5fe67b8253113799f42a0868c0", null ],
-    [ "m_display_modes", "classmage_1_1_display_configurator.html#a714608c9858f92cead47314295f17f96", null ],
+    [ "m_display_modes", "classmage_1_1_display_configurator.html#a181938d55d2c57d695c26451054a7c9d", null ],
     [ "m_output", "classmage_1_1_display_configurator.html#a255fdce7019b54a3a96021248acad680", null ],
     [ "m_pixel_format", "classmage_1_1_display_configurator.html#a22998ef4e54c3da0118a734164792b8f", null ]
 ];

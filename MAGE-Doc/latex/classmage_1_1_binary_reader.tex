@@ -7,11 +7,9 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404}{$\sim$\+Binary\+Reader} ()
-\item 
 \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \& \hyperlink{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3}{operator=} (const \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&reader)=delete
 \item 
-\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \& \hyperlink{classmage_1_1_binary_reader_abb971fe92727a0e86b3698dba8c586de}{operator=} (\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&\&reader)=delete
+\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \& \hyperlink{classmage_1_1_binary_reader_a280998bb89dacdcb88ec87c49ce90a02}{operator=} (\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&\&reader) noexcept
 \item 
 void \hyperlink{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de}{Read\+From\+File} (wstring fname, bool big\+\_\+endian)
 \item 
@@ -28,34 +26,18 @@ const wstring \& \hyperlink{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15ba
 \item 
 \hyperlink{classmage_1_1_binary_reader_a520841747b74b4b0e95f8d9b595492fa}{Binary\+Reader} (\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&\&reader) noexcept
 \item 
+\hyperlink{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404}{$\sim$\+Binary\+Reader} ()
+\item 
 bool \hyperlink{classmage_1_1_binary_reader_aec91fece03b619c158b133beb1bc9381}{Has\+Chars\+Left} () const noexcept
 \item 
 const char $\ast$ \hyperlink{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f}{Read\+Chars} (size\+\_\+t size)
 \item 
-\hyperlink{namespacemage_a20766a773cfd6c14d8f2344d4631b89c}{S8} \hyperlink{classmage_1_1_binary_reader_af1628266b77efcb4e55589af90b522da}{Read\+S8} ()
-\item 
-\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} \hyperlink{classmage_1_1_binary_reader_a913fdfead6b61b17ad2d2f9f54ccf057}{Read\+U8} ()
-\item 
-\hyperlink{namespacemage_add9d3fe59b2a338108e98fcd67507005}{S16} \hyperlink{classmage_1_1_binary_reader_af3a7befd21ef51de83d702811c50a0b1}{Read\+S16} ()
-\item 
-\hyperlink{namespacemage_af69057eec1ce005c1c3b34ae33486f16}{U16} \hyperlink{classmage_1_1_binary_reader_a2b65c66fcb0b590d6f7ab5a8ffd96b83}{Read\+U16} ()
-\item 
-\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} \hyperlink{classmage_1_1_binary_reader_a4711e731be78dbc45f223919c3ac4ff4}{Read\+S32} ()
-\item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1_binary_reader_acb2d579ef62fd3cd5b3c6193d748dda8}{Read\+U32} ()
-\item 
-\hyperlink{namespacemage_a38d4d411c173c8978eb356d2412b32dd}{S64} \hyperlink{classmage_1_1_binary_reader_a287d4d14b7990e1b88f9b913a39d09df}{Read\+S64} ()
-\item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_binary_reader_ab702702eeb211d465026482bf25601d9}{Read\+U64} ()
-\item 
-\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1_binary_reader_abb3c1af4b0e355ea3ff07de5130cc56c}{Read\+F32} ()
-\item 
-\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_binary_reader_a37887a659040c4a3b495eef9376352d0}{Read\+F64} ()
+{\footnotesize template$<$typename DataT $>$ }\\const DataT \hyperlink{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92}{Read} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classmage_1_1_binary_reader_a5c060c165f17a71f4218eb98c7091273}{Read} ()=0
+virtual void \hyperlink{classmage_1_1_binary_reader_a67157828a9781644fb55bd7f3558f07c}{Read\+Data} ()=0
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -76,13 +58,7 @@ const \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $\ast$ \hy
 A class of readers for reading binary files. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404}{}\label{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!````~Binary\+Reader@{$\sim$\+Binary\+Reader}}
-\index{````~Binary\+Reader@{$\sim$\+Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{$\sim$\+Binary\+Reader()}{~BinaryReader()}}
-{\footnotesize\ttfamily mage\+::\+Binary\+Reader\+::$\sim$\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
-
-Destructs this binary reader. \hypertarget{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497}{}\label{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497} 
+\hypertarget{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497}{}\label{classmage_1_1_binary_reader_aab82579cef4f2f022273cf1adfcc8497} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Binary\+Reader@{Binary\+Reader}}
 \index{Binary\+Reader@{Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Binary\+Reader()}{BinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
@@ -114,7 +90,13 @@ Constructs a binary reader by moving the given binary reader.
 \mbox{\tt in}  & {\em reader} & A reference to the binary reader to move. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404}{}\label{classmage_1_1_binary_reader_a42e6c31bc53f5214675f845756b5a404} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!````~Binary\+Reader@{$\sim$\+Binary\+Reader}}
+\index{````~Binary\+Reader@{$\sim$\+Binary\+Reader}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+Binary\+Reader()}{~BinaryReader()}}
+{\footnotesize\ttfamily mage\+::\+Binary\+Reader\+::$\sim$\+Binary\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
 
+Destructs this binary reader. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15badff08fe4a}{}\label{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15badff08fe4a} 
@@ -155,11 +137,11 @@ Copies the given binary reader to this binary reader.
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given binary reader (i.\+e. this binary reader). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_binary_reader_abb971fe92727a0e86b3698dba8c586de}{}\label{classmage_1_1_binary_reader_abb971fe92727a0e86b3698dba8c586de} 
+\hypertarget{classmage_1_1_binary_reader_a280998bb89dacdcb88ec87c49ce90a02}{}\label{classmage_1_1_binary_reader_a280998bb89dacdcb88ec87c49ce90a02} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader}\& mage\+::\+Binary\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \& mage\+::\+Binary\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader} \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Moves the given binary reader to this binary reader.
 
@@ -171,17 +153,26 @@ Moves the given binary reader to this binary reader.
 \begin{DoxyReturn}{Returns}
 A reference to the moved binary reader (i.\+e. this binary reader). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_binary_reader_a5c060c165f17a71f4218eb98c7091273}{}\label{classmage_1_1_binary_reader_a5c060c165f17a71f4218eb98c7091273} 
+\hypertarget{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92}{}\label{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read@{Read}}
 \index{Read@{Read}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily virtual void mage\+::\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+const DataT mage\+::\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Starts reading.
+Reads a {\ttfamily DataT} element.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily DataT} element read. 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read to the given file. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read a {\ttfamily DataT} element. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f}{}\label{classmage_1_1_binary_reader_af1e0e4ab815e23c72ab65fd7c0748d3f} 
@@ -202,39 +193,20 @@ A pointer to the array of characters read.
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read {\ttfamily size} bytes. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read {\ttfamily size} bytes. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_abb3c1af4b0e355ea3ff07de5130cc56c}{}\label{classmage_1_1_binary_reader_abb3c1af4b0e355ea3ff07de5130cc56c} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+F32@{Read\+F32}}
-\index{Read\+F32@{Read\+F32}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+F32()}{ReadF32()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::\+Binary\+Reader\+::\+Read\+F32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\hypertarget{classmage_1_1_binary_reader_a67157828a9781644fb55bd7f3558f07c}{}\label{classmage_1_1_binary_reader_a67157828a9781644fb55bd7f3558f07c} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+Data@{Read\+Data}}
+\index{Read\+Data@{Read\+Data}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Data()}{ReadData()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Binary\+Reader\+::\+Read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
 
-Reads a {\ttfamily F32}.
+Starts reading.
 
-\begin{DoxyReturn}{Returns}
-The {\ttfamily F32} read. 
-\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily F32}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_a37887a659040c4a3b495eef9376352d0}{}\label{classmage_1_1_binary_reader_a37887a659040c4a3b495eef9376352d0} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+F64@{Read\+F64}}
-\index{Read\+F64@{Read\+F64}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+F64()}{ReadF64()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} mage\+::\+Binary\+Reader\+::\+Read\+F64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads a {\ttfamily F64}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily F64} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily F64}. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read from the given file. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de}{}\label{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de} 
@@ -254,7 +226,7 @@ Reads from the given file.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read from the given file. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read from the given file. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{classmage_1_1_binary_reader_afac22c8586ceee77895121e904de1845}{}\label{classmage_1_1_binary_reader_afac22c8586ceee77895121e904de1845} 
@@ -279,135 +251,7 @@ Reads the input string.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read from the given input string. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_af3a7befd21ef51de83d702811c50a0b1}{}\label{classmage_1_1_binary_reader_af3a7befd21ef51de83d702811c50a0b1} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+S16@{Read\+S16}}
-\index{Read\+S16@{Read\+S16}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+S16()}{ReadS16()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_add9d3fe59b2a338108e98fcd67507005}{S16} mage\+::\+Binary\+Reader\+::\+Read\+S16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads a {\ttfamily S16}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily S16} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily S16}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_a4711e731be78dbc45f223919c3ac4ff4}{}\label{classmage_1_1_binary_reader_a4711e731be78dbc45f223919c3ac4ff4} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+S32@{Read\+S32}}
-\index{Read\+S32@{Read\+S32}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+S32()}{ReadS32()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} mage\+::\+Binary\+Reader\+::\+Read\+S32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads a {\ttfamily S32}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily S32} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily S32}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_a287d4d14b7990e1b88f9b913a39d09df}{}\label{classmage_1_1_binary_reader_a287d4d14b7990e1b88f9b913a39d09df} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+S64@{Read\+S64}}
-\index{Read\+S64@{Read\+S64}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+S64()}{ReadS64()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a38d4d411c173c8978eb356d2412b32dd}{S64} mage\+::\+Binary\+Reader\+::\+Read\+S64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads a {\ttfamily S64}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily S64} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily S64}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_af1628266b77efcb4e55589af90b522da}{}\label{classmage_1_1_binary_reader_af1628266b77efcb4e55589af90b522da} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+S8@{Read\+S8}}
-\index{Read\+S8@{Read\+S8}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+S8()}{ReadS8()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a20766a773cfd6c14d8f2344d4631b89c}{S8} mage\+::\+Binary\+Reader\+::\+Read\+S8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads a {\ttfamily S8}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily S8} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read a {\ttfamily S8}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_a2b65c66fcb0b590d6f7ab5a8ffd96b83}{}\label{classmage_1_1_binary_reader_a2b65c66fcb0b590d6f7ab5a8ffd96b83} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U16@{Read\+U16}}
-\index{Read\+U16@{Read\+U16}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+U16()}{ReadU16()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_af69057eec1ce005c1c3b34ae33486f16}{U16} mage\+::\+Binary\+Reader\+::\+Read\+U16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads an {\ttfamily U16}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily U16} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read an {\ttfamily U16}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_acb2d579ef62fd3cd5b3c6193d748dda8}{}\label{classmage_1_1_binary_reader_acb2d579ef62fd3cd5b3c6193d748dda8} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U32@{Read\+U32}}
-\index{Read\+U32@{Read\+U32}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+U32()}{ReadU32()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::\+Binary\+Reader\+::\+Read\+U32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads an {\ttfamily U32}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily U32} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read an {\ttfamily U32}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_ab702702eeb211d465026482bf25601d9}{}\label{classmage_1_1_binary_reader_ab702702eeb211d465026482bf25601d9} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U64@{Read\+U64}}
-\index{Read\+U64@{Read\+U64}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+U64()}{ReadU64()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Binary\+Reader\+::\+Read\+U64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads an {\ttfamily U64}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily U64} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read an {\ttfamily U64}. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_binary_reader_a913fdfead6b61b17ad2d2f9f54ccf057}{}\label{classmage_1_1_binary_reader_a913fdfead6b61b17ad2d2f9f54ccf057} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+U8@{Read\+U8}}
-\index{Read\+U8@{Read\+U8}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Read\+U8()}{ReadU8()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} mage\+::\+Binary\+Reader\+::\+Read\+U8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Reads an {\ttfamily U8}.
-
-\begin{DoxyReturn}{Returns}
-The {\ttfamily U8} read. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_formatted_exception}{Formatted\+Exception}} & Failed to read an {\ttfamily U8}. \\
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read from the given input string. \\
 \hline
 \end{DoxyExceptions}
 

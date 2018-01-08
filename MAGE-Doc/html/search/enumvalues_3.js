@@ -10,5 +10,6 @@ var searchData=
   ['default',['Default',['../classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67',1,'mage::GBufferPass::Default()'],['../classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19a7a1920d61156abc05a60135aefe8bc67',1,'mage::ShadingNormalPass::Default()']]],
   ['deferred',['Deferred',['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fda4ed71db54748b36eeb398876b0c747ac',1,'mage::Deferred()'],['../namespacemage.html#a256fa5833eecc408923de7ffadb5e014a4ed71db54748b36eeb398876b0c747ac',1,'mage::Deferred()']]],
   ['depthnone',['DepthNone',['../classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aab41232b0703ce026c43342f5c5547d97',1,'mage::RenderingStateManager']]],
-  ['distance',['Distance',['../classmage_1_1_constant_component_pass.html#a5700234587f2aa0ebdb4f7790704f00ba0aa6f4210bf373c95eda00232e93cd98',1,'mage::ConstantComponentPass::Distance()'],['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fda0aa6f4210bf373c95eda00232e93cd98',1,'mage::Distance()']]]
+  ['distance',['Distance',['../classmage_1_1_constant_component_pass.html#a5700234587f2aa0ebdb4f7790704f00ba0aa6f4210bf373c95eda00232e93cd98',1,'mage::ConstantComponentPass::Distance()'],['../namespacemage.html#a5e7e18b0154373ce8fc942fe3f6b27fda0aa6f4210bf373c95eda00232e93cd98',1,'mage::Distance()']]],
+  ['dropshadow',['DropShadow',['../classmage_1_1_sprite_text.html#ac60331e941d1f76551b7bdfad6ee7324a62fb0c043d7459d6590e00540884ea62',1,'mage::SpriteText']]]
 ];
