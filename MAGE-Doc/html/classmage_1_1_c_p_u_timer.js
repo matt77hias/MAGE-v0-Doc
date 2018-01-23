@@ -1,11 +1,12 @@
 var classmage_1_1_c_p_u_timer =
 [
-    [ "ModeIndex", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625e", [
-      [ "Kernel", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625ea6ff9f4444ac481652f4412b5e1623846", null ],
-      [ "User", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075", null ],
-      [ "Count", "classmage_1_1_c_p_u_timer.html#a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "ModeIndex", "classmage_1_1_c_p_u_timer.html#a220f69be8f304f6fad61ccb358d278fa", [
+      [ "Kernel", "classmage_1_1_c_p_u_timer.html#a220f69be8f304f6fad61ccb358d278faa6ff9f4444ac481652f4412b5e1623846", null ],
+      [ "User", "classmage_1_1_c_p_u_timer.html#a220f69be8f304f6fad61ccb358d278faa8f9bfe9d1345237cb3b2b205864da075", null ],
+      [ "Count", "classmage_1_1_c_p_u_timer.html#a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a52f2c0bdd6377df54363ff775a6ec430", null ],
+    [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#ae85f321f737770034cff1fd9e9ef13c4", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a23afe7d7b5d85ecf1275f750a935e7c3", null ],
     [ "CPUTimer", "classmage_1_1_c_p_u_timer.html#a7915bc9952e7607ffbe93f18dd1cb0b4", null ],
     [ "~CPUTimer", "classmage_1_1_c_p_u_timer.html#a32583449026cf0589104767339486d4b", null ],
@@ -33,10 +34,10 @@ var classmage_1_1_c_p_u_timer =
     [ "UpdateDeltaTime", "classmage_1_1_c_p_u_timer.html#a4e82f7003a11e109495b7450e2f82f4f", null ],
     [ "UpdateLastTimestamp", "classmage_1_1_c_p_u_timer.html#aa956ede1a12c0c383e7fcc53e6f8c405", null ],
     [ "m_delta_time", "classmage_1_1_c_p_u_timer.html#a2ce9eda81a57934b172b426238d4587d", null ],
-    [ "m_handle", "classmage_1_1_c_p_u_timer.html#a95b8ac18c050ed25293c8a923087369a", null ],
     [ "m_last_timestamp", "classmage_1_1_c_p_u_timer.html#a14b5ef7beba6c33769ac66ef171d0f0b", null ],
-    [ "m_nb_processor_cores", "classmage_1_1_c_p_u_timer.html#ac5fdb38a70c74815231b5efd8d746be1", null ],
+    [ "m_process", "classmage_1_1_c_p_u_timer.html#ac99b24abe1fe0753b18cfa39b298a876", null ],
     [ "m_running", "classmage_1_1_c_p_u_timer.html#a7190afa453085b7bbd7cb76ff6bb62f2", null ],
     [ "m_total_delta_time", "classmage_1_1_c_p_u_timer.html#a1c6d043eb08b1689d0f52dbd886fa9d4", null ],
+    [ "s_nb_processor_cores", "classmage_1_1_c_p_u_timer.html#a49e518f172efcc1e43baef65bb5ab3a7", null ],
     [ "s_time_period", "classmage_1_1_c_p_u_timer.html#af7371eff8de8b5f667769ec71a69e9cf", null ]
 ];

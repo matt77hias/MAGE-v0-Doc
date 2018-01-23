@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.123.0</span>
+   &#160;<span id="projectnumber">v0.125.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_timer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_timer-members.html">List of all members</a>  </div>
@@ -121,10 +122,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21ee76bc048a3c80f1bfbbbd807e97a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a21ee76bc048a3c80f1bfbbbd807e97a7">GetTotalDeltaTime</a> () const noexcept</td></tr>
 <tr class="separator:a21ee76bc048a3c80f1bfbbbd807e97a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a6d46c5edc40fd404d44d8762c814c5f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a6d46c5edc40fd404d44d8762c814c5f3">Clock</a> = std::chrono::high_resolution_clock</td></tr>
+<tr class="separator:a6d46c5edc40fd404d44d8762c814c5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff202783fe113efdf539f9dc685a158c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#aff202783fe113efdf539f9dc685a158c">TimeStamp</a> = Clock::time_point</td></tr>
+<tr class="separator:aff202783fe113efdf539f9dc685a158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e38d0ad64043ad3622072e7b6637d98"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">TimeInterval</a> = Clock::duration</td></tr>
+<tr class="separator:a5e38d0ad64043ad3622072e7b6637d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad0ff38a28efd65e7c147c8c399245d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#ad0ff38a28efd65e7c147c8c399245d06">UpdateLastTimestamp</a> () const noexcept</td></tr>
-<tr class="separator:ad0ff38a28efd65e7c147c8c399245d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b66b3bfbed7cd4a3ad565abec5c3b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5b66b3bfbed7cd4a3ad565abec5c3b02">ResetDeltaTime</a> () const noexcept</td></tr>
 <tr class="separator:a5b66b3bfbed7cd4a3ad565abec5c3b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f12ad8645e8022a09067f1393c065b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a10f12ad8645e8022a09067f1393c065b">UpdateDeltaTime</a> () const noexcept</td></tr>
@@ -132,22 +140,90 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6effbc37827492397cc781a78165a08a"><td class="memItemLeft" align="right" valign="top">LARGE_INTEGER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a6effbc37827492397cc781a78165a08a">m_last_timestamp</a></td></tr>
-<tr class="separator:a6effbc37827492397cc781a78165a08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a6fcda6238524401de58b4462121286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a2a6fcda6238524401de58b4462121286">m_delta_time</a></td></tr>
-<tr class="separator:a2a6fcda6238524401de58b4462121286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597eae6b756d0f50bcb1541db0f1c7f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a597eae6b756d0f50bcb1541db0f1c7f0">m_total_delta_time</a></td></tr>
-<tr class="separator:a597eae6b756d0f50bcb1541db0f1c7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85148d55792c8cc703918beede17215"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_timer.html#a6d46c5edc40fd404d44d8762c814c5f3">Clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#aa85148d55792c8cc703918beede17215">m_clock</a></td></tr>
+<tr class="separator:aa85148d55792c8cc703918beede17215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87b641f17eba20552a7a309dfc3761a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_timer.html#aff202783fe113efdf539f9dc685a158c">TimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#af87b641f17eba20552a7a309dfc3761a">m_last_timestamp</a></td></tr>
+<tr class="separator:af87b641f17eba20552a7a309dfc3761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05eac9cb442358351b0f2861f70e56b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">TimeInterval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a05eac9cb442358351b0f2861f70e56b9">m_delta_time</a></td></tr>
+<tr class="separator:a05eac9cb442358351b0f2861f70e56b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642e43f01ce61c54c89ea116235342e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">TimeInterval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a642e43f01ce61c54c89ea116235342e9">m_total_delta_time</a></td></tr>
+<tr class="separator:a642e43f01ce61c54c89ea116235342e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d975843e5b2199848284de910d3291"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#ac8d975843e5b2199848284de910d3291">m_running</a></td></tr>
 <tr class="separator:ac8d975843e5b2199848284de910d3291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e9afd31a95058e1736e84122c663d3"><td class="memItemLeft" align="right" valign="top">LARGE_INTEGER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a64e9afd31a95058e1736e84122c663d3">m_time_frequency</a></td></tr>
-<tr class="separator:a64e9afd31a95058e1736e84122c663d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666e06f94a9c5875ab6cbce8d2750a11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a666e06f94a9c5875ab6cbce8d2750a11">m_time_period</a></td></tr>
-<tr class="separator:a666e06f94a9c5875ab6cbce8d2750a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of (high precision) wall clock timers. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6d46c5edc40fd404d44d8762c814c5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d46c5edc40fd404d44d8762c814c5f3">&sect;&nbsp;</a></span>Clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmage_1_1_timer.html#a6d46c5edc40fd404d44d8762c814c5f3">mage::Timer::Clock</a> =  std::chrono::high_resolution_clock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The clock type of timers. </p>
+
+</div>
+</div>
+<a id="a5e38d0ad64043ad3622072e7b6637d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e38d0ad64043ad3622072e7b6637d98">&sect;&nbsp;</a></span>TimeInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">mage::Timer::TimeInterval</a> =  Clock::duration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The time interval type representing the interval between time points of timers. </p>
+
+</div>
+</div>
+<a id="aff202783fe113efdf539f9dc685a158c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff202783fe113efdf539f9dc685a158c">&sect;&nbsp;</a></span>TimeStamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmage_1_1_timer.html#aff202783fe113efdf539f9dc685a158c">mage::Timer::TimeStamp</a> =  Clock::time_point</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The time stamp type representing the time points of timers. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad529d2329ae911c8b4c64efd05a71dd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad529d2329ae911c8b4c64efd05a71dd0">&sect;&nbsp;</a></span>Timer() <span class="overload">[1/3]</span></h2>
 
@@ -545,8 +621,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0ff38a28efd65e7c147c8c399245d06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ff38a28efd65e7c147c8c399245d06">&sect;&nbsp;</a></span>UpdateLastTimestamp()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa85148d55792c8cc703918beede17215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85148d55792c8cc703918beede17215">&sect;&nbsp;</a></span>m_clock</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,25 +632,21 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::Timer::UpdateLastTimestamp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname"><a class="el" href="classmage_1_1_timer.html#a6d46c5edc40fd404d44d8762c814c5f3">Clock</a> mage::Timer::m_clock</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Updates the last timestamp of this timer. </p>
+<p>The clock of this timer. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2a6fcda6238524401de58b4462121286"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a6fcda6238524401de58b4462121286">&sect;&nbsp;</a></span>m_delta_time</h2>
+<a id="a05eac9cb442358351b0f2861f70e56b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05eac9cb442358351b0f2861f70e56b9">&sect;&nbsp;</a></span>m_delta_time</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +655,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a> mage::Timer::m_delta_time</td>
+          <td class="memname"><a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">TimeInterval</a> mage::Timer::m_delta_time</td>
         </tr>
       </table>
   </td>
@@ -595,8 +668,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6effbc37827492397cc781a78165a08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6effbc37827492397cc781a78165a08a">&sect;&nbsp;</a></span>m_last_timestamp</h2>
+<a id="af87b641f17eba20552a7a309dfc3761a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87b641f17eba20552a7a309dfc3761a">&sect;&nbsp;</a></span>m_last_timestamp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +678,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">LARGE_INTEGER mage::Timer::m_last_timestamp</td>
+          <td class="memname"><a class="el" href="classmage_1_1_timer.html#aff202783fe113efdf539f9dc685a158c">TimeStamp</a> mage::Timer::m_last_timestamp</td>
         </tr>
       </table>
   </td>
@@ -641,8 +714,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a64e9afd31a95058e1736e84122c663d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e9afd31a95058e1736e84122c663d3">&sect;&nbsp;</a></span>m_time_frequency</h2>
+<a id="a642e43f01ce61c54c89ea116235342e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642e43f01ce61c54c89ea116235342e9">&sect;&nbsp;</a></span>m_total_delta_time</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,53 +724,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">LARGE_INTEGER mage::Timer::m_time_frequency</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The time frequency of this timer. </p>
-
-</div>
-</div>
-<a id="a666e06f94a9c5875ab6cbce8d2750a11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a666e06f94a9c5875ab6cbce8d2750a11">&sect;&nbsp;</a></span>m_time_period</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a> mage::Timer::m_time_period</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The time period of this timer. </p>
-
-</div>
-</div>
-<a id="a597eae6b756d0f50bcb1541db0f1c7f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597eae6b756d0f50bcb1541db0f1c7f0">&sect;&nbsp;</a></span>m_total_delta_time</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a> mage::Timer::m_total_delta_time</td>
+          <td class="memname"><a class="el" href="classmage_1_1_timer.html#a5e38d0ad64043ad3622072e7b6637d98">TimeInterval</a> mage::Timer::m_total_delta_time</td>
         </tr>
       </table>
   </td>

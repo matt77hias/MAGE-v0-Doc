@@ -26,6 +26,7 @@ var searchData=
   ['inputtextstate',['InputTextState',['../struct_im_gui_context.html#ae8626ef18bc5a848691a0c50e2c0f7ae',1,'ImGuiContext']]],
   ['insert_5flength',['insert_length',['../struct_stb_undo_record.html#ae2a3af79db791549db0c42263407cab5',1,'StbUndoRecord']]],
   ['insert_5fmode',['insert_mode',['../struct_s_t_b___textedit_state.html#af26029a4f1f76d043afd35072fabcb4b',1,'STB_TexteditState']]],
+  ['invalid',['Invalid',['../namespacemage.html#acdcb558494768c1e3e8b6c0bdff8f38f',1,'mage']]],
   ['io',['IO',['../struct_im_gui_context.html#add4fdcc8c6a437d8f8e7c837418be83c',1,'ImGuiContext']]],
   ['isbeingresized',['IsBeingResized',['../struct_im_gui_columns_set.html#af9ef4186dd06147173a0e1dc12085399',1,'ImGuiColumnsSet']]],
   ['isfirstframe',['IsFirstFrame',['../struct_im_gui_columns_set.html#a814bdfd8c72548d2c93675c8d6e974e9',1,'ImGuiColumnsSet']]],

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.123.0</span>
+   &#160;<span id="projectnumber">v0.125.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -287,6 +287,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="classmage_1_1_g_buffer_pass.html#a4a13364cc0318417f31df50d7081b0b0">mage::GBufferPass</a>
 , <a class="el" href="classmage_1_1_shading_normal_pass.html#a49c57b6c8a6aee0678556f25f9c97d11">mage::ShadingNormalPass</a>
 , <a class="el" href="classmage_1_1_sky_pass.html#aa74c5e32a917aac610b2c7e4750c4639">mage::SkyPass</a>
+, <a class="el" href="classmage_1_1_sprite_batch.html#aaf4062713fa20c12a3ec5232ebe9bff3">mage::SpriteBatch</a>
 , <a class="el" href="classmage_1_1_sprite_pass.html#accdad82309711cb5248d61de1a85c8d1">mage::SpritePass</a>
 , <a class="el" href="classmage_1_1_variable_component_pass.html#af020fa18b0df2abe39d953d9e78db37d">mage::VariableComponentPass</a>
 , <a class="el" href="classmage_1_1_variable_shading_pass.html#a3a5bf4764bdafd393c73b75939f68aa0">mage::VariableShadingPass</a>
@@ -382,7 +383,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>BindPS()
 : <a class="el" href="classmage_1_1_constant_component_pass.html#a6027d0f628ffd03618aebacb35672c6e">mage::ConstantComponentPass</a>
-, <a class="el" href="classmage_1_1_g_buffer_pass.html#a750c27aa6f562b53d62f845ce50e731d">mage::GBufferPass</a>
+, <a class="el" href="classmage_1_1_g_buffer_pass.html#afe16e10cc6d3c7d56d387eb1fe2a66ee">mage::GBufferPass</a>
 , <a class="el" href="classmage_1_1_shading_normal_pass.html#ab691c2125f9e21c7e70f2737037504bc">mage::ShadingNormalPass</a>
 , <a class="el" href="classmage_1_1_variable_shading_pass.html#a9352c4b8b435254768c3407550458fb5">mage::VariableShadingPass</a>
 </li>
@@ -430,17 +431,14 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 : <a class="el" href="structmage_1_1_pipeline_1_1_r_s.html#a11ee6c76dd0c05eecc0f09df7dc61068">mage::Pipeline::RS</a>
 </li>
 <li>BindShader()
-: <a class="el" href="structmage_1_1_pipeline_1_1_c_s.html#ae83ab12b384c493f6b9ff0efc6bdaeaa">mage::Pipeline::CS</a>
+: <a class="el" href="structmage_1_1_pipeline_1_1_c_s.html#ac378ead24d5f1d9ccac5de7a72f44493">mage::Pipeline::CS</a>
 , <a class="el" href="structmage_1_1_pipeline_1_1_d_s.html#ad41e00da4b90a22d099042f64b5d19af">mage::Pipeline::DS</a>
 , <a class="el" href="structmage_1_1_pipeline_1_1_g_s.html#a3ba4efb8ae325132fc9483e38eccf5a0">mage::Pipeline::GS</a>
-, <a class="el" href="structmage_1_1_pipeline_1_1_h_s.html#ab8e7dc82b2f7e9e06f49b0b13f48b99f">mage::Pipeline::HS</a>
+, <a class="el" href="structmage_1_1_pipeline_1_1_h_s.html#a85e53d06ba56c798511d6e9c877d53b7">mage::Pipeline::HS</a>
 , <a class="el" href="structmage_1_1_pipeline_1_1_p_s.html#a927bfd83ee12c38dd135c145d0f90f13">mage::Pipeline::PS</a>
-, <a class="el" href="structmage_1_1_pipeline_1_1_v_s.html#aabe96093ea07afa168a9358cee708417">mage::Pipeline::VS</a>
+, <a class="el" href="structmage_1_1_pipeline_1_1_v_s.html#a1b7ec209e98582cc1ec16ffc7d6600e2">mage::Pipeline::VS</a>
 , <a class="el" href="classmage_1_1_shader.html#ae21e9f9a4e97d8d73f3988815c1cb205">mage::Shader&lt; ShaderT, PipelineStageT &gt;</a>
 , <a class="el" href="classmage_1_1_vertex_shader.html#a0bf5c65381875e158f620cfee90f16a8">mage::VertexShader</a>
-</li>
-<li>BindSpriteBatch()
-: <a class="el" href="classmage_1_1_sprite_batch.html#ae37c48045926d4758b6c701c06be64de">mage::SpriteBatch</a>
 </li>
 <li>BindSRV()
 : <a class="el" href="structmage_1_1_pipeline.html#a268c55b2697594adfc6f46afa27ec046">mage::Pipeline</a>
@@ -497,19 +495,19 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 : <a class="el" href="classmage_1_1_rendering_state_manager.html#a1e199563076b4596bfaa0bac22a86848">mage::RenderingStateManager</a>
 </li>
 <li>BlendStateIndex
-: <a class="el" href="classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984">mage::RenderingStateManager</a>
+: <a class="el" href="classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64c">mage::RenderingStateManager</a>
 </li>
 <li>BlobCompiledShader()
 : <a class="el" href="classmage_1_1_blob_compiled_shader.html#adc5b712c668912296a634bffb3a31e68">mage::BlobCompiledShader</a>
 </li>
+<li>BoundingFrustum()
+: <a class="el" href="classmage_1_1_bounding_frustum.html#afafc5433abc80e872242b5488ca0c835">mage::BoundingFrustum</a>
+</li>
+<li>BoundingSphere()
+: <a class="el" href="classmage_1_1_bounding_sphere.html#a6117f902c00f9ef11633274fca43430f">mage::BoundingSphere</a>
+</li>
 <li>BoundingVolumePass()
-: <a class="el" href="classmage_1_1_bounding_volume_pass.html#a21408cc53051c9c6d94efe41b3bea404">mage::BoundingVolumePass</a>
-</li>
-<li>BROADCAST
-: <a class="el" href="classmage_1_1_condition_variable.html#ae7627253bf4faebc0aae84a77920d195a5863233d3c1e62ca806753b0d175199f">mage::ConditionVariable</a>
-</li>
-<li>BS()
-: <a class="el" href="classmage_1_1_b_s.html#a16e3f5e75f0af8f88f5c0fca7101975e">mage::BS</a>
+: <a class="el" href="classmage_1_1_bounding_volume_pass.html#ab32eb9086e463f5260f8999b78b55b26">mage::BoundingVolumePass</a>
 </li>
 <li>Buf
 : <a class="el" href="struct_example_app_log.html#a74fb7cd7bd8c2507b41331ebb7d0e56d">ExampleAppLog</a>

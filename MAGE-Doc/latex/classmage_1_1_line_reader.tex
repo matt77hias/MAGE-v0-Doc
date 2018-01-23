@@ -17,9 +17,9 @@ Inheritance diagram for mage\+:\+:Line\+Reader\+:\begin{figure}[H]
 \item 
 \hyperlink{classmage_1_1_line_reader}{Line\+Reader} \& \hyperlink{classmage_1_1_line_reader_a3ba691cb32a1ab5dcbe75498068c1b86}{operator=} (\hyperlink{classmage_1_1_line_reader}{Line\+Reader} \&\&reader) noexcept
 \item 
-void \hyperlink{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}{Read\+From\+File} (wstring fname, string delimiters=\hyperlink{namespacemage_a10fe126e627cc2ce8af2cc39cc5db81e}{g\+\_\+default\+\_\+delimiters})
+void \hyperlink{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}{Read\+From\+File} (wstring fname, string delimiters=\hyperlink{namespacemage_a6879c3f0af5374a14ec980588b74061d}{g\+\_\+default\+\_\+delimiters})
 \item 
-void \hyperlink{classmage_1_1_line_reader_a35ceefa0efd4ccfc3c1401715c0934de}{Read\+From\+Memory} (const char $\ast$input, string delimiters=\hyperlink{namespacemage_a10fe126e627cc2ce8af2cc39cc5db81e}{g\+\_\+default\+\_\+delimiters})
+void \hyperlink{classmage_1_1_line_reader_a35ceefa0efd4ccfc3c1401715c0934de}{Read\+From\+Memory} (const char $\ast$input, string delimiters=\hyperlink{namespacemage_a6879c3f0af5374a14ec980588b74061d}{g\+\_\+default\+\_\+delimiters})
 \item 
 const wstring \& \hyperlink{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}{Get\+Filename} () const noexcept
 \item 
@@ -46,11 +46,11 @@ const string \hyperlink{classmage_1_1_line_reader_ae9a7547d01b29c3237b198444d4f3
 \item 
 {\footnotesize template$<$typename DataT $>$ }\\const DataT \hyperlink{classmage_1_1_line_reader_aa1ba5aa332e49bdd63ef4ee4021120fd}{Read} ()
 \item 
-bool \hyperlink{classmage_1_1_line_reader_a7eb54d60902d1fb7846ea5c566312a0f}{Has\+Chars} () const
+bool \hyperlink{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f}{Contains\+Chars} () const
 \item 
-bool \hyperlink{classmage_1_1_line_reader_ac92de9a3d986c7031c902c9489cfaa5a}{Has\+Quoted\+String} () const
+bool \hyperlink{classmage_1_1_line_reader_a99b4fa47fc341ad4fda112ea9505efcb}{Contains\+Quoted\+String} () const
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\bool \hyperlink{classmage_1_1_line_reader_a3feef41f3ae6ff506539ffd2f6d38043}{Has} () const
+{\footnotesize template$<$typename DataT $>$ }\\bool \hyperlink{classmage_1_1_line_reader_a3401db2b0ecd15d8048a1b321eceb77a}{Contains} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -124,6 +124,45 @@ Constructs a line reader by moving the given line reader.
 Destructs this line reader. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_line_reader_a3401db2b0ecd15d8048a1b321eceb77a}{}\label{classmage_1_1_line_reader_a3401db2b0ecd15d8048a1b321eceb77a} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Contains@{Contains}}
+\index{Contains@{Contains}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+bool mage\+::\+Line\+Reader\+::\+Contains (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the next token of this line reader is a {\ttfamily DataT} element.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em DataT} & The data type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the next token of this line reader is a {\ttfamily DataT} element. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f}{}\label{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Contains\+Chars@{Contains\+Chars}}
+\index{Contains\+Chars@{Contains\+Chars}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Contains\+Chars()}{ContainsChars()}}
+{\footnotesize\ttfamily bool mage\+::\+Line\+Reader\+::\+Contains\+Chars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether this line reader has a next token.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this line reader has a next token. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_line_reader_a99b4fa47fc341ad4fda112ea9505efcb}{}\label{classmage_1_1_line_reader_a99b4fa47fc341ad4fda112ea9505efcb} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Contains\+Quoted\+String@{Contains\+Quoted\+String}}
+\index{Contains\+Quoted\+String@{Contains\+Quoted\+String}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Contains\+Quoted\+String()}{ContainsQuotedString()}}
+{\footnotesize\ttfamily bool mage\+::\+Line\+Reader\+::\+Contains\+Quoted\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the next token of this line reader is a quoted string.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the next token of this line reader is a quoted string. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_line_reader_aa0ed768e2799b74f2341c56fc6ac4969}{}\label{classmage_1_1_line_reader_aa0ed768e2799b74f2341c56fc6ac4969} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}}
 \index{Get\+Current\+Line\+Number@{Get\+Current\+Line\+Number}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
@@ -156,45 +195,6 @@ Returns the current filename of this line reader.
 
 \begin{DoxyReturn}{Returns}
 A reference to the current filename of this line reader. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_line_reader_a3feef41f3ae6ff506539ffd2f6d38043}{}\label{classmage_1_1_line_reader_a3feef41f3ae6ff506539ffd2f6d38043} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Has@{Has}}
-\index{Has@{Has}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Has()}{Has()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-bool mage\+::\+Line\+Reader\+::\+Has (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
-
-Checks whether the next token of this line reader is a {\ttfamily DataT} element.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
-\hline
-\end{DoxyTemplParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if the next token of this line reader is a {\ttfamily DataT} element. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_line_reader_a7eb54d60902d1fb7846ea5c566312a0f}{}\label{classmage_1_1_line_reader_a7eb54d60902d1fb7846ea5c566312a0f} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Has\+Chars@{Has\+Chars}}
-\index{Has\+Chars@{Has\+Chars}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Has\+Chars()}{HasChars()}}
-{\footnotesize\ttfamily bool mage\+::\+Line\+Reader\+::\+Has\+Chars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
-
-Checks whether this line reader has a next token.
-
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if this line reader has a next token. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_line_reader_ac92de9a3d986c7031c902c9489cfaa5a}{}\label{classmage_1_1_line_reader_ac92de9a3d986c7031c902c9489cfaa5a} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Has\+Quoted\+String@{Has\+Quoted\+String}}
-\index{Has\+Quoted\+String@{Has\+Quoted\+String}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Has\+Quoted\+String()}{HasQuotedString()}}
-{\footnotesize\ttfamily bool mage\+::\+Line\+Reader\+::\+Has\+Quoted\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
-
-Checks whether the next token of this line reader is a quoted string.
-
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if the next token of this line reader is a quoted string. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}{}\label{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!operator=@{operator=}}
@@ -304,7 +304,7 @@ The string represented by the next token of this line reader.
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{wstring}]{fname,  }\item[{string}]{delimiters = {\ttfamily \hyperlink{namespacemage_a10fe126e627cc2ce8af2cc39cc5db81e}{g\+\_\+default\+\_\+delimiters}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{wstring}]{fname,  }\item[{string}]{delimiters = {\ttfamily \hyperlink{namespacemage_a6879c3f0af5374a14ec980588b74061d}{g\+\_\+default\+\_\+delimiters}} }\end{DoxyParamCaption})}
 
 Reads from the given file.
 
@@ -324,7 +324,7 @@ Reads from the given file.
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
 \index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{string}]{delimiters = {\ttfamily \hyperlink{namespacemage_a10fe126e627cc2ce8af2cc39cc5db81e}{g\+\_\+default\+\_\+delimiters}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{string}]{delimiters = {\ttfamily \hyperlink{namespacemage_a6879c3f0af5374a14ec980588b74061d}{g\+\_\+default\+\_\+delimiters}} }\end{DoxyParamCaption})}
 
 Reads the input string.
 

@@ -2,7 +2,6 @@ var searchData=
 [
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
   ['scenemanager',['SceneManager',['../classmage_1_1_scene_manager.html',1,'mage']]],
-  ['semaphore',['Semaphore',['../classmage_1_1_semaphore.html',1,'mage']]],
   ['shader',['Shader',['../classmage_1_1_shader.html',1,'mage']]],
   ['shadingnormalpass',['ShadingNormalPass',['../classmage_1_1_shading_normal_pass.html',1,'mage']]],
   ['shadowcubemapbuffer',['ShadowCubeMapBuffer',['../structmage_1_1_shadow_cube_map_buffer.html',1,'mage']]],
@@ -17,7 +16,7 @@ var searchData=
   ['spritebatch',['SpriteBatch',['../classmage_1_1_sprite_batch.html',1,'mage']]],
   ['spritebatchmesh',['SpriteBatchMesh',['../classmage_1_1_sprite_batch_mesh.html',1,'mage']]],
   ['spritefont',['SpriteFont',['../classmage_1_1_sprite_font.html',1,'mage']]],
-  ['spritefontdescriptor',['SpriteFontDescriptor',['../structmage_1_1_sprite_font_descriptor.html',1,'mage']]],
+  ['spritefontdescriptor',['SpriteFontDescriptor',['../classmage_1_1_sprite_font_descriptor.html',1,'mage']]],
   ['spritefontoutput',['SpriteFontOutput',['../structmage_1_1_sprite_font_output.html',1,'mage']]],
   ['spritefontreader',['SpriteFontReader',['../classmage_1_1loader_1_1_sprite_font_reader.html',1,'mage::loader']]],
   ['spriteimage',['SpriteImage',['../classmage_1_1_sprite_image.html',1,'mage']]],

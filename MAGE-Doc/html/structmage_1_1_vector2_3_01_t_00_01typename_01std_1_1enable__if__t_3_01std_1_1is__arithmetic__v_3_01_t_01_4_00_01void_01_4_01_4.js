@@ -11,8 +11,8 @@ var structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1
     [ "GetData", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#ad6e08e161a4665e596c1bad2005bbc58", null ],
     [ "operator=", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#a2de8da8b895d5efd29fe92ec6f51a29f", null ],
     [ "operator=", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#ada30d8074f6248b662d85e643cd2e74e", null ],
-    [ "operator[]", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#a3aad05894037ae8e6bcc302bf665ddb1", null ],
-    [ "operator[]", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#aa6100d6e9df0aa6524a04e54fac4e759", null ],
+    [ "operator[]", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#ad4e66e44c59e34b4f76f099f7ebb7420", null ],
+    [ "operator[]", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#acc9b027c370b6dd525e1966c3bc973b4", null ],
     [ "m_x", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#af5aba87d900fbc0cc9969404ec4e5275", null ],
     [ "m_y", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#a11918fcf04043c20192ff5b1ded467b8", null ]
 ];

@@ -4,6 +4,34 @@
 
 {\ttfamily \#include $<$resource\+\_\+manager.\+hpp$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_compute_shader_01_4}{Resource\+Record$<$ Compute\+Shader $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_domain_shader_01_4}{Resource\+Record$<$ Domain\+Shader $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_geometry_shader_01_4}{Resource\+Record$<$ Geometry\+Shader $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_hull_shader_01_4}{Resource\+Record$<$ Hull\+Shader $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_pixel_shader_01_4}{Resource\+Record$<$ Pixel\+Shader $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_variable_script_01_4}{Resource\+Record$<$ Variable\+Script $>$}
+\item 
+struct \hyperlink{structmage_1_1_resource_manager_1_1_resource_record_3_01_vertex_shader_01_4}{Resource\+Record$<$ Vertex\+Shader $>$}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename ResourceT $>$ }\\using \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type} = typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}
+\item 
+{\footnotesize template$<$typename ResourceT $>$ }\\using \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type} = typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::pool\+\_\+type\+::key\+\_\+type
+\item 
+{\footnotesize template$<$typename ResourceT $>$ }\\using \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{value\+\_\+type} = typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::pool\+\_\+type\+::value\+\_\+type
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,7 +39,7 @@
 \item 
 \hyperlink{classmage_1_1_resource_manager_ac93f3ab65a9f45539b5a0221ebc197fe}{Resource\+Manager} (const \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&manager)=delete
 \item 
-\hyperlink{classmage_1_1_resource_manager_a243bf757dc9f90cfaf57cb9d5f42349f}{Resource\+Manager} (\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&\&manager)
+\hyperlink{classmage_1_1_resource_manager_af4070faaf8c55fcdbba44662111eda91}{Resource\+Manager} (\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&\&manager)=delete
 \item 
 \hyperlink{classmage_1_1_resource_manager_ad4bed85d3656f90072c5d47f50618add}{$\sim$\+Resource\+Manager} ()
 \item 
@@ -19,64 +47,96 @@
 \item 
 \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \& \hyperlink{classmage_1_1_resource_manager_ac301d52cd5d6418013458f8090e19c88}{operator=} (\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&\&manager)=delete
 \item 
-{\footnotesize template$<$typename ResourceT $>$ }\\bool \hyperlink{classmage_1_1_resource_manager_aa6900b8af5f17f791a551dc2d4ee35e7}{Has} (const wstring \&guid) noexcept
+{\footnotesize template$<$typename ResourceT $>$ }\\bool \hyperlink{classmage_1_1_resource_manager_a51a3fec3f1cd1ea71a8f8477b8008df2}{Contains} (const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&guid) noexcept
 \item 
-{\footnotesize template$<$typename ResourceT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ \hyperlink{classmage_1_1_resource_manager_a2888fcd54840af47d7ebf6fee8a9d56c}{Get} (const wstring \&guid) noexcept
+{\footnotesize template$<$typename ResourceT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ typename \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{value\+\_\+type}$<$ ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a72fd77c4fb4286d9071ed5c63365ccd2}{Get} (const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&guid) noexcept
 \item 
-{\footnotesize template$<$typename ResourceT $>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_resource_manager_a4fb37f2f49e918e69e9acfe1ed0bb21b}{Get\+Mutable} (const wstring \&guid) noexcept
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a1ef26ddcc9e3f06fbe454794c8ea3b1d}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a2195cf4c559bbf8473129623fbbefda7}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a82e7465ae1c2b3eadabe35b4ca9b4bb7}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_ae8ec0451d309d4d77e97af02359b19af}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a7c3f28879378df020f20af26224c317e}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_adeee211203bf0cc5ba8a7d7a76bcb8d8}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a57a8396c7a7e9bdabcdcad3ab11664c7}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a3806319366158069471e3eb194e1c6e3}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_texture}{Texture}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_ab77cec96c05df7bf54d71edf59fb1106}{Get\+Or\+Create} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
-\item 
-{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_aeda7b180772c301cce2e795869944c5f}{Get\+Or\+Create\+Mutable} (const wstring \&guid, Constructor\+ArgsT \&\&... args)
+{\footnotesize template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ typename \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{value\+\_\+type}$<$ ResourceT $>$ $>$ \hyperlink{classmage_1_1_resource_manager_a9f3b13fa8eb009c55677de7a8d25dae7}{Get\+Or\+Create} (const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&guid, Constructor\+ArgsT \&\&...args)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ \hyperlink{classmage_1_1_resource_manager_a1e6ca77d892578fc4df0e62dfbc807f6}{Get} () noexcept
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename ResourceT $>$ }\\\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ ResourceT $>$ \& \hyperlink{classmage_1_1_resource_manager_aa52be1d19262ba48761a8bf3a7228d76}{Get\+Pool} () noexcept
+\item 
+{\footnotesize template$<$typename ResourceT $>$ }\\const \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ ResourceT $>$ \& \hyperlink{classmage_1_1_resource_manager_af0e98b448cddce09b1026fb38c4ab923}{Get\+Pool} () const noexcept
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{classmage_1_1_resource_manager_af6c13ddf41f4a451a874301e8aa6042f}{m\+\_\+model\+\_\+descriptor\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ \hyperlink{classmage_1_1_resource_manager_a6c79aeb11bed60bdf3e8420fddc72948}{m\+\_\+model\+\_\+descriptor\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_abd7ceeec61ad8380f26f8f55cf530666}{m\+\_\+vs\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_ab8751a95e77af4000106e02bf8b4f8cb}{m\+\_\+vs\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a7eeec15dd7b10202bd9b65de965c3f49}{m\+\_\+hs\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_aada8daa06b929bb23d2b0c2205a1573e}{m\+\_\+hs\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a4e9ddded7fb67fb172fdcd39481f0fa9}{m\+\_\+ds\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a75da17496bfee1396d5f99c4b2f6534f}{m\+\_\+ds\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a4ee2d44efc1e07cb66f9aff2f36b1ef1}{m\+\_\+gs\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a8a1187e9291a442df598cdccd947432f}{m\+\_\+gs\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a0366e1441cd795c9d05b93d4e0820fca}{m\+\_\+ps\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_ad42cd06ff92906685055f9374366136f}{m\+\_\+ps\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a9814578b0ce98e74f95e825caf554c59}{m\+\_\+cs\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader} $>$ \hyperlink{classmage_1_1_resource_manager_a1af8cfdf9fbde3d3ed135fea32330ea1}{m\+\_\+cs\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{classmage_1_1_resource_manager_a258659adedbd3aa060bb8c7b77c08995}{m\+\_\+sprite\+\_\+font\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ \hyperlink{classmage_1_1_resource_manager_a17287590aebff7d1f345dd83af5980fd}{m\+\_\+sprite\+\_\+font\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_resource_manager_afd1a86759068e33e06df595ac0fd212c}{m\+\_\+texture\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_resource_manager_a28913331d5e5ac747df30c058c9263c4}{m\+\_\+texture\+\_\+pool}
 \item 
-\hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \hyperlink{classmage_1_1_resource_manager_a0da21bf8c511af4238cd1be0f7f7d31d}{m\+\_\+variable\+\_\+script\+\_\+pool}
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \hyperlink{classmage_1_1_resource_manager_a8f1826ab2392b60265afe5ba1ef2c4ed}{m\+\_\+variable\+\_\+script\+\_\+pool}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A class of resource managers. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{}\label{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!key\+\_\+type@{key\+\_\+type}}
+\index{key\+\_\+type@{key\+\_\+type}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{key\+\_\+type}{key\_type}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+using \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{mage\+::\+Resource\+Manager\+::key\+\_\+type} =  typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::pool\+\_\+type\+::key\+\_\+type}
+
+The key type of resource pools containing resources of the given type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{}\label{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!pool\+\_\+type@{pool\+\_\+type}}
+\index{pool\+\_\+type@{pool\+\_\+type}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{pool\+\_\+type}{pool\_type}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+using \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{mage\+::\+Resource\+Manager\+::pool\+\_\+type} =  typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}}
+
+The pool type of resource pools containing resources of the given type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{}\label{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+using \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{mage\+::\+Resource\+Manager\+::value\+\_\+type} =  typename \hyperlink{structmage_1_1_resource_manager_1_1_resource_record}{Resource\+Record}$<$ ResourceT $>$\+::pool\+\_\+type\+::value\+\_\+type}
+
+The value type of resource pools containing resources of the given type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_resource_manager_a0ff509899a9fbef2096c60b3d3d80bd5}{}\label{classmage_1_1_resource_manager_a0ff509899a9fbef2096c60b3d3d80bd5} 
@@ -98,11 +158,11 @@ Constructs a resource manager from the given resource manager.
 \mbox{\tt in}  & {\em manager} & A reference to the resource manager to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_resource_manager_a243bf757dc9f90cfaf57cb9d5f42349f}{}\label{classmage_1_1_resource_manager_a243bf757dc9f90cfaf57cb9d5f42349f} 
+\hypertarget{classmage_1_1_resource_manager_af4070faaf8c55fcdbba44662111eda91}{}\label{classmage_1_1_resource_manager_af4070faaf8c55fcdbba44662111eda91} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Resource\+Manager@{Resource\+Manager}}
 \index{Resource\+Manager@{Resource\+Manager}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Resource\+Manager()}{ResourceManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a resource manager by moving the given resource manager.
 
@@ -120,384 +180,12 @@ Constructs a resource manager by moving the given resource manager.
 Destructs this resource manager. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_resource_manager_a1e6ca77d892578fc4df0e62dfbc807f6}{}\label{classmage_1_1_resource_manager_a1e6ca77d892578fc4df0e62dfbc807f6} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get@{Get}}
-\index{Get@{Get}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ mage\+::\+Resource\+Manager\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
-
-Returns the resource manager associated with the current engine.
-
-\begin{DoxyPrecond}{Precondition}
-The current engine must exist. 
-\end{DoxyPrecond}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource manager associated with the current engine. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_manager_a2888fcd54840af47d7ebf6fee8a9d56c}{}\label{classmage_1_1_resource_manager_a2888fcd54840af47d7ebf6fee8a9d56c} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get@{Get}}
-\index{Get@{Get}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\hypertarget{classmage_1_1_resource_manager_a51a3fec3f1cd1ea71a8f8477b8008df2}{}\label{classmage_1_1_resource_manager_a51a3fec3f1cd1ea71a8f8477b8008df2} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Contains@{Contains}}
+\index{Contains@{Contains}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
 {\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ mage\+::\+Resource\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the resource of the given type corresponding to the given globally unique identifier of this resource manager.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the model descriptor. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily nullptr}, if this resource managers does not contain a resource of the given type corresponding to the given globally unique identifier. 
-
-A pointer to the resource. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_manager_a4fb37f2f49e918e69e9acfe1ed0bb21b}{}\label{classmage_1_1_resource_manager_a4fb37f2f49e918e69e9acfe1ed0bb21b} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Mutable@{Get\+Mutable}}
-\index{Get\+Mutable@{Get\+Mutable}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Mutable()}{GetMutable()}}
-{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ mage\+::\+Resource\+Manager\+::\+Get\+Mutable (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the resource of the given type corresponding to the given globally unique identifier of this resource manager.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the model descriptor. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily nullptr}, if this resource managers does not contain a resource of the given type corresponding to the given globally unique identifier. 
-
-A pointer to the resource. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_manager_a1ef26ddcc9e3f06fbe454794c8ea3b1d}{}\label{classmage_1_1_resource_manager_a1ef26ddcc9e3f06fbe454794c8ea3b1d} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_a2195cf4c559bbf8473129623fbbefda7}{}\label{classmage_1_1_resource_manager_a2195cf4c559bbf8473129623fbbefda7} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_a82e7465ae1c2b3eadabe35b4ca9b4bb7}{}\label{classmage_1_1_resource_manager_a82e7465ae1c2b3eadabe35b4ca9b4bb7} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_ae8ec0451d309d4d77e97af02359b19af}{}\label{classmage_1_1_resource_manager_ae8ec0451d309d4d77e97af02359b19af} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_a7c3f28879378df020f20af26224c317e}{}\label{classmage_1_1_resource_manager_a7c3f28879378df020f20af26224c317e} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_adeee211203bf0cc5ba8a7d7a76bcb8d8}{}\label{classmage_1_1_resource_manager_adeee211203bf0cc5ba8a7d7a76bcb8d8} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_a57a8396c7a7e9bdabcdcad3ab11664c7}{}\label{classmage_1_1_resource_manager_a57a8396c7a7e9bdabcdcad3ab11664c7} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_a3806319366158069471e3eb194e1c6e3}{}\label{classmage_1_1_resource_manager_a3806319366158069471e3eb194e1c6e3} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_ab77cec96c05df7bf54d71edf59fb1106}{}\label{classmage_1_1_resource_manager_ab77cec96c05df7bf54d71edf59fb1106} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
-\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_texture}{Texture}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_aeda7b180772c301cce2e795869944c5f}{}\label{classmage_1_1_resource_manager_aeda7b180772c301cce2e795869944c5f} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create\+Mutable@{Get\+Or\+Create\+Mutable}}
-\index{Get\+Or\+Create\+Mutable@{Get\+Or\+Create\+Mutable}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create\+Mutable()}{GetOrCreateMutable()}}
-{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
-std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script}, ResourceT $>$, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create\+Mutable (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Creates a resource of the given type (if not existing).
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em ResourceT} & The resource type. \\
-\hline
-{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_resource_manager_aa6900b8af5f17f791a551dc2d4ee35e7}{}\label{classmage_1_1_resource_manager_aa6900b8af5f17f791a551dc2d4ee35e7} 
-\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Has@{Has}}
-\index{Has@{Has}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
-\subsubsection{\texorpdfstring{Has()}{Has()}}
-{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
-bool mage\+::\+Resource\+Manager\+::\+Has (\begin{DoxyParamCaption}\item[{const wstring \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+bool mage\+::\+Resource\+Manager\+::\+Contains (\begin{DoxyParamCaption}\item[{const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Checks whether this resource manager contains a resource of the given type corresponding to the given globally unique identifier.
 
@@ -513,6 +201,109 @@ Checks whether this resource manager contains a resource of the given type corre
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this resource managers contains a resource of the given type corresponding to the given globally unique identifier. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_manager_a1e6ca77d892578fc4df0e62dfbc807f6}{}\label{classmage_1_1_resource_manager_a1e6ca77d892578fc4df0e62dfbc807f6} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} $\ast$ mage\+::\+Resource\+Manager\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+Returns the resource manager associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The current engine must exist. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the resource manager associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_manager_a72fd77c4fb4286d9071ed5c63365ccd2}{}\label{classmage_1_1_resource_manager_a72fd77c4fb4286d9071ed5c63365ccd2} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ typename \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{value\+\_\+type}$<$ ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&}]{guid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the resource of the given type corresponding to the given globally unique identifier of this resource manager.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the model descriptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr}, if this resource managers does not contain a resource of the given type corresponding to the given globally unique identifier. 
+
+A pointer to the resource. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_manager_a9f3b13fa8eb009c55677de7a8d25dae7}{}\label{classmage_1_1_resource_manager_a9f3b13fa8eb009c55677de7a8d25dae7} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Or\+Create@{Get\+Or\+Create}}
+\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}}
+{\footnotesize\ttfamily template$<$typename ResourceT , typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ typename \hyperlink{classmage_1_1_resource_manager_aaa3a9fe40c809cd51eda14d2322746ac}{value\+\_\+type}$<$ ResourceT $>$ $>$ mage\+::\+Resource\+Manager\+::\+Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const typename \hyperlink{classmage_1_1_resource_manager_a5109dfe000a336d9fd2d467ba3dda5a1}{key\+\_\+type}$<$ ResourceT $>$ \&}]{guid,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Creates a resource of the given type (if not existing).
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+{\em Constructor\+ArgsT} & The constructor argument types of the resource (excluding the type of the globally unique identifier). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em guid} & A reference to the globally unique identifier of the resource. \\
+\hline
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments for the resource (excluding the globally unique identifier). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the resource. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the resource. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_resource_manager_aa52be1d19262ba48761a8bf3a7228d76}{}\label{classmage_1_1_resource_manager_aa52be1d19262ba48761a8bf3a7228d76} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Pool@{Get\+Pool}}
+\index{Get\+Pool@{Get\+Pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Pool()}{GetPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+\hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ ResourceT $>$\& mage\+::\+Resource\+Manager\+::\+Get\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the resource pool containing resources of the given type of this resource manager.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A reference to the the resource pool containing resources of the given type of this resource manager. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_resource_manager_af0e98b448cddce09b1026fb38c4ab923}{}\label{classmage_1_1_resource_manager_af0e98b448cddce09b1026fb38c4ab923} 
+\index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Pool@{Get\+Pool}}
+\index{Get\+Pool@{Get\+Pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Pool()}{GetPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ResourceT $>$ \\
+const \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ ResourceT $>$\& mage\+::\+Resource\+Manager\+::\+Get\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the resource pool containing resources of the given type of this resource manager.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ResourceT} & The resource type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A reference to the the resource pool containing resources of the given type of this resource manager. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_resource_manager_ab0ca87429aaded525d03320dabd5cc67}{}\label{classmage_1_1_resource_manager_ab0ca87429aaded525d03320dabd5cc67} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!operator=@{operator=}}
@@ -549,64 +340,64 @@ A reference to the moved resource manager (i.\+e. this resource manager).
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_resource_manager_a9814578b0ce98e74f95e825caf554c59}{}\label{classmage_1_1_resource_manager_a9814578b0ce98e74f95e825caf554c59} 
+\hypertarget{classmage_1_1_resource_manager_a1af8cfdf9fbde3d3ed135fea32330ea1}{}\label{classmage_1_1_resource_manager_a1af8cfdf9fbde3d3ed135fea32330ea1} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+cs\+\_\+pool@{m\+\_\+cs\+\_\+pool}}
 \index{m\+\_\+cs\+\_\+pool@{m\+\_\+cs\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+cs\+\_\+pool}{m\_cs\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+cs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_ae040329401484b076f0cd1a7c43d19c9}{Compute\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+cs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The compute shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a4e9ddded7fb67fb172fdcd39481f0fa9}{}\label{classmage_1_1_resource_manager_a4e9ddded7fb67fb172fdcd39481f0fa9} 
+The compute shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a75da17496bfee1396d5f99c4b2f6534f}{}\label{classmage_1_1_resource_manager_a75da17496bfee1396d5f99c4b2f6534f} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+ds\+\_\+pool@{m\+\_\+ds\+\_\+pool}}
 \index{m\+\_\+ds\+\_\+pool@{m\+\_\+ds\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+ds\+\_\+pool}{m\_ds\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+ds\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_aef8cda73e2387cb89baa6c54a7fea542}{Domain\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+ds\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The domain shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a4ee2d44efc1e07cb66f9aff2f36b1ef1}{}\label{classmage_1_1_resource_manager_a4ee2d44efc1e07cb66f9aff2f36b1ef1} 
+The domain shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a8a1187e9291a442df598cdccd947432f}{}\label{classmage_1_1_resource_manager_a8a1187e9291a442df598cdccd947432f} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+gs\+\_\+pool@{m\+\_\+gs\+\_\+pool}}
 \index{m\+\_\+gs\+\_\+pool@{m\+\_\+gs\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+gs\+\_\+pool}{m\_gs\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+gs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a0cf0bb4b74903e78658c96412d5687a6}{Geometry\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+gs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The geometry shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a7eeec15dd7b10202bd9b65de965c3f49}{}\label{classmage_1_1_resource_manager_a7eeec15dd7b10202bd9b65de965c3f49} 
+The geometry shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_aada8daa06b929bb23d2b0c2205a1573e}{}\label{classmage_1_1_resource_manager_aada8daa06b929bb23d2b0c2205a1573e} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+hs\+\_\+pool@{m\+\_\+hs\+\_\+pool}}
 \index{m\+\_\+hs\+\_\+pool@{m\+\_\+hs\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+hs\+\_\+pool}{m\_hs\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+hs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a964e5e384b0e55ac900c819da48b6000}{Hull\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+hs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The hull shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_af6c13ddf41f4a451a874301e8aa6042f}{}\label{classmage_1_1_resource_manager_af6c13ddf41f4a451a874301e8aa6042f} 
+The hull shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a6c79aeb11bed60bdf3e8420fddc72948}{}\label{classmage_1_1_resource_manager_a6c79aeb11bed60bdf3e8420fddc72948} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+model\+\_\+descriptor\+\_\+pool@{m\+\_\+model\+\_\+descriptor\+\_\+pool}}
 \index{m\+\_\+model\+\_\+descriptor\+\_\+pool@{m\+\_\+model\+\_\+descriptor\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+model\+\_\+descriptor\+\_\+pool}{m\_model\_descriptor\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+model\+\_\+descriptor\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_model_descriptor}{Model\+Descriptor} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+model\+\_\+descriptor\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The model descriptor resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a0366e1441cd795c9d05b93d4e0820fca}{}\label{classmage_1_1_resource_manager_a0366e1441cd795c9d05b93d4e0820fca} 
+The model descriptor resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_ad42cd06ff92906685055f9374366136f}{}\label{classmage_1_1_resource_manager_ad42cd06ff92906685055f9374366136f} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+ps\+\_\+pool@{m\+\_\+ps\+\_\+pool}}
 \index{m\+\_\+ps\+\_\+pool@{m\+\_\+ps\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+ps\+\_\+pool}{m\_ps\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+ps\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{namespacemage_a27ecaf266420ee7a494d64edc0757129}{Pixel\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+ps\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The pixel shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a258659adedbd3aa060bb8c7b77c08995}{}\label{classmage_1_1_resource_manager_a258659adedbd3aa060bb8c7b77c08995} 
+The pixel shader resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a17287590aebff7d1f345dd83af5980fd}{}\label{classmage_1_1_resource_manager_a17287590aebff7d1f345dd83af5980fd} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+sprite\+\_\+font\+\_\+pool@{m\+\_\+sprite\+\_\+font\+\_\+pool}}
 \index{m\+\_\+sprite\+\_\+font\+\_\+pool@{m\+\_\+sprite\+\_\+font\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+font\+\_\+pool}{m\_sprite\_font\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+sprite\+\_\+font\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_sprite_font}{Sprite\+Font} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+sprite\+\_\+font\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The sprite font resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_afd1a86759068e33e06df595ac0fd212c}{}\label{classmage_1_1_resource_manager_afd1a86759068e33e06df595ac0fd212c} 
+The sprite font resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a28913331d5e5ac747df30c058c9263c4}{}\label{classmage_1_1_resource_manager_a28913331d5e5ac747df30c058c9263c4} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+texture\+\_\+pool@{m\+\_\+texture\+\_\+pool}}
 \index{m\+\_\+texture\+\_\+pool@{m\+\_\+texture\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+texture\+\_\+pool}{m\_texture\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+texture\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+texture\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The texture resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a0da21bf8c511af4238cd1be0f7f7d31d}{}\label{classmage_1_1_resource_manager_a0da21bf8c511af4238cd1be0f7f7d31d} 
+The texture resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_a8f1826ab2392b60265afe5ba1ef2c4ed}{}\label{classmage_1_1_resource_manager_a8f1826ab2392b60265afe5ba1ef2c4ed} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+variable\+\_\+script\+\_\+pool@{m\+\_\+variable\+\_\+script\+\_\+pool}}
 \index{m\+\_\+variable\+\_\+script\+\_\+pool@{m\+\_\+variable\+\_\+script\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+script\+\_\+pool}{m\_variable\_script\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_pool}{Resource\+Pool}$<$ wstring, \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+variable\+\_\+script\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+variable\+\_\+script\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
-The variable script resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_abd7ceeec61ad8380f26f8f55cf530666}{}\label{classmage_1_1_resource_manager_abd7ceeec61ad8380f26f8f55cf530666} 
+The variable script resource pool of this resource manager. \hypertarget{classmage_1_1_resource_manager_ab8751a95e77af4000106e02bf8b4f8cb}{}\label{classmage_1_1_resource_manager_ab8751a95e77af4000106e02bf8b4f8cb} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+vs\+\_\+pool@{m\+\_\+vs\+\_\+pool}}
 \index{m\+\_\+vs\+\_\+pool@{m\+\_\+vs\+\_\+pool}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+vs\+\_\+pool}{m\_vs\_pool}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ wstring, const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+vs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager_a4416f0a710790d8aa2d0bc006764695a}{pool\+\_\+type}$<$ \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} $>$ mage\+::\+Resource\+Manager\+::m\+\_\+vs\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
 
 The vertex shader resource pool of this resource manager. 

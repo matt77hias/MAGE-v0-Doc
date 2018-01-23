@@ -1,6 +1,6 @@
 var classmage_1_1_single_ended_memory_stack =
 [
-    [ "Allocator", "structmage_1_1_single_ended_memory_stack_1_1_allocator.html", "structmage_1_1_single_ended_memory_stack_1_1_allocator" ],
+    [ "Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html", "classmage_1_1_single_ended_memory_stack_1_1_allocator" ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#ab9555d63b35070aee321cc3839fec3c4", null ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#ae854c4558f0215bf38cb713cbca7fa31", null ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html#afd6632eac3ada6ea88a69b586f27a4e4", null ],

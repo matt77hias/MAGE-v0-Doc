@@ -1,5 +1,16 @@
 var searchData=
 [
   ['alignedvector',['AlignedVector',['../namespacemage.html#a8664bfb5ce2179fc64eae9f82c8a5ba8',1,'mage']]],
-  ['atomics32',['AtomicS32',['../namespacemage.html#a34972c09c02b691cd7cc5ea34db1e778',1,'mage']]]
+  ['atomicbool',['AtomicBool',['../namespacemage.html#a794ef932d4102605931db9d19d0e1c26',1,'mage']]],
+  ['atomicf32',['AtomicF32',['../namespacemage.html#ace9bd675892cb42cb853a341548954c0',1,'mage']]],
+  ['atomicf64',['AtomicF64',['../namespacemage.html#ab2cc04e504835e846af0d240ee026ea7',1,'mage']]],
+  ['atomics16',['AtomicS16',['../namespacemage.html#a9660643e9c62ac64dfb4af730c04fb86',1,'mage']]],
+  ['atomics32',['AtomicS32',['../namespacemage.html#a7f961bb643aadcb9a9e924d83fd0d35c',1,'mage']]],
+  ['atomics64',['AtomicS64',['../namespacemage.html#a147b24d2ff59f4233834377057cd300c',1,'mage']]],
+  ['atomics8',['AtomicS8',['../namespacemage.html#ae7f2be6a6668c7b90b24df7353af4125',1,'mage']]],
+  ['atomicu16',['AtomicU16',['../namespacemage.html#a39c0275d36517042ed50beceefcdbd70',1,'mage']]],
+  ['atomicu32',['AtomicU32',['../namespacemage.html#a3a7951f7b63669a88ed53162ac80c89e',1,'mage']]],
+  ['atomicu64',['AtomicU64',['../namespacemage.html#a694beb1edf301f410ce0b33c96b09871',1,'mage']]],
+  ['atomicu8',['AtomicU8',['../namespacemage.html#a51ea0b4e0b972a9c42ed35c282fa019e',1,'mage']]],
+  ['axisalignedboundingbox',['AxisAlignedBoundingBox',['../namespacemage.html#ac7e79590b6b7448db059bd50e34fbb08',1,'mage']]]
 ];

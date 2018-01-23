@@ -22,6 +22,7 @@ var searchData=
   ['texwidth',['TexWidth',['../struct_im_font_atlas.html#a2d0662502433e7a87b3aa4681ba17aa3',1,'ImFontAtlas']]],
   ['thistle',['Thistle',['../namespacemage_1_1color.html#a16c371f14ad3400c401638bbb965650b',1,'mage::color']]],
   ['time',['Time',['../struct_im_gui_context.html#a88ebae89e11da57e4567767694f7576f',1,'ImGuiContext']]],
+  ['tokenresult',['TokenResult',['../namespacemage.html#a989fefd8314deaa56188a1c5b0bedac6',1,'mage']]],
   ['tomato',['Tomato',['../namespacemage_1_1color.html#ace48831c9fff78216d1c88f110da1bdb',1,'mage::color']]],
   ['tooltipoverridecount',['TooltipOverrideCount',['../struct_im_gui_context.html#a1c6e3c1b866fa1abf473d3cd9eafce0f',1,'ImGuiContext']]],
   ['totalidxcount',['TotalIdxCount',['../struct_im_draw_data.html#a1ac8a5d441f464628295ef91a0602fc5',1,'ImDrawData']]],

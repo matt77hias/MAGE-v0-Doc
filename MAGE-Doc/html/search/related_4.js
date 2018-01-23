@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readwritemutexlock',['ReadWriteMutexLock',['../classmage_1_1_read_write_mutex.html#a9efae7e36aecae5af2a7f3cd6c4e0dbb',1,'mage::ReadWriteMutex']]]
+  ['scene',['Scene',['../classmage_1_1_node_client.html#a032858ae1fe02d2d1170981c2af2d67c',1,'mage::NodeClient']]],
+  ['singleendedmemorystack',['SingleEndedMemoryStack',['../classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a3f3449e5c2caa1666a293b36db6f5a54',1,'mage::SingleEndedMemoryStack::Allocator']]]
 ];

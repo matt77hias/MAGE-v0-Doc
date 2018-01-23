@@ -6,5 +6,5 @@ var searchData=
   ['linereader',['LineReader',['../classmage_1_1_line_reader.html',1,'mage']]],
   ['localtransform',['LocalTransform',['../classmage_1_1_local_transform.html',1,'mage']]],
   ['loggingconfiguration',['LoggingConfiguration',['../classmage_1_1_logging_configuration.html',1,'mage']]],
-  ['lowallocator',['LowAllocator',['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html',1,'mage::DoubleEndedMemoryStack']]]
+  ['lowallocator',['LowAllocator',['../classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html',1,'mage::DoubleEndedMemoryStack']]]
 ];

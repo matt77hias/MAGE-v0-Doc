@@ -1,9 +1,9 @@
 var classmage_1_1_shading_normal_pass =
 [
-    [ "PSIndex", "classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19", [
-      [ "Default", "classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19a7a1920d61156abc05a60135aefe8bc67", null ],
-      [ "TSNM", "classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19a6e02c9f63944ea221e7d55c11ecae07b", null ],
-      [ "Count", "classmage_1_1_shading_normal_pass.html#a6d277753d26a7854c448b3e0d9275b19ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "PSIndex", "classmage_1_1_shading_normal_pass.html#a05bd054001817e1f57cd5cd41e2e522e", [
+      [ "Default", "classmage_1_1_shading_normal_pass.html#a05bd054001817e1f57cd5cd41e2e522ea7a1920d61156abc05a60135aefe8bc67", null ],
+      [ "TSNM", "classmage_1_1_shading_normal_pass.html#a05bd054001817e1f57cd5cd41e2e522ea6e02c9f63944ea221e7d55c11ecae07b", null ],
+      [ "Count", "classmage_1_1_shading_normal_pass.html#a05bd054001817e1f57cd5cd41e2e522eae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#a8d85834472875ce27cf3966b7c561d1f", null ],
     [ "ShadingNormalPass", "classmage_1_1_shading_normal_pass.html#ab13b45f9a3118f8494150d64ff06f94f", null ],

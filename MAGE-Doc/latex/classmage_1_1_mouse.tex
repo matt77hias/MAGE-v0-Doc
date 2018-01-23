@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_mouse_ad02365977dab44603400ac6f24e0df97}{Mouse} (H\+W\+ND hwindow, I\+Direct\+Input8 $\ast$di)
+\hyperlink{classmage_1_1_mouse_a14a0dd65d468158d2f967b93e820d84c}{Mouse} (H\+W\+ND window, I\+Direct\+Input8 $\ast$di)
 \item 
 \hyperlink{classmage_1_1_mouse_af11aa23e6cfbefb4cd3d90b17c63db7c}{Mouse} (const \hyperlink{classmage_1_1_mouse}{Mouse} \&mouse)=delete
 \item 
@@ -19,9 +19,11 @@
 \item 
 \hyperlink{classmage_1_1_mouse}{Mouse} \& \hyperlink{classmage_1_1_mouse_a42d80f535a12356762a506438036dd71}{operator=} (\hyperlink{classmage_1_1_mouse}{Mouse} \&\&mouse)=delete
 \item 
+H\+W\+ND \hyperlink{classmage_1_1_mouse_a8d6b15af2bb60cc38334255ad2fbe576}{Get\+Window} () noexcept
+\item 
 void \hyperlink{classmage_1_1_mouse_a0cddae3f871dd69c1ba6928dc6b1f985}{Update} ()
 \item 
-bool \hyperlink{classmage_1_1_mouse_a9c8d4493c86685b259819b5995a17c7a}{Get\+Mouse\+Button\+Press} (char mouse\+\_\+button, bool ignore\+\_\+press\+\_\+stamp=false) const
+bool \hyperlink{classmage_1_1_mouse_a240b7fe1d68448fa922d769187f6358a}{Get\+Mouse\+Button\+Press} (char button, bool ignore\+\_\+press\+\_\+stamp=false) const noexcept
 \item 
 \hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32} \hyperlink{classmage_1_1_mouse_a0b7b47556aaa6e620d852349e21ba4af}{Get\+PositionX} () const noexcept
 \item 
@@ -46,7 +48,7 @@ void \hyperlink{classmage_1_1_mouse_ac158b6d6fff5b05dea5ebefa86c0d56a}{Initializ
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-H\+W\+ND \hyperlink{classmage_1_1_mouse_a0c67906df7b8b0cce013c724be4625ac}{m\+\_\+hwindow}
+H\+W\+ND \hyperlink{classmage_1_1_mouse_ac4cb2f70b32a99c7acace534df46d35c}{m\+\_\+window}
 \item 
 I\+Direct\+Input8 $\ast$const \hyperlink{classmage_1_1_mouse_a892a9e1d5ad16ac9b67a5f69fbfedeab}{m\+\_\+di}
 \item 
@@ -54,11 +56,11 @@ I\+Direct\+Input8 $\ast$const \hyperlink{classmage_1_1_mouse_a892a9e1d5ad16ac9b6
 \item 
 \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_mouse_a7633df92a818760b3efe694d4688961c}{m\+\_\+press\+\_\+stamp}
 \item 
-D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE \hyperlink{classmage_1_1_mouse_af99645fb4226077abee4532a5e663066}{m\+\_\+mouse\+\_\+state}
+D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE \hyperlink{classmage_1_1_mouse_a80591f7f27f026942f461c8af2ebbd1e}{m\+\_\+button\+\_\+state}
 \item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_mouse_ac10dd127b4289731e0058f9588259c28}{m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp} \mbox{[}3\mbox{]}
+\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_mouse_aed4e1d8b806bec657f3d29a35c93ebf4}{m\+\_\+button\+\_\+press\+\_\+stamp} \mbox{[}3\mbox{]}
 \item 
-P\+O\+I\+NT \hyperlink{classmage_1_1_mouse_a2a8332ef7a4daa0f9ed48a9a1ad80684}{m\+\_\+mouse\+\_\+position}
+P\+O\+I\+NT \hyperlink{classmage_1_1_mouse_a690524744270b6ff762f5e8dcc552d28}{m\+\_\+position}
 \end{DoxyCompactItemize}
 
 
@@ -66,22 +68,22 @@ P\+O\+I\+NT \hyperlink{classmage_1_1_mouse_a2a8332ef7a4daa0f9ed48a9a1ad80684}{m\
 A class of mouses. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_mouse_ad02365977dab44603400ac6f24e0df97}{}\label{classmage_1_1_mouse_ad02365977dab44603400ac6f24e0df97} 
+\hypertarget{classmage_1_1_mouse_a14a0dd65d468158d2f967b93e820d84c}{}\label{classmage_1_1_mouse_a14a0dd65d468158d2f967b93e820d84c} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!Mouse@{Mouse}}
 \index{Mouse@{Mouse}!mage\+::\+Mouse@{mage\+::\+Mouse}}
 \subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwindow,  }\item[{I\+Direct\+Input8 $\ast$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{window,  }\item[{I\+Direct\+Input8 $\ast$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a mouse.
 
 \begin{DoxyPrecond}{Precondition}
-{\itshape hwindow} is not equal to {\ttfamily nullptr}. 
+{\itshape window} is not equal to {\ttfamily nullptr}. 
 
 {\itshape di} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em hwindow} & The handle of the parent window. \\
+\mbox{\tt in}  & {\em window} & The handle of the parent window. \\
 \hline
 \mbox{\tt in}  & {\em di} & A pointer to a direct input object. \\
 \hline
@@ -173,17 +175,17 @@ Returns the change in this mouse\textquotesingle{}s vertical coordinate.
 \begin{DoxyReturn}{Returns}
 The change in this mouse\textquotesingle{}s vertical coordinate. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_mouse_a9c8d4493c86685b259819b5995a17c7a}{}\label{classmage_1_1_mouse_a9c8d4493c86685b259819b5995a17c7a} 
+\hypertarget{classmage_1_1_mouse_a240b7fe1d68448fa922d769187f6358a}{}\label{classmage_1_1_mouse_a240b7fe1d68448fa922d769187f6358a} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!Get\+Mouse\+Button\+Press@{Get\+Mouse\+Button\+Press}}
 \index{Get\+Mouse\+Button\+Press@{Get\+Mouse\+Button\+Press}!mage\+::\+Mouse@{mage\+::\+Mouse}}
 \subsubsection{\texorpdfstring{Get\+Mouse\+Button\+Press()}{GetMouseButtonPress()}}
-{\footnotesize\ttfamily bool mage\+::\+Mouse\+::\+Get\+Mouse\+Button\+Press (\begin{DoxyParamCaption}\item[{char}]{mouse\+\_\+button,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool mage\+::\+Mouse\+::\+Get\+Mouse\+Button\+Press (\begin{DoxyParamCaption}\item[{char}]{button,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Checks whether the given mouse button of this mouse is pressed.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em mouse\+\_\+button} & The mouse button. \\
+\mbox{\tt in}  & {\em button} & The mouse button. \\
 \hline
 \mbox{\tt in}  & {\em ignore\+\_\+press\+\_\+stamp} & Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. \\
 \hline
@@ -212,6 +214,17 @@ Returns the vertical position of this mouse.
 
 \begin{DoxyReturn}{Returns}
 The vertical position of this mouse. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_mouse_a8d6b15af2bb60cc38334255ad2fbe576}{}\label{classmage_1_1_mouse_a8d6b15af2bb60cc38334255ad2fbe576} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!Get\+Window@{Get\+Window}}
+\index{Get\+Window@{Get\+Window}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Get\+Window()}{GetWindow()}}
+{\footnotesize\ttfamily H\+W\+ND mage\+::\+Mouse\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the window handle of this mouse.
+
+\begin{DoxyReturn}{Returns}
+The window handle of this mouse. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_mouse_ac158b6d6fff5b05dea5ebefa86c0d56a}{}\label{classmage_1_1_mouse_ac158b6d6fff5b05dea5ebefa86c0d56a} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!Initialize\+Mouse@{Initialize\+Mouse}}
@@ -267,50 +280,50 @@ A reference to the moved mouse (i.\+e. this mouse).
 Updates the state of this mouse. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_mouse_a892a9e1d5ad16ac9b67a5f69fbfedeab}{}\label{classmage_1_1_mouse_a892a9e1d5ad16ac9b67a5f69fbfedeab} 
+\hypertarget{classmage_1_1_mouse_aed4e1d8b806bec657f3d29a35c93ebf4}{}\label{classmage_1_1_mouse_aed4e1d8b806bec657f3d29a35c93ebf4} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+button\+\_\+press\+\_\+stamp@{m\+\_\+button\+\_\+press\+\_\+stamp}}
+\index{m\+\_\+button\+\_\+press\+\_\+stamp@{m\+\_\+button\+\_\+press\+\_\+stamp}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{m\+\_\+button\+\_\+press\+\_\+stamp}{m\_button\_press\_stamp}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Mouse\+::m\+\_\+button\+\_\+press\+\_\+stamp\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+The mouse button press stamp of this mouse.
+
+Stamps the mouse buttons pressed in the last frame of this mouse. \hypertarget{classmage_1_1_mouse_a80591f7f27f026942f461c8af2ebbd1e}{}\label{classmage_1_1_mouse_a80591f7f27f026942f461c8af2ebbd1e} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+button\+\_\+state@{m\+\_\+button\+\_\+state}}
+\index{m\+\_\+button\+\_\+state@{m\+\_\+button\+\_\+state}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{m\+\_\+button\+\_\+state}{m\_button\_state}}
+{\footnotesize\ttfamily D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE mage\+::\+Mouse\+::m\+\_\+button\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+The state of the mouse buttons of this mouse.
+
+Describes the state of a mouse device that has up to four buttons, or another device that is being accessed as if it were a mouse device. \hypertarget{classmage_1_1_mouse_a892a9e1d5ad16ac9b67a5f69fbfedeab}{}\label{classmage_1_1_mouse_a892a9e1d5ad16ac9b67a5f69fbfedeab} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+di@{m\+\_\+di}}
 \index{m\+\_\+di@{m\+\_\+di}!mage\+::\+Mouse@{mage\+::\+Mouse}}
 \subsubsection{\texorpdfstring{m\+\_\+di}{m\_di}}
 {\footnotesize\ttfamily I\+Direct\+Input8$\ast$ const mage\+::\+Mouse\+::m\+\_\+di\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the Direct\+Input object of this mouse. \hypertarget{classmage_1_1_mouse_a0c67906df7b8b0cce013c724be4625ac}{}\label{classmage_1_1_mouse_a0c67906df7b8b0cce013c724be4625ac} 
-\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+hwindow@{m\+\_\+hwindow}}
-\index{m\+\_\+hwindow@{m\+\_\+hwindow}!mage\+::\+Mouse@{mage\+::\+Mouse}}
-\subsubsection{\texorpdfstring{m\+\_\+hwindow}{m\_hwindow}}
-{\footnotesize\ttfamily H\+W\+ND mage\+::\+Mouse\+::m\+\_\+hwindow\hspace{0.3cm}{\ttfamily [private]}}
-
-The handle of the parent window of this mouse. \hypertarget{classmage_1_1_mouse_a3f2803f3c0e008f5d764a11de3dbe098}{}\label{classmage_1_1_mouse_a3f2803f3c0e008f5d764a11de3dbe098} 
+A pointer to the Direct\+Input object of this mouse. \hypertarget{classmage_1_1_mouse_a3f2803f3c0e008f5d764a11de3dbe098}{}\label{classmage_1_1_mouse_a3f2803f3c0e008f5d764a11de3dbe098} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+mouse@{m\+\_\+mouse}}
 \index{m\+\_\+mouse@{m\+\_\+mouse}!mage\+::\+Mouse@{mage\+::\+Mouse}}
 \subsubsection{\texorpdfstring{m\+\_\+mouse}{m\_mouse}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input\+Device8 $>$ mage\+::\+Mouse\+::m\+\_\+mouse\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the Direct\+Input mouse device of this mouse. \hypertarget{classmage_1_1_mouse_ac10dd127b4289731e0058f9588259c28}{}\label{classmage_1_1_mouse_ac10dd127b4289731e0058f9588259c28} 
-\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp@{m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp}}
-\index{m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp@{m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp}!mage\+::\+Mouse@{mage\+::\+Mouse}}
-\subsubsection{\texorpdfstring{m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp}{m\_mouse\_button\_press\_stamp}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Mouse\+::m\+\_\+mouse\+\_\+button\+\_\+press\+\_\+stamp\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+A pointer to the Direct\+Input mouse device of this mouse. \hypertarget{classmage_1_1_mouse_a690524744270b6ff762f5e8dcc552d28}{}\label{classmage_1_1_mouse_a690524744270b6ff762f5e8dcc552d28} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily P\+O\+I\+NT mage\+::\+Mouse\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
 
-The mouse button press stamp of this mouse.
-
-Stamps the mouse buttons pressed in the last frame of this mouse. \hypertarget{classmage_1_1_mouse_a2a8332ef7a4daa0f9ed48a9a1ad80684}{}\label{classmage_1_1_mouse_a2a8332ef7a4daa0f9ed48a9a1ad80684} 
-\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+mouse\+\_\+position@{m\+\_\+mouse\+\_\+position}}
-\index{m\+\_\+mouse\+\_\+position@{m\+\_\+mouse\+\_\+position}!mage\+::\+Mouse@{mage\+::\+Mouse}}
-\subsubsection{\texorpdfstring{m\+\_\+mouse\+\_\+position}{m\_mouse\_position}}
-{\footnotesize\ttfamily P\+O\+I\+NT mage\+::\+Mouse\+::m\+\_\+mouse\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
-
-The position of the mouse cursor on the screen of this mouse. \hypertarget{classmage_1_1_mouse_af99645fb4226077abee4532a5e663066}{}\label{classmage_1_1_mouse_af99645fb4226077abee4532a5e663066} 
-\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+mouse\+\_\+state@{m\+\_\+mouse\+\_\+state}}
-\index{m\+\_\+mouse\+\_\+state@{m\+\_\+mouse\+\_\+state}!mage\+::\+Mouse@{mage\+::\+Mouse}}
-\subsubsection{\texorpdfstring{m\+\_\+mouse\+\_\+state}{m\_mouse\_state}}
-{\footnotesize\ttfamily D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE mage\+::\+Mouse\+::m\+\_\+mouse\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
-
-The state of the mouse buttons of this mouse.
-
-Describes the state of a mouse device that has up to four buttons, or another device that is being accessed as if it were a mouse device. \hypertarget{classmage_1_1_mouse_a7633df92a818760b3efe694d4688961c}{}\label{classmage_1_1_mouse_a7633df92a818760b3efe694d4688961c} 
+The position of the mouse cursor on the screen of this mouse. \hypertarget{classmage_1_1_mouse_a7633df92a818760b3efe694d4688961c}{}\label{classmage_1_1_mouse_a7633df92a818760b3efe694d4688961c} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+press\+\_\+stamp@{m\+\_\+press\+\_\+stamp}}
 \index{m\+\_\+press\+\_\+stamp@{m\+\_\+press\+\_\+stamp}!mage\+::\+Mouse@{mage\+::\+Mouse}}
 \subsubsection{\texorpdfstring{m\+\_\+press\+\_\+stamp}{m\_press\_stamp}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Mouse\+::m\+\_\+press\+\_\+stamp\hspace{0.3cm}{\ttfamily [private]}}
 
-The current press stamp (incremented every frame) of this mouse. 
+The current press stamp (incremented every frame) of this mouse. \hypertarget{classmage_1_1_mouse_ac4cb2f70b32a99c7acace534df46d35c}{}\label{classmage_1_1_mouse_ac4cb2f70b32a99c7acace534df46d35c} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!m\+\_\+window@{m\+\_\+window}}
+\index{m\+\_\+window@{m\+\_\+window}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
+{\footnotesize\ttfamily H\+W\+ND mage\+::\+Mouse\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+The handle of the parent window of this mouse. 

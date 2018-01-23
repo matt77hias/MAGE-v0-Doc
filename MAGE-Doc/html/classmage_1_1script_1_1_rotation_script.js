@@ -1,9 +1,9 @@
 var classmage_1_1script_1_1_rotation_script =
 [
-    [ "RotationAxis", "classmage_1_1script_1_1_rotation_script.html#aa8a91cc8c771fc777ffb5e8a28c43ad2", [
-      [ "X", "classmage_1_1script_1_1_rotation_script.html#aa8a91cc8c771fc777ffb5e8a28c43ad2a02129bb861061d1a052c592e2dc6b383", null ],
-      [ "Y", "classmage_1_1script_1_1_rotation_script.html#aa8a91cc8c771fc777ffb5e8a28c43ad2a57cec4137b614c87cb4e24a3d003a3e0", null ],
-      [ "Z", "classmage_1_1script_1_1_rotation_script.html#aa8a91cc8c771fc777ffb5e8a28c43ad2a21c2e59531c8710156d34a3c30ac81d5", null ]
+    [ "RotationAxis", "classmage_1_1script_1_1_rotation_script.html#a54e1d1d0af65f43f5bc5ad65a4b9c00a", [
+      [ "X", "classmage_1_1script_1_1_rotation_script.html#a54e1d1d0af65f43f5bc5ad65a4b9c00aa02129bb861061d1a052c592e2dc6b383", null ],
+      [ "Y", "classmage_1_1script_1_1_rotation_script.html#a54e1d1d0af65f43f5bc5ad65a4b9c00aa57cec4137b614c87cb4e24a3d003a3e0", null ],
+      [ "Z", "classmage_1_1script_1_1_rotation_script.html#a54e1d1d0af65f43f5bc5ad65a4b9c00aa21c2e59531c8710156d34a3c30ac81d5", null ]
     ] ],
     [ "RotationScript", "classmage_1_1script_1_1_rotation_script.html#a2961e96c890f5b737fa1851a4f6434fe", null ],
     [ "RotationScript", "classmage_1_1script_1_1_rotation_script.html#adac08b8383fabba67df915f03a2a01ee", null ],

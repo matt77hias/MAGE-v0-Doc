@@ -4,6 +4,8 @@ var structmage_1_1_glyph =
     [ "Glyph", "structmage_1_1_glyph.html#a6915f88bb426261e67f243629509f9a9", null ],
     [ "Glyph", "structmage_1_1_glyph.html#a823494adc2f56bee49c3f9e498638f60", null ],
     [ "~Glyph", "structmage_1_1_glyph.html#aa8e903334e77cc2930149923461d06ab", null ],
+    [ "GetHeight", "structmage_1_1_glyph.html#a05deaaf61096d41cda1d85ef0488b36e", null ],
+    [ "GetWidth", "structmage_1_1_glyph.html#a672de806086fa9f23832d9f8e617fc3f", null ],
     [ "operator<", "structmage_1_1_glyph.html#a7bb41307f74973e4bc547193dedc8dcc", null ],
     [ "operator<", "structmage_1_1_glyph.html#ad8e9835022217afef429f38891bba80e", null ],
     [ "operator=", "structmage_1_1_glyph.html#a4cc57bb9e8ba26d625b75e6557415f8d", null ],

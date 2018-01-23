@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['scene',['Scene',['../classmage_1_1_node_client.html#a032858ae1fe02d2d1170981c2af2d67c',1,'mage::NodeClient']]],
-  ['singleendedmemorystack',['SingleEndedMemoryStack',['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html#a3f3449e5c2caa1666a293b36db6f5a54',1,'mage::SingleEndedMemoryStack::Allocator']]]
+  ['transformclient',['TransformClient',['../classmage_1_1_transform.html#af7bc9408e1e31d66cb7fd971ff437a3a',1,'mage::Transform']]]
 ];

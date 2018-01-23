@@ -12,6 +12,7 @@ var searchData=
   ['papayawhip',['PapayaWhip',['../namespacemage_1_1color.html#a3752b77f8a90782256f837ad98aca12b',1,'mage::color']]],
   ['parentmenuset',['ParentMenuSet',['../struct_im_gui_popup_ref.html#afc2fc749bf54a0e3bab8defefe4a0a2b',1,'ImGuiPopupRef']]],
   ['parentwindow',['ParentWindow',['../struct_im_gui_popup_ref.html#a7925cc312e5632661e0e6a2195af21b2',1,'ImGuiPopupRef::ParentWindow()'],['../struct_im_gui_window.html#a5f0b37cb12fbeb3efe00d0cd826d5d65',1,'ImGuiWindow::ParentWindow()']]],
+  ['partialcoverage',['PartialCoverage',['../namespacemage.html#a74bd8eec1684352b462592a90b3d5f75',1,'mage']]],
   ['peachpuff',['PeachPuff',['../namespacemage_1_1color.html#aa6d4c863a4bef4fea1584b396f5efa3f',1,'mage::color']]],
   ['peru',['Peru',['../namespacemage_1_1color.html#aca42febccdb4b483536cfbb9a2465a95',1,'mage::color']]],
   ['pink',['Pink',['../namespacemage_1_1color.html#ac109fad1f6bb079c13fa28ad8bbc18e8',1,'mage::color']]],

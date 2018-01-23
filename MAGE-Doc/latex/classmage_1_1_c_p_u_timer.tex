@@ -9,6 +9,8 @@
 \item 
 \hyperlink{classmage_1_1_c_p_u_timer_a52f2c0bdd6377df54363ff775a6ec430}{C\+P\+U\+Timer} () noexcept
 \item 
+\hyperlink{classmage_1_1_c_p_u_timer_ae85f321f737770034cff1fd9e9ef13c4}{C\+P\+U\+Timer} (H\+A\+N\+D\+LE process) noexcept
+\item 
 \hyperlink{classmage_1_1_c_p_u_timer_a23afe7d7b5d85ecf1275f750a935e7c3}{C\+P\+U\+Timer} (const \hyperlink{classmage_1_1_c_p_u_timer}{C\+P\+U\+Timer} \&timer) noexcept=default
 \item 
 \hyperlink{classmage_1_1_c_p_u_timer_a7915bc9952e7607ffbe93f18dd1cb0b4}{C\+P\+U\+Timer} (\hyperlink{classmage_1_1_c_p_u_timer}{C\+P\+U\+Timer} \&\&timer) noexcept=default
@@ -54,9 +56,9 @@ void \hyperlink{classmage_1_1_c_p_u_timer_a8285a7306896f52adb093284d6c9da4d}{Res
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625e}{Mode\+Index} \{ \hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea6ff9f4444ac481652f4412b5e1623846}{Mode\+Index\+::\+Kernel} = 0, 
-\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075}{Mode\+Index\+::\+User} = 1, 
-\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count} = 2
+enum \hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278fa}{Mode\+Index} \+: U8 \{ \hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa6ff9f4444ac481652f4412b5e1623846}{Mode\+Index\+::\+Kernel} = 0, 
+\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa8f9bfe9d1345237cb3b2b205864da075}{Mode\+Index\+::\+User} = 1, 
+\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count} = 2
  \}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
@@ -78,15 +80,13 @@ static constexpr size\+\_\+t \hyperlink{classmage_1_1_c_p_u_timer_a457d65db3cb67
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-H\+A\+N\+D\+LE \hyperlink{classmage_1_1_c_p_u_timer_a95b8ac18c050ed25293c8a923087369a}{m\+\_\+handle}
+H\+A\+N\+D\+LE \hyperlink{classmage_1_1_c_p_u_timer_ac99b24abe1fe0753b18cfa39b298a876}{m\+\_\+process}
 \item 
-size\+\_\+t \hyperlink{classmage_1_1_c_p_u_timer_ac5fdb38a70c74815231b5efd8d746be1}{m\+\_\+nb\+\_\+processor\+\_\+cores}
+\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b}{m\+\_\+last\+\_\+timestamp} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
 \item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b}{m\+\_\+last\+\_\+timestamp} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
+\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a2ce9eda81a57934b172b426238d4587d}{m\+\_\+delta\+\_\+time} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
 \item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a2ce9eda81a57934b172b426238d4587d}{m\+\_\+delta\+\_\+time} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
-\item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a1c6d043eb08b1689d0f52dbd886fa9d4}{m\+\_\+total\+\_\+delta\+\_\+time} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
+\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_c_p_u_timer_a1c6d043eb08b1689d0f52dbd886fa9d4}{m\+\_\+total\+\_\+delta\+\_\+time} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}
 \item 
 bool \hyperlink{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2}{m\+\_\+running}
 \end{DoxyCompactItemize}
@@ -94,6 +94,8 @@ bool \hyperlink{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2}{m\+
 \begin{DoxyCompactItemize}
 \item 
 static constexpr \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_c_p_u_timer_af7371eff8de8b5f667769ec71a69e9cf}{s\+\_\+time\+\_\+period} = 0.\+0000001
+\item 
+static const \hyperlink{namespacemage_af69057eec1ce005c1c3b34ae33486f16}{U16} \hyperlink{classmage_1_1_c_p_u_timer_a49e518f172efcc1e43baef65bb5ab3a7}{s\+\_\+nb\+\_\+processor\+\_\+cores} = \hyperlink{namespacemage_a825ee5d6ce6db3c24967af86ed40edd4}{Number\+Of\+System\+Cores}()
 \end{DoxyCompactItemize}
 
 
@@ -101,22 +103,22 @@ static constexpr \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64
 A class of C\+PU timers. 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625e}{}\label{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625e} 
+\hypertarget{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278fa}{}\label{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278fa} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!Mode\+Index@{Mode\+Index}}
 \index{Mode\+Index@{Mode\+Index}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{Mode\+Index}{ModeIndex}}
-{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625e}{mage\+::\+C\+P\+U\+Timer\+::\+Mode\+Index}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278fa}{mage\+::\+C\+P\+U\+Timer\+::\+Mode\+Index} \+: \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
 
 An enumeration of the different modes of this C\+PU timer. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Kernel@{Kernel}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!Kernel@{Kernel}}}\hypertarget{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea6ff9f4444ac481652f4412b5e1623846}{}\label{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea6ff9f4444ac481652f4412b5e1623846} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Kernel@{Kernel}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!Kernel@{Kernel}}}\hypertarget{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa6ff9f4444ac481652f4412b5e1623846}{}\label{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa6ff9f4444ac481652f4412b5e1623846} 
 Kernel&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{User@{User}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!User@{User}}}\hypertarget{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075}{}\label{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625ea8f9bfe9d1345237cb3b2b205864da075} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User@{User}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!User@{User}}}\hypertarget{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa8f9bfe9d1345237cb3b2b205864da075}{}\label{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faa8f9bfe9d1345237cb3b2b205864da075} 
 User&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!Count@{Count}}}\hypertarget{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!Count@{Count}}}\hypertarget{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9} 
 Count&\\
 \hline
 
@@ -127,13 +129,29 @@ Count&\\
 \hypertarget{classmage_1_1_c_p_u_timer_a52f2c0bdd6377df54363ff775a6ec430}{}\label{classmage_1_1_c_p_u_timer_a52f2c0bdd6377df54363ff775a6ec430} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!C\+P\+U\+Timer@{C\+P\+U\+Timer}}
 \index{C\+P\+U\+Timer@{C\+P\+U\+Timer}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
-\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily mage\+::\+C\+P\+U\+Timer\+::\+C\+P\+U\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Constructs a C\+PU timer. \hypertarget{classmage_1_1_c_p_u_timer_a23afe7d7b5d85ecf1275f750a935e7c3}{}\label{classmage_1_1_c_p_u_timer_a23afe7d7b5d85ecf1275f750a935e7c3} 
+Constructs a C\+PU timer. \hypertarget{classmage_1_1_c_p_u_timer_ae85f321f737770034cff1fd9e9ef13c4}{}\label{classmage_1_1_c_p_u_timer_ae85f321f737770034cff1fd9e9ef13c4} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!C\+P\+U\+Timer@{C\+P\+U\+Timer}}
 \index{C\+P\+U\+Timer@{C\+P\+U\+Timer}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
-\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+C\+P\+U\+Timer\+::\+C\+P\+U\+Timer (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{process }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+Constructs a C\+PU timer.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape process} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em process} & The process handle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_c_p_u_timer_a23afe7d7b5d85ecf1275f750a935e7c3}{}\label{classmage_1_1_c_p_u_timer_a23afe7d7b5d85ecf1275f750a935e7c3} 
+\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!C\+P\+U\+Timer@{C\+P\+U\+Timer}}
+\index{C\+P\+U\+Timer@{C\+P\+U\+Timer}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily mage\+::\+C\+P\+U\+Timer\+::\+C\+P\+U\+Timer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_c_p_u_timer}{C\+P\+U\+Timer} \&}]{timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Constructs a C\+PU timer from the given C\+PU timer.
@@ -146,7 +164,7 @@ Constructs a C\+PU timer from the given C\+PU timer.
 \hypertarget{classmage_1_1_c_p_u_timer_a7915bc9952e7607ffbe93f18dd1cb0b4}{}\label{classmage_1_1_c_p_u_timer_a7915bc9952e7607ffbe93f18dd1cb0b4} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!C\+P\+U\+Timer@{C\+P\+U\+Timer}}
 \index{C\+P\+U\+Timer@{C\+P\+U\+Timer}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
-\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily mage\+::\+C\+P\+U\+Timer\+::\+C\+P\+U\+Timer (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_c_p_u_timer}{C\+P\+U\+Timer} \&\&}]{timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Constructs a C\+PU timer by moving the given C\+PU timer.
@@ -400,27 +418,21 @@ Updates the modes\textquotesingle{} last timestamps of this C\+PU timer\textquot
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+delta\+\_\+time@{m\+\_\+delta\+\_\+time}}
 \index{m\+\_\+delta\+\_\+time@{m\+\_\+delta\+\_\+time}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+delta\+\_\+time}{m\_delta\_time}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+delta\+\_\+time\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+delta\+\_\+time\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
-The modes\textquotesingle{} delta times (in seconds) of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_a95b8ac18c050ed25293c8a923087369a}{}\label{classmage_1_1_c_p_u_timer_a95b8ac18c050ed25293c8a923087369a} 
-\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+handle@{m\+\_\+handle}}
-\index{m\+\_\+handle@{m\+\_\+handle}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
-\subsubsection{\texorpdfstring{m\+\_\+handle}{m\_handle}}
-{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+C\+P\+U\+Timer\+::m\+\_\+handle\hspace{0.3cm}{\ttfamily [private]}}
-
-The process handle. \hypertarget{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b}{}\label{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b} 
+The modes\textquotesingle{} delta times (in seconds) of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b}{}\label{classmage_1_1_c_p_u_timer_a14b5ef7beba6c33769ac66ef171d0f0b} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+last\+\_\+timestamp@{m\+\_\+last\+\_\+timestamp}}
 \index{m\+\_\+last\+\_\+timestamp@{m\+\_\+last\+\_\+timestamp}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+last\+\_\+timestamp}{m\_last\_timestamp}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+last\+\_\+timestamp\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+last\+\_\+timestamp\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
-The modes\textquotesingle{} last timestamps of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_ac5fdb38a70c74815231b5efd8d746be1}{}\label{classmage_1_1_c_p_u_timer_ac5fdb38a70c74815231b5efd8d746be1} 
-\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+nb\+\_\+processor\+\_\+cores@{m\+\_\+nb\+\_\+processor\+\_\+cores}}
-\index{m\+\_\+nb\+\_\+processor\+\_\+cores@{m\+\_\+nb\+\_\+processor\+\_\+cores}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
-\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+processor\+\_\+cores}{m\_nb\_processor\_cores}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+C\+P\+U\+Timer\+::m\+\_\+nb\+\_\+processor\+\_\+cores\hspace{0.3cm}{\ttfamily [private]}}
+The modes\textquotesingle{} last timestamps of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_ac99b24abe1fe0753b18cfa39b298a876}{}\label{classmage_1_1_c_p_u_timer_ac99b24abe1fe0753b18cfa39b298a876} 
+\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+process@{m\+\_\+process}}
+\index{m\+\_\+process@{m\+\_\+process}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+process}{m\_process}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+C\+P\+U\+Timer\+::m\+\_\+process\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of processor cores. \hypertarget{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2}{}\label{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2} 
+The process handle of this C\+PU timer. \hypertarget{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2}{}\label{classmage_1_1_c_p_u_timer_a7190afa453085b7bbd7cb76ff6bb62f2} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+running@{m\+\_\+running}}
 \index{m\+\_\+running@{m\+\_\+running}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+running}{m\_running}}
@@ -430,9 +442,15 @@ Flag indicating whether this C\+PU timer is running. \hypertarget{classmage_1_1_
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!m\+\_\+total\+\_\+delta\+\_\+time@{m\+\_\+total\+\_\+delta\+\_\+time}}
 \index{m\+\_\+total\+\_\+delta\+\_\+time@{m\+\_\+total\+\_\+delta\+\_\+time}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+total\+\_\+delta\+\_\+time}{m\_total\_delta\_time}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+total\+\_\+delta\+\_\+time\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a98d59db3c396b14269c937e016c7625eae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+C\+P\+U\+Timer\+::m\+\_\+total\+\_\+delta\+\_\+time\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_c_p_u_timer_a220f69be8f304f6fad61ccb358d278faae93f994f01c537c4e2f7d8528c3eb5e9}{Mode\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
-The modes\textquotesingle{} total delta times (in seconds) of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_af7371eff8de8b5f667769ec71a69e9cf}{}\label{classmage_1_1_c_p_u_timer_af7371eff8de8b5f667769ec71a69e9cf} 
+The modes\textquotesingle{} total delta times (in seconds) of this C\+PU timer\textquotesingle{}s process. \hypertarget{classmage_1_1_c_p_u_timer_a49e518f172efcc1e43baef65bb5ab3a7}{}\label{classmage_1_1_c_p_u_timer_a49e518f172efcc1e43baef65bb5ab3a7} 
+\index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!s\+\_\+nb\+\_\+processor\+\_\+cores@{s\+\_\+nb\+\_\+processor\+\_\+cores}}
+\index{s\+\_\+nb\+\_\+processor\+\_\+cores@{s\+\_\+nb\+\_\+processor\+\_\+cores}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{s\+\_\+nb\+\_\+processor\+\_\+cores}{s\_nb\_processor\_cores}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_af69057eec1ce005c1c3b34ae33486f16}{U16} mage\+::\+C\+P\+U\+Timer\+::s\+\_\+nb\+\_\+processor\+\_\+cores = \hyperlink{namespacemage_a825ee5d6ce6db3c24967af86ed40edd4}{Number\+Of\+System\+Cores}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The number of processor cores. \hypertarget{classmage_1_1_c_p_u_timer_af7371eff8de8b5f667769ec71a69e9cf}{}\label{classmage_1_1_c_p_u_timer_af7371eff8de8b5f667769ec71a69e9cf} 
 \index{mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}!s\+\_\+time\+\_\+period@{s\+\_\+time\+\_\+period}}
 \index{s\+\_\+time\+\_\+period@{s\+\_\+time\+\_\+period}!mage\+::\+C\+P\+U\+Timer@{mage\+::\+C\+P\+U\+Timer}}
 \subsubsection{\texorpdfstring{s\+\_\+time\+\_\+period}{s\_time\_period}}

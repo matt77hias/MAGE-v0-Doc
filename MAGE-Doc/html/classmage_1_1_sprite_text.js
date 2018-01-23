@@ -1,9 +1,9 @@
 var classmage_1_1_sprite_text =
 [
-    [ "TextEffect", "classmage_1_1_sprite_text.html#ac60331e941d1f76551b7bdfad6ee7324", [
-      [ "None", "classmage_1_1_sprite_text.html#ac60331e941d1f76551b7bdfad6ee7324a6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "DropShadow", "classmage_1_1_sprite_text.html#ac60331e941d1f76551b7bdfad6ee7324a62fb0c043d7459d6590e00540884ea62", null ],
-      [ "Outline", "classmage_1_1_sprite_text.html#ac60331e941d1f76551b7bdfad6ee7324a606b51cc1c9d0b4af394419a22f2ff1f", null ]
+    [ "TextEffect", "classmage_1_1_sprite_text.html#a4d3101d037b6fe4247d77b5fbf811dd2", [
+      [ "None", "classmage_1_1_sprite_text.html#a4d3101d037b6fe4247d77b5fbf811dd2a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "DropShadow", "classmage_1_1_sprite_text.html#a4d3101d037b6fe4247d77b5fbf811dd2a62fb0c043d7459d6590e00540884ea62", null ],
+      [ "Outline", "classmage_1_1_sprite_text.html#a4d3101d037b6fe4247d77b5fbf811dd2a606b51cc1c9d0b4af394419a22f2ff1f", null ]
     ] ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#ae55645d53a2f774703603139a80dd84b", null ],
     [ "SpriteText", "classmage_1_1_sprite_text.html#a6dce7aa2dfa9d63d11e37e41acf82e52", null ],
@@ -32,7 +32,6 @@ var classmage_1_1_sprite_text =
     [ "m_sprite_effects", "classmage_1_1_sprite_text.html#acc64029be6634cac0651ceaaa0f84a3b", null ],
     [ "m_sprite_transform", "classmage_1_1_sprite_text.html#ade755cb73d8db4f388063cda1a351c50", null ],
     [ "m_strings", "classmage_1_1_sprite_text.html#aadda462c0b67282ef86a7cb2b235367c", null ],
-    [ "m_text", "classmage_1_1_sprite_text.html#a807d5dc467ef16f6c83762dfe6ad3391", null ],
     [ "m_text_effect", "classmage_1_1_sprite_text.html#a4019b7510bba20a9b86460fd6c47698f", null ],
     [ "m_text_effect_color", "classmage_1_1_sprite_text.html#a82f53e64dc8cc9a9d23a1c26ee9fad9e", null ]
 ];

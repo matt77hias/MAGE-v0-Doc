@@ -31,10 +31,17 @@ void \hyperlink{classmage_1_1_timer_ab3cfad4fd61d52852181f7a060069892}{Resume} (
 \item 
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer_a21ee76bc048a3c80f1bfbbbd807e97a7}{Get\+Total\+Delta\+Time} () const noexcept
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_timer_ad0ff38a28efd65e7c147c8c399245d06}{Update\+Last\+Timestamp} () const noexcept
+using \hyperlink{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3}{Clock} = std\+::chrono\+::high\+\_\+resolution\+\_\+clock
+\item 
+using \hyperlink{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c}{Time\+Stamp} = Clock\+::time\+\_\+point
+\item 
+using \hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{Time\+Interval} = Clock\+::duration
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classmage_1_1_timer_a5b66b3bfbed7cd4a3ad565abec5c3b02}{Reset\+Delta\+Time} () const noexcept
 \item 
@@ -43,22 +50,41 @@ void \hyperlink{classmage_1_1_timer_a10f12ad8645e8022a09067f1393c065b}{Update\+D
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER \hyperlink{classmage_1_1_timer_a6effbc37827492397cc781a78165a08a}{m\+\_\+last\+\_\+timestamp}
+\hyperlink{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3}{Clock} \hyperlink{classmage_1_1_timer_aa85148d55792c8cc703918beede17215}{m\+\_\+clock}
 \item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_timer_a2a6fcda6238524401de58b4462121286}{m\+\_\+delta\+\_\+time}
+\hyperlink{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c}{Time\+Stamp} \hyperlink{classmage_1_1_timer_af87b641f17eba20552a7a309dfc3761a}{m\+\_\+last\+\_\+timestamp}
 \item 
-\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} \hyperlink{classmage_1_1_timer_a597eae6b756d0f50bcb1541db0f1c7f0}{m\+\_\+total\+\_\+delta\+\_\+time}
+\hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{Time\+Interval} \hyperlink{classmage_1_1_timer_a05eac9cb442358351b0f2861f70e56b9}{m\+\_\+delta\+\_\+time}
+\item 
+\hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{Time\+Interval} \hyperlink{classmage_1_1_timer_a642e43f01ce61c54c89ea116235342e9}{m\+\_\+total\+\_\+delta\+\_\+time}
 \item 
 bool \hyperlink{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291}{m\+\_\+running}
-\item 
-L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER \hyperlink{classmage_1_1_timer_a64e9afd31a95058e1736e84122c663d3}{m\+\_\+time\+\_\+frequency}
-\item 
-\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer_a666e06f94a9c5875ab6cbce8d2750a11}{m\+\_\+time\+\_\+period}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A class of (high precision) wall clock timers. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3}{}\label{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Clock@{Clock}}
+\index{Clock@{Clock}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Clock}{Clock}}
+{\footnotesize\ttfamily using \hyperlink{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3}{mage\+::\+Timer\+::\+Clock} =  std\+::chrono\+::high\+\_\+resolution\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+The clock type of timers. \hypertarget{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{}\label{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Time\+Interval@{Time\+Interval}}
+\index{Time\+Interval@{Time\+Interval}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Time\+Interval}{TimeInterval}}
+{\footnotesize\ttfamily using \hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{mage\+::\+Timer\+::\+Time\+Interval} =  Clock\+::duration\hspace{0.3cm}{\ttfamily [private]}}
+
+The time interval type representing the interval between time points of timers. \hypertarget{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c}{}\label{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Time\+Stamp@{Time\+Stamp}}
+\index{Time\+Stamp@{Time\+Stamp}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Time\+Stamp}{TimeStamp}}
+{\footnotesize\ttfamily using \hyperlink{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c}{mage\+::\+Timer\+::\+Time\+Stamp} =  Clock\+::time\+\_\+point\hspace{0.3cm}{\ttfamily [private]}}
+
+The time stamp type representing the time points of timers. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_timer_ad529d2329ae911c8b4c64efd05a71dd0}{}\label{classmage_1_1_timer_ad529d2329ae911c8b4c64efd05a71dd0} 
@@ -192,26 +218,26 @@ Stops this timer. \hypertarget{classmage_1_1_timer_a10f12ad8645e8022a09067f1393c
 \subsubsection{\texorpdfstring{Update\+Delta\+Time()}{UpdateDeltaTime()}}
 {\footnotesize\ttfamily void mage\+::\+Timer\+::\+Update\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
-Updates the delta time, total delta time and last timestamp of this timer. \hypertarget{classmage_1_1_timer_ad0ff38a28efd65e7c147c8c399245d06}{}\label{classmage_1_1_timer_ad0ff38a28efd65e7c147c8c399245d06} 
-\index{mage\+::\+Timer@{mage\+::\+Timer}!Update\+Last\+Timestamp@{Update\+Last\+Timestamp}}
-\index{Update\+Last\+Timestamp@{Update\+Last\+Timestamp}!mage\+::\+Timer@{mage\+::\+Timer}}
-\subsubsection{\texorpdfstring{Update\+Last\+Timestamp()}{UpdateLastTimestamp()}}
-{\footnotesize\ttfamily void mage\+::\+Timer\+::\+Update\+Last\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
-
-Updates the last timestamp of this timer. 
+Updates the delta time, total delta time and last timestamp of this timer. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_timer_a2a6fcda6238524401de58b4462121286}{}\label{classmage_1_1_timer_a2a6fcda6238524401de58b4462121286} 
+\hypertarget{classmage_1_1_timer_aa85148d55792c8cc703918beede17215}{}\label{classmage_1_1_timer_aa85148d55792c8cc703918beede17215} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+clock@{m\+\_\+clock}}
+\index{m\+\_\+clock@{m\+\_\+clock}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+clock}{m\_clock}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer_a6d46c5edc40fd404d44d8762c814c5f3}{Clock} mage\+::\+Timer\+::m\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+The clock of this timer. \hypertarget{classmage_1_1_timer_a05eac9cb442358351b0f2861f70e56b9}{}\label{classmage_1_1_timer_a05eac9cb442358351b0f2861f70e56b9} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+delta\+\_\+time@{m\+\_\+delta\+\_\+time}}
 \index{m\+\_\+delta\+\_\+time@{m\+\_\+delta\+\_\+time}!mage\+::\+Timer@{mage\+::\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+delta\+\_\+time}{m\_delta\_time}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Timer\+::m\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{Time\+Interval} mage\+::\+Timer\+::m\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
-The delta time of this timer. \hypertarget{classmage_1_1_timer_a6effbc37827492397cc781a78165a08a}{}\label{classmage_1_1_timer_a6effbc37827492397cc781a78165a08a} 
+The delta time of this timer. \hypertarget{classmage_1_1_timer_af87b641f17eba20552a7a309dfc3761a}{}\label{classmage_1_1_timer_af87b641f17eba20552a7a309dfc3761a} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+last\+\_\+timestamp@{m\+\_\+last\+\_\+timestamp}}
 \index{m\+\_\+last\+\_\+timestamp@{m\+\_\+last\+\_\+timestamp}!mage\+::\+Timer@{mage\+::\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+last\+\_\+timestamp}{m\_last\_timestamp}}
-{\footnotesize\ttfamily L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER mage\+::\+Timer\+::m\+\_\+last\+\_\+timestamp\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer_aff202783fe113efdf539f9dc685a158c}{Time\+Stamp} mage\+::\+Timer\+::m\+\_\+last\+\_\+timestamp\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
 The last timestamp of this timer. \hypertarget{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291}{}\label{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+running@{m\+\_\+running}}
@@ -219,22 +245,10 @@ The last timestamp of this timer. \hypertarget{classmage_1_1_timer_ac8d975843e5b
 \subsubsection{\texorpdfstring{m\+\_\+running}{m\_running}}
 {\footnotesize\ttfamily bool mage\+::\+Timer\+::m\+\_\+running\hspace{0.3cm}{\ttfamily [private]}}
 
-Flag indicating whether this timer is running. \hypertarget{classmage_1_1_timer_a64e9afd31a95058e1736e84122c663d3}{}\label{classmage_1_1_timer_a64e9afd31a95058e1736e84122c663d3} 
-\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+time\+\_\+frequency@{m\+\_\+time\+\_\+frequency}}
-\index{m\+\_\+time\+\_\+frequency@{m\+\_\+time\+\_\+frequency}!mage\+::\+Timer@{mage\+::\+Timer}}
-\subsubsection{\texorpdfstring{m\+\_\+time\+\_\+frequency}{m\_time\_frequency}}
-{\footnotesize\ttfamily L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER mage\+::\+Timer\+::m\+\_\+time\+\_\+frequency\hspace{0.3cm}{\ttfamily [private]}}
-
-The time frequency of this timer. \hypertarget{classmage_1_1_timer_a666e06f94a9c5875ab6cbce8d2750a11}{}\label{classmage_1_1_timer_a666e06f94a9c5875ab6cbce8d2750a11} 
-\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+time\+\_\+period@{m\+\_\+time\+\_\+period}}
-\index{m\+\_\+time\+\_\+period@{m\+\_\+time\+\_\+period}!mage\+::\+Timer@{mage\+::\+Timer}}
-\subsubsection{\texorpdfstring{m\+\_\+time\+\_\+period}{m\_time\_period}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} mage\+::\+Timer\+::m\+\_\+time\+\_\+period\hspace{0.3cm}{\ttfamily [private]}}
-
-The time period of this timer. \hypertarget{classmage_1_1_timer_a597eae6b756d0f50bcb1541db0f1c7f0}{}\label{classmage_1_1_timer_a597eae6b756d0f50bcb1541db0f1c7f0} 
+Flag indicating whether this timer is running. \hypertarget{classmage_1_1_timer_a642e43f01ce61c54c89ea116235342e9}{}\label{classmage_1_1_timer_a642e43f01ce61c54c89ea116235342e9} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+total\+\_\+delta\+\_\+time@{m\+\_\+total\+\_\+delta\+\_\+time}}
 \index{m\+\_\+total\+\_\+delta\+\_\+time@{m\+\_\+total\+\_\+delta\+\_\+time}!mage\+::\+Timer@{mage\+::\+Timer}}
 \subsubsection{\texorpdfstring{m\+\_\+total\+\_\+delta\+\_\+time}{m\_total\_delta\_time}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64} mage\+::\+Timer\+::m\+\_\+total\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer_a5e38d0ad64043ad3622072e7b6637d98}{Time\+Interval} mage\+::\+Timer\+::m\+\_\+total\+\_\+delta\+\_\+time\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
 The total delta time of this timer. 
