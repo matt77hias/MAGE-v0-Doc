@@ -1,6 +1,6 @@
 var classmage_1_1_swap_chain =
 [
-    [ "SwapChain", "classmage_1_1_swap_chain.html#a2ba9364220d9f8fa03b5bd99318d32dc", null ],
+    [ "SwapChain", "classmage_1_1_swap_chain.html#a81bde3f34bbcd36e4e1dd053a2c0f736", null ],
     [ "SwapChain", "classmage_1_1_swap_chain.html#a85d5da233182a273705b4fa1c419a0aa", null ],
     [ "SwapChain", "classmage_1_1_swap_chain.html#ae1ca2e30957b83e89be5793ea6da76dd", null ],
     [ "~SwapChain", "classmage_1_1_swap_chain.html#a853168cba69cadc3d8c10ad2f4939e72", null ],
@@ -10,6 +10,7 @@ var classmage_1_1_swap_chain =
     [ "Get", "classmage_1_1_swap_chain.html#a9ed25cd34dedc97e25e26e58456ac2fe", null ],
     [ "GetDisplayConfiguration", "classmage_1_1_swap_chain.html#afb7cf408081f09d0241f3e764a047e74", null ],
     [ "GetRTV", "classmage_1_1_swap_chain.html#a0b54dff5a39f10d9073bdbb1121a6144", null ],
+    [ "GetWindow", "classmage_1_1_swap_chain.html#a4e7e21747db8638646b46690a23ea76f", null ],
     [ "IsFullScreen", "classmage_1_1_swap_chain.html#a85873ca586fbcd83c237692a011d6d08", null ],
     [ "IsTrackedFullScreen", "classmage_1_1_swap_chain.html#ad3b35e10612f7219cc4b6d61039e2f8c", null ],
     [ "IsWindowed", "classmage_1_1_swap_chain.html#a7cf71ec46d0af888b9b1daa890a54d39", null ],
@@ -25,7 +26,7 @@ var classmage_1_1_swap_chain =
     [ "TakeScreenShot", "classmage_1_1_swap_chain.html#a23a4618b5104203c5a5c962696ae3b53", null ],
     [ "m_device", "classmage_1_1_swap_chain.html#a169f9613c42c3cad0ea83e9535676cd0", null ],
     [ "m_display_configuration", "classmage_1_1_swap_chain.html#ac1aa833943aa6bfe464da32316f7096f", null ],
-    [ "m_hwindow", "classmage_1_1_swap_chain.html#aea5964cd3bd2bfef89ae428cceef82fd", null ],
     [ "m_rtv", "classmage_1_1_swap_chain.html#a87610dab11ac73b2e5c2510e013640ac", null ],
-    [ "m_swap_chain", "classmage_1_1_swap_chain.html#a826bde72349ca10f7c60ca39d68dc2b2", null ]
+    [ "m_swap_chain", "classmage_1_1_swap_chain.html#a826bde72349ca10f7c60ca39d68dc2b2", null ],
+    [ "m_window", "classmage_1_1_swap_chain.html#a3eb5ca77874f177e48ac2b77a97cb382", null ]
 ];

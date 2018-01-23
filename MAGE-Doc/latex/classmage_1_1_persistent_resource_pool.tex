@@ -4,6 +4,13 @@
 
 {\ttfamily \#include $<$resource\+\_\+pool.\+hpp$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classmage_1_1_persistent_resource_pool_a8041d9d11d2307efc6d5b6dd43074e0c}{key\+\_\+type} = KeyT
+\item 
+using \hyperlink{classmage_1_1_persistent_resource_pool_a2311ac7d92bb3c23950c2d88e9213d16}{value\+\_\+type} = ResourceT
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,7 +18,7 @@
 \item 
 \hyperlink{classmage_1_1_persistent_resource_pool_af49749cabca4e6e16b2c073f6f550e0b}{Persistent\+Resource\+Pool} (const \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} \&pool)=delete
 \item 
-\hyperlink{classmage_1_1_persistent_resource_pool_aeb45e65e1dd6c134043f2b8ea0f8b88d}{Persistent\+Resource\+Pool} (\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} \&\&pool)=default
+\hyperlink{classmage_1_1_persistent_resource_pool_a74c46a17cc52d5570a3fd0b7a6bceb81}{Persistent\+Resource\+Pool} (\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} \&\&pool)=delete
 \item 
 \hyperlink{classmage_1_1_persistent_resource_pool_a13bb68c8a9f8c37f9f217aea2625935a}{$\sim$\+Persistent\+Resource\+Pool} () noexcept
 \item 
@@ -19,19 +26,21 @@
 \item 
 \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} \& \hyperlink{classmage_1_1_persistent_resource_pool_adcec8a286b15174ee99200b68ba0589e}{operator=} (\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} \&\&pool)=delete
 \item 
-size\+\_\+t \hyperlink{classmage_1_1_persistent_resource_pool_a3fb4642a388dae4818996cbfcf454278}{Get\+Number\+Of\+Resources} () const noexcept
+bool \hyperlink{classmage_1_1_persistent_resource_pool_a9a5669551c15823b817b3c4716a5a52c}{empty} () const noexcept
 \item 
-bool \hyperlink{classmage_1_1_persistent_resource_pool_ad33abfe0eda43b4295ed6b9e7532f3c5}{Has\+Resource} (const KeyT \&key) noexcept
+size\+\_\+t \hyperlink{classmage_1_1_persistent_resource_pool_a97dee6f5087b59f3e5b4fe14dca74b40}{size} () const noexcept
 \item 
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_a1804dd33769dafbb50ebc14231eb793c}{Get\+Resource} (const KeyT \&key) noexcept
+bool \hyperlink{classmage_1_1_persistent_resource_pool_a92af0c4a200ea217b831d89cfc321557}{Contains} (const KeyT \&key) noexcept
 \item 
-{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_a595623bdabb20fd464ca448d7061e9aa}{Get\+Or\+Create\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_ad8d5e096f7f9f0446993b83fe1767fd3}{Get} (const KeyT \&key) noexcept
 \item 
-{\footnotesize template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_a1423605c78293295129fde4afa18637a}{Get\+Or\+Create\+Derived\+Resource} (const KeyT \&key, Constructor\+ArgsT \&\&... args)
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_a403e25004cfc740c9378c9ee846d8148}{Get\+Or\+Create} (const KeyT \&key, Constructor\+ArgsT \&\&...args)
 \item 
-void \hyperlink{classmage_1_1_persistent_resource_pool_ab9f233a5510cf9dc35454b7f3b8b415f}{Remove\+Resource} (const KeyT \&key)
+{\footnotesize template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ }\\\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool_ab032807537c249df163193d8faf3bfd0}{Get\+Or\+Create\+Derived} (const KeyT \&key, Constructor\+ArgsT \&\&...args)
 \item 
-void \hyperlink{classmage_1_1_persistent_resource_pool_ae8b7a0b7d2f6adefc725d08367b8a29f}{Remove\+All\+Resources} ()
+void \hyperlink{classmage_1_1_persistent_resource_pool_ae340b1445a0c362155926ab1d0e752b0}{Remove} (const KeyT \&key)
+\item 
+void \hyperlink{classmage_1_1_persistent_resource_pool_a58fc2530fae1a1814b58d86ca6fbcb5f}{Remove\+All} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -43,7 +52,7 @@ using \hyperlink{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625
 \item 
 \hyperlink{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c}{Resource\+Map} \hyperlink{classmage_1_1_persistent_resource_pool_a9fec1e7492b5aea2a006b4e150289795}{m\+\_\+resource\+\_\+map}
 \item 
-\hyperlink{classmage_1_1_mutex}{Mutex} \hyperlink{classmage_1_1_persistent_resource_pool_acd393008aa9fcebf06daa5ba2b8cc073}{m\+\_\+resource\+\_\+map\+\_\+mutex}
+std\+::mutex \hyperlink{classmage_1_1_persistent_resource_pool_ac62c20842345306be0cddda2cb0d0524}{m\+\_\+mutex}
 \end{DoxyCompactItemize}
 
 
@@ -63,28 +72,42 @@ A class of persistent resource pools.
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c}{}\label{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c} 
+\hypertarget{classmage_1_1_persistent_resource_pool_a8041d9d11d2307efc6d5b6dd43074e0c}{}\label{classmage_1_1_persistent_resource_pool_a8041d9d11d2307efc6d5b6dd43074e0c} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!key\+\_\+type@{key\+\_\+type}}
+\index{key\+\_\+type@{key\+\_\+type}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{key\+\_\+type}{key\_type}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+using \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool_a8041d9d11d2307efc6d5b6dd43074e0c}{key\+\_\+type} =  KeyT}
+
+The key type of persistent resource pools. \hypertarget{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c}{}\label{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Resource\+Map@{Resource\+Map}}
 \index{Resource\+Map@{Resource\+Map}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{Resource\+Map}{ResourceMap}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 using \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c}{Resource\+Map} =  std\+::map$<$ KeyT, \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ $>$\hspace{0.3cm}{\ttfamily [private]}}
 
-A resource map used by a persistent resource pool. 
+A resource map used by a persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_a2311ac7d92bb3c23950c2d88e9213d16}{}\label{classmage_1_1_persistent_resource_pool_a2311ac7d92bb3c23950c2d88e9213d16} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+using \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool_a2311ac7d92bb3c23950c2d88e9213d16}{value\+\_\+type} =  ResourceT}
+
+The value type of persistent resource pools. 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_persistent_resource_pool_a23b83adf594628b93c368a2da7660ef8}{}\label{classmage_1_1_persistent_resource_pool_a23b83adf594628b93c368a2da7660ef8} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}}
 \index{Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{Persistent\+Resource\+Pool()}{PersistentResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_af49749cabca4e6e16b2c073f6f550e0b}{}\label{classmage_1_1_persistent_resource_pool_af49749cabca4e6e16b2c073f6f550e0b} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}}
 \index{Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{Persistent\+Resource\+Pool()}{PersistentResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a persistent resource pool from the given persistent resource pool.
@@ -94,12 +117,12 @@ Constructs a persistent resource pool from the given persistent resource pool.
 \mbox{\tt in}  & {\em pool} & A reference to the persistent resource pool to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_persistent_resource_pool_aeb45e65e1dd6c134043f2b8ea0f8b88d}{}\label{classmage_1_1_persistent_resource_pool_aeb45e65e1dd6c134043f2b8ea0f8b88d} 
+\hypertarget{classmage_1_1_persistent_resource_pool_a74c46a17cc52d5570a3fd0b7a6bceb81}{}\label{classmage_1_1_persistent_resource_pool_a74c46a17cc52d5570a3fd0b7a6bceb81} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}}
 \index{Persistent\+Resource\+Pool@{Persistent\+Resource\+Pool}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{Persistent\+Resource\+Pool()}{PersistentResourcePool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-\hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$ \&\&}]{pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+\hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$ \&\&}]{pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Constructs a persistent resource pool by moving the given persistent resource pool.
 
@@ -112,26 +135,94 @@ Constructs a persistent resource pool by moving the given persistent resource po
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!````~Persistent\+Resource\+Pool@{$\sim$\+Persistent\+Resource\+Pool}}
 \index{````~Persistent\+Resource\+Pool@{$\sim$\+Persistent\+Resource\+Pool}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{$\sim$\+Persistent\+Resource\+Pool()}{~PersistentResourcePool()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::$\sim$\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Destructs this persistent resource pool. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_persistent_resource_pool_a3fb4642a388dae4818996cbfcf454278}{}\label{classmage_1_1_persistent_resource_pool_a3fb4642a388dae4818996cbfcf454278} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}}
-\index{Get\+Number\+Of\+Resources@{Get\+Number\+Of\+Resources}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Number\+Of\+Resources()}{GetNumberOfResources()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-size\+\_\+t \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Number\+Of\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1_persistent_resource_pool_a92af0c4a200ea217b831d89cfc321557}{}\label{classmage_1_1_persistent_resource_pool_a92af0c4a200ea217b831d89cfc321557} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Contains@{Contains}}
+\index{Contains@{Contains}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+bool \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Contains (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the number of resources contained in this persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_a1423605c78293295129fde4afa18637a}{}\label{classmage_1_1_persistent_resource_pool_a1423605c78293295129fde4afa18637a} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Or\+Create\+Derived\+Resource@{Get\+Or\+Create\+Derived\+Resource}}
-\index{Get\+Or\+Create\+Derived\+Resource@{Get\+Or\+Create\+Derived\+Resource}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create\+Derived\+Resource()}{GetOrCreateDerivedResource()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+Checks whether this persistent resource pool contains a resource corresponding to the given key from this persistent resource pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if a resource is contained in this persistent resource pool corresponding to the given key. {\ttfamily false}, otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_persistent_resource_pool_a9a5669551c15823b817b3c4716a5a52c}{}\label{classmage_1_1_persistent_resource_pool_a9a5669551c15823b817b3c4716a5a52c} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!empty@{empty}}
+\index{empty@{empty}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+bool \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this persistent resource pool is empty.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this persistent resource pool is empty. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_persistent_resource_pool_ad8d5e096f7f9f0446993b83fe1767fd3}{}\label{classmage_1_1_persistent_resource_pool_ad8d5e096f7f9f0446993b83fe1767fd3} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the resource corresponding to the given key from this persistent resource pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr}, if no resource is contained in this persistent resource pool corresponding to the given key. 
+
+A pointer to the resource corresponding to the given key from this persistent resource pool. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_persistent_resource_pool_a403e25004cfc740c9378c9ee846d8148}{}\label{classmage_1_1_persistent_resource_pool_a403e25004cfc740c9378c9ee846d8148} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Or\+Create@{Get\+Or\+Create}}
+\index{Get\+Or\+Create@{Get\+Or\+Create}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create()}{GetOrCreate()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+template$<$typename... Constructor\+ArgsT$>$ \\
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+Returns the resource corresponding to the given key from this persistent resource pool.
+
+If no resource is contained in this persistent resource pool corresponding to the given key, a new resource is created from the given arguments, added to this persistent resource pool and returned.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Constructor\+ArgsT} & The argument types for creating a new resource of type {\ttfamily ResourceT}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
+\hline
+\mbox{\tt in}  & {\em args} & The arguments for creating a new resource of type {\ttfamily ResourceT}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the resource corresponding to the given key from this persistent resource pool. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_persistent_resource_pool_ab032807537c249df163193d8faf3bfd0}{}\label{classmage_1_1_persistent_resource_pool_ab032807537c249df163193d8faf3bfd0} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Or\+Create\+Derived@{Get\+Or\+Create\+Derived}}
+\index{Get\+Or\+Create\+Derived@{Get\+Or\+Create\+Derived}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create\+Derived()}{GetOrCreateDerived()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 template$<$typename Derived\+ResourceT , typename... Constructor\+ArgsT$>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create\+Derived\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create\+Derived (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
 
 Returns the resource corresponding to the given key from this persistent resource pool.
 
@@ -157,74 +248,11 @@ If no resource is contained in this persistent resource pool corresponding to th
 \begin{DoxyReturn}{Returns}
 A pointer to the resource corresponding to the given key from this persistent resource pool. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_persistent_resource_pool_a595623bdabb20fd464ca448d7061e9aa}{}\label{classmage_1_1_persistent_resource_pool_a595623bdabb20fd464ca448d7061e9aa} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Or\+Create\+Resource@{Get\+Or\+Create\+Resource}}
-\index{Get\+Or\+Create\+Resource@{Get\+Or\+Create\+Resource}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Or\+Create\+Resource()}{GetOrCreateResource()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-template$<$typename... Constructor\+ArgsT$>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Or\+Create\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
-
-Returns the resource corresponding to the given key from this persistent resource pool.
-
-If no resource is contained in this persistent resource pool corresponding to the given key, a new resource is created from the given arguments, added to this persistent resource pool and returned.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em Constructor\+ArgsT} & The argument types for creating a new resource of type {\ttfamily ResourceT}. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
-\hline
-\mbox{\tt in}  & {\em args} & The arguments for creating a new resource of type {\ttfamily ResourceT}. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A pointer to the resource corresponding to the given key from this persistent resource pool. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_persistent_resource_pool_a1804dd33769dafbb50ebc14231eb793c}{}\label{classmage_1_1_persistent_resource_pool_a1804dd33769dafbb50ebc14231eb793c} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Get\+Resource@{Get\+Resource}}
-\index{Get\+Resource@{Get\+Resource}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Get\+Resource()}{GetResource()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ ResourceT $>$ \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Get\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the resource corresponding to the given key from this persistent resource pool.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily nullptr}, if no resource is contained in this persistent resource pool corresponding to the given key. 
-
-A pointer to the resource corresponding to the given key from this persistent resource pool. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_persistent_resource_pool_ad33abfe0eda43b4295ed6b9e7532f3c5}{}\label{classmage_1_1_persistent_resource_pool_ad33abfe0eda43b4295ed6b9e7532f3c5} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Has\+Resource@{Has\+Resource}}
-\index{Has\+Resource@{Has\+Resource}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Has\+Resource()}{HasResource()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-bool \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Has\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Checks whether this persistent resource pool contains a resource corresponding to the given key from this persistent resource pool.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & A reference to the key of the resource. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true}, if a resource is contained in this persistent resource pool corresponding to the given key. {\ttfamily false}, otherwise. 
-\end{DoxyReturn}
 \hypertarget{classmage_1_1_persistent_resource_pool_a796e9dbb12e2756412c50117a6a67f86}{}\label{classmage_1_1_persistent_resource_pool_a796e9dbb12e2756412c50117a6a67f86} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}\& \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$ \&}]{pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Copies the given persistent resource pool to this persistent resource pool.
@@ -241,7 +269,7 @@ A reference to the copy of the given persistent resource pool (i.\+e. this persi
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}\& \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_persistent_resource_pool}{Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$ \&\&}]{pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 Moves the given persistent resource pool to this persistent resource pool.
@@ -254,19 +282,12 @@ Moves the given persistent resource pool to this persistent resource pool.
 \begin{DoxyReturn}{Returns}
 A reference to the moved persistent resource pool (i.\+e. this persistent resource pool). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_persistent_resource_pool_ae8b7a0b7d2f6adefc725d08367b8a29f}{}\label{classmage_1_1_persistent_resource_pool_ae8b7a0b7d2f6adefc725d08367b8a29f} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Remove\+All\+Resources@{Remove\+All\+Resources}}
-\index{Remove\+All\+Resources@{Remove\+All\+Resources}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Remove\+All\+Resources()}{RemoveAllResources()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-void \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove\+All\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Removes all resources from this persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_ab9f233a5510cf9dc35454b7f3b8b415f}{}\label{classmage_1_1_persistent_resource_pool_ab9f233a5510cf9dc35454b7f3b8b415f} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Remove\+Resource@{Remove\+Resource}}
-\index{Remove\+Resource@{Remove\+Resource}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{Remove\+Resource()}{RemoveResource()}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-void \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove\+Resource (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})}
+\hypertarget{classmage_1_1_persistent_resource_pool_ae340b1445a0c362155926ab1d0e752b0}{}\label{classmage_1_1_persistent_resource_pool_ae340b1445a0c362155926ab1d0e752b0} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Remove@{Remove}}
+\index{Remove@{Remove}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+void \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove (\begin{DoxyParamCaption}\item[{const KeyT \&}]{key }\end{DoxyParamCaption})}
 
 Removes the resource corresponding to the given key from this persistent resource pool.
 
@@ -275,21 +296,35 @@ Removes the resource corresponding to the given key from this persistent resourc
 \mbox{\tt in}  & {\em key} & A reference to the key of the resource to remove. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_persistent_resource_pool_a58fc2530fae1a1814b58d86ca6fbcb5f}{}\label{classmage_1_1_persistent_resource_pool_a58fc2530fae1a1814b58d86ca6fbcb5f} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!Remove\+All@{Remove\+All}}
+\index{Remove\+All@{Remove\+All}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{Remove\+All()}{RemoveAll()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+void \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::Remove\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Removes all resources from this persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_a97dee6f5087b59f3e5b4fe14dca74b40}{}\label{classmage_1_1_persistent_resource_pool_a97dee6f5087b59f3e5b4fe14dca74b40} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!size@{size}}
+\index{size@{size}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+size\+\_\+t \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the number of resources contained in this persistent resource pool. 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_persistent_resource_pool_a9fec1e7492b5aea2a006b4e150289795}{}\label{classmage_1_1_persistent_resource_pool_a9fec1e7492b5aea2a006b4e150289795} 
+\hypertarget{classmage_1_1_persistent_resource_pool_ac62c20842345306be0cddda2cb0d0524}{}\label{classmage_1_1_persistent_resource_pool_ac62c20842345306be0cddda2cb0d0524} 
+\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!m\+\_\+mutex@{m\+\_\+mutex}}
+\index{m\+\_\+mutex@{m\+\_\+mutex}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
+\subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
+std\+::mutex \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+The mutex for accessing the resource map of this persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_a9fec1e7492b5aea2a006b4e150289795}{}\label{classmage_1_1_persistent_resource_pool_a9fec1e7492b5aea2a006b4e150289795} 
 \index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!m\+\_\+resource\+\_\+map@{m\+\_\+resource\+\_\+map}}
 \index{m\+\_\+resource\+\_\+map@{m\+\_\+resource\+\_\+map}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+map}{m\_resource\_map}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
+{\footnotesize\ttfamily template$<$typename KeyT , typename ResourceT $>$ \\
 \hyperlink{classmage_1_1_persistent_resource_pool_a9215c5816fc45ab5f772625df2a8a60c}{Resource\+Map} \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::m\+\_\+resource\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
 
-The persistent resource map of this persistent resource pool. \hypertarget{classmage_1_1_persistent_resource_pool_acd393008aa9fcebf06daa5ba2b8cc073}{}\label{classmage_1_1_persistent_resource_pool_acd393008aa9fcebf06daa5ba2b8cc073} 
-\index{mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}!m\+\_\+resource\+\_\+map\+\_\+mutex@{m\+\_\+resource\+\_\+map\+\_\+mutex}}
-\index{m\+\_\+resource\+\_\+map\+\_\+mutex@{m\+\_\+resource\+\_\+map\+\_\+mutex}!mage\+::\+Persistent\+Resource\+Pool@{mage\+::\+Persistent\+Resource\+Pool}}
-\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+map\+\_\+mutex}{m\_resource\_map\_mutex}}
-{\footnotesize\ttfamily template$<$typename KeyT, typename ResourceT$>$ \\
-\hyperlink{classmage_1_1_mutex}{Mutex} \hyperlink{classmage_1_1_persistent_resource_pool}{mage\+::\+Persistent\+Resource\+Pool}$<$ KeyT, ResourceT $>$\+::m\+\_\+resource\+\_\+map\+\_\+mutex\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
-
-The mutex for accessing the persistent resource map of this persistent resource pool. 
+The resource map of this persistent resource pool. 

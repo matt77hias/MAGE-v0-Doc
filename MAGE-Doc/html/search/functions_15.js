@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wait',['Wait',['../classmage_1_1_semaphore.html#ab0be313e63792315ee9b227dea1184be',1,'mage::Semaphore::Wait()'],['../classmage_1_1_condition_variable.html#a15a1d797032d178c787a385d11522efb',1,'mage::ConditionVariable::Wait()']]],
   ['warning',['Warning',['../namespacemage.html#a0eccd8065c75d5f2bf86b48a5be3bfe5',1,'mage']]],
   ['what',['what',['../classmage_1_1_exception.html#a2ec064e970c232b09c100e151195a3e4',1,'mage::Exception']]],
   ['wireframepass',['WireframePass',['../classmage_1_1_wireframe_pass.html#a7323b3caca5d06a068a89c0333651f04',1,'mage::WireframePass::WireframePass()'],['../classmage_1_1_wireframe_pass.html#a3e070108925c2ef3b4feaa29dbf605f2',1,'mage::WireframePass::WireframePass(const WireframePass &amp;render_pass)=delete'],['../classmage_1_1_wireframe_pass.html#ad6740862dc463125ba93317d0e640848',1,'mage::WireframePass::WireframePass(WireframePass &amp;&amp;render_pass) noexcept']]],

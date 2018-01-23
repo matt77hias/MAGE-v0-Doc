@@ -7,7 +7,7 @@ var searchData=
   ['mdlwriter',['MDLWriter',['../classmage_1_1loader_1_1_m_d_l_writer.html',1,'mage::loader']]],
   ['memoryarena',['MemoryArena',['../classmage_1_1_memory_arena.html',1,'mage']]],
   ['mesh',['Mesh',['../classmage_1_1_mesh.html',1,'mage']]],
-  ['meshdescriptor',['MeshDescriptor',['../structmage_1_1_mesh_descriptor.html',1,'mage']]],
+  ['meshdescriptor',['MeshDescriptor',['../classmage_1_1_mesh_descriptor.html',1,'mage']]],
   ['model',['Model',['../classmage_1_1_model.html',1,'mage']]],
   ['modelbuffer',['ModelBuffer',['../structmage_1_1_model_buffer.html',1,'mage']]],
   ['modeldescriptor',['ModelDescriptor',['../classmage_1_1_model_descriptor.html',1,'mage']]],
@@ -20,7 +20,5 @@ var searchData=
   ['mouselookscript',['MouseLookScript',['../classmage_1_1script_1_1_mouse_look_script.html',1,'mage::script']]],
   ['mshreader',['MSHReader',['../classmage_1_1loader_1_1_m_s_h_reader.html',1,'mage::loader']]],
   ['mshwriter',['MSHWriter',['../classmage_1_1loader_1_1_m_s_h_writer.html',1,'mage::loader']]],
-  ['mtlreader',['MTLReader',['../classmage_1_1loader_1_1_m_t_l_reader.html',1,'mage::loader']]],
-  ['mutex',['Mutex',['../classmage_1_1_mutex.html',1,'mage']]],
-  ['mutexlock',['MutexLock',['../classmage_1_1_mutex_lock.html',1,'mage']]]
+  ['mtlreader',['MTLReader',['../classmage_1_1loader_1_1_m_t_l_reader.html',1,'mage::loader']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abitmask',['ABitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#ada163cba3be6a89fc99166b3d6d49050',1,'DDS_PIXELFORMAT']]],
+  ['abort',['Abort',['../namespacemage.html#a4cd09dcffe77010a4d000a3dd02c1ca7',1,'mage']]],
   ['active',['Active',['../struct_im_gui_window.html#a42f141fa0eed059176cb4360df1b1eb2',1,'ImGuiWindow']]],
   ['active_5fhead',['active_head',['../structstbrp__context.html#a13277239636803aff28f00b0a0376120',1,'stbrp_context']]],
   ['activeid',['ActiveId',['../struct_im_gui_context.html#a11c874eb6cf74ba9162bd1d01c4ccbcc',1,'ImGuiContext']]],

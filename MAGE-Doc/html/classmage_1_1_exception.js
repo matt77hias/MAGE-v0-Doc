@@ -9,5 +9,6 @@ var classmage_1_1_exception =
     [ "operator=", "classmage_1_1_exception.html#ab0e7e6b32b07505271a4a88067ab54f4", null ],
     [ "operator=", "classmage_1_1_exception.html#aa9305c6bd8836f56ffa970473533f031", null ],
     [ "what", "classmage_1_1_exception.html#a2ec064e970c232b09c100e151195a3e4", null ],
-    [ "m_text", "classmage_1_1_exception.html#a11062fc70be58cf87faf2e1f8a4bebe7", null ]
+    [ "m_text", "classmage_1_1_exception.html#ad5bd9bb044bebaa1bac36c8c8a25c052", null ],
+    [ "s_buffer_size", "classmage_1_1_exception.html#a41c9eb8e4a238210822170dfa211e493", null ]
 ];

@@ -6,8 +6,8 @@ var classmage_1_1_resource =
     [ "~Resource", "classmage_1_1_resource.html#a56a3ac799224e100b271b65ec455b59e", null ],
     [ "GetFilename", "classmage_1_1_resource.html#a21bed60ba52a741eaffddc953f241be7", null ],
     [ "GetGuid", "classmage_1_1_resource.html#adaa2464cb1fdb51a3f6028c0f316d083", null ],
-    [ "GetName", "classmage_1_1_resource.html#a7e056c97f70a3f7211d9456bbda51010", null ],
-    [ "GetPath", "classmage_1_1_resource.html#a9df55cc00e0412b1435538e8107ee563", null ],
+    [ "GetName", "classmage_1_1_resource.html#a6414c6f8342f4cc92e7ed7861000cd2f", null ],
+    [ "GetPath", "classmage_1_1_resource.html#a01cb4f6f8ff66a1f2545edc89af656c9", null ],
     [ "operator=", "classmage_1_1_resource.html#a938159cb02ec565b9b957f993db4769d", null ],
     [ "operator=", "classmage_1_1_resource.html#aa1f7a7ddd31f4fc16293b4a5ca9a93c8", null ],
     [ "m_guid", "classmage_1_1_resource.html#ac8cf21b8b48c47a104110e12e259ad99", null ]

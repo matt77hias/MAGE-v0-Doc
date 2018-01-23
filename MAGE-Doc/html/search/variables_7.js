@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g_5fdefault_5fdelimiters',['g_default_delimiters',['../namespacemage.html#a10fe126e627cc2ce8af2cc39cc5db81e',1,'mage']]],
+  ['g_5fdefault_5fdelimiters',['g_default_delimiters',['../namespacemage.html#a6879c3f0af5374a14ec980588b74061d',1,'mage']]],
   ['g_5ffont_5ftoken_5fmagic',['g_font_token_magic',['../namespacemage_1_1loader.html#a20d64b38ae4c82f5289faeb28e9e7fad',1,'mage::loader']]],
   ['g_5fmdl_5ftoken_5fcomment',['g_mdl_token_comment',['../namespacemage_1_1loader.html#aca4ba9456f5233060d09a0f119021168',1,'mage::loader']]],
   ['g_5fmdl_5ftoken_5fmaterial_5flibrary',['g_mdl_token_material_library',['../namespacemage_1_1loader.html#a7a130ab03ceb9d2ff5c0c0a64396366e',1,'mage::loader']]],
@@ -27,7 +27,8 @@ var searchData=
   ['g_5fobj_5ftoken_5fsmoothing_5fgroup',['g_obj_token_smoothing_group',['../namespacemage_1_1loader.html#a43d977a9091ce35265a1b63a64421977',1,'mage::loader']]],
   ['g_5fobj_5ftoken_5ftexture',['g_obj_token_texture',['../namespacemage_1_1loader.html#a766d097bfa881dd65b9e7488a2b3d37c',1,'mage::loader']]],
   ['g_5fobj_5ftoken_5fvertex',['g_obj_token_vertex',['../namespacemage_1_1loader.html#a5e1d583e5b5baf5d4135d254e3075342',1,'mage::loader']]],
-  ['g_5fprimes',['g_primes',['../namespacemage.html#ae18ccb473db574648e033917a8f322e0',1,'mage']]],
+  ['g_5fprimes',['g_primes',['../namespacemage.html#aedd657cb197fe5a6cc91919e1141badb',1,'mage']]],
+  ['g_5fselected',['g_selected',['../namespacemage_1_1editor.html#a07eeeb446dc1d39e1d6ffa06a6324570',1,'mage::editor']]],
   ['g_5fvar_5ftoken_5fbool',['g_var_token_bool',['../namespacemage_1_1loader.html#af8ee37ed91ac28f044c159272c402c8f',1,'mage::loader']]],
   ['g_5fvar_5ftoken_5fcomment',['g_var_token_comment',['../namespacemage_1_1loader.html#a51fd34b486dfe1d203f7c7b897b2fd2c',1,'mage::loader']]],
   ['g_5fvar_5ftoken_5ffloat',['g_var_token_float',['../namespacemage_1_1loader.html#a3732f74f1d4aec47eb9957a310d59acf',1,'mage::loader']]],

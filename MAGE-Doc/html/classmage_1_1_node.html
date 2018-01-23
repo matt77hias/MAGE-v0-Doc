@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.123.0</span>
+   &#160;<span id="projectnumber">v0.125.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -127,8 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add9389d951ae864d7f92261398297089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975d92d3d93fe00d748c341198ddf02c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a975d92d3d93fe00d748c341198ddf02c">GetNumberOfChilds</a> () const noexcept</td></tr>
 <tr class="separator:a975d92d3d93fe00d748c341198ddf02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75d538a04736033df80747f16744f3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ab75d538a04736033df80747f16744f3a">HasChild</a> (<a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const <a class="el" href="classmage_1_1_node.html">Node</a> &gt; node) const</td></tr>
-<tr class="separator:ab75d538a04736033df80747f16744f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd885043a9de1b0c09d1eb0ef7bf6006"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#afd885043a9de1b0c09d1eb0ef7bf6006">ContainsChilds</a> () const</td></tr>
+<tr class="separator:afd885043a9de1b0c09d1eb0ef7bf6006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1d85609b765c019a0a123f5f8a182a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a2c1d85609b765c019a0a123f5f8a182a">ContainsChild</a> (<a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const <a class="el" href="classmage_1_1_node.html">Node</a> &gt; node) const</td></tr>
+<tr class="separator:a2c1d85609b765c019a0a123f5f8a182a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2324a1a111548e4b80b8e4cbaba5221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ad2324a1a111548e4b80b8e4cbaba5221">AddChild</a> (<a class="el" href="classmage_1_1_node.html#ac575dc006e0ae1134277ade977dc06b6">NodePtr</a> node)</td></tr>
 <tr class="separator:ad2324a1a111548e4b80b8e4cbaba5221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0654443d58730ebc7471626a38c2bc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a0654443d58730ebc7471626a38c2bc7f">RemoveChild</a> (<a class="el" href="classmage_1_1_node.html#ac575dc006e0ae1134277ade977dc06b6">NodePtr</a> node)</td></tr>
@@ -141,40 +143,49 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6db4a4bc784a20b833d3fc32a4338318"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
 <tr class="memitem:a6db4a4bc784a20b833d3fc32a4338318"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a6db4a4bc784a20b833d3fc32a4338318">ForEachDescendant</a> (ActionT action) const</td></tr>
 <tr class="separator:a6db4a4bc784a20b833d3fc32a4338318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26930d8d190e25afb3910e12167b27b0"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:a26930d8d190e25afb3910e12167b27b0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a26930d8d190e25afb3910e12167b27b0">Has</a> () const noexcept</td></tr>
-<tr class="separator:a26930d8d190e25afb3910e12167b27b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3defd7329e8f87cff65cd8136c8f2d2"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:ab3defd7329e8f87cff65cd8136c8f2d2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ab3defd7329e8f87cff65cd8136c8f2d2">Contains</a> () const noexcept</td></tr>
+<tr class="separator:ab3defd7329e8f87cff65cd8136c8f2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb492896751b5b60ba5ddaeecbdd719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#aafb492896751b5b60ba5ddaeecbdd719">ContainsComponents</a> () const noexcept</td></tr>
+<tr class="separator:aafb492896751b5b60ba5ddaeecbdd719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d74c74f31d8fcbc0cf6768fd180a8e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a51d74c74f31d8fcbc0cf6768fd180a8e">GetNumberOfComponents</a> () const noexcept</td></tr>
+<tr class="separator:a51d74c74f31d8fcbc0cf6768fd180a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cd486de1639d5af2618ba913124fbe6"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
 <tr class="memitem:a0cd486de1639d5af2618ba913124fbe6"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a0cd486de1639d5af2618ba913124fbe6">GetNumberOf</a> () const noexcept</td></tr>
 <tr class="separator:a0cd486de1639d5af2618ba913124fbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d74c74f31d8fcbc0cf6768fd180a8e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a51d74c74f31d8fcbc0cf6768fd180a8e">GetNumberOfComponents</a> () const noexcept</td></tr>
-<tr class="separator:a51d74c74f31d8fcbc0cf6768fd180a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af514b0282820f1d071fc24a2b815ae82"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
 <tr class="memitem:af514b0282820f1d071fc24a2b815ae82"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#af514b0282820f1d071fc24a2b815ae82">Get</a> () noexcept</td></tr>
 <tr class="separator:af514b0282820f1d071fc24a2b815ae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a597f86bd9faecda719c37c4b2c73231e"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
 <tr class="memitem:a597f86bd9faecda719c37c4b2c73231e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const ComponentT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a597f86bd9faecda719c37c4b2c73231e">Get</a> () const noexcept</td></tr>
 <tr class="separator:a597f86bd9faecda719c37c4b2c73231e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade85547b8555c936b2c01873d2c51d2f"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:ade85547b8555c936b2c01873d2c51d2f"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ade85547b8555c936b2c01873d2c51d2f">GetAll</a> ()</td></tr>
-<tr class="separator:ade85547b8555c936b2c01873d2c51d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e758fb0114ae432b25d987d44168faa"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
-<tr class="memitem:a6e758fb0114ae432b25d987d44168faa"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const ComponentT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a6e758fb0114ae432b25d987d44168faa">GetAll</a> () const</td></tr>
-<tr class="separator:a6e758fb0114ae432b25d987d44168faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53172eaa92e0fa127bfe362349c96734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a53172eaa92e0fa127bfe362349c96734">AddComponent</a> (<a class="el" href="classmage_1_1_node.html#a46b7e1f4f5b98bfa78ed96a80797a4ba">ComponentPtr</a> component)</td></tr>
-<tr class="separator:a53172eaa92e0fa127bfe362349c96734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff260f8a6e8741dc7d56ca1fceb7b0f"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:aaff260f8a6e8741dc7d56ca1fceb7b0f"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#aaff260f8a6e8741dc7d56ca1fceb7b0f">GetAll</a> ()</td></tr>
+<tr class="separator:aaff260f8a6e8741dc7d56ca1fceb7b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920ff966a7f970189fcbae86025ab3aa"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:a920ff966a7f970189fcbae86025ab3aa"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const ComponentT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a920ff966a7f970189fcbae86025ab3aa">GetAll</a> () const</td></tr>
+<tr class="separator:a920ff966a7f970189fcbae86025ab3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58452a6195ebea7a1a7a26f9a4dd8102"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT &gt; </td></tr>
+<tr class="memitem:a58452a6195ebea7a1a7a26f9a4dd8102"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a58452a6195ebea7a1a7a26f9a4dd8102">Add</a> (<a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt; component)</td></tr>
+<tr class="separator:a58452a6195ebea7a1a7a26f9a4dd8102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec6963ed4eb9d0463e220a53555d27a"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT , typename ActionT &gt; </td></tr>
+<tr class="memitem:a5ec6963ed4eb9d0463e220a53555d27a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a5ec6963ed4eb9d0463e220a53555d27a">ForEach</a> (ActionT action)</td></tr>
+<tr class="separator:a5ec6963ed4eb9d0463e220a53555d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27787099b85542ab2e5d3901bdfa8684"><td class="memTemplParams" colspan="2">template&lt;typename ComponentT , typename ActionT &gt; </td></tr>
+<tr class="memitem:a27787099b85542ab2e5d3901bdfa8684"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a27787099b85542ab2e5d3901bdfa8684">ForEach</a> (ActionT action) const</td></tr>
+<tr class="separator:a27787099b85542ab2e5d3901bdfa8684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac90a83642d3043ac6fc4efd14f922877"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
 <tr class="memitem:ac90a83642d3043ac6fc4efd14f922877"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ac90a83642d3043ac6fc4efd14f922877">ForEachComponent</a> (ActionT action)</td></tr>
 <tr class="separator:ac90a83642d3043ac6fc4efd14f922877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c83c2fcd0ee99277d0120396ffa81e"><td class="memTemplParams" colspan="2">template&lt;typename ActionT &gt; </td></tr>
 <tr class="memitem:ac3c83c2fcd0ee99277d0120396ffa81e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ac3c83c2fcd0ee99277d0120396ffa81e">ForEachComponent</a> (ActionT action) const</td></tr>
 <tr class="separator:ac3c83c2fcd0ee99277d0120396ffa81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05980bc835cf8da96a9abb225eae72da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a05980bc835cf8da96a9abb225eae72da">GetState</a> () const noexcept</td></tr>
+<tr class="memitem:a05980bc835cf8da96a9abb225eae72da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a05980bc835cf8da96a9abb225eae72da">GetState</a> () const noexcept</td></tr>
 <tr class="separator:a05980bc835cf8da96a9abb225eae72da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9511a52ddcc0bba71a0353338dcd1d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a9511a52ddcc0bba71a0353338dcd1d9b">SetState</a> (<a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a> state) noexcept</td></tr>
+<tr class="memitem:a9511a52ddcc0bba71a0353338dcd1d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a9511a52ddcc0bba71a0353338dcd1d9b">SetState</a> (<a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a> state) noexcept</td></tr>
 <tr class="separator:a9511a52ddcc0bba71a0353338dcd1d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41474294afb1064796ff8a75413734f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a642e05c5c83642b6946703615cdbf2da">S32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a41474294afb1064796ff8a75413734f3">GetGuid</a> () const noexcept</td></tr>
-<tr class="separator:a41474294afb1064796ff8a75413734f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d5c613982a4dfd5175538aff6a07a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a69d5c613982a4dfd5175538aff6a07a5">GetGuid</a> () const noexcept</td></tr>
+<tr class="separator:a69d5c613982a4dfd5175538aff6a07a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac317011c240a845fbdb7209e26d560f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_node.html#ac575dc006e0ae1134277ade977dc06b6">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ac317011c240a845fbdb7209e26d560f2">Get</a> () const noexcept</td></tr>
 <tr class="separator:ac317011c240a845fbdb7209e26d560f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206e7c7ef80a0561b31ebbb9d05c98a0"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a206e7c7ef80a0561b31ebbb9d05c98a0">GetName</a> () const noexcept</td></tr>
@@ -197,10 +208,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1d1d432f46c61932b5167d27d20cc383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804d53398f193b6b06f883131ab7415d"><td class="memItemLeft" align="right" valign="top">std::unordered_multimap&lt; std::type_index, <a class="el" href="classmage_1_1_node.html#a46b7e1f4f5b98bfa78ed96a80797a4ba">ComponentPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a804d53398f193b6b06f883131ab7415d">m_components</a></td></tr>
 <tr class="separator:a804d53398f193b6b06f883131ab7415d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b775e32bb001c54a9927461eaf7926"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a76b775e32bb001c54a9927461eaf7926">m_state</a></td></tr>
+<tr class="memitem:a76b775e32bb001c54a9927461eaf7926"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a76b775e32bb001c54a9927461eaf7926">m_state</a></td></tr>
 <tr class="separator:a76b775e32bb001c54a9927461eaf7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1342131cdbad63e1eb068d22bc6f038d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a642e05c5c83642b6946703615cdbf2da">S32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a1342131cdbad63e1eb068d22bc6f038d">m_guid</a></td></tr>
-<tr class="separator:a1342131cdbad63e1eb068d22bc6f038d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef1876293074bfcc01104eb92f1bfdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a3ef1876293074bfcc01104eb92f1bfdf">m_guid</a></td></tr>
+<tr class="separator:a3ef1876293074bfcc01104eb92f1bfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab056e1563dca22433efa152f4b6da46f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_node.html#ac575dc006e0ae1134277ade977dc06b6">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#ab056e1563dca22433efa152f4b6da46f">m_this</a></td></tr>
 <tr class="separator:ab056e1563dca22433efa152f4b6da46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a476cc21fa65cdf9bde0f11fe08b5a707"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_node.html#a476cc21fa65cdf9bde0f11fe08b5a707">m_name</a></td></tr>
@@ -363,6 +374,39 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58452a6195ebea7a1a7a26f9a4dd8102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58452a6195ebea7a1a7a26f9a4dd8102">&sect;&nbsp;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Node::Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt;&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds the given component to this node.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>The component type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">component</td><td>A pointer to the component. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad2324a1a111548e4b80b8e4cbaba5221"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2324a1a111548e4b80b8e4cbaba5221">&sect;&nbsp;</a></span>AddChild()</h2>
 
@@ -388,25 +432,175 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a53172eaa92e0fa127bfe362349c96734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53172eaa92e0fa127bfe362349c96734">&sect;&nbsp;</a></span>AddComponent()</h2>
+<a id="ab3defd7329e8f87cff65cd8136c8f2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3defd7329e8f87cff65cd8136c8f2d2">&sect;&nbsp;</a></span>Contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Node::Contains </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether this node contains a component of the given type.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>The component type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains at least one component of the given type. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a2c1d85609b765c019a0a123f5f8a182a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1d85609b765c019a0a123f5f8a182a">&sect;&nbsp;</a></span>ContainsChild()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::Node::AddComponent </td>
+          <td class="memname">bool mage::Node::ContainsChild </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmage_1_1_node.html#a46b7e1f4f5b98bfa78ed96a80797a4ba">ComponentPtr</a>&#160;</td>
-          <td class="paramname"><em>component</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const <a class="el" href="classmage_1_1_node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether this node contains the given node as a child.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>A pointer to the node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains the given node as a child. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afd885043a9de1b0c09d1eb0ef7bf6006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd885043a9de1b0c09d1eb0ef7bf6006">&sect;&nbsp;</a></span>ContainsChilds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Node::ContainsChilds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether this node contains childs.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains at least one child. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aafb492896751b5b60ba5ddaeecbdd719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb492896751b5b60ba5ddaeecbdd719">&sect;&nbsp;</a></span>ContainsComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Node::ContainsComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether this node contains components.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains at least one component. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5ec6963ed4eb9d0463e220a53555d27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec6963ed4eb9d0463e220a53555d27a">&sect;&nbsp;</a></span>ForEach() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT , typename ActionT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Node::ForEach </td>
+          <td>(</td>
+          <td class="paramtype">ActionT&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds the given component to this node.</p>
+<p>Traverses all components of the given type of this node.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>The component type. </td></tr>
+    <tr><td class="paramname">ActionT</td><td>An action to perform on all components of the given type of this node. The action must accept <code>ComponentT&amp;</code> values. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">component</td><td>A pointer to the component. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>The action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27787099b85542ab2e5d3901bdfa8684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27787099b85542ab2e5d3901bdfa8684">&sect;&nbsp;</a></span>ForEach() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ComponentT , typename ActionT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Node::ForEach </td>
+          <td>(</td>
+          <td class="paramtype">ActionT&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Traverses all components of the given type of this node.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ComponentT</td><td>The component type. </td></tr>
+    <tr><td class="paramname">ActionT</td><td>An action to perform on all components of the given type of this node. The action must accept <code>const</code> <code>ComponentT&amp;</code> values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">action</td><td>The action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -646,8 +840,8 @@ A pointer to the first component of the given type of this node. </dd></dl>
 
 </div>
 </div>
-<a id="ade85547b8555c936b2c01873d2c51d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade85547b8555c936b2c01873d2c51d2f">&sect;&nbsp;</a></span>GetAll() <span class="overload">[1/2]</span></h2>
+<a id="aaff260f8a6e8741dc7d56ca1fceb7b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff260f8a6e8741dc7d56ca1fceb7b0f">&sect;&nbsp;</a></span>GetAll() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,7 +849,7 @@ A pointer to the first component of the given type of this node. </dd></dl>
 template&lt;typename ComponentT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt; &gt; mage::Node::GetAll </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; ComponentT &gt; &gt; mage::Node::GetAll </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -673,8 +867,8 @@ template&lt;typename ComponentT &gt; </div>
 
 </div>
 </div>
-<a id="a6e758fb0114ae432b25d987d44168faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e758fb0114ae432b25d987d44168faa">&sect;&nbsp;</a></span>GetAll() <span class="overload">[2/2]</span></h2>
+<a id="a920ff966a7f970189fcbae86025ab3aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920ff966a7f970189fcbae86025ab3aa">&sect;&nbsp;</a></span>GetAll() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,7 +876,7 @@ template&lt;typename ComponentT &gt; </div>
 template&lt;typename ComponentT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const ComponentT &gt; &gt; mage::Node::GetAll </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const ComponentT &gt; &gt; mage::Node::GetAll </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -700,8 +894,8 @@ template&lt;typename ComponentT &gt; </div>
 
 </div>
 </div>
-<a id="a41474294afb1064796ff8a75413734f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41474294afb1064796ff8a75413734f3">&sect;&nbsp;</a></span>GetGuid()</h2>
+<a id="a69d5c613982a4dfd5175538aff6a07a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d5c613982a4dfd5175538aff6a07a5">&sect;&nbsp;</a></span>GetGuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +904,7 @@ template&lt;typename ComponentT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a642e05c5c83642b6946703615cdbf2da">S32</a> mage::Node::GetGuid </td>
+          <td class="memname"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a> mage::Node::GetGuid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -880,7 +1074,7 @@ template&lt;typename ComponentT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a> mage::Node::GetState </td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a> mage::Node::GetState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -948,67 +1142,6 @@ template&lt;typename ComponentT &gt; </div>
 </div><div class="memdoc">
 <p>Returns the transform of this node.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the transform of this node. </dd></dl>
-
-</div>
-</div>
-<a id="a26930d8d190e25afb3910e12167b27b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26930d8d190e25afb3910e12167b27b0">&sect;&nbsp;</a></span>Has()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ComponentT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mage::Node::Has </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Checks whether this node has a component of the given type.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ComponentT</td><td>The component type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains a component of the given type. <code>false</code> otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ab75d538a04736033df80747f16744f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75d538a04736033df80747f16744f3a">&sect;&nbsp;</a></span>HasChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mage::Node::HasChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmage_1_1_proxy_ptr.html">ProxyPtr</a>&lt; const <a class="el" href="classmage_1_1_node.html">Node</a> &gt;&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks whether this node contains the given node as a child.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>A pointer to the node. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this node contains the given node as a child. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1236,7 +1369,7 @@ template&lt;typename ComponentT &gt; </div>
         <tr>
           <td class="memname">void mage::Node::SetState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a>&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1327,8 +1460,8 @@ template&lt;typename ComponentT &gt; </div>
 
 </div>
 </div>
-<a id="a1342131cdbad63e1eb068d22bc6f038d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1342131cdbad63e1eb068d22bc6f038d">&sect;&nbsp;</a></span>m_guid</h2>
+<a id="a3ef1876293074bfcc01104eb92f1bfdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef1876293074bfcc01104eb92f1bfdf">&sect;&nbsp;</a></span>m_guid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1337,7 +1470,7 @@ template&lt;typename ComponentT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a642e05c5c83642b6946703615cdbf2da">S32</a> mage::Node::m_guid</td>
+          <td class="memname"><a class="el" href="namespacemage.html#a6672cf3c861707ce4a3235a3eb43941d">U64</a> mage::Node::m_guid</td>
         </tr>
       </table>
   </td>
@@ -1406,7 +1539,7 @@ template&lt;typename ComponentT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a8159a53ed2ac3a0fe7058b2a051fa969">State</a> mage::Node::m_state</td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae47d13d8477ee94893b9a3947d28eebc">State</a> mage::Node::m_state</td>
         </tr>
       </table>
   </td>

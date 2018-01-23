@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hdr',['HDR',['../classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29a6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()'],['../classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3cea6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()'],['../classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89a6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()']]]
+  ['hdr',['HDR',['../classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfda6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()'],['../classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefa6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()'],['../classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdba6cad826248cd3f4e93da71e7b49928e3',1,'mage::RenderingOutputManager::HDR()']]]
 ];

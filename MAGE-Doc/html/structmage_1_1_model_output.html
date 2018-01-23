@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.123.0</span>
+   &#160;<span id="projectnumber">v0.125.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a090d74bebb6045c11952cc57fb1aa220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cec4d8729150a188605daabd33dd2ba"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_model_output.html#a4cec4d8729150a188605daabd33dd2ba">AddModelPart</a> (<a class="el" href="structmage_1_1_model_part.html">ModelPart</a> model_part, bool create_bounding_volumes=true)</td></tr>
 <tr class="separator:a4cec4d8729150a188605daabd33dd2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5c98c2c4f64d2cd345a2c868498cfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_model_output.html#aec5c98c2c4f64d2cd345a2c868498cfc">HasModelPart</a> (const string &amp;name) noexcept</td></tr>
-<tr class="separator:aec5c98c2c4f64d2cd345a2c868498cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172145ecca77ad45f7adc8f4c4f905ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_model_output.html#a172145ecca77ad45f7adc8f4c4f905ec">ContainsModelPart</a> (const string &amp;name) noexcept</td></tr>
+<tr class="separator:a172145ecca77ad45f7adc8f4c4f905ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204f16513741ebfacb7a287969629956"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_model_output.html#a204f16513741ebfacb7a287969629956">StartModelPart</a> (<a class="el" href="structmage_1_1_model_part.html">ModelPart</a> model_part)</td></tr>
 <tr class="separator:a204f16513741ebfacb7a287969629956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f2dff99e178b84637ae945ba5f6f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_model_output.html#a88f2dff99e178b84637ae945ba5f6f53">SetMaterial</a> (string material)</td></tr>
@@ -313,6 +313,41 @@ template&lt;typename VertexT , typename IndexT &gt; </div>
 
 </div>
 </div>
+<a id="a172145ecca77ad45f7adc8f4c4f905ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172145ecca77ad45f7adc8f4c4f905ec">&sect;&nbsp;</a></span>ContainsModelPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VertexT , typename IndexT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structmage_1_1_model_output.html">mage::ModelOutput</a>&lt; VertexT, IndexT &gt;::ContainsModelPart </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether this model output contains a model part with the given name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the model part. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a24619ec445b3a122ce4b50a6f2f74158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24619ec445b3a122ce4b50a6f2f74158">&sect;&nbsp;</a></span>EndModelPart()</h2>
 
@@ -343,41 +378,6 @@ template&lt;typename VertexT , typename IndexT &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">create_bounding_volumes</td><td>A flag indicating whether bounding volumes must be created for the given model part. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aec5c98c2c4f64d2cd345a2c868498cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec5c98c2c4f64d2cd345a2c868498cfc">&sect;&nbsp;</a></span>HasModelPart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VertexT , typename IndexT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="structmage_1_1_model_output.html">mage::ModelOutput</a>&lt; VertexT, IndexT &gt;::HasModelPart </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Checks whether this model output contains a model part with the given name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the model part. </td></tr>
   </table>
   </dd>
 </dl>

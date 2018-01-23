@@ -1,33 +1,33 @@
 var classmage_1_1_rendering_output_manager =
 [
-    [ "RTVIndex", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ce", [
-      [ "HDR", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3cea6cad826248cd3f4e93da71e7b49928e3", null ],
-      [ "GBuffer_BaseColor", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ceaf8aaa1436c06c671272ac08e4fa83309", null ],
-      [ "GBuffer_Material", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ceabbdd76532c820b05b242d544cd1b43fd", null ],
-      [ "GBuffer_Normal", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ceaf69e4b1698bc66624ab45f2c967406bb", null ],
-      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ceaf86c3f35d502a4de4cc2d4601a6fbbc4", null ],
-      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3cea2136232aa9456009a7df9de7db662322", null ],
-      [ "Count", "classmage_1_1_rendering_output_manager.html#aebe136819797593f0fcf53b753e9c3ceae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "RTVIndex", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cef", [
+      [ "HDR", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefa6cad826248cd3f4e93da71e7b49928e3", null ],
+      [ "GBuffer_BaseColor", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefaf8aaa1436c06c671272ac08e4fa83309", null ],
+      [ "GBuffer_Material", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefabbdd76532c820b05b242d544cd1b43fd", null ],
+      [ "GBuffer_Normal", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefaf69e4b1698bc66624ab45f2c967406bb", null ],
+      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefaf86c3f35d502a4de4cc2d4601a6fbbc4", null ],
+      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefa2136232aa9456009a7df9de7db662322", null ],
+      [ "Count", "classmage_1_1_rendering_output_manager.html#a776a03191e0a424d8e014414d9d44cefae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "SRVIndex", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29", [
-      [ "HDR", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29a6cad826248cd3f4e93da71e7b49928e3", null ],
-      [ "GBuffer_BaseColor", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29af8aaa1436c06c671272ac08e4fa83309", null ],
-      [ "GBuffer_Material", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29abbdd76532c820b05b242d544cd1b43fd", null ],
-      [ "GBuffer_Normal", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29af69e4b1698bc66624ab45f2c967406bb", null ],
-      [ "GBuffer_Depth", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29ae8964b7cf20037a91a4e9107f2b93db8", null ],
-      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29af86c3f35d502a4de4cc2d4601a6fbbc4", null ],
-      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29a2136232aa9456009a7df9de7db662322", null ],
-      [ "PostProcessing_Normal", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29a224be169fd2e0ce4f53c6afa41ac4fe9", null ],
-      [ "PostProcessing_Depth", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29a251bebd0602960f976f4a69dff9b13fe", null ],
-      [ "Count", "classmage_1_1_rendering_output_manager.html#a25aa12ba77bb160c5641cf54f7a68a29ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "SRVIndex", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfd", [
+      [ "HDR", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfda6cad826248cd3f4e93da71e7b49928e3", null ],
+      [ "GBuffer_BaseColor", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdaf8aaa1436c06c671272ac08e4fa83309", null ],
+      [ "GBuffer_Material", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdabbdd76532c820b05b242d544cd1b43fd", null ],
+      [ "GBuffer_Normal", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdaf69e4b1698bc66624ab45f2c967406bb", null ],
+      [ "GBuffer_Depth", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdae8964b7cf20037a91a4e9107f2b93db8", null ],
+      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdaf86c3f35d502a4de4cc2d4601a6fbbc4", null ],
+      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfda2136232aa9456009a7df9de7db662322", null ],
+      [ "PostProcessing_Normal", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfda224be169fd2e0ce4f53c6afa41ac4fe9", null ],
+      [ "PostProcessing_Depth", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfda251bebd0602960f976f4a69dff9b13fe", null ],
+      [ "Count", "classmage_1_1_rendering_output_manager.html#ab23ee4985ed0d176479fe796dc3a4cfdae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "UAVIndex", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89", [
-      [ "HDR", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89a6cad826248cd3f4e93da71e7b49928e3", null ],
-      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89af86c3f35d502a4de4cc2d4601a6fbbc4", null ],
-      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89a2136232aa9456009a7df9de7db662322", null ],
-      [ "PostProcessing_Normal", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89a224be169fd2e0ce4f53c6afa41ac4fe9", null ],
-      [ "PostProcessing_Depth", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89a251bebd0602960f976f4a69dff9b13fe", null ],
-      [ "Count", "classmage_1_1_rendering_output_manager.html#a34cdd58dd0dda9d78878d79aa3393b89ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "UAVIndex", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdb", [
+      [ "HDR", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdba6cad826248cd3f4e93da71e7b49928e3", null ],
+      [ "PostProcessing_HDR0", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdbaf86c3f35d502a4de4cc2d4601a6fbbc4", null ],
+      [ "PostProcessing_HDR1", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdba2136232aa9456009a7df9de7db662322", null ],
+      [ "PostProcessing_Normal", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdba224be169fd2e0ce4f53c6afa41ac4fe9", null ],
+      [ "PostProcessing_Depth", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdba251bebd0602960f976f4a69dff9b13fe", null ],
+      [ "Count", "classmage_1_1_rendering_output_manager.html#a222cae54b40bbb153da0dfa840a37fdbae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#acbf3f32fdfaeb97e100c07b2197fe0b7", null ],
     [ "RenderingOutputManager", "classmage_1_1_rendering_output_manager.html#acd8d30bacabd163e75d5d1dfdaf13976", null ],

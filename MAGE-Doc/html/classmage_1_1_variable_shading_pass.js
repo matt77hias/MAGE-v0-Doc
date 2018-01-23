@@ -1,13 +1,13 @@
 var classmage_1_1_variable_shading_pass =
 [
-    [ "PSIndex", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4a", [
-      [ "Emissive", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa3cb4ee67c41d819920d72fcc11b9b566", null ],
-      [ "BRDF", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa4e69f1c58994758054563aa7392ffa4c", null ],
-      [ "BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa12126b75c3073e66dcaed7ac43317a00", null ],
-      [ "Transparent_Emissive", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa72d12be64d7b318fe15d5d0c8682feef", null ],
-      [ "Transparent_BRDF", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aaeb62f8bcb0bd36fba14e9fe3fcb12805", null ],
-      [ "Transparent_BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aa0cda01fc01db8201f5bee170d74f9771", null ],
-      [ "Count", "classmage_1_1_variable_shading_pass.html#a49519e421ac5be93136d9efdbf075d4aae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "PSIndex", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5", [
+      [ "Emissive", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a3cb4ee67c41d819920d72fcc11b9b566", null ],
+      [ "BRDF", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a4e69f1c58994758054563aa7392ffa4c", null ],
+      [ "BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a12126b75c3073e66dcaed7ac43317a00", null ],
+      [ "Transparent_Emissive", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a72d12be64d7b318fe15d5d0c8682feef", null ],
+      [ "Transparent_BRDF", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5aeb62f8bcb0bd36fba14e9fe3fcb12805", null ],
+      [ "Transparent_BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a0cda01fc01db8201f5bee170d74f9771", null ],
+      [ "Count", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a0c3b30167c1dcdf74daae080f2c799bc", null ],
     [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a98ce8bacba3894ff29d2a13d3a645d22", null ],

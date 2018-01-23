@@ -6,8 +6,9 @@ var searchData=
   ['bigendianbinarywriter',['BigEndianBinaryWriter',['../classmage_1_1_big_endian_binary_writer.html',1,'mage']]],
   ['binaryreader',['BinaryReader',['../classmage_1_1_binary_reader.html',1,'mage']]],
   ['blobcompiledshader',['BlobCompiledShader',['../classmage_1_1_blob_compiled_shader.html',1,'mage']]],
+  ['boundingfrustum',['BoundingFrustum',['../classmage_1_1_bounding_frustum.html',1,'mage']]],
+  ['boundingsphere',['BoundingSphere',['../classmage_1_1_bounding_sphere.html',1,'mage']]],
   ['boundingvolumepass',['BoundingVolumePass',['../classmage_1_1_bounding_volume_pass.html',1,'mage']]],
-  ['bs',['BS',['../classmage_1_1_b_s.html',1,'mage']]],
   ['buffercompiledshader',['BufferCompiledShader',['../classmage_1_1_buffer_compiled_shader.html',1,'mage']]],
   ['bufferlock',['BufferLock',['../classmage_1_1_buffer_lock.html',1,'mage']]]
 ];

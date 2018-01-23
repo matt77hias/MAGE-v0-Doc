@@ -1,6 +1,6 @@
 var classmage_1_1_model =
 [
-    [ "Model", "classmage_1_1_model.html#aea937d2e26dc5549e1e93d1664b6f3b0", null ],
+    [ "Model", "classmage_1_1_model.html#af5d3de3d2e90e3332ba39ddf4b413516", null ],
     [ "Model", "classmage_1_1_model.html#ac5f1d340bbfefd30bec3e6343a86059a", null ],
     [ "Model", "classmage_1_1_model.html#aa3e0b4a875c8337c4ced47e390be09ef", null ],
     [ "~Model", "classmage_1_1_model.html#af9f45ed2dcf470f85bbfd144ca9857a7", null ],
@@ -10,7 +10,7 @@ var classmage_1_1_model =
     [ "Draw", "classmage_1_1_model.html#aa0358375a2906b24ce4f3e0ddc4cdd01", null ],
     [ "EnableLightOcclusion", "classmage_1_1_model.html#a5fd5e62a3365810d84af4cf9c202a9fa", null ],
     [ "GetAABB", "classmage_1_1_model.html#a07af22d1e72ffde3ad33b709a8d5c7f4", null ],
-    [ "GetBS", "classmage_1_1_model.html#a7d99f18fd9cd6902795f77995b87bea2", null ],
+    [ "GetBoundingSphere", "classmage_1_1_model.html#a1effce0d78056c27e2431f5ff6e6ea6b", null ],
     [ "GetMaterial", "classmage_1_1_model.html#a255fe9490772d3d14713f8b6af98d223", null ],
     [ "GetMaterial", "classmage_1_1_model.html#abaf8d3c201c5fc87c0d0ebab83c75438", null ],
     [ "GetNumberOfIndices", "classmage_1_1_model.html#a37c9814a445159fd742bcc1b9a5a7b94", null ],
@@ -21,13 +21,13 @@ var classmage_1_1_model =
     [ "operator=", "classmage_1_1_model.html#a563515c64ec39cfcda9f6ca37576391b", null ],
     [ "operator=", "classmage_1_1_model.html#ab1a0964ac61b9682a04735c8a2150e32", null ],
     [ "SetLightOcclusion", "classmage_1_1_model.html#aabcd12eeab9d6b81e27c727cb94cf57a", null ],
-    [ "ToggleLightOcclusion", "classmage_1_1_model.html#a68168e66cb04c08f27616e9d7768a99e", null ],
+    [ "ToggleLightOcclusion", "classmage_1_1_model.html#aefbe68339b41a3eff611a4a4440a1cce", null ],
     [ "m_aabb", "classmage_1_1_model.html#a59cf765fe7207bef262ff355330a7599", null ],
-    [ "m_bs", "classmage_1_1_model.html#a6c24b04df8b1fd97a61472617e347338", null ],
     [ "m_light_occlusion", "classmage_1_1_model.html#af6e1183a2f2147b7848aa10010bdfcd3", null ],
     [ "m_material", "classmage_1_1_model.html#a8e036fc2176bfb51bb41d66805e8a71e", null ],
     [ "m_mesh", "classmage_1_1_model.html#aecd2b4031c5df30fb5f7ed6d62810f73", null ],
     [ "m_nb_indices", "classmage_1_1_model.html#ac7df8fb505570041519bbb46458fde23", null ],
+    [ "m_sphere", "classmage_1_1_model.html#a50171f6c0af36217937f9d021c303aa7", null ],
     [ "m_start_index", "classmage_1_1_model.html#afda09ab0386613fe4345cc8040dec711", null ],
     [ "m_texture_transform", "classmage_1_1_model.html#ab2353a6969d433b62eb997472a18a4ce", null ]
 ];

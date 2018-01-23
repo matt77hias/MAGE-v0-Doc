@@ -8,6 +8,7 @@ var searchData=
   ['nextwidth',['NextWidth',['../struct_im_gui_simple_columns.html#afa5623a5d27aadeb8c08d925b189397e',1,'ImGuiSimpleColumns']]],
   ['nextwidths',['NextWidths',['../struct_im_gui_simple_columns.html#a5d2739196dc2df8626e32a0e373cdffe',1,'ImGuiSimpleColumns']]],
   ['nodes',['nodes',['../structstbtt__pack__context.html#a11a73fa6860e6be1ac039fcca9db2c7c',1,'stbtt_pack_context']]],
+  ['none',['None',['../namespacemage.html#acead990b436f60739ebb6fc4ac492381',1,'mage']]],
   ['num_5fchars',['num_chars',['../struct_stb_textedit_row.html#a1a19bebadb3f82b4f86ea29698d77084',1,'StbTexteditRow::num_chars()'],['../structstbtt__pack__range.html#a046d65b6ffb65fb998d471ba098e2e23',1,'stbtt_pack_range::num_chars()']]],
   ['num_5fnodes',['num_nodes',['../structstbrp__context.html#afa8105d4ef6d3e0ae5aaf8e1ed4b2c58',1,'stbrp_context']]],
   ['numglyphs',['numGlyphs',['../structstbtt__fontinfo.html#a60ad8301a98eb7cd91472ce846d9080d',1,'stbtt_fontinfo']]]

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pixelshader',['PixelShader',['../namespacemage.html#a27ecaf266420ee7a494d64edc0757129',1,'mage']]],
-  ['propagate_5fon_5fcontainer_5fmove_5fassignment',['propagate_on_container_move_assignment',['../classmage_1_1_aligned_allocator.html#ab0fce958c6e7a2a51861d9179067aa33',1,'mage::AlignedAllocator::propagate_on_container_move_assignment()'],['../structmage_1_1_memory_arena_1_1_allocator.html#adeee02145ab4a2eca5e38a70babd81e0',1,'mage::MemoryArena::Allocator::propagate_on_container_move_assignment()'],['../structmage_1_1_single_ended_memory_stack_1_1_allocator.html#a408c0a4b29dc60e9564245c6a0a6fd4c',1,'mage::SingleEndedMemoryStack::Allocator::propagate_on_container_move_assignment()'],['../structmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#aa74eb72275d390ec7b1169602b338c5d',1,'mage::DoubleEndedMemoryStack::LowAllocator::propagate_on_container_move_assignment()'],['../structmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a62088aeffb56b35539d9080aabc43134',1,'mage::DoubleEndedMemoryStack::HighAllocator::propagate_on_container_move_assignment()']]]
+  ['other',['other',['../structmage_1_1_aligned_allocator_1_1rebind.html#aeb2e9c9add001b8f603f5b67ad8fee56',1,'mage::AlignedAllocator::rebind']]]
 ];

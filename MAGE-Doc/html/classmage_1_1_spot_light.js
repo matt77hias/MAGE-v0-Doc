@@ -9,7 +9,7 @@ var classmage_1_1_spot_light =
     [ "GetAABB", "classmage_1_1_spot_light.html#add184856d7fdb2ff9ae16221d9493bf5", null ],
     [ "GetBaseColor", "classmage_1_1_spot_light.html#ad1345ae07a114dc8d4b6a00d08b4230a", null ],
     [ "GetBaseColor", "classmage_1_1_spot_light.html#afe96354e78abccea8fd5a4745728f5f3", null ],
-    [ "GetBS", "classmage_1_1_spot_light.html#acd80a0f565e74650c97f1680938ae997", null ],
+    [ "GetBoundingSphere", "classmage_1_1_spot_light.html#a5a2a8fcb3062256657c424d5eefe44f4", null ],
     [ "GetEndAngularCutoff", "classmage_1_1_spot_light.html#ad9c4cabf950619605a8040e41b9acb5b", null ],
     [ "GetFOV", "classmage_1_1_spot_light.html#a6cbc0ac77c28796cc25a7131bfe4a1c1", null ],
     [ "GetIntensity", "classmage_1_1_spot_light.html#a3df0792c637a6167c7c596ce125abbe0", null ],
@@ -39,10 +39,10 @@ var classmage_1_1_spot_light =
     [ "UseShadows", "classmage_1_1_spot_light.html#af41a8c0d83b45d048a2d1a030c1235f8", null ],
     [ "m_aabb", "classmage_1_1_spot_light.html#ae0e1342ef7e3ca044bb1f16c4c3327a1", null ],
     [ "m_base_color", "classmage_1_1_spot_light.html#af61462cf792ad5c713af8d849fa17309", null ],
-    [ "m_bs", "classmage_1_1_spot_light.html#ab1adda3579072bff80041b422f7eed19", null ],
     [ "m_cos_penumbra", "classmage_1_1_spot_light.html#ac4448bbc1c8a924141d2798c3365047a", null ],
     [ "m_cos_umbra", "classmage_1_1_spot_light.html#aa2ec430d0f95d082112260b5d9640d50", null ],
     [ "m_intensity", "classmage_1_1_spot_light.html#a79110b6604c73210ba13725be7b66606", null ],
     [ "m_range", "classmage_1_1_spot_light.html#a53922fe395997f12003cd2dbc2f3ca7a", null ],
-    [ "m_shadows", "classmage_1_1_spot_light.html#aa744a471d0f1b39eb5ee435611bb42fe", null ]
+    [ "m_shadows", "classmage_1_1_spot_light.html#aa744a471d0f1b39eb5ee435611bb42fe", null ],
+    [ "m_sphere", "classmage_1_1_spot_light.html#a81f061d09f67832c73c3cb1f092679b6", null ]
 ];

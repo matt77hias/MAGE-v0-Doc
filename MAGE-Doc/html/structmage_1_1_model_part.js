@@ -10,11 +10,11 @@ var structmage_1_1_model_part =
     [ "operator=", "structmage_1_1_model_part.html#a37e9d66b701ed84111160bf5a003b658", null ],
     [ "operator=", "structmage_1_1_model_part.html#aba7bba374ab20f6bf55fbb337c166e32", null ],
     [ "m_aabb", "structmage_1_1_model_part.html#ab5b4cb74ac7d725896825b0f7ce8472a", null ],
-    [ "m_bs", "structmage_1_1_model_part.html#a551f6c340fa5547364e6cde9720ad856", null ],
     [ "m_child", "structmage_1_1_model_part.html#abac2e9942c2d8015dc8b4f363729dc45", null ],
     [ "m_material", "structmage_1_1_model_part.html#a606603dd01b895cb1aa91b51089bf27f", null ],
     [ "m_nb_indices", "structmage_1_1_model_part.html#ad4be9d829693ccb96bb45fc18aa0ede8", null ],
     [ "m_parent", "structmage_1_1_model_part.html#ad4754bbb69d28885c09cef591d4d96c5", null ],
+    [ "m_sphere", "structmage_1_1_model_part.html#a789dac596ceeb122731c7d4e8c42528c", null ],
     [ "m_start_index", "structmage_1_1_model_part.html#a3151ca6c89bad26bc454aca693be97c4", null ],
     [ "m_transform", "structmage_1_1_model_part.html#a557a14038880ca6ba6d4ce7a8d81b774", null ]
 ];

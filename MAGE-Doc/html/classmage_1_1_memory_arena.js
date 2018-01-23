@@ -1,6 +1,6 @@
 var classmage_1_1_memory_arena =
 [
-    [ "Allocator", "structmage_1_1_memory_arena_1_1_allocator.html", "structmage_1_1_memory_arena_1_1_allocator" ],
+    [ "Allocator", "classmage_1_1_memory_arena_1_1_allocator.html", "classmage_1_1_memory_arena_1_1_allocator" ],
     [ "MemoryBlock", "classmage_1_1_memory_arena.html#a51f08f86660f163e2eef7c312e01700c", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a139f7781be209bb29e7ad0ed04cb32a5", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],

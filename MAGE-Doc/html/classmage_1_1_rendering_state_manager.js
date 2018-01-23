@@ -1,42 +1,42 @@
 var classmage_1_1_rendering_state_manager =
 [
-    [ "BlendStateIndex", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984", [
-      [ "Opaque", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984afaa90538de35640e4b1e31ccf35b6eb5", null ],
-      [ "Alpha", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984a6132295fcf5570fb8b0a944ef322a598", null ],
-      [ "Additive", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984a3f7b3d8ee7bf0d542bd50821c083888f", null ],
-      [ "Multiplicative", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984a0d73bf5decac382ed6a8adc3838fd7e2", null ],
-      [ "BiMultiplicative", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984ab99d5e54d92344ac3680c3f579dc84e6", null ],
-      [ "Transparency", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984a6f7956741d5d673ff0c8eacc8d8c961c", null ],
-      [ "AlphaToCoverage", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984ab4efe1ce42e12bb3ae2404c3d29e78c6", null ],
-      [ "Count", "classmage_1_1_rendering_state_manager.html#ae8ea18eb352ae4cf9e23b41f10578984ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "BlendStateIndex", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64c", [
+      [ "Opaque", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64cafaa90538de35640e4b1e31ccf35b6eb5", null ],
+      [ "Alpha", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64ca6132295fcf5570fb8b0a944ef322a598", null ],
+      [ "Additive", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64ca3f7b3d8ee7bf0d542bd50821c083888f", null ],
+      [ "Multiplicative", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64ca0d73bf5decac382ed6a8adc3838fd7e2", null ],
+      [ "BiMultiplicative", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64cab99d5e54d92344ac3680c3f579dc84e6", null ],
+      [ "Transparency", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64ca6f7956741d5d673ff0c8eacc8d8c961c", null ],
+      [ "AlphaToCoverage", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64cab4efe1ce42e12bb3ae2404c3d29e78c6", null ],
+      [ "Count", "classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64cae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "DepthStencilStateIndex", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871a", [
-      [ "DepthNone", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aab41232b0703ce026c43342f5c5547d97", null ],
-      [ "GreaterEqualDepthReadWrite", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aa7270a0a5d6176662121778680631bab5", null ],
-      [ "GreaterEqualDepthRead", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aa86f1dff99ec61f438681efb8959926af", null ],
-      [ "GreaterDepthReadWrite", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aa28fc6c8f78be71129f39471caa0f4fa3", null ],
-      [ "GreaterDepthRead", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aaa24c1877c5a684ab5648d8c9934397be", null ],
-      [ "Count", "classmage_1_1_rendering_state_manager.html#abcfd0e984d2ba2710320882430d6871aae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "DepthStencilStateIndex", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636a", [
+      [ "DepthNone", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aab41232b0703ce026c43342f5c5547d97", null ],
+      [ "GreaterEqualDepthReadWrite", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aa7270a0a5d6176662121778680631bab5", null ],
+      [ "GreaterEqualDepthRead", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aa86f1dff99ec61f438681efb8959926af", null ],
+      [ "GreaterDepthReadWrite", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aa28fc6c8f78be71129f39471caa0f4fa3", null ],
+      [ "GreaterDepthRead", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aaa24c1877c5a684ab5648d8c9934397be", null ],
+      [ "Count", "classmage_1_1_rendering_state_manager.html#a7a8ab9ab2d4eb992a364d09c9eec636aae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "RasterizerStateIndex", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640a", [
-      [ "NoCulling", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640aa6913ff808b22b8502cdcf790839eeaa0", null ],
-      [ "ClockwiseCulling", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640aafbac55355eedbbb79d73d05781f17031", null ],
-      [ "CounterClockwiseCulling", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640aac429f645d311d739e35e44fef6e72c77", null ],
-      [ "Wireframe", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640aa33e42d0f3b166a4c405127e4412fbef2", null ],
-      [ "Count", "classmage_1_1_rendering_state_manager.html#aa8eee3b02b7d4ba0a046870fae43640aae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "RasterizerStateIndex", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127da", [
+      [ "NoCulling", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daa6913ff808b22b8502cdcf790839eeaa0", null ],
+      [ "ClockwiseCulling", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daafbac55355eedbbb79d73d05781f17031", null ],
+      [ "CounterClockwiseCulling", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daac429f645d311d739e35e44fef6e72c77", null ],
+      [ "Wireframe", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daa33e42d0f3b166a4c405127e4412fbef2", null ],
+      [ "Count", "classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
-    [ "SamplerStateIndex", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3", [
-      [ "PointWrap", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a20f4dbe2ff958c71cc79c321f154efd7", null ],
-      [ "PointClamp", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a055739d3d609c52b857c7c0be46e748c", null ],
-      [ "PointMirror", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a8404a618d62db33e6b47ac4ba5cb464b", null ],
-      [ "LinearWrap", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a74b431ec372bcd628901b0043833e538", null ],
-      [ "LinearClamp", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a1d8396d6b7b5f5087d53876f2e98ce5b", null ],
-      [ "LinearMirror", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a0ac9302edbdf688ccc717538459cd0a8", null ],
-      [ "AnisotropicWrap", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a026a427f3ee33cc06b1977481c8687a7", null ],
-      [ "AnisotropicClamp", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a06bb0220384c2f871299b80350664274", null ],
-      [ "AnisotropicMirror", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3ae33ea6d51127ef3ffbdc86b71441a38b", null ],
-      [ "PCF", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3a0a4faf97013814ceb7f7afe1205a516b", null ],
-      [ "Count", "classmage_1_1_rendering_state_manager.html#a17ea0fda0247ee5d379b62a882db95a3ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "SamplerStateIndex", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557", [
+      [ "PointWrap", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a20f4dbe2ff958c71cc79c321f154efd7", null ],
+      [ "PointClamp", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a055739d3d609c52b857c7c0be46e748c", null ],
+      [ "PointMirror", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a8404a618d62db33e6b47ac4ba5cb464b", null ],
+      [ "LinearWrap", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a74b431ec372bcd628901b0043833e538", null ],
+      [ "LinearClamp", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a1d8396d6b7b5f5087d53876f2e98ce5b", null ],
+      [ "LinearMirror", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a0ac9302edbdf688ccc717538459cd0a8", null ],
+      [ "AnisotropicWrap", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a026a427f3ee33cc06b1977481c8687a7", null ],
+      [ "AnisotropicClamp", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a06bb0220384c2f871299b80350664274", null ],
+      [ "AnisotropicMirror", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557ae33ea6d51127ef3ffbdc86b71441a38b", null ],
+      [ "PCF", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557a0a4faf97013814ceb7f7afe1205a516b", null ],
+      [ "Count", "classmage_1_1_rendering_state_manager.html#ad756bcfaf65de7ce2a7ac46e0ba97557ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#a7e2ae8265b322b0700fd5ade4b791aea", null ],
     [ "RenderingStateManager", "classmage_1_1_rendering_state_manager.html#a3b9b63fd7d9d61fa47a65aba65cf878e", null ],

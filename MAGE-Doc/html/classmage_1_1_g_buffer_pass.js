@@ -1,9 +1,9 @@
 var classmage_1_1_g_buffer_pass =
 [
-    [ "PSIndex", "classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379", [
-      [ "Default", "classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379a7a1920d61156abc05a60135aefe8bc67", null ],
-      [ "TSNM", "classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379a6e02c9f63944ea221e7d55c11ecae07b", null ],
-      [ "Count", "classmage_1_1_g_buffer_pass.html#a1dbae3cb33d9c90ce7eb8c119d576379ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    [ "PSIndex", "classmage_1_1_g_buffer_pass.html#a23039b6695c10c88676c38fe63123571", [
+      [ "Default", "classmage_1_1_g_buffer_pass.html#a23039b6695c10c88676c38fe63123571a7a1920d61156abc05a60135aefe8bc67", null ],
+      [ "TSNM", "classmage_1_1_g_buffer_pass.html#a23039b6695c10c88676c38fe63123571a6e02c9f63944ea221e7d55c11ecae07b", null ],
+      [ "Count", "classmage_1_1_g_buffer_pass.html#a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#afe455d4051cddf84b7752b4bf4aa282f", null ],
     [ "GBufferPass", "classmage_1_1_g_buffer_pass.html#a3b9f59097aef9175f942c9c9424d0dab", null ],

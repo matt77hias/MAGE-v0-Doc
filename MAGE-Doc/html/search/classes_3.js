@@ -9,7 +9,7 @@ var searchData=
   ['directionallight',['DirectionalLight',['../classmage_1_1_directional_light.html',1,'mage']]],
   ['directionallightbuffer',['DirectionalLightBuffer',['../structmage_1_1_directional_light_buffer.html',1,'mage']]],
   ['directionallightwithshadowmappingbuffer',['DirectionalLightWithShadowMappingBuffer',['../structmage_1_1_directional_light_with_shadow_mapping_buffer.html',1,'mage']]],
-  ['displayconfiguration',['DisplayConfiguration',['../structmage_1_1_display_configuration.html',1,'mage']]],
+  ['displayconfiguration',['DisplayConfiguration',['../classmage_1_1_display_configuration.html',1,'mage']]],
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1_display_configurator.html',1,'mage']]],
   ['dofpass',['DOFPass',['../classmage_1_1_d_o_f_pass.html',1,'mage']]],
   ['doubleendedmemorystack',['DoubleEndedMemoryStack',['../classmage_1_1_double_ended_memory_stack.html',1,'mage']]],

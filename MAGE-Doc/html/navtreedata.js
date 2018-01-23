@@ -22,7 +22,6 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ]
@@ -32,26 +31,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_bounding_volume_pass.html#a254c44c1c9f18967c9d6cdb6e53d3bcd",
-"classmage_1_1_constant_component_pass.html#a1d4bf6c730c94397219de2a447d1f368",
-"classmage_1_1_g_buffer_pass.html#a96175e27751c286737d327a4f26f01dd",
-"classmage_1_1_material.html#abf7e618017185ea05c72d050e89018fe",
-"classmage_1_1_persistent_resource_pool.html#a23b83adf594628b93c368a2da7660ef8",
-"classmage_1_1_rendering_output_manager.html#acbf3f32fdfaeb97e100c07b2197fe0b7",
-"classmage_1_1_shading_normal_pass.html",
-"classmage_1_1_sprite_text.html#a82f53e64dc8cc9a9d23a1c26ee9fad9e",
-"classmage_1_1_timer.html#a47e6893e733911624ebf54d5f88cd3fd",
-"classmage_1_1_view_frustum.html#a68e7b7915505d42de255ffb37b4beba3",
-"classmage_1_1script_1_1_manhattan_motor_script.html#a2b185979a64b35d9f9d6f4027724560a",
-"namespacemembers.html",
-"struct_im_font_atlas.html#a608ad12c2ccf1eed97b63454e52ccbe8",
-"struct_im_gui_i_o.html#a13334c1522aadc12af0ce3b31b0eb3a1",
-"struct_im_gui_text_edit_state.html#ab6f494f3335bf7911b83cfc15edd612e",
-"structmage_1_1_directional_light_with_shadow_mapping_buffer.html#a8681c4ef469907846c12896d0e00eaaf",
-"structmage_1_1_model_output.html#a090d74bebb6045c11952cc57fb1aa220",
-"structmage_1_1_pipeline_1_1_v_s.html#a9d941f80b1d1c751927a6c2fda9dfdcb",
-"structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#a9b29707c44e6950aa6e2fc911f636ea1",
-"structstbtt____bitmap.html#afbd607426f0a457b1a871ed902eeb926"
+"classmage_1_1_bounding_sphere.html#a51c7e6db89c68d192961bfaf2114fb2f",
+"classmage_1_1_constant_component_pass.html#a196372d184f74c8f268adc1e7865ef17",
+"classmage_1_1_engine.html#a99770cbb017b29c284d7f8e4c7e2b84c",
+"classmage_1_1_local_transform.html#af467d4a331c7215cf016e31bd91c42db",
+"classmage_1_1_node.html#a58452a6195ebea7a1a7a26f9a4dd8102",
+"classmage_1_1_rendering_manager.html#a765f323c63ac7cd53c71b362eaccc61b",
+"classmage_1_1_scene.html#a5e37590d17c9bb0cc4f16ec7defb5180",
+"classmage_1_1_sprite_font.html#acbf50687b4a5dbb2ff1ad73ecc89b7f1",
+"classmage_1_1_texture.html#acb6194e969cc928f21ecef1d863d1b9b",
+"classmage_1_1_variable_script.html#ad41e19065e7935974585a1b120ef47d4",
+"classmage_1_1loader_1_1_o_b_j_reader.html#af9aab131e88c5a3a0f29b156c4c97096",
+"functions_vars_l.html",
+"struct_im_font.html",
+"struct_im_gui_context.html#afdf440b5e79ba7868e87e2c5136e1296",
+"struct_im_gui_style_mod.html#a60491c95989b2a866ebb76403a562f6f",
+"structmage_1_1_camera_buffer.html#a3d56a38eb30fb0f0778d23f61f9988fa",
+"structmage_1_1_omni_light_with_shadow_mapping_buffer.html",
+"structmage_1_1_spot_light_buffer.html#a9fa876b45b466e5a3a7d4432133d00d2",
+"structmage_1_1_vertex_position_normal_color_texture.html#a27f5a115642f443419683417360fd58e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
