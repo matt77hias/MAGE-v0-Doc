@@ -1,0 +1,299 @@
+\hypertarget{classmage_1_1_g_buffer_pass}{}\section{mage\+:\+:G\+Buffer\+Pass Class Reference}
+\label{classmage_1_1_g_buffer_pass}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+
+
+{\ttfamily \#include $<$gbuffer\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f}{G\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_aa3c72c660c790084af696a04bf732c8b}{G\+Buffer\+Pass} (const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a1de0f019c704ecefc8be4d4c5c151214}{G\+Buffer\+Pass} (\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c}{$\sim$\+G\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \& \hyperlink{classmage_1_1_g_buffer_pass_a8508a12bbce455330cea96044c7b24a9}{operator=} (const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \& \hyperlink{classmage_1_1_g_buffer_pass_ab5495a688674fcb7b789e7b0e728fd12}{operator=} (\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&pass)=delete
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_g_buffer_pass_a02778a5eb3947980b204bd99daefe533}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_g_buffer_pass_ab2a50a7bde900978153badaa49cf047c}{Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{P\+S\+Index} \+: U8 \{ \hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a7a1920d61156abc05a60135aefe8bc67}{P\+S\+Index\+::\+Default} = 0, 
+\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a6e02c9f63944ea221e7d55c11ecae07b}{P\+S\+Index\+::\+T\+S\+NM} = 1, 
+\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_a40c47c900474fc47af02020ac5b04d27}{Bind\+Fixed\+State} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d}{Bind\+PS} (\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{P\+S\+Index} index) noexcept
+\item 
+void \hyperlink{classmage_1_1_g_buffer_pass_afe16e10cc6d3c7d56d387eb1fe2a66ee}{Bind\+PS} (const \hyperlink{classmage_1_1_material}{Material} \&material) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_g_buffer_pass_a96175e27751c286737d327a4f26f01dd}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, C\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform, const \hyperlink{classmage_1_1_material}{Material} \&material)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_g_buffer_pass_a56bcb08adf8a9b04a15efe24ef703c32}{m\+\_\+device\+\_\+context}
+\item 
+const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1_g_buffer_pass_af0a641e0246f6d90b5ff3c010fad7bd0}{m\+\_\+vs}
+\item 
+const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1_g_buffer_pass_a0a94aa51d00b6b057bb9b10f1a2f8eff}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
+\item 
+\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{P\+S\+Index} \hyperlink{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342}{m\+\_\+bound\+\_\+ps}
+\item 
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ \hyperlink{classmage_1_1_g_buffer_pass_a0538769957df6740993dbb479b7e05a2}{m\+\_\+model\+\_\+buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of G\+Buffer passes for packing G\+Buffers. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{}\label{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!P\+S\+Index@{P\+S\+Index}}
+\index{P\+S\+Index@{P\+S\+Index}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{P\+S\+Index}{PSIndex}}
+{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{mage\+::\+G\+Buffer\+Pass\+::\+P\+S\+Index} \+: \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+An enumeration of the different pixel shader indices for G\+Buffer passes.
+
+This contains\+: {\ttfamily Default} and {\ttfamily T\+S\+NM}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Default@{Default}}}\hypertarget{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a7a1920d61156abc05a60135aefe8bc67}{}\label{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a7a1920d61156abc05a60135aefe8bc67} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+S\+NM@{T\+S\+NM}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!T\+S\+NM@{T\+S\+NM}}}\hypertarget{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a6e02c9f63944ea221e7d55c11ecae07b}{}\label{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571a6e02c9f63944ea221e7d55c11ecae07b} 
+T\+S\+NM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Count@{Count}}}\hypertarget{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9} 
+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f}{}\label{classmage_1_1_g_buffer_pass_afe455d4051cddf84b7752b4bf4aa282f} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a G\+Buffer pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_g_buffer_pass_aa3c72c660c790084af696a04bf732c8b}{}\label{classmage_1_1_g_buffer_pass_aa3c72c660c790084af696a04bf732c8b} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a G\+Buffer pass from the given G\+Buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the G\+Buffer pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_g_buffer_pass_a1de0f019c704ecefc8be4d4c5c151214}{}\label{classmage_1_1_g_buffer_pass_a1de0f019c704ecefc8be4d4c5c151214} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!G\+Buffer\+Pass@{G\+Buffer\+Pass}}
+\index{G\+Buffer\+Pass@{G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{G\+Buffer\+Pass()}{GBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::\+G\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a G\+Buffer pass by moving the given G\+Buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the G\+Buffer pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c}{}\label{classmage_1_1_g_buffer_pass_a34b2735cfb9b3546c903760f42ff770c} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!````~G\+Buffer\+Pass@{$\sim$\+G\+Buffer\+Pass}}
+\index{````~G\+Buffer\+Pass@{$\sim$\+G\+Buffer\+Pass}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+G\+Buffer\+Pass()}{~GBufferPass()}}
+{\footnotesize\ttfamily mage\+::\+G\+Buffer\+Pass\+::$\sim$\+G\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this G\+Buffer pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_a40c47c900474fc47af02020ac5b04d27}{}\label{classmage_1_1_g_buffer_pass_a40c47c900474fc47af02020ac5b04d27} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this G\+Buffer pass. \hypertarget{classmage_1_1_g_buffer_pass_a96175e27751c286737d327a4f26f01dd}{}\label{classmage_1_1_g_buffer_pass_a96175e27751c286737d327a4f26f01dd} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+G\+Buffer\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform,  }\item[{const \hyperlink{classmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the model data of this G\+Buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+view} & The object-\/to-\/view transformation matrix used for transforming vertices. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The view-\/to-\/object transformation matrix used for transforming normals. \\
+\hline
+\mbox{\tt in}  & {\em texture\+\_\+transform} & The texture transformation matrix used for transforming texture coordinates. \\
+\hline
+\mbox{\tt in}  & {\em material} & A reference to the material. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model data of this G\+Buffer pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d}{}\label{classmage_1_1_g_buffer_pass_a750c27aa6f562b53d62f845ce50e731d} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{P\+S\+Index}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the pixel shader of this G\+Buffer pass associated with the given pixel shader index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & The pixel shader index. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_g_buffer_pass_afe16e10cc6d3c7d56d387eb1fe2a66ee}{}\label{classmage_1_1_g_buffer_pass_afe16e10cc6d3c7d56d387eb1fe2a66ee} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+G\+Buffer\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the pixel shader of this G\+Buffer pass associated with the given material.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em material} & A reference to the material. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_g_buffer_pass_ab2a50a7bde900978153badaa49cf047c}{}\label{classmage_1_1_g_buffer_pass_ab2a50a7bde900978153badaa49cf047c} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $\ast$ mage\+::\+G\+Buffer\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the G\+Buffer pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the G\+Buffer pass associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_g_buffer_pass_a8508a12bbce455330cea96044c7b24a9}{}\label{classmage_1_1_g_buffer_pass_a8508a12bbce455330cea96044c7b24a9} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}\& mage\+::\+G\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given G\+Buffer pass to this G\+Buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the G\+Buffer pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given G\+Buffer pass (i.\+e. this G\+Buffer pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_g_buffer_pass_ab5495a688674fcb7b789e7b0e728fd12}{}\label{classmage_1_1_g_buffer_pass_ab5495a688674fcb7b789e7b0e728fd12} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass}\& mage\+::\+G\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given G\+Buffer pass to this G\+Buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the G\+Buffer pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved G\+Buffer pass (i.\+e. this G\+Buffer pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_g_buffer_pass_a02778a5eb3947980b204bd99daefe533}{}\label{classmage_1_1_g_buffer_pass_a02778a5eb3947980b204bd99daefe533} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+G\+Buffer\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world }\end{DoxyParamCaption})}
+
+Renders the scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342}{}\label{classmage_1_1_g_buffer_pass_aef8452f64c9815d002e552957ed9e342} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}}
+\index{m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+bound\+\_\+ps}{m\_bound\_ps}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571}{P\+S\+Index} mage\+::\+G\+Buffer\+Pass\+::m\+\_\+bound\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+The pixel shader index of the bound pixel shader of this G\+Buffer pass. \hypertarget{classmage_1_1_g_buffer_pass_a56bcb08adf8a9b04a15efe24ef703c32}{}\label{classmage_1_1_g_buffer_pass_a56bcb08adf8a9b04a15efe24ef703c32} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+G\+Buffer\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this G\+Buffer pass. \hypertarget{classmage_1_1_g_buffer_pass_a0538769957df6740993dbb479b7e05a2}{}\label{classmage_1_1_g_buffer_pass_a0538769957df6740993dbb479b7e05a2} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ mage\+::\+G\+Buffer\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The model buffer of this G\+Buffer pass. \hypertarget{classmage_1_1_g_buffer_pass_a0a94aa51d00b6b057bb9b10f1a2f8eff}{}\label{classmage_1_1_g_buffer_pass_a0a94aa51d00b6b057bb9b10f1a2f8eff} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} mage\+::\+G\+Buffer\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_g_buffer_pass_a23039b6695c10c88676c38fe63123571ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the pixel shaders of this G\+Buffer pass. \hypertarget{classmage_1_1_g_buffer_pass_af0a641e0246f6d90b5ff3c010fad7bd0}{}\label{classmage_1_1_g_buffer_pass_af0a641e0246f6d90b5ff3c010fad7bd0} 
+\index{mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+G\+Buffer\+Pass@{mage\+::\+G\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} mage\+::\+G\+Buffer\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this G\+Buffer pass. 

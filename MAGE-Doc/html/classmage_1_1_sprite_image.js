@@ -1,0 +1,28 @@
+var classmage_1_1_sprite_image =
+[
+    [ "SpriteImage", "classmage_1_1_sprite_image.html#aee1a41099068c4037f29e98b7c5d84ae", null ],
+    [ "SpriteImage", "classmage_1_1_sprite_image.html#a707cc96ae9b15fd85ce0c70d1eed458d", null ],
+    [ "SpriteImage", "classmage_1_1_sprite_image.html#aedd0892075000cb3217550d1a924f926", null ],
+    [ "~SpriteImage", "classmage_1_1_sprite_image.html#a9121ee110f7e64ee6e936e0d3350ab44", null ],
+    [ "Draw", "classmage_1_1_sprite_image.html#ae30d3293931f674fea17008063755bb6", null ],
+    [ "GetBaseColor", "classmage_1_1_sprite_image.html#a0362a937253ba7a5cd944210aafd9288", null ],
+    [ "GetBaseColor", "classmage_1_1_sprite_image.html#a72e5087fc7f6bc1668980c5c35815906", null ],
+    [ "GetBaseColorSRV", "classmage_1_1_sprite_image.html#a955225e8274ae5f39f6eb6f6fbb75638", null ],
+    [ "GetBaseColorTexture", "classmage_1_1_sprite_image.html#a7fa3f86018f033288c755a665ee90bc2", null ],
+    [ "GetBaseColorTextureRegion", "classmage_1_1_sprite_image.html#a74713ac25073002cd7425482bb474366", null ],
+    [ "GetSpriteEffects", "classmage_1_1_sprite_image.html#a6cfc44918ef3076983e6e1f03de612c8", null ],
+    [ "GetSpriteTransform", "classmage_1_1_sprite_image.html#a6293955aa7912f8bf846407ee5d0cfa2", null ],
+    [ "GetSpriteTransform", "classmage_1_1_sprite_image.html#a109a0bd7938b91944b42a2969bb9bdf7", null ],
+    [ "HasMaximumBaseColorTextureRegion", "classmage_1_1_sprite_image.html#a6d1267ebb8010e38875a717bd8339c3d", null ],
+    [ "operator=", "classmage_1_1_sprite_image.html#a7596ba158f703bb255e9ba3f20fb04bd", null ],
+    [ "operator=", "classmage_1_1_sprite_image.html#a0938a287bb8c78373d60a89ecc880561", null ],
+    [ "SetBaseColorTexture", "classmage_1_1_sprite_image.html#a9fb3a39de1350e58b4019b541337ca13", null ],
+    [ "SetBaseColorTextureRegion", "classmage_1_1_sprite_image.html#aa68e416669d05cf777c564b118b50fe5", null ],
+    [ "SetMaximumBaseColorTextureRegion", "classmage_1_1_sprite_image.html#aa08a58d1e94f8e26031b97b56b0c8c6a", null ],
+    [ "SetSpriteEffects", "classmage_1_1_sprite_image.html#a81f8297413245635b505374068abe588", null ],
+    [ "m_base_color", "classmage_1_1_sprite_image.html#aa83cc38aa8a84e8fc434232b4223c236", null ],
+    [ "m_base_color_texture", "classmage_1_1_sprite_image.html#a92f5b052561ca7d8fb317b8479d820a2", null ],
+    [ "m_base_color_texture_region", "classmage_1_1_sprite_image.html#a27540b0bee5970d2e978270fe20017ab", null ],
+    [ "m_sprite_effects", "classmage_1_1_sprite_image.html#acec094202967688a6e368eb44e5950ba", null ],
+    [ "m_sprite_transform", "classmage_1_1_sprite_image.html#aee2dc3f28e26692066fe791b71012929", null ]
+];

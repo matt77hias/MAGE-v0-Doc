@@ -1,0 +1,241 @@
+\hypertarget{classmage_1_1_deferred_shading_pass}{}\section{mage\+:\+:Deferred\+Shading\+Pass Class Reference}
+\label{classmage_1_1_deferred_shading_pass}\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+
+
+{\ttfamily \#include $<$deferred\+\_\+shading\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass_a348c86ce12342110299739d8d63c6aaf}{Deferred\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass_a781dc7d7aab0a0f7ff2e95376a4db64b}{Deferred\+Shading\+Pass} (const \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass_aa34329a39de6cf3a748244b52f1f29a0}{Deferred\+Shading\+Pass} (\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass_a0feba3a73c56e1c07abe19fddd890f76}{$\sim$\+Deferred\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \& \hyperlink{classmage_1_1_deferred_shading_pass_ab9df64f241163f5f58ec2bf3d2b4a374}{operator=} (const \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \& \hyperlink{classmage_1_1_deferred_shading_pass_a19c925d46a7c8c4b436c9bbb161d6790}{operator=} (\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&\&pass)=delete
+\item 
+void \hyperlink{classmage_1_1_deferred_shading_pass_ada982919e7c8b643009f8e689d8a3ae8}{Render} (\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf)
+\item 
+void \hyperlink{classmage_1_1_deferred_shading_pass_ad0f92a6295f5fb03abeb86d5ed29ec40}{Dispatch} (const \hyperlink{classmage_1_1_viewport}{Viewport} \&viewport, \hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_deferred_shading_pass_a430dec186afda1f40c695b95fe3f7338}{Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_deferred_shading_pass_a17b470e0d5ce381cd18d126d20649238}{Bind\+Fixed\+State} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_deferred_shading_pass_a1be48c61dfb255a1641bae23d5277e4f}{Update\+Shaders} (\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_deferred_shading_pass_a05b1c649f39f267ce5a5cecdd02b8ffb}{m\+\_\+device\+\_\+context}
+\item 
+\hyperlink{namespacemage_a95ee75d4d07106395d80f751d364dc1b}{Compute\+Shader\+Ptr} \hyperlink{classmage_1_1_deferred_shading_pass_ae61ddf1399606393a2ff795a6d7e0307}{m\+\_\+cs}
+\item 
+const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1_deferred_shading_pass_aabaa6fd24ccef9c8db07898a182231e0}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1_deferred_shading_pass_a3a9e8ace034b974bd12afa551f6b1585}{m\+\_\+msaa\+\_\+ps}
+\item 
+\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} \hyperlink{classmage_1_1_deferred_shading_pass_a5a466f5c2ee71563f4f8ed6d042ee4b3}{m\+\_\+brdf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of deferred shading passes for unpacking G\+Buffers and performing light calculations using the rendering or compute pipeline. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_deferred_shading_pass_a348c86ce12342110299739d8d63c6aaf}{}\label{classmage_1_1_deferred_shading_pass_a348c86ce12342110299739d8d63c6aaf} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}}
+\index{Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Deferred\+Shading\+Pass()}{DeferredShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Deferred\+Shading\+Pass\+::\+Deferred\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a deferred shading pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_deferred_shading_pass_a781dc7d7aab0a0f7ff2e95376a4db64b}{}\label{classmage_1_1_deferred_shading_pass_a781dc7d7aab0a0f7ff2e95376a4db64b} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}}
+\index{Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Deferred\+Shading\+Pass()}{DeferredShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Deferred\+Shading\+Pass\+::\+Deferred\+Shading\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a deferred shading pass from the given deferred shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the deferred shading pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_deferred_shading_pass_aa34329a39de6cf3a748244b52f1f29a0}{}\label{classmage_1_1_deferred_shading_pass_aa34329a39de6cf3a748244b52f1f29a0} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}}
+\index{Deferred\+Shading\+Pass@{Deferred\+Shading\+Pass}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Deferred\+Shading\+Pass()}{DeferredShadingPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Deferred\+Shading\+Pass\+::\+Deferred\+Shading\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a deferred shading pass by moving the given deferred shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the deferred shading pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_deferred_shading_pass_a0feba3a73c56e1c07abe19fddd890f76}{}\label{classmage_1_1_deferred_shading_pass_a0feba3a73c56e1c07abe19fddd890f76} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!````~Deferred\+Shading\+Pass@{$\sim$\+Deferred\+Shading\+Pass}}
+\index{````~Deferred\+Shading\+Pass@{$\sim$\+Deferred\+Shading\+Pass}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Deferred\+Shading\+Pass()}{~DeferredShadingPass()}}
+{\footnotesize\ttfamily mage\+::\+Deferred\+Shading\+Pass\+::$\sim$\+Deferred\+Shading\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this deferred shading pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_deferred_shading_pass_a17b470e0d5ce381cd18d126d20649238}{}\label{classmage_1_1_deferred_shading_pass_a17b470e0d5ce381cd18d126d20649238} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+Deferred\+Shading\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this deferred shading pass. \hypertarget{classmage_1_1_deferred_shading_pass_ad0f92a6295f5fb03abeb86d5ed29ec40}{}\label{classmage_1_1_deferred_shading_pass_ad0f92a6295f5fb03abeb86d5ed29ec40} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Dispatch()}{Dispatch()}}
+{\footnotesize\ttfamily void mage\+::\+Deferred\+Shading\+Pass\+::\+Dispatch (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_viewport}{Viewport} \&}]{viewport,  }\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})}
+
+Dispatches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
+\hline
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_deferred_shading_pass_a430dec186afda1f40c695b95fe3f7338}{}\label{classmage_1_1_deferred_shading_pass_a430dec186afda1f40c695b95fe3f7338} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} $\ast$ mage\+::\+Deferred\+Shading\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the deferred shading pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the deferred shading pass associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_deferred_shading_pass_ab9df64f241163f5f58ec2bf3d2b4a374}{}\label{classmage_1_1_deferred_shading_pass_ab9df64f241163f5f58ec2bf3d2b4a374} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass}\& mage\+::\+Deferred\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given deferred shading pass to this deferred shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the deferred shading pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given deferred shading pass (i.\+e. this deferred shading pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_deferred_shading_pass_a19c925d46a7c8c4b436c9bbb161d6790}{}\label{classmage_1_1_deferred_shading_pass_a19c925d46a7c8c4b436c9bbb161d6790} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass}\& mage\+::\+Deferred\+Shading\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_deferred_shading_pass}{Deferred\+Shading\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given deferred shading pass to this deferred shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the deferred shading pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved deferred shading pass (i.\+e. this deferred shading pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_deferred_shading_pass_ada982919e7c8b643009f8e689d8a3ae8}{}\label{classmage_1_1_deferred_shading_pass_ada982919e7c8b643009f8e689d8a3ae8} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Deferred\+Shading\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})}
+
+Renders.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_deferred_shading_pass_a1be48c61dfb255a1641bae23d5277e4f}{}\label{classmage_1_1_deferred_shading_pass_a1be48c61dfb255a1641bae23d5277e4f} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!Update\+Shaders@{Update\+Shaders}}
+\index{Update\+Shaders@{Update\+Shaders}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{Update\+Shaders()}{UpdateShaders()}}
+{\footnotesize\ttfamily void mage\+::\+Deferred\+Shading\+Pass\+::\+Update\+Shaders (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates the compute and pixel shader of this deferred shading pass for the given B\+R\+DF.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to update the compute shader of this deferred shading pass. \\
+\hline
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to update the pixel shader of this deferred shading pass. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_deferred_shading_pass_a5a466f5c2ee71563f4f8ed6d042ee4b3}{}\label{classmage_1_1_deferred_shading_pass_a5a466f5c2ee71563f4f8ed6d042ee4b3} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!m\+\_\+brdf@{m\+\_\+brdf}}
+\index{m\+\_\+brdf@{m\+\_\+brdf}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+brdf}{m\_brdf}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} mage\+::\+Deferred\+Shading\+Pass\+::m\+\_\+brdf\hspace{0.3cm}{\ttfamily [private]}}
+
+The current B\+R\+DF of this deferred shading pass. \hypertarget{classmage_1_1_deferred_shading_pass_ae61ddf1399606393a2ff795a6d7e0307}{}\label{classmage_1_1_deferred_shading_pass_ae61ddf1399606393a2ff795a6d7e0307} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!m\+\_\+cs@{m\+\_\+cs}}
+\index{m\+\_\+cs@{m\+\_\+cs}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+cs}{m\_cs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a95ee75d4d07106395d80f751d364dc1b}{Compute\+Shader\+Ptr} mage\+::\+Deferred\+Shading\+Pass\+::m\+\_\+cs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the compute shader of this deferred shading pass. \hypertarget{classmage_1_1_deferred_shading_pass_a05b1c649f39f267ce5a5cecdd02b8ffb}{}\label{classmage_1_1_deferred_shading_pass_a05b1c649f39f267ce5a5cecdd02b8ffb} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+Deferred\+Shading\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this deferred shading pass. \hypertarget{classmage_1_1_deferred_shading_pass_a3a9e8ace034b974bd12afa551f6b1585}{}\label{classmage_1_1_deferred_shading_pass_a3a9e8ace034b974bd12afa551f6b1585} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!m\+\_\+msaa\+\_\+ps@{m\+\_\+msaa\+\_\+ps}}
+\index{m\+\_\+msaa\+\_\+ps@{m\+\_\+msaa\+\_\+ps}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+msaa\+\_\+ps}{m\_msaa\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} mage\+::\+Deferred\+Shading\+Pass\+::m\+\_\+msaa\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this deferred shading pass. \hypertarget{classmage_1_1_deferred_shading_pass_aabaa6fd24ccef9c8db07898a182231e0}{}\label{classmage_1_1_deferred_shading_pass_aabaa6fd24ccef9c8db07898a182231e0} 
+\index{mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Deferred\+Shading\+Pass@{mage\+::\+Deferred\+Shading\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} mage\+::\+Deferred\+Shading\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this deferred shading pass. 

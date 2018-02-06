@@ -1,0 +1,414 @@
+\hypertarget{classmage_1_1_voxelization_pass}{}\section{mage\+:\+:Voxelization\+Pass Class Reference}
+\label{classmage_1_1_voxelization_pass}\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+
+
+{\ttfamily \#include $<$voxelization\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_voxelization_pass_aa9441ebdd6c3113356bf803b319cbe2c}{Voxelization\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_voxelization_pass_a846f41639f7c792f9dab58fb1c1095e3}{Voxelization\+Pass} (const \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_voxelization_pass_acb45aea18e3895084afea0bc89065fcd}{Voxelization\+Pass} (\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1_voxelization_pass_adc6aeb1a2e0709f5900fbc0ebaa163e3}{$\sim$\+Voxelization\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \& \hyperlink{classmage_1_1_voxelization_pass_a0ecd5331deb5134ea903fb1af566dbb7}{operator=} (const \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \& \hyperlink{classmage_1_1_voxelization_pass_a5709a9237fff8f338adef77c57752d2a}{operator=} (\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&\&pass)=delete
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_voxelization_pass_a17aa06fc842286e00750501b3f1f0f8b}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, \hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf, size\+\_\+t resolution)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} $\ast$ \hyperlink{classmage_1_1_voxelization_pass_a2f7a0a3c69d008f241a46b4f333add37}{Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{P\+S\+Index} \+: U8 \{ \hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a4e69f1c58994758054563aa7392ffa4c}{P\+S\+Index\+::\+B\+R\+DF} = 0, 
+\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a12126b75c3073e66dcaed7ac43317a00}{P\+S\+Index\+::\+B\+R\+D\+F\+\_\+\+T\+S\+NM} = 1, 
+\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_aa2dd428dfdcd9d4d03d8bcc16c10c8f8}{Setup\+Voxel\+Grid} (size\+\_\+t resolution)
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_ae91349cb63c302c256c822cfd69c42e8}{Bind\+Fixed\+State} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_a573f27eb1c6fdb5701ee0ccf3cbef91c}{Update\+P\+Ss} (\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf)
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_a73bd22aa706e59e7d270875ff631ac4c}{Bind\+PS} (\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{P\+S\+Index} index) noexcept
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_a4dce943e59020690124a2db73004d135}{Bind\+PS} (const \hyperlink{classmage_1_1_material}{Material} \&material) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_voxelization_pass_a7c49d59653daa9a205b13de23727b3d6}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, C\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform, const \hyperlink{classmage_1_1_material}{Material} \&material)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_voxelization_pass_a1ea0c61ba9cac129b9c655ea7ef557d5}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, \hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} brdf)
+\item 
+void \hyperlink{classmage_1_1_voxelization_pass_ada3b9ac5f11073929db725c762bb48da}{Dispatch} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_voxelization_pass_ae7f5f5ea9045f546d2b274336a031b6a}{m\+\_\+device\+\_\+context}
+\item 
+const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1_voxelization_pass_a228d6cbcd1ed2948ffba87b2461beca6}{m\+\_\+vs}
+\item 
+const \hyperlink{namespacemage_acc49e8e93ccc87613b02dd688f0db21a}{Geometry\+Shader\+Ptr} \hyperlink{classmage_1_1_voxelization_pass_aaf6915c46f6a550d494501ded0a44651}{m\+\_\+gs}
+\item 
+\hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1_voxelization_pass_aa0afe7d2b344249c513af0706ad8b22b}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
+\item 
+const \hyperlink{namespacemage_a95ee75d4d07106395d80f751d364dc1b}{Compute\+Shader\+Ptr} \hyperlink{classmage_1_1_voxelization_pass_a7742451b2503ef5208fc286dd32a6d9b}{m\+\_\+cs}
+\item 
+\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{P\+S\+Index} \hyperlink{classmage_1_1_voxelization_pass_ab00023b5a819f5d42134308dfbd1c012}{m\+\_\+bound\+\_\+ps}
+\item 
+\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} \hyperlink{classmage_1_1_voxelization_pass_a35943c47608768e49227d3f6bf8b4996}{m\+\_\+brdf}
+\item 
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ \hyperlink{classmage_1_1_voxelization_pass_abc2abb38c64a8f6cf3a24934e9864860}{m\+\_\+model\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_voxel_grid}{Voxel\+Grid} $>$ \hyperlink{classmage_1_1_voxelization_pass_a22b05bbc3e203b37c3cd30a3509e334f}{m\+\_\+voxel\+\_\+grid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of voxelization passes for rendering models using a variable (material dependent) shading. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{}\label{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!P\+S\+Index@{P\+S\+Index}}
+\index{P\+S\+Index@{P\+S\+Index}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{P\+S\+Index}{PSIndex}}
+{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{mage\+::\+Voxelization\+Pass\+::\+P\+S\+Index} \+: \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+An enumeration of the different pixel shader indices for variable shading passes.
+
+This contains\+: {\ttfamily B\+R\+DF} and {\ttfamily B\+R\+D\+F\+\_\+\+T\+S\+NM}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+DF@{B\+R\+DF}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!B\+R\+DF@{B\+R\+DF}}}\hypertarget{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a4e69f1c58994758054563aa7392ffa4c}{}\label{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a4e69f1c58994758054563aa7392ffa4c} 
+B\+R\+DF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+D\+F\+\_\+\+T\+S\+NM@{B\+R\+D\+F\+\_\+\+T\+S\+NM}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!B\+R\+D\+F\+\_\+\+T\+S\+NM@{B\+R\+D\+F\+\_\+\+T\+S\+NM}}}\hypertarget{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a12126b75c3073e66dcaed7ac43317a00}{}\label{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589a12126b75c3073e66dcaed7ac43317a00} 
+B\+R\+D\+F\+\_\+\+T\+S\+NM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Count@{Count}}}\hypertarget{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589ae93f994f01c537c4e2f7d8528c3eb5e9} 
+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_voxelization_pass_aa9441ebdd6c3113356bf803b319cbe2c}{}\label{classmage_1_1_voxelization_pass_aa9441ebdd6c3113356bf803b319cbe2c} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Voxelization\+Pass@{Voxelization\+Pass}}
+\index{Voxelization\+Pass@{Voxelization\+Pass}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Voxelization\+Pass()}{VoxelizationPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Voxelization\+Pass\+::\+Voxelization\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a voxelization pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_voxelization_pass_a846f41639f7c792f9dab58fb1c1095e3}{}\label{classmage_1_1_voxelization_pass_a846f41639f7c792f9dab58fb1c1095e3} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Voxelization\+Pass@{Voxelization\+Pass}}
+\index{Voxelization\+Pass@{Voxelization\+Pass}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Voxelization\+Pass()}{VoxelizationPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Voxelization\+Pass\+::\+Voxelization\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a voxelization pass from the given voxelization pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxelization pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_voxelization_pass_acb45aea18e3895084afea0bc89065fcd}{}\label{classmage_1_1_voxelization_pass_acb45aea18e3895084afea0bc89065fcd} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Voxelization\+Pass@{Voxelization\+Pass}}
+\index{Voxelization\+Pass@{Voxelization\+Pass}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Voxelization\+Pass()}{VoxelizationPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Voxelization\+Pass\+::\+Voxelization\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a voxelization pass by moving the given variable shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxelization pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_voxelization_pass_adc6aeb1a2e0709f5900fbc0ebaa163e3}{}\label{classmage_1_1_voxelization_pass_adc6aeb1a2e0709f5900fbc0ebaa163e3} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!````~Voxelization\+Pass@{$\sim$\+Voxelization\+Pass}}
+\index{````~Voxelization\+Pass@{$\sim$\+Voxelization\+Pass}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Voxelization\+Pass()}{~VoxelizationPass()}}
+{\footnotesize\ttfamily mage\+::\+Voxelization\+Pass\+::$\sim$\+Voxelization\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this voxelization pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_voxelization_pass_ae91349cb63c302c256c822cfd69c42e8}{}\label{classmage_1_1_voxelization_pass_ae91349cb63c302c256c822cfd69c42e8} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_a7c49d59653daa9a205b13de23727b3d6}{}\label{classmage_1_1_voxelization_pass_a7c49d59653daa9a205b13de23727b3d6} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Voxelization\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform,  }\item[{const \hyperlink{classmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the model data of this voxelization pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+view} & The object-\/to-\/view transformation matrix used for transforming vertices. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The view-\/to-\/object transformation matrix used for transforming normals. \\
+\hline
+\mbox{\tt in}  & {\em texture\+\_\+transform} & The texture transformation matrix used for transforming texture coordinates. \\
+\hline
+\mbox{\tt in}  & {\em material} & A reference to the material. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model data of this voxelization pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_voxelization_pass_a73bd22aa706e59e7d270875ff631ac4c}{}\label{classmage_1_1_voxelization_pass_a73bd22aa706e59e7d270875ff631ac4c} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{P\+S\+Index}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the pixel shader of this voxelization pass associated with the given pixel shader index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & The pixel shader index. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_voxelization_pass_a4dce943e59020690124a2db73004d135}{}\label{classmage_1_1_voxelization_pass_a4dce943e59020690124a2db73004d135} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the pixel shader of this voxelization pass associated with the given material.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em material} & A reference to the material. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_voxelization_pass_ada3b9ac5f11073929db725c762bb48da}{}\label{classmage_1_1_voxelization_pass_ada3b9ac5f11073929db725c762bb48da} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Dispatch()}{Dispatch()}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Dispatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Dispatches this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_a2f7a0a3c69d008f241a46b4f333add37}{}\label{classmage_1_1_voxelization_pass_a2f7a0a3c69d008f241a46b4f333add37} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} $\ast$ mage\+::\+Voxelization\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the voxelization pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the voxelization pass associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_voxelization_pass_a0ecd5331deb5134ea903fb1af566dbb7}{}\label{classmage_1_1_voxelization_pass_a0ecd5331deb5134ea903fb1af566dbb7} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass}\& mage\+::\+Voxelization\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given voxelization pass to this voxelization pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxelization pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given voxelization pass (i.\+e. this voxelization pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_voxelization_pass_a5709a9237fff8f338adef77c57752d2a}{}\label{classmage_1_1_voxelization_pass_a5709a9237fff8f338adef77c57752d2a} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass}\& mage\+::\+Voxelization\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given voxelization pass to this voxelization pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxelization pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved voxelization pass (i.\+e. this voxelization pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_voxelization_pass_a17aa06fc842286e00750501b3f1f0f8b}{}\label{classmage_1_1_voxelization_pass_a17aa06fc842286e00750501b3f1f0f8b} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf,  }\item[{size\+\_\+t}]{resolution }\end{DoxyParamCaption})}
+
+Renders the scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\mbox{\tt in}  & {\em resolution} & The resolution of the regular voxel grid. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_voxelization_pass_a1ea0c61ba9cac129b9c655ea7ef557d5}{}\label{classmage_1_1_voxelization_pass_a1ea0c61ba9cac129b9c655ea7ef557d5} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Renders the scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_voxelization_pass_aa2dd428dfdcd9d4d03d8bcc16c10c8f8}{}\label{classmage_1_1_voxelization_pass_aa2dd428dfdcd9d4d03d8bcc16c10c8f8} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Setup\+Voxel\+Grid@{Setup\+Voxel\+Grid}}
+\index{Setup\+Voxel\+Grid@{Setup\+Voxel\+Grid}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Setup\+Voxel\+Grid()}{SetupVoxelGrid()}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Setup\+Voxel\+Grid (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sets up the voxel grid of this voxelization pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resolution} & The resolution of the regular voxel grid. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_voxelization_pass_a573f27eb1c6fdb5701ee0ccf3cbef91c}{}\label{classmage_1_1_voxelization_pass_a573f27eb1c6fdb5701ee0ccf3cbef91c} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!Update\+P\+Ss@{Update\+P\+Ss}}
+\index{Update\+P\+Ss@{Update\+P\+Ss}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Update\+P\+Ss()}{UpdatePSs()}}
+{\footnotesize\ttfamily void mage\+::\+Voxelization\+Pass\+::\+Update\+P\+Ss (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates the pixel shaders of this voxelization pass for the given B\+R\+DF.
+
+\begin{DoxyPrecond}{Precondition}
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to update the pixel shaders of this variable shading pass. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_voxelization_pass_ab00023b5a819f5d42134308dfbd1c012}{}\label{classmage_1_1_voxelization_pass_ab00023b5a819f5d42134308dfbd1c012} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}}
+\index{m\+\_\+bound\+\_\+ps@{m\+\_\+bound\+\_\+ps}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+bound\+\_\+ps}{m\_bound\_ps}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589}{P\+S\+Index} mage\+::\+Voxelization\+Pass\+::m\+\_\+bound\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+The pixel shader index of the bound pixel shader of this variable shading pass. \hypertarget{classmage_1_1_voxelization_pass_a35943c47608768e49227d3f6bf8b4996}{}\label{classmage_1_1_voxelization_pass_a35943c47608768e49227d3f6bf8b4996} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+brdf@{m\+\_\+brdf}}
+\index{m\+\_\+brdf@{m\+\_\+brdf}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+brdf}{m\_brdf}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_af1044f87544bc38427766a8c795d2f26}{B\+R\+D\+F\+Type} mage\+::\+Voxelization\+Pass\+::m\+\_\+brdf\hspace{0.3cm}{\ttfamily [private]}}
+
+The current B\+R\+DF of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_a7742451b2503ef5208fc286dd32a6d9b}{}\label{classmage_1_1_voxelization_pass_a7742451b2503ef5208fc286dd32a6d9b} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+cs@{m\+\_\+cs}}
+\index{m\+\_\+cs@{m\+\_\+cs}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+cs}{m\_cs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a95ee75d4d07106395d80f751d364dc1b}{Compute\+Shader\+Ptr} mage\+::\+Voxelization\+Pass\+::m\+\_\+cs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the compute shader of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_ae7f5f5ea9045f546d2b274336a031b6a}{}\label{classmage_1_1_voxelization_pass_ae7f5f5ea9045f546d2b274336a031b6a} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+Voxelization\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_aaf6915c46f6a550d494501ded0a44651}{}\label{classmage_1_1_voxelization_pass_aaf6915c46f6a550d494501ded0a44651} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+gs@{m\+\_\+gs}}
+\index{m\+\_\+gs@{m\+\_\+gs}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+gs}{m\_gs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_acc49e8e93ccc87613b02dd688f0db21a}{Geometry\+Shader\+Ptr} mage\+::\+Voxelization\+Pass\+::m\+\_\+gs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the geometry shader of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_abc2abb38c64a8f6cf3a24934e9864860}{}\label{classmage_1_1_voxelization_pass_abc2abb38c64a8f6cf3a24934e9864860} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_buffer}{Model\+Buffer} $>$ mage\+::\+Voxelization\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The model buffer of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_aa0afe7d2b344249c513af0706ad8b22b}{}\label{classmage_1_1_voxelization_pass_aa0afe7d2b344249c513af0706ad8b22b} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} mage\+::\+Voxelization\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_voxelization_pass_a3632bab7b0039dbbe10569618ae57589ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the pixel shaders of this variable shading pass. \hypertarget{classmage_1_1_voxelization_pass_a22b05bbc3e203b37c3cd30a3509e334f}{}\label{classmage_1_1_voxelization_pass_a22b05bbc3e203b37c3cd30a3509e334f} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+voxel\+\_\+grid@{m\+\_\+voxel\+\_\+grid}}
+\index{m\+\_\+voxel\+\_\+grid@{m\+\_\+voxel\+\_\+grid}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+voxel\+\_\+grid}{m\_voxel\_grid}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_voxel_grid}{Voxel\+Grid} $>$ mage\+::\+Voxelization\+Pass\+::m\+\_\+voxel\+\_\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+The voxel grid of this voxelization pass. \hypertarget{classmage_1_1_voxelization_pass_a228d6cbcd1ed2948ffba87b2461beca6}{}\label{classmage_1_1_voxelization_pass_a228d6cbcd1ed2948ffba87b2461beca6} 
+\index{mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Voxelization\+Pass@{mage\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} mage\+::\+Voxelization\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this voxelization pass. 

@@ -1,0 +1,222 @@
+\hypertarget{classmage_1_1_buffer_lock}{}\section{mage\+:\+:Buffer\+Lock Class Reference}
+\label{classmage_1_1_buffer_lock}\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+
+
+{\ttfamily \#include $<$buffer\+\_\+lock.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_buffer_lock_a9e7c0ebe78a1abc7919afda7c7001bc8}{Buffer\+Lock} (I\+D3\+D11\+Buffer $\ast$buffer, D3\+D11\+\_\+\+M\+AP map\+\_\+type, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$mapped\+\_\+buffer)
+\item 
+\hyperlink{classmage_1_1_buffer_lock_a8f19e84733b603ec83bfff50a1f4e789}{Buffer\+Lock} (I\+D3\+D11\+Device\+Context4 $\ast$device\+\_\+context, I\+D3\+D11\+Buffer $\ast$buffer, D3\+D11\+\_\+\+M\+AP map\+\_\+type, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$mapped\+\_\+buffer)
+\item 
+\hyperlink{classmage_1_1_buffer_lock_ad600caae6aa80af430c5b5c459137176}{Buffer\+Lock} (const \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&buffer\+\_\+lock)=delete
+\item 
+\hyperlink{classmage_1_1_buffer_lock_a0b5e9aafaeed79eb0cecb2268ac7428d}{Buffer\+Lock} (\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&\&buffer\+\_\+lock) noexcept=default
+\item 
+\hyperlink{classmage_1_1_buffer_lock_ae19ca641f652d9009738c2689a4427d9}{$\sim$\+Buffer\+Lock} ()
+\item 
+\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \& \hyperlink{classmage_1_1_buffer_lock_a70e59c28f8e862e16a86ebc31d2f93b1}{operator=} (const \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&buffer\+\_\+lock)=delete
+\item 
+\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \& \hyperlink{classmage_1_1_buffer_lock_a0c2beef9c8bc64c6fd9d6ca26ac545f7}{operator=} (\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&\&buffer\+\_\+lock) noexcept=default
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_buffer_lock_adcc9d3190b179efb5045f33551e177f7}{Map\+Buffer} (D3\+D11\+\_\+\+M\+AP map\+\_\+type, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$mapped\+\_\+buffer)
+\item 
+void \hyperlink{classmage_1_1_buffer_lock_a04b6cec5445a88d27f27cff4e7773535}{Unmap\+Buffer} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$ \hyperlink{classmage_1_1_buffer_lock_ac17b6d4085db4d9c7ebc57c66e9897b8}{m\+\_\+device\+\_\+context}
+\item 
+I\+D3\+D11\+Buffer $\ast$ \hyperlink{classmage_1_1_buffer_lock_a2b676d72e74c0083617e0ed288cc2be7}{m\+\_\+buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of buffer locks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_buffer_lock_a9e7c0ebe78a1abc7919afda7c7001bc8}{}\label{classmage_1_1_buffer_lock_a9e7c0ebe78a1abc7919afda7c7001bc8} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Buffer\+Lock@{Buffer\+Lock}}
+\index{Buffer\+Lock@{Buffer\+Lock}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Buffer\+Lock()}{BufferLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+Buffer\+Lock\+::\+Buffer\+Lock (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{buffer,  }\item[{D3\+D11\+\_\+\+M\+AP}]{map\+\_\+type,  }\item[{D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$}]{mapped\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a buffer lock.
+
+\begin{DoxyPrecond}{Precondition}
+The device associated with the current engine must be loaded. 
+
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape buffer} is not equal to {\ttfamily nullptr}. 
+
+{\itshape mapped\+\_\+buffer} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & A pointer to the buffer. \\
+\hline
+\mbox{\tt in}  & {\em map\+\_\+type} & The map type specifying the C\+PU\textquotesingle{}s read and write permissions for the buffer of this buffer lock. \\
+\hline
+\mbox{\tt out}  & {\em mapped\+\_\+buffer} & A pointer to map the buffer of this buffer lock to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to map the buffer. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_buffer_lock_a8f19e84733b603ec83bfff50a1f4e789}{}\label{classmage_1_1_buffer_lock_a8f19e84733b603ec83bfff50a1f4e789} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Buffer\+Lock@{Buffer\+Lock}}
+\index{Buffer\+Lock@{Buffer\+Lock}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Buffer\+Lock()}{BufferLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+Buffer\+Lock\+::\+Buffer\+Lock (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context4 $\ast$}]{device\+\_\+context,  }\item[{I\+D3\+D11\+Buffer $\ast$}]{buffer,  }\item[{D3\+D11\+\_\+\+M\+AP}]{map\+\_\+type,  }\item[{D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$}]{mapped\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a buffer lock.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device\+\_\+context} is not equal to {\ttfamily nullptr}. 
+
+{\itshape buffer} is not equal to {\ttfamily nullptr}. 
+
+{\itshape mapped\+\_\+buffer} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A pointer to the device context. \\
+\hline
+\mbox{\tt in}  & {\em buffer} & A pointer to the buffer. \\
+\hline
+\mbox{\tt in}  & {\em map\+\_\+type} & The map type specifying the C\+PU\textquotesingle{}s read and write permissions for the buffer of this buffer lock. \\
+\hline
+\mbox{\tt out}  & {\em mapped\+\_\+buffer} & A pointer to map the buffer of this buffer lock to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to map the buffer. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_buffer_lock_ad600caae6aa80af430c5b5c459137176}{}\label{classmage_1_1_buffer_lock_ad600caae6aa80af430c5b5c459137176} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Buffer\+Lock@{Buffer\+Lock}}
+\index{Buffer\+Lock@{Buffer\+Lock}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Buffer\+Lock()}{BufferLock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily mage\+::\+Buffer\+Lock\+::\+Buffer\+Lock (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&}]{buffer\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a buffer lock from the given buffer lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer\+\_\+lock} & A reference to the buffer lock to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_buffer_lock_a0b5e9aafaeed79eb0cecb2268ac7428d}{}\label{classmage_1_1_buffer_lock_a0b5e9aafaeed79eb0cecb2268ac7428d} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Buffer\+Lock@{Buffer\+Lock}}
+\index{Buffer\+Lock@{Buffer\+Lock}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Buffer\+Lock()}{BufferLock()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::\+Buffer\+Lock\+::\+Buffer\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&\&}]{buffer\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a buffer lock by moving the given buffer lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer\+\_\+lock} & A reference to the buffer lock to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_buffer_lock_ae19ca641f652d9009738c2689a4427d9}{}\label{classmage_1_1_buffer_lock_ae19ca641f652d9009738c2689a4427d9} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!````~Buffer\+Lock@{$\sim$\+Buffer\+Lock}}
+\index{````~Buffer\+Lock@{$\sim$\+Buffer\+Lock}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{$\sim$\+Buffer\+Lock()}{~BufferLock()}}
+{\footnotesize\ttfamily mage\+::\+Buffer\+Lock\+::$\sim$\+Buffer\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this buffer lock. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_buffer_lock_adcc9d3190b179efb5045f33551e177f7}{}\label{classmage_1_1_buffer_lock_adcc9d3190b179efb5045f33551e177f7} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Map\+Buffer@{Map\+Buffer}}
+\index{Map\+Buffer@{Map\+Buffer}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Map\+Buffer()}{MapBuffer()}}
+{\footnotesize\ttfamily void mage\+::\+Buffer\+Lock\+::\+Map\+Buffer (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+M\+AP}]{map\+\_\+type,  }\item[{D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+CE $\ast$}]{mapped\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Maps the buffer of this buffer lock.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape mapped\+\_\+buffer} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em map\+\_\+type} & The map type specifying the C\+PU\textquotesingle{}s read and write permissions for the buffer of this buffer lock. \\
+\hline
+\mbox{\tt out}  & {\em mapped\+\_\+buffer} & A pointer to map the buffer of this buffer lock to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to map the buffer. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_buffer_lock_a70e59c28f8e862e16a86ebc31d2f93b1}{}\label{classmage_1_1_buffer_lock_a70e59c28f8e862e16a86ebc31d2f93b1} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock}\& mage\+::\+Buffer\+Lock\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&}]{buffer\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given buffer lock to this buffer lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer\+\_\+lock} & A reference to the buffer lock to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given buffer lock (i.\+e. this buffer lock) 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_buffer_lock_a0c2beef9c8bc64c6fd9d6ca26ac545f7}{}\label{classmage_1_1_buffer_lock_a0c2beef9c8bc64c6fd9d6ca26ac545f7} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock}\& mage\+::\+Buffer\+Lock\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_buffer_lock}{Buffer\+Lock} \&\&}]{buffer\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given buffer lock to this buffer lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer\+\_\+lock} & A reference to the buffer lock to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved buffer lock (i.\+e. this buffer lock) 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_buffer_lock_a04b6cec5445a88d27f27cff4e7773535}{}\label{classmage_1_1_buffer_lock_a04b6cec5445a88d27f27cff4e7773535} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!Unmap\+Buffer@{Unmap\+Buffer}}
+\index{Unmap\+Buffer@{Unmap\+Buffer}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{Unmap\+Buffer()}{UnmapBuffer()}}
+{\footnotesize\ttfamily void mage\+::\+Buffer\+Lock\+::\+Unmap\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Unmaps the buffer of this buffer lock.
+
+\begin{DoxyPrecond}{Precondition}
+The buffer of this buffer lock must be mapped with \hyperlink{classmage_1_1_buffer_lock_adcc9d3190b179efb5045f33551e177f7}{mage\+::\+Buffer\+Lock\+::\+Map\+Buffer(\+D3\+D11\+\_\+\+M\+A\+P, D3\+D11\+\_\+\+M\+A\+P\+P\+E\+D\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E$\ast$)} before it can be unmapped. 
+\end{DoxyPrecond}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_buffer_lock_a2b676d72e74c0083617e0ed288cc2be7}{}\label{classmage_1_1_buffer_lock_a2b676d72e74c0083617e0ed288cc2be7} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!m\+\_\+buffer@{m\+\_\+buffer}}
+\index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
+{\footnotesize\ttfamily I\+D3\+D11\+Buffer$\ast$ mage\+::\+Buffer\+Lock\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the buffer of this lock. \hypertarget{classmage_1_1_buffer_lock_ac17b6d4085db4d9c7ebc57c66e9897b8}{}\label{classmage_1_1_buffer_lock_ac17b6d4085db4d9c7ebc57c66e9897b8} 
+\index{mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Buffer\+Lock@{mage\+::\+Buffer\+Lock}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ mage\+::\+Buffer\+Lock\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this buffer lock. 

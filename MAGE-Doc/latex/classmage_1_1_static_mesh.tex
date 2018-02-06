@@ -1,0 +1,262 @@
+\hypertarget{classmage_1_1_static_mesh}{}\section{mage\+:\+:Static\+Mesh$<$ VertexT, IndexT $>$ Class Template Reference}
+\label{classmage_1_1_static_mesh}\index{mage\+::\+Static\+Mesh$<$ Vertex\+T, Index\+T $>$@{mage\+::\+Static\+Mesh$<$ Vertex\+T, Index\+T $>$}}
+
+
+{\ttfamily \#include $<$static\+\_\+mesh.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Static\+Mesh$<$ VertexT, IndexT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_static_mesh}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_static_mesh_a12e95f33bd56ad37e931fcf4e1679a12}{Static\+Mesh} (std\+::vector$<$ VertexT $>$ vertices, std\+::vector$<$ IndexT $>$ indices, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology=D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+L\+I\+ST)
+\item 
+\hyperlink{classmage_1_1_static_mesh_a0178889509a63152cfa756ea2d2c419d}{Static\+Mesh} (I\+D3\+D11\+Device5 $\ast$device, std\+::vector$<$ VertexT $>$ vertices, std\+::vector$<$ IndexT $>$ indices, D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY primitive\+\_\+topology=D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+L\+I\+ST)
+\item 
+\hyperlink{classmage_1_1_static_mesh_a67f17b0c2e82e3ea33db92ded91a746f}{Static\+Mesh} (const \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&mesh)=delete
+\item 
+\hyperlink{classmage_1_1_static_mesh_ae8d097727f50c05d0397828540b1af0c}{Static\+Mesh} (\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&\&mesh) noexcept
+\item 
+virtual \hyperlink{classmage_1_1_static_mesh_ae14c69f2c93f534a4f48f66c8f2deb79}{$\sim$\+Static\+Mesh} ()
+\item 
+\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \& \hyperlink{classmage_1_1_static_mesh_a00919cc54283e85b94e3f3d97ebe2340}{operator=} (const \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&mesh)=delete
+\item 
+\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \& \hyperlink{classmage_1_1_static_mesh_a12b9f307dc7e7f7567d37fe94a288f85}{operator=} (\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} \&\&mesh) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_static_mesh_a5e9c8e2a9441ccb41b52938cf05c4034}{Setup\+Vertex\+Buffer} (I\+D3\+D11\+Device5 $\ast$device)
+\item 
+void \hyperlink{classmage_1_1_static_mesh_af60eb028ed40e4bd6595edbee110bc7d}{Setup\+Index\+Buffer} (I\+D3\+D11\+Device5 $\ast$device)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ VertexT $>$ \hyperlink{classmage_1_1_static_mesh_a2e4bad427bfd2ff874dcff776cc4dc51}{m\+\_\+vertices}
+\item 
+std\+::vector$<$ IndexT $>$ \hyperlink{classmage_1_1_static_mesh_abc6b5fb8eaaf9e597ba6efe48f9e779e}{m\+\_\+indices}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename VertexT, typename IndexT$>$\newline
+class mage\+::\+Static\+Mesh$<$ Vertex\+T, Index\+T $>$}
+
+A class of static meshes.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_static_mesh_a12e95f33bd56ad37e931fcf4e1679a12}{}\label{classmage_1_1_static_mesh_a12e95f33bd56ad37e931fcf4e1679a12} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Static\+Mesh@{Static\+Mesh}}
+\index{Static\+Mesh@{Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Static\+Mesh()}{StaticMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ VertexT $>$}]{vertices,  }\item[{std\+::vector$<$ IndexT $>$}]{indices,  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology = {\ttfamily D3D11\+\_\+PRIMITIVE\+\_\+TOPOLOGY\+\_\+TRIANGLELIST} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a static mesh.
+
+\begin{DoxyPrecond}{Precondition}
+The device associated with the current engine must be loaded. 
+
+The number of vertices must be greater than zero. 
+
+The number of indices must be greater than zero. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertices} & A vector containing the vertices. \\
+\hline
+\mbox{\tt in}  & {\em indices} & A vector containing the indices. \\
+\hline
+\mbox{\tt in}  & {\em primitive\+\_\+topology} & The primitive topology. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the vertex buffer of the static mesh. \\
+\hline
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the index buffer of the static mesh. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_static_mesh_a0178889509a63152cfa756ea2d2c419d}{}\label{classmage_1_1_static_mesh_a0178889509a63152cfa756ea2d2c419d} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Static\+Mesh@{Static\+Mesh}}
+\index{Static\+Mesh@{Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Static\+Mesh()}{StaticMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device5 $\ast$}]{device,  }\item[{std\+::vector$<$ VertexT $>$}]{vertices,  }\item[{std\+::vector$<$ IndexT $>$}]{indices,  }\item[{D3\+D11\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+GY}]{primitive\+\_\+topology = {\ttfamily D3D11\+\_\+PRIMITIVE\+\_\+TOPOLOGY\+\_\+TRIANGLELIST} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a static mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+
+The number of vertices must be greater than zero. 
+
+The number of indices must be greater than zero. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\mbox{\tt in}  & {\em vertices} & A vector containing the vertices. \\
+\hline
+\mbox{\tt in}  & {\em indices} & A vector containing the indices. \\
+\hline
+\mbox{\tt in}  & {\em primitive\+\_\+topology} & The primitive topology. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the vertex buffer of the static mesh. \\
+\hline
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the index buffer of the static mesh. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_static_mesh_a67f17b0c2e82e3ea33db92ded91a746f}{}\label{classmage_1_1_static_mesh_a67f17b0c2e82e3ea33db92ded91a746f} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Static\+Mesh@{Static\+Mesh}}
+\index{Static\+Mesh@{Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Static\+Mesh()}{StaticMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}$<$ VertexT, IndexT $>$ \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a static mesh from the given static mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the static mesh to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_static_mesh_ae8d097727f50c05d0397828540b1af0c}{}\label{classmage_1_1_static_mesh_ae8d097727f50c05d0397828540b1af0c} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Static\+Mesh@{Static\+Mesh}}
+\index{Static\+Mesh@{Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Static\+Mesh()}{StaticMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}$<$ VertexT, IndexT $>$ \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a static mesh by moving the given static mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the static mesh to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_static_mesh_ae14c69f2c93f534a4f48f66c8f2deb79}{}\label{classmage_1_1_static_mesh_ae14c69f2c93f534a4f48f66c8f2deb79} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!````~Static\+Mesh@{$\sim$\+Static\+Mesh}}
+\index{````~Static\+Mesh@{$\sim$\+Static\+Mesh}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{$\sim$\+Static\+Mesh()}{~StaticMesh()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+virtual \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::$\sim$\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this static mesh. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_static_mesh_a00919cc54283e85b94e3f3d97ebe2340}{}\label{classmage_1_1_static_mesh_a00919cc54283e85b94e3f3d97ebe2340} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}\& \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}$<$ VertexT, IndexT $>$ \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given static mesh to this static mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the static mesh to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given static mesh (i.\+e. this static mesh). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_static_mesh_a12b9f307dc7e7f7567d37fe94a288f85}{}\label{classmage_1_1_static_mesh_a12b9f307dc7e7f7567d37fe94a288f85} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}\& \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_static_mesh}{Static\+Mesh}$<$ VertexT, IndexT $>$ \&\&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Moves the given static mesh to this static mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the static mesh to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved static mesh (i.\+e. this static mesh). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_static_mesh_af60eb028ed40e4bd6595edbee110bc7d}{}\label{classmage_1_1_static_mesh_af60eb028ed40e4bd6595edbee110bc7d} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
+\index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Index\+Buffer()}{SetupIndexBuffer()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device5 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sets up the index buffer of this static mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the index buffer of this static mesh. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_static_mesh_a5e9c8e2a9441ccb41b52938cf05c4034}{}\label{classmage_1_1_static_mesh_a5e9c8e2a9441ccb41b52938cf05c4034} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}}
+\index{Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Vertex\+Buffer()}{SetupVertexBuffer()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device5 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sets up the vertex buffer of this static mesh.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape device} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to the device. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the vertex buffer of this static mesh. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_static_mesh_abc6b5fb8eaaf9e597ba6efe48f9e779e}{}\label{classmage_1_1_static_mesh_abc6b5fb8eaaf9e597ba6efe48f9e779e} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!m\+\_\+indices@{m\+\_\+indices}}
+\index{m\+\_\+indices@{m\+\_\+indices}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+indices}{m\_indices}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ IndexT $>$ \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::m\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector containing the indices of this static mesh. \hypertarget{classmage_1_1_static_mesh_a2e4bad427bfd2ff874dcff776cc4dc51}{}\label{classmage_1_1_static_mesh_a2e4bad427bfd2ff874dcff776cc4dc51} 
+\index{mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}!m\+\_\+vertices@{m\+\_\+vertices}}
+\index{m\+\_\+vertices@{m\+\_\+vertices}!mage\+::\+Static\+Mesh@{mage\+::\+Static\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+vertices}{m\_vertices}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ VertexT $>$ \hyperlink{classmage_1_1_static_mesh}{mage\+::\+Static\+Mesh}$<$ VertexT, IndexT $>$\+::m\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector containing the vertices of this static mesh. 

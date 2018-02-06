@@ -1,0 +1,183 @@
+\hypertarget{classmage_1_1_exception}{}\section{mage\+:\+:Exception Class Reference}
+\label{classmage_1_1_exception}\index{mage\+::\+Exception@{mage\+::\+Exception}}
+
+
+{\ttfamily \#include $<$exception.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_exception_a87fd5f6c5465c01244020afbaebdb9f5}{Exception} ()
+\item 
+\hyperlink{classmage_1_1_exception_a140a96da55e56931ecd1f0e1adb69f00}{Exception} (const char $\ast$format,...)
+\item 
+\hyperlink{classmage_1_1_exception_a8296b7972fb8ca777399a5a640f2c40a}{Exception} (const char $\ast$format, va\+\_\+list args)
+\item 
+\hyperlink{classmage_1_1_exception_a3f8642ade2ed1168a9853a50ee0e8e98}{Exception} (const \hyperlink{classmage_1_1_exception}{Exception} \&exception)
+\item 
+\hyperlink{classmage_1_1_exception_a5a745eb8921cb986c822c0f95455314a}{Exception} (\hyperlink{classmage_1_1_exception}{Exception} \&\&exception)
+\item 
+virtual \hyperlink{classmage_1_1_exception_a088e91ba8dffd31a9d6aa7d4af2ee2c0}{$\sim$\+Exception} ()
+\item 
+\hyperlink{classmage_1_1_exception}{Exception} \& \hyperlink{classmage_1_1_exception_ab0e7e6b32b07505271a4a88067ab54f4}{operator=} (const \hyperlink{classmage_1_1_exception}{Exception} \&exception)
+\item 
+\hyperlink{classmage_1_1_exception}{Exception} \& \hyperlink{classmage_1_1_exception_aa9305c6bd8836f56ffa970473533f031}{operator=} (\hyperlink{classmage_1_1_exception}{Exception} \&\&exception)
+\item 
+virtual const char $\ast$ \hyperlink{classmage_1_1_exception_a2ec064e970c232b09c100e151195a3e4}{what} () const noexcept override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classmage_1_1_exception_ad5bd9bb044bebaa1bac36c8c8a25c052}{m\+\_\+text} \mbox{[}\hyperlink{classmage_1_1_exception_a41c9eb8e4a238210822170dfa211e493}{s\+\_\+buffer\+\_\+size}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr size\+\_\+t \hyperlink{classmage_1_1_exception_a41c9eb8e4a238210822170dfa211e493}{s\+\_\+buffer\+\_\+size} = 2048
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of formatted exceptions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_exception_a87fd5f6c5465c01244020afbaebdb9f5}{}\label{classmage_1_1_exception_a87fd5f6c5465c01244020afbaebdb9f5} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a formatted exception. \hypertarget{classmage_1_1_exception_a140a96da55e56931ecd1f0e1adb69f00}{}\label{classmage_1_1_exception_a140a96da55e56931ecd1f0e1adb69f00} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a formatted exception.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_exception_a8296b7972fb8ca777399a5a640f2c40a}{}\label{classmage_1_1_exception_a8296b7972fb8ca777399a5a640f2c40a} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a formatted exception.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape format} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\mbox{\tt in}  & {\em args} & The variable argument list. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_exception_a3f8642ade2ed1168a9853a50ee0e8e98}{}\label{classmage_1_1_exception_a3f8642ade2ed1168a9853a50ee0e8e98} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_exception}{Exception} \&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a formatted exception from the given formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em exception} & A reference to a formatted exception to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_exception_a5a745eb8921cb986c822c0f95455314a}{}\label{classmage_1_1_exception_a5a745eb8921cb986c822c0f95455314a} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_exception}{Exception} \&\&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a formatted exception by moving the given formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em exception} & A reference to a formatted exception to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_exception_a088e91ba8dffd31a9d6aa7d4af2ee2c0}{}\label{classmage_1_1_exception_a088e91ba8dffd31a9d6aa7d4af2ee2c0} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!````~Exception@{$\sim$\+Exception}}
+\index{````~Exception@{$\sim$\+Exception}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{$\sim$\+Exception()}{~Exception()}}
+{\footnotesize\ttfamily mage\+::\+Exception\+::$\sim$\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Destructs this formatted exception. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_exception_ab0e7e6b32b07505271a4a88067ab54f4}{}\label{classmage_1_1_exception_ab0e7e6b32b07505271a4a88067ab54f4} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_exception}{Exception} \& mage\+::\+Exception\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_exception}{Exception} \&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copies the given formatted exception to this formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em exception} & A reference to a formatted exception to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given formatted exception (i.\+e. this formatted exception). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_exception_aa9305c6bd8836f56ffa970473533f031}{}\label{classmage_1_1_exception_aa9305c6bd8836f56ffa970473533f031} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_exception}{Exception} \& mage\+::\+Exception\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_exception}{Exception} \&\&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Moves the given formatted exception to this formatted exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em exception} & A reference to a formatted exception to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved formatted exception (i.\+e. this formatted exception). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_exception_a2ec064e970c232b09c100e151195a3e4}{}\label{classmage_1_1_exception_a2ec064e970c232b09c100e151195a3e4} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!what@{what}}
+\index{what@{what}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily virtual const char$\ast$ mage\+::\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns a null-\/terminated byte string that may be used to identify the exception.
+
+\begin{DoxyReturn}{Returns}
+A null-\/terminated byte string that may be used to identify the exception. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_exception_ad5bd9bb044bebaa1bac36c8c8a25c052}{}\label{classmage_1_1_exception_ad5bd9bb044bebaa1bac36c8c8a25c052} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!m\+\_\+text@{m\+\_\+text}}
+\index{m\+\_\+text@{m\+\_\+text}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{m\+\_\+text}{m\_text}}
+{\footnotesize\ttfamily char mage\+::\+Exception\+::m\+\_\+text\mbox{[}\hyperlink{classmage_1_1_exception_a41c9eb8e4a238210822170dfa211e493}{s\+\_\+buffer\+\_\+size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+The text buffer of this formatted exception. \hypertarget{classmage_1_1_exception_a41c9eb8e4a238210822170dfa211e493}{}\label{classmage_1_1_exception_a41c9eb8e4a238210822170dfa211e493} 
+\index{mage\+::\+Exception@{mage\+::\+Exception}!s\+\_\+buffer\+\_\+size@{s\+\_\+buffer\+\_\+size}}
+\index{s\+\_\+buffer\+\_\+size@{s\+\_\+buffer\+\_\+size}!mage\+::\+Exception@{mage\+::\+Exception}}
+\subsubsection{\texorpdfstring{s\+\_\+buffer\+\_\+size}{s\_buffer\_size}}
+{\footnotesize\ttfamily constexpr size\+\_\+t mage\+::\+Exception\+::s\+\_\+buffer\+\_\+size = 2048\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The buffer size of exceptions. 

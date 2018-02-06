@@ -1,0 +1,26 @@
+var classmage_1_1_mouse =
+[
+    [ "Mouse", "classmage_1_1_mouse.html#a14a0dd65d468158d2f967b93e820d84c", null ],
+    [ "Mouse", "classmage_1_1_mouse.html#af11aa23e6cfbefb4cd3d90b17c63db7c", null ],
+    [ "Mouse", "classmage_1_1_mouse.html#aab728705e2e290da23fef77f60b3fc2c", null ],
+    [ "~Mouse", "classmage_1_1_mouse.html#a855f1075ae774c8417d3da7a1e02d580", null ],
+    [ "Get", "classmage_1_1_mouse.html#aa62bca1d085e86eeff1bf07e232e2a24", null ],
+    [ "GetDeltaWheel", "classmage_1_1_mouse.html#ad683097cc0cec09eb5c2ad1b17bd729f", null ],
+    [ "GetDeltaX", "classmage_1_1_mouse.html#a1f6c7164c1705d834c2f603f22398077", null ],
+    [ "GetDeltaY", "classmage_1_1_mouse.html#a95da9aa89fc63d4d96666da52e63d558", null ],
+    [ "GetMouseButtonPress", "classmage_1_1_mouse.html#a240b7fe1d68448fa922d769187f6358a", null ],
+    [ "GetPositionX", "classmage_1_1_mouse.html#a0b7b47556aaa6e620d852349e21ba4af", null ],
+    [ "GetPositionY", "classmage_1_1_mouse.html#a4df9cf5c235c44a5988cd451b8ca3ddb", null ],
+    [ "GetWindow", "classmage_1_1_mouse.html#a8d6b15af2bb60cc38334255ad2fbe576", null ],
+    [ "InitializeMouse", "classmage_1_1_mouse.html#ac158b6d6fff5b05dea5ebefa86c0d56a", null ],
+    [ "operator=", "classmage_1_1_mouse.html#a585119f1b0db3fbc7436c86676518c8c", null ],
+    [ "operator=", "classmage_1_1_mouse.html#a42d80f535a12356762a506438036dd71", null ],
+    [ "Update", "classmage_1_1_mouse.html#a0cddae3f871dd69c1ba6928dc6b1f985", null ],
+    [ "m_button_press_stamp", "classmage_1_1_mouse.html#aed4e1d8b806bec657f3d29a35c93ebf4", null ],
+    [ "m_button_state", "classmage_1_1_mouse.html#a80591f7f27f026942f461c8af2ebbd1e", null ],
+    [ "m_di", "classmage_1_1_mouse.html#a892a9e1d5ad16ac9b67a5f69fbfedeab", null ],
+    [ "m_mouse", "classmage_1_1_mouse.html#a3f2803f3c0e008f5d764a11de3dbe098", null ],
+    [ "m_position", "classmage_1_1_mouse.html#a690524744270b6ff762f5e8dcc552d28", null ],
+    [ "m_press_stamp", "classmage_1_1_mouse.html#a7633df92a818760b3efe694d4688961c", null ],
+    [ "m_window", "classmage_1_1_mouse.html#ac4cb2f70b32a99c7acace534df46d35c", null ]
+];

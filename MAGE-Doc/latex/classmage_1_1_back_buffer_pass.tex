@@ -1,0 +1,176 @@
+\hypertarget{classmage_1_1_back_buffer_pass}{}\section{mage\+:\+:Back\+Buffer\+Pass Class Reference}
+\label{classmage_1_1_back_buffer_pass}\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+
+
+{\ttfamily \#include $<$back\+\_\+buffer\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass_a46ce63d05208fc3dea43244713a6a280}{Back\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass_a34cba227e301258e8fc9432124bc63cf}{Back\+Buffer\+Pass} (const \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass_a1ac5e5c055eecb094f449496c1475049}{Back\+Buffer\+Pass} (\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass_a10ccd92ff4480261e9ecfc435f5d9ed3}{$\sim$\+Back\+Buffer\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \& \hyperlink{classmage_1_1_back_buffer_pass_a77c804349e3f96c5d9dbd16cb421fbb6}{operator=} (const \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \& \hyperlink{classmage_1_1_back_buffer_pass_aeaba028d1e576630817059b3f5a833c4}{operator=} (\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&\&pass)=delete
+\item 
+void \hyperlink{classmage_1_1_back_buffer_pass_a6f0265c182a4b1ac2badd5df3fb11545}{Render} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_back_buffer_pass_ae925b441c80f2aa711fbba6d782e5f81}{Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_back_buffer_pass_a4e66e041f37dddb4a26c549f4dc090a6}{Bind\+Fixed\+State} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_back_buffer_pass_a08d816be20d35edae0b8fc7975bde76d}{m\+\_\+device\+\_\+context}
+\item 
+const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1_back_buffer_pass_a1ad5c084edf77f7462336fd48e45c5c7}{m\+\_\+vs}
+\item 
+const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1_back_buffer_pass_a4fdc3c01db3a46a63b173d08fd0972d7}{m\+\_\+ps}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of back buffer passes for tone mapping and gamma correcting H\+DR images. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_back_buffer_pass_a46ce63d05208fc3dea43244713a6a280}{}\label{classmage_1_1_back_buffer_pass_a46ce63d05208fc3dea43244713a6a280} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Back\+Buffer\+Pass@{Back\+Buffer\+Pass}}
+\index{Back\+Buffer\+Pass@{Back\+Buffer\+Pass}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Back\+Buffer\+Pass()}{BackBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Back\+Buffer\+Pass\+::\+Back\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs an back buffer pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_back_buffer_pass_a34cba227e301258e8fc9432124bc63cf}{}\label{classmage_1_1_back_buffer_pass_a34cba227e301258e8fc9432124bc63cf} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Back\+Buffer\+Pass@{Back\+Buffer\+Pass}}
+\index{Back\+Buffer\+Pass@{Back\+Buffer\+Pass}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Back\+Buffer\+Pass()}{BackBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Back\+Buffer\+Pass\+::\+Back\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs an back buffer pass from the given back buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the back buffer pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_back_buffer_pass_a1ac5e5c055eecb094f449496c1475049}{}\label{classmage_1_1_back_buffer_pass_a1ac5e5c055eecb094f449496c1475049} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Back\+Buffer\+Pass@{Back\+Buffer\+Pass}}
+\index{Back\+Buffer\+Pass@{Back\+Buffer\+Pass}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Back\+Buffer\+Pass()}{BackBufferPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Back\+Buffer\+Pass\+::\+Back\+Buffer\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs an back buffer pass by moving the given back buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the Image pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_back_buffer_pass_a10ccd92ff4480261e9ecfc435f5d9ed3}{}\label{classmage_1_1_back_buffer_pass_a10ccd92ff4480261e9ecfc435f5d9ed3} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!````~Back\+Buffer\+Pass@{$\sim$\+Back\+Buffer\+Pass}}
+\index{````~Back\+Buffer\+Pass@{$\sim$\+Back\+Buffer\+Pass}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Back\+Buffer\+Pass()}{~BackBufferPass()}}
+{\footnotesize\ttfamily mage\+::\+Back\+Buffer\+Pass\+::$\sim$\+Back\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this back buffer pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_back_buffer_pass_a4e66e041f37dddb4a26c549f4dc090a6}{}\label{classmage_1_1_back_buffer_pass_a4e66e041f37dddb4a26c549f4dc090a6} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+Back\+Buffer\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this back buffer pass. \hypertarget{classmage_1_1_back_buffer_pass_ae925b441c80f2aa711fbba6d782e5f81}{}\label{classmage_1_1_back_buffer_pass_ae925b441c80f2aa711fbba6d782e5f81} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} $\ast$ mage\+::\+Back\+Buffer\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the back buffer pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the back buffer pass associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_back_buffer_pass_a77c804349e3f96c5d9dbd16cb421fbb6}{}\label{classmage_1_1_back_buffer_pass_a77c804349e3f96c5d9dbd16cb421fbb6} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass}\& mage\+::\+Back\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given back buffer pass to this back buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the back buffer pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given back buffer pass (i.\+e. this back buffer pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_back_buffer_pass_aeaba028d1e576630817059b3f5a833c4}{}\label{classmage_1_1_back_buffer_pass_aeaba028d1e576630817059b3f5a833c4} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass}\& mage\+::\+Back\+Buffer\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_back_buffer_pass}{Back\+Buffer\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given back buffer pass to this back buffer pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the back buffer pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved back buffer pass (i.\+e. this back buffer pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_back_buffer_pass_a6f0265c182a4b1ac2badd5df3fb11545}{}\label{classmage_1_1_back_buffer_pass_a6f0265c182a4b1ac2badd5df3fb11545} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Back\+Buffer\+Pass\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Renders. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_back_buffer_pass_a08d816be20d35edae0b8fc7975bde76d}{}\label{classmage_1_1_back_buffer_pass_a08d816be20d35edae0b8fc7975bde76d} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+Back\+Buffer\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this back buffer pass. \hypertarget{classmage_1_1_back_buffer_pass_a4fdc3c01db3a46a63b173d08fd0972d7}{}\label{classmage_1_1_back_buffer_pass_a4fdc3c01db3a46a63b173d08fd0972d7} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} mage\+::\+Back\+Buffer\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this back buffer pass. \hypertarget{classmage_1_1_back_buffer_pass_a1ad5c084edf77f7462336fd48e45c5c7}{}\label{classmage_1_1_back_buffer_pass_a1ad5c084edf77f7462336fd48e45c5c7} 
+\index{mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Back\+Buffer\+Pass@{mage\+::\+Back\+Buffer\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} mage\+::\+Back\+Buffer\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this back buffer pass. 

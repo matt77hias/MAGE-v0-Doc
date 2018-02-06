@@ -1,0 +1,35 @@
+var classmage_1_1_variable_shading_pass =
+[
+    [ "PSIndex", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5", [
+      [ "Emissive", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a3cb4ee67c41d819920d72fcc11b9b566", null ],
+      [ "BRDF", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a4e69f1c58994758054563aa7392ffa4c", null ],
+      [ "BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a12126b75c3073e66dcaed7ac43317a00", null ],
+      [ "Transparent_Emissive", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a72d12be64d7b318fe15d5d0c8682feef", null ],
+      [ "Transparent_BRDF", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5aeb62f8bcb0bd36fba14e9fe3fcb12805", null ],
+      [ "Transparent_BRDF_TSNM", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a0cda01fc01db8201f5bee170d74f9771", null ],
+      [ "Count", "classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
+    ] ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a0c3b30167c1dcdf74daae080f2c799bc", null ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#acff1717e699290eb202badaf9cdb3674", null ],
+    [ "VariableShadingPass", "classmage_1_1_variable_shading_pass.html#aacdd55991aae9edea0ad297c27cc590a", null ],
+    [ "~VariableShadingPass", "classmage_1_1_variable_shading_pass.html#a1af7915285b239e8e6d14eb0f926dc4a", null ],
+    [ "BindFixedOpaqueState", "classmage_1_1_variable_shading_pass.html#aaf88dd7d2e0b1eaf3deebb7c056da6f8", null ],
+    [ "BindFixedTransparentState", "classmage_1_1_variable_shading_pass.html#afbc7e1043b2f3a1fff4965aa8958ef33", null ],
+    [ "BindModelData", "classmage_1_1_variable_shading_pass.html#a397b49713231c0f9af6b5a4f9bafa394", null ],
+    [ "BindOpaquePS", "classmage_1_1_variable_shading_pass.html#a25ffd45efc1331567f63eb1a90ad2e49", null ],
+    [ "BindPS", "classmage_1_1_variable_shading_pass.html#a9352c4b8b435254768c3407550458fb5", null ],
+    [ "BindTransparentPS", "classmage_1_1_variable_shading_pass.html#a713da5f3f0835dd8fc5fdd2027781cb7", null ],
+    [ "Get", "classmage_1_1_variable_shading_pass.html#a4c5572071474485e60af17b34539a603", null ],
+    [ "operator=", "classmage_1_1_variable_shading_pass.html#a2ba3039cb06adea09c8ecd86dc1d2e8c", null ],
+    [ "operator=", "classmage_1_1_variable_shading_pass.html#abdd5d90e0b64ecd463c2e4c1fe5134a2", null ],
+    [ "Render", "classmage_1_1_variable_shading_pass.html#abe16e3e27d17fac0a69cdbaccaaeea4d", null ],
+    [ "RenderEmissive", "classmage_1_1_variable_shading_pass.html#ad87641e6da5cd07655d5140ba4b7124c", null ],
+    [ "RenderTransparent", "classmage_1_1_variable_shading_pass.html#acd93a277bd81aa32d1104d4c526c6e7b", null ],
+    [ "UpdatePSs", "classmage_1_1_variable_shading_pass.html#a4e0a0e7709d99bb94f3263bdf478f484", null ],
+    [ "m_bound_ps", "classmage_1_1_variable_shading_pass.html#acb1d0d78a9de9afc2d668d87134c5ec5", null ],
+    [ "m_brdf", "classmage_1_1_variable_shading_pass.html#ac6147f2068fd7727fe2d78584ff68767", null ],
+    [ "m_device_context", "classmage_1_1_variable_shading_pass.html#a6f493a69566574b4818e2ba578ec0c1a", null ],
+    [ "m_model_buffer", "classmage_1_1_variable_shading_pass.html#ab83602f0ffa6c0a3519ffaa467ae113a", null ],
+    [ "m_ps", "classmage_1_1_variable_shading_pass.html#a0a7c90672bc0394cf27610625b12976b", null ],
+    [ "m_vs", "classmage_1_1_variable_shading_pass.html#a291754b2d110e81f39254ea4faea07bb", null ]
+];

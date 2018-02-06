@@ -1,0 +1,268 @@
+\hypertarget{structmage_1_1_model_output}{}\section{mage\+:\+:Model\+Output$<$ VertexT, IndexT $>$ Struct Template Reference}
+\label{structmage_1_1_model_output}\index{mage\+::\+Model\+Output$<$ Vertex\+T, Index\+T $>$@{mage\+::\+Model\+Output$<$ Vertex\+T, Index\+T $>$}}
+
+
+{\ttfamily \#include $<$model\+\_\+output.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_model_output_a87c3036fd1e97045c6075ed729a5e8f2}{Model\+Output} ()=default
+\item 
+\hyperlink{structmage_1_1_model_output_a8aed21d15e5c30a8ec200edf01e5f8fb}{Model\+Output} (const \hyperlink{structmage_1_1_model_output}{Model\+Output} \&output)=delete
+\item 
+\hyperlink{structmage_1_1_model_output_af0e7804a3b375b18fc7bfba1c6ee84bf}{Model\+Output} (\hyperlink{structmage_1_1_model_output}{Model\+Output} \&\&output) noexcept=default
+\item 
+\hyperlink{structmage_1_1_model_output_a547ab5a433adfb253fab3431ad4c0dce}{$\sim$\+Model\+Output} ()=default
+\item 
+\hyperlink{structmage_1_1_model_output}{Model\+Output} \& \hyperlink{structmage_1_1_model_output_a5d206619319fed85a4add63ee0532cac}{operator=} (const \hyperlink{structmage_1_1_model_output}{Model\+Output} \&output)=delete
+\item 
+\hyperlink{structmage_1_1_model_output}{Model\+Output} \& \hyperlink{structmage_1_1_model_output_a090d74bebb6045c11952cc57fb1aa220}{operator=} (\hyperlink{structmage_1_1_model_output}{Model\+Output} \&\&output) noexcept=default
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_model_output_a4cec4d8729150a188605daabd33dd2ba}{Add\+Model\+Part} (\hyperlink{structmage_1_1_model_part}{Model\+Part} model\+\_\+part, bool create\+\_\+bounding\+\_\+volumes=true)
+\item 
+bool \hyperlink{structmage_1_1_model_output_a172145ecca77ad45f7adc8f4c4f905ec}{Contains\+Model\+Part} (const string \&name) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_model_output_a204f16513741ebfacb7a287969629956}{Start\+Model\+Part} (\hyperlink{structmage_1_1_model_part}{Model\+Part} model\+\_\+part)
+\item 
+void \hyperlink{structmage_1_1_model_output_a88f2dff99e178b84637ae945ba5f6f53}{Set\+Material} (string material)
+\item 
+void \hyperlink{structmage_1_1_model_output_a24619ec445b3a122ce4b50a6f2f74158}{End\+Model\+Part} (bool create\+\_\+bounding\+\_\+volumes=true) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ VertexT $>$ \hyperlink{structmage_1_1_model_output_a93a22503c41a2c4a0f81f25d1d5317dd}{m\+\_\+vertex\+\_\+buffer}
+\item 
+std\+::vector$<$ IndexT $>$ \hyperlink{structmage_1_1_model_output_accf4483b85b26525e180e6ffd3678fc6}{m\+\_\+index\+\_\+buffer}
+\item 
+std\+::vector$<$ \hyperlink{classmage_1_1_material}{Material} $>$ \hyperlink{structmage_1_1_model_output_a82e2a73de1adde3b4360f290078d0c7d}{m\+\_\+material\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{structmage_1_1_model_output_aca7e45b0a0315459fd11b45face48544}{m\+\_\+model\+\_\+parts}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structmage_1_1_model_output_acecfa6de92e27b435ef15cc02640e992}{Setup\+Bounding\+Volumes} (\hyperlink{structmage_1_1_model_part}{Model\+Part} \&model\+\_\+part) noexcept
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename VertexT, typename IndexT$>$\newline
+struct mage\+::\+Model\+Output$<$ Vertex\+T, Index\+T $>$}
+
+A struct of model outputs.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_model_output_a87c3036fd1e97045c6075ed729a5e8f2}{}\label{structmage_1_1_model_output_a87c3036fd1e97045c6075ed729a5e8f2} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Model\+Output@{Model\+Output}}
+\index{Model\+Output@{Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Model\+Output()}{ModelOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a model output. \hypertarget{structmage_1_1_model_output_a8aed21d15e5c30a8ec200edf01e5f8fb}{}\label{structmage_1_1_model_output_a8aed21d15e5c30a8ec200edf01e5f8fb} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Model\+Output@{Model\+Output}}
+\index{Model\+Output@{Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Model\+Output()}{ModelOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT, IndexT $>$ \&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a model output from the given model output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em output} & A reference to the model output to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_af0e7804a3b375b18fc7bfba1c6ee84bf}{}\label{structmage_1_1_model_output_af0e7804a3b375b18fc7bfba1c6ee84bf} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Model\+Output@{Model\+Output}}
+\index{Model\+Output@{Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Model\+Output()}{ModelOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT, IndexT $>$ \&\&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a model output by moving the given model output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em output} & A reference to the model output to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_a547ab5a433adfb253fab3431ad4c0dce}{}\label{structmage_1_1_model_output_a547ab5a433adfb253fab3431ad4c0dce} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!````~Model\+Output@{$\sim$\+Model\+Output}}
+\index{````~Model\+Output@{$\sim$\+Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{$\sim$\+Model\+Output()}{~ModelOutput()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::$\sim$\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this model output. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_model_output_a4cec4d8729150a188605daabd33dd2ba}{}\label{structmage_1_1_model_output_a4cec4d8729150a188605daabd33dd2ba} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Add\+Model\+Part@{Add\+Model\+Part}}
+\index{Add\+Model\+Part@{Add\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Add\+Model\+Part()}{AddModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::Add\+Model\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_part}{Model\+Part}}]{model\+\_\+part,  }\item[{bool}]{create\+\_\+bounding\+\_\+volumes = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Adds a model part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+part} & The model part to add. \\
+\hline
+\mbox{\tt in}  & {\em create\+\_\+bounding\+\_\+volumes} & A flag indicating whether bounding volumes must be created for the given model part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_a172145ecca77ad45f7adc8f4c4f905ec}{}\label{structmage_1_1_model_output_a172145ecca77ad45f7adc8f4c4f905ec} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Contains\+Model\+Part@{Contains\+Model\+Part}}
+\index{Contains\+Model\+Part@{Contains\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Contains\+Model\+Part()}{ContainsModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+bool \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::Contains\+Model\+Part (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether this model output contains a model part with the given name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name of the model part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_a24619ec445b3a122ce4b50a6f2f74158}{}\label{structmage_1_1_model_output_a24619ec445b3a122ce4b50a6f2f74158} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!End\+Model\+Part@{End\+Model\+Part}}
+\index{End\+Model\+Part@{End\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{End\+Model\+Part()}{EndModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::End\+Model\+Part (\begin{DoxyParamCaption}\item[{bool}]{create\+\_\+bounding\+\_\+volumes = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Ends the creation of the last model part.
+
+\begin{DoxyPrecond}{Precondition}
+This model output contains at least one model part. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em create\+\_\+bounding\+\_\+volumes} & A flag indicating whether bounding volumes must be created for the given model part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_a5d206619319fed85a4add63ee0532cac}{}\label{structmage_1_1_model_output_a5d206619319fed85a4add63ee0532cac} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{Model\+Output}\& \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT, IndexT $>$ \&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given model output to this model output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em output} & A reference to the model output to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given model output (i.\+e. this model output). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_model_output_a090d74bebb6045c11952cc57fb1aa220}{}\label{structmage_1_1_model_output_a090d74bebb6045c11952cc57fb1aa220} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{structmage_1_1_model_output}{Model\+Output}\& \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT, IndexT $>$ \&\&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given model output to this model output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em output} & A reference to the model output to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved model output (i.\+e. this model output). 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_model_output_a88f2dff99e178b84637ae945ba5f6f53}{}\label{structmage_1_1_model_output_a88f2dff99e178b84637ae945ba5f6f53} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Set\+Material@{Set\+Material}}
+\index{Set\+Material@{Set\+Material}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Set\+Material()}{SetMaterial()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::Set\+Material (\begin{DoxyParamCaption}\item[{string}]{material }\end{DoxyParamCaption})}
+
+Sets the name of the material of the last model part to the given material name.
+
+\begin{DoxyPrecond}{Precondition}
+This model output contains at least one model part. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em material} & The name of the material. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_acecfa6de92e27b435ef15cc02640e992}{}\label{structmage_1_1_model_output_acecfa6de92e27b435ef15cc02640e992} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}}
+\index{Setup\+Bounding\+Volumes@{Setup\+Bounding\+Volumes}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Setup\+Bounding\+Volumes()}{SetupBoundingVolumes()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::Setup\+Bounding\+Volumes (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_part}{Model\+Part} \&}]{model\+\_\+part }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Sets up the bounding volumes of the given model part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+part} & A reference to the model part. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_model_output_a204f16513741ebfacb7a287969629956}{}\label{structmage_1_1_model_output_a204f16513741ebfacb7a287969629956} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Start\+Model\+Part@{Start\+Model\+Part}}
+\index{Start\+Model\+Part@{Start\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Start\+Model\+Part()}{StartModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::Start\+Model\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_part}{Model\+Part}}]{model\+\_\+part }\end{DoxyParamCaption})}
+
+Starts the creation of a new model part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+part} & The model part to add. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_model_output_accf4483b85b26525e180e6ffd3678fc6}{}\label{structmage_1_1_model_output_accf4483b85b26525e180e6ffd3678fc6} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}}
+\index{m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+buffer}{m\_index\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ IndexT $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::m\+\_\+index\+\_\+buffer}
+
+A vector containing the indices of this model output. \hypertarget{structmage_1_1_model_output_a82e2a73de1adde3b4360f290078d0c7d}{}\label{structmage_1_1_model_output_a82e2a73de1adde3b4360f290078d0c7d} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!m\+\_\+material\+\_\+buffer@{m\+\_\+material\+\_\+buffer}}
+\index{m\+\_\+material\+\_\+buffer@{m\+\_\+material\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+buffer}{m\_material\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ \hyperlink{classmage_1_1_material}{Material} $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::m\+\_\+material\+\_\+buffer}
+
+A vector containing the materials of this model output. \hypertarget{structmage_1_1_model_output_aca7e45b0a0315459fd11b45face48544}{}\label{structmage_1_1_model_output_aca7e45b0a0315459fd11b45face48544} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!m\+\_\+model\+\_\+parts@{m\+\_\+model\+\_\+parts}}
+\index{m\+\_\+model\+\_\+parts@{m\+\_\+model\+\_\+parts}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+parts}{m\_model\_parts}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::m\+\_\+model\+\_\+parts}
+
+A vector containing the model parts of this model output. \hypertarget{structmage_1_1_model_output_a93a22503c41a2c4a0f81f25d1d5317dd}{}\label{structmage_1_1_model_output_a93a22503c41a2c4a0f81f25d1d5317dd} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}}
+\index{m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+buffer}{m\_vertex\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ VertexT $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT, IndexT $>$\+::m\+\_\+vertex\+\_\+buffer}
+
+A vector containing the vertices of this model output. 

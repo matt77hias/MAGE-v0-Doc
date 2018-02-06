@@ -1,0 +1,295 @@
+\hypertarget{classmage_1_1_constant_component_pass}{}\section{mage\+:\+:Constant\+Component\+Pass Class Reference}
+\label{classmage_1_1_constant_component_pass}\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+
+
+{\ttfamily \#include $<$constant\+\_\+component\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_constant_component_pass_acd197274863c82c9f1551c7e6171e4c9}{Constant\+Component\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_component_pass_a0ab6f57fc400871e8f1fea351711cd65}{Constant\+Component\+Pass} (const \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_constant_component_pass_aa52b42fb5dd85b93901b13f2e89cc110}{Constant\+Component\+Pass} (\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1_constant_component_pass_aaa94607b422672dab4cb77f129382d1b}{$\sim$\+Constant\+Component\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \& \hyperlink{classmage_1_1_constant_component_pass_a37c3e74da45746d05ebb4b275b21eba8}{operator=} (const \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \& \hyperlink{classmage_1_1_constant_component_pass_a016b4833833fa11fe83dfbb29fbaf113}{operator=} (\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&\&pass)=delete
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_constant_component_pass_ab06dea0130f29cec5922602f84205f13}{Render} (const \hyperlink{classmage_1_1_scene}{Scene} \&scene, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, C\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+world, \hyperlink{namespacemage_a9d24b35ed0bdecf8535e2b91fe0eebba}{Render\+Mode} render\+\_\+mode)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $\ast$ \hyperlink{classmage_1_1_constant_component_pass_ae8c8c69c9e69c4324e390833c2e3653b}{Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366}{P\+S\+Index} \+: U8 \{ \hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a73dca3b76eca77b89c050588adba1c2b}{P\+S\+Index\+::\+U\+V\+Texture} = 0, 
+\hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a0aa6f4210bf373c95eda00232e93cd98}{P\+S\+Index\+::\+Distance} = 1, 
+\hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1_constant_component_pass_a629c39ac76028efd56f39127a1489a6d}{Bind\+Fixed\+State} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_constant_component_pass_a6027d0f628ffd03618aebacb35672c6e}{Bind\+PS} (\hyperlink{namespacemage_a9d24b35ed0bdecf8535e2b91fe0eebba}{Render\+Mode} render\+\_\+mode)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1_constant_component_pass_a196372d184f74c8f268adc1e7865ef17}{Bind\+Model\+Data} (F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+view, C\+X\+M\+M\+A\+T\+R\+IX view\+\_\+to\+\_\+object, C\+X\+M\+M\+A\+T\+R\+IX texture\+\_\+transform)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_constant_component_pass_a1d4bf6c730c94397219de2a447d1f368}{m\+\_\+device\+\_\+context}
+\item 
+const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1_constant_component_pass_a77dddcf5e8bb6847b85b6cade2baa527}{m\+\_\+vs}
+\item 
+const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1_constant_component_pass_af6800fea6bc84c11e66bba05063489ce}{m\+\_\+ps} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}
+\item 
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1_constant_component_pass_a0dce8281280284768371542d88c17eee}{m\+\_\+color\+\_\+buffer}
+\item 
+\hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ \hyperlink{classmage_1_1_constant_component_pass_a012197b5473955c356d2fbc48f9d3e8b}{m\+\_\+model\+\_\+buffer}
+\item 
+const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_constant_component_pass_ad69f0d02de95b9125651b447cd8fd884}{m\+\_\+uv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of constant component passes for rendering a constant (material independent) component of models. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366}{}\label{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!P\+S\+Index@{P\+S\+Index}}
+\index{P\+S\+Index@{P\+S\+Index}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{P\+S\+Index}{PSIndex}}
+{\footnotesize\ttfamily enum \hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366}{mage\+::\+Constant\+Component\+Pass\+::\+P\+S\+Index} \+: \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+An enumeration of the different pixel shader indices for constant component passes.
+
+This contains\+: {\ttfamily U\+V\+Texture} and {\ttfamily Distance}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+V\+Texture@{U\+V\+Texture}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!U\+V\+Texture@{U\+V\+Texture}}}\hypertarget{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a73dca3b76eca77b89c050588adba1c2b}{}\label{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a73dca3b76eca77b89c050588adba1c2b} 
+U\+V\+Texture&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Distance@{Distance}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Distance@{Distance}}}\hypertarget{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a0aa6f4210bf373c95eda00232e93cd98}{}\label{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366a0aa6f4210bf373c95eda00232e93cd98} 
+Distance&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Count@{Count}}}\hypertarget{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366ae93f994f01c537c4e2f7d8528c3eb5e9} 
+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_constant_component_pass_acd197274863c82c9f1551c7e6171e4c9}{}\label{classmage_1_1_constant_component_pass_acd197274863c82c9f1551c7e6171e4c9} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Constant\+Component\+Pass@{Constant\+Component\+Pass}}
+\index{Constant\+Component\+Pass@{Constant\+Component\+Pass}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Component\+Pass()}{ConstantComponentPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Component\+Pass\+::\+Constant\+Component\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a constant component pass.
+
+\begin{DoxyPrecond}{Precondition}
+The renderer associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\hypertarget{classmage_1_1_constant_component_pass_a0ab6f57fc400871e8f1fea351711cd65}{}\label{classmage_1_1_constant_component_pass_a0ab6f57fc400871e8f1fea351711cd65} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Constant\+Component\+Pass@{Constant\+Component\+Pass}}
+\index{Constant\+Component\+Pass@{Constant\+Component\+Pass}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Component\+Pass()}{ConstantComponentPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Component\+Pass\+::\+Constant\+Component\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a constant component pass from the given constant component pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the constant component pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_constant_component_pass_aa52b42fb5dd85b93901b13f2e89cc110}{}\label{classmage_1_1_constant_component_pass_aa52b42fb5dd85b93901b13f2e89cc110} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Constant\+Component\+Pass@{Constant\+Component\+Pass}}
+\index{Constant\+Component\+Pass@{Constant\+Component\+Pass}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Constant\+Component\+Pass()}{ConstantComponentPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Component\+Pass\+::\+Constant\+Component\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a constant component pass by moving the given constant component pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the constant component pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_constant_component_pass_aaa94607b422672dab4cb77f129382d1b}{}\label{classmage_1_1_constant_component_pass_aaa94607b422672dab4cb77f129382d1b} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!````~Constant\+Component\+Pass@{$\sim$\+Constant\+Component\+Pass}}
+\index{````~Constant\+Component\+Pass@{$\sim$\+Constant\+Component\+Pass}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Constant\+Component\+Pass()}{~ConstantComponentPass()}}
+{\footnotesize\ttfamily mage\+::\+Constant\+Component\+Pass\+::$\sim$\+Constant\+Component\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this constant component pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_constant_component_pass_a629c39ac76028efd56f39127a1489a6d}{}\label{classmage_1_1_constant_component_pass_a629c39ac76028efd56f39127a1489a6d} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Component\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_a196372d184f74c8f268adc1e7865ef17}{}\label{classmage_1_1_constant_component_pass_a196372d184f74c8f268adc1e7865ef17} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Bind\+Model\+Data@{Bind\+Model\+Data}}
+\index{Bind\+Model\+Data@{Bind\+Model\+Data}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Data()}{BindModelData()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Constant\+Component\+Pass\+::\+Bind\+Model\+Data (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+object,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{texture\+\_\+transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the model data of this constant component pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+view} & The object-\/to-\/view transformation matrix used for transforming vertices. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+object} & The view-\/to-\/object transformation matrix used for transforming normals. \\
+\hline
+\mbox{\tt in}  & {\em texture\+\_\+transform} & The texture transformation matrix used for transforming texture coordinates. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model data of this constant component pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_constant_component_pass_a6027d0f628ffd03618aebacb35672c6e}{}\label{classmage_1_1_constant_component_pass_a6027d0f628ffd03618aebacb35672c6e} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Bind\+PS@{Bind\+PS}}
+\index{Bind\+PS@{Bind\+PS}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+P\+S()}{BindPS()}}
+{\footnotesize\ttfamily void mage\+::\+Constant\+Component\+Pass\+::\+Bind\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a9d24b35ed0bdecf8535e2b91fe0eebba}{Render\+Mode}}]{render\+\_\+mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the pixel shader (and pixel shader related data) associated with the given render mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em render\+\_\+mode} & The render mode. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the pixel shader related data of this constant component pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1_constant_component_pass_ae8c8c69c9e69c4324e390833c2e3653b}{}\label{classmage_1_1_constant_component_pass_ae8c8c69c9e69c4324e390833c2e3653b} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} $\ast$ mage\+::\+Constant\+Component\+Pass\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the constant component pass associated with the current engine.
+
+\begin{DoxyPrecond}{Precondition}
+The scene renderer associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the constant component pass associated with the current engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_constant_component_pass_a37c3e74da45746d05ebb4b275b21eba8}{}\label{classmage_1_1_constant_component_pass_a37c3e74da45746d05ebb4b275b21eba8} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass}\& mage\+::\+Constant\+Component\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given constant component pass to this constant component pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the constant component pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given constant component pass (i.\+e. this constant component pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_constant_component_pass_a016b4833833fa11fe83dfbb29fbaf113}{}\label{classmage_1_1_constant_component_pass_a016b4833833fa11fe83dfbb29fbaf113} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass}\& mage\+::\+Constant\+Component\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_constant_component_pass}{Constant\+Component\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given constant component pass to this constant component pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the constant component pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved constant component pass (i.\+e. this constant component pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_constant_component_pass_ab06dea0130f29cec5922602f84205f13}{}\label{classmage_1_1_constant_component_pass_ab06dea0130f29cec5922602f84205f13} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::\+Constant\+Component\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+view,  }\item[{C\+X\+M\+M\+A\+T\+R\+IX}]{view\+\_\+to\+\_\+world,  }\item[{\hyperlink{namespacemage_a9d24b35ed0bdecf8535e2b91fe0eebba}{Render\+Mode}}]{render\+\_\+mode }\end{DoxyParamCaption})}
+
+Renders the scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+view} & The world-\/to-\/view transformation matrix. \\
+\hline
+\mbox{\tt in}  & {\em view\+\_\+to\+\_\+world} & The view-\/to-\/world transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the scene. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_constant_component_pass_a0dce8281280284768371542d88c17eee}{}\label{classmage_1_1_constant_component_pass_a0dce8281280284768371542d88c17eee} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}}
+\index{m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+color\+\_\+buffer}{m\_color\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::\+Constant\+Component\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The color buffer of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_a1d4bf6c730c94397219de2a447d1f368}{}\label{classmage_1_1_constant_component_pass_a1d4bf6c730c94397219de2a447d1f368} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context4$\ast$ const mage\+::\+Constant\+Component\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the device context of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_a012197b5473955c356d2fbc48f9d3e8b}{}\label{classmage_1_1_constant_component_pass_a012197b5473955c356d2fbc48f9d3e8b} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}}
+\index{m\+\_\+model\+\_\+buffer@{m\+\_\+model\+\_\+buffer}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+buffer}{m\_model\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_model_normal_texture_transform_buffer}{Model\+Normal\+Texture\+Transform\+Buffer} $>$ mage\+::\+Constant\+Component\+Pass\+::m\+\_\+model\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The model buffer of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_af6800fea6bc84c11e66bba05063489ce}{}\label{classmage_1_1_constant_component_pass_af6800fea6bc84c11e66bba05063489ce} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_acbec875bb5e5e085e32ed244a24d2b6f}{Pixel\+Shader\+Ptr} mage\+::\+Constant\+Component\+Pass\+::m\+\_\+ps\mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{classmage_1_1_constant_component_pass_abad8858867cb29081767f13ba6cdb366ae93f994f01c537c4e2f7d8528c3eb5e9}{P\+S\+Index\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the pixel shaders of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_ad69f0d02de95b9125651b447cd8fd884}{}\label{classmage_1_1_constant_component_pass_ad69f0d02de95b9125651b447cd8fd884} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+uv@{m\+\_\+uv}}
+\index{m\+\_\+uv@{m\+\_\+uv}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+uv}{m\_uv}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ const \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Constant\+Component\+Pass\+::m\+\_\+uv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the \hyperlink{structmage_1_1_u_v}{UV} reference texture of this constant component pass. \hypertarget{classmage_1_1_constant_component_pass_a77dddcf5e8bb6847b85b6cade2baa527}{}\label{classmage_1_1_constant_component_pass_a77dddcf5e8bb6847b85b6cade2baa527} 
+\index{mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::\+Constant\+Component\+Pass@{mage\+::\+Constant\+Component\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a1f19b094f771e30bc0a6c1cebcc0dd58}{Vertex\+Shader\+Ptr} mage\+::\+Constant\+Component\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this constant component pass. 
