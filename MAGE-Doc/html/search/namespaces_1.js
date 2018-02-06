@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['imgui',['ImGui',['../namespace_im_gui.html',1,'']]],
-  ['imguistb',['ImGuiStb',['../namespace_im_gui_stb.html',1,'']]]
+  ['color',['color',['../namespacemage_1_1color.html',1,'mage']]],
+  ['editor',['editor',['../namespacemage_1_1editor.html',1,'mage']]],
+  ['loader',['loader',['../namespacemage_1_1loader.html',1,'mage']]],
+  ['mage',['mage',['../namespacemage.html',1,'']]],
+  ['script',['script',['../namespacemage_1_1script.html',1,'mage']]]
 ];

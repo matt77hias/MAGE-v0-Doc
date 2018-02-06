@@ -18,6 +18,7 @@ var structmage_1_1_camera_buffer =
     [ "m_ss_viewport_top_left_y", "structmage_1_1_camera_buffer.html#ac6c5a7af84cef485dd9ddacd018e4a82", null ],
     [ "m_ss_viewport_width", "structmage_1_1_camera_buffer.html#af7a4718829dc96716c4861bbe00bb7e0", null ],
     [ "m_view_to_projection", "structmage_1_1_camera_buffer.html#aa23d2ecaed10960832215c2397884421", null ],
+    [ "m_view_to_voxel", "structmage_1_1_camera_buffer.html#aa019004337d0882c26fe9e742623a16c", null ],
     [ "m_view_to_world", "structmage_1_1_camera_buffer.html#a2c06f8a346844fb99fadb43d128f9d72", null ],
     [ "m_viewport_height", "structmage_1_1_camera_buffer.html#a125fd91de1c41cc5bd1a741295bf0536", null ],
     [ "m_viewport_inv_height_minus1", "structmage_1_1_camera_buffer.html#a05564cd690597c4700ca292c942c0737", null ],
@@ -25,5 +26,9 @@ var structmage_1_1_camera_buffer =
     [ "m_viewport_top_left_x", "structmage_1_1_camera_buffer.html#aa1a4a218d604beb0777e9286daad8c8b", null ],
     [ "m_viewport_top_left_y", "structmage_1_1_camera_buffer.html#af3200b46348fecc86ecca3717767ae6b", null ],
     [ "m_viewport_width", "structmage_1_1_camera_buffer.html#a9aec8f6ee54281ae7ec410be846c3658", null ],
+    [ "m_voxel_grid_inv_resolution", "structmage_1_1_camera_buffer.html#a03a9db0d516d3547477da2417ecdc07d", null ],
+    [ "m_voxel_grid_resolution", "structmage_1_1_camera_buffer.html#a291d49bb4e06ac8986318e365eaf219b", null ],
+    [ "m_voxel_inv_size", "structmage_1_1_camera_buffer.html#a93cc54b7058ff4bc2472572e1547134c", null ],
+    [ "m_voxel_size", "structmage_1_1_camera_buffer.html#a19c4cc07e7c138df4cd31b506ab86289", null ],
     [ "m_world_to_view", "structmage_1_1_camera_buffer.html#a28db697d7da502479b3e29752122c9f4", null ]
 ];

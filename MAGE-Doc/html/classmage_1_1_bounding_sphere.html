@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.125.0</span>
+   &#160;<span id="projectnumber">v0.129.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -138,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5989739e15d3525bbb805f9c457ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0fc134762fb9a00b47d62cc09c7703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_bounding_sphere.html#a8f0fc134762fb9a00b47d62cc09c7703">EnclosesStrict</a> (const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;sphere) const noexcept</td></tr>
 <tr class="separator:a8f0fc134762fb9a00b47d62cc09c7703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1440ef7a88b85ae6a310a41b5b7f20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_bounding_sphere.html#aec1440ef7a88b85ae6a310a41b5b7f20">Overlaps</a> (const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;sphere) const noexcept</td></tr>
+<tr class="separator:aec1440ef7a88b85ae6a310a41b5b7f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352314bd02664521a516ac5d0ce4a5a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_bounding_sphere.html#a352314bd02664521a516ac5d0ce4a5a4">OverlapsStrict</a> (const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;sphere) const noexcept</td></tr>
+<tr class="separator:a352314bd02664521a516ac5d0ce4a5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc183c59a09a071fbc78b833cc66f218"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_bounding_sphere.html#adc183c59a09a071fbc78b833cc66f218">operator==</a> (const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;sphere) const noexcept</td></tr>
 <tr class="separator:adc183c59a09a071fbc78b833cc66f218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841979aaee8a82784674296801aa5fbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_bounding_sphere.html#a841979aaee8a82784674296801aa5fbc">operator!=</a> (const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;sphere) const noexcept</td></tr>
@@ -936,6 +940,76 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the given bounding sphere is equal to this bounding sphere. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aec1440ef7a88b85ae6a310a41b5b7f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1440ef7a88b85ae6a310a41b5b7f20">&sect;&nbsp;</a></span>Overlaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::BoundingSphere::Overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;&#160;</td>
+          <td class="paramname"><em>sphere</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether this bounding sphere overlaps the given bounding sphere.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>A reference to the bounding sphere. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this bounding sphere overlaps <em>sphere</em>. <code>false</code> otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is a (partial or full) coverage test of a bounding sphere with regard to an bounding sphere. </dd></dl>
+
+</div>
+</div>
+<a id="a352314bd02664521a516ac5d0ce4a5a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352314bd02664521a516ac5d0ce4a5a4">&sect;&nbsp;</a></span>OverlapsStrict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::BoundingSphere::OverlapsStrict </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_bounding_sphere.html">BoundingSphere</a> &amp;&#160;</td>
+          <td class="paramname"><em>sphere</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether this bounding sphere strictly overlaps the given bounding sphere.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>A reference to the bounding sphere. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this bounding sphere strictly overlaps <em>sphere</em>. <code>false</code> otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is a (partial or full) coverage test of a bounding sphere with regard to an bounding sphere. </dd></dl>
 
 </div>
 </div>

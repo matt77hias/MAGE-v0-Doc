@@ -4,6 +4,8 @@ var classmage_1_1_camera =
     [ "Camera", "classmage_1_1_camera.html#a812001953d821fd23bb9509e5a649508", null ],
     [ "Camera", "classmage_1_1_camera.html#a13f576c2ea50712145e43501bf3cae9c", null ],
     [ "Camera", "classmage_1_1_camera.html#a858d43c7b166ef580c7d971719045371", null ],
+    [ "BindSSViewport", "classmage_1_1_camera.html#a4e961fccd81e9d6ed160f59e2b8fbc3c", null ],
+    [ "BindViewport", "classmage_1_1_camera.html#a905515a4ffae0bb126aff858ec677231", null ],
     [ "GetFarZ", "classmage_1_1_camera.html#a47e6801d228891453540b0c1e787724a", null ],
     [ "GetLens", "classmage_1_1_camera.html#ac9c78f262c8cea00c8887afe39625249", null ],
     [ "GetLens", "classmage_1_1_camera.html#ac2529ae81deabfbfed8f96cbf5b778eb", null ],

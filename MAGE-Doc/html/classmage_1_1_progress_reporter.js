@@ -18,5 +18,5 @@ var classmage_1_1_progress_reporter =
     [ "m_nb_work_done", "classmage_1_1_progress_reporter.html#a94bdbb09ae95976c72f1a8387ff96b70", null ],
     [ "m_nb_work_total", "classmage_1_1_progress_reporter.html#a5f3e7dd9faa3d247bd6dd3738aeb7120", null ],
     [ "m_progress_char", "classmage_1_1_progress_reporter.html#a9bb1615723a33f21c8f0b9c5e5549a2d", null ],
-    [ "m_timer", "classmage_1_1_progress_reporter.html#aa3465bfcf344fd9f7f5f32255d90336b", null ]
+    [ "m_timer", "classmage_1_1_progress_reporter.html#aba29398d871c713c962fbd267e372cd2", null ]
 ];

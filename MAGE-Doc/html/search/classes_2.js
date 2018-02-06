@@ -22,8 +22,8 @@ var searchData=
   ['constantbuffer_3c_20xmvector_20_3e',['ConstantBuffer&lt; XMVECTOR &gt;',['../classmage_1_1_constant_buffer.html',1,'mage']]],
   ['constantcomponentpass',['ConstantComponentPass',['../classmage_1_1_constant_component_pass.html',1,'mage']]],
   ['constantshadingpass',['ConstantShadingPass',['../classmage_1_1_constant_shading_pass.html',1,'mage']]],
+  ['coreclock',['CoreClock',['../structmage_1_1_core_clock.html',1,'mage']]],
+  ['coreclockpercore',['CoreClockPerCore',['../structmage_1_1_core_clock_per_core.html',1,'mage']]],
   ['cpumonitor',['CPUMonitor',['../classmage_1_1_c_p_u_monitor.html',1,'mage']]],
-  ['cputimer',['CPUTimer',['../classmage_1_1_c_p_u_timer.html',1,'mage']]],
-  ['cs',['CS',['../structmage_1_1_pipeline_1_1_c_s.html',1,'mage::Pipeline']]],
-  ['customrect',['CustomRect',['../struct_im_font_atlas_1_1_custom_rect.html',1,'ImFontAtlas']]]
+  ['cs',['CS',['../structmage_1_1_pipeline_1_1_c_s.html',1,'mage::Pipeline']]]
 ];

@@ -6,6 +6,6 @@ var searchData=
   ['basecolortexture',['BaseColorTexture',['../namespacemage.html#a9d24b35ed0bdecf8535e2b91fe0eebbaa7dccec59fdab0706f6c819485b142434',1,'mage']]],
   ['bimultiplicative',['BiMultiplicative',['../classmage_1_1_rendering_state_manager.html#a499a47606ff73352331177b668c4b64cab99d5e54d92344ac3680c3f579dc84e6',1,'mage::RenderingStateManager']]],
   ['blinnphong',['BlinnPhong',['../namespacemage.html#af1044f87544bc38427766a8c795d2f26a7d0a12c861400a7f6a9dd7a9944a2223',1,'mage']]],
-  ['brdf',['BRDF',['../classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a4e69f1c58994758054563aa7392ffa4c',1,'mage::VariableShadingPass']]],
-  ['brdf_5ftsnm',['BRDF_TSNM',['../classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a12126b75c3073e66dcaed7ac43317a00',1,'mage::VariableShadingPass']]]
+  ['brdf',['BRDF',['../classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a4e69f1c58994758054563aa7392ffa4c',1,'mage::VariableShadingPass::BRDF()'],['../classmage_1_1_voxelization_pass.html#a3632bab7b0039dbbe10569618ae57589a4e69f1c58994758054563aa7392ffa4c',1,'mage::VoxelizationPass::BRDF()']]],
+  ['brdf_5ftsnm',['BRDF_TSNM',['../classmage_1_1_variable_shading_pass.html#a99a5986785950a884405617f8d05cae5a12126b75c3073e66dcaed7ac43317a00',1,'mage::VariableShadingPass::BRDF_TSNM()'],['../classmage_1_1_voxelization_pass.html#a3632bab7b0039dbbe10569618ae57589a12126b75c3073e66dcaed7ac43317a00',1,'mage::VoxelizationPass::BRDF_TSNM()']]]
 ];

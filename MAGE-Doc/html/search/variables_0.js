@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['_5fchannels',['_Channels',['../struct_im_draw_list.html#ae6be941728e5b2c81a03c78e4aa22629',1,'ImDrawList']]],
-  ['_5fchannelscount',['_ChannelsCount',['../struct_im_draw_list.html#ae3854c12dbac41400f4acb65192f5015',1,'ImDrawList']]],
-  ['_5fchannelscurrent',['_ChannelsCurrent',['../struct_im_draw_list.html#a143ff30108f3dca8c28c7925e23d358b',1,'ImDrawList']]],
-  ['_5fcliprectstack',['_ClipRectStack',['../struct_im_draw_list.html#ae950024f053f3c94dc2c763d20be609d',1,'ImDrawList']]],
-  ['_5fdata',['_Data',['../struct_im_draw_list.html#a606bbd354211fe6f84cc11ebe53e7903',1,'ImDrawList']]],
-  ['_5fidxwriteptr',['_IdxWritePtr',['../struct_im_draw_list.html#a771f4c7f71873852fe030c3e498e5843',1,'ImDrawList']]],
-  ['_5fownername',['_OwnerName',['../struct_im_draw_list.html#a643f385fb9d5fc35a431e72a10a212f5',1,'ImDrawList']]],
-  ['_5fpath',['_Path',['../struct_im_draw_list.html#a5bdc39abf351360500048628b8dc1b07',1,'ImDrawList']]],
-  ['_5ftextureidstack',['_TextureIdStack',['../struct_im_draw_list.html#a848faddd121da050214b8d8159e5e704',1,'ImDrawList']]],
-  ['_5fvtxcurrentidx',['_VtxCurrentIdx',['../struct_im_draw_list.html#a2228793183665bc3d8612795555fe505',1,'ImDrawList']]],
-  ['_5fvtxwriteptr',['_VtxWritePtr',['../struct_im_draw_list.html#a67f870f5140bf1cab14b8515b7386073',1,'ImDrawList']]]
+  ['abitmask',['ABitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#ada163cba3be6a89fc99166b3d6d49050',1,'DDS_PIXELFORMAT']]],
+  ['abort',['Abort',['../namespacemage.html#a4cd09dcffe77010a4d000a3dd02c1ca7',1,'mage']]],
+  ['aliceblue',['AliceBlue',['../namespacemage_1_1color.html#a2d5ef85e2e43ff7fb45cef27d4997b3b',1,'mage::color']]],
+  ['antiquewhite',['AntiqueWhite',['../namespacemage_1_1color.html#a4c8213a7462da60a947162c1d487d584',1,'mage::color']]],
+  ['aqua',['Aqua',['../namespacemage_1_1color.html#aceff28758fa426deb7306624036b1707',1,'mage::color']]],
+  ['aquamarine',['Aquamarine',['../namespacemage_1_1color.html#ae5e7fd9509049a5d51f5793dda07c89a',1,'mage::color']]],
+  ['arraysize',['arraySize',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#ac4da0d495a89e556d02ac256af28da41',1,'DDS_HEADER_DXT10']]],
+  ['azure',['Azure',['../namespacemage_1_1color.html#a6d140b76616fdb0fe29b8e8111e3fdfd',1,'mage::color']]]
 ];
