@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['e',['e',['../struct_im_gui_text_filter_1_1_text_range.html#a20daef0e47167d49a017d8f54cb7c607',1,'ImGuiTextFilter::TextRange']]],
-  ['elemcount',['ElemCount',['../struct_im_draw_cmd.html#aafe2532964fb1f6905d67d84dd3e8730',1,'ImDrawCmd']]],
-  ['errordisposition',['ErrorDisposition',['../namespacemage.html#a4c15cc8e632bcc33a381e7f9dc5640d7',1,'mage']]],
-  ['eventchar',['EventChar',['../struct_im_gui_text_edit_callback_data.html#acda2ae8b38e0596adf2f01036ac06612',1,'ImGuiTextEditCallbackData']]],
-  ['eventflag',['EventFlag',['../struct_im_gui_text_edit_callback_data.html#aee2fa13574284d68d4025a26d32eba55',1,'ImGuiTextEditCallbackData']]],
-  ['eventkey',['EventKey',['../struct_im_gui_text_edit_callback_data.html#a476e640ad7f2f18ae5518dbc7cc33c55',1,'ImGuiTextEditCallbackData']]],
-  ['extra',['extra',['../structstbrp__context.html#a0b80e1fbdac125427526f3500d4e7624',1,'stbrp_context']]]
+  ['firebrick',['Firebrick',['../namespacemage_1_1color.html#aee722564bc5af01bffa36d11da463c7d',1,'mage::color']]],
+  ['flags',['flags',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a1909f63ad2d0a257bf5e8dba9e2d9475',1,'DDS_PIXELFORMAT::flags()'],['../struct_d_d_s___h_e_a_d_e_r.html#a418e512458f8f02ac5102993095a2aa3',1,'DDS_HEADER::flags()']]],
+  ['floralwhite',['FloralWhite',['../namespacemage_1_1color.html#aa82b9bd5ae0703f8fe79da0fdf163ee9',1,'mage::color']]],
+  ['forestgreen',['ForestGreen',['../namespacemage_1_1color.html#a2d7e67954c6156e194165db58e58bc97',1,'mage::color']]],
+  ['fourcc',['fourCC',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#aa7af0012c64480e8eeafa25d7892c310',1,'DDS_PIXELFORMAT']]],
+  ['fuchsia',['Fuchsia',['../namespacemage_1_1color.html#ace094140b3f356c536df67b441c9d98d',1,'mage::color']]],
+  ['fullcoverage',['FullCoverage',['../namespacemage.html#af0080550a105a2f21b65d3e21baeafe1',1,'mage']]]
 ];

@@ -31,25 +31,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_bounding_sphere.html#a51c7e6db89c68d192961bfaf2114fb2f",
-"classmage_1_1_constant_component_pass.html#a196372d184f74c8f268adc1e7865ef17",
-"classmage_1_1_engine.html#a99770cbb017b29c284d7f8e4c7e2b84c",
-"classmage_1_1_local_transform.html#af467d4a331c7215cf016e31bd91c42db",
-"classmage_1_1_node.html#a58452a6195ebea7a1a7a26f9a4dd8102",
-"classmage_1_1_rendering_manager.html#a765f323c63ac7cd53c71b362eaccc61b",
-"classmage_1_1_scene.html#a5e37590d17c9bb0cc4f16ec7defb5180",
-"classmage_1_1_sprite_font.html#acbf50687b4a5dbb2ff1ad73ecc89b7f1",
-"classmage_1_1_texture.html#acb6194e969cc928f21ecef1d863d1b9b",
-"classmage_1_1_variable_script.html#ad41e19065e7935974585a1b120ef47d4",
-"classmage_1_1loader_1_1_o_b_j_reader.html#af9aab131e88c5a3a0f29b156c4c97096",
-"functions_vars_l.html",
-"struct_im_font.html",
-"struct_im_gui_context.html#afdf440b5e79ba7868e87e2c5136e1296",
-"struct_im_gui_style_mod.html#a60491c95989b2a866ebb76403a562f6f",
-"structmage_1_1_camera_buffer.html#a3d56a38eb30fb0f0778d23f61f9988fa",
-"structmage_1_1_omni_light_with_shadow_mapping_buffer.html",
-"structmage_1_1_spot_light_buffer.html#a9fa876b45b466e5a3a7d4432133d00d2",
-"structmage_1_1_vertex_position_normal_color_texture.html#a27f5a115642f443419683417360fd58e"
+"classmage_1_1_bounding_volume_pass.html#a9dcca637d98ea8335777094d3d994f5c",
+"classmage_1_1_depth_pass.html#a4b6a38c56e02b6185c1eef8bcaaa5786",
+"classmage_1_1_g_buffer_pass.html#a34b2735cfb9b3546c903760f42ff770c",
+"classmage_1_1_main_window.html#a8dc3c590bb168f8178a7db72ff60fd0c",
+"classmage_1_1_node_client.html",
+"classmage_1_1_rendering_output_manager.html#a3c6290fd9b186fbe56a47adb6d774ccf",
+"classmage_1_1_scene_manager.html#a2ae7b041a7ee37e836d81e9cd9378214",
+"classmage_1_1_sprite_image.html#a955225e8274ae5f39f6eb6f6fbb75638",
+"classmage_1_1_texture_transform.html#adb36217d25494721ee54cd6807ea65af",
+"classmage_1_1_viewport.html#a0d905e73b96493184393b107b5545ae3",
+"classmage_1_1loader_1_1_sprite_font_reader.html#a65ddea9d2f842f2e6d81c3f4dccb62a6",
+"index.html",
+"structmage_1_1_model_normal_texture_transform_buffer.html",
+"structmage_1_1_s_r_g_b.html#aef2e40794d1465801e998d64d94f782d",
+"structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#ab9e471ad5ec9b6058076773af87b7b29"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

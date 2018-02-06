@@ -26,6 +26,7 @@ var classmage_1_1_renderer =
     [ "GetSpritePass", "classmage_1_1_renderer.html#ada671ebf46487d88c326657a43184117", null ],
     [ "GetVariableComponentPass", "classmage_1_1_renderer.html#abc9ee209c84f87d3186b4390162b9be1", null ],
     [ "GetVariableShadingPass", "classmage_1_1_renderer.html#aaea6458a480c62f8b0b911f16e5058b9", null ],
+    [ "GetVoxelizationPass", "classmage_1_1_renderer.html#a911673ea96e3182e0d2389d3f02603a2", null ],
     [ "GetWireframePass", "classmage_1_1_renderer.html#a8069fab64b56b69dca3d9a8a5ebc3f8e", null ],
     [ "operator=", "classmage_1_1_renderer.html#a2762ead5f771ae95e4293cd7eb1a2834", null ],
     [ "operator=", "classmage_1_1_renderer.html#aa381bb89bffdc8ea2d8e3625e28cd28a", null ],
@@ -49,5 +50,6 @@ var classmage_1_1_renderer =
     [ "m_sprite_pass", "classmage_1_1_renderer.html#ae6850abe92b8d03f3eefbfb34fe9e5d8", null ],
     [ "m_variable_component_pass", "classmage_1_1_renderer.html#a6016e73941650d3b88ef9ab9873548a6", null ],
     [ "m_variable_shading_pass", "classmage_1_1_renderer.html#adb0d48e33a86c3ee481b26165e416487", null ],
+    [ "m_voxelization_pass", "classmage_1_1_renderer.html#a763f835f495bb7784a71c95178755dc4", null ],
     [ "m_wireframe_pass", "classmage_1_1_renderer.html#a8c9f28228031337e26725af8213268ed", null ]
 ];

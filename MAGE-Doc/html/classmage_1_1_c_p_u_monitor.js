@@ -12,6 +12,6 @@ var classmage_1_1_c_p_u_monitor =
     [ "Resume", "classmage_1_1_c_p_u_monitor.html#a5fd594262dc1073da564955c58851760", null ],
     [ "Start", "classmage_1_1_c_p_u_monitor.html#a3f88acbb979f47309fd46f1b507fed09", null ],
     [ "Stop", "classmage_1_1_c_p_u_monitor.html#a133aaed1df0e84486a6fc748d66615bb", null ],
-    [ "m_cpu_timer", "classmage_1_1_c_p_u_monitor.html#a61a73eefe747696fba631ca9808536ed", null ],
-    [ "m_timer", "classmage_1_1_c_p_u_monitor.html#a8e71a2759e371e66904bdd1d58fffe16", null ]
+    [ "m_core_timer", "classmage_1_1_c_p_u_monitor.html#a67869a01101f01199d7ea0ed8d86d850", null ],
+    [ "m_wall_timer", "classmage_1_1_c_p_u_monitor.html#ac97fdc8a58713836fd8dc527775f8f6f", null ]
 ];

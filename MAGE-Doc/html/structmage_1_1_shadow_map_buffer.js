@@ -1,7 +1,7 @@
 var structmage_1_1_shadow_map_buffer =
 [
-    [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#af10514b30b6f513fb5338662465cc704", null ],
-    [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#a4c31a99a576d9dd799f21cfb3639f783", null ],
+    [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#adb6d625d6e95ed8f6cb2a4de9b36b429", null ],
+    [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#a62f5265e04167bb30680c5fec34e3d65", null ],
     [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#a276a32f787cda940ac36df461d0ce3ea", null ],
     [ "ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#a0aa29978a2c482614aa1c46e9be0b50a", null ],
     [ "~ShadowMapBuffer", "structmage_1_1_shadow_map_buffer.html#a34eedd164d45a009ddecc97c8739c80b", null ],

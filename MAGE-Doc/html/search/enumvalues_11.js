@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['unknown',['Unknown',['../namespacemage.html#af1044f87544bc38427766a8c795d2f26a88183b946cc5f0e8c96b2e66e1c74a7e',1,'mage']]],
-  ['unused',['Unused',['../classmage_1_1_main_window.html#a3a6749d007d88da4fd966bafeef38ae1a92e592d90b9548016776a6fb68dccded',1,'mage::MainWindow']]],
-  ['user',['User',['../classmage_1_1_c_p_u_timer.html#a220f69be8f304f6fad61ccb358d278faa8f9bfe9d1345237cb3b2b205864da075',1,'mage::CPUTimer']]],
-  ['uvtexture',['UVTexture',['../classmage_1_1_constant_component_pass.html#abad8858867cb29081767f13ba6cdb366a73dca3b76eca77b89c050588adba1c2b',1,'mage::ConstantComponentPass::UVTexture()'],['../namespacemage.html#a9d24b35ed0bdecf8535e2b91fe0eebbaa73dca3b76eca77b89c050588adba1c2b',1,'mage::UVTexture()']]]
+  ['wardduer',['WardDuer',['../namespacemage.html#af1044f87544bc38427766a8c795d2f26ab4ff6577cc6f35dfaa90a48d2be06615',1,'mage']]],
+  ['wic_5floader_5fdefault',['WIC_LOADER_DEFAULT',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa31db232209a0c414f3c5dd3f36fad240',1,'DirectX']]],
+  ['wic_5floader_5fforce_5fsrgb',['WIC_LOADER_FORCE_SRGB',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aa19253126a33109ad1e9ca15710a48a71',1,'DirectX']]],
+  ['wic_5floader_5fignore_5fsrgb',['WIC_LOADER_IGNORE_SRGB',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2aaa411d70404895e65f12c2e6f4216636c',1,'DirectX']]],
+  ['wireframe',['Wireframe',['../classmage_1_1_rendering_state_manager.html#a72211dd35c1d3968717147572ca127daa33e42d0f3b166a4c405127e4412fbef2',1,'mage::RenderingStateManager::Wireframe()'],['../namespacemage.html#a4091cc4d4d64a0fd31fd96c2ef7af761a33e42d0f3b166a4c405127e4412fbef2',1,'mage::Wireframe()']]]
 ];

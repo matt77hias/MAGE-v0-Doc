@@ -41,7 +41,7 @@ void \hyperlink{classmage_1_1_renderer_a6dba3f3b9a1d3d8ed84d6ea3bec17058}{Render
 \item 
 \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a65fbd3dddaf1bff3fc9f53e00c38bb62}{Get\+G\+Buffer\+Pass} ()
 \item 
-\hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a6b43c7342a017282e5f9f14ac581ea2b}{Get\+L\+Buffer\+Pass} ()
+\hyperlink{classmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a6b43c7342a017282e5f9f14ac581ea2b}{Get\+L\+Buffer\+Pass} ()
 \item 
 \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a57e18039593423628715375e7a1b1163}{Get\+Shading\+Normal\+Pass} ()
 \item 
@@ -52,6 +52,8 @@ void \hyperlink{classmage_1_1_renderer_a6dba3f3b9a1d3d8ed84d6ea3bec17058}{Render
 \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_abc9ee209c84f87d3186b4390162b9be1}{Get\+Variable\+Component\+Pass} ()
 \item 
 \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_aaea6458a480c62f8b0b911f16e5058b9}{Get\+Variable\+Shading\+Pass} ()
+\item 
+\hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a911673ea96e3182e0d2389d3f02603a2}{Get\+Voxelization\+Pass} ()
 \item 
 \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $\ast$ \hyperlink{classmage_1_1_renderer_a8069fab64b56b69dca3d9a8a5ebc3f8e}{Get\+Wireframe\+Pass} ()
 \end{DoxyCompactItemize}
@@ -102,7 +104,7 @@ I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_renderer_ab416
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_g_buffer_pass}{G\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a7f36e74990c2c32d7fa26cdc00f86009}{m\+\_\+gbuffer\+\_\+pass}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a7f60c763f2636bd1ea608b69a5924996}{m\+\_\+lbuffer\+\_\+pass}
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a7f60c763f2636bd1ea608b69a5924996}{m\+\_\+lbuffer\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_shading_normal_pass}{Shading\+Normal\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a1867f2dd151f3180b8efebba5b018fc8}{m\+\_\+shading\+\_\+normal\+\_\+pass}
 \item 
@@ -113,6 +115,8 @@ I\+D3\+D11\+Device\+Context4 $\ast$const \hyperlink{classmage_1_1_renderer_ab416
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_component_pass}{Variable\+Component\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a6016e73941650d3b88ef9ab9873548a6}{m\+\_\+variable\+\_\+component\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $>$ \hyperlink{classmage_1_1_renderer_adb0d48e33a86c3ee481b26165e416487}{m\+\_\+variable\+\_\+shading\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a763f835f495bb7784a71c95178755dc4}{m\+\_\+voxelization\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_wireframe_pass}{Wireframe\+Pass} $>$ \hyperlink{classmage_1_1_renderer_a8c9f28228031337e26725af8213268ed}{m\+\_\+wireframe\+\_\+pass}
 \end{DoxyCompactItemize}
@@ -406,7 +410,7 @@ A pointer to the G\+Buffer pass of this renderer.
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+L\+Buffer\+Pass@{Get\+L\+Buffer\+Pass}}
 \index{Get\+L\+Buffer\+Pass@{Get\+L\+Buffer\+Pass}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Get\+L\+Buffer\+Pass()}{GetLBufferPass()}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass}$\ast$ mage\+::\+Renderer\+::\+Get\+L\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_l_buffer_pass}{L\+Buffer\+Pass}$\ast$ mage\+::\+Renderer\+::\+Get\+L\+Buffer\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the L\+Buffer pass of this renderer.
 
@@ -497,6 +501,22 @@ The resource manager associated with the current engine must be loaded.
 \end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 A pointer to the variable shading pass of this scene renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a911673ea96e3182e0d2389d3f02603a2}{}\label{classmage_1_1_renderer_a911673ea96e3182e0d2389d3f02603a2} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Voxelization\+Pass@{Get\+Voxelization\+Pass}}
+\index{Get\+Voxelization\+Pass@{Get\+Voxelization\+Pass}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Voxelization\+Pass()}{GetVoxelizationPass()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass}$\ast$ mage\+::\+Renderer\+::\+Get\+Voxelization\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the voxelization pass of this renderer.
+
+\begin{DoxyPrecond}{Precondition}
+The rendering manager associated with the current engine must be loaded. 
+
+The resource manager associated with the current engine must be loaded. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A pointer to the voxelization pass of this renderer. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_renderer_a8069fab64b56b69dca3d9a8a5ebc3f8e}{}\label{classmage_1_1_renderer_a8069fab64b56b69dca3d9a8a5ebc3f8e} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Wireframe\+Pass@{Get\+Wireframe\+Pass}}
@@ -643,7 +663,7 @@ A pointer to the G\+Buffer pass of this renderer. \hypertarget{classmage_1_1_ren
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}}
 \index{m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+lbuffer\+\_\+pass}{m\_lbuffer\_pass}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{structmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ mage\+::\+Renderer\+::m\+\_\+lbuffer\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ mage\+::\+Renderer\+::m\+\_\+lbuffer\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the L\+Buffer pass of this renderer. \hypertarget{classmage_1_1_renderer_a4a874bbe3cd4f19a16a65cca7bb93100}{}\label{classmage_1_1_renderer_a4a874bbe3cd4f19a16a65cca7bb93100} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+maximum\+\_\+viewport@{m\+\_\+maximum\+\_\+viewport}}
@@ -681,7 +701,13 @@ A pointer to the variable component pass of this renderer. \hypertarget{classmag
 \subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+shading\+\_\+pass}{m\_variable\_shading\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_variable_shading_pass}{Variable\+Shading\+Pass} $>$ mage\+::\+Renderer\+::m\+\_\+variable\+\_\+shading\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the variable shading pass of this renderer. \hypertarget{classmage_1_1_renderer_a8c9f28228031337e26725af8213268ed}{}\label{classmage_1_1_renderer_a8c9f28228031337e26725af8213268ed} 
+A pointer to the variable shading pass of this renderer. \hypertarget{classmage_1_1_renderer_a763f835f495bb7784a71c95178755dc4}{}\label{classmage_1_1_renderer_a763f835f495bb7784a71c95178755dc4} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+voxelization\+\_\+pass@{m\+\_\+voxelization\+\_\+pass}}
+\index{m\+\_\+voxelization\+\_\+pass@{m\+\_\+voxelization\+\_\+pass}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+voxelization\+\_\+pass}{m\_voxelization\_pass}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_voxelization_pass}{Voxelization\+Pass} $>$ mage\+::\+Renderer\+::m\+\_\+voxelization\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the voxelization pass of this renderer. \hypertarget{classmage_1_1_renderer_a8c9f28228031337e26725af8213268ed}{}\label{classmage_1_1_renderer_a8c9f28228031337e26725af8213268ed} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+wireframe\+\_\+pass@{m\+\_\+wireframe\+\_\+pass}}
 \index{m\+\_\+wireframe\+\_\+pass@{m\+\_\+wireframe\+\_\+pass}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+wireframe\+\_\+pass}{m\_wireframe\_pass}}

@@ -4,6 +4,5 @@ var searchData=
   ['gbufferpass',['GBufferPass',['../classmage_1_1_g_buffer_pass.html',1,'mage']]],
   ['glyph',['Glyph',['../structmage_1_1_glyph.html',1,'mage']]],
   ['glyphlessthan',['GlyphLessThan',['../structmage_1_1_glyph_less_than.html',1,'mage']]],
-  ['glyphrangesbuilder',['GlyphRangesBuilder',['../struct_im_font_atlas_1_1_glyph_ranges_builder.html',1,'ImFontAtlas']]],
   ['gs',['GS',['../structmage_1_1_pipeline_1_1_g_s.html',1,'mage::Pipeline']]]
 ];

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.125.0</span>
+   &#160;<span id="projectnumber">v0.129.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -137,6 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe08e4f43e57608f8bd45f3fefc89d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa82c733bd7c71518fa4c0b189f87277f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmage_1_1_viewport.html">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#aa82c733bd7c71518fa4c0b189f87277f">GetSSViewport</a> () const noexcept</td></tr>
 <tr class="separator:aa82c733bd7c71518fa4c0b189f87277f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905515a4ffae0bb126aff858ec677231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a905515a4ffae0bb126aff858ec677231">BindViewport</a> (ID3D11DeviceContext4 *device_context) const noexcept</td></tr>
+<tr class="separator:a905515a4ffae0bb126aff858ec677231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e961fccd81e9d6ed160f59e2b8fbc3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a4e961fccd81e9d6ed160f59e2b8fbc3c">BindSSViewport</a> (ID3D11DeviceContext4 *device_context) const noexcept</td></tr>
+<tr class="separator:a4e961fccd81e9d6ed160f59e2b8fbc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4077967b2b676bc66226fd7a5d15220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera_settings.html">CameraSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#af4077967b2b676bc66226fd7a5d15220">GetSettings</a> () noexcept</td></tr>
 <tr class="separator:af4077967b2b676bc66226fd7a5d15220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0174b0d44d749a678acb388b4a60b8c9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmage_1_1_camera_settings.html">CameraSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a0174b0d44d749a678acb388b4a60b8c9">GetSettings</a> () const noexcept</td></tr>
@@ -313,6 +317,74 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4e961fccd81e9d6ed160f59e2b8fbc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e961fccd81e9d6ed160f59e2b8fbc3c">&sect;&nbsp;</a></span>BindSSViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Camera::BindSSViewport </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext4 *&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binds the super-sampled viewport of this camera.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a905515a4ffae0bb126aff858ec677231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905515a4ffae0bb126aff858ec677231">&sect;&nbsp;</a></span>BindViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Camera::BindViewport </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext4 *&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binds the viewport of this camera.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>device_context</em> is not equal to <code>nullptr</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A pointer to the device context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a47e6801d228891453540b0c1e787724a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47e6801d228891453540b0c1e787724a">&sect;&nbsp;</a></span>GetFarZ()</h2>
 

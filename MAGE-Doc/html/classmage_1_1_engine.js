@@ -30,6 +30,6 @@ var classmage_1_1_engine =
     [ "m_rendering_manager", "classmage_1_1_engine.html#a81c7475c3501f84f9bd9c7bbeaebfcb6", null ],
     [ "m_resource_manager", "classmage_1_1_engine.html#ac8d94579e72983a99a78be6b9b606a28", null ],
     [ "m_scene_manager", "classmage_1_1_engine.html#afac8085ae572d623e77b1e0847440ab4", null ],
-    [ "m_timer", "classmage_1_1_engine.html#a8d1395822cfabf3f7acc97f28d53f231", null ],
+    [ "m_timer", "classmage_1_1_engine.html#a539cff5bf8252ef28b994be49e9e6b7c", null ],
     [ "s_engine", "classmage_1_1_engine.html#a95fd10c9b9dfe0fc9cbbcb441c910240", null ]
 ];

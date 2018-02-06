@@ -23,6 +23,8 @@ var classmage_1_1_bounding_sphere =
     [ "operator=", "classmage_1_1_bounding_sphere.html#ad8159156e4258d23afdb43e4a9104743", null ],
     [ "operator=", "classmage_1_1_bounding_sphere.html#a2a0e22660b37c54bb0e2e76efc198281", null ],
     [ "operator==", "classmage_1_1_bounding_sphere.html#adc183c59a09a071fbc78b833cc66f218", null ],
+    [ "Overlaps", "classmage_1_1_bounding_sphere.html#aec1440ef7a88b85ae6a310a41b5b7f20", null ],
+    [ "OverlapsStrict", "classmage_1_1_bounding_sphere.html#a352314bd02664521a516ac5d0ce4a5a4", null ],
     [ "Radius", "classmage_1_1_bounding_sphere.html#a51c7e6db89c68d192961bfaf2114fb2f", null ],
     [ "Union", "classmage_1_1_bounding_sphere.html#a519f2f7bf6439ea384d5da60557223bf", null ],
     [ "Union", "classmage_1_1_bounding_sphere.html#a14660f9e7b33be68fabae6d4036b4d8b", null ],

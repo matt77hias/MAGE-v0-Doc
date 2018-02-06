@@ -15,6 +15,7 @@ var classmage_1_1_sprite_text =
     [ "ForEachColorString", "classmage_1_1_sprite_text.html#ad975957b908ad3926ace75fb60ff4474", null ],
     [ "ForEachColorString", "classmage_1_1_sprite_text.html#abc70368fd800a82cbd1ec31f51d4db17", null ],
     [ "GetFont", "classmage_1_1_sprite_text.html#aa1aab1690f37220babce2639463bd7d5", null ],
+    [ "GetFontSRV", "classmage_1_1_sprite_text.html#a2e09c7c64f9ef7bcc5a28ccfb4f13040", null ],
     [ "GetSpriteEffects", "classmage_1_1_sprite_text.html#a2bd9f195c3c31906c2b3dbf276f5bc97", null ],
     [ "GetSpriteTransform", "classmage_1_1_sprite_text.html#af2d7d48fd0134a9d713c3a4820ac09ba", null ],
     [ "GetSpriteTransform", "classmage_1_1_sprite_text.html#aa1b83ca76e72decf0b476d07a9a35c83", null ],
