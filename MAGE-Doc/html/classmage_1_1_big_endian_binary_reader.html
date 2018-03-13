@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.129.0</span>
+   &#160;<span id="projectnumber">v0.134.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -100,8 +100,8 @@ Inheritance diagram for mage::BigEndianBinaryReader:</div>
  <div class="center">
   <img src="classmage_1_1_big_endian_binary_reader.png" usemap="#mage::BigEndianBinaryReader_map" alt=""/>
   <map id="mage::BigEndianBinaryReader_map" name="mage::BigEndianBinaryReader_map">
-<area href="classmage_1_1loader_1_1_m_s_h_reader.html" alt="mage::loader::MSHReader&lt; VertexT, IndexT &gt;" shape="rect" coords="0,56,273,80"/>
-<area href="classmage_1_1loader_1_1_sprite_font_reader.html" alt="mage::loader::SpriteFontReader" shape="rect" coords="283,56,556,80"/>
+<area href="classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html" alt="mage::rendering::loader::MSHReader&lt; VertexT, IndexT &gt;" shape="rect" coords="0,56,334,80"/>
+<area href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html" alt="mage::rendering::loader::SpriteFontReader" shape="rect" coords="344,56,678,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac37539cb08ea9278daf5628a0c5895d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68db676feaa42c1c3a9bf16d0680b04f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_big_endian_binary_reader.html#a68db676feaa42c1c3a9bf16d0680b04f">ReadFromFile</a> (wstring fname)</td></tr>
 <tr class="separator:a68db676feaa42c1c3a9bf16d0680b04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d2529136499412cdaf9ad5d1cf0e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_big_endian_binary_reader.html#a44d2529136499412cdaf9ad5d1cf0e59">ReadFromMemory</a> (const <a class="el" href="namespacemage.html#afc638980bc6154f15af5e2d93a0e0ea9">U8</a> *input, size_t size)</td></tr>
-<tr class="separator:a44d2529136499412cdaf9ad5d1cf0e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc48490dca5042078726a1ec3fe7abe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_big_endian_binary_reader.html#afc48490dca5042078726a1ec3fe7abe7">ReadFromMemory</a> (gsl::span&lt; const <a class="el" href="namespacemage.html#afc638980bc6154f15af5e2d93a0e0ea9">U8</a> &gt; input)</td></tr>
+<tr class="separator:afc48490dca5042078726a1ec3fe7abe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a801558f27606dbc681809178aaaaacd1"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_big_endian_binary_reader.html#a801558f27606dbc681809178aaaaacd1">GetFilename</a> () const noexcept</td></tr>
 <tr class="separator:a801558f27606dbc681809178aaaaacd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -516,7 +516,7 @@ template&lt;typename DataT &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classmage_1_1loader_1_1_m_s_h_reader.html#aac059b991d1151473af2422be688552e">mage::loader::MSHReader&lt; VertexT, IndexT &gt;</a>, and <a class="el" href="classmage_1_1loader_1_1_sprite_font_reader.html#a9726c5e3ee8692a2e2f4a2c9b4b7adba">mage::loader::SpriteFontReader</a>.</p>
+<p>Implemented in <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a99e8e3c50decb9332dc10bcdf7b6e00a">mage::rendering::loader::MSHReader&lt; VertexT, IndexT &gt;</a>, and <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#ae5b827dade3bd800e2000788efa91e30">mage::rendering::loader::SpriteFontReader</a>.</p>
 
 </div>
 </div>
@@ -551,8 +551,8 @@ template&lt;typename DataT &gt; </div>
 
 </div>
 </div>
-<a id="a44d2529136499412cdaf9ad5d1cf0e59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d2529136499412cdaf9ad5d1cf0e59">&sect;&nbsp;</a></span>ReadFromMemory()</h2>
+<a id="afc48490dca5042078726a1ec3fe7abe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc48490dca5042078726a1ec3fe7abe7">&sect;&nbsp;</a></span>ReadFromMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,28 +560,16 @@ template&lt;typename DataT &gt; </div>
         <tr>
           <td class="memname">void mage::BigEndianBinaryReader::ReadFromMemory </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacemage.html#afc638980bc6154f15af5e2d93a0e0ea9">U8</a> *&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">gsl::span&lt; const <a class="el" href="namespacemage.html#afc638980bc6154f15af5e2d93a0e0ea9">U8</a> &gt;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Reads the input string.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>input</em> is not equal to <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>A pointer to the input byte string. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of the input string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>The input byte string. </td></tr>
   </table>
   </dd>
 </dl>

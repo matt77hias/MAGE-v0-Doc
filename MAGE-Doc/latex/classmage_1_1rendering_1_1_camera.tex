@@ -1,0 +1,396 @@
+\hypertarget{classmage_1_1rendering_1_1_camera}{}\section{mage\+:\+:rendering\+:\+:Camera Class Reference}
+\label{classmage_1_1rendering_1_1_camera}\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+
+
+{\ttfamily \#include $<$camera.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:rendering\+:\+:Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmage_1_1rendering_1_1_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classmage_1_1rendering_1_1_camera_ae892311357bddc9ea081912579f8cd9c}{$\sim$\+Camera} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \& \hyperlink{classmage_1_1rendering_1_1_camera_a3aceb5277ca9ea66037de3d5ed44434a}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&camera)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \& \hyperlink{classmage_1_1rendering_1_1_camera_a61b594df300888d8d442855d18b871a3}{operator=} (\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&\&camera) noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_a2c33ca20b544cf126b7984ee46f5b2c3}{Get\+NearZ} () const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_camera_af2c25869a422be0ba4224854a256ca21}{Set\+NearZ} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} near\+\_\+z) noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_a461777ca352f55ae2426bac8105fa2f7}{Get\+FarZ} () const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_camera_a1c0924d95ff4a1da571be49e05f31da2}{Set\+FarZ} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} far\+\_\+z) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_camera_a3301bdfa8d5408c79d5720193d91f8c6}{Set\+Near\+And\+FarZ} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} near\+\_\+z, \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} far\+\_\+z) noexcept
+\item 
+virtual const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_camera_a08481175c3718a24333b22176e240d44}{Get\+Camera\+To\+Projection\+Matrix} () const noexcept=0
+\item 
+virtual const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_camera_abb21116f8a6c7513804431d23fa4cf17}{Get\+Projection\+To\+Camera\+Matrix} () const noexcept=0
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens} \& \hyperlink{classmage_1_1rendering_1_1_camera_a49967d5b733b8d2e1ccbfc71c4f66d42}{Get\+Lens} () noexcept
+\item 
+const \hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens} \& \hyperlink{classmage_1_1rendering_1_1_camera_a3a1156907006b4d60a4e36789216e31a}{Get\+Lens} () const noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \& \hyperlink{classmage_1_1rendering_1_1_camera_aff1dea377f7f36b1d518369b3f8108cc}{Get\+Viewport} () noexcept
+\item 
+const \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \& \hyperlink{classmage_1_1rendering_1_1_camera_a5d91ec5a395b638140c107a192faa2a3}{Get\+Viewport} () const noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings} \& \hyperlink{classmage_1_1rendering_1_1_camera_a32588a00052469be808d2819953ea2a4}{Get\+Settings} () noexcept
+\item 
+const \hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings} \& \hyperlink{classmage_1_1rendering_1_1_camera_a65d79baabdaaf9847102a03f6965e0ed}{Get\+Settings} () const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_camera_a02aa9510bbdebd7b75339b7ad3e3edba}{Update\+Buffer} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor} desc) const
+\item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{classmage_1_1rendering_1_1_camera_aa950bdd33e00fc78ebb496b58e0de5b0}{Bind\+Buffer} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} slot) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_a872aafc40d35c1481a4147c73fdbc00a}{Camera} (I\+D3\+D11\+Device \&device)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_ac4e1e9f230416c0aaea12d2b0fff02c1}{Camera} (const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&camera)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_a7ac683929b75589e3f396a76a6afb9cf}{Camera} (\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&\&camera) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_camera_buffer}{Camera\+Buffer} $>$ \hyperlink{classmage_1_1rendering_1_1_camera_a81012e035e7117cac50434c2d85ac0ad}{m\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_ada7de69941daee12a7f798d8f056ffc6}{m\+\_\+near\+\_\+z}
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_a53ed00e226581b4bb0aecdc7326d852c}{m\+\_\+far\+\_\+z}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens} \hyperlink{classmage_1_1rendering_1_1_camera_a0716fc9d2b3c8f41da75205caa428189}{m\+\_\+lens}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \hyperlink{classmage_1_1rendering_1_1_camera_af01065cfadb5c8442bcc0f823254b09e}{m\+\_\+viewport}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings} \hyperlink{classmage_1_1rendering_1_1_camera_a9a8cfd88c1a3b2b54779bbe0f34d30d2}{m\+\_\+settings}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of cameras. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_camera_ae892311357bddc9ea081912579f8cd9c}{}\label{classmage_1_1rendering_1_1_camera_ae892311357bddc9ea081912579f8cd9c} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Destructs this camera. \hypertarget{classmage_1_1rendering_1_1_camera_a872aafc40d35c1481a4147c73fdbc00a}{}\label{classmage_1_1rendering_1_1_camera_a872aafc40d35c1481a4147c73fdbc00a} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs a camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_ac4e1e9f230416c0aaea12d2b0fff02c1}{}\label{classmage_1_1rendering_1_1_camera_ac4e1e9f230416c0aaea12d2b0fff02c1} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+Constructs a camera from the given camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera} & A reference to the camera to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_a7ac683929b75589e3f396a76a6afb9cf}{}\label{classmage_1_1rendering_1_1_camera_a7ac683929b75589e3f396a76a6afb9cf} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&\&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a camera by moving the given camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera} & A reference to the camera to move. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_camera_aa950bdd33e00fc78ebb496b58e0de5b0}{}\label{classmage_1_1rendering_1_1_camera_aa950bdd33e00fc78ebb496b58e0de5b0} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Bind\+Buffer@{Bind\+Buffer}}
+\index{Bind\+Buffer@{Bind\+Buffer}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Bind\+Buffer()}{BindBuffer()}}
+{\footnotesize\ttfamily template$<$typename Pipeline\+StageT $>$ \\
+void mage\+::rendering\+::\+Camera\+::\+Bind\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{slot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the buffer of this camera to the given pipeline stage.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the constant buffer to (ranges from 0 to {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+A\+P\+I\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT} -\/ 1). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_a08481175c3718a24333b22176e240d44}{}\label{classmage_1_1rendering_1_1_camera_a08481175c3718a24333b22176e240d44} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Camera\+To\+Projection\+Matrix@{Get\+Camera\+To\+Projection\+Matrix}}
+\index{Get\+Camera\+To\+Projection\+Matrix@{Get\+Camera\+To\+Projection\+Matrix}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Camera\+To\+Projection\+Matrix()}{GetCameraToProjectionMatrix()}}
+{\footnotesize\ttfamily virtual const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Camera\+::\+Get\+Camera\+To\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the camera-\/to-\/projection matrix of this camera.
+
+\begin{DoxyReturn}{Returns}
+The camera-\/to-\/projection matrix of this camera. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmage_1_1rendering_1_1_perspective_camera_af0892905a0030fc70bdc629007cde5a0}{mage\+::rendering\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1rendering_1_1_orthographic_camera_a45736d696df0a38c8f1342dca2cda0cd}{mage\+::rendering\+::\+Orthographic\+Camera}.
+
+\hypertarget{classmage_1_1rendering_1_1_camera_a461777ca352f55ae2426bac8105fa2f7}{}\label{classmage_1_1rendering_1_1_camera_a461777ca352f55ae2426bac8105fa2f7} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+FarZ@{Get\+FarZ}}
+\index{Get\+FarZ@{Get\+FarZ}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Far\+Z()}{GetFarZ()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Camera\+::\+Get\+FarZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the position of the far z-\/plane of this camera in camera view space.
+
+\begin{DoxyReturn}{Returns}
+The position of the far z-\/plane of this camera in camera view space. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a49967d5b733b8d2e1ccbfc71c4f66d42}{}\label{classmage_1_1rendering_1_1_camera_a49967d5b733b8d2e1ccbfc71c4f66d42} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Lens@{Get\+Lens}}
+\index{Get\+Lens@{Get\+Lens}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Lens()}{GetLens()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens}\& mage\+::rendering\+::\+Camera\+::\+Get\+Lens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the lens of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the lens of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a3a1156907006b4d60a4e36789216e31a}{}\label{classmage_1_1rendering_1_1_camera_a3a1156907006b4d60a4e36789216e31a} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Lens@{Get\+Lens}}
+\index{Get\+Lens@{Get\+Lens}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Lens()}{GetLens()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens}\& mage\+::rendering\+::\+Camera\+::\+Get\+Lens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the lens of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the lens of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a2c33ca20b544cf126b7984ee46f5b2c3}{}\label{classmage_1_1rendering_1_1_camera_a2c33ca20b544cf126b7984ee46f5b2c3} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+NearZ@{Get\+NearZ}}
+\index{Get\+NearZ@{Get\+NearZ}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Near\+Z()}{GetNearZ()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Camera\+::\+Get\+NearZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the position of the near z-\/plane of this camera in camera view space.
+
+\begin{DoxyReturn}{Returns}
+The position of the near z-\/plane of this camera in camera view space. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_abb21116f8a6c7513804431d23fa4cf17}{}\label{classmage_1_1rendering_1_1_camera_abb21116f8a6c7513804431d23fa4cf17} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Projection\+To\+Camera\+Matrix@{Get\+Projection\+To\+Camera\+Matrix}}
+\index{Get\+Projection\+To\+Camera\+Matrix@{Get\+Projection\+To\+Camera\+Matrix}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Projection\+To\+Camera\+Matrix()}{GetProjectionToCameraMatrix()}}
+{\footnotesize\ttfamily virtual const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Camera\+::\+Get\+Projection\+To\+Camera\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the projection-\/to-\/camera matrix of this camera.
+
+\begin{DoxyReturn}{Returns}
+The projection-\/to-\/camera matrix of this camera. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmage_1_1rendering_1_1_perspective_camera_af049c6330ebdaa822bfd31dc88f25ac2}{mage\+::rendering\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1rendering_1_1_orthographic_camera_a7d52862a3762dcaeadf26e8ae92d9d09}{mage\+::rendering\+::\+Orthographic\+Camera}.
+
+\hypertarget{classmage_1_1rendering_1_1_camera_a32588a00052469be808d2819953ea2a4}{}\label{classmage_1_1rendering_1_1_camera_a32588a00052469be808d2819953ea2a4} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Settings@{Get\+Settings}}
+\index{Get\+Settings@{Get\+Settings}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Settings()}{GetSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings}\& mage\+::rendering\+::\+Camera\+::\+Get\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the settings of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the settings of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a65d79baabdaaf9847102a03f6965e0ed}{}\label{classmage_1_1rendering_1_1_camera_a65d79baabdaaf9847102a03f6965e0ed} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Settings@{Get\+Settings}}
+\index{Get\+Settings@{Get\+Settings}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Settings()}{GetSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings}\& mage\+::rendering\+::\+Camera\+::\+Get\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the settings of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the settings of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_aff1dea377f7f36b1d518369b3f8108cc}{}\label{classmage_1_1rendering_1_1_camera_aff1dea377f7f36b1d518369b3f8108cc} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Viewport@{Get\+Viewport}}
+\index{Get\+Viewport@{Get\+Viewport}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport}\& mage\+::rendering\+::\+Camera\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the viewport of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the viewport of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a5d91ec5a395b638140c107a192faa2a3}{}\label{classmage_1_1rendering_1_1_camera_a5d91ec5a395b638140c107a192faa2a3} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Get\+Viewport@{Get\+Viewport}}
+\index{Get\+Viewport@{Get\+Viewport}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Viewport()}{GetViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport}\& mage\+::rendering\+::\+Camera\+::\+Get\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the viewport of this camera.
+
+\begin{DoxyReturn}{Returns}
+A reference to the viewport of this camera. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a3aceb5277ca9ea66037de3d5ed44434a}{}\label{classmage_1_1rendering_1_1_camera_a3aceb5277ca9ea66037de3d5ed44434a} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera}{Camera}\& mage\+::rendering\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given camera to this camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera} & A reference to the camera to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given camera (i.\+e. this camera). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a61b594df300888d8d442855d18b871a3}{}\label{classmage_1_1rendering_1_1_camera_a61b594df300888d8d442855d18b871a3} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \& mage\+::rendering\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&\&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given camera to this camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera} & A reference to the camera to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved camera (i.\+e. this camera). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_camera_a1c0924d95ff4a1da571be49e05f31da2}{}\label{classmage_1_1rendering_1_1_camera_a1c0924d95ff4a1da571be49e05f31da2} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Set\+FarZ@{Set\+FarZ}}
+\index{Set\+FarZ@{Set\+FarZ}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Far\+Z()}{SetFarZ()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+::\+Set\+FarZ (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{far\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the position of the far z-\/plane of this camera to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in camera view space. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_a3301bdfa8d5408c79d5720193d91f8c6}{}\label{classmage_1_1rendering_1_1_camera_a3301bdfa8d5408c79d5720193d91f8c6} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Set\+Near\+And\+FarZ@{Set\+Near\+And\+FarZ}}
+\index{Set\+Near\+And\+FarZ@{Set\+Near\+And\+FarZ}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Near\+And\+Far\+Z()}{SetNearAndFarZ()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+::\+Set\+Near\+And\+FarZ (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{near\+\_\+z,  }\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{far\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the position of the near and far z-\/plane of this camera to the given values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in view space. \\
+\hline
+\mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane in view space. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_af2c25869a422be0ba4224854a256ca21}{}\label{classmage_1_1rendering_1_1_camera_af2c25869a422be0ba4224854a256ca21} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Set\+NearZ@{Set\+NearZ}}
+\index{Set\+NearZ@{Set\+NearZ}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Near\+Z()}{SetNearZ()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+::\+Set\+NearZ (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{near\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the position of the near z-\/plane of this camera to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em near\+\_\+z} & The position of the near z-\/plane in camera view space. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_camera_a02aa9510bbdebd7b75339b7ad3e3edba}{}\label{classmage_1_1rendering_1_1_camera_a02aa9510bbdebd7b75339b7ad3e3edba} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!Update\+Buffer@{Update\+Buffer}}
+\index{Update\+Buffer@{Update\+Buffer}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{Update\+Buffer()}{UpdateBuffer()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+::\+Update\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor}}]{desc }\end{DoxyParamCaption}) const}
+
+Updates the buffer of this camera.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em desc} & The anti-\/aliasing descriptor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_camera_a81012e035e7117cac50434c2d85ac0ad}{}\label{classmage_1_1rendering_1_1_camera_a81012e035e7117cac50434c2d85ac0ad} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+buffer@{m\+\_\+buffer}}
+\index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_camera_buffer}{Camera\+Buffer} $>$ mage\+::rendering\+::\+Camera\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+The buffer of this camera. \hypertarget{classmage_1_1rendering_1_1_camera_a53ed00e226581b4bb0aecdc7326d852c}{}\label{classmage_1_1rendering_1_1_camera_a53ed00e226581b4bb0aecdc7326d852c} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+far\+\_\+z@{m\+\_\+far\+\_\+z}}
+\index{m\+\_\+far\+\_\+z@{m\+\_\+far\+\_\+z}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+far\+\_\+z}{m\_far\_z}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Camera\+::m\+\_\+far\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
+
+The position of the far z-\/plane of this camera in view space. \hypertarget{classmage_1_1rendering_1_1_camera_a0716fc9d2b3c8f41da75205caa428189}{}\label{classmage_1_1rendering_1_1_camera_a0716fc9d2b3c8f41da75205caa428189} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+lens@{m\+\_\+lens}}
+\index{m\+\_\+lens@{m\+\_\+lens}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+lens}{m\_lens}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera_lens}{Camera\+Lens} mage\+::rendering\+::\+Camera\+::m\+\_\+lens\hspace{0.3cm}{\ttfamily [private]}}
+
+The lens of this camera. \hypertarget{classmage_1_1rendering_1_1_camera_ada7de69941daee12a7f798d8f056ffc6}{}\label{classmage_1_1rendering_1_1_camera_ada7de69941daee12a7f798d8f056ffc6} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}}
+\index{m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+near\+\_\+z}{m\_near\_z}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Camera\+::m\+\_\+near\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
+
+The position of the near z-\/plane of this camera in view space. \hypertarget{classmage_1_1rendering_1_1_camera_a9a8cfd88c1a3b2b54779bbe0f34d30d2}{}\label{classmage_1_1rendering_1_1_camera_a9a8cfd88c1a3b2b54779bbe0f34d30d2} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+settings@{m\+\_\+settings}}
+\index{m\+\_\+settings@{m\+\_\+settings}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+settings}{m\_settings}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_camera_settings}{Camera\+Settings} mage\+::rendering\+::\+Camera\+::m\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
+
+The settings of this camera. \hypertarget{classmage_1_1rendering_1_1_camera_af01065cfadb5c8442bcc0f823254b09e}{}\label{classmage_1_1rendering_1_1_camera_af01065cfadb5c8442bcc0f823254b09e} 
+\index{mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}!m\+\_\+viewport@{m\+\_\+viewport}}
+\index{m\+\_\+viewport@{m\+\_\+viewport}!mage\+::rendering\+::\+Camera@{mage\+::rendering\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+viewport}{m\_viewport}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} mage\+::rendering\+::\+Camera\+::m\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
+
+The viewport of this camera. 

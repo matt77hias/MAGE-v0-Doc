@@ -7,7 +7,7 @@
 Inheritance diagram for mage\+:\+:Big\+Endian\+Binary\+Reader\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.992882cm]{classmage_1_1_big_endian_binary_reader}
+\includegraphics[height=1.637427cm]{classmage_1_1_big_endian_binary_reader}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -19,7 +19,7 @@ Inheritance diagram for mage\+:\+:Big\+Endian\+Binary\+Reader\+:\begin{figure}[H
 \item 
 void \hyperlink{classmage_1_1_big_endian_binary_reader_a68db676feaa42c1c3a9bf16d0680b04f}{Read\+From\+File} (wstring fname)
 \item 
-void \hyperlink{classmage_1_1_big_endian_binary_reader_a44d2529136499412cdaf9ad5d1cf0e59}{Read\+From\+Memory} (const \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $\ast$input, size\+\_\+t size)
+void \hyperlink{classmage_1_1_big_endian_binary_reader_afc48490dca5042078726a1ec3fe7abe7}{Read\+From\+Memory} (gsl\+::span$<$ const \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $>$ input)
 \item 
 const wstring \& \hyperlink{classmage_1_1_big_endian_binary_reader_a801558f27606dbc681809178aaaaacd1}{Get\+Filename} () const noexcept
 \end{DoxyCompactItemize}
@@ -221,7 +221,7 @@ Starts reading.
 \end{DoxyExceptions}
 
 
-Implemented in \hyperlink{classmage_1_1loader_1_1_m_s_h_reader_aac059b991d1151473af2422be688552e}{mage\+::loader\+::\+M\+S\+H\+Reader$<$ Vertex\+T, Index\+T $>$}, and \hyperlink{classmage_1_1loader_1_1_sprite_font_reader_a9726c5e3ee8692a2e2f4a2c9b4b7adba}{mage\+::loader\+::\+Sprite\+Font\+Reader}.
+Implemented in \hyperlink{classmage_1_1rendering_1_1loader_1_1_m_s_h_reader_a99e8e3c50decb9332dc10bcdf7b6e00a}{mage\+::rendering\+::loader\+::\+M\+S\+H\+Reader$<$ Vertex\+T, Index\+T $>$}, and \hyperlink{classmage_1_1rendering_1_1loader_1_1_sprite_font_reader_ae5b827dade3bd800e2000788efa91e30}{mage\+::rendering\+::loader\+::\+Sprite\+Font\+Reader}.
 
 \hypertarget{classmage_1_1_big_endian_binary_reader_a68db676feaa42c1c3a9bf16d0680b04f}{}\label{classmage_1_1_big_endian_binary_reader_a68db676feaa42c1c3a9bf16d0680b04f} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+From\+File@{Read\+From\+File}}
@@ -241,22 +241,17 @@ Reads from the given file.
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to read from the given file. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_big_endian_binary_reader_a44d2529136499412cdaf9ad5d1cf0e59}{}\label{classmage_1_1_big_endian_binary_reader_a44d2529136499412cdaf9ad5d1cf0e59} 
+\hypertarget{classmage_1_1_big_endian_binary_reader_afc48490dca5042078726a1ec3fe7abe7}{}\label{classmage_1_1_big_endian_binary_reader_afc48490dca5042078726a1ec3fe7abe7} 
 \index{mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
 \index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::\+Big\+Endian\+Binary\+Reader@{mage\+::\+Big\+Endian\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
-{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $\ast$}]{input,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{gsl\+::span$<$ const \hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8} $>$}]{input }\end{DoxyParamCaption})}
 
 Reads the input string.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape input} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em input} & A pointer to the input byte string. \\
-\hline
-\mbox{\tt in}  & {\em size} & The size of the input string. \\
+\mbox{\tt in}  & {\em input} & The input byte string. \\
 \hline
 \end{DoxyParams}
 

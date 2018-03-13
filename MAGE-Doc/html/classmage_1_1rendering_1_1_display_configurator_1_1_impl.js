@@ -1,0 +1,28 @@
+var classmage_1_1rendering_1_1_display_configurator_1_1_impl =
+[
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a0aa85d25b294d8ecec7fc83d4a6d80e2", null ],
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ab87ea2074c7c6ecdbb97ac68f96ed39f", null ],
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#acf8b6a3749108ad9f7a7c14c291d48b6", null ],
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#af8ddd060b24cd09deb2beef7737f5277", null ],
+    [ "~Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a499b92d9d77a4c31cbdefa3a3c22a0be", null ],
+    [ "Configure", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a9f0f3a2dbe7a8e401fe11735076655ca", null ],
+    [ "DisplayDialogProc", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#afc4446b37df590031bed6fa1243afb66", null ],
+    [ "DisplayDialogProcDelegate", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a925fc78ddd585c13597cdcce2a5f3954", null ],
+    [ "GetDisplayConfiguration", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a6f203ae158ff19f8829deb84b3f937f1", null ],
+    [ "InitializeAdapterAndOutput", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad4e464d01918d17a27ad4e5cad46166d", null ],
+    [ "InitializeDisplayModes", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a1fe26330e7c488af6fbe8f0c4a8c3286", null ],
+    [ "operator=", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#afaffb2c4689dd48c195d2a7f12c11e0b", null ],
+    [ "operator=", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a8e8c87b0dea178867baaa737517d9ed0", null ],
+    [ "m_adapter", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a49b407f044b7e34f9b58dbd86648bb46", null ],
+    [ "m_display_configuration", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a445c59ccde512df51bb77b9aaa2ecb23", null ],
+    [ "m_display_modes", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ae04d4e1430c684cb0961f838d040f6e1", null ],
+    [ "m_output", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#accf774307783109a1e885efc5ec19a90", null ],
+    [ "m_pixel_format", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a87d52e7bc1a1e4fe9786b3b0ec3fc1e1", null ],
+    [ "m_script", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#aa11b99f1bdf03e3d1eee4d4907479c45", null ],
+    [ "s_display_settings_fname", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad0276623b8642595132fb873d06bfd61", null ],
+    [ "s_display_variable_aa", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#aaff98797b745244f86a75458f49bc806", null ],
+    [ "s_display_variable_refresh_rate", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#abda6f50d13c1e4118ba0f022818b15c9", null ],
+    [ "s_display_variable_resolution", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ace178b1cd3a4d9ac1c91dada266b99db", null ],
+    [ "s_display_variable_vsync", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad2dad3e241786f123edf66910545d63b", null ],
+    [ "s_display_variable_windowed", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a61cf721feb5eb15a4ef27a14da4b74f8", null ]
+];

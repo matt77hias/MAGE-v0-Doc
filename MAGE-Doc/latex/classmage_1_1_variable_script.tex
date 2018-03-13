@@ -17,7 +17,7 @@ Inheritance diagram for mage\+:\+:Variable\+Script\+:\begin{figure}[H]
 \item 
 \hyperlink{classmage_1_1_variable_script_aebd4e6cf2bdae4e57c9da428007fc4d7}{Variable\+Script} (const \hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&variable\+\_\+script)=delete
 \item 
-\hyperlink{classmage_1_1_variable_script_acb767379c723255dd07ff2a541bc5f90}{Variable\+Script} (\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&variable\+\_\+script)
+\hyperlink{classmage_1_1_variable_script_ac29cca638a32bccae00a9e53404158d5}{Variable\+Script} (\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&variable\+\_\+script) noexcept
 \item 
 virtual \hyperlink{classmage_1_1_variable_script_ae7026e1283b1a1164f02fdc3e1f2b829}{$\sim$\+Variable\+Script} ()
 \item 
@@ -93,11 +93,11 @@ Constructs a variable script from the given variable script.
 \mbox{\tt in}  & {\em variable\+\_\+script} & A reference to the variable script to copy. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_variable_script_acb767379c723255dd07ff2a541bc5f90}{}\label{classmage_1_1_variable_script_acb767379c723255dd07ff2a541bc5f90} 
+\hypertarget{classmage_1_1_variable_script_ac29cca638a32bccae00a9e53404158d5}{}\label{classmage_1_1_variable_script_ac29cca638a32bccae00a9e53404158d5} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Variable\+Script@{Variable\+Script}}
 \index{Variable\+Script@{Variable\+Script}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{Variable\+Script()}{VariableScript()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+Variable\+Script\+::\+Variable\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&}]{variable\+\_\+script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+Script\+::\+Variable\+Script (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&}]{variable\+\_\+script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Constructs a variable script by moving the given variable script.
 
@@ -143,7 +143,7 @@ Adds the given variable to this variable script.
 {\footnotesize\ttfamily template$<$typename T  = void$>$ \\
 bool mage\+::\+Variable\+Script\+::\+Contains (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Checks whether this variable script has a variable with the given name and type.
+Checks whether this variable script contains a variable with the given name and type (if specified).
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -207,7 +207,7 @@ Exports this variable script to the file with the given filename.
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 const T$\ast$ mage\+::\+Variable\+Script\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const}
 
-Returns the value of the given variable in this variable script.
+Returns the value of the given variable of this variable script.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -220,7 +220,7 @@ Returns the value of the given variable in this variable script.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily nullptr} if no variable with the name {\itshape name} exists in this variable script. 
+{\ttfamily nullptr} if this variable script does not contain a variable corresponding to the given name. 
 
 A pointer to the value of the variable. 
 \end{DoxyReturn}
@@ -280,7 +280,7 @@ A reference to the copy of the given variable script (i.\+e. this variable scrip
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_script}{Variable\+Script} \& mage\+::\+Variable\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&}]{variable\+\_\+script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_script}{Variable\+Script} \& mage\+::\+Variable\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_variable_script}{Variable\+Script} \&\&}]{variable\+\_\+script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Moves the given variable script to this variable script.
 
@@ -302,7 +302,7 @@ Removes the given variable from this variable script.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & The name of the variable. \\
+\mbox{\tt in}  & {\em name} & A reference to the name of the variable. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_variable_script_add51955d83e85e6d6acd82cfe40bed26}{}\label{classmage_1_1_variable_script_add51955d83e85e6d6acd82cfe40bed26} 
@@ -333,7 +333,7 @@ Sets the value of the given variable in this variable script.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-Nothing happens if no variable with the name {\itshape name} exists in this variable script. 
+Nothing happens if this variable script does not contain a variable corresponding to the given name. 
 \end{DoxyNote}
 \hypertarget{classmage_1_1_variable_script_a20e376c802dae71e001037afc316c795}{}\label{classmage_1_1_variable_script_a20e376c802dae71e001037afc316c795} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!size@{size}}
@@ -355,4 +355,4 @@ The number of variables in this variable script.
 \subsubsection{\texorpdfstring{m\+\_\+variables}{m\_variables}}
 {\footnotesize\ttfamily std\+::map$<$ string, \hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value} $>$ mage\+::\+Variable\+Script\+::m\+\_\+variables\hspace{0.3cm}{\ttfamily [private]}}
 
-A map containing the variables in this variable script. 
+A map containing the variables of this variable script. 

@@ -1,0 +1,4 @@
+var structmage_1_1rendering_1_1_resource_manager_1_1_resource_record_3_01_resource_t_00_01typename_09b062ee4b0394619806084252c69f48d =
+[
+    [ "pool_type", "structmage_1_1rendering_1_1_resource_manager_1_1_resource_record_3_01_resource_t_00_01typename_09b062ee4b0394619806084252c69f48d.html#a5f755d5452be9da7f699b8545a97337f", null ]
+];

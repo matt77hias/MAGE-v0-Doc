@@ -1,0 +1,477 @@
+\hypertarget{classmage_1_1rendering_1_1_state_manager}{}\section{mage\+:\+:rendering\+:\+:State\+Manager Class Reference}
+\label{classmage_1_1rendering_1_1_state_manager}\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+
+
+{\ttfamily \#include $<$state\+\_\+manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager_ae19649b2bfc0fc7eb3110fb85cda26b7}{State\+Manager} (I\+D3\+D11\+Device \&device)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager_aa5e404cde4e010a5738815d1d4938585}{State\+Manager} (const \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&manager)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager_ab5a87ec8d14f9b249685b52e159888b2}{State\+Manager} (\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&\&manager) noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager_a774d3147717773d6dce1f388bc960f87}{$\sim$\+State\+Manager} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \& \hyperlink{classmage_1_1rendering_1_1_state_manager_a07e3b6663a4d3c814cddbd920bd4ced4}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&manager)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \& \hyperlink{classmage_1_1rendering_1_1_state_manager_a75eedc5c3a5345de8b6a1c4dea7491a1}{operator=} (\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&\&manager) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_a44f34f1a75286e8eabaace46b21168c8}{Bind\+Persistent\+State} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_aee24b65a57f9c47c4c74e509884d1978}{Bind} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID} id) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_a0ae3054764b68d9e9c89c403b57b52b3}{Bind} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID} id) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_a4b3f51dfa639bdb218e9103df4342638}{Bind} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID} id) const noexcept
+\item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{classmage_1_1rendering_1_1_state_manager_a6771451495ed6d83c76e6f008b2d7c17}{Bind\+Point\+Wrap\+Sampler\+State\+ID} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} slot, \hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID} id) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_ac2da3d4e04b0ef43e286e4661bca8deb}{Setup\+Rendering\+States} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_a358133f8e2d012ddde64083e83650914}{Setup\+Blend\+States} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_ae77e458a375e8cb2540eeb0230cb047b}{Setup\+Depth\+Stencil\+States} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_a6cee7878db58409e6527d84de1bec5c8}{Setup\+Rasterizer\+States} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_state_manager_abb74b460f834a402f9ab7527afa64f64}{Setup\+Sampler\+States} ()
+\item 
+I\+D3\+D11\+Blend\+State $\ast$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a608d62c6a160a50023ad814c9a46874f}{Get} (\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID} id) const noexcept
+\item 
+\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Blend\+State $\ast$$\ast$$>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a291dd54e28dc899193583537ab14e4f7}{Release\+And\+Get\+Address\+Of} (\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID} id) noexcept
+\item 
+I\+D3\+D11\+Depth\+Stencil\+State $\ast$ \hyperlink{classmage_1_1rendering_1_1_state_manager_aea70c45d9801859582f96b07427a513b}{Get} (\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID} id) const noexcept
+\item 
+\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Depth\+Stencil\+State $\ast$$\ast$$>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a2f9f0bb0f96faa66efe4dfdf0077d868}{Release\+And\+Get\+Address\+Of} (\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID} id) noexcept
+\item 
+I\+D3\+D11\+Rasterizer\+State $\ast$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a3be0b6a10c869f479bdd097af7297883}{Get} (\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID} id) const noexcept
+\item 
+\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Rasterizer\+State $\ast$$\ast$$>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_afaeb70f484456bb8f24d3eb3e0d716c7}{Release\+And\+Get\+Address\+Of} (\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID} id) noexcept
+\item 
+I\+D3\+D11\+Sampler\+State $\ast$ \hyperlink{classmage_1_1rendering_1_1_state_manager_aa11a2d48ab33489c3ea635950d95e5a7}{Get} (\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID} id) const noexcept
+\item 
+\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Sampler\+State $\ast$$\ast$$>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a92f3776811c844924afb92f69284b9d3}{Release\+And\+Get\+Address\+Of} (\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID} id) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device $>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_abfe78953d7404fc86e85531ac296281b}{m\+\_\+device}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Blend\+State $>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_ad72e83edb0b28b1f03cf8a7dc231587e}{m\+\_\+blend\+\_\+states} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564abae93f994f01c537c4e2f7d8528c3eb5e9}{Blend\+State\+I\+D\+::\+Count})\mbox{]}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+State $>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_af5deff162f3f1d102091749bfbe205b6}{m\+\_\+depth\+\_\+stencil\+\_\+states} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329eae93f994f01c537c4e2f7d8528c3eb5e9}{Depth\+Stencil\+State\+I\+D\+::\+Count})\mbox{]}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Rasterizer\+State $>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_a2d97d987062db0bf6d2f91c77ecb0655}{m\+\_\+rasterizer\+\_\+states} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3facaae93f994f01c537c4e2f7d8528c3eb5e9}{Rasterizer\+State\+I\+D\+::\+Count})\mbox{]}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Sampler\+State $>$ \hyperlink{classmage_1_1rendering_1_1_state_manager_ac0d76e363936a196acc6fafa09acc73d}{m\+\_\+sampler\+\_\+states} \mbox{[}static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658ae93f994f01c537c4e2f7d8528c3eb5e9}{Sampler\+State\+I\+D\+::\+Count})\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of state managers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_ae19649b2bfc0fc7eb3110fb85cda26b7}{}\label{classmage_1_1rendering_1_1_state_manager_ae19649b2bfc0fc7eb3110fb85cda26b7} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!State\+Manager@{State\+Manager}}
+\index{State\+Manager@{State\+Manager}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{State\+Manager()}{StateManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+State\+Manager\+::\+State\+Manager (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the rendering states of this state manager. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_aa5e404cde4e010a5738815d1d4938585}{}\label{classmage_1_1rendering_1_1_state_manager_aa5e404cde4e010a5738815d1d4938585} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!State\+Manager@{State\+Manager}}
+\index{State\+Manager@{State\+Manager}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{State\+Manager()}{StateManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+State\+Manager\+::\+State\+Manager (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a state manager from the given state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em manager} & A reference to the state manager to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_ab5a87ec8d14f9b249685b52e159888b2}{}\label{classmage_1_1rendering_1_1_state_manager_ab5a87ec8d14f9b249685b52e159888b2} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!State\+Manager@{State\+Manager}}
+\index{State\+Manager@{State\+Manager}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{State\+Manager()}{StateManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+State\+Manager\+::\+State\+Manager (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a state manager by moving the given state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em manager} & A reference to the state manager to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a774d3147717773d6dce1f388bc960f87}{}\label{classmage_1_1rendering_1_1_state_manager_a774d3147717773d6dce1f388bc960f87} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!````~State\+Manager@{$\sim$\+State\+Manager}}
+\index{````~State\+Manager@{$\sim$\+State\+Manager}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+State\+Manager()}{~StateManager()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+State\+Manager\+::$\sim$\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this state manager. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_aee24b65a57f9c47c4c74e509884d1978}{}\label{classmage_1_1rendering_1_1_state_manager_aee24b65a57f9c47c4c74e509884d1978} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the given blend state of this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em id} & The blend state identifier. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a0ae3054764b68d9e9c89c403b57b52b3}{}\label{classmage_1_1rendering_1_1_state_manager_a0ae3054764b68d9e9c89c403b57b52b3} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the given depth-\/stencil state of this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em id} & The depth-\/stencil state identifier. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a4b3f51dfa639bdb218e9103df4342638}{}\label{classmage_1_1rendering_1_1_state_manager_a4b3f51dfa639bdb218e9103df4342638} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the given rasterizer state of this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em id} & The rasterizer state identifier. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a44f34f1a75286e8eabaace46b21168c8}{}\label{classmage_1_1rendering_1_1_state_manager_a44f34f1a75286e8eabaace46b21168c8} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Bind\+Persistent\+State@{Bind\+Persistent\+State}}
+\index{Bind\+Persistent\+State@{Bind\+Persistent\+State}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+Persistent\+State()}{BindPersistentState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Bind\+Persistent\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the persistent state of this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a6771451495ed6d83c76e6f008b2d7c17}{}\label{classmage_1_1rendering_1_1_state_manager_a6771451495ed6d83c76e6f008b2d7c17} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Bind\+Point\+Wrap\+Sampler\+State\+ID@{Bind\+Point\+Wrap\+Sampler\+State\+ID}}
+\index{Bind\+Point\+Wrap\+Sampler\+State\+ID@{Bind\+Point\+Wrap\+Sampler\+State\+ID}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+Point\+Wrap\+Sampler\+State\+I\+D()}{BindPointWrapSamplerStateID()}}
+{\footnotesize\ttfamily template$<$typename Pipeline\+StageT $>$ \\
+void mage\+::rendering\+::\+State\+Manager\+::\+Bind\+Point\+Wrap\+Sampler\+State\+ID (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{slot,  }\item[{\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the point sampler state with wrapping of this state manager.
+
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily S\+L\+O\+T\+\_\+\+S\+A\+M\+P\+L\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+T\+A\+RT} $<$= {\itshape slot}. 
+
+{\itshape slot} $<$ {\ttfamily S\+L\+O\+T\+\_\+\+S\+A\+M\+P\+L\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+E\+ND}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the sampler to (ranges from {\ttfamily S\+L\+O\+T\+\_\+\+S\+A\+M\+P\+L\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+S\+T\+A\+RT} to {\ttfamily S\+L\+O\+T\+\_\+\+S\+A\+M\+P\+L\+E\+R\+\_\+\+V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+E\+ND}). \\
+\hline
+\mbox{\tt in}  & {\em id} & The sampler state identifier. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a608d62c6a160a50023ad814c9a46874f}{}\label{classmage_1_1rendering_1_1_state_manager_a608d62c6a160a50023ad814c9a46874f} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily I\+D3\+D11\+Blend\+State$\ast$ mage\+::rendering\+::\+State\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the blend state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The blend state identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the blend state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_aea70c45d9801859582f96b07427a513b}{}\label{classmage_1_1rendering_1_1_state_manager_aea70c45d9801859582f96b07427a513b} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily I\+D3\+D11\+Depth\+Stencil\+State$\ast$ mage\+::rendering\+::\+State\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the depth stencil state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The depth stencil identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the depth stencil state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a3be0b6a10c869f479bdd097af7297883}{}\label{classmage_1_1rendering_1_1_state_manager_a3be0b6a10c869f479bdd097af7297883} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily I\+D3\+D11\+Rasterizer\+State$\ast$ mage\+::rendering\+::\+State\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the rasterizer state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The rasterizer identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the rasterizer state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_aa11a2d48ab33489c3ea635950d95e5a7}{}\label{classmage_1_1rendering_1_1_state_manager_aa11a2d48ab33489c3ea635950d95e5a7} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily I\+D3\+D11\+Sampler\+State$\ast$ mage\+::rendering\+::\+State\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns the sampler state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The sampler state identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sampler state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a07e3b6663a4d3c814cddbd920bd4ced4}{}\label{classmage_1_1rendering_1_1_state_manager_a07e3b6663a4d3c814cddbd920bd4ced4} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager}\& mage\+::rendering\+::\+State\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given state manager to this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em manager} & A reference to the state manager to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given state manager (i.\+e. this state manager). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a75eedc5c3a5345de8b6a1c4dea7491a1}{}\label{classmage_1_1rendering_1_1_state_manager_a75eedc5c3a5345de8b6a1c4dea7491a1} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \& mage\+::rendering\+::\+State\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given state manager to this state manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em manager} & A reference to the state manager to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved state manager (i.\+e. this state manager). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a291dd54e28dc899193583537ab14e4f7}{}\label{classmage_1_1rendering_1_1_state_manager_a291dd54e28dc899193583537ab14e4f7} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}}
+\index{Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Release\+And\+Get\+Address\+Of()}{ReleaseAndGetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Blend\+State$\ast$$\ast$ $>$ mage\+::rendering\+::\+State\+Manager\+::\+Release\+And\+Get\+Address\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564ab}{Blend\+State\+ID}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns and releases the address of the blend state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The blend state identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a pointer to the blend state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a2f9f0bb0f96faa66efe4dfdf0077d868}{}\label{classmage_1_1rendering_1_1_state_manager_a2f9f0bb0f96faa66efe4dfdf0077d868} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}}
+\index{Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Release\+And\+Get\+Address\+Of()}{ReleaseAndGetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Depth\+Stencil\+State$\ast$$\ast$ $>$ mage\+::rendering\+::\+State\+Manager\+::\+Release\+And\+Get\+Address\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329e}{Depth\+Stencil\+State\+ID}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns and releases the address of the depth stencil state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The depth stencil identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a pointer to the depth stencil state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_afaeb70f484456bb8f24d3eb3e0d716c7}{}\label{classmage_1_1rendering_1_1_state_manager_afaeb70f484456bb8f24d3eb3e0d716c7} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}}
+\index{Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Release\+And\+Get\+Address\+Of()}{ReleaseAndGetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Rasterizer\+State$\ast$$\ast$ $>$ mage\+::rendering\+::\+State\+Manager\+::\+Release\+And\+Get\+Address\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3faca}{Rasterizer\+State\+ID}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns and releases the address of the rasterizer state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The rasterizer state identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a pointer to the rasterizer state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a92f3776811c844924afb92f69284b9d3}{}\label{classmage_1_1rendering_1_1_state_manager_a92f3776811c844924afb92f69284b9d3} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}}
+\index{Release\+And\+Get\+Address\+Of@{Release\+And\+Get\+Address\+Of}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Release\+And\+Get\+Address\+Of()}{ReleaseAndGetAddressOf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ I\+D3\+D11\+Sampler\+State$\ast$$\ast$ $>$ mage\+::rendering\+::\+State\+Manager\+::\+Release\+And\+Get\+Address\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658}{Sampler\+State\+ID}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Returns and releases the address of the sampler state of this state manager associated to the given identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The sampler state identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a pointer to the sampler state of this state manager associated to the given identifier. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a358133f8e2d012ddde64083e83650914}{}\label{classmage_1_1rendering_1_1_state_manager_a358133f8e2d012ddde64083e83650914} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Setup\+Blend\+States@{Setup\+Blend\+States}}
+\index{Setup\+Blend\+States@{Setup\+Blend\+States}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Setup\+Blend\+States()}{SetupBlendStates()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Setup\+Blend\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setup the blend states of this state manager.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the blend states of this state manager. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_ae77e458a375e8cb2540eeb0230cb047b}{}\label{classmage_1_1rendering_1_1_state_manager_ae77e458a375e8cb2540eeb0230cb047b} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Setup\+Depth\+Stencil\+States@{Setup\+Depth\+Stencil\+States}}
+\index{Setup\+Depth\+Stencil\+States@{Setup\+Depth\+Stencil\+States}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Setup\+Depth\+Stencil\+States()}{SetupDepthStencilStates()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Setup\+Depth\+Stencil\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setup the depth stencil states of this state manager.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the depth stencil states of state manager. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_a6cee7878db58409e6527d84de1bec5c8}{}\label{classmage_1_1rendering_1_1_state_manager_a6cee7878db58409e6527d84de1bec5c8} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Setup\+Rasterizer\+States@{Setup\+Rasterizer\+States}}
+\index{Setup\+Rasterizer\+States@{Setup\+Rasterizer\+States}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Setup\+Rasterizer\+States()}{SetupRasterizerStates()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Setup\+Rasterizer\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setup the rasterizer states of this state manager.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the rasterizer states of this state manager. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_ac2da3d4e04b0ef43e286e4661bca8deb}{}\label{classmage_1_1rendering_1_1_state_manager_ac2da3d4e04b0ef43e286e4661bca8deb} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Setup\+Rendering\+States@{Setup\+Rendering\+States}}
+\index{Setup\+Rendering\+States@{Setup\+Rendering\+States}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Setup\+Rendering\+States()}{SetupRenderingStates()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Setup\+Rendering\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setup the rendering states (blend, depth stencil, rasterizer, sampler) of this state manager.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the rendering states of this state manager. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_abb74b460f834a402f9ab7527afa64f64}{}\label{classmage_1_1rendering_1_1_state_manager_abb74b460f834a402f9ab7527afa64f64} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!Setup\+Sampler\+States@{Setup\+Sampler\+States}}
+\index{Setup\+Sampler\+States@{Setup\+Sampler\+States}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Setup\+Sampler\+States()}{SetupSamplerStates()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+State\+Manager\+::\+Setup\+Sampler\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Setup the samplers states of this state manager.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup the samplers states of this state manager. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_state_manager_ad72e83edb0b28b1f03cf8a7dc231587e}{}\label{classmage_1_1rendering_1_1_state_manager_ad72e83edb0b28b1f03cf8a7dc231587e} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!m\+\_\+blend\+\_\+states@{m\+\_\+blend\+\_\+states}}
+\index{m\+\_\+blend\+\_\+states@{m\+\_\+blend\+\_\+states}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+blend\+\_\+states}{m\_blend\_states}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Blend\+State $>$ mage\+::rendering\+::\+State\+Manager\+::m\+\_\+blend\+\_\+states\mbox{[} static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_abdf11cdb816b9208aec6c3a81f7564abae93f994f01c537c4e2f7d8528c3eb5e9}{Blend\+State\+I\+D\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the blend states of this state manager. \hypertarget{classmage_1_1rendering_1_1_state_manager_af5deff162f3f1d102091749bfbe205b6}{}\label{classmage_1_1rendering_1_1_state_manager_af5deff162f3f1d102091749bfbe205b6} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!m\+\_\+depth\+\_\+stencil\+\_\+states@{m\+\_\+depth\+\_\+stencil\+\_\+states}}
+\index{m\+\_\+depth\+\_\+stencil\+\_\+states@{m\+\_\+depth\+\_\+stencil\+\_\+states}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+depth\+\_\+stencil\+\_\+states}{m\_depth\_stencil\_states}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Depth\+Stencil\+State $>$ mage\+::rendering\+::\+State\+Manager\+::m\+\_\+depth\+\_\+stencil\+\_\+states\mbox{[} static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_ace195e7a068336e477080fce30f1329eae93f994f01c537c4e2f7d8528c3eb5e9}{Depth\+Stencil\+State\+I\+D\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the depth stencil states of this state manager. \hypertarget{classmage_1_1rendering_1_1_state_manager_abfe78953d7404fc86e85531ac296281b}{}\label{classmage_1_1rendering_1_1_state_manager_abfe78953d7404fc86e85531ac296281b} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!m\+\_\+device@{m\+\_\+device}}
+\index{m\+\_\+device@{m\+\_\+device}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+device}{m\_device}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device $>$ mage\+::rendering\+::\+State\+Manager\+::m\+\_\+device\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device of this state manager. \hypertarget{classmage_1_1rendering_1_1_state_manager_a2d97d987062db0bf6d2f91c77ecb0655}{}\label{classmage_1_1rendering_1_1_state_manager_a2d97d987062db0bf6d2f91c77ecb0655} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!m\+\_\+rasterizer\+\_\+states@{m\+\_\+rasterizer\+\_\+states}}
+\index{m\+\_\+rasterizer\+\_\+states@{m\+\_\+rasterizer\+\_\+states}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+rasterizer\+\_\+states}{m\_rasterizer\_states}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Rasterizer\+State $>$ mage\+::rendering\+::\+State\+Manager\+::m\+\_\+rasterizer\+\_\+states\mbox{[} static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_ac878731f5dc22a3a36ccfbfc77c3facaae93f994f01c537c4e2f7d8528c3eb5e9}{Rasterizer\+State\+I\+D\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the rasterizer states of this state manager. \hypertarget{classmage_1_1rendering_1_1_state_manager_ac0d76e363936a196acc6fafa09acc73d}{}\label{classmage_1_1rendering_1_1_state_manager_ac0d76e363936a196acc6fafa09acc73d} 
+\index{mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}!m\+\_\+sampler\+\_\+states@{m\+\_\+sampler\+\_\+states}}
+\index{m\+\_\+sampler\+\_\+states@{m\+\_\+sampler\+\_\+states}!mage\+::rendering\+::\+State\+Manager@{mage\+::rendering\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+sampler\+\_\+states}{m\_sampler\_states}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Sampler\+State $>$ mage\+::rendering\+::\+State\+Manager\+::m\+\_\+sampler\+\_\+states\mbox{[} static\+\_\+cast$<$ size\+\_\+t $>$(\hyperlink{namespacemage_1_1rendering_a6f80181126db61dbb8b528a6894eb658ae93f994f01c537c4e2f7d8528c3eb5e9}{Sampler\+State\+I\+D\+::\+Count})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+An array containing pointers to the sampler states of this state manager. 

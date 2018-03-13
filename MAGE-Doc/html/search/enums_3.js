@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hotkey',['HotKey',['../classmage_1_1_main_window.html#a3a6749d007d88da4fd966bafeef38ae1',1,'mage::MainWindow']]]
+  ['falsecolor',['FalseColor',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534',1,'mage::rendering']]]
 ];

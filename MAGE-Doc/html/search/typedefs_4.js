@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['geometryshader',['GeometryShader',['../namespacemage.html#a0cf0bb4b74903e78658c96412d5687a6',1,'mage']]],
-  ['geometryshaderptr',['GeometryShaderPtr',['../namespacemage.html#acc49e8e93ccc87613b02dd688f0db21a',1,'mage']]]
+  ['geometryshader',['GeometryShader',['../namespacemage_1_1rendering.html#accaa3591de8a0d7a2c72c1dcc0cf9592',1,'mage::rendering']]],
+  ['geometryshaderptr',['GeometryShaderPtr',['../namespacemage_1_1rendering.html#aa5d63f80f9483d0896718813768ba1cf',1,'mage::rendering']]]
 ];

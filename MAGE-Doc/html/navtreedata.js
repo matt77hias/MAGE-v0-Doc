@@ -31,21 +31,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_bounding_volume_pass.html#a9dcca637d98ea8335777094d3d994f5c",
-"classmage_1_1_depth_pass.html#a4b6a38c56e02b6185c1eef8bcaaa5786",
-"classmage_1_1_g_buffer_pass.html#a34b2735cfb9b3546c903760f42ff770c",
-"classmage_1_1_main_window.html#a8dc3c590bb168f8178a7db72ff60fd0c",
-"classmage_1_1_node_client.html",
-"classmage_1_1_rendering_output_manager.html#a3c6290fd9b186fbe56a47adb6d774ccf",
-"classmage_1_1_scene_manager.html#a2ae7b041a7ee37e836d81e9cd9378214",
-"classmage_1_1_sprite_image.html#a955225e8274ae5f39f6eb6f6fbb75638",
-"classmage_1_1_texture_transform.html#adb36217d25494721ee54cd6807ea65af",
-"classmage_1_1_viewport.html#a0d905e73b96493184393b107b5545ae3",
-"classmage_1_1loader_1_1_sprite_font_reader.html#a65ddea9d2f842f2e6d81c3f4dccb62a6",
-"index.html",
-"structmage_1_1_model_normal_texture_transform_buffer.html",
-"structmage_1_1_s_r_g_b.html#aef2e40794d1465801e998d64d94f782d",
-"structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_00_01void_01_4_01_4.html#ab9e471ad5ec9b6058076773af87b7b29"
+"classmage_1_1_double_ended_memory_stack.html#afaac4a28ea1e386bc83d3e07fd5531a0",
+"classmage_1_1_memory_arena.html",
+"classmage_1_1_single_ended_memory_stack.html#acda0b7f2e61bf8ba8bbb9ba633237866",
+"classmage_1_1_transform.html#aaf2754a227e2cf416960a92f7e4c5dc7",
+"classmage_1_1loader_1_1_v_a_r_reader.html#a88a819066140cacd8ce494fca125e1e2",
+"classmage_1_1rendering_1_1_depth_pass.html#a7157b0a6480a1fca6001e4eb93b4e5fd",
+"classmage_1_1rendering_1_1_material.html#aaa4265533437b462e2f2087cfa37e623",
+"classmage_1_1rendering_1_1_renderer.html#aee44d4c9014216d84030ecfc6e64b1e4",
+"classmage_1_1rendering_1_1_sprite_font.html#a0dc7afe54ffa5f2215efc739ba8dc2ed",
+"classmage_1_1rendering_1_1_viewport.html#a7613c529c64ef903abe310ef345cc864",
+"classmage_1_1script_1_1_mouse_look_script.html#a09e7e193cf2f5dca3342a130268a7a67",
+"struct_d_d_s___h_e_a_d_e_r.html#a589e935e11a1d8193101741109710319",
+"structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ae031ef9aa8b7c825edea1c115516f393",
+"structmage_1_1rendering_1_1_pipeline_1_1_g_s.html#af758f82f4475d948564be7ef0214d315",
+"structmage_1_1rendering_1_1is__shader_3_01_compute_shader_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

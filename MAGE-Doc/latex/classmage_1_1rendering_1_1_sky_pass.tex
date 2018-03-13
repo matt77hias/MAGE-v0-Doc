@@ -1,0 +1,176 @@
+\hypertarget{classmage_1_1rendering_1_1_sky_pass}{}\section{mage\+:\+:rendering\+:\+:Sky\+Pass Class Reference}
+\label{classmage_1_1rendering_1_1_sky_pass}\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+
+
+{\ttfamily \#include $<$sky\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass_a55e8ef167a1e70a88a4be1fd11aed70e}{Sky\+Pass} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&state\+\_\+manager, \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass_a684fba31f92c43b717029d929303db2e}{Sky\+Pass} (const \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass_a2d9489936058c463743bd437fb0cbb3e}{Sky\+Pass} (\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass_a99473ca11c0c25ab0608a3f93cf30aa6}{$\sim$\+Sky\+Pass} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_sky_pass_a8364836c5db0dc3e9894e1749ab302e8}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_sky_pass_ad844a754a13fa90ef87aa62745ea936d}{operator=} (\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&\&pass) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_sky_pass_af0b6421b1c9a638133d6dfe681b1aa78}{Render} (const \hyperlink{classmage_1_1rendering_1_1_sky}{Sky} \&sky) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_sky_pass_ab2e7bf506b3a038264579aa3c494f14d}{Bind\+Fixed\+State} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \hyperlink{classmage_1_1rendering_1_1_sky_pass_a5639f9eb6bf863074c5e5afba2f0e2f5}{m\+\_\+device\+\_\+context}
+\item 
+std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_sky_pass_aed4f451eb046158e856fdda6de9856f5}{m\+\_\+state\+\_\+manager}
+\item 
+\hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_sky_pass_a935019dff57aaf9ae91f974ec59f11ee}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_sky_pass_a945613544f942b4278454a89bb5e1513}{m\+\_\+ps}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of sky passes for rendering sky domes to screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_a55e8ef167a1e70a88a4be1fd11aed70e}{}\label{classmage_1_1rendering_1_1_sky_pass_a55e8ef167a1e70a88a4be1fd11aed70e} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!Sky\+Pass@{Sky\+Pass}}
+\index{Sky\+Pass@{Sky\+Pass}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{Sky\+Pass()}{SkyPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sky\+Pass\+::\+Sky\+Pass (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{state\+\_\+manager,  }\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a sky pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em state\+\_\+manager} & A reference to the state manager. \\
+\hline
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_a684fba31f92c43b717029d929303db2e}{}\label{classmage_1_1rendering_1_1_sky_pass_a684fba31f92c43b717029d929303db2e} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!Sky\+Pass@{Sky\+Pass}}
+\index{Sky\+Pass@{Sky\+Pass}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{Sky\+Pass()}{SkyPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sky\+Pass\+::\+Sky\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a sky pass from the given sky pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sky pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_a2d9489936058c463743bd437fb0cbb3e}{}\label{classmage_1_1rendering_1_1_sky_pass_a2d9489936058c463743bd437fb0cbb3e} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!Sky\+Pass@{Sky\+Pass}}
+\index{Sky\+Pass@{Sky\+Pass}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{Sky\+Pass()}{SkyPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sky\+Pass\+::\+Sky\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a sky pass by moving the given sky pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sky pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_a99473ca11c0c25ab0608a3f93cf30aa6}{}\label{classmage_1_1rendering_1_1_sky_pass_a99473ca11c0c25ab0608a3f93cf30aa6} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!````~Sky\+Pass@{$\sim$\+Sky\+Pass}}
+\index{````~Sky\+Pass@{$\sim$\+Sky\+Pass}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Sky\+Pass()}{~SkyPass()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sky\+Pass\+::$\sim$\+Sky\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this sky pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_ab2e7bf506b3a038264579aa3c494f14d}{}\label{classmage_1_1rendering_1_1_sky_pass_ab2e7bf506b3a038264579aa3c494f14d} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sky\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this sky pass. \hypertarget{classmage_1_1rendering_1_1_sky_pass_a8364836c5db0dc3e9894e1749ab302e8}{}\label{classmage_1_1rendering_1_1_sky_pass_a8364836c5db0dc3e9894e1749ab302e8} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass}\& mage\+::rendering\+::\+Sky\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given sky pass to this sky pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sky pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sky pass (i.\+e. this sky pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_ad844a754a13fa90ef87aa62745ea936d}{}\label{classmage_1_1rendering_1_1_sky_pass_ad844a754a13fa90ef87aa62745ea936d} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \& mage\+::rendering\+::\+Sky\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given sky pass to this sky pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sky pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved sky pass (i.\+e. this sky pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_af0b6421b1c9a638133d6dfe681b1aa78}{}\label{classmage_1_1rendering_1_1_sky_pass_af0b6421b1c9a638133d6dfe681b1aa78} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sky\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_sky}{Sky} \&}]{sky }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Renders the given world.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sky} & A reference to the sky. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sky_pass_a5639f9eb6bf863074c5e5afba2f0e2f5}{}\label{classmage_1_1rendering_1_1_sky_pass_a5639f9eb6bf863074c5e5afba2f0e2f5} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ mage\+::rendering\+::\+Sky\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device context of this sky pass. \hypertarget{classmage_1_1rendering_1_1_sky_pass_a945613544f942b4278454a89bb5e1513}{}\label{classmage_1_1rendering_1_1_sky_pass_a945613544f942b4278454a89bb5e1513} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Sky\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this sky pass. \hypertarget{classmage_1_1rendering_1_1_sky_pass_aed4f451eb046158e856fdda6de9856f5}{}\label{classmage_1_1rendering_1_1_sky_pass_aed4f451eb046158e856fdda6de9856f5} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
+\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ mage\+::rendering\+::\+Sky\+Pass\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the state manager of this sky pass. \hypertarget{classmage_1_1rendering_1_1_sky_pass_a935019dff57aaf9ae91f974ec59f11ee}{}\label{classmage_1_1rendering_1_1_sky_pass_a935019dff57aaf9ae91f974ec59f11ee} 
+\index{mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::rendering\+::\+Sky\+Pass@{mage\+::rendering\+::\+Sky\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} mage\+::rendering\+::\+Sky\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this sky pass. 
