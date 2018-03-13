@@ -17,5 +17,5 @@ var classmage_1_1_proxy_ptr =
     [ "operator=", "classmage_1_1_proxy_ptr.html#a2d3a3a7595028a72a97a2c2131947a8d", null ],
     [ "operator=", "classmage_1_1_proxy_ptr.html#a53e38a57d8155b8cd59b3d6e332995b7", null ],
     [ "operator==", "classmage_1_1_proxy_ptr.html#a786d92c5d87ac0349a60cf99642bd890", null ],
-    [ "m_getter", "classmage_1_1_proxy_ptr.html#a89befb78b9b20192a2966125c5b1d95d", null ]
+    [ "m_getter", "classmage_1_1_proxy_ptr.html#a78fad290d478eb55285d4ab01cda1669", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['texteffect',['TextEffect',['../classmage_1_1_sprite_text.html#a4d3101d037b6fe4247d77b5fbf811dd2',1,'mage::SpriteText']]]
+  ['texteffect',['TextEffect',['../classmage_1_1rendering_1_1_sprite_text.html#af07ecf28d2ab8997c011cab74e799ef7',1,'mage::rendering::SpriteText']]]
 ];

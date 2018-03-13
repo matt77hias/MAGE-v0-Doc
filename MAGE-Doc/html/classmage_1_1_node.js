@@ -40,7 +40,6 @@ var classmage_1_1_node =
     [ "Set", "classmage_1_1_node.html#aabbe500cdf7842b663bfcf034de25c5a", null ],
     [ "SetName", "classmage_1_1_node.html#a78e4ef8457d200662d2f4881cef08688", null ],
     [ "SetState", "classmage_1_1_node.html#a9511a52ddcc0bba71a0353338dcd1d9b", null ],
-    [ "NodeClient", "classmage_1_1_node.html#a6e6c0f9acf9f770577b16be7a41ae51e", null ],
     [ "m_childs", "classmage_1_1_node.html#a1d1d432f46c61932b5167d27d20cc383", null ],
     [ "m_components", "classmage_1_1_node.html#a804d53398f193b6b06f883131ab7415d", null ],
     [ "m_guid", "classmage_1_1_node.html#a3ef1876293074bfcc01104eb92f1bfdf", null ],

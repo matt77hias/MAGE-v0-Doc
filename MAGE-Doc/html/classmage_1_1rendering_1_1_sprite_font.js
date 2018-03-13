@@ -1,0 +1,26 @@
+var classmage_1_1rendering_1_1_sprite_font =
+[
+    [ "SpriteFont", "classmage_1_1rendering_1_1_sprite_font.html#a6080794a32e8e4fa4b2be7392a4e9466", null ],
+    [ "SpriteFont", "classmage_1_1rendering_1_1_sprite_font.html#a80cfc8c939ee3709f7a6f9441a5bd688", null ],
+    [ "SpriteFont", "classmage_1_1rendering_1_1_sprite_font.html#a9a2014908c6c63aa9d9ad223383bd03a", null ],
+    [ "~SpriteFont", "classmage_1_1rendering_1_1_sprite_font.html#a51ec0418e1456d7634c6540ccc801644", null ],
+    [ "ContainsCharacter", "classmage_1_1rendering_1_1_sprite_font.html#a6f9adb6806acc990ac3feaa547f7f296", null ],
+    [ "DrawText", "classmage_1_1rendering_1_1_sprite_font.html#a7fcea81ff14bc87c61688dda7ca56e85", null ],
+    [ "empty", "classmage_1_1rendering_1_1_sprite_font.html#acc6d1e6ea5d1cb5ca55154a3f4cdc70e", null ],
+    [ "Get", "classmage_1_1rendering_1_1_sprite_font.html#ab24067a24942427a39d88ca042da3484", null ],
+    [ "GetDefaultCharacter", "classmage_1_1rendering_1_1_sprite_font.html#af50e0ef59bf9d4be7b402c71609de497", null ],
+    [ "GetGlyph", "classmage_1_1rendering_1_1_sprite_font.html#aa56b305252b14f6ecf51738fccb16e93", null ],
+    [ "GetLineSpacing", "classmage_1_1rendering_1_1_sprite_font.html#af8a9229b449007440733cdd65d65b2f5", null ],
+    [ "InitializeSpriteFont", "classmage_1_1rendering_1_1_sprite_font.html#a832f140b987c30ef8f6a3b95afe52711", null ],
+    [ "MeasureDrawBounds", "classmage_1_1rendering_1_1_sprite_font.html#a661820d3d7b20a797966007cd712a76b", null ],
+    [ "MeasureText", "classmage_1_1rendering_1_1_sprite_font.html#a56471bbeedfa1982f05bf1b9055f74f1", null ],
+    [ "operator=", "classmage_1_1rendering_1_1_sprite_font.html#a3d0054493b983437a392c807523d744e", null ],
+    [ "operator=", "classmage_1_1rendering_1_1_sprite_font.html#a95317d173b64565c6cba865ca524fe2f", null ],
+    [ "SetDefaultCharacter", "classmage_1_1rendering_1_1_sprite_font.html#a7400d0574c96e4e204268d6cd5a5c356", null ],
+    [ "SetLineSpacing", "classmage_1_1rendering_1_1_sprite_font.html#a0dc7afe54ffa5f2215efc739ba8dc2ed", null ],
+    [ "size", "classmage_1_1rendering_1_1_sprite_font.html#a4f5191f82d228c41b5b6b1ca8215a4b2", null ],
+    [ "m_default_glyph", "classmage_1_1rendering_1_1_sprite_font.html#a0d60c46888b2b2a2c1787dcf6f0e041b", null ],
+    [ "m_glyphs", "classmage_1_1rendering_1_1_sprite_font.html#aba69731bf4701ab790b1575515de22b9", null ],
+    [ "m_line_spacing", "classmage_1_1rendering_1_1_sprite_font.html#acc3c1cefce72befc5c16db5ec39dd61f", null ],
+    [ "m_texture_srv", "classmage_1_1rendering_1_1_sprite_font.html#acdd3ca40befd9508a20011769046256e", null ]
+];

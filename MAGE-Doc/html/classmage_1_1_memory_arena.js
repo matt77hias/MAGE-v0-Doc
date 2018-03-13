@@ -1,7 +1,7 @@
 var classmage_1_1_memory_arena =
 [
     [ "Allocator", "classmage_1_1_memory_arena_1_1_allocator.html", "classmage_1_1_memory_arena_1_1_allocator" ],
-    [ "MemoryBlock", "classmage_1_1_memory_arena.html#a51f08f86660f163e2eef7c312e01700c", null ],
+    [ "MemoryBlock", "classmage_1_1_memory_arena.html#a133e9d40bd216e3f1d98c6a2b36cf373", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a139f7781be209bb29e7ad0ed04cb32a5", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a98829c5a87ba028c376f100cca09e876", null ],

@@ -34,13 +34,11 @@ const wstring \& \hyperlink{classmage_1_1_big_endian_binary_writer_a61a80be19c7b
 \item 
 {\footnotesize template$<$typename DataT $>$ }\\void \hyperlink{classmage_1_1_big_endian_binary_writer_a5df1ef09f8a9a452ffbe9fd3fad1a16a}{Write} (const DataT \&data)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\void \hyperlink{classmage_1_1_big_endian_binary_writer_abf767c3130c1b4060086f7c93ad95ef7}{Write\+Array} (const DataT $\ast$data, size\+\_\+t count)
+{\footnotesize template$<$typename DataT $>$ }\\void \hyperlink{classmage_1_1_big_endian_binary_writer_adc489a899f0add4b06ff6b669dc2ebd5}{Write\+Array} (gsl\+::span$<$ const DataT $>$ data)
 \item 
 void \hyperlink{classmage_1_1_big_endian_binary_writer_a869eff3f6e0666406bd5470af3e02096}{Write\+Character} (char c)
 \item 
-void \hyperlink{classmage_1_1_big_endian_binary_writer_a1a62be10de26eb77e1812e6807eb4c02}{Write\+String} (const char $\ast$str)
-\item 
-void \hyperlink{classmage_1_1_big_endian_binary_writer_a0cbee156086deb8999e609a2b355ff0e}{Write\+String} (const string \&str)
+void \hyperlink{classmage_1_1_big_endian_binary_writer_acf065a2e7462c9e6cf46849bd2c9d2e7}{Write\+String} (\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ \hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring} $>$ str)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -168,20 +166,15 @@ Writes the given data.
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to write the given data. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_big_endian_binary_writer_abf767c3130c1b4060086f7c93ad95ef7}{}\label{classmage_1_1_big_endian_binary_writer_abf767c3130c1b4060086f7c93ad95ef7} 
+\hypertarget{classmage_1_1_big_endian_binary_writer_adc489a899f0add4b06ff6b669dc2ebd5}{}\label{classmage_1_1_big_endian_binary_writer_adc489a899f0add4b06ff6b669dc2ebd5} 
 \index{mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}!Write\+Array@{Write\+Array}}
 \index{Write\+Array@{Write\+Array}!mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}}
 \subsubsection{\texorpdfstring{Write\+Array()}{WriteArray()}}
 {\footnotesize\ttfamily template$<$typename DataT $>$ \\
-void mage\+::\+Big\+Endian\+Binary\+Writer\+::\+Write\+Array (\begin{DoxyParamCaption}\item[{const DataT $\ast$}]{data,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+void mage\+::\+Big\+Endian\+Binary\+Writer\+::\+Write\+Array (\begin{DoxyParamCaption}\item[{gsl\+::span$<$ const DataT $>$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Writes the given data.
+Writes the given data array.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape data} is not equal to {\ttfamily nullptr}. 
-
-The array pointed to by {\itshape data} contains at least {\itshape count} elements. 
-\end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
 {\em DataT} & The data type. \\
@@ -189,9 +182,7 @@ The array pointed to by {\itshape data} contains at least {\itshape count} eleme
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em data} & A pointer to the data. \\
-\hline
-\mbox{\tt in}  & {\em count} & The number of data elements of {\ttfamily size(\+Data\+T)} to write. \\
+\mbox{\tt in}  & {\em data} & The data array. \\
 \hline
 \end{DoxyParams}
 
@@ -232,40 +223,19 @@ Starts writing.
 \end{DoxyExceptions}
 
 
-Implemented in \hyperlink{classmage_1_1loader_1_1_m_s_h_writer_ae1e53fa4139266fa88c9ee581dbf35b7}{mage\+::loader\+::\+M\+S\+H\+Writer$<$ Vertex\+T, Index\+T $>$}.
+Implemented in \hyperlink{classmage_1_1rendering_1_1loader_1_1_m_s_h_writer_ad61ee7097e1bfb52ca9a0697d2cd6a7e}{mage\+::rendering\+::loader\+::\+M\+S\+H\+Writer$<$ Vertex\+T, Index\+T $>$}.
 
-\hypertarget{classmage_1_1_big_endian_binary_writer_a1a62be10de26eb77e1812e6807eb4c02}{}\label{classmage_1_1_big_endian_binary_writer_a1a62be10de26eb77e1812e6807eb4c02} 
+\hypertarget{classmage_1_1_big_endian_binary_writer_acf065a2e7462c9e6cf46849bd2c9d2e7}{}\label{classmage_1_1_big_endian_binary_writer_acf065a2e7462c9e6cf46849bd2c9d2e7} 
 \index{mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}!Write\+String@{Write\+String}}
 \index{Write\+String@{Write\+String}!mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}}
-\subsubsection{\texorpdfstring{Write\+String()}{WriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Writer\+::\+Write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\subsubsection{\texorpdfstring{Write\+String()}{WriteString()}}
+{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Writer\+::\+Write\+String (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}$<$ \hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring} $>$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Writes the given string.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape str} is not equal to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the first null-\/terminated byte string to write. \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to write the given string. \\
-\hline
-\end{DoxyExceptions}
-\hypertarget{classmage_1_1_big_endian_binary_writer_a0cbee156086deb8999e609a2b355ff0e}{}\label{classmage_1_1_big_endian_binary_writer_a0cbee156086deb8999e609a2b355ff0e} 
-\index{mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}!Write\+String@{Write\+String}}
-\index{Write\+String@{Write\+String}!mage\+::\+Big\+Endian\+Binary\+Writer@{mage\+::\+Big\+Endian\+Binary\+Writer}}
-\subsubsection{\texorpdfstring{Write\+String()}{WriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Big\+Endian\+Binary\+Writer\+::\+Write\+String (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Writes the given string.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em str} & A reference to the string to write. \\
 \hline
 \end{DoxyParams}
 

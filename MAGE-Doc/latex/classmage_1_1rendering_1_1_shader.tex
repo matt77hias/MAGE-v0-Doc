@@ -1,0 +1,198 @@
+\hypertarget{classmage_1_1rendering_1_1_shader}{}\section{mage\+:\+:rendering\+:\+:Shader$<$ ShaderT, Pipeline\+StageT $>$ Class Template Reference}
+\label{classmage_1_1rendering_1_1_shader}\index{mage\+::rendering\+::\+Shader$<$ Shader\+T, Pipeline\+Stage\+T $>$@{mage\+::rendering\+::\+Shader$<$ Shader\+T, Pipeline\+Stage\+T $>$}}
+
+
+{\ttfamily \#include $<$shader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:rendering\+:\+:Shader$<$ ShaderT, Pipeline\+StageT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1rendering_1_1_shader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_shader_a00fe99edc760763ede9dd414b286c820}{Shader} (I\+D3\+D11\+Device \&device, wstring guid, const \hyperlink{classmage_1_1rendering_1_1_compiled_shader}{Compiled\+Shader} \&compiled\+\_\+shader)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_shader_a4ca3a1e4f108e38d28c0ba3df4f234f6}{Shader} (const \hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \&shader)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_shader_a65ecc5e4958ce06d7dfa8632dccc774f}{Shader} (\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \&\&shader) noexcept
+\item 
+virtual \hyperlink{classmage_1_1rendering_1_1_shader_af9774a6a1f073f0477c5f4e35f130181}{$\sim$\+Shader} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \& \hyperlink{classmage_1_1rendering_1_1_shader_a66253b5dd8a5ef1cd766512b4ab15e6c}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \&shader)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \& \hyperlink{classmage_1_1rendering_1_1_shader_a940217c505f3994d1f6057345d52cb36}{operator=} (\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} \&\&shader) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_shader_abb37464c991b9b49e94c93968e884f13}{Bind\+Shader} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_shader_ad8b71024d802eb02d9017d767da995d8}{Setup\+Shader} (I\+D3\+D11\+Device \&device, const \hyperlink{classmage_1_1rendering_1_1_compiled_shader}{Compiled\+Shader} \&compiled\+\_\+shader)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ ShaderT $>$ \hyperlink{classmage_1_1rendering_1_1_shader_a22463d933618984ca17cd30109839f96}{m\+\_\+shader}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename ShaderT, typename Pipeline\+StageT$>$\newline
+class mage\+::rendering\+::\+Shader$<$ Shader\+T, Pipeline\+Stage\+T $>$}
+
+A class of shaders.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ShaderT} & The shader type. \\
+\hline
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_shader_a00fe99edc760763ede9dd414b286c820}{}\label{classmage_1_1rendering_1_1_shader_a00fe99edc760763ede9dd414b286c820} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{wstring}]{guid,  }\item[{const \hyperlink{classmage_1_1rendering_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em guid} & The globally unique identifier. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A reference to the compiled shader. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to initialize this shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_shader_a4ca3a1e4f108e38d28c0ba3df4f234f6}{}\label{classmage_1_1rendering_1_1_shader_a4ca3a1e4f108e38d28c0ba3df4f234f6} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_shader}{Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a shader from the given shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_shader_a65ecc5e4958ce06d7dfa8632dccc774f}{}\label{classmage_1_1rendering_1_1_shader_a65ecc5e4958ce06d7dfa8632dccc774f} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_shader}{Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&\&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a shader by moving the given shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_shader_af9774a6a1f073f0477c5f4e35f130181}{}\label{classmage_1_1rendering_1_1_shader_af9774a6a1f073f0477c5f4e35f130181} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!````~Shader@{$\sim$\+Shader}}
+\index{````~Shader@{$\sim$\+Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Shader()}{~Shader()}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+virtual \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::$\sim$\hyperlink{classmage_1_1rendering_1_1_shader}{Shader} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this shader. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_shader_abb37464c991b9b49e94c93968e884f13}{}\label{classmage_1_1rendering_1_1_shader_abb37464c991b9b49e94c93968e884f13} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!Bind\+Shader@{Bind\+Shader}}
+\index{Bind\+Shader@{Bind\+Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{Bind\+Shader()}{BindShader()}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+void \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::Bind\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds this shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_shader_a66253b5dd8a5ef1cd766512b4ab15e6c}{}\label{classmage_1_1rendering_1_1_shader_a66253b5dd8a5ef1cd766512b4ab15e6c} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{classmage_1_1rendering_1_1_shader}{Shader}\& \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_shader}{Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given shader to this shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given shader (i.\+e. this shader). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_shader_a940217c505f3994d1f6057345d52cb36}{}\label{classmage_1_1rendering_1_1_shader_a940217c505f3994d1f6057345d52cb36} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{classmage_1_1rendering_1_1_shader}{Shader}\& \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_shader}{Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&\&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Moves the given shader to this shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em shader} & A reference to the shader to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved shader (i.\+e. this shader). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_shader_ad8b71024d802eb02d9017d767da995d8}{}\label{classmage_1_1rendering_1_1_shader_ad8b71024d802eb02d9017d767da995d8} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!Setup\+Shader@{Setup\+Shader}}
+\index{Setup\+Shader@{Setup\+Shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{Setup\+Shader()}{SetupShader()}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+void \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::Setup\+Shader (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{const \hyperlink{classmage_1_1rendering_1_1_compiled_shader}{Compiled\+Shader}$<$ ShaderT, Pipeline\+StageT $>$ \&}]{compiled\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Sets up this shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em compiled\+\_\+shader} & A reference to the compiled shader. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to setup this shader. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_shader_a22463d933618984ca17cd30109839f96}{}\label{classmage_1_1rendering_1_1_shader_a22463d933618984ca17cd30109839f96} 
+\index{mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}!m\+\_\+shader@{m\+\_\+shader}}
+\index{m\+\_\+shader@{m\+\_\+shader}!mage\+::rendering\+::\+Shader@{mage\+::rendering\+::\+Shader}}
+\subsubsection{\texorpdfstring{m\+\_\+shader}{m\_shader}}
+{\footnotesize\ttfamily template$<$typename ShaderT , typename Pipeline\+StageT $>$ \\
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ ShaderT $>$ \hyperlink{classmage_1_1rendering_1_1_shader}{mage\+::rendering\+::\+Shader}$<$ ShaderT, Pipeline\+StageT $>$\+::m\+\_\+shader\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the shader of this shader. 

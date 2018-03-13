@@ -15,17 +15,17 @@ Inheritance diagram for mage\+:\+:Behavior\+Script\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_behavior_script_a61e4825ba0fc7746d49faa44ed7bc481}{$\sim$\+Behavior\+Script} ()
 \item 
-\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{operator=} (const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&script)=delete
+\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_adb153676123adadacf023e4f3804abf5}{operator=} (const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&script) noexcept
 \item 
 \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_aefeae227ee8d2452bf05782604f5011e}{operator=} (\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&\&script) noexcept
 \item 
-virtual void \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8}{Load} ()
+virtual void \hyperlink{classmage_1_1_behavior_script_ae7864876b2ffb1d1d8d8a56e3099f1f2}{Load} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine)
 \item 
-virtual void \hyperlink{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c}{Fixed\+Update} ()
+virtual void \hyperlink{classmage_1_1_behavior_script_ae4b9cb7f3ee9f96d69682aef42f8bb12}{Fixed\+Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine)
 \item 
-virtual void \hyperlink{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time)
+virtual void \hyperlink{classmage_1_1_behavior_script_a1211b9f6a3cdc79ea6cd5fa0344a31c8}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time)
 \item 
-virtual void \hyperlink{classmage_1_1_behavior_script_aaf2b9f6666064f5b6a6e21b7f1623584}{Close} ()
+virtual void \hyperlink{classmage_1_1_behavior_script_a5a8d2d38b369e193bf8cc20a74708397}{Close} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -83,46 +83,57 @@ Constructs a behavior script by moving the given behavior script.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_behavior_script_aaf2b9f6666064f5b6a6e21b7f1623584}{}\label{classmage_1_1_behavior_script_aaf2b9f6666064f5b6a6e21b7f1623584} 
+\hypertarget{classmage_1_1_behavior_script_a5a8d2d38b369e193bf8cc20a74708397}{}\label{classmage_1_1_behavior_script_a5a8d2d38b369e193bf8cc20a74708397} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Close@{Close}}
 \index{Close@{Close}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Close()}{Close()}}
-{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Close (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Closes this behavior script. Allows this behavior script to preform any post-\/processing destruction.
 
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to close this behavior script. \\
 \hline
 \end{DoxyExceptions}
-
-
-Reimplemented in \hyperlink{classmage_1_1script_1_1_editor_script_af6093dd776e3822045f452515662463e}{mage\+::script\+::\+Editor\+Script}.
-
-\hypertarget{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c}{}\label{classmage_1_1_behavior_script_a8318f79ab78798ec37b39bc844f7138c} 
+\hypertarget{classmage_1_1_behavior_script_ae4b9cb7f3ee9f96d69682aef42f8bb12}{}\label{classmage_1_1_behavior_script_ae4b9cb7f3ee9f96d69682aef42f8bb12} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Fixed\+Update@{Fixed\+Update}}
 \index{Fixed\+Update@{Fixed\+Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
-{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Fixed\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Updates this behavior script.
 
 This method can be called zero, one or multiple times per frame depending on the fixed delta time used by the engine.
 
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to update this behavior script. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8}{}\label{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8} 
+\hypertarget{classmage_1_1_behavior_script_ae7864876b2ffb1d1d8d8a56e3099f1f2}{}\label{classmage_1_1_behavior_script_ae7864876b2ffb1d1d8d8a56e3099f1f2} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Load@{Load}}
 \index{Load@{Load}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Load()}{Load()}}
-{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Load (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Loads this behavior script. Allows this behavior script to preform any pre-\/processing.
 
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to load this behavior script. \\
@@ -130,13 +141,13 @@ Loads this behavior script. Allows this behavior script to preform any pre-\/pro
 \end{DoxyExceptions}
 
 
-Reimplemented in \hyperlink{classmage_1_1script_1_1_text_console_script_aaa7ab7c1859adc6532b6191c205d44ef}{mage\+::script\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1script_1_1_stats_script_aae0d11d30f1242d1f8d569b5b0894343}{mage\+::script\+::\+Stats\+Script}, \hyperlink{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9}{mage\+::script\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1script_1_1_rotation_script_a7a632d323f57f4f2f19c0562bd0656e1}{mage\+::script\+::\+Rotation\+Script}, \hyperlink{classmage_1_1script_1_1_character_motor_script_aa07409b305e1766b69134f7884be7395}{mage\+::script\+::\+Character\+Motor\+Script}, and \hyperlink{classmage_1_1script_1_1_manhattan_motor_script_aea733198d0f4b6e46815c3b91c3e8751}{mage\+::script\+::\+Manhattan\+Motor\+Script}.
+Reimplemented in \hyperlink{classmage_1_1script_1_1_text_console_script_a1e5a7bdff2d47b835932d7220a4e2571}{mage\+::script\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1script_1_1_stats_script_a4bfada754da5ca76591c5e7b9b0b1f51}{mage\+::script\+::\+Stats\+Script}, \hyperlink{classmage_1_1script_1_1_mouse_look_script_a00c8dc8ebaf67da13bd0bc45de3ad8b6}{mage\+::script\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1script_1_1_rotation_script_a7da4165e899facc981c0ee5b1f4a4453}{mage\+::script\+::\+Rotation\+Script}, \hyperlink{classmage_1_1script_1_1_character_motor_script_a20699adf280bed4bfadd4a89d7df33c1}{mage\+::script\+::\+Character\+Motor\+Script}, \hyperlink{classmage_1_1script_1_1_manhattan_motor_script_ac93b09e8f82932f7071b1f591a8004e9}{mage\+::script\+::\+Manhattan\+Motor\+Script}, and \hyperlink{classmage_1_1script_1_1_editor_script_af0804c603852f556d362f43e69240b2d}{mage\+::script\+::\+Editor\+Script}.
 
-\hypertarget{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{}\label{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51} 
+\hypertarget{classmage_1_1_behavior_script_adb153676123adadacf023e4f3804abf5}{}\label{classmage_1_1_behavior_script_adb153676123adadacf023e4f3804abf5} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}\& mage\+::\+Behavior\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& mage\+::\+Behavior\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 Copies the given behavior script to this behavior script.
 
@@ -164,11 +175,11 @@ Moves the given behavior script to this behavior script.
 \begin{DoxyReturn}{Returns}
 A reference to the moved behavior script (i.\+e. this behavior script). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6}{}\label{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6} 
+\hypertarget{classmage_1_1_behavior_script_a1211b9f6a3cdc79ea6cd5fa0344a31c8}{}\label{classmage_1_1_behavior_script_a1211b9f6a3cdc79ea6cd5fa0344a31c8} 
 \index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Update@{Update}}
 \index{Update@{Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Updates this behavior script.
 
@@ -176,6 +187,8 @@ This method is called once per frame.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
 \mbox{\tt in}  & {\em delta\+\_\+time} & The elapsed time since the previous update. \\
 \hline
 \end{DoxyParams}
@@ -186,5 +199,5 @@ This method is called once per frame.
 \end{DoxyExceptions}
 
 
-Reimplemented in \hyperlink{classmage_1_1script_1_1_text_console_script_afc3d3099761c9c96b1a87ca07f06ddec}{mage\+::script\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1script_1_1_stats_script_a0af94632cf9d5c32ae45799a2348c571}{mage\+::script\+::\+Stats\+Script}, \hyperlink{classmage_1_1script_1_1_mouse_look_script_a6d38748c21a6bc475e8ac31e24459053}{mage\+::script\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1script_1_1_rotation_script_a868768482599b478e8fd8afe371b6c54}{mage\+::script\+::\+Rotation\+Script}, \hyperlink{classmage_1_1script_1_1_character_motor_script_a75683c4b8db184174b48dd7e4989c016}{mage\+::script\+::\+Character\+Motor\+Script}, \hyperlink{classmage_1_1script_1_1_manhattan_motor_script_ae7fbaba1da04d00257e5d491868efc53}{mage\+::script\+::\+Manhattan\+Motor\+Script}, \hyperlink{classmage_1_1script_1_1_switch_scene_script_a4915aa35bad8aab3ba024f0babfe4933}{mage\+::script\+::\+Switch\+Scene\+Script$<$ Scene\+T $>$}, and \hyperlink{classmage_1_1script_1_1_editor_script_a6c8c31a738ed0dff9fd3418f55cef21c}{mage\+::script\+::\+Editor\+Script}.
+Reimplemented in \hyperlink{classmage_1_1script_1_1_text_console_script_a01603dc7fc00de34dcbe8df01eab8b6a}{mage\+::script\+::\+Text\+Console\+Script}, \hyperlink{classmage_1_1script_1_1_stats_script_a2a98901197fc1681103c5aa0fb3f11f4}{mage\+::script\+::\+Stats\+Script}, \hyperlink{classmage_1_1script_1_1_mouse_look_script_a7ccba133ce26a4aa1ff4f1ecea351d58}{mage\+::script\+::\+Mouse\+Look\+Script}, \hyperlink{classmage_1_1script_1_1_rotation_script_a80bf028bec300a71d016fd513233ba03}{mage\+::script\+::\+Rotation\+Script}, \hyperlink{classmage_1_1script_1_1_character_motor_script_a1b74be732ab9124abe53b8890cceb365}{mage\+::script\+::\+Character\+Motor\+Script}, \hyperlink{classmage_1_1script_1_1_manhattan_motor_script_a217112de68b2dd1ad4fb9cbebb0537f0}{mage\+::script\+::\+Manhattan\+Motor\+Script}, \hyperlink{classmage_1_1script_1_1_switch_scene_script_a6238958364d1d1448de0700ae9415e07}{mage\+::script\+::\+Switch\+Scene\+Script$<$ Scene\+T $>$}, and \hyperlink{classmage_1_1script_1_1_editor_script_a6212864947b7db1a01b19d2683106b36}{mage\+::script\+::\+Editor\+Script}.
 

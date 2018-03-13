@@ -7,7 +7,7 @@ var classmage_1_1_single_ended_memory_stack_1_1_allocator =
     [ "Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a445eaee8e10d872886de2f4194ecca72", null ],
     [ "Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#ac0dc5bf3c1c3293cf081e45ed28101dc", null ],
     [ "~Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a5b9721b0fb81964988f9f121d6372970", null ],
-    [ "Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a991173b1fccf74994dc9298b3cffb795", null ],
+    [ "Allocator", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a5e1c5692c525deba61702308b689f147", null ],
     [ "allocate", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a076727a4db2bd233d80ccbc5f01b84e5", null ],
     [ "allocate", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#abf93dd5bfcbda5c6d11703d212c89a76", null ],
     [ "deallocate", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#ae504db80c12f1b8aa0a4ebccae22b7b1", null ],
@@ -16,5 +16,5 @@ var classmage_1_1_single_ended_memory_stack_1_1_allocator =
     [ "operator=", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a43cdcfdfe7ee8d8f82f542245c6fc1d5", null ],
     [ "operator==", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a47f5e7baf66ddebc8aec402c6a9f1eef", null ],
     [ "SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a3f3449e5c2caa1666a293b36db6f5a54", null ],
-    [ "m_memory_stack", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#ac5d79f87385234430d25cdf004255d70", null ]
+    [ "m_memory_stack", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a23af772fad1588e6b4ead9c48bab36e2", null ]
 ];

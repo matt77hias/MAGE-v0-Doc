@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.129.0</span>
+   &#160;<span id="projectnumber">v0.134.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87830f09a97aa8f7df3074029c5ab8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd4e6cf2bdae4e57c9da428007fc4d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#aebd4e6cf2bdae4e57c9da428007fc4d7">VariableScript</a> (const <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &amp;variable_script)=delete</td></tr>
 <tr class="separator:aebd4e6cf2bdae4e57c9da428007fc4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb767379c723255dd07ff2a541bc5f90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#acb767379c723255dd07ff2a541bc5f90">VariableScript</a> (<a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &amp;&amp;variable_script)</td></tr>
-<tr class="separator:acb767379c723255dd07ff2a541bc5f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29cca638a32bccae00a9e53404158d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#ac29cca638a32bccae00a9e53404158d5">VariableScript</a> (<a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &amp;&amp;variable_script) noexcept</td></tr>
+<tr class="separator:ac29cca638a32bccae00a9e53404158d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7026e1283b1a1164f02fdc3e1f2b829"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#ae7026e1283b1a1164f02fdc3e1f2b829">~VariableScript</a> ()</td></tr>
 <tr class="separator:ae7026e1283b1a1164f02fdc3e1f2b829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae090b066ea939fc6611e77a47df6a97f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#ae090b066ea939fc6611e77a47df6a97f">operator=</a> (const <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &amp;variable_script)=delete</td></tr>
@@ -257,8 +257,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acb767379c723255dd07ff2a541bc5f90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb767379c723255dd07ff2a541bc5f90">&sect;&nbsp;</a></span>VariableScript() <span class="overload">[3/3]</span></h2>
+<a id="ac29cca638a32bccae00a9e53404158d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29cca638a32bccae00a9e53404158d5">&sect;&nbsp;</a></span>VariableScript() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +276,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -386,7 +386,7 @@ template&lt;typename T  = void&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks whether this variable script has a variable with the given name and type.</p>
+<p>Checks whether this variable script contains a variable with the given name and type (if specified).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of the variable. </td></tr>
@@ -502,7 +502,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the value of the given variable in this variable script.</p>
+<p>Returns the value of the given variable of this variable script.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of the variable. </td></tr>
@@ -515,7 +515,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if no variable with the name <em>name</em> exists in this variable script. </dd>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if this variable script does not contain a variable corresponding to the given name. </dd>
 <dd>
 A pointer to the value of the variable. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
@@ -635,7 +635,7 @@ A pointer to the value of the variable. </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -668,7 +668,7 @@ A pointer to the value of the variable. </dd></dl>
 <p>Removes the given variable from this variable script.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the variable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A reference to the name of the variable. </td></tr>
   </table>
   </dd>
 </dl>
@@ -742,7 +742,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Nothing happens if no variable with the name <em>name</em> exists in this variable script. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Nothing happens if this variable script does not contain a variable corresponding to the given name. </dd></dl>
 
 </div>
 </div>
@@ -793,7 +793,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A map containing the variables in this variable script. </p>
+<p>A map containing the variables of this variable script. </p>
 
 </div>
 </div>

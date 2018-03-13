@@ -1,0 +1,200 @@
+\hypertarget{classmage_1_1rendering_1_1_texture}{}\section{mage\+:\+:rendering\+:\+:Texture Class Reference}
+\label{classmage_1_1rendering_1_1_texture}\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+
+
+{\ttfamily \#include $<$texture.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:rendering\+:\+:Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1rendering_1_1_texture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture_aedb80382410d26a47574d5032b33b981}{Texture} (I\+D3\+D11\+Device \&device, wstring fname)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture_af8c954ea3d15176b57c2fee0fbf99649}{Texture} (I\+D3\+D11\+Device \&device, wstring guid, const D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \&desc, const D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA \&initial\+\_\+data)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture_adde9e2339d2c10f1fc527a0d8d41d335}{Texture} (const \hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&texture)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture_a25eb2aa2277478fb5c17af996d509c57}{Texture} (\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&\&texture) noexcept
+\item 
+virtual \hyperlink{classmage_1_1rendering_1_1_texture_af0ca576b1131fc0ac70725127b4fa7e4}{$\sim$\+Texture} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \& \hyperlink{classmage_1_1rendering_1_1_texture_a8d6af2ca731e11e2f0ef382bc8417234}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&texture)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \& \hyperlink{classmage_1_1rendering_1_1_texture_a8c9062f5d8045272c254eb0fa1ab4feb}{operator=} (\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&\&texture) noexcept
+\item 
+I\+D3\+D11\+Shader\+Resource\+View $\ast$ \hyperlink{classmage_1_1rendering_1_1_texture_a7180e555c8e9ba55b364aa0a395d9ab8}{Get} () const noexcept
+\item 
+{\footnotesize template$<$typename Pipeline\+StageT $>$ }\\void \hyperlink{classmage_1_1rendering_1_1_texture_a2189fabd729f433b96b62fa409968677}{Bind} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} slot) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ \hyperlink{classmage_1_1rendering_1_1_texture_a71312b72f42a9a6a90c0b4555e586308}{m\+\_\+texture\+\_\+srv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of textures. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_texture_aedb80382410d26a47574d5032b33b981}{}\label{classmage_1_1rendering_1_1_texture_aedb80382410d26a47574d5032b33b981} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{wstring}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em fname} & The filename (the globally unique identifier). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to construct the texture. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_texture_af8c954ea3d15176b57c2fee0fbf99649}{}\label{classmage_1_1rendering_1_1_texture_af8c954ea3d15176b57c2fee0fbf99649} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{wstring}]{guid,  }\item[{const D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \&}]{desc,  }\item[{const D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA \&}]{initial\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a 2D texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em guid} & The globally unique identifier. \\
+\hline
+\mbox{\tt in}  & {\em desc} & A reference to the texture descriptor. \\
+\hline
+\mbox{\tt in}  & {\em initial\+\_\+data} & A reference to the initial data. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to construct the texture. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_texture_adde9e2339d2c10f1fc527a0d8d41d335}{}\label{classmage_1_1rendering_1_1_texture_adde9e2339d2c10f1fc527a0d8d41d335} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a texture from the given texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A reference to the texture to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_texture_a25eb2aa2277478fb5c17af996d509c57}{}\label{classmage_1_1rendering_1_1_texture_a25eb2aa2277478fb5c17af996d509c57} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&\&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a texture by moving the given texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A reference to the texture to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_texture_af0ca576b1131fc0ac70725127b4fa7e4}{}\label{classmage_1_1rendering_1_1_texture_af0ca576b1131fc0ac70725127b4fa7e4} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{$\sim$\+Texture()}{~Texture()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Destructs this texture. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_texture_a2189fabd729f433b96b62fa409968677}{}\label{classmage_1_1rendering_1_1_texture_a2189fabd729f433b96b62fa409968677} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Bind@{Bind}}
+\index{Bind@{Bind}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily template$<$typename Pipeline\+StageT $>$ \\
+void mage\+::rendering\+::\+Texture\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{slot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds this texture.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape slot} $<$ {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Pipeline\+StageT} & The pipeline stage type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em slot} & The index into the device\textquotesingle{}s zero-\/based array to set the shader resource view to (ranges from 0 to {\ttfamily D3\+D11\+\_\+\+C\+O\+M\+M\+O\+N\+S\+H\+A\+D\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+L\+O\+T\+\_\+\+C\+O\+U\+NT} -\/ 1). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_texture_a7180e555c8e9ba55b364aa0a395d9ab8}{}\label{classmage_1_1rendering_1_1_texture_a7180e555c8e9ba55b364aa0a395d9ab8} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!Get@{Get}}
+\index{Get@{Get}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Shader\+Resource\+View$\ast$ mage\+::rendering\+::\+Texture\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a pointer to the shader resource view of this texture.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the shader resource view of this texture. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_texture_a8d6af2ca731e11e2f0ef382bc8417234}{}\label{classmage_1_1rendering_1_1_texture_a8d6af2ca731e11e2f0ef382bc8417234} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_texture}{Texture}\& mage\+::rendering\+::\+Texture\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given texture to this texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A reference to the texture to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given texture (i.\+e. this texture). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_texture_a8c9062f5d8045272c254eb0fa1ab4feb}{}\label{classmage_1_1rendering_1_1_texture_a8c9062f5d8045272c254eb0fa1ab4feb} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \& mage\+::rendering\+::\+Texture\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_texture}{Texture} \&\&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given texture to this texture.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A reference to the texture to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved texture (i.\+e. this texture). 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_texture_a71312b72f42a9a6a90c0b4555e586308}{}\label{classmage_1_1rendering_1_1_texture_a71312b72f42a9a6a90c0b4555e586308} 
+\index{mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}!m\+\_\+texture\+\_\+srv@{m\+\_\+texture\+\_\+srv}}
+\index{m\+\_\+texture\+\_\+srv@{m\+\_\+texture\+\_\+srv}!mage\+::rendering\+::\+Texture@{mage\+::rendering\+::\+Texture}}
+\subsubsection{\texorpdfstring{m\+\_\+texture\+\_\+srv}{m\_texture\_srv}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Shader\+Resource\+View $>$ mage\+::rendering\+::\+Texture\+::m\+\_\+texture\+\_\+srv\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the shader resource view of this texture. 

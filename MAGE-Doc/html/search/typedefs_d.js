@@ -8,5 +8,6 @@ var searchData=
   ['s64',['S64',['../namespacemage.html#a38d4d411c173c8978eb356d2412b32dd',1,'mage']]],
   ['s8',['S8',['../namespacemage.html#a20766a773cfd6c14d8f2344d4631b89c',1,'mage']]],
   ['sharedhandle',['SharedHandle',['../namespacemage.html#ae70b3368a2dccc985c4ecbdf15a1a3c9',1,'mage']]],
-  ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]]
+  ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]],
+  ['spritefontptr',['SpriteFontPtr',['../namespacemage_1_1rendering.html#ab2f34196c20422ca3692ad3f3bff3a5d',1,'mage::rendering']]]
 ];

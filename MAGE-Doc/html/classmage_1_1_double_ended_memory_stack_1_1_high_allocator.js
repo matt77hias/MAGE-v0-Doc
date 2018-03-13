@@ -7,7 +7,7 @@ var classmage_1_1_double_ended_memory_stack_1_1_high_allocator =
     [ "HighAllocator", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a9b036295101c4f271f30236b3cae9a1b", null ],
     [ "HighAllocator", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a6210e1fbac98efbf26ddf6cbe8fe6be8", null ],
     [ "~HighAllocator", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#ae329a13c09bf81bddcf708239bbe26da", null ],
-    [ "HighAllocator", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a6d51325f813c70290379dcb472d093c3", null ],
+    [ "HighAllocator", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a6903aacd7e38597edb9145e73f3099be", null ],
     [ "allocate", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#ab6585eebb7bb11dcee1945b11b50ea98", null ],
     [ "allocate", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#aa9a062e9a044a1695f171a7d801352e8", null ],
     [ "deallocate", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a83581ea8c009f8fa5b623be7ffeb6c53", null ],
@@ -16,5 +16,5 @@ var classmage_1_1_double_ended_memory_stack_1_1_high_allocator =
     [ "operator=", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#aa596d086d499f6c9369edecc4aa22882", null ],
     [ "operator==", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a452887cb961e5a0f6919d0497c0e2617", null ],
     [ "DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a10ae729d55b8c0017057250445835680", null ],
-    [ "m_memory_stack", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a068864bc36afb8d749c71c6814a1b5c9", null ]
+    [ "m_memory_stack", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a5210ee9e229a0d91fc159ea3abb5fcbf", null ]
 ];

@@ -1,0 +1,293 @@
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass}{}\section{mage\+:\+:rendering\+:\+:Bounding\+Volume\+Pass Class Reference}
+\label{classmage_1_1rendering_1_1_bounding_volume_pass}\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+
+
+{\ttfamily \#include $<$bounding\+\_\+volume\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_ac612308d7f54297f2357b0071699979d}{Bounding\+Volume\+Pass} (I\+D3\+D11\+Device \&device, I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&state\+\_\+manager, \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a038625bc0d88f87debee24f888c5e8a5}{Bounding\+Volume\+Pass} (const \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a16f91c871dabbf6904606abad24d551f}{Bounding\+Volume\+Pass} (\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a6a70806bfad252e2a6409c94a0de7da7}{$\sim$\+Bounding\+Volume\+Pass} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_af6651287f16a21d755c8e304f4997fcf}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a39c5dffd1a1381672e3dbc14eb07c8cf}{operator=} (\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&\&pass) noexcept
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_af3b780430cc6e79f21e64a2fc037a1e1}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a117de59e78f7219b10795678eeacff34}{Bind\+Fixed\+State} () const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a0bf1d814b3ebb56a6076bfb1cb27de8d}{Bind\+Light\+Color} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a5b889af6dc3c58aecdd619dee69feca0}{Bind\+Model\+Color} ()
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a52c5852cfc290c5d07059537a26b71ea}{Bind\+Color} (const \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} \&color)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_aa43435b88597d4d9a59047f4558c4bab}{Bind\+Transform} (F\+X\+M\+M\+A\+T\+R\+IX cube\+\_\+to\+\_\+world)
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_aad91ae836c4c556ec7ec3f477c139e6e}{Render} (const \hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, F\+X\+M\+M\+A\+T\+R\+IX object\+\_\+to\+\_\+world)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_add230562e9ecd5454a7a2af73cd33f3f}{m\+\_\+device\+\_\+context}
+\item 
+std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a9e27e086186f11b111204323c162f9aa}{m\+\_\+state\+\_\+manager}
+\item 
+\hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_aed191e277603f097bcd55501339fd279}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a3faf9a381430a40cf6044ae91bd5d31d}{m\+\_\+ps}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_aac94b66aef4f01245c8526392a61cd88}{m\+\_\+color\+\_\+buffer}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass_a814cde2a674f4c6e4052e5af740253b3}{m\+\_\+transform\+\_\+buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of bounding volume passes for rendering model and finite light volumes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_ac612308d7f54297f2357b0071699979d}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_ac612308d7f54297f2357b0071699979d} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}}
+\index{Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bounding\+Volume\+Pass()}{BoundingVolumePass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bounding\+Volume\+Pass (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{state\+\_\+manager,  }\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em state\+\_\+manager} & A reference to the state manager. \\
+\hline
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a038625bc0d88f87debee24f888c5e8a5}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a038625bc0d88f87debee24f888c5e8a5} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}}
+\index{Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bounding\+Volume\+Pass()}{BoundingVolumePass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bounding\+Volume\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a bounding volume pass from the given bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the bounding volume pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a16f91c871dabbf6904606abad24d551f}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a16f91c871dabbf6904606abad24d551f} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}}
+\index{Bounding\+Volume\+Pass@{Bounding\+Volume\+Pass}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bounding\+Volume\+Pass()}{BoundingVolumePass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bounding\+Volume\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a bounding volume pass by moving the given bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the bounding volume pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a6a70806bfad252e2a6409c94a0de7da7}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a6a70806bfad252e2a6409c94a0de7da7} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!````~Bounding\+Volume\+Pass@{$\sim$\+Bounding\+Volume\+Pass}}
+\index{````~Bounding\+Volume\+Pass@{$\sim$\+Bounding\+Volume\+Pass}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Bounding\+Volume\+Pass()}{~BoundingVolumePass()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::$\sim$\+Bounding\+Volume\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this bounding volume pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a52c5852cfc290c5d07059537a26b71ea}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a52c5852cfc290c5d07059537a26b71ea} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bind\+Color@{Bind\+Color}}
+\index{Bind\+Color@{Bind\+Color}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Color()}{BindColor()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the color of this bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em color} & A reference to the color. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the light color of this bounding volume pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a117de59e78f7219b10795678eeacff34}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a117de59e78f7219b10795678eeacff34} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a0bf1d814b3ebb56a6076bfb1cb27de8d}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a0bf1d814b3ebb56a6076bfb1cb27de8d} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bind\+Light\+Color@{Bind\+Light\+Color}}
+\index{Bind\+Light\+Color@{Bind\+Light\+Color}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Light\+Color()}{BindLightColor()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Light\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the light color of this bounding volume pass.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the light color of this bounding volume pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a5b889af6dc3c58aecdd619dee69feca0}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a5b889af6dc3c58aecdd619dee69feca0} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bind\+Model\+Color@{Bind\+Model\+Color}}
+\index{Bind\+Model\+Color@{Bind\+Model\+Color}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Model\+Color()}{BindModelColor()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Model\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the model color of this bounding volume pass.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the model color of this bounding volume pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_aa43435b88597d4d9a59047f4558c4bab}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_aa43435b88597d4d9a59047f4558c4bab} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Bind\+Transform@{Bind\+Transform}}
+\index{Bind\+Transform@{Bind\+Transform}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Transform()}{BindTransform()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Bind\+Transform (\begin{DoxyParamCaption}\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{cube\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Binds the transform of this bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cube\+\_\+to\+\_\+world} & The cube-\/to-\/world transformation matrix used for transforming cube vertices. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the transform of this bounding volume pass. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_af6651287f16a21d755c8e304f4997fcf}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_af6651287f16a21d755c8e304f4997fcf} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass}\& mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given bounding volume pass to this bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the bounding volume pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given bounding volume pass (i.\+e. this bounding volume pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a39c5dffd1a1381672e3dbc14eb07c8cf}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a39c5dffd1a1381672e3dbc14eb07c8cf} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \& mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_bounding_volume_pass}{Bounding\+Volume\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given bounding volume pass to this bounding volume pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the bounding volume pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved bounding volume pass (i.\+e. this bounding volume pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_af3b780430cc6e79f21e64a2fc037a1e1}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_af3b780430cc6e79f21e64a2fc037a1e1} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection }\end{DoxyParamCaption})}
+
+Renders the world.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world} & A reference to the world. \\
+\hline
+\mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the world. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_aad91ae836c4c556ec7ec3f477c139e6e}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_aad91ae836c4c556ec7ec3f477c139e6e} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{object\+\_\+to\+\_\+world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Renders the given \hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em object\+\_\+to\+\_\+world} & The object-\/to-\/world transformation matrix. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to bind the render the given \hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_aac94b66aef4f01245c8526392a61cd88}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_aac94b66aef4f01245c8526392a61cd88} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}}
+\index{m\+\_\+color\+\_\+buffer@{m\+\_\+color\+\_\+buffer}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+color\+\_\+buffer}{m\_color\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA} $>$ mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The color buffer of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_add230562e9ecd5454a7a2af73cd33f3f}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_add230562e9ecd5454a7a2af73cd33f3f} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device context of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a3faf9a381430a40cf6044ae91bd5d31d}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a3faf9a381430a40cf6044ae91bd5d31d} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a9e27e086186f11b111204323c162f9aa}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a9e27e086186f11b111204323c162f9aa} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
+\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the state manager of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_a814cde2a674f4c6e4052e5af740253b3}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_a814cde2a674f4c6e4052e5af740253b3} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}}
+\index{m\+\_\+transform\+\_\+buffer@{m\+\_\+transform\+\_\+buffer}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+transform\+\_\+buffer}{m\_transform\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ X\+M\+M\+A\+T\+R\+IX $>$ mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+transform\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+The transform buffer of this bounding volume pass. \hypertarget{classmage_1_1rendering_1_1_bounding_volume_pass_aed191e277603f097bcd55501339fd279}{}\label{classmage_1_1rendering_1_1_bounding_volume_pass_aed191e277603f097bcd55501339fd279} 
+\index{mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::rendering\+::\+Bounding\+Volume\+Pass@{mage\+::rendering\+::\+Bounding\+Volume\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} mage\+::rendering\+::\+Bounding\+Volume\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this bounding volume pass. 

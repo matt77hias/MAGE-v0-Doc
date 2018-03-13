@@ -29,13 +29,13 @@ enum \hyperlink{classmage_1_1script_1_1_rotation_script_a54e1d1d0af65f43f5bc5ad6
 \item 
 virtual \hyperlink{classmage_1_1script_1_1_rotation_script_a7deb74070c49b78b0b91e3599ee8a0b7}{$\sim$\+Rotation\+Script} ()
 \item 
-\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& \hyperlink{classmage_1_1script_1_1_rotation_script_afa4e9fcddf4f20f6c471dfd5fed1610f}{operator=} (const \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&script)=delete
+\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& \hyperlink{classmage_1_1script_1_1_rotation_script_a9302878671d095bab0c31a379ad7d964}{operator=} (const \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&script) noexcept
 \item 
-\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& \hyperlink{classmage_1_1script_1_1_rotation_script_a72642ac8b1f210ab4eb7feb67238a1bb}{operator=} (\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&\&script)=delete
+\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& \hyperlink{classmage_1_1script_1_1_rotation_script_af75323393f7570b9fcee0cd62c4f76bd}{operator=} (\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&\&script) noexcept
 \item 
-virtual void \hyperlink{classmage_1_1script_1_1_rotation_script_a7a632d323f57f4f2f19c0562bd0656e1}{Load} () override
+virtual void \hyperlink{classmage_1_1script_1_1_rotation_script_a7da4165e899facc981c0ee5b1f4a4453}{Load} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine) override
 \item 
-virtual void \hyperlink{classmage_1_1script_1_1_rotation_script_a868768482599b478e8fd8afe371b6c54}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time) override
+virtual void \hyperlink{classmage_1_1script_1_1_rotation_script_a80bf028bec300a71d016fd513233ba03}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time) override
 \item 
 \hyperlink{classmage_1_1script_1_1_rotation_script_a54e1d1d0af65f43f5bc5ad65a4b9c00a}{Rotation\+Axis} \hyperlink{classmage_1_1script_1_1_rotation_script_ac2ef46249d59b379f47336eb250f3a28}{Get\+Rotation\+Axis} () const noexcept
 \item 
@@ -106,14 +106,19 @@ Z&\\
 \subsubsection{\texorpdfstring{Get\+Rotation\+Axis()}{GetRotationAxis()}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_rotation_script_a54e1d1d0af65f43f5bc5ad65a4b9c00a}{Rotation\+Axis} mage\+::script\+::\+Rotation\+Script\+::\+Get\+Rotation\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_rotation_script_a7a632d323f57f4f2f19c0562bd0656e1}{}\label{classmage_1_1script_1_1_rotation_script_a7a632d323f57f4f2f19c0562bd0656e1} 
+\hypertarget{classmage_1_1script_1_1_rotation_script_a7da4165e899facc981c0ee5b1f4a4453}{}\label{classmage_1_1script_1_1_rotation_script_a7da4165e899facc981c0ee5b1f4a4453} 
 \index{mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}!Load@{Load}}
 \index{Load@{Load}!mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}}
 \subsubsection{\texorpdfstring{Load()}{Load()}}
-{\footnotesize\ttfamily void mage\+::script\+::\+Rotation\+Script\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::script\+::\+Rotation\+Script\+::\+Load (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Loads this behavior script. Allows this behavior script to preform any pre-\/processing.
 
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to load this behavior script. \\
@@ -121,19 +126,19 @@ Loads this behavior script. Allows this behavior script to preform any pre-\/pro
 \end{DoxyExceptions}
 
 
-Reimplemented from \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8}{mage\+::\+Behavior\+Script}.
+Reimplemented from \hyperlink{classmage_1_1_behavior_script_ae7864876b2ffb1d1d8d8a56e3099f1f2}{mage\+::\+Behavior\+Script}.
 
-\hypertarget{classmage_1_1script_1_1_rotation_script_afa4e9fcddf4f20f6c471dfd5fed1610f}{}\label{classmage_1_1script_1_1_rotation_script_afa4e9fcddf4f20f6c471dfd5fed1610f} 
+\hypertarget{classmage_1_1script_1_1_rotation_script_a9302878671d095bab0c31a379ad7d964}{}\label{classmage_1_1script_1_1_rotation_script_a9302878671d095bab0c31a379ad7d964} 
 \index{mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script}\& mage\+::script\+::\+Rotation\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& mage\+::script\+::\+Rotation\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_rotation_script_a72642ac8b1f210ab4eb7feb67238a1bb}{}\label{classmage_1_1script_1_1_rotation_script_a72642ac8b1f210ab4eb7feb67238a1bb} 
+\hypertarget{classmage_1_1script_1_1_rotation_script_af75323393f7570b9fcee0cd62c4f76bd}{}\label{classmage_1_1script_1_1_rotation_script_af75323393f7570b9fcee0cd62c4f76bd} 
 \index{mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script}\& mage\+::script\+::\+Rotation\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \& mage\+::script\+::\+Rotation\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_rotation_script}{Rotation\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1script_1_1_rotation_script_aa4b49dc5e34da3e851d5aefc4c4a434b}{}\label{classmage_1_1script_1_1_rotation_script_aa4b49dc5e34da3e851d5aefc4c4a434b} 
 \index{mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}!Set\+Rotation\+Axis@{Set\+Rotation\+Axis}}
@@ -141,11 +146,11 @@ Reimplemented from \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9
 \subsubsection{\texorpdfstring{Set\+Rotation\+Axis()}{SetRotationAxis()}}
 {\footnotesize\ttfamily void mage\+::script\+::\+Rotation\+Script\+::\+Set\+Rotation\+Axis (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_rotation_script_a54e1d1d0af65f43f5bc5ad65a4b9c00a}{Rotation\+Axis}}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_rotation_script_a868768482599b478e8fd8afe371b6c54}{}\label{classmage_1_1script_1_1_rotation_script_a868768482599b478e8fd8afe371b6c54} 
+\hypertarget{classmage_1_1script_1_1_rotation_script_a80bf028bec300a71d016fd513233ba03}{}\label{classmage_1_1script_1_1_rotation_script_a80bf028bec300a71d016fd513233ba03} 
 \index{mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}!Update@{Update}}
 \index{Update@{Update}!mage\+::script\+::\+Rotation\+Script@{mage\+::script\+::\+Rotation\+Script}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void mage\+::script\+::\+Rotation\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::script\+::\+Rotation\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Updates this behavior script.
 
@@ -153,6 +158,8 @@ This method is called once per frame.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
 \mbox{\tt in}  & {\em delta\+\_\+time} & The elapsed time since the previous update. \\
 \hline
 \end{DoxyParams}
@@ -163,7 +170,7 @@ This method is called once per frame.
 \end{DoxyExceptions}
 
 
-Reimplemented from \hyperlink{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6}{mage\+::\+Behavior\+Script}.
+Reimplemented from \hyperlink{classmage_1_1_behavior_script_a1211b9f6a3cdc79ea6cd5fa0344a31c8}{mage\+::\+Behavior\+Script}.
 
 
 

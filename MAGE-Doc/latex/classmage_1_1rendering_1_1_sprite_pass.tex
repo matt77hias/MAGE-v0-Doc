@@ -1,0 +1,191 @@
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass}{}\section{mage\+:\+:rendering\+:\+:Sprite\+Pass Class Reference}
+\label{classmage_1_1rendering_1_1_sprite_pass}\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+
+
+{\ttfamily \#include $<$sprite\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass_ae247bfa4b2b13a874e080d53e271e974}{Sprite\+Pass} (I\+D3\+D11\+Device \&device, I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&state\+\_\+manager, \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass_a9352291e5364fc157e4b2a1cd1184d8d}{Sprite\+Pass} (const \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass_ae8b938a091647c5540fa2ca8bf955556}{Sprite\+Pass} (\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass_ac838dec1c351d3d4f0fdcc38ef98dc1f}{$\sim$\+Sprite\+Pass} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a33cd3abf007bafb47d76524096e24eca}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a17566d8f281862629f095211bad18b9e}{operator=} (\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&\&pass) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a9b4dbd8c8d0a8942976b6d0c0df7aa3d}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a76d7ea36f7e24283411dc90686238136}{Bind\+Fixed\+State} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a9e8435cadd9b3484d9845690204c5706}{m\+\_\+device\+\_\+context}
+\item 
+std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a60241eeab6141da050b1c61979894539}{m\+\_\+state\+\_\+manager}
+\item 
+\hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a05c13379108ffa463958e8addabdcccf}{m\+\_\+vs}
+\item 
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_sprite_pass_aac258f752dde77f0e428b8d8725b8e66}{m\+\_\+ps}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch} \hyperlink{classmage_1_1rendering_1_1_sprite_pass_a458633552d664181db78adb6c52a5f22}{m\+\_\+sprite\+\_\+batch}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of sprite passes for rendering sprites. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_ae247bfa4b2b13a874e080d53e271e974}{}\label{classmage_1_1rendering_1_1_sprite_pass_ae247bfa4b2b13a874e080d53e271e974} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!Sprite\+Pass@{Sprite\+Pass}}
+\index{Sprite\+Pass@{Sprite\+Pass}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{Sprite\+Pass()}{SpritePass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Pass\+::\+Sprite\+Pass (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{state\+\_\+manager,  }\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a sprite pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em state\+\_\+manager} & A reference to the state manager. \\
+\hline
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_a9352291e5364fc157e4b2a1cd1184d8d}{}\label{classmage_1_1rendering_1_1_sprite_pass_a9352291e5364fc157e4b2a1cd1184d8d} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!Sprite\+Pass@{Sprite\+Pass}}
+\index{Sprite\+Pass@{Sprite\+Pass}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{Sprite\+Pass()}{SpritePass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Pass\+::\+Sprite\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a sprite pass from the given sprite pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sprite pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_ae8b938a091647c5540fa2ca8bf955556}{}\label{classmage_1_1rendering_1_1_sprite_pass_ae8b938a091647c5540fa2ca8bf955556} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!Sprite\+Pass@{Sprite\+Pass}}
+\index{Sprite\+Pass@{Sprite\+Pass}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{Sprite\+Pass()}{SpritePass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Pass\+::\+Sprite\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a sprite pass by moving the given sprite pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sprite pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_ac838dec1c351d3d4f0fdcc38ef98dc1f}{}\label{classmage_1_1rendering_1_1_sprite_pass_ac838dec1c351d3d4f0fdcc38ef98dc1f} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!````~Sprite\+Pass@{$\sim$\+Sprite\+Pass}}
+\index{````~Sprite\+Pass@{$\sim$\+Sprite\+Pass}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Sprite\+Pass()}{~SpritePass()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Pass\+::$\sim$\+Sprite\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this sprite pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_a76d7ea36f7e24283411dc90686238136}{}\label{classmage_1_1rendering_1_1_sprite_pass_a76d7ea36f7e24283411dc90686238136} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this sprite pass. \hypertarget{classmage_1_1rendering_1_1_sprite_pass_a33cd3abf007bafb47d76524096e24eca}{}\label{classmage_1_1rendering_1_1_sprite_pass_a33cd3abf007bafb47d76524096e24eca} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass}\& mage\+::rendering\+::\+Sprite\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given sprite pass to this sprite pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sprite pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite pass (i.\+e. this sprite pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_a17566d8f281862629f095211bad18b9e}{}\label{classmage_1_1rendering_1_1_sprite_pass_a17566d8f281862629f095211bad18b9e} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \& mage\+::rendering\+::\+Sprite\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_sprite_pass}{Sprite\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given sprite pass to this sprite pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the sprite pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved sprite pass (i.\+e. this sprite pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_a9b4dbd8c8d0a8942976b6d0c0df7aa3d}{}\label{classmage_1_1rendering_1_1_sprite_pass_a9b4dbd8c8d0a8942976b6d0c0df7aa3d} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world }\end{DoxyParamCaption})}
+
+Renders the world.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world} & A reference to the world. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the world. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_sprite_pass_a9e8435cadd9b3484d9845690204c5706}{}\label{classmage_1_1rendering_1_1_sprite_pass_a9e8435cadd9b3484d9845690204c5706} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ mage\+::rendering\+::\+Sprite\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device context of this sprite pass. \hypertarget{classmage_1_1rendering_1_1_sprite_pass_aac258f752dde77f0e428b8d8725b8e66}{}\label{classmage_1_1rendering_1_1_sprite_pass_aac258f752dde77f0e428b8d8725b8e66} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Sprite\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this sprite pass. \hypertarget{classmage_1_1rendering_1_1_sprite_pass_a458633552d664181db78adb6c52a5f22}{}\label{classmage_1_1rendering_1_1_sprite_pass_a458633552d664181db78adb6c52a5f22} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!m\+\_\+sprite\+\_\+batch@{m\+\_\+sprite\+\_\+batch}}
+\index{m\+\_\+sprite\+\_\+batch@{m\+\_\+sprite\+\_\+batch}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+sprite\+\_\+batch}{m\_sprite\_batch}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch} mage\+::rendering\+::\+Sprite\+Pass\+::m\+\_\+sprite\+\_\+batch\hspace{0.3cm}{\ttfamily [private]}}
+
+The sprite batch of this sprite pass. \hypertarget{classmage_1_1rendering_1_1_sprite_pass_a60241eeab6141da050b1c61979894539}{}\label{classmage_1_1rendering_1_1_sprite_pass_a60241eeab6141da050b1c61979894539} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
+\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ mage\+::rendering\+::\+Sprite\+Pass\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the state manager of this sprite pass. \hypertarget{classmage_1_1rendering_1_1_sprite_pass_a05c13379108ffa463958e8addabdcccf}{}\label{classmage_1_1rendering_1_1_sprite_pass_a05c13379108ffa463958e8addabdcccf} 
+\index{mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::rendering\+::\+Sprite\+Pass@{mage\+::rendering\+::\+Sprite\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} mage\+::rendering\+::\+Sprite\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this sprite pass. 

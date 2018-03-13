@@ -29,13 +29,13 @@ enum \hyperlink{classmage_1_1script_1_1_mouse_look_script_a662018db64c5dc84a958e
 \item 
 virtual \hyperlink{classmage_1_1script_1_1_mouse_look_script_a29a6d2cb4742fbf745822d015e72484f}{$\sim$\+Mouse\+Look\+Script} ()
 \item 
-\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a}{operator=} (const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&script)=delete
+\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_a08731370926cbaee931170fd3fb108e6}{operator=} (const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&script) noexcept
 \item 
-\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_a019b949f86d066507ea74a9db126137e}{operator=} (\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&script)=delete
+\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& \hyperlink{classmage_1_1script_1_1_mouse_look_script_aaff03f361a4e302c51e4210bb2e9ca8b}{operator=} (\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&script) noexcept
 \item 
-virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9}{Load} () override
+virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a00c8dc8ebaf67da13bd0bc45de3ad8b6}{Load} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine) override
 \item 
-virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a6d38748c21a6bc475e8ac31e24459053}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time) override
+virtual void \hyperlink{classmage_1_1script_1_1_mouse_look_script_a7ccba133ce26a4aa1ff4f1ecea351d58}{Update} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&engine, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} delta\+\_\+time) override
 \item 
 \hyperlink{classmage_1_1script_1_1_mouse_look_script_a662018db64c5dc84a958eb1c6123a829}{Rotation\+Axes} \hyperlink{classmage_1_1script_1_1_mouse_look_script_a612d8c23cc3f0711a07b32304082dfb5}{Get\+Rotation\+Axes} () const noexcept
 \item 
@@ -234,14 +234,19 @@ Mouse\+X\+AndY&\\
 \subsubsection{\texorpdfstring{Invert\+Direction\+Y()}{InvertDirectionY()}}
 {\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Invert\+DirectionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9}{}\label{classmage_1_1script_1_1_mouse_look_script_a4b26f1ac71e89eaac7903101b95745e9} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_a00c8dc8ebaf67da13bd0bc45de3ad8b6}{}\label{classmage_1_1script_1_1_mouse_look_script_a00c8dc8ebaf67da13bd0bc45de3ad8b6} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Load@{Load}}
 \index{Load@{Load}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Load()}{Load()}}
-{\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Load (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Loads this behavior script. Allows this behavior script to preform any pre-\/processing.
 
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to load this behavior script. \\
@@ -249,19 +254,19 @@ Loads this behavior script. Allows this behavior script to preform any pre-\/pro
 \end{DoxyExceptions}
 
 
-Reimplemented from \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9f652b95b723a8}{mage\+::\+Behavior\+Script}.
+Reimplemented from \hyperlink{classmage_1_1_behavior_script_ae7864876b2ffb1d1d8d8a56e3099f1f2}{mage\+::\+Behavior\+Script}.
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a}{}\label{classmage_1_1script_1_1_mouse_look_script_af7da565d15422579ab5ff34f8f6bbc6a} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_a08731370926cbaee931170fd3fb108e6}{}\label{classmage_1_1script_1_1_mouse_look_script_a08731370926cbaee931170fd3fb108e6} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script}\& mage\+::script\+::\+Mouse\+Look\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& mage\+::script\+::\+Mouse\+Look\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a019b949f86d066507ea74a9db126137e}{}\label{classmage_1_1script_1_1_mouse_look_script_a019b949f86d066507ea74a9db126137e} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_aaff03f361a4e302c51e4210bb2e9ca8b}{}\label{classmage_1_1script_1_1_mouse_look_script_aaff03f361a4e302c51e4210bb2e9ca8b} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script}\& mage\+::script\+::\+Mouse\+Look\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \& mage\+::script\+::\+Mouse\+Look\+Script\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1script_1_1_mouse_look_script}{Mouse\+Look\+Script} \&\&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1script_1_1_mouse_look_script_a50c3ddaad18713509394d168cddc8aa8}{}\label{classmage_1_1script_1_1_mouse_look_script_a50c3ddaad18713509394d168cddc8aa8} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Set\+Maximum\+Rotation@{Set\+Maximum\+Rotation}}
@@ -359,11 +364,11 @@ Reimplemented from \hyperlink{classmage_1_1_behavior_script_a06521eef472f2d878a9
 \subsubsection{\texorpdfstring{Set\+Sensitivity\+Y()}{SetSensitivityY()}}
 {\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Set\+SensitivityY (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1script_1_1_mouse_look_script_a6d38748c21a6bc475e8ac31e24459053}{}\label{classmage_1_1script_1_1_mouse_look_script_a6d38748c21a6bc475e8ac31e24459053} 
+\hypertarget{classmage_1_1script_1_1_mouse_look_script_a7ccba133ce26a4aa1ff4f1ecea351d58}{}\label{classmage_1_1script_1_1_mouse_look_script_a7ccba133ce26a4aa1ff4f1ecea351d58} 
 \index{mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}!Update@{Update}}
 \index{Update@{Update}!mage\+::script\+::\+Mouse\+Look\+Script@{mage\+::script\+::\+Mouse\+Look\+Script}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void mage\+::script\+::\+Mouse\+Look\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{classmage_1_1_engine}{Engine} \&}]{engine,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64}}]{delta\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Updates this behavior script.
 
@@ -371,6 +376,8 @@ This method is called once per frame.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
 \mbox{\tt in}  & {\em delta\+\_\+time} & The elapsed time since the previous update. \\
 \hline
 \end{DoxyParams}
@@ -381,7 +388,7 @@ This method is called once per frame.
 \end{DoxyExceptions}
 
 
-Reimplemented from \hyperlink{classmage_1_1_behavior_script_afb9cf3759edf8876416d1df85489cba6}{mage\+::\+Behavior\+Script}.
+Reimplemented from \hyperlink{classmage_1_1_behavior_script_a1211b9f6a3cdc79ea6cd5fa0344a31c8}{mage\+::\+Behavior\+Script}.
 
 
 

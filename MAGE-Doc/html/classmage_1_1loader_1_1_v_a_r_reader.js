@@ -6,7 +6,7 @@ var classmage_1_1loader_1_1_v_a_r_reader =
     [ "~VARReader", "classmage_1_1loader_1_1_v_a_r_reader.html#acd3bbd51ccc774d2f74a4520b6143990", null ],
     [ "operator=", "classmage_1_1loader_1_1_v_a_r_reader.html#a78d39071ad5103c848782ff82be397bb", null ],
     [ "operator=", "classmage_1_1loader_1_1_v_a_r_reader.html#a0da01229f594cb701b3e20d53be9d16e", null ],
-    [ "ReadLine", "classmage_1_1loader_1_1_v_a_r_reader.html#a9635d8d256066746be81d9c2d223961d", null ],
+    [ "ReadLine", "classmage_1_1loader_1_1_v_a_r_reader.html#a511a0778cc515aece781bfdb76024cea", null ],
     [ "ReadVARBool", "classmage_1_1loader_1_1_v_a_r_reader.html#a2191e47d0806d408145422eb46e32ba1", null ],
     [ "ReadVARFloat", "classmage_1_1loader_1_1_v_a_r_reader.html#a11f2ecdf718d1665a79406e7bebbc6f1", null ],
     [ "ReadVARFloat2", "classmage_1_1loader_1_1_v_a_r_reader.html#ac80f8a30ffc67fc6f048cf32dd43c2e8", null ],
