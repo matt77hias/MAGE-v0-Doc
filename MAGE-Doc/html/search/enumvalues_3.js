@@ -7,6 +7,7 @@ var searchData=
   ['dds_5falpha_5fmode_5fpremultiplied',['DDS_ALPHA_MODE_PREMULTIPLIED',['../namespace_direct_x.html#a7cb48689d75471680c0bf7f79caaaf1facdd00e8572344a8e6d3c4254607d7be8',1,'DirectX']]],
   ['dds_5falpha_5fmode_5fstraight',['DDS_ALPHA_MODE_STRAIGHT',['../namespace_direct_x.html#a7cb48689d75471680c0bf7f79caaaf1fa3c462f8d7aff2a2590d933fb1dfd6136',1,'DirectX']]],
   ['dds_5falpha_5fmode_5funknown',['DDS_ALPHA_MODE_UNKNOWN',['../namespace_direct_x.html#a7cb48689d75471680c0bf7f79caaaf1fa9cfa0bbf0542b2d5da9da93e629f50ce',1,'DirectX']]],
+  ['default',['Default',['../namespacemage_1_1rendering.html#ab8fe8684ca4bd74ba3a394b00cf125b5a7a1920d61156abc05a60135aefe8bc67',1,'mage::rendering::Default()'],['../namespacemage_1_1rendering.html#a789e4b7d9a8cc831b065e9c6bb7430e9a7a1920d61156abc05a60135aefe8bc67',1,'mage::rendering::Default()']]],
   ['deferred',['Deferred',['../namespacemage_1_1rendering.html#aeb14ce7610cc9391f4e01be027b91dcca4ed71db54748b36eeb398876b0c747ac',1,'mage::rendering::Deferred()'],['../namespacemage_1_1rendering.html#a4fad00dbca0c8d854c765ab831c76055a4ed71db54748b36eeb398876b0c747ac',1,'mage::rendering::Deferred()']]],
   ['depth',['Depth',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a675056ad1441b6375b2c5abd48c27ef1',1,'mage::rendering']]],
   ['depthnone',['DepthNone',['../namespacemage_1_1rendering.html#ace195e7a068336e477080fce30f1329eab41232b0703ce026c43342f5c5547d97',1,'mage::rendering']]],

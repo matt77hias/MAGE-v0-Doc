@@ -9,9 +9,9 @@
 \item 
 \hyperlink{classmage_1_1rendering_1_1_viewport_a93c3a23a87fb30301ab9f400bd2c128a}{Viewport} () noexcept
 \item 
-\hyperlink{classmage_1_1rendering_1_1_viewport_a04b2198ce2554fd849d713bc6551565d}{Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&resolution) noexcept
+\hyperlink{classmage_1_1rendering_1_1_viewport_a965fca01823d89e1c1f22cf55aa1ffda}{Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&size) noexcept
 \item 
-\hyperlink{classmage_1_1rendering_1_1_viewport_a2e9aafc771d765259669f0bbeb8fffac}{Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&resolution, \hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor} desc) noexcept
+\hyperlink{classmage_1_1rendering_1_1_viewport_aeac9a1936b174664131468b63f6775da}{Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&size, \hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing} aa) noexcept
 \item 
 \hyperlink{classmage_1_1rendering_1_1_viewport_a0fb086c9d200adabbd18dcd6ac11495d}{Viewport} (D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT viewport) noexcept
 \item 
@@ -19,7 +19,7 @@
 \item 
 \hyperlink{classmage_1_1rendering_1_1_viewport_a33d8073522c9ac9044da148b44023b2b}{Viewport} (\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \&\&viewport) noexcept=default
 \item 
-\hyperlink{classmage_1_1rendering_1_1_viewport_a44628345c04b020a2ceef42074b32c8b}{Viewport} (\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} viewport, \hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor} desc) noexcept
+\hyperlink{classmage_1_1rendering_1_1_viewport_acf0de68217027c47ac4fe36b58da7213}{Viewport} (\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} viewport, \hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing} aa) noexcept
 \item 
 \hyperlink{classmage_1_1rendering_1_1_viewport_a7613c529c64ef903abe310ef345cc864}{$\sim$\+Viewport} ()=default
 \item 
@@ -33,52 +33,32 @@ const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \& \hyperlink{classmage_1_1rendering_1
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_viewport_a641dc22ff2ea12c7f3164b704e9ea479}{Set\+Viewport} (D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT viewport) noexcept
 \item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_viewport_aaaf7eb2b56b5f325c6bd56ea31b19d45}{Get\+Top\+LeftX} () const noexcept
-\item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_viewport_a78207536cbba1fbfa82160eb7672ec02}{Get\+Top\+LeftY} () const noexcept
-\item 
 const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \hyperlink{classmage_1_1rendering_1_1_viewport_ad87e35df4d1f9ff3208d82c9af565b4d}{Get\+Top\+Left} () const noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_a6f7a3cdf08fd05382d18452300d69205}{Set\+Top\+LeftX} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} x) noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_a826829c187f60fbc203f382c6f70ec61}{Set\+Top\+LeftY} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} y) noexcept
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_viewport_a281e2fdd022aa9714741f5291be1c6ef}{Set\+Top\+Left} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} x, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} y) noexcept
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_viewport_a22ea70a6e01b8328ba94d90e374e85cb}{Set\+Top\+Left} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&top\+\_\+left) noexcept
 \item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_viewport_a757409f525af58308a58083a9d9e086d}{Get\+Width} () const noexcept
+const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \hyperlink{classmage_1_1rendering_1_1_viewport_a6e7381d208af8d079e93d8e04739eb36}{Get\+Size} () const noexcept
 \item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_viewport_a89247ccb96e4e018d66ad6b5416cd039}{Get\+Height} () const noexcept
+void \hyperlink{classmage_1_1rendering_1_1_viewport_af0db77599e1f1ec246ca3f1440ebb0ac}{Set\+Size} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} x, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} y) noexcept
 \item 
-const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \hyperlink{classmage_1_1rendering_1_1_viewport_aed4861d214f2c1e62d84fd4c81b6aa13}{Get\+Resolution} () const noexcept
+void \hyperlink{classmage_1_1rendering_1_1_viewport_a8b5578069d4e4afa99ca4a0b89541025}{Set\+Size} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&size) noexcept
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_abe04695a284b6a00e2f585c0fe7f6e90}{Set\+Width} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} width) noexcept
+const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} \hyperlink{classmage_1_1rendering_1_1_viewport_a50cb4c020709eddb8addb4420a59e1d0}{Get\+Depth\+Range} () const noexcept
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_aeec860b52dc9b3b703935ff94e2a3c47}{Set\+Height} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} height) noexcept
+void \hyperlink{classmage_1_1rendering_1_1_viewport_a2dc258c833d225567bba28129c061c2d}{Set\+Depth\+Range} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} min\+\_\+depth, \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} max\+\_\+depth) noexcept
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_a47894b9c1fb70c81a1b881fa807b89eb}{Set\+Resolution} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} width, \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} height) noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_ada6ffe820ed4dec4ff0dbee2fb43e4e8}{Set\+Resolution} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&resolution) noexcept
-\item 
-\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_viewport_ace36e941f271c9455a9d947b124d45da}{Get\+Minimum\+Depth} () const noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_a5148b28315b8426ba5d26a8c76b39cad}{Set\+Minimum\+Depth} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} min\+\_\+depth) noexcept
-\item 
-\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_viewport_a6be40c90f5435cf04f35d673565f91e7}{Get\+Maximum\+Depth} () const noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_ab96df600f62ff91a4d073f2c51b5e95e}{Set\+Maximum\+Depth} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} max\+\_\+depth) noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_viewport_a6e6edb1bb4f538b0639e42a00005c34e}{Set\+Depth} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} min\+\_\+depth, \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} max\+\_\+depth) noexcept
+void \hyperlink{classmage_1_1rendering_1_1_viewport_a99c76e086ab0db6e9311ab4985d760d6}{Set\+Depth\+Range} (const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} \&range) noexcept
 \item 
 const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_viewport_ac4ea113f2c019b5b1d369898537ab5c3}{Get\+Viewport\+Transform} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1rendering_1_1_viewport_ad565cc66f21bb3d3e00ae608ef926635}{Get\+Max\+Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&resolution) noexcept
+static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1rendering_1_1_viewport_a9a931b51974ac4cd2d93aac2c0e10a09}{Get\+Max\+Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&size) noexcept
 \item 
-static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1rendering_1_1_viewport_a64a61ea814f07b9904d158e24853e0dc}{Get\+Max\+Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&resolution, \hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor} desc) noexcept
+static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT \hyperlink{classmage_1_1rendering_1_1_viewport_ac971d4f062cf37e3a5a2a57640a13da4}{Get\+Max\+Viewport} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&size, \hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing} aa) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -97,17 +77,17 @@ A class of viewports.
 \subsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
 {\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a04b2198ce2554fd849d713bc6551565d}{}\label{classmage_1_1rendering_1_1_viewport_a04b2198ce2554fd849d713bc6551565d} 
+\hypertarget{classmage_1_1rendering_1_1_viewport_a965fca01823d89e1c1f22cf55aa1ffda}{}\label{classmage_1_1rendering_1_1_viewport_a965fca01823d89e1c1f22cf55aa1ffda} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Viewport@{Viewport}}
 \index{Viewport@{Viewport}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
-{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a2e9aafc771d765259669f0bbeb8fffac}{}\label{classmage_1_1rendering_1_1_viewport_a2e9aafc771d765259669f0bbeb8fffac} 
+\hypertarget{classmage_1_1rendering_1_1_viewport_aeac9a1936b174664131468b63f6775da}{}\label{classmage_1_1rendering_1_1_viewport_aeac9a1936b174664131468b63f6775da} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Viewport@{Viewport}}
 \index{Viewport@{Viewport}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
-{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{resolution,  }\item[{\hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor}}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{size,  }\item[{\hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing}}]{aa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_a0fb086c9d200adabbd18dcd6ac11495d}{}\label{classmage_1_1rendering_1_1_viewport_a0fb086c9d200adabbd18dcd6ac11495d} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Viewport@{Viewport}}
@@ -127,11 +107,11 @@ A class of viewports.
 \subsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
 {\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \&\&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a44628345c04b020a2ceef42074b32c8b}{}\label{classmage_1_1rendering_1_1_viewport_a44628345c04b020a2ceef42074b32c8b} 
+\hypertarget{classmage_1_1rendering_1_1_viewport_acf0de68217027c47ac4fe36b58da7213}{}\label{classmage_1_1rendering_1_1_viewport_acf0de68217027c47ac4fe36b58da7213} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Viewport@{Viewport}}
 \index{Viewport@{Viewport}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
-{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport}}]{viewport,  }\item[{\hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor}}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport}}]{viewport,  }\item[{\hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing}}]{aa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_a7613c529c64ef903abe310ef345cc864}{}\label{classmage_1_1rendering_1_1_viewport_a7613c529c64ef903abe310ef345cc864} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!````~Viewport@{$\sim$\+Viewport}}
@@ -148,59 +128,35 @@ A class of viewports.
 \subsubsection{\texorpdfstring{Bind()}{Bind()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Bind (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a89247ccb96e4e018d66ad6b5416cd039}{}\label{classmage_1_1rendering_1_1_viewport_a89247ccb96e4e018d66ad6b5416cd039} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Height@{Get\+Height}}
-\index{Get\+Height@{Get\+Height}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Viewport\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_a50cb4c020709eddb8addb4420a59e1d0}{}\label{classmage_1_1rendering_1_1_viewport_a50cb4c020709eddb8addb4420a59e1d0} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Depth\+Range@{Get\+Depth\+Range}}
+\index{Get\+Depth\+Range@{Get\+Depth\+Range}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Get\+Depth\+Range()}{GetDepthRange()}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} mage\+::rendering\+::\+Viewport\+::\+Get\+Depth\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a6be40c90f5435cf04f35d673565f91e7}{}\label{classmage_1_1rendering_1_1_viewport_a6be40c90f5435cf04f35d673565f91e7} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Maximum\+Depth@{Get\+Maximum\+Depth}}
-\index{Get\+Maximum\+Depth@{Get\+Maximum\+Depth}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Maximum\+Depth()}{GetMaximumDepth()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Viewport\+::\+Get\+Maximum\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_ad565cc66f21bb3d3e00ae608ef926635}{}\label{classmage_1_1rendering_1_1_viewport_ad565cc66f21bb3d3e00ae608ef926635} 
+\hypertarget{classmage_1_1rendering_1_1_viewport_a9a931b51974ac4cd2d93aac2c0e10a09}{}\label{classmage_1_1rendering_1_1_viewport_a9a931b51974ac4cd2d93aac2c0e10a09} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Max\+Viewport@{Get\+Max\+Viewport}}
 \index{Get\+Max\+Viewport@{Get\+Max\+Viewport}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Get\+Max\+Viewport()}{GetMaxViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::rendering\+::\+Viewport\+::\+Get\+Max\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::rendering\+::\+Viewport\+::\+Get\+Max\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a64a61ea814f07b9904d158e24853e0dc}{}\label{classmage_1_1rendering_1_1_viewport_a64a61ea814f07b9904d158e24853e0dc} 
+\hypertarget{classmage_1_1rendering_1_1_viewport_ac971d4f062cf37e3a5a2a57640a13da4}{}\label{classmage_1_1rendering_1_1_viewport_ac971d4f062cf37e3a5a2a57640a13da4} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Max\+Viewport@{Get\+Max\+Viewport}}
 \index{Get\+Max\+Viewport@{Get\+Max\+Viewport}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Get\+Max\+Viewport()}{GetMaxViewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::rendering\+::\+Viewport\+::\+Get\+Max\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{resolution,  }\item[{\hyperlink{namespacemage_1_1rendering_a25c189fd1da946d7a8f0abdd4f0e6afa}{A\+A\+Descriptor}}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily static const D3\+D11\+\_\+\+V\+I\+E\+W\+P\+O\+RT mage\+::rendering\+::\+Viewport\+::\+Get\+Max\+Viewport (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{size,  }\item[{\hyperlink{namespacemage_1_1rendering_ac3f75e49e92b42f2f5fb55c450d8899c}{Anti\+Aliasing}}]{aa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_ace36e941f271c9455a9d947b124d45da}{}\label{classmage_1_1rendering_1_1_viewport_ace36e941f271c9455a9d947b124d45da} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Minimum\+Depth@{Get\+Minimum\+Depth}}
-\index{Get\+Minimum\+Depth@{Get\+Minimum\+Depth}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Minimum\+Depth()}{GetMinimumDepth()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Viewport\+::\+Get\+Minimum\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_aed4861d214f2c1e62d84fd4c81b6aa13}{}\label{classmage_1_1rendering_1_1_viewport_aed4861d214f2c1e62d84fd4c81b6aa13} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Resolution@{Get\+Resolution}}
-\index{Get\+Resolution@{Get\+Resolution}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Resolution()}{GetResolution()}}
-{\footnotesize\ttfamily const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} mage\+::rendering\+::\+Viewport\+::\+Get\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_a6e7381d208af8d079e93d8e04739eb36}{}\label{classmage_1_1rendering_1_1_viewport_a6e7381d208af8d079e93d8e04739eb36} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} mage\+::rendering\+::\+Viewport\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_ad87e35df4d1f9ff3208d82c9af565b4d}{}\label{classmage_1_1rendering_1_1_viewport_ad87e35df4d1f9ff3208d82c9af565b4d} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Top\+Left@{Get\+Top\+Left}}
 \index{Get\+Top\+Left@{Get\+Top\+Left}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Get\+Top\+Left()}{GetTopLeft()}}
 {\footnotesize\ttfamily const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} mage\+::rendering\+::\+Viewport\+::\+Get\+Top\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_aaaf7eb2b56b5f325c6bd56ea31b19d45}{}\label{classmage_1_1rendering_1_1_viewport_aaaf7eb2b56b5f325c6bd56ea31b19d45} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Top\+LeftX@{Get\+Top\+LeftX}}
-\index{Get\+Top\+LeftX@{Get\+Top\+LeftX}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Top\+Left\+X()}{GetTopLeftX()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Viewport\+::\+Get\+Top\+LeftX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_a78207536cbba1fbfa82160eb7672ec02}{}\label{classmage_1_1rendering_1_1_viewport_a78207536cbba1fbfa82160eb7672ec02} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Top\+LeftY@{Get\+Top\+LeftY}}
-\index{Get\+Top\+LeftY@{Get\+Top\+LeftY}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Top\+Left\+Y()}{GetTopLeftY()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Viewport\+::\+Get\+Top\+LeftY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_a9b931e5491d44459f598868eee59f1cc}{}\label{classmage_1_1rendering_1_1_viewport_a9b931e5491d44459f598868eee59f1cc} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Viewport@{Get\+Viewport}}
@@ -219,12 +175,6 @@ A reference to the viewport of this viewport.
 \subsubsection{\texorpdfstring{Get\+Viewport\+Transform()}{GetViewportTransform()}}
 {\footnotesize\ttfamily const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Viewport\+::\+Get\+Viewport\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a757409f525af58308a58083a9d9e086d}{}\label{classmage_1_1rendering_1_1_viewport_a757409f525af58308a58083a9d9e086d} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Get\+Width@{Get\+Width}}
-\index{Get\+Width@{Get\+Width}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Viewport\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
 \hypertarget{classmage_1_1rendering_1_1_viewport_afc42613270537b92aa837455b4c154f0}{}\label{classmage_1_1rendering_1_1_viewport_afc42613270537b92aa837455b4c154f0} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
@@ -237,41 +187,29 @@ A reference to the viewport of this viewport.
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport}\& mage\+::rendering\+::\+Viewport\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \&\&}]{viewport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a6e6edb1bb4f538b0639e42a00005c34e}{}\label{classmage_1_1rendering_1_1_viewport_a6e6edb1bb4f538b0639e42a00005c34e} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Depth@{Set\+Depth}}
-\index{Set\+Depth@{Set\+Depth}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Depth()}{SetDepth()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{min\+\_\+depth,  }\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{max\+\_\+depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_a2dc258c833d225567bba28129c061c2d}{}\label{classmage_1_1rendering_1_1_viewport_a2dc258c833d225567bba28129c061c2d} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Depth\+Range@{Set\+Depth\+Range}}
+\index{Set\+Depth\+Range@{Set\+Depth\+Range}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Set\+Depth\+Range()}{SetDepthRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Depth\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{min\+\_\+depth,  }\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{max\+\_\+depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_aeec860b52dc9b3b703935ff94e2a3c47}{}\label{classmage_1_1rendering_1_1_viewport_aeec860b52dc9b3b703935ff94e2a3c47} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Height@{Set\+Height}}
-\index{Set\+Height@{Set\+Height}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Height()}{SetHeight()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_a99c76e086ab0db6e9311ab4985d760d6}{}\label{classmage_1_1rendering_1_1_viewport_a99c76e086ab0db6e9311ab4985d760d6} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Depth\+Range@{Set\+Depth\+Range}}
+\index{Set\+Depth\+Range@{Set\+Depth\+Range}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Set\+Depth\+Range()}{SetDepthRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Depth\+Range (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_aa87237ad091f5cd7da612b8523fc108f}{F32x2} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_ab96df600f62ff91a4d073f2c51b5e95e}{}\label{classmage_1_1rendering_1_1_viewport_ab96df600f62ff91a4d073f2c51b5e95e} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Maximum\+Depth@{Set\+Maximum\+Depth}}
-\index{Set\+Maximum\+Depth@{Set\+Maximum\+Depth}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Maximum\+Depth()}{SetMaximumDepth()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Maximum\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{max\+\_\+depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_af0db77599e1f1ec246ca3f1440ebb0ac}{}\label{classmage_1_1rendering_1_1_viewport_af0db77599e1f1ec246ca3f1440ebb0ac} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{x,  }\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_viewport_a5148b28315b8426ba5d26a8c76b39cad}{}\label{classmage_1_1rendering_1_1_viewport_a5148b28315b8426ba5d26a8c76b39cad} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Minimum\+Depth@{Set\+Minimum\+Depth}}
-\index{Set\+Minimum\+Depth@{Set\+Minimum\+Depth}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Minimum\+Depth()}{SetMinimumDepth()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Minimum\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{min\+\_\+depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_a47894b9c1fb70c81a1b881fa807b89eb}{}\label{classmage_1_1rendering_1_1_viewport_a47894b9c1fb70c81a1b881fa807b89eb} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Resolution@{Set\+Resolution}}
-\index{Set\+Resolution@{Set\+Resolution}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Resolution()}{SetResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Resolution (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{width,  }\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_ada6ffe820ed4dec4ff0dbee2fb43e4e8}{}\label{classmage_1_1rendering_1_1_viewport_ada6ffe820ed4dec4ff0dbee2fb43e4e8} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Resolution@{Set\+Resolution}}
-\index{Set\+Resolution@{Set\+Resolution}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Resolution()}{SetResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Resolution (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_viewport_a8b5578069d4e4afa99ca4a0b89541025}{}\label{classmage_1_1rendering_1_1_viewport_a8b5578069d4e4afa99ca4a0b89541025} 
+\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_a281e2fdd022aa9714741f5291be1c6ef}{}\label{classmage_1_1rendering_1_1_viewport_a281e2fdd022aa9714741f5291be1c6ef} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Top\+Left@{Set\+Top\+Left}}
@@ -284,18 +222,6 @@ A reference to the viewport of this viewport.
 \index{Set\+Top\+Left@{Set\+Top\+Left}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
 \subsubsection{\texorpdfstring{Set\+Top\+Left()}{SetTopLeft()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Top\+Left (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{top\+\_\+left }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_a6f7a3cdf08fd05382d18452300d69205}{}\label{classmage_1_1rendering_1_1_viewport_a6f7a3cdf08fd05382d18452300d69205} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Top\+LeftX@{Set\+Top\+LeftX}}
-\index{Set\+Top\+LeftX@{Set\+Top\+LeftX}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Top\+Left\+X()}{SetTopLeftX()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Top\+LeftX (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_viewport_a826829c187f60fbc203f382c6f70ec61}{}\label{classmage_1_1rendering_1_1_viewport_a826829c187f60fbc203f382c6f70ec61} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Top\+LeftY@{Set\+Top\+LeftY}}
-\index{Set\+Top\+LeftY@{Set\+Top\+LeftY}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Top\+Left\+Y()}{SetTopLeftY()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Top\+LeftY (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_viewport_a641dc22ff2ea12c7f3164b704e9ea479}{}\label{classmage_1_1rendering_1_1_viewport_a641dc22ff2ea12c7f3164b704e9ea479} 
 \index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Viewport@{Set\+Viewport}}
@@ -310,12 +236,6 @@ Sets the viewport of this viewport to the given viewport.
 \mbox{\tt in}  & {\em viewport} & The viewport. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1rendering_1_1_viewport_abe04695a284b6a00e2f585c0fe7f6e90}{}\label{classmage_1_1rendering_1_1_viewport_abe04695a284b6a00e2f585c0fe7f6e90} 
-\index{mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}!Set\+Width@{Set\+Width}}
-\index{Set\+Width@{Set\+Width}!mage\+::rendering\+::\+Viewport@{mage\+::rendering\+::\+Viewport}}
-\subsubsection{\texorpdfstring{Set\+Width()}{SetWidth()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Viewport\+::\+Set\+Width (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
 
 
 \subsection{Member Data Documentation}

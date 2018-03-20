@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.134.0</span>
+   &#160;<span id="projectnumber">v0.137.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acad71e5633ba37b1069c5a2ef9e6f704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79649b9316cb114bae032027406b4fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html">BackBufferPass</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a79649b9316cb114bae032027406b4fe4">operator=</a> (<a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html">BackBufferPass</a> &amp;&amp;pass) noexcept</td></tr>
 <tr class="separator:a79649b9316cb114bae032027406b4fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a525b9fa3309cb5a2c8ff5ed24011695a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a525b9fa3309cb5a2c8ff5ed24011695a">Render</a> () const noexcept</td></tr>
-<tr class="separator:a525b9fa3309cb5a2c8ff5ed24011695a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368080bdfa9d1d345fc3392c53f536a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a368080bdfa9d1d345fc3392c53f536a9">Render</a> (<a class="el" href="namespacemage_1_1rendering.html#a789e4b7d9a8cc831b065e9c6bb7430e9">ToneMapping</a> tone_mapping)</td></tr>
+<tr class="separator:a368080bdfa9d1d345fc3392c53f536a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -122,10 +122,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae87c0cf8b2ffe627ac44faaf61791b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d10a44c5f8a3529d64aabfb590156f2"><td class="memItemLeft" align="right" valign="top">std::reference_wrapper&lt; <a class="el" href="classmage_1_1rendering_1_1_state_manager.html">StateManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a5d10a44c5f8a3529d64aabfb590156f2">m_state_manager</a></td></tr>
 <tr class="separator:a5d10a44c5f8a3529d64aabfb590156f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13f6af3893cec667d6ab1b0da7b2a94"><td class="memItemLeft" align="right" valign="top">std::reference_wrapper&lt; <a class="el" href="classmage_1_1rendering_1_1_resource_manager.html">ResourceManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#ac13f6af3893cec667d6ab1b0da7b2a94">m_resource_manager</a></td></tr>
+<tr class="separator:ac13f6af3893cec667d6ab1b0da7b2a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a95cc800090a0bc01d14a9f5903748"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage_1_1rendering.html#aaf704b9c54a4181f4950a1761de69dda">VertexShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a12a95cc800090a0bc01d14a9f5903748">m_vs</a></td></tr>
 <tr class="separator:a12a95cc800090a0bc01d14a9f5903748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46bc7e8b3636db2eb84b42590b7bd51e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage_1_1rendering.html#af03d922b228ee9c8542baaa2ecc9f259">PixelShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_back_buffer_pass.html#a46bc7e8b3636db2eb84b42590b7bd51e">m_ps</a></td></tr>
-<tr class="separator:a46bc7e8b3636db2eb84b42590b7bd51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of back buffer passes for tone mapping and gamma correcting HDR images. </p>
@@ -368,29 +368,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a525b9fa3309cb5a2c8ff5ed24011695a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a525b9fa3309cb5a2c8ff5ed24011695a">&sect;&nbsp;</a></span>Render()</h2>
+<a id="a368080bdfa9d1d345fc3392c53f536a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368080bdfa9d1d345fc3392c53f536a9">&sect;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void mage::rendering::BackBufferPass::Render </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="namespacemage_1_1rendering.html#a789e4b7d9a8cc831b065e9c6bb7430e9">ToneMapping</a>&#160;</td>
+          <td class="paramname"><em>tone_mapping</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Renders. </p>
+<p>Renders.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tone_mapping</td><td>The tone mapping type. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -418,8 +417,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a46bc7e8b3636db2eb84b42590b7bd51e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46bc7e8b3636db2eb84b42590b7bd51e">&sect;&nbsp;</a></span>m_ps</h2>
+<a id="ac13f6af3893cec667d6ab1b0da7b2a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13f6af3893cec667d6ab1b0da7b2a94">&sect;&nbsp;</a></span>m_resource_manager</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +427,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage_1_1rendering.html#af03d922b228ee9c8542baaa2ecc9f259">PixelShaderPtr</a> mage::rendering::BackBufferPass::m_ps</td>
+          <td class="memname">std::reference_wrapper&lt; <a class="el" href="classmage_1_1rendering_1_1_resource_manager.html">ResourceManager</a> &gt; mage::rendering::BackBufferPass::m_resource_manager</td>
         </tr>
       </table>
   </td>
@@ -437,7 +436,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A pointer to the pixel shader of this back buffer pass. </p>
+<p>A reference to the resource manager of this back buffer pass. </p>
 
 </div>
 </div>

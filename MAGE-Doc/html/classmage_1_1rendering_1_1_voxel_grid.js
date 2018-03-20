@@ -4,7 +4,6 @@ var classmage_1_1rendering_1_1_voxel_grid =
     [ "VoxelGrid", "classmage_1_1rendering_1_1_voxel_grid.html#ace9aac1356e41996630c6247ece48417", null ],
     [ "VoxelGrid", "classmage_1_1rendering_1_1_voxel_grid.html#a985cc9f8fbe4e49adf2b61de2b348125", null ],
     [ "~VoxelGrid", "classmage_1_1rendering_1_1_voxel_grid.html#aa349c9ddd6d6be9f12d7e399a0931f89", null ],
-    [ "Bind", "classmage_1_1rendering_1_1_voxel_grid.html#ade7ea8a797334ceb16d55a3d1d83299a", null ],
     [ "BindBeginVoxelizationBuffer", "classmage_1_1rendering_1_1_voxel_grid.html#a52254c5709b77d6c348eb15b782b5bc4", null ],
     [ "BindBeginVoxelizationTexture", "classmage_1_1rendering_1_1_voxel_grid.html#a00fa75aaed950df37be237c9b8557eeb", null ],
     [ "BindEndVoxelizationBuffer", "classmage_1_1rendering_1_1_voxel_grid.html#a2da6ce7a6880b1fc65b36757d8111062", null ],

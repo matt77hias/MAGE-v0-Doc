@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lambertian',['Lambertian',['../namespacemage_1_1rendering.html#a13c5e70586af4ce254146074ec055bf6a5bab3b0b38800aae982d01ad209a49f7',1,'mage::rendering']]],
+  ['lambertian',['Lambertian',['../namespacemage_1_1rendering.html#ab8fe8684ca4bd74ba3a394b00cf125b5a5bab3b0b38800aae982d01ad209a49f7',1,'mage::rendering']]],
   ['lavender',['Lavender',['../namespacemage_1_1color.html#a5f6b29a4707a0d3f33ee6b27b5c44d73',1,'mage::color']]],
   ['lavenderblush',['LavenderBlush',['../namespacemage_1_1color.html#a90a4b5ea124bee04590c85bfdd9c2e35',1,'mage::color']]],
   ['lawngreen',['LawnGreen',['../namespacemage_1_1color.html#a0bb99b63d697eb437075b3ec801288dc',1,'mage::color']]],

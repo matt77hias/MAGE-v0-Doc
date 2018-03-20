@@ -4,7 +4,7 @@ var classmage_1_1rendering_1_1_d_o_f_pass =
     [ "DOFPass", "classmage_1_1rendering_1_1_d_o_f_pass.html#a74e732ae80162b1b041a1095d38eda67", null ],
     [ "DOFPass", "classmage_1_1rendering_1_1_d_o_f_pass.html#ab77789a6762c38e7e4ac389637652963", null ],
     [ "~DOFPass", "classmage_1_1rendering_1_1_d_o_f_pass.html#a3009125880a1546657d2f57179299e3b", null ],
-    [ "Dispatch", "classmage_1_1rendering_1_1_d_o_f_pass.html#aa4ee470748a5a37b62d154beec97c4f7", null ],
+    [ "Dispatch", "classmage_1_1rendering_1_1_d_o_f_pass.html#a60d839bbeb81e12778ef96468954951a", null ],
     [ "operator=", "classmage_1_1rendering_1_1_d_o_f_pass.html#ac70bc446c50db4ab919220a344be8045", null ],
     [ "operator=", "classmage_1_1rendering_1_1_d_o_f_pass.html#a4155c31b1fe485edf5c7c3b635b737d0", null ],
     [ "m_cs", "classmage_1_1rendering_1_1_d_o_f_pass.html#aad575c41dc3427fee1135b68d3d680ce", null ],

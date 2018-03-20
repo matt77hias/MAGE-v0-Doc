@@ -27,6 +27,7 @@ var searchData=
   ['toggleshadows',['ToggleShadows',['../classmage_1_1rendering_1_1_directional_light.html#a34a939e192e857ac25f6d91dd773ec9b',1,'mage::rendering::DirectionalLight::ToggleShadows()'],['../classmage_1_1rendering_1_1_omni_light.html#aa1816fad8913711c10994b66103279a2',1,'mage::rendering::OmniLight::ToggleShadows()'],['../classmage_1_1rendering_1_1_spot_light.html#a4e6412e05d894a97409c23d8d088cabf',1,'mage::rendering::SpotLight::ToggleShadows()']]],
   ['tokenresult',['TokenResult',['../namespacemage.html#a989fefd8314deaa56188a1c5b0bedac6',1,'mage']]],
   ['tomato',['Tomato',['../namespacemage_1_1color.html#ace48831c9fff78216d1c88f110da1bdb',1,'mage::color']]],
+  ['tonemapping',['ToneMapping',['../namespacemage_1_1rendering.html#a789e4b7d9a8cc831b065e9c6bb7430e9',1,'mage::rendering']]],
   ['transform',['Transform',['../classmage_1_1_transform.html#a0fe54a3ac740025755d567a423c39de0',1,'mage::Transform::Transform() noexcept'],['../classmage_1_1_transform.html#aa26f3bb808d660ff5fccf594c0958386',1,'mage::Transform::Transform(const Transform &amp;transform) noexcept'],['../classmage_1_1_transform.html#a0d1081071df89ee1ec2640774107f66c',1,'mage::Transform::Transform(Transform &amp;&amp;transform) noexcept=default']]],
   ['transform',['Transform',['../classmage_1_1_transform.html',1,'mage']]],
   ['transformclient',['TransformClient',['../classmage_1_1_transform_client.html',1,'mage']]],

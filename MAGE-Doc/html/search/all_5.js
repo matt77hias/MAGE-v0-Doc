@@ -58,8 +58,8 @@ var searchData=
   ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage_1_1rendering.html#afc1111b2e31d557e8d1539227a1d268e',1,'mage::rendering']]],
   ['freealigned',['FreeAligned',['../namespacemage.html#a2ea8b0ebc056a664eadff3512c1cade4',1,'mage']]],
   ['fronttoback',['FrontToBack',['../namespacemage_1_1rendering.html#a4fad00dbca0c8d854c765ab831c76055a44a4d81c96c5451956c4412d045e32ae',1,'mage::rendering']]],
-  ['frostbite',['Frostbite',['../namespacemage_1_1rendering.html#a13c5e70586af4ce254146074ec055bf6a5d1801a70481550d3de71ee64068b62d',1,'mage::rendering']]],
+  ['frostbite',['Frostbite',['../namespacemage_1_1rendering.html#ab8fe8684ca4bd74ba3a394b00cf125b5a5d1801a70481550d3de71ee64068b62d',1,'mage::rendering']]],
   ['fuchsia',['Fuchsia',['../namespacemage_1_1color.html#ace094140b3f356c536df67b441c9d98d',1,'mage::color']]],
   ['fullcoverage',['FullCoverage',['../namespacemage.html#af0080550a105a2f21b65d3e21baeafe1',1,'mage']]],
-  ['fxaa',['FXAA',['../namespacemage_1_1rendering.html#a25c189fd1da946d7a8f0abdd4f0e6afaaaa9ebfd80da9bf23f763a63c052a452a',1,'mage::rendering']]]
+  ['fxaa',['FXAA',['../namespacemage_1_1rendering.html#ac3f75e49e92b42f2f5fb55c450d8899caaa9ebfd80da9bf23f763a63c052a452a',1,'mage::rendering']]]
 ];
