@@ -19,9 +19,9 @@
 \item 
 \hyperlink{classmage_1_1rendering_1_1_deferred_pass}{Deferred\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_deferred_pass_a5d701ca8725a2b9a2c95dfd89c0d7c0e}{operator=} (\hyperlink{classmage_1_1rendering_1_1_deferred_pass}{Deferred\+Pass} \&\&pass) noexcept
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_deferred_pass_af84f89e1b27b397f7e56794a4902f663}{Render} (\hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type} brdf, bool vct)
+void \hyperlink{classmage_1_1rendering_1_1_deferred_pass_a79eea4a5cdba69013a4422415e4e148c}{Render} (\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} brdf, bool vct)
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_deferred_pass_aef24486822bd560da59fb90d1c760b0a}{Dispatch} (const \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \&viewport, \hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type} brdf, bool vct)
+void \hyperlink{classmage_1_1rendering_1_1_deferred_pass_af719b61f7b1d139818065cd5757b0268}{Dispatch} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&viewport\+\_\+size, \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} brdf, bool vct)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -103,17 +103,17 @@ Destructs this deferred pass.
 \subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Deferred\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
 
-Binds the fixed state of this deferred pass. \hypertarget{classmage_1_1rendering_1_1_deferred_pass_aef24486822bd560da59fb90d1c760b0a}{}\label{classmage_1_1rendering_1_1_deferred_pass_aef24486822bd560da59fb90d1c760b0a} 
+Binds the fixed state of this deferred pass. \hypertarget{classmage_1_1rendering_1_1_deferred_pass_af719b61f7b1d139818065cd5757b0268}{}\label{classmage_1_1rendering_1_1_deferred_pass_af719b61f7b1d139818065cd5757b0268} 
 \index{mage\+::rendering\+::\+Deferred\+Pass@{mage\+::rendering\+::\+Deferred\+Pass}!Dispatch@{Dispatch}}
 \index{Dispatch@{Dispatch}!mage\+::rendering\+::\+Deferred\+Pass@{mage\+::rendering\+::\+Deferred\+Pass}}
 \subsubsection{\texorpdfstring{Dispatch()}{Dispatch()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Deferred\+Pass\+::\+Dispatch (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_viewport}{Viewport} \&}]{viewport,  }\item[{\hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type}}]{brdf,  }\item[{bool}]{vct }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Deferred\+Pass\+::\+Dispatch (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{viewport\+\_\+size,  }\item[{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}]{brdf,  }\item[{bool}]{vct }\end{DoxyParamCaption})}
 
 Dispatches.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em viewport} & A reference to the viewport. \\
+\mbox{\tt in}  & {\em viewport\+\_\+size} & A reference to the viewport size. \\
 \hline
 \mbox{\tt in}  & {\em brdf} & The B\+R\+DF. \\
 \hline
@@ -157,11 +157,11 @@ Moves the given deferred pass to this deferred pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved deferred pass (i.\+e. this deferred pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1rendering_1_1_deferred_pass_af84f89e1b27b397f7e56794a4902f663}{}\label{classmage_1_1rendering_1_1_deferred_pass_af84f89e1b27b397f7e56794a4902f663} 
+\hypertarget{classmage_1_1rendering_1_1_deferred_pass_a79eea4a5cdba69013a4422415e4e148c}{}\label{classmage_1_1rendering_1_1_deferred_pass_a79eea4a5cdba69013a4422415e4e148c} 
 \index{mage\+::rendering\+::\+Deferred\+Pass@{mage\+::rendering\+::\+Deferred\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::rendering\+::\+Deferred\+Pass@{mage\+::rendering\+::\+Deferred\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Deferred\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type}}]{brdf,  }\item[{bool}]{vct }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Deferred\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}]{brdf,  }\item[{bool}]{vct }\end{DoxyParamCaption})}
 
 Renders.
 

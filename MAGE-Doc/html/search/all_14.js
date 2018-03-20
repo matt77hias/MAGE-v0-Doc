@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wallclocktimer',['WallClockTimer',['../namespacemage.html#a06f4035ef59f07892e594bf1178a108a',1,'mage']]],
-  ['wardduer',['WardDuer',['../namespacemage_1_1rendering.html#a13c5e70586af4ce254146074ec055bf6ab4ff6577cc6f35dfaa90a48d2be06615',1,'mage::rendering']]],
+  ['wardduer',['WardDuer',['../namespacemage_1_1rendering.html#ab8fe8684ca4bd74ba3a394b00cf125b5ab4ff6577cc6f35dfaa90a48d2be06615',1,'mage::rendering']]],
   ['warning',['Warning',['../namespacemage.html#a1817ff0153985e040b260a8aff5e368d',1,'mage']]],
   ['weakptr',['WeakPtr',['../namespacemage.html#aa159a63c0d58464bdf32dfe419dd5dc1',1,'mage']]],
   ['what',['what',['../classmage_1_1_exception.html#ae2bd4437e2b7c960f022f7d3bf79baa7',1,'mage::Exception']]],

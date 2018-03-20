@@ -13,9 +13,7 @@ var classmage_1_1rendering_1_1_perspective_camera =
     [ "operator=", "classmage_1_1rendering_1_1_perspective_camera.html#ac5b98cb14cd16dffd1a46c4e52ef72a8", null ],
     [ "SetAspectRatio", "classmage_1_1rendering_1_1_perspective_camera.html#a180f74e8b39609aee8dcc2741a74076f", null ],
     [ "SetAspectRatio", "classmage_1_1rendering_1_1_perspective_camera.html#a09a93f5281723ec6ccf1adf636619e60", null ],
-    [ "SetCameraToProjectionMatrix", "classmage_1_1rendering_1_1_perspective_camera.html#a917ffbdee3cd5095568d69d3209912f0", null ],
     [ "SetFOVY", "classmage_1_1rendering_1_1_perspective_camera.html#ab9ae2a2ae24ff7934a31305a1a0decf7", null ],
-    [ "SetViewToProjectionMatrix", "classmage_1_1rendering_1_1_perspective_camera.html#a3eff3d0cf0cbdba0682e0932cdb17886", null ],
     [ "m_aspect_ratio", "classmage_1_1rendering_1_1_perspective_camera.html#a28abd925a9694954dcd26a4c16b6ac6d", null ],
     [ "m_fov_y", "classmage_1_1rendering_1_1_perspective_camera.html#afa70744921fce139d518730f998bd566", null ]
 ];

@@ -19,6 +19,6 @@ var searchData=
   ['falsecolor_5fuv',['FalseColor_UV',['../namespacemage_1_1rendering.html#aeb14ce7610cc9391f4e01be027b91dccafcd38c7bc3d85b482cb6ed7d85cff523',1,'mage::rendering']]],
   ['forward',['Forward',['../namespacemage_1_1rendering.html#aeb14ce7610cc9391f4e01be027b91dcca67d2f6740a8eaebf4d5c6f79be8da481',1,'mage::rendering']]],
   ['fronttoback',['FrontToBack',['../namespacemage_1_1rendering.html#a4fad00dbca0c8d854c765ab831c76055a44a4d81c96c5451956c4412d045e32ae',1,'mage::rendering']]],
-  ['frostbite',['Frostbite',['../namespacemage_1_1rendering.html#a13c5e70586af4ce254146074ec055bf6a5d1801a70481550d3de71ee64068b62d',1,'mage::rendering']]],
-  ['fxaa',['FXAA',['../namespacemage_1_1rendering.html#a25c189fd1da946d7a8f0abdd4f0e6afaaaa9ebfd80da9bf23f763a63c052a452a',1,'mage::rendering']]]
+  ['frostbite',['Frostbite',['../namespacemage_1_1rendering.html#ab8fe8684ca4bd74ba3a394b00cf125b5a5d1801a70481550d3de71ee64068b62d',1,'mage::rendering']]],
+  ['fxaa',['FXAA',['../namespacemage_1_1rendering.html#ac3f75e49e92b42f2f5fb55c450d8899caaa9ebfd80da9bf23f763a63c052a452a',1,'mage::rendering']]]
 ];

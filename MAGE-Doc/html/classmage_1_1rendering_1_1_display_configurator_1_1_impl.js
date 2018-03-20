@@ -19,10 +19,10 @@ var classmage_1_1rendering_1_1_display_configurator_1_1_impl =
     [ "m_output", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#accf774307783109a1e885efc5ec19a90", null ],
     [ "m_pixel_format", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a87d52e7bc1a1e4fe9786b3b0ec3fc1e1", null ],
     [ "m_script", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#aa11b99f1bdf03e3d1eee4d4907479c45", null ],
-    [ "s_display_settings_fname", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad0276623b8642595132fb873d06bfd61", null ],
-    [ "s_display_variable_aa", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#aaff98797b745244f86a75458f49bc806", null ],
-    [ "s_display_variable_refresh_rate", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#abda6f50d13c1e4118ba0f022818b15c9", null ],
-    [ "s_display_variable_resolution", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ace178b1cd3a4d9ac1c91dada266b99db", null ],
-    [ "s_display_variable_vsync", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad2dad3e241786f123edf66910545d63b", null ],
-    [ "s_display_variable_windowed", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a61cf721feb5eb15a4ef27a14da4b74f8", null ]
+    [ "s_display_settings_fname", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a2ead8221b0659d05699de6ef4d3c0ba4", null ],
+    [ "s_display_variable_aa", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a017dade5658f0a4fa0a56fec2fe30d52", null ],
+    [ "s_display_variable_refresh_rate", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ae8cb7050d662cc3e5cd6ff97465517a6", null ],
+    [ "s_display_variable_resolution", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#af9c853047964698a8810e71bf4483a10", null ],
+    [ "s_display_variable_vsync", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#aee0b8c95b78b2e63655c3f294b56504b", null ],
+    [ "s_display_variable_windowed", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a9d3c183714f56deaa9e55160c478bb27", null ]
 ];

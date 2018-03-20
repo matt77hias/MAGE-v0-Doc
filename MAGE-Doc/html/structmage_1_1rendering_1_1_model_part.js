@@ -17,7 +17,7 @@ var structmage_1_1rendering_1_1_model_part =
     [ "m_sphere", "structmage_1_1rendering_1_1_model_part.html#aa2204e02fe90f993990cdda677bff6e7", null ],
     [ "m_start_index", "structmage_1_1rendering_1_1_model_part.html#a251d19417a0b4abe98faeae767b9fef4", null ],
     [ "m_transform", "structmage_1_1rendering_1_1_model_part.html#af34853cb09b179bd8ffb0da151914066", null ],
-    [ "s_default_child", "structmage_1_1rendering_1_1_model_part.html#ac3e89be808deeddd01e1c7445e23044d", null ],
-    [ "s_default_material", "structmage_1_1rendering_1_1_model_part.html#a4fd4471a31cdf49d5f07448207916d6c", null ],
-    [ "s_default_parent", "structmage_1_1rendering_1_1_model_part.html#a030fd86febd5de7d3433a4f54e06c6a8", null ]
+    [ "s_default_child", "structmage_1_1rendering_1_1_model_part.html#a3571b142c7948d7ab5af699799c69b42", null ],
+    [ "s_default_material", "structmage_1_1rendering_1_1_model_part.html#a833762db3fb81dd2086e9b89da158b12", null ],
+    [ "s_default_parent", "structmage_1_1rendering_1_1_model_part.html#ab6747ba3fd20c9f55f1d9bb7a64033e5", null ]
 ];

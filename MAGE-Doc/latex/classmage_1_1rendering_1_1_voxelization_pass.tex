@@ -19,16 +19,18 @@
 \item 
 \hyperlink{classmage_1_1rendering_1_1_voxelization_pass}{Voxelization\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_ac7beb95fbf6fd85355703854ac282e91}{operator=} (\hyperlink{classmage_1_1rendering_1_1_voxelization_pass}{Voxelization\+Pass} \&\&pass) noexcept
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a9c009b1df356c289b8c8419870dfc0a7}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, \hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type} brdf, size\+\_\+t resolution)
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a6da986734b83ddaa133dc0a7605cb7e5}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} brdf, size\+\_\+t resolution)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a7f8af2ecd3eb69f4f052be7b9ce67650}{Setup\+Rasterizer\+State} (I\+D3\+D11\+Device \&device)
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a09f3b3c1a08b28c3815fb4fa1f0611f5}{Setup\+Voxel\+Grid} (size\+\_\+t resolution)
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_ae69d6465ab918f12940339436fe56c56}{Bind\+Fixed\+State} () const noexcept
 \item 
-void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a04fc0339069c463b3b2a278ea1491efd}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, \hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type} brdf) const
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_abe14ead55536ae972d964d5bdf4d13ae}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection, \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} brdf) const
 \item 
 void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_aa993ec5ff093f3948f13bf3187a11e6c}{Render} (const \hyperlink{classmage_1_1rendering_1_1_model}{Model} \&model, F\+X\+M\+M\+A\+T\+R\+IX world\+\_\+to\+\_\+projection) const noexcept
 \item 
@@ -42,6 +44,8 @@ std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \hyperlink{clas
 std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a449470bf0e0a246a2457b87289155330}{m\+\_\+state\+\_\+manager}
 \item 
 std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_aadfa94217df7498078ae49effc6b438b}{m\+\_\+resource\+\_\+manager}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Rasterizer\+State2 $>$ \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_a0b92de6ef466e697204af0bc5907fcc8}{m\+\_\+rs}
 \item 
 \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_voxelization_pass_aa95ee5cba6cfdf82d115f080421aee1c}{m\+\_\+vs}
 \item 
@@ -155,11 +159,11 @@ Moves the given voxelization pass to this voxelization pass.
 \begin{DoxyReturn}{Returns}
 A reference to the moved voxelization pass (i.\+e. this voxelization pass). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a9c009b1df356c289b8c8419870dfc0a7}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a9c009b1df356c289b8c8419870dfc0a7} 
+\hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a6da986734b83ddaa133dc0a7605cb7e5}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a6da986734b83ddaa133dc0a7605cb7e5} 
 \index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type}}]{brdf,  }\item[{size\+\_\+t}]{resolution }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}]{brdf,  }\item[{size\+\_\+t}]{resolution }\end{DoxyParamCaption})}
 
 Renders the world.
 
@@ -179,11 +183,11 @@ Renders the world.
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to render the world. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a04fc0339069c463b3b2a278ea1491efd}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a04fc0339069c463b3b2a278ea1491efd} 
+\hypertarget{classmage_1_1rendering_1_1_voxelization_pass_abe14ead55536ae972d964d5bdf4d13ae}{}\label{classmage_1_1rendering_1_1_voxelization_pass_abe14ead55536ae972d964d5bdf4d13ae} 
 \index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!Render@{Render}}
 \index{Render@{Render}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
 \subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_1_1rendering_a13c5e70586af4ce254146074ec055bf6}{B\+R\+D\+F\+Type}}]{brdf }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Voxelization\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection,  }\item[{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}]{brdf }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 Renders the given world.
 
@@ -216,6 +220,12 @@ Renders the given model.
 \mbox{\tt in}  & {\em world\+\_\+to\+\_\+projection} & The world-\/to-\/projection transformation matrix. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a7f8af2ecd3eb69f4f052be7b9ce67650}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a7f8af2ecd3eb69f4f052be7b9ce67650} 
+\index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!Setup\+Rasterizer\+State@{Setup\+Rasterizer\+State}}
+\index{Setup\+Rasterizer\+State@{Setup\+Rasterizer\+State}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{Setup\+Rasterizer\+State()}{SetupRasterizerState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Pass\+::\+Setup\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a09f3b3c1a08b28c3815fb4fa1f0611f5}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a09f3b3c1a08b28c3815fb4fa1f0611f5} 
 \index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!Setup\+Voxel\+Grid@{Setup\+Voxel\+Grid}}
 \index{Setup\+Voxel\+Grid@{Setup\+Voxel\+Grid}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
@@ -261,7 +271,13 @@ A pointer to the geometry shader of this voxelization pass. \hypertarget{classma
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}
 {\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} $>$ mage\+::rendering\+::\+Voxelization\+Pass\+::m\+\_\+resource\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
 
-A reference to the resource manager of this voxelization pass. \hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a449470bf0e0a246a2457b87289155330}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a449470bf0e0a246a2457b87289155330} 
+A reference to the resource manager of this voxelization pass. \hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a0b92de6ef466e697204af0bc5907fcc8}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a0b92de6ef466e697204af0bc5907fcc8} 
+\index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!m\+\_\+rs@{m\+\_\+rs}}
+\index{m\+\_\+rs@{m\+\_\+rs}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+rs}{m\_rs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Rasterizer\+State2 $>$ mage\+::rendering\+::\+Voxelization\+Pass\+::m\+\_\+rs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the rasterizer state of this voxelization pass. \hypertarget{classmage_1_1rendering_1_1_voxelization_pass_a449470bf0e0a246a2457b87289155330}{}\label{classmage_1_1rendering_1_1_voxelization_pass_a449470bf0e0a246a2457b87289155330} 
 \index{mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
 \index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Voxelization\+Pass@{mage\+::rendering\+::\+Voxelization\+Pass}}
 \subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
