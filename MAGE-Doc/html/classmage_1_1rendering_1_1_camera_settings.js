@@ -15,6 +15,8 @@ var classmage_1_1rendering_1_1_camera_settings =
     [ "GetSky", "classmage_1_1rendering_1_1_camera_settings.html#a3538572fc79fa03380cb9ed8cceeba42", null ],
     [ "GetSky", "classmage_1_1rendering_1_1_camera_settings.html#a0045fb85eafcb33dff43c04656c4cc3b", null ],
     [ "GetToneMapping", "classmage_1_1rendering_1_1_camera_settings.html#ae127ec7aa6c836b747d947200f847254", null ],
+    [ "GetVoxelizationSettings", "classmage_1_1rendering_1_1_camera_settings.html#ae30e0070a7376d99a9e3db5c24e45341", null ],
+    [ "GetVoxelizationSettings", "classmage_1_1rendering_1_1_camera_settings.html#a2e3906063aa11044dc325affee24aeb1", null ],
     [ "operator=", "classmage_1_1rendering_1_1_camera_settings.html#a8cc59c883ea4c45a6bb7e9dc728856fd", null ],
     [ "operator=", "classmage_1_1rendering_1_1_camera_settings.html#a28ae670d467adfc74ef8929f24b2e615", null ],
     [ "RemoveRenderLayer", "classmage_1_1rendering_1_1_camera_settings.html#a49c766f4880c798a90a9b8fe488a6711", null ],
@@ -30,5 +32,6 @@ var classmage_1_1rendering_1_1_camera_settings =
     [ "m_render_layer_mask", "classmage_1_1rendering_1_1_camera_settings.html#ab6d4995fe7531563c5c5c8db1a0a1c9f", null ],
     [ "m_render_mode", "classmage_1_1rendering_1_1_camera_settings.html#adf563f8bd1ee5cecd126c6b4731de6e5", null ],
     [ "m_sky", "classmage_1_1rendering_1_1_camera_settings.html#a62c726791db2c8ee20ef404e15c5f26c", null ],
-    [ "m_tone_mapping", "classmage_1_1rendering_1_1_camera_settings.html#a5a88df673aa475c5087bf74620048580", null ]
+    [ "m_tone_mapping", "classmage_1_1rendering_1_1_camera_settings.html#a5a88df673aa475c5087bf74620048580", null ],
+    [ "m_voxelization_settings", "classmage_1_1rendering_1_1_camera_settings.html#a4d4cc0955f6bac39a57382a15fe81d64", null ]
 ];

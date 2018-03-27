@@ -29,7 +29,6 @@ var searchData=
   ['importvarfromfile',['ImportVARFromFile',['../namespacemage_1_1loader.html#a03513131b24e70c81e6956df5f92b520',1,'mage::loader']]],
   ['importvariablescriptfromfile',['ImportVariableScriptFromFile',['../namespacemage_1_1loader.html#ace2beab3ac83ed7d27f24e392ae981cc',1,'mage::loader']]],
   ['incrementrow',['IncrementRow',['../classmage_1_1script_1_1_text_console_script.html#a3d4cba4fd8a2733933a7a444c6beaf1a',1,'mage::script::TextConsoleScript']]],
-  ['index3',['Index3',['../classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html#af9e3ab714bb4c9ab74fe2460a8c8067b',1,'mage::rendering::loader::OBJReader']]],
   ['indianred',['IndianRed',['../namespacemage_1_1color.html#a45104ede72483cb45b94b9a39f3b47cd',1,'mage::color']]],
   ['indigo',['Indigo',['../namespacemage_1_1color.html#ab31bd205544fcfb991bb62fb776bf7a6',1,'mage::color']]],
   ['info',['Info',['../namespacemage.html#ae027ddf7a47e2745df211809af41571b',1,'mage']]],

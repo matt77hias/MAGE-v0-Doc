@@ -2,7 +2,7 @@
 \label{classmage_1_1rendering_1_1_camera_settings}\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
 
 
-{\ttfamily \#include $<$camera\+\_\+settings.\+hpp$>$}
+{\ttfamily \#include $<$camera.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -31,6 +31,14 @@ void \hyperlink{classmage_1_1rendering_1_1_camera_settings_af2af3e55e876b0e2b037
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_camera_settings_ab5dc52d8f8d92cf3c4f6aca126f6dc47}{Set\+Tone\+Mapping} (\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} tone\+\_\+mapping) noexcept
 \item 
+\hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings} \& \hyperlink{classmage_1_1rendering_1_1_camera_settings_ae30e0070a7376d99a9e3db5c24e45341}{Get\+Voxelization\+Settings} () noexcept
+\item 
+const \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings} \& \hyperlink{classmage_1_1rendering_1_1_camera_settings_a2e3906063aa11044dc325affee24aeb1}{Get\+Voxelization\+Settings} () const noexcept
+\item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_settings_ae99d9db32dcf8be886e324b647d90ade}{Get\+Gamma} () const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_camera_settings_aff3d5727eaff77fd9f8bb30d352ff7d7}{Set\+Gamma} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} gamma) noexcept
+\item 
 bool \hyperlink{classmage_1_1rendering_1_1_camera_settings_aa6a33e3b5936e440af32d2ca3d65585f}{Contains\+Render\+Layers} () const noexcept
 \item 
 bool \hyperlink{classmage_1_1rendering_1_1_camera_settings_aab59f8b20a5d05fd23fff006ef741dac}{Contains\+Render\+Layer} (\hyperlink{namespacemage_1_1rendering_a466c2a441ea5b26e4625c2f34e021b3d}{Render\+Layer} render\+\_\+layer) const noexcept
@@ -42,10 +50,6 @@ void \hyperlink{classmage_1_1rendering_1_1_camera_settings_a49c766f4880c798a90a9
 void \hyperlink{classmage_1_1rendering_1_1_camera_settings_a95c531aba7bbddba9ea47000de3c53b2}{Toggle\+Render\+Layer} (\hyperlink{namespacemage_1_1rendering_a466c2a441ea5b26e4625c2f34e021b3d}{Render\+Layer} render\+\_\+layer) noexcept
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_camera_settings_a954a0af8d7939069e32b77abc23f95d0}{Reset\+Render\+Layers} () noexcept
-\item 
-\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_settings_ae99d9db32dcf8be886e324b647d90ade}{Get\+Gamma} () const noexcept
-\item 
-void \hyperlink{classmage_1_1rendering_1_1_camera_settings_aff3d5727eaff77fd9f8bb30d352ff7d7}{Set\+Gamma} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} gamma) noexcept
 \item 
 \hyperlink{classmage_1_1rendering_1_1_fog}{Fog} \& \hyperlink{classmage_1_1rendering_1_1_camera_settings_a47b2b9eeca9d9eec61a7e290e1abfa43}{Get\+Fog} () noexcept
 \item 
@@ -63,6 +67,8 @@ const \hyperlink{classmage_1_1rendering_1_1_sky}{Sky} \& \hyperlink{classmage_1_
 \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} \hyperlink{classmage_1_1rendering_1_1_camera_settings_a18daf9b9c8c7319e7db996a406aa0a43}{m\+\_\+brdf}
 \item 
 \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} \hyperlink{classmage_1_1rendering_1_1_camera_settings_a5a88df673aa475c5087bf74620048580}{m\+\_\+tone\+\_\+mapping}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings} \hyperlink{classmage_1_1rendering_1_1_camera_settings_a4d4cc0955f6bac39a57382a15fe81d64}{m\+\_\+voxelization\+\_\+settings}
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_camera_settings_aec2e610b98b3657f49944a59c4717bee}{m\+\_\+gamma}
 \item 
@@ -185,6 +191,18 @@ Destructs this camera settings.
 \subsubsection{\texorpdfstring{Get\+Tone\+Mapping()}{GetToneMapping()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Tone\+Mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+\hypertarget{classmage_1_1rendering_1_1_camera_settings_ae30e0070a7376d99a9e3db5c24e45341}{}\label{classmage_1_1rendering_1_1_camera_settings_ae30e0070a7376d99a9e3db5c24e45341} 
+\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Get\+Voxelization\+Settings@{Get\+Voxelization\+Settings}}
+\index{Get\+Voxelization\+Settings@{Get\+Voxelization\+Settings}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
+\subsubsection{\texorpdfstring{Get\+Voxelization\+Settings()}{GetVoxelizationSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}\& mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Voxelization\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1rendering_1_1_camera_settings_a2e3906063aa11044dc325affee24aeb1}{}\label{classmage_1_1rendering_1_1_camera_settings_a2e3906063aa11044dc325affee24aeb1} 
+\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Get\+Voxelization\+Settings@{Get\+Voxelization\+Settings}}
+\index{Get\+Voxelization\+Settings@{Get\+Voxelization\+Settings}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
+\subsubsection{\texorpdfstring{Get\+Voxelization\+Settings()}{GetVoxelizationSettings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}\& mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Voxelization\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1rendering_1_1_camera_settings_a8cc59c883ea4c45a6bb7e9dc728856fd}{}\label{classmage_1_1rendering_1_1_camera_settings_a8cc59c883ea4c45a6bb7e9dc728856fd} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
@@ -304,4 +322,10 @@ The sky of this camera settings. \hypertarget{classmage_1_1rendering_1_1_camera_
 \subsubsection{\texorpdfstring{m\+\_\+tone\+\_\+mapping}{m\_tone\_mapping}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} mage\+::rendering\+::\+Camera\+Settings\+::m\+\_\+tone\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
 
-The Tone Mapping of this camera settings. 
+The Tone Mapping of this camera settings. \hypertarget{classmage_1_1rendering_1_1_camera_settings_a4d4cc0955f6bac39a57382a15fe81d64}{}\label{classmage_1_1rendering_1_1_camera_settings_a4d4cc0955f6bac39a57382a15fe81d64} 
+\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!m\+\_\+voxelization\+\_\+settings@{m\+\_\+voxelization\+\_\+settings}}
+\index{m\+\_\+voxelization\+\_\+settings@{m\+\_\+voxelization\+\_\+settings}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
+\subsubsection{\texorpdfstring{m\+\_\+voxelization\+\_\+settings}{m\_voxelization\_settings}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings} mage\+::rendering\+::\+Camera\+Settings\+::m\+\_\+voxelization\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
+
+The voxelization settings of this camera settings. 

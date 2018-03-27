@@ -186,6 +186,8 @@ class \hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}
 \item 
 class \hyperlink{classmage_1_1rendering_1_1_voxelization_pass}{Voxelization\+Pass}
 \item 
+class \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}
+\item 
 class \hyperlink{classmage_1_1rendering_1_1_world}{World}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
@@ -543,7 +545,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_1_1rendering_ab31ae71562459bdb8d85b1a
 \item 
 \hyperlink{namespacemage_1_1rendering_aa5d63f80f9483d0896718813768ba1cf}{Geometry\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_af7219f5585837c13b6b60e1d6604bca5}{Create\+Voxelization\+GS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
-\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a1f1fcf51bb44edfa98fb5a7e9531c497}{Create\+Voxelization\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager, \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} brdf, bool tsnm)
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a44830e55b774b595f0a1a953a3319285}{Create\+Voxelization\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager, bool tsnm)
 \item 
 \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_acf3fe3e5a2edec7e5ab9eb1f86f0ea4a}{Create\+Voxelization\+CS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
@@ -583,10 +585,6 @@ const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespace
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
-\item 
-constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{namespacemage_1_1rendering_a0b4e2833265b231f4430837d74b9f780}{g\+\_\+voxel\+\_\+grid\+\_\+resolution} = 128u
-\item 
-constexpr \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{namespacemage_1_1rendering_a47262c273017c83385768eaf4a1ec7eb}{g\+\_\+voxel\+\_\+size} = 0.\+08f
 \item 
 {\footnotesize template$<$typename T $>$ }\\constexpr bool \hyperlink{namespacemage_1_1rendering_a31fdbf9c96bd42e878e844c2b32b2fb9}{is\+\_\+shader\+\_\+v} = \hyperlink{structmage_1_1rendering_1_1is__shader}{is\+\_\+shader}$<$ T $>$\+::value
 \end{DoxyCompactItemize}
@@ -2946,25 +2944,23 @@ A pointer to the voxelization geometry shader.
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the geometry shader. \\
 \hline
 \end{DoxyExceptions}
-\hypertarget{namespacemage_1_1rendering_a1f1fcf51bb44edfa98fb5a7e9531c497}{}\label{namespacemage_1_1rendering_a1f1fcf51bb44edfa98fb5a7e9531c497} 
+\hypertarget{namespacemage_1_1rendering_a44830e55b774b595f0a1a953a3319285}{}\label{namespacemage_1_1rendering_a44830e55b774b595f0a1a953a3319285} 
 \index{mage\+::rendering@{mage\+::rendering}!Create\+Voxelization\+PS@{Create\+Voxelization\+PS}}
 \index{Create\+Voxelization\+PS@{Create\+Voxelization\+PS}!mage\+::rendering@{mage\+::rendering}}
 \subsubsection{\texorpdfstring{Create\+Voxelization\+P\+S()}{CreateVoxelizationPS()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Voxelization\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager,  }\item[{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}]{brdf,  }\item[{bool}]{tsnm }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Voxelization\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager,  }\item[{bool}]{tsnm }\end{DoxyParamCaption})}
 
-Creates a voxelization pixel shader matching the given B\+R\+DF.
+Creates a voxelization pixel shader.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
 \hline
-\mbox{\tt in}  & {\em brdf} & The B\+R\+DF function. \\
-\hline
 \mbox{\tt in}  & {\em tsnm} & {\ttfamily true} if tangent space normal mapping should be enabled. {\ttfamily false} otherwise. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to the voxelization pixel shader matching the given B\+R\+DF. 
+A pointer to the voxelization pixel shader. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
@@ -3200,18 +3196,6 @@ The viewport transform for the given viewport.
 
 
 \subsection{Variable Documentation}
-\hypertarget{namespacemage_1_1rendering_a0b4e2833265b231f4430837d74b9f780}{}\label{namespacemage_1_1rendering_a0b4e2833265b231f4430837d74b9f780} 
-\index{mage\+::rendering@{mage\+::rendering}!g\+\_\+voxel\+\_\+grid\+\_\+resolution@{g\+\_\+voxel\+\_\+grid\+\_\+resolution}}
-\index{g\+\_\+voxel\+\_\+grid\+\_\+resolution@{g\+\_\+voxel\+\_\+grid\+\_\+resolution}!mage\+::rendering@{mage\+::rendering}}
-\subsubsection{\texorpdfstring{g\+\_\+voxel\+\_\+grid\+\_\+resolution}{g\_voxel\_grid\_resolution}}
-{\footnotesize\ttfamily constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::g\+\_\+voxel\+\_\+grid\+\_\+resolution = 128u}
-
-\hypertarget{namespacemage_1_1rendering_a47262c273017c83385768eaf4a1ec7eb}{}\label{namespacemage_1_1rendering_a47262c273017c83385768eaf4a1ec7eb} 
-\index{mage\+::rendering@{mage\+::rendering}!g\+\_\+voxel\+\_\+size@{g\+\_\+voxel\+\_\+size}}
-\index{g\+\_\+voxel\+\_\+size@{g\+\_\+voxel\+\_\+size}!mage\+::rendering@{mage\+::rendering}}
-\subsubsection{\texorpdfstring{g\+\_\+voxel\+\_\+size}{g\_voxel\_size}}
-{\footnotesize\ttfamily constexpr \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::g\+\_\+voxel\+\_\+size = 0.\+08f}
-
 \hypertarget{namespacemage_1_1rendering_a31fdbf9c96bd42e878e844c2b32b2fb9}{}\label{namespacemage_1_1rendering_a31fdbf9c96bd42e878e844c2b32b2fb9} 
 \index{mage\+::rendering@{mage\+::rendering}!is\+\_\+shader\+\_\+v@{is\+\_\+shader\+\_\+v}}
 \index{is\+\_\+shader\+\_\+v@{is\+\_\+shader\+\_\+v}!mage\+::rendering@{mage\+::rendering}}

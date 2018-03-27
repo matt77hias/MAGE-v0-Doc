@@ -47,6 +47,8 @@ const \hyperlink{classmage_1_1_bounding_sphere}{Bounding\+Sphere} \& \hyperlink{
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_spot_light_a14383d05dafe535cf0cc162e3015181e}{Get\+Range} () const noexcept
 \item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_spot_light_a13b573af8d6131b6bf426362088a2a56}{Get\+World\+Range} () const noexcept
+\item 
 void \hyperlink{classmage_1_1rendering_1_1_spot_light_a87711b67a7a16809711f9841e4708720}{Set\+Range} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} range) noexcept
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_spot_light_ab865663954e848ad42c84e759c7ceea7}{Get\+Start\+Angular\+Cutoff} () const noexcept
@@ -307,10 +309,10 @@ The power spectrum of this spotlight.
 \subsubsection{\texorpdfstring{Get\+Range()}{GetRange()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Spot\+Light\+::\+Get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the range of this spotlight.
+Returns the range of this spotlight expressed in light space.
 
 \begin{DoxyReturn}{Returns}
-The range of this spotlight. 
+The range of this spotlight expressed in light space. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1rendering_1_1_spot_light_abd442757ce094619b8f4c050e54403e1}{}\label{classmage_1_1rendering_1_1_spot_light_abd442757ce094619b8f4c050e54403e1} 
 \index{mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}!Get\+Range\+Angular\+Cutoff@{Get\+Range\+Angular\+Cutoff}}
@@ -345,6 +347,20 @@ Returns the umbra angle (in radians) of this spotlight.
 \begin{DoxyReturn}{Returns}
 The umbra angle (in radians) of this spotlight. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_spot_light_a13b573af8d6131b6bf426362088a2a56}{}\label{classmage_1_1rendering_1_1_spot_light_a13b573af8d6131b6bf426362088a2a56} 
+\index{mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}!Get\+World\+Range@{Get\+World\+Range}}
+\index{Get\+World\+Range@{Get\+World\+Range}!mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}}
+\subsubsection{\texorpdfstring{Get\+World\+Range()}{GetWorldRange()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Spot\+Light\+::\+Get\+World\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the range of this spotlight expressed in world space.
+
+\begin{DoxyReturn}{Returns}
+The range of this spotlight expressed in world space. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Non-\/uniform scaling is not supported for spotlights. 
+\end{DoxyNote}
 \hypertarget{classmage_1_1rendering_1_1_spot_light_a6bf91b086aa54f2e31d92ed401cf0fdc}{}\label{classmage_1_1rendering_1_1_spot_light_a6bf91b086aa54f2e31d92ed401cf0fdc} 
 \index{mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}}
@@ -468,11 +484,11 @@ Sets the power of this omni light to the given radiance.
 \subsubsection{\texorpdfstring{Set\+Range()}{SetRange()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Spot\+Light\+::\+Set\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the range of this spotlight to the given value.
+Sets the range of this spotlight to the given value expressed in light space.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em range} & The range. \\
+\mbox{\tt in}  & {\em range} & The range expressed in light space. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1rendering_1_1_spot_light_af1f1d3aee8bdcda50d16f4b0551e4728}{}\label{classmage_1_1rendering_1_1_spot_light_af1f1d3aee8bdcda50d16f4b0551e4728} 
@@ -579,7 +595,7 @@ The radiant intensity in watts per steradians of this spotlight. \hypertarget{cl
 \subsubsection{\texorpdfstring{m\+\_\+range}{m\_range}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Spot\+Light\+::m\+\_\+range\hspace{0.3cm}{\ttfamily [private]}}
 
-The range of this spotlight. \hypertarget{classmage_1_1rendering_1_1_spot_light_aa2e1e955cf9fb12a9e064cc523cbbe26}{}\label{classmage_1_1rendering_1_1_spot_light_aa2e1e955cf9fb12a9e064cc523cbbe26} 
+The range of this spotlight expressed in light space. \hypertarget{classmage_1_1rendering_1_1_spot_light_aa2e1e955cf9fb12a9e064cc523cbbe26}{}\label{classmage_1_1rendering_1_1_spot_light_aa2e1e955cf9fb12a9e064cc523cbbe26} 
 \index{mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}!m\+\_\+shadows@{m\+\_\+shadows}}
 \index{m\+\_\+shadows@{m\+\_\+shadows}!mage\+::rendering\+::\+Spot\+Light@{mage\+::rendering\+::\+Spot\+Light}}
 \subsubsection{\texorpdfstring{m\+\_\+shadows}{m\_shadows}}

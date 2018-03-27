@@ -38,8 +38,6 @@ var searchData=
   ['g_5fvar_5ftoken_5fint2',['g_var_token_int2',['../namespacemage_1_1loader.html#a56b5eb839752f752fe25139e893d02d5',1,'mage::loader']]],
   ['g_5fvar_5ftoken_5fint3',['g_var_token_int3',['../namespacemage_1_1loader.html#a6d17673197d2bb9487c8c874a741da8f',1,'mage::loader']]],
   ['g_5fvar_5ftoken_5fstring',['g_var_token_string',['../namespacemage_1_1loader.html#a653c16a1fffe8a8f00cc11923d6243a8',1,'mage::loader']]],
-  ['g_5fvoxel_5fgrid_5fresolution',['g_voxel_grid_resolution',['../namespacemage_1_1rendering.html#a0b4e2833265b231f4430837d74b9f780',1,'mage::rendering']]],
-  ['g_5fvoxel_5fsize',['g_voxel_size',['../namespacemage_1_1rendering.html#a47262c273017c83385768eaf4a1ec7eb',1,'mage::rendering']]],
   ['gainsboro',['Gainsboro',['../namespacemage_1_1color.html#a583df8c3b60258fd677dc01eed2d947f',1,'mage::color']]],
   ['gbitmask',['GBitMask',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a13f1281d9cb4a6e001541c78d58ead8b',1,'DDS_PIXELFORMAT']]],
   ['ghostwhite',['GhostWhite',['../namespacemage_1_1color.html#a97d27d6604ead54a2d60ca9b4f042783',1,'mage::color']]],
