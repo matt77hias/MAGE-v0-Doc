@@ -8,5 +8,6 @@ var structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer =
     [ "operator=", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a5605852385a384c28a4c0cee6bc3cc32", null ],
     [ "m_light", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a6b316ed6c8b69d5aeb15fbe93c23de95", null ],
     [ "m_padding0", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a01a76a39534ba04a2b1fe77ae5d1522c", null ],
-    [ "m_projection_values", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a29016735134bb44c6c6f0d52fbf9ef2c", null ]
+    [ "m_projection_values", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a29016735134bb44c6c6f0d52fbf9ef2c", null ],
+    [ "m_world_to_light", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a6ad3f982000ca1d68c3897589aa89798", null ]
 ];

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.137.0</span>
+   &#160;<span id="projectnumber">v0.139.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -146,6 +146,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>s_logging_configuration
 : <a class="el" href="classmage_1_1_logging_configuration.html#a056b2250472f997de3d99dcfc3c02940">mage::LoggingConfiguration</a>
 </li>
+<li>s_max_nb_cones
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a7d5ceb0965e5c3a9aa1e16dd6dd06eed">mage::rendering::VoxelizationSettings</a>
+</li>
 <li>s_max_sprites_per_batch
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#a5f003dd97ee0c4aac0de37fcfd7b9889">mage::rendering::SpriteBatchMesh</a>
 </li>
@@ -161,8 +164,17 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>s_vertices_per_sprite
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#ae330e326577d8a0d94c03c0c8aae62c6">mage::rendering::SpriteBatchMesh</a>
 </li>
+<li>s_voxel_grid_center
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a37151063ebbf6ae6ea193fb0ce05d270">mage::rendering::VoxelizationSettings</a>
+</li>
+<li>s_voxel_grid_resolution
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#aa709675f6700320077718e1954854ca6">mage::rendering::VoxelizationSettings</a>
+</li>
+<li>s_voxel_size
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a647150f56ef8546b6e18f5ad8dd2e661">mage::rendering::VoxelizationSettings</a>
+</li>
 <li>Scene()
-: <a class="el" href="classmage_1_1_scene.html#a88d83ccb2e10549d5370f850b2b4c228">mage::Scene</a>
+: <a class="el" href="classmage_1_1_scene.html#aaed505892f2a639db47e5d5767f41337">mage::Scene</a>
 </li>
 <li>SecondaryCameraBuffer()
 : <a class="el" href="structmage_1_1rendering_1_1_secondary_camera_buffer.html#a296dad06794aeb4017c37d3aa8eb9641">mage::rendering::SecondaryCameraBuffer</a>
@@ -197,6 +209,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </li>
 <li>SetClippingPlanes()
 : <a class="el" href="classmage_1_1rendering_1_1_camera.html#afc95f8de701649af5b614a57c1c06e9a">mage::rendering::Camera</a>
+</li>
+<li>SetConeStepMultiplier()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a9eafb3795d3e8248196dd7e9c6d32671">mage::rendering::VoxelizationSettings</a>
 </li>
 <li>SetDefaultCharacter()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a7400d0574c96e4e204268d6cd5a5c356">mage::rendering::SpriteFont</a>
@@ -267,6 +282,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>SetMaterialTexture()
 : <a class="el" href="classmage_1_1rendering_1_1_material.html#a6bf886a16cbe84c55664701ab3a82658">mage::rendering::Material</a>
 </li>
+<li>SetMaxConeDistance()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a137c4c2186b5034f546d0b876cd0633e">mage::rendering::VoxelizationSettings</a>
+</li>
 <li>SetMaximumBaseColorTextureRegion()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_image.html#a5b0a8abc53768cce82c3c2f8f1a96745">mage::rendering::SpriteImage</a>
 </li>
@@ -304,6 +322,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </li>
 <li>SetNormalTexture()
 : <a class="el" href="classmage_1_1rendering_1_1_material.html#a1a1ae2ba12c62c1d076f04124f1f64f6">mage::rendering::Material</a>
+</li>
+<li>SetNumberOfCones()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#ac7b2ca30bb73b5fb7e0c2cc46001ae22">mage::rendering::VoxelizationSettings</a>
 </li>
 <li>SetNumberOfIndices()
 : <a class="el" href="classmage_1_1rendering_1_1_mesh.html#acd34fa8466235d5e17dd0f9be60fd5ea">mage::rendering::Mesh</a>
@@ -357,7 +378,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classmage_1_1script_1_1_rotation_script.html#aa4b49dc5e34da3e851d5aefc4c4a434b">mage::script::RotationScript</a>
 </li>
 <li>SetRotationOrigin()
-: <a class="el" href="classmage_1_1_sprite_transform.html#adc5bb1cd5512bea503c981624088a5be">mage::SpriteTransform</a>
+: <a class="el" href="classmage_1_1_sprite_transform.html#a2494e4350b47a6ef3e1f7642a8f7d8c6">mage::SpriteTransform</a>
 , <a class="el" href="classmage_1_1_texture_transform.html#a86667569140479a6b7bf6e1987f88c7c">mage::TextureTransform</a>
 </li>
 <li>SetRotationOriginX()
@@ -454,16 +475,16 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#ab5dc52d8f8d92cf3c4f6aca126f6dc47">mage::rendering::CameraSettings</a>
 </li>
 <li>SetTopLeft()
-: <a class="el" href="classmage_1_1rendering_1_1_viewport.html#a22ea70a6e01b8328ba94d90e374e85cb">mage::rendering::Viewport</a>
+: <a class="el" href="classmage_1_1rendering_1_1_viewport.html#a281e2fdd022aa9714741f5291be1c6ef">mage::rendering::Viewport</a>
 </li>
 <li>SetTrackedFullScreen()
 : <a class="el" href="classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a6f97179cc5e352a349ed943413d149e7">mage::rendering::SwapChain::Impl</a>
 </li>
 <li>SetTranslation()
 : <a class="el" href="classmage_1_1_local_transform.html#acf9b6ca41b2360d347ae354677d33952">mage::LocalTransform</a>
-, <a class="el" href="classmage_1_1_sprite_transform.html#a9fb2d4e0f332c316c8f2d07f482f40a5">mage::SpriteTransform</a>
-, <a class="el" href="classmage_1_1_texture_transform.html#ad8d376195941d77086c9ffdb7d49aaf1">mage::TextureTransform</a>
-, <a class="el" href="classmage_1_1_transform.html#a0c93ec5483091d4be508e11d5c05579e">mage::Transform</a>
+, <a class="el" href="classmage_1_1_sprite_transform.html#adc47b798331d5e61d158fb4f00d37084">mage::SpriteTransform</a>
+, <a class="el" href="classmage_1_1_texture_transform.html#ad78b5f8482dd2a70ac7cde0aa5877f8c">mage::TextureTransform</a>
+, <a class="el" href="classmage_1_1_transform.html#a50f037f902afa811b596f745de5537fb">mage::Transform</a>
 </li>
 <li>SetTranslationX()
 : <a class="el" href="classmage_1_1_local_transform.html#a6f7d8ee474163d921c8fe485c99a0217">mage::LocalTransform</a>
@@ -576,6 +597,15 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>SetViewport()
 : <a class="el" href="classmage_1_1rendering_1_1_viewport.html#a641dc22ff2ea12c7f3164b704e9ea479">mage::rendering::Viewport</a>
 </li>
+<li>SetVoxelGridCenter()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#ad4a2dd741cdd4187eaaa2492fb1ca533">mage::rendering::VoxelizationSettings</a>
+</li>
+<li>SetVoxelGridResolution()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#aeffbe093b1df8a738906db2249961ed8">mage::rendering::VoxelizationSettings</a>
+</li>
+<li>SetVoxelSize()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a4e1c575474a1301981bc0a0070c2c841">mage::rendering::VoxelizationSettings</a>
+</li>
 <li>SetVSync()
 : <a class="el" href="classmage_1_1rendering_1_1_display_configuration.html#a304a29762afd99caa1672ef6cc259fb3">mage::rendering::DisplayConfiguration</a>
 </li>
@@ -583,19 +613,19 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_display_configuration.html#a78d0902979bd5a0eff7fef0aa7976a7f">mage::rendering::DisplayConfiguration</a>
 </li>
 <li>Shader()
-: <a class="el" href="classmage_1_1rendering_1_1_shader.html#a4ca3a1e4f108e38d28c0ba3df4f234f6">mage::rendering::Shader&lt; ShaderT, PipelineStageT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1_shader.html#a00fe99edc760763ede9dd414b286c820">mage::rendering::Shader&lt; ShaderT, PipelineStageT &gt;</a>
 </li>
 <li>ShadowCubeMapBuffer()
-: <a class="el" href="classmage_1_1rendering_1_1_shadow_cube_map_buffer.html#aeb1c633be265f8c03dd4e525e069de03">mage::rendering::ShadowCubeMapBuffer</a>
+: <a class="el" href="classmage_1_1rendering_1_1_shadow_cube_map_buffer.html#a724d0d73588f2e698f2748209befdba8">mage::rendering::ShadowCubeMapBuffer</a>
 </li>
 <li>ShadowMapBuffer()
-: <a class="el" href="classmage_1_1rendering_1_1_shadow_map_buffer.html#ad1d94bf0e4ca227064bc5e83d01f3af0">mage::rendering::ShadowMapBuffer</a>
+: <a class="el" href="classmage_1_1rendering_1_1_shadow_map_buffer.html#ac7e9131739e3ec2781d4d445cea906f4">mage::rendering::ShadowMapBuffer</a>
 </li>
 <li>ShadowMappedDirectionalLightBuffer()
 : <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_directional_light_buffer.html#a984e2af2b6319226b6e896e28fc056b8">mage::rendering::ShadowMappedDirectionalLightBuffer</a>
 </li>
 <li>ShadowMappedOmniLightBuffer()
-: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a7fb986d0697bdea8ac54f45c188f2a4b">mage::rendering::ShadowMappedOmniLightBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a3b9f6ffd582185ea739410aeeec8a446">mage::rendering::ShadowMappedOmniLightBuffer</a>
 </li>
 <li>ShadowMappedSpotLightBuffer()
 : <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html#ac984180fa57278b851bbaf3b081a4343">mage::rendering::ShadowMappedSpotLightBuffer</a>
@@ -626,46 +656,46 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a2573f39b9f7f87b2acd7eadc348c1e2b">mage::rendering::SpriteBatch::Impl</a>
 </li>
 <li>SpotLight()
-: <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a3e94a01b574efb8af5540e24d7af75c6">mage::rendering::SpotLight</a>
+: <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#abc287714a0bb8f4fab5960b7bcbb4316">mage::rendering::SpotLight</a>
 </li>
 <li>SpotLightBuffer()
-: <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#a603e2c40ae924a2183f24604297715aa">mage::rendering::SpotLightBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#a36fe774118a2b1d0e48ba89e74d09886">mage::rendering::SpotLightBuffer</a>
 </li>
 <li>SpriteBatch()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_batch.html#a44e4cca2560beccf655c87d79dca3d20">mage::rendering::SpriteBatch</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_batch.html#a979cdc21ce17579ded4066f1e6a2d411">mage::rendering::SpriteBatch</a>
 </li>
 <li>SpriteBatchMesh()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#a992adb566fc9718869f0c6e6f1391df7">mage::rendering::SpriteBatchMesh</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#af36ff5857269d512b8d6799d1121599d">mage::rendering::SpriteBatchMesh</a>
 </li>
 <li>SpriteFont()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a9a2014908c6c63aa9d9ad223383bd03a">mage::rendering::SpriteFont</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a6080794a32e8e4fa4b2be7392a4e9466">mage::rendering::SpriteFont</a>
 </li>
 <li>SpriteFontDescriptor()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_font_descriptor.html#a82c66afe6cc815ad223c15642cd2ac00">mage::rendering::SpriteFontDescriptor</a>
 </li>
 <li>SpriteFontOutput()
-: <a class="el" href="structmage_1_1rendering_1_1_sprite_font_output.html#a304a4627f0aaacdb0f9dd0951421c8a2">mage::rendering::SpriteFontOutput</a>
+: <a class="el" href="structmage_1_1rendering_1_1_sprite_font_output.html#a5bc62257f436c6836a8fd0b3c306c026">mage::rendering::SpriteFontOutput</a>
 </li>
 <li>SpriteFontReader()
-: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#a5cef04ca33ef0047664fa757de6e1b8f">mage::rendering::loader::SpriteFontReader</a>
+: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#a71239906b4c7609747d5fe47189883b6">mage::rendering::loader::SpriteFontReader</a>
 </li>
 <li>SpriteImage()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_image.html#a788c62105830b6986a686c6f249c825d">mage::rendering::SpriteImage</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_image.html#af49f06e0de889dbfd2db264d9e07fc20">mage::rendering::SpriteImage</a>
 </li>
 <li>SpritePass()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_pass.html#ae8b938a091647c5540fa2ca8bf955556">mage::rendering::SpritePass</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_pass.html#ae247bfa4b2b13a874e080d53e271e974">mage::rendering::SpritePass</a>
 </li>
 <li>SpriteText()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#a60b40732c1a08b88b70335cf91947556">mage::rendering::SpriteText</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#aa250ee1527cbb9dba2f693df7cedd06f">mage::rendering::SpriteText</a>
 </li>
 <li>SpriteTransform()
 : <a class="el" href="classmage_1_1_sprite_transform.html#a8d3760699d035e6315218bb6b589a2cb">mage::SpriteTransform</a>
 </li>
 <li>SRGB()
-: <a class="el" href="structmage_1_1_s_r_g_b.html#aca835f4281827524ad14345ddb28208a">mage::SRGB</a>
+: <a class="el" href="structmage_1_1_s_r_g_b.html#acf4eb424d13f8ee60065c3d7e118987b">mage::SRGB</a>
 </li>
 <li>SRGBA()
-: <a class="el" href="structmage_1_1_s_r_g_b_a.html#ab2d736d077534d550020b0f01e5780ae">mage::SRGBA</a>
+: <a class="el" href="structmage_1_1_s_r_g_b_a.html#a159096e69a7e18eee0d6718d244a1493">mage::SRGBA</a>
 </li>
 <li>SRVIndex
 : <a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63">mage::rendering::OutputManager</a>
@@ -684,7 +714,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_static_mesh.html#a99a189dbe9ff6f095063967f68c7285d">mage::rendering::StaticMesh&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>StatsScript()
-: <a class="el" href="classmage_1_1script_1_1_stats_script.html#a6863940cb48633fbd5fc56547dc72a76">mage::script::StatsScript</a>
+: <a class="el" href="classmage_1_1script_1_1_stats_script.html#a3fb4aa69fc341df0fe2c2ad03f0ff278">mage::script::StatsScript</a>
 </li>
 <li>Stop()
 : <a class="el" href="classmage_1_1_c_p_u_monitor.html#a133aaed1df0e84486a6fc748d66615bb">mage::CPUMonitor</a>

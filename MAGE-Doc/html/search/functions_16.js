@@ -152,6 +152,7 @@ var searchData=
   ['_7evoxelgrid',['~VoxelGrid',['../classmage_1_1rendering_1_1_voxel_grid.html#aa349c9ddd6d6be9f12d7e399a0931f89',1,'mage::rendering::VoxelGrid']]],
   ['_7evoxelgridpass',['~VoxelGridPass',['../classmage_1_1rendering_1_1_voxel_grid_pass.html#a64361ec102c8f3f30d1e0d8edac33e5a',1,'mage::rendering::VoxelGridPass']]],
   ['_7evoxelizationpass',['~VoxelizationPass',['../classmage_1_1rendering_1_1_voxelization_pass.html#ab989ce6ec60745d7339a1288554dd400',1,'mage::rendering::VoxelizationPass']]],
+  ['_7evoxelizationsettings',['~VoxelizationSettings',['../classmage_1_1rendering_1_1_voxelization_settings.html#aa9593796b2dd3b9d3a8f6b00ba225778',1,'mage::rendering::VoxelizationSettings']]],
   ['_7ewindow',['~Window',['../classmage_1_1_window.html#a71d3ce0b3141e89121ae09e8fc64a217',1,'mage::Window']]],
   ['_7ewindowdescriptor',['~WindowDescriptor',['../classmage_1_1_window_descriptor.html#ac73160dd1e90b9acf819164b774d5709',1,'mage::WindowDescriptor']]],
   ['_7ewindowmessagehandler',['~WindowMessageHandler',['../classmage_1_1_window_message_handler.html#a24eae1a24e783b22fce2c7fdd8e14fef',1,'mage::WindowMessageHandler']]],

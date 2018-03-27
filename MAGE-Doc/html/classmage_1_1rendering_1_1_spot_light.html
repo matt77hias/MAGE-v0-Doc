@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.137.0</span>
+   &#160;<span id="projectnumber">v0.139.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a003e42ab1d3059ae5750893bcaa8e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14383d05dafe535cf0cc162e3015181e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#aa97e833b45f06d60a0a9c4fc22ae02c0">F32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a14383d05dafe535cf0cc162e3015181e">GetRange</a> () const noexcept</td></tr>
 <tr class="separator:a14383d05dafe535cf0cc162e3015181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b573af8d6131b6bf426362088a2a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#aa97e833b45f06d60a0a9c4fc22ae02c0">F32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a13b573af8d6131b6bf426362088a2a56">GetWorldRange</a> () const noexcept</td></tr>
+<tr class="separator:a13b573af8d6131b6bf426362088a2a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87711b67a7a16809711f9841e4708720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a87711b67a7a16809711f9841e4708720">SetRange</a> (<a class="el" href="namespacemage.html#aa97e833b45f06d60a0a9c4fc22ae02c0">F32</a> range) noexcept</td></tr>
 <tr class="separator:a87711b67a7a16809711f9841e4708720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab865663954e848ad42c84e759c7ceea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#aa97e833b45f06d60a0a9c4fc22ae02c0">F32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_spot_light.html#ab865663954e848ad42c84e759c7ceea7">GetStartAngularCutoff</a> () const noexcept</td></tr>
@@ -751,8 +753,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the range of this spotlight.</p>
-<dl class="section return"><dt>Returns</dt><dd>The range of this spotlight. </dd></dl>
+<p>Returns the range of this spotlight expressed in light space.</p>
+<dl class="section return"><dt>Returns</dt><dd>The range of this spotlight expressed in light space. </dd></dl>
 
 </div>
 </div>
@@ -834,6 +836,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the umbra angle (in radians) of this spotlight.</p>
 <dl class="section return"><dt>Returns</dt><dd>The umbra angle (in radians) of this spotlight. </dd></dl>
+
+</div>
+</div>
+<a id="a13b573af8d6131b6bf426362088a2a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b573af8d6131b6bf426362088a2a56">&sect;&nbsp;</a></span>GetWorldRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#aa97e833b45f06d60a0a9c4fc22ae02c0">F32</a> mage::rendering::SpotLight::GetWorldRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the range of this spotlight expressed in world space.</p>
+<dl class="section return"><dt>Returns</dt><dd>The range of this spotlight expressed in world space. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Non-uniform scaling is not supported for spotlights. </dd></dl>
 
 </div>
 </div>
@@ -1149,10 +1179,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the range of this spotlight to the given value.</p>
+<p>Sets the range of this spotlight to the given value expressed in light space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>The range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>The range expressed in light space. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1473,7 +1503,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The range of this spotlight. </p>
+<p>The range of this spotlight expressed in light space. </p>
 
 </div>
 </div>

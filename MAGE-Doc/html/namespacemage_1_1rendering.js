@@ -90,5 +90,6 @@ var namespacemage_1_1rendering =
     [ "VoxelGrid", "classmage_1_1rendering_1_1_voxel_grid.html", "classmage_1_1rendering_1_1_voxel_grid" ],
     [ "VoxelGridPass", "classmage_1_1rendering_1_1_voxel_grid_pass.html", "classmage_1_1rendering_1_1_voxel_grid_pass" ],
     [ "VoxelizationPass", "classmage_1_1rendering_1_1_voxelization_pass.html", "classmage_1_1rendering_1_1_voxelization_pass" ],
+    [ "VoxelizationSettings", "classmage_1_1rendering_1_1_voxelization_settings.html", "classmage_1_1rendering_1_1_voxelization_settings" ],
     [ "World", "classmage_1_1rendering_1_1_world.html", "classmage_1_1rendering_1_1_world" ]
 ];

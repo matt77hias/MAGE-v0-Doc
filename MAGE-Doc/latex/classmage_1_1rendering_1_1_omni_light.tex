@@ -47,6 +47,8 @@ const \hyperlink{classmage_1_1_bounding_sphere}{Bounding\+Sphere} \& \hyperlink{
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_omni_light_af9bfc4b943b156756cd7c2323d93ebdd}{Get\+Range} () const noexcept
 \item 
+\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_omni_light_a7be27af3b3e5d11806396ce8f619223f}{Get\+World\+Range} () const noexcept
+\item 
 void \hyperlink{classmage_1_1rendering_1_1_omni_light_a71d9cbef05c421a154b202e7a9b8eedb}{Set\+Range} (\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} range) noexcept
 \item 
 bool \hyperlink{classmage_1_1rendering_1_1_omni_light_a7b4bd4cdd980feb3d841fff5947720e9}{Use\+Shadows} () const noexcept
@@ -246,11 +248,25 @@ The power spectrum of this omni light.
 \subsubsection{\texorpdfstring{Get\+Range()}{GetRange()}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Omni\+Light\+::\+Get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the range of this omni light.
+Returns the range of this omni light expressed in light space.
 
 \begin{DoxyReturn}{Returns}
-The range of this omni light. 
+The range of this omni light expressed in light space. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_omni_light_a7be27af3b3e5d11806396ce8f619223f}{}\label{classmage_1_1rendering_1_1_omni_light_a7be27af3b3e5d11806396ce8f619223f} 
+\index{mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}!Get\+World\+Range@{Get\+World\+Range}}
+\index{Get\+World\+Range@{Get\+World\+Range}!mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}}
+\subsubsection{\texorpdfstring{Get\+World\+Range()}{GetWorldRange()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Omni\+Light\+::\+Get\+World\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the range of this omni light expressed in world space.
+
+\begin{DoxyReturn}{Returns}
+The range of this omni light expressed in world space. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Non-\/uniform scaling is not supported for omni lights. 
+\end{DoxyNote}
 \hypertarget{classmage_1_1rendering_1_1_omni_light_aac914061f6798131e7f59275b4716b48}{}\label{classmage_1_1rendering_1_1_omni_light_aac914061f6798131e7f59275b4716b48} 
 \index{mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}}
@@ -315,11 +331,11 @@ Sets the power of this omni light to the given radiance.
 \subsubsection{\texorpdfstring{Set\+Range()}{SetRange()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Omni\+Light\+::\+Set\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Sets the range of this omni light to the given value.
+Sets the range of this omni light to the given value expressed in light space.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em range} & The range. \\
+\mbox{\tt in}  & {\em range} & The range expressed in light space. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1rendering_1_1_omni_light_a2817ab7a4c514785f01bf2e40c6245cb}{}\label{classmage_1_1rendering_1_1_omni_light_a2817ab7a4c514785f01bf2e40c6245cb} 
@@ -385,7 +401,7 @@ The radiant intensity in watts per steradians of this omni light. \hypertarget{c
 \subsubsection{\texorpdfstring{m\+\_\+range}{m\_range}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Omni\+Light\+::m\+\_\+range\hspace{0.3cm}{\ttfamily [private]}}
 
-The range of this omni light. \hypertarget{classmage_1_1rendering_1_1_omni_light_af0cb508d0333f86cf64c28f5628177d4}{}\label{classmage_1_1rendering_1_1_omni_light_af0cb508d0333f86cf64c28f5628177d4} 
+The range of this omni light expressed in light space. \hypertarget{classmage_1_1rendering_1_1_omni_light_af0cb508d0333f86cf64c28f5628177d4}{}\label{classmage_1_1rendering_1_1_omni_light_af0cb508d0333f86cf64c28f5628177d4} 
 \index{mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}!m\+\_\+shadows@{m\+\_\+shadows}}
 \index{m\+\_\+shadows@{m\+\_\+shadows}!mage\+::rendering\+::\+Omni\+Light@{mage\+::rendering\+::\+Omni\+Light}}
 \subsubsection{\texorpdfstring{m\+\_\+shadows}{m\_shadows}}

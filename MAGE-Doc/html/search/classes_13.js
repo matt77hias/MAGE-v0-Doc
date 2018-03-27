@@ -32,5 +32,6 @@ var searchData=
   ['voxelgrid',['VoxelGrid',['../classmage_1_1rendering_1_1_voxel_grid.html',1,'mage::rendering']]],
   ['voxelgridpass',['VoxelGridPass',['../classmage_1_1rendering_1_1_voxel_grid_pass.html',1,'mage::rendering']]],
   ['voxelizationpass',['VoxelizationPass',['../classmage_1_1rendering_1_1_voxelization_pass.html',1,'mage::rendering']]],
+  ['voxelizationsettings',['VoxelizationSettings',['../classmage_1_1rendering_1_1_voxelization_settings.html',1,'mage::rendering']]],
   ['vs',['VS',['../structmage_1_1rendering_1_1_pipeline_1_1_v_s.html',1,'mage::rendering::Pipeline']]]
 ];

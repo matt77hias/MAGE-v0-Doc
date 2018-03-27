@@ -22,6 +22,7 @@ var classmage_1_1rendering_1_1_spot_light =
     [ "GetRangeAngularCutoff", "classmage_1_1rendering_1_1_spot_light.html#abd442757ce094619b8f4c050e54403e1", null ],
     [ "GetStartAngularCutoff", "classmage_1_1rendering_1_1_spot_light.html#ab865663954e848ad42c84e759c7ceea7", null ],
     [ "GetUmbraAngle", "classmage_1_1rendering_1_1_spot_light.html#a2ad4020c60fcfd2fca7568fbefa601f0", null ],
+    [ "GetWorldRange", "classmage_1_1rendering_1_1_spot_light.html#a13b573af8d6131b6bf426362088a2a56", null ],
     [ "operator=", "classmage_1_1rendering_1_1_spot_light.html#a6bf91b086aa54f2e31d92ed401cf0fdc", null ],
     [ "operator=", "classmage_1_1rendering_1_1_spot_light.html#a58ff20b0459ccd6df54c85a361faa5ad", null ],
     [ "SetAngularCutoff", "classmage_1_1rendering_1_1_spot_light.html#a92a3b92e8a789c038c0f9058b1ff5a48", null ],

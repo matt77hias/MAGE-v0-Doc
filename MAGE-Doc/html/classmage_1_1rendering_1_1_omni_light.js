@@ -16,6 +16,7 @@ var classmage_1_1rendering_1_1_omni_light =
     [ "GetPower", "classmage_1_1rendering_1_1_omni_light.html#a43c6be5649668705ffb1ace363960b00", null ],
     [ "GetPowerSpectrum", "classmage_1_1rendering_1_1_omni_light.html#a82366151b99cc4791d8b361331f75833", null ],
     [ "GetRange", "classmage_1_1rendering_1_1_omni_light.html#af9bfc4b943b156756cd7c2323d93ebdd", null ],
+    [ "GetWorldRange", "classmage_1_1rendering_1_1_omni_light.html#a7be27af3b3e5d11806396ce8f619223f", null ],
     [ "operator=", "classmage_1_1rendering_1_1_omni_light.html#aac914061f6798131e7f59275b4716b48", null ],
     [ "operator=", "classmage_1_1rendering_1_1_omni_light.html#a8126d5d0d3a45d0063c3fd2f28e3826e", null ],
     [ "SetIntensity", "classmage_1_1rendering_1_1_omni_light.html#aa2a936678bde1f957fd70207d2460d06", null ],

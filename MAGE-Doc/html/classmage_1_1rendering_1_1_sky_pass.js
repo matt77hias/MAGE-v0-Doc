@@ -7,7 +7,7 @@ var classmage_1_1rendering_1_1_sky_pass =
     [ "BindFixedState", "classmage_1_1rendering_1_1_sky_pass.html#ab2e7bf506b3a038264579aa3c494f14d", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sky_pass.html#a8364836c5db0dc3e9894e1749ab302e8", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sky_pass.html#ad844a754a13fa90ef87aa62745ea936d", null ],
-    [ "Render", "classmage_1_1rendering_1_1_sky_pass.html#af0b6421b1c9a638133d6dfe681b1aa78", null ],
+    [ "Render", "classmage_1_1rendering_1_1_sky_pass.html#a94b9ca7b1a02b6f6730584ec80adb84a", null ],
     [ "m_device_context", "classmage_1_1rendering_1_1_sky_pass.html#a5639f9eb6bf863074c5e5afba2f0e2f5", null ],
     [ "m_ps", "classmage_1_1rendering_1_1_sky_pass.html#a945613544f942b4278454a89bb5e1513", null ],
     [ "m_state_manager", "classmage_1_1rendering_1_1_sky_pass.html#aed4f451eb046158e856fdda6de9856f5", null ],
