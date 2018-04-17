@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.139.0</span>
+   &#160;<span id="projectnumber">v0.146.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -147,6 +147,8 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="classmage_1_1_engine_message_handler.html#a567c60f09df9fed3c725ab215e9afbe6">mage::EngineMessageHandler</a>
 , <a class="el" href="classmage_1_1_engine_setup.html#a4234ca6df84db6a2005b994ed42da11f">mage::EngineSetup</a>
 , <a class="el" href="classmage_1_1_exception.html#ab0e7e6b32b07505271a4a88067ab54f4">mage::Exception</a>
+, <a class="el" href="classmage_1_1_game_time.html#a7ebc520cb69228e457c24958e7b97baa">mage::GameTime</a>
+, <a class="el" href="classmage_1_1_game_timer.html#a9465e2d38d8810c2acb2cde2aafeaad1">mage::GameTimer</a>
 , <a class="el" href="classmage_1_1_id_generator.html#adf4539050d910996e914df51f22236c6">mage::IdGenerator</a>
 , <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#adf6d3d47c39fbef1ee288aeeda5c55a0">mage::input::Keyboard::Impl</a>
 , <a class="el" href="classmage_1_1input_1_1_keyboard.html#a8a06eeb906625f100928f3fe2d17cf9d">mage::input::Keyboard</a>
@@ -185,17 +187,15 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="classmage_1_1rendering_1_1_deferred_pass.html#a5b9a7cf23089389be11d6a3c4526bde9">mage::rendering::DeferredPass</a>
 , <a class="el" href="classmage_1_1rendering_1_1_depth_pass.html#a10cc86e94eb5425f0323b989c33514b7">mage::rendering::DepthPass</a>
 , <a class="el" href="classmage_1_1rendering_1_1_directional_light.html#aa81fa39a4d068d879a6d90587ee324d8">mage::rendering::DirectionalLight</a>
-, <a class="el" href="structmage_1_1rendering_1_1_directional_light_buffer.html#ae2dfc882b678be7ae81b6d51b55f74bc">mage::rendering::DirectionalLightBuffer</a>
+, <a class="el" href="structmage_1_1rendering_1_1_directional_light_buffer.html#adb98ba5e4772ab90af749e521a6a6593">mage::rendering::DirectionalLightBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1_display_configuration.html#a847151bc6a61f320811e915119f38f9f">mage::rendering::DisplayConfiguration</a>
 , <a class="el" href="classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#afaffb2c4689dd48c195d2a7f12c11e0b">mage::rendering::DisplayConfigurator::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_display_configurator.html#affd6a3486be8564246628a6a20518ac2">mage::rendering::DisplayConfigurator</a>
-, <a class="el" href="classmage_1_1rendering_1_1_d_o_f_pass.html#ac70bc446c50db4ab919220a344be8045">mage::rendering::DOFPass</a>
 , <a class="el" href="classmage_1_1rendering_1_1_fog.html#a6197ad3df06e461c7cb2f5028f8cd901">mage::rendering::Fog</a>
 , <a class="el" href="classmage_1_1rendering_1_1_forward_pass.html#a373b424f52fb5a209bed756dc06f47ee">mage::rendering::ForwardPass</a>
-, <a class="el" href="structmage_1_1rendering_1_1_game_buffer.html#a44db86bb85f9fcf7dea1345ed9416aa3">mage::rendering::GameBuffer</a>
 , <a class="el" href="structmage_1_1rendering_1_1_glyph.html#ae399a7c5ff5eeb842c56febd18cc16d2">mage::rendering::Glyph</a>
 , <a class="el" href="classmage_1_1rendering_1_1_l_buffer_pass.html#a14814e64f1e99f3144944bea07932a20">mage::rendering::LBufferPass</a>
-, <a class="el" href="structmage_1_1rendering_1_1_light_buffer.html#abe8ee3df1e5c2ce28aaab03ce729a184">mage::rendering::LightBuffer</a>
+, <a class="el" href="structmage_1_1rendering_1_1_light_buffer.html#a409af50e3d21571e56b36c6c88769a65">mage::rendering::LightBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_reader.html#a76e89824650cdf1d737048ac06862166">mage::rendering::loader::MDLReader&lt; VertexT, IndexT &gt;</a>
 , <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a9e5f38a8b5016534385039d44d3d71dc">mage::rendering::loader::MDLWriter&lt; VertexT, IndexT &gt;</a>
 , <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a106e5a6cce46777cf7ae36cb4034e1a0">mage::rendering::loader::MSHReader&lt; VertexT, IndexT &gt;</a>
@@ -217,7 +217,8 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_omni_light_buffer.html#a915b047abdc1068279b8308b189b60f5">mage::rendering::OmniLightBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1_orthographic_camera.html#adcd0a977ed5245aa4224dd1a679586f7">mage::rendering::OrthographicCamera</a>
 , <a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a7fb15ee3d3e3f7be648071ef1c6f3c6d">mage::rendering::OutputManager</a>
-, <a class="el" href="classmage_1_1rendering_1_1_perspective_camera.html#ac5b98cb14cd16dffd1a46c4e52ef72a8">mage::rendering::PerspectiveCamera</a>
+, <a class="el" href="classmage_1_1rendering_1_1_perspective_camera.html#ac9119d544f7ca6c4fbe1a6c5118bcd66">mage::rendering::PerspectiveCamera</a>
+, <a class="el" href="classmage_1_1rendering_1_1_post_process_pass.html#ace844a6fbc47cc0470642e48361efacd">mage::rendering::PostProcessPass</a>
 , <a class="el" href="classmage_1_1rendering_1_1_primitive_batch_mesh.html#a64b661150ec319d4dab092d44315bb67">mage::rendering::PrimitiveBatchMesh&lt; VertexT, IndexT &gt;</a>
 , <a class="el" href="classmage_1_1rendering_1_1_renderer_1_1_impl.html#a8eef87ba80c22cba7a2d83db9a740188">mage::rendering::Renderer::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_renderer.html#a23338d210ca0008a05cf060f35d4dc70">mage::rendering::Renderer</a>
@@ -231,8 +232,8 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html#a2c209b2648740696d45113a152e648fb">mage::rendering::ShadowMappedSpotLightBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sky.html#a9654c598bd30fee1b0892b0abf7b7c96">mage::rendering::Sky</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sky_pass.html#a8364836c5db0dc3e9894e1749ab302e8">mage::rendering::SkyPass</a>
-, <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a58ff20b0459ccd6df54c85a361faa5ad">mage::rendering::SpotLight</a>
-, <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#ab3d50a0d08d284577b0e43b05c34e287">mage::rendering::SpotLightBuffer</a>
+, <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a6bf91b086aa54f2e31d92ed401cf0fdc">mage::rendering::SpotLight</a>
+, <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#a6bfd4e7dc9b8a7d3cd5206c9becb91cf">mage::rendering::SpotLightBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#abcbbd766f6b1355e5d015cbdcaacfc07">mage::rendering::SpriteBatch::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sprite_batch.html#a336c16ed2eee2ef9fe8520903033f63e">mage::rendering::SpriteBatch</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#a7855038d3367c62dcbb2d3227cdb5c81">mage::rendering::SpriteBatchMesh</a>
@@ -241,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_sprite_font_output.html#a0b94e62b46d2b75d05eff13f8909f1cc">mage::rendering::SpriteFontOutput</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sprite_image.html#adabb87110ec41d770061d375cb0db000">mage::rendering::SpriteImage</a>
 , <a class="el" href="classmage_1_1rendering_1_1_sprite_pass.html#a33cd3abf007bafb47d76524096e24eca">mage::rendering::SpritePass</a>
-, <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#a50d21c24a019c0e8dc053a307ec421a6">mage::rendering::SpriteText</a>
+, <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#a8ced44509f1fa84236b20f1d42add873">mage::rendering::SpriteText</a>
 , <a class="el" href="classmage_1_1rendering_1_1_state_manager.html#a07e3b6663a4d3c814cddbd920bd4ced4">mage::rendering::StateManager</a>
 , <a class="el" href="classmage_1_1rendering_1_1_static_mesh.html#a62f007ca9d1dc316519468fb7b74af19">mage::rendering::StaticMesh&lt; VertexT, IndexT &gt;</a>
 , <a class="el" href="classmage_1_1rendering_1_1_structured_buffer.html#a87a27778bf6097f84b63acc0eef49a3a">mage::rendering::StructuredBuffer&lt; DataT &gt;</a>
@@ -263,6 +264,7 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="classmage_1_1rendering_1_1_voxelization_pass.html#a30bf15dac8660764cd1342a4f397e47e">mage::rendering::VoxelizationPass</a>
 , <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a96ea5fa3e2a8bdab0b4835caa11bd13f">mage::rendering::VoxelizationSettings</a>
 , <a class="el" href="classmage_1_1rendering_1_1_world.html#aff83cf89dc28c141ca7b7a0cbc28e2ae">mage::rendering::World</a>
+, <a class="el" href="structmage_1_1rendering_1_1_world_buffer.html#a0a776f3c84577f8530cf5932274cd8c9">mage::rendering::WorldBuffer</a>
 , <a class="el" href="classmage_1_1_resource.html#a938159cb02ec565b9b957f993db4769d">mage::Resource&lt; ResourceT &gt;</a>
 , <a class="el" href="classmage_1_1_resource_pool.html#a75dbf08b971929eb90d32b38faa3cfb1">mage::ResourcePool&lt; KeyT, ResourceT &gt;</a>
 , <a class="el" href="classmage_1_1_resource_pool_1_1_resource.html#a56f04f53400e77ddcc3c26fad1342e31">mage::ResourcePool&lt; KeyT, ResourceT &gt;::Resource&lt; DerivedResourceT &gt;</a>
@@ -271,36 +273,36 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="classmage_1_1_r_n_g.html#a38a0a4296338162fe105012cb4d13318">mage::RNG</a>
 , <a class="el" href="classmage_1_1_scene.html#a2c25c0fedc0230771d8c00a8288a69ce">mage::Scene</a>
 , <a class="el" href="classmage_1_1script_1_1_character_motor_script.html#a284b9ecfd595278062cf3a16ebd90f43">mage::script::CharacterMotorScript</a>
-, <a class="el" href="classmage_1_1script_1_1_editor_script.html#a87df2b20fee97f6aa9e09b4b5c9282a5">mage::script::EditorScript</a>
-, <a class="el" href="classmage_1_1script_1_1_manhattan_motor_script.html#a3184ea5b921fbdbd81173db3f7042a0c">mage::script::ManhattanMotorScript</a>
-, <a class="el" href="classmage_1_1script_1_1_mouse_look_script.html#aaff03f361a4e302c51e4210bb2e9ca8b">mage::script::MouseLookScript</a>
+, <a class="el" href="classmage_1_1script_1_1_editor_script.html#ab7b4dda8389d07d41eba1474491b4a36">mage::script::EditorScript</a>
+, <a class="el" href="classmage_1_1script_1_1_manhattan_motor_script.html#a1c4dc4ffae903942248c7f744b0d019f">mage::script::ManhattanMotorScript</a>
+, <a class="el" href="classmage_1_1script_1_1_mouse_look_script.html#a08731370926cbaee931170fd3fb108e6">mage::script::MouseLookScript</a>
 , <a class="el" href="classmage_1_1script_1_1_rotation_script.html#af75323393f7570b9fcee0cd62c4f76bd">mage::script::RotationScript</a>
-, <a class="el" href="classmage_1_1script_1_1_stats_script.html#a538428ec1763e0fb4b41839e7943ca56">mage::script::StatsScript</a>
+, <a class="el" href="classmage_1_1script_1_1_stats_script.html#ae99dbfbff061fcc916c968d670a1e481">mage::script::StatsScript</a>
 , <a class="el" href="classmage_1_1script_1_1_switch_scene_script.html#a59d77732c9ab91807f30af81accda316">mage::script::SwitchSceneScript&lt; SceneT &gt;</a>
 , <a class="el" href="classmage_1_1script_1_1_text_console_script.html#a68af2a144f641c9813b333544fe3562a">mage::script::TextConsoleScript</a>
 , <a class="el" href="classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a43cdcfdfe7ee8d8f82f542245c6fc1d5">mage::SingleEndedMemoryStack::Allocator&lt; DataT &gt;</a>
 , <a class="el" href="classmage_1_1_single_ended_memory_stack.html#a24613dc91ab6577aa57fbd55a4c81023">mage::SingleEndedMemoryStack</a>
 , <a class="el" href="classmage_1_1_sprite_transform.html#af0adccff92d48e7b347e66277981ee07">mage::SpriteTransform</a>
-, <a class="el" href="structmage_1_1_s_r_g_b.html#ab4feb5cd04c21c03d2278468e3241562">mage::SRGB</a>
+, <a class="el" href="structmage_1_1_s_r_g_b.html#aef2e40794d1465801e998d64d94f782d">mage::SRGB</a>
 , <a class="el" href="structmage_1_1_s_r_g_b_a.html#affa097b1744a66624f40102870909ea9">mage::SRGBA</a>
-, <a class="el" href="classmage_1_1_texture_transform.html#a82adfc646b3467f33d92f7f2e24bf28e">mage::TextureTransform</a>
-, <a class="el" href="classmage_1_1_timer.html#a2a8aefb272e02d8ba4a26058df80f119">mage::Timer&lt; ClockT &gt;</a>
+, <a class="el" href="classmage_1_1_texture_transform.html#a0166da366dcf3054db133dda5867cf87">mage::TextureTransform</a>
+, <a class="el" href="classmage_1_1_timer.html#a39654f81efccc38a4cbe6164659407dd">mage::Timer&lt; ClockT &gt;</a>
 , <a class="el" href="classmage_1_1_transform.html#a5541fef38c72592a32c06fcbb2199d8d">mage::Transform</a>
 , <a class="el" href="structmage_1_1_u_v.html#a53bf93c8a9b97f07d2b7db5a7e22be51">mage::UV</a>
-, <a class="el" href="classmage_1_1_variable_script.html#a7cb6a585a701268aaac38d8f039fc403">mage::VariableScript</a>
-, <a class="el" href="structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ae4d5a089c4b4017c4950841b7d53a0bf">mage::Vector2&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
-, <a class="el" href="structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a334e33f82726f37e0960e77c90af81e9">mage::Vector2A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
-, <a class="el" href="structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#af2a5b8588dfe9f20183feede49ee2f54">mage::Vector3&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
+, <a class="el" href="classmage_1_1_variable_script.html#ae090b066ea939fc6611e77a47df6a97f">mage::VariableScript</a>
+, <a class="el" href="structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a3f6a50c62c79f89e43df56ae9a187c98">mage::Vector2&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
+, <a class="el" href="structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#af7c59a142668c02693b9206b6f75d73a">mage::Vector2A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
+, <a class="el" href="structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#abdff82f03d62b405f4568645d9ee95f2">mage::Vector3&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector3_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ae30e4b07614843bb6499ceb9f0563a90">mage::Vector3A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#afd3b3ce2f9068d7f669f03b85821d43a">mage::Vector4&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector4_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a58169e8ef5aec41cd02cab5a44f8b9a9">mage::Vector4A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="classmage_1_1_window.html#aa52284540a75c98a2aa768a5d6410378">mage::Window</a>
-, <a class="el" href="classmage_1_1_window_descriptor.html#a314e45a7cac3a68caefd8b05ddc86040">mage::WindowDescriptor</a>
-, <a class="el" href="classmage_1_1_window_message_handler.html#acb05035c5d298e7a1db0e8e2c1fcb71d">mage::WindowMessageHandler</a>
+, <a class="el" href="classmage_1_1_window_descriptor.html#a539433423c905e8b45d5bc9d895ee79c">mage::WindowDescriptor</a>
+, <a class="el" href="classmage_1_1_window_message_handler.html#a6f48f6a94d62bee913e5f0fabc166cab">mage::WindowMessageHandler</a>
 , <a class="el" href="classmage_1_1_window_message_listener.html#a74dee5de5b949db3eb755936ee15ecb9">mage::WindowMessageListener</a>
 , <a class="el" href="classmage_1_1_writer.html#a03a93796179f22be90471bea0f7a7cf0">mage::Writer</a>
 , <a class="el" href="structmage_1_1_x_y_z.html#ab162a3b19bdbb5abd84ad77052ac6030">mage::XYZ</a>
-, <a class="el" href="structmage_1_1_x_y_z_a.html#a15556bcc4521264fc3edfc1b4f1a595a">mage::XYZA</a>
+, <a class="el" href="structmage_1_1_x_y_z_a.html#a04a66bdc8e61c6b415e1b509f466bf50">mage::XYZA</a>
 </li>
 <li>operator==()
 : <a class="el" href="classmage_1_1_a_a_b_b.html#a9297ff005f7bdcd934d744a6fb7ab5c9">mage::AABB</a>
@@ -315,28 +317,28 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 </li>
 <li>operator[]()
 : <a class="el" href="structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ab245c95edacf2e3a8aadb97cc4dbf211">mage::Vector2&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
-, <a class="el" href="structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a8d24fa873ed8c47320b24e67cbc77275">mage::Vector2A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
+, <a class="el" href="structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ac19852bc06c0acc3cbf90574a3e21d3f">mage::Vector2A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a55891c140568485b0028cbe4f9cc2158">mage::Vector3&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector3_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a200ca430932f74ad6e7b98cd9d4c5d37">mage::Vector3A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
-, <a class="el" href="structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#ae6db7335d3c1a4d2fb593410d24c8f22">mage::Vector4&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
+, <a class="el" href="structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a520748b98311f5bed3c70a03541559b1">mage::Vector4&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 , <a class="el" href="structmage_1_1_vector4_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#aba65ca0cab9689f8afdf65de7db2970c">mage::Vector4A&lt; T, typename std::enable_if_t&lt; std::is_arithmetic_v&lt; T &gt; &gt; &gt;</a>
 </li>
 <li>OrthographicCamera()
-: <a class="el" href="classmage_1_1rendering_1_1_orthographic_camera.html#a5b2c7d870e2077807057246abf3b76b1">mage::rendering::OrthographicCamera</a>
+: <a class="el" href="classmage_1_1rendering_1_1_orthographic_camera.html#a0bd37447138230a1a4900f503a2d1299">mage::rendering::OrthographicCamera</a>
 </li>
 <li>OutputManager()
-: <a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a02c97a57bf7217ab65ff5e7a44602200">mage::rendering::OutputManager</a>
+: <a class="el" href="classmage_1_1rendering_1_1_output_manager.html#aeafc4fb1d7a1904776f738b711635832">mage::rendering::OutputManager</a>
 </li>
 <li>Overlap()
 : <a class="el" href="classmage_1_1_a_a_b_b.html#a35bf465fbd8571acc2707fa555b9245b">mage::AABB</a>
 </li>
 <li>Overlaps()
-: <a class="el" href="classmage_1_1_a_a_b_b.html#acd344f81141b5439c3e2cf4321b6548b">mage::AABB</a>
-, <a class="el" href="classmage_1_1_bounding_frustum.html#a0fbd4639f1bd0a014430313410aa013d">mage::BoundingFrustum</a>
+: <a class="el" href="classmage_1_1_a_a_b_b.html#a0953268725119ef25651ab50ad3de658">mage::AABB</a>
+, <a class="el" href="classmage_1_1_bounding_frustum.html#a2133c3a7187369772e82b7e229b0e683">mage::BoundingFrustum</a>
 , <a class="el" href="classmage_1_1_bounding_sphere.html#aec1440ef7a88b85ae6a310a41b5b7f20">mage::BoundingSphere</a>
 </li>
 <li>OverlapsStrict()
-: <a class="el" href="classmage_1_1_a_a_b_b.html#af5e8507258d4990abec9f6261449c6a9">mage::AABB</a>
+: <a class="el" href="classmage_1_1_a_a_b_b.html#a00628d5ed2bf73021bbb3cdf94049580">mage::AABB</a>
 , <a class="el" href="classmage_1_1_bounding_frustum.html#a070075ad4af9935b7b60e7e5345d0aff">mage::BoundingFrustum</a>
 , <a class="el" href="classmage_1_1_bounding_sphere.html#a352314bd02664521a516ac5d0ce4a5a4">mage::BoundingSphere</a>
 </li>

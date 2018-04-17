@@ -12,7 +12,7 @@ var classmage_1_1script_1_1_text_console_script =
     [ "operator=", "classmage_1_1script_1_1_text_console_script.html#ae8560dece8d507ee338dda68e3176fed", null ],
     [ "ProcessString", "classmage_1_1script_1_1_text_console_script.html#a9c990e0256f01eb4cc1622bf346f32a5", null ],
     [ "SetCharacter", "classmage_1_1script_1_1_text_console_script.html#a18bdee79ee6f53e28f90b607c36c8188", null ],
-    [ "Update", "classmage_1_1script_1_1_text_console_script.html#a01603dc7fc00de34dcbe8df01eab8b6a", null ],
+    [ "Update", "classmage_1_1script_1_1_text_console_script.html#ad619f93a946660b30f5e39821778f7b0", null ],
     [ "Write", "classmage_1_1script_1_1_text_console_script.html#a46610edcf7a1707476b87ad64f1ee68d", null ],
     [ "WriteLine", "classmage_1_1script_1_1_text_console_script.html#ac8f0361bc1d703b56f1d8be43a32f0ae", null ],
     [ "m_buffer", "classmage_1_1script_1_1_text_console_script.html#a35db160ce89d4ebf6f184d2fe850beab", null ],

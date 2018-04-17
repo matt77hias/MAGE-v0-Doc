@@ -25,9 +25,9 @@ var searchData=
   ['height',['height',['../struct_d_d_s___h_e_a_d_e_r.html#a550dc15efb086708b8eac1bfebd2e617',1,'DDS_HEADER']]],
   ['highallocator',['HighAllocator',['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html',1,'mage::DoubleEndedMemoryStack']]],
   ['highallocator',['HighAllocator',['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#aaad727b10738064cffcb555252df5cfd',1,'mage::DoubleEndedMemoryStack::HighAllocator::HighAllocator(const HighAllocator &amp;high_allocator) noexcept=default'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a9b036295101c4f271f30236b3cae9a1b',1,'mage::DoubleEndedMemoryStack::HighAllocator::HighAllocator(HighAllocator &amp;&amp;high_allocator) noexcept=default'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a6210e1fbac98efbf26ddf6cbe8fe6be8',1,'mage::DoubleEndedMemoryStack::HighAllocator::HighAllocator(const HighAllocator&lt; DataU &gt; &amp;high_allocator) noexcept'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a6903aacd7e38597edb9145e73f3099be',1,'mage::DoubleEndedMemoryStack::HighAllocator::HighAllocator(NotNull&lt; DoubleEndedMemoryStack * &gt; memory_stack) noexcept']]],
-  ['honeydew',['Honeydew',['../namespacemage_1_1color.html#ac2cf218282d11f2f3aaee6fa78af6038',1,'mage::color']]],
+  ['honeydew',['Honeydew',['../namespacemage_1_1color.html#a6fdd1089a1f0d6a77b9b6298907e3361',1,'mage::color']]],
   ['hotkey',['HotKey',['../namespacemage.html#aa3aaaf232c0862e8f291a2893eb74a27',1,'mage']]],
-  ['hotpink',['HotPink',['../namespacemage_1_1color.html#aff420f4fdc84fc819656c7b942d4a976',1,'mage::color']]],
+  ['hotpink',['HotPink',['../namespacemage_1_1color.html#a64c422466ccc5c44c1c4a0e6f435a3c3',1,'mage::color']]],
   ['hs',['HS',['../structmage_1_1rendering_1_1_pipeline_1_1_h_s.html',1,'mage::rendering::Pipeline']]],
   ['hullshader',['HullShader',['../namespacemage_1_1rendering.html#aa133f36cd1a81c87eedf962270a12f48',1,'mage::rendering']]],
   ['hullshaderptr',['HullShaderPtr',['../namespacemage_1_1rendering.html#a6f33b2e1ea7f2ae3824dc7fb6875c655',1,'mage::rendering']]]

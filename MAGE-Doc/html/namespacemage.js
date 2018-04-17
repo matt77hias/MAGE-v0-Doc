@@ -24,6 +24,8 @@ var namespacemage =
     [ "EngineSetup", "classmage_1_1_engine_setup.html", "classmage_1_1_engine_setup" ],
     [ "Exception", "classmage_1_1_exception.html", "classmage_1_1_exception" ],
     [ "FileStreamCloser", "structmage_1_1_file_stream_closer.html", "structmage_1_1_file_stream_closer" ],
+    [ "GameTime", "classmage_1_1_game_time.html", "classmage_1_1_game_time" ],
+    [ "GameTimer", "classmage_1_1_game_timer.html", "classmage_1_1_game_timer" ],
     [ "HandleCloser", "structmage_1_1_handle_closer.html", "structmage_1_1_handle_closer" ],
     [ "IdGenerator", "classmage_1_1_id_generator.html", "classmage_1_1_id_generator" ],
     [ "KernelModeCoreClock", "structmage_1_1_kernel_mode_core_clock.html", "structmage_1_1_kernel_mode_core_clock" ],

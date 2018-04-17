@@ -7,6 +7,6 @@ var classmage_1_1script_1_1_editor_script =
     [ "Load", "classmage_1_1script_1_1_editor_script.html#af0804c603852f556d362f43e69240b2d", null ],
     [ "operator=", "classmage_1_1script_1_1_editor_script.html#ab7b4dda8389d07d41eba1474491b4a36", null ],
     [ "operator=", "classmage_1_1script_1_1_editor_script.html#a87df2b20fee97f6aa9e09b4b5c9282a5", null ],
-    [ "Update", "classmage_1_1script_1_1_editor_script.html#a6212864947b7db1a01b19d2683106b36", null ],
+    [ "Update", "classmage_1_1script_1_1_editor_script.html#a311532d499edfaf3f74aa598fb87ec8e", null ],
     [ "m_selected", "classmage_1_1script_1_1_editor_script.html#a60a8044379dfd203ad372dabb5c03380", null ]
 ];

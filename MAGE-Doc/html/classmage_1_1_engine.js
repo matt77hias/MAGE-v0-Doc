@@ -8,6 +8,7 @@ var classmage_1_1_engine =
     [ "GetInputManager", "classmage_1_1_engine.html#ae5b542540511190eb6d284bf3e6ab54c", null ],
     [ "GetRenderingManager", "classmage_1_1_engine.html#a9386c3aff5d7580ea39202e4dae967de", null ],
     [ "GetScene", "classmage_1_1_engine.html#ac76b2061f2b5b9089a6b2387a40dbf73", null ],
+    [ "GetTime", "classmage_1_1_engine.html#a77d6f8ed151e50360da8f6afcce463ea", null ],
     [ "InitializeSystems", "classmage_1_1_engine.html#aec74e74ebec5c7739740bbeb825526ad", null ],
     [ "operator=", "classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd", null ],
     [ "operator=", "classmage_1_1_engine.html#a22607a263e0be5e179cc0e4bf13b18f7", null ],
@@ -27,6 +28,7 @@ var classmage_1_1_engine =
     [ "m_rendering_manager", "classmage_1_1_engine.html#ae870ec5b532a21112500f0f0f03e9b55", null ],
     [ "m_requested_scene", "classmage_1_1_engine.html#a45160eecbdcbebcf269436505342db54", null ],
     [ "m_scene", "classmage_1_1_engine.html#a2d4037208a0529838c81ccea08c9de11", null ],
-    [ "m_timer", "classmage_1_1_engine.html#a539cff5bf8252ef28b994be49e9e6b7c", null ],
+    [ "m_time", "classmage_1_1_engine.html#ab5f56d65109d276dd49ba43c504bbd26", null ],
+    [ "m_timer", "classmage_1_1_engine.html#a360589e71a3d081c6a748aa283d1526d", null ],
     [ "m_window", "classmage_1_1_engine.html#a8b710b9c37a48caad05896102c4b6980", null ]
 ];

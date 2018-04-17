@@ -17,14 +17,16 @@
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a86f42e039c290e75378040805533bd41}{Bind\+Persistent\+State} ()
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a7a5817fc34258bc52731e0c26085d857}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world)
+void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a88a8601b5fe72883788a87ba6c38b3aa}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&time)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a0db15a325a2e2242a76323b27acec12f}{Initialize\+Passes} ()
 \item 
-void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a0886adfdf0f7c7f7d9e8d77a8d429844}{Update\+Buffers} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world) const
+void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_acbf6274f82a95beac2543c8e642c309c}{Update\+Buffers} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&time)
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_abe65d2d48affa6a7c83104944b4737d7}{Update\+World\+Buffer} (const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&time)
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_af2d46a795175867592dc70e63c93967b}{Render} (const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&world, const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&camera)
 \item 
@@ -57,7 +59,7 @@ std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a403fbd5958b798e426683c6d671b056c}{m\+\_\+state\+\_\+manager}
 \item 
-\hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_game_buffer}{Game\+Buffer} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a31c129ce1fe4b65b3e4a4ad3d33270df}{m\+\_\+game\+\_\+buffer}
+\hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_world_buffer}{World\+Buffer} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_ab108fbff123947defcc47f8cf53425e0}{m\+\_\+world\+\_\+buffer}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_a_a_pass}{A\+A\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_aeb6351e4bacece7f3682685d74593d18}{m\+\_\+aa\+\_\+pass}
 \item 
@@ -69,11 +71,11 @@ std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_depth_pass}{Depth\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a6774962f06bc28a23ac7e34d8891bb24}{m\+\_\+depth\+\_\+pass}
 \item 
-\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_d_o_f_pass}{D\+O\+F\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a6ac5ccc13646575c8feeeb2974f21dc3}{m\+\_\+dof\+\_\+pass}
-\item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_forward_pass}{Forward\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_aa62d3e015ddcc7b48d423ad0e55a82d7}{m\+\_\+forward\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_l_buffer_pass}{L\+Buffer\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a82455409a99a11e84de943181138e33e}{m\+\_\+lbuffer\+\_\+pass}
+\item 
+\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_a243257571f0f32cdc401b73d9b39587c}{m\+\_\+postprocess\+\_\+pass}
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_sky_pass}{Sky\+Pass} $>$ \hyperlink{classmage_1_1rendering_1_1_renderer_1_1_impl_afc248fa0b293e9cbd2d0045c4caa7d26}{m\+\_\+sky\+\_\+pass}
 \item 
@@ -196,17 +198,19 @@ Moves the given renderer to this renderer.
 \begin{DoxyReturn}{Returns}
 A reference to the moved renderer (i.\+e. this renderer). 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a7a5817fc34258bc52731e0c26085d857}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a7a5817fc34258bc52731e0c26085d857} 
+\hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a88a8601b5fe72883788a87ba6c38b3aa}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a88a8601b5fe72883788a87ba6c38b3aa} 
 \index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!Render@{Render}}
 \index{Render@{Render}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
 \subsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Render (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&}]{time }\end{DoxyParamCaption})}
 
 Renders the given world.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em world} & A reference to the world. \\
+\hline
+\mbox{\tt in}  & {\em time} & A reference to the game time. \\
 \hline
 \end{DoxyParams}
 
@@ -262,11 +266,17 @@ Renders the given world.
 \subsubsection{\texorpdfstring{Render\+Voxel\+Grid()}{RenderVoxelGrid()}}
 {\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Render\+Voxel\+Grid (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{const \hyperlink{classmage_1_1rendering_1_1_camera}{Camera} \&}]{camera,  }\item[{F\+X\+M\+M\+A\+T\+R\+IX}]{world\+\_\+to\+\_\+projection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a0886adfdf0f7c7f7d9e8d77a8d429844}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a0886adfdf0f7c7f7d9e8d77a8d429844} 
+\hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_acbf6274f82a95beac2543c8e642c309c}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_acbf6274f82a95beac2543c8e642c309c} 
 \index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!Update\+Buffers@{Update\+Buffers}}
 \index{Update\+Buffers@{Update\+Buffers}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
 \subsubsection{\texorpdfstring{Update\+Buffers()}{UpdateBuffers()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Update\+Buffers (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Update\+Buffers (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_world}{World} \&}]{world,  }\item[{const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_abe65d2d48affa6a7c83104944b4737d7}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_abe65d2d48affa6a7c83104944b4737d7} 
+\index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!Update\+World\+Buffer@{Update\+World\+Buffer}}
+\index{Update\+World\+Buffer@{Update\+World\+Buffer}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
+\subsubsection{\texorpdfstring{Update\+World\+Buffer()}{UpdateWorldBuffer()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Renderer\+::\+Impl\+::\+Update\+World\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_game_time}{Game\+Time} \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -319,25 +329,13 @@ A reference to the device context of this renderer. \hypertarget{classmage_1_1re
 \subsubsection{\texorpdfstring{m\+\_\+display\+\_\+configuration}{m\_display\_configuration}}
 {\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_display_configuration}{Display\+Configuration} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+display\+\_\+configuration\hspace{0.3cm}{\ttfamily [private]}}
 
-A reference to the display configuration of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a6ac5ccc13646575c8feeeb2974f21dc3}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a6ac5ccc13646575c8feeeb2974f21dc3} 
-\index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+dof\+\_\+pass@{m\+\_\+dof\+\_\+pass}}
-\index{m\+\_\+dof\+\_\+pass@{m\+\_\+dof\+\_\+pass}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
-\subsubsection{\texorpdfstring{m\+\_\+dof\+\_\+pass}{m\_dof\_pass}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_d_o_f_pass}{D\+O\+F\+Pass} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+dof\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the depth-\/of-\/field pass of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_aa62d3e015ddcc7b48d423ad0e55a82d7}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_aa62d3e015ddcc7b48d423ad0e55a82d7} 
+A reference to the display configuration of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_aa62d3e015ddcc7b48d423ad0e55a82d7}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_aa62d3e015ddcc7b48d423ad0e55a82d7} 
 \index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+forward\+\_\+pass@{m\+\_\+forward\+\_\+pass}}
 \index{m\+\_\+forward\+\_\+pass@{m\+\_\+forward\+\_\+pass}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+forward\+\_\+pass}{m\_forward\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_forward_pass}{Forward\+Pass} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+forward\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the forward pass of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a31c129ce1fe4b65b3e4a4ad3d33270df}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a31c129ce1fe4b65b3e4a4ad3d33270df} 
-\index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+game\+\_\+buffer@{m\+\_\+game\+\_\+buffer}}
-\index{m\+\_\+game\+\_\+buffer@{m\+\_\+game\+\_\+buffer}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
-\subsubsection{\texorpdfstring{m\+\_\+game\+\_\+buffer}{m\_game\_buffer}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_game_buffer}{Game\+Buffer} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+game\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the game buffer of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a82455409a99a11e84de943181138e33e}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a82455409a99a11e84de943181138e33e} 
+A pointer to the forward pass of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a82455409a99a11e84de943181138e33e}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a82455409a99a11e84de943181138e33e} 
 \index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}}
 \index{m\+\_\+lbuffer\+\_\+pass@{m\+\_\+lbuffer\+\_\+pass}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+lbuffer\+\_\+pass}{m\_lbuffer\_pass}}
@@ -349,7 +347,13 @@ A pointer to the L\+Buffer pass of this renderer. \hypertarget{classmage_1_1rend
 \subsubsection{\texorpdfstring{m\+\_\+output\+\_\+manager}{m\_output\_manager}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_output_manager}{Output\+Manager} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+output\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the output manager of this rendering manager. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a4e128f17ff567e4af890c730c6357c94}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a4e128f17ff567e4af890c730c6357c94} 
+A pointer to the output manager of this rendering manager. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a243257571f0f32cdc401b73d9b39587c}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a243257571f0f32cdc401b73d9b39587c} 
+\index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+postprocess\+\_\+pass@{m\+\_\+postprocess\+\_\+pass}}
+\index{m\+\_\+postprocess\+\_\+pass@{m\+\_\+postprocess\+\_\+pass}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
+\subsubsection{\texorpdfstring{m\+\_\+postprocess\+\_\+pass}{m\_postprocess\_pass}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+postprocess\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the post-\/process pass of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_a4e128f17ff567e4af890c730c6357c94}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_a4e128f17ff567e4af890c730c6357c94} 
 \index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
 \index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}
@@ -385,4 +389,10 @@ A pointer to the voxel grid pass of this renderer. \hypertarget{classmage_1_1ren
 \subsubsection{\texorpdfstring{m\+\_\+voxelization\+\_\+pass}{m\_voxelization\_pass}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1rendering_1_1_voxelization_pass}{Voxelization\+Pass} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+voxelization\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the voxelization pass of this renderer. 
+A pointer to the voxelization pass of this renderer. \hypertarget{classmage_1_1rendering_1_1_renderer_1_1_impl_ab108fbff123947defcc47f8cf53425e0}{}\label{classmage_1_1rendering_1_1_renderer_1_1_impl_ab108fbff123947defcc47f8cf53425e0} 
+\index{mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}!m\+\_\+world\+\_\+buffer@{m\+\_\+world\+\_\+buffer}}
+\index{m\+\_\+world\+\_\+buffer@{m\+\_\+world\+\_\+buffer}!mage\+::rendering\+::\+Renderer\+::\+Impl@{mage\+::rendering\+::\+Renderer\+::\+Impl}}
+\subsubsection{\texorpdfstring{m\+\_\+world\+\_\+buffer}{m\_world\_buffer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_constant_buffer}{Constant\+Buffer}$<$ \hyperlink{structmage_1_1rendering_1_1_world_buffer}{World\+Buffer} $>$ mage\+::rendering\+::\+Renderer\+::\+Impl\+::m\+\_\+world\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the world buffer of this renderer. 

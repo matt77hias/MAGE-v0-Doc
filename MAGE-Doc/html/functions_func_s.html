@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.139.0</span>
+   &#160;<span id="projectnumber">v0.146.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -121,6 +121,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SetClippingPlanes()
 : <a class="el" href="classmage_1_1rendering_1_1_camera.html#afc95f8de701649af5b614a57c1c06e9a">mage::rendering::Camera</a>
+, <a class="el" href="classmage_1_1rendering_1_1_omni_light.html#af1334671baf6f5afeb297fb819118639">mage::rendering::OmniLight</a>
+, <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a9a4c2e827e91d7ec79118217376c9c6e">mage::rendering::SpotLight</a>
 </li>
 <li>SetConeStepMultiplier()
 : <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a9eafb3795d3e8248196dd7e9c6d32671">mage::rendering::VoxelizationSettings</a>
@@ -175,9 +177,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SetLensRadius()
 : <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#ad7d28ba6b6e462711fb645020697f8ed">mage::rendering::CameraLens</a>
-</li>
-<li>SetLightInteraction()
-: <a class="el" href="classmage_1_1rendering_1_1_material.html#a151a2170aa88811ea6fb1537ce68803d">mage::rendering::Material</a>
 </li>
 <li>SetLightOcclusion()
 : <a class="el" href="classmage_1_1rendering_1_1_model.html#a4064c86786e7dca7907435da1dce83a4">mage::rendering::Model</a>
@@ -235,9 +234,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetNormalTexture()
 : <a class="el" href="classmage_1_1rendering_1_1_material.html#a1a1ae2ba12c62c1d076f04124f1f64f6">mage::rendering::Material</a>
 </li>
-<li>SetNumberOfCones()
-: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#ac7b2ca30bb73b5fb7e0c2cc46001ae22">mage::rendering::VoxelizationSettings</a>
-</li>
 <li>SetNumberOfIndices()
 : <a class="el" href="classmage_1_1rendering_1_1_mesh.html#acd34fa8466235d5e17dd0f9be60fd5ea">mage::rendering::Mesh</a>
 </li>
@@ -265,6 +261,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SetRadiance()
 : <a class="el" href="classmage_1_1rendering_1_1_ambient_light.html#a2da2e614906dc166121a0d0d391b9fc2">mage::rendering::AmbientLight</a>
+, <a class="el" href="classmage_1_1rendering_1_1_material.html#ae41261db79de572b75e2615abadc2aaa">mage::rendering::Material</a>
 </li>
 <li>SetRange()
 : <a class="el" href="classmage_1_1rendering_1_1_omni_light.html#a71d9cbef05c421a154b202e7a9b8eedb">mage::rendering::OmniLight</a>
@@ -387,7 +384,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#ab5dc52d8f8d92cf3c4f6aca126f6dc47">mage::rendering::CameraSettings</a>
 </li>
 <li>SetTopLeft()
-: <a class="el" href="classmage_1_1rendering_1_1_viewport.html#a281e2fdd022aa9714741f5291be1c6ef">mage::rendering::Viewport</a>
+: <a class="el" href="classmage_1_1rendering_1_1_viewport.html#a868977ddb855a6ad4c9ccf7e17a870a3">mage::rendering::Viewport</a>
 </li>
 <li>SetTrackedFullScreen()
 : <a class="el" href="classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a6f97179cc5e352a349ed943413d149e7">mage::rendering::SwapChain::Impl</a>
@@ -502,6 +499,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetValue()
 : <a class="el" href="classmage_1_1_variable_script.html#a43772c8d83466b32a6f16e5564d43026">mage::VariableScript</a>
 </li>
+<li>SetVCT()
+: <a class="el" href="classmage_1_1rendering_1_1_voxelization_settings.html#a394b58dd3d414a406fd874f7e53b211f">mage::rendering::VoxelizationSettings</a>
+</li>
 <li>SetVelocity()
 : <a class="el" href="classmage_1_1script_1_1_character_motor_script.html#a51c9b8317670fc0ae554bfb0cac11aee">mage::script::CharacterMotorScript</a>
 , <a class="el" href="classmage_1_1script_1_1_manhattan_motor_script.html#acf4db52ae6b0c9f97c0b7e719acea6bc">mage::script::ManhattanMotorScript</a>
@@ -528,16 +528,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_shader.html#a00fe99edc760763ede9dd414b286c820">mage::rendering::Shader&lt; ShaderT, PipelineStageT &gt;</a>
 </li>
 <li>ShadowCubeMapBuffer()
-: <a class="el" href="classmage_1_1rendering_1_1_shadow_cube_map_buffer.html#a724d0d73588f2e698f2748209befdba8">mage::rendering::ShadowCubeMapBuffer</a>
+: <a class="el" href="classmage_1_1rendering_1_1_shadow_cube_map_buffer.html#aeb1c633be265f8c03dd4e525e069de03">mage::rendering::ShadowCubeMapBuffer</a>
 </li>
 <li>ShadowMapBuffer()
-: <a class="el" href="classmage_1_1rendering_1_1_shadow_map_buffer.html#ad1d94bf0e4ca227064bc5e83d01f3af0">mage::rendering::ShadowMapBuffer</a>
+: <a class="el" href="classmage_1_1rendering_1_1_shadow_map_buffer.html#a9468f0c15337f9036238233fa17bbcd2">mage::rendering::ShadowMapBuffer</a>
 </li>
 <li>ShadowMappedDirectionalLightBuffer()
-: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_directional_light_buffer.html#a35a9ceeb8616a77cf263769f0526db28">mage::rendering::ShadowMappedDirectionalLightBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_directional_light_buffer.html#a984e2af2b6319226b6e896e28fc056b8">mage::rendering::ShadowMappedDirectionalLightBuffer</a>
 </li>
 <li>ShadowMappedOmniLightBuffer()
-: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a3b9f6ffd582185ea739410aeeec8a446">mage::rendering::ShadowMappedOmniLightBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html#a7fb986d0697bdea8ac54f45c188f2a4b">mage::rendering::ShadowMappedOmniLightBuffer</a>
 </li>
 <li>ShadowMappedSpotLightBuffer()
 : <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html#a9042ab916ee834f5519b5930de286ea4">mage::rendering::ShadowMappedSpotLightBuffer</a>
@@ -546,7 +546,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1_window.html#a017de58a756a2cc4dde0ccb3caf589ff">mage::Window</a>
 </li>
 <li>SingleEndedMemoryStack()
-: <a class="el" href="classmage_1_1_single_ended_memory_stack.html#ab9555d63b35070aee321cc3839fec3c4">mage::SingleEndedMemoryStack</a>
+: <a class="el" href="classmage_1_1_single_ended_memory_stack.html#afd6632eac3ada6ea88a69b586f27a4e4">mage::SingleEndedMemoryStack</a>
 </li>
 <li>size()
 : <a class="el" href="classmage_1_1_persistent_resource_pool.html#a97dee6f5087b59f3e5b4fe14dca74b40">mage::PersistentResourcePool&lt; KeyT, ResourceT &gt;</a>
@@ -556,16 +556,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classmage_1_1_variable_script.html#a20e376c802dae71e001037afc316c795">mage::VariableScript</a>
 </li>
 <li>Sky()
-: <a class="el" href="classmage_1_1rendering_1_1_sky.html#a9679ec331c5e0fc01c49760f6e74664d">mage::rendering::Sky</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sky.html#aeafa720fff92be3f02d484a47443b973">mage::rendering::Sky</a>
 </li>
 <li>SkyPass()
-: <a class="el" href="classmage_1_1rendering_1_1_sky_pass.html#a55e8ef167a1e70a88a4be1fd11aed70e">mage::rendering::SkyPass</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sky_pass.html#a2d9489936058c463743bd437fb0cbb3e">mage::rendering::SkyPass</a>
 </li>
 <li>SortSprites()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a2573f39b9f7f87b2acd7eadc348c1e2b">mage::rendering::SpriteBatch::Impl</a>
 </li>
 <li>SpotLight()
-: <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#abc287714a0bb8f4fab5960b7bcbb4316">mage::rendering::SpotLight</a>
+: <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#a3520d2b04ca636436211e8e4fd929b42">mage::rendering::SpotLight</a>
 </li>
 <li>SpotLightBuffer()
 : <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#a091924b026f081f1612138806ff1e107">mage::rendering::SpotLightBuffer</a>
@@ -577,16 +577,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#a961b1df4f0e0b8dc17f968a5e61c2ce6">mage::rendering::SpriteBatchMesh</a>
 </li>
 <li>SpriteFont()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a6080794a32e8e4fa4b2be7392a4e9466">mage::rendering::SpriteFont</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a80cfc8c939ee3709f7a6f9441a5bd688">mage::rendering::SpriteFont</a>
 </li>
 <li>SpriteFontDescriptor()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_font_descriptor.html#a168e12be8a7029e5f5dcffe058100bd6">mage::rendering::SpriteFontDescriptor</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_font_descriptor.html#a82c66afe6cc815ad223c15642cd2ac00">mage::rendering::SpriteFontDescriptor</a>
 </li>
 <li>SpriteFontOutput()
 : <a class="el" href="structmage_1_1rendering_1_1_sprite_font_output.html#a5bc62257f436c6836a8fd0b3c306c026">mage::rendering::SpriteFontOutput</a>
 </li>
 <li>SpriteFontReader()
-: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#a4c96a8d3554084baaf4b24f94a582ac6">mage::rendering::loader::SpriteFontReader</a>
+: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#a71239906b4c7609747d5fe47189883b6">mage::rendering::loader::SpriteFontReader</a>
 </li>
 <li>SpriteImage()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_image.html#af49f06e0de889dbfd2db264d9e07fc20">mage::rendering::SpriteImage</a>
@@ -595,19 +595,20 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_pass.html#a9352291e5364fc157e4b2a1cd1184d8d">mage::rendering::SpritePass</a>
 </li>
 <li>SpriteText()
-: <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#ad2bdddde8371d59c85449a9979017f8c">mage::rendering::SpriteText</a>
+: <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#a60b40732c1a08b88b70335cf91947556">mage::rendering::SpriteText</a>
 </li>
 <li>SpriteTransform()
-: <a class="el" href="classmage_1_1_sprite_transform.html#acbb83bc167067a81a5d0b6255e886133">mage::SpriteTransform</a>
+: <a class="el" href="classmage_1_1_sprite_transform.html#a72e3b546e705870fb6359770468e7faa">mage::SpriteTransform</a>
 </li>
 <li>SRGB()
-: <a class="el" href="structmage_1_1_s_r_g_b.html#a4b56eeabfaee47d0f0685a061947ce59">mage::SRGB</a>
+: <a class="el" href="structmage_1_1_s_r_g_b.html#abb02103839b539049a6dd54dd7936b16">mage::SRGB</a>
 </li>
 <li>SRGBA()
-: <a class="el" href="structmage_1_1_s_r_g_b_a.html#a5ff3a33ee8ee285bec1735e8c796a766">mage::SRGBA</a>
+: <a class="el" href="structmage_1_1_s_r_g_b_a.html#a2f1125cfd0ba308a1f249e2b43637031">mage::SRGBA</a>
 </li>
 <li>Start()
 : <a class="el" href="classmage_1_1_c_p_u_monitor.html#a3f88acbb979f47309fd46f1b507fed09">mage::CPUMonitor</a>
+, <a class="el" href="classmage_1_1_game_timer.html#ab4eb362f71e15e1ca931d5bd0102db46">mage::GameTimer</a>
 , <a class="el" href="classmage_1_1_timer.html#a633908e9e816e9397cd93b65bc11ddb3">mage::Timer&lt; ClockT &gt;</a>
 </li>
 <li>StartModelPart()
@@ -617,27 +618,28 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_state_manager.html#ab5a87ec8d14f9b249685b52e159888b2">mage::rendering::StateManager</a>
 </li>
 <li>StaticMesh()
-: <a class="el" href="classmage_1_1rendering_1_1_static_mesh.html#a0e824924504f75bbfa578caf0637dd2a">mage::rendering::StaticMesh&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1_static_mesh.html#a99a189dbe9ff6f095063967f68c7285d">mage::rendering::StaticMesh&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>StatsScript()
-: <a class="el" href="classmage_1_1script_1_1_stats_script.html#a3fb4aa69fc341df0fe2c2ad03f0ff278">mage::script::StatsScript</a>
+: <a class="el" href="classmage_1_1script_1_1_stats_script.html#a6863940cb48633fbd5fc56547dc72a76">mage::script::StatsScript</a>
 </li>
 <li>Stop()
 : <a class="el" href="classmage_1_1_c_p_u_monitor.html#a133aaed1df0e84486a6fc748d66615bb">mage::CPUMonitor</a>
+, <a class="el" href="classmage_1_1_game_timer.html#a309768cb7a9dee1f4ac358bdba1842f4">mage::GameTimer</a>
 , <a class="el" href="classmage_1_1_timer.html#ab9442d64c2c1bedec830004f292725ab">mage::Timer&lt; ClockT &gt;</a>
 </li>
 <li>StructuredBuffer()
-: <a class="el" href="classmage_1_1rendering_1_1_structured_buffer.html#ac6e1af93013761263b4ca418609b0518">mage::rendering::StructuredBuffer&lt; DataT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1_structured_buffer.html#a447ca1bad6b4dc97bd993ce6e621f16a">mage::rendering::StructuredBuffer&lt; DataT &gt;</a>
 </li>
 <li>SwapChain()
-: <a class="el" href="classmage_1_1rendering_1_1_swap_chain.html#a55ca2b4722e40e0f23dcacfbce75f894">mage::rendering::SwapChain</a>
+: <a class="el" href="classmage_1_1rendering_1_1_swap_chain.html#ae6bc03d3e49c012ff4eab712cb97e248">mage::rendering::SwapChain</a>
 </li>
 <li>SwitchMode()
 : <a class="el" href="classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aa3c391f6651074e73105174b68025731">mage::rendering::SwapChain::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_swap_chain.html#a184b5aa11bdc69f7b6077de9ec0c47e0">mage::rendering::SwapChain</a>
 </li>
 <li>SwitchSceneScript()
-: <a class="el" href="classmage_1_1script_1_1_switch_scene_script.html#af48c004b9419d4e462b6820297ebebd8">mage::script::SwitchSceneScript&lt; SceneT &gt;</a>
+: <a class="el" href="classmage_1_1script_1_1_switch_scene_script.html#af895d885db98e4b3ab7d3faca8fc8d8f">mage::script::SwitchSceneScript&lt; SceneT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

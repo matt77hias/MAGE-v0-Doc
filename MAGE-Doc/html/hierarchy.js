@@ -52,10 +52,10 @@ var hierarchy =
     [ "mage::ComponentClient", "classmage_1_1_component_client.html", null ],
     [ "mage::rendering::ConstantBuffer< DataT >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< mage::rendering::CameraBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
-    [ "mage::rendering::ConstantBuffer< mage::rendering::GameBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< mage::rendering::LightBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< mage::rendering::ModelBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< mage::rendering::SecondaryCameraBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
+    [ "mage::rendering::ConstantBuffer< mage::rendering::WorldBuffer >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< mage::RGBA >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::rendering::ConstantBuffer< XMMATRIX >", "classmage_1_1rendering_1_1_constant_buffer.html", null ],
     [ "mage::CoreClock", "structmage_1_1_core_clock.html", null ],
@@ -73,7 +73,6 @@ var hierarchy =
     [ "mage::rendering::DirectionalLightBuffer", "structmage_1_1rendering_1_1_directional_light_buffer.html", null ],
     [ "mage::rendering::DisplayConfiguration", "classmage_1_1rendering_1_1_display_configuration.html", null ],
     [ "mage::rendering::DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html", null ],
-    [ "mage::rendering::DOFPass", "classmage_1_1rendering_1_1_d_o_f_pass.html", null ],
     [ "mage::DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html", null ],
     [ "mage::rendering::Pipeline::DS", "structmage_1_1rendering_1_1_pipeline_1_1_d_s.html", null ],
     [ "mage::Engine", "classmage_1_1_engine.html", null ],
@@ -87,7 +86,8 @@ var hierarchy =
     [ "mage::FileStreamCloser", "structmage_1_1_file_stream_closer.html", null ],
     [ "mage::rendering::Fog", "classmage_1_1rendering_1_1_fog.html", null ],
     [ "mage::rendering::ForwardPass", "classmage_1_1rendering_1_1_forward_pass.html", null ],
-    [ "mage::rendering::GameBuffer", "structmage_1_1rendering_1_1_game_buffer.html", null ],
+    [ "mage::GameTime", "classmage_1_1_game_time.html", null ],
+    [ "mage::GameTimer", "classmage_1_1_game_timer.html", null ],
     [ "mage::rendering::Glyph", "structmage_1_1rendering_1_1_glyph.html", null ],
     [ "mage::rendering::Pipeline::GS", "structmage_1_1rendering_1_1_pipeline_1_1_g_s.html", null ],
     [ "mage::HandleCloser", "structmage_1_1_handle_closer.html", null ],
@@ -119,8 +119,8 @@ var hierarchy =
     [ "mage::LocalTransform", "classmage_1_1_local_transform.html", null ],
     [ "mage::LoggingConfiguration", "classmage_1_1_logging_configuration.html", null ],
     [ "mage::DoubleEndedMemoryStack::LowAllocator< DataT >", "classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html", null ],
-    [ "mage::rendering::Manager", "classmage_1_1rendering_1_1_manager.html", null ],
     [ "mage::input::Manager", "classmage_1_1input_1_1_manager.html", null ],
+    [ "mage::rendering::Manager", "classmage_1_1rendering_1_1_manager.html", null ],
     [ "mage::rendering::Material", "classmage_1_1rendering_1_1_material.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
     [ "mage::rendering::Mesh", "classmage_1_1rendering_1_1_mesh.html", [
@@ -142,6 +142,7 @@ var hierarchy =
     [ "mage::rendering::OutputManager", "classmage_1_1rendering_1_1_output_manager.html", null ],
     [ "mage::PersistentResourcePool< KeyT, ResourceT >", "classmage_1_1_persistent_resource_pool.html", null ],
     [ "mage::rendering::Pipeline", "structmage_1_1rendering_1_1_pipeline.html", null ],
+    [ "mage::rendering::PostProcessPass", "classmage_1_1rendering_1_1_post_process_pass.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ProxyPtr< T >", "classmage_1_1_proxy_ptr.html", null ],
     [ "mage::ProxyPtr< mage::Node >", "classmage_1_1_proxy_ptr.html", null ],
@@ -240,6 +241,7 @@ var hierarchy =
       [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
     ] ],
     [ "mage::Vector3< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
+    [ "mage::Vector3< U32 >", "structmage_1_1_vector3.html", null ],
     [ "mage::Vector3A< T, Enable >", "structmage_1_1_vector3_a.html", null ],
     [ "mage::Vector3A< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector3_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
     [ "mage::Vector4< T, Enable >", "structmage_1_1_vector4.html", [
@@ -271,6 +273,7 @@ var hierarchy =
     ] ],
     [ "mage::WindowMessageListener", "classmage_1_1_window_message_listener.html", null ],
     [ "mage::rendering::World", "classmage_1_1rendering_1_1_world.html", null ],
+    [ "mage::rendering::WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html", null ],
     [ "mage::Writer", "classmage_1_1_writer.html", [
       [ "mage::loader::VARWriter", "classmage_1_1loader_1_1_v_a_r_writer.html", null ],
       [ "mage::rendering::loader::MDLWriter< VertexT, IndexT >", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html", null ]

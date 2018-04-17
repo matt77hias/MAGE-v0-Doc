@@ -10,7 +10,6 @@ var searchData=
   ['directionallightbuffer',['DirectionalLightBuffer',['../structmage_1_1rendering_1_1_directional_light_buffer.html',1,'mage::rendering']]],
   ['displayconfiguration',['DisplayConfiguration',['../classmage_1_1rendering_1_1_display_configuration.html',1,'mage::rendering']]],
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1rendering_1_1_display_configurator.html',1,'mage::rendering']]],
-  ['dofpass',['DOFPass',['../classmage_1_1rendering_1_1_d_o_f_pass.html',1,'mage::rendering']]],
   ['doubleendedmemorystack',['DoubleEndedMemoryStack',['../classmage_1_1_double_ended_memory_stack.html',1,'mage']]],
   ['ds',['DS',['../structmage_1_1rendering_1_1_pipeline_1_1_d_s.html',1,'mage::rendering::Pipeline']]]
 ];

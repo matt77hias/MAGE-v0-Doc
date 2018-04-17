@@ -21,8 +21,8 @@ var classmage_1_1rendering_1_1_sprite_text =
     [ "GetSpriteTransform", "classmage_1_1rendering_1_1_sprite_text.html#a9b0bc8d9c8e123d49bd6cc9dcc35c06d", null ],
     [ "GetText", "classmage_1_1rendering_1_1_sprite_text.html#a3a07e4043ce7058cb157111738c664cb", null ],
     [ "GetTextEffect", "classmage_1_1rendering_1_1_sprite_text.html#a7c61e9d50bb6c3c46507706e1aad8d5c", null ],
-    [ "GetTextEffectColor", "classmage_1_1rendering_1_1_sprite_text.html#abbb4d78110960dfdcab18a4319524332", null ],
-    [ "GetTextEffectColor", "classmage_1_1rendering_1_1_sprite_text.html#addb7c5b8fdf87bf2ccd3259ad92df464", null ],
+    [ "GetTextEffectColor", "classmage_1_1rendering_1_1_sprite_text.html#aa5cd1f28efdf8508474dd962e8733783", null ],
+    [ "GetTextEffectColor", "classmage_1_1rendering_1_1_sprite_text.html#a7705f00b0172153d52f31f170b12968f", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sprite_text.html#a50d21c24a019c0e8dc053a307ec421a6", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sprite_text.html#a8ced44509f1fa84236b20f1d42add873", null ],
     [ "SetFont", "classmage_1_1rendering_1_1_sprite_text.html#acad93e0803d47502db5ef16998d2f38a", null ],
@@ -34,5 +34,5 @@ var classmage_1_1rendering_1_1_sprite_text =
     [ "m_sprite_transform", "classmage_1_1rendering_1_1_sprite_text.html#af702fbdab6468fbd5856434192a32787", null ],
     [ "m_strings", "classmage_1_1rendering_1_1_sprite_text.html#a2f9d4a00ad08710fe36eebd825b2f142", null ],
     [ "m_text_effect", "classmage_1_1rendering_1_1_sprite_text.html#a795a35dc3671097dd29afaa4b2c5ac3a", null ],
-    [ "m_text_effect_color", "classmage_1_1rendering_1_1_sprite_text.html#afa9c4b4bd748570ce67d8fe57ce86026", null ]
+    [ "m_text_effect_color", "classmage_1_1rendering_1_1_sprite_text.html#a2fffa5ce343b92f32cbfe5234b182247", null ]
 ];

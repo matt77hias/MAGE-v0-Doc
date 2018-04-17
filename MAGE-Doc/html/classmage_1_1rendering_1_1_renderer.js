@@ -8,6 +8,6 @@ var classmage_1_1rendering_1_1_renderer =
     [ "BindPersistentState", "classmage_1_1rendering_1_1_renderer.html#a7fa8fd234b69dabc51d7a214afb641b3", null ],
     [ "operator=", "classmage_1_1rendering_1_1_renderer.html#a23338d210ca0008a05cf060f35d4dc70", null ],
     [ "operator=", "classmage_1_1rendering_1_1_renderer.html#a8f0f0323dc57cf2e1f76491bf6eaa97a", null ],
-    [ "Render", "classmage_1_1rendering_1_1_renderer.html#aede128f4a20add4df3f101601b444902", null ],
+    [ "Render", "classmage_1_1rendering_1_1_renderer.html#abbab1dd0a3a4eb06cb6fd4f0a75eb192", null ],
     [ "m_impl", "classmage_1_1rendering_1_1_renderer.html#aee44d4c9014216d84030ecfc6e64b1e4", null ]
 ];

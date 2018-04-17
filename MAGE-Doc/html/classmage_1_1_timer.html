@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.139.0</span>
+   &#160;<span id="projectnumber">v0.146.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4e320f1abe821aa1c9596c4d8b9c7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d67e33d559196d2d1ca1f75f12d5644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a4d67e33d559196d2d1ca1f75f12d5644">GetTotalDeltaTime</a> () const noexcept</td></tr>
 <tr class="separator:a4d67e33d559196d2d1ca1f75f12d5644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae023115c586f74e45bc9c9c4e7556b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a6ae023115c586f74e45bc9c9c4e7556b">GetTime</a> (<a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a> &amp;delta_time, <a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a> &amp;total_delta_time) const noexcept</td></tr>
+<tr class="separator:a6ae023115c586f74e45bc9c9c4e7556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -363,8 +365,54 @@ template&lt;typename ClockT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the wall clock delta time (in seconds) of this timer.</p>
-<dl class="section return"><dt>Returns</dt><dd>The wall clock delta time (in seconds) of this timer. </dd></dl>
+<p>Returns the delta time (in seconds) of this timer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The delta time (in seconds) of this timer. </dd></dl>
+
+</div>
+</div>
+<a id="a6ae023115c586f74e45bc9c9c4e7556b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae023115c586f74e45bc9c9c4e7556b">&sect;&nbsp;</a></span>GetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ClockT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmage_1_1_timer.html">mage::Timer</a>&lt; ClockT &gt;::GetTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a> &amp;&#160;</td>
+          <td class="paramname"><em>delta_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a> &amp;&#160;</td>
+          <td class="paramname"><em>total_delta_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the delta time (in seconds) and the the total wall clock delta time (in seconds) of this timer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">delta_time</td><td>A reference to the delta time (in seconds) of this timer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">total_delta_time</td><td>A reference to the total delta time (in seconds) of this timer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -392,8 +440,8 @@ template&lt;typename ClockT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the total wall clock delta time (in seconds) of this timer.</p>
-<dl class="section return"><dt>Returns</dt><dd>The total wall clock delta time (in seconds) of this timer. </dd></dl>
+<p>Returns the total delta time (in seconds) of this timer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The total delta time (in seconds) of this timer. </dd></dl>
 
 </div>
 </div>

@@ -21,6 +21,8 @@
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_output_manager_a9c753354655b7b218263832c343417d1}{Bind\+Begin} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
 \item 
+void \hyperlink{classmage_1_1rendering_1_1_output_manager_a9101e210c5b04fefc52f2f14473c5742}{Bind\+Begin\+Viewport} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\item 
 void \hyperlink{classmage_1_1rendering_1_1_output_manager_a93139563e5f5b58ccba4688c3b793e32}{Bind\+Begin\+G\+Buffer} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_output_manager_a380113a2b1c9049cfd2367a6344683b7}{Bind\+End\+G\+Buffer} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
@@ -41,6 +43,12 @@ void \hyperlink{classmage_1_1rendering_1_1_output_manager_a6c22d77a812e3eacf32cf
 \item 
 void \hyperlink{classmage_1_1rendering_1_1_output_manager_aacb8da12f24fe9b7f1c3aac6f52ba9a1}{Bind\+Ping\+Pong} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
 \item 
+void \hyperlink{classmage_1_1rendering_1_1_output_manager_a47e4a5dfc0bca82c49ebde85e01d55cc}{Bind\+End\+Post\+Processing} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_output_manager_a1b99009331167e4548dbb58695926542}{Bind\+End\+Viewport} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_output_manager_a08be9cc8922f891c8ea4f17559ee40db}{Bind\+G\+UI} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
+\item 
 void \hyperlink{classmage_1_1rendering_1_1_output_manager_adf8fa859bb168ecf389d56b574a69dbd}{Bind\+End} (I\+D3\+D11\+Device\+Context \&device\+\_\+context) const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
@@ -48,38 +56,41 @@ void \hyperlink{classmage_1_1rendering_1_1_output_manager_adf8fa859bb168ecf389d5
 \item 
 enum \hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63}{S\+R\+V\+Index} \+: U8 \{ \newline
 \hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a6cad826248cd3f4e93da71e7b49928e3}{S\+R\+V\+Index\+::\+H\+DR} = 0, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af8aaa1436c06c671272ac08e4fa83309}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Base\+Color} = 1, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63abbdd76532c820b05b242d544cd1b43fd}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Material} = 2, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af69e4b1698bc66624ab45f2c967406bb}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Normal} = 3, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af8aaa1436c06c671272ac08e4fa83309}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Base\+Color}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63abbdd76532c820b05b242d544cd1b43fd}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Material}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af69e4b1698bc66624ab45f2c967406bb}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Normal}, 
 \newline
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae8964b7cf20037a91a4e9107f2b93db8}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Depth} = 4, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af86c3f35d502a4de4cc2d4601a6fbbc4}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0} = 5, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1} = 6, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+Normal} = 7, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae8964b7cf20037a91a4e9107f2b93db8}{S\+R\+V\+Index\+::\+G\+Buffer\+\_\+\+Depth}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63af86c3f35d502a4de4cc2d4601a6fbbc4}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+Normal}, 
 \newline
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+Depth} = 8, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9}{S\+R\+V\+Index\+::\+Count} = 9
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe}{S\+R\+V\+Index\+::\+Post\+Processing\+\_\+\+Depth}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f}{S\+R\+V\+Index\+::\+L\+DR}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9}{S\+R\+V\+Index\+::\+Count}
  \}
 \item 
 enum \hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857c}{R\+T\+V\+Index} \+: U8 \{ \newline
 \hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca6cad826248cd3f4e93da71e7b49928e3}{R\+T\+V\+Index\+::\+H\+DR} = 0, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf8aaa1436c06c671272ac08e4fa83309}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Base\+Color} = 1, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cabbdd76532c820b05b242d544cd1b43fd}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Material} = 2, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Normal} = 3, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf8aaa1436c06c671272ac08e4fa83309}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Base\+Color}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cabbdd76532c820b05b242d544cd1b43fd}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Material}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb}{R\+T\+V\+Index\+::\+G\+Buffer\+\_\+\+Normal}, 
 \newline
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4}{R\+T\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0} = 4, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322}{R\+T\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1} = 5, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9}{R\+T\+V\+Index\+::\+Count} = 6
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4}{R\+T\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322}{R\+T\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f}{R\+T\+V\+Index\+::\+L\+DR}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9}{R\+T\+V\+Index\+::\+Count}
  \}
 \item 
 enum \hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3e}{U\+A\+V\+Index} \+: U8 \{ \newline
 \hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea6cad826248cd3f4e93da71e7b49928e3}{U\+A\+V\+Index\+::\+H\+DR} = 0, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eaf86c3f35d502a4de4cc2d4601a6fbbc4}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0} = 1, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1} = 2, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+Normal} = 3, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eaf86c3f35d502a4de4cc2d4601a6fbbc4}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R0}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+H\+D\+R1}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+Normal}, 
 \newline
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+Depth} = 4, 
-\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9}{U\+A\+V\+Index\+::\+Count} = 5
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe}{U\+A\+V\+Index\+::\+Post\+Processing\+\_\+\+Depth}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f}{U\+A\+V\+Index\+::\+L\+DR}, 
+\hyperlink{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9}{U\+A\+V\+Index\+::\+Count}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
@@ -163,6 +174,10 @@ Post\+Processing\+\_\+\+H\+D\+R0&\\
 Post\+Processing\+\_\+\+H\+D\+R1&\\
 \hline
 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+DR@{L\+DR}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!L\+DR@{L\+DR}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f}{}\label{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f} 
+L\+DR&\\
+\hline
+
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Count@{Count}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1rendering_1_1_output_manager_af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9} 
 Count&\\
 \hline
@@ -211,6 +226,10 @@ Post\+Processing\+\_\+\+Normal&\\
 Post\+Processing\+\_\+\+Depth&\\
 \hline
 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+DR@{L\+DR}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!L\+DR@{L\+DR}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f}{}\label{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f} 
+L\+DR&\\
+\hline
+
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Count@{Count}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1rendering_1_1_output_manager_a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9} 
 Count&\\
 \hline
@@ -241,6 +260,10 @@ Post\+Processing\+\_\+\+Normal&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Post\+Processing\+\_\+\+Depth@{Post\+Processing\+\_\+\+Depth}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Post\+Processing\+\_\+\+Depth@{Post\+Processing\+\_\+\+Depth}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe}{}\label{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe} 
 Post\+Processing\+\_\+\+Depth&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+DR@{L\+DR}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!L\+DR@{L\+DR}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f}{}\label{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f} 
+L\+DR&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Count@{Count}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Count@{Count}}}\hypertarget{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9}{}\label{classmage_1_1rendering_1_1_output_manager_a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9} 
@@ -344,6 +367,12 @@ Destructs this output manager.
 \subsubsection{\texorpdfstring{Bind\+Begin\+Resolve()}{BindBeginResolve()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+Begin\+Resolve (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+\hypertarget{classmage_1_1rendering_1_1_output_manager_a9101e210c5b04fefc52f2f14473c5742}{}\label{classmage_1_1rendering_1_1_output_manager_a9101e210c5b04fefc52f2f14473c5742} 
+\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+Begin\+Viewport@{Bind\+Begin\+Viewport}}
+\index{Bind\+Begin\+Viewport@{Bind\+Begin\+Viewport}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+Begin\+Viewport()}{BindBeginViewport()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+Begin\+Viewport (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1rendering_1_1_output_manager_adf8fa859bb168ecf389d56b574a69dbd}{}\label{classmage_1_1rendering_1_1_output_manager_adf8fa859bb168ecf389d56b574a69dbd} 
 \index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+End@{Bind\+End}}
 \index{Bind\+End@{Bind\+End}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
@@ -368,11 +397,29 @@ Destructs this output manager.
 \subsubsection{\texorpdfstring{Bind\+End\+G\+Buffer()}{BindEndGBuffer()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+End\+G\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+\hypertarget{classmage_1_1rendering_1_1_output_manager_a47e4a5dfc0bca82c49ebde85e01d55cc}{}\label{classmage_1_1rendering_1_1_output_manager_a47e4a5dfc0bca82c49ebde85e01d55cc} 
+\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+End\+Post\+Processing@{Bind\+End\+Post\+Processing}}
+\index{Bind\+End\+Post\+Processing@{Bind\+End\+Post\+Processing}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+End\+Post\+Processing()}{BindEndPostProcessing()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+End\+Post\+Processing (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1rendering_1_1_output_manager_a548e6003d34916b174f74f6f1b5e85a2}{}\label{classmage_1_1rendering_1_1_output_manager_a548e6003d34916b174f74f6f1b5e85a2} 
 \index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+End\+Resolve@{Bind\+End\+Resolve}}
 \index{Bind\+End\+Resolve@{Bind\+End\+Resolve}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
 \subsubsection{\texorpdfstring{Bind\+End\+Resolve()}{BindEndResolve()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+End\+Resolve (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1rendering_1_1_output_manager_a1b99009331167e4548dbb58695926542}{}\label{classmage_1_1rendering_1_1_output_manager_a1b99009331167e4548dbb58695926542} 
+\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+End\+Viewport@{Bind\+End\+Viewport}}
+\index{Bind\+End\+Viewport@{Bind\+End\+Viewport}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+End\+Viewport()}{BindEndViewport()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+End\+Viewport (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1rendering_1_1_output_manager_a08be9cc8922f891c8ea4f17559ee40db}{}\label{classmage_1_1rendering_1_1_output_manager_a08be9cc8922f891c8ea4f17559ee40db} 
+\index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+G\+UI@{Bind\+G\+UI}}
+\index{Bind\+G\+UI@{Bind\+G\+UI}!mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}}
+\subsubsection{\texorpdfstring{Bind\+G\+U\+I()}{BindGUI()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Output\+Manager\+::\+Bind\+G\+UI (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_output_manager_aacb8da12f24fe9b7f1c3aac6f52ba9a1}{}\label{classmage_1_1rendering_1_1_output_manager_aacb8da12f24fe9b7f1c3aac6f52ba9a1} 
 \index{mage\+::rendering\+::\+Output\+Manager@{mage\+::rendering\+::\+Output\+Manager}!Bind\+Ping\+Pong@{Bind\+Ping\+Pong}}

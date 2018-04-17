@@ -21,10 +21,8 @@ var namespacemage_1_1rendering =
     [ "DirectionalLightBuffer", "structmage_1_1rendering_1_1_directional_light_buffer.html", "structmage_1_1rendering_1_1_directional_light_buffer" ],
     [ "DisplayConfiguration", "classmage_1_1rendering_1_1_display_configuration.html", "classmage_1_1rendering_1_1_display_configuration" ],
     [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html", "classmage_1_1rendering_1_1_display_configurator" ],
-    [ "DOFPass", "classmage_1_1rendering_1_1_d_o_f_pass.html", "classmage_1_1rendering_1_1_d_o_f_pass" ],
     [ "Fog", "classmage_1_1rendering_1_1_fog.html", "classmage_1_1rendering_1_1_fog" ],
     [ "ForwardPass", "classmage_1_1rendering_1_1_forward_pass.html", "classmage_1_1rendering_1_1_forward_pass" ],
-    [ "GameBuffer", "structmage_1_1rendering_1_1_game_buffer.html", "structmage_1_1rendering_1_1_game_buffer" ],
     [ "Glyph", "structmage_1_1rendering_1_1_glyph.html", "structmage_1_1rendering_1_1_glyph" ],
     [ "is_shader", "structmage_1_1rendering_1_1is__shader.html", null ],
     [ "is_shader< ComputeShader >", "structmage_1_1rendering_1_1is__shader_3_01_compute_shader_01_4.html", null ],
@@ -50,6 +48,7 @@ var namespacemage_1_1rendering =
     [ "OutputManager", "classmage_1_1rendering_1_1_output_manager.html", "classmage_1_1rendering_1_1_output_manager" ],
     [ "PerspectiveCamera", "classmage_1_1rendering_1_1_perspective_camera.html", "classmage_1_1rendering_1_1_perspective_camera" ],
     [ "Pipeline", "structmage_1_1rendering_1_1_pipeline.html", "structmage_1_1rendering_1_1_pipeline" ],
+    [ "PostProcessPass", "classmage_1_1rendering_1_1_post_process_pass.html", "classmage_1_1rendering_1_1_post_process_pass" ],
     [ "PrimitiveBatchMesh", "classmage_1_1rendering_1_1_primitive_batch_mesh.html", "classmage_1_1rendering_1_1_primitive_batch_mesh" ],
     [ "Renderer", "classmage_1_1rendering_1_1_renderer.html", "classmage_1_1rendering_1_1_renderer" ],
     [ "ResourceManager", "classmage_1_1rendering_1_1_resource_manager.html", "classmage_1_1rendering_1_1_resource_manager" ],
@@ -91,5 +90,6 @@ var namespacemage_1_1rendering =
     [ "VoxelGridPass", "classmage_1_1rendering_1_1_voxel_grid_pass.html", "classmage_1_1rendering_1_1_voxel_grid_pass" ],
     [ "VoxelizationPass", "classmage_1_1rendering_1_1_voxelization_pass.html", "classmage_1_1rendering_1_1_voxelization_pass" ],
     [ "VoxelizationSettings", "classmage_1_1rendering_1_1_voxelization_settings.html", "classmage_1_1rendering_1_1_voxelization_settings" ],
-    [ "World", "classmage_1_1rendering_1_1_world.html", "classmage_1_1rendering_1_1_world" ]
+    [ "World", "classmage_1_1rendering_1_1_world.html", "classmage_1_1rendering_1_1_world" ],
+    [ "WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html", "structmage_1_1rendering_1_1_world_buffer" ]
 ];

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.139.0</span>
+   &#160;<span id="projectnumber">v0.146.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac76b2061f2b5b9089a6b2387a40dbf73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0999f6eb6b09ad015103a46509b333b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a0999f6eb6b09ad015103a46509b333b8">RequestScene</a> (<a class="el" href="namespacemage.html#a3316d7143a973e37adf1110f2e80ca31">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt; &amp;&amp;scene) noexcept</td></tr>
 <tr class="separator:a0999f6eb6b09ad015103a46509b333b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d6f8ed151e50360da8f6afcce463ea"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmage_1_1_game_time.html">GameTime</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a77d6f8ed151e50360da8f6afcce463ea">GetTime</a> () const noexcept</td></tr>
+<tr class="separator:a77d6f8ed151e50360da8f6afcce463ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -148,8 +150,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2d4037208a0529838c81ccea08c9de11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45160eecbdcbebcf269436505342db54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a3316d7143a973e37adf1110f2e80ca31">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a45160eecbdcbebcf269436505342db54">m_requested_scene</a></td></tr>
 <tr class="separator:a45160eecbdcbebcf269436505342db54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539cff5bf8252ef28b994be49e9e6b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a06f4035ef59f07892e594bf1178a108a">WallClockTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a539cff5bf8252ef28b994be49e9e6b7c">m_timer</a></td></tr>
-<tr class="separator:a539cff5bf8252ef28b994be49e9e6b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360589e71a3d081c6a748aa283d1526d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_game_timer.html">GameTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a360589e71a3d081c6a748aa283d1526d">m_timer</a></td></tr>
+<tr class="separator:a360589e71a3d081c6a748aa283d1526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f56d65109d276dd49ba43c504bbd26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_game_time.html">GameTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#ab5f56d65109d276dd49ba43c504bbd26">m_time</a></td></tr>
+<tr class="separator:ab5f56d65109d276dd49ba43c504bbd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95557e1b6cba52b393c94d80d80bea4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a95557e1b6cba52b393c94d80d80bea4c">m_fixed_delta_time</a></td></tr>
 <tr class="separator:a95557e1b6cba52b393c94d80d80bea4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad46dd72279d9d86b96d1b907575765e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ad26233bbec640deda836e572c1a23708">F64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#ad46dd72279d9d86b96d1b907575765e9">m_fixed_time_budget</a></td></tr>
@@ -402,6 +406,33 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the current scene of this engine.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the current scene of this engine. </dd></dl>
+
+</div>
+</div>
+<a id="a77d6f8ed151e50360da8f6afcce463ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d6f8ed151e50360da8f6afcce463ea">&sect;&nbsp;</a></span>GetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmage_1_1_game_time.html">GameTime</a>&amp; mage::Engine::GetTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the game time of this game engine.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the game time of this game engine. </dd></dl>
 
 </div>
 </div>
@@ -929,8 +960,8 @@ The <code>wParam</code> parameter contained in the <code>WM_QUIT</code> message.
 
 </div>
 </div>
-<a id="a539cff5bf8252ef28b994be49e9e6b7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539cff5bf8252ef28b994be49e9e6b7c">&sect;&nbsp;</a></span>m_timer</h2>
+<a id="ab5f56d65109d276dd49ba43c504bbd26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f56d65109d276dd49ba43c504bbd26">&sect;&nbsp;</a></span>m_time</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -939,7 +970,30 @@ The <code>wParam</code> parameter contained in the <code>WM_QUIT</code> message.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a06f4035ef59f07892e594bf1178a108a">WallClockTimer</a> mage::Engine::m_timer</td>
+          <td class="memname"><a class="el" href="classmage_1_1_game_time.html">GameTime</a> mage::Engine::m_time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The current time of this engine. </p>
+
+</div>
+</div>
+<a id="a360589e71a3d081c6a748aa283d1526d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360589e71a3d081c6a748aa283d1526d">&sect;&nbsp;</a></span>m_timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_game_timer.html">GameTimer</a> mage::Engine::m_timer</td>
         </tr>
       </table>
   </td>

@@ -40,7 +40,7 @@ var classmage_1_1script_1_1_mouse_look_script =
     [ "SetSensitivity", "classmage_1_1script_1_1_mouse_look_script.html#a784937d1254fe26ee28864d11956cd80", null ],
     [ "SetSensitivityX", "classmage_1_1script_1_1_mouse_look_script.html#a97c2564df1660fb9d07f9a4269a77568", null ],
     [ "SetSensitivityY", "classmage_1_1script_1_1_mouse_look_script.html#a95376c27d55cf12d557427b68ccbd802", null ],
-    [ "Update", "classmage_1_1script_1_1_mouse_look_script.html#a7ccba133ce26a4aa1ff4f1ecea351d58", null ],
+    [ "Update", "classmage_1_1script_1_1_mouse_look_script.html#a3b78aebd104b061f5d176843ef58a48a", null ],
     [ "m_axes", "classmage_1_1script_1_1_mouse_look_script.html#ae41f05d545c70cd621a405f6ef0cd4d5", null ],
     [ "m_direction", "classmage_1_1script_1_1_mouse_look_script.html#a5f65024afe8940ca2709d5ee13dc033c", null ],
     [ "m_locked", "classmage_1_1script_1_1_mouse_look_script.html#addf0b7af4f51cdd521c38d59233c04ce", null ],

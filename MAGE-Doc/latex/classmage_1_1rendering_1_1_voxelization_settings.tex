@@ -21,9 +21,13 @@ constexpr \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelizat
 \item 
 constexpr bool \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a50ce0473e8e9fd22527d4f295c023176}{Uses\+V\+CT} () const noexcept
 \item 
-constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a3a3c22e03dd55757c99df3f1c22f20bf}{Get\+Number\+Of\+Cones} () const noexcept
+void \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a1f08a9e6c02ce6c3e392cdb1ad30f75e}{Enable\+V\+CT} () noexcept
 \item 
-constexpr void \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_ac7b2ca30bb73b5fb7e0c2cc46001ae22}{Set\+Number\+Of\+Cones} (\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} nb\+\_\+cones) noexcept
+void \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a7092d02a0878dad9ec4fa21ce1024147}{Disable\+V\+CT} () noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a930c8f4d3723e67e8cbfc2b41533ead8}{Toggle\+V\+CT} () noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a394b58dd3d414a406fd874f7e53b211f}{Set\+V\+CT} (bool vct=true) noexcept
 \item 
 constexpr \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a672f561214738cbb64252b332e717693}{Get\+Cone\+Step\+Multiplier} () const noexcept
 \item 
@@ -52,15 +56,10 @@ static \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperli
 \item 
 static const X\+M\+M\+A\+T\+R\+IX X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_ac0eb16df3bfae7218b27e1c1cdf1399f}{Get\+World\+To\+Voxel\+Matrix} () noexcept
 \end{DoxyCompactItemize}
-\subsection*{Static Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-static constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a7d5ceb0965e5c3a9aa1e16dd6dd06eed}{s\+\_\+max\+\_\+nb\+\_\+cones} = 6u
-\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a14a93b638fced273f7beab95c1caf929}{m\+\_\+nb\+\_\+cones}
+bool \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_ac2edf702f2441db192bef28ec616b873}{m\+\_\+vct}
 \item 
 \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} \hyperlink{classmage_1_1rendering_1_1_voxelization_settings_a4d58d4ab9b43d2631415da65321a8c83}{m\+\_\+cone\+\_\+step\+\_\+multiplier}
 \item 
@@ -122,6 +121,18 @@ Constructs a voxelization settings by moving the given voxelization settings.
 Destructs this voxelization settings. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a7092d02a0878dad9ec4fa21ce1024147}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a7092d02a0878dad9ec4fa21ce1024147} 
+\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Disable\+V\+CT@{Disable\+V\+CT}}
+\index{Disable\+V\+CT@{Disable\+V\+CT}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
+\subsubsection{\texorpdfstring{Disable\+V\+C\+T()}{DisableVCT()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Disable\+V\+CT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a1f08a9e6c02ce6c3e392cdb1ad30f75e}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a1f08a9e6c02ce6c3e392cdb1ad30f75e} 
+\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Enable\+V\+CT@{Enable\+V\+CT}}
+\index{Enable\+V\+CT@{Enable\+V\+CT}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
+\subsubsection{\texorpdfstring{Enable\+V\+C\+T()}{EnableVCT()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Enable\+V\+CT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
 \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a672f561214738cbb64252b332e717693}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a672f561214738cbb64252b332e717693} 
 \index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Get\+Cone\+Step\+Multiplier@{Get\+Cone\+Step\+Multiplier}}
 \index{Get\+Cone\+Step\+Multiplier@{Get\+Cone\+Step\+Multiplier}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
@@ -139,12 +150,6 @@ Destructs this voxelization settings.
 \index{Get\+Max\+Voxel\+Texture\+Mip\+Level@{Get\+Max\+Voxel\+Texture\+Mip\+Level}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
 \subsubsection{\texorpdfstring{Get\+Max\+Voxel\+Texture\+Mip\+Level()}{GetMaxVoxelTextureMipLevel()}}
 {\footnotesize\ttfamily static \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Voxelization\+Settings\+::\+Get\+Max\+Voxel\+Texture\+Mip\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
-
-\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a3a3c22e03dd55757c99df3f1c22f20bf}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a3a3c22e03dd55757c99df3f1c22f20bf} 
-\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Get\+Number\+Of\+Cones@{Get\+Number\+Of\+Cones}}
-\index{Get\+Number\+Of\+Cones@{Get\+Number\+Of\+Cones}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
-\subsubsection{\texorpdfstring{Get\+Number\+Of\+Cones()}{GetNumberOfCones()}}
-{\footnotesize\ttfamily constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Voxelization\+Settings\+::\+Get\+Number\+Of\+Cones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a3607b62516e690c192d356b59375ba18}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a3607b62516e690c192d356b59375ba18} 
 \index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Get\+Voxel\+Grid\+Center@{Get\+Voxel\+Grid\+Center}}
@@ -214,11 +219,11 @@ A reference to the moved voxelization settings (i.\+e. this voxelization setting
 \subsubsection{\texorpdfstring{Set\+Max\+Cone\+Distance()}{SetMaxConeDistance()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Set\+Max\+Cone\+Distance (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{max\+\_\+cone\+\_\+distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_ac7b2ca30bb73b5fb7e0c2cc46001ae22}{}\label{classmage_1_1rendering_1_1_voxelization_settings_ac7b2ca30bb73b5fb7e0c2cc46001ae22} 
-\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Set\+Number\+Of\+Cones@{Set\+Number\+Of\+Cones}}
-\index{Set\+Number\+Of\+Cones@{Set\+Number\+Of\+Cones}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
-\subsubsection{\texorpdfstring{Set\+Number\+Of\+Cones()}{SetNumberOfCones()}}
-{\footnotesize\ttfamily constexpr void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Set\+Number\+Of\+Cones (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}]{nb\+\_\+cones }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a394b58dd3d414a406fd874f7e53b211f}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a394b58dd3d414a406fd874f7e53b211f} 
+\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Set\+V\+CT@{Set\+V\+CT}}
+\index{Set\+V\+CT@{Set\+V\+CT}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
+\subsubsection{\texorpdfstring{Set\+V\+C\+T()}{SetVCT()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Set\+V\+CT (\begin{DoxyParamCaption}\item[{bool}]{vct = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_ad4a2dd741cdd4187eaaa2492fb1ca533}{}\label{classmage_1_1rendering_1_1_voxelization_settings_ad4a2dd741cdd4187eaaa2492fb1ca533} 
 \index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Set\+Voxel\+Grid\+Center@{Set\+Voxel\+Grid\+Center}}
@@ -237,6 +242,12 @@ A reference to the moved voxelization settings (i.\+e. this voxelization setting
 \index{Set\+Voxel\+Size@{Set\+Voxel\+Size}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
 \subsubsection{\texorpdfstring{Set\+Voxel\+Size()}{SetVoxelSize()}}
 {\footnotesize\ttfamily static void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Set\+Voxel\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}]{voxel\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+\hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a930c8f4d3723e67e8cbfc2b41533ead8}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a930c8f4d3723e67e8cbfc2b41533ead8} 
+\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Toggle\+V\+CT@{Toggle\+V\+CT}}
+\index{Toggle\+V\+CT@{Toggle\+V\+CT}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
+\subsubsection{\texorpdfstring{Toggle\+V\+C\+T()}{ToggleVCT()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxelization\+Settings\+::\+Toggle\+V\+CT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a50ce0473e8e9fd22527d4f295c023176}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a50ce0473e8e9fd22527d4f295c023176} 
 \index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!Uses\+V\+CT@{Uses\+V\+CT}}
@@ -259,19 +270,13 @@ The step multiplier of the cone while marching of this voxelization settings. \h
 \subsubsection{\texorpdfstring{m\+\_\+max\+\_\+cone\+\_\+distance}{m\_max\_cone\_distance}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32} mage\+::rendering\+::\+Voxelization\+Settings\+::m\+\_\+max\+\_\+cone\+\_\+distance\hspace{0.3cm}{\ttfamily [private]}}
 
-The maximal cone distance expressed in normalized texture coordinates of this voxelization settings. \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a14a93b638fced273f7beab95c1caf929}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a14a93b638fced273f7beab95c1caf929} 
-\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!m\+\_\+nb\+\_\+cones@{m\+\_\+nb\+\_\+cones}}
-\index{m\+\_\+nb\+\_\+cones@{m\+\_\+nb\+\_\+cones}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
-\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+cones}{m\_nb\_cones}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Voxelization\+Settings\+::m\+\_\+nb\+\_\+cones\hspace{0.3cm}{\ttfamily [private]}}
+The maximal cone distance expressed in normalized texture coordinates of this voxelization settings. \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_ac2edf702f2441db192bef28ec616b873}{}\label{classmage_1_1rendering_1_1_voxelization_settings_ac2edf702f2441db192bef28ec616b873} 
+\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!m\+\_\+vct@{m\+\_\+vct}}
+\index{m\+\_\+vct@{m\+\_\+vct}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
+\subsubsection{\texorpdfstring{m\+\_\+vct}{m\_vct}}
+{\footnotesize\ttfamily bool mage\+::rendering\+::\+Voxelization\+Settings\+::m\+\_\+vct\hspace{0.3cm}{\ttfamily [private]}}
 
-The number of cones to trace for each shading point of this voxelization settings. \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a7d5ceb0965e5c3a9aa1e16dd6dd06eed}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a7d5ceb0965e5c3a9aa1e16dd6dd06eed} 
-\index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!s\+\_\+max\+\_\+nb\+\_\+cones@{s\+\_\+max\+\_\+nb\+\_\+cones}}
-\index{s\+\_\+max\+\_\+nb\+\_\+cones@{s\+\_\+max\+\_\+nb\+\_\+cones}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
-\subsubsection{\texorpdfstring{s\+\_\+max\+\_\+nb\+\_\+cones}{s\_max\_nb\_cones}}
-{\footnotesize\ttfamily constexpr \hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32} mage\+::rendering\+::\+Voxelization\+Settings\+::s\+\_\+max\+\_\+nb\+\_\+cones = 6u\hspace{0.3cm}{\ttfamily [static]}}
-
-The maximal number of cones to trace for each shading point. \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a37151063ebbf6ae6ea193fb0ce05d270}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a37151063ebbf6ae6ea193fb0ce05d270} 
+A flag indicating whether voxel cone tracing should be used for this voxelization settings. \hypertarget{classmage_1_1rendering_1_1_voxelization_settings_a37151063ebbf6ae6ea193fb0ce05d270}{}\label{classmage_1_1rendering_1_1_voxelization_settings_a37151063ebbf6ae6ea193fb0ce05d270} 
 \index{mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}!s\+\_\+voxel\+\_\+grid\+\_\+center@{s\+\_\+voxel\+\_\+grid\+\_\+center}}
 \index{s\+\_\+voxel\+\_\+grid\+\_\+center@{s\+\_\+voxel\+\_\+grid\+\_\+center}!mage\+::rendering\+::\+Voxelization\+Settings@{mage\+::rendering\+::\+Voxelization\+Settings}}
 \subsubsection{\texorpdfstring{s\+\_\+voxel\+\_\+grid\+\_\+center}{s\_voxel\_grid\_center}}
