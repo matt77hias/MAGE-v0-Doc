@@ -13,6 +13,7 @@ var classmage_1_1rendering_1_1loader_1_1_m_t_l_reader =
     [ "ReadMTLMaterialTexture", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#a62b4c2d4106fb11f55af6a7de29ad37a", null ],
     [ "ReadMTLMetalness", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#a14aa8cd5655730234c460c6060552f68", null ],
     [ "ReadMTLNormalTexture", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#afc25c8d259af6fbeb06a1e189f247e75", null ],
+    [ "ReadMTLRadiance", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#acfafc2485c4b84ef84360e35ac8247eb", null ],
     [ "ReadMTLRoughness", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#a01438c92852592fd719a85d146e38b65", null ],
     [ "ReadMTLSRGB", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#aaefa7c67f90d7d592366acdb898993b3", null ],
     [ "ReadMTLSRGBA", "classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#a5b03c5c7aee393e60ea6c3bd7ff15614", null ],

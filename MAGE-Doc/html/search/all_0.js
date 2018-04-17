@@ -38,7 +38,7 @@ var searchData=
   ['addtranslationy',['AddTranslationY',['../classmage_1_1_transform.html#abf9253ddafad2725ef6c6e2b4bd44b35',1,'mage::Transform::AddTranslationY()'],['../classmage_1_1_local_transform.html#a3e058e92d72b6709957712a7d808a6e5',1,'mage::LocalTransform::AddTranslationY()'],['../classmage_1_1_sprite_transform.html#ab45b391a7bdc357facd0eb322e0a294f',1,'mage::SpriteTransform::AddTranslationY()'],['../classmage_1_1_texture_transform.html#a4c9463ef0b5f3730560093d03b31de15',1,'mage::TextureTransform::AddTranslationY()']]],
   ['addtranslationz',['AddTranslationZ',['../classmage_1_1_transform.html#a2554a3af167bb8ae9f4724921e6a3596',1,'mage::Transform::AddTranslationZ()'],['../classmage_1_1_local_transform.html#aa2f35831d30101a57d1bfaf1cba527b8',1,'mage::LocalTransform::AddTranslationZ()']]],
   ['addunhandledexceptionfilter',['AddUnhandledExceptionFilter',['../namespacemage.html#a99d7b362eb2c14e53e9833572d529643',1,'mage']]],
-  ['aliceblue',['AliceBlue',['../namespacemage_1_1color.html#a2d5ef85e2e43ff7fb45cef27d4997b3b',1,'mage::color']]],
+  ['aliceblue',['AliceBlue',['../namespacemage_1_1color.html#abd4f16c016b0f4447d08269b0ffb1332',1,'mage::color']]],
   ['alignedallocator',['AlignedAllocator',['../classmage_1_1_aligned_allocator.html#a882b621a8276d046f3300385680442cf',1,'mage::AlignedAllocator::AlignedAllocator() noexcept=default'],['../classmage_1_1_aligned_allocator.html#ad5ccaa890d899f8876253a5bfd83a1ba',1,'mage::AlignedAllocator::AlignedAllocator(const AlignedAllocator &amp;allocator) noexcept=default'],['../classmage_1_1_aligned_allocator.html#a5913d9165132c04473673dd0214e8817',1,'mage::AlignedAllocator::AlignedAllocator(AlignedAllocator &amp;&amp;allocator) noexcept=default'],['../classmage_1_1_aligned_allocator.html#a04afd26f90cd17cbfc5134a375e273a9',1,'mage::AlignedAllocator::AlignedAllocator([[maybe_unused]] const AlignedAllocator&lt; DataU, AlignmentS &gt; &amp;allocator) noexcept']]],
   ['alignedallocator',['AlignedAllocator',['../classmage_1_1_aligned_allocator.html',1,'mage']]],
   ['alignedvector',['AlignedVector',['../namespacemage.html#a8664bfb5ce2179fc64eae9f82c8a5ba8',1,'mage']]],
@@ -63,11 +63,11 @@ var searchData=
   ['anisotropicmirror',['AnisotropicMirror',['../namespacemage_1_1rendering.html#a6f80181126db61dbb8b528a6894eb658ae33ea6d51127ef3ffbdc86b71441a38b',1,'mage::rendering']]],
   ['anisotropicwrap',['AnisotropicWrap',['../namespacemage_1_1rendering.html#a6f80181126db61dbb8b528a6894eb658a026a427f3ee33cc06b1977481c8687a7',1,'mage::rendering']]],
   ['antialiasing',['AntiAliasing',['../namespacemage_1_1rendering.html#ac3f75e49e92b42f2f5fb55c450d8899c',1,'mage::rendering']]],
-  ['antiquewhite',['AntiqueWhite',['../namespacemage_1_1color.html#a4c8213a7462da60a947162c1d487d584',1,'mage::color']]],
+  ['antiquewhite',['AntiqueWhite',['../namespacemage_1_1color.html#a66ba58abef7d938d58b25b45ebfec98f',1,'mage::color']]],
   ['appendtext',['AppendText',['../classmage_1_1rendering_1_1_sprite_text.html#a3b61f48d6001d8a7adf44d946797399b',1,'mage::rendering::SpriteText']]],
   ['applyrequestedscene',['ApplyRequestedScene',['../classmage_1_1_engine.html#a4fcb9760814dfa59c9fff34f1c82357b',1,'mage::Engine']]],
-  ['aqua',['Aqua',['../namespacemage_1_1color.html#aceff28758fa426deb7306624036b1707',1,'mage::color']]],
-  ['aquamarine',['Aquamarine',['../namespacemage_1_1color.html#ae5e7fd9509049a5d51f5793dda07c89a',1,'mage::color']]],
+  ['aqua',['Aqua',['../namespacemage_1_1color.html#a1c3b68d6209b49526a3ba6d27f4958d9',1,'mage::color']]],
+  ['aquamarine',['Aquamarine',['../namespacemage_1_1color.html#aeb7c11e0c59678c6ddcc4e8379c5a951',1,'mage::color']]],
   ['arraysize',['arraySize',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#ac4da0d495a89e556d02ac256af28da41',1,'DDS_HEADER_DXT10']]],
   ['aspectratiofromfovs',['AspectRatioFromFOVs',['../namespacemage_1_1rendering.html#a631864fb600ae8deae7576820fc77e0a',1,'mage::rendering']]],
   ['aspectratiofromwidthandheight',['AspectRatioFromWidthAndHeight',['../namespacemage_1_1rendering.html#a4b8ae187146be46ab632028b6a0b9abb',1,'mage::rendering']]],
@@ -83,5 +83,5 @@ var searchData=
   ['atomicu64',['AtomicU64',['../namespacemage.html#a694beb1edf301f410ce0b33c96b09871',1,'mage']]],
   ['atomicu8',['AtomicU8',['../namespacemage.html#a51ea0b4e0b972a9c42ed35c282fa019e',1,'mage']]],
   ['axisalignedboundingbox',['AxisAlignedBoundingBox',['../namespacemage.html#ac7e79590b6b7448db059bd50e34fbb08',1,'mage']]],
-  ['azure',['Azure',['../namespacemage_1_1color.html#a6d140b76616fdb0fe29b8e8111e3fdfd',1,'mage::color']]]
+  ['azure',['Azure',['../namespacemage_1_1color.html#a002c51cadb3b21c6a0c3492303207ee3',1,'mage::color']]]
 ];

@@ -13,7 +13,7 @@ var classmage_1_1rendering_1_1_manager_1_1_impl =
     [ "InitializeSystems", "classmage_1_1rendering_1_1_manager_1_1_impl.html#abb9706b54c07c3493ef906667051c336", null ],
     [ "operator=", "classmage_1_1rendering_1_1_manager_1_1_impl.html#a2367cc9262863faeed5166bd53ba52c0", null ],
     [ "operator=", "classmage_1_1rendering_1_1_manager_1_1_impl.html#a3dfc877c5737abc5020cf700dec8eb60", null ],
-    [ "Render", "classmage_1_1rendering_1_1_manager_1_1_impl.html#ac07444036f9accadde15f82f19d6c6ad", null ],
+    [ "Render", "classmage_1_1rendering_1_1_manager_1_1_impl.html#a65fcce597a9e4066d2dcded9990874e3", null ],
     [ "SetupDevice", "classmage_1_1rendering_1_1_manager_1_1_impl.html#ab5685e722d3d8afa96f30955c2d7c8a6", null ],
     [ "UninitializeSystems", "classmage_1_1rendering_1_1_manager_1_1_impl.html#a0e2979e4330a5148da2fa6cabd19078f", null ],
     [ "Update", "classmage_1_1rendering_1_1_manager_1_1_impl.html#a8fd123eb4cc188a207ca0bb9824c3f59", null ],

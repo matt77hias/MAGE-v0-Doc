@@ -1,7 +1,7 @@
 var classmage_1_1rendering_1_1_display_configurator_1_1_impl =
 [
-    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a0aa85d25b294d8ecec7fc83d4a6d80e2", null ],
-    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ab87ea2074c7c6ecdbb97ac68f96ed39f", null ],
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#af2385f84a5d80cf92a1d6afe2343a872", null ],
+    [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#ad71f98da03418a9afcfaa8acf94a0da9", null ],
     [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#acf8b6a3749108ad9f7a7c14c291d48b6", null ],
     [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#af8ddd060b24cd09deb2beef7737f5277", null ],
     [ "~Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html#a499b92d9d77a4c31cbdefa3a3c22a0be", null ],

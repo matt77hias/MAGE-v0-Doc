@@ -7,6 +7,7 @@ var classmage_1_1rendering_1_1_output_manager =
       [ "GBuffer_Normal", "classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb", null ],
       [ "PostProcessing_HDR0", "classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4", null ],
       [ "PostProcessing_HDR1", "classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322", null ],
+      [ "LDR", "classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f", null ],
       [ "Count", "classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "SRVIndex", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63", [
@@ -19,6 +20,7 @@ var classmage_1_1rendering_1_1_output_manager =
       [ "PostProcessing_HDR1", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322", null ],
       [ "PostProcessing_Normal", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9", null ],
       [ "PostProcessing_Depth", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe", null ],
+      [ "LDR", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f", null ],
       [ "Count", "classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "UAVIndex", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3e", [
@@ -27,6 +29,7 @@ var classmage_1_1rendering_1_1_output_manager =
       [ "PostProcessing_HDR1", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322", null ],
       [ "PostProcessing_Normal", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9", null ],
       [ "PostProcessing_Depth", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe", null ],
+      [ "LDR", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f", null ],
       [ "Count", "classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "OutputManager", "classmage_1_1rendering_1_1_output_manager.html#a02c97a57bf7217ab65ff5e7a44602200", null ],
@@ -39,11 +42,15 @@ var classmage_1_1rendering_1_1_output_manager =
     [ "BindBeginGBuffer", "classmage_1_1rendering_1_1_output_manager.html#a93139563e5f5b58ccba4688c3b793e32", null ],
     [ "BindBeginPostProcessing", "classmage_1_1rendering_1_1_output_manager.html#a6c22d77a812e3eacf32cfdb6d6a4d5f4", null ],
     [ "BindBeginResolve", "classmage_1_1rendering_1_1_output_manager.html#affa0c4b4c9c56807fe8ad4ed802fdfd9", null ],
+    [ "BindBeginViewport", "classmage_1_1rendering_1_1_output_manager.html#a9101e210c5b04fefc52f2f14473c5742", null ],
     [ "BindEnd", "classmage_1_1rendering_1_1_output_manager.html#adf8fa859bb168ecf389d56b574a69dbd", null ],
     [ "BindEndDeferred", "classmage_1_1rendering_1_1_output_manager.html#af48d4e2671d7b84d3fd94961b926dd2a", null ],
     [ "BindEndForward", "classmage_1_1rendering_1_1_output_manager.html#ad0b43f26a2762ae116bc72b0cf21a6de", null ],
     [ "BindEndGBuffer", "classmage_1_1rendering_1_1_output_manager.html#a380113a2b1c9049cfd2367a6344683b7", null ],
+    [ "BindEndPostProcessing", "classmage_1_1rendering_1_1_output_manager.html#a47e4a5dfc0bca82c49ebde85e01d55cc", null ],
     [ "BindEndResolve", "classmage_1_1rendering_1_1_output_manager.html#a548e6003d34916b174f74f6f1b5e85a2", null ],
+    [ "BindEndViewport", "classmage_1_1rendering_1_1_output_manager.html#a1b99009331167e4548dbb58695926542", null ],
+    [ "BindGUI", "classmage_1_1rendering_1_1_output_manager.html#a08be9cc8922f891c8ea4f17559ee40db", null ],
     [ "BindPingPong", "classmage_1_1rendering_1_1_output_manager.html#aacb8da12f24fe9b7f1c3aac6f52ba9a1", null ],
     [ "GetRTV", "classmage_1_1rendering_1_1_output_manager.html#a2088241f582fd9b119f485c5e9a13b30", null ],
     [ "GetSRV", "classmage_1_1rendering_1_1_output_manager.html#a0dc5e124cbd78351b78cc7a3e7bff428", null ],

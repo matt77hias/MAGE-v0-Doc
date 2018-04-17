@@ -7,6 +7,7 @@ var classmage_1_1_timer =
     [ "Timer", "classmage_1_1_timer.html#a7fb565cbe34c04df2713c43d3341cbc4", null ],
     [ "~Timer", "classmage_1_1_timer.html#a2802ae35dfdc05ff57b49e82f9b504f2", null ],
     [ "GetDeltaTime", "classmage_1_1_timer.html#ad4e320f1abe821aa1c9596c4d8b9c7e9", null ],
+    [ "GetTime", "classmage_1_1_timer.html#a6ae023115c586f74e45bc9c9c4e7556b", null ],
     [ "GetTotalDeltaTime", "classmage_1_1_timer.html#a4d67e33d559196d2d1ca1f75f12d5644", null ],
     [ "operator=", "classmage_1_1_timer.html#a2a8aefb272e02d8ba4a26058df80f119", null ],
     [ "operator=", "classmage_1_1_timer.html#a39654f81efccc38a4cbe6164659407dd", null ],

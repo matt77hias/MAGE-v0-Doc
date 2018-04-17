@@ -13,7 +13,7 @@ var classmage_1_1rendering_1_1_manager =
     [ "GetWorld", "classmage_1_1rendering_1_1_manager.html#a526b7c2db1a219e9b3bd4286e039696d", null ],
     [ "operator=", "classmage_1_1rendering_1_1_manager.html#acbc8c70a805b9f82268dd0391aa96e44", null ],
     [ "operator=", "classmage_1_1rendering_1_1_manager.html#abd824b25445bd67bfbddb49961796f28", null ],
-    [ "Render", "classmage_1_1rendering_1_1_manager.html#a06882d964807ea63898dbe77b0c2dbc1", null ],
+    [ "Render", "classmage_1_1rendering_1_1_manager.html#af6807d464e6496c342a9cf451e70d141", null ],
     [ "Update", "classmage_1_1rendering_1_1_manager.html#a878849c66920ccef910b31c80b1f033c", null ],
     [ "m_impl", "classmage_1_1rendering_1_1_manager.html#a1fa26fd6393941f4ef9b6863f317cd29", null ]
 ];

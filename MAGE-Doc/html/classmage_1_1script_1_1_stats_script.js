@@ -7,14 +7,13 @@ var classmage_1_1script_1_1_stats_script =
     [ "Load", "classmage_1_1script_1_1_stats_script.html#a4bfada754da5ca76591c5e7b9b0b1f51", null ],
     [ "operator=", "classmage_1_1script_1_1_stats_script.html#a538428ec1763e0fb4b41839e7943ca56", null ],
     [ "operator=", "classmage_1_1script_1_1_stats_script.html#ae99dbfbff061fcc916c968d670a1e481", null ],
-    [ "Update", "classmage_1_1script_1_1_stats_script.html#a2a98901197fc1681103c5aa0fb3f11f4", null ],
+    [ "Update", "classmage_1_1script_1_1_stats_script.html#aad8c3b8fb846d47605b1f1d14f1ea157", null ],
     [ "m_accumulated_nb_frames", "classmage_1_1script_1_1_stats_script.html#a7ef910aceb585af53110697ea5b3f810", null ],
-    [ "m_accumulated_time", "classmage_1_1script_1_1_stats_script.html#a41c1a4a0c73a6d5778b8ac7cd9d41bbc", null ],
-    [ "m_last_cpu_usage", "classmage_1_1script_1_1_stats_script.html#aa139c88470e13a6af4c5d715107c32e6", null ],
-    [ "m_last_frames_per_second", "classmage_1_1script_1_1_stats_script.html#a1ce1ed31e122346361d01cefb012e443", null ],
-    [ "m_last_milliseconds_per_frame", "classmage_1_1script_1_1_stats_script.html#a6c531ad04b2fa2ce530af06914d362b9", null ],
-    [ "m_last_ram_usage", "classmage_1_1script_1_1_stats_script.html#a0ea0dcf90e4364af1f64d67024314a94", null ],
-    [ "m_monitor", "classmage_1_1script_1_1_stats_script.html#ae5b97f07da7adb0740cd68cf2c4abbf5", null ],
-    [ "m_text", "classmage_1_1script_1_1_stats_script.html#a1fe11e7a3622fa5e3585fb6786e2d2e7", null ],
-    [ "s_resource_fetch_period", "classmage_1_1script_1_1_stats_script.html#adad03ab9bd20bde0709365d43a4158fd", null ]
+    [ "m_cpu", "classmage_1_1script_1_1_stats_script.html#ad7af4d0fec97fd30637d6c1d393c8623", null ],
+    [ "m_fps", "classmage_1_1script_1_1_stats_script.html#adc14b9c342874824422d229c1f8573cc", null ],
+    [ "m_prev_core_clock_time", "classmage_1_1script_1_1_stats_script.html#a3bd65146319e43de291a11a123b8101e", null ],
+    [ "m_prev_wall_clock_time", "classmage_1_1script_1_1_stats_script.html#a1f929fd926b90c7615e5ffc31bae8b93", null ],
+    [ "m_ram", "classmage_1_1script_1_1_stats_script.html#a2a064095ffab6d72370808f383a16580", null ],
+    [ "m_spf", "classmage_1_1script_1_1_stats_script.html#a999da0fb2033212522a1c45a992dcd37", null ],
+    [ "m_text", "classmage_1_1script_1_1_stats_script.html#a1fe11e7a3622fa5e3585fb6786e2d2e7", null ]
 ];

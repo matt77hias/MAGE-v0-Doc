@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.139.0</span>
+   &#160;<span id="projectnumber">v0.146.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97d2c2be4389a615eb084dd53af531aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c753354655b7b218263832c343417d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a9c753354655b7b218263832c343417d1">BindBegin</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
 <tr class="separator:a9c753354655b7b218263832c343417d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9101e210c5b04fefc52f2f14473c5742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a9101e210c5b04fefc52f2f14473c5742">BindBeginViewport</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
+<tr class="separator:a9101e210c5b04fefc52f2f14473c5742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93139563e5f5b58ccba4688c3b793e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a93139563e5f5b58ccba4688c3b793e32">BindBeginGBuffer</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
 <tr class="separator:a93139563e5f5b58ccba4688c3b793e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380113a2b1c9049cfd2367a6344683b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a380113a2b1c9049cfd2367a6344683b7">BindEndGBuffer</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
@@ -131,6 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c22d77a812e3eacf32cfdb6d6a4d5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb8da12f24fe9b7f1c3aac6f52ba9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#aacb8da12f24fe9b7f1c3aac6f52ba9a1">BindPingPong</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
 <tr class="separator:aacb8da12f24fe9b7f1c3aac6f52ba9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e4a5dfc0bca82c49ebde85e01d55cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a47e4a5dfc0bca82c49ebde85e01d55cc">BindEndPostProcessing</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
+<tr class="separator:a47e4a5dfc0bca82c49ebde85e01d55cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b99009331167e4548dbb58695926542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a1b99009331167e4548dbb58695926542">BindEndViewport</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
+<tr class="separator:a1b99009331167e4548dbb58695926542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08be9cc8922f891c8ea4f17559ee40db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a08be9cc8922f891c8ea4f17559ee40db">BindGUI</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
+<tr class="separator:a08be9cc8922f891c8ea4f17559ee40db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8fa859bb168ecf389d56b574a69dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#adf8fa859bb168ecf389d56b574a69dbd">BindEnd</a> (ID3D11DeviceContext &amp;device_context) const noexcept</td></tr>
 <tr class="separator:adf8fa859bb168ecf389d56b574a69dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,40 +146,43 @@ Public Member Functions</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:a941f1b35a83ee0ce190494523ec0fe63"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63">SRVIndex</a> : U8 { <br />
 &#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a6cad826248cd3f4e93da71e7b49928e3">SRVIndex::HDR</a> = 0, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af8aaa1436c06c671272ac08e4fa83309">SRVIndex::GBuffer_BaseColor</a> = 1, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63abbdd76532c820b05b242d544cd1b43fd">SRVIndex::GBuffer_Material</a> = 2, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af69e4b1698bc66624ab45f2c967406bb">SRVIndex::GBuffer_Normal</a> = 3, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af8aaa1436c06c671272ac08e4fa83309">SRVIndex::GBuffer_BaseColor</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63abbdd76532c820b05b242d544cd1b43fd">SRVIndex::GBuffer_Material</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af69e4b1698bc66624ab45f2c967406bb">SRVIndex::GBuffer_Normal</a>, 
 <br />
-&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63ae8964b7cf20037a91a4e9107f2b93db8">SRVIndex::GBuffer_Depth</a> = 4, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af86c3f35d502a4de4cc2d4601a6fbbc4">SRVIndex::PostProcessing_HDR0</a> = 5, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322">SRVIndex::PostProcessing_HDR1</a> = 6, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9">SRVIndex::PostProcessing_Normal</a> = 7, 
+&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63ae8964b7cf20037a91a4e9107f2b93db8">SRVIndex::GBuffer_Depth</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63af86c3f35d502a4de4cc2d4601a6fbbc4">SRVIndex::PostProcessing_HDR0</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322">SRVIndex::PostProcessing_HDR1</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9">SRVIndex::PostProcessing_Normal</a>, 
 <br />
-&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe">SRVIndex::PostProcessing_Depth</a> = 8, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9">SRVIndex::Count</a> = 9
+&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe">SRVIndex::PostProcessing_Depth</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f">SRVIndex::LDR</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9">SRVIndex::Count</a>
 <br />
  }</td></tr>
 <tr class="separator:a941f1b35a83ee0ce190494523ec0fe63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9caebb7e9cacf454d26b827a01e857c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857c">RTVIndex</a> : U8 { <br />
 &#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca6cad826248cd3f4e93da71e7b49928e3">RTVIndex::HDR</a> = 0, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf8aaa1436c06c671272ac08e4fa83309">RTVIndex::GBuffer_BaseColor</a> = 1, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857cabbdd76532c820b05b242d544cd1b43fd">RTVIndex::GBuffer_Material</a> = 2, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb">RTVIndex::GBuffer_Normal</a> = 3, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf8aaa1436c06c671272ac08e4fa83309">RTVIndex::GBuffer_BaseColor</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857cabbdd76532c820b05b242d544cd1b43fd">RTVIndex::GBuffer_Material</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb">RTVIndex::GBuffer_Normal</a>, 
 <br />
-&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4">RTVIndex::PostProcessing_HDR0</a> = 4, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322">RTVIndex::PostProcessing_HDR1</a> = 5, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9">RTVIndex::Count</a> = 6
+&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4">RTVIndex::PostProcessing_HDR0</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322">RTVIndex::PostProcessing_HDR1</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f">RTVIndex::LDR</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9">RTVIndex::Count</a>
 <br />
  }</td></tr>
 <tr class="separator:af9caebb7e9cacf454d26b827a01e857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b3797fef957312f92736f15b7ada3e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3e">UAVIndex</a> : U8 { <br />
 &#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea6cad826248cd3f4e93da71e7b49928e3">UAVIndex::HDR</a> = 0, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3eaf86c3f35d502a4de4cc2d4601a6fbbc4">UAVIndex::PostProcessing_HDR0</a> = 1, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322">UAVIndex::PostProcessing_HDR1</a> = 2, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9">UAVIndex::PostProcessing_Normal</a> = 3, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3eaf86c3f35d502a4de4cc2d4601a6fbbc4">UAVIndex::PostProcessing_HDR0</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322">UAVIndex::PostProcessing_HDR1</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9">UAVIndex::PostProcessing_Normal</a>, 
 <br />
-&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe">UAVIndex::PostProcessing_Depth</a> = 4, 
-<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9">UAVIndex::Count</a> = 5
+&#160;&#160;<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe">UAVIndex::PostProcessing_Depth</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f">UAVIndex::LDR</a>, 
+<a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9">UAVIndex::Count</a>
 <br />
  }</td></tr>
 <tr class="separator:a71b3797fef957312f92736f15b7ada3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +260,7 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="af9caebb7e9cacf454d26b827a01e857caf69e4b1698bc66624ab45f2c967406bb"></a>GBuffer_Normal&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af9caebb7e9cacf454d26b827a01e857caf86c3f35d502a4de4cc2d4601a6fbbc4"></a>PostProcessing_HDR0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af9caebb7e9cacf454d26b827a01e857ca2136232aa9456009a7df9de7db662322"></a>PostProcessing_HDR1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9caebb7e9cacf454d26b827a01e857ca6645d4de79aee6373f120d72c0030e5f"></a>LDR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af9caebb7e9cacf454d26b827a01e857cae93f994f01c537c4e2f7d8528c3eb5e9"></a>Count&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -283,6 +295,7 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a941f1b35a83ee0ce190494523ec0fe63a2136232aa9456009a7df9de7db662322"></a>PostProcessing_HDR1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a941f1b35a83ee0ce190494523ec0fe63a224be169fd2e0ce4f53c6afa41ac4fe9"></a>PostProcessing_Normal&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a941f1b35a83ee0ce190494523ec0fe63a251bebd0602960f976f4a69dff9b13fe"></a>PostProcessing_Depth&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a941f1b35a83ee0ce190494523ec0fe63a6645d4de79aee6373f120d72c0030e5f"></a>LDR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a941f1b35a83ee0ce190494523ec0fe63ae93f994f01c537c4e2f7d8528c3eb5e9"></a>Count&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -313,6 +326,7 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a71b3797fef957312f92736f15b7ada3ea2136232aa9456009a7df9de7db662322"></a>PostProcessing_HDR1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a71b3797fef957312f92736f15b7ada3ea224be169fd2e0ce4f53c6afa41ac4fe9"></a>PostProcessing_Normal&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a71b3797fef957312f92736f15b7ada3ea251bebd0602960f976f4a69dff9b13fe"></a>PostProcessing_Depth&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a71b3797fef957312f92736f15b7ada3ea6645d4de79aee6373f120d72c0030e5f"></a>LDR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a71b3797fef957312f92736f15b7ada3eae93f994f01c537c4e2f7d8528c3eb5e9"></a>Count&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -625,6 +639,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9101e210c5b04fefc52f2f14473c5742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9101e210c5b04fefc52f2f14473c5742">&sect;&nbsp;</a></span>BindBeginViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::rendering::OutputManager::BindBeginViewport </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext &amp;&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf8fa859bb168ecf389d56b574a69dbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf8fa859bb168ecf389d56b574a69dbd">&sect;&nbsp;</a></span>BindEnd()</h2>
 
@@ -729,6 +769,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a47e4a5dfc0bca82c49ebde85e01d55cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e4a5dfc0bca82c49ebde85e01d55cc">&sect;&nbsp;</a></span>BindEndPostProcessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::rendering::OutputManager::BindEndPostProcessing </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext &amp;&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a548e6003d34916b174f74f6f1b5e85a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a548e6003d34916b174f74f6f1b5e85a2">&sect;&nbsp;</a></span>BindEndResolve()</h2>
 
@@ -740,6 +806,58 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void mage::rendering::OutputManager::BindEndResolve </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext &amp;&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b99009331167e4548dbb58695926542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b99009331167e4548dbb58695926542">&sect;&nbsp;</a></span>BindEndViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::rendering::OutputManager::BindEndViewport </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11DeviceContext &amp;&#160;</td>
+          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08be9cc8922f891c8ea4f17559ee40db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08be9cc8922f891c8ea4f17559ee40db">&sect;&nbsp;</a></span>BindGUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::rendering::OutputManager::BindGUI </td>
           <td>(</td>
           <td class="paramtype">ID3D11DeviceContext &amp;&#160;</td>
           <td class="paramname"><em>device_context</em></td><td>)</td>

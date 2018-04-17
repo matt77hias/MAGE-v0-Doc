@@ -48,13 +48,9 @@ class \hyperlink{classmage_1_1rendering_1_1_display_configuration}{Display\+Conf
 \item 
 class \hyperlink{classmage_1_1rendering_1_1_display_configurator}{Display\+Configurator}
 \item 
-class \hyperlink{classmage_1_1rendering_1_1_d_o_f_pass}{D\+O\+F\+Pass}
-\item 
 class \hyperlink{classmage_1_1rendering_1_1_fog}{Fog}
 \item 
 class \hyperlink{classmage_1_1rendering_1_1_forward_pass}{Forward\+Pass}
-\item 
-struct \hyperlink{structmage_1_1rendering_1_1_game_buffer}{Game\+Buffer}
 \item 
 struct \hyperlink{structmage_1_1rendering_1_1_glyph}{Glyph}
 \item 
@@ -105,6 +101,8 @@ class \hyperlink{classmage_1_1rendering_1_1_output_manager}{Output\+Manager}
 class \hyperlink{classmage_1_1rendering_1_1_perspective_camera}{Perspective\+Camera}
 \item 
 struct \hyperlink{structmage_1_1rendering_1_1_pipeline}{Pipeline}
+\item 
+class \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass}
 \item 
 class \hyperlink{classmage_1_1rendering_1_1_primitive_batch_mesh}{Primitive\+Batch\+Mesh}
 \item 
@@ -189,6 +187,8 @@ class \hyperlink{classmage_1_1rendering_1_1_voxelization_pass}{Voxelization\+Pas
 class \hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}
 \item 
 class \hyperlink{classmage_1_1rendering_1_1_world}{World}
+\item 
+struct \hyperlink{structmage_1_1rendering_1_1_world_buffer}{World\+Buffer}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
@@ -286,13 +286,12 @@ enum \hyperlink{namespacemage_1_1rendering_a466c2a441ea5b26e4625c2f34e021b3d}{Re
  \}
 \item 
 enum \hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF} \+: U8 \{ \newline
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a7a1920d61156abc05a60135aefe8bc67}{B\+R\+D\+F\+::\+Default} = 0, 
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5bab3b0b38800aae982d01ad209a49f7}{B\+R\+D\+F\+::\+Lambertian} = 1, 
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a7d0a12c861400a7f6a9dd7a9944a2223}{B\+R\+D\+F\+::\+Blinn\+Phong} = 2, 
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5ba2334a620a728df207d497869e643f}{B\+R\+D\+F\+::\+Cook\+Torrance} = 3, 
+\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5bab3b0b38800aae982d01ad209a49f7}{B\+R\+D\+F\+::\+Lambertian} = 0, 
+\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a7d0a12c861400a7f6a9dd7a9944a2223}{B\+R\+D\+F\+::\+Blinn\+Phong}, 
+\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5ba2334a620a728df207d497869e643f}{B\+R\+D\+F\+::\+Cook\+Torrance}, 
+\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5d1801a70481550d3de71ee64068b62d}{B\+R\+D\+F\+::\+Frostbite}, 
 \newline
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5d1801a70481550d3de71ee64068b62d}{B\+R\+D\+F\+::\+Frostbite} = 4, 
-\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5ab4ff6577cc6f35dfaa90a48d2be06615}{B\+R\+D\+F\+::\+Ward\+Duer} = 5
+\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5ab4ff6577cc6f35dfaa90a48d2be06615}{B\+R\+D\+F\+::\+Ward\+Duer}
  \}
 \item 
 enum \hyperlink{namespacemage_1_1rendering_a6c3d1f4e7a5ae72dc07226e971205534}{False\+Color} \+: U8 \{ \newline
@@ -321,10 +320,13 @@ enum \hyperlink{namespacemage_1_1rendering_a6c3d1f4e7a5ae72dc07226e971205534}{Fa
 \hyperlink{namespacemage_1_1rendering_a6c3d1f4e7a5ae72dc07226e971205534adeaa2adbeb26802ae61609c3f3642d82}{False\+Color\+::\+UV}
  \}
 \item 
-enum \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} \+: U8 \{ \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a7a1920d61156abc05a60135aefe8bc67}{Tone\+Mapping\+::\+Default} = 0, 
-\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a55c6ee2662d672f0e003d1741a71fb92}{Tone\+Mapping\+::\+A\+C\+E\+S\+Filmic} = 1, 
-\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a9e6d3d22124e1f0626b77fa3b7994a9b}{Tone\+Mapping\+::\+Reinhard} = 2, 
-\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9ac5ea635a6b3348d107b66392923fd6bf}{Tone\+Mapping\+::\+Uncharted} = 3
+enum \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} \+: U8 \{ \newline
+\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a6adf97f83acf6453d4a6a4b1070f3754}{Tone\+Mapping\+::\+None} = 0, 
+\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a55c6ee2662d672f0e003d1741a71fb92}{Tone\+Mapping\+::\+A\+C\+E\+S\+Filmic}, 
+\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9af6aaaa750e3ffcc7ea95e105c5a06222}{Tone\+Mapping\+::\+Max3}, 
+\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a9e6d3d22124e1f0626b77fa3b7994a9b}{Tone\+Mapping\+::\+Reinhard}, 
+\newline
+\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9ac5ea635a6b3348d107b66392923fd6bf}{Tone\+Mapping\+::\+Uncharted}
  \}
 \item 
 enum \hyperlink{namespacemage_1_1rendering_a4dbc3536c87b906f1d41d863ec458e78}{Sprite\+Effect} \+: U8 \{ \hyperlink{namespacemage_1_1rendering_a4dbc3536c87b906f1d41d863ec458e78a6adf97f83acf6453d4a6a4b1070f3754}{Sprite\+Effect\+::\+None} = 0, 
@@ -495,7 +497,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_1_1rendering_ab31ae71562459bdb8d85b1a
 \item 
 \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a24cd6ca6babfcaf5e9813a72a455b4e9}{Create\+S\+S\+A\+A\+Resolve\+CS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
-\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_ae876b97ca07d4d7ecfdabd621cb06af7}{Create\+Back\+Buffer\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager, \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} tone\+\_\+mapping)
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_adc35d83389996e6f44cde4e57f1ddd3c}{Create\+Back\+Buffer\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
 \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_af574f293f14c070fbd83251e6f552ddf}{Create\+Deferred\+Emissive\+CS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
@@ -523,6 +525,8 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_1_1rendering_ab31ae71562459bdb8d85b1a
 \item 
 \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_ae88ec247b336ea7f3f20a68b700ef904}{Create\+Depth\+Of\+Field\+CS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
+\hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a81a151b15cfd41063b5e5e085ad6d6de}{Create\+Low\+Dynamic\+Range\+CS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager, \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} tone\+\_\+mapping)
+\item 
 \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a8bc0567df5868eb19ccc53409cb4a8be}{Create\+Line\+Cube\+VS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
 \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_ac3ce906d92337bc4b853bba9d8fd207a}{Create\+Line\+Cube\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
@@ -544,6 +548,8 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_1_1rendering_ab31ae71562459bdb8d85b1a
 \hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a00366c24902efdf909d9238ff8203fdb}{Create\+Voxelization\+VS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
 \hyperlink{namespacemage_1_1rendering_aa5d63f80f9483d0896718813768ba1cf}{Geometry\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_af7219f5585837c13b6b60e1d6604bca5}{Create\+Voxelization\+GS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
+\item 
+\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a62e26656f009554e905e7e762f72398a}{Create\+Voxelization\+Emissive\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
 \item 
 \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} \hyperlink{namespacemage_1_1rendering_a44830e55b774b595f0a1a953a3319285}{Create\+Voxelization\+PS} (\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager, bool tsnm)
 \item 
@@ -798,11 +804,7 @@ Count&\\
 
 An enumeration of the different Bidirectional Reflection Distribution Functions (B\+R\+D\+Fs).
 
-This contains\+: {\ttfamily Default}, {\ttfamily Lambertian}, {\ttfamily Blinn\+Phong}, {\ttfamily Cook\+Torrance}, {\ttfamily Frostbite}, and {\ttfamily Ward\+Duer}. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!Default@{Default}}}\hypertarget{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a7a1920d61156abc05a60135aefe8bc67}{}\label{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a7a1920d61156abc05a60135aefe8bc67} 
-Default&\\
-\hline
-
+This contains\+: {\ttfamily Lambertian}, {\ttfamily Blinn\+Phong}, {\ttfamily Cook\+Torrance}, {\ttfamily Frostbite}, and {\ttfamily Ward\+Duer}. \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Lambertian@{Lambertian}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!Lambertian@{Lambertian}}}\hypertarget{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5bab3b0b38800aae982d01ad209a49f7}{}\label{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5a5bab3b0b38800aae982d01ad209a49f7} 
 Lambertian&\\
 \hline
@@ -1246,13 +1248,17 @@ Front\+To\+Back&\\
 
 An enumeration of the different Tone Mapping functions.
 
-This contains\+: {\ttfamily Default}, {\ttfamily A\+C\+E\+S\+Filmic}, {\ttfamily Reinhard}, and {\ttfamily Uncharted}. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!Default@{Default}}}\hypertarget{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a7a1920d61156abc05a60135aefe8bc67}{}\label{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a7a1920d61156abc05a60135aefe8bc67} 
-Default&\\
+This contains\+: {\ttfamily None}, {\ttfamily A\+C\+E\+S\+Filmic}, {\ttfamily Max3} {\ttfamily Reinhard}, and {\ttfamily Uncharted}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!None@{None}}}\hypertarget{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a6adf97f83acf6453d4a6a4b1070f3754}{}\label{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a6adf97f83acf6453d4a6a4b1070f3754} 
+None&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+E\+S\+Filmic@{A\+C\+E\+S\+Filmic}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!A\+C\+E\+S\+Filmic@{A\+C\+E\+S\+Filmic}}}\hypertarget{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a55c6ee2662d672f0e003d1741a71fb92}{}\label{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a55c6ee2662d672f0e003d1741a71fb92} 
 A\+C\+E\+S\+Filmic&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max3@{Max3}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!Max3@{Max3}}}\hypertarget{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9af6aaaa750e3ffcc7ea95e105c5a06222}{}\label{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9af6aaaa750e3ffcc7ea95e105c5a06222} 
+Max3&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Reinhard@{Reinhard}!mage\+::rendering@{mage\+::rendering}}\index{mage\+::rendering@{mage\+::rendering}!Reinhard@{Reinhard}}}\hypertarget{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a9e6d3d22124e1f0626b77fa3b7994a9b}{}\label{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9a9e6d3d22124e1f0626b77fa3b7994a9b} 
@@ -1455,19 +1461,17 @@ Creates an anisotropic sampling state with wrapping.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_1_1rendering_ae876b97ca07d4d7ecfdabd621cb06af7}{}\label{namespacemage_1_1rendering_ae876b97ca07d4d7ecfdabd621cb06af7} 
+\hypertarget{namespacemage_1_1rendering_adc35d83389996e6f44cde4e57f1ddd3c}{}\label{namespacemage_1_1rendering_adc35d83389996e6f44cde4e57f1ddd3c} 
 \index{mage\+::rendering@{mage\+::rendering}!Create\+Back\+Buffer\+PS@{Create\+Back\+Buffer\+PS}}
 \index{Create\+Back\+Buffer\+PS@{Create\+Back\+Buffer\+PS}!mage\+::rendering@{mage\+::rendering}}
 \subsubsection{\texorpdfstring{Create\+Back\+Buffer\+P\+S()}{CreateBackBufferPS()}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Back\+Buffer\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager,  }\item[{\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping}}]{tone\+\_\+mapping }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Back\+Buffer\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})}
 
 Creates a back buffer pixel shader.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
-\hline
-\mbox{\tt in}  & {\em tone\+\_\+mapping} & The tone mapping function. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -2322,6 +2326,29 @@ A pointer to the line cube vertex shader.
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the vertex shader. \\
 \hline
 \end{DoxyExceptions}
+\hypertarget{namespacemage_1_1rendering_a81a151b15cfd41063b5e5e085ad6d6de}{}\label{namespacemage_1_1rendering_a81a151b15cfd41063b5e5e085ad6d6de} 
+\index{mage\+::rendering@{mage\+::rendering}!Create\+Low\+Dynamic\+Range\+CS@{Create\+Low\+Dynamic\+Range\+CS}}
+\index{Create\+Low\+Dynamic\+Range\+CS@{Create\+Low\+Dynamic\+Range\+CS}!mage\+::rendering@{mage\+::rendering}}
+\subsubsection{\texorpdfstring{Create\+Low\+Dynamic\+Range\+C\+S()}{CreateLowDynamicRangeCS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Low\+Dynamic\+Range\+CS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager,  }\item[{\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping}}]{tone\+\_\+mapping }\end{DoxyParamCaption})}
+
+Creates a low-\/dynamic-\/range compute shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\mbox{\tt in}  & {\em tone\+\_\+mapping} & The tone mapping function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the low-\/dynamic-\/range compute shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
 \hypertarget{namespacemage_1_1rendering_a8c8b5dfffeacf3148fc47e8942f10ffc}{}\label{namespacemage_1_1rendering_a8c8b5dfffeacf3148fc47e8942f10ffc} 
 \index{mage\+::rendering@{mage\+::rendering}!Create\+M\+A\+G\+E\+Texture@{Create\+M\+A\+G\+E\+Texture}}
 \index{Create\+M\+A\+G\+E\+Texture@{Create\+M\+A\+G\+E\+Texture}!mage\+::rendering@{mage\+::rendering}}
@@ -2921,6 +2948,27 @@ A pointer to the voxelization geometry shader.
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the compute shader. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespacemage_1_1rendering_a62e26656f009554e905e7e762f72398a}{}\label{namespacemage_1_1rendering_a62e26656f009554e905e7e762f72398a} 
+\index{mage\+::rendering@{mage\+::rendering}!Create\+Voxelization\+Emissive\+PS@{Create\+Voxelization\+Emissive\+PS}}
+\index{Create\+Voxelization\+Emissive\+PS@{Create\+Voxelization\+Emissive\+PS}!mage\+::rendering@{mage\+::rendering}}
+\subsubsection{\texorpdfstring{Create\+Voxelization\+Emissive\+P\+S()}{CreateVoxelizationEmissivePS()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr} mage\+::rendering\+::\+Create\+Voxelization\+Emissive\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})}
+
+Creates a voxelization emissive pixel shader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the voxelization emissive pixel shader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classmage_1_1_exception}{Exception}} & Failed to create the pixel shader. \\
 \hline
 \end{DoxyExceptions}
 \hypertarget{namespacemage_1_1rendering_af7219f5585837c13b6b60e1d6604bca5}{}\label{namespacemage_1_1rendering_af7219f5585837c13b6b60e1d6604bca5} 

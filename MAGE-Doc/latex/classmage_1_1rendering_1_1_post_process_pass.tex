@@ -1,0 +1,182 @@
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass}{}\section{mage\+:\+:rendering\+:\+:Post\+Process\+Pass Class Reference}
+\label{classmage_1_1rendering_1_1_post_process_pass}\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+
+
+{\ttfamily \#include $<$postprocess\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass_aa7989cc618c40d64e6e86f1aa8576dff}{Post\+Process\+Pass} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&state\+\_\+manager, \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&resource\+\_\+manager)
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass_a5980123845352eb3071e2fde203469fc}{Post\+Process\+Pass} (const \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass_aa57a8a38643fc76d0cdae8106c3de7e3}{Post\+Process\+Pass} (\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&\&pass) noexcept
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass_a41e82fe23fdc3a5726989edb0bb334ea}{$\sim$\+Post\+Process\+Pass} ()
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_post_process_pass_ace844a6fbc47cc0470642e48361efacd}{operator=} (const \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&pass)=delete
+\item 
+\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \& \hyperlink{classmage_1_1rendering_1_1_post_process_pass_a72e638460796e9613f232a6cbf118378}{operator=} (\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&\&pass) noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_post_process_pass_a5a580293635c790deb09e958724021c2}{Dispatch\+D\+OF} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&viewport\+\_\+size) const noexcept
+\item 
+void \hyperlink{classmage_1_1rendering_1_1_post_process_pass_a8736c2eb9872035c2e5d109681f72146}{Dispatch\+L\+DR} (const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&viewport\+\_\+size, \hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping} tone\+\_\+mapping) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \hyperlink{classmage_1_1rendering_1_1_post_process_pass_a18468bc4ffa408e9db3089b306f45291}{m\+\_\+device\+\_\+context}
+\item 
+std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_post_process_pass_a80cbe6aee950e5bcc98763813fdb8aba}{m\+\_\+state\+\_\+manager}
+\item 
+std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} $>$ \hyperlink{classmage_1_1rendering_1_1_post_process_pass_af20e46967d28e7e0500fff6b1988ad80}{m\+\_\+resource\+\_\+manager}
+\item 
+\hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} \hyperlink{classmage_1_1rendering_1_1_post_process_pass_aec72e5a7ca28c11754f85ab6726ce5ec}{m\+\_\+dof\+\_\+cs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of post-\/process passes for performing post-\/processing. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_aa7989cc618c40d64e6e86f1aa8576dff}{}\label{classmage_1_1rendering_1_1_post_process_pass_aa7989cc618c40d64e6e86f1aa8576dff} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!Post\+Process\+Pass@{Post\+Process\+Pass}}
+\index{Post\+Process\+Pass@{Post\+Process\+Pass}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{Post\+Process\+Pass()}{PostProcessPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Post\+Process\+Pass\+::\+Post\+Process\+Pass (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} \&}]{state\+\_\+manager,  }\item[{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a post-\/process pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em state\+\_\+manager} & A reference to the state manager. \\
+\hline
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a5980123845352eb3071e2fde203469fc}{}\label{classmage_1_1rendering_1_1_post_process_pass_a5980123845352eb3071e2fde203469fc} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!Post\+Process\+Pass@{Post\+Process\+Pass}}
+\index{Post\+Process\+Pass@{Post\+Process\+Pass}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{Post\+Process\+Pass()}{PostProcessPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Post\+Process\+Pass\+::\+Post\+Process\+Pass (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a post-\/process pass from the given post-\/process pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the post-\/process pass to copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_aa57a8a38643fc76d0cdae8106c3de7e3}{}\label{classmage_1_1rendering_1_1_post_process_pass_aa57a8a38643fc76d0cdae8106c3de7e3} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!Post\+Process\+Pass@{Post\+Process\+Pass}}
+\index{Post\+Process\+Pass@{Post\+Process\+Pass}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{Post\+Process\+Pass()}{PostProcessPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Post\+Process\+Pass\+::\+Post\+Process\+Pass (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a post-\/process pass by moving the given post-\/process shading pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the post-\/process pass to move. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a41e82fe23fdc3a5726989edb0bb334ea}{}\label{classmage_1_1rendering_1_1_post_process_pass_a41e82fe23fdc3a5726989edb0bb334ea} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!````~Post\+Process\+Pass@{$\sim$\+Post\+Process\+Pass}}
+\index{````~Post\+Process\+Pass@{$\sim$\+Post\+Process\+Pass}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Post\+Process\+Pass()}{~PostProcessPass()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Post\+Process\+Pass\+::$\sim$\+Post\+Process\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this D\+OF pass. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a5a580293635c790deb09e958724021c2}{}\label{classmage_1_1rendering_1_1_post_process_pass_a5a580293635c790deb09e958724021c2} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!Dispatch\+D\+OF@{Dispatch\+D\+OF}}
+\index{Dispatch\+D\+OF@{Dispatch\+D\+OF}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{Dispatch\+D\+O\+F()}{DispatchDOF()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Post\+Process\+Pass\+::\+Dispatch\+D\+OF (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{viewport\+\_\+size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Dispatches an depth-\/of-\/field pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport\+\_\+size} & A reference to the viewport size. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a8736c2eb9872035c2e5d109681f72146}{}\label{classmage_1_1rendering_1_1_post_process_pass_a8736c2eb9872035c2e5d109681f72146} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!Dispatch\+L\+DR@{Dispatch\+L\+DR}}
+\index{Dispatch\+L\+DR@{Dispatch\+L\+DR}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{Dispatch\+L\+D\+R()}{DispatchLDR()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Post\+Process\+Pass\+::\+Dispatch\+L\+DR (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacemage_a88e05bff0300120c013285d3dcad95c5}{U32x2} \&}]{viewport\+\_\+size,  }\item[{\hyperlink{namespacemage_1_1rendering_a789e4b7d9a8cc831b065e9c6bb7430e9}{Tone\+Mapping}}]{tone\+\_\+mapping }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Dispatches an low-\/dynamic-\/range pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewport\+\_\+size} & A reference to the viewport size. \\
+\hline
+\mbox{\tt in}  & {\em tone\+\_\+mapping} & The tone mapping type. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_ace844a6fbc47cc0470642e48361efacd}{}\label{classmage_1_1rendering_1_1_post_process_pass_ace844a6fbc47cc0470642e48361efacd} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass}\& mage\+::rendering\+::\+Post\+Process\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given post-\/process pass to this post-\/process pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the post-\/process pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given post-\/process pass (i.\+e. this post-\/process pass). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a72e638460796e9613f232a6cbf118378}{}\label{classmage_1_1rendering_1_1_post_process_pass_a72e638460796e9613f232a6cbf118378} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \& mage\+::rendering\+::\+Post\+Process\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1rendering_1_1_post_process_pass}{Post\+Process\+Pass} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given post-\/process pass to this post-\/process pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the post-\/process pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved D\+OF pass (i.\+e. this post-\/process pass). 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1rendering_1_1_post_process_pass_a18468bc4ffa408e9db3089b306f45291}{}\label{classmage_1_1rendering_1_1_post_process_pass_a18468bc4ffa408e9db3089b306f45291} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ mage\+::rendering\+::\+Post\+Process\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device context of this post-\/process pass. \hypertarget{classmage_1_1rendering_1_1_post_process_pass_aec72e5a7ca28c11754f85ab6726ce5ec}{}\label{classmage_1_1rendering_1_1_post_process_pass_aec72e5a7ca28c11754f85ab6726ce5ec} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!m\+\_\+dof\+\_\+cs@{m\+\_\+dof\+\_\+cs}}
+\index{m\+\_\+dof\+\_\+cs@{m\+\_\+dof\+\_\+cs}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+dof\+\_\+cs}{m\_dof\_cs}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_1_1rendering_ab3dc9f2114f2e9255b91d9c051da52ea}{Compute\+Shader\+Ptr} mage\+::rendering\+::\+Post\+Process\+Pass\+::m\+\_\+dof\+\_\+cs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the compute shader of this post-\/process pass. \hypertarget{classmage_1_1rendering_1_1_post_process_pass_af20e46967d28e7e0500fff6b1988ad80}{}\label{classmage_1_1rendering_1_1_post_process_pass_af20e46967d28e7e0500fff6b1988ad80} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
+\index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager} $>$ mage\+::rendering\+::\+Post\+Process\+Pass\+::m\+\_\+resource\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the resource manager of this post-\/process pass. \hypertarget{classmage_1_1rendering_1_1_post_process_pass_a80cbe6aee950e5bcc98763813fdb8aba}{}\label{classmage_1_1rendering_1_1_post_process_pass_a80cbe6aee950e5bcc98763813fdb8aba} 
+\index{mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
+\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Post\+Process\+Pass@{mage\+::rendering\+::\+Post\+Process\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager} $>$ mage\+::rendering\+::\+Post\+Process\+Pass\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the state manager of this post-\/process pass. 

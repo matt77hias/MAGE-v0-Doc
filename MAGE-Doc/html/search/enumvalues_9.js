@@ -3,6 +3,7 @@ var searchData=
   ['material',['Material',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534ad92a8333dd3ccb895cc65f7455b71206',1,'mage::rendering']]],
   ['materialcoefficient',['MaterialCoefficient',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a897718789a9aff4e48843703696872b4',1,'mage::rendering']]],
   ['materialtexture',['MaterialTexture',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a418ec8058e47a19f716943c95afcfe0c',1,'mage::rendering']]],
+  ['max3',['Max3',['../namespacemage_1_1rendering.html#a789e4b7d9a8cc831b065e9c6bb7430e9af6aaaa750e3ffcc7ea95e105c5a06222',1,'mage::rendering']]],
   ['metalness',['Metalness',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a7d8a3680c55ec85a2231e2a48ecc88f3',1,'mage::rendering']]],
   ['metalnesscoefficient',['MetalnessCoefficient',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a281483b6da77130d7b5a6f5f9aaa6556',1,'mage::rendering']]],
   ['metalnesstexture',['MetalnessTexture',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534a76682a261add4bb65d8edde46c30435d',1,'mage::rendering']]],

@@ -30,6 +30,8 @@ void \hyperlink{classmage_1_1_timer_a8464b2ea3fb3d97eac5ccb3a5b02e47b}{Resume} (
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer_ad4e320f1abe821aa1c9596c4d8b9c7e9}{Get\+Delta\+Time} () const noexcept
 \item 
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer_a4d67e33d559196d2d1ca1f75f12d5644}{Get\+Total\+Delta\+Time} () const noexcept
+\item 
+void \hyperlink{classmage_1_1_timer_a6ae023115c586f74e45bc9c9c4e7556b}{Get\+Time} (\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \&delta\+\_\+time, \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \&total\+\_\+delta\+\_\+time) const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -143,11 +145,27 @@ Destructs this timer.
 {\footnotesize\ttfamily template$<$typename ClockT$>$ \\
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer}{mage\+::\+Timer}$<$ ClockT $>$\+::Get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the wall clock delta time (in seconds) of this timer.
+Returns the delta time (in seconds) of this timer.
 
 \begin{DoxyReturn}{Returns}
-The wall clock delta time (in seconds) of this timer. 
+The delta time (in seconds) of this timer. 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_timer_a6ae023115c586f74e45bc9c9c4e7556b}{}\label{classmage_1_1_timer_a6ae023115c586f74e45bc9c9c4e7556b} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily template$<$typename ClockT$>$ \\
+void \hyperlink{classmage_1_1_timer}{mage\+::\+Timer}$<$ ClockT $>$\+::Get\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \&}]{delta\+\_\+time,  }\item[{\hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \&}]{total\+\_\+delta\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the delta time (in seconds) and the the total wall clock delta time (in seconds) of this timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em delta\+\_\+time} & A reference to the delta time (in seconds) of this timer. \\
+\hline
+\mbox{\tt out}  & {\em total\+\_\+delta\+\_\+time} & A reference to the total delta time (in seconds) of this timer. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_timer_a4d67e33d559196d2d1ca1f75f12d5644}{}\label{classmage_1_1_timer_a4d67e33d559196d2d1ca1f75f12d5644} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!Get\+Total\+Delta\+Time@{Get\+Total\+Delta\+Time}}
 \index{Get\+Total\+Delta\+Time@{Get\+Total\+Delta\+Time}!mage\+::\+Timer@{mage\+::\+Timer}}
@@ -155,10 +173,10 @@ The wall clock delta time (in seconds) of this timer.
 {\footnotesize\ttfamily template$<$typename ClockT$>$ \\
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_timer}{mage\+::\+Timer}$<$ ClockT $>$\+::Get\+Total\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the total wall clock delta time (in seconds) of this timer.
+Returns the total delta time (in seconds) of this timer.
 
 \begin{DoxyReturn}{Returns}
-The total wall clock delta time (in seconds) of this timer. 
+The total delta time (in seconds) of this timer. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_timer_a2a8aefb272e02d8ba4a26058df80f119}{}\label{classmage_1_1_timer_a2a8aefb272e02d8ba4a26058df80f119} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!operator=@{operator=}}

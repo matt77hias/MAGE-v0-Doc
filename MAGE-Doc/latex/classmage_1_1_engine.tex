@@ -28,6 +28,8 @@ const \hyperlink{classmage_1_1rendering_1_1_manager}{rendering\+::\+Manager} \& 
 \hyperlink{classmage_1_1_scene}{Scene} $\ast$ \hyperlink{classmage_1_1_engine_ac76b2061f2b5b9089a6b2387a40dbf73}{Get\+Scene} () const noexcept
 \item 
 void \hyperlink{classmage_1_1_engine_a0999f6eb6b09ad015103a46509b333b8}{Request\+Scene} (\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \&\&scene) noexcept
+\item 
+const \hyperlink{classmage_1_1_game_time}{Game\+Time} \& \hyperlink{classmage_1_1_engine_a77d6f8ed151e50360da8f6afcce463ea}{Get\+Time} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -59,7 +61,9 @@ bool \hyperlink{classmage_1_1_engine_a3c7a55a89a23952a368432f933a90d26}{Update\+
 \item 
 \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \hyperlink{classmage_1_1_engine_a45160eecbdcbebcf269436505342db54}{m\+\_\+requested\+\_\+scene}
 \item 
-\hyperlink{namespacemage_a06f4035ef59f07892e594bf1178a108a}{Wall\+Clock\+Timer} \hyperlink{classmage_1_1_engine_a539cff5bf8252ef28b994be49e9e6b7c}{m\+\_\+timer}
+\hyperlink{classmage_1_1_game_timer}{Game\+Timer} \hyperlink{classmage_1_1_engine_a360589e71a3d081c6a748aa283d1526d}{m\+\_\+timer}
+\item 
+\hyperlink{classmage_1_1_game_time}{Game\+Time} \hyperlink{classmage_1_1_engine_ab5f56d65109d276dd49ba43c504bbd26}{m\+\_\+time}
 \item 
 \hyperlink{namespacemage_ad26233bbec640deda836e572c1a23708}{F64} \hyperlink{classmage_1_1_engine_a95557e1b6cba52b393c94d80d80bea4c}{m\+\_\+fixed\+\_\+delta\+\_\+time}
 \item 
@@ -170,6 +174,17 @@ Returns the current scene of this engine.
 
 \begin{DoxyReturn}{Returns}
 A reference to the current scene of this engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a77d6f8ed151e50360da8f6afcce463ea}{}\label{classmage_1_1_engine_a77d6f8ed151e50360da8f6afcce463ea} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_game_time}{Game\+Time}\& mage\+::\+Engine\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the game time of this game engine.
+
+\begin{DoxyReturn}{Returns}
+A reference to the game time of this game engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_aec74e74ebec5c7739740bbeb825526ad}{}\label{classmage_1_1_engine_aec74e74ebec5c7739740bbeb825526ad} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Systems@{Initialize\+Systems}}
@@ -347,11 +362,17 @@ A pointer to the requested scene of this engine. \hypertarget{classmage_1_1_engi
 \subsubsection{\texorpdfstring{m\+\_\+scene}{m\_scene}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ mage\+::\+Engine\+::m\+\_\+scene\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the current scene of this engine. \hypertarget{classmage_1_1_engine_a539cff5bf8252ef28b994be49e9e6b7c}{}\label{classmage_1_1_engine_a539cff5bf8252ef28b994be49e9e6b7c} 
+A pointer to the current scene of this engine. \hypertarget{classmage_1_1_engine_ab5f56d65109d276dd49ba43c504bbd26}{}\label{classmage_1_1_engine_ab5f56d65109d276dd49ba43c504bbd26} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+time@{m\+\_\+time}}
+\index{m\+\_\+time@{m\+\_\+time}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+time}{m\_time}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_game_time}{Game\+Time} mage\+::\+Engine\+::m\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+The current time of this engine. \hypertarget{classmage_1_1_engine_a360589e71a3d081c6a748aa283d1526d}{}\label{classmage_1_1_engine_a360589e71a3d081c6a748aa283d1526d} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+timer@{m\+\_\+timer}}
 \index{m\+\_\+timer@{m\+\_\+timer}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+timer}{m\_timer}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a06f4035ef59f07892e594bf1178a108a}{Wall\+Clock\+Timer} mage\+::\+Engine\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_game_timer}{Game\+Timer} mage\+::\+Engine\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
 
 The timer of this engine. \hypertarget{classmage_1_1_engine_a8b710b9c37a48caad05896102c4b6980}{}\label{classmage_1_1_engine_a8b710b9c37a48caad05896102c4b6980} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+window@{m\+\_\+window}}

@@ -1,8 +1,8 @@
 var classmage_1_1rendering_1_1_display_configurator =
 [
     [ "Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html", "classmage_1_1rendering_1_1_display_configurator_1_1_impl" ],
-    [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#aa59a82202ffcfdc458f1d7c02ccef93e", null ],
-    [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#a38b10a77ab471b8d9ea836a19879c173", null ],
+    [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#a533ffee38e3930c1d27db3891ffe8c16", null ],
+    [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#aa76c3bb137954b7c0deb1d80d1050638", null ],
     [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#aa1c3dbea2453d12d3478db4724c78728", null ],
     [ "DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#ac75dae1c4df34dda067f1a5d99fdfefa", null ],
     [ "~DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html#a5ccba8cd97da75a7d1c425731fb848d4", null ],

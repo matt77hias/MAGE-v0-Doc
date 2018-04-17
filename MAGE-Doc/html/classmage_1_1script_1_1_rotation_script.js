@@ -14,6 +14,6 @@ var classmage_1_1script_1_1_rotation_script =
     [ "operator=", "classmage_1_1script_1_1_rotation_script.html#a9302878671d095bab0c31a379ad7d964", null ],
     [ "operator=", "classmage_1_1script_1_1_rotation_script.html#af75323393f7570b9fcee0cd62c4f76bd", null ],
     [ "SetRotationAxis", "classmage_1_1script_1_1_rotation_script.html#aa4b49dc5e34da3e851d5aefc4c4a434b", null ],
-    [ "Update", "classmage_1_1script_1_1_rotation_script.html#a80bf028bec300a71d016fd513233ba03", null ],
+    [ "Update", "classmage_1_1script_1_1_rotation_script.html#af4e83590b78094186b0dd107a58c7b3a", null ],
     [ "m_axis", "classmage_1_1script_1_1_rotation_script.html#a334c42c3ca6af6c2713c98ba4151cdbb", null ]
 ];
