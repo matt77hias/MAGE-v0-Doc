@@ -2,9 +2,31 @@ var hierarchy =
 [
     [ "mage::AABB", "classmage_1_1_a_a_b_b.html", null ],
     [ "mage::rendering::AAPass", "classmage_1_1rendering_1_1_a_a_pass.html", null ],
-    [ "mage::AlignedAllocator< DataT, AlignmentS >", "classmage_1_1_aligned_allocator.html", null ],
+    [ "mage::AlignedAllocator< DataT, A >", "classmage_1_1_aligned_allocator.html", null ],
     [ "mage::MemoryArena::Allocator< DataT >", "classmage_1_1_memory_arena_1_1_allocator.html", null ],
     [ "mage::SingleEndedMemoryStack::Allocator< DataT >", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html", null ],
+    [ "array", null, [
+      [ "mage::Array< F32, 2 >", "structmage_1_1_array.html", [
+        [ "mage::UV", "structmage_1_1_u_v.html", null ]
+      ] ],
+      [ "mage::Array< F32, 3 >", "structmage_1_1_array.html", [
+        [ "mage::Direction3", "structmage_1_1_direction3.html", [
+          [ "mage::Normal3", "structmage_1_1_normal3.html", null ]
+        ] ],
+        [ "mage::Point3", "structmage_1_1_point3.html", null ],
+        [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
+        [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
+      ] ],
+      [ "mage::Array< S32, 2 >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< U32, 2 >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< U32, 3 >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< T, N, A, typename >", "structmage_1_1_array.html", [
+        [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
+        [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
+        [ "mage::SRGBA", "structmage_1_1_s_r_g_b_a.html", null ],
+        [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
+      ] ]
+    ] ],
     [ "mage::rendering::BackBufferPass", "classmage_1_1rendering_1_1_back_buffer_pass.html", null ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
       [ "mage::rendering::loader::MSHReader< VertexT, IndexT >", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html", null ],
@@ -102,8 +124,8 @@ var hierarchy =
     [ "mage::ProgressReporter::Impl", "classmage_1_1_progress_reporter_1_1_impl.html", null ],
     [ "mage::rendering::Renderer::Impl", "classmage_1_1rendering_1_1_renderer_1_1_impl.html", null ],
     [ "mage::rendering::SwapChain::Impl", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html", null ],
-    [ "mage::input::Manager::Impl", "classmage_1_1input_1_1_manager_1_1_impl.html", null ],
     [ "mage::rendering::Manager::Impl", "classmage_1_1rendering_1_1_manager_1_1_impl.html", null ],
+    [ "mage::input::Manager::Impl", "classmage_1_1input_1_1_manager_1_1_impl.html", null ],
     [ "mage::KernelModeCoreClock", "structmage_1_1_kernel_mode_core_clock.html", null ],
     [ "mage::KernelModeCoreClockPerCore", "structmage_1_1_kernel_mode_core_clock_per_core.html", null ],
     [ "mage::input::Keyboard", "classmage_1_1input_1_1_keyboard.html", null ],
@@ -146,10 +168,10 @@ var hierarchy =
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ProxyPtr< T >", "classmage_1_1_proxy_ptr.html", null ],
     [ "mage::ProxyPtr< mage::Node >", "classmage_1_1_proxy_ptr.html", null ],
+    [ "mage::ProxyPtr< mage::rendering::SpriteText >", "classmage_1_1_proxy_ptr.html", null ],
     [ "mage::ProxyPtr< Node >", "classmage_1_1_proxy_ptr.html", null ],
-    [ "mage::ProxyPtr< rendering::SpriteText >", "classmage_1_1_proxy_ptr.html", null ],
     [ "mage::rendering::Pipeline::PS", "structmage_1_1rendering_1_1_pipeline_1_1_p_s.html", null ],
-    [ "mage::AlignedAllocator< DataT, AlignmentS >::rebind< DataU >", "structmage_1_1_aligned_allocator_1_1rebind.html", null ],
+    [ "mage::AlignedAllocator< DataT, A >::rebind< DataU >", "structmage_1_1_aligned_allocator_1_1rebind.html", null ],
     [ "mage::rendering::Renderer", "classmage_1_1rendering_1_1_renderer.html", null ],
     [ "mage::Resource< ResourceT >", "classmage_1_1_resource.html", null ],
     [ "mage::Resource< ModelDescriptor >", "classmage_1_1_resource.html", [
@@ -221,37 +243,6 @@ var hierarchy =
     [ "mage::rendering::Pipeline::TS", "structmage_1_1rendering_1_1_pipeline_1_1_t_s.html", null ],
     [ "mage::UserModeCoreClock", "structmage_1_1_user_mode_core_clock.html", null ],
     [ "mage::UserModeCoreClockPerCore", "structmage_1_1_user_mode_core_clock_per_core.html", null ],
-    [ "mage::Vector2< T, Enable >", "structmage_1_1_vector2.html", null ],
-    [ "mage::Vector2< F32 >", "structmage_1_1_vector2.html", [
-      [ "mage::UV", "structmage_1_1_u_v.html", null ]
-    ] ],
-    [ "mage::Vector2< S32 >", "structmage_1_1_vector2.html", null ],
-    [ "mage::Vector2< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector2_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
-    [ "mage::Vector2< U32 >", "structmage_1_1_vector2.html", null ],
-    [ "mage::Vector2A< T, Enable >", "structmage_1_1_vector2_a.html", null ],
-    [ "mage::Vector2A< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
-    [ "mage::Vector3< T, Enable >", "structmage_1_1_vector3.html", [
-      [ "mage::RGB", "structmage_1_1_r_g_b.html", null ]
-    ] ],
-    [ "mage::Vector3< F32 >", "structmage_1_1_vector3.html", [
-      [ "mage::Direction3", "structmage_1_1_direction3.html", null ],
-      [ "mage::Normal3", "structmage_1_1_normal3.html", null ],
-      [ "mage::Point3", "structmage_1_1_point3.html", null ],
-      [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
-      [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
-    ] ],
-    [ "mage::Vector3< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector3_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
-    [ "mage::Vector3< U32 >", "structmage_1_1_vector3.html", null ],
-    [ "mage::Vector3A< T, Enable >", "structmage_1_1_vector3_a.html", null ],
-    [ "mage::Vector3A< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector3_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
-    [ "mage::Vector4< T, Enable >", "structmage_1_1_vector4.html", [
-      [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
-      [ "mage::SRGBA", "structmage_1_1_s_r_g_b_a.html", null ],
-      [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
-    ] ],
-    [ "mage::Vector4< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector4_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
-    [ "mage::Vector4A< T, Enable >", "structmage_1_1_vector4_a.html", null ],
-    [ "mage::Vector4A< T, typename std::enable_if_t< std::is_arithmetic_v< T > > >", "structmage_1_1_vector4_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html", null ],
     [ "mage::rendering::VertexPosition", "structmage_1_1rendering_1_1_vertex_position.html", null ],
     [ "mage::rendering::VertexPositionColor", "structmage_1_1rendering_1_1_vertex_position_color.html", null ],
     [ "mage::rendering::VertexPositionColorTexture", "structmage_1_1rendering_1_1_vertex_position_color_texture.html", null ],

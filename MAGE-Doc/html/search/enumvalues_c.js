@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['partialcoverage',['PartialCoverage',['../namespacemage.html#a9b4efc1eee82442ff9d53c6c547cf684af0107a9713b60c49ef89e731b386061f',1,'mage']]],
   ['passive',['Passive',['../namespacemage.html#ae47d13d8477ee94893b9a3947d28eebcaf80bc338b6146b566004a046f8137c85',1,'mage']]],
   ['pcf',['PCF',['../namespacemage_1_1rendering.html#a6f80181126db61dbb8b528a6894eb658a0a4faf97013814ceb7f7afe1205a516b',1,'mage::rendering']]],
   ['pointclamp',['PointClamp',['../namespacemage_1_1rendering.html#a6f80181126db61dbb8b528a6894eb658a055739d3d609c52b857c7c0be46e748c',1,'mage::rendering']]],

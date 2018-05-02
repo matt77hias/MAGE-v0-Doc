@@ -10,7 +10,7 @@ var searchData=
   ['progressreporter',['ProgressReporter',['../classmage_1_1_progress_reporter.html',1,'mage']]],
   ['proxyptr',['ProxyPtr',['../classmage_1_1_proxy_ptr.html',1,'mage']]],
   ['proxyptr_3c_20mage_3a_3anode_20_3e',['ProxyPtr&lt; mage::Node &gt;',['../classmage_1_1_proxy_ptr.html',1,'mage']]],
+  ['proxyptr_3c_20mage_3a_3arendering_3a_3aspritetext_20_3e',['ProxyPtr&lt; mage::rendering::SpriteText &gt;',['../classmage_1_1_proxy_ptr.html',1,'mage']]],
   ['proxyptr_3c_20node_20_3e',['ProxyPtr&lt; Node &gt;',['../classmage_1_1_proxy_ptr.html',1,'mage']]],
-  ['proxyptr_3c_20rendering_3a_3aspritetext_20_3e',['ProxyPtr&lt; rendering::SpriteText &gt;',['../classmage_1_1_proxy_ptr.html',1,'mage']]],
   ['ps',['PS',['../structmage_1_1rendering_1_1_pipeline_1_1_p_s.html',1,'mage::rendering::Pipeline']]]
 ];

@@ -10,7 +10,6 @@ var searchData=
   ['coral',['Coral',['../namespacemage_1_1color.html#a01bc4f2d453366cf9af890f0abb94738',1,'mage::color']]],
   ['cornflowerblue',['CornflowerBlue',['../namespacemage_1_1color.html#a6b4ca119db23d03d1c5bc912c87b6348',1,'mage::color']]],
   ['cornsilk',['Cornsilk',['../namespacemage_1_1color.html#ace73c8ed652093ab4cce3af40a8efe1a',1,'mage::color']]],
-  ['coverage',['Coverage',['../namespacemage.html#ac9771897725d6766100b07fc42bc28f1',1,'mage']]],
   ['crimson',['Crimson',['../namespacemage_1_1color.html#a3855cb93401fa7336108eac1f9b8c0c7',1,'mage::color']]],
   ['cyan',['Cyan',['../namespacemage_1_1color.html#a2b9093d5d06a4a0421cb602c22deadb5',1,'mage::color']]]
 ];

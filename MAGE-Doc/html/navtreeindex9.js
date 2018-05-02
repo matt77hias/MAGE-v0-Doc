@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"classmage_1_1rendering_1_1_sprite_batch.html":[1,0,0,2,63],
+"classmage_1_1rendering_1_1_sprite_batch.html#a336c16ed2eee2ef9fe8520903033f63e":[1,0,0,2,63,8],
+"classmage_1_1rendering_1_1_sprite_batch.html#a44e4cca2560beccf655c87d79dca3d20":[1,0,0,2,63,1],
+"classmage_1_1rendering_1_1_sprite_batch.html#a91644c1c0c3e53a87f470116ec9746dc":[1,0,0,2,63,3],
+"classmage_1_1rendering_1_1_sprite_batch.html#a979cdc21ce17579ded4066f1e6a2d411":[1,0,0,2,63,2],
+"classmage_1_1rendering_1_1_sprite_batch.html#ac27b9692f118361853c94af91b3d4d2d":[1,0,0,2,63,7],
 "classmage_1_1rendering_1_1_sprite_batch.html#ae4b2d9d7871bfbd057f1b09036373d75":[1,0,0,2,63,10],
 "classmage_1_1rendering_1_1_sprite_batch.html#ae5de43894a07d86a0d2e4150080a7990":[1,0,0,2,63,9],
 "classmage_1_1rendering_1_1_sprite_batch.html#ae74068fb6f2bcc084a810a12c2eb478c":[1,0,0,2,63,6],
@@ -119,8 +125,8 @@ var NAVTREEINDEX9 =
 "classmage_1_1rendering_1_1_sprite_pass.html#ae8b938a091647c5540fa2ca8bf955556":[1,0,0,2,69,2],
 "classmage_1_1rendering_1_1_sprite_text.html":[1,0,0,2,70],
 "classmage_1_1rendering_1_1_sprite_text.html#a0870da91f8c11f63c09bf6de1bce4ce3":[1,0,0,2,70,24],
+"classmage_1_1rendering_1_1_sprite_text.html#a09b0f98a4be62a6b271f4adfce01ea07":[1,0,0,2,70,8],
 "classmage_1_1rendering_1_1_sprite_text.html#a0d2f1e88db1e1fec1b7c6b2563ef7271":[1,0,0,2,70,22],
-"classmage_1_1rendering_1_1_sprite_text.html#a133345323aefa564460fd5cebe62cf78":[1,0,0,2,70,8],
 "classmage_1_1rendering_1_1_sprite_text.html#a2f9d4a00ad08710fe36eebd825b2f142":[1,0,0,2,70,28],
 "classmage_1_1rendering_1_1_sprite_text.html#a2fffa5ce343b92f32cbfe5234b182247":[1,0,0,2,70,30],
 "classmage_1_1rendering_1_1_sprite_text.html#a3a07e4043ce7058cb157111738c664cb":[1,0,0,2,70,15],
@@ -128,6 +134,7 @@ var NAVTREEINDEX9 =
 "classmage_1_1rendering_1_1_sprite_text.html#a3e7bc7515af8cb92351b0bef475e7dbe":[1,0,0,2,70,23],
 "classmage_1_1rendering_1_1_sprite_text.html#a4458a9a429369d6cc0ed34eb93f3e632":[1,0,0,2,70,6],
 "classmage_1_1rendering_1_1_sprite_text.html#a49995d4b435446b48d2d112113834f23":[1,0,0,2,70,26],
+"classmage_1_1rendering_1_1_sprite_text.html#a4d53ac7323640025e6ef78f3863703d3":[1,0,0,2,70,9],
 "classmage_1_1rendering_1_1_sprite_text.html#a4ec33c106762e7f8d4d04cde0bf03669":[1,0,0,2,70,10],
 "classmage_1_1rendering_1_1_sprite_text.html#a50d21c24a019c0e8dc053a307ec421a6":[1,0,0,2,70,19],
 "classmage_1_1rendering_1_1_sprite_text.html#a60b40732c1a08b88b70335cf91947556":[1,0,0,2,70,2],
@@ -149,7 +156,6 @@ var NAVTREEINDEX9 =
 "classmage_1_1rendering_1_1_sprite_text.html#af07ecf28d2ab8997c011cab74e799ef7a62fb0c043d7459d6590e00540884ea62":[1,0,0,2,70,0,1],
 "classmage_1_1rendering_1_1_sprite_text.html#af07ecf28d2ab8997c011cab74e799ef7a6adf97f83acf6453d4a6a4b1070f3754":[1,0,0,2,70,0,0],
 "classmage_1_1rendering_1_1_sprite_text.html#af702fbdab6468fbd5856434192a32787":[1,0,0,2,70,27],
-"classmage_1_1rendering_1_1_sprite_text.html#af990e2c3ad1e827135b78a948c4cba50":[1,0,0,2,70,9],
 "classmage_1_1rendering_1_1_sprite_text.html#af9e6eb6e62d9c638dc86a7a978524aa9":[1,0,0,2,70,11],
 "classmage_1_1rendering_1_1_sprite_text.html#afbe374756e97dcec4fcf83f76a0c233b":[1,0,0,2,70,7],
 "classmage_1_1rendering_1_1_state_manager.html":[1,0,0,2,71],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a8c21e6075e67d434701fb63933bc114a":[1,0,0,2,74,0,7],
 "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a910fab71dd7977005e11179080b25f14":[1,0,0,2,74,0,17],
 "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a9631b95d63626a41575ca18aa6dec206":[1,0,0,2,74,0,0],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a990a602cf4639daa85210b4cbd1e525e":[1,0,0,2,74,0,6],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aa3c391f6651074e73105174b68025731":[1,0,0,2,74,0,20],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aabec221c1f9b95b5b8001823914e65b8":[1,0,0,2,74,0,13],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#ab48d24a25bd342f6a3882426e333a716":[1,0,0,2,74,0,4],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#abd74163f68b0a078f970d3d54d1dcd7e":[1,0,0,2,74,0,9],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#abdc55ba548c3178ab3edbeeb39099a4c":[1,0,0,2,74,0,21],
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#ac41af1d1c99d284152447381045c169b":[1,0,0,2,74,0,3]
+"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a990a602cf4639daa85210b4cbd1e525e":[1,0,0,2,74,0,6]
 };

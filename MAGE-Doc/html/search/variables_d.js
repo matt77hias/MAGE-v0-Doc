@@ -5,7 +5,6 @@ var searchData=
   ['paleturquoise',['PaleTurquoise',['../namespacemage_1_1color.html#ad6ef41327e0e1d862f7b95324e93b4a1',1,'mage::color']]],
   ['palevioletred',['PaleVioletRed',['../namespacemage_1_1color.html#a86d236f89e45680e1678c6d1e9a287bc',1,'mage::color']]],
   ['papayawhip',['PapayaWhip',['../namespacemage_1_1color.html#a209f72744c785cbc48f954bd42b35f79',1,'mage::color']]],
-  ['partialcoverage',['PartialCoverage',['../namespacemage.html#a74bd8eec1684352b462592a90b3d5f75',1,'mage']]],
   ['peachpuff',['PeachPuff',['../namespacemage_1_1color.html#a6ec38a42d469de89ab50cd4db3338754',1,'mage::color']]],
   ['peru',['Peru',['../namespacemage_1_1color.html#a6fada3c18d633306e50b65df7bf6c043',1,'mage::color']]],
   ['pink',['Pink',['../namespacemage_1_1color.html#ae16637717be4ec8fdf6991f24e5ccf27',1,'mage::color']]],
