@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"classmage_1_1rendering_1_1_perspective_camera.html#a3308ee4d7ec6830c04ed3f4fc01f81ac":[1,0,0,2,46,6],
+"classmage_1_1rendering_1_1_perspective_camera.html#a3d342252cefbffe69537e1ccc95a379a":[1,0,0,2,46,2],
+"classmage_1_1rendering_1_1_perspective_camera.html#a835369a1652074eed3a7d09e01a40430":[1,0,0,2,46,4],
+"classmage_1_1rendering_1_1_perspective_camera.html#ab478643eb5a2285d330b228287cc0187":[1,0,0,2,46,0],
+"classmage_1_1rendering_1_1_perspective_camera.html#ab9ae2a2ae24ff7934a31305a1a0decf7":[1,0,0,2,46,13],
+"classmage_1_1rendering_1_1_perspective_camera.html#ac5b98cb14cd16dffd1a46c4e52ef72a8":[1,0,0,2,46,10],
 "classmage_1_1rendering_1_1_perspective_camera.html#ac9119d544f7ca6c4fbe1a6c5118bcd66":[1,0,0,2,46,9],
 "classmage_1_1rendering_1_1_perspective_camera.html#ac9bc0faebd323ca26d0311e35612d219":[1,0,0,2,46,3],
 "classmage_1_1rendering_1_1_perspective_camera.html#ad4b54caa651462e68089436a8a1f8dc0":[1,0,0,2,46,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "classmage_1_1rendering_1_1_spot_light.html#af1f1d3aee8bdcda50d16f4b0551e4728":[1,0,0,2,61,34],
 "classmage_1_1rendering_1_1_spot_light.html#af709cc21c1f383868371156e0600fdc7":[1,0,0,2,61,42],
 "classmage_1_1rendering_1_1_spot_light.html#af91b9fc5303e5c2c5e90337f42db015c":[1,0,0,2,61,45],
-"classmage_1_1rendering_1_1_spot_light.html#afcac44663ee8e8773eaa838ddbf9c0f2":[1,0,0,2,61,43],
-"classmage_1_1rendering_1_1_sprite_batch.html":[1,0,0,2,63],
-"classmage_1_1rendering_1_1_sprite_batch.html#a336c16ed2eee2ef9fe8520903033f63e":[1,0,0,2,63,8],
-"classmage_1_1rendering_1_1_sprite_batch.html#a44e4cca2560beccf655c87d79dca3d20":[1,0,0,2,63,1],
-"classmage_1_1rendering_1_1_sprite_batch.html#a91644c1c0c3e53a87f470116ec9746dc":[1,0,0,2,63,3],
-"classmage_1_1rendering_1_1_sprite_batch.html#a979cdc21ce17579ded4066f1e6a2d411":[1,0,0,2,63,2],
-"classmage_1_1rendering_1_1_sprite_batch.html#ac27b9692f118361853c94af91b3d4d2d":[1,0,0,2,63,7]
+"classmage_1_1rendering_1_1_spot_light.html#afcac44663ee8e8773eaa838ddbf9c0f2":[1,0,0,2,61,43]
 };

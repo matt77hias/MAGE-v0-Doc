@@ -19,11 +19,11 @@ var structmage_1_1rendering_1_1_camera_buffer =
     [ "m_padding", "structmage_1_1rendering_1_1_camera_buffer.html#a89a72a725654361121771db8668f7f58", null ],
     [ "m_projection_to_camera", "structmage_1_1rendering_1_1_camera_buffer.html#a9cb9e0e4005d55b72668bbdcf4a27218", null ],
     [ "m_sky_dome_scale_z", "structmage_1_1rendering_1_1_camera_buffer.html#abfb4dbb9a228b6a7412b09b179fd157d", null ],
-    [ "m_ss_viewport_inv_resolution_minus1", "structmage_1_1rendering_1_1_camera_buffer.html#a05e17b19f87ca2a5cb5c75cf04e2796c", null ],
+    [ "m_ss_viewport_inv_resolution", "structmage_1_1rendering_1_1_camera_buffer.html#a4695806d4ea3e7af5beeba043f7e9212", null ],
     [ "m_ss_viewport_resolution", "structmage_1_1rendering_1_1_camera_buffer.html#a96b17352187228ee2265be33d3f2d159", null ],
-    [ "m_ss_viewport_top_left", "structmage_1_1rendering_1_1_camera_buffer.html#a3373440adfd588f0b3aa675210a9b501", null ],
-    [ "m_viewport_inv_resolution_minus1", "structmage_1_1rendering_1_1_camera_buffer.html#a87dae6d19b7c84d361ff5304cc0fd637", null ],
+    [ "m_ss_viewport_top_left", "structmage_1_1rendering_1_1_camera_buffer.html#a7410f2408daa4e4a69e145eb8d31a2d7", null ],
+    [ "m_viewport_inv_resolution", "structmage_1_1rendering_1_1_camera_buffer.html#a6ba4a1f638f1ace9021b75773265b8a3", null ],
     [ "m_viewport_resolution", "structmage_1_1rendering_1_1_camera_buffer.html#a433bdb3d8b4e86fcd04fdb2b794bd0f7", null ],
-    [ "m_viewport_top_left", "structmage_1_1rendering_1_1_camera_buffer.html#a7184e2c6407bbf0702631b932f673d07", null ],
+    [ "m_viewport_top_left", "structmage_1_1rendering_1_1_camera_buffer.html#a074146702a680ce9102dd9cf84e74be3", null ],
     [ "m_world_to_camera", "structmage_1_1rendering_1_1_camera_buffer.html#af1ceff883dcc383ce10f2165a5a9a061", null ]
 ];

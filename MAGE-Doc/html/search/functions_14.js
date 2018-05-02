@@ -18,5 +18,6 @@ var searchData=
   ['writer',['Writer',['../classmage_1_1_writer.html#a40b6cd3005d509e670c5a49272d9ef27',1,'mage::Writer::Writer()'],['../classmage_1_1_writer.html#a2b257938508732ca0b78241aafa7922c',1,'mage::Writer::Writer(const Writer &amp;writer)=delete'],['../classmage_1_1_writer.html#abda6f6db577201580c0e97c0816e0d3f',1,'mage::Writer::Writer(Writer &amp;&amp;writer) noexcept']]],
   ['writestring',['WriteString',['../classmage_1_1_big_endian_binary_writer.html#acf065a2e7462c9e6cf46849bd2c9d2e7',1,'mage::BigEndianBinaryWriter::WriteString()'],['../classmage_1_1_writer.html#a0efdf73186727b2ae95072b62eddcf5b',1,'mage::Writer::WriteString()']]],
   ['writestringline',['WriteStringLine',['../classmage_1_1_writer.html#abdfd1361df7bb66e284d031f92c85c05',1,'mage::Writer']]],
-  ['writetofile',['WriteToFile',['../classmage_1_1_big_endian_binary_writer.html#a3a49f78f308a0827f4a99150ad49d7c1',1,'mage::BigEndianBinaryWriter::WriteToFile()'],['../classmage_1_1_writer.html#a9af5416468b0a51983d07aec8061eb27',1,'mage::Writer::WriteToFile()']]]
+  ['writetofile',['WriteToFile',['../classmage_1_1_big_endian_binary_writer.html#a3a49f78f308a0827f4a99150ad49d7c1',1,'mage::BigEndianBinaryWriter::WriteToFile()'],['../classmage_1_1_writer.html#a9af5416468b0a51983d07aec8061eb27',1,'mage::Writer::WriteToFile()']]],
+  ['wstringtostring',['WStringToString',['../namespacemage.html#a9a96fb26e9ff0104fc9a2ec1a439e9bb',1,'mage']]]
 ];

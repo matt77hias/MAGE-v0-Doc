@@ -1,8 +1,31 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "MAGE", "index.html", [
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
@@ -36,16 +59,16 @@ var NAVTREEINDEX =
 "classmage_1_1_scene.html#a2c25c0fedc0230771d8c00a8288a69ce",
 "classmage_1_1_transform.html#a6b8797abb38b3bbe894193c89bb63a71",
 "classmage_1_1input_1_1_mouse_1_1_impl.html#a1c5de7f34edab12846e75cf7d2b76094",
-"classmage_1_1rendering_1_1_deferred_pass.html",
-"classmage_1_1rendering_1_1_material.html#a1504fb6523526ee9897b20851a3b84e9",
-"classmage_1_1rendering_1_1_perspective_camera.html#ac9119d544f7ca6c4fbe1a6c5118bcd66",
-"classmage_1_1rendering_1_1_sprite_batch.html#ae4b2d9d7871bfbd057f1b09036373d75",
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#ac7216dc943fad37a078d1a9d18eb1491",
-"classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html#a5fe68a545e05c266b69f35e4dc9027a9",
-"namespacemage_1_1loader.html",
-"structmage_1_1_vector2_a_3_01_t_00_01typename_01std_1_1enable__if__t_3_01std_1_1is__arithmetic__v_3_01_t_01_4_01_4_01_4.html#a5b0e290c255cd978045c9e9e5192e099",
-"structmage_1_1rendering_1_1_omni_light_buffer.html#ac6a0b6050b8d705d46f72ed115b28c4a",
-"structmage_1_1rendering_1_1_vertex_position_normal_color.html#af78e3787e0971664a9114cdf4335101c"
+"classmage_1_1rendering_1_1_constant_buffer.html#a85af57c527713b8d877524d9f6ce4587",
+"classmage_1_1rendering_1_1_material.html",
+"classmage_1_1rendering_1_1_perspective_camera.html#a3308ee4d7ec6830c04ed3f4fc01f81ac",
+"classmage_1_1rendering_1_1_sprite_batch.html",
+"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aa3c391f6651074e73105174b68025731",
+"classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#acfafc2485c4b84ef84360e35ac8247eb",
+"functions_u.html",
+"structmage_1_1_s_r_g_b.html#aa5bb0738c6026da6c3e4f54869c52cbc",
+"structmage_1_1rendering_1_1_pipeline.html#acfdf1d2aba1e8c0db9c4ef9e9730f31c",
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

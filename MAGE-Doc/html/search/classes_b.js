@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['manager',['Manager',['../classmage_1_1input_1_1_manager.html',1,'mage::input']]],
-  ['manager',['Manager',['../classmage_1_1rendering_1_1_manager.html',1,'mage::rendering']]],
+  ['manager',['Manager',['../classmage_1_1input_1_1_manager.html',1,'mage::input::Manager'],['../classmage_1_1rendering_1_1_manager.html',1,'mage::rendering::Manager']]],
   ['manhattanmotorscript',['ManhattanMotorScript',['../classmage_1_1script_1_1_manhattan_motor_script.html',1,'mage::script']]],
   ['material',['Material',['../classmage_1_1rendering_1_1_material.html',1,'mage::rendering']]],
   ['mdlreader',['MDLReader',['../classmage_1_1rendering_1_1loader_1_1_m_d_l_reader.html',1,'mage::rendering::loader']]],

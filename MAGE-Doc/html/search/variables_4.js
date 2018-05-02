@@ -5,6 +5,5 @@ var searchData=
   ['floralwhite',['FloralWhite',['../namespacemage_1_1color.html#a1dd66768142140e9ee68a95e5981c44a',1,'mage::color']]],
   ['forestgreen',['ForestGreen',['../namespacemage_1_1color.html#a9b90455f4354a6d6963486c472bc33be',1,'mage::color']]],
   ['fourcc',['fourCC',['../struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#aa7af0012c64480e8eeafa25d7892c310',1,'DDS_PIXELFORMAT']]],
-  ['fuchsia',['Fuchsia',['../namespacemage_1_1color.html#a5a36bb041d4344c2111b15294ba0d15f',1,'mage::color']]],
-  ['fullcoverage',['FullCoverage',['../namespacemage.html#af0080550a105a2f21b65d3e21baeafe1',1,'mage']]]
+  ['fuchsia',['Fuchsia',['../namespacemage_1_1color.html#a5a36bb041d4344c2111b15294ba0d15f',1,'mage::color']]]
 ];
