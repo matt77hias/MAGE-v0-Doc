@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.151.0</span>
+   &#160;<span id="projectnumber">v0.152.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -135,12 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa1fcaa95a61995234759f9c57723202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda0b7f2e61bf8ba8bbb9ba633237866"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_single_ended_memory_stack.html#acda0b7f2e61bf8ba8bbb9ba633237866">Alloc</a> (size_t size) noexcept</td></tr>
 <tr class="separator:acda0b7f2e61bf8ba8bbb9ba633237866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae957490450194631b81b9f6ba84f5f5a"><td class="memTemplParams" colspan="2">template&lt;typename DataT &gt; </td></tr>
-<tr class="memitem:ae957490450194631b81b9f6ba84f5f5a"><td class="memTemplItemLeft" align="right" valign="top">DataT *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_single_ended_memory_stack.html#ae957490450194631b81b9f6ba84f5f5a">AllocData</a> (size_t count=1, bool initialization=false) noexcept</td></tr>
-<tr class="separator:ae957490450194631b81b9f6ba84f5f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f0c10ddfd1cdcba2fc9e8842382e41"><td class="memTemplParams" colspan="2">template&lt;typename DataT &gt; </td></tr>
-<tr class="memitem:a92f0c10ddfd1cdcba2fc9e8842382e41"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_single_ended_memory_stack_1_1_allocator.html">Allocator</a>&lt; DataT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_single_ended_memory_stack.html#a92f0c10ddfd1cdcba2fc9e8842382e41">GetAllocator</a> () const noexcept</td></tr>
-<tr class="separator:a92f0c10ddfd1cdcba2fc9e8842382e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65faeb76a286738ab119768423b513b3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a65faeb76a286738ab119768423b513b3"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_single_ended_memory_stack.html#a65faeb76a286738ab119768423b513b3">AllocData</a> (size_t count=1, bool initialization=false)</td></tr>
+<tr class="separator:a65faeb76a286738ab119768423b513b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6be7c59dca442ac5924fadf52c126a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0f6be7c59dca442ac5924fadf52c126a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_single_ended_memory_stack_1_1_allocator.html">Allocator</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_single_ended_memory_stack.html#a0f6be7c59dca442ac5924fadf52c126a">GetAllocator</a> () const noexcept</td></tr>
+<tr class="separator:a0f6be7c59dca442ac5924fadf52c126a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -327,19 +327,16 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="ae957490450194631b81b9f6ba84f5f5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae957490450194631b81b9f6ba84f5f5a">&#9670;&nbsp;</a></span>AllocData()</h2>
+<a id="a65faeb76a286738ab119768423b513b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65faeb76a286738ab119768423b513b3">&#9670;&nbsp;</a></span>AllocData()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename DataT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">DataT* mage::SingleEndedMemoryStack::AllocData </td>
+          <td class="memname">T* mage::SingleEndedMemoryStack::AllocData </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>count</em> = <code>1</code>, </td>
@@ -356,22 +353,17 @@ template&lt;typename DataT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Allocates a block of memory on this single-ended memory stack.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">DataT</td><td>The type of objects to allocate in memory. </td></tr>
+    <tr><td class="paramname">T</td><td>The type of objects to allocate in memory. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of objects of type <code>DataT</code> to allocate in memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of objects of type <code>T</code> to allocate in memory. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">initialization</td><td>Flag indicating whether the objects need to be initialized (i.e. the constructor needs to be called). </td></tr>
   </table>
   </dd>
@@ -410,19 +402,19 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a92f0c10ddfd1cdcba2fc9e8842382e41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f0c10ddfd1cdcba2fc9e8842382e41">&#9670;&nbsp;</a></span>GetAllocator()</h2>
+<a id="a0f6be7c59dca442ac5924fadf52c126a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6be7c59dca442ac5924fadf52c126a">&#9670;&nbsp;</a></span>GetAllocator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename DataT &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_single_ended_memory_stack_1_1_allocator.html">Allocator</a>&lt; DataT &gt; mage::SingleEndedMemoryStack::GetAllocator </td>
+          <td class="memname"><a class="el" href="classmage_1_1_single_ended_memory_stack_1_1_allocator.html">Allocator</a>&lt; T &gt; mage::SingleEndedMemoryStack::GetAllocator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -437,7 +429,7 @@ template&lt;typename DataT &gt; </div>
 <p>Returns an allocator for this single-ended memory stack.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">DataT</td><td>The data type of the allocator. </td></tr>
+    <tr><td class="paramname">T</td><td>The data type of the allocator. </td></tr>
   </table>
   </dd>
 </dl>

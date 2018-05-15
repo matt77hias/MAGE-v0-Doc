@@ -17,9 +17,9 @@ Inheritance diagram for mage\+:\+:Writer\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classmage_1_1_writer}{Writer}} \& \mbox{\hyperlink{classmage_1_1_writer_a03a93796179f22be90471bea0f7a7cf0}{operator=}} (\mbox{\hyperlink{classmage_1_1_writer}{Writer}} \&\&writer) noexcept
 \item 
-void \mbox{\hyperlink{classmage_1_1_writer_a9af5416468b0a51983d07aec8061eb27}{Write\+To\+File}} (wstring fname)
+void \mbox{\hyperlink{classmage_1_1_writer_ac01e930b55888da88e345b0910d4b1c2}{Write\+To\+File}} (std\+::filesystem\+::path path)
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1_writer_aedbc8d5fa02444ecba2e040ca8e98281}{Get\+Filename}} () const noexcept
+const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1_writer_ab023ae8174132f233c6e1fa4d3a2a1c8}{Get\+Path}} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -48,7 +48,7 @@ virtual void \mbox{\hyperlink{classmage_1_1_writer_a9baf695ef7f6180bef883f60bcb3
 \item 
 \mbox{\hyperlink{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{Unique\+File\+Stream}} \mbox{\hyperlink{classmage_1_1_writer_ac4884215d1b547e990633474bf61c470}{m\+\_\+file\+\_\+stream}}
 \item 
-wstring \mbox{\hyperlink{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5}{m\+\_\+fname}}
+std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_writer_a1cc2c110c2652818a7bfdccc8c240fe6}{m\+\_\+path}}
 \end{DoxyCompactItemize}
 
 
@@ -97,16 +97,16 @@ Constructs a writer by moving the given writer.
 Destructs this writer. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1_writer_aedbc8d5fa02444ecba2e040ca8e98281}\label{classmage_1_1_writer_aedbc8d5fa02444ecba2e040ca8e98281}} 
-\index{mage\+::\+Writer@{mage\+::\+Writer}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::\+Writer@{mage\+::\+Writer}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Writer\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\mbox{\Hypertarget{classmage_1_1_writer_ab023ae8174132f233c6e1fa4d3a2a1c8}\label{classmage_1_1_writer_ab023ae8174132f233c6e1fa4d3a2a1c8}} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
+{\footnotesize\ttfamily const std\+::filesystem\+::path\& mage\+::\+Writer\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the current filename of this writer.
+Returns the current path of this writer.
 
 \begin{DoxyReturn}{Returns}
-A reference to the current filename of this writer. 
+A reference to the current path of this writer. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_writer_a81ea888d1b170515713432ca28629ceb}\label{classmage_1_1_writer_a81ea888d1b170515713432ca28629ceb}} 
 \index{mage\+::\+Writer@{mage\+::\+Writer}!operator=@{operator=}}
@@ -211,22 +211,22 @@ Writes the given string and ends the current line.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write the given string. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_writer_a9af5416468b0a51983d07aec8061eb27}\label{classmage_1_1_writer_a9af5416468b0a51983d07aec8061eb27}} 
+\mbox{\Hypertarget{classmage_1_1_writer_ac01e930b55888da88e345b0910d4b1c2}\label{classmage_1_1_writer_ac01e930b55888da88e345b0910d4b1c2}} 
 \index{mage\+::\+Writer@{mage\+::\+Writer}!Write\+To\+File@{Write\+To\+File}}
 \index{Write\+To\+File@{Write\+To\+File}!mage\+::\+Writer@{mage\+::\+Writer}}
 \subsubsection{\texorpdfstring{Write\+To\+File()}{WriteToFile()}}
-{\footnotesize\ttfamily void mage\+::\+Writer\+::\+Write\+To\+File (\begin{DoxyParamCaption}\item[{wstring}]{fname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Writer\+::\+Write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path }\end{DoxyParamCaption})}
 
-Writes to the given file.
+Writes to the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & The file name. \\
+\mbox{\tt in}  & {\em path} & The path. \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write to the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write to the file. \\
 \hline
 \end{DoxyExceptions}
 
@@ -238,10 +238,10 @@ Writes to the given file.
 \subsubsection{\texorpdfstring{m\+\_\+file\+\_\+stream}{m\_file\_stream}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{Unique\+File\+Stream}} mage\+::\+Writer\+::m\+\_\+file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the file stream of this writer. \mbox{\Hypertarget{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5}\label{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5}} 
-\index{mage\+::\+Writer@{mage\+::\+Writer}!m\+\_\+fname@{m\+\_\+fname}}
-\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Writer@{mage\+::\+Writer}}
-\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
-{\footnotesize\ttfamily wstring mage\+::\+Writer\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the file stream of this writer. \mbox{\Hypertarget{classmage_1_1_writer_a1cc2c110c2652818a7bfdccc8c240fe6}\label{classmage_1_1_writer_a1cc2c110c2652818a7bfdccc8c240fe6}} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{m\+\_\+path}{m\_path}}
+{\footnotesize\ttfamily std\+::filesystem\+::path mage\+::\+Writer\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
 
-The current filename of this writer. 
+The current path of this writer. 

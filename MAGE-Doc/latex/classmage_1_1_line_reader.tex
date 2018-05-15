@@ -17,11 +17,11 @@ Inheritance diagram for mage\+:\+:Line\+Reader\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classmage_1_1_line_reader}{Line\+Reader}} \& \mbox{\hyperlink{classmage_1_1_line_reader_a3ba691cb32a1ab5dcbe75498068c1b86}{operator=}} (\mbox{\hyperlink{classmage_1_1_line_reader}{Line\+Reader}} \&\&reader) noexcept
 \item 
-void \mbox{\hyperlink{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}{Read\+From\+File}} (wstring fname, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
+void \mbox{\hyperlink{classmage_1_1_line_reader_ad4236487534d5dba6582613317317092}{Read\+From\+File}} (std\+::filesystem\+::path path, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
 void \mbox{\hyperlink{classmage_1_1_line_reader_a5aa9068792817b6d6dc840a44b788159}{Read\+From\+Memory}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ input, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}{Get\+Filename}} () const noexcept
+const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1_line_reader_a9740b3cecdcf5a27c696a08eef3b09da}{Get\+Path}} () const noexcept
 \item 
 const string \& \mbox{\hyperlink{classmage_1_1_line_reader_aa00e1e27b614e11ec9f70e52d0bac551}{Get\+Delimiters}} () const noexcept
 \end{DoxyCompactItemize}
@@ -44,13 +44,15 @@ void \mbox{\hyperlink{classmage_1_1_line_reader_a3a4b99bfef1e8a826d74a01bcc663fc
 \item 
 const string \mbox{\hyperlink{classmage_1_1_line_reader_ae9a7547d01b29c3237b198444d4f3aef}{Read\+Quoted\+String}} ()
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\const DataT \mbox{\hyperlink{classmage_1_1_line_reader_aa1ba5aa332e49bdd63ef4ee4021120fd}{Read}} ()
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{classmage_1_1_line_reader_a9bbad433ab93ce012aec7155adafbedb}{Read}} ()
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ }\\const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ T, N, A $>$ \mbox{\hyperlink{classmage_1_1_line_reader_a208eb25a7715761178317eec72c93c75}{Read}} ()
 \item 
 bool \mbox{\hyperlink{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f}{Contains\+Chars}} () const
 \item 
 bool \mbox{\hyperlink{classmage_1_1_line_reader_a99b4fa47fc341ad4fda112ea9505efcb}{Contains\+Quoted\+String}} () const
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\bool \mbox{\hyperlink{classmage_1_1_line_reader_a3401db2b0ecd15d8048a1b321eceb77a}{Contains}} () const
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classmage_1_1_line_reader_a3401db2b0ecd15d8048a1b321eceb77a}{Contains}} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -71,7 +73,7 @@ virtual void \mbox{\hyperlink{classmage_1_1_line_reader_adfde21013140a1058d3dd56
 \item 
 \mbox{\hyperlink{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{Unique\+File\+Stream}} \mbox{\hyperlink{classmage_1_1_line_reader_a510ff5355c6d26d7c29dc692ef18a3e2}{m\+\_\+file\+\_\+stream}}
 \item 
-wstring \mbox{\hyperlink{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}{m\+\_\+fname}}
+std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_line_reader_a05436c40af16b882c2ebd515287598f7}{m\+\_\+path}}
 \item 
 string \mbox{\hyperlink{classmage_1_1_line_reader_a6de3398ac59fdd98f8c40cff6f5c1075}{m\+\_\+delimiters}}
 \item 
@@ -128,18 +130,18 @@ Destructs this line reader.
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Contains@{Contains}}
 \index{Contains@{Contains}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Contains()}{Contains()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
+{\footnotesize\ttfamily template$<$typename T $>$ \\
 bool mage\+::\+Line\+Reader\+::\+Contains (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-Checks whether the next token of this line reader is a {\ttfamily DataT} element.
+Checks whether the next token of this line reader is a {\ttfamily T} value.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if the next token of this line reader is a {\ttfamily DataT} element. {\ttfamily false} otherwise. 
+{\ttfamily true} if the next token of this line reader is a {\ttfamily T} value. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f}\label{classmage_1_1_line_reader_a0369e06fa3b38ecb22ffd5892759225f}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Contains\+Chars@{Contains\+Chars}}
@@ -185,16 +187,16 @@ Returns the current delimiters of this line reader.
 \begin{DoxyReturn}{Returns}
 A reference to the current delimiters of this line reader. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}\label{classmage_1_1_line_reader_a682ed8030c99a62d4409a01f9efa6d6b}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Line\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\mbox{\Hypertarget{classmage_1_1_line_reader_a9740b3cecdcf5a27c696a08eef3b09da}\label{classmage_1_1_line_reader_a9740b3cecdcf5a27c696a08eef3b09da}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
+{\footnotesize\ttfamily const std\+::filesystem\+::path\& mage\+::\+Line\+Reader\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the current filename of this line reader.
+Returns the current path of this line reader.
 
 \begin{DoxyReturn}{Returns}
-A reference to the current filename of this line reader. 
+A reference to the current path of this line reader. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}\label{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!operator=@{operator=}}
@@ -262,26 +264,50 @@ Pre-\/processes before reading the current file of this line reader.
 
 Reimplemented in \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader$<$ Vertex\+T, Index\+T $>$}}, and \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a397f0c0eedc56c983fc3a7074aa4e577}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader$<$ Vertex\+T, Index\+T $>$}}.
 
-\mbox{\Hypertarget{classmage_1_1_line_reader_aa1ba5aa332e49bdd63ef4ee4021120fd}\label{classmage_1_1_line_reader_aa1ba5aa332e49bdd63ef4ee4021120fd}} 
+\mbox{\Hypertarget{classmage_1_1_line_reader_a9bbad433ab93ce012aec7155adafbedb}\label{classmage_1_1_line_reader_a9bbad433ab93ce012aec7155adafbedb}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read@{Read}}
 \index{Read@{Read}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-const DataT mage\+::\+Line\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T mage\+::\+Line\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Reads and converts the next token of this line reader to {\ttfamily DataT} element.
+Reads and converts the next token of this line reader to {\ttfamily T} value.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}
-The {\ttfamily DataT} represented by the next token of this line reader. 
+The {\ttfamily T} represented by the next token of this line reader. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & There is no next token or the next token does not represent a {\ttfamily DataT} element. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & There is no next token or the next token does not represent a {\ttfamily T} value. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_line_reader_a208eb25a7715761178317eec72c93c75}\label{classmage_1_1_line_reader_a208eb25a7715761178317eec72c93c75}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read@{Read}}
+\index{Read@{Read}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ \\
+const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ T, N, A $>$ mage\+::\+Line\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads and converts the next {\ttfamily N} tokens of this line reader to an {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}}.
+
+@tparam T The data type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & The number of values in the array. \\
+\hline
+{\em A} & The alignment of the array. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}} represented by the next {\ttfamily N} tokens of this line reader. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & There are no {\ttfamily N} next tokens or the next {\ttfamily N} tokens do not represent a {\ttfamily T} value. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1_line_reader_afcb163cbc75ad1650437d809bbbc2d9b}\label{classmage_1_1_line_reader_afcb163cbc75ad1650437d809bbbc2d9b}} 
@@ -300,24 +326,24 @@ The string represented by the next token of this line reader.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & There is no next token. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}\label{classmage_1_1_line_reader_a6ee0c53351656ac4cd92db1d7c372cff}} 
+\mbox{\Hypertarget{classmage_1_1_line_reader_ad4236487534d5dba6582613317317092}\label{classmage_1_1_line_reader_ad4236487534d5dba6582613317317092}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{wstring}]{fname,  }\item[{string}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path,  }\item[{string}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})}
 
-Reads from the given file.
+Reads from the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & The file name. \\
+\mbox{\tt in}  & {\em path} & The path. \\
 \hline
 \mbox{\tt in}  & {\em delimiters} & The string containing the token delimiters (single characters). \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1_line_reader_a5aa9068792817b6d6dc840a44b788159}\label{classmage_1_1_line_reader_a5aa9068792817b6d6dc840a44b788159}} 
@@ -405,16 +431,16 @@ The current delimiters of this line reader. \mbox{\Hypertarget{classmage_1_1_lin
 \subsubsection{\texorpdfstring{m\+\_\+file\+\_\+stream}{m\_file\_stream}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a0ee1bd45ad7dbb3dc8c8e1770e3538d4}{Unique\+File\+Stream}} mage\+::\+Line\+Reader\+::m\+\_\+file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the file stream of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}\label{classmage_1_1_line_reader_ad6f55ba12fc610ab2fc1c26a48d12321}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+fname@{m\+\_\+fname}}
-\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
-{\footnotesize\ttfamily wstring mage\+::\+Line\+Reader\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
-
-The current filename of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}\label{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}} 
+A pointer to the file stream of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}\label{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+line\+\_\+number@{m\+\_\+line\+\_\+number}}
 \index{m\+\_\+line\+\_\+number@{m\+\_\+line\+\_\+number}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+line\+\_\+number}{m\_line\_number}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}} mage\+::\+Line\+Reader\+::m\+\_\+line\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
 
-The current line number of this line reader. 
+The current line number of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_a05436c40af16b882c2ebd515287598f7}\label{classmage_1_1_line_reader_a05436c40af16b882c2ebd515287598f7}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+path}{m\_path}}
+{\footnotesize\ttfamily std\+::filesystem\+::path mage\+::\+Line\+Reader\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+The current path of this line reader. 

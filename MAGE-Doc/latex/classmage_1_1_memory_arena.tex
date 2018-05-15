@@ -38,9 +38,9 @@ void \mbox{\hyperlink{classmage_1_1_memory_arena_a117b74c7bd5dfb28dfdaae6cab2534
 \item 
 void $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_a2e63b11c535dbfefd69d071466be9ce1}{Alloc}} (size\+\_\+t size)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0}{Alloc\+Data}} (size\+\_\+t count=1, bool initialization=false)
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_a0880de049e8e76cd26918528eb892813}{Alloc\+Data}} (size\+\_\+t count=1, bool initialization=false)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}}$<$ DataT $>$ \mbox{\hyperlink{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24}{Get\+Allocator}} () const noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_memory_arena_aa2cc5c42ed20c11900330ace3dfcdc8f}{Get\+Allocator}} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -145,23 +145,23 @@ Allocates a block of memory of the given size on this memory arena.
 
 A pointer to the memory block that was allocated. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0}\label{classmage_1_1_memory_arena_a1e83a02b5f5a74ad29d7a2c7f1f539d0}} 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_a0880de049e8e76cd26918528eb892813}\label{classmage_1_1_memory_arena_a0880de049e8e76cd26918528eb892813}} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc\+Data@{Alloc\+Data}}
 \index{Alloc\+Data@{Alloc\+Data}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Alloc\+Data()}{AllocData()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Allocates a block of memory on this memory arena.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The type of objects to allocate in memory. \\
+{\em T} & The type of objects to allocate in memory. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily DataT} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
 \hline
@@ -185,18 +185,18 @@ Returns the alignment of this memory arena.
 \begin{DoxyReturn}{Returns}
 The alignment in bytes of this memory arena. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24}\label{classmage_1_1_memory_arena_a722a884e077c903a586a6cb08ce98b24}} 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_aa2cc5c42ed20c11900330ace3dfcdc8f}\label{classmage_1_1_memory_arena_aa2cc5c42ed20c11900330ace3dfcdc8f}} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Get\+Allocator@{Get\+Allocator}}
 \index{Get\+Allocator@{Get\+Allocator}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Get\+Allocator()}{GetAllocator()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}}$<$ DataT $>$ mage\+::\+Memory\+Arena\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}}$<$ T $>$ mage\+::\+Memory\+Arena\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns an allocator for this memory arena.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type of the allocator. \\
+{\em T} & The data type of the allocator. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}

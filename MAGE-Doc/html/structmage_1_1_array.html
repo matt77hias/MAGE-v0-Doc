@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.151.0</span>
+   &#160;<span id="projectnumber">v0.152.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8dc58948e15554f715b280a72140a1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf0fb395b42d53b6e59868739dc9613"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_array.html#a4cf0fb395b42d53b6e59868739dc9613">Array</a> (<a class="el" href="structmage_1_1_array.html">Array</a> &amp;&amp;a) noexcept=default</td></tr>
 <tr class="separator:a4cf0fb395b42d53b6e59868739dc9613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3518868e475bfc4d4bcf9d137cebb28"><td class="memTemplParams" colspan="2">template&lt;typename U , size_t FromA&gt; </td></tr>
-<tr class="memitem:ac3518868e475bfc4d4bcf9d137cebb28"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_array.html#ac3518868e475bfc4d4bcf9d137cebb28">Array</a> (const <a class="el" href="structmage_1_1_array.html">Array</a>&lt; U, N, FromA &gt; &amp;a) noexcept</td></tr>
-<tr class="separator:ac3518868e475bfc4d4bcf9d137cebb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950b26208c3546704f42e92c312a93ed"><td class="memTemplParams" colspan="2">template&lt;typename FromT , size_t FromA, typename  = std::enable_if_t&lt; std::is_convertible_v&lt; FromT, T &gt; &gt;&gt; </td></tr>
+<tr class="memitem:a950b26208c3546704f42e92c312a93ed"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_array.html#a950b26208c3546704f42e92c312a93ed">Array</a> (const <a class="el" href="structmage_1_1_array.html">Array</a>&lt; FromT, N, FromA &gt; &amp;a) noexcept</td></tr>
+<tr class="separator:a950b26208c3546704f42e92c312a93ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7adc09166915789b93a7a3af118182e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_array.html#a7adc09166915789b93a7a3af118182e0">~Array</a> ()=default</td></tr>
 <tr class="separator:a7adc09166915789b93a7a3af118182e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693f811869bcaae12b5308981682affa"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structmage_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_array.html#a693f811869bcaae12b5308981682affa">operator=</a> (const <a class="el" href="structmage_1_1_array.html">Array</a> &amp;a) noexcept=default</td></tr>
@@ -194,7 +194,7 @@ template&lt;typename T, size_t N, size_t A = alignof(T), typename  = std::enable
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -427,15 +427,15 @@ template&lt;typename T, size_t N, size_t A = alignof(T), typename  = std::enable
 
 </div>
 </div>
-<a id="ac3518868e475bfc4d4bcf9d137cebb28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3518868e475bfc4d4bcf9d137cebb28">&#9670;&nbsp;</a></span>Array() <span class="overload">[10/10]</span></h2>
+<a id="a950b26208c3546704f42e92c312a93ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950b26208c3546704f42e92c312a93ed">&#9670;&nbsp;</a></span>Array() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, size_t N, size_t A = alignof(T), typename  = std::enable_if_t&lt; (N != 1) &gt;&gt; </div>
 <div class="memtemplate">
-template&lt;typename U , size_t FromA&gt; </div>
+template&lt;typename FromT , size_t FromA, typename  = std::enable_if_t&lt; std::is_convertible_v&lt; FromT, T &gt; &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -443,7 +443,7 @@ template&lt;typename U , size_t FromA&gt; </div>
         <tr>
           <td class="memname">constexpr <a class="el" href="structmage_1_1_array.html">mage::Array</a>&lt; T, N, A, typename &gt;::<a class="el" href="structmage_1_1_array.html">Array</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_array.html">Array</a>&lt; U, N, FromA &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_array.html">Array</a>&lt; FromT, N, FromA &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>

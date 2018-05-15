@@ -5,7 +5,7 @@ var classmage_1_1script_1_1_text_console_script =
     [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#a46052af67069fef12a8ff9de75cce382", null ],
     [ "~TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html#af0959c8a4f21bb4f9b5553dffc5710b9", null ],
     [ "Clear", "classmage_1_1script_1_1_text_console_script.html#a274764deea9f02ec77515680456548d6", null ],
-    [ "Format", "classmage_1_1script_1_1_text_console_script.html#a6de4d411f60dd62c507c6380ac987030", null ],
+    [ "Format", "classmage_1_1script_1_1_text_console_script.html#ac5a8c33c93acf289ac1cebf2ec9e21d7", null ],
     [ "IncrementRow", "classmage_1_1script_1_1_text_console_script.html#a3d4cba4fd8a2733933a7a444c6beaf1a", null ],
     [ "Load", "classmage_1_1script_1_1_text_console_script.html#a1e5a7bdff2d47b835932d7220a4e2571", null ],
     [ "operator=", "classmage_1_1script_1_1_text_console_script.html#a68af2a144f641c9813b333544fe3562a", null ],

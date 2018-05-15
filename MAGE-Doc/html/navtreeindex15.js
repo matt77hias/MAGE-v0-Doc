@@ -1,12 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html":[1,0,0,2,82],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a16913ccdaec3d1a0a67b4ba33cc7b7d1":[1,0,0,2,82,10],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5b65b49d120fd660977f8f05b3ee7327":[1,0,0,2,82,6],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5cde27475fae5b650d91ccba4e6a2a8d":[1,0,0,2,82,7],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5f3ec0cb5a7957fda248bad573caee44":[1,0,0,2,82,14],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a6e41b77f1a21c4eb9f49cf936c131aee":[1,0,0,2,82,12],
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a7c800b1234a9291361a21ce2289b1394":[1,0,0,2,82,11],
 "structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a7cb8ef7c0852f680e149dc24d8ae3f12":[1,0,0,2,82,1],
 "structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a8390daa0e3fd706ff42b32a62a935c3c":[1,0,0,2,82,13],
 "structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a93576bdd7233682f8758a187a6958428":[1,0,0,2,82,3],

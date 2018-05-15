@@ -40,9 +40,9 @@ void \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_afa1fcaa95a6199523
 \item 
 void $\ast$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_acda0b7f2e61bf8ba8bbb9ba633237866}{Alloc}} (size\+\_\+t size) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_ae957490450194631b81b9f6ba84f5f5a}{Alloc\+Data}} (size\+\_\+t count=1, bool initialization=false) noexcept
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}{Alloc\+Data}} (size\+\_\+t count=1, bool initialization=false)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ DataT $>$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a92f0c10ddfd1cdcba2fc9e8842382e41}{Get\+Allocator}} () const noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}{Get\+Allocator}} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -134,23 +134,23 @@ Allocates a block of memory of the given size on this single-\/ended memory stac
 
 A pointer to the memory block that was allocated. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_ae957490450194631b81b9f6ba84f5f5a}\label{classmage_1_1_single_ended_memory_stack_ae957490450194631b81b9f6ba84f5f5a}} 
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}\label{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}} 
 \index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Alloc\+Data@{Alloc\+Data}}
 \index{Alloc\+Data@{Alloc\+Data}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Alloc\+Data()}{AllocData()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Allocates a block of memory on this single-\/ended memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The type of objects to allocate in memory. \\
+{\em T} & The type of objects to allocate in memory. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily DataT} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
 \hline
@@ -174,18 +174,18 @@ Returns the alignment of this single-\/ended memory stack.
 \begin{DoxyReturn}{Returns}
 The alignment in bytes of this single-\/ended memory stack. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a92f0c10ddfd1cdcba2fc9e8842382e41}\label{classmage_1_1_single_ended_memory_stack_a92f0c10ddfd1cdcba2fc9e8842382e41}} 
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}\label{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}} 
 \index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Allocator@{Get\+Allocator}}
 \index{Get\+Allocator@{Get\+Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Get\+Allocator()}{GetAllocator()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ DataT $>$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ T $>$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns an allocator for this single-\/ended memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type of the allocator. \\
+{\em T} & The data type of the allocator. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}

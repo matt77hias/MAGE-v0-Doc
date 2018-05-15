@@ -25,11 +25,11 @@ Inheritance diagram for mage\+:\+:rendering\+:\+:loader\+:\+:M\+D\+L\+Reader$<$ 
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader}{M\+D\+L\+Reader}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a2afa24fc79ecdcf15f0cbf09f7a78e52}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader}{M\+D\+L\+Reader}} \&\&reader)=delete
 \item 
-void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a6ee0c53351656ac4cd92db1d7c372cff}{Read\+From\+File}} (wstring fname, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_ad4236487534d5dba6582613317317092}{Read\+From\+File}} (std\+::filesystem\+::path path, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
 void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a5aa9068792817b6d6dc840a44b788159}{Read\+From\+Memory}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ input, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a682ed8030c99a62d4409a01f9efa6d6b}{Get\+Filename}} () const noexcept
+const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a9740b3cecdcf5a27c696a08eef3b09da}{Get\+Path}} () const noexcept
 \item 
 const string \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_aa00e1e27b614e11ec9f70e52d0bac551}{Get\+Delimiters}} () const noexcept
 \end{DoxyCompactItemize}
@@ -137,17 +137,17 @@ Returns the current delimiters of this line reader.
 \begin{DoxyReturn}{Returns}
 A reference to the current delimiters of this line reader. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a682ed8030c99a62d4409a01f9efa6d6b}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a682ed8030c99a62d4409a01f9efa6d6b}} 
-\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a9740b3cecdcf5a27c696a08eef3b09da}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a9740b3cecdcf5a27c696a08eef3b09da}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-const wstring\& mage\+::\+Line\+Reader\+::\+Get\+Filename\hspace{0.3cm}{\ttfamily [noexcept]}}
+const std\+::filesystem\+::path\& mage\+::\+Line\+Reader\+::\+Get\+Path\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the current filename of this line reader.
+Returns the current path of this line reader.
 
 \begin{DoxyReturn}{Returns}
-A reference to the current filename of this line reader. 
+A reference to the current path of this line reader. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a512618ed9e79671dbcb468d155272b7e}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a512618ed9e79671dbcb468d155272b7e}} 
 \index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}!Import\+Mesh@{Import\+Mesh}}
@@ -217,25 +217,25 @@ Pre-\/processes before reading the current file of this M\+DL reader.
 
 Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_a4de135cfb0434be786cfcfd7959031ef}{mage\+::\+Line\+Reader}}.
 
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a6ee0c53351656ac4cd92db1d7c372cff}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a6ee0c53351656ac4cd92db1d7c372cff}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_ad4236487534d5dba6582613317317092}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_ad4236487534d5dba6582613317317092}} 
 \index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
 void mage\+::\+Line\+Reader\+::\+Read\+From\+File}
 
-Reads from the given file.
+Reads from the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & The file name. \\
+\mbox{\tt in}  & {\em path} & The path. \\
 \hline
 \mbox{\tt in}  & {\em delimiters} & The string containing the token delimiters (single characters). \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a5aa9068792817b6d6dc840a44b788159}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_reader_a5aa9068792817b6d6dc840a44b788159}} 

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['fatal',['Fatal',['../namespacemage.html#a2b75adf342133f9dd406da792cca8e56',1,'mage']]],
+  ['fatal',['Fatal',['../namespacemage.html#a03ef7fbd6e7432ade65efb6417e461d5',1,'mage']]],
   ['fibonaccispiralcosineweightedsamplesonunithemisphere',['FibonacciSpiralCosineWeightedSamplesOnUnitHemisphere',['../namespacemage.html#a8d6c15608e079342da37a4c19a6b7682',1,'mage']]],
   ['fibonaccispiralsamplesinunitcircle',['FibonacciSpiralSamplesInUnitCircle',['../namespacemage.html#a8100b3f73d0a99716285d901f55ba9de',1,'mage']]],
   ['fibonaccispiralsamplesonunithemisphere',['FibonacciSpiralSamplesOnUnitHemisphere',['../namespacemage.html#a23d7ca1637d9b087b7131a40d343c6ca',1,'mage']]],
   ['fibonaccispiralsamplesonunitsphere',['FibonacciSpiralSamplesOnUnitSphere',['../namespacemage.html#a503edc2a48523b3ccf95973b6add0be6',1,'mage']]],
-  ['fileexists',['FileExists',['../namespacemage.html#a3e9bead16bf9814e6ecd6aca57ccc3e3',1,'mage']]],
   ['fillarray',['FillArray',['../namespacemage_1_1details.html#ad477b707ee51319263d0ee265497b19b',1,'mage::details::FillArray()'],['../namespacemage.html#a7b05c69b4bba1f23e0b2cfbf8530e014',1,'mage::FillArray()']]],
   ['fixedupdate',['FixedUpdate',['../classmage_1_1_behavior_script.html#ae4b9cb7f3ee9f96d69682aef42f8bb12',1,'mage::BehaviorScript']]],
   ['flushbatch',['FlushBatch',['../classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a65afd35385400d629abc9f60adfadeff',1,'mage::rendering::SpriteBatch::Impl']]],
@@ -18,7 +17,7 @@ var searchData=
   ['foreachdescendant',['ForEachDescendant',['../classmage_1_1_node.html#ad327e0c58c9d72026b233b0df4f82929',1,'mage::Node']]],
   ['foreachmaterial',['ForEachMaterial',['../classmage_1_1rendering_1_1_model_descriptor.html#a4e95ae12e0c952c76aaaf1ee457aed07',1,'mage::rendering::ModelDescriptor']]],
   ['foreachmodelpart',['ForEachModelPart',['../classmage_1_1rendering_1_1_model_descriptor.html#a9b217d2536bdd34c4b8b93ccf2ef62d3',1,'mage::rendering::ModelDescriptor']]],
-  ['format',['Format',['../classmage_1_1script_1_1_text_console_script.html#a6de4d411f60dd62c507c6380ac987030',1,'mage::script::TextConsoleScript']]],
+  ['format',['Format',['../classmage_1_1script_1_1_text_console_script.html#ac5a8c33c93acf289ac1cebf2ec9e21d7',1,'mage::script::TextConsoleScript']]],
   ['forwardpass',['ForwardPass',['../classmage_1_1rendering_1_1_forward_pass.html#aabff6394203f0927f65cd9d591eefa58',1,'mage::rendering::ForwardPass::ForwardPass(ID3D11Device &amp;device, ID3D11DeviceContext &amp;device_context, StateManager &amp;state_manager, ResourceManager &amp;resource_manager)'],['../classmage_1_1rendering_1_1_forward_pass.html#a5454d208d794e9ef2ae05c03e7b839fd',1,'mage::rendering::ForwardPass::ForwardPass(const ForwardPass &amp;pass)=delete'],['../classmage_1_1rendering_1_1_forward_pass.html#a5f7026d7b4a439bdbacfeaf8fff152c1',1,'mage::rendering::ForwardPass::ForwardPass(ForwardPass &amp;&amp;pass) noexcept']]],
   ['fovxfromfovy',['FOVXFromFOVY',['../namespacemage_1_1rendering.html#aa2ec20e6ac93b972195f453c0e5c12ba',1,'mage::rendering']]],
   ['fovyfromfovx',['FOVYFromFOVX',['../namespacemage_1_1rendering.html#afc1111b2e31d557e8d1539227a1d268e',1,'mage::rendering']]],

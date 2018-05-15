@@ -55,20 +55,20 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classmage_1_1_double_ended_memory_stack.html#afaac4a28ea1e386bc83d3e07fd5531a0",
-"classmage_1_1_local_transform.html#acf9b6ca41b2360d347ae354677d33952",
+"classmage_1_1_local_transform.html#acd4fda032325f52cb668fc4733c6bc04",
 "classmage_1_1_scene.html#a2c25c0fedc0230771d8c00a8288a69ce",
 "classmage_1_1_transform.html#a6b8797abb38b3bbe894193c89bb63a71",
 "classmage_1_1input_1_1_mouse_1_1_impl.html#a1c5de7f34edab12846e75cf7d2b76094",
-"classmage_1_1rendering_1_1_constant_buffer.html#a85af57c527713b8d877524d9f6ce4587",
-"classmage_1_1rendering_1_1_material.html",
-"classmage_1_1rendering_1_1_perspective_camera.html#a3308ee4d7ec6830c04ed3f4fc01f81ac",
-"classmage_1_1rendering_1_1_sprite_batch.html",
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aa3c391f6651074e73105174b68025731",
-"classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#acfafc2485c4b84ef84360e35ac8247eb",
-"functions_u.html",
-"structmage_1_1_s_r_g_b.html#aa5bb0738c6026da6c3e4f54869c52cbc",
-"structmage_1_1rendering_1_1_pipeline.html#acfdf1d2aba1e8c0db9c4ef9e9730f31c",
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html"
+"classmage_1_1rendering_1_1_deferred_pass.html#a3543b3f27812467d425d579d2e226a7a",
+"classmage_1_1rendering_1_1_material.html#a16f309220930c59f17b25fd8b0b62446",
+"classmage_1_1rendering_1_1_perspective_camera.html#ac9bc0faebd323ca26d0311e35612d219",
+"classmage_1_1rendering_1_1_sprite_batch.html#ae5de43894a07d86a0d2e4150080a7990",
+"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aced5e9cea58432f63e62f133def982c9",
+"classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html#a006549a7f9724580c7fdae2f7a9c7bdf",
+"functions_vars_f.html",
+"structmage_1_1_s_r_g_b.html#afc01b8a11b3033ba21e6c5945359a421",
+"structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a2ce23102475c65f714c433d97f38f570",
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a7cb8ef7c0852f680e149dc24d8ae3f12"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

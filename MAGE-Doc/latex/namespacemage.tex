@@ -147,8 +147,6 @@ struct \mbox{\hyperlink{structmage_1_1_x_y_z_a}{X\+Y\+ZA}}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} = std\+::variant$<$ bool, \mbox{\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32}}, \mbox{\hyperlink{namespacemage_a4843c424aae7bb5fb6c440ed6ed593ee}{S32x2}}, \mbox{\hyperlink{namespacemage_a955794bf9fd21daadba891c8cc97b89e}{S32x3}}, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}, \mbox{\hyperlink{namespacemage_a9dc0d34d6ecc87e4cfa4a826102117bc}{F32x2}}, \mbox{\hyperlink{namespacemage_a0fef5ab4e073c2d9ea876fefa3da4233}{F32x3}}, \mbox{\hyperlink{namespacemage_a759aaad2fdc75aa93b5b614eb01712c4}{F32x4}}, string $>$
-\item 
 using \mbox{\hyperlink{namespacemage_ac7e79590b6b7448db059bd50e34fbb08}{Axis\+Aligned\+Bounding\+Box}} = \mbox{\hyperlink{classmage_1_1_a_a_b_b}{A\+A\+BB}}
 \item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}} = std\+::vector$<$ T, \mbox{\hyperlink{classmage_1_1_aligned_allocator}{Aligned\+Allocator}}$<$ T $>$ $>$
@@ -192,6 +190,8 @@ using \mbox{\hyperlink{namespacemage_a39c0275d36517042ed50beceefcdbd70}{Atomic\+
 using \mbox{\hyperlink{namespacemage_a3a7951f7b63669a88ed53162ac80c89e}{Atomic\+U32}} = std\+::atomic$<$ \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}} $>$
 \item 
 using \mbox{\hyperlink{namespacemage_a694beb1edf301f410ce0b33c96b09871}{Atomic\+U64}} = std\+::atomic$<$ \mbox{\hyperlink{namespacemage_a6672cf3c861707ce4a3235a3eb43941d}{U64}} $>$
+\item 
+using \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} = std\+::variant$<$ bool, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}, \mbox{\hyperlink{namespacemage_a9dc0d34d6ecc87e4cfa4a826102117bc}{F32x2}}, \mbox{\hyperlink{namespacemage_a0fef5ab4e073c2d9ea876fefa3da4233}{F32x3}}, \mbox{\hyperlink{namespacemage_a759aaad2fdc75aa93b5b614eb01712c4}{F32x4}}, \mbox{\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32}}, \mbox{\hyperlink{namespacemage_a4843c424aae7bb5fb6c440ed6ed593ee}{S32x2}}, \mbox{\hyperlink{namespacemage_a955794bf9fd21daadba891c8cc97b89e}{S32x3}}, \mbox{\hyperlink{namespacemage_a074e7b761dde478e964b2e9e2fc6ff28}{S32x4}}, \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}, \mbox{\hyperlink{namespacemage_a31f2bb52b5080e706e1c13de07c0a249}{U32x2}}, \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, \mbox{\hyperlink{namespacemage_a7472d3b2d20045774281eacb22fb5df8}{U32x4}}, string $>$
 \item 
 using \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} = gsl\+::zstring$<$$>$
 \item 
@@ -545,49 +545,37 @@ constexpr D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \mbox{\hyperlink{namespacemage_afbd68
 \item 
 void \mbox{\hyperlink{namespacemage_a4442d054ebe70a7b15427a5eed76cd4d}{Throw\+If\+Failed}} (bool result)
 \item 
-void \mbox{\hyperlink{namespacemage_ac72dcdff85bd33700ef53dc58f8f4896}{Throw\+If\+Failed}} (bool result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_a278b65ef01a347537ae8a09ee1687fed}{Throw\+If\+Failed}} (bool result, \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
 void \mbox{\hyperlink{namespacemage_ad2d88aed081b121babdd72992030ec1e}{Throw\+If\+Failed}} (B\+O\+OL result)
 \item 
-void \mbox{\hyperlink{namespacemage_aaa64659e9479c152f1528df244bc43e3}{Throw\+If\+Failed}} (B\+O\+OL result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_a1666b6eae598e0812e18982b03bcbf5b}{Throw\+If\+Failed}} (B\+O\+OL result, \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
 void \mbox{\hyperlink{namespacemage_a9fc38475541afc73c748b37ccd6b4f16}{Throw\+If\+Failed}} (H\+R\+E\+S\+U\+LT result)
 \item 
-void \mbox{\hyperlink{namespacemage_a7351a7590c032055017d89379a06fa42}{Throw\+If\+Failed}} (H\+R\+E\+S\+U\+LT result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_a92f9318738a8a577abe4fc5665999b77}{Throw\+If\+Failed}} (H\+R\+E\+S\+U\+LT result, \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
-bool \mbox{\hyperlink{namespacemage_a3e9bead16bf9814e6ecd6aca57ccc3e3}{File\+Exists}} (const wstring \&fname) noexcept
+void \mbox{\hyperlink{namespacemage_ab9249f9607ae90e0643a7326453aaef9}{Read\+Binary\+File}} (const std\+::filesystem\+::path \&path, \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}}\mbox{[}$\,$\mbox{]} $>$ \&data, size\+\_\+t \&size)
 \item 
-{\footnotesize template$<$typename StringT $>$ }\\const StringT \mbox{\hyperlink{namespacemage_a3c3779706798ad75dd2173c0298677db}{Get\+Filename}} (const StringT \&path, const StringT \&name)
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{namespacemage_abb1c246510e4dd8974c06af6c9a47c5d}{Bytes\+Big\+Endian\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes) noexcept
 \item 
-{\footnotesize template$<$typename StringT $>$ }\\const StringT \mbox{\hyperlink{namespacemage_a29b039eecda44c3e3591676b6dd57b98}{Get\+File\+Extension}} (const StringT \&fname)
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{namespacemage_ae10f1884eccbddbdba9b8e3e191db759}{Bytes\+Little\+Endian\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes) noexcept
 \item 
-{\footnotesize template$<$typename StringT $>$ }\\const StringT \mbox{\hyperlink{namespacemage_aec1045055933886b19e5854e8dedeb22}{Get\+File\+Name}} (const StringT \&fname)
-\item 
-{\footnotesize template$<$typename StringT $>$ }\\const StringT \mbox{\hyperlink{namespacemage_ae72f2b217c5c7ab1845dae585948289e}{Get\+Path\+Name}} (const StringT \&fname)
-\item 
-{\footnotesize template$<$typename StringT $>$ }\\const StringT \mbox{\hyperlink{namespacemage_a3bc9359c198321d83fa69d8c77165a4c}{Get\+Filename\+Without\+File\+Extension}} (const StringT \&fname)
-\item 
-void \mbox{\hyperlink{namespacemage_a66834a292e3abf37bd9a734d77494a4b}{Read\+Binary\+File}} (const wstring \&fname, \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}}\mbox{[}$\,$\mbox{]} $>$ \&data, size\+\_\+t \&size)
-\item 
-{\footnotesize template$<$typename DataT $>$ }\\const DataT \mbox{\hyperlink{namespacemage_a7e0c7c794317384cefcd715fb5cb2171}{Bytes\+Big\+Endian\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes) noexcept
-\item 
-{\footnotesize template$<$typename DataT $>$ }\\const DataT \mbox{\hyperlink{namespacemage_a259da86c12457e76bc665e552ea7f3f7}{Bytes\+Little\+Endian\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes) noexcept
-\item 
-{\footnotesize template$<$typename DataT $>$ }\\const DataT \mbox{\hyperlink{namespacemage_a9c969ce3608203029ebb9ebf8b9578a2}{Bytes\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes, bool big\+\_\+endian) noexcept
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{namespacemage_a772b18d9a772d1b398ad969a0b208ebd}{Bytes\+To}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$ bytes, bool big\+\_\+endian) noexcept
 \item 
 void \mbox{\hyperlink{namespacemage_a99d7b362eb2c14e53e9833572d529643}{Add\+Unhandled\+Exception\+Filter}} () noexcept
 \item 
 void \mbox{\hyperlink{namespacemage_a753c529b480b8f244cc0e410d19fb0ed}{Create\+Mini\+Dump}} (E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+RS $\ast$exception\+\_\+record) noexcept
 \item 
-void \mbox{\hyperlink{namespacemage_a8e096b04f4b4d12edf75ee88a30cde32}{Debug}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_acca36ab6fa359b5e67940d5fb3d33cca}{Debug}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
-void \mbox{\hyperlink{namespacemage_ae027ddf7a47e2745df211809af41571b}{Info}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_ac493238ae066ee7fe73e53dceea7d959}{Info}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
-void \mbox{\hyperlink{namespacemage_a1817ff0153985e040b260a8aff5e368d}{Warning}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_a8936bf9d353588d9167b2109ebd19c11}{Warning}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
-void \mbox{\hyperlink{namespacemage_a91428cd9153a1a5fa0b3868bee0cf1eb}{Error}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_afd402ee42047527f1b21711f8509d781}{Error}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
-void \mbox{\hyperlink{namespacemage_a2b75adf342133f9dd406da792cca8e56}{Fatal}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ format,...)
+void \mbox{\hyperlink{namespacemage_a03ef7fbd6e7432ade65efb6417e461d5}{Fatal}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} format,...)
 \item 
 \mbox{\hyperlink{namespacemage_af69057eec1ce005c1c3b34ae33486f16}{U16}} \mbox{\hyperlink{namespacemage_ae4f3de9c2bdb18c1fc9da7f5a0525d06}{Console\+Width}} ()
 \item 
@@ -595,7 +583,7 @@ void \mbox{\hyperlink{namespacemage_a587146c8cbeed655be16ddff8435c05c}{Initializ
 \item 
 void $\ast$ \mbox{\hyperlink{namespacemage_a23b92eb961ff05480367b5738deec7ea}{Alloc\+Aligned}} (size\+\_\+t size, size\+\_\+t alignment) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \mbox{\hyperlink{namespacemage_ade7b7085411ff5e622aa3c8b1182c986}{Alloc\+Aligned\+Data}} (size\+\_\+t count, size\+\_\+t alignment) noexcept
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespacemage_a2b71240729f097297e8e84cb97f52150}{Alloc\+Aligned\+Data}} (size\+\_\+t count, size\+\_\+t alignment) noexcept
 \item 
 void \mbox{\hyperlink{namespacemage_a2ea8b0ebc056a664eadff3512c1cade4}{Free\+Aligned}} (void $\ast$ptr) noexcept
 \item 
@@ -613,9 +601,9 @@ void \mbox{\hyperlink{namespacemage_a2ea8b0ebc056a664eadff3512c1cade4}{Free\+Ali
 \item 
 {\footnotesize template$<$typename ToT , typename FromT $>$ }\\\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ ToT $>$ \mbox{\hyperlink{namespacemage_ad5949d69601681238fb1db8c019b07cb}{reinterpret\+\_\+pointer\+\_\+cast}} (\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ FromT $>$ \&\&ptr) noexcept
 \item 
-static void \mbox{\hyperlink{namespacemage_a146941a270401b0245cc636a844b4e6a}{Destruct\+Handle}} (H\+A\+N\+D\+LE handle) noexcept
+void \mbox{\hyperlink{namespacemage_aa08799da63ec0bba4f8c6e7b46296343}{Destruct\+Handle}} (H\+A\+N\+D\+LE handle) noexcept
 \item 
-static H\+A\+N\+D\+LE \mbox{\hyperlink{namespacemage_ae767d1ab81504570ee79af07836d4486}{Safe\+Handle}} (H\+A\+N\+D\+LE handle) noexcept
+H\+A\+N\+D\+LE \mbox{\hyperlink{namespacemage_a71f22fac369f7eae4304255766252f5e}{Safe\+Handle}} (H\+A\+N\+D\+LE handle) noexcept
 \item 
 \mbox{\hyperlink{namespacemage_aa00b94e5e9cff88a1d7daacc4b63347e}{Unique\+Handle}} \mbox{\hyperlink{namespacemage_aac9c274115d732799b9e7b975c9de1a1}{Create\+Unique\+Handle}} (H\+A\+N\+D\+LE handle)
 \item 
@@ -699,19 +687,21 @@ void \mbox{\hyperlink{namespacemage_a3f5ccd7ee831cb7c8ea45b8044349a3a}{Transform
 \item 
 \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} \mbox{\hyperlink{namespacemage_a3e2260b6002e6e78541c587f30fbae1c}{Goto\+Delimiters}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ str, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_ac8203059e524c61076b91046cb710c43}{String\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} str, DataT \&result) noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a48d14a7656153c03851e3dab52a1b322}{String\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} str, T \&result) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_afc0fb0e1629d5f31cb689b5c8d0452aa}{String\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} begin, \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} end, DataT \&result) noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a194bc14e32cce4af9e3fb551bc95c59c}{String\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} begin, \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} end, T \&result) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_aa0a3cd6da9c830470ed1dad58586c819}{String\+Prefix\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} str, DataT \&result) noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a32640dbd078d39a5e2f8605cc3f71e1d}{String\+Prefix\+To}} (\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} str, T \&result) noexcept
 \item 
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_ad887e8e0e3d17ce6cf6c44ae110b406b}{Read\+Chars}} (\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} str, \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$context, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$ $>$ result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}) noexcept
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_adacee5555bfb7d667346b070203ee17a}{Read\+Chars}} (\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} str, \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$context, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$ $>$ result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_aad27830f3120ab165da6620e48db6353}{Read}} (\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} str, \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$context, DataT \&result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}) noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_ad31e54e5e4bd4c282c788dc0e967e581}{Read}} (\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} str, \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$context, T \&result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})) noexcept
 \item 
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_aa7bbd91272735ddd9e832a941c24b34c}{Contains\+Chars}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ str, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}) noexcept
+{\footnotesize template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_ae77a90c6e314c8ff6ea43171e5cb7c22}{Read}} (\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} str, \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$context, \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ T, N, A $>$ \&result, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a372e332f5143b293c5d6b196c4fb5984}{Contains}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ str, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}) noexcept
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a7a062fd407c6b1294c076df3830cccb7}{Contains\+Chars}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ str, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} \mbox{\hyperlink{namespacemage_a2d5cbad636904a6d51a0c3948455665f}{Contains}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ str, \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ delimiters=\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})) noexcept
 \item 
 const wstring \mbox{\hyperlink{namespacemage_a1ad540627e7279258ba28c326ed93c4b}{Get\+Local\+System\+Date\+As\+String}} ()
 \item 
@@ -1196,11 +1186,11 @@ A class of smart pointers for managing exclusive-\/ownership memory resources.
 {\em T} & The memory resource type. \\
 \hline
 \end{DoxyTemplParams}
-\mbox{\Hypertarget{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}\label{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}} 
+\mbox{\Hypertarget{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}\label{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}} 
 \index{mage@{mage}!Value@{Value}}
 \index{Value@{Value}!mage@{mage}}
 \subsubsection{\texorpdfstring{Value}{Value}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{mage\+::\+Value}} = typedef std\+::variant$<$ bool, \mbox{\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32}}, \mbox{\hyperlink{namespacemage_a4843c424aae7bb5fb6c440ed6ed593ee}{S32x2}}, \mbox{\hyperlink{namespacemage_a955794bf9fd21daadba891c8cc97b89e}{S32x3}}, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}, \mbox{\hyperlink{namespacemage_a9dc0d34d6ecc87e4cfa4a826102117bc}{F32x2}}, \mbox{\hyperlink{namespacemage_a0fef5ab4e073c2d9ea876fefa3da4233}{F32x3}}, \mbox{\hyperlink{namespacemage_a759aaad2fdc75aa93b5b614eb01712c4}{F32x4}}, string $>$}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{mage\+::\+Value}} = typedef std\+::variant$<$ bool, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}, \mbox{\hyperlink{namespacemage_a9dc0d34d6ecc87e4cfa4a826102117bc}{F32x2}}, \mbox{\hyperlink{namespacemage_a0fef5ab4e073c2d9ea876fefa3da4233}{F32x3}}, \mbox{\hyperlink{namespacemage_a759aaad2fdc75aa93b5b614eb01712c4}{F32x4}}, \mbox{\hyperlink{namespacemage_a642e05c5c83642b6946703615cdbf2da}{S32}}, \mbox{\hyperlink{namespacemage_a4843c424aae7bb5fb6c440ed6ed593ee}{S32x2}}, \mbox{\hyperlink{namespacemage_a955794bf9fd21daadba891c8cc97b89e}{S32x3}}, \mbox{\hyperlink{namespacemage_a074e7b761dde478e964b2e9e2fc6ff28}{S32x4}}, \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}}, \mbox{\hyperlink{namespacemage_a31f2bb52b5080e706e1c13de07c0a249}{U32x2}}, \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, \mbox{\hyperlink{namespacemage_a7472d3b2d20045774281eacb22fb5df8}{U32x4}}, string $>$}
 
 A class of variables. \mbox{\Hypertarget{namespacemage_a06f4035ef59f07892e594bf1178a108a}\label{namespacemage_a06f4035ef59f07892e594bf1178a108a}} 
 \index{mage@{mage}!Wall\+Clock\+Timer@{Wall\+Clock\+Timer}}
@@ -1389,23 +1379,23 @@ Allocates memory on a given alignment boundary of the given size.
 
 A pointer to the memory block that was allocated. The pointer is a multiple of the given alignment. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_ade7b7085411ff5e622aa3c8b1182c986}\label{namespacemage_ade7b7085411ff5e622aa3c8b1182c986}} 
+\mbox{\Hypertarget{namespacemage_a2b71240729f097297e8e84cb97f52150}\label{namespacemage_a2b71240729f097297e8e84cb97f52150}} 
 \index{mage@{mage}!Alloc\+Aligned\+Data@{Alloc\+Aligned\+Data}}
 \index{Alloc\+Aligned\+Data@{Alloc\+Aligned\+Data}!mage@{mage}}
 \subsubsection{\texorpdfstring{Alloc\+Aligned\+Data()}{AllocAlignedData()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Alloc\+Aligned\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Alloc\+Aligned\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Allocates memory on a given alignment boundary.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The type of objects to allocate in memory. \\
+{\em T} & The type of objects to allocate in memory. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily DataT} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \mbox{\tt in}  & {\em alignment} & The alignment in bytes. \\
 \hline
@@ -1438,21 +1428,21 @@ Returns the number of bits per pixel of the given D\+X\+GI format.
 \begin{DoxyReturn}{Returns}
 The number of bits per pixel of the given D\+X\+GI format. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a7e0c7c794317384cefcd715fb5cb2171}\label{namespacemage_a7e0c7c794317384cefcd715fb5cb2171}} 
+\mbox{\Hypertarget{namespacemage_abb1c246510e4dd8974c06af6c9a47c5d}\label{namespacemage_abb1c246510e4dd8974c06af6c9a47c5d}} 
 \index{mage@{mage}!Bytes\+Big\+Endian\+To@{Bytes\+Big\+Endian\+To}}
 \index{Bytes\+Big\+Endian\+To@{Bytes\+Big\+Endian\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Big\+Endian\+To()}{BytesBigEndianTo()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-const DataT mage\+::\+Bytes\+Big\+Endian\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T mage\+::\+Bytes\+Big\+Endian\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the given big endian byte array.
+Reads a {\ttfamily T} element from the given big endian byte array.
 
 \begin{DoxyPrecond}{Precondition}
-The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes. 
+The given byte array must contain at least {\ttfamily sizeof(\+T)} bytes. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -1461,23 +1451,23 @@ The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The {\ttfamily DataT} element represented by the big endian byte array {\itshape bytes}. 
+The {\ttfamily T} element represented by the big endian byte array {\itshape bytes}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a259da86c12457e76bc665e552ea7f3f7}\label{namespacemage_a259da86c12457e76bc665e552ea7f3f7}} 
+\mbox{\Hypertarget{namespacemage_ae10f1884eccbddbdba9b8e3e191db759}\label{namespacemage_ae10f1884eccbddbdba9b8e3e191db759}} 
 \index{mage@{mage}!Bytes\+Little\+Endian\+To@{Bytes\+Little\+Endian\+To}}
 \index{Bytes\+Little\+Endian\+To@{Bytes\+Little\+Endian\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+Little\+Endian\+To()}{BytesLittleEndianTo()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-const DataT mage\+::\+Bytes\+Little\+Endian\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T mage\+::\+Bytes\+Little\+Endian\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the given little endian byte array.
+Reads a {\ttfamily T} element from the given little endian byte array.
 
 \begin{DoxyPrecond}{Precondition}
-The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes. 
+The given byte array must contain at least {\ttfamily sizeof(\+T)} bytes. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -1486,23 +1476,23 @@ The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The {\ttfamily DataT} element represented by the little endian byte array {\itshape bytes}. 
+The {\ttfamily T} element represented by the little endian byte array {\itshape bytes}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a9c969ce3608203029ebb9ebf8b9578a2}\label{namespacemage_a9c969ce3608203029ebb9ebf8b9578a2}} 
+\mbox{\Hypertarget{namespacemage_a772b18d9a772d1b398ad969a0b208ebd}\label{namespacemage_a772b18d9a772d1b398ad969a0b208ebd}} 
 \index{mage@{mage}!Bytes\+To@{Bytes\+To}}
 \index{Bytes\+To@{Bytes\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{Bytes\+To()}{BytesTo()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-const DataT mage\+::\+Bytes\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T mage\+::\+Bytes\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $\ast$ $>$}]{bytes,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the given byte array.
+Reads a {\ttfamily T} element from the given byte array.
 
 \begin{DoxyPrecond}{Precondition}
-The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes. 
+The given byte array must contain at least {\ttfamily sizeof(\+T)} bytes. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -1513,7 +1503,7 @@ The given byte array must contain at least {\ttfamily sizeof(\+Data\+T)} bytes.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The {\ttfamily DataT} element represented by the byte array {\itshape bytes}. 
+The {\ttfamily T} element represented by the byte array {\itshape bytes}. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacemage_af70adcb4d45a03cb5e837fa3b492559f}\label{namespacemage_af70adcb4d45a03cb5e837fa3b492559f}} 
 \index{mage@{mage}!Clamp\+Angle\+Degrees@{Clamp\+Angle\+Degrees}}
@@ -1862,7 +1852,7 @@ The combo box must have at least one item.
 The pointer associated with the selected item in a combo box. 
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
-This function converts the {\ttfamily void} $\ast$ data to {\ttfamily Data\+T$\ast$} data. 
+This function converts the {\ttfamily void} $\ast$ data to {\ttfamily T$\ast$} data. 
 \end{DoxyNote}
 \mbox{\Hypertarget{namespacemage_a4cb36d73188b861000f8fd3a9475472c}\label{namespacemage_a4cb36d73188b861000f8fd3a9475472c}} 
 \index{mage@{mage}!Combo\+Box\+Selected\+Value@{Combo\+Box\+Selected\+Value}}
@@ -2041,18 +2031,18 @@ The moved proxy pointer.
 {\footnotesize\ttfamily template$<$typename ToT , typename FromT , size\+\_\+t N$>$ \\
 constexpr auto mage\+::\+Const\+Cast\+Array (\begin{DoxyParamCaption}\item[{const std\+::array$<$ FromT, N $>$ \&}]{a }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacemage_a372e332f5143b293c5d6b196c4fb5984}\label{namespacemage_a372e332f5143b293c5d6b196c4fb5984}} 
+\mbox{\Hypertarget{namespacemage_a2d5cbad636904a6d51a0c3948455665f}\label{namespacemage_a2d5cbad636904a6d51a0c3948455665f}} 
 \index{mage@{mage}!Contains@{Contains}}
 \index{Contains@{Contains}!mage@{mage}}
 \subsubsection{\texorpdfstring{Contains()}{Contains()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Checks whether the next token in the given string represents a {\ttfamily DataT} element.
+Checks whether the next token in the given string represents a {\ttfamily T} value.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -2063,13 +2053,13 @@ Checks whether the next token in the given string represents a {\ttfamily DataT}
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A token result indicating whether the conversion of the next token in the given string to a {\ttfamily DataT} element succeeds or not. 
+A token result indicating whether the conversion of the next token in the given string to a {\ttfamily T} value succeeds or not. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_aa7bbd91272735ddd9e832a941c24b34c}\label{namespacemage_aa7bbd91272735ddd9e832a941c24b34c}} 
+\mbox{\Hypertarget{namespacemage_a7a062fd407c6b1294c076df3830cccb7}\label{namespacemage_a7a062fd407c6b1294c076df3830cccb7}} 
 \index{mage@{mage}!Contains\+Chars@{Contains\+Chars}}
 \index{Contains\+Chars@{Contains\+Chars}!mage@{mage}}
 \subsubsection{\texorpdfstring{Contains\+Chars()}{ContainsChars()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains\+Chars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains\+Chars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Checks whether the next token in the given string represents (non-\/delimiting) characters.
 
@@ -2087,7 +2077,7 @@ A token result indicating whether the conversion of the next token in the given 
 \index{mage@{mage}!Contains\+Quoted\+String@{Contains\+Quoted\+String}}
 \index{Contains\+Quoted\+String@{Contains\+Quoted\+String}!mage@{mage}}
 \subsubsection{\texorpdfstring{Contains\+Quoted\+String()}{ContainsQuotedString()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains\+Quoted\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Contains\+Quoted\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Checks whether the next token in the given string represents a quoted string.
 
@@ -2170,11 +2160,11 @@ Creates a unique handle for the given handle.
 \begin{DoxyReturn}{Returns}
 A unique handle for the given handle {\itshape handle}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a8e096b04f4b4d12edf75ee88a30cde32}\label{namespacemage_a8e096b04f4b4d12edf75ee88a30cde32}} 
+\mbox{\Hypertarget{namespacemage_acca36ab6fa359b5e67940d5fb3d33cca}\label{namespacemage_acca36ab6fa359b5e67940d5fb3d33cca}} 
 \index{mage@{mage}!Debug@{Debug}}
 \index{Debug@{Debug}!mage@{mage}}
 \subsubsection{\texorpdfstring{Debug()}{Debug()}}
-{\footnotesize\ttfamily void mage\+::\+Debug (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Debug (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Notifies a debug message.
 
@@ -2185,11 +2175,11 @@ A debug message is associated with generally useful information to log only in d
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacemage_a146941a270401b0245cc636a844b4e6a}\label{namespacemage_a146941a270401b0245cc636a844b4e6a}} 
+\mbox{\Hypertarget{namespacemage_aa08799da63ec0bba4f8c6e7b46296343}\label{namespacemage_aa08799da63ec0bba4f8c6e7b46296343}} 
 \index{mage@{mage}!Destruct\+Handle@{Destruct\+Handle}}
 \index{Destruct\+Handle@{Destruct\+Handle}!mage@{mage}}
 \subsubsection{\texorpdfstring{Destruct\+Handle()}{DestructHandle()}}
-{\footnotesize\ttfamily static void mage\+::\+Destruct\+Handle (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void mage\+::\+Destruct\+Handle (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Destructs the given handle.
 
@@ -2284,11 +2274,11 @@ constexpr auto mage\+::\+Dynamic\+Cast\+Array (\begin{DoxyParamCaption}\item[{co
 {\footnotesize\ttfamily template$<$size\+\_\+t ToN, typename T , size\+\_\+t FromN$>$ \\
 constexpr auto mage\+::\+Enlarge\+Array (\begin{DoxyParamCaption}\item[{const std\+::array$<$ T, FromN $>$ \&}]{a }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacemage_a91428cd9153a1a5fa0b3868bee0cf1eb}\label{namespacemage_a91428cd9153a1a5fa0b3868bee0cf1eb}} 
+\mbox{\Hypertarget{namespacemage_afd402ee42047527f1b21711f8509d781}\label{namespacemage_afd402ee42047527f1b21711f8509d781}} 
 \index{mage@{mage}!Error@{Error}}
 \index{Error@{Error}!mage@{mage}}
 \subsubsection{\texorpdfstring{Error()}{Error()}}
-{\footnotesize\ttfamily void mage\+::\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Notifies an error message.
 
@@ -2299,11 +2289,11 @@ An error message is associated with any error which is fatal to the operation, b
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespacemage_a2b75adf342133f9dd406da792cca8e56}\label{namespacemage_a2b75adf342133f9dd406da792cca8e56}} 
+\mbox{\Hypertarget{namespacemage_a03ef7fbd6e7432ade65efb6417e461d5}\label{namespacemage_a03ef7fbd6e7432ade65efb6417e461d5}} 
 \index{mage@{mage}!Fatal@{Fatal}}
 \index{Fatal@{Fatal}!mage@{mage}}
 \subsubsection{\texorpdfstring{Fatal()}{Fatal()}}
-{\footnotesize\ttfamily void mage\+::\+Fatal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Fatal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Notifies a fatal message.
 
@@ -2338,22 +2328,6 @@ A fatal message is associated with any error that is forcing a shutdown of the s
 \subsubsection{\texorpdfstring{Fibonacci\+Spiral\+Samples\+On\+Unit\+Sphere()}{FibonacciSpiralSamplesOnUnitSphere()}}
 {\footnotesize\ttfamily void mage\+::\+Fibonacci\+Spiral\+Samples\+On\+Unit\+Sphere (\begin{DoxyParamCaption}\item[{gsl\+::span$<$ \mbox{\hyperlink{namespacemage_a0fef5ab4e073c2d9ea876fefa3da4233}{F32x3}} $>$}]{samples,  }\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{namespacemage_a3e9bead16bf9814e6ecd6aca57ccc3e3}\label{namespacemage_a3e9bead16bf9814e6ecd6aca57ccc3e3}} 
-\index{mage@{mage}!File\+Exists@{File\+Exists}}
-\index{File\+Exists@{File\+Exists}!mage@{mage}}
-\subsubsection{\texorpdfstring{File\+Exists()}{FileExists()}}
-{\footnotesize\ttfamily bool mage\+::\+File\+Exists (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Checks whether a file with the given filename exists.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if a file with the given filename exists. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{namespacemage_a7b05c69b4bba1f23e0b2cfbf8530e014}\label{namespacemage_a7b05c69b4bba1f23e0b2cfbf8530e014}} 
 \index{mage@{mage}!Fill\+Array@{Fill\+Array}}
 \index{Fill\+Array@{Fill\+Array}!mage@{mage}}
@@ -2367,7 +2341,7 @@ constexpr auto mage\+::\+Fill\+Array (\begin{DoxyParamCaption}\item[{const T \&}
 \subsubsection{\texorpdfstring{Free\+Aligned()}{FreeAligned()}}
 {\footnotesize\ttfamily void mage\+::\+Free\+Aligned (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Frees a block of memory that was allocated with \mbox{\hyperlink{namespacemage_a23b92eb961ff05480367b5738deec7ea}{mage\+::\+Alloc\+Aligned(size\+\_\+t, size\+\_\+t)}} or \mbox{\hyperlink{namespacemage_ade7b7085411ff5e622aa3c8b1182c986}{mage\+::\+Alloc\+Aligned\+Data$<$\+Data\+T$>$(size\+\_\+t, size\+\_\+t)}}.
+Frees a block of memory that was allocated with \mbox{\hyperlink{namespacemage_a23b92eb961ff05480367b5738deec7ea}{mage\+::\+Alloc\+Aligned(size\+\_\+t, size\+\_\+t)}} or \mbox{\hyperlink{namespacemage_a2b71240729f097297e8e84cb97f52150}{mage\+::\+Alloc\+Aligned\+Data$<$\+T$>$(size\+\_\+t, size\+\_\+t)}}.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -2405,114 +2379,6 @@ The {\ttfamily l\+Param} formal parameter of {\ttfamily Dialog\+Box\+Param} shou
 \begin{DoxyReturn}{Returns}
 A pointer to the caller of {\ttfamily Dialog\+Box\+Param}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a29b039eecda44c3e3591676b6dd57b98}\label{namespacemage_a29b039eecda44c3e3591676b6dd57b98}} 
-\index{mage@{mage}!Get\+File\+Extension@{Get\+File\+Extension}}
-\index{Get\+File\+Extension@{Get\+File\+Extension}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+File\+Extension()}{GetFileExtension()}}
-{\footnotesize\ttfamily template$<$typename StringT $>$ \\
-const StringT mage\+::\+Get\+File\+Extension (\begin{DoxyParamCaption}\item[{const StringT \&}]{fname }\end{DoxyParamCaption})}
-
-Returns the extension of the given file.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em StringT} & The string type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The extension of the given file. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The filename does not have a file extension. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_a3c3779706798ad75dd2173c0298677db}\label{namespacemage_a3c3779706798ad75dd2173c0298677db}} 
-\index{mage@{mage}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily template$<$typename StringT $>$ \\
-const StringT mage\+::\+Get\+Filename (\begin{DoxyParamCaption}\item[{const StringT \&}]{path,  }\item[{const StringT \&}]{name }\end{DoxyParamCaption})}
-
-Returns the filename of the given file.
-
-\begin{DoxyPrecond}{Precondition}
-{\itshape path} must end with a \textquotesingle{}/\textquotesingle{} character. 
-\end{DoxyPrecond}
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em StringT} & The string type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em path} & A reference to the path of the file. \\
-\hline
-\mbox{\tt in}  & {\em name} & A reference to the name of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The filename of the given file. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_aec1045055933886b19e5854e8dedeb22}\label{namespacemage_aec1045055933886b19e5854e8dedeb22}} 
-\index{mage@{mage}!Get\+File\+Name@{Get\+File\+Name}}
-\index{Get\+File\+Name@{Get\+File\+Name}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+File\+Name()}{GetFileName()}}
-{\footnotesize\ttfamily template$<$typename StringT $>$ \\
-const StringT mage\+::\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{const StringT \&}]{fname }\end{DoxyParamCaption})}
-
-Returns the name of the given file.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em StringT} & The string type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The name of the given file. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The filename does not have a file path. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_a3bc9359c198321d83fa69d8c77165a4c}\label{namespacemage_a3bc9359c198321d83fa69d8c77165a4c}} 
-\index{mage@{mage}!Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}}
-\index{Get\+Filename\+Without\+File\+Extension@{Get\+Filename\+Without\+File\+Extension}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Filename\+Without\+File\+Extension()}{GetFilenameWithoutFileExtension()}}
-{\footnotesize\ttfamily template$<$typename StringT $>$ \\
-const StringT mage\+::\+Get\+Filename\+Without\+File\+Extension (\begin{DoxyParamCaption}\item[{const StringT \&}]{fname }\end{DoxyParamCaption})}
-
-Returns the filename of the given file without its file extension.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em StringT} & The string type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The filename of the given file without its file extension. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The filename does not have a file extension. \\
-\hline
-\end{DoxyExceptions}
 \mbox{\Hypertarget{namespacemage_a0b6ccc196aa8040c964f2859efdf834f}\label{namespacemage_a0b6ccc196aa8040c964f2859efdf834f}} 
 \index{mage@{mage}!Get\+Local\+System\+Date\+And\+Time\+As\+String@{Get\+Local\+System\+Date\+And\+Time\+As\+String}}
 \index{Get\+Local\+System\+Date\+And\+Time\+As\+String@{Get\+Local\+System\+Date\+And\+Time\+As\+String}!mage@{mage}}
@@ -2562,33 +2428,6 @@ Returns the projection values from the given projection matrix to construct the 
 \begin{DoxyReturn}{Returns}
 The projection values from the given projection matrix to construct the N\+DC z-\/coordinate from the view z-\/coordinate. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_ae72f2b217c5c7ab1845dae585948289e}\label{namespacemage_ae72f2b217c5c7ab1845dae585948289e}} 
-\index{mage@{mage}!Get\+Path\+Name@{Get\+Path\+Name}}
-\index{Get\+Path\+Name@{Get\+Path\+Name}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+Path\+Name()}{GetPathName()}}
-{\footnotesize\ttfamily template$<$typename StringT $>$ \\
-const StringT mage\+::\+Get\+Path\+Name (\begin{DoxyParamCaption}\item[{const StringT \&}]{fname }\end{DoxyParamCaption})}
-
-Returns the path of the given file.
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em StringT} & The string type. \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The path of the given file. 
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The filename does not have a file path. \\
-\hline
-\end{DoxyExceptions}
 \mbox{\Hypertarget{namespacemage_a7b712424180df40b88f4ea46029dd5a0}\label{namespacemage_a7b712424180df40b88f4ea46029dd5a0}} 
 \index{mage@{mage}!Get\+Physical\+Memory\+Usage@{Get\+Physical\+Memory\+Usage}}
 \index{Get\+Physical\+Memory\+Usage@{Get\+Physical\+Memory\+Usage}!mage@{mage}}
@@ -2683,7 +2522,7 @@ A pointer to the caller of {\ttfamily Create\+Window} or {\ttfamily Create\+Wind
 \index{mage@{mage}!Goto\+Delimiters@{Goto\+Delimiters}}
 \index{Goto\+Delimiters@{Goto\+Delimiters}!mage@{mage}}
 \subsubsection{\texorpdfstring{Goto\+Delimiters()}{GotoDelimiters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} mage\+::\+Goto\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} mage\+::\+Goto\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Advances to the first delimiting character in the given string.
 
@@ -2703,7 +2542,7 @@ A pointer to the first delimiting character in the given string.
 \index{mage@{mage}!Goto\+Delimiters@{Goto\+Delimiters}}
 \index{Goto\+Delimiters@{Goto\+Delimiters}!mage@{mage}}
 \subsubsection{\texorpdfstring{Goto\+Delimiters()}{GotoDelimiters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} mage\+::\+Goto\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} mage\+::\+Goto\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Advances to the first delimiting character in the given string.
 
@@ -2767,11 +2606,11 @@ A pointer to the first delimiting character in the given string.
 \subsubsection{\texorpdfstring{Hammersley4\+D()}{Hammersley4D()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{namespacemage_a759aaad2fdc75aa93b5b614eb01712c4}{F32x4}} mage\+::\+Hammersley4D (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{size\+\_\+t}]{nb\+\_\+samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{namespacemage_ae027ddf7a47e2745df211809af41571b}\label{namespacemage_ae027ddf7a47e2745df211809af41571b}} 
+\mbox{\Hypertarget{namespacemage_ac493238ae066ee7fe73e53dceea7d959}\label{namespacemage_ac493238ae066ee7fe73e53dceea7d959}} 
 \index{mage@{mage}!Info@{Info}}
 \index{Info@{Info}!mage@{mage}}
 \subsubsection{\texorpdfstring{Info()}{Info()}}
-{\footnotesize\ttfamily void mage\+::\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Notifies an info message.
 
@@ -2877,6 +2716,11 @@ The custom allocator is used for constructing the object of type T.
 {\em Constructor\+ArgsT} & The constructor argument types. \\
 \hline
 \end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A shared pointer to the constructed object of type T. 
 \end{DoxyReturn}
@@ -2898,6 +2742,11 @@ No custom allocator is used for constructing the object of type T.
 {\em Constructor\+ArgsT} & The constructor argument types. \\
 \hline
 \end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A shared pointer to the constructed object of type T. 
 \end{DoxyReturn}
@@ -2917,6 +2766,11 @@ Constructs an object of type T.
 {\em Constructor\+ArgsT} & The constructor argument types. \\
 \hline
 \end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em args} & A reference to the constructor arguments. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A unique pointer to the constructed object of type T. 
 \end{DoxyReturn}
@@ -3140,21 +2994,21 @@ Prints the header of the engine to the console. \mbox{\Hypertarget{namespacemage
 \subsubsection{\texorpdfstring{Radical\+Inverse()}{RadicalInverse()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+Radical\+Inverse (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{namespacemage_aad27830f3120ab165da6620e48db6353}\label{namespacemage_aad27830f3120ab165da6620e48db6353}} 
+\mbox{\Hypertarget{namespacemage_ad31e54e5e4bd4c282c788dc0e967e581}\label{namespacemage_ad31e54e5e4bd4c282c788dc0e967e581}} 
 \index{mage@{mage}!Read@{Read}}
 \index{Read@{Read}!mage@{mage}}
-\subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{DataT \&}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{T \&}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads and converts the next token in the given string to a {\ttfamily DataT} element.
+Reads and converts the next token in the given string to a {\ttfamily T} value.
 
 \begin{DoxyPrecond}{Precondition}
 {\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
 \end{DoxyPrecond}
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -3163,25 +3017,60 @@ Reads and converts the next token in the given string to a {\ttfamily DataT} ele
 \hline
 \mbox{\tt in,out}  & {\em context} & A pointer to the current position in the given string {\itshape str}. \\
 \hline
-\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily DataT} element represented by the next token in the given string {\itshape str}. \\
+\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily T} value represented by the next token in the given string {\itshape str}. \\
 \hline
 \mbox{\tt in}  & {\em delimiters} & A pointer to the null-\/terminated string containing the delimiting characters. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A token result indicating whether the conversion of the next token in the given string to a {\ttfamily DataT} element succeeded or not. 
+A token result indicating whether the conversion of the next token in the given string to a {\ttfamily T} value succeeded or not. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_a66834a292e3abf37bd9a734d77494a4b}\label{namespacemage_a66834a292e3abf37bd9a734d77494a4b}} 
+\mbox{\Hypertarget{namespacemage_ae77a90c6e314c8ff6ea43171e5cb7c22}\label{namespacemage_ae77a90c6e314c8ff6ea43171e5cb7c22}} 
+\index{mage@{mage}!Read@{Read}}
+\index{Read@{Read}!mage@{mage}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{\mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ T, N, A $>$ \&}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Reads and converts the next token in the given string to an {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}}.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape str} or {\itshape context} is not equal to {\ttfamily nullptr}. 
+\end{DoxyPrecond}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type. \\
+\hline
+{\em N} & The number of values in the array. \\
+\hline
+{\em A} & The alignment of the array. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated string. If {\itshape str} is equal to {\ttfamily nullptr}, reading continues from the beginning of {\itshape str}. Otherwise, reading continues from the current position. \\
+\hline
+\mbox{\tt in,out}  & {\em context} & A pointer to the current position in the given string {\itshape str}. \\
+\hline
+\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}} represented by the next {\ttfamily N} tokens in the given string {\itshape str}. \\
+\hline
+\mbox{\tt in}  & {\em delimiters} & A pointer to the null-\/terminated string containing the delimiting characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A token result indicating whether the conversion of the next {\ttfamily N} tokens in the given string to a {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}} succeeded or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacemage_ab9249f9607ae90e0643a7326453aaef9}\label{namespacemage_ab9249f9607ae90e0643a7326453aaef9}} 
 \index{mage@{mage}!Read\+Binary\+File@{Read\+Binary\+File}}
 \index{Read\+Binary\+File@{Read\+Binary\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Read\+Binary\+File()}{ReadBinaryFile()}}
-{\footnotesize\ttfamily void mage\+::\+Read\+Binary\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}}\mbox{[}$\,$\mbox{]} $>$ \&}]{data,  }\item[{size\+\_\+t \&}]{size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Read\+Binary\+File (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path,  }\item[{\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}}\mbox{[}$\,$\mbox{]} $>$ \&}]{data,  }\item[{size\+\_\+t \&}]{size }\end{DoxyParamCaption})}
 
-Reads the bytes of a binary file.
+Reads the bytes of the binary file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\mbox{\tt in}  & {\em path} & A reference to the path. \\
 \hline
 \mbox{\tt out}  & {\em data} & A reference to a pointer to a buffer for storing the read bytes. \\
 \hline
@@ -3190,14 +3079,14 @@ Reads the bytes of a binary file.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_ad887e8e0e3d17ce6cf6c44ae110b406b}\label{namespacemage_ad887e8e0e3d17ce6cf6c44ae110b406b}} 
+\mbox{\Hypertarget{namespacemage_adacee5555bfb7d667346b070203ee17a}\label{namespacemage_adacee5555bfb7d667346b070203ee17a}} 
 \index{mage@{mage}!Read\+Chars@{Read\+Chars}}
 \index{Read\+Chars@{Read\+Chars}!mage@{mage}}
 \subsubsection{\texorpdfstring{Read\+Chars()}{ReadChars()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read\+Chars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$ $>$}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read\+Chars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$ $>$}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Reads and converts the next token in the given string to (non-\/delimiting) characters.
 
@@ -3222,7 +3111,7 @@ A token result indicating whether the conversion of the next token in the given 
 \index{mage@{mage}!Read\+Quoted\+String@{Read\+Quoted\+String}}
 \index{Read\+Quoted\+String@{Read\+Quoted\+String}!mage@{mage}}
 \subsubsection{\texorpdfstring{Read\+Quoted\+String()}{ReadQuotedString()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read\+Quoted\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{string \&}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+Read\+Quoted\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}}}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $\ast$}]{context,  }\item[{string \&}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})}
 
 Reads and converts the next token in the given string to a quoted string.
 
@@ -3368,11 +3257,11 @@ The alpha channel of the given spectrum is preserved.
 \subsubsection{\texorpdfstring{Roth()}{Roth()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{namespacemage_a9dc0d34d6ecc87e4cfa4a826102117bc}{F32x2}} mage\+::\+Roth (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{size\+\_\+t}]{nb\+\_\+samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{namespacemage_ae767d1ab81504570ee79af07836d4486}\label{namespacemage_ae767d1ab81504570ee79af07836d4486}} 
+\mbox{\Hypertarget{namespacemage_a71f22fac369f7eae4304255766252f5e}\label{namespacemage_a71f22fac369f7eae4304255766252f5e}} 
 \index{mage@{mage}!Safe\+Handle@{Safe\+Handle}}
 \index{Safe\+Handle@{Safe\+Handle}!mage@{mage}}
 \subsubsection{\texorpdfstring{Safe\+Handle()}{SafeHandle()}}
-{\footnotesize\ttfamily static H\+A\+N\+D\+LE mage\+::\+Safe\+Handle (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+Safe\+Handle (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Converts the given handle to a safe handle.
 
@@ -3406,7 +3295,7 @@ The clamped value.
 \index{mage@{mage}!Skip\+Delimiters@{Skip\+Delimiters}}
 \index{Skip\+Delimiters@{Skip\+Delimiters}!mage@{mage}}
 \subsubsection{\texorpdfstring{Skip\+Delimiters()}{SkipDelimiters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} mage\+::\+Skip\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} mage\+::\+Skip\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Advances to the first non-\/delimiting character in the given string.
 
@@ -3426,7 +3315,7 @@ A pointer to the first non-\/delimiting character in the given string.
 \index{mage@{mage}!Skip\+Delimiters@{Skip\+Delimiters}}
 \index{Skip\+Delimiters@{Skip\+Delimiters}!mage@{mage}}
 \subsubsection{\texorpdfstring{Skip\+Delimiters()}{SkipDelimiters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} mage\+::\+Skip\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} mage\+::\+Skip\+Delimiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{str,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{delimiters = {\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$~\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}~$>$(\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Advances to the first non-\/delimiting character in the given string.
 
@@ -3762,66 +3651,66 @@ A null-\/terminating character is automatically appended after the characters co
 \begin{DoxyNote}{Note}
 The {\ttfamily sgets} function is the string variant of {\ttfamily fgets}. 
 \end{DoxyNote}
-\mbox{\Hypertarget{namespacemage_aa0a3cd6da9c830470ed1dad58586c819}\label{namespacemage_aa0a3cd6da9c830470ed1dad58586c819}} 
+\mbox{\Hypertarget{namespacemage_a32640dbd078d39a5e2f8605cc3f71e1d}\label{namespacemage_a32640dbd078d39a5e2f8605cc3f71e1d}} 
 \index{mage@{mage}!String\+Prefix\+To@{String\+Prefix\+To}}
 \index{String\+Prefix\+To@{String\+Prefix\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{String\+Prefix\+To()}{StringPrefixTo()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+Prefix\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{str,  }\item[{DataT \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+Prefix\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{str,  }\item[{T \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the prefix of the given string.
+Reads a {\ttfamily T} value from the prefix of the given string.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated string to convert. \\
 \hline
-\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily DataT} element represented by the prefix of the given string {\itshape str}. \\
+\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily T} value represented by the prefix of the given string {\itshape str}. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A token result indicating whether the conversion of the prefix of the given string {\itshape str} to a {\ttfamily DataT} element succeeded or not. 
+A token result indicating whether the conversion of the prefix of the given string {\itshape str} to a {\ttfamily T} value succeeded or not. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_ac8203059e524c61076b91046cb710c43}\label{namespacemage_ac8203059e524c61076b91046cb710c43}} 
+\mbox{\Hypertarget{namespacemage_a48d14a7656153c03851e3dab52a1b322}\label{namespacemage_a48d14a7656153c03851e3dab52a1b322}} 
 \index{mage@{mage}!String\+To@{String\+To}}
 \index{String\+To@{String\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{String\+To()}{StringTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{str,  }\item[{DataT \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{str,  }\item[{T \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the given string.
+Reads a {\ttfamily T} value from the given string.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em str} & A pointer to the null-\/terminated string to convert. \\
 \hline
-\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily DataT} element represented by the given string {\itshape str}. \\
+\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily T} value represented by the given string {\itshape str}. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A token result indicating whether the conversion of the given string {\itshape str} to a {\ttfamily DataT} element succeeded or not. 
+A token result indicating whether the conversion of the given string {\itshape str} to a {\ttfamily T} value succeeded or not. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespacemage_afc0fb0e1629d5f31cb689b5c8d0452aa}\label{namespacemage_afc0fb0e1629d5f31cb689b5c8d0452aa}} 
+\mbox{\Hypertarget{namespacemage_a194bc14e32cce4af9e3fb551bc95c59c}\label{namespacemage_a194bc14e32cce4af9e3fb551bc95c59c}} 
 \index{mage@{mage}!String\+To@{String\+To}}
 \index{String\+To@{String\+To}!mage@{mage}}
 \subsubsection{\texorpdfstring{String\+To()}{StringTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{begin,  }\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{end,  }\item[{DataT \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_aac4b389e883a872773d5fb331e308d5b}{Token\+Result}} mage\+::\+String\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{begin,  }\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{end,  }\item[{T \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Reads a {\ttfamily DataT} element from the given string.
+Reads a {\ttfamily T} value from the given string.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 
@@ -3830,11 +3719,11 @@ Reads a {\ttfamily DataT} element from the given string.
 \hline
 \mbox{\tt in}  & {\em end} & A pointer to the end (exclusive) of the string to convert. \\
 \hline
-\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily DataT} element represented by the given string {\itshape str}. \\
+\mbox{\tt out}  & {\em result} & A reference to the {\ttfamily T} value represented by the given string {\itshape str}. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A token result indicating whether the conversion of the given string {\itshape str} to a {\ttfamily DataT} element succeeded or not. 
+A token result indicating whether the conversion of the given string {\itshape str} to a {\ttfamily T} value succeeded or not. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{namespacemage_a2bb35794a8a35198817e23fab4b6a523}\label{namespacemage_a2bb35794a8a35198817e23fab4b6a523}} 
 \index{mage@{mage}!String\+To\+W\+String@{String\+To\+W\+String}}
@@ -3870,11 +3759,11 @@ Throws if the given result correspond to a failure.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The given results correspond to a failure. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_ac72dcdff85bd33700ef53dc58f8f4896}\label{namespacemage_ac72dcdff85bd33700ef53dc58f8f4896}} 
+\mbox{\Hypertarget{namespacemage_a278b65ef01a347537ae8a09ee1687fed}\label{namespacemage_a278b65ef01a347537ae8a09ee1687fed}} 
 \index{mage@{mage}!Throw\+If\+Failed@{Throw\+If\+Failed}}
 \index{Throw\+If\+Failed@{Throw\+If\+Failed}!mage@{mage}}
 \subsubsection{\texorpdfstring{Throw\+If\+Failed()}{ThrowIfFailed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
-{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{bool}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{bool}]{result,  }\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Throws if the given result correspond to a failure.
 
@@ -3908,11 +3797,11 @@ Throws if the given result correspond to a failure.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The given results correspond to a failure. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_aaa64659e9479c152f1528df244bc43e3}\label{namespacemage_aaa64659e9479c152f1528df244bc43e3}} 
+\mbox{\Hypertarget{namespacemage_a1666b6eae598e0812e18982b03bcbf5b}\label{namespacemage_a1666b6eae598e0812e18982b03bcbf5b}} 
 \index{mage@{mage}!Throw\+If\+Failed@{Throw\+If\+Failed}}
 \index{Throw\+If\+Failed@{Throw\+If\+Failed}!mage@{mage}}
 \subsubsection{\texorpdfstring{Throw\+If\+Failed()}{ThrowIfFailed()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
-{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{B\+O\+OL}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{B\+O\+OL}]{result,  }\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Throws if the given result correspond to a failure.
 
@@ -3946,11 +3835,11 @@ Throws if the given result correspond to a failure.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & The given results correspond to a failure. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{namespacemage_a7351a7590c032055017d89379a06fa42}\label{namespacemage_a7351a7590c032055017d89379a06fa42}} 
+\mbox{\Hypertarget{namespacemage_a92f9318738a8a577abe4fc5665999b77}\label{namespacemage_a92f9318738a8a577abe4fc5665999b77}} 
 \index{mage@{mage}!Throw\+If\+Failed@{Throw\+If\+Failed}}
 \index{Throw\+If\+Failed@{Throw\+If\+Failed}!mage@{mage}}
 \subsubsection{\texorpdfstring{Throw\+If\+Failed()}{ThrowIfFailed()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
-{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{H\+R\+E\+S\+U\+LT}]{result,  }\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Throw\+If\+Failed (\begin{DoxyParamCaption}\item[{H\+R\+E\+S\+U\+LT}]{result,  }\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Throws if the given result correspond to a failure.
 
@@ -4086,11 +3975,11 @@ constexpr auto mage\+::\+Tupple\+To\+Array (\begin{DoxyParamCaption}\item[{const
 \subsubsection{\texorpdfstring{Vander\+Corput()}{VanderCorput()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+Vander\+Corput (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{namespacemage_a1817ff0153985e040b260a8aff5e368d}\label{namespacemage_a1817ff0153985e040b260a8aff5e368d}} 
+\mbox{\Hypertarget{namespacemage_a8936bf9d353588d9167b2109ebd19c11}\label{namespacemage_a8936bf9d353588d9167b2109ebd19c11}} 
 \index{mage@{mage}!Warning@{Warning}}
 \index{Warning@{Warning}!mage@{mage}}
 \subsubsection{\texorpdfstring{Warning()}{Warning()}}
-{\footnotesize\ttfamily void mage\+::\+Warning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Warning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}}}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
 Notifies a warning message.
 
