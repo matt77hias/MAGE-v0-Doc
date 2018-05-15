@@ -21,11 +21,9 @@ virtual \mbox{\hyperlink{classmage_1_1_resource_a56a3ac799224e100b271b65ec455b59
 \item 
 const wstring \& \mbox{\hyperlink{classmage_1_1_resource_adaa2464cb1fdb51a3f6028c0f316d083}{Get\+Guid}} () const noexcept
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1_resource_a21bed60ba52a741eaffddc953f241be7}{Get\+Filename}} () const noexcept
+bool \mbox{\hyperlink{classmage_1_1_resource_ae783140e30a974c8820e5ae8be9e4b44}{Is\+File\+Resource}} () const
 \item 
-const wstring \mbox{\hyperlink{classmage_1_1_resource_a6414c6f8342f4cc92e7ed7861000cd2f}{Get\+Name}} () const
-\item 
-const wstring \mbox{\hyperlink{classmage_1_1_resource_a01cb4f6f8ff66a1f2545edc89af656c9}{Get\+Path}} () const
+const std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_resource_a7611d0317a247d324d432b26aab6aee2}{Get\+Path}} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -100,21 +98,6 @@ virtual \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ Resourc
 Destructs this resource. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1_resource_a21bed60ba52a741eaffddc953f241be7}\label{classmage_1_1_resource_a21bed60ba52a741eaffddc953f241be7}} 
-\index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::\+Resource@{mage\+::\+Resource}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily template$<$typename ResourceT$>$ \\
-const wstring\& \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ ResourceT $>$\+::Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the filename of this resource.
-
-\begin{DoxyPrecond}{Precondition}
-This resource represents a file resource. 
-\end{DoxyPrecond}
-\begin{DoxyReturn}{Returns}
-A reference to the filename of this resource. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_resource_adaa2464cb1fdb51a3f6028c0f316d083}\label{classmage_1_1_resource_adaa2464cb1fdb51a3f6028c0f316d083}} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Guid@{Get\+Guid}}
 \index{Get\+Guid@{Get\+Guid}!mage\+::\+Resource@{mage\+::\+Resource}}
@@ -127,35 +110,29 @@ Returns the globally unique identifier of this resource.
 \begin{DoxyReturn}{Returns}
 A reference to the globally unique identifier of this resource. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_resource_a6414c6f8342f4cc92e7ed7861000cd2f}\label{classmage_1_1_resource_a6414c6f8342f4cc92e7ed7861000cd2f}} 
-\index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Name@{Get\+Name}}
-\index{Get\+Name@{Get\+Name}!mage\+::\+Resource@{mage\+::\+Resource}}
-\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
-{\footnotesize\ttfamily template$<$typename ResourceT$>$ \\
-const wstring \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ ResourceT $>$\+::Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-Returns the name of this resource.
-
-\begin{DoxyPrecond}{Precondition}
-This resource represents a file resource. 
-\end{DoxyPrecond}
-\begin{DoxyReturn}{Returns}
-The name of this resource. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_resource_a01cb4f6f8ff66a1f2545edc89af656c9}\label{classmage_1_1_resource_a01cb4f6f8ff66a1f2545edc89af656c9}} 
+\mbox{\Hypertarget{classmage_1_1_resource_a7611d0317a247d324d432b26aab6aee2}\label{classmage_1_1_resource_a7611d0317a247d324d432b26aab6aee2}} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Path@{Get\+Path}}
 \index{Get\+Path@{Get\+Path}!mage\+::\+Resource@{mage\+::\+Resource}}
 \subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
 {\footnotesize\ttfamily template$<$typename ResourceT$>$ \\
-const wstring \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ ResourceT $>$\+::Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+const std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ ResourceT $>$\+::Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the path of this resource.
 
-\begin{DoxyPrecond}{Precondition}
-This resource represents a file resource. 
-\end{DoxyPrecond}
 \begin{DoxyReturn}{Returns}
 The path of this resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_resource_ae783140e30a974c8820e5ae8be9e4b44}\label{classmage_1_1_resource_ae783140e30a974c8820e5ae8be9e4b44}} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Is\+File\+Resource@{Is\+File\+Resource}}
+\index{Is\+File\+Resource@{Is\+File\+Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Is\+File\+Resource()}{IsFileResource()}}
+{\footnotesize\ttfamily template$<$typename ResourceT$>$ \\
+bool \mbox{\hyperlink{classmage_1_1_resource}{mage\+::\+Resource}}$<$ ResourceT $>$\+::Is\+File\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks whether this resource represents a file resource.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this resource represents a file resource. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_resource_a938159cb02ec565b9b957f993db4769d}\label{classmage_1_1_resource_a938159cb02ec565b9b957f993db4769d}} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!operator=@{operator=}}

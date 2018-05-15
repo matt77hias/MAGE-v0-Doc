@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.151.0</span>
+   &#160;<span id="projectnumber">v0.152.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -117,10 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81ea888d1b170515713432ca28629ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a93796179f22be90471bea0f7a7cf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_writer.html">Writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#a03a93796179f22be90471bea0f7a7cf0">operator=</a> (<a class="el" href="classmage_1_1_writer.html">Writer</a> &amp;&amp;writer) noexcept</td></tr>
 <tr class="separator:a03a93796179f22be90471bea0f7a7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af5416468b0a51983d07aec8061eb27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#a9af5416468b0a51983d07aec8061eb27">WriteToFile</a> (wstring fname)</td></tr>
-<tr class="separator:a9af5416468b0a51983d07aec8061eb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedbc8d5fa02444ecba2e040ca8e98281"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#aedbc8d5fa02444ecba2e040ca8e98281">GetFilename</a> () const noexcept</td></tr>
-<tr class="separator:aedbc8d5fa02444ecba2e040ca8e98281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01e930b55888da88e345b0910d4b1c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#ac01e930b55888da88e345b0910d4b1c2">WriteToFile</a> (std::filesystem::path path)</td></tr>
+<tr class="separator:ac01e930b55888da88e345b0910d4b1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab023ae8174132f233c6e1fa4d3a2a1c8"><td class="memItemLeft" align="right" valign="top">const std::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#ab023ae8174132f233c6e1fa4d3a2a1c8">GetPath</a> () const noexcept</td></tr>
+<tr class="separator:ab023ae8174132f233c6e1fa4d3a2a1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -148,8 +148,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac4884215d1b547e990633474bf61c470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a0ee1bd45ad7dbb3dc8c8e1770e3538d4">UniqueFileStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#ac4884215d1b547e990633474bf61c470">m_file_stream</a></td></tr>
 <tr class="separator:ac4884215d1b547e990633474bf61c470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa271ee47897d4961e9d62132d8faeb5"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#afa271ee47897d4961e9d62132d8faeb5">m_fname</a></td></tr>
-<tr class="separator:afa271ee47897d4961e9d62132d8faeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc2c110c2652818a7bfdccc8c240fe6"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_writer.html#a1cc2c110c2652818a7bfdccc8c240fe6">m_path</a></td></tr>
+<tr class="separator:a1cc2c110c2652818a7bfdccc8c240fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of writers for writing (non-binary) text files. </p>
@@ -273,8 +273,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aedbc8d5fa02444ecba2e040ca8e98281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedbc8d5fa02444ecba2e040ca8e98281">&#9670;&nbsp;</a></span>GetFilename()</h2>
+<a id="ab023ae8174132f233c6e1fa4d3a2a1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab023ae8174132f233c6e1fa4d3a2a1c8">&#9670;&nbsp;</a></span>GetPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +283,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const wstring&amp; mage::Writer::GetFilename </td>
+          <td class="memname">const std::filesystem::path&amp; mage::Writer::GetPath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -295,8 +295,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the current filename of this writer.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the current filename of this writer. </dd></dl>
+<p>Returns the current path of this writer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the current path of this writer. </dd></dl>
 
 </div>
 </div>
@@ -519,8 +519,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9af5416468b0a51983d07aec8061eb27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af5416468b0a51983d07aec8061eb27">&#9670;&nbsp;</a></span>WriteToFile()</h2>
+<a id="ac01e930b55888da88e345b0910d4b1c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01e930b55888da88e345b0910d4b1c2">&#9670;&nbsp;</a></span>WriteToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,22 +528,22 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void mage::Writer::WriteToFile </td>
           <td>(</td>
-          <td class="paramtype">wstring&#160;</td>
-          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td class="paramtype">std::filesystem::path&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Writes to the given file.</p>
+<p>Writes to the file associated with the given path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>The file name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>The path. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classmage_1_1_exception.html">Exception</a></td><td>Failed to write to the given file. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmage_1_1_exception.html">Exception</a></td><td>Failed to write to the file. </td></tr>
   </table>
   </dd>
 </dl>
@@ -574,8 +574,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afa271ee47897d4961e9d62132d8faeb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa271ee47897d4961e9d62132d8faeb5">&#9670;&nbsp;</a></span>m_fname</h2>
+<a id="a1cc2c110c2652818a7bfdccc8c240fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc2c110c2652818a7bfdccc8c240fe6">&#9670;&nbsp;</a></span>m_path</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,7 +584,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">wstring mage::Writer::m_fname</td>
+          <td class="memname">std::filesystem::path mage::Writer::m_path</td>
         </tr>
       </table>
   </td>
@@ -593,7 +593,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The current filename of this writer. </p>
+<p>The current path of this writer. </p>
 
 </div>
 </div>

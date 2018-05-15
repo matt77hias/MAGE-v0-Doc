@@ -13,7 +13,7 @@ Inheritance diagram for mage\+:\+:loader\+:\+:V\+A\+R\+Reader\+:\begin{figure}[H
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_ae06b2b97d9a0ce16047b0c8cfcd4a73f}{V\+A\+R\+Reader}} (std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$ \&variable\+\_\+buffer)
+\mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_ae06b2b97d9a0ce16047b0c8cfcd4a73f}{V\+A\+R\+Reader}} (std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$ \&variable\+\_\+buffer)
 \item 
 \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_ab4ab4d94c90a2797ae40e54e0dd7c127}{V\+A\+R\+Reader}} (const \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader}{V\+A\+R\+Reader}} \&reader)=delete
 \item 
@@ -25,11 +25,11 @@ Inheritance diagram for mage\+:\+:loader\+:\+:V\+A\+R\+Reader\+:\begin{figure}[H
 \item 
 \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader}{V\+A\+R\+Reader}} \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a0da01229f594cb701b3e20d53be9d16e}{operator=}} (\mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader}{V\+A\+R\+Reader}} \&\&reader)=delete
 \item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a6ee0c53351656ac4cd92db1d7c372cff}{Read\+From\+File}} (wstring fname, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
+void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_ad4236487534d5dba6582613317317092}{Read\+From\+File}} (std\+::filesystem\+::path path, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
 void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a5aa9068792817b6d6dc840a44b788159}{Read\+From\+Memory}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ input, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a682ed8030c99a62d4409a01f9efa6d6b}{Get\+Filename}} () const noexcept
+const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a9740b3cecdcf5a27c696a08eef3b09da}{Get\+Path}} () const noexcept
 \item 
 const string \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_aa00e1e27b614e11ec9f70e52d0bac551}{Get\+Delimiters}} () const noexcept
 \end{DoxyCompactItemize}
@@ -38,28 +38,14 @@ const string \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_aa00e1e27b
 \item 
 virtual void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a511a0778cc515aece781bfdb76024cea}{Read\+Line}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ line) override
 \item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a2191e47d0806d408145422eb46e32ba1}{Read\+V\+A\+R\+Bool}} ()
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a253cd885c8527453feedfe619fb684e1}{Read\+V\+A\+R\+Variable}} ()
 \item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a88a819066140cacd8ce494fca125e1e2}{Read\+V\+A\+R\+Int}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a4e84ca5a6fabcf2ea29fbf32a5bdf1c4}{Read\+V\+A\+R\+Int2}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a519dd541a8ee90bc83505d80e5dc1f49}{Read\+V\+A\+R\+Int3}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a11f2ecdf718d1665a79406e7bebbc6f1}{Read\+V\+A\+R\+Float}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_ac80f8a30ffc67fc6f048cf32dd43c2e8}{Read\+V\+A\+R\+Float2}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a133ffd4462be737377c0cdb921a90e75}{Read\+V\+A\+R\+Float3}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a70dfe7e7e0b2fb9a79b6ff4342cc58dc}{Read\+V\+A\+R\+Float4}} ()
-\item 
-void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a4ccc6a48ca72707853ff910362318940}{Read\+V\+A\+R\+String}} ()
+{\footnotesize template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ }\\void \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_aa27db2b3ba9c66dbdd2c75c6aba1848c}{Read\+V\+A\+R\+Variable}} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$ \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a71291d47ea9f9d679bfd7584447ae6bb}{m\+\_\+variable\+\_\+buffer}}
+std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$ \& \mbox{\hyperlink{classmage_1_1loader_1_1_v_a_r_reader_a71291d47ea9f9d679bfd7584447ae6bb}{m\+\_\+variable\+\_\+buffer}}
 \end{DoxyCompactItemize}
 
 
@@ -71,7 +57,7 @@ A class of V\+AR file readers for reading variable scripts.
 \index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!V\+A\+R\+Reader@{V\+A\+R\+Reader}}
 \index{V\+A\+R\+Reader@{V\+A\+R\+Reader}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
 \subsubsection{\texorpdfstring{V\+A\+R\+Reader()}{VARReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::loader\+::\+V\+A\+R\+Reader\+::\+V\+A\+R\+Reader (\begin{DoxyParamCaption}\item[{std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::loader\+::\+V\+A\+R\+Reader\+::\+V\+A\+R\+Reader (\begin{DoxyParamCaption}\item[{std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a V\+AR reader.
 
@@ -126,16 +112,16 @@ Returns the current delimiters of this line reader.
 \begin{DoxyReturn}{Returns}
 A reference to the current delimiters of this line reader. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a682ed8030c99a62d4409a01f9efa6d6b}\label{classmage_1_1loader_1_1_v_a_r_reader_a682ed8030c99a62d4409a01f9efa6d6b}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Line\+Reader\+::\+Get\+Filename\hspace{0.3cm}{\ttfamily [noexcept]}}
+\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a9740b3cecdcf5a27c696a08eef3b09da}\label{classmage_1_1loader_1_1_v_a_r_reader_a9740b3cecdcf5a27c696a08eef3b09da}} 
+\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
+{\footnotesize\ttfamily const std\+::filesystem\+::path\& mage\+::\+Line\+Reader\+::\+Get\+Path\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the current filename of this line reader.
+Returns the current path of this line reader.
 
 \begin{DoxyReturn}{Returns}
-A reference to the current filename of this line reader. 
+A reference to the current path of this line reader. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a78d39071ad5103c848782ff82be397bb}\label{classmage_1_1loader_1_1_v_a_r_reader_a78d39071ad5103c848782ff82be397bb}} 
 \index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!operator=@{operator=}}
@@ -169,24 +155,24 @@ Moves the given V\+AR reader to this V\+AR reader.
 \begin{DoxyReturn}{Returns}
 A reference to the moved V\+AR reader (i.\+e. this V\+AR reader). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a6ee0c53351656ac4cd92db1d7c372cff}\label{classmage_1_1loader_1_1_v_a_r_reader_a6ee0c53351656ac4cd92db1d7c372cff}} 
+\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_ad4236487534d5dba6582613317317092}\label{classmage_1_1loader_1_1_v_a_r_reader_ad4236487534d5dba6582613317317092}} 
 \index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
 {\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File}
 
-Reads from the given file.
+Reads from the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & The file name. \\
+\mbox{\tt in}  & {\em path} & The path. \\
 \hline
 \mbox{\tt in}  & {\em delimiters} & The string containing the token delimiters (single characters). \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a5aa9068792817b6d6dc840a44b788159}\label{classmage_1_1loader_1_1_v_a_r_reader_a5aa9068792817b6d6dc840a44b788159}} 
@@ -231,121 +217,46 @@ Reads the given line.
 
 Implements \mbox{\hyperlink{classmage_1_1_line_reader_ae50ac0637eddead37a7a9cca2a570072}{mage\+::\+Line\+Reader}}.
 
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a2191e47d0806d408145422eb46e32ba1}\label{classmage_1_1loader_1_1_v_a_r_reader_a2191e47d0806d408145422eb46e32ba1}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Bool@{Read\+V\+A\+R\+Bool}}
-\index{Read\+V\+A\+R\+Bool@{Read\+V\+A\+R\+Bool}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Bool()}{ReadVARBool()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a253cd885c8527453feedfe619fb684e1}\label{classmage_1_1loader_1_1_v_a_r_reader_a253cd885c8527453feedfe619fb684e1}} 
+\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Variable@{Read\+V\+A\+R\+Variable}}
+\index{Read\+V\+A\+R\+Variable@{Read\+V\+A\+R\+Variable}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Variable()}{ReadVARVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads a Bool variable definition.
+Reads a variable definition.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The variable type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a bool variable definition. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a variable definition. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a11f2ecdf718d1665a79406e7bebbc6f1}\label{classmage_1_1loader_1_1_v_a_r_reader_a11f2ecdf718d1665a79406e7bebbc6f1}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Float@{Read\+V\+A\+R\+Float}}
-\index{Read\+V\+A\+R\+Float@{Read\+V\+A\+R\+Float}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Float()}{ReadVARFloat()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_aa27db2b3ba9c66dbdd2c75c6aba1848c}\label{classmage_1_1loader_1_1_v_a_r_reader_aa27db2b3ba9c66dbdd2c75c6aba1848c}} 
+\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Variable@{Read\+V\+A\+R\+Variable}}
+\index{Read\+V\+A\+R\+Variable@{Read\+V\+A\+R\+Variable}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Variable()}{ReadVARVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t N, size\+\_\+t A = alignof(\+T)$>$ \\
+void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Reads a Float variable definition.
+Reads an array variable definition.
 
 
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a float variable definition. \\
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The variable type. \\
 \hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_ac80f8a30ffc67fc6f048cf32dd43c2e8}\label{classmage_1_1loader_1_1_v_a_r_reader_ac80f8a30ffc67fc6f048cf32dd43c2e8}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Float2@{Read\+V\+A\+R\+Float2}}
-\index{Read\+V\+A\+R\+Float2@{Read\+V\+A\+R\+Float2}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Float2()}{ReadVARFloat2()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Float2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads a Float2 variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a float2 variable definition. \\
+{\em N} & The number of values in the array. \\
 \hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a133ffd4462be737377c0cdb921a90e75}\label{classmage_1_1loader_1_1_v_a_r_reader_a133ffd4462be737377c0cdb921a90e75}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Float3@{Read\+V\+A\+R\+Float3}}
-\index{Read\+V\+A\+R\+Float3@{Read\+V\+A\+R\+Float3}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Float3()}{ReadVARFloat3()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Float3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads a Float3 variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a float3 variable definition. \\
+{\em A} & The alignment of the array. \\
 \hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a70dfe7e7e0b2fb9a79b6ff4342cc58dc}\label{classmage_1_1loader_1_1_v_a_r_reader_a70dfe7e7e0b2fb9a79b6ff4342cc58dc}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Float4@{Read\+V\+A\+R\+Float4}}
-\index{Read\+V\+A\+R\+Float4@{Read\+V\+A\+R\+Float4}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Float4()}{ReadVARFloat4()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Float4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads a Float4 variable definition.
-
+\end{DoxyTemplParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a float4 variable definition. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a88a819066140cacd8ce494fca125e1e2}\label{classmage_1_1loader_1_1_v_a_r_reader_a88a819066140cacd8ce494fca125e1e2}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Int@{Read\+V\+A\+R\+Int}}
-\index{Read\+V\+A\+R\+Int@{Read\+V\+A\+R\+Int}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Int()}{ReadVARInt()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads an Int variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read an int variable definition. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a4e84ca5a6fabcf2ea29fbf32a5bdf1c4}\label{classmage_1_1loader_1_1_v_a_r_reader_a4e84ca5a6fabcf2ea29fbf32a5bdf1c4}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Int2@{Read\+V\+A\+R\+Int2}}
-\index{Read\+V\+A\+R\+Int2@{Read\+V\+A\+R\+Int2}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Int2()}{ReadVARInt2()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Int2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads an Int2 variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read an int2 variable definition. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a519dd541a8ee90bc83505d80e5dc1f49}\label{classmage_1_1loader_1_1_v_a_r_reader_a519dd541a8ee90bc83505d80e5dc1f49}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+Int3@{Read\+V\+A\+R\+Int3}}
-\index{Read\+V\+A\+R\+Int3@{Read\+V\+A\+R\+Int3}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+Int3()}{ReadVARInt3()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+Int3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads an Int variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read an int3 variable definition. \\
-\hline
-\end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1loader_1_1_v_a_r_reader_a4ccc6a48ca72707853ff910362318940}\label{classmage_1_1loader_1_1_v_a_r_reader_a4ccc6a48ca72707853ff910362318940}} 
-\index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!Read\+V\+A\+R\+String@{Read\+V\+A\+R\+String}}
-\index{Read\+V\+A\+R\+String@{Read\+V\+A\+R\+String}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
-\subsubsection{\texorpdfstring{Read\+V\+A\+R\+String()}{ReadVARString()}}
-{\footnotesize\ttfamily void mage\+::loader\+::\+V\+A\+R\+Reader\+::\+Read\+V\+A\+R\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-Reads a String variable definition.
-
-
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a string variable definition. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read an array variable definition. \\
 \hline
 \end{DoxyExceptions}
 
@@ -355,6 +266,6 @@ Reads a String variable definition.
 \index{mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}!m\+\_\+variable\+\_\+buffer@{m\+\_\+variable\+\_\+buffer}}
 \index{m\+\_\+variable\+\_\+buffer@{m\+\_\+variable\+\_\+buffer}!mage\+::loader\+::\+V\+A\+R\+Reader@{mage\+::loader\+::\+V\+A\+R\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+buffer}{m\_variable\_buffer}}
-{\footnotesize\ttfamily std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$\& mage\+::loader\+::\+V\+A\+R\+Reader\+::m\+\_\+variable\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$\& mage\+::loader\+::\+V\+A\+R\+Reader\+::m\+\_\+variable\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 A reference to a map containing the read variables of this V\+AR reader. 

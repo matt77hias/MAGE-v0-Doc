@@ -31,7 +31,7 @@ constexpr \mbox{\hyperlink{structmage_1_1_array_a8dc58948e15554f715b280a72140a1f
 \item 
 constexpr \mbox{\hyperlink{structmage_1_1_array_a4cf0fb395b42d53b6e59868739dc9613}{Array}} (\mbox{\hyperlink{structmage_1_1_array}{Array}} \&\&a) noexcept=default
 \item 
-{\footnotesize template$<$typename U , size\+\_\+t FromA$>$ }\\constexpr \mbox{\hyperlink{structmage_1_1_array_ac3518868e475bfc4d4bcf9d137cebb28}{Array}} (const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ U, N, FromA $>$ \&a) noexcept
+{\footnotesize template$<$typename FromT , size\+\_\+t FromA, typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T, T $>$ $>$$>$ }\\constexpr \mbox{\hyperlink{structmage_1_1_array_a950b26208c3546704f42e92c312a93ed}{Array}} (const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ FromT, N, FromA $>$ \&a) noexcept
 \item 
 \mbox{\hyperlink{structmage_1_1_array_a7adc09166915789b93a7a3af118182e0}{$\sim$\+Array}} ()=default
 \item 
@@ -54,7 +54,7 @@ constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, t
 \index{Array@{Array}!mage\+::\+Array@{mage\+::\+Array}}
 \subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
 {\footnotesize\ttfamily template$<$typename T, size\+\_\+t N, size\+\_\+t A = alignof(\+T), typename  = std\+::enable\+\_\+if\+\_\+t$<$ (\+N != 1) $>$$>$ \\
-constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, typename $>$\+::\mbox{\hyperlink{structmage_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, typename $>$\+::\mbox{\hyperlink{structmage_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
 \mbox{\Hypertarget{structmage_1_1_array_ab6dbce28b41b7ef1e9c0195f24f378a6}\label{structmage_1_1_array_ab6dbce28b41b7ef1e9c0195f24f378a6}} 
 \index{mage\+::\+Array@{mage\+::\+Array}!Array@{Array}}
@@ -110,13 +110,13 @@ constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, t
 {\footnotesize\ttfamily template$<$typename T, size\+\_\+t N, size\+\_\+t A = alignof(\+T), typename  = std\+::enable\+\_\+if\+\_\+t$<$ (\+N != 1) $>$$>$ \\
 constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, typename $>$\+::\mbox{\hyperlink{structmage_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ T, N, A, typename $>$ \&\&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{structmage_1_1_array_ac3518868e475bfc4d4bcf9d137cebb28}\label{structmage_1_1_array_ac3518868e475bfc4d4bcf9d137cebb28}} 
+\mbox{\Hypertarget{structmage_1_1_array_a950b26208c3546704f42e92c312a93ed}\label{structmage_1_1_array_a950b26208c3546704f42e92c312a93ed}} 
 \index{mage\+::\+Array@{mage\+::\+Array}!Array@{Array}}
 \index{Array@{Array}!mage\+::\+Array@{mage\+::\+Array}}
 \subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
 {\footnotesize\ttfamily template$<$typename T, size\+\_\+t N, size\+\_\+t A = alignof(\+T), typename  = std\+::enable\+\_\+if\+\_\+t$<$ (\+N != 1) $>$$>$ \\
-template$<$typename U , size\+\_\+t FromA$>$ \\
-constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, typename $>$\+::\mbox{\hyperlink{structmage_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ U, N, FromA $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+template$<$typename FromT , size\+\_\+t FromA, typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T, T $>$ $>$$>$ \\
+constexpr \mbox{\hyperlink{structmage_1_1_array}{mage\+::\+Array}}$<$ T, N, A, typename $>$\+::\mbox{\hyperlink{structmage_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structmage_1_1_array}{Array}}$<$ FromT, N, FromA $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
 \mbox{\Hypertarget{structmage_1_1_array_a7adc09166915789b93a7a3af118182e0}\label{structmage_1_1_array_a7adc09166915789b93a7a3af118182e0}} 
 \index{mage\+::\+Array@{mage\+::\+Array}!````~Array@{$\sim$\+Array}}

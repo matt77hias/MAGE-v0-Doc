@@ -9,14 +9,15 @@ var classmage_1_1_line_reader =
     [ "ContainsQuotedString", "classmage_1_1_line_reader.html#a99b4fa47fc341ad4fda112ea9505efcb", null ],
     [ "GetCurrentLineNumber", "classmage_1_1_line_reader.html#aa0ed768e2799b74f2341c56fc6ac4969", null ],
     [ "GetDelimiters", "classmage_1_1_line_reader.html#aa00e1e27b614e11ec9f70e52d0bac551", null ],
-    [ "GetFilename", "classmage_1_1_line_reader.html#a682ed8030c99a62d4409a01f9efa6d6b", null ],
+    [ "GetPath", "classmage_1_1_line_reader.html#a9740b3cecdcf5a27c696a08eef3b09da", null ],
     [ "operator=", "classmage_1_1_line_reader.html#a2247078d0b5602f9a9a6b74019832faf", null ],
     [ "operator=", "classmage_1_1_line_reader.html#a3ba691cb32a1ab5dcbe75498068c1b86", null ],
     [ "Postprocess", "classmage_1_1_line_reader.html#adfde21013140a1058d3dd567204abfb5", null ],
     [ "Preprocess", "classmage_1_1_line_reader.html#a4de135cfb0434be786cfcfd7959031ef", null ],
-    [ "Read", "classmage_1_1_line_reader.html#aa1ba5aa332e49bdd63ef4ee4021120fd", null ],
+    [ "Read", "classmage_1_1_line_reader.html#a9bbad433ab93ce012aec7155adafbedb", null ],
+    [ "Read", "classmage_1_1_line_reader.html#a208eb25a7715761178317eec72c93c75", null ],
     [ "ReadChars", "classmage_1_1_line_reader.html#afcb163cbc75ad1650437d809bbbc2d9b", null ],
-    [ "ReadFromFile", "classmage_1_1_line_reader.html#a6ee0c53351656ac4cd92db1d7c372cff", null ],
+    [ "ReadFromFile", "classmage_1_1_line_reader.html#ad4236487534d5dba6582613317317092", null ],
     [ "ReadFromMemory", "classmage_1_1_line_reader.html#a5aa9068792817b6d6dc840a44b788159", null ],
     [ "ReadLine", "classmage_1_1_line_reader.html#ae50ac0637eddead37a7a9cca2a570072", null ],
     [ "ReadLineRemaining", "classmage_1_1_line_reader.html#a3a4b99bfef1e8a826d74a01bcc663fcb", null ],
@@ -24,6 +25,6 @@ var classmage_1_1_line_reader =
     [ "m_context", "classmage_1_1_line_reader.html#ae1f715152d14188cc490870e307099d8", null ],
     [ "m_delimiters", "classmage_1_1_line_reader.html#a6de3398ac59fdd98f8c40cff6f5c1075", null ],
     [ "m_file_stream", "classmage_1_1_line_reader.html#a510ff5355c6d26d7c29dc692ef18a3e2", null ],
-    [ "m_fname", "classmage_1_1_line_reader.html#ad6f55ba12fc610ab2fc1c26a48d12321", null ],
-    [ "m_line_number", "classmage_1_1_line_reader.html#ab145590a7e115106c0987905fde98393", null ]
+    [ "m_line_number", "classmage_1_1_line_reader.html#ab145590a7e115106c0987905fde98393", null ],
+    [ "m_path", "classmage_1_1_line_reader.html#a05436c40af16b882c2ebd515287598f7", null ]
 ];

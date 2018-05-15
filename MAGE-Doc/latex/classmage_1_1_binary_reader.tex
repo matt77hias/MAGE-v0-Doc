@@ -11,11 +11,11 @@
 \item 
 \mbox{\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader}} \& \mbox{\hyperlink{classmage_1_1_binary_reader_a280998bb89dacdcb88ec87c49ce90a02}{operator=}} (\mbox{\hyperlink{classmage_1_1_binary_reader}{Binary\+Reader}} \&\&reader) noexcept
 \item 
-void \mbox{\hyperlink{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de}{Read\+From\+File}} (wstring fname, bool big\+\_\+endian)
+void \mbox{\hyperlink{classmage_1_1_binary_reader_a38daa2eb250146c537bbc65044a5738f}{Read\+From\+File}} (std\+::filesystem\+::path path, bool big\+\_\+endian)
 \item 
 void \mbox{\hyperlink{classmage_1_1_binary_reader_a093d95a36bdc45f5d51f48f1ee09bb1f}{Read\+From\+Memory}} (gsl\+::span$<$ const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}} $>$ input, bool big\+\_\+endian)
 \item 
-const wstring \& \mbox{\hyperlink{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15badff08fe4a}{Get\+Filename}} () const noexcept
+const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1_binary_reader_af2c3f4e6a98472a6435dd9d1105b4bc9}{Get\+Path}} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,7 +32,7 @@ bool \mbox{\hyperlink{classmage_1_1_binary_reader_af68b85b30fbe8b5f2d4720163a658
 \item 
 \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ \mbox{\hyperlink{classmage_1_1_binary_reader_ad2bed0756a38358fc4a8b10b02007af8}{Read\+Chars}} (size\+\_\+t size)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\const DataT \mbox{\hyperlink{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92}{Read}} ()
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{classmage_1_1_binary_reader_aa99b02137069566c010692093b328a6a}{Read}} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -42,7 +42,7 @@ virtual void \mbox{\hyperlink{classmage_1_1_binary_reader_a67157828a9781644fb55b
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-wstring \mbox{\hyperlink{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f}{m\+\_\+fname}}
+std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_binary_reader_a0941e624c8386fee2e2e92c6d1efdb75}{m\+\_\+path}}
 \item 
 bool \mbox{\hyperlink{classmage_1_1_binary_reader_a8d23fde958e08efe248edb5d92861113}{m\+\_\+big\+\_\+endian}}
 \item 
@@ -110,16 +110,16 @@ Checks if there are characters left to read by this binary reader.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if there are characters left to read by this binary reader. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15badff08fe4a}\label{classmage_1_1_binary_reader_ad9d4a4a3e2f0afc666d15badff08fe4a}} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Binary\+Reader\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+\mbox{\Hypertarget{classmage_1_1_binary_reader_af2c3f4e6a98472a6435dd9d1105b4bc9}\label{classmage_1_1_binary_reader_af2c3f4e6a98472a6435dd9d1105b4bc9}} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
+{\footnotesize\ttfamily const std\+::filesystem\+::path\& mage\+::\+Binary\+Reader\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Returns the current filename of this binary reader.
+Returns the current path of this binary reader.
 
 \begin{DoxyReturn}{Returns}
-A reference to the current filename of this binary reader. 
+A reference to the current path of this binary reader. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3}\label{classmage_1_1_binary_reader_a0408bb456983b4a03ae42ab69c6f4bc3}} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!operator=@{operator=}}
@@ -153,26 +153,26 @@ Moves the given binary reader to this binary reader.
 \begin{DoxyReturn}{Returns}
 A reference to the moved binary reader (i.\+e. this binary reader). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92}\label{classmage_1_1_binary_reader_ad914ec3edfef7a9e9976ef706be44b92}} 
+\mbox{\Hypertarget{classmage_1_1_binary_reader_aa99b02137069566c010692093b328a6a}\label{classmage_1_1_binary_reader_aa99b02137069566c010692093b328a6a}} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read@{Read}}
 \index{Read@{Read}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read()}{Read()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-const DataT mage\+::\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T mage\+::\+Binary\+Reader\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Reads a {\ttfamily DataT} element.
+Reads a {\ttfamily T} value.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type. \\
+{\em T} & The data type. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}
-The {\ttfamily DataT} element read. 
+The {\ttfamily T} value read. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a {\ttfamily DataT} element. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a {\ttfamily T} value. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1_binary_reader_ad2bed0756a38358fc4a8b10b02007af8}\label{classmage_1_1_binary_reader_ad2bed0756a38358fc4a8b10b02007af8}} 
@@ -209,24 +209,24 @@ Starts reading.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de}\label{classmage_1_1_binary_reader_ad302abb7498cce11c0982d98973817de}} 
+\mbox{\Hypertarget{classmage_1_1_binary_reader_a38daa2eb250146c537bbc65044a5738f}\label{classmage_1_1_binary_reader_a38daa2eb250146c537bbc65044a5738f}} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
-{\footnotesize\ttfamily void mage\+::\+Binary\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{wstring}]{fname,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Binary\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path,  }\item[{bool}]{big\+\_\+endian }\end{DoxyParamCaption})}
 
-Reads from the given file.
+Reads from the given file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & The file name. \\
+\mbox{\tt in}  & {\em path} & The path. \\
 \hline
 \mbox{\tt in}  & {\em big\+\_\+endian} & Flag indicating whether the given byte array should be interpreted as big endian or not (i.\+e. little endian). \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given file. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classmage_1_1_binary_reader_a093d95a36bdc45f5d51f48f1ee09bb1f}\label{classmage_1_1_binary_reader_a093d95a36bdc45f5d51f48f1ee09bb1f}} 
@@ -270,13 +270,13 @@ A pointer to the data to read of this binary reader. \mbox{\Hypertarget{classmag
 \subsubsection{\texorpdfstring{m\+\_\+end}{m\_end}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{namespacemage_afc638980bc6154f15af5e2d93a0e0ea9}{U8}}$\ast$ mage\+::\+Binary\+Reader\+::m\+\_\+end\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the end position of this binary reader. \mbox{\Hypertarget{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f}\label{classmage_1_1_binary_reader_a9c97c02d53ce60a9952751ad4f55414f}} 
-\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+fname@{m\+\_\+fname}}
-\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
-\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
-{\footnotesize\ttfamily wstring mage\+::\+Binary\+Reader\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the end position of this binary reader. \mbox{\Hypertarget{classmage_1_1_binary_reader_a0941e624c8386fee2e2e92c6d1efdb75}\label{classmage_1_1_binary_reader_a0941e624c8386fee2e2e92c6d1efdb75}} 
+\index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+path}{m\_path}}
+{\footnotesize\ttfamily std\+::filesystem\+::path mage\+::\+Binary\+Reader\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
 
-The current filename of this line reader. \mbox{\Hypertarget{classmage_1_1_binary_reader_aedb9632de1cf95d5af49499217744ed5}\label{classmage_1_1_binary_reader_aedb9632de1cf95d5af49499217744ed5}} 
+The current path of this binary reader. \mbox{\Hypertarget{classmage_1_1_binary_reader_aedb9632de1cf95d5af49499217744ed5}\label{classmage_1_1_binary_reader_aedb9632de1cf95d5af49499217744ed5}} 
 \index{mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}!m\+\_\+pos@{m\+\_\+pos}}
 \index{m\+\_\+pos@{m\+\_\+pos}!mage\+::\+Binary\+Reader@{mage\+::\+Binary\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+pos}{m\_pos}}

@@ -27,11 +27,11 @@ virtual \mbox{\hyperlink{classmage_1_1_variable_script_ae7026e1283b1a1164f02fdc3
 \item 
 void \mbox{\hyperlink{classmage_1_1_variable_script_a5f1cc3bfb611edbc8dfb433ec55cc965}{Import\+Script}} ()
 \item 
-void \mbox{\hyperlink{classmage_1_1_variable_script_ae8bbfb30b5d47b5c66cd1b45bdd2cec5}{Import\+Script}} (const wstring \&fname)
+void \mbox{\hyperlink{classmage_1_1_variable_script_aea1a4abf7c439897b9ac332896709c93}{Import\+Script}} (const std\+::filesystem\+::path \&path)
 \item 
 void \mbox{\hyperlink{classmage_1_1_variable_script_ab12b7f789f6af2b301ff350fa401b324}{Export\+Script}} () const
 \item 
-void \mbox{\hyperlink{classmage_1_1_variable_script_a05ce2bcc72418422a443bcd8eff23486}{Export\+Script}} (const wstring \&fname) const
+void \mbox{\hyperlink{classmage_1_1_variable_script_aba954f58218794227f026d8e5d286da9}{Export\+Script}} (const std\+::filesystem\+::path \&path) const
 \item 
 bool \mbox{\hyperlink{classmage_1_1_variable_script_a8a3f47783455cd6264dfc996887fd0f0}{empty}} () const noexcept
 \item 
@@ -52,7 +52,7 @@ void \mbox{\hyperlink{classmage_1_1_variable_script_add51955d83e85e6d6acd82cfe40
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$ \mbox{\hyperlink{classmage_1_1_variable_script_aed925cedf17c486fad876764e53d9e04}{m\+\_\+variables}}
+std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$ \mbox{\hyperlink{classmage_1_1_variable_script_aed925cedf17c486fad876764e53d9e04}{m\+\_\+variables}}
 \end{DoxyCompactItemize}
 
 
@@ -182,17 +182,17 @@ Exports this variable script to the file of this variable script.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to export the variable script to file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_variable_script_a05ce2bcc72418422a443bcd8eff23486}\label{classmage_1_1_variable_script_a05ce2bcc72418422a443bcd8eff23486}} 
+\mbox{\Hypertarget{classmage_1_1_variable_script_aba954f58218794227f026d8e5d286da9}\label{classmage_1_1_variable_script_aba954f58218794227f026d8e5d286da9}} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Export\+Script@{Export\+Script}}
 \index{Export\+Script@{Export\+Script}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{Export\+Script()}{ExportScript()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Variable\+Script\+::\+Export\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily void mage\+::\+Variable\+Script\+::\+Export\+Script (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption}) const}
 
-Exports this variable script to the file with the given filename.
+Exports this variable script to the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\mbox{\tt in}  & {\em path} & A reference to the path. \\
 \hline
 \end{DoxyParams}
 
@@ -242,17 +242,17 @@ Imports this variable script from the file of this variable script.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to import the variable script from file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_variable_script_ae8bbfb30b5d47b5c66cd1b45bdd2cec5}\label{classmage_1_1_variable_script_ae8bbfb30b5d47b5c66cd1b45bdd2cec5}} 
+\mbox{\Hypertarget{classmage_1_1_variable_script_aea1a4abf7c439897b9ac332896709c93}\label{classmage_1_1_variable_script_aea1a4abf7c439897b9ac332896709c93}} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Import\+Script@{Import\+Script}}
 \index{Import\+Script@{Import\+Script}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{Import\+Script()}{ImportScript()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+Variable\+Script\+::\+Import\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Variable\+Script\+::\+Import\+Script (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption})}
 
-Imports this variable script from the file with the given filename.
+Imports this variable script from the file associated with the given path.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
+\mbox{\tt in}  & {\em path} & A reference to the path. \\
 \hline
 \end{DoxyParams}
 
@@ -353,6 +353,6 @@ The number of variables in this variable script.
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!m\+\_\+variables@{m\+\_\+variables}}
 \index{m\+\_\+variables@{m\+\_\+variables}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{m\+\_\+variables}{m\_variables}}
-{\footnotesize\ttfamily std\+::map$<$ string, \mbox{\hyperlink{namespacemage_aa1fe0628487e0706e44efdc62dbdb3a2}{Value}} $>$ mage\+::\+Variable\+Script\+::m\+\_\+variables\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::map$<$ string, \mbox{\hyperlink{namespacemage_a5bc219b33037a43e23f59e4e8ddff10d}{Value}} $>$ mage\+::\+Variable\+Script\+::m\+\_\+variables\hspace{0.3cm}{\ttfamily [private]}}
 
 A map containing the variables of this variable script. 

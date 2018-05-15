@@ -52,13 +52,13 @@ void $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a4eece9ca87
 \item 
 void $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ab9750ea9abea18890ef432e9f5893ebf}{Alloc\+High}} (size\+\_\+t size) noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a5dee875f5ba9b279ed4f0b1e3faf1ede}{Alloc\+Data\+Low}} (size\+\_\+t count=1, bool initialization=false) noexcept
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}{Alloc\+Data\+Low}} (size\+\_\+t count=1, bool initialization=false)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\DataT $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a214b9ca245038c0441d15a5062d6c5f5}{Alloc\+Data\+High}} (size\+\_\+t count=1, bool initialization=false) noexcept
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}{Alloc\+Data\+High}} (size\+\_\+t count=1, bool initialization=false)
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ DataT $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a9ca15b7e92e19744db2b3c9862062006}{Get\+Low\+Allocator}} () const noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}{Get\+Low\+Allocator}} () const noexcept
 \item 
-{\footnotesize template$<$typename DataT $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ DataT $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_aac1676cde35c58c97ecea8acf123a341}{Get\+High\+Allocator}} () const noexcept
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}{Get\+High\+Allocator}} () const noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -134,23 +134,23 @@ Constructs a double-\/ended memory stack by moving the given double-\/ended memo
 Destructs this double-\/ended memory stack. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a214b9ca245038c0441d15a5062d6c5f5}\label{classmage_1_1_double_ended_memory_stack_a214b9ca245038c0441d15a5062d6c5f5}} 
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}\label{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}} 
 \index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+Data\+High@{Alloc\+Data\+High}}
 \index{Alloc\+Data\+High@{Alloc\+Data\+High}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Alloc\+Data\+High()}{AllocDataHigh()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+High (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+High (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Allocates a block of memory on the high side of this memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The type of objects to allocate in memory. \\
+{\em T} & The type of objects to allocate in memory. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily DataT} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
 \hline
@@ -163,23 +163,23 @@ A pointer to the memory block that was allocated.
 \begin{DoxyNote}{Note}
 The objects will be constructed with their default empty constructor. 
 \end{DoxyNote}
-\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a5dee875f5ba9b279ed4f0b1e3faf1ede}\label{classmage_1_1_double_ended_memory_stack_a5dee875f5ba9b279ed4f0b1e3faf1ede}} 
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}\label{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}} 
 \index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+Data\+Low@{Alloc\+Data\+Low}}
 \index{Alloc\+Data\+Low@{Alloc\+Data\+Low}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Alloc\+Data\+Low()}{AllocDataLow()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-DataT$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+Low (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+Low (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Allocates a block of memory on the low side of this memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The type of objects to allocate in memory. \\
+{\em T} & The type of objects to allocate in memory. \\
 \hline
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily DataT} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
 \hline
@@ -272,35 +272,35 @@ Returns a pointer to the current low position of this double-\/ended memory stac
 \begin{DoxyReturn}{Returns}
 A pointer to the current low position of this double-\/ended memory stack. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_aac1676cde35c58c97ecea8acf123a341}\label{classmage_1_1_double_ended_memory_stack_aac1676cde35c58c97ecea8acf123a341}} 
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}\label{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}} 
 \index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+High\+Allocator@{Get\+High\+Allocator}}
 \index{Get\+High\+Allocator@{Get\+High\+Allocator}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Get\+High\+Allocator()}{GetHighAllocator()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ DataT $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+High\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ T $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+High\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns a high allocator for this single-\/ended memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type of the allocator. \\
+{\em T} & The data type of the allocator. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}
 A high allocator for this single-\/ended memory stack. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a9ca15b7e92e19744db2b3c9862062006}\label{classmage_1_1_double_ended_memory_stack_a9ca15b7e92e19744db2b3c9862062006}} 
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}\label{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}} 
 \index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Low\+Allocator@{Get\+Low\+Allocator}}
 \index{Get\+Low\+Allocator@{Get\+Low\+Allocator}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
 \subsubsection{\texorpdfstring{Get\+Low\+Allocator()}{GetLowAllocator()}}
-{\footnotesize\ttfamily template$<$typename DataT $>$ \\
-\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ DataT $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Low\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ T $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Low\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns a low allocator for this single-\/ended memory stack.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em DataT} & The data type of the allocator. \\
+{\em T} & The data type of the allocator. \\
 \hline
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}

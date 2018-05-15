@@ -1,12 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structmage_1_1rendering_1_1_pipeline.html#acfdf1d2aba1e8c0db9c4ef9e9730f31c":[1,0,0,2,47,25],
-"structmage_1_1rendering_1_1_pipeline.html#ad3a84d57712b74b98d10946482a78a2b":[1,0,0,2,47,12],
-"structmage_1_1rendering_1_1_pipeline.html#ae1de65a4f77e4db1fe0582ab85ef1335":[1,0,0,2,47,29],
-"structmage_1_1rendering_1_1_pipeline.html#af0d8580b1c0a672c3fc9558dc19408a3":[1,0,0,2,47,24],
-"structmage_1_1rendering_1_1_pipeline_1_1_c_s.html":[1,0,0,2,47,0],
-"structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a0b813ed8d1b3ac6ea1a4ff753cb62d26":[1,0,0,2,47,0,0],
-"structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a207854026af1cec1ecaebd104ac8abec":[1,0,0,2,47,0,8],
 "structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a2ce23102475c65f714c433d97f38f570":[1,0,0,2,47,0,6],
 "structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a6bcdbf424978b5089af4702e9637835c":[1,0,0,2,47,0,1],
 "structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a8ebebcf675186b3a5c8cfe68f691abd8":[1,0,0,2,47,0,2],
@@ -249,5 +242,12 @@ var NAVTREEINDEX14 =
 "structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#aa8f1585c1dba229b765d5697a37cb0e6":[1,0,0,2,81,6],
 "structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#ab3a0b3474edd41abe2339df4cd70961f":[1,0,0,2,81,1],
 "structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#ac209c1c9239db1545c0c9920d6560b1d":[1,0,0,2,81,4],
-"structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#af737420814ca919b77b9b3593bd9a88b":[1,0,0,2,81,10]
+"structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#af737420814ca919b77b9b3593bd9a88b":[1,0,0,2,81,10],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html":[1,0,0,2,82],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a16913ccdaec3d1a0a67b4ba33cc7b7d1":[1,0,0,2,82,10],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5b65b49d120fd660977f8f05b3ee7327":[1,0,0,2,82,6],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5cde27475fae5b650d91ccba4e6a2a8d":[1,0,0,2,82,7],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5f3ec0cb5a7957fda248bad573caee44":[1,0,0,2,82,14],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a6e41b77f1a21c4eb9f49cf936c131aee":[1,0,0,2,82,12],
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a7c800b1234a9291361a21ce2289b1394":[1,0,0,2,82,11]
 };
