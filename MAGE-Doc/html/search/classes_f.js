@@ -2,7 +2,7 @@ var searchData=
 [
   ['rebind',['rebind',['../structmage_1_1_aligned_allocator_1_1rebind.html',1,'mage::AlignedAllocator']]],
   ['renderer',['Renderer',['../classmage_1_1rendering_1_1_renderer.html',1,'mage::rendering']]],
-  ['resource',['Resource',['../classmage_1_1_resource_pool_1_1_resource.html',1,'mage::ResourcePool&lt; KeyT, ResourceT &gt;::Resource&lt; DerivedResourceT &gt;'],['../classmage_1_1_resource.html',1,'mage::Resource&lt; ResourceT &gt;']]],
+  ['resource',['Resource',['../classmage_1_1_resource.html',1,'mage::Resource&lt; ResourceT &gt;'],['../classmage_1_1_resource_pool_1_1_resource.html',1,'mage::ResourcePool&lt; KeyT, ResourceT &gt;::Resource&lt; DerivedResourceT &gt;']]],
   ['resource_3c_20modeldescriptor_20_3e',['Resource&lt; ModelDescriptor &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20shader_3c_20shadert_2c_20pipelinestaget_20_3e_20_3e',['Resource&lt; Shader&lt; ShaderT, PipelineStageT &gt; &gt;',['../classmage_1_1_resource.html',1,'mage']]],
   ['resource_3c_20spritefont_20_3e',['Resource&lt; SpriteFont &gt;',['../classmage_1_1_resource.html',1,'mage']]],

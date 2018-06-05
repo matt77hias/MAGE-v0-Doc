@@ -25,7 +25,7 @@ virtual \mbox{\hyperlink{classmage_1_1_engine_message_handler_a458f16ad9f68ad1e9
 \item 
 \mbox{\hyperlink{classmage_1_1_engine_message_handler}{Engine\+Message\+Handler}} \& \mbox{\hyperlink{classmage_1_1_engine_message_handler_a77538e900f5c92e4da88de5042ca5f4c}{operator=}} (\mbox{\hyperlink{classmage_1_1_engine_message_handler}{Engine\+Message\+Handler}} \&\&handler) noexcept
 \item 
-virtual bool \mbox{\hyperlink{classmage_1_1_engine_message_handler_ab5dfd682d7ecc9d5d1c062d82143bca7}{Handle\+Window\+Message}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$ window, U\+I\+NT message, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} W\+P\+A\+R\+AM w\+Param, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} L\+P\+A\+R\+AM l\+Param, L\+R\+E\+S\+U\+LT \&result) override
+virtual const std\+::optional$<$ L\+R\+E\+S\+U\+LT $>$ \mbox{\hyperlink{classmage_1_1_engine_message_handler_a3126109746a531e13a2b14b6600ee47e}{Handle\+Window\+Message}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$ window, U\+I\+NT message, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} W\+P\+A\+R\+AM w\+Param, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} L\+P\+A\+R\+AM l\+Param) override
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -83,11 +83,11 @@ Constructs a engine message handler by moving the given engine message handler.
 Destructs this engine message handler. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1_engine_message_handler_ab5dfd682d7ecc9d5d1c062d82143bca7}\label{classmage_1_1_engine_message_handler_ab5dfd682d7ecc9d5d1c062d82143bca7}} 
+\mbox{\Hypertarget{classmage_1_1_engine_message_handler_a3126109746a531e13a2b14b6600ee47e}\label{classmage_1_1_engine_message_handler_a3126109746a531e13a2b14b6600ee47e}} 
 \index{mage\+::\+Engine\+Message\+Handler@{mage\+::\+Engine\+Message\+Handler}!Handle\+Window\+Message@{Handle\+Window\+Message}}
 \index{Handle\+Window\+Message@{Handle\+Window\+Message}!mage\+::\+Engine\+Message\+Handler@{mage\+::\+Engine\+Message\+Handler}}
 \subsubsection{\texorpdfstring{Handle\+Window\+Message()}{HandleWindowMessage()}}
-{\footnotesize\ttfamily bool mage\+::\+Engine\+Message\+Handler\+::\+Handle\+Window\+Message (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$}]{window,  }\item[{U\+I\+NT}]{message,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} W\+P\+A\+R\+AM}]{w\+Param,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} L\+P\+A\+R\+AM}]{l\+Param,  }\item[{L\+R\+E\+S\+U\+LT \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily const std\+::optional$<$ L\+R\+E\+S\+U\+LT $>$ mage\+::\+Engine\+Message\+Handler\+::\+Handle\+Window\+Message (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$}]{window,  }\item[{U\+I\+NT}]{message,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} W\+P\+A\+R\+AM}]{w\+Param,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Handles the given message sent to a window.
 
@@ -101,15 +101,13 @@ Handles the given message sent to a window.
 \hline
 \mbox{\tt in}  & {\em l\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
 \hline
-\mbox{\tt out}  & {\em result} & The result of the message processing in case the message is handled by this engine message handler. \\
-\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if the given message is handled by this engine message handler. {\ttfamily false} otherwise. 
+The result of the message processing, if the given message is handled by this window message handler. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classmage_1_1_window_message_handler_a861750616c1517630e54a359d1234653}{mage\+::\+Window\+Message\+Handler}}.
+Implements \mbox{\hyperlink{classmage_1_1_window_message_handler_ab21ca7aaf638ed6233fb9142b82393d7}{mage\+::\+Window\+Message\+Handler}}.
 
 \mbox{\Hypertarget{classmage_1_1_engine_message_handler_a567c60f09df9fed3c725ab215e9afbe6}\label{classmage_1_1_engine_message_handler_a567c60f09df9fed3c725ab215e9afbe6}} 
 \index{mage\+::\+Engine\+Message\+Handler@{mage\+::\+Engine\+Message\+Handler}!operator=@{operator=}}

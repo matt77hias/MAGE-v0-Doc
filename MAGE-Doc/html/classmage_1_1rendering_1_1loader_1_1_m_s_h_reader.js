@@ -4,7 +4,6 @@ var classmage_1_1rendering_1_1loader_1_1_m_s_h_reader =
     [ "MSHReader", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#ae16a36afbfe65791cdfe8dadd6b57af2", null ],
     [ "MSHReader", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a107ac854c231c1a1c39f30c5199dcec7", null ],
     [ "~MSHReader", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#af45daf383d4e94586b5d2968d5357fce", null ],
-    [ "GetPath", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a1d21e0117af4cbf99152e4a659372364", null ],
     [ "IsHeaderValid", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a7e6948dfb5f5c672719ebe10c4dae6bf", null ],
     [ "operator=", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a106e5a6cce46777cf7ae36cb4034e1a0", null ],
     [ "operator=", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a8764164f7e0f78938c5e303d13e0f64d", null ],

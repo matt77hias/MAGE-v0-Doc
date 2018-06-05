@@ -21,6 +21,7 @@ var searchData=
   ['s_5fmax_5fsprites_5fper_5fbatch',['s_max_sprites_per_batch',['../classmage_1_1rendering_1_1_sprite_batch_mesh.html#a5f003dd97ee0c4aac0de37fcfd7b9889',1,'mage::rendering::SpriteBatchMesh']]],
   ['s_5fmin_5fsprites_5fper_5fbatch',['s_min_sprites_per_batch',['../classmage_1_1rendering_1_1_sprite_batch_mesh.html#a5d47763b9a0fa5a58a2894cd2dc4d8f0',1,'mage::rendering::SpriteBatchMesh']]],
   ['s_5fnb_5fdraws',['s_nb_draws',['../structmage_1_1rendering_1_1_pipeline.html#a47d649cdfea830ee048554accd2cab10',1,'mage::rendering::Pipeline']]],
+  ['s_5fsize',['s_size',['../structmage_1_1_array.html#aead6104ec6173aed5755a261b0a82b82',1,'mage::Array']]],
   ['s_5fvertices_5fper_5fsprite',['s_vertices_per_sprite',['../classmage_1_1rendering_1_1_sprite_batch_mesh.html#ae330e326577d8a0d94c03c0c8aae62c6',1,'mage::rendering::SpriteBatchMesh']]],
   ['s_5fvoxel_5fgrid_5fcenter',['s_voxel_grid_center',['../classmage_1_1rendering_1_1_voxelization_settings.html#a37151063ebbf6ae6ea193fb0ce05d270',1,'mage::rendering::VoxelizationSettings']]],
   ['s_5fvoxel_5fgrid_5fresolution',['s_voxel_grid_resolution',['../classmage_1_1rendering_1_1_voxelization_settings.html#aa709675f6700320077718e1954854ca6',1,'mage::rendering::VoxelizationSettings']]],
