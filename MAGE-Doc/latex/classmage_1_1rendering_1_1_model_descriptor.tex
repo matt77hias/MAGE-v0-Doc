@@ -13,7 +13,7 @@ Inheritance diagram for mage\+:\+:rendering\+:\+:Model\+Descriptor\+:\begin{figu
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\\mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_aa27c73a72219352647cd31ddfd6e64d6}{Model\+Descriptor}} (I\+D3\+D11\+Device \&device, \mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&resource\+\_\+manager, wstring fname, const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&desc=\mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$(), bool export\+\_\+as\+\_\+\+M\+DL=false)
+{\footnotesize template$<$typename VertexT , typename IndexT $>$ }\\\mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a69a6ffd3c69cec0ef7f395a5228158ea}{Model\+Descriptor}} (I\+D3\+D11\+Device \&device, \mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&resource\+\_\+manager, std\+::wstring fname, const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&desc=\mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$(), bool export\+\_\+as\+\_\+\+M\+DL=false)
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_af3fc0dea0060aa15a8003a7f4f807dd0}{Model\+Descriptor}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor}{Model\+Descriptor}} \&desc)=delete
 \item 
@@ -27,11 +27,11 @@ virtual \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_adef21799bc
 \item 
 \mbox{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}}$<$ const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a65645313d8b7bb976d1b5d0acdbbd38a}{Get\+Mesh}} () const noexcept
 \item 
-const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_af731849a1aed71ae8e049571850e7f2e}{Get\+Material}} (const string \&name) const noexcept
+const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}{Get\+Material}} (const std\+::string \&name) const noexcept
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a4e95ae12e0c952c76aaaf1ee457aed07}{For\+Each\+Material}} (ActionT \&\&action) const
 \item 
-const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a451867513276357536075085edf88592}{Get\+Model\+Part}} (const string \&name) const noexcept
+const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}{Get\+Model\+Part}} (const std\+::string \&name) const noexcept
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a9b217d2536bdd34c4b8b93ccf2ef62d3}{For\+Each\+Model\+Part}} (ActionT \&\&action) const
 \end{DoxyCompactItemize}
@@ -50,12 +50,12 @@ std\+::vector$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}
 A class of model descriptors describing a complete model. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_aa27c73a72219352647cd31ddfd6e64d6}\label{classmage_1_1rendering_1_1_model_descriptor_aa27c73a72219352647cd31ddfd6e64d6}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a69a6ffd3c69cec0ef7f395a5228158ea}\label{classmage_1_1rendering_1_1_model_descriptor_a69a6ffd3c69cec0ef7f395a5228158ea}} 
 \index{mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}!Model\+Descriptor@{Model\+Descriptor}}
 \index{Model\+Descriptor@{Model\+Descriptor}!mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Model\+Descriptor()}{ModelDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-mage\+::rendering\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&}]{resource\+\_\+manager,  }\item[{wstring}]{fname,  }\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&}]{desc = {\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$~VertexT,~IndexT~$>$()},  }\item[{bool}]{export\+\_\+as\+\_\+\+M\+DL = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+mage\+::rendering\+::\+Model\+Descriptor\+::\+Model\+Descriptor (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&}]{resource\+\_\+manager,  }\item[{std\+::wstring}]{fname,  }\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&}]{desc = {\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$~VertexT,~IndexT~$>$()},  }\item[{bool}]{export\+\_\+as\+\_\+\+M\+DL = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a model descriptor.
 
@@ -147,11 +147,11 @@ Traverses all model parts of this model descriptor.
 {\em ActionT} & An action to perform on all model parts of this model descriptor. The action must accept {\ttfamily const} {\ttfamily \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}}\&} values. \\
 \hline
 \end{DoxyTemplParams}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_af731849a1aed71ae8e049571850e7f2e}\label{classmage_1_1rendering_1_1_model_descriptor_af731849a1aed71ae8e049571850e7f2e}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}\label{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}} 
 \index{mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the material corresponding to the given name.
 
@@ -176,11 +176,11 @@ Returns the mesh of this model descriptor.
 \begin{DoxyReturn}{Returns}
 A pointer to the mesh of this model descriptor. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a451867513276357536075085edf88592}\label{classmage_1_1rendering_1_1_model_descriptor_a451867513276357536075085edf88592}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}\label{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}} 
 \index{mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}!Get\+Model\+Part@{Get\+Model\+Part}}
 \index{Get\+Model\+Part@{Get\+Model\+Part}!mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Get\+Model\+Part()}{GetModelPart()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Model\+Part (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Model\+Part (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the model part corresponding to the given name.
 

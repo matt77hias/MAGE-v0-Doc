@@ -30,20 +30,16 @@ struct \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad35fe46e20179ce1cd79386501ee0959}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \&\&reader)=delete
 \item 
-void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad4236487534d5dba6582613317317092}{Read\+From\+File}} (std\+::filesystem\+::path path, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}{Read\+From\+File}} (std\+::filesystem\+::path path, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
 \item 
-void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa9068792817b6d6dc840a44b788159}{Read\+From\+Memory}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_abfd9206dc607ceb5d13ec68bf075a5c0}{const\+\_\+zstring}} $>$ input, string delimiters=\mbox{\hyperlink{namespacemage_aa161198415efd9349da6187663250aea}{g\+\_\+default\+\_\+delimiters}})
-\item 
-const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a9740b3cecdcf5a27c696a08eef3b09da}{Get\+Path}} () const noexcept
-\item 
-const string \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa00e1e27b614e11ec9f70e52d0bac551}{Get\+Delimiters}} () const noexcept
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}{Read\+From\+Memory}} (const std\+::string \&input, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}{Preprocess}} () override
 \item 
-virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a6552753d2295585283df035732f38dbd}{Read\+Line}} (\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$ line) override
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}{Read\+Line}} () override
 \item 
 virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a281c16ef7d20a7c1416923f3cadee33a}{Postprocess}} () override
 \item 
@@ -92,6 +88,7 @@ std\+::map$<$ \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{
 \item 
 const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}{m\+\_\+mesh\+\_\+desc}}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -183,30 +180,6 @@ Constructs or retrieves (if already existing) the vertex matching the given vert
 \begin{DoxyReturn}{Returns}
 The vertex matching the given vertex indices {\itshape vertex\+\_\+indices}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa00e1e27b614e11ec9f70e52d0bac551}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa00e1e27b614e11ec9f70e52d0bac551}} 
-\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Get\+Delimiters@{Get\+Delimiters}}
-\index{Get\+Delimiters@{Get\+Delimiters}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Delimiters()}{GetDelimiters()}}
-{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-const string\& mage\+::\+Line\+Reader\+::\+Get\+Delimiters\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the current delimiters of this line reader.
-
-\begin{DoxyReturn}{Returns}
-A reference to the current delimiters of this line reader. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a9740b3cecdcf5a27c696a08eef3b09da}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a9740b3cecdcf5a27c696a08eef3b09da}} 
-\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Get\+Path@{Get\+Path}}
-\index{Get\+Path@{Get\+Path}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
-{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-const std\+::filesystem\+::path\& mage\+::\+Line\+Reader\+::\+Get\+Path\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Returns the current path of this line reader.
-
-\begin{DoxyReturn}{Returns}
-A reference to the current path of this line reader. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
@@ -257,7 +230,7 @@ Post-\/processes after reading the current file of this O\+BJ reader.
 \end{DoxyExceptions}
 
 
-Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_adfde21013140a1058d3dd567204abfb5}{mage\+::\+Line\+Reader}}.
+Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_a51775e07b5f7c9f72441e42d6d3896e1}{mage\+::\+Line\+Reader}}.
 
 \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Preprocess@{Preprocess}}
@@ -275,9 +248,9 @@ Pre-\/process before reading the current file of this O\+BJ reader.
 \end{DoxyExceptions}
 
 
-Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_a4de135cfb0434be786cfcfd7959031ef}{mage\+::\+Line\+Reader}}.
+Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_ad81a84bf9ecd81b9a391698afbd5eb61}{mage\+::\+Line\+Reader}}.
 
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad4236487534d5dba6582613317317092}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad4236487534d5dba6582613317317092}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
@@ -290,7 +263,7 @@ Reads from the file associated with the given path.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em path} & The path. \\
 \hline
-\mbox{\tt in}  & {\em delimiters} & The string containing the token delimiters (single characters). \\
+\mbox{\tt in}  & {\em regex} & The (line) regex. \\
 \hline
 \end{DoxyParams}
 
@@ -298,20 +271,20 @@ Reads from the file associated with the given path.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa9068792817b6d6dc840a44b788159}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa9068792817b6d6dc840a44b788159}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
 \index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
 void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory}
 
-Reads the input string.
+Reads from the given input string.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em input} & A pointer to the input null-\/terminated byte string. \\
+\mbox{\tt in}  & {\em input} & A reference to the input string. \\
 \hline
-\mbox{\tt in}  & {\em delimiters} & The string containing the token delimiters (single characters). \\
+\mbox{\tt in}  & {\em regex} & The (line) regex. \\
 \hline
 \end{DoxyParams}
 
@@ -319,28 +292,23 @@ Reads the input string.
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given input string. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a6552753d2295585283df035732f38dbd}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a6552753d2295585283df035732f38dbd}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+Line@{Read\+Line}}
 \index{Read\+Line@{Read\+Line}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{Read\+Line()}{ReadLine()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ \mbox{\hyperlink{namespacemage_a4163ec9a9a27d5e7f4b452dcb99cb2b9}{zstring}} $>$}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
-Reads the given line.
+Reads the current line of this O\+BJ reader.
 
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in,out}  & {\em line} & A pointer to the null-\/terminated string to read. \\
-\hline
-\end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read the given line. \\
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to the current line of this O\+BJ reader. \\
 \hline
 \end{DoxyExceptions}
 
 
-Implements \mbox{\hyperlink{classmage_1_1_line_reader_ae50ac0637eddead37a7a9cca2a570072}{mage\+::\+Line\+Reader}}.
+Implements \mbox{\hyperlink{classmage_1_1_line_reader_a8c81989a9d59ae31dd19e6d3961cfaf1}{mage\+::\+Line\+Reader}}.
 
 \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a58d5c4e4a5a82714567413b6e17a9ec7}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a58d5c4e4a5a82714567413b6e17a9ec7}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Face@{Read\+O\+B\+J\+Face}}

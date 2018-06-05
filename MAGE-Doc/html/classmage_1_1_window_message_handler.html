@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.152.0</span>
+   &#160;<span id="projectnumber">v0.155.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -121,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f48f6a94d62bee913e5f0fabc166cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb05035c5d298e7a1db0e8e2c1fcb71d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_window_message_handler.html">WindowMessageHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_window_message_handler.html#acb05035c5d298e7a1db0e8e2c1fcb71d">operator=</a> (<a class="el" href="classmage_1_1_window_message_handler.html">WindowMessageHandler</a> &amp;&amp;handler) noexcept</td></tr>
 <tr class="separator:acb05035c5d298e7a1db0e8e2c1fcb71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861750616c1517630e54a359d1234653"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_window_message_handler.html#a861750616c1517630e54a359d1234653">HandleWindowMessage</a> ([[maybe_unused]] <a class="el" href="namespacemage.html#a8769f9d670d6b585ea306cb1062af94b">NotNull</a>&lt; HWND &gt; window, UINT message, [[maybe_unused]] WPARAM wParam, [[maybe_unused]] LPARAM lParam, LRESULT &amp;result)=0</td></tr>
-<tr class="separator:a861750616c1517630e54a359d1234653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21ca7aaf638ed6233fb9142b82393d7"><td class="memItemLeft" align="right" valign="top">virtual const std::optional&lt; LRESULT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_window_message_handler.html#ab21ca7aaf638ed6233fb9142b82393d7">HandleWindowMessage</a> ([[maybe_unused]] <a class="el" href="namespacemage.html#a8769f9d670d6b585ea306cb1062af94b">NotNull</a>&lt; HWND &gt; window, UINT message, [[maybe_unused]] WPARAM wParam, [[maybe_unused]] LPARAM lParam)=0</td></tr>
+<tr class="separator:ab21ca7aaf638ed6233fb9142b82393d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of window message handlers. </p>
@@ -246,8 +246,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a861750616c1517630e54a359d1234653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861750616c1517630e54a359d1234653">&#9670;&nbsp;</a></span>HandleWindowMessage()</h2>
+<a id="ab21ca7aaf638ed6233fb9142b82393d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21ca7aaf638ed6233fb9142b82393d7">&#9670;&nbsp;</a></span>HandleWindowMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool mage::WindowMessageHandler::HandleWindowMessage </td>
+          <td class="memname">virtual const std::optional&lt; LRESULT &gt; mage::WindowMessageHandler::HandleWindowMessage </td>
           <td>(</td>
           <td class="paramtype">[[maybe_unused] ] <a class="el" href="namespacemage.html#a8769f9d670d6b585ea306cb1062af94b">NotNull</a>&lt; HWND &gt;&#160;</td>
           <td class="paramname"><em>window</em>, </td>
@@ -277,13 +277,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">[[maybe_unused] ] LPARAM&#160;</td>
-          <td class="paramname"><em>lParam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LRESULT &amp;&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -304,13 +298,12 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>The message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">wParam</td><td>Additional message information. The contents of this parameter depend on the value of <em>msg</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lParam</td><td>Additional message information. The contents of this parameter depend on the value of <em>msg</em>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>The result of the message processing in case the message is handled by this window message handler. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the given message is handled by this window message handler. <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of the message processing, if the given message is handled by this window message handler. </dd></dl>
 
-<p>Implemented in <a class="el" href="classmage_1_1_engine_message_handler.html#ab5dfd682d7ecc9d5d1c062d82143bca7">mage::EngineMessageHandler</a>.</p>
+<p>Implemented in <a class="el" href="classmage_1_1_engine_message_handler.html#a3126109746a531e13a2b14b6600ee47e">mage::EngineMessageHandler</a>.</p>
 
 </div>
 </div>

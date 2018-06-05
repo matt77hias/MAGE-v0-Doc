@@ -16,7 +16,7 @@ var searchData=
   ['u8x2',['U8x2',['../namespacemage.html#ac1a7a80c106e85358153ce9198f0dbb3',1,'mage']]],
   ['u8x3',['U8x3',['../namespacemage.html#a6941a39cea8cb15eaf8ee4910d47104a',1,'mage']]],
   ['u8x4',['U8x4',['../namespacemage.html#a82d721022a5269a25f908a6d0d5c8a26',1,'mage']]],
-  ['uniquefilestream',['UniqueFileStream',['../namespacemage.html#a0ee1bd45ad7dbb3dc8c8e1770e3538d4',1,'mage']]],
-  ['uniquehandle',['UniqueHandle',['../namespacemage.html#aa00b94e5e9cff88a1d7daacc4b63347e',1,'mage']]],
+  ['uniquefilestream',['UniqueFileStream',['../namespacemage.html#a5b2330d3c47b5c1f02bc25e035f74f81',1,'mage']]],
+  ['uniquehandle',['UniqueHandle',['../namespacemage.html#ac04fdf3699e3e907b252931da289741a',1,'mage']]],
   ['uniqueptr',['UniquePtr',['../namespacemage.html#a3316d7143a973e37adf1110f2e80ca31',1,'mage']]]
 ];

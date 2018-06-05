@@ -16,6 +16,6 @@ var classmage_1_1rendering_1_1_swap_chain =
     [ "Present", "classmage_1_1rendering_1_1_swap_chain.html#a6739d35cf37b6d50adc70eb09cba2446", null ],
     [ "SetInitialMode", "classmage_1_1rendering_1_1_swap_chain.html#a7ceec40e9007d1d6be3bdcd003fe9985", null ],
     [ "SwitchMode", "classmage_1_1rendering_1_1_swap_chain.html#a184b5aa11bdc69f7b6077de9ec0c47e0", null ],
-    [ "TakeScreenShot", "classmage_1_1rendering_1_1_swap_chain.html#a833d4eb8c091c49aaedaa3f3a2e6c159", null ],
+    [ "TakeScreenShot", "classmage_1_1rendering_1_1_swap_chain.html#a28d3c7ed39176fb16980248e43bf09e9", null ],
     [ "m_impl", "classmage_1_1rendering_1_1_swap_chain.html#a983645d6494b7e731753def5356bb8e6", null ]
 ];

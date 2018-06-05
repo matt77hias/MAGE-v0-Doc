@@ -21,7 +21,7 @@ var classmage_1_1rendering_1_1_swap_chain_1_1_impl =
     [ "SetTrackedFullScreen", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a6f97179cc5e352a349ed943413d149e7", null ],
     [ "SetupSwapChain", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a1e34fe9c72a24a0345a9ba317762863d", null ],
     [ "SwitchMode", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aa3c391f6651074e73105174b68025731", null ],
-    [ "TakeScreenShot", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#abdc55ba548c3178ab3edbeeb39099a4c", null ],
+    [ "TakeScreenShot", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a342862bf40dd80b43ee14d504c454a6e", null ],
     [ "m_device", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a6eff2673925babbd6dd9226dd07bf941", null ],
     [ "m_device_context", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#aead0bec9edcee29c39a264dc9ea43780", null ],
     [ "m_display_configuration", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a8acbe60edb384725707d9b393790293f", null ],

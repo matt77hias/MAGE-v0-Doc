@@ -22,7 +22,7 @@ var classmage_1_1_a_a_b_b =
     [ "Maximum", "classmage_1_1_a_a_b_b.html#a72f4f49b07a3816ad74fde9defc8cb76", null ],
     [ "MaxPoint", "classmage_1_1_a_a_b_b.html#a98ec13950f8374c0bf6c4958f2203396", null ],
     [ "MaxPointAlongNormal", "classmage_1_1_a_a_b_b.html#a91e0d95d5deaba8c96a36d490ed99a39", null ],
-    [ "MinAndMaxPointAlongNormal", "classmage_1_1_a_a_b_b.html#ae5f7b990ef079e4ae0484e913f800135", null ],
+    [ "MinAndMaxPointAlongNormal", "classmage_1_1_a_a_b_b.html#a34b2948ec856a284dcedceaf54ec4569", null ],
     [ "Minimum", "classmage_1_1_a_a_b_b.html#a9a2a4a236dca8479e208cd0b9ee07b9a", null ],
     [ "MinPoint", "classmage_1_1_a_a_b_b.html#ad351ed7fe9d7031e4d6eb68f4b4d69eb", null ],
     [ "MinPointAlongNormal", "classmage_1_1_a_a_b_b.html#a57e7a66ec6e418b2a5367e55b98ef547", null ],

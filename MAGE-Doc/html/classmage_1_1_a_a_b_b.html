@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.152.0</span>
+   &#160;<span id="projectnumber">v0.155.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -128,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad351ed7fe9d7031e4d6eb68f4b4d69eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ec13950f8374c0bf6c4958f2203396"><td class="memItemLeft" align="right" valign="top">const XMVECTOR XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_a_a_b_b.html#a98ec13950f8374c0bf6c4958f2203396">MaxPoint</a> () const noexcept</td></tr>
 <tr class="separator:a98ec13950f8374c0bf6c4958f2203396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f7b990ef079e4ae0484e913f800135"><td class="memItemLeft" align="right" valign="top">void XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_a_a_b_b.html#ae5f7b990ef079e4ae0484e913f800135">MinAndMaxPointAlongNormal</a> (FXMVECTOR n, XMVECTOR &amp;pmin, XMVECTOR &amp;pmax) const noexcept</td></tr>
-<tr class="separator:ae5f7b990ef079e4ae0484e913f800135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b2948ec856a284dcedceaf54ec4569"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; XMVECTOR, XMVECTOR &gt; XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_a_a_b_b.html#a34b2948ec856a284dcedceaf54ec4569">MinAndMaxPointAlongNormal</a> (FXMVECTOR n) const noexcept</td></tr>
+<tr class="separator:a34b2948ec856a284dcedceaf54ec4569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e7a66ec6e418b2a5367e55b98ef547"><td class="memItemLeft" align="right" valign="top">const XMVECTOR XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_a_a_b_b.html#a57e7a66ec6e418b2a5367e55b98ef547">MinPointAlongNormal</a> (FXMVECTOR n) const noexcept</td></tr>
 <tr class="separator:a57e7a66ec6e418b2a5367e55b98ef547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91e0d95d5deaba8c96a36d490ed99a39"><td class="memItemLeft" align="right" valign="top">const XMVECTOR XM_CALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_a_a_b_b.html#a91e0d95d5deaba8c96a36d490ed99a39">MaxPointAlongNormal</a> (FXMVECTOR n) const noexcept</td></tr>
@@ -927,8 +927,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae5f7b990ef079e4ae0484e913f800135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5f7b990ef079e4ae0484e913f800135">&#9670;&nbsp;</a></span>MinAndMaxPointAlongNormal()</h2>
+<a id="a34b2948ec856a284dcedceaf54ec4569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b2948ec856a284dcedceaf54ec4569">&#9670;&nbsp;</a></span>MinAndMaxPointAlongNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,27 +937,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void XM_CALLCONV mage::AABB::MinAndMaxPointAlongNormal </td>
+          <td class="memname">const std::pair&lt; XMVECTOR, XMVECTOR &gt; XM_CALLCONV mage::AABB::MinAndMaxPointAlongNormal </td>
           <td>(</td>
           <td class="paramtype">FXMVECTOR&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XMVECTOR &amp;&#160;</td>
-          <td class="paramname"><em>pmin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XMVECTOR &amp;&#160;</td>
-          <td class="paramname"><em>pmax</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -966,15 +950,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the minimum point of this <a class="el" href="classmage_1_1_a_a_b_b.html">AABB</a> along a given normal.</p>
+<p>Returns the minimum and maximum point of this <a class="el" href="classmage_1_1_a_a_b_b.html">AABB</a> along a given normal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>The normal. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pmin</td><td>A reference to the minimum point of this <a class="el" href="classmage_1_1_a_a_b_b.html">AABB</a> along <em>n</em>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pmax</td><td>A reference to the maximum point of this <a class="el" href="classmage_1_1_a_a_b_b.html">AABB</a> along <em>n</em>. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair containing the minimum and maximum point of this <a class="el" href="classmage_1_1_a_a_b_b.html">AABB</a> along <em>n</em>. </dd></dl>
 
 </div>
 </div>

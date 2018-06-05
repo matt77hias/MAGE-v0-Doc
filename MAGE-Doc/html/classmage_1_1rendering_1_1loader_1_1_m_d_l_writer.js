@@ -5,7 +5,6 @@ var classmage_1_1rendering_1_1loader_1_1_m_d_l_writer =
     [ "MDLWriter", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a27f71b3a27f96e263948d19b8b570309", null ],
     [ "~MDLWriter", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#aaa0fb8c60dee5352ed467bfb3f283f43", null ],
     [ "ExportMesh", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a77189702168fc4ea6b9482a9efec788f", null ],
-    [ "GetPath", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#ab023ae8174132f233c6e1fa4d3a2a1c8", null ],
     [ "operator=", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a9e5f38a8b5016534385039d44d3d71dc", null ],
     [ "operator=", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#aaa2a3f4e8025bffefefaae7d3ef018f0", null ],
     [ "Write", "classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a1506b1a09c7a7c1ee1e206cc6d5cd0e0", null ],
