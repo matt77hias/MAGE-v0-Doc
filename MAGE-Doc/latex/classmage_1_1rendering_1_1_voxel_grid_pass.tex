@@ -1,0 +1,184 @@
+\hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass}{}\section{mage\+:\+:rendering\+:\+:Voxel\+Grid\+Pass Class Reference}
+\label{classmage_1_1rendering_1_1_voxel_grid_pass}\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+
+
+{\ttfamily \#include $<$voxel\+\_\+grid\+\_\+pass.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_ad748e2aaccd4d34bcf5216815fe6d56f}{Voxel\+Grid\+Pass}} (I\+D3\+D11\+Device\+Context \&device\+\_\+context, \mbox{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager}} \&state\+\_\+manager, \mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&resource\+\_\+manager)
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a573934af1f4c245a1e544af785380267}{Voxel\+Grid\+Pass}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&pass)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a08071670f68b888089b3f945c4ee2dc1}{Voxel\+Grid\+Pass}} (\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&\&pass) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a64361ec102c8f3f30d1e0d8edac33e5a}{$\sim$\+Voxel\+Grid\+Pass}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a6f696f05c430a0b84d8346099ec7d0aa}{operator=}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&pass)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a9902536630f500e2399cbf7dd0e60452}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&\&pass) noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_aba53961c9a9082c1382484329129e190}{Render}} (size\+\_\+t resolution) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a38a3d6338eded537aab2ced5c486bdd4}{Bind\+Fixed\+State}} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_aaf8d84bbd6efe405a649b3ab643abefc}{m\+\_\+device\+\_\+context}}
+\item 
+std\+::reference\+\_\+wrapper$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_ab1072fa557827f7e71f2094ce25f733e}{m\+\_\+state\+\_\+manager}}
+\item 
+\mbox{\hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr}} \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a56d7195f315485c26ae690b1512a3c5e}{m\+\_\+vs}}
+\item 
+\mbox{\hyperlink{namespacemage_1_1rendering_aa5d63f80f9483d0896718813768ba1cf}{Geometry\+Shader\+Ptr}} \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_af94a1287d866d10b3dabb01a0f898eef}{m\+\_\+gs}}
+\item 
+\mbox{\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr}} \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass_a19cb04ed26d43e59277ffef4039a051d}{m\+\_\+ps}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of voxel grid passes for rendering voxel grids to screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_ad748e2aaccd4d34bcf5216815fe6d56f}\label{classmage_1_1rendering_1_1_voxel_grid_pass_ad748e2aaccd4d34bcf5216815fe6d56f}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}}
+\index{Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{Voxel\+Grid\+Pass()}{VoxelGridPass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::\+Voxel\+Grid\+Pass (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context,  }\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager}} \&}]{state\+\_\+manager,  }\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&}]{resource\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a voxel grid pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\mbox{\tt in}  & {\em state\+\_\+manager} & A reference to the state manager. \\
+\hline
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a573934af1f4c245a1e544af785380267}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a573934af1f4c245a1e544af785380267}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}}
+\index{Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{Voxel\+Grid\+Pass()}{VoxelGridPass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::\+Voxel\+Grid\+Pass (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a voxel grid pass from the given voxel grid pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxel grid pass to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a08071670f68b888089b3f945c4ee2dc1}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a08071670f68b888089b3f945c4ee2dc1}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}}
+\index{Voxel\+Grid\+Pass@{Voxel\+Grid\+Pass}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{Voxel\+Grid\+Pass()}{VoxelGridPass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::\+Voxel\+Grid\+Pass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a voxel grid pass by moving the given voxel grid pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxel grid pass to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a64361ec102c8f3f30d1e0d8edac33e5a}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a64361ec102c8f3f30d1e0d8edac33e5a}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!````~Voxel\+Grid\+Pass@{$\sim$\+Voxel\+Grid\+Pass}}
+\index{````~Voxel\+Grid\+Pass@{$\sim$\+Voxel\+Grid\+Pass}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{$\sim$\+Voxel\+Grid\+Pass()}{~VoxelGridPass()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::$\sim$\+Voxel\+Grid\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this voxel grid pass. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a38a3d6338eded537aab2ced5c486bdd4}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a38a3d6338eded537aab2ced5c486bdd4}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!Bind\+Fixed\+State@{Bind\+Fixed\+State}}
+\index{Bind\+Fixed\+State@{Bind\+Fixed\+State}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{Bind\+Fixed\+State()}{BindFixedState()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::\+Bind\+Fixed\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Binds the fixed state of this voxel grid pass. \mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a6f696f05c430a0b84d8346099ec7d0aa}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a6f696f05c430a0b84d8346099ec7d0aa}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}}\& mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given voxel grid pass to this voxel grid pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxel grid pass to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given voxel grid pass (i.\+e. this voxel grid pass). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a9902536630f500e2399cbf7dd0e60452}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a9902536630f500e2399cbf7dd0e60452}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \& mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_voxel_grid_pass}{Voxel\+Grid\+Pass}} \&\&}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given voxel grid pass to this voxel grid pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pass} & A reference to the voxel grid pass to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved voxel grid pass (i.\+e. this voxel grid pass). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_aba53961c9a9082c1382484329129e190}\label{classmage_1_1rendering_1_1_voxel_grid_pass_aba53961c9a9082c1382484329129e190}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!Render@{Render}}
+\index{Render@{Render}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::\+Render (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{resolution }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Renders the given world.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resolution} & The resolution of the regular voxel grid. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_aaf8d84bbd6efe405a649b3ab643abefc}\label{classmage_1_1rendering_1_1_voxel_grid_pass_aaf8d84bbd6efe405a649b3ab643abefc}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}}
+\index{m\+\_\+device\+\_\+context@{m\+\_\+device\+\_\+context}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context}{m\_device\_context}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::m\+\_\+device\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the device context of this voxel grid pass. \mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_af94a1287d866d10b3dabb01a0f898eef}\label{classmage_1_1rendering_1_1_voxel_grid_pass_af94a1287d866d10b3dabb01a0f898eef}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!m\+\_\+gs@{m\+\_\+gs}}
+\index{m\+\_\+gs@{m\+\_\+gs}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+gs}{m\_gs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_1_1rendering_aa5d63f80f9483d0896718813768ba1cf}{Geometry\+Shader\+Ptr}} mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::m\+\_\+gs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the geometry shader of this voxel grid pass. \mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a19cb04ed26d43e59277ffef4039a051d}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a19cb04ed26d43e59277ffef4039a051d}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!m\+\_\+ps@{m\+\_\+ps}}
+\index{m\+\_\+ps@{m\+\_\+ps}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+ps}{m\_ps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_1_1rendering_af03d922b228ee9c8542baaa2ecc9f259}{Pixel\+Shader\+Ptr}} mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::m\+\_\+ps\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the pixel shader of this voxel grid pass. \mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_ab1072fa557827f7e71f2094ce25f733e}\label{classmage_1_1rendering_1_1_voxel_grid_pass_ab1072fa557827f7e71f2094ce25f733e}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
+\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
+{\footnotesize\ttfamily std\+::reference\+\_\+wrapper$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_state_manager}{State\+Manager}} $>$ mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the state manager of this voxel grid pass. \mbox{\Hypertarget{classmage_1_1rendering_1_1_voxel_grid_pass_a56d7195f315485c26ae690b1512a3c5e}\label{classmage_1_1rendering_1_1_voxel_grid_pass_a56d7195f315485c26ae690b1512a3c5e}} 
+\index{mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}!m\+\_\+vs@{m\+\_\+vs}}
+\index{m\+\_\+vs@{m\+\_\+vs}!mage\+::rendering\+::\+Voxel\+Grid\+Pass@{mage\+::rendering\+::\+Voxel\+Grid\+Pass}}
+\subsubsection{\texorpdfstring{m\+\_\+vs}{m\_vs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_1_1rendering_aaf704b9c54a4181f4950a1761de69dda}{Vertex\+Shader\+Ptr}} mage\+::rendering\+::\+Voxel\+Grid\+Pass\+::m\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the vertex shader of this voxel grid pass. 

@@ -1,0 +1,321 @@
+\hypertarget{classmage_1_1_scene}{}\section{mage\+:\+:Scene Class Reference}
+\label{classmage_1_1_scene}\index{mage\+::\+Scene@{mage\+::\+Scene}}
+
+
+{\ttfamily \#include $<$scene.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c}{$\sim$\+Scene}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \& \mbox{\hyperlink{classmage_1_1_scene_a2c25c0fedc0230771d8c00a8288a69ce}{operator=}} (const \mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&scene)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \& \mbox{\hyperlink{classmage_1_1_scene_a0256a5b54db093088f40511cf61eb277}{operator=}} (\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&\&scene) noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_scene_a0edb77d5e45bd1822793d189a45fbb5c}{Initialize}} (\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine)
+\item 
+void \mbox{\hyperlink{classmage_1_1_scene_a3fd909919f832b122bb3cd205c9beb2c}{Uninitialize}} (\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine)
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ \mbox{\hyperlink{classmage_1_1_scene_a03490fe422fdfa110a6d3b58c31d1bb4}{Import}} (\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine, const \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor}{rendering\+::\+Model\+Descriptor}} \&desc)
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ \mbox{\hyperlink{classmage_1_1_scene_ac3ac7fd6eb1e6f59626b65f3da8553a4}{Import}} (\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine, const \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor}{rendering\+::\+Model\+Descriptor}} \&desc, std\+::vector$<$ \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ $>$ \&nodes)
+\item 
+{\footnotesize template$<$typename ElementT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}}, ElementT $>$, \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ ElementT $>$ $>$ \mbox{\hyperlink{classmage_1_1_scene_a8ce3f5152ad4b0935a08cc2f0a53383c}{Create}} (Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename ElementT , typename... Constructor\+ArgsT$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ \mbox{\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}}, ElementT $>$, \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ ElementT $>$ $>$ \mbox{\hyperlink{classmage_1_1_scene_ab135fe20ddadf6c1e2820a9582a31e64}{Create}} (Constructor\+ArgsT \&\&... args)
+\item 
+{\footnotesize template$<$typename ElementT $>$ }\\size\+\_\+t \mbox{\hyperlink{classmage_1_1_scene_a308480749d009dad3a39333fd0c59f2a}{Get\+Number\+Of}} () const noexcept
+\item 
+{\footnotesize template$<$typename ElementT , typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1_scene_a8bb2cd615a6c500677d4816fceb8cce3}{For\+Each}} (ActionT \&\&action)
+\item 
+{\footnotesize template$<$typename ElementT , typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1_scene_ac71dc52550c59256c30537b8dc9ca720}{For\+Each}} (ActionT \&\&action) const
+\item 
+const std\+::string \& \mbox{\hyperlink{classmage_1_1_scene_a4ba4e45e54935fddd63638664e7b0f2e}{Get\+Name}} () const noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_scene_a97a8efab5b4aa9f78b451ea2c68b300e}{Set\+Name}} (std\+::string name) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1_scene_a3434f00f7b9552cfd7a9f073290830cb}{Scene}} (std\+::string name)
+\item 
+\mbox{\hyperlink{classmage_1_1_scene_a88d83ccb2e10549d5370f850b2b4c228}{Scene}} (const \mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&scene)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_scene_afeae10a3a50bf1d624faa6bd0bf33a7d}{Scene}} (\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&\&scene) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1_scene_a02ec2f7b43fd7050bc41eb7d89d4baba}{Load}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine)
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1_scene_a6b90bb51fb3b5e965a42bfa57f992803}{Close}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&engine)
+\item 
+void \mbox{\hyperlink{classmage_1_1_scene_adf4a5b3885e34336caa5f145f55e01e1}{Clear}} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ \mbox{\hyperlink{classmage_1_1_scene_a270ac4a26210b95ba05957af19c4c43c}{m\+\_\+nodes}}
+\item 
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}} $>$ $>$ \mbox{\hyperlink{classmage_1_1_scene_ae57ca3aeb6b0d8b2cb8cf40334b883f8}{m\+\_\+scripts}}
+\item 
+std\+::string \mbox{\hyperlink{classmage_1_1_scene_aebd60452eca5423c3bde3fca653f3533}{m\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of scenes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c}\label{classmage_1_1_scene_adc40910fdca62586659c2961fe7e7f3c}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene()}{~Scene()}}
+{\footnotesize\ttfamily mage\+::\+Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Destructs this scene. \mbox{\Hypertarget{classmage_1_1_scene_a3434f00f7b9552cfd7a9f073290830cb}\label{classmage_1_1_scene_a3434f00f7b9552cfd7a9f073290830cb}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+Constructs a scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name of the scene. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_scene_a88d83ccb2e10549d5370f850b2b4c228}\label{classmage_1_1_scene_a88d83ccb2e10549d5370f850b2b4c228}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+Constructs a scene from the given scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_scene_afeae10a3a50bf1d624faa6bd0bf33a7d}\label{classmage_1_1_scene_afeae10a3a50bf1d624faa6bd0bf33a7d}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&\&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a scene by moving the given scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene to move. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1_scene_adf4a5b3885e34336caa5f145f55e01e1}\label{classmage_1_1_scene_adf4a5b3885e34336caa5f145f55e01e1}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Clear@{Clear}}
+\index{Clear@{Clear}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+Clears this scene. \mbox{\Hypertarget{classmage_1_1_scene_a6b90bb51fb3b5e965a42bfa57f992803}\label{classmage_1_1_scene_a6b90bb51fb3b5e965a42bfa57f992803}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Close@{Close}}
+\index{Close@{Close}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Close (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Closes this scene. Allows this scene to preform any post-\/processing destruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to close this scene. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_scene_a8ce3f5152ad4b0935a08cc2f0a53383c}\label{classmage_1_1_scene_a8ce3f5152ad4b0935a08cc2f0a53383c}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create@{Create}}
+\index{Create@{Create}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename ElementT , typename... Constructor\+ArgsT$>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+same\+\_\+v$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}}, ElementT $>$, \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ ElementT $>$ $>$ mage\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_scene_ab135fe20ddadf6c1e2820a9582a31e64}\label{classmage_1_1_scene_ab135fe20ddadf6c1e2820a9582a31e64}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Create@{Create}}
+\index{Create@{Create}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ElementT , typename... Constructor\+ArgsT$>$ \\
+std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ \mbox{\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}}, ElementT $>$, \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ ElementT $>$ $>$ mage\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_scene_a8bb2cd615a6c500677d4816fceb8cce3}\label{classmage_1_1_scene_a8bb2cd615a6c500677d4816fceb8cce3}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each()}{ForEach()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename ElementT , typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each (\begin{DoxyParamCaption}\item[{ActionT \&\&}]{action }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_scene_ac71dc52550c59256c30537b8dc9ca720}\label{classmage_1_1_scene_ac71dc52550c59256c30537b8dc9ca720}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{For\+Each()}{ForEach()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ElementT , typename ActionT $>$ \\
+void mage\+::\+Scene\+::\+For\+Each (\begin{DoxyParamCaption}\item[{ActionT \&\&}]{action }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmage_1_1_scene_a4ba4e45e54935fddd63638664e7b0f2e}\label{classmage_1_1_scene_a4ba4e45e54935fddd63638664e7b0f2e}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const std\+::string\& mage\+::\+Scene\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the name of this scene.
+
+\begin{DoxyReturn}{Returns}
+A reference to the name of this scene. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_scene_a308480749d009dad3a39333fd0c59f2a}\label{classmage_1_1_scene_a308480749d009dad3a39333fd0c59f2a}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Get\+Number\+Of@{Get\+Number\+Of}}
+\index{Get\+Number\+Of@{Get\+Number\+Of}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of()}{GetNumberOf()}}
+{\footnotesize\ttfamily template$<$typename ElementT $>$ \\
+size\+\_\+t mage\+::\+Scene\+::\+Get\+Number\+Of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_scene_a03490fe422fdfa110a6d3b58c31d1bb4}\label{classmage_1_1_scene_a03490fe422fdfa110a6d3b58c31d1bb4}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Import@{Import}}
+\index{Import@{Import}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Import()}{Import()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ mage\+::\+Scene\+::\+Import (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine,  }\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor}{rendering\+::\+Model\+Descriptor}} \&}]{desc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_scene_ac3ac7fd6eb1e6f59626b65f3da8553a4}\label{classmage_1_1_scene_ac3ac7fd6eb1e6f59626b65f3da8553a4}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Import@{Import}}
+\index{Import@{Import}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Import()}{Import()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ mage\+::\+Scene\+::\+Import (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine,  }\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor}{rendering\+::\+Model\+Descriptor}} \&}]{desc,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_scene_a0edb77d5e45bd1822793d189a45fbb5c}\label{classmage_1_1_scene_a0edb77d5e45bd1822793d189a45fbb5c}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine }\end{DoxyParamCaption})}
+
+Initializes this scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to initialize this scene. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_scene_a02ec2f7b43fd7050bc41eb7d89d4baba}\label{classmage_1_1_scene_a02ec2f7b43fd7050bc41eb7d89d4baba}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Load@{Load}}
+\index{Load@{Load}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Load (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Loads this scene. Allows this scene to preform any pre-\/processing construction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to load this scene. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_scene_a2c25c0fedc0230771d8c00a8288a69ce}\label{classmage_1_1_scene_a2c25c0fedc0230771d8c00a8288a69ce}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_scene}{Scene}}\& mage\+::\+Scene\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given scene to this scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given scene (i.\+e. this scene). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_scene_a0256a5b54db093088f40511cf61eb277}\label{classmage_1_1_scene_a0256a5b54db093088f40511cf61eb277}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_scene}{Scene}} \& mage\+::\+Scene\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_scene}{Scene}} \&\&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given scene to this scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scene} & A reference to the scene to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved scene (i.\+e. this scene). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_scene_a97a8efab5b4aa9f78b451ea2c68b300e}\label{classmage_1_1_scene_a97a8efab5b4aa9f78b451ea2c68b300e}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the name of this scene to the given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_scene_a3fd909919f832b122bb3cd205c9beb2c}\label{classmage_1_1_scene_a3fd909919f832b122bb3cd205c9beb2c}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!Uninitialize@{Uninitialize}}
+\index{Uninitialize@{Uninitialize}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{Uninitialize()}{Uninitialize()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+::\+Uninitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_engine}{Engine}} \&}]{engine }\end{DoxyParamCaption})}
+
+Uninitializes this scene.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em engine} & A reference to the engine. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to unitialize this scene. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1_scene_aebd60452eca5423c3bde3fca653f3533}\label{classmage_1_1_scene_aebd60452eca5423c3bde3fca653f3533}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily std\+::string mage\+::\+Scene\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of this scene. \mbox{\Hypertarget{classmage_1_1_scene_a270ac4a26210b95ba05957af19c4c43c}\label{classmage_1_1_scene_a270ac4a26210b95ba05957af19c4c43c}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+nodes@{m\+\_\+nodes}}
+\index{m\+\_\+nodes@{m\+\_\+nodes}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+nodes}{m\_nodes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_node}{Node}} $>$ mage\+::\+Scene\+::m\+\_\+nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+A vector containing the nodes of this scene. \mbox{\Hypertarget{classmage_1_1_scene_ae57ca3aeb6b0d8b2cb8cf40334b883f8}\label{classmage_1_1_scene_ae57ca3aeb6b0d8b2cb8cf40334b883f8}} 
+\index{mage\+::\+Scene@{mage\+::\+Scene}!m\+\_\+scripts@{m\+\_\+scripts}}
+\index{m\+\_\+scripts@{m\+\_\+scripts}!mage\+::\+Scene@{mage\+::\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+scripts}{m\_scripts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}} $>$ $>$ mage\+::\+Scene\+::m\+\_\+scripts\hspace{0.3cm}{\ttfamily [private]}}
+
+A vector containing the pointers to the scripts of this scene. 

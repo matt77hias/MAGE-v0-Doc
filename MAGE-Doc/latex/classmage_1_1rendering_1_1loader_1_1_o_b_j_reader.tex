@@ -1,0 +1,573 @@
+\hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{}\section{mage\+:\+:rendering\+:\+:loader\+:\+:O\+B\+J\+Reader$<$ VertexT, IndexT $>$ Class Template Reference}
+\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader$<$ Vertex\+T, Index\+T $>$@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader$<$ Vertex\+T, Index\+T $>$}}
+
+
+{\ttfamily \#include $<$obj\+\_\+reader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:rendering\+:\+:loader\+:\+:O\+B\+J\+Reader$<$ VertexT, IndexT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5fe68a545e05c266b69f35e4dc9027a9}{O\+B\+J\+Reader}} (\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&resource\+\_\+manager, \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \&model\+\_\+output, const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&mesh\+\_\+desc)
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1ba7402bf27180682de9109a3d0d031f}{O\+B\+J\+Reader}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \&reader)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_afa0ab677916b17126aa4fc202c52684e}{O\+B\+J\+Reader}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \&\&reader) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2b10c4cbb4c4aea192c78045beb4735e}{$\sim$\+O\+B\+J\+Reader}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}{operator=}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \&reader)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad35fe46e20179ce1cd79386501ee0959}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} \&\&reader)=delete
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}{Read\+From\+File}} (std\+::filesystem\+::path path, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}{Read\+From\+Memory}} (const std\+::string \&input, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}{Preprocess}} () override
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}{Read\+Line}} () override
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a281c16ef7d20a7c1416923f3cadee33a}{Postprocess}} () override
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa898eb5cac6a5e04b1da9329587a81cd}{Read\+O\+B\+J\+Material\+Library}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa719224a08175bcbcb26873e2fb5e1}{Read\+O\+B\+J\+Material\+Use}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4e733a0afea4b82e3aea89fe58f5bfba}{Read\+O\+B\+J\+Group}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a519f333ce13777d469c63eae7ab8dcf4}{Read\+O\+B\+J\+Object}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac7f3807cf0a0ae24b340cb8208c5b2ef}{Read\+O\+B\+J\+Smoothing\+Group}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a0f6e0d744b2baf94bca4dfda6c2cc194}{Read\+O\+B\+J\+Vertex}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a91f53fd761c83c4135a3ef1882b8300d}{Read\+O\+B\+J\+Vertex\+Texture}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1aafeda3894017fb9b3c6183ac272a34}{Read\+O\+B\+J\+Vertex\+Normal}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a58d5c4e4a5a82714567413b6e17a9ec7}{Read\+O\+B\+J\+Face}} ()
+\item 
+const \mbox{\hyperlink{structmage_1_1_point3}{Point3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2c5d954441d64b982d7a89df9171edbc}{Read\+O\+B\+J\+Vertex\+Coordinates}} ()
+\item 
+const \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa91768722fd418aeba3f12915e8e1525}{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates}} ()
+\item 
+const \mbox{\hyperlink{structmage_1_1_u_v}{UV}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a3fdbcdecf40525631afc53ce6a6dba45}{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}} ()
+\item 
+const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adf0996ca5d0339782382b46c14768b7f}{Read\+O\+B\+J\+Vertex\+Indices}} ()
+\item 
+const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa223ad518d2cdddd1c89a3f113356d77}{Construct\+Vertex}} (const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \&vertex\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_point3}{Point3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a393e0932f169a786e38f120fc6f0d84b}{m\+\_\+vertex\+\_\+coordinates}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_u_v}{UV}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aed919290e638cbe00a9144fdcb652178}{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac977ade8154bef446524526e8297f3eb}{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4bad8aafabddb5cec68be8357d2d7566}{m\+\_\+mapping}}
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}{m\+\_\+resource\+\_\+manager}}
+\item 
+\mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a645fca7c3f7f9860cb879f4088c4f8fc}{m\+\_\+model\+\_\+output}}
+\item 
+const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}{m\+\_\+mesh\+\_\+desc}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename VertexT, typename IndexT$>$\newline
+class mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader$<$ Vertex\+T, Index\+T $>$}
+
+A class of O\+BJ file readers for reading meshes.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5fe68a545e05c266b69f35e4dc9027a9}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5fe68a545e05c266b69f35e4dc9027a9}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!O\+B\+J\+Reader@{O\+B\+J\+Reader}}
+\index{O\+B\+J\+Reader@{O\+B\+J\+Reader}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{O\+B\+J\+Reader()}{OBJReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \&}]{resource\+\_\+manager,  }\item[{\mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \&}]{model\+\_\+output,  }\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$ \&}]{mesh\+\_\+desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs an O\+BJ reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resource\+\_\+manager} & A reference to the resource manager. \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+output} & A reference to a model output for storing the read data from file. \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+desc} & A reference to a mesh descriptor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1ba7402bf27180682de9109a3d0d031f}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1ba7402bf27180682de9109a3d0d031f}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!O\+B\+J\+Reader@{O\+B\+J\+Reader}}
+\index{O\+B\+J\+Reader@{O\+B\+J\+Reader}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{O\+B\+J\+Reader()}{OBJReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$ \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs an O\+BJ reader from the given O\+BJ reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the O\+BJ reader to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_afa0ab677916b17126aa4fc202c52684e}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_afa0ab677916b17126aa4fc202c52684e}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!O\+B\+J\+Reader@{O\+B\+J\+Reader}}
+\index{O\+B\+J\+Reader@{O\+B\+J\+Reader}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{O\+B\+J\+Reader()}{OBJReader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$ \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs an O\+BJ reader by moving the given O\+BJ reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to the O\+BJ reader to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2b10c4cbb4c4aea192c78045beb4735e}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2b10c4cbb4c4aea192c78045beb4735e}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!````~O\+B\+J\+Reader@{$\sim$\+O\+B\+J\+Reader}}
+\index{````~O\+B\+J\+Reader@{$\sim$\+O\+B\+J\+Reader}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+O\+B\+J\+Reader()}{~OBJReader()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::$\sim$\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this O\+BJ reader. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa223ad518d2cdddd1c89a3f113356d77}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa223ad518d2cdddd1c89a3f113356d77}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Construct\+Vertex@{Construct\+Vertex}}
+\index{Construct\+Vertex@{Construct\+Vertex}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Construct\+Vertex()}{ConstructVertex()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Construct\+Vertex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \&}]{vertex\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs or retrieves (if already existing) the vertex matching the given vertex indices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vertex\+\_\+indices} & A reference to the vertex indices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vertex matching the given vertex indices {\itshape vertex\+\_\+indices}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$ \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given O\+BJ reader to this O\+BJ reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a O\+BJ reader to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given O\+BJ reader (i.\+e. this O\+BJ reader). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad35fe46e20179ce1cd79386501ee0959}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad35fe46e20179ce1cd79386501ee0959}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$ \&\&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given O\+BJ reader to this O\+BJ reader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reader} & A reference to a O\+BJ reader to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved O\+BJ reader (i.\+e. this O\+BJ reader). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a281c16ef7d20a7c1416923f3cadee33a}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a281c16ef7d20a7c1416923f3cadee33a}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Postprocess@{Postprocess}}
+\index{Postprocess@{Postprocess}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Postprocess()}{Postprocess()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Postprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Post-\/processes after reading the current file of this O\+BJ reader.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to finish post-\/processing successfully. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_a51775e07b5f7c9f72441e42d6d3896e1}{mage\+::\+Line\+Reader}}.
+
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ad082a6295259f7e8af2c60c182ea55d3}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Preprocess@{Preprocess}}
+\index{Preprocess@{Preprocess}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Preprocess()}{Preprocess()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Preprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Pre-\/process before reading the current file of this O\+BJ reader.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to finish the pre-\/processing successfully. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmage_1_1_line_reader_ad81a84bf9ecd81b9a391698afbd5eb61}{mage\+::\+Line\+Reader}}.
+
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac819910b2ad9cf9751fa223d4f90ada0}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+From\+File@{Read\+From\+File}}
+\index{Read\+From\+File@{Read\+From\+File}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void mage\+::\+Line\+Reader\+::\+Read\+From\+File}
+
+Reads from the file associated with the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & The path. \\
+\hline
+\mbox{\tt in}  & {\em regex} & The (line) regex. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adc2bf81611774d4a11da47812fcc0f6a}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
+\index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory}
+
+Reads from the given input string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & A reference to the input string. \\
+\hline
+\mbox{\tt in}  & {\em regex} & The (line) regex. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the given input string. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adcf31a8bacf23cac2577f679c6bac729}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+Line@{Read\+Line}}
+\index{Read\+Line@{Read\+Line}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Line()}{ReadLine()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Reads the current line of this O\+BJ reader.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to the current line of this O\+BJ reader. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classmage_1_1_line_reader_a8c81989a9d59ae31dd19e6d3961cfaf1}{mage\+::\+Line\+Reader}}.
+
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a58d5c4e4a5a82714567413b6e17a9ec7}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a58d5c4e4a5a82714567413b6e17a9ec7}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Face@{Read\+O\+B\+J\+Face}}
+\index{Read\+O\+B\+J\+Face@{Read\+O\+B\+J\+Face}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Face()}{ReadOBJFace()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Face definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Face definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4e733a0afea4b82e3aea89fe58f5bfba}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4e733a0afea4b82e3aea89fe58f5bfba}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Group@{Read\+O\+B\+J\+Group}}
+\index{Read\+O\+B\+J\+Group@{Read\+O\+B\+J\+Group}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Group()}{ReadOBJGroup()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Group definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Group definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa898eb5cac6a5e04b1da9329587a81cd}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa898eb5cac6a5e04b1da9329587a81cd}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Material\+Library@{Read\+O\+B\+J\+Material\+Library}}
+\index{Read\+O\+B\+J\+Material\+Library@{Read\+O\+B\+J\+Material\+Library}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Material\+Library()}{ReadOBJMaterialLibrary()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Material\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} Library Include definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} Library Include definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa719224a08175bcbcb26873e2fb5e1}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a5aa719224a08175bcbcb26873e2fb5e1}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Material\+Use@{Read\+O\+B\+J\+Material\+Use}}
+\index{Read\+O\+B\+J\+Material\+Use@{Read\+O\+B\+J\+Material\+Use}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Material\+Use()}{ReadOBJMaterialUse()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Material\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} Usage definition and imports the materials corresponding to the mesh.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} Usage definition. \\
+\hline
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to import the materials. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a519f333ce13777d469c63eae7ab8dcf4}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a519f333ce13777d469c63eae7ab8dcf4}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Object@{Read\+O\+B\+J\+Object}}
+\index{Read\+O\+B\+J\+Object@{Read\+O\+B\+J\+Object}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Object()}{ReadOBJObject()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads an Object definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Object definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac7f3807cf0a0ae24b340cb8208c5b2ef}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac7f3807cf0a0ae24b340cb8208c5b2ef}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Smoothing\+Group@{Read\+O\+B\+J\+Smoothing\+Group}}
+\index{Read\+O\+B\+J\+Smoothing\+Group@{Read\+O\+B\+J\+Smoothing\+Group}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Smoothing\+Group()}{ReadOBJSmoothingGroup()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Smoothing\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Smoothing Group definition.
+
+\begin{DoxyNote}{Note}
+A smoothing group is, if present, silently ignored. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Smoothing Group definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a0f6e0d744b2baf94bca4dfda6c2cc194}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a0f6e0d744b2baf94bca4dfda6c2cc194}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex@{Read\+O\+B\+J\+Vertex}}
+\index{Read\+O\+B\+J\+Vertex@{Read\+O\+B\+J\+Vertex}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex()}{ReadOBJVertex()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Vertex Position Coordinates definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Vertex Position Coordinates definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2c5d954441d64b982d7a89df9171edbc}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a2c5d954441d64b982d7a89df9171edbc}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Coordinates@{Read\+O\+B\+J\+Vertex\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Coordinates@{Read\+O\+B\+J\+Vertex\+Coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Coordinates()}{ReadOBJVertexCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{structmage_1_1_point3}{Point3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a set of vertex position coordinates.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \mbox{\hyperlink{structmage_1_1_point3}{Point3}}} represented by the next token of this O\+BJ reader (modified according to the mesh descriptor of this O\+Bj reader). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a {\ttfamily \mbox{\hyperlink{structmage_1_1_point3}{Point3}}}. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adf0996ca5d0339782382b46c14768b7f}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adf0996ca5d0339782382b46c14768b7f}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Indices@{Read\+O\+B\+J\+Vertex\+Indices}}
+\index{Read\+O\+B\+J\+Vertex\+Indices@{Read\+O\+B\+J\+Vertex\+Indices}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Indices()}{ReadOBJVertexIndices()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a set of vertex indices.
+
+\begin{DoxyReturn}{Returns}
+The vertex indices represented by the next token of this O\+BJ reader. A zero indicates the absence of a component. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read the vertex indices. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1aafeda3894017fb9b3c6183ac272a34}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a1aafeda3894017fb9b3c6183ac272a34}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Normal@{Read\+O\+B\+J\+Vertex\+Normal}}
+\index{Read\+O\+B\+J\+Vertex\+Normal@{Read\+O\+B\+J\+Vertex\+Normal}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Normal()}{ReadOBJVertexNormal()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Vertex Normal Coordinates definition.
+
+\begin{DoxyPrecond}{Precondition}
+All the vertex normals in the O\+BJ file are normalized. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Vertex Normal Coordinates definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa91768722fd418aeba3f12915e8e1525}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa91768722fd418aeba3f12915e8e1525}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates()}{ReadOBJVertexNormalCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a set of vertex normal coordinates.
+
+\begin{DoxyPrecond}{Precondition}
+All the vertex normals in the O\+BJ file are normalized. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}}} represented by the next token of this O\+BJ reader (modified according to the mesh descriptor of this O\+Bj reader). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a {\ttfamily \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}}}. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a91f53fd761c83c4135a3ef1882b8300d}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a91f53fd761c83c4135a3ef1882b8300d}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Texture@{Read\+O\+B\+J\+Vertex\+Texture}}
+\index{Read\+O\+B\+J\+Vertex\+Texture@{Read\+O\+B\+J\+Vertex\+Texture}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Texture()}{ReadOBJVertexTexture()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a Vertex \mbox{\hyperlink{classmage_1_1rendering_1_1_texture}{Texture}} Coordinates definition.
+
+\begin{DoxyNote}{Note}
+Only \mbox{\hyperlink{structmage_1_1_u_v}{UV}} texture coordinates are supported, The W component of U\+VW texture coordinates is, if present, silently ignored. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a Vertex \mbox{\hyperlink{classmage_1_1rendering_1_1_texture}{Texture}} Coordinates definition. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a3fdbcdecf40525631afc53ce6a6dba45}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a3fdbcdecf40525631afc53ce6a6dba45}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates()}{ReadOBJVertexTextureCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{structmage_1_1_u_v}{UV}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reads a set of vertex texture coordinates.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \mbox{\hyperlink{structmage_1_1_u_v}{UV}}} represented by the next token of this O\+BJ reader (modified according to the mesh descriptor of this O\+Bj reader). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read a {\ttfamily \mbox{\hyperlink{structmage_1_1_u_v}{UV}}}. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4bad8aafabddb5cec68be8357d2d7566}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4bad8aafabddb5cec68be8357d2d7566}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+mapping@{m\+\_\+mapping}}
+\index{m\+\_\+mapping@{m\+\_\+mapping}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+mapping}{m\_mapping}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::map$<$ \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
+
+A mapping between vertex position/texture/normal coordinates\textquotesingle{} indices and the index of a vertex in the vertex buffer ({\ttfamily m\+\_\+model\+\_\+output}) of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+mesh\+\_\+desc@{m\+\_\+mesh\+\_\+desc}}
+\index{m\+\_\+mesh\+\_\+desc@{m\+\_\+mesh\+\_\+desc}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+mesh\+\_\+desc}{m\_mesh\_desc}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh_descriptor}{Mesh\+Descriptor}}$<$ VertexT, IndexT $>$\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+mesh\+\_\+desc\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the mesh descriptor for this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a645fca7c3f7f9860cb879f4088c4f8fc}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a645fca7c3f7f9860cb879f4088c4f8fc}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}}
+\index{m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+output}{m\_model\_output}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+model\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to a model output containing the read data of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
+\index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}}\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+resource\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the resource manager of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a393e0932f169a786e38f120fc6f0d84b}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a393e0932f169a786e38f120fc6f0d84b}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+coordinates@{m\+\_\+vertex\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+coordinates@{m\+\_\+vertex\+\_\+coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+coordinates}{m\_vertex\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_point3}{Point3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+vertex\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+A vector containing the read vertex position coordinates of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac977ade8154bef446524526e8297f3eb}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac977ade8154bef446524526e8297f3eb}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+normal\+\_\+coordinates@{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+normal\+\_\+coordinates@{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}{m\_vertex\_normal\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+vertex\+\_\+normal\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+A vector containing the read normal texture coordinates of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aed919290e638cbe00a9144fdcb652178}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aed919290e638cbe00a9144fdcb652178}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+texture\+\_\+coordinates@{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+texture\+\_\+coordinates@{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}{m\_vertex\_texture\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_u_v}{UV}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+vertex\+\_\+texture\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+A vector containing the read vertex texture coordinates of this O\+BJ reader. 

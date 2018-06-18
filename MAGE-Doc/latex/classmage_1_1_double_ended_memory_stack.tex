@@ -1,0 +1,458 @@
+\hypertarget{classmage_1_1_double_ended_memory_stack}{}\section{mage\+:\+:Double\+Ended\+Memory\+Stack Class Reference}
+\label{classmage_1_1_double_ended_memory_stack}\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+
+
+{\ttfamily \#include $<$memory\+\_\+stack.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}
+\item 
+class \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a6480666c03ac703fc4fd5a62a766438d}{Double\+Ended\+Memory\+Stack}} (size\+\_\+t size, size\+\_\+t alignment)
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a8a903d4a209929854a6f50cf98e3e2da}{Double\+Ended\+Memory\+Stack}} (const \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&stack)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a89d83095cc04686b9775fc4a55a5ff30}{Double\+Ended\+Memory\+Stack}} (\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&\&stack) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_afaac4a28ea1e386bc83d3e07fd5531a0}{$\sim$\+Double\+Ended\+Memory\+Stack}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \& \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_aafcc4b3cd8d87d75cc3de53994b6ef7e}{operator=}} (const \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&stack)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \& \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a95b220925f1ef732c104901c3f55015d}{operator=}} (\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&\&stack)=delete
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a6f2d4036e67cca2836293ad421ddfdfd}{Get\+Alignment}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a68d69d69243d5ef8a9fd12b7d7a42993}{Get\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ae9c3c9a0f4e330b20ef63e0a21b91459}{Get\+Used\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_af7fd015832d8c6c56619917492e62a2e}{Get\+Used\+Low\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a1c037a0084cfa806c6a519fd3208cd49}{Get\+Used\+High\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a7877cc0fc6a67b610aea51097c44fc8d}{Get\+Available\+Size}} () const noexcept
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a6d2875d28aef082ae6d777a2a39e39a9}{Get\+Current\+Low\+Ptr}} () const noexcept
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_aecc40b9efe5a18d0c95ca9d6e063bf38}{Get\+Current\+High\+Ptr}} () const noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a99272e80cde12949a31a2942f9d009d6}{Reset}} () noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ad9d2e796dea54978d1909faf329f839b}{Roll\+Back\+Low}} (uintptr\+\_\+t ptr) noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a0c1981cb1fda455a02148f04be1c3ae8}{Roll\+Back\+High}} (uintptr\+\_\+t ptr) noexcept
+\item 
+void $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a4eece9ca8748f77783e8235c6192b260}{Alloc\+Low}} (size\+\_\+t size) noexcept
+\item 
+void $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ab9750ea9abea18890ef432e9f5893ebf}{Alloc\+High}} (size\+\_\+t size) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}{Alloc\+Data\+Low}} (size\+\_\+t count=1, bool initialization=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}{Alloc\+Data\+High}} (size\+\_\+t count=1, bool initialization=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}{Get\+Low\+Allocator}} () const noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}{Get\+High\+Allocator}} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a3a3ff5dbdcca2fcd2939e8e92528abcc}{m\+\_\+size}}
+\item 
+const size\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_ab30dfcd0b66ec97a62e62fb6b573751e}{m\+\_\+alignment}}
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_aee3d3cf829712607a9859e72abd5ab7f}{m\+\_\+begin}}
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a8a97b154eaab706e7d293ef00404269d}{m\+\_\+current\+\_\+low}}
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_a22cfadce68da8cdcc480ccd44707b5cf}{m\+\_\+current\+\_\+high}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of double-\/ended memory stacks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a6480666c03ac703fc4fd5a62a766438d}\label{classmage_1_1_double_ended_memory_stack_a6480666c03ac703fc4fd5a62a766438d}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}}
+\index{Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Double\+Ended\+Memory\+Stack()}{DoubleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Double\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a double-\/ended memory stack with given size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The size in bytes. \\
+\hline
+\mbox{\tt in}  & {\em alignment} & The alignment in bytes. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a8a903d4a209929854a6f50cf98e3e2da}\label{classmage_1_1_double_ended_memory_stack_a8a903d4a209929854a6f50cf98e3e2da}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}}
+\index{Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Double\+Ended\+Memory\+Stack()}{DoubleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Double\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a double-\/ended memory stack from the given double-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the double-\/ended memory stack to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a89d83095cc04686b9775fc4a55a5ff30}\label{classmage_1_1_double_ended_memory_stack_a89d83095cc04686b9775fc4a55a5ff30}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}}
+\index{Double\+Ended\+Memory\+Stack@{Double\+Ended\+Memory\+Stack}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Double\+Ended\+Memory\+Stack()}{DoubleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Double\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&\&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a double-\/ended memory stack by moving the given double-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the double-\/ended memory stack to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_afaac4a28ea1e386bc83d3e07fd5531a0}\label{classmage_1_1_double_ended_memory_stack_afaac4a28ea1e386bc83d3e07fd5531a0}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!````~Double\+Ended\+Memory\+Stack@{$\sim$\+Double\+Ended\+Memory\+Stack}}
+\index{````~Double\+Ended\+Memory\+Stack@{$\sim$\+Double\+Ended\+Memory\+Stack}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{$\sim$\+Double\+Ended\+Memory\+Stack()}{~DoubleEndedMemoryStack()}}
+{\footnotesize\ttfamily mage\+::\+Double\+Ended\+Memory\+Stack\+::$\sim$\+Double\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this double-\/ended memory stack. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}\label{classmage_1_1_double_ended_memory_stack_addf70bf7ae94789bd642a3aa7679678f}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+Data\+High@{Alloc\+Data\+High}}
+\index{Alloc\+Data\+High@{Alloc\+Data\+High}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc\+Data\+High()}{AllocDataHigh()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+High (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Allocates a block of memory on the high side of this memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of objects to allocate in memory. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The objects will be constructed with their default empty constructor. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}\label{classmage_1_1_double_ended_memory_stack_a698edab4ba2213a4482629ab2734689a}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+Data\+Low@{Alloc\+Data\+Low}}
+\index{Alloc\+Data\+Low@{Alloc\+Data\+Low}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc\+Data\+Low()}{AllocDataLow()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Data\+Low (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Allocates a block of memory on the low side of this memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of objects to allocate in memory. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The objects will be constructed with their default empty constructor. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ab9750ea9abea18890ef432e9f5893ebf}\label{classmage_1_1_double_ended_memory_stack_ab9750ea9abea18890ef432e9f5893ebf}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+High@{Alloc\+High}}
+\index{Alloc\+High@{Alloc\+High}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc\+High()}{AllocHigh()}}
+{\footnotesize\ttfamily void $\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+High (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Allocates a block of memory of the given size on the high side of this memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a4eece9ca8748f77783e8235c6192b260}\label{classmage_1_1_double_ended_memory_stack_a4eece9ca8748f77783e8235c6192b260}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Alloc\+Low@{Alloc\+Low}}
+\index{Alloc\+Low@{Alloc\+Low}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc\+Low()}{AllocLow()}}
+{\footnotesize\ttfamily void $\ast$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Alloc\+Low (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Allocates a block of memory of the given size on the low side of this memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a6f2d4036e67cca2836293ad421ddfdfd}\label{classmage_1_1_double_ended_memory_stack_a6f2d4036e67cca2836293ad421ddfdfd}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Alignment@{Get\+Alignment}}
+\index{Get\+Alignment@{Get\+Alignment}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Alignment()}{GetAlignment()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the alignment of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The alignment in bytes of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a7877cc0fc6a67b610aea51097c44fc8d}\label{classmage_1_1_double_ended_memory_stack_a7877cc0fc6a67b610aea51097c44fc8d}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Available\+Size@{Get\+Available\+Size}}
+\index{Get\+Available\+Size@{Get\+Available\+Size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Available\+Size()}{GetAvailableSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Available\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the available size of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The available size in bytes of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_aecc40b9efe5a18d0c95ca9d6e063bf38}\label{classmage_1_1_double_ended_memory_stack_aecc40b9efe5a18d0c95ca9d6e063bf38}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Current\+High\+Ptr@{Get\+Current\+High\+Ptr}}
+\index{Get\+Current\+High\+Ptr@{Get\+Current\+High\+Ptr}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Current\+High\+Ptr()}{GetCurrentHighPtr()}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Current\+High\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a pointer to the current high position of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current high position of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a6d2875d28aef082ae6d777a2a39e39a9}\label{classmage_1_1_double_ended_memory_stack_a6d2875d28aef082ae6d777a2a39e39a9}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Current\+Low\+Ptr@{Get\+Current\+Low\+Ptr}}
+\index{Get\+Current\+Low\+Ptr@{Get\+Current\+Low\+Ptr}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Current\+Low\+Ptr()}{GetCurrentLowPtr()}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Current\+Low\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a pointer to the current low position of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current low position of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}\label{classmage_1_1_double_ended_memory_stack_a802dfc5aa72c11dc2de255f2d85589c7}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+High\+Allocator@{Get\+High\+Allocator}}
+\index{Get\+High\+Allocator@{Get\+High\+Allocator}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+High\+Allocator()}{GetHighAllocator()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_high_allocator}{High\+Allocator}}$<$ T $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+High\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a high allocator for this single-\/ended memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type of the allocator. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A high allocator for this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}\label{classmage_1_1_double_ended_memory_stack_ada7dfb759df112e0cefccef6f6fc16ee}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Low\+Allocator@{Get\+Low\+Allocator}}
+\index{Get\+Low\+Allocator@{Get\+Low\+Allocator}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Low\+Allocator()}{GetLowAllocator()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack_1_1_low_allocator}{Low\+Allocator}}$<$ T $>$ mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Low\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a low allocator for this single-\/ended memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type of the allocator. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A low allocator for this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a68d69d69243d5ef8a9fd12b7d7a42993}\label{classmage_1_1_double_ended_memory_stack_a68d69d69243d5ef8a9fd12b7d7a42993}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the size (used + available) of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The size (used + available) in bytes of this memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a1c037a0084cfa806c6a519fd3208cd49}\label{classmage_1_1_double_ended_memory_stack_a1c037a0084cfa806c6a519fd3208cd49}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Used\+High\+Size@{Get\+Used\+High\+Size}}
+\index{Get\+Used\+High\+Size@{Get\+Used\+High\+Size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Used\+High\+Size()}{GetUsedHighSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Used\+High\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the used high size of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The used low size in bytes of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_af7fd015832d8c6c56619917492e62a2e}\label{classmage_1_1_double_ended_memory_stack_af7fd015832d8c6c56619917492e62a2e}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Used\+Low\+Size@{Get\+Used\+Low\+Size}}
+\index{Get\+Used\+Low\+Size@{Get\+Used\+Low\+Size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Used\+Low\+Size()}{GetUsedLowSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Used\+Low\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the used low size of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The used high size in bytes of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ae9c3c9a0f4e330b20ef63e0a21b91459}\label{classmage_1_1_double_ended_memory_stack_ae9c3c9a0f4e330b20ef63e0a21b91459}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Get\+Used\+Size@{Get\+Used\+Size}}
+\index{Get\+Used\+Size@{Get\+Used\+Size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Used\+Size()}{GetUsedSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Get\+Used\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the used size of this double-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The used size in bytes of this double-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_aafcc4b3cd8d87d75cc3de53994b6ef7e}\label{classmage_1_1_double_ended_memory_stack_aafcc4b3cd8d87d75cc3de53994b6ef7e}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}}\& mage\+::\+Double\+Ended\+Memory\+Stack\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given double-\/ended memory stack to this double-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the double-\/ended memory stack to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given double-\/ended memory stack (i.\+e. this double-\/ended memory stack). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a95b220925f1ef732c104901c3f55015d}\label{classmage_1_1_double_ended_memory_stack_a95b220925f1ef732c104901c3f55015d}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}}\& mage\+::\+Double\+Ended\+Memory\+Stack\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_double_ended_memory_stack}{Double\+Ended\+Memory\+Stack}} \&\&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given double-\/ended memory stack to this double-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the double-\/ended memory stack to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved double-\/ended memory stack (i.\+e. this memory stack). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a99272e80cde12949a31a2942f9d009d6}\label{classmage_1_1_double_ended_memory_stack_a99272e80cde12949a31a2942f9d009d6}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Reset@{Reset}}
+\index{Reset@{Reset}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Resets this double-\/ended memory stack.
+
+The pointer to the current low position of this double-\/ended memory stack will be reset to the begin position of this double-\/ended memory stack. The pointer to the current high position of this double-\/ended memory stack will be reset to the end position of this double-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a0c1981cb1fda455a02148f04be1c3ae8}\label{classmage_1_1_double_ended_memory_stack_a0c1981cb1fda455a02148f04be1c3ae8}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Roll\+Back\+High@{Roll\+Back\+High}}
+\index{Roll\+Back\+High@{Roll\+Back\+High}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Roll\+Back\+High()}{RollBackHigh()}}
+{\footnotesize\ttfamily void mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Roll\+Back\+High (\begin{DoxyParamCaption}\item[{uintptr\+\_\+t}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Rolls this double-\/ended memory stack back to the given high position.
+
+\begin{DoxyPrecond}{Precondition}
+The given {\itshape ptr} must be in the range of this memory stack. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & The pointer to the requested high position of this memory stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ad9d2e796dea54978d1909faf329f839b}\label{classmage_1_1_double_ended_memory_stack_ad9d2e796dea54978d1909faf329f839b}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!Roll\+Back\+Low@{Roll\+Back\+Low}}
+\index{Roll\+Back\+Low@{Roll\+Back\+Low}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Roll\+Back\+Low()}{RollBackLow()}}
+{\footnotesize\ttfamily void mage\+::\+Double\+Ended\+Memory\+Stack\+::\+Roll\+Back\+Low (\begin{DoxyParamCaption}\item[{uintptr\+\_\+t}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Rolls this double-\/ended memory stack back to the given low position.
+
+\begin{DoxyPrecond}{Precondition}
+The given {\itshape ptr} must be in the range of this memory stack. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & The pointer to the requested low position of this memory stack. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_ab30dfcd0b66ec97a62e62fb6b573751e}\label{classmage_1_1_double_ended_memory_stack_ab30dfcd0b66ec97a62e62fb6b573751e}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!m\+\_\+alignment@{m\+\_\+alignment}}
+\index{m\+\_\+alignment@{m\+\_\+alignment}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+alignment}{m\_alignment}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::m\+\_\+alignment\hspace{0.3cm}{\ttfamily [private]}}
+
+The alignment in bytes of this double-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_aee3d3cf829712607a9859e72abd5ab7f}\label{classmage_1_1_double_ended_memory_stack_aee3d3cf829712607a9859e72abd5ab7f}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!m\+\_\+begin@{m\+\_\+begin}}
+\index{m\+\_\+begin@{m\+\_\+begin}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+begin}{m\_begin}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::m\+\_\+begin\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the begin of this double-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a22cfadce68da8cdcc480ccd44707b5cf}\label{classmage_1_1_double_ended_memory_stack_a22cfadce68da8cdcc480ccd44707b5cf}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!m\+\_\+current\+\_\+high@{m\+\_\+current\+\_\+high}}
+\index{m\+\_\+current\+\_\+high@{m\+\_\+current\+\_\+high}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+high}{m\_current\_high}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::m\+\_\+current\+\_\+high\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the current high position of this double-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a8a97b154eaab706e7d293ef00404269d}\label{classmage_1_1_double_ended_memory_stack_a8a97b154eaab706e7d293ef00404269d}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!m\+\_\+current\+\_\+low@{m\+\_\+current\+\_\+low}}
+\index{m\+\_\+current\+\_\+low@{m\+\_\+current\+\_\+low}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+low}{m\_current\_low}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::m\+\_\+current\+\_\+low\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the current low position of this double-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_double_ended_memory_stack_a3a3ff5dbdcca2fcd2939e8e92528abcc}\label{classmage_1_1_double_ended_memory_stack_a3a3ff5dbdcca2fcd2939e8e92528abcc}} 
+\index{mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}!m\+\_\+size@{m\+\_\+size}}
+\index{m\+\_\+size@{m\+\_\+size}!mage\+::\+Double\+Ended\+Memory\+Stack@{mage\+::\+Double\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+size}{m\_size}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Double\+Ended\+Memory\+Stack\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+The size in bytes of this double-\/ended memory stack. 

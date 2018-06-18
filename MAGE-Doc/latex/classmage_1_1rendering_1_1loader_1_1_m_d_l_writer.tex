@@ -1,0 +1,241 @@
+\hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{}\section{mage\+:\+:rendering\+:\+:loader\+:\+:M\+D\+L\+Writer$<$ VertexT, IndexT $>$ Class Template Reference}
+\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer$<$ Vertex\+T, Index\+T $>$@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer$<$ Vertex\+T, Index\+T $>$}}
+
+
+{\ttfamily \#include $<$mdl\+\_\+writer.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:rendering\+:\+:loader\+:\+:M\+D\+L\+Writer$<$ VertexT, IndexT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a6b30e49f08b5c6cd4702f5fdecd17561}{M\+D\+L\+Writer}} (const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \&model\+\_\+output)
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a475ff3efdba707303052bae28d3ba85b}{M\+D\+L\+Writer}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \&writer)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a27f71b3a27f96e263948d19b8b570309}{M\+D\+L\+Writer}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \&\&writer) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa0fb8c60dee5352ed467bfb3f283f43}{$\sim$\+M\+D\+L\+Writer}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a9e5f38a8b5016534385039d44d3d71dc}{operator=}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \&writer)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa2a3f4e8025bffefefaae7d3ef018f0}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} \&\&writer)=delete
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_ac01e930b55888da88e345b0910d4b1c2}{Write\+To\+File}} (std\+::filesystem\+::path path)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a1506b1a09c7a7c1ee1e206cc6d5cd0e0}{Write}} () override
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a77189702168fc4ea6b9482a9efec788f}{Export\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_afcd1eca27b5854b0f0406dbcae135499}{Write\+Materials}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a8fcd997a51d7a46149596d332ebdb8e1}{Write\+Model\+Parts}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aefa6dfd7c4d7e2abe92e9c93b1e8638c}{m\+\_\+model\+\_\+output}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename VertexT, typename IndexT$>$\newline
+class mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer$<$ Vertex\+T, Index\+T $>$}
+
+A class of M\+DL file writers for writing models.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em VertexT} & The vertex type. \\
+\hline
+{\em IndexT} & The index type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a6b30e49f08b5c6cd4702f5fdecd17561}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a6b30e49f08b5c6cd4702f5fdecd17561}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!M\+D\+L\+Writer@{M\+D\+L\+Writer}}
+\index{M\+D\+L\+Writer@{M\+D\+L\+Writer}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{M\+D\+L\+Writer()}{MDLWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$ \&}]{model\+\_\+output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a M\+DL writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em model\+\_\+output} & A reference to the model output containing the model data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a475ff3efdba707303052bae28d3ba85b}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a475ff3efdba707303052bae28d3ba85b}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!M\+D\+L\+Writer@{M\+D\+L\+Writer}}
+\index{M\+D\+L\+Writer@{M\+D\+L\+Writer}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{M\+D\+L\+Writer()}{MDLWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$ \&}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a M\+DL writer from the given M\+DL writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em writer} & A reference to the M\+DL writer to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a27f71b3a27f96e263948d19b8b570309}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a27f71b3a27f96e263948d19b8b570309}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!M\+D\+L\+Writer@{M\+D\+L\+Writer}}
+\index{M\+D\+L\+Writer@{M\+D\+L\+Writer}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{M\+D\+L\+Writer()}{MDLWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$ \&\&}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a M\+DL writer by moving the given M\+DL writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em writer} & A reference to the M\+DL writer to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa0fb8c60dee5352ed467bfb3f283f43}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa0fb8c60dee5352ed467bfb3f283f43}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!````~M\+D\+L\+Writer@{$\sim$\+M\+D\+L\+Writer}}
+\index{````~M\+D\+L\+Writer@{$\sim$\+M\+D\+L\+Writer}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{$\sim$\+M\+D\+L\+Writer()}{~MDLWriter()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::$\sim$\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this M\+DL writer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a77189702168fc4ea6b9482a9efec788f}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a77189702168fc4ea6b9482a9efec788f}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!Export\+Mesh@{Export\+Mesh}}
+\index{Export\+Mesh@{Export\+Mesh}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{Export\+Mesh()}{ExportMesh()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::Export\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Writes and exports the mesh corresponding to the model.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write. \\
+\hline
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to export the mesh corresponding to the model to file. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a9e5f38a8b5016534385039d44d3d71dc}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a9e5f38a8b5016534385039d44d3d71dc}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$ \&}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given M\+DL writer to this M\+DL writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em writer} & A reference to a M\+DL writer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given M\+DL writer (i.\+e. this M\+DL writer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa2a3f4e8025bffefefaae7d3ef018f0}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aaa2a3f4e8025bffefefaae7d3ef018f0}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$ \&\&}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given M\+DL writer to this M\+DL writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em writer} & A reference to a M\+DL writer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved M\+DL writer (i.\+e. this M\+DL writer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a1506b1a09c7a7c1ee1e206cc6d5cd0e0}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a1506b1a09c7a7c1ee1e206cc6d5cd0e0}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!Write@{Write}}
+\index{Write@{Write}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+virtual void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Starts writing.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classmage_1_1_writer_a9baf695ef7f6180bef883f60bcb3ac07}{mage\+::\+Writer}}.
+
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_afcd1eca27b5854b0f0406dbcae135499}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_afcd1eca27b5854b0f0406dbcae135499}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!Write\+Materials@{Write\+Materials}}
+\index{Write\+Materials@{Write\+Materials}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{Write\+Materials()}{WriteMaterials()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::Write\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Writes the materials corresponding to the model.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a8fcd997a51d7a46149596d332ebdb8e1}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_a8fcd997a51d7a46149596d332ebdb8e1}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!Write\+Model\+Parts@{Write\+Model\+Parts}}
+\index{Write\+Model\+Parts@{Write\+Model\+Parts}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{Write\+Model\+Parts()}{WriteModelParts()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::Write\+Model\+Parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Writes the model parts corresponding to the model.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_ac01e930b55888da88e345b0910d4b1c2}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_ac01e930b55888da88e345b0910d4b1c2}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!Write\+To\+File@{Write\+To\+File}}
+\index{Write\+To\+File@{Write\+To\+File}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{Write\+To\+File()}{WriteToFile()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void mage\+::\+Writer\+::\+Write\+To\+File}
+
+Writes to the file associated with the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & The path. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to write to the file. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aefa6dfd7c4d7e2abe92e9c93b1e8638c}\label{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer_aefa6dfd7c4d7e2abe92e9c93b1e8638c}} 
+\index{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}!m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}}
+\index{m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}!mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer@{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+output}{m\_model\_output}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_m_d_l_writer}{mage\+::rendering\+::loader\+::\+M\+D\+L\+Writer}}$<$ VertexT, IndexT $>$\+::m\+\_\+model\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
+
+A reference to the model output containing the model data of this M\+DL writer. 

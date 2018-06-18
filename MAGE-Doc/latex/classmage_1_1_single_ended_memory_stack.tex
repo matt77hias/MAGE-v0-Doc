@@ -1,0 +1,321 @@
+\hypertarget{classmage_1_1_single_ended_memory_stack}{}\section{mage\+:\+:Single\+Ended\+Memory\+Stack Class Reference}
+\label{classmage_1_1_single_ended_memory_stack}\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+
+
+{\ttfamily \#include $<$memory\+\_\+stack.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_ab9555d63b35070aee321cc3839fec3c4}{Single\+Ended\+Memory\+Stack}} (size\+\_\+t size, size\+\_\+t alignment)
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_ae854c4558f0215bf38cb713cbca7fa31}{Single\+Ended\+Memory\+Stack}} (const \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&stack)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_afd6632eac3ada6ea88a69b586f27a4e4}{Single\+Ended\+Memory\+Stack}} (\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&\&stack) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_adaa82d19a1ef60ca42396bdaaea0c8e6}{$\sim$\+Single\+Ended\+Memory\+Stack}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \& \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a709db7d21cd2db6e98acd7985770468e}{operator=}} (const \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&stack)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \& \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a24613dc91ab6577aa57fbd55a4c81023}{operator=}} (\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&\&stack)=delete
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a821660699258ecbd007c5909108a911b}{Get\+Alignment}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_aa1df0adf194d6c2bb6c7597a96c10e61}{Get\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_ab2b07a4cf2c9eb9988ad49174e0804ac}{Get\+Used\+Size}} () const noexcept
+\item 
+size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a1c3f233b16e8fcb9770b7fe23b83485b}{Get\+Available\+Size}} () const noexcept
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a11b792ad420eac8e620c568e89a88cef}{Get\+Current\+Ptr}} () const noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_abd43ab7bd76655265123b934ea2bc7a7}{Reset}} () noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_afa1fcaa95a61995234759f9c57723202}{Roll\+Back}} (uintptr\+\_\+t ptr) noexcept
+\item 
+void $\ast$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_acda0b7f2e61bf8ba8bbb9ba633237866}{Alloc}} (size\+\_\+t size) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}{Alloc\+Data}} (size\+\_\+t count=1, bool initialization=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ T $>$ \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}{Get\+Allocator}} () const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a3766c742087068479c3e324280ca94bf}{m\+\_\+size}}
+\item 
+const size\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_aeb5bc5af575eaeb5a0f08669a717cd28}{m\+\_\+alignment}}
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a859a80ab120c14e3ebf4a310d5263507}{m\+\_\+begin}}
+\item 
+uintptr\+\_\+t \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_a78785ecceac6ce271658864dac80e84b}{m\+\_\+current}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of single-\/ended memory stacks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_ab9555d63b35070aee321cc3839fec3c4}\label{classmage_1_1_single_ended_memory_stack_ab9555d63b35070aee321cc3839fec3c4}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}}
+\index{Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Single\+Ended\+Memory\+Stack()}{SingleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Single\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a single-\/ended memory stack with given size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The size in bytes. \\
+\hline
+\mbox{\tt in}  & {\em alignment} & The alignment in bytes. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Failed to allocate the memory. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_ae854c4558f0215bf38cb713cbca7fa31}\label{classmage_1_1_single_ended_memory_stack_ae854c4558f0215bf38cb713cbca7fa31}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}}
+\index{Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Single\+Ended\+Memory\+Stack()}{SingleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Single\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a single-\/ended memory stack from the given single-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the single-\/ended memory stack to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_afd6632eac3ada6ea88a69b586f27a4e4}\label{classmage_1_1_single_ended_memory_stack_afd6632eac3ada6ea88a69b586f27a4e4}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}}
+\index{Single\+Ended\+Memory\+Stack@{Single\+Ended\+Memory\+Stack}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Single\+Ended\+Memory\+Stack()}{SingleEndedMemoryStack()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Single\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&\&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a single-\/ended memory stack by moving the given single-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the single-\/ended memory stack to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_adaa82d19a1ef60ca42396bdaaea0c8e6}\label{classmage_1_1_single_ended_memory_stack_adaa82d19a1ef60ca42396bdaaea0c8e6}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!````~Single\+Ended\+Memory\+Stack@{$\sim$\+Single\+Ended\+Memory\+Stack}}
+\index{````~Single\+Ended\+Memory\+Stack@{$\sim$\+Single\+Ended\+Memory\+Stack}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{$\sim$\+Single\+Ended\+Memory\+Stack()}{~SingleEndedMemoryStack()}}
+{\footnotesize\ttfamily mage\+::\+Single\+Ended\+Memory\+Stack\+::$\sim$\+Single\+Ended\+Memory\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this single-\/ended memory stack. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_acda0b7f2e61bf8ba8bbb9ba633237866}\label{classmage_1_1_single_ended_memory_stack_acda0b7f2e61bf8ba8bbb9ba633237866}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc()}{Alloc()}}
+{\footnotesize\ttfamily void $\ast$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Alloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Allocates a block of memory of the given size on this single-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The requested size in bytes to allocate in memory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}\label{classmage_1_1_single_ended_memory_stack_a65faeb76a286738ab119768423b513b3}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Alloc\+Data@{Alloc\+Data}}
+\index{Alloc\+Data@{Alloc\+Data}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Alloc\+Data()}{AllocData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Alloc\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1},  }\item[{bool}]{initialization = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Allocates a block of memory on this single-\/ended memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of objects to allocate in memory. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
+\hline
+\mbox{\tt in}  & {\em initialization} & Flag indicating whether the objects need to be initialized (i.\+e. the constructor needs to be called). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily nullptr} if the allocation failed. 
+
+A pointer to the memory block that was allocated. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The objects will be constructed with their default empty constructor. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a821660699258ecbd007c5909108a911b}\label{classmage_1_1_single_ended_memory_stack_a821660699258ecbd007c5909108a911b}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Alignment@{Get\+Alignment}}
+\index{Get\+Alignment@{Get\+Alignment}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Alignment()}{GetAlignment()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the alignment of this single-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The alignment in bytes of this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}\label{classmage_1_1_single_ended_memory_stack_a0f6be7c59dca442ac5924fadf52c126a}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Allocator@{Get\+Allocator}}
+\index{Get\+Allocator@{Get\+Allocator}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Allocator()}{GetAllocator()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack_1_1_allocator}{Allocator}}$<$ T $>$ mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns an allocator for this single-\/ended memory stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type of the allocator. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+An allocator for this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a1c3f233b16e8fcb9770b7fe23b83485b}\label{classmage_1_1_single_ended_memory_stack_a1c3f233b16e8fcb9770b7fe23b83485b}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Available\+Size@{Get\+Available\+Size}}
+\index{Get\+Available\+Size@{Get\+Available\+Size}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Available\+Size()}{GetAvailableSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Available\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the available size of this single-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The available size in bytes of this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a11b792ad420eac8e620c568e89a88cef}\label{classmage_1_1_single_ended_memory_stack_a11b792ad420eac8e620c568e89a88cef}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Current\+Ptr@{Get\+Current\+Ptr}}
+\index{Get\+Current\+Ptr@{Get\+Current\+Ptr}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Current\+Ptr()}{GetCurrentPtr()}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Current\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a pointer to the current position of this single-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current position of this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_aa1df0adf194d6c2bb6c7597a96c10e61}\label{classmage_1_1_single_ended_memory_stack_aa1df0adf194d6c2bb6c7597a96c10e61}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the size (used + available) of this single-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The size (used + available) in bytes of this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_ab2b07a4cf2c9eb9988ad49174e0804ac}\label{classmage_1_1_single_ended_memory_stack_ab2b07a4cf2c9eb9988ad49174e0804ac}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Get\+Used\+Size@{Get\+Used\+Size}}
+\index{Get\+Used\+Size@{Get\+Used\+Size}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Get\+Used\+Size()}{GetUsedSize()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Get\+Used\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the used size of this single-\/ended memory stack.
+
+\begin{DoxyReturn}{Returns}
+The used size in bytes of this single-\/ended memory stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a709db7d21cd2db6e98acd7985770468e}\label{classmage_1_1_single_ended_memory_stack_a709db7d21cd2db6e98acd7985770468e}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}}\& mage\+::\+Single\+Ended\+Memory\+Stack\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given single-\/ended memory stack to this single-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the single-\/ended memory stack to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given single-\/ended memory stack (i.\+e. this single-\/ended memory stack). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a24613dc91ab6577aa57fbd55a4c81023}\label{classmage_1_1_single_ended_memory_stack_a24613dc91ab6577aa57fbd55a4c81023}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}}\& mage\+::\+Single\+Ended\+Memory\+Stack\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_single_ended_memory_stack}{Single\+Ended\+Memory\+Stack}} \&\&}]{stack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Moves the given single-\/ended memory stack to this single-\/ended memory stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stack} & A reference to the single-\/ended memory stack to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved single-\/ended memory stack (i.\+e. this single-\/ended memory stack). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_abd43ab7bd76655265123b934ea2bc7a7}\label{classmage_1_1_single_ended_memory_stack_abd43ab7bd76655265123b934ea2bc7a7}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Reset@{Reset}}
+\index{Reset@{Reset}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Resets this memory stack.
+
+The pointer to the current position of this single-\/ended memory stack will be reset to the begin position of this single-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_afa1fcaa95a61995234759f9c57723202}\label{classmage_1_1_single_ended_memory_stack_afa1fcaa95a61995234759f9c57723202}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!Roll\+Back@{Roll\+Back}}
+\index{Roll\+Back@{Roll\+Back}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{Roll\+Back()}{RollBack()}}
+{\footnotesize\ttfamily void mage\+::\+Single\+Ended\+Memory\+Stack\+::\+Roll\+Back (\begin{DoxyParamCaption}\item[{uintptr\+\_\+t}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Rolls this single-\/ended memory stack back to the given position.
+
+\begin{DoxyPrecond}{Precondition}
+The given {\itshape ptr} must be in the range of this single-\/ended memory stack. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & The pointer to the requested position of this single-\/ended memory stack. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_aeb5bc5af575eaeb5a0f08669a717cd28}\label{classmage_1_1_single_ended_memory_stack_aeb5bc5af575eaeb5a0f08669a717cd28}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!m\+\_\+alignment@{m\+\_\+alignment}}
+\index{m\+\_\+alignment@{m\+\_\+alignment}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+alignment}{m\_alignment}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::m\+\_\+alignment\hspace{0.3cm}{\ttfamily [private]}}
+
+The alignment in bytes of this single-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a859a80ab120c14e3ebf4a310d5263507}\label{classmage_1_1_single_ended_memory_stack_a859a80ab120c14e3ebf4a310d5263507}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!m\+\_\+begin@{m\+\_\+begin}}
+\index{m\+\_\+begin@{m\+\_\+begin}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+begin}{m\_begin}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::m\+\_\+begin\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the begin of this single-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a78785ecceac6ce271658864dac80e84b}\label{classmage_1_1_single_ended_memory_stack_a78785ecceac6ce271658864dac80e84b}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!m\+\_\+current@{m\+\_\+current}}
+\index{m\+\_\+current@{m\+\_\+current}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+current}{m\_current}}
+{\footnotesize\ttfamily uintptr\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::m\+\_\+current\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the current position of this single-\/ended memory stack. \mbox{\Hypertarget{classmage_1_1_single_ended_memory_stack_a3766c742087068479c3e324280ca94bf}\label{classmage_1_1_single_ended_memory_stack_a3766c742087068479c3e324280ca94bf}} 
+\index{mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}!m\+\_\+size@{m\+\_\+size}}
+\index{m\+\_\+size@{m\+\_\+size}!mage\+::\+Single\+Ended\+Memory\+Stack@{mage\+::\+Single\+Ended\+Memory\+Stack}}
+\subsubsection{\texorpdfstring{m\+\_\+size}{m\_size}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Single\+Ended\+Memory\+Stack\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+The size in bytes of this single-\/ended memory stack. 
