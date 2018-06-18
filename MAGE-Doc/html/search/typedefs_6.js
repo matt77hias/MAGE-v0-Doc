@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['is_5falways_5fequal',['is_always_equal',['../classmage_1_1_aligned_allocator.html#a144fbbf7d538636d83b3eb45965af6bf',1,'mage::AlignedAllocator::is_always_equal()'],['../classmage_1_1_memory_arena_1_1_allocator.html#a5f25626106f2f21d37b75b271f230ae4',1,'mage::MemoryArena::Allocator::is_always_equal()'],['../classmage_1_1_single_ended_memory_stack_1_1_allocator.html#aa62e1b505ea8f83a4f3014b0242e124f',1,'mage::SingleEndedMemoryStack::Allocator::is_always_equal()'],['../classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#ab42cfced82fe7790a27d066fe299513b',1,'mage::DoubleEndedMemoryStack::LowAllocator::is_always_equal()'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a81c407c8c9e727ce05fc86cf9e674104',1,'mage::DoubleEndedMemoryStack::HighAllocator::is_always_equal()']]]
-];
