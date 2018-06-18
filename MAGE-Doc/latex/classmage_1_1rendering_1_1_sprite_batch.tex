@@ -1,0 +1,186 @@
+\hypertarget{classmage_1_1rendering_1_1_sprite_batch}{}\section{mage\+:\+:rendering\+:\+:Sprite\+Batch Class Reference}
+\label{classmage_1_1rendering_1_1_sprite_batch}\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+
+
+{\ttfamily \#include $<$sprite\+\_\+batch.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl}{Impl}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_a44e4cca2560beccf655c87d79dca3d20}{Sprite\+Batch}} (I\+D3\+D11\+Device \&device, I\+D3\+D11\+Device\+Context \&device\+\_\+context)
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_a979cdc21ce17579ded4066f1e6a2d411}{Sprite\+Batch}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&sprite\+\_\+batch)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_a91644c1c0c3e53a87f470116ec9746dc}{Sprite\+Batch}} (\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&\&sprite\+\_\+batch) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_aedb2831f0054cedb1ede8be8f27e0432}{$\sim$\+Sprite\+Batch}} ()
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_a336c16ed2eee2ef9fe8520903033f63e}{operator=}} (const \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&sprite\+\_\+batch)=delete
+\item 
+\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_ae5de43894a07d86a0d2e4150080a7990}{operator=}} (\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&\&sprite\+\_\+batch) noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_ae90ef53946738b7933ee69004dbbe63c}{Begin}} (\mbox{\hyperlink{namespacemage_1_1rendering_a4fad00dbca0c8d854c765ab831c76055}{Sprite\+Sort\+Mode}} sort\+\_\+mode=\mbox{\hyperlink{namespacemage_1_1rendering_aeb14ce7610cc9391f4e01be027b91dcca4ed71db54748b36eeb398876b0c747ac}{Sprite\+Sort\+Mode\+::\+Deferred}})
+\item 
+void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_ae74068fb6f2bcc084a810a12c2eb478c}{Draw}} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture, F\+X\+M\+V\+E\+C\+T\+OR color, \mbox{\hyperlink{namespacemage_1_1rendering_a4dbc3536c87b906f1d41d863ec458e78}{Sprite\+Effect}} effects, const \mbox{\hyperlink{classmage_1_1_sprite_transform}{Sprite\+Transform}} \&transform, const R\+E\+CT $\ast$source=nullptr)
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_ac27b9692f118361853c94af91b3d4d2d}{End}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl}{Impl}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_ae4b2d9d7871bfbd057f1b09036373d75}{m\+\_\+impl}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of sprite batches. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_a44e4cca2560beccf655c87d79dca3d20}\label{classmage_1_1rendering_1_1_sprite_batch_a44e4cca2560beccf655c87d79dca3d20}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!Sprite\+Batch@{Sprite\+Batch}}
+\index{Sprite\+Batch@{Sprite\+Batch}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Sprite\+Batch()}{SpriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device \&}]{device,  }\item[{I\+D3\+D11\+Device\+Context \&}]{device\+\_\+context }\end{DoxyParamCaption})}
+
+Constructs a sprite batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A reference to the device. \\
+\hline
+\mbox{\tt in}  & {\em device\+\_\+context} & A reference to the device context. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_a979cdc21ce17579ded4066f1e6a2d411}\label{classmage_1_1rendering_1_1_sprite_batch_a979cdc21ce17579ded4066f1e6a2d411}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!Sprite\+Batch@{Sprite\+Batch}}
+\index{Sprite\+Batch@{Sprite\+Batch}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Sprite\+Batch()}{SpriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructs a sprite batch from the given sprite batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_a91644c1c0c3e53a87f470116ec9746dc}\label{classmage_1_1rendering_1_1_sprite_batch_a91644c1c0c3e53a87f470116ec9746dc}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!Sprite\+Batch@{Sprite\+Batch}}
+\index{Sprite\+Batch@{Sprite\+Batch}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Sprite\+Batch()}{SpriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&\&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Constructs a sprite batch by moving the given sprite batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_aedb2831f0054cedb1ede8be8f27e0432}\label{classmage_1_1rendering_1_1_sprite_batch_aedb2831f0054cedb1ede8be8f27e0432}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!````~Sprite\+Batch@{$\sim$\+Sprite\+Batch}}
+\index{````~Sprite\+Batch@{$\sim$\+Sprite\+Batch}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{$\sim$\+Sprite\+Batch()}{~SpriteBatch()}}
+{\footnotesize\ttfamily mage\+::rendering\+::\+Sprite\+Batch\+::$\sim$\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this sprite batch. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_ae90ef53946738b7933ee69004dbbe63c}\label{classmage_1_1rendering_1_1_sprite_batch_ae90ef53946738b7933ee69004dbbe63c}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!Begin@{Begin}}
+\index{Begin@{Begin}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Batch\+::\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_1_1rendering_a4fad00dbca0c8d854c765ab831c76055}{Sprite\+Sort\+Mode}}}]{sort\+\_\+mode = {\ttfamily \mbox{\hyperlink{namespacemage_1_1rendering_aeb14ce7610cc9391f4e01be027b91dcca4ed71db54748b36eeb398876b0c747ac}{Sprite\+Sort\+Mode\+::\+Deferred}}} }\end{DoxyParamCaption})}
+
+Begins the processing of a batch of sprites.
+
+\begin{DoxyPrecond}{Precondition}
+This sprite batch is not inside a begin/end pair. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sort\+\_\+mode} & A reference to the sprite sorting mode for the whole batch of sprites. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_ae74068fb6f2bcc084a810a12c2eb478c}\label{classmage_1_1rendering_1_1_sprite_batch_ae74068fb6f2bcc084a810a12c2eb478c}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV mage\+::rendering\+::\+Sprite\+Batch\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture,  }\item[{F\+X\+M\+V\+E\+C\+T\+OR}]{color,  }\item[{\mbox{\hyperlink{namespacemage_1_1rendering_a4dbc3536c87b906f1d41d863ec458e78}{Sprite\+Effect}}}]{effects,  }\item[{const \mbox{\hyperlink{classmage_1_1_sprite_transform}{Sprite\+Transform}} \&}]{transform,  }\item[{const R\+E\+CT $\ast$}]{source = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Draws a sprite.
+
+\begin{DoxyPrecond}{Precondition}
+This sprite batch is inside a begin/end pair. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em texture} & A pointer to the shader resource view of the texture to draw. \\
+\hline
+\mbox{\tt in}  & {\em color} & The (linear) \mbox{\hyperlink{structmage_1_1_r_g_b_a}{R\+G\+BA}} color. \\
+\hline
+\mbox{\tt in}  & {\em effects} & The sprite effects to apply. \\
+\hline
+\mbox{\tt in}  & {\em transform} & A reference to the sprite transform. \\
+\hline
+\mbox{\tt in}  & {\em source} & A pointer the rectangular subregion of the texture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_ac27b9692f118361853c94af91b3d4d2d}\label{classmage_1_1rendering_1_1_sprite_batch_ac27b9692f118361853c94af91b3d4d2d}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!End@{End}}
+\index{End@{End}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Batch\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ends the processing of a batch of sprites.
+
+\begin{DoxyPrecond}{Precondition}
+This sprite batch is inside a begin/end pair. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_a336c16ed2eee2ef9fe8520903033f63e}\label{classmage_1_1rendering_1_1_sprite_batch_a336c16ed2eee2ef9fe8520903033f63e}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}}\& mage\+::rendering\+::\+Sprite\+Batch\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copies the given sprite batch to this sprite batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given sprite batch (i.\+e. this sprite batch). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_ae5de43894a07d86a0d2e4150080a7990}\label{classmage_1_1rendering_1_1_sprite_batch_ae5de43894a07d86a0d2e4150080a7990}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \& mage\+::rendering\+::\+Sprite\+Batch\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch}{Sprite\+Batch}} \&\&}]{sprite\+\_\+batch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Moves the given sprite batch to this sprite batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sprite\+\_\+batch} & A reference to the sprite batch to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved sprite batch (i.\+e. this sprite batch). 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_ae4b2d9d7871bfbd057f1b09036373d75}\label{classmage_1_1rendering_1_1_sprite_batch_ae4b2d9d7871bfbd057f1b09036373d75}} 
+\index{mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}!m\+\_\+impl@{m\+\_\+impl}}
+\index{m\+\_\+impl@{m\+\_\+impl}!mage\+::rendering\+::\+Sprite\+Batch@{mage\+::rendering\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{m\+\_\+impl}{m\_impl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl}{Impl}} $>$ mage\+::rendering\+::\+Sprite\+Batch\+::m\+\_\+impl\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the implementation of this sprite batch. 

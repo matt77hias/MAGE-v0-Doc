@@ -1,0 +1,326 @@
+\hypertarget{classmage_1_1_proxy_ptr}{}\section{mage\+:\+:Proxy\+Ptr$<$ T $>$ Class Template Reference}
+\label{classmage_1_1_proxy_ptr}\index{mage\+::\+Proxy\+Ptr$<$ T $>$@{mage\+::\+Proxy\+Ptr$<$ T $>$}}
+
+
+{\ttfamily \#include $<$memory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_a6fadf61cdc71e1d6bc9ac666eda5d2c6}{Proxy\+Ptr}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_aaad9140d67d5c0a8694e94973234676a}{Proxy\+Ptr}} (std\+::nullptr\+\_\+t) noexcept
+\item 
+{\footnotesize template$<$typename ContainerT $>$ }\\\mbox{\hyperlink{classmage_1_1_proxy_ptr_a52d2afaf6a037026a4694a074f21a54f}{Proxy\+Ptr}} (ContainerT \&container, size\+\_\+t index) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_a964d48ac831c8c179edca90bdfcc5b0b}{Proxy\+Ptr}} (std\+::function$<$ T $\ast$() $>$ getter) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_aa31b385e10ba8ab7ce91791078e9ed6d}{Proxy\+Ptr}} (const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \&ptr) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_a51e4a025cd9ca419a2c4b687b4c430bb}{Proxy\+Ptr}} (\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \&\&ptr) noexcept
+\item 
+{\footnotesize template$<$typename FromT , typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T$\ast$, T$\ast$ $>$ $>$$>$ }\\\mbox{\hyperlink{classmage_1_1_proxy_ptr_a0356f4ad5f0a6e08baf29bc9239d317c}{Proxy\+Ptr}} (const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ FromT $>$ \&ptr) noexcept
+\item 
+{\footnotesize template$<$typename FromT , typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T$\ast$, T$\ast$ $>$ $>$$>$ }\\\mbox{\hyperlink{classmage_1_1_proxy_ptr_aab3e1b95156a5b52b47db4d2f4176e37}{Proxy\+Ptr}} (\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ FromT $>$ \&\&ptr) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_a7f8989f9214bbc1cd94295c796cfbb9a}{$\sim$\+Proxy\+Ptr}} ()=default
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \& \mbox{\hyperlink{classmage_1_1_proxy_ptr_a2d3a3a7595028a72a97a2c2131947a8d}{operator=}} (const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \&ptr) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \& \mbox{\hyperlink{classmage_1_1_proxy_ptr_a53e38a57d8155b8cd59b3d6e332995b7}{operator=}} (\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} \&\&ptr) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_proxy_ptr_ac1226dcf54a735bb5da12273c38e9b8f}{operator bool}} () const noexcept
+\item 
+T \& \mbox{\hyperlink{classmage_1_1_proxy_ptr_aaf7b96ea7e8350ce5f2ae1f504627fd9}{operator$\ast$}} () const noexcept
+\item 
+T $\ast$ \mbox{\hyperlink{classmage_1_1_proxy_ptr_af33f20a43615df2328d7436ff3145d54}{operator-\/$>$}} () const noexcept
+\item 
+T $\ast$ \mbox{\hyperlink{classmage_1_1_proxy_ptr_a9af6f8e3b1f1aa9d5b323ed01fb9b40d}{Get}} () const noexcept
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{classmage_1_1_proxy_ptr_a786d92c5d87ac0349a60cf99642bd890}{operator==}} (const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ U $>$ \&rhs) const noexcept
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{classmage_1_1_proxy_ptr_a14c1832a1f6b48c69337931d49bf3676}{operator!=}} (const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ U $>$ \&rhs) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ T $\ast$() $>$ \mbox{\hyperlink{classmage_1_1_proxy_ptr_a78fad290d478eb55285d4ab01cda1669}{m\+\_\+getter}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class mage\+::\+Proxy\+Ptr$<$ T $>$}
+
+A class of proxy pointers.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The memory resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a6fadf61cdc71e1d6bc9ac666eda5d2c6}\label{classmage_1_1_proxy_ptr_a6fadf61cdc71e1d6bc9ac666eda5d2c6}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer. \mbox{\Hypertarget{classmage_1_1_proxy_ptr_aaad9140d67d5c0a8694e94973234676a}\label{classmage_1_1_proxy_ptr_aaad9140d67d5c0a8694e94973234676a}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{std\+::nullptr\+\_\+t}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer. \mbox{\Hypertarget{classmage_1_1_proxy_ptr_a52d2afaf6a037026a4694a074f21a54f}\label{classmage_1_1_proxy_ptr_a52d2afaf6a037026a4694a074f21a54f}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename ContainerT $>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{ContainerT \&}]{container,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+Constructs a proxy pointer for the given container and index.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ContainerT} & The container type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em container} & A reference to the container. \\
+\hline
+\mbox{\tt in}  & {\em index} & The index into the container. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a964d48ac831c8c179edca90bdfcc5b0b}\label{classmage_1_1_proxy_ptr_a964d48ac831c8c179edca90bdfcc5b0b}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{std\+::function$<$ T $\ast$() $>$}]{getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+Constructs a proxy pointer with the given getter function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em getter} & The getter function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_aa31b385e10ba8ab7ce91791078e9ed6d}\label{classmage_1_1_proxy_ptr_aa31b385e10ba8ab7ce91791078e9ed6d}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ T $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer from the given proxy pointer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a51e4a025cd9ca419a2c4b687b4c430bb}\label{classmage_1_1_proxy_ptr_a51e4a025cd9ca419a2c4b687b4c430bb}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ T $>$ \&\&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer by moving the given proxy pointer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a0356f4ad5f0a6e08baf29bc9239d317c}\label{classmage_1_1_proxy_ptr_a0356f4ad5f0a6e08baf29bc9239d317c}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename FromT , typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T$\ast$, T$\ast$ $>$ $>$$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ FromT $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer from the given proxy pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em FromT} & The memory resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_aab3e1b95156a5b52b47db4d2f4176e37}\label{classmage_1_1_proxy_ptr_aab3e1b95156a5b52b47db4d2f4176e37}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Proxy\+Ptr@{Proxy\+Ptr}}
+\index{Proxy\+Ptr@{Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Proxy\+Ptr()}{ProxyPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename FromT , typename  = std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ From\+T$\ast$, T$\ast$ $>$ $>$$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ FromT $>$ \&\&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Constructs a proxy pointer by moving the given proxy pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em FromT} & The memory resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer to move. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a7f8989f9214bbc1cd94295c796cfbb9a}\label{classmage_1_1_proxy_ptr_a7f8989f9214bbc1cd94295c796cfbb9a}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!````~Proxy\+Ptr@{$\sim$\+Proxy\+Ptr}}
+\index{````~Proxy\+Ptr@{$\sim$\+Proxy\+Ptr}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{$\sim$\+Proxy\+Ptr()}{~ProxyPtr()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this proxy pointer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a9af6f8e3b1f1aa9d5b323ed01fb9b40d}\label{classmage_1_1_proxy_ptr_a9af6f8e3b1f1aa9d5b323ed01fb9b40d}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the memory resource pointed to by this proxy pointer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the memory resource pointed to by this proxy pointer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_ac1226dcf54a735bb5da12273c38e9b8f}\label{classmage_1_1_proxy_ptr_ac1226dcf54a735bb5da12273c38e9b8f}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+Converts this proxy pointer to a {\ttfamily bool}. \mbox{\Hypertarget{classmage_1_1_proxy_ptr_a14c1832a1f6b48c69337931d49bf3676}\label{classmage_1_1_proxy_ptr_a14c1832a1f6b48c69337931d49bf3676}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ U $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given proxy pointer is not equal to this proxy pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & The memory resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the proxy pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given proxy pointer is not equal to this proxy pointer. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_aaf7b96ea7e8350ce5f2ae1f504627fd9}\label{classmage_1_1_proxy_ptr_aaf7b96ea7e8350ce5f2ae1f504627fd9}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the memory resource pointed to by this proxy pointer.
+
+\begin{DoxyReturn}{Returns}
+A reference to the memory resource pointed to by this proxy pointer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_af33f20a43615df2328d7436ff3145d54}\label{classmage_1_1_proxy_ptr_af33f20a43615df2328d7436ff3145d54}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the memory resource pointed to by this proxy pointer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the memory resource pointed to by this proxy pointer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a2d3a3a7595028a72a97a2c2131947a8d}\label{classmage_1_1_proxy_ptr_a2d3a3a7595028a72a97a2c2131947a8d}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}\& \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ T $>$ \&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Copies the given proxy pointer to this proxy pointer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given proxy pointer (i.\+e. this proxy pointer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a53e38a57d8155b8cd59b3d6e332995b7}\label{classmage_1_1_proxy_ptr_a53e38a57d8155b8cd59b3d6e332995b7}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}\& \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ T $>$ \&\&}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Moves the given proxy pointer to this proxy pointer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & A reference to the proxy pointer to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved proxy pointer (i.\+e. this proxy pointer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a786d92c5d87ac0349a60cf99642bd890}\label{classmage_1_1_proxy_ptr_a786d92c5d87ac0349a60cf99642bd890}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!operator==@{operator==}}
+\index{operator==@{operator==}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_proxy_ptr}{Proxy\+Ptr}}$<$ U $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given proxy pointer is equal to this proxy pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & The memory resource type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & A reference to the proxy pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given proxy pointer is equal to this proxy pointer. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1_proxy_ptr_a78fad290d478eb55285d4ab01cda1669}\label{classmage_1_1_proxy_ptr_a78fad290d478eb55285d4ab01cda1669}} 
+\index{mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}!m\+\_\+getter@{m\+\_\+getter}}
+\index{m\+\_\+getter@{m\+\_\+getter}!mage\+::\+Proxy\+Ptr@{mage\+::\+Proxy\+Ptr}}
+\subsubsection{\texorpdfstring{m\+\_\+getter}{m\_getter}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::function$<$ T$\ast$() $>$ \mbox{\hyperlink{classmage_1_1_proxy_ptr}{mage\+::\+Proxy\+Ptr}}$<$ T $>$\+::m\+\_\+getter}
+
+The getter of this proxy pointer. 
