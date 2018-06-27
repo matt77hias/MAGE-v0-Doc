@@ -13,7 +13,7 @@
 [gi]: https://gitter.im/MatthiasAdvancedGameEngine/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [li]: https://raw.githubusercontent.com/matt77hias/MAGE/master/LICENSE.txt
 
-# [MAGE-Doc](http://matt77hias.github.io/MAGE-Doc)
+# [MAGE-Doc](https://matt77hias.github.io/MAGE-Doc)
 
 ## About
 <p align="center"><img src="https://github.com/matt77hias/MAGE-Meta/blob/master/res/Example.png"></p>
@@ -22,6 +22,6 @@ The documentation of [MAGE](https://github.com/matt77hias/MAGE).
 
 ## Development
 * **Documentation style**: [JavaDoc style](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html) extended with [Doxygen keywords](https://www.stack.nl/~dimitri/doxygen/manual/commands.html)
-* **Documentation generation**: [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) to [HTML](http://matt77hias.github.io/MAGE-Doc) and LaTeX ([PDF](https://matt77hias.github.io/MAGE-Doc/MAGE-Doc/latex/refman.pdf)).
+* **Documentation generation**: [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) to [HTML](https://matt77hias.github.io/MAGE-Doc) and LaTeX ([PDF](https://matt77hias.github.io/MAGE-Doc/MAGE-Doc/latex/refman.pdf)).
 
 <p align="center">Copyright © 2016-2018 Matthias Moulin. All Rights Reserved.</p>
