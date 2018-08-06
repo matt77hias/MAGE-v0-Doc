@@ -16,6 +16,7 @@ var searchData=
   ['s8x2',['S8x2',['../namespacemage.html#a313e99aa07d7e0d7063e7ae7664ad891',1,'mage']]],
   ['s8x3',['S8x3',['../namespacemage.html#a47b14d86175fb0f6f29a3b860d9f5b05',1,'mage']]],
   ['s8x4',['S8x4',['../namespacemage.html#a371879f5aca18ab778340cb140e25e87',1,'mage']]],
+  ['selectionfunction',['SelectionFunction',['../classmage_1_1_line_reader.html#a17bbae61a3ce30bdb251d6c76e1a4522',1,'mage::LineReader']]],
   ['sharedhandle',['SharedHandle',['../namespacemage.html#ae70b3368a2dccc985c4ecbdf15a1a3c9',1,'mage']]],
   ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]],
   ['spritefontptr',['SpriteFontPtr',['../namespacemage_1_1rendering.html#ab2f34196c20422ca3692ad3f3bff3a5d',1,'mage::rendering']]]

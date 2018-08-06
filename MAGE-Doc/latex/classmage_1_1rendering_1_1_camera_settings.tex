@@ -35,10 +35,6 @@ void \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_ab5dc52d8f8d92c
 \item 
 const \mbox{\hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a2e3906063aa11044dc325affee24aeb1}{Get\+Voxelization\+Settings}} () const noexcept
 \item 
-\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_ae99d9db32dcf8be886e324b647d90ade}{Get\+Gamma}} () const noexcept
-\item 
-void \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_aff3d5727eaff77fd9f8bb30d352ff7d7}{Set\+Gamma}} (\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} gamma) noexcept
-\item 
 bool \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_aa6a33e3b5936e440af32d2ca3d65585f}{Contains\+Render\+Layers}} () const noexcept
 \item 
 bool \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_aab59f8b20a5d05fd23fff006ef741dac}{Contains\+Render\+Layer}} (\mbox{\hyperlink{namespacemage_1_1rendering_a466c2a441ea5b26e4625c2f34e021b3d}{Render\+Layer}} render\+\_\+layer) const noexcept
@@ -59,6 +55,13 @@ const \mbox{\hyperlink{classmage_1_1rendering_1_1_fog}{Fog}} \& \mbox{\hyperlink
 \item 
 const \mbox{\hyperlink{classmage_1_1rendering_1_1_sky}{Sky}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a0045fb85eafcb33dff43c04656c4cc3b}{Get\+Sky}} () const noexcept
 \end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a509a248399b2db684ce53625f3afdb5d}{Get\+Gamma}} () noexcept
+\item 
+static constexpr void \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_ae186332d3c4a89c43ef59ed726c709ca}{Set\+Gamma}} (\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} gamma) noexcept
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -70,13 +73,16 @@ const \mbox{\hyperlink{classmage_1_1rendering_1_1_sky}{Sky}} \& \mbox{\hyperlink
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a4d4cc0955f6bac39a57382a15fe81d64}{m\+\_\+voxelization\+\_\+settings}}
 \item 
-\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_aec2e610b98b3657f49944a59c4717bee}{m\+\_\+gamma}}
-\item 
 \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_ab6d4995fe7531563c5c5c8db1a0a1c9f}{m\+\_\+render\+\_\+layer\+\_\+mask}}
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1_fog}{Fog}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a173329d1022c717efe29e33eaa554d18}{m\+\_\+fog}}
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1_sky}{Sky}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_a62c726791db2c8ee20ef404e15c5f26c}{m\+\_\+sky}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1rendering_1_1_camera_settings_add0c4a63661e6cbfed40f6f3267d72d5}{s\+\_\+gamma}} = 2.\+2f
 \end{DoxyCompactItemize}
 
 
@@ -161,12 +167,17 @@ Destructs this camera settings.
 \subsubsection{\texorpdfstring{Get\+Fog()}{GetFog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1rendering_1_1_fog}{Fog}}\& mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Fog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_ae99d9db32dcf8be886e324b647d90ade}\label{classmage_1_1rendering_1_1_camera_settings_ae99d9db32dcf8be886e324b647d90ade}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_a509a248399b2db684ce53625f3afdb5d}\label{classmage_1_1rendering_1_1_camera_settings_a509a248399b2db684ce53625f3afdb5d}} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Get\+Gamma@{Get\+Gamma}}
 \index{Get\+Gamma@{Get\+Gamma}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
 \subsubsection{\texorpdfstring{Get\+Gamma()}{GetGamma()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Gamma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily static constexpr \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::rendering\+::\+Camera\+Settings\+::\+Get\+Gamma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
 
+Returns the gamma value used for gamma correction of camera settings.
+
+\begin{DoxyReturn}{Returns}
+The gamma value used for gamma correction of camera settings. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_ab1421b9c47b7eafbebd0619c5b5116b5}\label{classmage_1_1rendering_1_1_camera_settings_ab1421b9c47b7eafbebd0619c5b5116b5}} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Get\+Render\+Mode@{Get\+Render\+Mode}}
 \index{Get\+Render\+Mode@{Get\+Render\+Mode}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
@@ -253,12 +264,19 @@ A reference to the moved camera settings (i.\+e. this camera settings).
 \subsubsection{\texorpdfstring{Set\+B\+R\+D\+F()}{SetBRDF()}}
 {\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+Settings\+::\+Set\+B\+R\+DF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_1_1rendering_ab8fe8684ca4bd74ba3a394b00cf125b5}{B\+R\+DF}}}]{brdf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_aff3d5727eaff77fd9f8bb30d352ff7d7}\label{classmage_1_1rendering_1_1_camera_settings_aff3d5727eaff77fd9f8bb30d352ff7d7}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_ae186332d3c4a89c43ef59ed726c709ca}\label{classmage_1_1rendering_1_1_camera_settings_ae186332d3c4a89c43ef59ed726c709ca}} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Set\+Gamma@{Set\+Gamma}}
 \index{Set\+Gamma@{Set\+Gamma}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
 \subsubsection{\texorpdfstring{Set\+Gamma()}{SetGamma()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Camera\+Settings\+::\+Set\+Gamma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{gamma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily static constexpr void mage\+::rendering\+::\+Camera\+Settings\+::\+Set\+Gamma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{gamma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
 
+Sets the gamma value used for gamma correction of camera settings to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em gamma} & The gamma value. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_aa4f29b081141c0acfb0e4d92eac81602}\label{classmage_1_1rendering_1_1_camera_settings_aa4f29b081141c0acfb0e4d92eac81602}} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!Set\+Render\+Mode@{Set\+Render\+Mode}}
 \index{Set\+Render\+Mode@{Set\+Render\+Mode}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
@@ -292,13 +310,7 @@ The B\+R\+DF of this camera settings. \mbox{\Hypertarget{classmage_1_1rendering_
 \subsubsection{\texorpdfstring{m\+\_\+fog}{m\_fog}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_fog}{Fog}} mage\+::rendering\+::\+Camera\+Settings\+::m\+\_\+fog\hspace{0.3cm}{\ttfamily [private]}}
 
-The fog of this camera settings. \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_aec2e610b98b3657f49944a59c4717bee}\label{classmage_1_1rendering_1_1_camera_settings_aec2e610b98b3657f49944a59c4717bee}} 
-\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!m\+\_\+gamma@{m\+\_\+gamma}}
-\index{m\+\_\+gamma@{m\+\_\+gamma}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
-\subsubsection{\texorpdfstring{m\+\_\+gamma}{m\_gamma}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::rendering\+::\+Camera\+Settings\+::m\+\_\+gamma\hspace{0.3cm}{\ttfamily [private]}}
-
-The gamma exponent of this camera settings. \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_ab6d4995fe7531563c5c5c8db1a0a1c9f}\label{classmage_1_1rendering_1_1_camera_settings_ab6d4995fe7531563c5c5c8db1a0a1c9f}} 
+The fog of this camera settings. \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_ab6d4995fe7531563c5c5c8db1a0a1c9f}\label{classmage_1_1rendering_1_1_camera_settings_ab6d4995fe7531563c5c5c8db1a0a1c9f}} 
 \index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!m\+\_\+render\+\_\+layer\+\_\+mask@{m\+\_\+render\+\_\+layer\+\_\+mask}}
 \index{m\+\_\+render\+\_\+layer\+\_\+mask@{m\+\_\+render\+\_\+layer\+\_\+mask}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
 \subsubsection{\texorpdfstring{m\+\_\+render\+\_\+layer\+\_\+mask}{m\_render\_layer\_mask}}
@@ -328,4 +340,10 @@ The Tone Mapping of this camera settings. \mbox{\Hypertarget{classmage_1_1render
 \subsubsection{\texorpdfstring{m\+\_\+voxelization\+\_\+settings}{m\_voxelization\_settings}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1rendering_1_1_voxelization_settings}{Voxelization\+Settings}} mage\+::rendering\+::\+Camera\+Settings\+::m\+\_\+voxelization\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
 
-The voxelization settings of this camera settings. 
+The voxelization settings of this camera settings. \mbox{\Hypertarget{classmage_1_1rendering_1_1_camera_settings_add0c4a63661e6cbfed40f6f3267d72d5}\label{classmage_1_1rendering_1_1_camera_settings_add0c4a63661e6cbfed40f6f3267d72d5}} 
+\index{mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}!s\+\_\+gamma@{s\+\_\+gamma}}
+\index{s\+\_\+gamma@{s\+\_\+gamma}!mage\+::rendering\+::\+Camera\+Settings@{mage\+::rendering\+::\+Camera\+Settings}}
+\subsubsection{\texorpdfstring{s\+\_\+gamma}{s\_gamma}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::rendering\+::\+Camera\+Settings\+::s\+\_\+gamma = 2.\+2f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The gamma value used for gamma correction of camera settings. 

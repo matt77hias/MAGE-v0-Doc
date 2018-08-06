@@ -13,7 +13,6 @@ var classmage_1_1rendering_1_1_display_configuration =
     [ "GetDisplayResolution", "classmage_1_1rendering_1_1_display_configuration.html#a1394352b2a3f80fb1cc24d96f744ae3c", null ],
     [ "GetDisplayRoundedRefreshRate", "classmage_1_1rendering_1_1_display_configuration.html#a6650e981bf82c85d5339afbc37cee64a", null ],
     [ "GetDisplayWidth", "classmage_1_1rendering_1_1_display_configuration.html#a4ceed88b5f46a87857cf0b2979badf46", null ],
-    [ "GetGamma", "classmage_1_1rendering_1_1_display_configuration.html#a84dec99b487839003fce7c9704dc031d", null ],
     [ "GetOutput", "classmage_1_1rendering_1_1_display_configuration.html#a727b2e5ebcc286bb2ae39fd1f1e69445", null ],
     [ "GetSSDisplayHeight", "classmage_1_1rendering_1_1_display_configuration.html#a7bbb45919b9cd4ae20cc9f4cac8a7069", null ],
     [ "GetSSDisplayResolution", "classmage_1_1rendering_1_1_display_configuration.html#a1e55018800cb0c229571274c4f6c222c", null ],
@@ -26,7 +25,6 @@ var classmage_1_1rendering_1_1_display_configuration =
     [ "SetAA", "classmage_1_1rendering_1_1_display_configuration.html#a8cb3173220d7405353fa4d1726e7063d", null ],
     [ "SetDisplayMode", "classmage_1_1rendering_1_1_display_configuration.html#a7cc6b9dcf3932a62bfd1416fc7b397ea", null ],
     [ "SetFullScreen", "classmage_1_1rendering_1_1_display_configuration.html#a5e15cc1ca56718a7892b80cd0a1d20c0", null ],
-    [ "SetGamma", "classmage_1_1rendering_1_1_display_configuration.html#a1d8d4b2f3b79e53d9b36da3f6a0ddf69", null ],
     [ "SetVSync", "classmage_1_1rendering_1_1_display_configuration.html#a304a29762afd99caa1672ef6cc259fb3", null ],
     [ "SetWindowed", "classmage_1_1rendering_1_1_display_configuration.html#a78d0902979bd5a0eff7fef0aa7976a7f", null ],
     [ "UsesAA", "classmage_1_1rendering_1_1_display_configuration.html#abbcb68e66c4a659cb169819a4f1d0d5d", null ],
@@ -35,7 +33,6 @@ var classmage_1_1rendering_1_1_display_configuration =
     [ "m_aa", "classmage_1_1rendering_1_1_display_configuration.html#a03754a6d492393f70f68c619311dfa4c", null ],
     [ "m_adapter", "classmage_1_1rendering_1_1_display_configuration.html#a307a8e6e0b1beb93175a6db519759e86", null ],
     [ "m_display_mode", "classmage_1_1rendering_1_1_display_configuration.html#a577ada006ada1b1e65a8deb817f0dafe", null ],
-    [ "m_gamma", "classmage_1_1rendering_1_1_display_configuration.html#ac01844bb757c13e438c9ef3281becd4e", null ],
     [ "m_output", "classmage_1_1rendering_1_1_display_configuration.html#a3f43cbe5bb1a1a7c1bfb9ce66052fe0a", null ],
     [ "m_vsync", "classmage_1_1rendering_1_1_display_configuration.html#a749335db324a29c8b4ac30acf1c5361d", null ],
     [ "m_windowed", "classmage_1_1rendering_1_1_display_configuration.html#a9d2117628e8b8f6a9b6548a9c0b11c36", null ]

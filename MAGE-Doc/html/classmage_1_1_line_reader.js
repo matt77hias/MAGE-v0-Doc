@@ -1,5 +1,6 @@
 var classmage_1_1_line_reader =
 [
+    [ "SelectionFunction", "classmage_1_1_line_reader.html#a17bbae61a3ce30bdb251d6c76e1a4522", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ab4a46321d7ea3ecda2d6390c78a7285b", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ae4f871bebae110704b34c0bd88460639", null ],
     [ "LineReader", "classmage_1_1_line_reader.html#ae90c546a98e113a48ca1c94b854a4866", null ],
@@ -9,7 +10,6 @@ var classmage_1_1_line_reader =
     [ "GetCurrentLineNumber", "classmage_1_1_line_reader.html#aa0ed768e2799b74f2341c56fc6ac4969", null ],
     [ "GetCurrentToken", "classmage_1_1_line_reader.html#a543a1b133b0067cbe69e81dbad5ea0e1", null ],
     [ "GetPath", "classmage_1_1_line_reader.html#a9740b3cecdcf5a27c696a08eef3b09da", null ],
-    [ "GetRegex", "classmage_1_1_line_reader.html#a7e4e6f6e41dc07d34ce93022e2f7e401", null ],
     [ "operator=", "classmage_1_1_line_reader.html#a2247078d0b5602f9a9a6b74019832faf", null ],
     [ "operator=", "classmage_1_1_line_reader.html#a3ba691cb32a1ab5dcbe75498068c1b86", null ],
     [ "Postprocess", "classmage_1_1_line_reader.html#a51775e07b5f7c9f72441e42d6d3896e1", null ],
@@ -17,14 +17,15 @@ var classmage_1_1_line_reader =
     [ "Process", "classmage_1_1_line_reader.html#ad351b7c68e5784d0dca690a5b8fe7528", null ],
     [ "Read", "classmage_1_1_line_reader.html#a9bbad433ab93ce012aec7155adafbedb", null ],
     [ "Read", "classmage_1_1_line_reader.html#a208eb25a7715761178317eec72c93c75", null ],
-    [ "ReadFromFile", "classmage_1_1_line_reader.html#ac819910b2ad9cf9751fa223d4f90ada0", null ],
-    [ "ReadFromMemory", "classmage_1_1_line_reader.html#adc2bf81611774d4a11da47812fcc0f6a", null ],
+    [ "ReadFromFile", "classmage_1_1_line_reader.html#aba8857b3d0f49250e312bd737d7d0e9c", null ],
+    [ "ReadFromMemory", "classmage_1_1_line_reader.html#a6411d017fe1c7f30a544e2f0176f14a2", null ],
     [ "ReadLine", "classmage_1_1_line_reader.html#a8c81989a9d59ae31dd19e6d3961cfaf1", null ],
     [ "ReadRemainingTokens", "classmage_1_1_line_reader.html#aa12f309eaa7aace705ff4e0199c4fbfc", null ],
-    [ "SetRegex", "classmage_1_1_line_reader.html#a1f564ab424c7a906cd0bf2e7bf550bb9", null ],
-    [ "g_default_regex", "classmage_1_1_line_reader.html#a6b21fad06278a64bbdece198844a8cfa", null ],
+    [ "m_iterator", "classmage_1_1_line_reader.html#a106f89e663b174b5b55bfdf79fbca901", null ],
     [ "m_line_number", "classmage_1_1_line_reader.html#ab145590a7e115106c0987905fde98393", null ],
     [ "m_path", "classmage_1_1_line_reader.html#a05436c40af16b882c2ebd515287598f7", null ],
     [ "m_regex", "classmage_1_1_line_reader.html#a2b3c9c2f693971765c03db3752edc339", null ],
-    [ "m_token_iterator", "classmage_1_1_line_reader.html#aa6e1c2a165ce99a124de1b257f1c0f36", null ]
+    [ "m_selection_function", "classmage_1_1_line_reader.html#a69f3eac618227e43eb7d55aec475d2ff", null ],
+    [ "s_default_regex", "classmage_1_1_line_reader.html#a6713da665d123ab39293c0c5a4e8e1de", null ],
+    [ "s_default_selection_function", "classmage_1_1_line_reader.html#a93da10f6f69b44accfec8074712f35de", null ]
 ];

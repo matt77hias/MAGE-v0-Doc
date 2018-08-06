@@ -55,20 +55,20 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classmage_1_1_double_ended_memory_stack.html#afaac4a28ea1e386bc83d3e07fd5531a0",
-"classmage_1_1_local_transform.html#acd4fda032325f52cb668fc4733c6bc04",
-"classmage_1_1_scene.html#a2c25c0fedc0230771d8c00a8288a69ce",
-"classmage_1_1_transform.html#a6b8797abb38b3bbe894193c89bb63a71",
-"classmage_1_1input_1_1_mouse_1_1_impl.html#a1c5de7f34edab12846e75cf7d2b76094",
-"classmage_1_1rendering_1_1_deferred_pass.html#a5b9a7cf23089389be11d6a3c4526bde9",
-"classmage_1_1rendering_1_1_manager_1_1_impl.html#abb9706b54c07c3493ef906667051c336",
-"classmage_1_1rendering_1_1_perspective_camera.html",
-"classmage_1_1rendering_1_1_spot_light.html#af1f1d3aee8bdcda50d16f4b0551e4728",
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a8acbe60edb384725707d9b393790293f",
-"classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#af6b1842f18fb4a6e6bae435fd0f08496",
-"functions_vars_f.html",
-"structmage_1_1_s_r_g_b.html#afc01b8a11b3033ba21e6c5945359a421",
-"structmage_1_1rendering_1_1_pipeline.html#ae1de65a4f77e4db1fe0582ab85ef1335",
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#ab41cec4ed6c1a38cd4bc5c73e78ec747"
+"classmage_1_1_local_transform.html#accd789cb8a8f3cec2c048cfb05ef8eb3",
+"classmage_1_1_scene.html#a270ac4a26210b95ba05957af19c4c43c",
+"classmage_1_1_transform.html#a6adbe2205f8db80107a2046eb7a9566a",
+"classmage_1_1input_1_1_mouse_1_1_impl.html#a18304bef70290efaec61ad9eca140ce8",
+"classmage_1_1rendering_1_1_deferred_pass.html#a542cc2833e2df7b7697f2c1d769dce36",
+"classmage_1_1rendering_1_1_manager_1_1_impl.html#af9164e13dda6ab8b553e58c62ca79378",
+"classmage_1_1rendering_1_1_perspective_camera.html#a180f74e8b39609aee8dcc2741a74076f",
+"classmage_1_1rendering_1_1_spot_light.html#af91b9fc5303e5c2c5e90337f42db015c",
+"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a9631b95d63626a41575ca18aa6dec206",
+"classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html",
+"functions_vars_h.html",
+"structmage_1_1_s_r_g_b_a.html#a159096e69a7e18eee0d6718d244a1493",
+"structmage_1_1rendering_1_1_pipeline_1_1_c_s.html#a0b813ed8d1b3ac6ea1a4ff753cb62d26",
+"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#adcff35e1a3653f739b68c10ead5c33da"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

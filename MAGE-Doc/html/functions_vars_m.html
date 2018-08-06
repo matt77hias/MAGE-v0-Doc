@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.156.0</span>
+   &#160;<span id="projectnumber">v0.157.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -493,10 +493,6 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>m_fps
 : <a class="el" href="classmage_1_1script_1_1_stats_script.html#adc14b9c342874824422d229c1f8573cc">mage::script::StatsScript</a>
 </li>
-<li>m_gamma
-: <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#aec2e610b98b3657f49944a59c4717bee">mage::rendering::CameraSettings</a>
-, <a class="el" href="classmage_1_1rendering_1_1_display_configuration.html#ac01844bb757c13e438c9ef3281becd4e">mage::rendering::DisplayConfiguration</a>
-</li>
 <li>m_generator
 : <a class="el" href="classmage_1_1_r_n_g.html#a43dc452c2e32d468fa42d16e02d3a283">mage::RNG</a>
 </li>
@@ -573,7 +569,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 , <a class="el" href="classmage_1_1rendering_1_1_spot_light.html#af91b9fc5303e5c2c5e90337f42db015c">mage::rendering::SpotLight</a>
 </li>
 <li>m_inv_gamma
-: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a0ff45fc9f243d43fa43952b026900ade">mage::rendering::CameraBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_world_buffer.html#a8362f6c590aca2d17359abd0129a94bd">mage::rendering::WorldBuffer</a>
 </li>
 <li>m_inv_sqr_range
 : <a class="el" href="structmage_1_1rendering_1_1_omni_light_buffer.html#ac6a0b6050b8d705d46f72ed115b28c4a">mage::rendering::OmniLightBuffer</a>
@@ -584,6 +580,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>m_irradiance
 : <a class="el" href="classmage_1_1rendering_1_1_directional_light.html#a72b58bf80a9f40934622aee9f68aa545">mage::rendering::DirectionalLight</a>
+</li>
+<li>m_iterator
+: <a class="el" href="classmage_1_1_line_reader.html#a106f89e663b174b5b55bfdf79fbca901">mage::LineReader</a>
 </li>
 <li>m_key_press_stamp
 : <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#aac27a1a8210f933a9e0598ce8a0fc2cb">mage::input::Keyboard::Impl</a>
@@ -865,9 +864,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_vertex_position_texture.html#ae296d14afcc5b58ee99a1575d87f1e0f">mage::rendering::VertexPositionTexture</a>
 </li>
 <li>m_padding
-: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a89a72a725654361121771db8668f7f58">mage::rendering::CameraBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#ac3d41b35c2d2fc4174841f78d3b05a0d">mage::rendering::CameraBuffer</a>
 , <a class="el" href="structmage_1_1rendering_1_1_model_buffer.html#a70baa6277c4c247a1fd8ea86d822604c">mage::rendering::ModelBuffer</a>
-, <a class="el" href="structmage_1_1rendering_1_1_world_buffer.html#abd57dceab6a7f9626b4b357494165e7c">mage::rendering::WorldBuffer</a>
+, <a class="el" href="structmage_1_1rendering_1_1_world_buffer.html#a972a6cd26e8c6402733fe863001c79ed">mage::rendering::WorldBuffer</a>
 , <a class="el" href="classmage_1_1_texture_transform.html#a49845212aa6b85f73f9ca2101748bb13">mage::TextureTransform</a>
 </li>
 <li>m_padding0
@@ -1065,6 +1064,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>m_selected
 : <a class="el" href="classmage_1_1script_1_1_editor_script.html#a60a8044379dfd203ad372dabb5c03380">mage::script::EditorScript</a>
+</li>
+<li>m_selection_function
+: <a class="el" href="classmage_1_1_line_reader.html#a69f3eac618227e43eb7d55aec475d2ff">mage::LineReader</a>
 </li>
 <li>m_sensitivity
 : <a class="el" href="classmage_1_1script_1_1_mouse_look_script.html#afe7a443c1fa56fc6143555f992458934">mage::script::MouseLookScript</a>
@@ -1269,9 +1271,6 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>m_timer
 : <a class="el" href="classmage_1_1_engine.html#a360589e71a3d081c6a748aa283d1526d">mage::Engine</a>
 , <a class="el" href="classmage_1_1_progress_reporter_1_1_impl.html#a8eea94dc2c87abc34d80ad61b5adea2e">mage::ProgressReporter::Impl</a>
-</li>
-<li>m_token_iterator
-: <a class="el" href="classmage_1_1_line_reader.html#aa6e1c2a165ce99a124de1b257f1c0f36">mage::LineReader</a>
 </li>
 <li>m_tone_mapping
 : <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#a5a88df673aa475c5087bf74620048580">mage::rendering::CameraSettings</a>

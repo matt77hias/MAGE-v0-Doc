@@ -19,7 +19,6 @@ var hierarchy =
       ] ],
       [ "mage::Array< S32, 2 >", "structmage_1_1_array.html", null ],
       [ "mage::Array< U32, 2 >", "structmage_1_1_array.html", null ],
-      [ "mage::Array< U32, 3 >", "structmage_1_1_array.html", null ],
       [ "mage::Array< T, N, A, typename >", "structmage_1_1_array.html", [
         [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
         [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
