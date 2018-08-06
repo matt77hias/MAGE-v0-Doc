@@ -67,7 +67,6 @@ var searchData=
   ['array_3c_20f32_2c_203_20_3e',['Array&lt; F32, 3 &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20s32_2c_202_20_3e',['Array&lt; S32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20u32_2c_202_20_3e',['Array&lt; U32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]],
-  ['array_3c_20u32_2c_203_20_3e',['Array&lt; U32, 3 &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['arraysize',['arraySize',['../struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#ac4da0d495a89e556d02ac256af28da41',1,'DDS_HEADER_DXT10']]],
   ['arraytotupple',['ArrayToTupple',['../namespacemage_1_1details.html#a282e14de1d24b9f356912f8ac3bb868d',1,'mage::details::ArrayToTupple()'],['../namespacemage.html#ac6283fd3b03caf764520de4a08193bbd',1,'mage::ArrayToTupple()']]],
   ['aspectratiofromfovs',['AspectRatioFromFOVs',['../namespacemage_1_1rendering.html#a631864fb600ae8deae7576820fc77e0a',1,'mage::rendering']]],

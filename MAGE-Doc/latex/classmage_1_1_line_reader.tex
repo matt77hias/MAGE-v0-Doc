@@ -10,6 +10,11 @@ Inheritance diagram for mage\+:\+:Line\+Reader\+:\begin{figure}[H]
 \includegraphics[height=0.821114cm]{classmage_1_1_line_reader}
 \end{center}
 \end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} = std\+::function$<$ const std\+::ssub\+\_\+match(const std\+::smatch \&) $>$
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,14 +22,16 @@ Inheritance diagram for mage\+:\+:Line\+Reader\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classmage_1_1_line_reader}{Line\+Reader}} \& \mbox{\hyperlink{classmage_1_1_line_reader_a3ba691cb32a1ab5dcbe75498068c1b86}{operator=}} (\mbox{\hyperlink{classmage_1_1_line_reader}{Line\+Reader}} \&\&reader) noexcept
 \item 
-void \mbox{\hyperlink{classmage_1_1_line_reader_ac819910b2ad9cf9751fa223d4f90ada0}{Read\+From\+File}} (std\+::filesystem\+::path path, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
+void \mbox{\hyperlink{classmage_1_1_line_reader_aba8857b3d0f49250e312bd737d7d0e9c}{Read\+From\+File}} (std\+::filesystem\+::path path, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}{s\+\_\+default\+\_\+regex}}, \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} selection\+\_\+function=\mbox{\hyperlink{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}{s\+\_\+default\+\_\+selection\+\_\+function}})
 \item 
-void \mbox{\hyperlink{classmage_1_1_line_reader_adc2bf81611774d4a11da47812fcc0f6a}{Read\+From\+Memory}} (const std\+::string \&input, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}})
+void \mbox{\hyperlink{classmage_1_1_line_reader_a6411d017fe1c7f30a544e2f0176f14a2}{Read\+From\+Memory}} (const std\+::string \&input, std\+::regex regex=\mbox{\hyperlink{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}{s\+\_\+default\+\_\+regex}}, \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} selection\+\_\+function=\mbox{\hyperlink{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}{s\+\_\+default\+\_\+selection\+\_\+function}})
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const std\+::regex \mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}} = std\+::regex(R\char`\"{}((\textbackslash{}\char`\"{}\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$\textbackslash{}\char`\"{})$\vert$\mbox{[}$^\wedge$\textbackslash{}n\textbackslash{}r\textbackslash{}s\textbackslash{}t\mbox{]}+)\char`\"{})
+static const std\+::regex \mbox{\hyperlink{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}{s\+\_\+default\+\_\+regex}} = std\+::regex(R\char`\"{}((\textbackslash{}\char`\"{}(\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$)\textbackslash{}\char`\"{})$\vert$(\textbackslash{}S+))\char`\"{})
+\item 
+static const \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} \mbox{\hyperlink{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}{s\+\_\+default\+\_\+selection\+\_\+function}}
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -38,10 +45,6 @@ static const std\+::regex \mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad062
 \mbox{\hyperlink{classmage_1_1_line_reader_ad9753ea392ebe5b3867852d3392fb1e7}{$\sim$\+Line\+Reader}} ()
 \item 
 const std\+::filesystem\+::path \& \mbox{\hyperlink{classmage_1_1_line_reader_a9740b3cecdcf5a27c696a08eef3b09da}{Get\+Path}} () const noexcept
-\item 
-const std\+::regex \& \mbox{\hyperlink{classmage_1_1_line_reader_a7e4e6f6e41dc07d34ce93022e2f7e401}{Get\+Regex}} () const noexcept
-\item 
-void \mbox{\hyperlink{classmage_1_1_line_reader_a1f564ab424c7a906cd0bf2e7bf550bb9}{Set\+Regex}} (std\+::regex regex)
 \item 
 \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}} \mbox{\hyperlink{classmage_1_1_line_reader_aa0ed768e2799b74f2341c56fc6ac4969}{Get\+Current\+Line\+Number}} () const noexcept
 \item 
@@ -73,9 +76,11 @@ const std\+::string\+\_\+view \mbox{\hyperlink{classmage_1_1_line_reader_a543a1b
 \item 
 std\+::regex \mbox{\hyperlink{classmage_1_1_line_reader_a2b3c9c2f693971765c03db3752edc339}{m\+\_\+regex}}
 \item 
+\mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} \mbox{\hyperlink{classmage_1_1_line_reader_a69f3eac618227e43eb7d55aec475d2ff}{m\+\_\+selection\+\_\+function}}
+\item 
 std\+::filesystem\+::path \mbox{\hyperlink{classmage_1_1_line_reader_a05436c40af16b882c2ebd515287598f7}{m\+\_\+path}}
 \item 
-std\+::sregex\+\_\+token\+\_\+iterator \mbox{\hyperlink{classmage_1_1_line_reader_aa6e1c2a165ce99a124de1b257f1c0f36}{m\+\_\+token\+\_\+iterator}}
+std\+::sregex\+\_\+iterator \mbox{\hyperlink{classmage_1_1_line_reader_a106f89e663b174b5b55bfdf79fbca901}{m\+\_\+iterator}}
 \item 
 \mbox{\hyperlink{namespacemage_a41c104c036fba3756a74e19f793eeaa1}{U32}} \mbox{\hyperlink{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}{m\+\_\+line\+\_\+number}}
 \end{DoxyCompactItemize}
@@ -83,6 +88,15 @@ std\+::sregex\+\_\+token\+\_\+iterator \mbox{\hyperlink{classmage_1_1_line_reade
 
 \subsection{Detailed Description}
 A class of line readers for reading (non-\/binary) text files line by line. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}\label{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Selection\+Function@{Selection\+Function}}
+\index{Selection\+Function@{Selection\+Function}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{Selection\+Function}{SelectionFunction}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{mage\+::\+Line\+Reader\+::\+Selection\+Function}} =  std\+::function$<$ const std\+::ssub\+\_\+match(const std\+::smatch\&) $>$}
+
+The selection function type for extracting one {\itshape std\+::ssub\+\_\+match} from a given {\itshape std\+::smatch}. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classmage_1_1_line_reader_ab4a46321d7ea3ecda2d6390c78a7285b}\label{classmage_1_1_line_reader_ab4a46321d7ea3ecda2d6390c78a7285b}} 
@@ -186,17 +200,6 @@ Returns the current path of this line reader.
 
 \begin{DoxyReturn}{Returns}
 A reference to the current path of this line reader. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1_line_reader_a7e4e6f6e41dc07d34ce93022e2f7e401}\label{classmage_1_1_line_reader_a7e4e6f6e41dc07d34ce93022e2f7e401}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Get\+Regex@{Get\+Regex}}
-\index{Get\+Regex@{Get\+Regex}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Get\+Regex()}{GetRegex()}}
-{\footnotesize\ttfamily const std\+::regex\& mage\+::\+Line\+Reader\+::\+Get\+Regex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [noexcept]}}
-
-Returns the current (line) regex of this line reader.
-
-\begin{DoxyReturn}{Returns}
-A reference to the current (line) regex of this line reader. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}\label{classmage_1_1_line_reader_a2247078d0b5602f9a9a6b74019832faf}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!operator=@{operator=}}
@@ -328,11 +331,11 @@ The {\ttfamily \mbox{\hyperlink{structmage_1_1_array}{Array}}} represented by th
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & There are no {\ttfamily N} current tokens or the current {\ttfamily N} tokens do not represent a {\ttfamily T} value. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_line_reader_ac819910b2ad9cf9751fa223d4f90ada0}\label{classmage_1_1_line_reader_ac819910b2ad9cf9751fa223d4f90ada0}} 
+\mbox{\Hypertarget{classmage_1_1_line_reader_aba8857b3d0f49250e312bd737d7d0e9c}\label{classmage_1_1_line_reader_aba8857b3d0f49250e312bd737d7d0e9c}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+From\+File@{Read\+From\+File}}
 \index{Read\+From\+File@{Read\+From\+File}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+File()}{ReadFromFile()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path,  }\item[{std\+::regex}]{regex = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path,  }\item[{std\+::regex}]{regex = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}{s\+\_\+default\+\_\+regex}}},  }\item[{\mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}}}]{selection\+\_\+function = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}{s\+\_\+default\+\_\+selection\+\_\+function}}} }\end{DoxyParamCaption})}
 
 Reads from the file associated with the given path.
 
@@ -342,17 +345,19 @@ Reads from the file associated with the given path.
 \hline
 \mbox{\tt in}  & {\em regex} & The (line) regex. \\
 \hline
+\mbox{\tt in}  & {\em selection\+\_\+function} & The selection function. \\
+\hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to read from the file. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_line_reader_adc2bf81611774d4a11da47812fcc0f6a}\label{classmage_1_1_line_reader_adc2bf81611774d4a11da47812fcc0f6a}} 
+\mbox{\Hypertarget{classmage_1_1_line_reader_a6411d017fe1c7f30a544e2f0176f14a2}\label{classmage_1_1_line_reader_a6411d017fe1c7f30a544e2f0176f14a2}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Read\+From\+Memory@{Read\+From\+Memory}}
 \index{Read\+From\+Memory@{Read\+From\+Memory}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{Read\+From\+Memory()}{ReadFromMemory()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input,  }\item[{std\+::regex}]{regex = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}{g\+\_\+default\+\_\+regex}}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+From\+Memory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input,  }\item[{std\+::regex}]{regex = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}{s\+\_\+default\+\_\+regex}}},  }\item[{\mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}}}]{selection\+\_\+function = {\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}{s\+\_\+default\+\_\+selection\+\_\+function}}} }\end{DoxyParamCaption})}
 
 Reads from the given input string.
 
@@ -361,6 +366,8 @@ Reads from the given input string.
 \mbox{\tt in}  & {\em input} & A reference to the input string. \\
 \hline
 \mbox{\tt in}  & {\em regex} & The (line) regex. \\
+\hline
+\mbox{\tt in}  & {\em selection\+\_\+function} & The selection function. \\
 \hline
 \end{DoxyParams}
 
@@ -391,29 +398,16 @@ Implemented in \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reade
 \subsubsection{\texorpdfstring{Read\+Remaining\+Tokens()}{ReadRemainingTokens()}}
 {\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Read\+Remaining\+Tokens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Reads the remaining tokens of the current line of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_a1f564ab424c7a906cd0bf2e7bf550bb9}\label{classmage_1_1_line_reader_a1f564ab424c7a906cd0bf2e7bf550bb9}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!Set\+Regex@{Set\+Regex}}
-\index{Set\+Regex@{Set\+Regex}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{Set\+Regex()}{SetRegex()}}
-{\footnotesize\ttfamily void mage\+::\+Line\+Reader\+::\+Set\+Regex (\begin{DoxyParamCaption}\item[{std\+::regex}]{regex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Sets the (line) regex of this line reader to the given (line) regex.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em regex} & The (line) regex. \\
-\hline
-\end{DoxyParams}
-
+Reads the remaining tokens of the current line of this line reader. 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}\label{classmage_1_1_line_reader_a6b21fad06278a64bbdece198844a8cfa}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!g\+\_\+default\+\_\+regex@{g\+\_\+default\+\_\+regex}}
-\index{g\+\_\+default\+\_\+regex@{g\+\_\+default\+\_\+regex}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{g\+\_\+default\+\_\+regex}{g\_default\_regex}}
-{\footnotesize\ttfamily const std\+::regex mage\+::\+Line\+Reader\+::g\+\_\+default\+\_\+regex = std\+::regex(R\char`\"{}((\textbackslash{}\char`\"{}\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$\textbackslash{}\char`\"{})$\vert$\mbox{[}$^\wedge$\textbackslash{}n\textbackslash{}r\textbackslash{}s\textbackslash{}t\mbox{]}+)\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{classmage_1_1_line_reader_a106f89e663b174b5b55bfdf79fbca901}\label{classmage_1_1_line_reader_a106f89e663b174b5b55bfdf79fbca901}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+iterator@{m\+\_\+iterator}}
+\index{m\+\_\+iterator@{m\+\_\+iterator}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+iterator}{m\_iterator}}
+{\footnotesize\ttfamily std\+::sregex\+\_\+iterator mage\+::\+Line\+Reader\+::m\+\_\+iterator\hspace{0.3cm}{\ttfamily [private]}}
 
-The default (line) regex for line readers. \mbox{\Hypertarget{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}\label{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}} 
+An iterator to the current token of the current line of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}\label{classmage_1_1_line_reader_ab145590a7e115106c0987905fde98393}} 
 \index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+line\+\_\+number@{m\+\_\+line\+\_\+number}}
 \index{m\+\_\+line\+\_\+number@{m\+\_\+line\+\_\+number}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+line\+\_\+number}{m\_line\_number}}
@@ -431,10 +425,28 @@ The current path of this line reader. \mbox{\Hypertarget{classmage_1_1_line_read
 \subsubsection{\texorpdfstring{m\+\_\+regex}{m\_regex}}
 {\footnotesize\ttfamily std\+::regex mage\+::\+Line\+Reader\+::m\+\_\+regex\hspace{0.3cm}{\ttfamily [private]}}
 
-The current (line) regex of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_aa6e1c2a165ce99a124de1b257f1c0f36}\label{classmage_1_1_line_reader_aa6e1c2a165ce99a124de1b257f1c0f36}} 
-\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+token\+\_\+iterator@{m\+\_\+token\+\_\+iterator}}
-\index{m\+\_\+token\+\_\+iterator@{m\+\_\+token\+\_\+iterator}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
-\subsubsection{\texorpdfstring{m\+\_\+token\+\_\+iterator}{m\_token\_iterator}}
-{\footnotesize\ttfamily std\+::sregex\+\_\+token\+\_\+iterator mage\+::\+Line\+Reader\+::m\+\_\+token\+\_\+iterator\hspace{0.3cm}{\ttfamily [private]}}
+The current (line) regex of this line reader. \mbox{\Hypertarget{classmage_1_1_line_reader_a69f3eac618227e43eb7d55aec475d2ff}\label{classmage_1_1_line_reader_a69f3eac618227e43eb7d55aec475d2ff}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!m\+\_\+selection\+\_\+function@{m\+\_\+selection\+\_\+function}}
+\index{m\+\_\+selection\+\_\+function@{m\+\_\+selection\+\_\+function}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+selection\+\_\+function}{m\_selection\_function}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Selection\+Function}} mage\+::\+Line\+Reader\+::m\+\_\+selection\+\_\+function\hspace{0.3cm}{\ttfamily [private]}}
 
-An iterator to the current token of the current line of this line reader. 
+The function for selecting the target submatch from the match of the regular expression represented by the regex of this strategy. \mbox{\Hypertarget{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}\label{classmage_1_1_line_reader_a6713da665d123ab39293c0c5a4e8e1de}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!s\+\_\+default\+\_\+regex@{s\+\_\+default\+\_\+regex}}
+\index{s\+\_\+default\+\_\+regex@{s\+\_\+default\+\_\+regex}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{s\+\_\+default\+\_\+regex}{s\_default\_regex}}
+{\footnotesize\ttfamily const std\+::regex mage\+::\+Line\+Reader\+::s\+\_\+default\+\_\+regex = std\+::regex(R\char`\"{}((\textbackslash{}\char`\"{}(\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$)\textbackslash{}\char`\"{})$\vert$(\textbackslash{}S+))\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+The default (line) regex for line readers. \mbox{\Hypertarget{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}\label{classmage_1_1_line_reader_a93da10f6f69b44accfec8074712f35de}} 
+\index{mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}!s\+\_\+default\+\_\+selection\+\_\+function@{s\+\_\+default\+\_\+selection\+\_\+function}}
+\index{s\+\_\+default\+\_\+selection\+\_\+function@{s\+\_\+default\+\_\+selection\+\_\+function}!mage\+::\+Line\+Reader@{mage\+::\+Line\+Reader}}
+\subsubsection{\texorpdfstring{s\+\_\+default\+\_\+selection\+\_\+function}{s\_default\_selection\_function}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1_line_reader_a17bbae61a3ce30bdb251d6c76e1a4522}{Line\+Reader\+::\+Selection\+Function}} mage\+::\+Line\+Reader\+::s\+\_\+default\+\_\+selection\+\_\+function\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [](\textcolor{keyword}{const} std::smatch& match) \{ 
+        \textcolor{keywordflow}{return} match[2].length() ? match[2] : match[3]; 
+    \}
+\end{DoxyCode}
+The default selection function for line readers. 

@@ -21,5 +21,5 @@ var classmage_1_1rendering_1_1_sprite_batch_1_1_impl =
     [ "m_sort_mode", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a98659f29ee7ea1bdcc8c18ac0dfdcf48", null ],
     [ "m_sorted_sprites", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a1209d58b70713e61bc8f8fc753f9036e", null ],
     [ "m_sprites", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#ad8f211053433418cf5fa6c64402936b3", null ],
-    [ "s_initial_capacity", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a08c5c67bb9af1c630745aba436718ff5", null ]
+    [ "s_initial_capacity", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a912cb11bc748483c7c175f7d4895176b", null ]
 ];

@@ -10,7 +10,7 @@ var classmage_1_1rendering_1_1_camera_settings =
     [ "GetBRDF", "classmage_1_1rendering_1_1_camera_settings.html#a3cb398b3bd69ae3a81e2e4c415d9e195", null ],
     [ "GetFog", "classmage_1_1rendering_1_1_camera_settings.html#a47b2b9eeca9d9eec61a7e290e1abfa43", null ],
     [ "GetFog", "classmage_1_1rendering_1_1_camera_settings.html#acd360516b025b09c2ac668f48d6259c7", null ],
-    [ "GetGamma", "classmage_1_1rendering_1_1_camera_settings.html#ae99d9db32dcf8be886e324b647d90ade", null ],
+    [ "GetGamma", "classmage_1_1rendering_1_1_camera_settings.html#a509a248399b2db684ce53625f3afdb5d", null ],
     [ "GetRenderMode", "classmage_1_1rendering_1_1_camera_settings.html#ab1421b9c47b7eafbebd0619c5b5116b5", null ],
     [ "GetSky", "classmage_1_1rendering_1_1_camera_settings.html#a3538572fc79fa03380cb9ed8cceeba42", null ],
     [ "GetSky", "classmage_1_1rendering_1_1_camera_settings.html#a0045fb85eafcb33dff43c04656c4cc3b", null ],
@@ -22,16 +22,16 @@ var classmage_1_1rendering_1_1_camera_settings =
     [ "RemoveRenderLayer", "classmage_1_1rendering_1_1_camera_settings.html#a49c766f4880c798a90a9b8fe488a6711", null ],
     [ "ResetRenderLayers", "classmage_1_1rendering_1_1_camera_settings.html#a954a0af8d7939069e32b77abc23f95d0", null ],
     [ "SetBRDF", "classmage_1_1rendering_1_1_camera_settings.html#af2af3e55e876b0e2b037904e221f0bc4", null ],
-    [ "SetGamma", "classmage_1_1rendering_1_1_camera_settings.html#aff3d5727eaff77fd9f8bb30d352ff7d7", null ],
+    [ "SetGamma", "classmage_1_1rendering_1_1_camera_settings.html#ae186332d3c4a89c43ef59ed726c709ca", null ],
     [ "SetRenderMode", "classmage_1_1rendering_1_1_camera_settings.html#aa4f29b081141c0acfb0e4d92eac81602", null ],
     [ "SetToneMapping", "classmage_1_1rendering_1_1_camera_settings.html#ab5dc52d8f8d92cf3c4f6aca126f6dc47", null ],
     [ "ToggleRenderLayer", "classmage_1_1rendering_1_1_camera_settings.html#a95c531aba7bbddba9ea47000de3c53b2", null ],
     [ "m_brdf", "classmage_1_1rendering_1_1_camera_settings.html#a18daf9b9c8c7319e7db996a406aa0a43", null ],
     [ "m_fog", "classmage_1_1rendering_1_1_camera_settings.html#a173329d1022c717efe29e33eaa554d18", null ],
-    [ "m_gamma", "classmage_1_1rendering_1_1_camera_settings.html#aec2e610b98b3657f49944a59c4717bee", null ],
     [ "m_render_layer_mask", "classmage_1_1rendering_1_1_camera_settings.html#ab6d4995fe7531563c5c5c8db1a0a1c9f", null ],
     [ "m_render_mode", "classmage_1_1rendering_1_1_camera_settings.html#adf563f8bd1ee5cecd126c6b4731de6e5", null ],
     [ "m_sky", "classmage_1_1rendering_1_1_camera_settings.html#a62c726791db2c8ee20ef404e15c5f26c", null ],
     [ "m_tone_mapping", "classmage_1_1rendering_1_1_camera_settings.html#a5a88df673aa475c5087bf74620048580", null ],
-    [ "m_voxelization_settings", "classmage_1_1rendering_1_1_camera_settings.html#a4d4cc0955f6bac39a57382a15fe81d64", null ]
+    [ "m_voxelization_settings", "classmage_1_1rendering_1_1_camera_settings.html#a4d4cc0955f6bac39a57382a15fe81d64", null ],
+    [ "s_gamma", "classmage_1_1rendering_1_1_camera_settings.html#add0c4a63661e6cbfed40f6f3267d72d5", null ]
 ];

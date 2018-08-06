@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['g_5fdefault_5fregex',['g_default_regex',['../classmage_1_1_line_reader.html#a6b21fad06278a64bbdece198844a8cfa',1,'mage::LineReader']]],
   ['g_5ffont_5ftoken_5fmagic',['g_font_token_magic',['../namespacemage_1_1rendering_1_1loader.html#acc723a2644e074318376fec3a8278711',1,'mage::rendering::loader']]],
   ['g_5fmdl_5ftoken_5fcomment',['g_mdl_token_comment',['../namespacemage_1_1rendering_1_1loader.html#accd79e03f94cc56cddd761a16d7d054e',1,'mage::rendering::loader']]],
   ['g_5fmdl_5ftoken_5fmaterial_5flibrary',['g_mdl_token_material_library',['../namespacemage_1_1rendering_1_1loader.html#ae399195268d14aceb61ebf3c020d0690',1,'mage::rendering::loader']]],
