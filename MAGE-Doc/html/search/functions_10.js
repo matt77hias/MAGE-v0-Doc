@@ -18,7 +18,7 @@ var searchData=
   ['setbrdf',['SetBRDF',['../classmage_1_1rendering_1_1_camera_settings.html#af2af3e55e876b0e2b037904e221f0bc4',1,'mage::rendering::CameraSettings']]],
   ['setcharacter',['SetCharacter',['../classmage_1_1script_1_1_text_console_script.html#a18bdee79ee6f53e28f90b607c36c8188',1,'mage::script::TextConsoleScript']]],
   ['setclippingplanes',['SetClippingPlanes',['../classmage_1_1rendering_1_1_camera.html#afc95f8de701649af5b614a57c1c06e9a',1,'mage::rendering::Camera::SetClippingPlanes()'],['../classmage_1_1rendering_1_1_directional_light.html#ae90562c217d876a3a2a73f36f36a700f',1,'mage::rendering::DirectionalLight::SetClippingPlanes()'],['../classmage_1_1rendering_1_1_omni_light.html#af1334671baf6f5afeb297fb819118639',1,'mage::rendering::OmniLight::SetClippingPlanes()'],['../classmage_1_1rendering_1_1_spot_light.html#a9a4c2e827e91d7ec79118217376c9c6e',1,'mage::rendering::SpotLight::SetClippingPlanes()']]],
-  ['setconestepmultiplier',['SetConeStepMultiplier',['../classmage_1_1rendering_1_1_voxelization_settings.html#a9eafb3795d3e8248196dd7e9c6d32671',1,'mage::rendering::VoxelizationSettings']]],
+  ['setconestep',['SetConeStep',['../classmage_1_1rendering_1_1_voxelization_settings.html#a626f15dab0fa74a7b4e0435b64f0c024',1,'mage::rendering::VoxelizationSettings']]],
   ['setdefaultcharacter',['SetDefaultCharacter',['../classmage_1_1rendering_1_1_sprite_font.html#a7400d0574c96e4e204268d6cd5a5c356',1,'mage::rendering::SpriteFont']]],
   ['setdensity',['SetDensity',['../classmage_1_1rendering_1_1_fog.html#a9b498c71c58e28bd58b09e4385338a13',1,'mage::rendering::Fog']]],
   ['setdepth',['SetDepth',['../classmage_1_1_sprite_transform.html#a99da2aa3c134db3f4a72660befe1ca9a',1,'mage::SpriteTransform']]],

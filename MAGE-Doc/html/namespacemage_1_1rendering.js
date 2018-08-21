@@ -48,6 +48,7 @@ var namespacemage_1_1rendering =
     [ "OutputManager", "classmage_1_1rendering_1_1_output_manager.html", "classmage_1_1rendering_1_1_output_manager" ],
     [ "PerspectiveCamera", "classmage_1_1rendering_1_1_perspective_camera.html", "classmage_1_1rendering_1_1_perspective_camera" ],
     [ "Pipeline", "structmage_1_1rendering_1_1_pipeline.html", "structmage_1_1rendering_1_1_pipeline" ],
+    [ "PointLightBuffer", "structmage_1_1rendering_1_1_point_light_buffer.html", "structmage_1_1rendering_1_1_point_light_buffer" ],
     [ "PostProcessPass", "classmage_1_1rendering_1_1_post_process_pass.html", "classmage_1_1rendering_1_1_post_process_pass" ],
     [ "PrimitiveBatchMesh", "classmage_1_1rendering_1_1_primitive_batch_mesh.html", "classmage_1_1rendering_1_1_primitive_batch_mesh" ],
     [ "Renderer", "classmage_1_1rendering_1_1_renderer.html", "classmage_1_1rendering_1_1_renderer" ],
