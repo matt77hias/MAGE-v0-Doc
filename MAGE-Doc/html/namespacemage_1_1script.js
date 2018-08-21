@@ -7,5 +7,6 @@ var namespacemage_1_1script =
     [ "RotationScript", "classmage_1_1script_1_1_rotation_script.html", "classmage_1_1script_1_1_rotation_script" ],
     [ "StatsScript", "classmage_1_1script_1_1_stats_script.html", "classmage_1_1script_1_1_stats_script" ],
     [ "SwitchSceneScript", "classmage_1_1script_1_1_switch_scene_script.html", "classmage_1_1script_1_1_switch_scene_script" ],
-    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html", "classmage_1_1script_1_1_text_console_script" ]
+    [ "TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html", "classmage_1_1script_1_1_text_console_script" ],
+    [ "VoxelGridAnchorScript", "classmage_1_1script_1_1_voxel_grid_anchor_script.html", "classmage_1_1script_1_1_voxel_grid_anchor_script" ]
 ];

@@ -14,6 +14,7 @@ var searchData=
   ['vertexshader',['VertexShader',['../classmage_1_1rendering_1_1_vertex_shader.html',1,'mage::rendering']]],
   ['viewport',['Viewport',['../classmage_1_1rendering_1_1_viewport.html',1,'mage::rendering']]],
   ['voxelgrid',['VoxelGrid',['../classmage_1_1rendering_1_1_voxel_grid.html',1,'mage::rendering']]],
+  ['voxelgridanchorscript',['VoxelGridAnchorScript',['../classmage_1_1script_1_1_voxel_grid_anchor_script.html',1,'mage::script']]],
   ['voxelgridpass',['VoxelGridPass',['../classmage_1_1rendering_1_1_voxel_grid_pass.html',1,'mage::rendering']]],
   ['voxelizationpass',['VoxelizationPass',['../classmage_1_1rendering_1_1_voxelization_pass.html',1,'mage::rendering']]],
   ['voxelizationsettings',['VoxelizationSettings',['../classmage_1_1rendering_1_1_voxelization_settings.html',1,'mage::rendering']]],

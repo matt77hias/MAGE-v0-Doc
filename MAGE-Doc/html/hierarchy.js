@@ -56,7 +56,8 @@ var hierarchy =
         [ "mage::script::RotationScript", "classmage_1_1script_1_1_rotation_script.html", null ],
         [ "mage::script::StatsScript", "classmage_1_1script_1_1_stats_script.html", null ],
         [ "mage::script::SwitchSceneScript< SceneT >", "classmage_1_1script_1_1_switch_scene_script.html", null ],
-        [ "mage::script::TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html", null ]
+        [ "mage::script::TextConsoleScript", "classmage_1_1script_1_1_text_console_script.html", null ],
+        [ "mage::script::VoxelGridAnchorScript", "classmage_1_1script_1_1_voxel_grid_anchor_script.html", null ]
       ] ],
       [ "mage::rendering::AmbientLight", "classmage_1_1rendering_1_1_ambient_light.html", null ],
       [ "mage::rendering::Camera", "classmage_1_1rendering_1_1_camera.html", [
@@ -119,12 +120,12 @@ var hierarchy =
     [ "mage::rendering::Manager::Impl", "classmage_1_1rendering_1_1_manager_1_1_impl.html", null ],
     [ "mage::input::Mouse::Impl", "classmage_1_1input_1_1_mouse_1_1_impl.html", null ],
     [ "mage::input::Manager::Impl", "classmage_1_1input_1_1_manager_1_1_impl.html", null ],
-    [ "mage::rendering::SpriteBatch::Impl", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html", null ],
-    [ "mage::ProgressReporter::Impl", "classmage_1_1_progress_reporter_1_1_impl.html", null ],
+    [ "mage::rendering::SwapChain::Impl", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html", null ],
     [ "mage::input::Keyboard::Impl", "classmage_1_1input_1_1_keyboard_1_1_impl.html", null ],
+    [ "mage::ProgressReporter::Impl", "classmage_1_1_progress_reporter_1_1_impl.html", null ],
+    [ "mage::rendering::SpriteBatch::Impl", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html", null ],
     [ "mage::rendering::DisplayConfigurator::Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html", null ],
     [ "mage::rendering::Renderer::Impl", "classmage_1_1rendering_1_1_renderer_1_1_impl.html", null ],
-    [ "mage::rendering::SwapChain::Impl", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html", null ],
     [ "integral_constant", null, [
       [ "std::tuple_size< mage::Array< T, N, A > >", "structstd_1_1tuple__size_3_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html", null ],
       [ "std::tuple_size< mage::Direction3 >", "structstd_1_1tuple__size_3_01mage_1_1_direction3_01_4.html", null ],
@@ -172,10 +173,17 @@ var hierarchy =
     [ "mage::Node", "classmage_1_1_node.html", null ],
     [ "mage::rendering::loader::OBJReader< VertexT, IndexT >::OBJComparator", "structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator.html", null ],
     [ "mage::rendering::Pipeline::OM", "structmage_1_1rendering_1_1_pipeline_1_1_o_m.html", null ],
-    [ "mage::rendering::OmniLightBuffer", "structmage_1_1rendering_1_1_omni_light_buffer.html", null ],
     [ "mage::rendering::OutputManager", "classmage_1_1rendering_1_1_output_manager.html", null ],
     [ "mage::PersistentResourcePool< KeyT, ResourceT >", "classmage_1_1_persistent_resource_pool.html", null ],
     [ "mage::rendering::Pipeline", "structmage_1_1rendering_1_1_pipeline.html", null ],
+    [ "mage::rendering::PointLightBuffer", "structmage_1_1rendering_1_1_point_light_buffer.html", [
+      [ "mage::rendering::OmniLightBuffer", "structmage_1_1rendering_1_1_omni_light_buffer.html", [
+        [ "mage::rendering::ShadowMappedOmniLightBuffer", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html", null ]
+      ] ],
+      [ "mage::rendering::SpotLightBuffer", "structmage_1_1rendering_1_1_spot_light_buffer.html", [
+        [ "mage::rendering::ShadowMappedSpotLightBuffer", "structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html", null ]
+      ] ]
+    ] ],
     [ "mage::rendering::PostProcessPass", "classmage_1_1rendering_1_1_post_process_pass.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ProxyPtr< T >", "classmage_1_1_proxy_ptr.html", null ],
@@ -215,13 +223,10 @@ var hierarchy =
     [ "mage::rendering::SecondaryCameraBuffer", "structmage_1_1rendering_1_1_secondary_camera_buffer.html", null ],
     [ "mage::rendering::ShadowCubeMapBuffer", "classmage_1_1rendering_1_1_shadow_cube_map_buffer.html", null ],
     [ "mage::rendering::ShadowMapBuffer", "classmage_1_1rendering_1_1_shadow_map_buffer.html", null ],
-    [ "mage::rendering::ShadowMappedOmniLightBuffer", "structmage_1_1rendering_1_1_shadow_mapped_omni_light_buffer.html", null ],
-    [ "mage::rendering::ShadowMappedSpotLightBuffer", "structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html", null ],
     [ "mage::SingleEndedMemoryStack", "classmage_1_1_single_ended_memory_stack.html", null ],
     [ "mage::rendering::Sky", "classmage_1_1rendering_1_1_sky.html", null ],
     [ "mage::rendering::SkyPass", "classmage_1_1rendering_1_1_sky_pass.html", null ],
     [ "mage::rendering::Pipeline::SO", "structmage_1_1rendering_1_1_pipeline_1_1_s_o.html", null ],
-    [ "mage::rendering::SpotLightBuffer", "structmage_1_1rendering_1_1_spot_light_buffer.html", null ],
     [ "mage::rendering::SpriteBatch", "classmage_1_1rendering_1_1_sprite_batch.html", null ],
     [ "mage::rendering::SpriteFontDescriptor", "classmage_1_1rendering_1_1_sprite_font_descriptor.html", null ],
     [ "mage::rendering::SpriteFontOutput", "structmage_1_1rendering_1_1_sprite_font_output.html", null ],

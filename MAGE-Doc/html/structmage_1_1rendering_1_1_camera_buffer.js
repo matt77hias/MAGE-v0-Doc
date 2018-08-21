@@ -8,7 +8,7 @@ var structmage_1_1rendering_1_1_camera_buffer =
     [ "operator=", "structmage_1_1rendering_1_1_camera_buffer.html#a12658ff989daac2e910b91633ac0223d", null ],
     [ "m_camera_to_projection", "structmage_1_1rendering_1_1_camera_buffer.html#a75669aa0916514b1d414e5a2f7c72c75", null ],
     [ "m_camera_to_world", "structmage_1_1rendering_1_1_camera_buffer.html#a0633cfc689f2a097783ecc1626b94590", null ],
-    [ "m_cone_step_multiplier", "structmage_1_1rendering_1_1_camera_buffer.html#a802e8c4ba601b91658cb30c2f1c2cfe2", null ],
+    [ "m_cone_step", "structmage_1_1rendering_1_1_camera_buffer.html#a5c52e867f42818ca71cbc7d593d49adf", null ],
     [ "m_focal_length", "structmage_1_1rendering_1_1_camera_buffer.html#a7ed5079582d476597f8bc4d6a0b3f372", null ],
     [ "m_fog_color", "structmage_1_1rendering_1_1_camera_buffer.html#a6f963e7d607c59ab0dfc3972e06a9739", null ],
     [ "m_fog_density", "structmage_1_1rendering_1_1_camera_buffer.html#aa9c3a305adfbeb717d480e822ed1c77e", null ],

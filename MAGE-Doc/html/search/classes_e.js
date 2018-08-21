@@ -4,6 +4,7 @@ var searchData=
   ['perspectivecamera',['PerspectiveCamera',['../classmage_1_1rendering_1_1_perspective_camera.html',1,'mage::rendering']]],
   ['pipeline',['Pipeline',['../structmage_1_1rendering_1_1_pipeline.html',1,'mage::rendering']]],
   ['point3',['Point3',['../structmage_1_1_point3.html',1,'mage']]],
+  ['pointlightbuffer',['PointLightBuffer',['../structmage_1_1rendering_1_1_point_light_buffer.html',1,'mage::rendering']]],
   ['postprocesspass',['PostProcessPass',['../classmage_1_1rendering_1_1_post_process_pass.html',1,'mage::rendering']]],
   ['primitivebatchmesh',['PrimitiveBatchMesh',['../classmage_1_1rendering_1_1_primitive_batch_mesh.html',1,'mage::rendering']]],
   ['primitivebatchmesh_3c_20vertexpositioncolortexture_2c_20u16_20_3e',['PrimitiveBatchMesh&lt; VertexPositionColorTexture, U16 &gt;',['../classmage_1_1rendering_1_1_primitive_batch_mesh.html',1,'mage::rendering']]],
