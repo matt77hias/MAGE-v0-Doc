@@ -20,6 +20,7 @@ var searchData=
   ['spritefontoutput',['SpriteFontOutput',['../structmage_1_1rendering_1_1_sprite_font_output.html',1,'mage::rendering']]],
   ['spritefontreader',['SpriteFontReader',['../classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html',1,'mage::rendering::loader']]],
   ['spriteimage',['SpriteImage',['../classmage_1_1rendering_1_1_sprite_image.html',1,'mage::rendering']]],
+  ['spriteinfo',['SpriteInfo',['../structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html',1,'mage::rendering::anonymous_namespace{sprite_batch.cpp}']]],
   ['spritepass',['SpritePass',['../classmage_1_1rendering_1_1_sprite_pass.html',1,'mage::rendering']]],
   ['spritetext',['SpriteText',['../classmage_1_1rendering_1_1_sprite_text.html',1,'mage::rendering']]],
   ['spritetransform',['SpriteTransform',['../classmage_1_1_sprite_transform.html',1,'mage']]],

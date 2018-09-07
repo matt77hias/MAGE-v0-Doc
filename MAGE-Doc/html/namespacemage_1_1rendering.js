@@ -1,5 +1,7 @@
 var namespacemage_1_1rendering =
 [
+    [ "anonymous_namespace{sprite_batch.cpp}", "namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03.html", "namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03" ],
+    [ "anonymous_namespace{sprite_font.cpp}", "namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__font_8cpp_03.html", "namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__font_8cpp_03" ],
     [ "loader", "namespacemage_1_1rendering_1_1loader.html", "namespacemage_1_1rendering_1_1loader" ],
     [ "AAPass", "classmage_1_1rendering_1_1_a_a_pass.html", "classmage_1_1rendering_1_1_a_a_pass" ],
     [ "AmbientLight", "classmage_1_1rendering_1_1_ambient_light.html", "classmage_1_1rendering_1_1_ambient_light" ],

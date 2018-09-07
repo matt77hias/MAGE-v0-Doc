@@ -1,0 +1,4 @@
+var namespacemage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03 =
+[
+    [ "VARVisitor", "classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html", "classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor" ]
+];

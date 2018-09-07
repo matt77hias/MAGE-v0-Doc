@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "anonymous_namespace{dds_loader.cpp}", "namespaceanonymous__namespace_02dds__loader_8cpp_03.html", "namespaceanonymous__namespace_02dds__loader_8cpp_03" ],
+    [ "anonymous_namespace{screen_grab.cpp}", "namespaceanonymous__namespace_02screen__grab_8cpp_03.html", "namespaceanonymous__namespace_02screen__grab_8cpp_03" ],
+    [ "anonymous_namespace{wic_loader.cpp}", "namespaceanonymous__namespace_02wic__loader_8cpp_03.html", "namespaceanonymous__namespace_02wic__loader_8cpp_03" ],
     [ "mage", "namespacemage.html", "namespacemage" ],
     [ "std", "namespacestd.html", "namespacestd" ],
     [ "DDS_HEADER", "struct_d_d_s___h_e_a_d_e_r.html", "struct_d_d_s___h_e_a_d_e_r" ],

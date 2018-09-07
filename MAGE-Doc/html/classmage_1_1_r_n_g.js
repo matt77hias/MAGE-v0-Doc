@@ -8,7 +8,7 @@ var classmage_1_1_r_n_g =
     [ "operator=", "classmage_1_1_r_n_g.html#ac9155db13a3d4b7f44a4f800085197a2", null ],
     [ "Seed", "classmage_1_1_r_n_g.html#a1d7bc2fd5525a252d4900f5dd4754162", null ],
     [ "UniformF32", "classmage_1_1_r_n_g.html#a94e3e2dc84e277c3dba004da386941f9", null ],
-    [ "UniformFloat", "classmage_1_1_r_n_g.html#a43acf77450062519dedd3e492614317d", null ],
+    [ "UniformF32", "classmage_1_1_r_n_g.html#a16e2f397e2473e790877ccaf6e249612", null ],
     [ "m_distribution", "classmage_1_1_r_n_g.html#ac94e7e49a1751dfbfa590cd6da68b032", null ],
     [ "m_generator", "classmage_1_1_r_n_g.html#a43dc452c2e32d468fa42d16e02d3a283", null ]
 ];

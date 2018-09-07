@@ -10,8 +10,8 @@ var structmage_1_1_x_y_z =
     [ "GetX", "structmage_1_1_x_y_z.html#ad11318d8920b1782b07c4ac30d4c0204", null ],
     [ "GetY", "structmage_1_1_x_y_z.html#a62c071fb7aa64b393fdb6088207df149", null ],
     [ "GetZ", "structmage_1_1_x_y_z.html#a2bb3aba163d325ebb844d26d240edcc9", null ],
-    [ "operator=", "structmage_1_1_x_y_z.html#acf2ea9538d1f6a496557d3d0f2538a0c", null ],
-    [ "operator=", "structmage_1_1_x_y_z.html#ab162a3b19bdbb5abd84ad77052ac6030", null ],
+    [ "operator=", "structmage_1_1_x_y_z.html#a817c69124934fa9ad5d7d63b5696c939", null ],
+    [ "operator=", "structmage_1_1_x_y_z.html#aa8b016328f6210e3b0b13cff7087dbee", null ],
     [ "SetX", "structmage_1_1_x_y_z.html#ad0f4356ba8d54cdd4b54482bfbe98374", null ],
     [ "SetY", "structmage_1_1_x_y_z.html#ad7caae74b92c23e12b70bef2d022805c", null ],
     [ "SetZ", "structmage_1_1_x_y_z.html#aa2321d3d9fbf155581827794c68781bd", null ]

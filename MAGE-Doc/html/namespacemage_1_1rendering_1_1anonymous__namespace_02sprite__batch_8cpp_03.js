@@ -1,0 +1,4 @@
+var namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03 =
+[
+    [ "SpriteInfo", "structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html", "structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info" ]
+];

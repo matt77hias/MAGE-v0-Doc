@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="MAGE_64x64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MAGE
-   &#160;<span id="projectnumber">v0.159.0</span>
+   &#160;<span id="projectnumber">v0.160.0</span>
    </div>
    <div id="projectbrief">Matthias Advanced Game Engine</div>
   </td>
@@ -122,6 +122,10 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_ambient_lights
 : <a class="el" href="classmage_1_1rendering_1_1_world.html#a0c63647dbf30b3df91e6cfbb483847c9">mage::rendering::World</a>
 </li>
+<li>m_aperture_radius
+: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a65ebdf1e7e9dad21cf4a6ef471a44528">mage::rendering::CameraBuffer</a>
+, <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#a50f361ad01d0b35fdc46086de720ebd8">mage::rendering::CameraLens</a>
+</li>
 <li>m_aspect_ratio
 : <a class="el" href="classmage_1_1rendering_1_1_perspective_camera.html#a28abd925a9694954dcd26a4c16b6ac6d">mage::rendering::PerspectiveCamera</a>
 </li>
@@ -174,13 +178,17 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#a18daf9b9c8c7319e7db996a406aa0a43">mage::rendering::CameraSettings</a>
 </li>
 <li>m_buffer
-: <a class="el" href="classmage_1_1_progress_reporter_1_1_impl.html#a0ae90634d05295f7c1a8294e343418e2">mage::ProgressReporter::Impl</a>
+: <a class="el" href="classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html#aed7e1c3626ff59cefca00ed9d6c9d440">mage::loader::anonymous_namespace{var_writer.cpp}::VARVisitor</a>
+, <a class="el" href="classmage_1_1_progress_reporter_1_1_impl.html#a0ae90634d05295f7c1a8294e343418e2">mage::ProgressReporter::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_buffer_lock.html#ae3e40fcda48227f62eb63611cad1a507">mage::rendering::BufferLock</a>
 , <a class="el" href="classmage_1_1rendering_1_1_camera.html#a81012e035e7117cac50434c2d85ac0ad">mage::rendering::Camera</a>
 , <a class="el" href="classmage_1_1rendering_1_1_constant_buffer.html#a1bf487e7e5d8dfee471cc7b3514f6313">mage::rendering::ConstantBuffer&lt; T &gt;</a>
 , <a class="el" href="classmage_1_1rendering_1_1_model.html#a82132035b4631143bed489c4bc190f95">mage::rendering::Model</a>
 , <a class="el" href="classmage_1_1rendering_1_1_structured_buffer.html#a57a60148175840b9dbf8001c6f290994">mage::rendering::StructuredBuffer&lt; T &gt;</a>
 , <a class="el" href="classmage_1_1script_1_1_text_console_script.html#a35db160ce89d4ebf6f184d2fe850beab">mage::script::TextConsoleScript</a>
+</li>
+<li>m_buffer_size
+: <a class="el" href="classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html#a971641c663ab99d217fafdc02daad45f">mage::loader::anonymous_namespace{var_writer.cpp}::VARVisitor</a>
 </li>
 <li>m_buffer_srv
 : <a class="el" href="classmage_1_1rendering_1_1_structured_buffer.html#a2dd3ced6cf7b58de6b76d8175a07ec68">mage::rendering::StructuredBuffer&lt; T &gt;</a>
@@ -189,11 +197,8 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_buffer_uav
 : <a class="el" href="classmage_1_1rendering_1_1_voxel_grid.html#a749d37651a7aebb6ab775424508ea92d">mage::rendering::VoxelGrid</a>
 </li>
-<li>m_button_press_stamp
-: <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#af3ea37adb563ff1c353d8358a6a74818">mage::input::Mouse::Impl</a>
-</li>
-<li>m_button_state
-: <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#a2ef89cc9d05fde7a7145c774380878cb">mage::input::Mouse::Impl</a>
+<li>m_button_states
+: <a class="el" href="classmage_1_1input_1_1_mouse.html#a7a11cd8de9e8dda4ef40c31670b04b00">mage::input::Mouse</a>
 </li>
 <li>m_bytecode
 : <a class="el" href="classmage_1_1rendering_1_1_buffer_compiled_shader.html#a6caa56491d81612c3eaec789d8e341bc">mage::rendering::BufferCompiledShader</a>
@@ -242,7 +247,8 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_mesh_descriptor.html#a24ad440002ac7a4db6f0cb642ae1477d">mage::rendering::MeshDescriptor&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>m_color
-: <a class="el" href="classmage_1_1rendering_1_1_color_string.html#a6b062bfa44b3786c5e8f2e8d18a373ca">mage::rendering::ColorString</a>
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#a9727207b7efade72e6b3d9c2635f574a">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
+, <a class="el" href="classmage_1_1rendering_1_1_color_string.html#a6b062bfa44b3786c5e8f2e8d18a373ca">mage::rendering::ColorString</a>
 </li>
 <li>m_color_buffer
 : <a class="el" href="classmage_1_1rendering_1_1_bounding_volume_pass.html#aac94b66aef4f01245c8526392a61cd88">mage::rendering::BoundingVolumePass</a>
@@ -327,8 +333,14 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_deferred_pass
 : <a class="el" href="classmage_1_1rendering_1_1_renderer_1_1_impl.html#acab2b5fe9403dd1a7643ae91e8a0433d">mage::rendering::Renderer::Impl</a>
 </li>
+<li>m_delta
+: <a class="el" href="classmage_1_1input_1_1_mouse.html#ac2e7872b793012d52c9f1b1b1206f6d6">mage::input::Mouse</a>
+</li>
 <li>m_delta_time
 : <a class="el" href="classmage_1_1_timer.html#a9cb9bf6cd0f567a8a1fad02a89d98aa2">mage::Timer&lt; ClockT &gt;</a>
+</li>
+<li>m_delta_wheel
+: <a class="el" href="classmage_1_1input_1_1_mouse.html#ab71a69d6a727b67065643d5dc929ee33">mage::input::Mouse</a>
 </li>
 <li>m_density
 : <a class="el" href="classmage_1_1rendering_1_1_fog.html#aa7a402ad9eef0e9916bb9f83751ebe32">mage::rendering::Fog</a>
@@ -345,6 +357,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_desc
 : <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#af346b7f0f090f5c9994d60684ccb5960">mage::rendering::loader::SpriteFontReader</a>
+</li>
+<li>m_destination
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#a79a138828a5a066241472097754a3730">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
 </li>
 <li>m_device
 : <a class="el" href="classmage_1_1rendering_1_1loader_1_1_sprite_font_reader.html#a2d152614490f697a9d737aae446a84c9">mage::rendering::loader::SpriteFontReader</a>
@@ -376,9 +391,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classmage_1_1rendering_1_1_voxelization_pass.html#a44fc5652aed364651c7f58db658fc951">mage::rendering::VoxelizationPass</a>
 </li>
 <li>m_di
-: <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#a87c2eeea3ea7fdaa56cbb6f46235d2e5">mage::input::Keyboard::Impl</a>
+: <a class="el" href="classmage_1_1input_1_1_keyboard.html#a3757173fa08e6744d374e0a5397de11c">mage::input::Keyboard</a>
 , <a class="el" href="classmage_1_1input_1_1_manager_1_1_impl.html#afa76fc86c9bc75ac5c00414bc3d03fdb">mage::input::Manager::Impl</a>
-, <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#af356557a537747ee5c852dba02795931">mage::input::Mouse::Impl</a>
+, <a class="el" href="classmage_1_1input_1_1_mouse.html#a35e656946a3cbb7253abaeeec30642df">mage::input::Mouse</a>
 </li>
 <li>m_direction
 : <a class="el" href="classmage_1_1script_1_1_mouse_look_script.html#a5f65024afe8940ca2709d5ee13dc033c">mage::script::MouseLookScript</a>
@@ -452,15 +467,25 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_big_endian_binary_writer.html#ad2cdbdca429d6c351a57b51d175ffb55">mage::BigEndianBinaryWriter</a>
 , <a class="el" href="classmage_1_1_writer.html#ac4884215d1b547e990633474bf61c470">mage::Writer</a>
 </li>
+<li>m_filename
+: <a class="el" href="classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file__wic.html#a45ab1fa04a0b6e8ecf9b4a62ab8e8716">anonymous_namespace{screen_grab.cpp}::auto_delete_file_wic</a>
+</li>
 <li>m_fixed_delta_time
 : <a class="el" href="classmage_1_1_engine.html#a3f7f78eb2dacdf35caed532814fb89e5">mage::Engine</a>
 </li>
 <li>m_fixed_time_budget
 : <a class="el" href="classmage_1_1_engine.html#ab99fae2c87c8c579d3c1b3af9ba19722">mage::Engine</a>
 </li>
+<li>m_flags
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#aa40209d64316e04cea5a42f13241165a">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
+</li>
 <li>m_focal_length
 : <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a7ed5079582d476597f8bc4d6a0b3f372">mage::rendering::CameraBuffer</a>
 , <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#a3459fd7d208a7ad8f1cf01718e008e36">mage::rendering::CameraLens</a>
+</li>
+<li>m_focus_distance
+: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#ac483a3656006290880c1ac9e1039e33e">mage::rendering::CameraBuffer</a>
+, <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#a3d2da4f61425500a51171b19e4a03769">mage::rendering::CameraLens</a>
 </li>
 <li>m_fog
 : <a class="el" href="classmage_1_1rendering_1_1_camera_settings.html#a173329d1022c717efe29e33eaa554d18">mage::rendering::CameraSettings</a>
@@ -515,6 +540,10 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classmage_1_1_node.html#a3ef1876293074bfcc01104eb92f1bfdf">mage::Node</a>
 , <a class="el" href="classmage_1_1_resource.html#a47049a8d37e7097cec53551ed118309c">mage::Resource&lt; ResourceT &gt;</a>
 </li>
+<li>m_handle
+: <a class="el" href="classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file.html#a17915f0750cefc7e6ca764d93be057c0">anonymous_namespace{screen_grab.cpp}::auto_delete_file</a>
+, <a class="el" href="classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file__wic.html#a4660f4a2dcf80c7099b25b181bb21c24">anonymous_namespace{screen_grab.cpp}::auto_delete_file_wic</a>
+</li>
 <li>m_handlers
 : <a class="el" href="classmage_1_1_window.html#a7438964a7b8c196d84da24cf789e5bd9">mage::Window</a>
 </li>
@@ -532,9 +561,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_spot_light_buffer.html#ab67a7ecde450e0096563c4be789156c9">mage::rendering::SpotLightBuffer</a>
 </li>
 <li>m_impl
-: <a class="el" href="classmage_1_1input_1_1_keyboard.html#af693bedd8a7bc9ca0d1c130b84753f67">mage::input::Keyboard</a>
-, <a class="el" href="classmage_1_1input_1_1_manager.html#ae404d608b787f264c0d5e8cf24aacf98">mage::input::Manager</a>
-, <a class="el" href="classmage_1_1input_1_1_mouse.html#a9056beca36df1fd7947cf7002aec99b6">mage::input::Mouse</a>
+: <a class="el" href="classmage_1_1input_1_1_manager.html#ae404d608b787f264c0d5e8cf24aacf98">mage::input::Manager</a>
 , <a class="el" href="classmage_1_1_progress_reporter.html#a62665cfb18a2a45428fdee4922b7b313">mage::ProgressReporter</a>
 , <a class="el" href="classmage_1_1rendering_1_1_display_configurator.html#a07b64b1b3443e4350723990592de86e7">mage::rendering::DisplayConfigurator</a>
 , <a class="el" href="classmage_1_1rendering_1_1_manager.html#a1fa26fd6393941f4ef9b6863f317cd29">mage::rendering::Manager</a>
@@ -583,14 +610,14 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_iterator
 : <a class="el" href="classmage_1_1_line_reader.html#a106f89e663b174b5b55bfdf79fbca901">mage::LineReader</a>
 </li>
-<li>m_key_press_stamp
-: <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#aac27a1a8210f933a9e0598ce8a0fc2cb">mage::input::Keyboard::Impl</a>
+<li>m_key
+: <a class="el" href="classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html#a9d1a59d5ad6d500b69f78482ce8c17fd">mage::loader::anonymous_namespace{var_writer.cpp}::VARVisitor</a>
 </li>
-<li>m_key_state
-: <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#a0ac844ac40552bf68ddc12fabc7d3626">mage::input::Keyboard::Impl</a>
+<li>m_key_states
+: <a class="el" href="classmage_1_1input_1_1_keyboard.html#ad5b0ec6ca8ff1adbfed19c2382fa8a65">mage::input::Keyboard</a>
 </li>
 <li>m_keyboard
-: <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#a933e7f1f86e74c9f761018ef54fe5298">mage::input::Keyboard::Impl</a>
+: <a class="el" href="classmage_1_1input_1_1_keyboard.html#ad6993f7c9fc9692708c1f928d0ea1e6b">mage::input::Keyboard</a>
 , <a class="el" href="classmage_1_1input_1_1_manager_1_1_impl.html#a2b41f999b73742a6c3cb7ba9e86aee9e">mage::input::Manager::Impl</a>
 </li>
 <li>m_La
@@ -607,9 +634,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_lens
 : <a class="el" href="classmage_1_1rendering_1_1_camera.html#a0716fc9d2b3c8f41da75205caa428189">mage::rendering::Camera</a>
-</li>
-<li>m_lens_radius
-: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a7915bec843e03ad2248c08b10317ccc7">mage::rendering::CameraBuffer</a>
 </li>
 <li>m_light_buffer
 : <a class="el" href="classmage_1_1rendering_1_1_l_buffer_pass.html#ab80d18b8193e90588afa5e992b5b1af8">mage::rendering::LBufferPass</a>
@@ -649,10 +673,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_max
 : <a class="el" href="classmage_1_1_a_a_b_b.html#a9f850f5f39e4b2192dfac97c508ef052">mage::AABB</a>
-</li>
-<li>m_max_coc_radius
-: <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a3273510e0a7bbdd9481fe67f9e223f59">mage::rendering::CameraBuffer</a>
-, <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#a5c7880aabfbe08addb1fcaf9ac5ff940">mage::rendering::CameraLens</a>
 </li>
 <li>m_max_cone_distance
 : <a class="el" href="structmage_1_1rendering_1_1_camera_buffer.html#a99515c320feafb88a2d2fdf24520975d">mage::rendering::CameraBuffer</a>
@@ -716,7 +736,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_mouse
 : <a class="el" href="classmage_1_1input_1_1_manager_1_1_impl.html#aeae8977636864dddcbcdb69ecefca133">mage::input::Manager::Impl</a>
-, <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#a1c5de7f34edab12846e75cf7d2b76094">mage::input::Mouse::Impl</a>
+, <a class="el" href="classmage_1_1input_1_1_mouse.html#acce273ae24a5f7ba107f2f15618bbea6">mage::input::Mouse</a>
 </li>
 <li>m_msaa
 : <a class="el" href="classmage_1_1rendering_1_1_output_manager.html#a3affee412b093ea168b9e4a22c713421">mage::rendering::OutputManager</a>
@@ -831,6 +851,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_opaque_vs
 : <a class="el" href="classmage_1_1rendering_1_1_depth_pass.html#a101f60b0363f79f9d349ea95e0efabe5">mage::rendering::DepthPass</a>
 </li>
+<li>m_origin_rotation_depth
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#a180c77e11aeada21375ab7c038838b29">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
+</li>
 <li>m_orthographic_cameras
 : <a class="el" href="classmage_1_1rendering_1_1_world.html#a6cbb80ebd76a1f7121b455251fcab6db">mage::rendering::World</a>
 </li>
@@ -906,17 +929,13 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classmage_1_1_binary_reader.html#aedb9632de1cf95d5af49499217744ed5">mage::BinaryReader</a>
 </li>
 <li>m_position
-: <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#aaf430602e56efbeeae8d46012be4437e">mage::input::Mouse::Impl</a>
+: <a class="el" href="classmage_1_1input_1_1_mouse.html#a240e60291f97e6b281d11cfd52d38e53">mage::input::Mouse</a>
 </li>
 <li>m_postprocess_pass
 : <a class="el" href="classmage_1_1rendering_1_1_renderer_1_1_impl.html#a243257571f0f32cdc401b73d9b39587c">mage::rendering::Renderer::Impl</a>
 </li>
 <li>m_pr
 : <a class="el" href="classmage_1_1_bounding_sphere.html#a787aea4f26cca30e3c30d85da3533b9d">mage::BoundingSphere</a>
-</li>
-<li>m_press_stamp
-: <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#adfe57f2b8e59adae407850d66419bf5a">mage::input::Keyboard::Impl</a>
-, <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#a18304bef70290efaec61ad9eca140ce8">mage::input::Mouse::Impl</a>
 </li>
 <li>m_prev_core_clock_time
 : <a class="el" href="classmage_1_1script_1_1_stats_script.html#a8bf822cd1950abc621f8bd751c00ef78">mage::script::StatsScript</a>
@@ -952,9 +971,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_radiance
 : <a class="el" href="classmage_1_1rendering_1_1_ambient_light.html#adfdafe01958a72df46eeb3c0f5f0d0c4">mage::rendering::AmbientLight</a>
 , <a class="el" href="classmage_1_1rendering_1_1_material.html#ac79fc4d9a669a552d7319ae713f25871">mage::rendering::Material</a>
-</li>
-<li>m_radius
-: <a class="el" href="classmage_1_1rendering_1_1_camera_lens.html#ac93ec7ffd20ce31ad9707f700a99dc12">mage::rendering::CameraLens</a>
 </li>
 <li>m_ram
 : <a class="el" href="classmage_1_1script_1_1_stats_script.html#a2a064095ffab6d72370808f383a16580">mage::script::StatsScript</a>
@@ -1112,6 +1128,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_sorted_sprites
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a1209d58b70713e61bc8f8fc753f9036e">mage::rendering::SpriteBatch::Impl</a>
 </li>
+<li>m_source
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#a0fa72c66632b71fda2df06fc34994c05">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
+</li>
 <li>m_spf
 : <a class="el" href="classmage_1_1script_1_1_stats_script.html#a999da0fb2033212522a1c45a992dcd37">mage::script::StatsScript</a>
 </li>
@@ -1239,7 +1258,8 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_text.html#a2fffa5ce343b92f32cbfe5234b182247">mage::rendering::SpriteText</a>
 </li>
 <li>m_texture
-: <a class="el" href="classmage_1_1rendering_1_1_sky.html#a674493833d7c13a329ba35429a1d9dfa">mage::rendering::Sky</a>
+: <a class="el" href="structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html#a6489b50a44ce6e5a2422b832e23de660">mage::rendering::anonymous_namespace{sprite_batch.cpp}::SpriteInfo</a>
+, <a class="el" href="classmage_1_1rendering_1_1_sky.html#a674493833d7c13a329ba35429a1d9dfa">mage::rendering::Sky</a>
 </li>
 <li>m_texture_pool
 : <a class="el" href="classmage_1_1rendering_1_1_resource_manager.html#aaf5faede84cdce3bd2589936d5ba3b18">mage::rendering::ResourceManager</a>
@@ -1425,9 +1445,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_window
 : <a class="el" href="classmage_1_1_engine.html#a8b710b9c37a48caad05896102c4b6980">mage::Engine</a>
-, <a class="el" href="classmage_1_1input_1_1_keyboard_1_1_impl.html#a55d12479108b554c1139bad8318994db">mage::input::Keyboard::Impl</a>
+, <a class="el" href="classmage_1_1input_1_1_keyboard.html#ac8074d4690146bf6523c236a7af50353">mage::input::Keyboard</a>
 , <a class="el" href="classmage_1_1input_1_1_manager_1_1_impl.html#afd49b4b35e1c1f93084d5cf31b89fe80">mage::input::Manager::Impl</a>
-, <a class="el" href="classmage_1_1input_1_1_mouse_1_1_impl.html#af478d106ce9e9e12ac32717c5523c7f5">mage::input::Mouse::Impl</a>
+, <a class="el" href="classmage_1_1input_1_1_mouse.html#a9fc088bd15bc89c9791642e4a95e81bc">mage::input::Mouse</a>
 , <a class="el" href="classmage_1_1rendering_1_1_manager_1_1_impl.html#a9e08221306f4931b1da16fe5b021a5e8">mage::rendering::Manager::Impl</a>
 , <a class="el" href="classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a56b2c79926ed4c86de9b0cd45e0cdabd">mage::rendering::SwapChain::Impl</a>
 , <a class="el" href="classmage_1_1_window.html#a5ca72a18801ff9e6abc309949d7b08b4">mage::Window</a>
@@ -1462,11 +1482,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="structmage_1_1rendering_1_1_shadow_mapped_spot_light_buffer.html#abb736c590c4a6efff217e15ef8abec4a">mage::rendering::ShadowMappedSpotLightBuffer</a>
 </li>
 <li>Manager()
-: <a class="el" href="classmage_1_1input_1_1_manager.html#a345b3b9384e5a3f31ff183e5208fa56b">mage::input::Manager</a>
-, <a class="el" href="classmage_1_1rendering_1_1_manager.html#a85b0881e007cf5ad3646de67c21a0312">mage::rendering::Manager</a>
+: <a class="el" href="classmage_1_1input_1_1_manager.html#a58ecd18389d84fb46109f3b28d105879">mage::input::Manager</a>
+, <a class="el" href="classmage_1_1rendering_1_1_manager.html#acf71efbc73317b319be41682505695f1">mage::rendering::Manager</a>
 </li>
 <li>ManhattanMotorScript()
-: <a class="el" href="classmage_1_1script_1_1_manhattan_motor_script.html#a042ae1a4a53d27c75ff85d5728ac3289">mage::script::ManhattanMotorScript</a>
+: <a class="el" href="classmage_1_1script_1_1_manhattan_motor_script.html#a62843ba8d660b496bec036082a0867f6">mage::script::ManhattanMotorScript</a>
 </li>
 <li>Map()
 : <a class="el" href="structmage_1_1rendering_1_1_pipeline.html#ab0176557cd5473bf5cd77836ca2d924f">mage::rendering::Pipeline</a>
@@ -1475,7 +1495,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_buffer_lock.html#a88693ae3717c7098d5cc2313cd16b8a6">mage::rendering::BufferLock</a>
 </li>
 <li>Material()
-: <a class="el" href="classmage_1_1rendering_1_1_material.html#a9cc8786b2f56dc53b6e0e0b80e5439e3">mage::rendering::Material</a>
+: <a class="el" href="classmage_1_1rendering_1_1_material.html#a52f4b3b0849b96306ea79c746070c6ba">mage::rendering::Material</a>
 </li>
 <li>Maximum()
 : <a class="el" href="classmage_1_1_a_a_b_b.html#a72f4f49b07a3816ad74fde9defc8cb76">mage::AABB</a>
@@ -1494,10 +1514,10 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#adad10e43a3ac2fb393bb423ec71c69bf">mage::rendering::SpriteBatchMesh</a>
 </li>
 <li>MDLReader()
-: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_reader.html#acc6d10b858b43608cb22d9086ae227fd">mage::rendering::loader::MDLReader&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_reader.html#a77f5be43642636faf71e7fb3eed7e050">mage::rendering::loader::MDLReader&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>MDLWriter()
-: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a27f71b3a27f96e263948d19b8b570309">mage::rendering::loader::MDLWriter&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_d_l_writer.html#a6b30e49f08b5c6cd4702f5fdecd17561">mage::rendering::loader::MDLWriter&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>MeasureDrawBounds()
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_font.html#a661820d3d7b20a797966007cd712a76b">mage::rendering::SpriteFont</a>
@@ -1513,10 +1533,10 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_memory_arena.html#a133e9d40bd216e3f1d98c6a2b36cf373">mage::MemoryArena</a>
 </li>
 <li>Mesh()
-: <a class="el" href="classmage_1_1rendering_1_1_mesh.html#a42e4cab2db663fa8d7f2c8651f30894b">mage::rendering::Mesh</a>
+: <a class="el" href="classmage_1_1rendering_1_1_mesh.html#a3113bd0dd48a82ae03e0a07d971494da">mage::rendering::Mesh</a>
 </li>
 <li>MeshDescriptor()
-: <a class="el" href="classmage_1_1rendering_1_1_mesh_descriptor.html#a1b0ebe38d5591dda224370a7533f0c13">mage::rendering::MeshDescriptor&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1_mesh_descriptor.html#ad46be4da19cfa33f0731f371b7ebbe43">mage::rendering::MeshDescriptor&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>MinAndMaxPointAlongNormal()
 : <a class="el" href="classmage_1_1_a_a_b_b.html#a34b2948ec856a284dcedceaf54ec4569">mage::AABB</a>
@@ -1537,28 +1557,30 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1_sprite_batch_mesh.html#ad45b804c25e3b488aa9b22226fbc1ed4">mage::rendering::SpriteBatchMesh</a>
 </li>
 <li>mipMapCount
-: <a class="el" href="struct_d_d_s___h_e_a_d_e_r.html#a17b6d75171143338b022406db274cdb3">DDS_HEADER</a>
+: <a class="el" href="structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___h_e_a_d_e_r.html#aae506666ce1203fa2bfeb3337f2a66f5">anonymous_namespace{screen_grab.cpp}::DDS_HEADER</a>
+, <a class="el" href="struct_d_d_s___h_e_a_d_e_r.html#a17b6d75171143338b022406db274cdb3">DDS_HEADER</a>
 </li>
 <li>miscFlag
-: <a class="el" href="struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#ab1ed2a42216afc03971b56f7833c8c05">DDS_HEADER_DXT10</a>
+: <a class="el" href="structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#acd8f9063edc4c70f65ce4a16f402d041">anonymous_namespace{screen_grab.cpp}::DDS_HEADER_DXT10</a>
+, <a class="el" href="struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#ab1ed2a42216afc03971b56f7833c8c05">DDS_HEADER_DXT10</a>
 </li>
 <li>miscFlags2
 : <a class="el" href="struct_d_d_s___h_e_a_d_e_r___d_x_t10.html#acfdbfd584a5c6de801da3c8d2f0e1a40">DDS_HEADER_DXT10</a>
 </li>
 <li>Model()
-: <a class="el" href="classmage_1_1rendering_1_1_model.html#a7f135a6ed7604655e94d3264bd9d5c62">mage::rendering::Model</a>
+: <a class="el" href="classmage_1_1rendering_1_1_model.html#a550ece2d159145d9e9549e48235d1ca1">mage::rendering::Model</a>
 </li>
 <li>ModelBuffer()
-: <a class="el" href="structmage_1_1rendering_1_1_model_buffer.html#a2a70d56be64cc621e61e056fb08d6905">mage::rendering::ModelBuffer</a>
+: <a class="el" href="structmage_1_1rendering_1_1_model_buffer.html#a31cc9c498bbb467b45d7a440e744ece4">mage::rendering::ModelBuffer</a>
 </li>
 <li>ModelDescriptor()
-: <a class="el" href="classmage_1_1rendering_1_1_model_descriptor.html#af3fc0dea0060aa15a8003a7f4f807dd0">mage::rendering::ModelDescriptor</a>
+: <a class="el" href="classmage_1_1rendering_1_1_model_descriptor.html#a69a6ffd3c69cec0ef7f395a5228158ea">mage::rendering::ModelDescriptor</a>
 </li>
 <li>ModelOutput()
-: <a class="el" href="structmage_1_1rendering_1_1_model_output.html#a449de2164c45500f02bbe03f4bdc648f">mage::rendering::ModelOutput&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="structmage_1_1rendering_1_1_model_output.html#a0aaa7f6abf4c5df03fe02b49ef189e3b">mage::rendering::ModelOutput&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>ModelPart()
-: <a class="el" href="structmage_1_1rendering_1_1_model_part.html#ab9f9bbf4d5a08113483d3744b69e7188">mage::rendering::ModelPart</a>
+: <a class="el" href="structmage_1_1rendering_1_1_model_part.html#a843671f80d5c36d05d7d147f65fea890">mage::rendering::ModelPart</a>
 </li>
 <li>Mouse()
 : <a class="el" href="classmage_1_1input_1_1_mouse.html#add3fd231e5af4f3669eaa8d5f8d157ec">mage::input::Mouse</a>
@@ -1570,7 +1592,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html#a107ac854c231c1a1c39f30c5199dcec7">mage::rendering::loader::MSHReader&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>MSHWriter()
-: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_s_h_writer.html#a5e1a7ed8ca94f157f52bba929cac2fd3">mage::rendering::loader::MSHWriter&lt; VertexT, IndexT &gt;</a>
+: <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_s_h_writer.html#a877a042ef1a4472c9d1cece846b2a70a">mage::rendering::loader::MSHWriter&lt; VertexT, IndexT &gt;</a>
 </li>
 <li>MTLReader()
 : <a class="el" href="classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#af6b1842f18fb4a6e6bae435fd0f08496">mage::rendering::loader::MTLReader</a>

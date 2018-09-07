@@ -8,8 +8,8 @@ var structmage_1_1_u_v =
     [ "~UV", "structmage_1_1_u_v.html#a9389be8cc9bb64861b69f79b44b6dd1b", null ],
     [ "GetU", "structmage_1_1_u_v.html#a8587903b07cab58428d01ed9ded97dd4", null ],
     [ "GetV", "structmage_1_1_u_v.html#a95b38718cb3eeaacebdfa306b4921d90", null ],
-    [ "operator=", "structmage_1_1_u_v.html#a53bf93c8a9b97f07d2b7db5a7e22be51", null ],
-    [ "operator=", "structmage_1_1_u_v.html#a2737f10decab84904fbd16a3f213c470", null ],
+    [ "operator=", "structmage_1_1_u_v.html#a90eed8d6fd280be4fb82c3ae389b50d1", null ],
+    [ "operator=", "structmage_1_1_u_v.html#ade2a86b1358b667df2bf20297bfae537", null ],
     [ "SetU", "structmage_1_1_u_v.html#a0c7826aed81123c47129d552c696ab18", null ],
     [ "SetV", "structmage_1_1_u_v.html#aa76b301726c43197f6de07ff6fec71b2", null ]
 ];

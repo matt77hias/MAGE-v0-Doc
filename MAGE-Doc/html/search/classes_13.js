@@ -2,6 +2,7 @@ var searchData=
 [
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html',1,'mage']]],
   ['varreader',['VARReader',['../classmage_1_1loader_1_1_v_a_r_reader.html',1,'mage::loader']]],
+  ['varvisitor',['VARVisitor',['../classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html',1,'mage::loader::anonymous_namespace{var_writer.cpp}']]],
   ['varwriter',['VARWriter',['../classmage_1_1loader_1_1_v_a_r_writer.html',1,'mage::loader']]],
   ['vertexposition',['VertexPosition',['../structmage_1_1rendering_1_1_vertex_position.html',1,'mage::rendering']]],
   ['vertexpositioncolor',['VertexPositionColor',['../structmage_1_1rendering_1_1_vertex_position_color.html',1,'mage::rendering']]],

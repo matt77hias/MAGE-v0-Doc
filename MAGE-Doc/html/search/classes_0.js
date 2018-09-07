@@ -8,6 +8,9 @@ var searchData=
   ['array',['Array',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20f32_2c_202_20_3e',['Array&lt; F32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20f32_2c_203_20_3e',['Array&lt; F32, 3 &gt;',['../structmage_1_1_array.html',1,'mage']]],
+  ['array_3c_20f32_2c_204_2c_2016_20_3e',['Array&lt; F32, 4, 16 &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20s32_2c_202_20_3e',['Array&lt; S32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]],
-  ['array_3c_20u32_2c_202_20_3e',['Array&lt; U32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]]
+  ['array_3c_20u32_2c_202_20_3e',['Array&lt; U32, 2 &gt;',['../structmage_1_1_array.html',1,'mage']]],
+  ['auto_5fdelete_5ffile',['auto_delete_file',['../classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file.html',1,'anonymous_namespace{screen_grab.cpp}']]],
+  ['auto_5fdelete_5ffile_5fwic',['auto_delete_file_wic',['../classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file__wic.html',1,'anonymous_namespace{screen_grab.cpp}']]]
 ];

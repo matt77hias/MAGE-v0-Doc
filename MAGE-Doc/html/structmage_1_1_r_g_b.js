@@ -11,8 +11,8 @@ var structmage_1_1_r_g_b =
     [ "GetB", "structmage_1_1_r_g_b.html#a5a48ef39436290969ed01021bdbb687d", null ],
     [ "GetG", "structmage_1_1_r_g_b.html#a997a18a9af34e5796d18974762574faf", null ],
     [ "GetR", "structmage_1_1_r_g_b.html#a314530cf81692c9f49da663ba51ea528", null ],
-    [ "operator=", "structmage_1_1_r_g_b.html#ad78ad1a23b801b19a0e8f747dec8637d", null ],
-    [ "operator=", "structmage_1_1_r_g_b.html#a87257a9536e7b2eabd49553df67e8945", null ],
+    [ "operator=", "structmage_1_1_r_g_b.html#a10fd47397bb4a691c951d44abfb77d7c", null ],
+    [ "operator=", "structmage_1_1_r_g_b.html#add3b5995774c634d6e32af4d1cd6bfb3", null ],
     [ "SetB", "structmage_1_1_r_g_b.html#a363d6235bc2c68907addb5326df07dc7", null ],
     [ "SetG", "structmage_1_1_r_g_b.html#a6a47f8186e29e29a9d253732e7071ed7", null ],
     [ "SetR", "structmage_1_1_r_g_b.html#a1fc1a5b272202fb56f3a8f35735836d2", null ]

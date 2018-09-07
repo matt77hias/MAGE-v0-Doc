@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['falsecolor',['FalseColor',['../namespacemage_1_1rendering.html#a6c3d1f4e7a5ae72dc07226e971205534',1,'mage::rendering']]]
+  ['errordisposition',['ErrorDisposition',['../namespacemage_1_1anonymous__namespace_02error_8cpp_03.html#a02d701a32d4f84856df21925fcce5500',1,'mage::anonymous_namespace{error.cpp}']]]
 ];

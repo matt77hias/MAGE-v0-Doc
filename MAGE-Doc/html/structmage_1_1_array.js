@@ -11,7 +11,7 @@ var structmage_1_1_array =
     [ "Array", "structmage_1_1_array.html#a4cf0fb395b42d53b6e59868739dc9613", null ],
     [ "Array", "structmage_1_1_array.html#a950b26208c3546704f42e92c312a93ed", null ],
     [ "~Array", "structmage_1_1_array.html#a7adc09166915789b93a7a3af118182e0", null ],
-    [ "operator=", "structmage_1_1_array.html#a693f811869bcaae12b5308981682affa", null ],
-    [ "operator=", "structmage_1_1_array.html#ae90a7beb10b5edc39331e465af0d1acc", null ],
+    [ "operator=", "structmage_1_1_array.html#a216d8efaf044c3219a45e53073833ee0", null ],
+    [ "operator=", "structmage_1_1_array.html#a33cb0dac90d7bf6c3973455ab12eb535", null ],
     [ "s_size", "structmage_1_1_array.html#aead6104ec6173aed5755a261b0a82b82", null ]
 ];

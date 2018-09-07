@@ -8,7 +8,7 @@ var searchData=
   ['peachpuff',['PeachPuff',['../namespacemage_1_1color.html#a6ec38a42d469de89ab50cd4db3338754',1,'mage::color']]],
   ['peru',['Peru',['../namespacemage_1_1color.html#a6fada3c18d633306e50b65df7bf6c043',1,'mage::color']]],
   ['pink',['Pink',['../namespacemage_1_1color.html#ae16637717be4ec8fdf6991f24e5ccf27',1,'mage::color']]],
-  ['pitchorlinearsize',['pitchOrLinearSize',['../struct_d_d_s___h_e_a_d_e_r.html#a77410ea1d2209672fc6651b5322a9306',1,'DDS_HEADER']]],
+  ['pitchorlinearsize',['pitchOrLinearSize',['../struct_d_d_s___h_e_a_d_e_r.html#a77410ea1d2209672fc6651b5322a9306',1,'DDS_HEADER::pitchOrLinearSize()'],['../structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___h_e_a_d_e_r.html#a483bbadc704e12c14b27075d7e54f1dd',1,'anonymous_namespace{screen_grab.cpp}::DDS_HEADER::pitchOrLinearSize()']]],
   ['plum',['Plum',['../namespacemage_1_1color.html#aa46d4f06d75baccba40c0b04ddb88775',1,'mage::color']]],
   ['powderblue',['PowderBlue',['../namespacemage_1_1color.html#aa958d1e0bc2c4f67cdd4e74552d63600',1,'mage::color']]],
   ['purple',['Purple',['../namespacemage_1_1color.html#af70cf4f9a882428e08cb958fe75a5a30',1,'mage::color']]]

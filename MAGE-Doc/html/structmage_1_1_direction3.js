@@ -9,8 +9,8 @@ var structmage_1_1_direction3 =
     [ "GetX", "structmage_1_1_direction3.html#a8d3ec6086f1b47844331950df3a47207", null ],
     [ "GetY", "structmage_1_1_direction3.html#a995bc58846a268b63f6e7fdd678420cd", null ],
     [ "GetZ", "structmage_1_1_direction3.html#a6ee9bc60c92c37c6ff7e1b432bf191c7", null ],
-    [ "operator=", "structmage_1_1_direction3.html#a500a363a93cded3e36a0704d288d34f3", null ],
-    [ "operator=", "structmage_1_1_direction3.html#a111a8f8d7286bfba0d7586925666315b", null ],
+    [ "operator=", "structmage_1_1_direction3.html#a3bbb78215de8d52528c15c2e150d4a53", null ],
+    [ "operator=", "structmage_1_1_direction3.html#a02823d74126254434d8288f103e67fe6", null ],
     [ "SetX", "structmage_1_1_direction3.html#a0c2b501a6e30261d872227bb73be8914", null ],
     [ "SetY", "structmage_1_1_direction3.html#a4ac25624a33e1eee6724f0b411737d2c", null ],
     [ "SetZ", "structmage_1_1_direction3.html#a26d3ef84f5c7429f325871c5d59e39e7", null ]

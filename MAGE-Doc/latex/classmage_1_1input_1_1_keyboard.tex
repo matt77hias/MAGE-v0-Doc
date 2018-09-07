@@ -4,11 +4,6 @@
 
 {\ttfamily \#include $<$keyboard.\+hpp$>$}
 
-\subsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_1_1_impl}{Impl}}
-\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,12 +23,31 @@ class \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_1_1_impl}{Impl}}
 \item 
 void \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a14e53eed6b75a2c45ca3caf94d797bc0}{Update}} () noexcept
 \item 
-bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a287feaae6c0bf0a93b97f29a601b177a}{Get\+Key\+Press}} (unsigned char key, bool ignore\+\_\+press\+\_\+stamp=false) const noexcept
+bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a6a9cc65baf06080c7496417de89cd1e5}{Is\+Active}} (unsigned char key) const noexcept
+\item 
+bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a28806b2bc716e6849be259b7aa2956a7}{Is\+Passive}} (unsigned char key) const noexcept
+\item 
+bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a722ae998e69214f9126a4ee60397c208}{Is\+Switched}} (unsigned char key) const noexcept
+\item 
+bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a110c61213216a2286d9bd099cafa729f}{Is\+Activated}} (unsigned char key) const noexcept
+\item 
+bool \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a3c38020c099d0b1e8a3a083e146da7fa}{Is\+Deactivated}} (unsigned char key) const noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a9a764a44144ee846bc5fa8094fa591e2}{Initialize\+Keyboard}} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_1_1_impl}{Impl}} $>$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_af693bedd8a7bc9ca0d1c130b84753f67}{m\+\_\+impl}}
+\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_ac8074d4690146bf6523c236a7af50353}{m\+\_\+window}}
+\item 
+I\+Direct\+Input8 \& \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_a3757173fa08e6744d374e0a5397de11c}{m\+\_\+di}}
+\item 
+\mbox{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}}$<$ I\+Direct\+Input\+Device8 $>$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_ad6993f7c9fc9692708c1f928d0ea1e6b}{m\+\_\+keyboard}}
+\item 
+std\+::bitset$<$ 512 $>$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_ad5b0ec6ca8ff1adbfed19c2382fa8a65}{m\+\_\+key\+\_\+states}}
 \end{DoxyCompactItemize}
 
 
@@ -96,24 +110,6 @@ Constructs a keyboard by moving the given keyboard.
 Destructs this keyboard. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a287feaae6c0bf0a93b97f29a601b177a}\label{classmage_1_1input_1_1_keyboard_a287feaae6c0bf0a93b97f29a601b177a}} 
-\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Get\+Key\+Press@{Get\+Key\+Press}}
-\index{Get\+Key\+Press@{Get\+Key\+Press}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
-\subsubsection{\texorpdfstring{Get\+Key\+Press()}{GetKeyPress()}}
-{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
-
-Checks whether the given key of this keyboard is pressed.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & The key. \\
-\hline
-\mbox{\tt in}  & {\em ignore\+\_\+press\+\_\+stamp} & Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if the given key of this keyboard is pressed. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a9838f6a7453f74d545926bf5de4c7750}\label{classmage_1_1input_1_1_keyboard_a9838f6a7453f74d545926bf5de4c7750}} 
 \index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Get\+Window@{Get\+Window}}
 \index{Get\+Window@{Get\+Window}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
@@ -124,6 +120,99 @@ Returns the window handle of this keyboard.
 
 \begin{DoxyReturn}{Returns}
 The window handle of this keyboard. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a9a764a44144ee846bc5fa8094fa591e2}\label{classmage_1_1input_1_1_keyboard_a9a764a44144ee846bc5fa8094fa591e2}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Initialize\+Keyboard@{Initialize\+Keyboard}}
+\index{Initialize\+Keyboard@{Initialize\+Keyboard}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Initialize\+Keyboard()}{InitializeKeyboard()}}
+{\footnotesize\ttfamily void mage\+::input\+::\+Keyboard\+::\+Initialize\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the keyboard device of this keyboard.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classmage_1_1_exception}{Exception}}} & Failed to initialize the keyboard. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a110c61213216a2286d9bd099cafa729f}\label{classmage_1_1input_1_1_keyboard_a110c61213216a2286d9bd099cafa729f}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Is\+Activated@{Is\+Activated}}
+\index{Is\+Activated@{Is\+Activated}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Activated()}{IsActivated()}}
+{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Is\+Activated (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given key is activated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given key is activated. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a6a9cc65baf06080c7496417de89cd1e5}\label{classmage_1_1input_1_1_keyboard_a6a9cc65baf06080c7496417de89cd1e5}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Active()}{IsActive()}}
+{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Is\+Active (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given key is active.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given key is active. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a3c38020c099d0b1e8a3a083e146da7fa}\label{classmage_1_1input_1_1_keyboard_a3c38020c099d0b1e8a3a083e146da7fa}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Is\+Deactivated@{Is\+Deactivated}}
+\index{Is\+Deactivated@{Is\+Deactivated}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Deactivated()}{IsDeactivated()}}
+{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Is\+Deactivated (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given key is deactivated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given key is deactivated. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a28806b2bc716e6849be259b7aa2956a7}\label{classmage_1_1input_1_1_keyboard_a28806b2bc716e6849be259b7aa2956a7}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Is\+Passive@{Is\+Passive}}
+\index{Is\+Passive@{Is\+Passive}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Passive()}{IsPassive()}}
+{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Is\+Passive (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given key is passive.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given key is passive. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a722ae998e69214f9126a4ee60397c208}\label{classmage_1_1input_1_1_keyboard_a722ae998e69214f9126a4ee60397c208}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!Is\+Switched@{Is\+Switched}}
+\index{Is\+Switched@{Is\+Switched}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Switched()}{IsSwitched()}}
+{\footnotesize\ttfamily bool mage\+::input\+::\+Keyboard\+::\+Is\+Switched (\begin{DoxyParamCaption}\item[{unsigned char}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Checks whether the given key is switched from being passive to active or vice versa (i.\+e. activated or deactivated).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given key is switched from being passive to active or vice versa (i.\+e. activated or deactivated). {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a8a06eeb906625f100928f3fe2d17cf9d}\label{classmage_1_1input_1_1_keyboard_a8a06eeb906625f100928f3fe2d17cf9d}} 
 \index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!operator=@{operator=}}
@@ -166,10 +255,32 @@ A reference to the moved keyboard (i.\+e. this keyboard).
 Updates the state of this keyboard. 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_af693bedd8a7bc9ca0d1c130b84753f67}\label{classmage_1_1input_1_1_keyboard_af693bedd8a7bc9ca0d1c130b84753f67}} 
-\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!m\+\_\+impl@{m\+\_\+impl}}
-\index{m\+\_\+impl@{m\+\_\+impl}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
-\subsubsection{\texorpdfstring{m\+\_\+impl}{m\_impl}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1input_1_1_keyboard_1_1_impl}{Impl}} $>$ mage\+::input\+::\+Keyboard\+::m\+\_\+impl\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_a3757173fa08e6744d374e0a5397de11c}\label{classmage_1_1input_1_1_keyboard_a3757173fa08e6744d374e0a5397de11c}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!m\+\_\+di@{m\+\_\+di}}
+\index{m\+\_\+di@{m\+\_\+di}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{m\+\_\+di}{m\_di}}
+{\footnotesize\ttfamily I\+Direct\+Input8\& mage\+::input\+::\+Keyboard\+::m\+\_\+di\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the implementation of this keyboard. 
+A reference to the Direct\+Input object of this keyboard. \mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_ad5b0ec6ca8ff1adbfed19c2382fa8a65}\label{classmage_1_1input_1_1_keyboard_ad5b0ec6ca8ff1adbfed19c2382fa8a65}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!m\+\_\+key\+\_\+states@{m\+\_\+key\+\_\+states}}
+\index{m\+\_\+key\+\_\+states@{m\+\_\+key\+\_\+states}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{m\+\_\+key\+\_\+states}{m\_key\_states}}
+{\footnotesize\ttfamily std\+::bitset$<$ 512 $>$ mage\+::input\+::\+Keyboard\+::m\+\_\+key\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}
+
+The key states of this keyboard. Each key state consists of two flags.
+
+The first flag indicates whether the key state switched from being passive to active or vice versa (i.\+e. activated or deactivated).
+
+The second flag indicates whether the key state is active. \mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_ad6993f7c9fc9692708c1f928d0ea1e6b}\label{classmage_1_1input_1_1_keyboard_ad6993f7c9fc9692708c1f928d0ea1e6b}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!m\+\_\+keyboard@{m\+\_\+keyboard}}
+\index{m\+\_\+keyboard@{m\+\_\+keyboard}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{m\+\_\+keyboard}{m\_keyboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}}$<$ I\+Direct\+Input\+Device8 $>$ mage\+::input\+::\+Keyboard\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the Direct\+Input keyboard device of this keyboard. \mbox{\Hypertarget{classmage_1_1input_1_1_keyboard_ac8074d4690146bf6523c236a7af50353}\label{classmage_1_1input_1_1_keyboard_ac8074d4690146bf6523c236a7af50353}} 
+\index{mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}!m\+\_\+window@{m\+\_\+window}}
+\index{m\+\_\+window@{m\+\_\+window}!mage\+::input\+::\+Keyboard@{mage\+::input\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ H\+W\+ND $>$ mage\+::input\+::\+Keyboard\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+The handle of the parent window of this keyboard. 

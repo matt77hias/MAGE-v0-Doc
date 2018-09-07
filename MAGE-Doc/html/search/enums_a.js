@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wic_5floader_5fflags',['WIC_LOADER_FLAGS',['../namespace_direct_x.html#ad1ef6b84995b08da5a29130bd8cc5c2a',1,'DirectX']]]
+  ['uavindex',['UAVIndex',['../classmage_1_1rendering_1_1_output_manager.html#a71b3797fef957312f92736f15b7ada3e',1,'mage::rendering::OutputManager']]]
 ];

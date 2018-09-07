@@ -29,7 +29,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
-        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Variables", "namespacemembers_vars.html", "namespacemembers_vars" ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -54,21 +54,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_double_ended_memory_stack.html#afaac4a28ea1e386bc83d3e07fd5531a0",
-"classmage_1_1_local_transform.html#accd789cb8a8f3cec2c048cfb05ef8eb3",
-"classmage_1_1_scene.html#a270ac4a26210b95ba05957af19c4c43c",
-"classmage_1_1_transform.html#a6adbe2205f8db80107a2046eb7a9566a",
-"classmage_1_1input_1_1_mouse_1_1_impl.html#a18304bef70290efaec61ad9eca140ce8",
-"classmage_1_1rendering_1_1_deferred_pass.html#a542cc2833e2df7b7697f2c1d769dce36",
-"classmage_1_1rendering_1_1_manager_1_1_impl.html#af9164e13dda6ab8b553e58c62ca79378",
-"classmage_1_1rendering_1_1_perspective_camera.html#a180f74e8b39609aee8dcc2741a74076f",
-"classmage_1_1rendering_1_1_spot_light.html#af91b9fc5303e5c2c5e90337f42db015c",
-"classmage_1_1rendering_1_1_swap_chain_1_1_impl.html#a9631b95d63626a41575ca18aa6dec206",
-"classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html",
-"functions_u.html",
-"structmage_1_1_s_r_g_b.html#aa5bb0738c6026da6c3e4f54869c52cbc",
-"structmage_1_1rendering_1_1_pipeline.html#acc764fee84589a85e0e2df129b34b137",
-"structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5b65b49d120fd660977f8f05b3ee7327"
+"classmage_1_1_double_ended_memory_stack.html#a89d83095cc04686b9775fc4a55a5ff30",
+"classmage_1_1_local_transform.html#aa1e2f6f7db150734e6f10a9d695202d7",
+"classmage_1_1_resource_pool.html#adef3060db9bd6ffd8f46abd35afebae5",
+"classmage_1_1_transform.html#a3204b0669d2735a4c05af1f6e10b46b1",
+"classmage_1_1input_1_1_mouse.html#a8209bbaf255c2e93ee1cd8f3937cd8ab",
+"classmage_1_1rendering_1_1_compiled_shader.html#ab4217b5b68c5cc33b6736a844ddfe699",
+"classmage_1_1rendering_1_1_manager_1_1_impl.html#a4d65858be32aeb40527033cb0afd0911",
+"classmage_1_1rendering_1_1_output_manager.html#aee20394757c9f7ebcaf7f8682747d716",
+"classmage_1_1rendering_1_1_spot_light.html#aa2e1e955cf9fb12a9e064cc523cbbe26",
+"classmage_1_1rendering_1_1_swap_chain.html#ae554cc85a11c0126c645263e8ffb1cf4",
+"classmage_1_1rendering_1_1loader_1_1_m_t_l_reader.html#a5b03c5c7aee393e60ea6c3bd7ff15614",
+"functions_func_w.html",
+"structmage_1_1_core_clock_per_core.html",
+"structmage_1_1rendering_1_1_glyph.html#a97d90fe10ed59c2d594d0c194e072e7a",
+"structmage_1_1rendering_1_1_sprite_font_output.html#a0b94e62b46d2b75d05eff13f8909f1cc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
