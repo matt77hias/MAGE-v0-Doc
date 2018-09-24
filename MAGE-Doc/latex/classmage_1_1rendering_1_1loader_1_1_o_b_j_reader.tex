@@ -67,12 +67,16 @@ const \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} \mbox{\hyperlink{classm
 \item 
 const \mbox{\hyperlink{structmage_1_1_u_v}{UV}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a3fdbcdecf40525631afc53ce6a6dba45}{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}} ()
 \item 
-const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adf0996ca5d0339782382b46c14768b7f}{Read\+O\+B\+J\+Vertex\+Indices}} ()
+const \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_adf0996ca5d0339782382b46c14768b7f}{Read\+O\+B\+J\+Vertex\+Indices}} ()
 \item 
-const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa223ad518d2cdddd1c89a3f113356d77}{Construct\+Vertex}} (const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \&vertex\+\_\+indices)
+const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa223ad518d2cdddd1c89a3f113356d77}{Construct\+Vertex}} (const \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}} \&vertex\+\_\+indices)
+\item 
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4c76ddb64f1bdae2ee1a91cd1b97cdde}{Finalize\+Model\+Part}} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a964d90188a9ced3003b5aa3a9b82602b}{m\+\_\+model\+\_\+part}}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_point3}{Point3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a393e0932f169a786e38f120fc6f0d84b}{m\+\_\+vertex\+\_\+coordinates}}
 \item 
@@ -80,7 +84,7 @@ std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_u_v}{UV}} $>$ \mbox{\hyperlink{
 \item 
 std\+::vector$<$ \mbox{\hyperlink{structmage_1_1_normal3}{Normal3}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ac977ade8154bef446524526e8297f3eb}{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}}
 \item 
-std\+::map$<$ \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4bad8aafabddb5cec68be8357d2d7566}{m\+\_\+mapping}}
+std\+::map$<$ \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4bad8aafabddb5cec68be8357d2d7566}{m\+\_\+mapping}}
 \item 
 \mbox{\hyperlink{classmage_1_1rendering_1_1_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}{m\+\_\+resource\+\_\+manager}}
 \item 
@@ -168,7 +172,7 @@ Destructs this O\+BJ reader.
 \index{Construct\+Vertex@{Construct\+Vertex}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{Construct\+Vertex()}{ConstructVertex()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Construct\+Vertex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \&}]{vertex\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+const VertexT \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Construct\+Vertex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}} \&}]{vertex\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Constructs or retrieves (if already existing) the vertex matching the given vertex indices.
 
@@ -180,7 +184,14 @@ Constructs or retrieves (if already existing) the vertex matching the given vert
 \begin{DoxyReturn}{Returns}
 The vertex matching the given vertex indices {\itshape vertex\+\_\+indices}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4c76ddb64f1bdae2ee1a91cd1b97cdde}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a4c76ddb64f1bdae2ee1a91cd1b97cdde}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!Finalize\+Model\+Part@{Finalize\+Model\+Part}}
+\index{Finalize\+Model\+Part@{Finalize\+Model\+Part}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Finalize\+Model\+Part()}{FinalizeModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+void \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Finalize\+Model\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Finalizes the current model part of this O\+BJ reader and prepare a new current model part. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a006549a7f9724580c7fdae2f7a9c7bdf}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -439,7 +450,7 @@ The {\ttfamily \mbox{\hyperlink{structmage_1_1_point3}{Point3}}} represented by 
 \index{Read\+O\+B\+J\+Vertex\+Indices@{Read\+O\+B\+J\+Vertex\+Indices}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Indices()}{ReadOBJVertexIndices()}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-const \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+const \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::Read\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Reads a set of vertex indices.
 
@@ -530,7 +541,7 @@ The {\ttfamily \mbox{\hyperlink{structmage_1_1_u_v}{UV}}} represented by the nex
 \index{m\+\_\+mapping@{m\+\_\+mapping}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+mapping}{m\_mapping}}
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
-std\+::map$<$ \mbox{\hyperlink{namespacemage_a03e3b6f65630005f43a3112d1f6cf57b}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
+std\+::map$<$ \mbox{\hyperlink{namespacemage_a1e9348414b777b1a460dc4f295bc87fc}{U32x3}}, IndexT, \mbox{\hyperlink{structmage_1_1rendering_1_1loader_1_1_o_b_j_reader_1_1_o_b_j_comparator}{O\+B\+J\+Comparator}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
 
 A mapping between vertex position/texture/normal coordinates\textquotesingle{} indices and the index of a vertex in the vertex buffer ({\ttfamily m\+\_\+model\+\_\+output}) of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_aa029c035456ea9456d63726b15e5db05}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+mesh\+\_\+desc@{m\+\_\+mesh\+\_\+desc}}
@@ -546,7 +557,14 @@ A reference to the mesh descriptor for this O\+BJ reader. \mbox{\Hypertarget{cla
 {\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
 \mbox{\hyperlink{structmage_1_1rendering_1_1_model_output}{Model\+Output}}$<$ VertexT, IndexT $>$\& \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+model\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
 
-A reference to a model output containing the read data of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}} 
+A reference to a model output containing the read data of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a964d90188a9ced3003b5aa3a9b82602b}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_a964d90188a9ced3003b5aa3a9b82602b}} 
+\index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+model\+\_\+part@{m\+\_\+model\+\_\+part}}
+\index{m\+\_\+model\+\_\+part@{m\+\_\+model\+\_\+part}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+part}{m\_model\_part}}
+{\footnotesize\ttfamily template$<$typename VertexT , typename IndexT $>$ \\
+\mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} \mbox{\hyperlink{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader}{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}$<$ VertexT, IndexT $>$\+::m\+\_\+model\+\_\+part\hspace{0.3cm}{\ttfamily [private]}}
+
+The current model part of this O\+BJ reader. \mbox{\Hypertarget{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}\label{classmage_1_1rendering_1_1loader_1_1_o_b_j_reader_ae6208964e05f3e93eb9939942fe3b55c}} 
 \index{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}!m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}}
 \index{m\+\_\+resource\+\_\+manager@{m\+\_\+resource\+\_\+manager}!mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader@{mage\+::rendering\+::loader\+::\+O\+B\+J\+Reader}}
 \subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+manager}{m\_resource\_manager}}

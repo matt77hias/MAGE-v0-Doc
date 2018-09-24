@@ -1,11 +1,5 @@
 var structmage_1_1rendering_1_1_light_buffer =
 [
-    [ "LightBuffer", "structmage_1_1rendering_1_1_light_buffer.html#ad31355f44f8e31f540fa40c81e659fca", null ],
-    [ "LightBuffer", "structmage_1_1rendering_1_1_light_buffer.html#ae5f4964ae3773e590a8fe07e3b6bcdfa", null ],
-    [ "LightBuffer", "structmage_1_1rendering_1_1_light_buffer.html#a016cbba8dd68da2f80a7018e2276070d", null ],
-    [ "~LightBuffer", "structmage_1_1rendering_1_1_light_buffer.html#a36fd7699f61cde6359d6934428eb9daf", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_light_buffer.html#a409af50e3d21571e56b36c6c88769a65", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_light_buffer.html#abe8ee3df1e5c2ce28aaab03ce729a184", null ],
     [ "m_La", "structmage_1_1rendering_1_1_light_buffer.html#a98c6472d82af27de8b7584ff1c7f98db", null ],
     [ "m_nb_directional_lights", "structmage_1_1rendering_1_1_light_buffer.html#a4ebd93f25e72d8ba426599e94369547b", null ],
     [ "m_nb_omni_lights", "structmage_1_1rendering_1_1_light_buffer.html#a1a5e40bcec229bad29eacde98f3abe28", null ],

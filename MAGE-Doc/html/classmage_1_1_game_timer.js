@@ -4,7 +4,7 @@ var classmage_1_1_game_timer =
     [ "GameTimer", "classmage_1_1_game_timer.html#a0c70f8245381120b6e334db078affa00", null ],
     [ "GameTimer", "classmage_1_1_game_timer.html#a5be12a14c07e264f402635a87b78b401", null ],
     [ "~GameTimer", "classmage_1_1_game_timer.html#a1ba81ccdb247f932e7a396f1ce773bbd", null ],
-    [ "GetTime", "classmage_1_1_game_timer.html#a5883ab785122b5722ec11045e146ff18", null ],
+    [ "GetTime", "classmage_1_1_game_timer.html#a1598867084d2a6c8a7ec2d36e8e66aa4", null ],
     [ "operator=", "classmage_1_1_game_timer.html#a9465e2d38d8810c2acb2cde2aafeaad1", null ],
     [ "operator=", "classmage_1_1_game_timer.html#ae5489a5363fbf69592270a9f35f269c9", null ],
     [ "Restart", "classmage_1_1_game_timer.html#a93108b016f2034da39e576067443d265", null ],

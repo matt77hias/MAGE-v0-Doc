@@ -13,5 +13,5 @@ var structmage_1_1_array =
     [ "~Array", "structmage_1_1_array.html#a7adc09166915789b93a7a3af118182e0", null ],
     [ "operator=", "structmage_1_1_array.html#a216d8efaf044c3219a45e53073833ee0", null ],
     [ "operator=", "structmage_1_1_array.html#a33cb0dac90d7bf6c3973455ab12eb535", null ],
-    [ "s_size", "structmage_1_1_array.html#aead6104ec6173aed5755a261b0a82b82", null ]
+    [ "s_size", "structmage_1_1_array.html#ac4dbc8a376d8594b11afa8f1383d4241", null ]
 ];

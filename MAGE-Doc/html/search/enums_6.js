@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hotkey',['HotKey',['../namespacemage.html#aa3aaaf232c0862e8f291a2893eb74a27',1,'mage']]]
+  ['messagedisposition',['MessageDisposition',['../namespacemage.html#a69a2278016fe93a35a5e87ce79321c2f',1,'mage']]]
 ];

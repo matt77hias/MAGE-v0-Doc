@@ -9,7 +9,7 @@ var classmage_1_1_binary_reader =
     [ "operator=", "classmage_1_1_binary_reader.html#a0408bb456983b4a03ae42ab69c6f4bc3", null ],
     [ "operator=", "classmage_1_1_binary_reader.html#a280998bb89dacdcb88ec87c49ce90a02", null ],
     [ "Read", "classmage_1_1_binary_reader.html#aa99b02137069566c010692093b328a6a", null ],
-    [ "ReadChars", "classmage_1_1_binary_reader.html#ad2bed0756a38358fc4a8b10b02007af8", null ],
+    [ "ReadChars", "classmage_1_1_binary_reader.html#a10d3b5300d4a492dd81638faf463dc11", null ],
     [ "ReadData", "classmage_1_1_binary_reader.html#a67157828a9781644fb55bd7f3558f07c", null ],
     [ "ReadFromFile", "classmage_1_1_binary_reader.html#a38daa2eb250146c537bbc65044a5738f", null ],
     [ "ReadFromMemory", "classmage_1_1_binary_reader.html#a093d95a36bdc45f5d51f48f1ee09bb1f", null ],

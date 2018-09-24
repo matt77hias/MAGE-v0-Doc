@@ -3,7 +3,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_ab6da9431b3faadf0715b69c11a0a578b}{Impl}} (const std\+::string \&title, \mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} nb\+\_\+work, char progress\+\_\+char=\textquotesingle{}+\textquotesingle{}, \mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} bar\+\_\+length=0u)
+\mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_affc0da330c4cbf2e47ca8359383e4b16}{Impl}} (std\+::string\+\_\+view title, \mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} nb\+\_\+work, char progress\+\_\+char=\textquotesingle{}+\textquotesingle{}, \mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} bar\+\_\+length=0u)
 \item 
 \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_af721b271934a492c3a47d8920d76c3c8}{Impl}} (const \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl}{Impl}} \&reporter)=delete
 \item 
@@ -22,7 +22,7 @@ void \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a58a0fb3d0e5f164f
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a6d8010b76ba5c7bac97fc1dadc7fca19}{Initialize}} (const std\+::string \&title, \mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} bar\+\_\+length=0u)
+void \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a74fc88eb682a8f5affc22130d010af80}{Initialize}} (std\+::string\+\_\+view title, \mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} bar\+\_\+length=0u)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -31,15 +31,15 @@ void \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a6d8010b76ba5c7ba
 \item 
 \mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_ad35ff8031b2826f41912abc44dbd1d24}{m\+\_\+nb\+\_\+work\+\_\+done}}
 \item 
-\mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a286a47e68cdbae261b94dd238e1c9328}{m\+\_\+nb\+\_\+progress\+\_\+total}}
+\mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a9ae041025e9e7401e2799d6890459343}{m\+\_\+nb\+\_\+progress\+\_\+total}}
 \item 
-\mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a06efb1bb26ffbba0cd26db5df79021f8}{m\+\_\+nb\+\_\+progress\+\_\+printed}}
+\mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_ac4e193520013c0cd5a68b3ef8de5fb8f}{m\+\_\+nb\+\_\+progress\+\_\+printed}}
 \item 
 char \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a6796267101fa30e107ed0d5031a8dca3}{m\+\_\+progress\+\_\+char}}
 \item 
-F\+I\+LE $\ast$ \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a1ef149837131c4c615a4be082605f62c}{m\+\_\+fout}}
+\mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ std\+::\+F\+I\+LE $\ast$$>$ \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a80cffcd89826c3a172af53033a3dd8f0}{m\+\_\+fout}}
 \item 
-\mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ char\mbox{[}$\,$\mbox{]} $>$ \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a0ae90634d05295f7c1a8294e343418e2}{m\+\_\+buffer}}
+\mbox{\hyperlink{classmage_1_1_dynamic_array}{Dynamic\+Array}}$<$ char $>$ \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_a5f347126852a59e05930906fcea49dc3}{m\+\_\+buffer}}
 \item 
 char $\ast$ \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_ab1513044548160ad7a6d181ae2618f1b}{m\+\_\+current\+\_\+pos}}
 \item 
@@ -53,17 +53,17 @@ std\+::mutex \mbox{\hyperlink{classmage_1_1_progress_reporter_1_1_impl_acc8b21e5
 A class of progress reporters. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_ab6da9431b3faadf0715b69c11a0a578b}\label{classmage_1_1_progress_reporter_1_1_impl_ab6da9431b3faadf0715b69c11a0a578b}} 
+\mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_affc0da330c4cbf2e47ca8359383e4b16}\label{classmage_1_1_progress_reporter_1_1_impl_affc0da330c4cbf2e47ca8359383e4b16}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!Impl@{Impl}}
 \index{Impl@{Impl}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{Impl()}{Impl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Impl\+::\+Impl (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}}}]{nb\+\_\+work,  }\item[{char}]{progress\+\_\+char = {\ttfamily \textquotesingle{}+\textquotesingle{}},  }\item[{\mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}}}]{bar\+\_\+length = {\ttfamily 0u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Impl\+::\+Impl (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{title,  }\item[{\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}}}]{nb\+\_\+work,  }\item[{char}]{progress\+\_\+char = {\ttfamily \textquotesingle{}+\textquotesingle{}},  }\item[{\mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}}}]{bar\+\_\+length = {\ttfamily 0u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructs a progress reporter.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em title} & A reference to the title. \\
+\mbox{\tt in}  & {\em title} & The title. \\
 \hline
 \mbox{\tt in}  & {\em nb\+\_\+work} & The total number of work units. \\
 \hline
@@ -113,17 +113,17 @@ Destructs this progress reporter.
 \subsubsection{\texorpdfstring{Done()}{Done()}}
 {\footnotesize\ttfamily void mage\+::\+Progress\+Reporter\+::\+Impl\+::\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Finishes this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a6d8010b76ba5c7bac97fc1dadc7fca19}\label{classmage_1_1_progress_reporter_1_1_impl_a6d8010b76ba5c7bac97fc1dadc7fca19}} 
+Finishes this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a74fc88eb682a8f5affc22130d010af80}\label{classmage_1_1_progress_reporter_1_1_impl_a74fc88eb682a8f5affc22130d010af80}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
-{\footnotesize\ttfamily void mage\+::\+Progress\+Reporter\+::\+Impl\+::\+Initialize (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{\mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}}}]{bar\+\_\+length = {\ttfamily 0u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+Progress\+Reporter\+::\+Impl\+::\+Initialize (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{title,  }\item[{\mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}}}]{bar\+\_\+length = {\ttfamily 0u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes this progress reporter.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em title} & A reference to the title. \\
+\mbox{\tt in}  & {\em title} & The title. \\
 \hline
 \mbox{\tt in}  & {\em bar\+\_\+length} & The length of the progress bar. If {\itshape bar\+\_\+length} is equal to 0 the default length will be chosen. \\
 \hline
@@ -176,11 +176,11 @@ Updates this progress reporter.
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a0ae90634d05295f7c1a8294e343418e2}\label{classmage_1_1_progress_reporter_1_1_impl_a0ae90634d05295f7c1a8294e343418e2}} 
+\mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a5f347126852a59e05930906fcea49dc3}\label{classmage_1_1_progress_reporter_1_1_impl_a5f347126852a59e05930906fcea49dc3}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+buffer@{m\+\_\+buffer}}
 \index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ char\mbox{[}$\,$\mbox{]} $>$ mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_dynamic_array}{Dynamic\+Array}}$<$ char $>$ mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the output buffer of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_ab1513044548160ad7a6d181ae2618f1b}\label{classmage_1_1_progress_reporter_1_1_impl_ab1513044548160ad7a6d181ae2618f1b}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+current\+\_\+pos@{m\+\_\+current\+\_\+pos}}
@@ -188,11 +188,11 @@ A pointer to the output buffer of this progress reporter. \mbox{\Hypertarget{cla
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+pos}{m\_current\_pos}}
 {\footnotesize\ttfamily char$\ast$ mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+current\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the current character in the output buffer of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a1ef149837131c4c615a4be082605f62c}\label{classmage_1_1_progress_reporter_1_1_impl_a1ef149837131c4c615a4be082605f62c}} 
+A pointer to the current character in the output buffer of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a80cffcd89826c3a172af53033a3dd8f0}\label{classmage_1_1_progress_reporter_1_1_impl_a80cffcd89826c3a172af53033a3dd8f0}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+fout@{m\+\_\+fout}}
 \index{m\+\_\+fout@{m\+\_\+fout}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+fout}{m\_fout}}
-{\footnotesize\ttfamily F\+I\+LE$\ast$ mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+fout\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a8769f9d670d6b585ea306cb1062af94b}{Not\+Null}}$<$ std\+::\+F\+I\+LE$\ast$ $>$ mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+fout\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the output file stream of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_acc8b21e5c74a202b1fb8f80a26132bfc}\label{classmage_1_1_progress_reporter_1_1_impl_acc8b21e5c74a202b1fb8f80a26132bfc}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+mutex@{m\+\_\+mutex}}
@@ -200,17 +200,17 @@ A pointer to the output file stream of this progress reporter. \mbox{\Hypertarge
 \subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
 {\footnotesize\ttfamily std\+::mutex mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
 
-The mutex of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a06efb1bb26ffbba0cd26db5df79021f8}\label{classmage_1_1_progress_reporter_1_1_impl_a06efb1bb26ffbba0cd26db5df79021f8}} 
+The mutex of this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_ac4e193520013c0cd5a68b3ef8de5fb8f}\label{classmage_1_1_progress_reporter_1_1_impl_ac4e193520013c0cd5a68b3ef8de5fb8f}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+nb\+\_\+progress\+\_\+printed@{m\+\_\+nb\+\_\+progress\+\_\+printed}}
 \index{m\+\_\+nb\+\_\+progress\+\_\+printed@{m\+\_\+nb\+\_\+progress\+\_\+printed}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+progress\+\_\+printed}{m\_nb\_progress\_printed}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+nb\+\_\+progress\+\_\+printed\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+nb\+\_\+progress\+\_\+printed\hspace{0.3cm}{\ttfamily [private]}}
 
-The total number of progress characters that are currently outputted by this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a286a47e68cdbae261b94dd238e1c9328}\label{classmage_1_1_progress_reporter_1_1_impl_a286a47e68cdbae261b94dd238e1c9328}} 
+The total number of progress characters that are currently outputted by this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_a9ae041025e9e7401e2799d6890459343}\label{classmage_1_1_progress_reporter_1_1_impl_a9ae041025e9e7401e2799d6890459343}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+nb\+\_\+progress\+\_\+total@{m\+\_\+nb\+\_\+progress\+\_\+total}}
 \index{m\+\_\+nb\+\_\+progress\+\_\+total@{m\+\_\+nb\+\_\+progress\+\_\+total}!mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+progress\+\_\+total}{m\_nb\_progress\_total}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a1701f09b2c3ed62768e1b7d00bf30d0b}{U16}} mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+nb\+\_\+progress\+\_\+total\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a4888c2a93673ffcfc3195e561dfdd893}{F\+U16}} mage\+::\+Progress\+Reporter\+::\+Impl\+::m\+\_\+nb\+\_\+progress\+\_\+total\hspace{0.3cm}{\ttfamily [private]}}
 
 The total number of progress characters that need to be outputted by this progress reporter. \mbox{\Hypertarget{classmage_1_1_progress_reporter_1_1_impl_ad35ff8031b2826f41912abc44dbd1d24}\label{classmage_1_1_progress_reporter_1_1_impl_ad35ff8031b2826f41912abc44dbd1d24}} 
 \index{mage\+::\+Progress\+Reporter\+::\+Impl@{mage\+::\+Progress\+Reporter\+::\+Impl}!m\+\_\+nb\+\_\+work\+\_\+done@{m\+\_\+nb\+\_\+work\+\_\+done}}

@@ -7,11 +7,11 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classmage_1_1_r_n_g_a381a917dce1f2d319859b700a4410ffc}{R\+NG}} (\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} seed=606418532u)
+\mbox{\hyperlink{classmage_1_1_r_n_g_aa428fa24cbe52d5819bd6e8d6abd362a}{R\+NG}} (\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} seed=606418532u) noexcept
 \item 
-\mbox{\hyperlink{classmage_1_1_r_n_g_ae85dd3ab6679a308610880779d65955a}{R\+NG}} (const \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&rng)=default
+\mbox{\hyperlink{classmage_1_1_r_n_g_a7a215b676b1192d312393e1bd136eb54}{R\+NG}} (const \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&rng) noexcept=default
 \item 
-\mbox{\hyperlink{classmage_1_1_r_n_g_aea109c4ab1644a5294d7c2c1031a50c9}{R\+NG}} (\mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&\&rng)=default
+\mbox{\hyperlink{classmage_1_1_r_n_g_a6df36809ab6b982ee21d1987b6e9a693}{R\+NG}} (\mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&\&rng) noexcept=default
 \item 
 \mbox{\hyperlink{classmage_1_1_r_n_g_a20d24aabf31837e48a38b9ca221b0a9b}{$\sim$\+R\+NG}} ()=default
 \item 
@@ -21,45 +21,69 @@
 \item 
 void \mbox{\hyperlink{classmage_1_1_r_n_g_a1d7bc2fd5525a252d4900f5dd4754162}{Seed}} (\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}} seed) noexcept
 \item 
-\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1_r_n_g_a94e3e2dc84e277c3dba004da386941f9}{Uniform\+F32}} () noexcept
+\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1_r_n_g_adaedb39747705386b1a55d6fa47ce78c}{Uniform}} () noexcept
 \item 
-\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1_r_n_g_a16e2f397e2473e790877ccaf6e249612}{Uniform\+F32}} (\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} start, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} end) noexcept
+\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} \mbox{\hyperlink{classmage_1_1_r_n_g_a0c6bd6066ba54d80471d825d0a2b8472}{Uniform}} (\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} low, \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} high) noexcept
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::default\+\_\+random\+\_\+engine \mbox{\hyperlink{classmage_1_1_r_n_g_a43dc452c2e32d468fa42d16e02d3a283}{m\+\_\+generator}}
+std\+::minstd\+\_\+rand \mbox{\hyperlink{classmage_1_1_r_n_g_ad2980cb350eeb3a23a270e243f33ad8b}{m\+\_\+generator}}
 \item 
 std\+::uniform\+\_\+real\+\_\+distribution$<$ \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} $>$ \mbox{\hyperlink{classmage_1_1_r_n_g_ac94e7e49a1751dfbfa590cd6da68b032}{m\+\_\+distribution}}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of (uniform) random number generators (R\+N\+Gs). 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classmage_1_1_r_n_g_a381a917dce1f2d319859b700a4410ffc}\label{classmage_1_1_r_n_g_a381a917dce1f2d319859b700a4410ffc}} 
+\mbox{\Hypertarget{classmage_1_1_r_n_g_aa428fa24cbe52d5819bd6e8d6abd362a}\label{classmage_1_1_r_n_g_aa428fa24cbe52d5819bd6e8d6abd362a}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!R\+NG@{R\+NG}}
 \index{R\+NG@{R\+NG}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{R\+N\+G()}{RNG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}}}]{seed = {\ttfamily 606418532u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}}}]{seed = {\ttfamily 606418532u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{classmage_1_1_r_n_g_ae85dd3ab6679a308610880779d65955a}\label{classmage_1_1_r_n_g_ae85dd3ab6679a308610880779d65955a}} 
+Constructs a \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} with the given seed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em seed} & The seed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_r_n_g_a7a215b676b1192d312393e1bd136eb54}\label{classmage_1_1_r_n_g_a7a215b676b1192d312393e1bd136eb54}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!R\+NG@{R\+NG}}
 \index{R\+NG@{R\+NG}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{R\+N\+G()}{RNG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{classmage_1_1_r_n_g_aea109c4ab1644a5294d7c2c1031a50c9}\label{classmage_1_1_r_n_g_aea109c4ab1644a5294d7c2c1031a50c9}} 
+Constructs a \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} from the given \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rng} & A reference to the \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_r_n_g_a6df36809ab6b982ee21d1987b6e9a693}\label{classmage_1_1_r_n_g_a6df36809ab6b982ee21d1987b6e9a693}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!R\+NG@{R\+NG}}
 \index{R\+NG@{R\+NG}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{R\+N\+G()}{RNG()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&\&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&\&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
+Constructs a \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} by moving the given \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rng} & A reference to the \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to move. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classmage_1_1_r_n_g_a20d24aabf31837e48a38b9ca221b0a9b}\label{classmage_1_1_r_n_g_a20d24aabf31837e48a38b9ca221b0a9b}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!````~R\+NG@{$\sim$\+R\+NG}}
 \index{````~R\+NG@{$\sim$\+R\+NG}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{$\sim$\+R\+N\+G()}{~RNG()}}
 {\footnotesize\ttfamily mage\+::\+R\+N\+G\+::$\sim$\+R\+NG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-
+Destructs this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classmage_1_1_r_n_g_a38a0a4296338162fe105012cb4d13318}\label{classmage_1_1_r_n_g_a38a0a4296338162fe105012cb4d13318}} 
@@ -68,30 +92,74 @@ std\+::uniform\+\_\+real\+\_\+distribution$<$ \mbox{\hyperlink{namespacemage_aa9
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}\& mage\+::\+R\+N\+G\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Copies the given \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rng} & A reference to the \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} (i.\+e. this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}). 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_r_n_g_ac9155db13a3d4b7f44a4f800085197a2}\label{classmage_1_1_r_n_g_ac9155db13a3d4b7f44a4f800085197a2}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}\& mage\+::\+R\+N\+G\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} \&\&}]{rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+Moves the given \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rng} & A reference to the \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the moved \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}} (i.\+e. this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}). 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classmage_1_1_r_n_g_a1d7bc2fd5525a252d4900f5dd4754162}\label{classmage_1_1_r_n_g_a1d7bc2fd5525a252d4900f5dd4754162}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!Seed@{Seed}}
 \index{Seed@{Seed}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{Seed()}{Seed()}}
 {\footnotesize\ttfamily void mage\+::\+R\+N\+G\+::\+Seed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa5d6eaabaac3cdd01873d6a3d27e90f3}{U32}}}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-\mbox{\Hypertarget{classmage_1_1_r_n_g_a94e3e2dc84e277c3dba004da386941f9}\label{classmage_1_1_r_n_g_a94e3e2dc84e277c3dba004da386941f9}} 
-\index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!Uniform\+F32@{Uniform\+F32}}
-\index{Uniform\+F32@{Uniform\+F32}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
-\subsubsection{\texorpdfstring{Uniform\+F32()}{UniformF32()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+R\+N\+G\+::\+Uniform\+F32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+Seeds this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}.
 
-\mbox{\Hypertarget{classmage_1_1_r_n_g_a16e2f397e2473e790877ccaf6e249612}\label{classmage_1_1_r_n_g_a16e2f397e2473e790877ccaf6e249612}} 
-\index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!Uniform\+F32@{Uniform\+F32}}
-\index{Uniform\+F32@{Uniform\+F32}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
-\subsubsection{\texorpdfstring{Uniform\+F32()}{UniformF32()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+R\+N\+G\+::\+Uniform\+F32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{start,  }\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em seed} & The seed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmage_1_1_r_n_g_adaedb39747705386b1a55d6fa47ce78c}\label{classmage_1_1_r_n_g_adaedb39747705386b1a55d6fa47ce78c}} 
+\index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!Uniform@{Uniform}}
+\index{Uniform@{Uniform}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
+\subsubsection{\texorpdfstring{Uniform()}{Uniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+R\+N\+G\+::\+Uniform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Generates a uniform random number in \mbox{[}0,1).
+
+\begin{DoxyReturn}{Returns}
+A uniform random number in \mbox{[}0,1). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmage_1_1_r_n_g_a0c6bd6066ba54d80471d825d0a2b8472}\label{classmage_1_1_r_n_g_a0c6bd6066ba54d80471d825d0a2b8472}} 
+\index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!Uniform@{Uniform}}
+\index{Uniform@{Uniform}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
+\subsubsection{\texorpdfstring{Uniform()}{Uniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} mage\+::\+R\+N\+G\+::\+Uniform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{low,  }\item[{\mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}}}]{high }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Generates a uniform random number in \mbox{[}{\itshape start},{\itshape end}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em low} & The lower (inclusive) bound of the interval. \\
+\hline
+\mbox{\tt in}  & {\em high} & The upper (exclusive) bound of the interval. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A uniform random number in \mbox{[}{\itshape start},{\itshape end}). 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -101,9 +169,10 @@ std\+::uniform\+\_\+real\+\_\+distribution$<$ \mbox{\hyperlink{namespacemage_aa9
 \subsubsection{\texorpdfstring{m\+\_\+distribution}{m\_distribution}}
 {\footnotesize\ttfamily std\+::uniform\+\_\+real\+\_\+distribution$<$ \mbox{\hyperlink{namespacemage_aa97e833b45f06d60a0a9c4fc22ae02c0}{F32}} $>$ mage\+::\+R\+N\+G\+::m\+\_\+distribution\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classmage_1_1_r_n_g_a43dc452c2e32d468fa42d16e02d3a283}\label{classmage_1_1_r_n_g_a43dc452c2e32d468fa42d16e02d3a283}} 
+The uniform real number distribution of this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}. \mbox{\Hypertarget{classmage_1_1_r_n_g_ad2980cb350eeb3a23a270e243f33ad8b}\label{classmage_1_1_r_n_g_ad2980cb350eeb3a23a270e243f33ad8b}} 
 \index{mage\+::\+R\+NG@{mage\+::\+R\+NG}!m\+\_\+generator@{m\+\_\+generator}}
 \index{m\+\_\+generator@{m\+\_\+generator}!mage\+::\+R\+NG@{mage\+::\+R\+NG}}
 \subsubsection{\texorpdfstring{m\+\_\+generator}{m\_generator}}
-{\footnotesize\ttfamily std\+::default\+\_\+random\+\_\+engine mage\+::\+R\+N\+G\+::m\+\_\+generator\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::minstd\+\_\+rand mage\+::\+R\+N\+G\+::m\+\_\+generator\hspace{0.3cm}{\ttfamily [private]}}
 
+The random number generator, Newer \char`\"{}\+Minimum standard\char`\"{}, of this \mbox{\hyperlink{classmage_1_1_r_n_g}{R\+NG}}. This L\+CG has a much smaller footprint compared to the default Mersenne Twister used in the std. 

@@ -17,7 +17,7 @@ var classmage_1_1_resource_pool =
     [ "operator=", "classmage_1_1_resource_pool.html#a75dbf08b971929eb90d32b38faa3cfb1", null ],
     [ "Remove", "classmage_1_1_resource_pool.html#a58801a2c21f973e18b84277ddaa60d74", null ],
     [ "RemoveAll", "classmage_1_1_resource_pool.html#ab524641cccb1edbf761b94779b5ca5bc", null ],
-    [ "size", "classmage_1_1_resource_pool.html#ab032684a1ed5a782a61f663e269a994a", null ],
+    [ "size", "classmage_1_1_resource_pool.html#ab9b3c0f117ed1118e93d4b677d535f92", null ],
     [ "m_mutex", "classmage_1_1_resource_pool.html#a3d6d7b0e2e9c3271f8ae3b7c2fa704ba", null ],
     [ "m_resource_map", "classmage_1_1_resource_pool.html#a5b72496aa427f783a6de90d8ee7ff2a5", null ]
 ];

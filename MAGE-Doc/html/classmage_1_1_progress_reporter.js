@@ -1,7 +1,7 @@
 var classmage_1_1_progress_reporter =
 [
     [ "Impl", "classmage_1_1_progress_reporter_1_1_impl.html", "classmage_1_1_progress_reporter_1_1_impl" ],
-    [ "ProgressReporter", "classmage_1_1_progress_reporter.html#ab2509fb50a432812fa8ea10c77120387", null ],
+    [ "ProgressReporter", "classmage_1_1_progress_reporter.html#a8be97435e9c1f4c4f60127ed44101f80", null ],
     [ "ProgressReporter", "classmage_1_1_progress_reporter.html#a681d23ec19019c04a8a977c4f6f280ea", null ],
     [ "ProgressReporter", "classmage_1_1_progress_reporter.html#a811686b20299f63476c5a5b17c6fa443", null ],
     [ "~ProgressReporter", "classmage_1_1_progress_reporter.html#aa543239c6dd4474a77cf4cf6904c1b26", null ],

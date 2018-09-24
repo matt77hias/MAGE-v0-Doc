@@ -1,6 +1,6 @@
 var classmage_1_1_logging_configuration =
 [
-    [ "LoggingConfiguration", "classmage_1_1_logging_configuration.html#a506696943c69d6a56ceef5802e0546ba", null ],
+    [ "LoggingConfiguration", "classmage_1_1_logging_configuration.html#a963bcf40c3bb1632659e6aa25c80d5a7", null ],
     [ "LoggingConfiguration", "classmage_1_1_logging_configuration.html#a4aa9ae2ac1805e062c2b224b1c65ca85", null ],
     [ "LoggingConfiguration", "classmage_1_1_logging_configuration.html#a7cd5793f3a568c82fe29c33ee66aeb14", null ],
     [ "~LoggingConfiguration", "classmage_1_1_logging_configuration.html#a842cd1d5cf22c9fb6e2c76e684cd08ee", null ],

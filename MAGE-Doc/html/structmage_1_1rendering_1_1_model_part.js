@@ -1,14 +1,8 @@
 var structmage_1_1rendering_1_1_model_part =
 [
-    [ "ModelPart", "structmage_1_1rendering_1_1_model_part.html#adb7271a00583f72324ab37ab7e668689", null ],
-    [ "ModelPart", "structmage_1_1rendering_1_1_model_part.html#ab9f9bbf4d5a08113483d3744b69e7188", null ],
-    [ "ModelPart", "structmage_1_1rendering_1_1_model_part.html#a843671f80d5c36d05d7d147f65fea890", null ],
-    [ "~ModelPart", "structmage_1_1rendering_1_1_model_part.html#ac01c98a3cab3fb9692bebbfa6ef3fd18", null ],
     [ "HasDefaultChild", "structmage_1_1rendering_1_1_model_part.html#ab4118a267808c18556b0fa10949bcb0b", null ],
     [ "HasDefaultMaterial", "structmage_1_1rendering_1_1_model_part.html#aae8cebe1ec39e939b53fc3f7330984a8", null ],
     [ "HasDefaultParent", "structmage_1_1rendering_1_1_model_part.html#ac452d6bba03decae31646eec0329c4ab", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_model_part.html#a9d6c372839b9493df4b432d8ba2613dc", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_model_part.html#a54950b40fa5dd12e77277669cbd6dc3a", null ],
     [ "m_aabb", "structmage_1_1rendering_1_1_model_part.html#a69f7f90a31e48a286fecebc9e680b5ef", null ],
     [ "m_child", "structmage_1_1rendering_1_1_model_part.html#ad62194df918560d18de5e311b26eabfc", null ],
     [ "m_material", "structmage_1_1rendering_1_1_model_part.html#abe5c6a98f2c039f2a20e9f6d1842f71b", null ],

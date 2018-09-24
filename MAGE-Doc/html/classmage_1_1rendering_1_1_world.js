@@ -8,7 +8,7 @@ var classmage_1_1rendering_1_1_world =
     [ "Create", "classmage_1_1rendering_1_1_world.html#a2b653a260b5a74f579efb1416f0e2c7d", null ],
     [ "ForEach", "classmage_1_1rendering_1_1_world.html#a8ec9ac4bef64ec20111cd7cfddd4e379", null ],
     [ "ForEach", "classmage_1_1rendering_1_1_world.html#a0461e3f09a19e4f6a64f77d04ac1b672", null ],
-    [ "GetNumberOf", "classmage_1_1rendering_1_1_world.html#a3f5ff2ff451a90af7071bddf9d226618", null ],
+    [ "GetNumberOf", "classmage_1_1rendering_1_1_world.html#a6bf09acab1791a6ebd6b46e5862f6373", null ],
     [ "operator=", "classmage_1_1rendering_1_1_world.html#aff83cf89dc28c141ca7b7a0cbc28e2ae", null ],
     [ "operator=", "classmage_1_1rendering_1_1_world.html#a7f44f10905070997553a7c7ad90ddcb2", null ],
     [ "m_ambient_lights", "classmage_1_1rendering_1_1_world.html#a0c63647dbf30b3df91e6cfbb483847c9", null ],

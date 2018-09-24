@@ -24,9 +24,9 @@ var classmage_1_1rendering_1_1_state_manager =
     [ "SetupRasterizerStates", "classmage_1_1rendering_1_1_state_manager.html#a6cee7878db58409e6527d84de1bec5c8", null ],
     [ "SetupRenderingStates", "classmage_1_1rendering_1_1_state_manager.html#ac2da3d4e04b0ef43e286e4661bca8deb", null ],
     [ "SetupSamplerStates", "classmage_1_1rendering_1_1_state_manager.html#abb74b460f834a402f9ab7527afa64f64", null ],
-    [ "m_blend_states", "classmage_1_1rendering_1_1_state_manager.html#ad72e83edb0b28b1f03cf8a7dc231587e", null ],
-    [ "m_depth_stencil_states", "classmage_1_1rendering_1_1_state_manager.html#af5deff162f3f1d102091749bfbe205b6", null ],
+    [ "m_blend_states", "classmage_1_1rendering_1_1_state_manager.html#a382fdb43f486733cc68ed70ab082500f", null ],
+    [ "m_depth_stencil_states", "classmage_1_1rendering_1_1_state_manager.html#a3c70874e3c0dd286eacaba5506f4bb49", null ],
     [ "m_device", "classmage_1_1rendering_1_1_state_manager.html#abfe78953d7404fc86e85531ac296281b", null ],
-    [ "m_rasterizer_states", "classmage_1_1rendering_1_1_state_manager.html#a2d97d987062db0bf6d2f91c77ecb0655", null ],
-    [ "m_sampler_states", "classmage_1_1rendering_1_1_state_manager.html#ac0d76e363936a196acc6fafa09acc73d", null ]
+    [ "m_rasterizer_states", "classmage_1_1rendering_1_1_state_manager.html#a50380d87e965ff768eeb0a5fc11777ea", null ],
+    [ "m_sampler_states", "classmage_1_1rendering_1_1_state_manager.html#a13206be2f63b38f000379599f9ed9650", null ]
 ];

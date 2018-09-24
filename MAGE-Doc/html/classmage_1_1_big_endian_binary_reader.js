@@ -9,7 +9,7 @@ var classmage_1_1_big_endian_binary_reader =
     [ "operator=", "classmage_1_1_big_endian_binary_reader.html#abd4b24df4219469a8c2e9253b1cad405", null ],
     [ "operator=", "classmage_1_1_big_endian_binary_reader.html#ac37539cb08ea9278daf5628a0c5895d8", null ],
     [ "Read", "classmage_1_1_big_endian_binary_reader.html#ac5dca9fec95723379d44e112946a352a", null ],
-    [ "ReadArray", "classmage_1_1_big_endian_binary_reader.html#aaab7cf04eb19cc0fe535b9a619feaf21", null ],
+    [ "ReadArray", "classmage_1_1_big_endian_binary_reader.html#a3ec5205d485cdb31cc0d0fd338bfd4b6", null ],
     [ "ReadData", "classmage_1_1_big_endian_binary_reader.html#a7dc0689d598fa91308597b129516a11d", null ],
     [ "ReadFromFile", "classmage_1_1_big_endian_binary_reader.html#a0308b90e3cf888d383a228cfe8827972", null ],
     [ "ReadFromMemory", "classmage_1_1_big_endian_binary_reader.html#afc48490dca5042078726a1ec3fe7abe7", null ],

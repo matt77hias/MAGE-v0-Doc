@@ -1,5 +1,6 @@
 var classmage_1_1rendering_1_1_color_string =
 [
+    [ "ColorString", "classmage_1_1rendering_1_1_color_string.html#a17c74901fb2225c01f037caecc31f322", null ],
     [ "ColorString", "classmage_1_1rendering_1_1_color_string.html#abac2eac876023c3e4d5d4b28c0f72933", null ],
     [ "ColorString", "classmage_1_1rendering_1_1_color_string.html#a386454b4a8e08707e8ffff8451509de5", null ],
     [ "ColorString", "classmage_1_1rendering_1_1_color_string.html#a642793608186e9ac9931827ae9f0c57a", null ],

@@ -1,11 +1,5 @@
 var structmage_1_1rendering_1_1_world_buffer =
 [
-    [ "WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html#a7f51349a6ffa759e245230fa26eaf318", null ],
-    [ "WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html#a70a1f1b062c0548f2ff87db8d78749f2", null ],
-    [ "WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html#ab5cce49c9fe1bbe5e7db5f98df3dbf1a", null ],
-    [ "~WorldBuffer", "structmage_1_1rendering_1_1_world_buffer.html#afdfdecc619400706fa89e24f3ce14a43", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_world_buffer.html#a0a776f3c84577f8530cf5932274cd8c9", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_world_buffer.html#a3fcc219d1410d858cc3b15f1cac5da9a", null ],
     [ "m_display_inv_resolution", "structmage_1_1rendering_1_1_world_buffer.html#a14b9521f67adaa823bdb9c45d833be1a", null ],
     [ "m_display_resolution", "structmage_1_1rendering_1_1_world_buffer.html#aafc4835b9b42d7688b3930768f732ea0", null ],
     [ "m_inv_gamma", "structmage_1_1rendering_1_1_world_buffer.html#a8362f6c590aca2d17359abd0129a94bd", null ],

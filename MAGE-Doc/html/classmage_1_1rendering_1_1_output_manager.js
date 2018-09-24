@@ -68,9 +68,9 @@ var classmage_1_1rendering_1_1_output_manager =
     [ "m_dsv", "classmage_1_1rendering_1_1_output_manager.html#a48225f5d17db8e3d0e44adc2689d326f", null ],
     [ "m_hdr0_to_hdr1", "classmage_1_1rendering_1_1_output_manager.html#aee20394757c9f7ebcaf7f8682747d716", null ],
     [ "m_msaa", "classmage_1_1rendering_1_1_output_manager.html#a3affee412b093ea168b9e4a22c713421", null ],
-    [ "m_rtvs", "classmage_1_1rendering_1_1_output_manager.html#afd0aade15fe5b0f9f4f0bef9f7ea3715", null ],
-    [ "m_srvs", "classmage_1_1rendering_1_1_output_manager.html#ac002667bd25dd978d6ff0ece782c8455", null ],
+    [ "m_rtvs", "classmage_1_1rendering_1_1_output_manager.html#a311775ed4486b1bb107f2ac0eaebcc73", null ],
+    [ "m_srvs", "classmage_1_1rendering_1_1_output_manager.html#afed4d1ad29f51cb2ad8aaa51b56c6f38", null ],
     [ "m_ssaa", "classmage_1_1rendering_1_1_output_manager.html#ae0016fada4d4550d58481d2c313ea524", null ],
     [ "m_swap_chain", "classmage_1_1rendering_1_1_output_manager.html#ac9cffc724a38ffd3d9b49475fd29d3ba", null ],
-    [ "m_uavs", "classmage_1_1rendering_1_1_output_manager.html#abfdf92e89ef4ee4df40204e84098fdd7", null ]
+    [ "m_uavs", "classmage_1_1rendering_1_1_output_manager.html#a5c0ae88c300a1fe09f19d4cca3bef197", null ]
 ];

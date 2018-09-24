@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['directx',['DirectX',['../namespace_direct_x.html',1,'']]]
+  ['anonymous_5fnamespace_7bdisplay_5fconfigurator_2ecpp_7d',['anonymous_namespace{display_configurator.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02display__configurator_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7bdump_2ecpp_7d',['anonymous_namespace{dump.cpp}',['../namespacemage_1_1anonymous__namespace_02dump_8cpp_03.html',1,'mage']]],
+  ['anonymous_5fnamespace_7beditor_5fscript_2ecpp_7d',['anonymous_namespace{editor_script.cpp}',['../namespacemage_1_1script_1_1anonymous__namespace_02editor__script_8cpp_03.html',1,'mage::script']]],
+  ['anonymous_5fnamespace_7blogging_2ecpp_7d',['anonymous_namespace{logging.cpp}',['../namespacemage_1_1anonymous__namespace_02logging_8cpp_03.html',1,'mage']]],
+  ['anonymous_5fnamespace_7bmouse_2ecpp_7d',['anonymous_namespace{mouse.cpp}',['../namespacemage_1_1input_1_1anonymous__namespace_02mouse_8cpp_03.html',1,'mage::input']]],
+  ['anonymous_5fnamespace_7bshader_5ffactory_5fdeferred_2ecpp_7d',['anonymous_namespace{shader_factory_deferred.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02shader__factory__deferred_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7bshader_5ffactory_5fforward_2ecpp_7d',['anonymous_namespace{shader_factory_forward.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02shader__factory__forward_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7bsprite_5fbatch_2ecpp_7d',['anonymous_namespace{sprite_batch.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7bsprite_5ffont_2ecpp_7d',['anonymous_namespace{sprite_font.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02sprite__font_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7bsystem_5ftime_2ecpp_7d',['anonymous_namespace{system_time.cpp}',['../namespacemage_1_1anonymous__namespace_02system__time_8cpp_03.html',1,'mage']]],
+  ['anonymous_5fnamespace_7btexture_5ffactory_2ecpp_7d',['anonymous_namespace{texture_factory.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02texture__factory_8cpp_03.html',1,'mage::rendering']]],
+  ['anonymous_5fnamespace_7btexture_5floader_2ecpp_7d',['anonymous_namespace{texture_loader.cpp}',['../namespacemage_1_1rendering_1_1loader_1_1anonymous__namespace_02texture__loader_8cpp_03.html',1,'mage::rendering::loader']]],
+  ['anonymous_5fnamespace_7bvar_5fwriter_2ecpp_7d',['anonymous_namespace{var_writer.cpp}',['../namespacemage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03.html',1,'mage::loader']]],
+  ['anonymous_5fnamespace_7bvertex_2ecpp_7d',['anonymous_namespace{vertex.cpp}',['../namespacemage_1_1rendering_1_1anonymous__namespace_02vertex_8cpp_03.html',1,'mage::rendering']]],
+  ['color',['color',['../namespacemage_1_1color.html',1,'mage']]],
+  ['details',['details',['../namespacemage_1_1details.html',1,'mage']]],
+  ['input',['input',['../namespacemage_1_1input.html',1,'mage']]],
+  ['loader',['loader',['../namespacemage_1_1loader.html',1,'mage::loader'],['../namespacemage_1_1rendering_1_1loader.html',1,'mage::rendering::loader']]],
+  ['mage',['mage',['../namespacemage.html',1,'']]],
+  ['rendering',['rendering',['../namespacemage_1_1rendering.html',1,'mage']]],
+  ['script',['script',['../namespacemage_1_1script.html',1,'mage']]]
 ];

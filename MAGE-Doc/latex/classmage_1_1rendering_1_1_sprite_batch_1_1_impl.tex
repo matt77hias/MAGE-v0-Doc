@@ -30,7 +30,7 @@ void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a65afd353
 \item 
 void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a2573f39b9f7f87b2acd7eadc348c1e2b}{Sort\+Sprites}} ()
 \item 
-void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_af66d8d8d75a33ea8291d81400f4a47b6}{Render}} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture, const Sprite\+Info $\ast$const $\ast$sprites, size\+\_\+t nb\+\_\+sprites)
+void \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a9371c90f00b4bd2b606ee2b5c8ee5e5e}{Render}} (I\+D3\+D11\+Shader\+Resource\+View $\ast$texture, const Sprite\+Info $\ast$const $\ast$sprites, std\+::size\+\_\+t nb\+\_\+sprites)
 \item 
 void X\+M\+\_\+\+C\+A\+L\+L\+C\+O\+NV \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_adce1a1942833a97fb14a20bc4add8c31}{Prepare\+Sprite}} (const Sprite\+Info \&sprite, \mbox{\hyperlink{structmage_1_1rendering_1_1_vertex_position_color_texture}{Vertex\+Position\+Color\+Texture}} $\ast$vertices, F\+X\+M\+V\+E\+C\+T\+OR texture\+\_\+size, F\+X\+M\+V\+E\+C\+T\+OR inverse\+\_\+texture\+\_\+size) noexcept
 \end{DoxyCompactItemize}
@@ -41,7 +41,7 @@ std\+::reference\+\_\+wrapper$<$ I\+D3\+D11\+Device\+Context $>$ \mbox{\hyperlin
 \item 
 \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a6ea37418810939906de6614c6233b4be}{m\+\_\+mesh}}
 \item 
-size\+\_\+t \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_ab8e03aab794373cafdba47da389044a0}{m\+\_\+mesh\+\_\+position}}
+std\+::size\+\_\+t \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_adadb176f804bee0c0c65463e4c8759bd}{m\+\_\+mesh\+\_\+position}}
 \item 
 bool \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_ad498fe3044bbf1c303119ad4d8edcf7b}{m\+\_\+in\+\_\+begin\+\_\+end\+\_\+pair}}
 \item 
@@ -54,7 +54,7 @@ std\+::vector$<$ const Sprite\+Info $\ast$$>$ \mbox{\hyperlink{classmage_1_1rend
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static constexpr size\+\_\+t \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a912cb11bc748483c7c175f7d4895176b}{s\+\_\+initial\+\_\+capacity}} = 64u
+static constexpr std\+::size\+\_\+t \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a3c2d72b03b49d79f91cec306e6dff1ec}{s\+\_\+initial\+\_\+capacity}} = 64u
 \end{DoxyCompactItemize}
 
 
@@ -225,7 +225,7 @@ Prepares a single sprite for rendering.
 \begin{DoxyPrecond}{Precondition}
 {\itshape vertices} is not equal to {\ttfamily nullptr}. 
 
-{\itshape vertices} points to an array containing at least \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_mesh_ae330e326577d8a0d94c03c0c8aae62c6}{mage\+::rendering\+::\+Sprite\+Batch\+Mesh\+::s\+\_\+vertices\+\_\+per\+\_\+sprite}}. 
+{\itshape vertices} points to an array containing at least \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_mesh_ac8c225873569c17628ce6a1a8df2d264}{mage\+::rendering\+::\+Sprite\+Batch\+Mesh\+::s\+\_\+vertices\+\_\+per\+\_\+sprite}}. 
 \end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -238,11 +238,11 @@ Prepares a single sprite for rendering.
 \mbox{\tt in}  & {\em inverse\+\_\+texture\+\_\+size} & The inverse of {\itshape texture\+\_\+size}. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_af66d8d8d75a33ea8291d81400f4a47b6}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_af66d8d8d75a33ea8291d81400f4a47b6}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a9371c90f00b4bd2b606ee2b5c8ee5e5e}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a9371c90f00b4bd2b606ee2b5c8ee5e5e}} 
 \index{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}!Render@{Render}}
 \index{Render@{Render}!mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::\+Render (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture,  }\item[{const Sprite\+Info $\ast$const $\ast$}]{sprites,  }\item[{size\+\_\+t}]{nb\+\_\+sprites }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::\+Render (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$}]{texture,  }\item[{const Sprite\+Info $\ast$const $\ast$}]{sprites,  }\item[{std\+::size\+\_\+t}]{nb\+\_\+sprites }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Draws a subbatch of sprites of the current batch of sprites of this sprite batch.
 
@@ -292,11 +292,11 @@ A flag indicating whether this sprite batch is in a begin/end pair for processin
 \subsubsection{\texorpdfstring{m\+\_\+mesh}{m\_mesh}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a3316d7143a973e37adf1110f2e80ca31}{Unique\+Ptr}}$<$ \mbox{\hyperlink{classmage_1_1rendering_1_1_sprite_batch_mesh}{Sprite\+Batch\+Mesh}} $>$ mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the sprite batch mesh used by this sprite batch for drawing the sprites onto. \mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_ab8e03aab794373cafdba47da389044a0}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_ab8e03aab794373cafdba47da389044a0}} 
+A pointer to the sprite batch mesh used by this sprite batch for drawing the sprites onto. \mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_adadb176f804bee0c0c65463e4c8759bd}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_adadb176f804bee0c0c65463e4c8759bd}} 
 \index{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}!m\+\_\+mesh\+\_\+position@{m\+\_\+mesh\+\_\+position}}
 \index{m\+\_\+mesh\+\_\+position@{m\+\_\+mesh\+\_\+position}!mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}}
 \subsubsection{\texorpdfstring{m\+\_\+mesh\+\_\+position}{m\_mesh\_position}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::m\+\_\+mesh\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::size\+\_\+t mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::m\+\_\+mesh\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
 
 The current position in the mesh of this sprite batch for adding sprite vertices. \mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a98659f29ee7ea1bdcc8c18ac0dfdcf48}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a98659f29ee7ea1bdcc8c18ac0dfdcf48}} 
 \index{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}!m\+\_\+sort\+\_\+mode@{m\+\_\+sort\+\_\+mode}}
@@ -316,10 +316,10 @@ A vector containing the pointers to the sorted sprites of this sprite batch. \mb
 \subsubsection{\texorpdfstring{m\+\_\+sprites}{m\_sprites}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ Sprite\+Info $>$ mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::m\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
 
-A vector containing the sprites waiting to be drawn by this sprite batch. \mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a912cb11bc748483c7c175f7d4895176b}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a912cb11bc748483c7c175f7d4895176b}} 
+A vector containing the sprites waiting to be drawn by this sprite batch. \mbox{\Hypertarget{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a3c2d72b03b49d79f91cec306e6dff1ec}\label{classmage_1_1rendering_1_1_sprite_batch_1_1_impl_a3c2d72b03b49d79f91cec306e6dff1ec}} 
 \index{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}!s\+\_\+initial\+\_\+capacity@{s\+\_\+initial\+\_\+capacity}}
 \index{s\+\_\+initial\+\_\+capacity@{s\+\_\+initial\+\_\+capacity}!mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl@{mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl}}
 \subsubsection{\texorpdfstring{s\+\_\+initial\+\_\+capacity}{s\_initial\_capacity}}
-{\footnotesize\ttfamily constexpr size\+\_\+t mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::s\+\_\+initial\+\_\+capacity = 64u\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily constexpr std\+::size\+\_\+t mage\+::rendering\+::\+Sprite\+Batch\+::\+Impl\+::s\+\_\+initial\+\_\+capacity = 64u\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 The initial capacity of the vector containing the sprites waiting to be drawn by a sprite batch. 

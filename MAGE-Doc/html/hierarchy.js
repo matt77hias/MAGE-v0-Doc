@@ -6,10 +6,10 @@ var hierarchy =
     [ "mage::MemoryArena::Allocator< T >", "classmage_1_1_memory_arena_1_1_allocator.html", null ],
     [ "mage::SingleEndedMemoryStack::Allocator< T >", "classmage_1_1_single_ended_memory_stack_1_1_allocator.html", null ],
     [ "array", null, [
-      [ "mage::Array< F32, 2 >", "structmage_1_1_array.html", [
+      [ "mage::Array< F32, 2u >", "structmage_1_1_array.html", [
         [ "mage::UV", "structmage_1_1_u_v.html", null ]
       ] ],
-      [ "mage::Array< F32, 3 >", "structmage_1_1_array.html", [
+      [ "mage::Array< F32, 3u >", "structmage_1_1_array.html", [
         [ "mage::Direction3", "structmage_1_1_direction3.html", [
           [ "mage::Normal3", "structmage_1_1_normal3.html", null ]
         ] ],
@@ -17,9 +17,9 @@ var hierarchy =
         [ "mage::SRGB", "structmage_1_1_s_r_g_b.html", null ],
         [ "mage::XYZ", "structmage_1_1_x_y_z.html", null ]
       ] ],
-      [ "mage::Array< F32, 4, 16 >", "structmage_1_1_array.html", null ],
-      [ "mage::Array< S32, 2 >", "structmage_1_1_array.html", null ],
-      [ "mage::Array< U32, 2 >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< F32, 4u, 16u >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< S32, 2u >", "structmage_1_1_array.html", null ],
+      [ "mage::Array< U32, 2u >", "structmage_1_1_array.html", null ],
       [ "mage::Array< T, N, A, typename >", "structmage_1_1_array.html", [
         [ "mage::RGB", "structmage_1_1_r_g_b.html", null ],
         [ "mage::RGBA", "structmage_1_1_r_g_b_a.html", null ],
@@ -27,8 +27,6 @@ var hierarchy =
         [ "mage::XYZA", "structmage_1_1_x_y_z_a.html", null ]
       ] ]
     ] ],
-    [ "anonymous_namespace{screen_grab.cpp}::auto_delete_file", "classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file.html", null ],
-    [ "anonymous_namespace{screen_grab.cpp}::auto_delete_file_wic", "classanonymous__namespace_02screen__grab_8cpp_03_1_1auto__delete__file__wic.html", null ],
     [ "mage::rendering::BackBufferPass", "classmage_1_1rendering_1_1_back_buffer_pass.html", null ],
     [ "mage::BigEndianBinaryReader", "classmage_1_1_big_endian_binary_reader.html", [
       [ "mage::rendering::loader::MSHReader< VertexT, IndexT >", "classmage_1_1rendering_1_1loader_1_1_m_s_h_reader.html", null ],
@@ -38,6 +36,9 @@ var hierarchy =
       [ "mage::rendering::loader::MSHWriter< VertexT, IndexT >", "classmage_1_1rendering_1_1loader_1_1_m_s_h_writer.html", null ]
     ] ],
     [ "mage::BinaryReader", "classmage_1_1_binary_reader.html", null ],
+    [ "bool_constant", null, [
+      [ "mage::is_equivalent_integral< T, U >", "structmage_1_1is__equivalent__integral.html", null ]
+    ] ],
     [ "mage::BoundingFrustum", "classmage_1_1_bounding_frustum.html", null ],
     [ "mage::BoundingSphere", "classmage_1_1_bounding_sphere.html", null ],
     [ "mage::rendering::BoundingVolumePass", "classmage_1_1rendering_1_1_bounding_volume_pass.html", null ],
@@ -87,12 +88,6 @@ var hierarchy =
     [ "mage::CoreClockPerCore", "structmage_1_1_core_clock_per_core.html", null ],
     [ "mage::CPUMonitor", "classmage_1_1_c_p_u_monitor.html", null ],
     [ "mage::rendering::Pipeline::CS", "structmage_1_1rendering_1_1_pipeline_1_1_c_s.html", null ],
-    [ "DDS_HEADER", "struct_d_d_s___h_e_a_d_e_r.html", null ],
-    [ "anonymous_namespace{screen_grab.cpp}::DDS_HEADER", "structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___h_e_a_d_e_r.html", null ],
-    [ "DDS_HEADER_DXT10", "struct_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
-    [ "anonymous_namespace{screen_grab.cpp}::DDS_HEADER_DXT10", "structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
-    [ "DDS_PIXELFORMAT", "struct_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
-    [ "anonymous_namespace{screen_grab.cpp}::DDS_PIXELFORMAT", "structanonymous__namespace_02screen__grab_8cpp_03_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html", null ],
     [ "mage::rendering::DeferredPass", "classmage_1_1rendering_1_1_deferred_pass.html", null ],
     [ "mage::rendering::DepthPass", "classmage_1_1rendering_1_1_depth_pass.html", null ],
     [ "DerivedResourceT", null, [
@@ -103,6 +98,12 @@ var hierarchy =
     [ "mage::rendering::DisplayConfigurator", "classmage_1_1rendering_1_1_display_configurator.html", null ],
     [ "mage::DoubleEndedMemoryStack", "classmage_1_1_double_ended_memory_stack.html", null ],
     [ "mage::rendering::Pipeline::DS", "structmage_1_1rendering_1_1_pipeline_1_1_d_s.html", null ],
+    [ "mage::DynamicArray< T >", "classmage_1_1_dynamic_array.html", null ],
+    [ "mage::DynamicArray< char >", "classmage_1_1_dynamic_array.html", null ],
+    [ "mage::DynamicArray< wchar_t >", "classmage_1_1_dynamic_array.html", null ],
+    [ "mage::DynamicMemoryBuffer< T >", "classmage_1_1_dynamic_memory_buffer.html", null ],
+    [ "mage::DynamicMemoryBuffer< char >", "classmage_1_1_dynamic_memory_buffer.html", null ],
+    [ "mage::DynamicMemoryBuffer< wchar_t >", "classmage_1_1_dynamic_memory_buffer.html", null ],
     [ "mage::Engine", "classmage_1_1_engine.html", null ],
     [ "mage::EngineSetup", "classmage_1_1_engine_setup.html", null ],
     [ "exception", null, [
@@ -113,26 +114,34 @@ var hierarchy =
     ] ],
     [ "mage::details::FileStreamCloser", "structmage_1_1details_1_1_file_stream_closer.html", null ],
     [ "mage::rendering::Fog", "classmage_1_1rendering_1_1_fog.html", null ],
+    [ "fmt::formatter< mage::Array< T, N, A > >", "structfmt_1_1formatter_3_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html", null ],
+    [ "fmt::formatter< std::array< T, N > >", "structfmt_1_1formatter_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html", null ],
+    [ "fmt::formatter< std::filesystem::path, char >", "structfmt_1_1formatter_3_01std_1_1filesystem_1_1path_00_01char_01_4.html", null ],
+    [ "fmt::formatter< std::filesystem::path, wchar_t >", "structfmt_1_1formatter_3_01std_1_1filesystem_1_1path_00_01wchar__t_01_4.html", null ],
+    [ "fmt::formatter< std::pair< T1, T2 > >", "structfmt_1_1formatter_3_01std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html", null ],
+    [ "fmt::formatter< std::string, wchar_t >", "structfmt_1_1formatter_3_01std_1_1string_00_01wchar__t_01_4.html", null ],
+    [ "fmt::formatter< std::string_view, wchar_t >", "structfmt_1_1formatter_3_01std_1_1string__view_00_01wchar__t_01_4.html", null ],
+    [ "fmt::formatter< std::vector< T, Allocator > >", "structfmt_1_1formatter_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4.html", null ],
+    [ "fmt::formatter< std::wstring, char >", "structfmt_1_1formatter_3_01std_1_1wstring_00_01char_01_4.html", null ],
+    [ "fmt::formatter< std::wstring_view, char >", "structfmt_1_1formatter_3_01std_1_1wstring__view_00_01char_01_4.html", null ],
     [ "mage::rendering::ForwardPass", "classmage_1_1rendering_1_1_forward_pass.html", null ],
     [ "mage::GameTime", "classmage_1_1_game_time.html", null ],
     [ "mage::GameTimer", "classmage_1_1_game_timer.html", null ],
     [ "mage::rendering::Glyph", "structmage_1_1rendering_1_1_glyph.html", null ],
     [ "mage::rendering::anonymous_namespace{sprite_font.cpp}::GlyphLessThan", "structmage_1_1rendering_1_1anonymous__namespace_02sprite__font_8cpp_03_1_1_glyph_less_than.html", null ],
     [ "mage::rendering::Pipeline::GS", "structmage_1_1rendering_1_1_pipeline_1_1_g_s.html", null ],
-    [ "anonymous_namespace{screen_grab.cpp}::handle_closer", "structanonymous__namespace_02screen__grab_8cpp_03_1_1handle__closer.html", null ],
-    [ "anonymous_namespace{dds_loader.cpp}::handle_closer", "structanonymous__namespace_02dds__loader_8cpp_03_1_1handle__closer.html", null ],
     [ "mage::details::HandleCloser", "structmage_1_1details_1_1_handle_closer.html", null ],
     [ "mage::DoubleEndedMemoryStack::HighAllocator< T >", "classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html", null ],
     [ "mage::rendering::Pipeline::HS", "structmage_1_1rendering_1_1_pipeline_1_1_h_s.html", null ],
     [ "mage::rendering::Pipeline::IA", "structmage_1_1rendering_1_1_pipeline_1_1_i_a.html", null ],
     [ "mage::IdGenerator", "classmage_1_1_id_generator.html", null ],
-    [ "mage::rendering::Manager::Impl", "classmage_1_1rendering_1_1_manager_1_1_impl.html", null ],
     [ "mage::input::Manager::Impl", "classmage_1_1input_1_1_manager_1_1_impl.html", null ],
     [ "mage::rendering::SpriteBatch::Impl", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html", null ],
     [ "mage::ProgressReporter::Impl", "classmage_1_1_progress_reporter_1_1_impl.html", null ],
     [ "mage::rendering::DisplayConfigurator::Impl", "classmage_1_1rendering_1_1_display_configurator_1_1_impl.html", null ],
     [ "mage::rendering::Renderer::Impl", "classmage_1_1rendering_1_1_renderer_1_1_impl.html", null ],
     [ "mage::rendering::SwapChain::Impl", "classmage_1_1rendering_1_1_swap_chain_1_1_impl.html", null ],
+    [ "mage::rendering::Manager::Impl", "classmage_1_1rendering_1_1_manager_1_1_impl.html", null ],
     [ "integral_constant", null, [
       [ "std::tuple_size< mage::Array< T, N, A > >", "structstd_1_1tuple__size_3_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html", null ],
       [ "std::tuple_size< mage::Direction3 >", "structstd_1_1tuple__size_3_01mage_1_1_direction3_01_4.html", null ],
@@ -165,6 +174,9 @@ var hierarchy =
     [ "mage::rendering::Manager", "classmage_1_1rendering_1_1_manager.html", null ],
     [ "mage::rendering::Material", "classmage_1_1rendering_1_1_material.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
+    [ "mage::MemoryBuffer< T, StaticCapacity >", "classmage_1_1_memory_buffer.html", null ],
+    [ "mage::MemoryBuffer< char, 512u >", "classmage_1_1_memory_buffer.html", null ],
+    [ "mage::MemoryBuffer< wchar_t, 512u >", "classmage_1_1_memory_buffer.html", null ],
     [ "mage::rendering::Mesh", "classmage_1_1rendering_1_1_mesh.html", [
       [ "mage::rendering::PrimitiveBatchMesh< VertexT, IndexT >", "classmage_1_1rendering_1_1_primitive_batch_mesh.html", null ],
       [ "mage::rendering::StaticMesh< VertexT, IndexT >", "classmage_1_1rendering_1_1_static_mesh.html", null ],
@@ -241,6 +253,10 @@ var hierarchy =
     [ "mage::rendering::SpritePass", "classmage_1_1rendering_1_1_sprite_pass.html", null ],
     [ "mage::SpriteTransform", "classmage_1_1_sprite_transform.html", null ],
     [ "mage::rendering::StateManager", "classmage_1_1rendering_1_1_state_manager.html", null ],
+    [ "mage::StaticMemoryBuffer< T, Capacity >", "classmage_1_1_static_memory_buffer.html", null ],
+    [ "mage::StaticMemoryBuffer< char, StaticCapacity >", "classmage_1_1_static_memory_buffer.html", null ],
+    [ "mage::StaticMemoryBuffer< T, StaticCapacity >", "classmage_1_1_static_memory_buffer.html", null ],
+    [ "mage::StaticMemoryBuffer< wchar_t, StaticCapacity >", "classmage_1_1_static_memory_buffer.html", null ],
     [ "mage::rendering::StructuredBuffer< T >", "classmage_1_1rendering_1_1_structured_buffer.html", null ],
     [ "mage::rendering::StructuredBuffer< mage::rendering::DirectionalLightBuffer >", "classmage_1_1rendering_1_1_structured_buffer.html", null ],
     [ "mage::rendering::StructuredBuffer< mage::rendering::OmniLightBuffer >", "classmage_1_1rendering_1_1_structured_buffer.html", null ],
@@ -277,6 +293,8 @@ var hierarchy =
     [ "std::tuple_element< I, mage::XYZA >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_a_01_4.html", null ],
     [ "mage::UserModeCoreClock", "structmage_1_1_user_mode_core_clock.html", null ],
     [ "mage::UserModeCoreClockPerCore", "structmage_1_1_user_mode_core_clock_per_core.html", null ],
+    [ "mage::UTF16toUTF8", "classmage_1_1_u_t_f16to_u_t_f8.html", null ],
+    [ "mage::UTF8toUTF16", "classmage_1_1_u_t_f8to_u_t_f16.html", null ],
     [ "mage::loader::anonymous_namespace{var_writer.cpp}::VARVisitor", "classmage_1_1loader_1_1anonymous__namespace_02var__writer_8cpp_03_1_1_v_a_r_visitor.html", null ],
     [ "mage::rendering::VertexPosition", "structmage_1_1rendering_1_1_vertex_position.html", null ],
     [ "mage::rendering::VertexPositionColor", "structmage_1_1rendering_1_1_vertex_position_color.html", null ],
@@ -292,8 +310,6 @@ var hierarchy =
     [ "mage::rendering::VoxelizationPass", "classmage_1_1rendering_1_1_voxelization_pass.html", null ],
     [ "mage::rendering::VoxelizationSettings", "classmage_1_1rendering_1_1_voxelization_settings.html", null ],
     [ "mage::rendering::Pipeline::VS", "structmage_1_1rendering_1_1_pipeline_1_1_v_s.html", null ],
-    [ "anonymous_namespace{wic_loader.cpp}::WICConvert", "structanonymous__namespace_02wic__loader_8cpp_03_1_1_w_i_c_convert.html", null ],
-    [ "anonymous_namespace{wic_loader.cpp}::WICTranslate", "structanonymous__namespace_02wic__loader_8cpp_03_1_1_w_i_c_translate.html", null ],
     [ "mage::Window", "classmage_1_1_window.html", null ],
     [ "mage::WindowDescriptor", "classmage_1_1_window_descriptor.html", null ],
     [ "mage::WindowMessageHandler", "classmage_1_1_window_message_handler.html", [

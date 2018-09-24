@@ -27,11 +27,11 @@ virtual \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_adef21799bc
 \item 
 \mbox{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}}$<$ const \mbox{\hyperlink{classmage_1_1rendering_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a65645313d8b7bb976d1b5d0acdbbd38a}{Get\+Mesh}} () const noexcept
 \item 
-const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}{Get\+Material}} (const std\+::string \&name) const noexcept
+const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a57a444cf8c1310ce8fa4b797055e0fd1}{Get\+Material}} (std\+::string\+\_\+view name) const noexcept
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a4e95ae12e0c952c76aaaf1ee457aed07}{For\+Each\+Material}} (ActionT \&\&action) const
 \item 
-const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}{Get\+Model\+Part}} (const std\+::string \&name) const noexcept
+const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a3a10002efd6bfdc701f5fc27c54d441f}{Get\+Model\+Part}} (std\+::string\+\_\+view name) const noexcept
 \item 
 {\footnotesize template$<$typename ActionT $>$ }\\void \mbox{\hyperlink{classmage_1_1rendering_1_1_model_descriptor_a9b217d2536bdd34c4b8b93ccf2ef62d3}{For\+Each\+Model\+Part}} (ActionT \&\&action) const
 \end{DoxyCompactItemize}
@@ -147,17 +147,17 @@ Traverses all model parts of this model descriptor.
 {\em ActionT} & An action to perform on all model parts of this model descriptor. The action must accept {\ttfamily const} {\ttfamily \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}}\&} values. \\
 \hline
 \end{DoxyTemplParams}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}\label{classmage_1_1rendering_1_1_model_descriptor_a4e4331d71dfe25f844de71d80c82ff84}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a57a444cf8c1310ce8fa4b797055e0fd1}\label{classmage_1_1rendering_1_1_model_descriptor_a57a444cf8c1310ce8fa4b797055e0fd1}} 
 \index{mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classmage_1_1rendering_1_1_material}{Material}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the material corresponding to the given name.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & A reference to the name of the material. \\
+\mbox{\tt in}  & {\em name} & The name of the material. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -176,17 +176,17 @@ Returns the mesh of this model descriptor.
 \begin{DoxyReturn}{Returns}
 A pointer to the mesh of this model descriptor. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}\label{classmage_1_1rendering_1_1_model_descriptor_ab6fda7c3694cdb548be408f46143a083}} 
+\mbox{\Hypertarget{classmage_1_1rendering_1_1_model_descriptor_a3a10002efd6bfdc701f5fc27c54d441f}\label{classmage_1_1rendering_1_1_model_descriptor_a3a10002efd6bfdc701f5fc27c54d441f}} 
 \index{mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}!Get\+Model\+Part@{Get\+Model\+Part}}
 \index{Get\+Model\+Part@{Get\+Model\+Part}!mage\+::rendering\+::\+Model\+Descriptor@{mage\+::rendering\+::\+Model\+Descriptor}}
 \subsubsection{\texorpdfstring{Get\+Model\+Part()}{GetModelPart()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Model\+Part (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structmage_1_1rendering_1_1_model_part}{Model\+Part}} $\ast$ mage\+::rendering\+::\+Model\+Descriptor\+::\+Get\+Model\+Part (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 Returns the model part corresponding to the given name.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & A reference to the name of the model part. \\
+\mbox{\tt in}  & {\em name} & The name of the model part. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

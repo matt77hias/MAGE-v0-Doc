@@ -2,7 +2,7 @@ var classmage_1_1_proxy_ptr =
 [
     [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#a6fadf61cdc71e1d6bc9ac666eda5d2c6", null ],
     [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#aaad9140d67d5c0a8694e94973234676a", null ],
-    [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#a52d2afaf6a037026a4694a074f21a54f", null ],
+    [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#a72b18a0a5c86275ca4c033d7a975ff67", null ],
     [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#a964d48ac831c8c179edca90bdfcc5b0b", null ],
     [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#aa31b385e10ba8ab7ce91791078e9ed6d", null ],
     [ "ProxyPtr", "classmage_1_1_proxy_ptr.html#a51e4a025cd9ca419a2c4b687b4c430bb", null ],

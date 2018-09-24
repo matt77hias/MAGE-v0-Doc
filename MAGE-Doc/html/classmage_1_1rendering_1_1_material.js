@@ -12,7 +12,7 @@ var classmage_1_1rendering_1_1_material =
     [ "GetMaterialSRV", "classmage_1_1rendering_1_1_material.html#ae1e1f712801dd1f16a695692df4f4f23", null ],
     [ "GetMaterialTexture", "classmage_1_1rendering_1_1_material.html#aa396990a630c749a46a8a9fc88e80683", null ],
     [ "GetMetalness", "classmage_1_1rendering_1_1_material.html#aaa4265533437b462e2f2087cfa37e623", null ],
-    [ "GetName", "classmage_1_1rendering_1_1_material.html#a7ba9bfe03829a11de89198b0e343630d", null ],
+    [ "GetName", "classmage_1_1rendering_1_1_material.html#a0dcfe76cd03607242f6d2ceaccb83f5b", null ],
     [ "GetNormalSRV", "classmage_1_1rendering_1_1_material.html#a8617392cee8e8609671be3f4147a5934", null ],
     [ "GetNormalTexture", "classmage_1_1rendering_1_1_material.html#a1ae7786ebd627d3e7ecaf2dc671f497d", null ],
     [ "GetRadiance", "classmage_1_1rendering_1_1_material.html#a5bfbc1bc67731126af7cf33b286bb07b", null ],

@@ -9,6 +9,10 @@
 \item 
 using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a216e8ae017f9cfeb1676839da11a1b5c}{value\+\_\+type}} = T
 \item 
+using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5b35424efcc3fb527e97dbd355d31b40}{size\+\_\+type}} = std\+::size\+\_\+t
+\item 
+using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5f2d728dd10f12d727c7572a3a270ee3}{difference\+\_\+type}} = std\+::ptrdiff\+\_\+t
+\item 
 using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a00a438b50f33f4c7b68a20c994e6fc4b}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}} = std\+::true\+\_\+type
 \item 
 using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5f25626106f2f21d37b75b271f230ae4}{is\+\_\+always\+\_\+equal}} = std\+::false\+\_\+type
@@ -28,11 +32,11 @@ using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5f25626106f2f21
 \item 
 \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}} \& \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a4d9c913c8eff35781d507875f6f83934}{operator=}} (\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}} \&\&allocator) noexcept=default
 \item 
-T $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a6ccab19e9d75a98aafe5bc91f6aefd5f}{allocate}} (size\+\_\+t count) const
+T $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a8a8a92fc0732eb1ad8ae4b1e5ec6cb58}{allocate}} (std\+::size\+\_\+t count)
 \item 
-T $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a09fe7399fffff4574529ccbbe3fd8c3e}{allocate}} (size\+\_\+t count, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} const void $\ast$hint) const
+T $\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_accba4687fb1bd523de4cb3e07b3f068e}{allocate}} (std\+::size\+\_\+t count, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} const void $\ast$hint)
 \item 
-void \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a06bb167c058e04e1acd38151c7381f4e}{deallocate}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} T $\ast$data, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} size\+\_\+t count) const noexcept
+void \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a012cd52c73b5dece517f31caf4b039e3}{deallocate}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} T $\ast$data, \mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} std\+::size\+\_\+t count) const noexcept
 \item 
 {\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_af5dbd3bc4fd2c724000c4c18d1859757}{operator==}} (const \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{Allocator}}$<$ U $>$ \&rhs) const noexcept
 \item 
@@ -69,6 +73,13 @@ A class of allocators for memory arenas.
 
 
 \subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a5f2d728dd10f12d727c7572a3a270ee3}\label{classmage_1_1_memory_arena_1_1_allocator_a5f2d728dd10f12d727c7572a3a270ee3}} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5f2d728dd10f12d727c7572a3a270ee3}{difference\+\_\+type}} =  std\+::ptrdiff\+\_\+t}
+
 \mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a5f25626106f2f21d37b75b271f230ae4}\label{classmage_1_1_memory_arena_1_1_allocator_a5f25626106f2f21d37b75b271f230ae4}} 
 \index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}}
 \index{is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
@@ -83,6 +94,13 @@ using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memor
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a00a438b50f33f4c7b68a20c994e6fc4b}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}} =  std\+::true\+\_\+type}
 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a5b35424efcc3fb527e97dbd355d31b40}\label{classmage_1_1_memory_arena_1_1_allocator_a5b35424efcc3fb527e97dbd355d31b40}} 
+\index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a5b35424efcc3fb527e97dbd355d31b40}{size\+\_\+type}} =  std\+::size\+\_\+t}
+
 \mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a216e8ae017f9cfeb1676839da11a1b5c}\label{classmage_1_1_memory_arena_1_1_allocator_a216e8ae017f9cfeb1676839da11a1b5c}} 
 \index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!value\+\_\+type@{value\+\_\+type}}
 \index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
@@ -90,7 +108,7 @@ using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memor
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 using \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a216e8ae017f9cfeb1676839da11a1b5c}{value\+\_\+type}} =  T}
 
-The element type of allocators. 
+
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a2e2645fcc2598ff377c88859ba153606}\label{classmage_1_1_memory_arena_1_1_allocator_a2e2645fcc2598ff377c88859ba153606}} 
@@ -159,72 +177,72 @@ Constructs an allocator.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em memory\+\_\+arena} & A reference to the memory arena. \\
+\mbox{\tt in}  & {\em memory\+\_\+arena} & A pointer to the memory arena. \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a6ccab19e9d75a98aafe5bc91f6aefd5f}\label{classmage_1_1_memory_arena_1_1_allocator_a6ccab19e9d75a98aafe5bc91f6aefd5f}} 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a8a8a92fc0732eb1ad8ae4b1e5ec6cb58}\label{classmage_1_1_memory_arena_1_1_allocator_a8a8a92fc0732eb1ad8ae4b1e5ec6cb58}} 
 \index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!allocate@{allocate}}
 \index{allocate@{allocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
 \subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-T$\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption}) const}
+T$\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{count }\end{DoxyParamCaption})}
 
-Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily T}, and returns a pointer to the first element.
+Allocates a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily T}, and returns a pointer to the first element.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily T} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to the memory block that was allocated. 
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a09fe7399fffff4574529ccbbe3fd8c3e}\label{classmage_1_1_memory_arena_1_1_allocator_a09fe7399fffff4574529ccbbe3fd8c3e}} 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_accba4687fb1bd523de4cb3e07b3f068e}\label{classmage_1_1_memory_arena_1_1_allocator_accba4687fb1bd523de4cb3e07b3f068e}} 
 \index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!allocate@{allocate}}
 \index{allocate@{allocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
 \subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-T$\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} const void $\ast$}]{hint }\end{DoxyParamCaption}) const}
+T$\ast$ \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{count,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} const void $\ast$}]{hint }\end{DoxyParamCaption})}
 
-Attempts to allocate a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily T}, and returns a pointer to the first element.
+Allocates a block of storage with a size large enough to contain {\itshape count} elements of type {\ttfamily T}, and returns a pointer to the first element.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em count} & The number of element objects of type {\ttfamily T} to allocate in memory. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} to allocate in memory. \\
 \hline
-\mbox{\tt in}  & {\em hint} & Either {\ttfamily nullptr} or a value previously obtained by another call to \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate(size\+\_\+t)}} or \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate$<$\+U$>$(size\+\_\+t, const U$\ast$)}} and not yet freed with \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::deallocate(\+T$\ast$, size\+\_\+t)}}. When not equal to {\ttfamily nullptr}, this value may be used as a hint to improve performance by allocating the new block near the one specified. The address of an adjacent element is often a good choice. \\
+\mbox{\tt in}  & {\em hint} & Either {\ttfamily nullptr} or a value previously obtained by another call to \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a8a8a92fc0732eb1ad8ae4b1e5ec6cb58}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate(std\+::size\+\_\+t)}} and not yet freed with \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::deallocate(\+T$\ast$, std\+::size\+\_\+t)}}. When not equal to {\ttfamily nullptr}, this value may be used as a hint to improve performance by allocating the new block near the one specified. The address of an adjacent element is often a good choice. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to the memory block that was allocated. 
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em std\+::bad\+\_\+alloc} & Failed to allocate the memory block. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a06bb167c058e04e1acd38151c7381f4e}\label{classmage_1_1_memory_arena_1_1_allocator_a06bb167c058e04e1acd38151c7381f4e}} 
+\mbox{\Hypertarget{classmage_1_1_memory_arena_1_1_allocator_a012cd52c73b5dece517f31caf4b039e3}\label{classmage_1_1_memory_arena_1_1_allocator_a012cd52c73b5dece517f31caf4b039e3}} 
 \index{mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}!deallocate@{deallocate}}
 \index{deallocate@{deallocate}!mage\+::\+Memory\+Arena\+::\+Allocator@{mage\+::\+Memory\+Arena\+::\+Allocator}}
 \subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-void \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} T $\ast$}]{data,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} size\+\_\+t}]{count }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+void \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator}{mage\+::\+Memory\+Arena\+::\+Allocator}}$<$ T $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} T $\ast$}]{data,  }\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} std\+::size\+\_\+t}]{count }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Releases a block of storage previously allocated with \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate(size\+\_\+t)}} or \mbox{\hyperlink{}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate$<$\+U$>$(size\+\_\+t, const U$\ast$)}} and not yet released.
+Releases a block of storage previously allocated with \mbox{\hyperlink{classmage_1_1_memory_arena_1_1_allocator_a8a8a92fc0732eb1ad8ae4b1e5ec6cb58}{mage\+::\+Memory\+Arena\+::\+Allocator$<$\+T$>$\+::allocate(std\+::size\+\_\+t)}} and not yet released.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em data} & A pointer to the memory block that needs to be released. \\
 \hline
-\mbox{\tt in}  & {\em count} & The number of element objects allocated on the call to allocate for this block of storage. \\
+\mbox{\tt in}  & {\em count} & The number of objects of type {\ttfamily T} allocated on the call to allocate this block of storage. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}

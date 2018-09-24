@@ -1,11 +1,5 @@
 var structmage_1_1rendering_1_1_camera_buffer =
 [
-    [ "CameraBuffer", "structmage_1_1rendering_1_1_camera_buffer.html#a751c2923a5deb710d7c3957f04c89fcf", null ],
-    [ "CameraBuffer", "structmage_1_1rendering_1_1_camera_buffer.html#a08ff60a4695d723218c5cffb4b95cc59", null ],
-    [ "CameraBuffer", "structmage_1_1rendering_1_1_camera_buffer.html#a16f0d0938bb4e4174461c3a8c8ad3e20", null ],
-    [ "~CameraBuffer", "structmage_1_1rendering_1_1_camera_buffer.html#aadd09f0ddad88a8463e8dda3ae4e3849", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_camera_buffer.html#a5c0b3a1e054ebcb4597f313c0346da57", null ],
-    [ "operator=", "structmage_1_1rendering_1_1_camera_buffer.html#a12658ff989daac2e910b91633ac0223d", null ],
     [ "m_aperture_radius", "structmage_1_1rendering_1_1_camera_buffer.html#a65ebdf1e7e9dad21cf4a6ef471a44528", null ],
     [ "m_camera_to_projection", "structmage_1_1rendering_1_1_camera_buffer.html#a75669aa0916514b1d414e5a2f7c72c75", null ],
     [ "m_camera_to_world", "structmage_1_1rendering_1_1_camera_buffer.html#a0633cfc689f2a097783ecc1626b94590", null ],

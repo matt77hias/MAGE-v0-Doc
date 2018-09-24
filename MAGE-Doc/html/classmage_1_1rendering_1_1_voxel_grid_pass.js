@@ -7,7 +7,7 @@ var classmage_1_1rendering_1_1_voxel_grid_pass =
     [ "BindFixedState", "classmage_1_1rendering_1_1_voxel_grid_pass.html#a38a3d6338eded537aab2ced5c486bdd4", null ],
     [ "operator=", "classmage_1_1rendering_1_1_voxel_grid_pass.html#a6f696f05c430a0b84d8346099ec7d0aa", null ],
     [ "operator=", "classmage_1_1rendering_1_1_voxel_grid_pass.html#a9902536630f500e2399cbf7dd0e60452", null ],
-    [ "Render", "classmage_1_1rendering_1_1_voxel_grid_pass.html#aba53961c9a9082c1382484329129e190", null ],
+    [ "Render", "classmage_1_1rendering_1_1_voxel_grid_pass.html#a032483cc14e79795a97929c7f11de68e", null ],
     [ "m_device_context", "classmage_1_1rendering_1_1_voxel_grid_pass.html#aaf8d84bbd6efe405a649b3ab643abefc", null ],
     [ "m_gs", "classmage_1_1rendering_1_1_voxel_grid_pass.html#af94a1287d866d10b3dabb01a0f898eef", null ],
     [ "m_ps", "classmage_1_1rendering_1_1_voxel_grid_pass.html#a19cb04ed26d43e59277ffef4039a051d", null ],
