@@ -16,8 +16,8 @@ var classmage_1_1rendering_1_1_model =
     [ "GetMaterial", "classmage_1_1rendering_1_1_model.html#afcdf381e409cc7c7be878a60c1799c1b", null ],
     [ "GetNumberOfIndices", "classmage_1_1rendering_1_1_model.html#a4e8445480b07026d2f758d879c8c9d56", null ],
     [ "GetStartIndex", "classmage_1_1rendering_1_1_model.html#a419dd6f4ea7f32ac3d165ce87d54fb47", null ],
-    [ "GetTextureTransform", "classmage_1_1rendering_1_1_model.html#a57e4069226ce9bade50bc17503378f08", null ],
-    [ "GetTextureTransform", "classmage_1_1rendering_1_1_model.html#adc18923fdb300d1eb753c9dcb9d30677", null ],
+    [ "GetTextureTransform", "classmage_1_1rendering_1_1_model.html#a3b016097dfa0d9da3430acaa680fbb36", null ],
+    [ "GetTextureTransform", "classmage_1_1rendering_1_1_model.html#a16b34be32b1c45c254a833b21f81f2df", null ],
     [ "OccludesLight", "classmage_1_1rendering_1_1_model.html#ac6238580ce9572b9274bf21852f73455", null ],
     [ "operator=", "classmage_1_1rendering_1_1_model.html#aa7edda6386fa2ae0638e5c46dccff016", null ],
     [ "operator=", "classmage_1_1rendering_1_1_model.html#a2b374cb908e39da8ff35ea5c17ce640d", null ],
@@ -33,5 +33,5 @@ var classmage_1_1rendering_1_1_model =
     [ "m_nb_indices", "classmage_1_1rendering_1_1_model.html#afc57d62ba9abcc13bce10f96ec9b2a03", null ],
     [ "m_sphere", "classmage_1_1rendering_1_1_model.html#a88220cb828f0df79489c512245560616", null ],
     [ "m_start_index", "classmage_1_1rendering_1_1_model.html#ae92a44ede07f136ac89b25c34a8716cc", null ],
-    [ "m_texture_transform", "classmage_1_1rendering_1_1_model.html#a00ad04fc770af700b97f69c83dc01d70", null ]
+    [ "m_texture_transform", "classmage_1_1rendering_1_1_model.html#a07ff69fff5b547729b517b2dbed34d02", null ]
 ];

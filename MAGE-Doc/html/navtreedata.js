@@ -53,22 +53,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_double_ended_memory_stack.html#ada139d8c39960c794502bec401182ce9",
-"classmage_1_1_line_reader.html#a05436c40af16b882c2ebd515287598f7",
-"classmage_1_1_node.html#a3ef1876293074bfcc01104eb92f1bfdf",
-"classmage_1_1_sprite_transform.html#a72cebc3612bc3ea91989234fb8fb03d2",
-"classmage_1_1_transform.html#aaf2754a227e2cf416960a92f7e4c5dc7",
-"classmage_1_1loader_1_1_v_a_r_reader.html#acd3bbd51ccc774d2f74a4520b6143990",
-"classmage_1_1rendering_1_1_depth_pass.html#a2a97b3566a4097d4213cfc8248ae9fd2",
-"classmage_1_1rendering_1_1_material.html#a46b3297fb948c4fec3447caa35f96918",
-"classmage_1_1rendering_1_1_post_process_pass.html#a41e82fe23fdc3a5726989edb0bb334ea",
-"classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a32ea1f2a4d1f11c19594e1d4eaa36f6c",
-"classmage_1_1rendering_1_1_texture.html#a25eb2aa2277478fb5c17af996d509c57",
-"classmage_1_1rendering_1_1loader_1_1_o_b_j_reader.html#a5fe68a545e05c266b69f35e4dc9027a9",
-"namespacemage.html",
-"structmage_1_1_s_r_g_b.html#aca835f4281827524ad14345ddb28208a",
-"structmage_1_1rendering_1_1_pipeline_1_1_i_a.html#a1e48ff40f3c5bbbe7f704400d15c8a89",
-"structstd_1_1tuple__element_3_01_i_00_01mage_1_1_point3_01_4.html"
+"classmage_1_1_component_manager.html#a6216d62333ef2eafa8b64a6e8d67aa4e",
+"classmage_1_1_dynamic_memory_buffer.html#ac6a91f34d530eab77e2c5cd23c5285b3",
+"classmage_1_1_memory_buffer.html#a7dcdb6998c7faa24a00026d3de795bc9",
+"classmage_1_1_s1_e_t_transform3_d.html#abba6f982423e10eace0718dfee916000",
+"classmage_1_1_s_q_t_transform3_d.html#adbdcd99be81071e1c34e96d8822b2e8d",
+"classmage_1_1_texture_transform2_d.html#aefa487dadb8b10cc99c98760be349519",
+"classmage_1_1_window_message_listener.html#ae0972346e59184cb01d674dfa8269d32",
+"classmage_1_1rendering_1_1_camera_lens.html#a3372be41a251db2a691a84a6413d7ac9",
+"classmage_1_1rendering_1_1_forward_pass.html#a6fae34f08f23dc1a5d15921b239935fb",
+"classmage_1_1rendering_1_1_omni_light.html#af9bfc4b943b156756cd7c2323d93ebdd",
+"classmage_1_1rendering_1_1_shadow_map_buffer.html#a5216f8d02a3e92a8dcd34dcc6889563c",
+"classmage_1_1rendering_1_1_state_manager.html#a291dd54e28dc899193583537ab14e4f7",
+"classmage_1_1rendering_1_1_world.html#a89edf9b86ab3a8644c15e7f521e8642a",
+"classmage_1_1script_1_1_stats_script.html#ae99dbfbff061fcc916c968d670a1e481",
+"structmage_1_1_complex.html#a3cf18056d27dcddae48a30e221ec7925",
+"structmage_1_1_u_v.html#ab5b287a94fef45b70f7c6d50ede33bff",
+"structmage_1_1rendering_1_1_pipeline_1_1_v_s.html#a154f65e40cf64e1b1f680aa1f8471142"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

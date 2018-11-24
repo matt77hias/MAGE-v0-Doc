@@ -1,0 +1,614 @@
+\hypertarget{classmage_1_1_component_manager}{}\section{mage\+:\+:Component\+Manager$<$ T $>$ Class Template Reference}
+\label{classmage_1_1_component_manager}\index{mage\+::\+Component\+Manager$<$ T $>$@{mage\+::\+Component\+Manager$<$ T $>$}}
+
+
+{\ttfamily \#include $<$ecs.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmage_1_1_component_manager_1_1_record}{Record}}
+\item 
+class \mbox{\hyperlink{classmage_1_1_component_manager_1_1_record_iterator}{Record\+Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_ae68422d8d8168c7450d116146604efa6}{Component\+Container}} = \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ T $>$
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a1778c10d17301f112ee99d6daf3e55a7}{Entity\+Container}} = \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}} $>$
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a1d556c6a0d8ae9efcf0b63d31305352d}{Mapping\+Container}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}}, std\+::size\+\_\+t $>$
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} = typename Component\+Container\+::value\+\_\+type
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} = typename Component\+Container\+::size\+\_\+type
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_af276ec057e09efba9b826aff4f45cdc2}{difference\+\_\+type}} = typename Component\+Container\+::difference\+\_\+type
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} = typename Component\+Container\+::reference
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} = typename Component\+Container\+::const\+\_\+reference
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} = typename Component\+Container\+::pointer
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} = typename Component\+Container\+::const\+\_\+pointer
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} = typename Component\+Container\+::iterator
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} = typename Component\+Container\+::const\+\_\+iterator
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} = typename Component\+Container\+::reverse\+\_\+iterator
+\item 
+using \mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} = typename Component\+Container\+::const\+\_\+reverse\+\_\+iterator
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a836478f73ff1fa49795dd2ed62b0a192}{Component\+Manager}} ()=default
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a371d054fb052e9ac813b69e39b4dab93}{Component\+Manager}} (const \mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \&manager)=default
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a7412dca61f242beedc37edcbe63b738f}{Component\+Manager}} (\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \&\&manager) noexcept=default
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a3e8eeb1cff08baee60c3cec2238a490f}{$\sim$\+Component\+Manager}} ()=default
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \& \mbox{\hyperlink{classmage_1_1_component_manager_a0ee8c4a8ff585ab544010010542d077c}{operator=}} (const \mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \&manager)=default
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \& \mbox{\hyperlink{classmage_1_1_component_manager_a10c869ad1b3436fe1cac7d4dafc761e7}{operator=}} (\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \&\&manager) noexcept=default
+\item 
+bool \mbox{\hyperlink{classmage_1_1_component_manager_ab2e42b8c655b1279b8bd136536e1acfc}{Contains}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity) const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} \mbox{\hyperlink{classmage_1_1_component_manager_aef43a141be2f7ebd0123e4d34b66581b}{Get}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} \mbox{\hyperlink{classmage_1_1_component_manager_aaf81852975938880f52b60e5d03b9a85}{Get}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity) const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a79992537bb5e62d6aee7f83860ae49d3}{at}} (\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} index)
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager_adfce9c52a4a63f792d18fda2b101b5a5}{at}} (\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} index) const
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a6216d62333ef2eafa8b64a6e8d67aa4e}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} index) noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager_accbb5b12be0fcc026e44de16dd1fe1c0}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} index) const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a151bff7fcddb05f821fb7577c052e452}{front}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a0c72473eb010a2bcd121e27f626f83c5}{front}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a17bdea8d1d738f8f5da239592bef69e6}{back}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager_a807f7e0c4c72e44e8e1474d543010a7f}{back}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} \mbox{\hyperlink{classmage_1_1_component_manager_ac9c6e209d82b09cf1d6c3893ed66efa3}{data}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} \mbox{\hyperlink{classmage_1_1_component_manager_a77452ebe6099db2d2ced2788a06c2c74}{data}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_1_1_record_iterator}{Record\+Iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_ab50ab10c4703a90ebbd653f8876936c4}{Record\+Begin}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_1_1_record_iterator}{Record\+Iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a38663bbf86d4ed1c364612af82cc0880}{Record\+End}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_af63921454653b72378ebfb9828aad41e}{begin}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a9821017a4be31ee3a110f182c513526e}{begin}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_adc13717839d08cb7c2aaa88c6a6bb836}{cbegin}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a9b9dfac90c776e3cfd93f8430bd29d90}{end}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a674b03ad45a62f2e5af1a076b97f873c}{end}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a02ffd95f94d2c58c80203b87d3992f98}{cend}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a0b28b64f6fabcc291f25d1410e56fe90}{rbegin}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a753f35b82bd16f9841476a006b57d383}{rbegin}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_ade414af14d8e7af5236b5a93b1741ab7}{crbegin}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a6e726758abf9820cdc48223bc31e48b5}{rend}} () noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_a5a9937ca77be59c37762e91d444a0d72}{rend}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager_acc2979afe7b7c7a522471c898524d9c4}{crend}} () const noexcept
+\item 
+bool \mbox{\hyperlink{classmage_1_1_component_manager_af5382446371a03c94301328ab768e919}{empty}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager_a6270cd0248b48e7de34421b34fc774c9}{size}} () const noexcept
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager_a43d6a22901bc502d908e738c550b1fbe}{max\+\_\+size}} () const noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a836cb7e3e2e901d5bf2d219b2b4119c6}{reserve}} (\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} new\+\_\+capacity)
+\item 
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager_a1250375057e81290626d710880d19b1c}{capacity}} () const noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a5cad9b6765b1088761b008cc964f1e47}{shrink\+\_\+to\+\_\+fit}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a3aeebdd5734ecea5cac0b26d4ccff75d}{clear}} () noexcept
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_aee2c65170dada47d99cec476b986b4c6}{push\+\_\+back}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity, const \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} \&value)
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a62c25a923c959d535d0427bec2ca44cf}{push\+\_\+back}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity, \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} \&\&value)
+\item 
+{\footnotesize template$<$typename... Constructor\+ArgsT$>$ }\\\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager_ad7c2c45d7c5f651144b9d62b91b2ea6d}{emplace\+\_\+back}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity, Constructor\+ArgsT \&\&... args)
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a069077191e2be628be910aaa5250b5f1}{pop\+\_\+back}} ()
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a48b0c1e1b0efac98bb54b8c78e1dde65}{erase}} (\mbox{\hyperlink{classmage_1_1_entity}{Entity}} entity)
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_a9ba4d698e4def14da6997326c61d9a92}{swap}} (\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} \&other) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmage_1_1_component_manager_aa3a4d3976380849c44b8756515d2f3f1}{Swap\+Components}} (std\+::size\+\_\+t index1, std\+::size\+\_\+t index2) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} $>$ \mbox{\hyperlink{classmage_1_1_component_manager_a8bc66b115bd3df295a715d19c9078a3d}{m\+\_\+components}}
+\item 
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classmage_1_1_component_manager_a84397106c4d2f50467e978343e1c67db}{m\+\_\+entities}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}}, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classmage_1_1_component_manager_a437e11dc75c6992218687007a7d4ab4a}{m\+\_\+mapping}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classmage_1_1_component_manager_ae68422d8d8168c7450d116146604efa6}\label{classmage_1_1_component_manager_ae68422d8d8168c7450d116146604efa6}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Component\+Container@{Component\+Container}}
+\index{Component\+Container@{Component\+Container}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Component\+Container}{ComponentContainer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_ae68422d8d8168c7450d116146604efa6}{Component\+Container}} =  \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ T $>$}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}\label{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{const\+\_\+iterator}{const\_iterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} =  typename Component\+Container\+::const\+\_\+iterator}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}\label{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} =  typename Component\+Container\+::const\+\_\+pointer}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}\label{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} =  typename Component\+Container\+::const\+\_\+reference}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}\label{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}}
+\index{const\+\_\+reverse\+\_\+iterator@{const\+\_\+reverse\+\_\+iterator}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{const\+\_\+reverse\+\_\+iterator}{const\_reverse\_iterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} =  typename Component\+Container\+::const\+\_\+reverse\+\_\+iterator}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_af276ec057e09efba9b826aff4f45cdc2}\label{classmage_1_1_component_manager_af276ec057e09efba9b826aff4f45cdc2}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_af276ec057e09efba9b826aff4f45cdc2}{difference\+\_\+type}} =  typename Component\+Container\+::difference\+\_\+type}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a1778c10d17301f112ee99d6daf3e55a7}\label{classmage_1_1_component_manager_a1778c10d17301f112ee99d6daf3e55a7}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Entity\+Container@{Entity\+Container}}
+\index{Entity\+Container@{Entity\+Container}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Entity\+Container}{EntityContainer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a1778c10d17301f112ee99d6daf3e55a7}{Entity\+Container}} =  \mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}} $>$}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}\label{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!iterator@{iterator}}
+\index{iterator@{iterator}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} =  typename Component\+Container\+::iterator}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a1d556c6a0d8ae9efcf0b63d31305352d}\label{classmage_1_1_component_manager_a1d556c6a0d8ae9efcf0b63d31305352d}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Mapping\+Container@{Mapping\+Container}}
+\index{Mapping\+Container@{Mapping\+Container}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Mapping\+Container}{MappingContainer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a1d556c6a0d8ae9efcf0b63d31305352d}{Mapping\+Container}} =  std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}}, std\+::size\+\_\+t $>$}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}\label{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!pointer@{pointer}}
+\index{pointer@{pointer}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} =  typename Component\+Container\+::pointer}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}\label{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!reference@{reference}}
+\index{reference@{reference}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} =  typename Component\+Container\+::reference}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}\label{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{reverse\+\_\+iterator}{reverse\_iterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} =  typename Component\+Container\+::reverse\+\_\+iterator}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}\label{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} =  typename Component\+Container\+::size\+\_\+type}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}\label{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} =  typename Component\+Container\+::value\+\_\+type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmage_1_1_component_manager_a836478f73ff1fa49795dd2ed62b0a192}\label{classmage_1_1_component_manager_a836478f73ff1fa49795dd2ed62b0a192}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Component\+Manager@{Component\+Manager}}
+\index{Component\+Manager@{Component\+Manager}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Component\+Manager()}{ComponentManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a371d054fb052e9ac813b69e39b4dab93}\label{classmage_1_1_component_manager_a371d054fb052e9ac813b69e39b4dab93}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Component\+Manager@{Component\+Manager}}
+\index{Component\+Manager@{Component\+Manager}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Component\+Manager()}{ComponentManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}$<$ T $>$ \&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a7412dca61f242beedc37edcbe63b738f}\label{classmage_1_1_component_manager_a7412dca61f242beedc37edcbe63b738f}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Component\+Manager@{Component\+Manager}}
+\index{Component\+Manager@{Component\+Manager}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Component\+Manager()}{ComponentManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}$<$ T $>$ \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a3e8eeb1cff08baee60c3cec2238a490f}\label{classmage_1_1_component_manager_a3e8eeb1cff08baee60c3cec2238a490f}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!````~Component\+Manager@{$\sim$\+Component\+Manager}}
+\index{````~Component\+Manager@{$\sim$\+Component\+Manager}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Component\+Manager()}{~ComponentManager()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmage_1_1_component_manager_a79992537bb5e62d6aee7f83860ae49d3}\label{classmage_1_1_component_manager_a79992537bb5e62d6aee7f83860ae49d3}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!at@{at}}
+\index{at@{at}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}}}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_adfce9c52a4a63f792d18fda2b101b5a5}\label{classmage_1_1_component_manager_adfce9c52a4a63f792d18fda2b101b5a5}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!at@{at}}
+\index{at@{at}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}}}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a17bdea8d1d738f8f5da239592bef69e6}\label{classmage_1_1_component_manager_a17bdea8d1d738f8f5da239592bef69e6}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!back@{back}}
+\index{back@{back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a807f7e0c4c72e44e8e1474d543010a7f}\label{classmage_1_1_component_manager_a807f7e0c4c72e44e8e1474d543010a7f}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!back@{back}}
+\index{back@{back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_af63921454653b72378ebfb9828aad41e}\label{classmage_1_1_component_manager_af63921454653b72378ebfb9828aad41e}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!begin@{begin}}
+\index{begin@{begin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a9821017a4be31ee3a110f182c513526e}\label{classmage_1_1_component_manager_a9821017a4be31ee3a110f182c513526e}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!begin@{begin}}
+\index{begin@{begin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a1250375057e81290626d710880d19b1c}\label{classmage_1_1_component_manager_a1250375057e81290626d710880d19b1c}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!capacity@{capacity}}
+\index{capacity@{capacity}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_adc13717839d08cb7c2aaa88c6a6bb836}\label{classmage_1_1_component_manager_adc13717839d08cb7c2aaa88c6a6bb836}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a02ffd95f94d2c58c80203b87d3992f98}\label{classmage_1_1_component_manager_a02ffd95f94d2c58c80203b87d3992f98}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!cend@{cend}}
+\index{cend@{cend}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a3aeebdd5734ecea5cac0b26d4ccff75d}\label{classmage_1_1_component_manager_a3aeebdd5734ecea5cac0b26d4ccff75d}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!clear@{clear}}
+\index{clear@{clear}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ab2e42b8c655b1279b8bd136536e1acfc}\label{classmage_1_1_component_manager_ab2e42b8c655b1279b8bd136536e1acfc}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Contains@{Contains}}
+\index{Contains@{Contains}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ade414af14d8e7af5236b5a93b1741ab7}\label{classmage_1_1_component_manager_ade414af14d8e7af5236b5a93b1741ab7}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_acc2979afe7b7c7a522471c898524d9c4}\label{classmage_1_1_component_manager_acc2979afe7b7c7a522471c898524d9c4}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!crend@{crend}}
+\index{crend@{crend}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{crend()}{crend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::crend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ac9c6e209d82b09cf1d6c3893ed66efa3}\label{classmage_1_1_component_manager_ac9c6e209d82b09cf1d6c3893ed66efa3}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!data@{data}}
+\index{data@{data}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a77452ebe6099db2d2ced2788a06c2c74}\label{classmage_1_1_component_manager_a77452ebe6099db2d2ced2788a06c2c74}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!data@{data}}
+\index{data@{data}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ad7c2c45d7c5f651144b9d62b91b2ea6d}\label{classmage_1_1_component_manager_ad7c2c45d7c5f651144b9d62b91b2ea6d}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!emplace\+\_\+back@{emplace\+\_\+back}}
+\index{emplace\+\_\+back@{emplace\+\_\+back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{emplace\+\_\+back()}{emplace\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename... Constructor\+ArgsT$>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity,  }\item[{Constructor\+ArgsT \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_af5382446371a03c94301328ab768e919}\label{classmage_1_1_component_manager_af5382446371a03c94301328ab768e919}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!empty@{empty}}
+\index{empty@{empty}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a9b9dfac90c776e3cfd93f8430bd29d90}\label{classmage_1_1_component_manager_a9b9dfac90c776e3cfd93f8430bd29d90}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!end@{end}}
+\index{end@{end}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a28023a75938eb74870ba4b5952ddb61f}{iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a674b03ad45a62f2e5af1a076b97f873c}\label{classmage_1_1_component_manager_a674b03ad45a62f2e5af1a076b97f873c}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!end@{end}}
+\index{end@{end}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_acc0d5ab8de4583ae2dd99c7bc0784c95}{const\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a48b0c1e1b0efac98bb54b8c78e1dde65}\label{classmage_1_1_component_manager_a48b0c1e1b0efac98bb54b8c78e1dde65}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!erase@{erase}}
+\index{erase@{erase}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a151bff7fcddb05f821fb7577c052e452}\label{classmage_1_1_component_manager_a151bff7fcddb05f821fb7577c052e452}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!front@{front}}
+\index{front@{front}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a0c72473eb010a2bcd121e27f626f83c5}\label{classmage_1_1_component_manager_a0c72473eb010a2bcd121e27f626f83c5}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!front@{front}}
+\index{front@{front}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_aef43a141be2f7ebd0123e4d34b66581b}\label{classmage_1_1_component_manager_aef43a141be2f7ebd0123e4d34b66581b}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a8a96debf4c395e068990c85e8b66d564}{pointer}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_aaf81852975938880f52b60e5d03b9a85}\label{classmage_1_1_component_manager_aaf81852975938880f52b60e5d03b9a85}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Get@{Get}}
+\index{Get@{Get}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_aca0462fe048337b5453e72cb7facaf31}{const\+\_\+pointer}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a43d6a22901bc502d908e738c550b1fbe}\label{classmage_1_1_component_manager_a43d6a22901bc502d908e738c550b1fbe}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a0ee8c4a8ff585ab544010010542d077c}\label{classmage_1_1_component_manager_a0ee8c4a8ff585ab544010010542d077c}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}\& \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}$<$ T $>$ \&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a10c869ad1b3436fe1cac7d4dafc761e7}\label{classmage_1_1_component_manager_a10c869ad1b3436fe1cac7d4dafc761e7}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}\& \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}$<$ T $>$ \&\&}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a6216d62333ef2eafa8b64a6e8d67aa4e}\label{classmage_1_1_component_manager_a6216d62333ef2eafa8b64a6e8d67aa4e}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a4daeb292f527534c155e359faf7eaf80}{reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_accbb5b12be0fcc026e44de16dd1fe1c0}\label{classmage_1_1_component_manager_accbb5b12be0fcc026e44de16dd1fe1c0}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_ae1b1c864f0dc2cd35c63e1084971b89c}{const\+\_\+reference}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a069077191e2be628be910aaa5250b5f1}\label{classmage_1_1_component_manager_a069077191e2be628be910aaa5250b5f1}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{pop\+\_\+back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_aee2c65170dada47d99cec476b986b4c6}\label{classmage_1_1_component_manager_aee2c65170dada47d99cec476b986b4c6}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity,  }\item[{const \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a62c25a923c959d535d0427bec2ca44cf}\label{classmage_1_1_component_manager_a62c25a923c959d535d0427bec2ca44cf}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_entity}{Entity}}}]{entity,  }\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} \&\&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a0b28b64f6fabcc291f25d1410e56fe90}\label{classmage_1_1_component_manager_a0b28b64f6fabcc291f25d1410e56fe90}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a753f35b82bd16f9841476a006b57d383}\label{classmage_1_1_component_manager_a753f35b82bd16f9841476a006b57d383}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_ab50ab10c4703a90ebbd653f8876936c4}\label{classmage_1_1_component_manager_ab50ab10c4703a90ebbd653f8876936c4}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Record\+Begin@{Record\+Begin}}
+\index{Record\+Begin@{Record\+Begin}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Record\+Begin()}{RecordBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_1_1_record_iterator}{Record\+Iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Record\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a38663bbf86d4ed1c364612af82cc0880}\label{classmage_1_1_component_manager_a38663bbf86d4ed1c364612af82cc0880}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Record\+End@{Record\+End}}
+\index{Record\+End@{Record\+End}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Record\+End()}{RecordEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_1_1_record_iterator}{Record\+Iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Record\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a6e726758abf9820cdc48223bc31e48b5}\label{classmage_1_1_component_manager_a6e726758abf9820cdc48223bc31e48b5}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!rend@{rend}}
+\index{rend@{rend}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a33e3e4994e4ec77e3ab587d68dbb8277}{reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a5a9937ca77be59c37762e91d444a0d72}\label{classmage_1_1_component_manager_a5a9937ca77be59c37762e91d444a0d72}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!rend@{rend}}
+\index{rend@{rend}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a00481d8beab5d950124f54c0f832da53}{const\+\_\+reverse\+\_\+iterator}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a836cb7e3e2e901d5bf2d219b2b4119c6}\label{classmage_1_1_component_manager_a836cb7e3e2e901d5bf2d219b2b4119c6}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!reserve@{reserve}}
+\index{reserve@{reserve}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}}}]{new\+\_\+capacity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a5cad9b6765b1088761b008cc964f1e47}\label{classmage_1_1_component_manager_a5cad9b6765b1088761b008cc964f1e47}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!shrink\+\_\+to\+\_\+fit@{shrink\+\_\+to\+\_\+fit}}
+\index{shrink\+\_\+to\+\_\+fit@{shrink\+\_\+to\+\_\+fit}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{shrink\+\_\+to\+\_\+fit()}{shrink\_to\_fit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::shrink\+\_\+to\+\_\+fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a6270cd0248b48e7de34421b34fc774c9}\label{classmage_1_1_component_manager_a6270cd0248b48e7de34421b34fc774c9}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!size@{size}}
+\index{size@{size}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classmage_1_1_component_manager_a6bd219525db9ec9f3adb9259e52674da}{size\+\_\+type}} \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a9ba4d698e4def14da6997326c61d9a92}\label{classmage_1_1_component_manager_a9ba4d698e4def14da6997326c61d9a92}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!swap@{swap}}
+\index{swap@{swap}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmage_1_1_component_manager}{Component\+Manager}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_aa3a4d3976380849c44b8756515d2f3f1}\label{classmage_1_1_component_manager_aa3a4d3976380849c44b8756515d2f3f1}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!Swap\+Components@{Swap\+Components}}
+\index{Swap\+Components@{Swap\+Components}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Swap\+Components()}{SwapComponents()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::Swap\+Components (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index1,  }\item[{std\+::size\+\_\+t}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmage_1_1_component_manager_a8bc66b115bd3df295a715d19c9078a3d}\label{classmage_1_1_component_manager_a8bc66b115bd3df295a715d19c9078a3d}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!m\+\_\+components@{m\+\_\+components}}
+\index{m\+\_\+components@{m\+\_\+components}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+components}{m\_components}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_component_manager_a56aac3b52842bd8955253fa9b528a58d}{value\+\_\+type}} $>$ \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::m\+\_\+components\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a84397106c4d2f50467e978343e1c67db}\label{classmage_1_1_component_manager_a84397106c4d2f50467e978343e1c67db}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!m\+\_\+entities@{m\+\_\+entities}}
+\index{m\+\_\+entities@{m\+\_\+entities}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+entities}{m\_entities}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespacemage_a8664bfb5ce2179fc64eae9f82c8a5ba8}{Aligned\+Vector}}$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::m\+\_\+entities\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmage_1_1_component_manager_a437e11dc75c6992218687007a7d4ab4a}\label{classmage_1_1_component_manager_a437e11dc75c6992218687007a7d4ab4a}} 
+\index{mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}!m\+\_\+mapping@{m\+\_\+mapping}}
+\index{m\+\_\+mapping@{m\+\_\+mapping}!mage\+::\+Component\+Manager@{mage\+::\+Component\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+mapping}{m\_mapping}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classmage_1_1_entity}{Entity}}, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classmage_1_1_component_manager}{mage\+::\+Component\+Manager}}$<$ T $>$\+::m\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
+

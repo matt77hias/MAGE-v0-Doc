@@ -8,7 +8,9 @@ var searchData=
   ['array',['Array',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20f32_2c_202u_20_3e',['Array&lt; F32, 2u &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20f32_2c_203u_20_3e',['Array&lt; F32, 3u &gt;',['../structmage_1_1_array.html',1,'mage']]],
+  ['array_3c_20f32_2c_204u_20_3e',['Array&lt; F32, 4u &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20f32_2c_204u_2c_2016u_20_3e',['Array&lt; F32, 4u, 16u &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20s32_2c_202u_20_3e',['Array&lt; S32, 2u &gt;',['../structmage_1_1_array.html',1,'mage']]],
+  ['array_3c_20t_2c_202u_20_3e',['Array&lt; T, 2u &gt;',['../structmage_1_1_array.html',1,'mage']]],
   ['array_3c_20u32_2c_202u_20_3e',['Array&lt; U32, 2u &gt;',['../structmage_1_1_array.html',1,'mage']]]
 ];

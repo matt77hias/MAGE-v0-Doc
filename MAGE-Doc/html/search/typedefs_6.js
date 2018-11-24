@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['is_5falways_5fequal',['is_always_equal',['../classmage_1_1_aligned_allocator.html#a144fbbf7d538636d83b3eb45965af6bf',1,'mage::AlignedAllocator::is_always_equal()'],['../classmage_1_1_memory_arena_1_1_allocator.html#a5f25626106f2f21d37b75b271f230ae4',1,'mage::MemoryArena::Allocator::is_always_equal()'],['../classmage_1_1_single_ended_memory_stack_1_1_allocator.html#aa62e1b505ea8f83a4f3014b0242e124f',1,'mage::SingleEndedMemoryStack::Allocator::is_always_equal()'],['../classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#ab42cfced82fe7790a27d066fe299513b',1,'mage::DoubleEndedMemoryStack::LowAllocator::is_always_equal()'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a81c407c8c9e727ce05fc86cf9e674104',1,'mage::DoubleEndedMemoryStack::HighAllocator::is_always_equal()']]],
-  ['iterator',['iterator',['../classmage_1_1_dynamic_array.html#af49b03e8ab90f3f38f6fc735cef81baf',1,'mage::DynamicArray::iterator()'],['../classmage_1_1_static_memory_buffer.html#abeee1c933cd54117e1a92de4a1cc698f',1,'mage::StaticMemoryBuffer::iterator()'],['../classmage_1_1_dynamic_memory_buffer.html#aa5dca8e81d0c2a9e63d3a9bc61cce904',1,'mage::DynamicMemoryBuffer::iterator()'],['../classmage_1_1_memory_buffer.html#af487a5f5f07f8ba65e3a5d3a26d32b6c',1,'mage::MemoryBuffer::iterator()']]]
+  ['h32',['H32',['../namespacemage.html#a9b6a10670e60f80c5cc0e83b69f05d28',1,'mage']]],
+  ['h64',['H64',['../namespacemage.html#a9a0a2903405dd134d544ae75d4145a14',1,'mage']]],
+  ['hullshader',['HullShader',['../namespacemage_1_1rendering.html#aa133f36cd1a81c87eedf962270a12f48',1,'mage::rendering']]],
+  ['hullshaderptr',['HullShaderPtr',['../namespacemage_1_1rendering.html#a6f33b2e1ea7f2ae3824dc7fb6875c655',1,'mage::rendering']]]
 ];

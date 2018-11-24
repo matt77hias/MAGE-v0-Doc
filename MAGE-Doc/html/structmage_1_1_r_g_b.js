@@ -8,12 +8,12 @@ var structmage_1_1_r_g_b =
     [ "RGB", "structmage_1_1_r_g_b.html#a62a2200960f84f1b6bd4b743510201a4", null ],
     [ "RGB", "structmage_1_1_r_g_b.html#ab80d8120aabe4f52e8de6e99d1af7c8b", null ],
     [ "~RGB", "structmage_1_1_r_g_b.html#a2c01428e1da4ec354b85320a905beab3", null ],
-    [ "GetB", "structmage_1_1_r_g_b.html#a5a48ef39436290969ed01021bdbb687d", null ],
-    [ "GetG", "structmage_1_1_r_g_b.html#a997a18a9af34e5796d18974762574faf", null ],
-    [ "GetR", "structmage_1_1_r_g_b.html#a314530cf81692c9f49da663ba51ea528", null ],
+    [ "B", "structmage_1_1_r_g_b.html#a8c3aa800eeb679f42d33e0a029081db3", null ],
+    [ "B", "structmage_1_1_r_g_b.html#a3f90c799411cc78913e4c0e403c16c7a", null ],
+    [ "G", "structmage_1_1_r_g_b.html#aedeed66436cdee0e7a9f19e650d3a44b", null ],
+    [ "G", "structmage_1_1_r_g_b.html#a3cff21300a4b2f44692b39d09930af39", null ],
     [ "operator=", "structmage_1_1_r_g_b.html#a10fd47397bb4a691c951d44abfb77d7c", null ],
     [ "operator=", "structmage_1_1_r_g_b.html#add3b5995774c634d6e32af4d1cd6bfb3", null ],
-    [ "SetB", "structmage_1_1_r_g_b.html#a363d6235bc2c68907addb5326df07dc7", null ],
-    [ "SetG", "structmage_1_1_r_g_b.html#a6a47f8186e29e29a9d253732e7071ed7", null ],
-    [ "SetR", "structmage_1_1_r_g_b.html#a1fc1a5b272202fb56f3a8f35735836d2", null ]
+    [ "R", "structmage_1_1_r_g_b.html#a0125eee4ebad06ecfc54be1ffe601eb4", null ],
+    [ "R", "structmage_1_1_r_g_b.html#ad0a4d0192ecc2a85ba046b62818a8623", null ]
 ];

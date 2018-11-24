@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['value',['Value',['../namespacemage.html#a68ae02d3a746ed2f285aa2b10f131a21',1,'mage']]],
-  ['value_5ftype',['value_type',['../classmage_1_1rendering_1_1_resource_manager.html#abb6ad8fd8054364a230839110c42174f',1,'mage::rendering::ResourceManager::value_type()'],['../classmage_1_1_dynamic_array.html#a1f26711f844168c39991df0d5a340178',1,'mage::DynamicArray::value_type()'],['../classmage_1_1_aligned_allocator.html#a9e7c440f52f940161bd6cbf1b3c1d21c',1,'mage::AlignedAllocator::value_type()'],['../classmage_1_1_memory_arena_1_1_allocator.html#a216e8ae017f9cfeb1676839da11a1b5c',1,'mage::MemoryArena::Allocator::value_type()'],['../classmage_1_1_static_memory_buffer.html#a30a2fd97f8f458d752581dd69e717a97',1,'mage::StaticMemoryBuffer::value_type()'],['../classmage_1_1_dynamic_memory_buffer.html#a951f47f06268fe148ed617d17cad6150',1,'mage::DynamicMemoryBuffer::value_type()'],['../classmage_1_1_memory_buffer.html#a3f8a036eaa59236b80342ba3a251c9e8',1,'mage::MemoryBuffer::value_type()'],['../classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a1dafabb56c4b51ad6bfc19769f48c8be',1,'mage::SingleEndedMemoryStack::Allocator::value_type()'],['../classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#a38357d7dde55731d76644c13e64b03a6',1,'mage::DoubleEndedMemoryStack::LowAllocator::value_type()'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#aa1286d55a0e3d5a8cf281d5d29b0f058',1,'mage::DoubleEndedMemoryStack::HighAllocator::value_type()'],['../classmage_1_1_resource_pool.html#a5297ef9d8f854a606391ace5a9746a85',1,'mage::ResourcePool::value_type()'],['../classmage_1_1_persistent_resource_pool.html#a2311ac7d92bb3c23950c2d88e9213d16',1,'mage::PersistentResourcePool::value_type()']]],
-  ['valuemap',['ValueMap',['../namespacemage.html#a3a4b59e486babe3ec78455f9ee0d4beb',1,'mage']]],
-  ['vertexshaderptr',['VertexShaderPtr',['../namespacemage_1_1rendering.html#aaf704b9c54a4181f4950a1761de69dda',1,'mage::rendering']]]
+  ['u16',['U16',['../namespacemage.html#a1701f09b2c3ed62768e1b7d00bf30d0b',1,'mage']]],
+  ['u16x2',['U16x2',['../namespacemage.html#abd4c4ece66e785fa7f2dee216fcf98a7',1,'mage']]],
+  ['u16x3',['U16x3',['../namespacemage.html#a0ac360f6bc350edd91b20939d792ac8e',1,'mage']]],
+  ['u16x4',['U16x4',['../namespacemage.html#a6d2bcdfcf8e2c0d152d62b4722f29a95',1,'mage']]],
+  ['u32',['U32',['../namespacemage.html#aa5d6eaabaac3cdd01873d6a3d27e90f3',1,'mage']]],
+  ['u32x2',['U32x2',['../namespacemage.html#ae5e7ccf8a1785baaacf57b3a0f4324e2',1,'mage']]],
+  ['u32x3',['U32x3',['../namespacemage.html#a1e9348414b777b1a460dc4f295bc87fc',1,'mage']]],
+  ['u32x4',['U32x4',['../namespacemage.html#a03b5f950ff5769ec16b6acbb9f969856',1,'mage']]],
+  ['u64',['U64',['../namespacemage.html#ae0ad2dd0035dba92ed0f2e84c182b03b',1,'mage']]],
+  ['u64x2',['U64x2',['../namespacemage.html#aebe0525a80383960d8a830d9ba8c4cbc',1,'mage']]],
+  ['u64x3',['U64x3',['../namespacemage.html#ae3e7d205d1cd0bc83be5f5ba79cf53af',1,'mage']]],
+  ['u64x4',['U64x4',['../namespacemage.html#a08d295ee2bd7edee97597869757bb995',1,'mage']]],
+  ['u8',['U8',['../namespacemage.html#a30677c03d683c4c35630c25f6ff3fb7f',1,'mage']]],
+  ['u8x2',['U8x2',['../namespacemage.html#a2e4c9131f51b3189558ba540b0060f57',1,'mage']]],
+  ['u8x3',['U8x3',['../namespacemage.html#a330c8fe958356c1ee1d48fbfa0490be8',1,'mage']]],
+  ['u8x4',['U8x4',['../namespacemage.html#a39f4c41eda42327b75e5a7be3721814d',1,'mage']]],
+  ['uniquefilestream',['UniqueFileStream',['../namespacemage.html#ac11c62400d336d9f6857c7cdaecfc7a8',1,'mage']]],
+  ['uniquehandle',['UniqueHandle',['../namespacemage.html#ac04fdf3699e3e907b252931da289741a',1,'mage']]],
+  ['uniqueptr',['UniquePtr',['../namespacemage.html#a3316d7143a973e37adf1110f2e80ca31',1,'mage']]]
 ];

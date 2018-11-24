@@ -11,8 +11,8 @@ var classmage_1_1rendering_1_1_sprite_image =
     [ "GetBaseColorTexture", "classmage_1_1rendering_1_1_sprite_image.html#ab5b257c4df82dc72223affe8b32c0b70", null ],
     [ "GetBaseColorTextureRegion", "classmage_1_1rendering_1_1_sprite_image.html#ae8d120b87e4791cf85799623ae554f41", null ],
     [ "GetSpriteEffects", "classmage_1_1rendering_1_1_sprite_image.html#a82a804fe9ed8c685268a1a42ab853eb4", null ],
-    [ "GetSpriteTransform", "classmage_1_1rendering_1_1_sprite_image.html#a1f4b344e6c2087c7b68b65a8d719e5ef", null ],
-    [ "GetSpriteTransform", "classmage_1_1rendering_1_1_sprite_image.html#a4d2fdf5ac9f60ef9bceb54055080a20b", null ],
+    [ "GetSpriteTransform", "classmage_1_1rendering_1_1_sprite_image.html#a0deb8ced92c461e6744d9193464d2c28", null ],
+    [ "GetSpriteTransform", "classmage_1_1rendering_1_1_sprite_image.html#add8c077e8682049e2a3de7b763b06ed9", null ],
     [ "HasMaximumBaseColorTextureRegion", "classmage_1_1rendering_1_1_sprite_image.html#a89e9dd78d50c2c312e06686bcc7347c1", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sprite_image.html#acf6e19eaf380ea76e4361778693facf2", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sprite_image.html#adabb87110ec41d770061d375cb0db000", null ],
@@ -24,5 +24,5 @@ var classmage_1_1rendering_1_1_sprite_image =
     [ "m_base_color_texture", "classmage_1_1rendering_1_1_sprite_image.html#a1b68c232550bfc55aa794fcffbeab489", null ],
     [ "m_base_color_texture_region", "classmage_1_1rendering_1_1_sprite_image.html#a18de0a4473e2bfee074cd152d1ba2c3e", null ],
     [ "m_sprite_effects", "classmage_1_1rendering_1_1_sprite_image.html#a25891d2cfd1edd3dc86c0bc82700cad2", null ],
-    [ "m_sprite_transform", "classmage_1_1rendering_1_1_sprite_image.html#a7985369471809a6efcdeb8a265510b7a", null ]
+    [ "m_sprite_transform", "classmage_1_1rendering_1_1_sprite_image.html#a03355647f19e8e9545fde87999331de3", null ]
 ];

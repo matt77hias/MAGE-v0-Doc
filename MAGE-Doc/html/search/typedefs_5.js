@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hullshader',['HullShader',['../namespacemage_1_1rendering.html#aa133f36cd1a81c87eedf962270a12f48',1,'mage::rendering']]],
-  ['hullshaderptr',['HullShaderPtr',['../namespacemage_1_1rendering.html#a6f33b2e1ea7f2ae3824dc7fb6875c655',1,'mage::rendering']]]
+  ['geometryshader',['GeometryShader',['../namespacemage_1_1rendering.html#accaa3591de8a0d7a2c72c1dcc0cf9592',1,'mage::rendering']]],
+  ['geometryshaderptr',['GeometryShaderPtr',['../namespacemage_1_1rendering.html#aa5d63f80f9483d0896718813768ba1cf',1,'mage::rendering']]]
 ];

@@ -6,7 +6,7 @@ var classmage_1_1rendering_1_1_sprite_batch_1_1_impl =
     [ "~Impl", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a32ea1f2a4d1f11c19594e1d4eaa36f6c", null ],
     [ "Begin", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a4a7442fe888c97768a427fc35448e1d1", null ],
     [ "BindFixedState", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#ab07518664c50c9ddd08eb484bc0df0e0", null ],
-    [ "Draw", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a62585b07c1b2ede917ad49c0cfda57f1", null ],
+    [ "Draw", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#af679adcb342d448dfd35a5462f1c43fd", null ],
     [ "End", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a46d4871b99ac78e00f703ca4297e67f3", null ],
     [ "FlushBatch", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#a65afd35385400d629abc9f60adfadeff", null ],
     [ "operator=", "classmage_1_1rendering_1_1_sprite_batch_1_1_impl.html#abcbbd766f6b1355e5d015cbdcaacfc07", null ],

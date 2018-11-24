@@ -1,7 +1,11 @@
 var namespacestd =
 [
+    [ "hash< mage::Entity >", "structstd_1_1hash_3_01mage_1_1_entity_01_4.html", "structstd_1_1hash_3_01mage_1_1_entity_01_4" ],
     [ "tuple_element< I, mage::Array< T, N, A > >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4" ],
+    [ "tuple_element< I, mage::Complex< T > >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_complex_3_01_t_01_4_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_complex_3_01_t_01_4_01_4" ],
     [ "tuple_element< I, mage::Direction3 >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_direction3_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_direction3_01_4" ],
+    [ "tuple_element< I, mage::Dual< T > >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_dual_3_01_t_01_4_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_dual_3_01_t_01_4_01_4" ],
+    [ "tuple_element< I, mage::Hyperbolic< T > >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_hyperbolic_3_01_t_01_4_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_hyperbolic_3_01_t_01_4_01_4" ],
     [ "tuple_element< I, mage::Normal3 >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_normal3_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_normal3_01_4" ],
     [ "tuple_element< I, mage::Point3 >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_point3_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_point3_01_4" ],
     [ "tuple_element< I, mage::RGB >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_r_g_b_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_r_g_b_01_4" ],
@@ -12,7 +16,10 @@ var namespacestd =
     [ "tuple_element< I, mage::XYZ >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_01_4" ],
     [ "tuple_element< I, mage::XYZA >", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_a_01_4.html", "structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_a_01_4" ],
     [ "tuple_size< mage::Array< T, N, A > >", "structstd_1_1tuple__size_3_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html", null ],
+    [ "tuple_size< mage::Complex< T > >", "structstd_1_1tuple__size_3_01mage_1_1_complex_3_01_t_01_4_01_4.html", null ],
     [ "tuple_size< mage::Direction3 >", "structstd_1_1tuple__size_3_01mage_1_1_direction3_01_4.html", null ],
+    [ "tuple_size< mage::Dual< T > >", "structstd_1_1tuple__size_3_01mage_1_1_dual_3_01_t_01_4_01_4.html", null ],
+    [ "tuple_size< mage::Hyperbolic< T > >", "structstd_1_1tuple__size_3_01mage_1_1_hyperbolic_3_01_t_01_4_01_4.html", null ],
     [ "tuple_size< mage::Normal3 >", "structstd_1_1tuple__size_3_01mage_1_1_normal3_01_4.html", null ],
     [ "tuple_size< mage::Point3 >", "structstd_1_1tuple__size_3_01mage_1_1_point3_01_4.html", null ],
     [ "tuple_size< mage::RGB >", "structstd_1_1tuple__size_3_01mage_1_1_r_g_b_01_4.html", null ],

@@ -9,6 +9,7 @@ var searchData=
   ['displayconfigurator',['DisplayConfigurator',['../classmage_1_1rendering_1_1_display_configurator.html',1,'mage::rendering']]],
   ['doubleendedmemorystack',['DoubleEndedMemoryStack',['../classmage_1_1_double_ended_memory_stack.html',1,'mage']]],
   ['ds',['DS',['../structmage_1_1rendering_1_1_pipeline_1_1_d_s.html',1,'mage::rendering::Pipeline']]],
+  ['dual',['Dual',['../structmage_1_1_dual.html',1,'mage']]],
   ['dynamicarray',['DynamicArray',['../classmage_1_1_dynamic_array.html',1,'mage']]],
   ['dynamicarray_3c_20char_20_3e',['DynamicArray&lt; char &gt;',['../classmage_1_1_dynamic_array.html',1,'mage']]],
   ['dynamicarray_3c_20wchar_5ft_20_3e',['DynamicArray&lt; wchar_t &gt;',['../classmage_1_1_dynamic_array.html',1,'mage']]],

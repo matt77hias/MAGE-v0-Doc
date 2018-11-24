@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['other',['other',['../structmage_1_1_aligned_allocator_1_1rebind.html#a12f5ac277f4ef4993d1f73eba91c3439',1,'mage::AlignedAllocator::rebind']]]
+  ['nodeptr',['NodePtr',['../classmage_1_1_node.html#ac575dc006e0ae1134277ade977dc06b6',1,'mage::Node']]],
+  ['notnull',['NotNull',['../namespacemage.html#a8769f9d670d6b585ea306cb1062af94b',1,'mage']]]
 ];

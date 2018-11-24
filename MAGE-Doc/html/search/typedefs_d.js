@@ -1,24 +1,7 @@
 var searchData=
 [
-  ['s16',['S16',['../namespacemage.html#a18f388d78bebedbe53ee0654c3583f08',1,'mage']]],
-  ['s16x2',['S16x2',['../namespacemage.html#a5eb6a95d78ed161f81f794a9f6da2e7a',1,'mage']]],
-  ['s16x3',['S16x3',['../namespacemage.html#a469b8f9f7e185683ba58e2bf65936493',1,'mage']]],
-  ['s16x4',['S16x4',['../namespacemage.html#a100107796ebefc999e82cd051646743c',1,'mage']]],
-  ['s32',['S32',['../namespacemage.html#a2ef1a005a77358f1825d13fd481b557f',1,'mage']]],
-  ['s32x2',['S32x2',['../namespacemage.html#aad06aca0b442d3b41653eafed822d571',1,'mage']]],
-  ['s32x3',['S32x3',['../namespacemage.html#afda77adce1ca6e842614d915b5073284',1,'mage']]],
-  ['s32x4',['S32x4',['../namespacemage.html#a2b6e779e11cdeafb812f067a0682af15',1,'mage']]],
-  ['s64',['S64',['../namespacemage.html#a77fb1639d0c243411bd51cd324a7c9ab',1,'mage']]],
-  ['s64x2',['S64x2',['../namespacemage.html#a32d5b38bc37f20a34793842f1017103a',1,'mage']]],
-  ['s64x3',['S64x3',['../namespacemage.html#ab769f20518eb63c5e6dbf0fae54047a0',1,'mage']]],
-  ['s64x4',['S64x4',['../namespacemage.html#a0a14c5386a913a7e04c3f23b14cd407c',1,'mage']]],
-  ['s8',['S8',['../namespacemage.html#a7641dc7eeece0d45557db2eff2b7e492',1,'mage']]],
-  ['s8x2',['S8x2',['../namespacemage.html#a25bf208ec1a506351d49d3fc96c928fd',1,'mage']]],
-  ['s8x3',['S8x3',['../namespacemage.html#ab281a5acbf873a7511a7dbabe0bccbff',1,'mage']]],
-  ['s8x4',['S8x4',['../namespacemage.html#a460413faa0eac14fe225ce569a7bc7c0',1,'mage']]],
-  ['selectionfunction',['SelectionFunction',['../classmage_1_1_line_reader.html#a17bbae61a3ce30bdb251d6c76e1a4522',1,'mage::LineReader']]],
-  ['sharedhandle',['SharedHandle',['../namespacemage.html#ae70b3368a2dccc985c4ecbdf15a1a3c9',1,'mage']]],
-  ['sharedptr',['SharedPtr',['../namespacemage.html#a1e01ae66713838a7a67d30e44c67703e',1,'mage']]],
-  ['size_5ftype',['size_type',['../classmage_1_1_dynamic_array.html#abae3236bcd8d1de414cbdf05219966b9',1,'mage::DynamicArray::size_type()'],['../classmage_1_1_aligned_allocator.html#aa391d44543b39d7f35e3aef16d9c1846',1,'mage::AlignedAllocator::size_type()'],['../classmage_1_1_memory_arena_1_1_allocator.html#a5b35424efcc3fb527e97dbd355d31b40',1,'mage::MemoryArena::Allocator::size_type()'],['../classmage_1_1_static_memory_buffer.html#a13e19b7af61a49400c5be360f09aadc8',1,'mage::StaticMemoryBuffer::size_type()'],['../classmage_1_1_dynamic_memory_buffer.html#a45d02825da2b18fd7c24965ed5f46a30',1,'mage::DynamicMemoryBuffer::size_type()'],['../classmage_1_1_memory_buffer.html#a77b459da2e6f1c57c21467a6eff8e9f9',1,'mage::MemoryBuffer::size_type()'],['../classmage_1_1_single_ended_memory_stack_1_1_allocator.html#a4433de74b466aa720a40f4d29469e0f9',1,'mage::SingleEndedMemoryStack::Allocator::size_type()'],['../classmage_1_1_double_ended_memory_stack_1_1_low_allocator.html#a6fc22a2468eb42c751783ac946c5b852',1,'mage::DoubleEndedMemoryStack::LowAllocator::size_type()'],['../classmage_1_1_double_ended_memory_stack_1_1_high_allocator.html#a8f3f666efd2fdb95ca8a7fa82e6b0253',1,'mage::DoubleEndedMemoryStack::HighAllocator::size_type()']]],
-  ['spritefontptr',['SpriteFontPtr',['../namespacemage_1_1rendering.html#ab2f34196c20422ca3692ad3f3bff3a5d',1,'mage::rendering']]]
+  ['reference',['reference',['../classmage_1_1_dynamic_array.html#ac725ab843a578b8eb2e4499eca728149',1,'mage::DynamicArray::reference()'],['../classmage_1_1_component_manager.html#a4daeb292f527534c155e359faf7eaf80',1,'mage::ComponentManager::reference()'],['../classmage_1_1_component_manager_1_1_record_iterator.html#a79a091c8d61811bc67982e19500ab6eb',1,'mage::ComponentManager::RecordIterator::reference()'],['../classmage_1_1_static_memory_buffer.html#ac00b0718b8b57bcaee2a7904637fc031',1,'mage::StaticMemoryBuffer::reference()'],['../classmage_1_1_dynamic_memory_buffer.html#a146681be5119c0329409436506334f05',1,'mage::DynamicMemoryBuffer::reference()'],['../classmage_1_1_memory_buffer.html#ad28560f5391baac5dade220c99d9d62b',1,'mage::MemoryBuffer::reference()']]],
+  ['rep',['rep',['../structmage_1_1_system_clock.html#a79624f5c1fee7b66340e17c55de581bc',1,'mage::SystemClock::rep()'],['../structmage_1_1_core_clock.html#afcf2ac7e5e594734cdedaf46fbbf23d8',1,'mage::CoreClock::rep()'],['../structmage_1_1_kernel_mode_core_clock.html#a5e5e420ec1a6aa530c109d0828a00116',1,'mage::KernelModeCoreClock::rep()'],['../structmage_1_1_user_mode_core_clock.html#a25466352767fc603342fd366ceaf6dcf',1,'mage::UserModeCoreClock::rep()'],['../structmage_1_1_core_clock_per_core.html#aa34a8dcc61837ace0b47ed84c04fa1d1',1,'mage::CoreClockPerCore::rep()'],['../structmage_1_1_kernel_mode_core_clock_per_core.html#a436d770fc6a86e736dda04d72402eb46',1,'mage::KernelModeCoreClockPerCore::rep()'],['../structmage_1_1_user_mode_core_clock_per_core.html#a287b38a7811aa8bb1a1829ac316acd09',1,'mage::UserModeCoreClockPerCore::rep()']]],
+  ['resourcemap',['ResourceMap',['../classmage_1_1_resource_pool.html#a7ae3cfa639bbc3696fa359673fed6153',1,'mage::ResourcePool::ResourceMap()'],['../classmage_1_1_persistent_resource_pool.html#a9215c5816fc45ab5f772625df2a8a60c',1,'mage::PersistentResourcePool::ResourceMap()']]],
+  ['reverse_5fiterator',['reverse_iterator',['../classmage_1_1_dynamic_array.html#a92d505734e8500e429d6b6e690b83dab',1,'mage::DynamicArray::reverse_iterator()'],['../classmage_1_1_component_manager.html#a33e3e4994e4ec77e3ab587d68dbb8277',1,'mage::ComponentManager::reverse_iterator()'],['../classmage_1_1_static_memory_buffer.html#a2ea67615d569f1eecb101f4fbe3eb6a7',1,'mage::StaticMemoryBuffer::reverse_iterator()'],['../classmage_1_1_dynamic_memory_buffer.html#ae87c651c2de7410a9af6ed723cea3811',1,'mage::DynamicMemoryBuffer::reverse_iterator()'],['../classmage_1_1_memory_buffer.html#a0ff72cf71e4955a859ed8afd70832c92',1,'mage::MemoryBuffer::reverse_iterator()']]]
 ];

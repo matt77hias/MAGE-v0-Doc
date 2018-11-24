@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['h32',['H32',['../namespacemage.html#a9b6a10670e60f80c5cc0e83b69f05d28',1,'mage']]],
+  ['h64',['H64',['../namespacemage.html#a9a0a2903405dd134d544ae75d4145a14',1,'mage']]],
   ['halton',['Halton',['../namespacemage.html#a182a90889a332fae6ca724b0d30cd518',1,'mage']]],
   ['halton2d',['Halton2D',['../namespacemage.html#ab4cf6e21a4c2d2b94154e2cff3d9d216',1,'mage']]],
   ['halton3d',['Halton3D',['../namespacemage.html#ac54684bd007b5fc1ccdfe271f82152c1',1,'mage']]],
@@ -15,6 +17,8 @@ var searchData=
   ['hasdefaultmaterial',['HasDefaultMaterial',['../structmage_1_1rendering_1_1_model_part.html#aae8cebe1ec39e939b53fc3f7330984a8',1,'mage::rendering::ModelPart']]],
   ['hasdefaultparent',['HasDefaultParent',['../structmage_1_1rendering_1_1_model_part.html#ac452d6bba03decae31646eec0329c4ab',1,'mage::rendering::ModelPart']]],
   ['hasfiniteaperture',['HasFiniteAperture',['../classmage_1_1rendering_1_1_camera_lens.html#a09a7cc18ca89da0c177c4f7dc0bbcc41',1,'mage::rendering::CameraLens']]],
+  ['hash',['Hash',['../classmage_1_1_entity.html#a3a3c4da60750874d5db240dbd15ff81d',1,'mage::Entity']]],
+  ['hash_3c_20mage_3a_3aentity_20_3e',['hash&lt; mage::Entity &gt;',['../structstd_1_1hash_3_01mage_1_1_entity_01_4.html',1,'std']]],
   ['hasmaximumbasecolortextureregion',['HasMaximumBaseColorTextureRegion',['../classmage_1_1rendering_1_1_sprite_image.html#a89e9dd78d50c2c312e06686bcc7347c1',1,'mage::rendering::SpriteImage']]],
   ['hasnormal',['HasNormal',['../structmage_1_1rendering_1_1_vertex_position.html#abf33917c1c93dfcffd25c146b53189e8',1,'mage::rendering::VertexPosition::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_normal.html#af5a32a3e51ce13c36b665f83f40209b6',1,'mage::rendering::VertexPositionNormal::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_color.html#a95f2749a6f879b4123034a78c504f3c5',1,'mage::rendering::VertexPositionColor::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_texture.html#abd20ebeb7462cc449cd4a41cf4d6c2c9',1,'mage::rendering::VertexPositionTexture::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_normal_color.html#a663883aaff79837d1abb1c5cb54d2340',1,'mage::rendering::VertexPositionNormalColor::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_normal_texture.html#a5b65b49d120fd660977f8f05b3ee7327',1,'mage::rendering::VertexPositionNormalTexture::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_color_texture.html#a3823f3163d8350e4c448e99e90cc9436',1,'mage::rendering::VertexPositionColorTexture::HasNormal()'],['../structmage_1_1rendering_1_1_vertex_position_normal_color_texture.html#aa8f1585c1dba229b765d5697a37cb0e6',1,'mage::rendering::VertexPositionNormalColorTexture::HasNormal()']]],
   ['hasowner',['HasOwner',['../classmage_1_1_component.html#a8e62e223bdacc3eebddc43f8ebc8c4d9',1,'mage::Component::HasOwner()'],['../classmage_1_1_transform.html#ac24796b2d6179c1488410d36afdf6b68',1,'mage::Transform::HasOwner()']]],
@@ -28,5 +32,6 @@ var searchData=
   ['hotpink',['HotPink',['../namespacemage_1_1color.html#a64c422466ccc5c44c1c4a0e6f435a3c3',1,'mage::color']]],
   ['hs',['HS',['../structmage_1_1rendering_1_1_pipeline_1_1_h_s.html',1,'mage::rendering::Pipeline']]],
   ['hullshader',['HullShader',['../namespacemage_1_1rendering.html#aa133f36cd1a81c87eedf962270a12f48',1,'mage::rendering']]],
-  ['hullshaderptr',['HullShaderPtr',['../namespacemage_1_1rendering.html#a6f33b2e1ea7f2ae3824dc7fb6875c655',1,'mage::rendering']]]
+  ['hullshaderptr',['HullShaderPtr',['../namespacemage_1_1rendering.html#a6f33b2e1ea7f2ae3824dc7fb6875c655',1,'mage::rendering']]],
+  ['hyperbolic',['Hyperbolic',['../structmage_1_1_hyperbolic.html',1,'mage::Hyperbolic&lt; T, typename &gt;'],['../structmage_1_1_hyperbolic.html#a8ea2afb84fb80f5bffb8ddb425e3987a',1,'mage::Hyperbolic::Hyperbolic(T xy=T(0)) noexcept'],['../structmage_1_1_hyperbolic.html#ad4ae65501723843bd7258f94a724b01c',1,'mage::Hyperbolic::Hyperbolic(T x, T y) noexcept'],['../structmage_1_1_hyperbolic.html#a4f0508de351703405ade230dc4d6b77b',1,'mage::Hyperbolic::Hyperbolic(const Hyperbolic &amp;v) noexcept=default'],['../structmage_1_1_hyperbolic.html#af2a6bccf73a3ff0df3d9640d17cbfb37',1,'mage::Hyperbolic::Hyperbolic(Hyperbolic &amp;&amp;v) noexcept=default'],['../structmage_1_1_hyperbolic.html#a4c4c2fde770904cbc45e5a7889b1a2e6',1,'mage::Hyperbolic::Hyperbolic(const Hyperbolic&lt; U &gt; &amp;v) noexcept']]]
 ];

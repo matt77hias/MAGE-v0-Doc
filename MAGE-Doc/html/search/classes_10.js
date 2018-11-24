@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['s1ettransform3d',['S1ETTransform3D',['../classmage_1_1_s1_e_t_transform3_d.html',1,'mage']]],
+  ['s1qttransform3d',['S1QTTransform3D',['../classmage_1_1_s1_q_t_transform3_d.html',1,'mage']]],
   ['scene',['Scene',['../classmage_1_1_scene.html',1,'mage']]],
   ['secondarycamerabuffer',['SecondaryCameraBuffer',['../structmage_1_1rendering_1_1_secondary_camera_buffer.html',1,'mage::rendering']]],
+  ['settransform3d',['SETTransform3D',['../classmage_1_1_s_e_t_transform3_d.html',1,'mage']]],
   ['shader',['Shader',['../classmage_1_1rendering_1_1_shader.html',1,'mage::rendering']]],
   ['shadowcubemapbuffer',['ShadowCubeMapBuffer',['../classmage_1_1rendering_1_1_shadow_cube_map_buffer.html',1,'mage::rendering']]],
   ['shadowmapbuffer',['ShadowMapBuffer',['../classmage_1_1rendering_1_1_shadow_map_buffer.html',1,'mage::rendering']]],
@@ -23,7 +26,8 @@ var searchData=
   ['spriteinfo',['SpriteInfo',['../structmage_1_1rendering_1_1anonymous__namespace_02sprite__batch_8cpp_03_1_1_sprite_info.html',1,'mage::rendering::anonymous_namespace{sprite_batch.cpp}']]],
   ['spritepass',['SpritePass',['../classmage_1_1rendering_1_1_sprite_pass.html',1,'mage::rendering']]],
   ['spritetext',['SpriteText',['../classmage_1_1rendering_1_1_sprite_text.html',1,'mage::rendering']]],
-  ['spritetransform',['SpriteTransform',['../classmage_1_1_sprite_transform.html',1,'mage']]],
+  ['spritetransform2d',['SpriteTransform2D',['../classmage_1_1_sprite_transform2_d.html',1,'mage']]],
+  ['sqttransform3d',['SQTTransform3D',['../classmage_1_1_s_q_t_transform3_d.html',1,'mage']]],
   ['srgb',['SRGB',['../structmage_1_1_s_r_g_b.html',1,'mage']]],
   ['srgba',['SRGBA',['../structmage_1_1_s_r_g_b_a.html',1,'mage']]],
   ['statemanager',['StateManager',['../classmage_1_1rendering_1_1_state_manager.html',1,'mage::rendering']]],

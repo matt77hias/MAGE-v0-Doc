@@ -1,22 +1,10 @@
 var searchData=
 [
-  ['u16',['U16',['../namespacemage.html#a1701f09b2c3ed62768e1b7d00bf30d0b',1,'mage']]],
-  ['u16x2',['U16x2',['../namespacemage.html#abd4c4ece66e785fa7f2dee216fcf98a7',1,'mage']]],
-  ['u16x3',['U16x3',['../namespacemage.html#a0ac360f6bc350edd91b20939d792ac8e',1,'mage']]],
-  ['u16x4',['U16x4',['../namespacemage.html#a6d2bcdfcf8e2c0d152d62b4722f29a95',1,'mage']]],
-  ['u32',['U32',['../namespacemage.html#aa5d6eaabaac3cdd01873d6a3d27e90f3',1,'mage']]],
-  ['u32x2',['U32x2',['../namespacemage.html#ae5e7ccf8a1785baaacf57b3a0f4324e2',1,'mage']]],
-  ['u32x3',['U32x3',['../namespacemage.html#a1e9348414b777b1a460dc4f295bc87fc',1,'mage']]],
-  ['u32x4',['U32x4',['../namespacemage.html#a03b5f950ff5769ec16b6acbb9f969856',1,'mage']]],
-  ['u64',['U64',['../namespacemage.html#ae0ad2dd0035dba92ed0f2e84c182b03b',1,'mage']]],
-  ['u64x2',['U64x2',['../namespacemage.html#aebe0525a80383960d8a830d9ba8c4cbc',1,'mage']]],
-  ['u64x3',['U64x3',['../namespacemage.html#ae3e7d205d1cd0bc83be5f5ba79cf53af',1,'mage']]],
-  ['u64x4',['U64x4',['../namespacemage.html#a08d295ee2bd7edee97597869757bb995',1,'mage']]],
-  ['u8',['U8',['../namespacemage.html#a30677c03d683c4c35630c25f6ff3fb7f',1,'mage']]],
-  ['u8x2',['U8x2',['../namespacemage.html#a2e4c9131f51b3189558ba540b0060f57',1,'mage']]],
-  ['u8x3',['U8x3',['../namespacemage.html#a330c8fe958356c1ee1d48fbfa0490be8',1,'mage']]],
-  ['u8x4',['U8x4',['../namespacemage.html#a39f4c41eda42327b75e5a7be3721814d',1,'mage']]],
-  ['uniquefilestream',['UniqueFileStream',['../namespacemage.html#ac11c62400d336d9f6857c7cdaecfc7a8',1,'mage']]],
-  ['uniquehandle',['UniqueHandle',['../namespacemage.html#ac04fdf3699e3e907b252931da289741a',1,'mage']]],
-  ['uniqueptr',['UniquePtr',['../namespacemage.html#a3316d7143a973e37adf1110f2e80ca31',1,'mage']]]
+  ['textureptr',['TexturePtr',['../namespacemage_1_1rendering.html#a6f3ae54f825328465b0cdde0f0de4a36',1,'mage::rendering']]],
+  ['time_5fpoint',['time_point',['../structmage_1_1_system_clock.html#a00c052d5e1349785a6847fbfb9e1f044',1,'mage::SystemClock::time_point()'],['../structmage_1_1_core_clock.html#a1ea0193dea9647827d27469ec9e3b61c',1,'mage::CoreClock::time_point()'],['../structmage_1_1_kernel_mode_core_clock.html#aca87172eb6e806a46d8792ca8239d2fe',1,'mage::KernelModeCoreClock::time_point()'],['../structmage_1_1_user_mode_core_clock.html#a765f0c91417367ed676ffcde829ab365',1,'mage::UserModeCoreClock::time_point()'],['../structmage_1_1_core_clock_per_core.html#ab37b1036bb4697f16dd5dee6f169e7c3',1,'mage::CoreClockPerCore::time_point()'],['../structmage_1_1_kernel_mode_core_clock_per_core.html#a26d0fe6b051dab6987956f52414659cc',1,'mage::KernelModeCoreClockPerCore::time_point()'],['../structmage_1_1_user_mode_core_clock_per_core.html#a52312b09168e0f4a8cace07d94be5427',1,'mage::UserModeCoreClockPerCore::time_point()']]],
+  ['timeinterval',['TimeInterval',['../classmage_1_1_timer.html#a5c0fd78ceab0110637622bd0e9b8424d',1,'mage::Timer']]],
+  ['timeintervalseconds',['TimeIntervalSeconds',['../namespacemage.html#a21c3d1575018d1e0720948713c76be1f',1,'mage']]],
+  ['timestamp',['TimeStamp',['../classmage_1_1_timer.html#abd11aea6107940b09ef3c48f62c81668',1,'mage::Timer']]],
+  ['timestampseconds',['TimeStampSeconds',['../namespacemage.html#ad1f196935039df7c84739e520cf4ac80',1,'mage']]],
+  ['type',['type',['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_complex_3_01_t_01_4_01_4.html#af3c7d1f31b171e9cbbf0f4f0a248a862',1,'std::tuple_element&lt; I, mage::Complex&lt; T &gt; &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_dual_3_01_t_01_4_01_4.html#a9d33f3a266d739dd71fb22a736c73197',1,'std::tuple_element&lt; I, mage::Dual&lt; T &gt; &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_hyperbolic_3_01_t_01_4_01_4.html#a6c24687c3d82db16d93cb5e916b0ccb9',1,'std::tuple_element&lt; I, mage::Hyperbolic&lt; T &gt; &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_u_v_01_4.html#a793980eda890cb8bc5540464e975fbe4',1,'std::tuple_element&lt; I, mage::UV &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_point3_01_4.html#a3a2128442434af529b2eb94f631fb259',1,'std::tuple_element&lt; I, mage::Point3 &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_direction3_01_4.html#aba7f84e28b059beb0df838e74194efba',1,'std::tuple_element&lt; I, mage::Direction3 &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_normal3_01_4.html#a02fab6104a3747895b4c028748109c45',1,'std::tuple_element&lt; I, mage::Normal3 &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_r_g_b_01_4.html#ad0224ad81727664636c99c365d17b2c7',1,'std::tuple_element&lt; I, mage::RGB &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_s_r_g_b_01_4.html#a372fdcfe6d022dd17a029e5bbe388748',1,'std::tuple_element&lt; I, mage::SRGB &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_01_4.html#ab340458d10d806cc004b738bc1b587d3',1,'std::tuple_element&lt; I, mage::XYZ &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_r_g_b_a_01_4.html#a22c2f400377cb726291cbecbf22151e4',1,'std::tuple_element&lt; I, mage::RGBA &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_s_r_g_b_a_01_4.html#a96b1a30440a23f511ffb8996813f821e',1,'std::tuple_element&lt; I, mage::SRGBA &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_x_y_z_a_01_4.html#a92a24d062c477271f5b58fc5d8487b1c',1,'std::tuple_element&lt; I, mage::XYZA &gt;::type()'],['../structstd_1_1tuple__element_3_01_i_00_01mage_1_1_array_3_01_t_00_01_n_00_01_a_01_4_01_4.html#a6e43e3b0b102494c884ca2fd73274140',1,'std::tuple_element&lt; I, mage::Array&lt; T, N, A &gt; &gt;::type()']]]
 ];
