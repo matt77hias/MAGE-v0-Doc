@@ -163,7 +163,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><em>slot</em> &lt; <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to set the constant buffer to (ranges from 0 to <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>A pointer to the constant buffer. </td></tr>
   </table>
@@ -228,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
 <em>buffers</em> points to an array containing at least <em>nb_buffers</em> pointers to a constant buffer. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to begin setting constant buffers to (ranges from 0 to <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_buffers</td><td>The number of constant buffers in the array (ranges from 0 to <code>D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT</code> <ul>
 <li><em>slot</em>). </li>
@@ -284,7 +284,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><em>slot</em> &lt; <code>D3D11_COMMONSHADER_SAMPLER_SLOT_COUNT</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to set the sampler to (ranges from 0 to <code>D3D11_COMMONSHADER_SAMPLER_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sampler</td><td>A pointer to the sampler. </td></tr>
   </table>
@@ -349,7 +349,7 @@ Static Public Member Functions</h2></td></tr>
 <em>samplers</em> points to an array containing at least <em>nb_samplers</em> pointers to a sampler. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to begin setting samplers to (ranges from 0 to <code>D3D11_COMMONSHADER_SAMPLER_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_samplers</td><td>The number of samplers in the array. Each pipeline stage has a total of 16 sampler slots available (ranges from 0 to <code>D3D11_COMMONSHADER_SAMPLER_SLOT_COUNT</code> - <em>slot</em>). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">samplers</td><td>A pointer to an array of samplers. </td></tr>
@@ -395,7 +395,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Binds a vertex shader to the vertex shader stage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A pointer to the vertex shader. </td></tr>
   </table>
   </dd>
@@ -451,7 +451,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Binds a vertex shader to the vertex shader stage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shader</td><td>A pointer to the vertex shader. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">class_instances</td><td>A pointer to an array of class-instance interfaces. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_class_instances</td><td>The numberof class-instance interfaces. </td></tr>
@@ -504,7 +504,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><em>slot</em> &lt; <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to set the shader resource view to (ranges from 0 to <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">srv</td><td>A pointer to the shader resource view. </td></tr>
   </table>
@@ -569,7 +569,7 @@ Static Public Member Functions</h2></td></tr>
 <em>srvs</em> points to an array containing at least <em>nb_srvs</em> pointers to a shader resource view. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">device_context</td><td>A reference to the device context. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">slot</td><td>The index into the device's zero-based array to begin setting shader resource views to (ranges from 0 to <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code> - 1). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nb_srvs</td><td>The number of shader resource views in the array. Up to a maximum of 128 slots are available for shader resource views (ranges from 0 to <code>D3D11_COMMONSHADER_INPUT_RESOURCE_SLOT_COUNT</code> - <em>slot</em>). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">srvs</td><td>A pointer to an array of shader resource views. </td></tr>
